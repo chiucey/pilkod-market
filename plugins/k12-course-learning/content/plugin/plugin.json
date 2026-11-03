@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "name": "k12-course-learning",
+  "displayName": "K12课程学习",
+  "version": "1.0.5",
+  "description": "面向中小学生的无状态课程学习助手：离线检索课程知识点与先修关系，使用启发式讲解和主动回忆促进理解，并生成无需联网的单文件交互式 HTML 课程。",
+  "author": "Pilkod / jiangkaiqi2005 / Generative Spark, Inc. (Marble)",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Education",
+  "exampleQueries": [
+    "根据我上传的课本内容，先判断我的基础，再一步步讲清楚这个知识点",
+    "从本地课程知识图谱查找光的反射的先修概念和后续学习路径",
+    "把分数比较做成一个无需联网、可以拖动操作的 HTML 课程页面"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/recall-k12-taxonomy/SKILL.md",
+    "skills/study-tutor/SKILL.md",
+    "skills/visualize-k12-concepts/SKILL.md"
+  ]
+}

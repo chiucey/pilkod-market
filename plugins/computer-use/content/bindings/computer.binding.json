@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schemas/host-binding-v1.schema.json",
+  "schemaVersion": 1,
+  "bindingId": "computer-control",
+  "logicalToolName": "computer.control",
+  "hostCapability": {
+    "id": "computer.use",
+    "version": 1
+  },
+  "requiredSkills": [
+    "computer-use"
+  ],
+  "allowedSurfaces": [
+    "interactive"
+  ]
+}

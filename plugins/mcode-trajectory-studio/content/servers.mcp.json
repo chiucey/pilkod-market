@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "mcode-trajectory-studio": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./server/main.mjs"
+      ]
+    }
+  }
+}

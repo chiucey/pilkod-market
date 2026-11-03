@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "qichacha",
+  "displayName": "企查查",
+  "version": "1.0.2",
+  "description": "连接企查查，查询企业工商、股东、关联关系、经营状况与风险信息。",
+  "author": "Pilkod",
+  "icon": "qichacha.webp",
+  "category": "Business",
+  "exampleQueries": [
+    "查询宁德时代的工商基本信息和主要股东",
+    "检查这家公司是否存在经营异常或司法风险",
+    "查询这家公司的对外投资和关联企业情况"
+  ],
+  "apps": [
+    "qichacha.app.json"
+  ],
+  "mcpServers": [],
+  "skills": []
+}

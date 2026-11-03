@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "iphone_use": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "-B",
+        "./server/iphone_use.py"
+      ],
+      "description": "Phone Use for a USB iPhone (pua_* tools): setup, readiness, taps, typing, and preview pause. The live screen is the Phone Use Mini App, not these tools.",
+      "timeout": 120000,
+      "env": {
+        "IPHONE_USE_ANALYTICS": "0",
+        "IPHONE_USE_SCREEN_OWNER": "miniapp"
+      }
+    },
+    "android_use": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "-B",
+        "./server/android_use.py"
+      ],
+      "description": "Phone Use for an Android phone or emulator over adb with the Mobilerun Portal (android_* tools): setup, readiness, accessibility nodes, taps, Unicode typing, apps, and preview pause. No analytics. The live screen is the Phone Use Mini App.",
+      "timeout": 120000
+    }
+  }
+}

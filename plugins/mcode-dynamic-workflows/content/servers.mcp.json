@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "dynamic-workflows": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./dist/main.mjs",
+        "--stdio"
+      ],
+      "description": "执行动态工作流并提供本地实时面板",
+      "timeout": 60000
+    }
+  }
+}

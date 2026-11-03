@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "name": "cloudflare",
+  "displayName": "Cloudflare",
+  "version": "0.1.0",
+  "description": "通过 Cloudflare App 查询云资源，结合 Workers、Wrangler、Agents SDK 等指引开发和部署应用。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "查看当前项目对应账户下的 Workers 和资源绑定",
+    "使用 Cloudflare Workers 和 D1 实现这个应用",
+    "检查当前项目的部署配置并说明发布步骤"
+  ],
+  "apps": [
+    "cloudflare.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/agents-sdk/SKILL.md",
+    "skills/building-ai-agent-on-cloudflare/SKILL.md",
+    "skills/building-mcp-server-on-cloudflare/SKILL.md",
+    "skills/cloudflare/SKILL.md",
+    "skills/durable-objects/SKILL.md",
+    "skills/sandbox-sdk/SKILL.md",
+    "skills/workers-best-practices/SKILL.md",
+    "skills/wrangler/SKILL.md"
+  ]
+}

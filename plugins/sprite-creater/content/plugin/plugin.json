@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "sprite-creater",
+  "displayName": "动态图片",
+  "version": "0.12.3",
+  "description": "可制作游戏精灵图、动态表情包、动态壁纸、商品展示和网页动画。结合H3、M3模型的多模态生成能力，将图片、文字、视频或GIF转换为可用序列帧，并导出PNG、Atlas、JSON及预览页。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "category": "Studio",
+  "exampleQueries": [
+    "用这张角色图生成 idle、walk 和 attack 动作，做成透明背景的游戏精灵图",
+    "让这个角色眨眼、挥手并做出开心表情，生成可以循环播放的动态表情包",
+    "让这张风景图产生轻微的云雾、光影和水面流动，生成可以无缝循环的动态壁纸"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/h3-sprite-sheet/SKILL.md"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "邮箱接入助手"
+  short_description: "按服务商指南操作官方网页或客户端，获取授权码并回填连接表单"
+  default_prompt: "使用 $email-account-setup，通过 computer use / browser use 帮我获取邮箱授权码并连接到邮箱工作台。"

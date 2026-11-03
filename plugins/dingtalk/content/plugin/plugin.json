@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "name": "dingtalk",
+  "displayName": "钉钉",
+  "version": "0.1.1",
+  "description": "通过钉钉官方 CLI 查询和管理消息、文档、日程、待办与组织资料；首次使用需要登录并获得组织授权。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Office",
+  "exampleQueries": [
+    "查一下钉钉里我今天的日程和待办",
+    "总结这个钉钉文档的重点",
+    "在钉钉中搜索上周的项目会议纪要"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/dingtalk-aicard/SKILL.md",
+    "skills/dingtalk-aisearch/SKILL.md",
+    "skills/dingtalk-aitable/SKILL.md",
+    "skills/dingtalk-calendar/SKILL.md",
+    "skills/dingtalk-chat/SKILL.md",
+    "skills/dingtalk-contact/SKILL.md",
+    "skills/dingtalk-doc/SKILL.md",
+    "skills/dingtalk-drive/SKILL.md",
+    "skills/dingtalk-event/SKILL.md",
+    "skills/dingtalk-mail/SKILL.md",
+    "skills/dingtalk-minutes/SKILL.md",
+    "skills/dingtalk-misc/SKILL.md",
+    "skills/dingtalk-shared/SKILL.md",
+    "skills/dingtalk-tag/SKILL.md",
+    "skills/dingtalk-todo/SKILL.md",
+    "skills/dingtalk-wiki/SKILL.md"
+  ]
+}

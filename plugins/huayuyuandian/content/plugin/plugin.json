@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "name": "huayuyuandian",
+  "displayName": "华宇元典法律数据",
+  "version": "1.1.0",
+  "description": "连接华宇元典法律数据，查询法律法规、案例文书与企业信息，并按中国大陆法域开展可核验的法律研究。",
+  "author": "北京华宇元典信息服务有限公司",
+  "icon": "huayuyuandian.webp",
+  "category": "Business",
+  "exampleQueries": [
+    "夫妻共同财产是怎么规定的？要现行有效的法条原文，附出处。",
+    "股东转让了认缴出资但未届期的股权后，对受让前的公司债务还要担责吗？有类似裁判吗？",
+    "合作方恒大地产集团，签合同前帮我扫一遍司法风险。"
+  ],
+  "apps": [
+    "huayuyuandian.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/prc-legal-research-law-search/SKILL.md",
+    "skills/prc-legal-research-deep-research/SKILL.md",
+    "skills/prc-legal-research-case-search/SKILL.md",
+    "skills/prc-legal-research-company-search/SKILL.md"
+  ]
+}

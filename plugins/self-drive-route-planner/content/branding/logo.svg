@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="300" viewBox="0 0 1080 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d7cfe"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.18" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7ab5"/>
+      <stop offset="1" stop-color="#ff5da2"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4d7cfe"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== mark: scaled icon (512 -> 236) at x=32,y=32 ===== -->
+  <g transform="translate(32 32) scale(0.4609375)">
+    <rect x="0" y="0" width="512" height="512" rx="116" fill="url(#bg)"/>
+    <rect x="0" y="0" width="512" height="512" rx="116" fill="url(#glow)"/>
+    <path d="M 140 512 C 140 368 400 400 400 268 C 400 180 300 196 300 116"
+          fill="none" stroke="#1e2a5e" stroke-opacity="0.18" stroke-width="84"
+          stroke-linecap="round" transform="translate(0 10)"/>
+    <path d="M 140 512 C 140 368 400 400 400 268 C 400 180 300 196 300 116"
+          fill="none" stroke="#ffffff" stroke-width="78" stroke-linecap="round"/>
+    <path d="M 140 512 C 140 368 400 400 400 268 C 400 180 300 196 300 116"
+          fill="none" stroke="#ffc53d" stroke-width="13"
+          stroke-dasharray="34 30" stroke-linecap="round"/>
+    <circle cx="140" cy="462" r="26" fill="#ffffff"/>
+    <circle cx="140" cy="462" r="15" fill="#1fc16b"/>
+    <path d="M 300 128 C 276 96 252 78 252 46 C 252 19.5 273.5 -2 300 -2 C 326.5 -2 348 19.5 348 46 C 348 78 324 96 300 128 Z"
+          transform="translate(0 18)" fill="#1e2a5e" opacity="0.20"/>
+    <path d="M 300 128 C 276 96 252 78 252 46 C 252 19.5 273.5 -2 300 -2 C 326.5 -2 348 19.5 348 46 C 348 78 324 96 300 128 Z"
+          transform="translate(0 8)" fill="url(#pin)" stroke="#ffffff" stroke-width="12"/>
+    <circle cx="300" cy="54" r="17" fill="#ffffff"/>
+  </g>
+
+  <!-- ===== wordmark ===== -->
+  <text x="320" y="172" font-family="'PingFang SC','Hiragino Sans GB',sans-serif"
+        font-size="128" font-weight="700" fill="url(#word)" letter-spacing="6">自驾规划</text>
+  <text x="326" y="236" font-family="'Avenir Next','Helvetica Neue',sans-serif"
+        font-size="34" font-weight="600" fill="#9aa1b5" letter-spacing="14">ROUTE LAB</text>
+</svg>

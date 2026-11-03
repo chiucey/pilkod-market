@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "weread",
+  "displayName": "微信读书",
+  "version": "0.1.1",
+  "description": "连接微信读书 API Key，搜索书籍、整理个人划线与想法，查看书架和阅读统计。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Education",
+  "exampleQueries": [
+    "整理我在《三体》中的划线和想法",
+    "看看我这个月的阅读时长和读得最多的书",
+    "从我的微信读书书架里找几本还没读完的书"
+  ],
+  "apps": [
+    "weread.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/weread-reader/SKILL.md"
+  ]
+}

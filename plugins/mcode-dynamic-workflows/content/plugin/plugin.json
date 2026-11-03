@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "mcode-dynamic-workflows",
+  "displayName": "动态工作流",
+  "version": "0.8.2",
+  "description": "将复杂任务组织为可审核、可编辑的多 Agent 工作流。自动在 MCode 内置浏览器打开任务说明与结构拓扑，用户确认后执行逐项审查、独立复核与汇总。实时查看进展和失败原因，下载 HTML／Markdown 报告，保存本地模板；支持暂停、恢复、按错误修改脚本并审核后复用有效结果，以及可配置的并发、步数和超时预算。",
+  "author": "hetaoBackend",
+  "icon": "icon.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "创建工作流，从正确性、安全性和可维护性审查当前项目，在内置浏览器打开拓扑，让我修改确认后再执行。",
+    "从多个角度调研这个主题，交叉复核结论并汇总报告，先让我审核工作流。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/dynamic-workflow/SKILL.md"
+  ],
+  "hooks": []
+}

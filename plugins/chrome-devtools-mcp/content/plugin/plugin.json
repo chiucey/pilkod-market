@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "chrome-devtools-mcp",
+  "displayName": "Chrome DevTools MCP",
+  "version": "1.8.0",
+  "description": "使用 Chrome DevTools 和 Puppeteer 在真实 Chrome 中进行可靠的网页自动化、调试、性能分析与无障碍检查。",
+  "author": "Chrome DevTools Team",
+  "icon": "icon.webp",
+  "category": "Code",
+  "exampleQueries": [
+    "用 Chrome DevTools 检查这个页面的控制台错误和失败的网络请求。",
+    "录制一次页面加载性能 trace，定位 LCP 的主要瓶颈并给出修复建议。",
+    "在真实 Chrome 中走一遍这个交互流程，并检查可访问性问题。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "chrome-devtools-mcp.mcp.json"
+  ],
+  "skills": [
+    "skills/chrome-devtools/SKILL.md",
+    "skills/a11y-debugging/SKILL.md",
+    "skills/debug-optimize-lcp/SKILL.md",
+    "skills/memory-leak-debugging/SKILL.md",
+    "skills/troubleshooting/SKILL.md"
+  ]
+}

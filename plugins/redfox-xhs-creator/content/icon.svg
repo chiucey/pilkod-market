@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="rBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2442"/>
+      <stop offset="100%" stop-color="#E01E3A"/>
+    </linearGradient>
+    <linearGradient id="rPage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFF0F2" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded rect -->
+  <rect x="4" y="4" width="120" height="120" rx="28" ry="28" fill="url(#rBg)"/>
+  <!-- Book/notebook body -->
+  <path d="M34 28 L94 28 L94 98 L34 98 C30 98 28 96 28 92 L28 34 C28 30 30 28 34 28 Z" fill="url(#rPage)"/>
+  <!-- Book spine line -->
+  <line x1="34" y1="28" x2="34" y2="98" stroke="#FF2442" stroke-width="2" opacity="0.3"/>
+  <!-- Content lines on page -->
+  <rect x="40" y="40" width="42" height="3" rx="1.5" fill="#FF2442" opacity="0.35"/>
+  <rect x="40" y="48" width="36" height="3" rx="1.5" fill="#FF2442" opacity="0.25"/>
+  <rect x="40" y="56" width="38" height="3" rx="1.5" fill="#FF2442" opacity="0.2"/>
+  <!-- Pen / quill -->
+  <g transform="translate(78, 58) rotate(-30)">
+    <rect x="0" y="0" width="4" height="36" rx="2" fill="#FF2442"/>
+    <path d="M2 34 L8 46 L-4 46 Z" fill="#FF2442"/>
+  </g>
+  <!-- Creative sparkle -->
+  <path d="M88 28 L90 22 L94 20 L90 18 L88 12 L86 18 L82 20 L86 22 Z" fill="#FFD700" opacity="0.9"/>
+  <circle cx="100" cy="34" r="3" fill="#FFD700" opacity="0.6"/>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "comein",
+  "displayName": "进门投研",
+  "version": "1.0.0",
+  "description": "连接进门投研 App，查询机构观点、研报、公告、路演、行情、财务、基金、宏观和量化数据，并管理自选股、文档、订阅与会议。",
+  "author": "Pilkod",
+  "icon": "comein.webp",
+  "category": "Business",
+  "exampleQueries": [
+    "查询整理最近两周 A 股算力行业行情、机构观点及分歧",
+    "对比内外资机构对美联储最新议息会议的解读，并分析其对科技股走势和估值的潜在影响",
+    "回测低估值、高 ROE 因子在沪深 300 成分股中的历史表现"
+  ],
+  "apps": [
+    "comein.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/comein-investment-research/SKILL.md"
+  ]
+}

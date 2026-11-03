@@ -1,0 +1,15 @@
+{
+  "name": "minimax-photo",
+  "version": "0.2.38",
+  "private": true,
+  "type": "module",
+  "description": "打开图片编辑图层、选区和色彩，或让 AI 生成图片、修改照片、逐笔绘画。",
+  "mcode": {
+    "schemaVersion": 2,
+    "miniApp": "./miniapp/miniapp.json"
+  },
+  "scripts": {
+    "start": "node scripts/preview.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

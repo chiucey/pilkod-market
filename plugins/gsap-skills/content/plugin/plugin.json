@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "name": "gsap-skills",
+  "displayName": "GSAP Skills",
+  "version": "1.0.0",
+  "description": "GSAP 官方动画实践，覆盖核心补间、Timeline、ScrollTrigger、React 与框架集成、插件、工具函数和性能优化。",
+  "author": "GreenSock",
+  "icon": "icon.webp",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "用 GSAP 为这个页面设计一套流畅的入场动画",
+    "实现一个由滚动进度驱动的 ScrollTrigger 交互",
+    "检查这段 React 动画的生命周期和性能问题"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/gsap-core/SKILL.md",
+    "skills/gsap-frameworks/SKILL.md",
+    "skills/gsap-performance/SKILL.md",
+    "skills/gsap-plugins/SKILL.md",
+    "skills/gsap-react/SKILL.md",
+    "skills/gsap-scrolltrigger/SKILL.md",
+    "skills/gsap-timeline/SKILL.md",
+    "skills/gsap-utils/SKILL.md"
+  ]
+}

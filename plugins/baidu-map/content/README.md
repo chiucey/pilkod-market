@@ -1,0 +1,1 @@
+# minimax-agent-plugin

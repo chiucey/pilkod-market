@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "name": "marketing-skills",
+  "displayName": "Marketing Skills",
+  "version": "2.11.0",
+  "description": "精选市场营销工作流，覆盖营销计划、客户研究、竞品画像、文案、定价、发布、SEO 审计和数据分析。",
+  "author": "Corey Haines",
+  "icon": "icon.webp",
+  "category": "Business",
+  "exampleQueries": [
+    "为这个产品制定一份有目标、渠道、预算和指标的营销计划",
+    "研究这些竞品，并基于客户语言重写落地页文案",
+    "审计网站的 SEO 与分析埋点，给出按优先级排序的改进项"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/analytics/SKILL.md",
+    "skills/competitor-profiling/SKILL.md",
+    "skills/copywriting/SKILL.md",
+    "skills/customer-research/SKILL.md",
+    "skills/launch/SKILL.md",
+    "skills/marketing-plan/SKILL.md",
+    "skills/pricing/SKILL.md",
+    "skills/seo-audit/SKILL.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "name": "dsh",
+  "displayName": "DSH 插件",
+  "version": "0.1.7",
+  "description": "在 Pilkod 中安装和启动 DeepSeek Harness Web，并通过内置浏览器进行操作的非官方社区插件。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Code",
+  "exampleQueries": [
+    "启动 DeepSeek Harness 并在内置浏览器中打开",
+    "检查 DeepSeek Harness Web 是否正在运行",
+    "停止本地 DeepSeek Harness Web"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "dsh.mcp.json"
+  ],
+  "skills": [
+    "skills/dsh/SKILL.md"
+  ]
+}

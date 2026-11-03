@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "douyin-search-plugin",
+  "displayName": "抖音爆款作品搜索",
+  "version": "1.0.0",
+  "description": "抖音作品查询工具,根据关键词搜索抖音热门爆款作品,支持按日期范围筛选,结果以结构化表格展示。提供泛化词智能拓展、可点击链接、点赞数降序排序与每日定时订阅推送能力,助力短视频创作者发现热门选题。",
+  "author": "redfox",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "搜索抖音「职场穿搭」近 7 天的爆款作品",
+    "查询抖音全站最近一周的热门作品",
+    "搜「美食,旅行,穿搭」三个关键词的近期爆款"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/douyin-search/SKILL.md"
+  ]
+}

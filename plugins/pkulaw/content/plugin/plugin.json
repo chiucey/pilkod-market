@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "name": "pkulaw",
+  "displayName": "北大法宝",
+  "version": "1.0.6",
+  "description": "语义与关键词双模式检索中国大陆法规和司法案例，并核验法条引用与案号、生成北大法宝原文链接，可追溯、可复核、可直接引用。",
+  "author": "北京北大英华科技有限公司（北大法宝）",
+  "icon": "pkulaw.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Business",
+  "exampleQueries": [
+    "微信聊天记录作为民事诉讼电子证据，法院的认定标准和审查重点是什么？",
+    "员工连续旷工三天，公司能否解除劳动合同？请检索相关法律依据。",
+    "帮我核验这段文字里引用的法条和案号是否真实，并附上北大法宝原文链接：……"
+  ],
+  "apps": [
+    "pkulaw.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/pkulaw/SKILL.md"
+  ]
+}

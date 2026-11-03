@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "codex",
+  "displayName": "Codex 插件",
+  "version": "0.2.8",
+  "description": "在 Pilkod 中使用本机 OpenAI Codex 进行只读审查、对抗式分析和受控代码任务委派。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Code",
+  "exampleQueries": [
+    "让 Codex 只读审查当前工作区的改动，不要修改任何文件。",
+    "让 Codex 对当前设计做一次对抗式审查，重点检查并发、回滚和数据丢失风险。",
+    "让 Codex 修复这个问题，可以修改文件，但不要执行 git commit。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "codex.mcp.json"
+  ],
+  "skills": [
+    "skills/codex-workflow/SKILL.md",
+    "skills/codex-cli-runtime/SKILL.md",
+    "skills/codex-result-handling/SKILL.md",
+    "skills/codex-prompt-engineering/SKILL.md"
+  ]
+}

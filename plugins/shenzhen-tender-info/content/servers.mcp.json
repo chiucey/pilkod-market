@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "tender-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./server.mjs"
+      ],
+      "env": {},
+      "description": "深圳公共资源交易网项目进度查询与评标资料下载：project_progress 查流程阶段，get_notice 取公告详情与附件清单，download_docs 下载开标报告/评标报告/中标结果公告。",
+      "timeout": 120000
+    }
+  }
+}

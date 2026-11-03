@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "notion",
+  "displayName": "Notion",
+  "version": "1.0.6",
+  "description": "连接 Notion 工作区，沉淀知识、准备会议、跨文档调研，并将产品需求转化为可执行的实施计划。",
+  "author": "Pilkod",
+  "icon": "notion.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Office",
+  "exampleQueries": [
+    "将这些会议记录整理成结构化的 Notion 决策文档",
+    "根据 Notion 中的相关资料，为这次会议准备议程和会前阅读材料",
+    "在我的 Notion 工作区中调研这个主题，并生成带引用的总结"
+  ],
+  "apps": [
+    "notion.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/notion-knowledge-capture/SKILL.md",
+    "skills/notion-meeting-intelligence/SKILL.md",
+    "skills/notion-research-documentation/SKILL.md",
+    "skills/notion-spec-to-implementation/SKILL.md"
+  ]
+}

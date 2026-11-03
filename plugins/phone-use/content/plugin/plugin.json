@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "phone-use",
+  "displayName": "Phone Use",
+  "version": "0.5.2",
+  "description": "让 Agent 操作真实手机做移动端 App 自动化与开发验证：iPhone 通过 USB + 自签 WebDriverAgent，Android 通过 adb + Mobilerun Portal 无障碍服务；点击、输入、滑动并核对结果，右侧 Mini App 实时显示手机画面。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "打开 Phone Use，显示我的手机画面",
+    "连接我的安卓手机，打开设置看看电池用量",
+    "用我的 Apple 开发者团队配置 iPhone，再打开我正在开发的 App 走一遍登录流程"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "phone-use.mcp.json"
+  ],
+  "skills": [
+    "skills/iphone-use/SKILL.md",
+    "skills/iphone-use-setup/SKILL.md",
+    "skills/android-use/SKILL.md",
+    "skills/android-use-setup/SKILL.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "frontend-design",
+  "displayName": "前端设计",
+  "version": "1.0.0",
+  "description": "为新建或重构前端界面提供有辨识度的视觉方向、排版、布局和交互设计指导，减少模板化的 AI 风格。",
+  "author": "Anthropic",
+  "icon": "icon.webp",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "为这个产品首页设计一套有辨识度的视觉方向，并实现响应式界面。",
+    "重构当前页面的排版、配色和信息层级，避免常见的模板化设计。",
+    "先给出两种不同的界面方向，再选择更适合业务目标的一种落地。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/frontend-design/SKILL.md"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "codex-local": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./codex-mcp-proxy.mjs"
+      ],
+      "env": {},
+      "description": "本机 OpenAI Codex MCP Server（通过本插件代理，使用 ~/.codex/config.toml 的模型和 provider 配置）。",
+      "timeout": 900000
+    }
+  }
+}

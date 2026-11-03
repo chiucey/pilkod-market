@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "blender-h3-dcc",
+  "displayName": "Blender 白模渲染",
+  "version": "1.0.22",
+  "description": "安装 Blender 白模视频插件，利用 H3 视频生成模型将 Blender 白模渲染成片，保持原镜头、动作、构图和场景对象。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "帮我安装 Blender 里的 Pilkod 白模视频生成插件",
+    "把这段 Blender 白模渲染成电影级成片，保持原有一镜到底、运镜和动作节奏",
+    "参考这张图片的画风和材质渲染白模，但不要继承参考图的姿势、构图或额外物品"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/blender-h3-dcc/SKILL.md"
+  ]
+}

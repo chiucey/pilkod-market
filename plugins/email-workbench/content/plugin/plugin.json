@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "email-workbench",
+  "displayName": "邮箱工作台",
+  "version": "1.2.8",
+  "description": "邮箱连接跟随账号同步，在本机阅读邮件、编辑草稿与管理附件；发送前在工作台确认。",
+  "author": "User",
+  "icon": "icon.png",
+  "category": "Office",
+  "exampleQueries": [
+    "打开邮箱工作台并连接我的邮箱",
+    "用当前邮箱起草一封邮件"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/email-assistant/SKILL.md",
+    "skills/email-account-setup/SKILL.md"
+  ]
+}

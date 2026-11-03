@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schemas/host-binding-v1.schema.json",
+  "schemaVersion": 1,
+  "bindingId": "browser-control",
+  "logicalToolName": "browser.control",
+  "hostCapability": {
+    "id": "browser.use",
+    "version": 1
+  },
+  "requiredSkills": [
+    "control-in-app-browser"
+  ],
+  "allowedSurfaces": [
+    "interactive"
+  ]
+}

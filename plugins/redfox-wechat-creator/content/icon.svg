@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="wBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07C160"/>
+      <stop offset="100%" stop-color="#05A34F"/>
+    </linearGradient>
+    <linearGradient id="wBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F0FFF5" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded rect -->
+  <rect x="4" y="4" width="120" height="120" rx="28" ry="28" fill="url(#wBg)"/>
+  <!-- Chat bubble body -->
+  <path d="M36 48 C36 42 40 38 46 38 L82 38 C88 38 92 42 92 48 L92 70 C92 76 88 80 82 80 L60 80 L46 92 L48 80 L46 80 C40 80 36 76 36 70 Z" fill="url(#wBubble)"/>
+  <!-- Text lines inside bubble -->
+  <rect x="48" y="50" width="32" height="3" rx="1.5" fill="#07C160" opacity="0.35"/>
+  <rect x="48" y="57" width="26" height="3" rx="1.5" fill="#07C160" opacity="0.25"/>
+  <rect x="48" y="64" width="28" height="3" rx="1.5" fill="#07C160" opacity="0.2"/>
+  <!-- Sparkle creative star -->
+  <path d="M86 32 L88 26 L92 24 L88 22 L86 16 L84 22 L80 24 L84 26 Z" fill="#FFD700" opacity="0.9"/>
+  <circle cx="98" cy="38" r="3" fill="#FFD700" opacity="0.6"/>
+</svg>

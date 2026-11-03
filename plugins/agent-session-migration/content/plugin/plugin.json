@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "agent-session-migration",
+  "displayName": "Agent 会话迁移",
+  "version": "0.6.0",
+  "description": "将其他 Agent 的本机会话迁入 MiniMax Code，保留对话历史并接续任务。当前支持 ZCode、Codex、Claude Code、OpenCode、Pi Agent 和 OMP，提供预览、备份、幂等导入和读取验证。",
+  "author": "Insider",
+  "icon": "icon.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "将我的全部 ZCode 会话迁入 MiniMax Code",
+    "将我的全部 Codex 会话迁入 MiniMax Code",
+    "将我的全部 OpenCode 会话迁入 MiniMax Code"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/migrate-agent-session/SKILL.md"
+  ],
+  "hooks": []
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "name": "text-to-cad",
+  "displayName": "text-to-cad",
+  "version": "0.4.28",
+  "description": "用自然语言生成和检查 CAD、DXF、URDF、SRDF、SDF 与 G-code，并完成本地预览、制造预检和谨慎的 Bambu Lab 打印交付。部分能力需要本机 Python/CAD 工具、切片器或局域网打印机，零件搜索会访问 step.parts。",
+  "author": "earthtojake",
+  "icon": "icon.png",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "根据这张参考图创建一个可参数化的 STEP 零件，并在 CAD Viewer 中检查",
+    "为这个机器人编写并验证 URDF 和 SRDF，检查关节、惯量与碰撞配置",
+    "检查这个网格的可打印性，选择切片配置并生成经过静态验证的 G-code"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/cad/SKILL.md",
+    "skills/cad-viewer/SKILL.md",
+    "skills/step-parts/SKILL.md",
+    "skills/dxf/SKILL.md",
+    "skills/urdf/SKILL.md",
+    "skills/srdf/SKILL.md",
+    "skills/sdf/SKILL.md",
+    "skills/sendcutsend/SKILL.md",
+    "skills/dfam-check/SKILL.md",
+    "skills/gcode/SKILL.md",
+    "skills/bambu-labs/SKILL.md",
+    "skills/implicit-cad/SKILL.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "email-workbench": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:9/mcp/email",
+      "headers": {},
+      "description": "Local mailbox accounts, drafts, attachments and delivery status. Credentials and final sending approval stay in the MiniApp.",
+      "timeout": 40000
+    }
+  }
+}

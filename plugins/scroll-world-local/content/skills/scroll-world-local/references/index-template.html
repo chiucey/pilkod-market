@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="icon" href="data:," />
+  <title>BRAND — the world of SUBJECT</title>
+  <meta name="description" content="Scroll to fly through the world of BRAND." />
+  <style>
+    /* Theme the engine here. These match your generated scenes' background + palette. */
+    :root, .sw-root {
+      --sw-bg: #F5EDE0;          /* == the scene background colour */
+      --sw-ink: #241d2b;
+      --sw-ink-soft: #6a6072;
+      --sw-accent: #9B7EBD;      /* per-section accents override this at runtime */
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world"></div>
+
+  <script src="scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'BRAND', href: '#top' },
+      cta: { label: 'Order now', href: '#finale' },
+      hint: 'scroll to fly in',
+      diveScroll: 1.4,
+      connScroll: 0.9,
+      // Existing-video mode: point several sections at one `source`, then assign
+      // videoStart/videoEnd windows. Generated mode: omit `source` and give each
+      // section its own `clip`. `still` is the poster for this chapter.
+      sections: [
+        {
+          id: 'sceneA', label: 'Scene A',
+          source: 'assets/vid/master.mp4',
+          videoStart: 0,
+          videoEnd: 6,
+          still: 'assets/img/still_sceneA.jpg',
+          accent: '#8FB98A',
+          // scroll: 1.6,
+          // holdStart: 0.42, holdEnd: 0.58, holdAt: 0.5,
+          // overlayEnter: 0, overlayExit: 0.62,
+          eyebrow: 'Value prop label',
+          title: 'The hero line.',
+          body: 'One plain-spoken sentence about this stage.',
+          tags: ['Proof', 'Proof', 'Proof'],
+        },
+        // …middle scenes…
+        {
+          id: 'finale', label: 'The Product',
+          source: 'assets/vid/master.mp4',
+          videoStart: 6,
+          videoEnd: 12,
+          still: 'assets/img/still_finale.jpg',
+          accent: '#9B7EBD',
+          overlayEnter: 0.35,
+          overlayExit: 1,
+          eyebrow: 'And it all pours into',
+          title: 'One perfect thing.',
+          body: 'The payoff sentence.',
+          tags: [],
+          cta: { primary: { label: 'Get started', href: '#' },
+                 secondary: { label: 'See more', href: '#top' } },
+        },
+      ],
+      // Use null connectors for one complete source video or a pure frame-lock chain.
+      // Array length = sections.length - 1.
+      connectors: [null /* , … one null per gap */],
+    });
+  </script>
+</body>
+</html>

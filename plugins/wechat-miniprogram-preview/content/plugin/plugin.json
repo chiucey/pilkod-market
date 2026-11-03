@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "wechat-miniprogram-preview",
+  "displayName": "微信小程序开发者",
+  "version": "0.5.0-rc.4",
+  "description": "用于微信小程序与小游戏的本地开发预览，支持页面交互、自动更新、运行日志和错误排查。",
+  "author": "开发者insider",
+  "icon": "icon-wechat-devtools-6dae8e16.png",
+  "category": "Code",
+  "exampleQueries": [
+    "一句话生成像素风飞机大战微信小游戏，并预览试玩",
+    "一句话生成贪吃蛇微信小游戏，并预览试玩",
+    "一句话生成待办清单微信小程序，并预览交互"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/wechat-project-preview/SKILL.md"
+  ]
+}

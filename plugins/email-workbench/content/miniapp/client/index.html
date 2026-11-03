@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="email-workbench-version" content="1.2.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>邮箱工作台</title>
+    <link rel="stylesheet" href="/email/theme.css" />
+    <link rel="stylesheet" href="/email/style.css" />
+    <script type="module" src="/email/app.js"></script>
+  </head>
+  <body data-screen="list">
+    <div class="workspace">
+      <aside class="sidebar" aria-label="邮箱导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <h1>邮箱工作台</h1>
+        </div>
+        <button id="compose" class="primary" type="button">写邮件</button>
+        <nav aria-label="邮件视图">
+          <button id="inbox-tab" type="button" aria-pressed="true">收件箱</button>
+          <button id="work-tab" type="button" aria-pressed="false">待处理</button>
+          <button id="drafts-tab" type="button" aria-pressed="false">草稿</button>
+          <button id="sent-tab" type="button" aria-pressed="false">发送记录</button>
+        </nav>
+        <p class="sidebar-label">工作区</p>
+        <nav aria-label="工作任务">
+          <button id="batches-tab" type="button" aria-pressed="false">批量任务</button>
+        </nav>
+        <p class="sidebar-label" id="account-list-label" hidden>切换邮箱</p>
+        <div id="account-links" aria-labelledby="account-list-label"></div>
+        <div class="sidebar-footer">
+          <details class="language-picker action-menu"><summary id="language-trigger" aria-label="界面语言">界面语言</summary><div class="action-menu-panel"><label class="language-control" for="language"><span>界面语言</span><select id="language"><option value="auto">跟随浏览器</option><option value="zh">简体中文</option><option value="en">English</option></select></label></div></details>
+          <button id="storage" type="button" hidden>本地空间</button>
+          <button id="preferences" type="button" hidden>账号偏好</button>
+          <button id="settings" type="button" aria-pressed="false">邮箱设置</button>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="app-header">
+          <div class="account-label" hidden>
+            <select id="account" aria-label="当前邮箱" hidden></select>
+            <details id="account-picker" class="account-picker action-menu">
+              <summary id="account-trigger" aria-label="切换邮箱"></summary>
+              <div id="account-menu" class="account-menu action-menu-panel"></div>
+            </details>
+          </div>
+          <div id="account-summary" class="account-summary" hidden>
+            <span class="account-caption">当前邮箱</span>
+            <p id="account-address" class="account-address"></p>
+          </div>
+          <div class="refresh-controls">
+            <span id="refresh-status" role="status" aria-live="polite"></span>
+            <button id="refresh" type="button" aria-label="刷新"><span id="refresh-label">刷新</span></button>
+          </div>
+        </header>
+        <div id="activity" class="activity" role="status" aria-live="polite" hidden>
+          <span class="loading-spinner" aria-hidden="true"></span>
+          <span id="activity-label">正在连接邮箱服务…</span>
+        </div>
+        <div class="mail-workspace">
+          <section class="mail-list" aria-labelledby="list-title">
+            <div class="list-header"><h2 id="list-title" tabindex="-1">收件箱</h2></div>
+          <form id="search" role="search" aria-label="搜索邮件">
+            <label class="search-title" for="subject-search">搜索邮件</label>
+            <input
+              id="subject-search"
+              aria-label="搜索主题或正文"
+              maxlength="998"
+              placeholder="搜索此文件夹…"
+              title="在当前邮箱、当前文件夹中搜索主题或正文"
+            />
+            <button type="submit" aria-label="搜索" title="搜索">搜索</button>
+            <details class="search-advanced">
+              <summary>筛选</summary>
+              <div class="search-fields">
+                <label
+                  >发件人<input id="from-search" maxlength="998" placeholder="姓名或邮箱地址"
+                /></label>
+                <label>收件人<input id="to-search" maxlength="998" placeholder="邮箱地址" /></label>
+                <label
+                  >仅主题包含<input
+                    id="text-search"
+                    maxlength="998"
+                    placeholder="进一步限定邮件主题"
+                /></label>
+                <label>开始日期<input id="since-search" type="date" /></label>
+                <label>截止日期（含当天）<input id="until-search" type="date" /></label>
+                <label class="check"><input id="flagged-search" type="checkbox" />仅星标邮件</label>
+                <label class="check"><input id="attachments-search" type="checkbox" />含附件或正文图片</label>
+                <button type="submit" class="primary">应用筛选</button
+                ><button type="button" id="reset-search">清除筛选</button>
+              </div>
+            </details>
+
+          </form>
+            <div class="filter-row" id="mail-filters">
+              <div class="mail-segments" role="group" aria-label="邮件筛选">
+                <button type="button" data-mail-filter="all" aria-pressed="true">全部</button>
+                <button type="button" data-mail-filter="unread" aria-pressed="false">未读</button>
+                <button type="button" data-mail-filter="starred" aria-pressed="false">星标</button>
+              </div>
+              <label class="sr-only"><input id="unread" type="checkbox" tabindex="-1" />仅未读</label>
+              <label class="folder-control"><span class="sr-only">邮箱文件夹</span><select id="folder" aria-label="邮箱文件夹"><option value="INBOX">收件箱</option></select></label>
+              <details id="list-options" class="list-options"><summary aria-label="列表选项" title="列表选项">···</summary><div class="list-options-panel"></div></details>
+            </div>
+            <label id="work-filter-label" hidden
+              >工作状态<select id="work-filter">
+                <option value="pending">待处理</option>
+                <option value="done">已检查</option>
+              </select></label
+            >
+            <p id="scope" class="muted"></p>
+            <div id="selection-bar" class="selection-bar" hidden>
+              <span id="selection-count"></span
+              ><button id="review-selected" type="button">预览发送清单</button
+              ><button id="clear-selection" type="button">清除</button>
+            </div>
+            <div id="items" aria-live="polite"></div>
+            <button id="more" type="button" hidden>继续查询更早邮件</button>
+          </section>
+          <section class="reader" aria-label="阅读与写信">
+            <div class="reader-toolbar">
+              <button id="back-to-list" type="button">返回邮件列表</button>
+            </div>
+            <div id="detail" class="detail" aria-label="邮件详情">
+              <div class="empty detail-empty">
+                <h2>选择一封邮件</h2>
+                <p>阅读、检查和回复，都在这里。</p>
+                <p class="privacy-note">打开正文后自动标为已读。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="status-bar">
+          <p id="notice" role="status" aria-live="polite">正在连接邮箱服务…</p>
+        </footer>
+      </main>
+    </div>
+    <dialog id="compose-dialog" aria-labelledby="compose-title">
+      <div class="compose-window-header">
+        <h2 id="compose-title">写邮件</h2>
+        <button id="close-compose" type="button">关闭写信</button>
+      </div>
+      <div id="compose-detail"></div>
+      <p id="compose-notice" role="status" aria-live="polite"></p>
+    </dialog>
+    <dialog id="discard-dialog" aria-labelledby="discard-title" aria-describedby="discard-description">
+      <form method="dialog">
+        <h2 id="discard-title">保存这封邮件？</h2>
+        <p id="discard-description">还有未保存的修改。保存后可在草稿中继续编辑。</p>
+        <div class="unsaved-summary"><span id="discard-subject"></span><span id="discard-recipient" class="muted"></span></div>
+        <div class="actions">
+          <button value="discard" class="quiet">不保存</button>
+          <button value="stay" autofocus>继续编辑</button>
+          <button value="save" id="discard-save" class="primary">保存并关闭</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

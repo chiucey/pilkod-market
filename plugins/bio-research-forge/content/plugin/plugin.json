@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "name": "bio-research-forge",
+  "version": "0.1.0",
+  "description": "Vendor-neutral life-science Agent Plugin: public bio APIs, local RNA figures, safe molecular tools, and independent review.",
+  "author": "Presisitence",
+  "icon": "icon.png",
+  "category": "Science & Healthcare",
+  "exampleQueries": [
+    "用公共 API 查拟南芥 FLC 的 UniProt / NCBI 记录，再用我本地的 deg.csv（列 gene, log2FoldChange, padj）画火山图，padj < 0.05 且 |log2FC| > 1，并在对话里预览 PNG。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/bio-research-orchestrator/SKILL.md",
+    "skills/evidence-review/SKILL.md",
+    "skills/experimental-design-gate/SKILL.md",
+    "skills/local-bio-toolkit/SKILL.md",
+    "skills/manuscript-argument/SKILL.md",
+    "skills/omics-workflow/SKILL.md",
+    "skills/public-bio-databases/SKILL.md",
+    "skills/quantitative-research/SKILL.md",
+    "skills/reproducible-analysis/SKILL.md",
+    "skills/rna-figure-workflow/SKILL.md",
+    "skills/scientific-figure-delivery/SKILL.md",
+    "skills/secure-compute-routing/SKILL.md"
+  ]
+}

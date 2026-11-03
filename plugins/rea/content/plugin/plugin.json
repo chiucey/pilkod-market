@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "name": "rea",
+  "displayName": "REA 逆向分析",
+  "version": "1.0.0",
+  "description": "看到喜欢的功能，弄懂它如何实现。从 Android APK、iOS IPA 到桌面应用，REA 帮 Agent 分析应用结构、资源与可分析的代码，追踪功能实现、比较版本，并基于证据帮你在自己的项目里实现类似功能。",
+  "author": "Inside",
+  "icon": "icon.png",
+  "darkIcon": "icon-dark.png",
+  "category": "Code",
+  "exampleQueries": [
+    "我有这个 Android 应用的 APK，帮我追踪搜索功能的相关类和方法，看看它是怎么做的",
+    "帮我拆解这个 iOS IPA，看看它有哪些扩展、框架和资源，再找出值得深入分析的功能入口",
+    "这个 Electron 应用的剪贴板体验很好，帮我弄懂它怎么实现，再给我的项目做一个类似的"
+  ],
+  "apps": [],
+  "mcpServers": ["rea.mcp.json"],
+  "skills": ["skills/reverse-engineer-anything/SKILL.md"]
+}

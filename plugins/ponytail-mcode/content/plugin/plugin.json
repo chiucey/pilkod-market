@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "ponytail-mcode",
+  "displayName": "Ponytail 极简工程师",
+  "version": "1.2.0",
+  "description": "极简资深工程师模式：用必要性阶梯选出最小可行实现，并附带改动评审、全仓审计、技术债台账与收益计分板。会话开始时通过生命周期 Hook 注入规则集，支持 lite/full/ultra 档位切换与默认档位持久化（需要本机有 node）。",
+  "author": "a1121611810",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "用 ponytail-review 审一下当前改动",
+    "审计一下这个仓库，看看哪些代码能删",
+    "我推迟了哪些 shortcut？列个台账"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "hooks": [
+    "hooks/hooks.json"
+  ],
+  "skills": [
+    "skills/ponytail/SKILL.md",
+    "skills/ponytail-review/SKILL.md",
+    "skills/ponytail-audit/SKILL.md",
+    "skills/ponytail-debt/SKILL.md",
+    "skills/ponytail-gain/SKILL.md",
+    "skills/ponytail-help/SKILL.md"
+  ]
+}

@@ -1,0 +1,53 @@
+Ponytail for MiniMax Code
+==========================
+
+本插件是上游项目 Ponytail 的 MiniMax Code 移植版。
+
+上游项目
+--------
+项目:  Ponytail
+仓库:  https://github.com/DietrichGebert/ponytail
+作者:  Dietrich Gebert
+协议:  MIT License（Copyright (c) 2026 Dietrich Gebert）
+标语:  "He says nothing. He writes one line. It works."
+
+本目录下的 LICENSE 文件即上游的 MIT 协议原文，与上游仓库逐字节一致（MIT 要求原样保留版权声明）。
+
+本移植版（MiniMax Code 插件版）由 a1121611810 制作，2026 年。
+
+移植说明
+--------
+本移植版忠实保留了上游的规则集与判定标准，包括：
+
+  * 必要性阶梯（YAGNI → 复用现有代码 → 标准库 → 平台原生 → 已装依赖 → 一行 → 最小可运行实现）
+  * "对方案偷懒，对改动本身不偷懒"的工作准则
+  * 永远不砍的红线：信任边界校验、防数据丢失的错误处理、安全、可访问性、用户明确要求
+  * shortcut / ponytail 注释标记约定
+  * 评审与审计的四段式发现格式（是什么 / 问题 / 怎么修 / 不修会怎样）
+  * 三段式分组与统一编号：必修 / 建议修 / 可选优化
+  * 技术债台账（debt）与实测收益计分板（gain）
+
+为适配 MiniMax Code 插件规范所做的改动：
+
+  * 能力形态改为 Skill + 生命周期 Hook。移植了上游的 3 事件 Hook（SessionStart /
+    UserPromptSubmit / SubagentStart），每轮注入规则集，支持 lite/full/ultra 档位切换
+    与默认档位持久化；MiniMax Code 的运行时已支持 Plugin 级生命周期 Hook，命令经
+    ${PLUGIN_ROOT} 调用包内 node 脚本，状态写在 ${PLUGIN_DATA}。
+    同时保留 Skill 的 description 语义匹配作为兜底。
+  * 移除了仅适用于 Claude Code 的状态栏 Band 功能（依赖 Hook 与宿主页面能力）。
+  * 移除了各宿主的安装/更新说明，改为 MiniMax Code 的安装与调用方式。
+  * 保留了上游 AGENTS.md 的正文原样副本（仅替换标题并加了移植说明），供希望硬性常驻的用户复制到项目根目录使用。
+  * 正文改为中文，面向 MiniMax Code 的使用场景；代码标记（shortcut:、ponytail:）、
+    命令与路径保持英文原样。
+  * gain 计分板明确标注：数据来自上游在 Claude Code 上的基准测试，
+    并非 MiniMax Code 上的实测结果，也非当前仓库的数字。
+
+图标
+----
+icon.png 由上游 assets/logo-dark.png 生成：裁剪到实际图形后等比缩放至 512×512 白色底，
+用于插件市场方形图标要求。原始作品版权归 Dietrich Gebert 所有。
+
+上游基准测试
+------------
+gain 计分板引用的数据来自上游仓库的 benchmarks/results/2026-10-07-agentic.md，
+测试环境为 headless Claude Code（Opus 5.5），39 个任务 × 5 次运行。

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "excel",
+  "displayName": "Excel",
+  "version": "1.0.4",
+  "description": "读取、编辑、创建和转换 Excel 及常见表格文件，支持公式、格式、图表、数据清洗、重算验证与大文件处理。",
+  "author": "Pilkod",
+  "icon": "excel.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Office",
+  "exampleQueries": [
+    "帮我读取这个 Excel，清理重复和空行并保留完整原始数据",
+    "基于这份 XLSX 创建带公式、格式和图表的汇总工作簿",
+    "修改这个 Excel 模板，保留现有样式，并让汇总随输入自动更新"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/xlsx/SKILL.md"
+  ]
+}

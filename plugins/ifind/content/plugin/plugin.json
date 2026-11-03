@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "ifind",
+  "displayName": "同花顺iFinD金融数据查询",
+  "version": "1.0.3",
+  "description": "连接同花顺 iFinD 金融数据服务，查询股票行情、公司资料、财务指标与市场表现。",
+  "author": "Pilkod",
+  "icon": "ifind.png",
+  "darkIcon": "icon-dark.png",
+  "category": "Business",
+  "exampleQueries": [
+    "查询贵州茅台的最新行情和基本面信息",
+    "对比宁德时代与比亚迪的主要财务指标",
+    "汇总今天沪深市场的涨跌和资金表现"
+  ],
+  "apps": [
+    "thsifind.app.json"
+  ],
+  "mcpServers": [],
+  "skills": []
+}

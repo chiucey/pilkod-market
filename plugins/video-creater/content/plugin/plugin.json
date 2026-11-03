@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "video-creater",
+  "displayName": "视频生成",
+  "version": "1.5.1",
+  "description": "使用 H3、H3 Max 或 H2.3 通过 mcode-tools Connector 创建视频，支持文生视频、关键帧和完整多模态参考素材。H3 Max 极速生成，约 20 秒出片。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "category": "Studio",
+  "exampleQueries": [
+    "生成一条 6 秒的产品宣传视频",
+    "用 H3 Max 极速生成一条 5 秒短视频",
+    "用 H3 和完整参考视频生成一条 5 秒 2K 短片"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/write-h3-prompts/SKILL.md"
+  ]
+}

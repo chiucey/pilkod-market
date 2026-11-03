@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "zsxq",
+  "displayName": "知识星球",
+  "version": "2.1.0",
+  "description": "通过 zsxq-cli 管理知识星球的星球、主题、评论、成员、笔记与运营场景。",
+  "author": "知识星球团队",
+  "icon": "icon.webp",
+  "category": "Productivity",
+  "exampleQueries": [
+    "看看我加入了哪些知识星球",
+    "搜索这个星球里最近关于 AI 的帖子",
+    "整理今天需要处理的提问和评论"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/zsxq/SKILL.md"
+  ]
+}

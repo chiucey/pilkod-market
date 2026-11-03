@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "name": "kaggle-agent",
+  "displayName": "Kaggle Agent",
+  "version": "1.31.1",
+  "description": "Kaggle is a browser tab and a command line, and neither one remembers what you tried last week. This plugin turns the parts of Kaggle that repeat into things you can simply ask for: signing in and switching between the accounts you own, working out what a competition is actually asking and what has already been ruled out, running a notebook while knowing how much time and accelerator you have left, and writing the whole thing down so the next person or the next session starts where you stopped. It records what was measured, what was refuted, and what the next experiment is, so a long investigation survives being put down and picked up again.",
+  "author": "Akira",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "Sign in to Kaggle with my access token",
+    "Research the ARC Prize 2026 competition",
+    "How much GPU quota do I have left?"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/ablation-design/SKILL.md",
+    "skills/account-rename-visualizer/SKILL.md",
+    "skills/approach-decision/SKILL.md",
+    "skills/evidence-sources/SKILL.md",
+    "skills/experiment-launch/SKILL.md",
+    "skills/genui-scenarios/SKILL.md",
+    "skills/github-auth/SKILL.md",
+    "skills/handoff/SKILL.md",
+    "skills/kaggle-account-switch/SKILL.md",
+    "skills/kaggle-cli/SKILL.md",
+    "skills/kaggle-competition-research/SKILL.md",
+    "skills/log-monitor-visualizer/SKILL.md",
+    "skills/log-monitor/SKILL.md",
+    "skills/presence-mode/SKILL.md",
+    "skills/rsi-experiment-tree/SKILL.md",
+    "skills/ruler-audit/SKILL.md",
+    "skills/scientific-plotting/SKILL.md",
+    "skills/technical-report/SKILL.md"
+  ]
+}

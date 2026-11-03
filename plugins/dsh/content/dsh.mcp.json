@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "dsh": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./server.mjs"
+      ],
+      "env": {},
+      "description": "安装、启动、检查和停止本地 DeepSeek Harness Web。",
+      "timeout": 300000
+    }
+  }
+}

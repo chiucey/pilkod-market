@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "minimax-h3-skills",
+  "displayName": "Skills for MiniMax-H3",
+  "version": "1.0.3",
+  "description": "面向 MiniMax H3 的视频创作 Skill 集合，包含 H3 提示词编写、产品广告、3D 动画、纸艺与拼贴讲解、品牌宣传、音乐 MV、双人游戏开场和手绘实拍融合等 9 个工作流。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "category": "Studio",
+  "exampleQueries": [
+    "帮我把这个多模态视频需求改写成适用于 MiniMax H3 的结构化提示词",
+    "根据产品图片和卖点制作一条极简产品广告短片的完整方案",
+    "把这个故事创意规划成包含角色卡、分镜和镜头生成的 3D 动画短片"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/h3-prompt-writing/SKILL.md",
+    "skills/minimalist-product-ad-generator/SKILL.md",
+    "skills/3d-animation-short-generator/SKILL.md",
+    "skills/papercraft-stop-motion-explainer/SKILL.md",
+    "skills/brand-promo-video-generator/SKILL.md",
+    "skills/music-video-subtitle-generator/SKILL.md",
+    "skills/co-op-game-intro-generator/SKILL.md",
+    "skills/paper-collage-explainer-generator/SKILL.md",
+    "skills/handdrawn-live-video-generator/SKILL.md"
+  ]
+}

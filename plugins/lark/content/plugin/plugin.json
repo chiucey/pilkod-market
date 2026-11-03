@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "name": "lark",
+  "displayName": "飞书",
+  "version": "0.1.4",
+  "description": "通过飞书官方 lark-cli 管理消息、文档、日历、多维表格、邮件与会议；缺少 CLI 时提供安装指引。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Office",
+  "exampleQueries": [
+    "查看我今天的飞书日程和未完成任务",
+    "阅读这份飞书文档并总结重点",
+    "把这周的会议纪要整理成一份周报"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/lark-approval/SKILL.md",
+    "skills/lark-apps/SKILL.md",
+    "skills/lark-attendance/SKILL.md",
+    "skills/lark-base/SKILL.md",
+    "skills/lark-calendar/SKILL.md",
+    "skills/lark-contact/SKILL.md",
+    "skills/lark-doc/SKILL.md",
+    "skills/lark-drive/SKILL.md",
+    "skills/lark-event/SKILL.md",
+    "skills/lark-im/SKILL.md",
+    "skills/lark-mail/SKILL.md",
+    "skills/lark-markdown/SKILL.md",
+    "skills/lark-meeting/SKILL.md",
+    "skills/lark-minutes/SKILL.md",
+    "skills/lark-note/SKILL.md",
+    "skills/lark-okr/SKILL.md",
+    "skills/lark-openapi-explorer/SKILL.md",
+    "skills/lark-shared/SKILL.md",
+    "skills/lark-sheets/SKILL.md",
+    "skills/lark-skill-maker/SKILL.md",
+    "skills/lark-slides/SKILL.md",
+    "skills/lark-task/SKILL.md",
+    "skills/lark-vc/SKILL.md",
+    "skills/lark-vc-agent/SKILL.md",
+    "skills/lark-whiteboard/SKILL.md",
+    "skills/lark-wiki/SKILL.md",
+    "skills/lark-workflow-meeting-summary/SKILL.md",
+    "skills/lark-workflow-standup-report/SKILL.md"
+  ],
+  "hooks": [
+    "hooks/hooks.json"
+  ]
+}

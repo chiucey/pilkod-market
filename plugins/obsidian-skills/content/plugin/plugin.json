@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "name": "obsidian-skills",
+  "displayName": "Obsidian Skills",
+  "version": "1.1.0",
+  "description": "创建和编辑 Obsidian Markdown、Bases 与 JSON Canvas 文件，通过 Obsidian CLI 操作本地知识库，并用 Defuddle、Knap 将网页和结构化数据整理成笔记。obsidian-cli 需要本机运行 Obsidian 1.12+；defuddle、knap 需要 Node.js 20+。",
+  "author": "Steph Ango",
+  "icon": "icon.webp",
+  "category": "Office",
+  "exampleQueries": [
+    "把这些笔记整理成带属性、双链和 callout 的 Obsidian Markdown",
+    "为这个知识库创建一个 Obsidian Base 视图",
+    "把这些概念和关系画成 JSON Canvas"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/defuddle/SKILL.md",
+    "skills/json-canvas/SKILL.md",
+    "skills/knap/SKILL.md",
+    "skills/obsidian-bases/SKILL.md",
+    "skills/obsidian-cli/SKILL.md",
+    "skills/obsidian-markdown/SKILL.md"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "superdesign",
+  "displayName": "Superdesign",
+  "version": "0.4.6",
+  "description": "通过 Superdesign 画布分析现有界面、建立设计系统，并生成和迭代 UI、海报与营销图稿。使用时需要登录 Superdesign，所选设计上下文会发送至其第三方服务。",
+  "author": "Superdesign dev, Inc.",
+  "icon": "superdesign-icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "分析当前项目的界面并建立一套可复用的设计系统",
+    "为这个设置页面探索三种不同的视觉设计方向",
+    "基于现有品牌风格设计一张产品发布海报"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/superdesign/SKILL.md"
+  ]
+}

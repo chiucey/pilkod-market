@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "figma",
+  "displayName": "Figma",
+  "version": "0.1.1",
+  "description": "读取 Figma 设计稿、导出图片素材，并在当前项目中实现界面。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "根据这个 Figma 页面，在当前项目中实现界面",
+    "提取这个 Figma 画面的布局、颜色和字体",
+    "导出这组 Figma 图标并保存到项目素材目录"
+  ],
+  "apps": [
+    "figma.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/figma-to-code/SKILL.md"
+  ]
+}

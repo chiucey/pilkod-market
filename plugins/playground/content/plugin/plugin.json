@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "playground",
+  "displayName": "交互式 Playground",
+  "version": "1.0.0",
+  "description": "生成自包含的单文件 HTML 交互工具，通过控件、实时预览和可复制提示词探索设计、数据、文档与代码结构。",
+  "author": "Anthropic",
+  "icon": "icon.webp",
+  "category": "Code",
+  "exampleQueries": [
+    "为这套设计参数做一个带实时预览和预设方案的交互式 playground。",
+    "把这份代码库架构整理成一个可以展开节点和复制提示词的 HTML explorer。",
+    "做一个 SQL 查询构建器，让我通过控件调整条件并实时查看结果。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/playground/SKILL.md"
+  ]
+}

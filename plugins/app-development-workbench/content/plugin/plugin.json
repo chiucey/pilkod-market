@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "name": "app-development-workbench",
+  "version": "0.1.0",
+  "displayName": "App 开发工作台",
+  "description": "从原型探索、交互深化和设计交接，到 SwiftUI 开发、模拟器调试、性能与内存调查、后端构建和跨端验收的 App 开发工作台。读取项目规则，保持组件复用，按实际运行证据交付。iOS 构建需要 macOS 与 Xcode。",
+  "author": "AppCraft Lab",
+  "icon": "assets/icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "读取项目规则，帮我探索一个 App 的页面与五套原型方案。",
+    "按选定原型实现 SwiftUI 页面和后端接口，在模拟器走通保存与历史读回。",
+    "定位这个 iOS App 的卡顿或内存增长，提供可复核的采样和修复前后证据。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "xcodebuild.mcp.json"
+  ],
+  "skills": [
+    "skills/app-project-guide/SKILL.md",
+    "skills/prototype-explore/SKILL.md",
+    "skills/prototype-refine/SKILL.md",
+    "skills/prototype-handoff/SKILL.md",
+    "skills/ios-feature-build/SKILL.md",
+    "skills/ios-component-refactor/SKILL.md",
+    "skills/ios-simulator-debug/SKILL.md",
+    "skills/ios-performance-investigate/SKILL.md",
+    "skills/ios-memory-investigate/SKILL.md",
+    "skills/ios-system-integration/SKILL.md",
+    "skills/backend-service-build/SKILL.md",
+    "skills/app-integration-delivery/SKILL.md"
+  ]
+}

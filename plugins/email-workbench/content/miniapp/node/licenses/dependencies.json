@@ -1,0 +1,433 @@
+{
+  "dependencies": [
+    {
+      "name": "@hono/node-server",
+      "version": "2.1.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "version": "1.30.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@pinojs/redact",
+      "version": "0.4.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@selderee/plugin-htmlparser2",
+      "version": "0.12.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@zone-eu/mailsplit",
+      "version": "5.4.16",
+      "license": "(MIT OR EUPL-1.1+)",
+      "files": [
+        "LICENSE.EUPL-1.2",
+        "LICENSE.MIT"
+      ]
+    },
+    {
+      "name": "ajv",
+      "version": "8.20.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ajv-formats",
+      "version": "3.0.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "atomic-sleep",
+      "version": "1.0.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "content-type",
+      "version": "1.0.5",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "deepmerge-ts",
+      "version": "8.0.2",
+      "license": "BSD-3-Clause",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "dom-serializer",
+      "version": "2.0.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "domelementtype",
+      "version": "2.3.0",
+      "license": "BSD-2-Clause",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "domhandler",
+      "version": "5.0.3",
+      "license": "BSD-2-Clause",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "domutils",
+      "version": "3.2.2",
+      "license": "BSD-2-Clause",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "encoding-japanese",
+      "version": "2.3.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "entities",
+      "version": "7.0.1",
+      "license": "BSD-2-Clause",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fast-uri",
+      "version": "3.1.8",
+      "license": "BSD-3-Clause",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "license": "ISC",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "he",
+      "version": "1.2.0",
+      "license": "MIT",
+      "files": []
+    },
+    {
+      "name": "hono",
+      "version": "4.13.8",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "html-to-text",
+      "version": "10.0.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "htmlparser2",
+      "version": "10.1.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "imapflow",
+      "version": "2.0.2",
+      "license": "MIT",
+      "files": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "ip-address",
+      "version": "10.7.2",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "1.0.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "leac",
+      "version": "0.7.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "libbase64",
+      "version": "1.3.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "libmime",
+      "version": "5.4.3",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "libqp",
+      "version": "2.1.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "linkify-it",
+      "version": "5.0.2",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mailparser",
+      "version": "3.9.25",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "nodemailer",
+      "version": "10.0.8",
+      "license": "MIT-0",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "on-exit-leak-free",
+      "version": "2.1.2",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "parseley",
+      "version": "0.13.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "peberminta",
+      "version": "0.10.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "pino",
+      "version": "10.3.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "pino-std-serializers",
+      "version": "7.1.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "proper-lockfile",
+      "version": "4.1.2",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "punycode.js",
+      "version": "2.3.1",
+      "license": "MIT",
+      "files": []
+    },
+    {
+      "name": "quick-format-unescaped",
+      "version": "4.0.4",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "retry",
+      "version": "0.12.0",
+      "license": "MIT",
+      "files": [
+        "License"
+      ]
+    },
+    {
+      "name": "safe-stable-stringify",
+      "version": "2.5.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "selderee",
+      "version": "0.12.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "signal-exit",
+      "version": "3.0.7",
+      "license": "ISC",
+      "files": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "smart-buffer",
+      "version": "4.2.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "socks",
+      "version": "2.8.10",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "sonic-boom",
+      "version": "4.2.1",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "thread-stream",
+      "version": "4.2.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "tlds",
+      "version": "1.261.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "uc.micro",
+      "version": "2.1.0",
+      "license": "MIT",
+      "files": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "zod",
+      "version": "3.25.76",
+      "license": "MIT",
+      "files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "zod-to-json-schema",
+      "version": "3.25.2",
+      "license": "ISC",
+      "files": [
+        "LICENSE"
+      ]
+    }
+  ]
+}

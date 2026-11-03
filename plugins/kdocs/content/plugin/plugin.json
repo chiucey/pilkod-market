@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "kdocs",
+  "displayName": "金山文档",
+  "version": "2.5.24",
+  "description": "操作金山文档中的智能文档、表格、PPT、PDF、多维表格、表单和知识库，支持创建、读取、编辑、搜索、分享、整理及 AI 生成。",
+  "author": "金山办公",
+  "icon": "kdocs.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Office",
+  "exampleQueries": [
+    "帮我总结金山文档中的项目周报，并整理成新的智能文档",
+    "把这段接龙内容整理成金山表格并设置合适的格式",
+    "根据这份材料在金山文档中生成一份项目汇报 PPT"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/kdocs/SKILL.md"
+  ]
+}

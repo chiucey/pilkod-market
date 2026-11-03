@@ -1,0 +1,84 @@
+# html2video-for-mcode · CI (Linux + Windows)
+# 仓库根是插件包根(skills/html2video-for-mcode/ 才是技能目录 —— marketplace 提交面, 2026-10-03 起),
+# 两个作业在技能目录运行测试；依赖从根级锁文件安装到仓库根 node_modules，沿祖先链发现。
+# fork 上的 scoped smoke workflow 要等宿主维护者批准才会首跑,
+# 这里在自己的仓库里以同样的依赖组合(ffmpeg + Playwright Chromium, 两个平台各跑一遍)
+# 把 tests/ 下全部测试真实执行 —— 尤其是三条需要**文件符号链接**能力的 canary: Windows 无
+# 开发者模式时建不了文件链接, 本地一直只能跳过, Linux 与 Windows 管理员 runner 上是它们真正运行的场合。
+#
+# Playwright uses the committed root package-lock.json; npm ci installs the exact dependency tree.
+# ffmpeg 走系统包(choco/apt)让它在 PATH 上: 测试会把脚本放进临时项目目录当 cwd 跑,
+# 只有 PATH 发现对"任意 cwd"都成立(node_modules 发现依赖 cwd/上两层锚点, 深层布局会够不到 ——
+# 脚本自身的 node_modules 发现走祖先链, 与 cwd 无关)。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  SKILL_DIR: skills/html2video-for-mcode
+
+jobs:
+  linux:
+    name: all tests (ubuntu-latest · ffmpeg + chromium)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+
+      - name: Install locked playwright dependencies
+        working-directory: ${{ env.SKILL_DIR }}
+        run: |
+          npm ci --prefix ../.. --ignore-scripts --no-audit --no-fund
+          npx --no-install playwright install --with-deps chromium
+
+      # glob 交给 shell 展开: 以后新增测试文件自动进 CI(旧枚举写法漏过 8 个文件)。
+      # 单测超时 300s: 渲染冒烟里的 capture / build-video 在 CI 上要几十秒。
+      - name: All tests (security · policy · css blocks · render smoke · symlink canaries)
+        working-directory: ${{ env.SKILL_DIR }}
+        run: node --test --test-timeout=300000 tests/*.test.mjs
+
+  windows:
+    name: all tests (windows-latest · ffmpeg + chromium)
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+
+      # choco 的 ffmpeg 包含 ffmpeg.exe 与 ffprobe.exe, 落在 PATH 上 —— 与 Linux 作业同为系统包
+      - name: Install ffmpeg
+        shell: bash
+        run: choco install ffmpeg -y --no-progress
+
+      - name: Install locked playwright dependencies
+        shell: bash
+        working-directory: ${{ env.SKILL_DIR }}
+        run: |
+          npm ci --prefix ../.. --ignore-scripts --no-audit --no-fund
+          npx --no-install playwright install chromium
+
+      - name: All tests (security · policy · css blocks · render smoke · symlink canaries)
+        shell: bash
+        working-directory: ${{ env.SKILL_DIR }}
+        run: node --test --test-timeout=300000 tests/*.test.mjs

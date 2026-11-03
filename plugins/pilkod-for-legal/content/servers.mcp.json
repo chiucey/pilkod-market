@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "minimax-for-legal": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:9/mcp/minimax-for-legal",
+      "headers": {},
+      "description": "Pilkod For Legal 本地业务工具。",
+      "timeout": 30000
+    }
+  }
+}

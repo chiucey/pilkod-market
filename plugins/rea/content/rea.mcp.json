@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "rea": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "rea-agents@6.4.0", "mcp"],
+      "description": "REA 本地逆向分析服务；首次启动下载固定 npm 版本，分析引擎按目标另行配置。",
+      "timeout": 120000
+    }
+  }
+}

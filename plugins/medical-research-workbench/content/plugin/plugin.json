@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "medical-research-workbench",
+  "displayName": "医学研究工作台",
+  "version": "1.0.5",
+  "description": "面向医学研究的问题澄清、文献检索与证据研判、研究空白识别和方案设计工作台，覆盖论文筛选与深读、方法复原、可靠性与主张核验，以及研究目标、终点、偏倚、样本量和验证策略。",
+  "author": "AIPOCH",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Science & Healthcare",
+  "exampleQueries": [
+    "把这个模糊的临床研究想法整理成可检索、可检验的问题",
+    "为这个医学主题构建 PubMed 检索式，并说明 MeSH 词和自由词",
+    "判断这篇论文值得精读、略读还是跳过，并解释原因"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/clinical-question-clarifier/SKILL.md",
+    "skills/biomedical-search-strategy-builder/SKILL.md",
+    "skills/high-value-paper-screener/SKILL.md",
+    "skills/topic-evidence-mapper/SKILL.md",
+    "skills/medical-research-gap-finder/SKILL.md",
+    "skills/medical-research-literature-reader-pro/SKILL.md",
+    "skills/study-design-identifier/SKILL.md",
+    "skills/methods-reverse-engineer/SKILL.md",
+    "skills/result-reliability-checker/SKILL.md",
+    "skills/paper-to-claim-verifier/SKILL.md",
+    "skills/contradictory-findings-resolver/SKILL.md",
+    "skills/study-objective-refiner/SKILL.md",
+    "skills/primary-plan-recommender/SKILL.md",
+    "skills/feasibility-aware-study-planner/SKILL.md",
+    "skills/endpoint-definition-designer/SKILL.md",
+    "skills/confounder-and-bias-control-planner/SKILL.md",
+    "skills/sample-size-and-power-planning-assistant/SKILL.md",
+    "skills/validation-strategy-designer/SKILL.md"
+  ]
+}

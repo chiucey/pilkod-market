@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "tencentdocs",
+  "displayName": "腾讯文档",
+  "version": "1.0.41",
+  "description": "连接腾讯文档，创建、读取、编辑、搜索和管理在线文档、表格、幻灯片、知识库、表单及文件。",
+  "author": "腾讯文档团队",
+  "icon": "tencentdocs.png",
+  "category": "Office",
+  "exampleQueries": [
+    "在腾讯文档中搜索项目周报并总结关键进展",
+    "把这段内容整理成腾讯文档里的在线表格",
+    "根据这份材料在腾讯文档中创建一份项目汇报 PPT"
+  ],
+  "apps": [
+    "tencentdocs.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/tencent-docs/SKILL.md"
+  ]
+}

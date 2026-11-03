@@ -1,0 +1,1 @@
+export{t as applyDocumentChanges,n as assertCleanDocument,r as canonicalDocumentFromPreview,i as documentFormatSnapshot,a as findImplicitWordWhitespace,o as isRevisionMarkup,s as parseDocx,c as projectDocument,l as readDocument,u as redlinePreview,d as validateRange}from"./engine-031iLXmj.js";

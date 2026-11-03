@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@1.8.0",
+        "--no-usage-statistics"
+      ],
+      "env": {
+        "CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS": "1"
+      },
+      "description": "通过 Chrome DevTools 和 Puppeteer 控制并检查本机 Chrome；首次启动需要下载固定版本的 npm package。",
+      "timeout": 120000
+    }
+  }
+}

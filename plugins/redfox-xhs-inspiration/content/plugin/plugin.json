@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "name": "redfox-xhs-inspiration",
+  "displayName": "小红书内容灵感专家",
+  "version": "1.0.0",
+  "description": "小红书内容创作灵感专家，提供爆款笔记搜索、低粉爆款发现、每日爆款追踪、热门账号榜单、对标账号推荐等全方位内容洞察功能，助力创作者快速获取创作灵感。",
+  "author": "红狐数据",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "帮我搜索最近小红书减脂餐相关的热门笔记",
+    "查询小红书今日爆款笔记排行榜",
+    "推荐一些同赛道的对标账号"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/xiaohongshu-crawler/SKILL.md",
+    "skills/xiaohongshu-dailytop/SKILL.md",
+    "skills/xiaohongshu-lowtop/SKILL.md",
+    "skills/xiaohongshu-search/SKILL.md",
+    "skills/xiaohongshu-similar-account/SKILL.md",
+    "skills/xiaohongshu-top-account/SKILL.md"
+  ]
+}

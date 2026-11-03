@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "typesafe",
+  "displayName": "TypeSafe / Jev",
+  "version": "0.5.7",
+  "description": "使用 TypeSafe 的 Jev / System One API 构建分类、路由、排序、提取与核验功能；指导 Agent 查阅官方文档、设计结构化判断并验证结果。",
+  "author": "TypeSafe AI",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "用 TypeSafe Jev 实现客服工单分类与路由，将不确定的结果交给人工处理。",
+    "把现有 LLM 提示词加 JSON 解析的分类逻辑改造成 TypeSafe 的结构化判断。",
+    "根据 TypeSafe 最新文档，用 JavaScript 实现候选文档排序，并验证置信度阈值。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/typesafe-ai/SKILL.md"
+  ]
+}

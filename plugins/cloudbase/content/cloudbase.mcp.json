@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "cloudbase-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cloudbase/cloudbase-mcp@2.34.4"
+      ],
+      "env": {},
+      "description": "通过官方 CloudBase MCP 管理云开发资源；首次启动需联网下载固定版本 npm 包，登录使用 MCP auth 设备码流程。",
+      "timeout": 120000
+    }
+  }
+}

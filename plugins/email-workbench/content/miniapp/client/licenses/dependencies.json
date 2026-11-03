@@ -1,0 +1,332 @@
+{
+  "dependencies": [
+    {
+      "name": "@tiptap/core",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f636f7265__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-blockquote",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d626c6f636b71756f7465__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-bold",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d626f6c64__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-code",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d636f6465__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-code-block",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d636f64652d626c6f636b__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-document",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d646f63756d656e74__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-hard-break",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d686172642d627265616b__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-heading",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d68656164696e67__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-horizontal-rule",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d686f72697a6f6e74616c2d72756c65__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-italic",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d6974616c6963__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-link",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d6c696e6b__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-list",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d6c697374__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-paragraph",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d706172616772617068__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-strike",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d737472696b65__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-text",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d74657874__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extension-underline",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e2d756e6465726c696e65__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/extensions",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f657874656e73696f6e73__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/pm",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f706d__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/react",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f7265616374__LICENSE.md"
+      ]
+    },
+    {
+      "name": "@tiptap/starter-kit",
+      "version": "3.22.3",
+      "license": "MIT",
+      "files": [
+        "pkg-407469707461702f737461727465722d6b6974__LICENSE.md"
+      ]
+    },
+    {
+      "name": "fast-equals",
+      "version": "5.4.0",
+      "license": "MIT",
+      "files": [
+        "pkg-666173742d657175616c73__LICENSE"
+      ]
+    },
+    {
+      "name": "linkifyjs",
+      "version": "4.3.2",
+      "license": "MIT",
+      "files": [
+        "pkg-6c696e6b6966796a73__LICENSE"
+      ]
+    },
+    {
+      "name": "orderedmap",
+      "version": "2.1.1",
+      "license": "MIT",
+      "files": [
+        "pkg-6f7264657265646d6170__LICENSE"
+      ]
+    },
+    {
+      "name": "pdfjs-dist",
+      "version": "6.3.289",
+      "license": "Apache-2.0",
+      "files": [
+        "pkg-7064666a732d64697374__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-commands",
+      "version": "1.7.1",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d636f6d6d616e6473__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-dropcursor",
+      "version": "1.8.2",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d64726f70637572736f72__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-gapcursor",
+      "version": "1.4.1",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d676170637572736f72__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-history",
+      "version": "1.5.0",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d686973746f7279__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-keymap",
+      "version": "1.2.3",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d6b65796d6170__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-model",
+      "version": "1.25.4",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d6d6f64656c__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-schema-list",
+      "version": "1.5.1",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d736368656d612d6c697374__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-state",
+      "version": "1.4.4",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d7374617465__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-tables",
+      "version": "1.8.5",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d7461626c6573__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-transform",
+      "version": "1.12.0",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d7472616e73666f726d__LICENSE"
+      ]
+    },
+    {
+      "name": "prosemirror-view",
+      "version": "1.41.8",
+      "license": "MIT",
+      "files": [
+        "pkg-70726f73656d6972726f722d76696577__LICENSE"
+      ]
+    },
+    {
+      "name": "react",
+      "version": "18.3.1",
+      "license": "MIT",
+      "files": [
+        "pkg-7265616374__LICENSE"
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "18.3.1",
+      "license": "MIT",
+      "files": [
+        "pkg-72656163742d646f6d__LICENSE"
+      ]
+    },
+    {
+      "name": "rope-sequence",
+      "version": "1.3.4",
+      "license": "MIT",
+      "files": [
+        "pkg-726f70652d73657175656e6365__LICENSE"
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.23.2",
+      "license": "MIT",
+      "files": [
+        "pkg-7363686564756c6572__LICENSE"
+      ]
+    },
+    {
+      "name": "use-sync-external-store",
+      "version": "1.6.0",
+      "license": "MIT",
+      "files": [
+        "pkg-7573652d73796e632d65787465726e616c2d73746f7265__LICENSE"
+      ]
+    },
+    {
+      "name": "w3c-keyname",
+      "version": "2.2.8",
+      "license": "MIT",
+      "files": [
+        "pkg-7733632d6b65796e616d65__LICENSE"
+      ]
+    }
+  ]
+}

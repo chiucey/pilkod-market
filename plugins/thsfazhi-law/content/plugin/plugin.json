@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "thsfazhi-law",
+  "displayName": "同花顺法律ai助手",
+  "version": "1.0.0",
+  "description": "法律法规、案例文书、实务文章等多源 MCP 能力，并覆盖法律问题研究、类案分析、法条检索、诉讼可视化、诉讼文书起草、法律意见书生成等核心业务场景。所有引用内容均支持溯源核验，确保结果专业、可靠、可追溯。",
+  "author": "同花顺",
+  "icon": "icon.png",
+  "category": "Business",
+  "exampleQueries": [
+    "检索与劳动合同解除相关的法律法规，并提供可核验的法条来源",
+    "查找与这起合同纠纷相似的案例，比较裁判观点并附上文书出处",
+    "根据我提供的案情起草法律意见书，并逐条列明可追溯的引用依据"
+  ],
+  "apps": [
+    "fazhi.app.json"
+  ],
+  "mcpServers": [],
+  "skills": []
+}

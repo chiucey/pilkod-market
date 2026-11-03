@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 2,
+  "snapshotDate": "2026-09-24",
+  "scope": "邮箱工作台现有 18 套服务商配置及 2 类不支持的认证流程。先用内置路径导航，再按现场 UI 核对；文档核实不等于真实账号已操作成功。",
+  "providers": [
+    {
+      "id": "qq",
+      "name": "QQ / Foxmail",
+      "domains": [
+        "qq.com",
+        "foxmail.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.mail.qq.com/detail/106/985"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "mailEntry": "https://mail.qq.com/",
+      "steps": [
+        "登录网页版邮箱，从右上角头像进入设置。",
+        "进入账号与安全 → 安全设置，按页面提示开启第三方服务。",
+        "生成授权码，完成账号身份验证后，在目标邮箱连接表单中使用。"
+      ],
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.mail.qq.com/detail/106/985"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "目标账号可以正常登录 QQ 邮箱，能完成 QQ 密码或手机 QQ/绑定微信的身份验证。",
+        "第三方服务需开启；已有可用授权码可以直接使用。"
+      ],
+      "missingEntryHelp": [
+        "使用 PC 网页版的头像 → 设置 → 账号与安全 → 安全设置；先查看“开启服务”，开启后才找“生成授权码”。",
+        "QQ/Foxmail 邮箱与 Foxmail 客户端不是同一概念；邮箱地址属于其他品牌时按实际托管商处理。"
+      ],
+      "credentialLifecycle": [
+        "修改账号密码会导致原授权码过期；不要把工作台页面会话过期误判为此情形。"
+      ],
+      "stopConditions": [
+        "页面账号与目标地址不是同一邮箱时停止；别名关系须由页面或用户确认。"
+      ]
+    },
+    {
+      "id": "netease163",
+      "name": "网易 163",
+      "domains": [
+        "163.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac286624f309a1a7089",
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "mailEntry": "https://email.163.com/",
+      "steps": [
+        "登录网易网页版邮箱，打开设置 → POP3/SMTP/IMAP。",
+        "按页面提示开启 IMAP/SMTP；已开启时选择新增授权密码。",
+        "完成页面要求的身份验证，将新生成的授权码用于目标连接表单。"
+      ],
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac286624f309a1a7089",
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "可登录对应网易邮箱；可完成页面要求的手机或其他身份验证。",
+        "开启 IMAP/SMTP 服务，保持 POP 和其他无关设置原样。"
+      ],
+      "missingEntryHelp": [
+        "从网页版“设置”进入“POP3/SMTP/IMAP”；先检查服务开关，再找“新增授权密码”。",
+        "仅提供了网易企业邮箱或 VIP 账号时，不套用 163/126/Yeah 免费邮箱步骤。"
+      ],
+      "credentialLifecycle": [
+        "新增专用于邮箱工作台的授权密码；不要重置登录密码或删除已有授权码。"
+      ],
+      "stopConditions": [
+        "安全验证或客户端开通受限时保留页面，交给用户完成当前要求。"
+      ]
+    },
+    {
+      "id": "netease126",
+      "name": "网易 126",
+      "domains": [
+        "126.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac286624f309a1a7089",
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "mailEntry": "https://email.163.com/",
+      "steps": [
+        "登录网易网页版邮箱，打开设置 → POP3/SMTP/IMAP。",
+        "按页面提示开启 IMAP/SMTP；已开启时选择新增授权密码。",
+        "完成页面要求的身份验证，将新生成的授权码用于目标连接表单。"
+      ],
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac286624f309a1a7089",
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "可登录对应网易邮箱；可完成页面要求的手机或其他身份验证。",
+        "开启 IMAP/SMTP 服务，保持 POP 和其他无关设置原样。"
+      ],
+      "missingEntryHelp": [
+        "从网页版“设置”进入“POP3/SMTP/IMAP”；先检查服务开关，再找“新增授权密码”。",
+        "仅提供了网易企业邮箱或 VIP 账号时，不套用 163/126/Yeah 免费邮箱步骤。"
+      ],
+      "credentialLifecycle": [
+        "新增专用于邮箱工作台的授权密码；不要重置登录密码或删除已有授权码。"
+      ],
+      "stopConditions": [
+        "安全验证或客户端开通受限时保留页面，交给用户完成当前要求。"
+      ]
+    },
+    {
+      "id": "yeah",
+      "name": "网易 Yeah",
+      "domains": [
+        "yeah.net"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac286624f309a1a7089",
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "mailEntry": "https://email.163.com/",
+      "steps": [
+        "登录网易网页版邮箱，打开设置 → POP3/SMTP/IMAP。",
+        "按页面提示开启 IMAP/SMTP；已开启时选择新增授权密码。",
+        "完成页面要求的身份验证，将新生成的授权码用于目标连接表单。"
+      ],
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac286624f309a1a7089",
+        "https://help.mail.126.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "可登录对应网易邮箱；可完成页面要求的手机或其他身份验证。",
+        "开启 IMAP/SMTP 服务，保持 POP 和其他无关设置原样。"
+      ],
+      "missingEntryHelp": [
+        "从网页版“设置”进入“POP3/SMTP/IMAP”；先检查服务开关，再找“新增授权密码”。",
+        "仅提供了网易企业邮箱或 VIP 账号时，不套用 163/126/Yeah 免费邮箱步骤。"
+      ],
+      "credentialLifecycle": [
+        "新增专用于邮箱工作台的授权密码；不要重置登录密码或删除已有授权码。"
+      ],
+      "stopConditions": [
+        "安全验证或客户端开通受限时保留页面，交给用户完成当前要求。"
+      ]
+    },
+    {
+      "id": "sina",
+      "name": "新浪邮箱",
+      "domains": [
+        "sina.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.sina.com.cn/comquestiondetail/view/1566/"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.sina.com.cn/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.sina.com.cn/comquestiondetail/view/1566/"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "能使用账号对应的验证手机。"
+      ],
+      "missingEntryHelp": [
+        "需同时有授权码和已开启的协议服务，只生成授权码不能保证可连接。",
+        "现有授权码通常不能再次查看；不要为了“获取”自动重置。"
+      ],
+      "credentialLifecycle": [
+        "启用后第三方客户端改用授权码；重置会使旧授权码失效，可能中断其他客户端。"
+      ],
+      "stopConditions": [
+        "发现只能重置现有码时，说明影响并请用户处理或明确选择；不自动作废原授权码。"
+      ],
+      "steps": [
+        "登录新浪网页版邮箱，VIP 地址使用 VIP 登录入口；进入设置 → 客户端 POP/IMAP/SMTP。",
+        "检查授权码状态和 IMAP/SMTP 服务状态。授权码尚未开启时，按页面进入开启流程。",
+        "由用户完成手机验证，取得新授权码；启用本次所需 IMAP/SMTP 服务后回填连接表单。",
+        "若页面只提供“重置”而非独立新增，先说明旧授权码和已有客户端会受影响，等待用户选择。"
+      ]
+    },
+    {
+      "id": "sinaCn",
+      "name": "新浪邮箱（.cn）",
+      "domains": [
+        "sina.cn"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.sina.com.cn/comquestiondetail/view/1566/"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.sina.com.cn/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.sina.com.cn/comquestiondetail/view/1566/"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "能使用账号对应的验证手机。"
+      ],
+      "missingEntryHelp": [
+        "需同时有授权码和已开启的协议服务，只生成授权码不能保证可连接。",
+        "现有授权码通常不能再次查看；不要为了“获取”自动重置。"
+      ],
+      "credentialLifecycle": [
+        "启用后第三方客户端改用授权码；重置会使旧授权码失效，可能中断其他客户端。"
+      ],
+      "stopConditions": [
+        "发现只能重置现有码时，说明影响并请用户处理或明确选择；不自动作废原授权码。"
+      ],
+      "steps": [
+        "登录新浪网页版邮箱，VIP 地址使用 VIP 登录入口；进入设置 → 客户端 POP/IMAP/SMTP。",
+        "检查授权码状态和 IMAP/SMTP 服务状态。授权码尚未开启时，按页面进入开启流程。",
+        "由用户完成手机验证，取得新授权码；启用本次所需 IMAP/SMTP 服务后回填连接表单。",
+        "若页面只提供“重置”而非独立新增，先说明旧授权码和已有客户端会受影响，等待用户选择。"
+      ]
+    },
+    {
+      "id": "sinaVip",
+      "name": "新浪 VIP 邮箱",
+      "domains": [
+        "vip.sina.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.sina.com.cn/comquestiondetail/view/1567/",
+        "https://help.sina.com.cn/comquestiondetail/view/799/"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.sina.com.cn/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.sina.com.cn/comquestiondetail/view/1567/",
+        "https://help.sina.com.cn/comquestiondetail/view/799/"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "能使用账号对应的验证手机。",
+        "官方 VIP 帮助注明试用期用户不支持客户端协议；核实是否已是正式用户。"
+      ],
+      "missingEntryHelp": [
+        "需同时有授权码和已开启的协议服务，只生成授权码不能保证可连接。",
+        "现有授权码通常不能再次查看；不要为了“获取”自动重置。"
+      ],
+      "credentialLifecycle": [
+        "启用后第三方客户端改用授权码；重置会使旧授权码失效，可能中断其他客户端。"
+      ],
+      "stopConditions": [
+        "发现只能重置现有码时，说明影响并请用户处理或明确选择；不自动作废原授权码。"
+      ],
+      "steps": [
+        "登录新浪网页版邮箱，VIP 地址使用 VIP 登录入口；进入设置 → 客户端 POP/IMAP/SMTP。",
+        "检查授权码状态和 IMAP/SMTP 服务状态。授权码尚未开启时，按页面进入开启流程。",
+        "由用户完成手机验证，取得新授权码；启用本次所需 IMAP/SMTP 服务后回填连接表单。",
+        "若页面只提供“重置”而非独立新增，先说明旧授权码和已有客户端会受影响，等待用户选择。"
+      ]
+    },
+    {
+      "id": "sinaVipCn",
+      "name": "新浪 VIP 邮箱（.cn）",
+      "domains": [
+        "vip.sina.cn"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.sina.com.cn/comquestiondetail/view/1567/",
+        "https://help.sina.com.cn/comquestiondetail/view/799/"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.sina.com.cn/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.sina.com.cn/comquestiondetail/view/1567/",
+        "https://help.sina.com.cn/comquestiondetail/view/799/"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "能使用账号对应的验证手机。",
+        "官方 VIP 帮助注明试用期用户不支持客户端协议；核实是否已是正式用户。"
+      ],
+      "missingEntryHelp": [
+        "需同时有授权码和已开启的协议服务，只生成授权码不能保证可连接。",
+        "现有授权码通常不能再次查看；不要为了“获取”自动重置。"
+      ],
+      "credentialLifecycle": [
+        "启用后第三方客户端改用授权码；重置会使旧授权码失效，可能中断其他客户端。"
+      ],
+      "stopConditions": [
+        "发现只能重置现有码时，说明影响并请用户处理或明确选择；不自动作废原授权码。"
+      ],
+      "steps": [
+        "登录新浪网页版邮箱，VIP 地址使用 VIP 登录入口；进入设置 → 客户端 POP/IMAP/SMTP。",
+        "检查授权码状态和 IMAP/SMTP 服务状态。授权码尚未开启时，按页面进入开启流程。",
+        "由用户完成手机验证，取得新授权码；启用本次所需 IMAP/SMTP 服务后回填连接表单。",
+        "若页面只提供“重置”而非独立新增，先说明旧授权码和已有客户端会受影响，等待用户选择。"
+      ]
+    },
+    {
+      "id": "mobile139",
+      "name": "中国移动 139 邮箱",
+      "domains": [
+        "139.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "邮箱授权码",
+      "officialSourceCandidates": [
+        "https://help.mail.10086.cn/statichtml/4/Content/1234606.html"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.10086.cn/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.mail.10086.cn/statichtml/4/Content/1234606.html"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "可使用邮箱验证手机；协议服务已开通。"
+      ],
+      "missingEntryHelp": [
+        "查看“常规设置”中的“账号与安全”，不要只在登录密码页面寻找。",
+        "短信验证无法完成时保留原页面，由用户处理，不连续重发。"
+      ],
+      "credentialLifecycle": [
+        "官方文档注明新授权码有效期 90 天；以该账号生成页面显示的具体失效日期为准。"
+      ],
+      "stopConditions": [
+        "无法完成手机验证或页面限制协议服务时停止生成。"
+      ],
+      "steps": [
+        "登录 139 网页邮箱，进入顶部设置 → 常规设置，或设置 → 获取授权码。",
+        "在账号与安全 → 邮箱协议设置中检查服务开关；按可见 UI 启用所需 IMAP 服务并保存。若开关合并为 POP3/IMAP，先明确该影响。",
+        "点击服务开关下方“获取授权码”，用户完成短信验证后读取新码并回填。"
+      ]
+    },
+    {
+      "id": "aliyun",
+      "name": "阿里个人邮箱",
+      "domains": [
+        "aliyun.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "客户端凭据（个人版需现场核实）",
+      "officialSourceCandidates": [
+        "https://help.aliyun.com/document_detail/465790.html"
+      ],
+      "evidence": "partial",
+      "lastVerified": null,
+      "verifyAtUse": [
+        "必须先核实个人版当前凭据类型和生成入口；已有服务器文档不能证明存在授权码功能。"
+      ],
+      "mailEntry": "https://mail.aliyun.com/",
+      "verificationStatus": "partial",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.aliyun.com/document_detail/465790.html"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "需要核实个人版账号当前的客户端认证方式；不能套用企业域管的安全密码配置。"
+      ],
+      "missingEntryHelp": [
+        "现有官方个人版资料只核实了服务器配置，未核实授权码生成菜单；此条目不是已知可自动生成的承诺。",
+        "未发现授权码入口时查个人版官方帮助或当前 UI，不跳到企业邮箱/外贸邮流程。"
+      ],
+      "credentialLifecycle": [
+        "未核实个人版是否支持独立应用密码；不能宣称具有企业版相同的生成与撤销行为。"
+      ],
+      "stopConditions": [
+        "无法确认个人版凭据类型时停止生成，并报告具体缺口。"
+      ],
+      "steps": [
+        "打开 mail.aliyun.com，确认这是 @aliyun.com 个人邮箱。",
+        "在实际设置页面查找客户端协议及安全设置，先确认是否提供独立授权码。",
+        "只有官方个人版说明或当前页面明确支持时才继续生成；若只支持邮箱登录密码，说明当前情况，让用户直接在目标表单输入，不替用户找回或读取密码。"
+      ]
+    },
+    {
+      "id": "aliyunEnterprise",
+      "name": "阿里企业邮箱",
+      "domains": [],
+      "selection": "manual",
+      "credentialTerm": "三方客户端安全密码",
+      "officialSourceCandidates": [
+        "https://help.aliyun.com/zh/document_detail/444269.html",
+        "https://help.aliyun.com/zh/document_detail/36576.html",
+        "https://help.aliyun.com/zh/document_detail/606337.html"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.qiye.aliyun.com/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.aliyun.com/zh/document_detail/444269.html",
+        "https://help.aliyun.com/zh/document_detail/36576.html",
+        "https://help.aliyun.com/zh/document_detail/606337.html"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "管理员允许当前成员使用第三方客户端，且开放 IMAP/SMTP 服务。",
+        "企业真实托管商已由用户或组织配置确认。"
+      ],
+      "missingEntryHelp": [
+        "旧界面可按页面提供的入口切换到新版；不能只凭文档猜不存在的控件。",
+        "第三方访问策略禁止当前账号时请管理员处理，不替用户改全公司的策略。"
+      ],
+      "credentialLifecycle": [
+        "开启安全密码后，第三方客户端不再接受原登录密码，现有客户端可能需更新。",
+        "独立密码仅创建时显示；使用新增，不自动删除其他设备密码。"
+      ],
+      "stopConditions": [
+        "组织禁止第三方访问时停止。",
+        "首次启用可能影响其他客户端，先说明具体影响并遵守当前工具的确认要求。"
+      ],
+      "steps": [
+        "登录企业邮箱网页，进入设置 → 查看更多设置 → 账户与安全 → 账户安全。",
+        "在“三方客户端登录安全管理”查看“三方客户端安全密码”状态；已开启则直接进入生成。",
+        "点击“生成新密码”，由用户完成身份验证；为密码填写“邮箱工作台”用途并按页面确认。",
+        "将本次生成的密码填回目标表单，保留其他设备密码。"
+      ]
+    },
+    {
+      "id": "feishu",
+      "name": "飞书邮箱",
+      "domains": [],
+      "selection": "manual",
+      "credentialTerm": "第三方邮箱客户端专用密码",
+      "officialSourceCandidates": [
+        "https://www.feishu.cn/hc/zh-CN/articles/902478147400",
+        "https://www.feishu.cn/hc/zh-CN/articles/360049068017"
+      ],
+      "evidence": "partial",
+      "lastVerified": null,
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://www.feishu.cn/mail",
+      "verificationStatus": "partial",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://www.feishu.cn/hc/zh-CN/articles/902478147400",
+        "https://www.feishu.cn/hc/zh-CN/articles/360049068017"
+      ],
+      "credentialSurface": "desktop_app",
+      "prerequisites": [
+        "企业已启用飞书邮箱，管理员允许当前成员第三方邮箱客户端登录。",
+        "官方操作说明要求桌面客户端生成密码；网页邮箱和移动端不能作为该生成入口。"
+      ],
+      "missingEntryHelp": [
+        "只有浏览器工具时，说明需要桌面客户端；不在网页版邮箱反复寻找生成按钮。",
+        "入口缺失先核对组织、成员权限；邮件组不能按独立邮箱接入。"
+      ],
+      "credentialLifecycle": [
+        "保留其他设备的专用密码，不停用或重置已有授权。"
+      ],
+      "stopConditions": [
+        "没有可操作的飞书桌面客户端或管理员权限未开放时停止生成。",
+        "邮件组地址不走成员专用密码流程。"
+      ],
+      "verificationNote": "官方索引返回完整操作段落；文章直读为空。本条目保留明确桌面端路径，执行时核对官方正文或实际客户端。",
+      "steps": [
+        "优先使用 computer use 打开飞书桌面客户端，并核对组织和目标邮箱身份。",
+        "点击个人头像 → 设置 → 邮箱，找到“第三方邮箱客户端登录”并进入设置。",
+        "选择对应设备，点击“生成”；完成必要的身份验证后，复制本次专用密码并回填工作台原表单。"
+      ]
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail / Google Workspace",
+      "domains": [
+        "gmail.com",
+        "googlemail.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "应用专用密码",
+      "officialSourceCandidates": [
+        "https://support.google.com/accounts/answer/185833"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.google.com/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://support.google.com/accounts/answer/185833"
+      ],
+      "credentialSurface": "account_security",
+      "prerequisites": [
+        "Google 账号已开启两步验证，账号与组织策略允许应用密码。"
+      ],
+      "missingEntryHelp": [
+        "检查是否未开启两步验证、仅配置安全密钥、属于受限制的工作/学校账号，或启用了高级保护。",
+        "不能通过关闭高级保护或两步验证绕开入口限制；目标产品支持 Google OAuth 时优先使用正式 OAuth。"
+      ],
+      "credentialLifecycle": [
+        "修改 Google 账号密码会撤销应用密码。"
+      ],
+      "stopConditions": [
+        "应用密码入口不允许创建时停止；不能把普通 Google 密码替代为 IMAP 凭据。"
+      ],
+      "credentialEntry": "https://myaccount.google.com/apppasswords",
+      "steps": [
+        "登录正确的 Google 账号，打开 Google 账号“应用专用密码”页面。",
+        "确认两步验证已启用，按可见页面填写应用名称“邮箱工作台”并生成应用密码。",
+        "用户完成再次登录或验证后，将新应用密码填入原连接表单。"
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud Mail",
+      "domains": [
+        "icloud.com",
+        "me.com",
+        "mac.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "应用专用密码",
+      "officialSourceCandidates": [
+        "https://support.apple.com/en-us/102654",
+        "https://support.apple.com/en-us/102525"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://www.icloud.com/mail",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102654",
+        "https://support.apple.com/en-us/102525"
+      ],
+      "credentialSurface": "account_security",
+      "prerequisites": [
+        "Apple 账户已启用双重认证，目标地址属于该账户的 iCloud Mail。"
+      ],
+      "missingEntryHelp": [
+        "生成入口在 account.apple.com 的账号安全设置中，不在邮箱常规设置。",
+        "检查双重认证及现有应用密码数量限制；不能为腾位置自动撤销其他密码。"
+      ],
+      "credentialLifecycle": [
+        "Apple 账户主密码被更改或重置后，App 专用密码会被撤销。"
+      ],
+      "stopConditions": [
+        "账号与邮箱关系无法核实、未满足认证要求或需撤销其他设备权限时停止。"
+      ],
+      "credentialEntry": "https://account.apple.com/",
+      "steps": [
+        "登录与目标 iCloud 邮箱对应的 Apple 账户，而不是只停留在 iCloud Mail 收件箱。",
+        "进入“登录与安全”→“App 专用密码”→“生成 App 专用密码”。",
+        "用户完成所需验证后，将新密码回填目标表单。"
+      ]
+    },
+    {
+      "id": "yahoo",
+      "name": "Yahoo Mail",
+      "domains": [
+        "yahoo.com",
+        "ymail.com",
+        "rocketmail.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "应用专用密码",
+      "officialSourceCandidates": [
+        "https://help.yahoo.com/kb/SLN15241.html",
+        "https://ca.help.yahoo.com/kb/account/SLN15241.html?impressions=true"
+      ],
+      "evidence": "partial",
+      "lastVerified": null,
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.yahoo.com/",
+      "verificationStatus": "partial",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://help.yahoo.com/kb/SLN15241.html",
+        "https://ca.help.yahoo.com/kb/account/SLN15241.html?impressions=true"
+      ],
+      "credentialSurface": "account_security",
+      "prerequisites": [
+        "目标账号所在 Yahoo 服务支持应用密码，当前账号符合生成资格。"
+      ],
+      "missingEntryHelp": [
+        "官方建议使用连续多天登录过的常用浏览器，避免无痕模式；仍无资格时使用官方邮箱或等待，不循环生成。",
+        "Yahoo 日本等独立服务不能套用全球版配置；先核实地区。"
+      ],
+      "credentialLifecycle": [
+        "应用密码通常不会随主密码更改自动失效；是否有效以账号页面为准，不把此规则套用到 Google/Apple。"
+      ],
+      "stopConditions": [
+        "生成资格受限或地区不适用时停止；不绕过风控。"
+      ],
+      "verificationNote": "已取得官方帮助索引中的完整生成步骤；直接获取正文返回 HTTP 429，执行时须用官方页面核对。",
+      "steps": [
+        "登录目标 Yahoo 账号，进入 Account Security。",
+        "在 External connections 下选择 Create app password，填写“邮箱工作台”。",
+        "点击 Generate password，按页面流程取得应用密码并回填。"
+      ]
+    },
+    {
+      "id": "fastmail",
+      "name": "Fastmail",
+      "domains": [
+        "fastmail.com",
+        "fastmail.fm"
+      ],
+      "selection": "domain",
+      "credentialTerm": "应用专用密码",
+      "officialSourceCandidates": [
+        "https://www.fastmail.help/hc/en-us/articles/360058752854-App-passwords",
+        "https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://app.fastmail.com/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://www.fastmail.help/hc/en-us/articles/360058752854-App-passwords",
+        "https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports"
+      ],
+      "credentialSurface": "webmail",
+      "prerequisites": [
+        "套餐包含 IMAP/SMTP 和 app passwords；官方文档说明 Basic 套餐不支持。"
+      ],
+      "missingEntryHelp": [
+        "先检查套餐和权限，再检查当前菜单；普通账号密码及两步验证码不能代替应用密码。"
+      ],
+      "credentialLifecycle": [
+        "每个外部应用使用独立密码；管理页面不能再次展示旧密码。"
+      ],
+      "stopConditions": [
+        "套餐不包含第三方客户端时停止，不擅自升级购买。"
+      ],
+      "steps": [
+        "登录 Fastmail，进入 Settings → Privacy & Security。",
+        "在 Connected apps & API tokens 中打开 Manage app passwords and access → New app password。",
+        "由用户完成再次验证；填写用途，并选择仅邮件所需权限（若页面提供）。",
+        "点击 Generate password，将新密码填回目标连接表单。"
+      ]
+    },
+    {
+      "id": "zoho",
+      "name": "Zoho 个人邮箱",
+      "domains": [
+        "zoho.com",
+        "zohomail.com"
+      ],
+      "selection": "domain",
+      "credentialTerm": "应用专用密码（按账号认证条件）",
+      "officialSourceCandidates": [
+        "https://www.zoho.com/mail/help/imap-access.html",
+        "https://www.zoho.com/mail/help/adminconsole/two-factor-authentication.html",
+        "https://www.zoho.com/mail/help/adminconsole/subscription.html"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.zoho.com/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://www.zoho.com/mail/help/imap-access.html",
+        "https://www.zoho.com/mail/help/adminconsole/two-factor-authentication.html",
+        "https://www.zoho.com/mail/help/adminconsole/subscription.html"
+      ],
+      "credentialSurface": "account_security",
+      "prerequisites": [
+        "账号套餐和组织政策允许 IMAP；开启 MFA 或使用 SAML 的账号需要应用专用密码。",
+        "确认个人/企业类型及数据中心；.com 企业预设不能覆盖其他地区服务器。"
+      ],
+      "missingEntryHelp": [
+        "查 IMAP 开关、管理员限制和套餐；企业免费 web-only 计划不包含 IMAP，不把此结论扩大到所有历史或个人账号。",
+        "跟随已登录账号的官方地区跳转；不同数据中心不要机械使用 .com 服务器。"
+      ],
+      "credentialLifecycle": [
+        "应用密码只展示一次；不要通过关闭 MFA 或更换组织认证方式解决。"
+      ],
+      "stopConditions": [
+        "IMAP 被套餐/管理员禁用，或当前工作台服务器配置不匹配数据中心时停止并说明。"
+      ],
+      "steps": [
+        "登录该账号实际数据中心的 Zoho Mail，在 Settings → Mail Accounts 中选择主邮箱。",
+        "在 IMAP 区域确认 IMAP Access 已启用；保留自动清除和归档等其他设置。",
+        "需要应用密码时，进入 Zoho Accounts → Security → App passwords → Generate New Password。",
+        "填写“邮箱工作台”并生成，按页面要求完成验证后回填原连接表单。"
+      ]
+    },
+    {
+      "id": "zohoEnterprise",
+      "name": "Zoho 企业邮箱（.com）",
+      "domains": [],
+      "selection": "manual",
+      "credentialTerm": "应用专用密码（按账号认证条件）",
+      "officialSourceCandidates": [
+        "https://www.zoho.com/mail/help/imap-access.html",
+        "https://www.zoho.com/mail/help/adminconsole/two-factor-authentication.html",
+        "https://www.zoho.com/mail/help/adminconsole/subscription.html"
+      ],
+      "evidence": "official_steps_verified",
+      "lastVerified": "2026-09-24",
+      "verifyAtUse": [
+        "先按内置步骤观察页面；入口、账号类型或条件与本条目不符时，再查 sourceUrls 的当前官方说明。"
+      ],
+      "mailEntry": "https://mail.zoho.com/",
+      "verificationStatus": "verified",
+      "checkedAt": "2026-09-24",
+      "liveAccountTested": false,
+      "sourceUrls": [
+        "https://www.zoho.com/mail/help/imap-access.html",
+        "https://www.zoho.com/mail/help/adminconsole/two-factor-authentication.html",
+        "https://www.zoho.com/mail/help/adminconsole/subscription.html"
+      ],
+      "credentialSurface": "account_security",
+      "prerequisites": [
+        "账号套餐和组织政策允许 IMAP；开启 MFA 或使用 SAML 的账号需要应用专用密码。",
+        "确认个人/企业类型及数据中心；.com 企业预设不能覆盖其他地区服务器。"
+      ],
+      "missingEntryHelp": [
+        "查 IMAP 开关、管理员限制和套餐；企业免费 web-only 计划不包含 IMAP，不把此结论扩大到所有历史或个人账号。",
+        "跟随已登录账号的官方地区跳转；不同数据中心不要机械使用 .com 服务器。"
+      ],
+      "credentialLifecycle": [
+        "应用密码只展示一次；不要通过关闭 MFA 或更换组织认证方式解决。"
+      ],
+      "stopConditions": [
+        "IMAP 被套餐/管理员禁用，或当前工作台服务器配置不匹配数据中心时停止并说明。"
+      ],
+      "steps": [
+        "登录该账号实际数据中心的 Zoho Mail，在 Settings → Mail Accounts 中选择主邮箱。",
+        "在 IMAP 区域确认 IMAP Access 已启用；保留自动清除和归档等其他设置。",
+        "需要应用密码时，进入 Zoho Accounts → Security → App passwords → Generate New Password。",
+        "填写“邮箱工作台”并生成，按页面要求完成验证后回填原连接表单。"
+      ]
+    }
+  ],
+  "recognizedButUnsupportedInWorkbench": [
+    {
+      "domains": [
+        "outlook.com",
+        "hotmail.com",
+        "live.com",
+        "msn.com"
+      ],
+      "reason": "当前工作台未实现 OAuth 接入；Outlook.com 的 IMAP/SMTP 要求 Modern Auth/OAuth2。生成应用密码不会补齐工作台的 OAuth 能力。",
+      "officialSourceCandidates": [
+        "https://support.microsoft.com/en-US/Outlook/pop-imap-and-smtp-settings-for-outlook-com"
+      ],
+      "checkedAt": "2026-09-24",
+      "verificationStatus": "verified",
+      "liveAccountTested": false,
+      "id": "outlook",
+      "name": "Outlook / Hotmail / Live",
+      "nextAction": "先说明当前接入限制；仅在目标产品新增并实际支持 OAuth 后使用其正式流程，不索取普通密码或授权码。",
+      "sourceUrls": [
+        "https://support.microsoft.com/en-US/Outlook/pop-imap-and-smtp-settings-for-outlook-com"
+      ]
+    },
+    {
+      "domains": [
+        "proton.me",
+        "protonmail.com",
+        "pm.me"
+      ],
+      "reason": "当前工作台未实现 Proton Bridge 接入。普通第三方 IMAP/SMTP 需本机 Bridge 与其提供的凭据；网页账号密码不是 Bridge 密码。",
+      "officialSourceCandidates": [
+        "https://proton.me/support/imap-smtp-and-pop3-setup",
+        "https://proton.me/support/invalid-password-error-setting-email-client"
+      ],
+      "checkedAt": "2026-09-24",
+      "verificationStatus": "verified",
+      "liveAccountTested": false,
+      "id": "proton",
+      "name": "Proton Mail",
+      "nextAction": "先说明当前接入限制；不在网页上寻找通用 IMAP key，不自动安装 Bridge 或修改当前工作台服务器。",
+      "sourceUrls": [
+        "https://proton.me/support/imap-smtp-and-pop3-setup",
+        "https://proton.me/support/invalid-password-error-setting-email-client"
+      ]
+    }
+  ],
+  "verificationLegend": {
+    "official_steps_verified": "已核对具体官方文档中的操作步骤；仍需现场确认账号和 UI。",
+    "partial": "已有官方线索或部分步骤，但关键适用条件/正文读取尚未完整核验。",
+    "seed_only": "仅有候选链接，不能作为已核实的操作步骤。"
+  }
+}

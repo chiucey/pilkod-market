@@ -1,0 +1,192 @@
+{
+  "contractVersion": "1.0.0",
+  "source": "深圳公共资源交易网 szggzy.com（tender-server 的 project_progress / get_notice / download_docs 输出）",
+  "note": "本契约描述可视化可消费的数据形状。字段名与 tender-server 工具返回一致；缺失字段用 null，渲染时显示为「未获取」。",
+  "datasets": {
+    "timeline": {
+      "description": "单个项目的全流程阶段时间线",
+      "rowCount": "1~8（典型建设工程项目 8 条）",
+      "fields": {
+        "projectCode": {
+          "type": "string",
+          "nullPolicy": "公告未列则 null",
+          "example": "4403942026081200201Y"
+        },
+        "projectName": {
+          "type": "string",
+          "example": "院容院貌提升改造工程"
+        },
+        "region": {
+          "type": "string",
+          "example": "龙岗区"
+        },
+        "currentStage": {
+          "type": "string",
+          "enum": [
+            "意向阶段",
+            "投标中",
+            "已截标",
+            "已开标",
+            "评标中",
+            "评标完成",
+            "已定标",
+            "已中标"
+          ],
+          "example": "已中标"
+        },
+        "stageIndex": {
+          "type": "integer",
+          "range": [
+            0,
+            7
+          ],
+          "meaning": "currentStage 在阶段序列中的下标"
+        },
+        "bidClosed": {
+          "type": "boolean",
+          "meaning": "是否已截标"
+        },
+        "enteredEvaluation": {
+          "type": "boolean",
+          "meaning": "是否已进入评标"
+        },
+        "steps": {
+          "type": "array",
+          "itemFields": {
+            "stage": {
+              "type": "string",
+              "enum": [
+                "投标中",
+                "已截标",
+                "已开标",
+                "评标中",
+                "评标完成",
+                "已定标",
+                "已中标"
+              ]
+            },
+            "noticeType": {
+              "type": "string",
+              "example": "开标情况公示"
+            },
+            "releaseTime": {
+              "type": "string",
+              "format": "YYYY-MM-DD HH:mm:ss",
+              "example": "2026-08-21 11:42:01"
+            },
+            "contentId": {
+              "type": "number",
+              "example": 20591270
+            },
+            "url": {
+              "type": "string",
+              "example": "https://www.szggzy.com/jygg/details.html?contentId=20591270"
+            }
+          }
+        }
+      }
+    },
+    "competition": {
+      "description": "同一项目的各投标人报价与得分排名，渲染时按报价从低到高升序排列",
+      "rowCount": "2~40（实测建设工程项目可达 39 家投标）",
+      "fields": {
+        "rank": {
+          "type": "number",
+          "nullPolicy": "由升序排序计算得出",
+          "example": 19
+        },
+        "bidder": {
+          "type": "string",
+          "example": "深圳市华懋建设工程有限公司"
+        },
+        "priceWan": {
+          "type": "number|null",
+          "unit": "万元",
+          "nullPolicy": "未在公告中披露则为 null，不填 0",
+          "example": 177.249273
+        },
+        "belowCapPct": {
+          "type": "number|null",
+          "unit": "%",
+          "formula": "(投标价上限 - priceWan) / 投标价上限 * 100，保留两位",
+          "nullPolicy": "上限或报价缺失则 null",
+          "example": 2.13
+        },
+        "isWinner": {
+          "type": "boolean",
+          "example": true
+        },
+        "score": {
+          "type": "number|null",
+          "nullPolicy": "评标报告未给出则 null",
+          "example": 92.5
+        },
+        "projectManager": {
+          "type": "string|null",
+          "example": "陈洪文"
+        },
+        "qualification": {
+          "type": "string|null",
+          "example": "二级注册建造师"
+        }
+      },
+      "sortOrder": "priceWan 升序（从低到高），第 1 位排在最上方；排序只影响呈现，不改变数值",
+      "priceCap": {
+        "type": "number",
+        "unit": "万元",
+        "meaning": "投标价上限（可投标的最高报价）。它通常低于最高投标限价：最高限价 189.223963 万元、净下浮 5% 后投标价上限 181.114144 万元。下浮率一律对投标价上限计算。"
+      }
+    },
+    "docs": {
+      "description": "评标与中标资料的获取状态",
+      "rowCount": "1~25",
+      "fields": {
+        "name": {
+          "type": "string",
+          "example": "商务组评标报告.pdf"
+        },
+        "docClass": {
+          "type": "string",
+          "enum": [
+            "kbreport",
+            "pingbiao",
+            "zhongbiao",
+            "zixing",
+            "qita"
+          ],
+          "meaning": "开标报告/评标报告/中标信息/资信资格文件/其他"
+        },
+        "bytes": {
+          "type": "number|null",
+          "nullPolicy": "未下载则 null"
+        },
+        "downloaded": {
+          "type": "boolean"
+        },
+        "captchaProtected": {
+          "type": "boolean",
+          "meaning": "true 表示政府采购附件受图形验证码保护，需人工下载"
+        },
+        "staticUrl": {
+          "type": "string|null",
+          "meaning": "受验证码保护时的公告页地址，供人工下载"
+        },
+        "contentId": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "units": {
+    "bidPrice": "元（取自开标记录表原文）",
+    "maxPrice": "元（取自最高投标限价公告原文）",
+    "winningAmount": "随公告字段，常见为万元；按原文单位显示并标注",
+    "dates": "Asia/Shanghai，展示格式 YYYY-MM-DD HH:mm",
+    "priceWan": "万元（开标情况记录表原文单位）",
+    "priceCap": "万元（投标价上限，与最高投标限价不同，后者含不可竞争费）"
+  },
+  "missingData": {
+    "policy": "缺失字段渲染为「未获取」，不填 0、不留空白、不用同类项目推测",
+    "partialProject": "只有招标公告而未截标时，时间线仅显示已有阶段，阶段进度条按已到达深度渲染 报价通常只在开标情况记录表 PDF 中，HTML 正文只列投标人名单与中标价，需下载 PDF 后解析。"
+  }
+}

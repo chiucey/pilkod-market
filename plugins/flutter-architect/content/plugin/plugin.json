@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "flutter-architect",
+  "displayName": "Flutter 首席架构师",
+  "version": "1.0.0",
+  "description": "面向 Flutter/Dart 项目的架构设计与技术决策助手：给出带权衡的候选方案、可执行的落地步骤、测试与验收标准，覆盖状态管理与路由、网络与存储、性能诊断、设计体系、迁移升级、工程化与发布流程、线上排障。",
+  "author": "Kevin Zhang",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "我们的 Flutter 项目页面里全是网络请求和状态逻辑，应该先从哪里开始治理？",
+    "10 人团队维护一个中型 Flutter 应用，状态管理选 Riverpod 还是 Bloc？给出对比和落地步骤。",
+    "长列表滚动掉帧、冷启动也慢，帮我建立指标基线并给出系统排查方案。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/architecture/SKILL.md"
+  ]
+}

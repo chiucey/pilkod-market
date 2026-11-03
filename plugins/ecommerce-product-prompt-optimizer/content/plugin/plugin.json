@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "name": "ecommerce-product-prompt-optimizer",
+  "displayName": "电商商品图提示词优化器",
+  "version": "1.0.0",
+  "description": "将零散的商品描述转化为适配MiniMax生图模型的标准化高转化率电商素材提示词，覆盖主图、场景图、细节图三类需求",
+  "author": "568876076855832577",
+  "icon": "icon.png",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "帮我写一个保温杯的电商主图提示词",
+    "我要生成美妆产品场景图，帮我优化提示词",
+    "给我一份3C数码产品白底图的生图prompt"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": ["skills/ecommerce-product-prompt-optimizer/SKILL.md"]
+}

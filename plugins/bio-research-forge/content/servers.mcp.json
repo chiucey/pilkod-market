@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "public-bio-api": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./mcp/public-bio-api.mjs"
+      ]
+    },
+    "rna-figure": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./mcp/rna-figure.mjs"
+      ]
+    },
+    "local-bio-tools": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./mcp/local-bio-tools.mjs"
+      ]
+    }
+  }
+}

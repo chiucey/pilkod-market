@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "gaokao-volunteer",
+  "displayName": "高考志愿",
+  "version": "1.0.4",
+  "description": "查询并核验高校、专业与招生政策的官方公开信息，了解第三方高考志愿数据服务的订阅与接入边界，并明确区分官方来源、商业数据和估算字段。",
+  "author": "ToBeWin & jackgl-hk",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Education",
+  "exampleQueries": [
+    "帮我核对北京大学 2026 年本科招生章程和官方选科要求，并列出来源",
+    "客观对比两所高校同一专业的官方培养口径和招生规则",
+    "介绍高考志愿数据 API 的订阅方式、可用字段和接入限制"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/china-gaokao-public-data/SKILL.md",
+    "skills/gaokao2026/SKILL.md"
+  ]
+}

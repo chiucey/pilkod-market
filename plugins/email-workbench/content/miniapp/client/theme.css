@@ -1,0 +1,81 @@
+/* Independent MiniApp mapping: agent-archon 389bef923d2f.
+ * Source: packages/ui/src/configs/tailwind/colorPlugin.ts.
+ * The Host does not inject its CSS/typography preferences into MiniApps.
+ * Keep literal colors here; product selectors consume the existing mcode roles.
+ */
+:root {
+  color-scheme: light;
+  --mcode-bg: #ffffff; /* bg_grouped_secondary */
+  --mcode-bg-secondary: #f5f5f5; /* bg_default_secondary */
+  --mcode-surface: #ffffff; /* bg_default_primary_elevated */
+  --mcode-surface-muted: #f5f5f5; /* bg_grouped_tertiary */
+  --mcode-text: #171717; /* text_default_primary */
+  --mcode-text-muted: #666666; /* text_default_secondary */
+  --mcode-text-subtle: #666666; /* text_default_secondary */
+  --mcode-placeholder: #adadad; /* text_default_tertiary */
+  --mcode-border: #0a0a0a14; /* border_default */
+  --mcode-border-strong: #0a0a0af2; /* border_heavy */
+  --mcode-accent: #0094fc; /* text_default_accent */
+  --mcode-selected: #0a0a0a0a; /* bg_interaction_tertiary_selected */
+  --mcode-hover: #0a0a0a0a; /* bg_interaction_tertiary_hover */
+  --mcode-press: #0a0a0a14; /* bg_interaction_tertiary_press */
+  --mcode-success: #04b54b; /* text_status_success */
+  --mcode-success-bg: #d9f4e4; /* bg_status_positive */
+  --mcode-warning: #f56811; /* text_status_warning */
+  --mcode-warning-bg: #ffeee3; /* bg_status_warning */
+  --mcode-danger: #f73646; /* text_status_error */
+  --mcode-primary-action-bg: #171717; /* bg_interaction_primary_default */
+  --mcode-primary-action-text: #ffffff; /* text_default_inverted */
+  --mcode-primary-hover: #0a0a0acc; /* bg_interaction_primary_hover */
+  --mcode-primary-press: #0a0a0ae5; /* bg_interaction_primary_press */
+  --mcode-primary-inactive: #adadad; /* bg_interaction_primary_inactive */
+  --mcode-backdrop: #00000040; /* utility_overlay */
+  --mcode-shadow: #0a0a0a14; /* shadow_default */
+  --mcode-info-bg: #e5f5ff; /* bg_status_blue */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --mcode-bg: #1c1c1c; /* bg_grouped_secondary */
+    --mcode-bg-secondary: #1c1c1c; /* bg_default_secondary */
+    --mcode-surface: #1c1c1c; /* bg_default_primary_elevated */
+    --mcode-surface-muted: #262626; /* bg_grouped_tertiary */
+    --mcode-text: #ededed; /* text_default_primary */
+    --mcode-text-muted: #949494; /* text_default_secondary */
+    --mcode-text-subtle: #949494; /* text_default_secondary */
+    --mcode-placeholder: #666666; /* text_default_tertiary */
+    --mcode-border: #ffffff12; /* border_default */
+    --mcode-border-strong: #fffffff2; /* border_heavy */
+    --mcode-accent: #0077d9; /* text_default_accent */
+    --mcode-selected: #ffffff12; /* bg_interaction_tertiary_selected */
+    --mcode-hover: #ffffff0a; /* bg_interaction_tertiary_hover */
+    --mcode-press: #ffffff12; /* bg_interaction_tertiary_press */
+    --mcode-success: #009c3d; /* text_status_success */
+    --mcode-success-bg: #082614; /* bg_status_positive */
+    --mcode-warning: #e25507; /* text_status_warning */
+    --mcode-warning-bg: #311908; /* bg_status_warning */
+    --mcode-danger: #e31937; /* text_status_error */
+    --mcode-primary-action-bg: #ffffff; /* bg_interaction_primary_default */
+    --mcode-primary-action-text: #171717; /* text_default_inverted */
+    --mcode-primary-hover: #ffffffcc; /* bg_interaction_primary_hover */
+    --mcode-primary-press: #ffffffe5; /* bg_interaction_primary_press */
+    --mcode-primary-inactive: #949494; /* bg_interaction_primary_inactive */
+    --mcode-backdrop: #0000003d; /* utility_overlay */
+    --mcode-shadow: #0a0a0a80; /* shadow_default */
+    --mcode-info-bg: #0078ff1a; /* bg_status_blue */
+  }
+}
+
+:root {
+  /* Standard Desktop UI roles from shared/src/desktop-typography.ts. */
+  --mcode-ui-assist: 12px;
+  --mcode-ui-small: 13px;
+  --mcode-ui-body: 14px;
+  --mcode-ui-large: 16px;
+  --mcode-avatar-blue: var(--mcode-surface-muted);
+  --mcode-avatar-blue-text: var(--mcode-text-muted);
+  --mcode-avatar-sand: var(--mcode-avatar-blue);
+  --mcode-avatar-sand-text: var(--mcode-avatar-blue-text);
+  --mcode-avatar-mint: var(--mcode-avatar-blue);
+  --mcode-avatar-mint-text: var(--mcode-avatar-blue-text);
+}

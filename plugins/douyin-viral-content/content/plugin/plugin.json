@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "name": "douyin-viral-content",
+  "displayName": "抖音爆款内容创作师",
+  "version": "1.0.0",
+  "description": "抖音爆款内容创作助手，提供抖音热榜查询、爆款作品搜索、违禁词检测、AI日报生成、写作风格蒸馏等一站式创作支持功能。",
+  "author": "pilkod",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "查询抖音今日热榜和热门作品",
+    "帮我检测这段抖音文案有没有违禁词",
+    "搜索抖音爆款视频，找到适合我赛道的热门内容"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/douyin-ai-feed/SKILL.md",
+    "skills/douyin-content-surge/SKILL.md",
+    "skills/douyin-daily-hot/SKILL.md",
+    "skills/douyin-hot-trend/SKILL.md",
+    "skills/douyin-prohibited-word/SKILL.md",
+    "skills/douyin-search/SKILL.md",
+    "skills/douyin-weekly-surge/SKILL.md",
+    "skills/multi-copywrite-alchemy/SKILL.md"
+  ]
+}

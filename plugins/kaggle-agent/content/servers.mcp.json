@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "kaggle": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "-B",
+        "-c",
+        "import os,sys,glob;_n=os.path.join('mcp','agent_server.py');_e=os.path.expanduser;_roots=[p for p in (os.environ.get('PLUGIN_ROOT',''),)+tuple(_e(x) for x in ('~/.minimax/plugins','~/.mavis/plugins','~/.minimax/v2/plugin-cache','~/.minimax/v2/plugin-import')) if p and not p.startswith('$')];_h=lambda c: os.path.isfile(os.path.join(os.path.dirname(os.path.dirname(c)),'mcp','kaggle_server.py'));_p=next((c for r in _roots for c in glob.glob(os.path.join(r,'**','agent_server.py'),recursive=True) if _h(c)),None);_p is None and sys.exit('kaggle-agent: cannot locate '+_n+'; tried '+', '.join(_roots));sys.path.insert(0,os.path.dirname(_p));exec(compile(open(_p,encoding='utf-8').read(),_p,'exec'),{'__name__':'__main__','__file__':_p,'__package__':None})"
+      ],
+      "env": {},
+      "description": "Kaggle notebooks, competitions, accounts and accelerator quota as local tools. Sign in once with kaggle_accounts action='add', or from a terminal with 'kaggle-cli.cmd login' (Windows) / 'python3 bin/kaggle-cli.sh login' (macOS, Linux); credentials resolve from KAGGLE_API_TOKEN, ~/.kaggle-agent/, or KAGGLE_KEY.",
+      "timeout": 900000
+    }
+  }
+}

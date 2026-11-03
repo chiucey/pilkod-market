@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "scroll-world-local",
+  "displayName": "Scroll World for MiniMax",
+  "version": "1.0.1",
+  "description": "将完整视频或生成式视觉素材转换为滚动驱动的沉浸式品牌与产品网页。",
+  "author": "Scroll World Local Contributors",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "把这段完整视频自动分章，做成滚动控制的品牌网页",
+    "根据这个品牌故事生成场景，并制作连续飞行的滚动网站",
+    "检查这个滚动视频页面的反向滚动、移动端和降级体验"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/scroll-world-local/SKILL.md"
+  ]
+}

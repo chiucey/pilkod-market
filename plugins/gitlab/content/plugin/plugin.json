@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "gitlab",
+  "displayName": "GitLab",
+  "version": "1.0.0",
+  "description": "连接已接入的 GitLab 实例，读取 Issue/MR，通过 MCP 提交修复并回读 MR，分析已有 CI 日志。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "根据这个 Issue 提交修复并创建 MR，回读验证结果",
+    "分析这个 GitLab Job 的失败日志并注明证据",
+    "更新指定 MR 的说明并回读确认"
+  ],
+  "apps": [
+    "gitlab.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/gitlab-workflow/SKILL.md"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "name": "academic-paper-assistant",
+  "displayName": "论文辅助",
+  "version": "1.0.5",
+  "description": "覆盖论文英文润色、医学中英摘要精炼、结构化同行评审与 LaTeX 写作排版；坚持忠实原文、区分事实与判断，不编造数据、结论或引用。",
+  "author": "yzy / AIPOCH / ByteDance DeerFlow / Wentor AI",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Science & Healthcare",
+  "exampleQueries": [
+    "把这段英文方法部分润色成准确、简洁的学术表达，并说明关键改动",
+    "根据这份医学研究全文生成中英文非结构式摘要，不补写未提供的数据",
+    "按顶会审稿格式评审这篇论文，区分主要问题、次要问题和证据局限"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/academic-paper-polish/SKILL.md",
+    "skills/academic-abstract-refiner/SKILL.md",
+    "skills/academic-paper-review/SKILL.md",
+    "skills/academic-writing-latex/SKILL.md"
+  ]
+}

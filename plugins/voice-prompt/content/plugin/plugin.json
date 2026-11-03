@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "voice-prompt",
+  "displayName": "Voice Prompt",
+  "version": "0.8.0",
+  "description": "免费语音输入与 AI 润色。首次 @ 发送「安装」，Agent 帮你准备桌面应用和模型；打开应用后自动开通免费润色，无需邀请码或 API Key。Option＋空格录音，润色后填入输入框，由你确认发送（Apple Silicon Mac / macOS 15+）",
+  "author": "Voice Prompt contributors",
+  "icon": "icon.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "第一次使用 Voice Prompt，请显示使用指南",
+    "安装 Voice Prompt，帮我准备桌面应用和语音模型",
+    "Voice Prompt 怎么用？告诉我录音快捷键和自动润色的设置方法"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "voice-prompt.mcp.json"
+  ],
+  "skills": [
+    "skills/voice-prompt/SKILL.md"
+  ]
+}

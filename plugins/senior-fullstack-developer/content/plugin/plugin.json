@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "name": "senior-fullstack-developer",
+  "displayName": "高级全栈开发工程师",
+  "version": "1.0.10",
+  "description": "提供项目感知的高级前端、后端、全栈架构、增量实现、验证与交付工作流。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Code",
+  "exampleQueries": [
+    "帮我设计并实现一个完整的全栈功能，并完成相关测试与交付自检",
+    "为这个项目开发一个响应式且可访问的高级前端页面",
+    "分析现有架构并完成 API、数据库和前端联调"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/engineering-workflow/SKILL.md",
+    "skills/frontend-dev/SKILL.md",
+    "skills/fullstack-dev/SKILL.md"
+  ]
+}

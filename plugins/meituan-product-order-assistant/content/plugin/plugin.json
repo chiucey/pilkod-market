@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "meituan-product-order-assistant",
+  "displayName": "美团生活助手",
+  "version": "1.0.3",
+  "description": "领取美团优惠券，搜索附近团购美食，并协助完成下单。",
+  "author": "美团",
+  "icon": "icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Other",
+  "exampleQueries": [
+    "帮我领美团优惠券",
+    "帮我找附近的团购美食",
+    "帮我下单一杯奶茶"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/meituan-product-order-assistant/SKILL.md"
+  ]
+}

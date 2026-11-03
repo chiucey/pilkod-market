@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "name": "shenzhen-tender-info",
+  "displayName": "深交易投标信息查询",
+  "version": "1.0.0",
+  "description": "查询深圳公共资源交易网（szggzy.com）的工程项目与政府采购项目全流程进度：招标公告、最高投标限价、截标信息、开标情况公示、资审及业绩公示、评标委员会公示、评标报告公示、定标结果公示、中标结果公示；可下载开标报告、评标报告与中标结果公告等公开附件。",
+  "author": "大彬",
+  "icon": "icon.png",
+  "category": "Business",
+  "exampleQueries": [
+    "查一下院容院貌提升改造工程现在到哪一步了",
+    "把罗沙路改扩建工程的评标报告和开标记录下载到 E:\\投标资料\\罗沙路",
+    "罗沙路改扩建工程中标了吗，中标单位和报价是多少"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/tender-search/SKILL.md",
+    "skills/tender-search-visualizer/SKILL.md"
+  ]
+}

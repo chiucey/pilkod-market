@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "redfox-wechat-creator",
+  "displayName": "公众号爆款内容创作师",
+  "version": "1.0.2",
+  "description": "覆盖公众号10w+爆文榜单（23分类）、标题、正文、改写、违禁词审核、封面设计与账号四维度诊断全链路，基于红狐爆款数据驱动",
+  "author": "RedFox(红狐数据)",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "查询最近 7 天的公众号 10w+ 爆文榜",
+    "给我诊断一下这个公众号账号的运营状况",
+    "为这篇文章生成 5 个公众号爆款标题并打分"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/wechat-10w-hot/SKILL.md",
+    "skills/wechat-account-analyzer/SKILL.md",
+    "skills/wechat-cover/SKILL.md",
+    "skills/wechat-prohibited-word/SKILL.md",
+    "skills/wechat-rewrite/SKILL.md",
+    "skills/wechat-title/SKILL.md",
+    "skills/wechat-write/SKILL.md"
+  ]
+}

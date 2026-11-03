@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "browser-use",
+  "displayName": "浏览器控制",
+  "version": "1.0.11",
+  "description": "让 Agent 安全复用当前会话内置 Browser 的页面、标签页与登录态，完成网页查看、交互和调试。",
+  "author": "Pilkod",
+  "icon": "icon.webp",
+  "category": "Productivity",
+  "exampleQueries": [
+    "查看当前内置浏览器页面并总结主要内容。",
+    "在当前浏览器里打开这个链接，帮我完成页面上的操作。",
+    "检查当前网页的控制台和网络错误并定位问题。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/control-in-app-browser/SKILL.md"
+  ],
+  "hostBindings": [
+    "bindings/browser.binding.json"
+  ]
+}

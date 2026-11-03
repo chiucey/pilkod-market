@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "baidu-maps-docs": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./bin/docs-mcp-proxy.mjs"],
+      "description": "检索百度地图开放平台官方 API / SDK 文档",
+      "timeout": 30000
+    }
+  }
+}

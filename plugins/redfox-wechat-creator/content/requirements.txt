@@ -1,0 +1,20 @@
+# wechat-content-suite 依赖清单
+# 安装方式：pip install -r requirements.txt
+# 然后执行：playwright install chromium
+#
+# 各 skill 实际依赖：
+#   wechat-10w-hot         仅用 Python 标准库（urllib）
+#   wechat-account-analyzer  requests>=2.28.0
+#   wechat-cover           无外部依赖
+#   wechat-prohibited-word  requests>=2.28.0, python-docx==1.1.0, beautifulsoup4==4.12.3, playwright==1.58.0
+#   wechat-rewrite         无外部依赖
+#   wechat-title           requests>=2.28.0
+#   wechat-write           无外部依赖
+#
+# API 鉴权（必需）：REDFOX_API_KEY
+# 获取地址：https://redfox.hk/settings/api-keys?source=minimax
+
+requests>=2.28.0
+python-docx==1.1.0
+beautifulsoup4==4.12.3
+playwright==1.58.0

@@ -1,0 +1,15 @@
+{
+  "name": "Marble Skill Taxonomy",
+  "taxonomyVersion": "v1",
+  "source": "https://github.com/withmarbleapp/os-taxonomy",
+  "commit": "96a7933754af672e1bfdbf7ecb05c325860c6e0d",
+  "retrievedAt": "2026-08-04",
+  "databaseLicense": "ODbL-1.0",
+  "contentLicense": "CC-BY-SA-4.0",
+  "attribution": "Marble Skill Taxonomy (v1) · © Generative Spark, Inc. (Marble) · https://withmarble.com",
+  "includedSubset": [
+    "os-taxonomy/data/topics.json",
+    "os-taxonomy/data/dependencies.json"
+  ],
+  "notes": "This Plugin includes only the topic and dependency files used by offline retrieval. It omits upstream curriculum-standards, clusters, media, and development files. See os-taxonomy/PROVENANCE.md and the package-level ATTRIBUTION.md."
+}

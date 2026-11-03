@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "scientific-research-workflows",
+  "displayName": "科学研究工作流",
+  "version": "1.0.0",
+  "description": "覆盖科学创意、可检验假设、实验设计、统计功效与分析、不确定度、科学写作、同行评审和学术评价的本地优先研究工作流。",
+  "author": "K-Dense Inc.",
+  "icon": "icon.webp",
+  "category": "Science & Healthcare",
+  "exampleQueries": [
+    "我准备做一个两中心三处理实验。帮我定义竞争假设、设计随机化和区组，并规划统计功效分析。",
+    "审查这份研究方案的实验单位、混杂因素、样本量假设和分析计划，不要编造数据。",
+    "基于已核验的证据清单起草论文，并检查引用、方法结果一致性和作者贡献声明。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/scientific-brainstorming/SKILL.md",
+    "skills/hypothesis-generation/SKILL.md",
+    "skills/experimental-design/SKILL.md",
+    "skills/statistical-power/SKILL.md",
+    "skills/statistical-analysis/SKILL.md",
+    "skills/uncertainty-and-units/SKILL.md",
+    "skills/scientific-writing/SKILL.md",
+    "skills/peer-review/SKILL.md",
+    "skills/scholar-evaluation/SKILL.md"
+  ]
+}

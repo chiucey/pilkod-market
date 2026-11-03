@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "diagram-design",
+  "displayName": "Diagram Design",
+  "version": "2.6.11",
+  "description": "创建具有品牌风格的架构图、流程图、时序图、数据模型、时间线、象限图和其他技术或产品图表，并可导入 draw.io 或 Mermaid 源文件。",
+  "author": "Cathryn Lavery",
+  "icon": "icon.webp",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "为这个系统创建一张清晰的架构图",
+    "把这段 Mermaid 重绘成适合文档发布的流程图",
+    "把这个业务过程画成带泳道和关键交接点的图表"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/diagram-design/SKILL.md"
+  ]
+}

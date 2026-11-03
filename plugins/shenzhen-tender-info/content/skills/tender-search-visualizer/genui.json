@@ -1,0 +1,9 @@
+{
+  "protocol": "mavis.widget.v1",
+  "mode": "forked",
+  "forkedFrom": "minimax/genui-widget@mavis.widget.v1",
+  "sourceDigest": "sha256:5af89d6aee391d9a6383706f74f86a42406fa152138ae7741074be3110c5c454",
+  "derivedFrom": "shenzhen-tender-info:tender-search",
+  "notes": "用户自有的派生可视化技能。基础规范为 Creator 发行版的完整副本；Creator 后续更新不会静默改动本副本。",
+  "foundationCopy": "references/genui-widget/genui-widget-foundation.md"
+}

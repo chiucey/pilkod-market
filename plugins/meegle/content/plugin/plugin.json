@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "name": "meegle",
+  "displayName": "飞书项目",
+  "version": "0.1.2",
+  "description": "通过官方 Meegle CLI 查询和管理飞书项目工作项、节点流转、视图、排期与工时；缺少 CLI 时提供安装指引。",
+  "author": "Pilkod",
+  "icon": "icon.png",
+  "category": "Office",
+  "exampleQueries": [
+    "查看我在飞书项目中本周的待办工作项",
+    "查询飞书项目中这个需求的节点和排期",
+    "统计飞书项目中团队本月的工作量"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": ["skills/meegle/SKILL.md"],
+  "hooks": ["hooks/hooks.json"]
+}

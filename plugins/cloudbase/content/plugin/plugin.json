@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "name": "cloudbase",
+  "displayName": "腾讯云 CloudBase",
+  "version": "0.1.0",
+  "description": "为 Web 应用和微信小程序接入腾讯云 CloudBase，支持登录授权、数据库、云函数、云存储、静态托管和云托管的开发与管理。",
+  "author": "Tencent CloudBase",
+  "icon": "icon.png",
+  "category": "Code",
+  "exampleQueries": [
+    "帮我登录 CloudBase，并选择这个项目要使用的云开发环境。",
+    "为这个微信小程序接入 CloudBase 数据库和用户登录。",
+    "检查当前项目的 CloudBase 云函数日志，定位部署后的报错。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "cloudbase.mcp.json"
+  ],
+  "skills": [
+    "skills/ai-model-nodejs/SKILL.md",
+    "skills/ai-model-web/SKILL.md",
+    "skills/ai-model-wechat/SKILL.md",
+    "skills/auth-nodejs-cloudbase/SKILL.md",
+    "skills/auth-tool-cloudbase/SKILL.md",
+    "skills/auth-web-cloudbase/SKILL.md",
+    "skills/auth-wechat-miniprogram/SKILL.md",
+    "skills/cloud-api-operations/SKILL.md",
+    "skills/cloud-functions/SKILL.md",
+    "skills/cloud-storage-web/SKILL.md",
+    "skills/cloudbase/SKILL.md",
+    "skills/cloudbase-agent/SKILL.md",
+    "skills/cloudbase-cli/SKILL.md",
+    "skills/cloudbase-code-review/SKILL.md",
+    "skills/cloudbase-declarative-deploy/SKILL.md",
+    "skills/cloudbase-document-database-in-wechat-miniprogram/SKILL.md",
+    "skills/cloudbase-document-database-web-sdk/SKILL.md",
+    "skills/cloudbase-platform/SKILL.md",
+    "skills/cloudbase-wechat-integration/SKILL.md",
+    "skills/cloudrun-development/SKILL.md",
+    "skills/data-model-creation/SKILL.md",
+    "skills/http-api-cloudbase/SKILL.md",
+    "skills/minimal-web-baas-demo/SKILL.md",
+    "skills/miniprogram-development/SKILL.md",
+    "skills/ops-inspector/SKILL.md",
+    "skills/postgresql-development-cloudbase/SKILL.md",
+    "skills/relational-database-mcp-cloudbase/SKILL.md",
+    "skills/relational-database-web-cloudbase/SKILL.md",
+    "skills/spec-workflow/SKILL.md",
+    "skills/ui-design/SKILL.md",
+    "skills/web-development/SKILL.md"
+  ],
+  "hooks": []
+}

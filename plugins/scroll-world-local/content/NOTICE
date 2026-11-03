@@ -1,0 +1,39 @@
+Scroll World for MiniMax
+
+来源说明
+
+本 Plugin 基于开源项目 Scroll World 进行适配与扩展：
+https://github.com/oso95/scroll-world
+
+原项目 Copyright (c) 2026 cyw，使用 MIT License。完整许可文本已随本
+Plugin 收录于 LICENSE 文件。当前版本保留原滚动视频引擎，并新增完整视频
+分析与语义分章、单源视频时间窗口、关键帧停留、文案时间控制、MiniMax Code
+生成与部署流程、本地媒体处理脚本，以及桌面端、移动端、反向滚动、快速滚动
+和 reduced-motion 浏览器 QA。
+
+本适配版本不代表原项目或原作者对该版本及其 Marketplace 上架的认可或背书。
+
+English attribution
+
+This Plugin is based on Scroll World:
+https://github.com/oso95/scroll-world
+
+Original work Copyright (c) 2026 cyw.
+The original work is licensed under the MIT License. The complete license text
+is included in the LICENSE file distributed with this Plugin.
+
+This adaptation preserves the core scroll-scrub engine and extends it for
+MiniMax Code. Major modifications include:
+
+- analysis and semantic chaptering for an existing complete video;
+- reuse of one source video through videoStart/videoEnd chapter windows;
+- shared media Blob caching, key-frame holds, and overlay timing controls;
+- MiniMax Code image_synthesize, gen_videos, and website_deploy workflows;
+- local media inspection, extraction, encoding, and seam-check helpers;
+- browser QA for chapter boundaries, reverse and rapid scrolling, mobile, and
+  reduced-motion behavior; and
+- a rewritten Chinese workflow for complete-video and generated-media modes.
+
+The Scroll World project and its authors do not endorse this adaptation or its
+Marketplace listing. Third-party trademarks remain the property of their
+respective owners.

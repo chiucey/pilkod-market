@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "everme",
+  "displayName": "EverMe",
+  "version": "1.0.4",
+  "description": "连接 EverMe，在对话中读取、检索和保存个人长期记忆，让 Agent 在不同会话中持续理解你的偏好、经历和重要决定。",
+  "author": "Pilkod",
+  "icon": "everme.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "从 EverMe 读取我的长期偏好，并据此帮我规划本周工作",
+    "在 EverMe 中搜索我之前关于 OAuth token rotation 的讨论",
+    "把我刚才确认的工作偏好保存到 EverMe"
+  ],
+  "apps": [
+    "everme.app.json"
+  ],
+  "mcpServers": [],
+  "skills": []
+}

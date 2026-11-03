@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "name": "superpowers",
+  "displayName": "Superpowers",
+  "version": "6.2.8",
+  "description": "面向编程智能体的软件开发方法论，覆盖需求澄清、方案探索、实施计划、测试驱动开发、系统化调试、代码评审和交付流程。",
+  "author": "Jesse Vincent",
+  "icon": "app-icon.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Code",
+  "exampleQueries": [
+    "帮我在开始实现前梳理需求、探索方案并完善功能设计",
+    "为这个需求制定一份可执行、可验证的详细实施计划",
+    "使用测试驱动开发实现这个功能，并在完成前进行系统化验证"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/brainstorming/SKILL.md",
+    "skills/dispatching-parallel-agents/SKILL.md",
+    "skills/executing-plans/SKILL.md",
+    "skills/finishing-a-development-branch/SKILL.md",
+    "skills/receiving-code-review/SKILL.md",
+    "skills/requesting-code-review/SKILL.md",
+    "skills/subagent-driven-development/SKILL.md",
+    "skills/systematic-debugging/SKILL.md",
+    "skills/test-driven-development/SKILL.md",
+    "skills/using-git-worktrees/SKILL.md",
+    "skills/using-superpowers/SKILL.md",
+    "skills/verification-before-completion/SKILL.md",
+    "skills/writing-plans/SKILL.md",
+    "skills/writing-skills/SKILL.md"
+  ],
+  "hooks": [
+    "hooks/hooks.json"
+  ]
+}

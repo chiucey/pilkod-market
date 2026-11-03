@@ -1,0 +1,213 @@
+# mcode Dynamic Island
+
+A Windows desktop status pill ("Dynamic Island") for MiniMax Code. It shows what the agent is
+doing right now — thinking, running a tool, waiting for your approval, done or failed — so you can
+follow the work without switching back to the terminal window.
+
+![states](assets/state-working.png)
+
+## Try it
+
+```text
+Open a desktop status pill so I can follow your progress without switching back to the terminal.
+```
+
+Expected result: a dark pill appears at the top center of your primary display, and it keeps
+updating while the agent works.
+
+## States
+
+| state      | meaning                        |
+| ---------- | ------------------------------ |
+| `idle`     | waiting for your input         |
+| `thinking` | reasoning, no tool call yet    |
+| `working`  | actively running a tool        |
+| `waiting`  | tool needs approval / input    |
+| `done`     | step finished, more to do      |
+| `error`    | tool or step failed            |
+
+## Requirements
+
+- Windows 10 or 11. Every script checks the platform first and exits with a clear message
+  (`mcode-island supports Windows only`) anywhere else, instead of failing later inside WPF.
+- PowerShell 5.1 or newer. The scripts in this package are pure ASCII and carry no byte-order
+  mark, so they parse the same way on every code page.
+
+## What is in this package
+
+```
+mcode-island/
+├── .minimax-plugin/
+│   └── plugin.json               # MiniMax Plugin V1 manifest (package entry point)
+├── icon.png                      # 512x512 marketplace icon
+├── skills/mcode-island/
+│   └── SKILL.md                  # the skill: how the agent pushes state
+├── mcode-island.ps1              # WPF widget
+├── mcode-island.cmd              # CLI shim (start/stop/status/...)
+├── start-island.ps1              # launch the widget
+├── stop-island.ps1               # stop the widget
+├── status-island.ps1             # print widget state
+├── show-island.ps1               # re-raise the hidden widget
+├── pin-island.ps1                # pin the click target to the foreground window
+├── autostart.ps1                 # register/unregister the Windows logon entry
+├── notify-island.ps1             # state-push helper (the agent calls this)
+├── wrap-tool.ps1                 # all-in-one state publisher for tool calls
+├── mcode-status-detect.ps1       # runtime-state detector
+├── start-detect-island.ps1       # start the detector
+├── status-detect-island.ps1      # detector status
+├── stop-detect-island.ps1        # stop the detector
+├── scripts/lib/
+│   ├── Protect-Text.ps1          # secret redaction helper
+│   └── Status-Store.ps1          # cross-process status.json protocol
+├── assets/                       # state screenshots
+├── README.md
+├── README.zh-CN.md
+└── LICENSE                       # Apache-2.0
+```
+
+## Usage
+
+Start the widget once (the agent can also do this for you):
+
+```cmd
+mcode-island
+```
+
+Then the agent pushes state as it works:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File "<plugin-root>\notify-island.ps1" -State working -Message "read source tree"
+```
+
+See `skills/mcode-island/SKILL.md` for the full workflow, including sub-step progress and the
+`ask_user` wait case.
+
+The state detector is optional. When it is running it reads the local MiniMax Code session
+stream (`~/.minimax/v2/sessions`, or `$env:MINIMAX_DATA_DIR`) and infers the current state on its
+own, which keeps the pill moving even when the agent does not push. It reads local files only.
+
+## Clicking the pill
+
+The click target is resolved on every click, in this order:
+
+| # | target                | how it is found                                             | what the click does                     |
+| - | --------------------- | ----------------------------------------------------------- | --------------------------------------- |
+| 1 | a manual pin          | `pin.json`, written by `mcode-island pin`                    | focuses that window                     |
+| 2 | the desktop app       | a process named `MiniMax Inside Code` / `MiniMax Code` / `Mavis` in the widget's own session | focuses the app window |
+| 3 | the originating terminal | `caller.json`, written by `notify-island.ps1`             | shows it, or hides it when it is already visible |
+
+In the desktop app the agent is hosted by the app and runs in a terminal the app
+opened. Hiding that terminal does not stop the agent — the user would be left
+looking at a static pill while the work continues behind it — so the desktop
+app window is focused and never hidden.
+
+`mcode-island pin` overrides the target and stores it in `pin.json`, a
+separate file from `caller.json`: `caller.json` is rewritten on every state
+transition, so a pin stored there would not survive the next push. It is the
+way to point the click at your own terminal while the desktop app is open.
+`mcode-island unpin` clears it.
+
+## The session list
+
+Resting the mouse on the pill expands a list of **every session that is
+currently live**, not just the one the detector happens to be following. Each
+row carries the status dot (the same words and colours the pill uses), the
+session's title, the last thing that session said, and how long ago it moved.
+
+**What is read, and what is not.** The list is fed by the detector, which
+reads the session logs the runtime already writes on this machine:
+
+- **the first user message** of a session — its title;
+- **the last message** of a session — its preview and its state;
+- **the log's mtime** — how long ago the session moved, and whether it is
+  still alive.
+
+Nothing else is read. The runtime's own database is not read, and the
+MiniMax Code programme is not borrowed to run anything: the title is simply
+the first thing the user said, which is what the app shows in its own
+sidebar too.
+
+**Truncated and redacted before it is stored or shown.** A title and a
+preview are things a user said — they can contain a key. Both are cut to a
+fixed length and passed through the plugin's secret redactor **before** they
+are written to `sessions.json` and before they are drawn on screen.
+
+**The list is cleaned up.** The list is "the sessions that are alive now",
+not a history. A session that has not moved for 30 minutes is dropped from
+the list and from `sessions.json`, and comes back when it moves again.
+
+**Clicking a row goes back to that session.** The widget first looks for the
+Windows Terminal tab that runs it and selects that tab. If the session lives
+in the desktop app instead, the widget switches the app to that conversation:
+the app's sidebar row is a button whose accessible name is the session name,
+so the widget finds the sidebar's conversation list and invokes the row there.
+The search is scoped to that list, not to the whole window. A row click
+never opens a second terminal for a session that is already open somewhere
+else.
+
+## Autostart
+
+`mcode-island autostart-on` writes two named values under
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Run` (`mcode-island` and `mcode-island-detect`).
+It creates the key only when it does not exist yet, writes only its own two values, and verifies
+afterwards that every unrelated entry in that key is still there.
+
+## Runtime data
+
+All state lives under `%APPDATA%\mcode-island\` — `status.json`, `caller.json`, `pin.json`,
+`config.json`, `widget.pid`, `island.log`, `widget.log`. Nothing is uploaded.
+
+## Disclosure
+
+- **No credentials.** The package contains no token, key, secret or personal data, reads no
+  credential from the environment, and stores none. There is no API client in this package.
+- **No network.** The package makes no outbound request of any kind. The state detector reads
+  local session files; the widget draws locally.
+- **No telemetry.** No analytics, no crash reporting, no usage beaconing.
+- **No third-party services.** No CDN, no update check, no phone-home. Everything runs locally.
+- **No Hooks.** The package contains no client event extension and no event declaration. State is
+  pushed by the agent and, optionally, inferred by the local detector.
+
+## 5-hour usage readout
+
+The runtime already resolves the token plan with the user's own login (the mcode launcher's
+"MCode status" panel renders it, footer: "Local view · credentials hidden"). When the runtime
+writes that result to a local file, this package reads it — no credential, no request:
+
+```json
+// %APPDATA%\mcode-island\usage.json
+{
+  "fetchedAtMs": 1792800000000,
+  "fiveHour": { "remainingPercent": 58, "resetAtMs": 1792800000000, "unlimited": false },
+  "weekly":    { "remainingPercent": 40, "resetAtMs": 1792900000000, "unlimited": false },
+  "video":     { "remainingCount": 12, "totalCount": 40 }
+}
+```
+
+`fiveHour` is required; `weekly` and `video` are optional. `MCODE_PLAN_USAGE_FILE` overrides the
+path and `~/.minimax/usage.json` is read as a fallback. Without that file the badge stays empty —
+the package never asks the API on its own.
+
+## Relationship to the upstream plugin
+
+This directory is the Marketplace submission build of `plugins/antianqi/mcode-island`. It is
+generated from that source by `marketplace/build-marketplace-package.ps1` and differs in these ways,
+all of them required by the Marketplace package rules:
+
+1. the entry point is `.minimax-plugin/plugin.json`; the agent-plugins.org manifest and the
+   Claude-format manifest are not part of a Marketplace package;
+2. the client event extension and the development-only smoke/test scripts are not part of a
+   Marketplace package;
+3. package text files are UTF-8 **without** a BOM, and Windows PowerShell 5.1 parses a BOM-less
+   `.ps1` with the ANSI code page. The scripts here are therefore ASCII-only, and the Chinese
+   comments of the upstream copy are not shipped;
+4. the user-facing text is English here; the Chinese UI, the Chinese console messages and the full
+   Chinese documentation live in the upstream plugin and in `README.zh-CN.md` and
+   `skills/mcode-island/SKILL.md`.
+
+The hosted plugin in `plugins/antianqi/mcode-island` keeps its Chinese UI and its local
+installation flow.
+
+## License
+
+Apache-2.0. See `LICENSE`.

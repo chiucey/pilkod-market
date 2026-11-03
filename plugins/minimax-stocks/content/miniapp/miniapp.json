@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "artifacts": {
+    "client": [
+      "./miniapp/client"
+    ],
+    "node": [
+      "./miniapp/node"
+    ]
+  },
+  "runtime": {
+    "kind": "process",
+    "entry": "./miniapp/node/server.mjs",
+    "lifecycle": "on-demand"
+  },
+  "surface": {
+    "path": "/dashboard"
+  },
+  "mcpEndpoints": [
+    {
+      "server": "minimax-stocks",
+      "path": "/mcp/minimax-stocks"
+    }
+  ],
+  "hostConnectorAccess": {
+    "providers": [
+      "hengsheng_market",
+      "comein",
+      "tencentdocs"
+    ]
+  },
+  "agentAccess": [
+    "session.run",
+    "session.read"
+  ],
+  "agentConcurrency": 1
+}

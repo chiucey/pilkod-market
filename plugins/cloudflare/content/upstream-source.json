@@ -1,0 +1,2168 @@
+{
+  "repository": "https://github.com/openai/plugins",
+  "commit": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+  "path": "plugins/cloudflare",
+  "pluginVersion": "0.1.2",
+  "adaptationVersion": "0.1.0",
+  "region": "cn",
+  "copiedFiles": [
+    {
+      "path": "skills/agents-sdk/LICENSE.txt",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/LICENSE.txt",
+      "sourceSha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/SKILL.md",
+      "sourceSha256": "007d6ccf85808a6c779f5b058b1be970d77785000071cb27a55a5f580fbc845b",
+      "adapted": true
+    },
+    {
+      "path": "skills/agents-sdk/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/agents/openai.yaml",
+      "sourceSha256": "bfdad650405fe34b316f2e15f0c6a27b3a83823009f88b4dbc74c8b8310e1e43",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/assets/cloudflare-small.svg",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/assets/cloudflare-small.svg",
+      "sourceSha256": "48f68d56ac6c83734e8aa64af35fa3f6a0613a9a2293158153db1402be104f17",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/assets/cloudflare.png",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/assets/cloudflare.png",
+      "sourceSha256": "ccef528d73dfe224cfb4817bcb7e15d63922421249d688031ff48c5eef2a2189",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/callable.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/callable.md",
+      "sourceSha256": "a7a826d9058fa8163847028e08615da3511f313ea4325f2dc4c0cd7e997179f3",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/codemode.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/codemode.md",
+      "sourceSha256": "8c97dba1eea39ff8cabba54933176e3136e92e467293ba28b2f737bc7359f63a",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/email.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/email.md",
+      "sourceSha256": "2c7c0744ec26ee43aadc3fabe62b3dd6e9ec2ce38b3b11165e529edb566cf86f",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/mcp.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/mcp.md",
+      "sourceSha256": "6b5807d245c160ac69981e1d711894e76fd20e6396e88a40d0d5b54793e96990",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/state-scheduling.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/state-scheduling.md",
+      "sourceSha256": "13b989423e72642615a5bfeb1fde4c03ca2f92b78dac8fc745279fc04009621f",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/streaming-chat.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/streaming-chat.md",
+      "sourceSha256": "7ede9afbef32fba1cae165ee776fe5254df4e9a8ba6c11239f484774255bf9a7",
+      "adapted": false
+    },
+    {
+      "path": "skills/agents-sdk/references/workflows.md",
+      "sourcePath": "plugins/cloudflare/skills/agents-sdk/references/workflows.md",
+      "sourceSha256": "67c63391a42f208a9ccc2d9e9c2103a6aebb4c4cad44ad34b0ff9c8308e6d794",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-ai-agent-on-cloudflare/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/building-ai-agent-on-cloudflare/SKILL.md",
+      "sourceSha256": "31554ff30e2edb8c2dc9bd5fba15438691fb07f3541f0a0cc843b6a13cdaa573",
+      "adapted": true
+    },
+    {
+      "path": "skills/building-ai-agent-on-cloudflare/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/building-ai-agent-on-cloudflare/agents/openai.yaml",
+      "sourceSha256": "2838facd160972123884a1236dbb23e0bac3f863c19921b0d037fc9ca8edeb27",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-ai-agent-on-cloudflare/references/agent-patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/building-ai-agent-on-cloudflare/references/agent-patterns.md",
+      "sourceSha256": "dc2ec307e4c8c975269fed04eff86822ecef2fca5365d732420c991fa1025f66",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-ai-agent-on-cloudflare/references/examples.md",
+      "sourcePath": "plugins/cloudflare/skills/building-ai-agent-on-cloudflare/references/examples.md",
+      "sourceSha256": "6fa85f9ac80510fc472fc916f05ad997c89c7b88962473f3c8f199709c259dff",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-ai-agent-on-cloudflare/references/state-patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/building-ai-agent-on-cloudflare/references/state-patterns.md",
+      "sourceSha256": "190b3bda21146921aaa3953c14b24deca23b55bc786972944bfe8940aa0bb896",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-ai-agent-on-cloudflare/references/troubleshooting.md",
+      "sourcePath": "plugins/cloudflare/skills/building-ai-agent-on-cloudflare/references/troubleshooting.md",
+      "sourceSha256": "cfb541c7e65cd295fbf29cededa11459540db789d1c830548ab4cc6640b68dfb",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-mcp-server-on-cloudflare/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/building-mcp-server-on-cloudflare/SKILL.md",
+      "sourceSha256": "d76ee46c043d3876d542245e0c26e9d084f4ca8241d811593e93d8d2594118e8",
+      "adapted": true
+    },
+    {
+      "path": "skills/building-mcp-server-on-cloudflare/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/building-mcp-server-on-cloudflare/agents/openai.yaml",
+      "sourceSha256": "a0e40f41d3f33592ef65e0cc04290ab8b730410ee53dfb24db715d73fc2074b2",
+      "adapted": false
+    },
+    {
+      "path": "skills/building-mcp-server-on-cloudflare/references/examples.md",
+      "sourcePath": "plugins/cloudflare/skills/building-mcp-server-on-cloudflare/references/examples.md",
+      "sourceSha256": "4c3caf869a8d79635b1ab44357446c1cc5d155390375c391a5f66dd4c68f5340",
+      "adapted": true
+    },
+    {
+      "path": "skills/building-mcp-server-on-cloudflare/references/oauth-setup.md",
+      "sourcePath": "plugins/cloudflare/skills/building-mcp-server-on-cloudflare/references/oauth-setup.md",
+      "sourceSha256": "105e4d980518722139e1effa30da17792aa7bfd78de2f06b1831438740266c46",
+      "adapted": true
+    },
+    {
+      "path": "skills/building-mcp-server-on-cloudflare/references/troubleshooting.md",
+      "sourcePath": "plugins/cloudflare/skills/building-mcp-server-on-cloudflare/references/troubleshooting.md",
+      "sourceSha256": "45dbff8cb48f25368b9397aa05e23bc262ccfb53d9d7cb90d85ea7d1d9105910",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/LICENSE.txt",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/LICENSE.txt",
+      "sourceSha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/SKILL.md",
+      "sourceSha256": "613c4c57c19bd6385a870b4d441e00a0d88cc6c348c447f8a88889d34b17b2d0",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/agents/openai.yaml",
+      "sourceSha256": "afe2c8d827d302693ac320e2b3072f3354a1d2a5dbae524609f28f5a24f46c46",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/assets/cloudflare-small.svg",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/assets/cloudflare-small.svg",
+      "sourceSha256": "48f68d56ac6c83734e8aa64af35fa3f6a0613a9a2293158153db1402be104f17",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/assets/cloudflare.png",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/assets/cloudflare.png",
+      "sourceSha256": "ccef528d73dfe224cfb4817bcb7e15d63922421249d688031ff48c5eef2a2189",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/agents-sdk/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/agents-sdk/README.md",
+      "sourceSha256": "11c985b68599edf21d8359283955e241236d47bee2f38b0ba60975ce9e29fbe2",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/agents-sdk/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/agents-sdk/api.md",
+      "sourceSha256": "3d26c68ae64478823bea02ef328507501ee5257256100713998f285a339c5df6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/agents-sdk/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/agents-sdk/configuration.md",
+      "sourceSha256": "e264fd925907875afe1371dbc091c2dbb07b52198eb564932d95f9b19435270f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/agents-sdk/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/agents-sdk/gotchas.md",
+      "sourceSha256": "3d827b972e4fe3fc14a7f961eb3fcf86b5854678a8fca24a0ca390282ac2daa6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/agents-sdk/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/agents-sdk/patterns.md",
+      "sourceSha256": "b6aa97e446a8c45f339bd6ef47bd6b921939ff936cd0cad6cc3822d3c54b77f3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-gateway/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-gateway/README.md",
+      "sourceSha256": "bcbf3530087e8168c8a68469a8b9472578af02894003c078292827a9b43f3301",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-gateway/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-gateway/configuration.md",
+      "sourceSha256": "1135a774a42e059942ccb12d8ba514e6479d7f8f5f47400b4053f6da5984b532",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-gateway/dynamic-routing.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-gateway/dynamic-routing.md",
+      "sourceSha256": "990b7dc07b6cdfeb8132894322e0ab001e51b9c08a201451ff4c88f7289c35fa",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-gateway/features.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-gateway/features.md",
+      "sourceSha256": "efbc7d2d4464c1aab4881f059589439e2979b9967568878c32f7cb3e72cc6ccf",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-gateway/sdk-integration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-gateway/sdk-integration.md",
+      "sourceSha256": "cbff034669a30dbb4f3be053db71b8954f34c94ae5af4d9dbe1dac6af1f7a69b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-gateway/troubleshooting.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-gateway/troubleshooting.md",
+      "sourceSha256": "c79d02ce7b9e6cb361f1700eff6e12149fc74547aad3438501863d8cd02b2a79",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-search/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-search/README.md",
+      "sourceSha256": "9b7a45bc366492935da635557d52167c13d2af657d2050db33b3e915bf9e5bca",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-search/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-search/api.md",
+      "sourceSha256": "cff4ce1bee49988265f176fe5a0bdd69714a1b6e215a65662ddbf305f981d05f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-search/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-search/configuration.md",
+      "sourceSha256": "59af92d0c3b196bea13ac72e18b42db528721f8971c7d335b27951b77aa4ddb0",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-search/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-search/gotchas.md",
+      "sourceSha256": "e548c0f2cba170e81dd3e9e15b7cf430eabd7e73770ed29589b90dc20c3bf452",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ai-search/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ai-search/patterns.md",
+      "sourceSha256": "1215875bf8a9e6317d31019a84a124aa7ba7e85bac10b92bc445d0ef7383d619",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/analytics-engine/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/analytics-engine/README.md",
+      "sourceSha256": "123cb825f034688e3603b5a5fb6b372bbd9d82cabaa047bf787631ecb2026702",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/analytics-engine/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/analytics-engine/api.md",
+      "sourceSha256": "ae82c22e055e2edef7078286b7442763e19f70894b95fe310dd7c1709f9a572c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/analytics-engine/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/analytics-engine/configuration.md",
+      "sourceSha256": "86112c2385fe4e44b4825f9962cfe3429e6681de9f051a50a1c70514f1b85131",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/analytics-engine/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/analytics-engine/gotchas.md",
+      "sourceSha256": "e05e6fbe80c71d1b73b30970b91a4376993ead9e090d127edb7c51399cbde06c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/analytics-engine/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/analytics-engine/patterns.md",
+      "sourceSha256": "092079ff8831b03a0e9267ed30ab8915936c9e09cf089389203d3ed858ffb5e7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api/README.md",
+      "sourceSha256": "7e5a0b6c299554eb58914d25a0fe98e016229d1c664cc9703e170e89b696a0a5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api/api.md",
+      "sourceSha256": "847c33ce18c1a4ff210ce5db75db0694113fe5367bdba983b0e6f0d7dd2742b1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api/configuration.md",
+      "sourceSha256": "6ea23fb895605fd2a2380580f7cd21ab39c51dde470067ed191fd387f6337cb4",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api/gotchas.md",
+      "sourceSha256": "b721d8e28866f376ca8ac91d8f7f9fa35726f6378f83796baed13687f6eca6e2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api/patterns.md",
+      "sourceSha256": "7ea6b294371bc04ffbf0a1fdc71a2e138f3303bfcdd85b91b1e29d0d53f80bc2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api-shield/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api-shield/README.md",
+      "sourceSha256": "a032c7160b70c9a200e982bc457acd746760c2960e25b7554dfb315da98f71dc",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api-shield/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api-shield/api.md",
+      "sourceSha256": "2ac3f5be499c1047575dddae5fe10fd9ab93e153eec3bd3fae3e2add82275aaa",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api-shield/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api-shield/configuration.md",
+      "sourceSha256": "79acd0a84bdeca4f45ef92d3772e9f403d15266210205700a7fccc313a084418",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api-shield/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api-shield/gotchas.md",
+      "sourceSha256": "485d767b531a8e8035bbc782cde8a39fc77e78d582f2b8106019168f72bddec1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/api-shield/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/api-shield/patterns.md",
+      "sourceSha256": "0e608d4ee3f6b672fc496b496f86f9c28360633fca880b475908ed40c8bba585",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/argo-smart-routing/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/argo-smart-routing/README.md",
+      "sourceSha256": "405ab3a8878c32c95e12fb1c769f6cf79a597def8898b5e291d347a04c3e9052",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/argo-smart-routing/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/argo-smart-routing/api.md",
+      "sourceSha256": "eca247b480b82b8310ba9d1f4924ff1620b2edf77b8d855613f2d7302494e0d6",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/argo-smart-routing/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/argo-smart-routing/configuration.md",
+      "sourceSha256": "efbecea8b0db4b1b611ed0752bfa572cc59ef4310cc7736a23a5ded9a58193e3",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/argo-smart-routing/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/argo-smart-routing/gotchas.md",
+      "sourceSha256": "747217b3c1e704d474e3cfee74f4e79ab66b54c80e2de9ce9d55a2f760d492b0",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/argo-smart-routing/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/argo-smart-routing/patterns.md",
+      "sourceSha256": "33ce9f183681a5a32a87860a2a66f244d7cd5da169b4f3b1bdcd61c56419c25b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bindings/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bindings/README.md",
+      "sourceSha256": "5ba09af5a3ce0b8ea090f60b87a0660f56d6252e256a36eff86ec1dfcd8c69a0",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bindings/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bindings/api.md",
+      "sourceSha256": "5870938d52de1102e6a26436dd5bf41d5af2f3ada240eecec24d0a76169ee058",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/bindings/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bindings/configuration.md",
+      "sourceSha256": "a5eafe8fd2b2ba85828b39fb07c3e33a296a8976efc566615ef282525cbc25e8",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/bindings/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bindings/gotchas.md",
+      "sourceSha256": "6e1b1ca2de853851fa391d134be44415ee1b468bacf238a30a33129f04002b1e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bindings/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bindings/patterns.md",
+      "sourceSha256": "eba14eae23aa66b87381961918eeae3a36230c0d8435b2f29885e6d42d2cfa5b",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/bot-management/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bot-management/README.md",
+      "sourceSha256": "4d50475aa586fb08cadbc7067d55b7ef1a6e5556bad3587b23e35ae37d541967",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bot-management/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bot-management/api.md",
+      "sourceSha256": "4db2a9e3507dac50ebaa419bf6e54a5d26a7cc52c743735a444dd43591614c1c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bot-management/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bot-management/configuration.md",
+      "sourceSha256": "102b6d13b8f63c2d0a2efc3586a57bcd65ec69c4ec1a1967da4a6e4f854daba5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bot-management/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bot-management/gotchas.md",
+      "sourceSha256": "3a2baa45c7e937620824d5add7de2fe277d3710069a7991a5c8e6e214e83b2a1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/bot-management/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/bot-management/patterns.md",
+      "sourceSha256": "55ad66c51e886b10107074eb052420772f045f305f6faa05e908e54f91774775",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/browser-rendering/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/browser-rendering/README.md",
+      "sourceSha256": "a0c6e51afc6c19f2a892e3f144b9210f4fe067318ad2550e34ded538a9db9463",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/browser-rendering/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/browser-rendering/api.md",
+      "sourceSha256": "20b4be2684bca3cde3c23c6a4f0dd1bc868189e84440ef6cfb2250de23d4f061",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/browser-rendering/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/browser-rendering/configuration.md",
+      "sourceSha256": "db9206a7f14bf13d5f8ade9875927662796016c52b0221b54c3e08238890b952",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/browser-rendering/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/browser-rendering/gotchas.md",
+      "sourceSha256": "31c3e69294545b1f7f9aecc80c3809521efe3b8d4c36bbc47ba8a693a81460ea",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/browser-rendering/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/browser-rendering/patterns.md",
+      "sourceSha256": "ed518864d14d821619b23d0a6e4fe0b39b64c8da98ad17d3da07b4b42d35c161",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/c3/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/c3/README.md",
+      "sourceSha256": "a29848e8c74b2a8055330461f2ffec6ccb14d5d61b97b8214195ee7787c70d20",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/c3/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/c3/api.md",
+      "sourceSha256": "1c5429d72d1f5d5dab6d21914f7eb8aded761a828b4190655a2d4a0be6b12592",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/c3/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/c3/configuration.md",
+      "sourceSha256": "01e7f90dfbfce4d20a86a41b3ca882dab74d0b540ea07952da2f4ff1c6b6626c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/c3/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/c3/gotchas.md",
+      "sourceSha256": "bd566b20d30d9683445c6354121d658971f27573d96a8baceb6a75bf3b9aded6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/c3/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/c3/patterns.md",
+      "sourceSha256": "4e446fec9a271af8763872c5a13847155b6147653d2ad43b1268457e575cb58b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cache-reserve/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cache-reserve/README.md",
+      "sourceSha256": "90f848f9b142ddbfd911eea882b46bd45b5062efeda6b22e5be3d526c6155144",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cache-reserve/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cache-reserve/api.md",
+      "sourceSha256": "c46b8bd7eb609220a7a23c23d1ee56918c823fb5238bbb4f16078b1cb440fd74",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cache-reserve/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cache-reserve/configuration.md",
+      "sourceSha256": "7a033bcbe69e1617d6df25d202c8ecf58fe40a1a06b91c7b71d9ac1964886869",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cache-reserve/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cache-reserve/gotchas.md",
+      "sourceSha256": "08376d20aef1bd7b19dd294a0226e477264ec7f268bcc7cdf5251f78cfd3ced7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cache-reserve/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cache-reserve/patterns.md",
+      "sourceSha256": "fdcc7452fc522541617c8c0ff60c2d81395117bcc87fef247c578095fef9461c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/containers/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/containers/README.md",
+      "sourceSha256": "84ac21e42da260e8a2a5cbf677b455a7a06e0585dcd56be49895c014a26ae998",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/containers/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/containers/api.md",
+      "sourceSha256": "f7935cd4aed62fc4b647cf75b4eb62e6b4d069e9504ffcfd9b7d90abfa010f62",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/containers/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/containers/configuration.md",
+      "sourceSha256": "00af782c2e2ab7c95cd4491d0269eddc12efcc541ec67a5692ab0b50bc7c6cdd",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/containers/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/containers/gotchas.md",
+      "sourceSha256": "5707e264b73f62b30624e3ae14646d5fb7dd889a463376f3123a5424f2dd66d2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/containers/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/containers/patterns.md",
+      "sourceSha256": "3170d787f22b4891aed8ef2a9567e5186f87922dff6055fdb6ad0a576f7fad2d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cron-triggers/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cron-triggers/README.md",
+      "sourceSha256": "c76502a637f3ecc793eac78a7d838afa33c0bbabc0c5542bd27f89866bc081c6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cron-triggers/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cron-triggers/api.md",
+      "sourceSha256": "826a227a73e2a40d7c820f0aba5ee16adc8213e966c7bcf8605d063c809b9fdd",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cron-triggers/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cron-triggers/configuration.md",
+      "sourceSha256": "aa36e5acefb1c9bbe08303b80f1ed35af9ee9254411439db91e673132ac35496",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cron-triggers/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cron-triggers/gotchas.md",
+      "sourceSha256": "a80d8b2d36f81eae9630675ac63a994a75840dc9dd963b3da648323306a0ddbe",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/cron-triggers/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/cron-triggers/patterns.md",
+      "sourceSha256": "3607db3353208a0839c2e0cb9a32f563fa1b6eb03aa01be3bfc71b8ea1ddc4c5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/d1/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/d1/README.md",
+      "sourceSha256": "61b28faa4348cc80cd1296bc562fcba8205a131e73c9dc19a7da32e5c4b5f724",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/d1/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/d1/api.md",
+      "sourceSha256": "ea957b3260a43c46ab7845303ed34065655b4367683bf502c53b334e5fa4c776",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/d1/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/d1/configuration.md",
+      "sourceSha256": "06bc8baec2affc1d2cb12a0e2b3b3ea766527abd97c2ecf05460822f36feed2d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/d1/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/d1/gotchas.md",
+      "sourceSha256": "5dfa5789a7ff3566f07206835d851bdc774a0bb60a2e70d2c46ac96cda9c17ff",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/d1/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/d1/patterns.md",
+      "sourceSha256": "4a668b5e220bf4157bdfef7f76ce5c599a4468547253a9b383b4395894834d62",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ddos/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ddos/README.md",
+      "sourceSha256": "63018c3c2d25ce26a0f1b80dd60bd2d3c5193a26bf96979ef624030ab766c4a8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ddos/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ddos/api.md",
+      "sourceSha256": "47ac34cf947ff3ddc651ff37c6e26f22349709503a6beb058b8ddfb52cf9f41d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ddos/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ddos/configuration.md",
+      "sourceSha256": "a170dfacdfc269e1244132193dc3e525268adec5cac569cc5a92d90a4ede45e8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ddos/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ddos/gotchas.md",
+      "sourceSha256": "c6413f58e77afa7291ae3a671079487a7a298f5432b7f338df0035cd9f7ec07a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/ddos/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/ddos/patterns.md",
+      "sourceSha256": "546d722c64d8b1c14bc0a924b38eec24bcd3e639c25bbf424bb8cf73933ac306",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/do-storage/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/do-storage/README.md",
+      "sourceSha256": "b9343c642a86285063c46d34ba5d4930939a3c4c7cc57e9a3d483334eaff59a0",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/do-storage/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/do-storage/api.md",
+      "sourceSha256": "d3a0957cca017ae837bcf891d34404a6faca40a9b4d9b4be26a3f6272c223622",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/do-storage/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/do-storage/configuration.md",
+      "sourceSha256": "b5c021af150ea3122d4e2ff9f2a6627849867f300f4e8f04d7d430391ea633fa",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/do-storage/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/do-storage/gotchas.md",
+      "sourceSha256": "7b196588c9cfce58742358aa612db19497b8b942fa8cf40b86fd8eff193ac770",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/do-storage/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/do-storage/patterns.md",
+      "sourceSha256": "8da5a51e0589aa3c6a790aa6a5e9a90954d12f197dc23718abe2d8498c159685",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/do-storage/testing.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/do-storage/testing.md",
+      "sourceSha256": "2782b28063efea6bda878ba591c5b771f7cf69ca670d9535ebbec4831583afa7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/durable-objects/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/durable-objects/README.md",
+      "sourceSha256": "fd685ff2ecb7752513ffc1eb136ef97fadb5602617beccf511bd8321a332768e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/durable-objects/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/durable-objects/api.md",
+      "sourceSha256": "eb5130f010a09e1c86942cbe784653dfee88ab8f326a964604d0a08e15f8fcd1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/durable-objects/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/durable-objects/configuration.md",
+      "sourceSha256": "65e72f58459566e8e7caf0a2e1025fbab8438d7fc0ffd6ecf05dc27e016fbd24",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/durable-objects/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/durable-objects/gotchas.md",
+      "sourceSha256": "87e5d1f934043445b0b7eb6edad9ab30971adec50d2b0f44c34ec2940d92309e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/durable-objects/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/durable-objects/patterns.md",
+      "sourceSha256": "07ef13e8e4dcda928855994da82e598390858b53ed075f4dd65c036fc3f5a7c8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-routing/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-routing/README.md",
+      "sourceSha256": "0d2189c79711b3d8a790642e455e55516430ee7e606007841d640124b8b527b6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-routing/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-routing/api.md",
+      "sourceSha256": "0faff37f85e5024387b5bbfebdc3d81b46ffea6949daf160050784f5ba1a6d63",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-routing/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-routing/configuration.md",
+      "sourceSha256": "a9a45e84286ffce8b67cd6a50e72a3a0f169f4414280fd94e5f33f9e9ac4ecd1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-routing/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-routing/gotchas.md",
+      "sourceSha256": "8298b63f8e644b5b9de02cf61f031e403c5a363901ec2b470b936ea57f390ea7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-routing/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-routing/patterns.md",
+      "sourceSha256": "150f206ecaa8fa671829dbd0822f579e48c550c1b147d21312844904cc7f715e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-workers/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-workers/README.md",
+      "sourceSha256": "01537e40afc4a03827d5c429f721cd84c77a68e266c9ab3f99e99f8c6c6a7dd7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-workers/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-workers/api.md",
+      "sourceSha256": "f21557224ccd0d04d5e28d5e9485abf5269b6896fa9834f68935e40339aa4c92",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-workers/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-workers/configuration.md",
+      "sourceSha256": "984d84d6842f4adda147cb783537ffd51ac887c331a0de3c100374c63c06d33e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-workers/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-workers/gotchas.md",
+      "sourceSha256": "135434634be61d82d5567dc20e779e9a807693d9d83ba2a49184d62ec551cb76",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/email-workers/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/email-workers/patterns.md",
+      "sourceSha256": "e8704f7beac19235631b246420c5ce730b054ccf899f43548366d70fe430737d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/graphql-api/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/graphql-api/README.md",
+      "sourceSha256": "324df669a01caceff7f0dbdb25e3b35dcaa40a5c20700605628c4bcb66b0d093",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/graphql-api/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/graphql-api/api.md",
+      "sourceSha256": "0c0250cdf31adfbf2c7f96bf3ec257c32d14709160a8552b3238a861b3540de5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/graphql-api/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/graphql-api/configuration.md",
+      "sourceSha256": "765e696dfd11bfa87d231c011b10fb2c10a2e33d704d7c6d04f1f125585c5b92",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/graphql-api/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/graphql-api/gotchas.md",
+      "sourceSha256": "59dbb9a541db17cdac52665fd6883d2eb660ec6fea4b45cc87c291d2e2b4a50f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/graphql-api/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/graphql-api/patterns.md",
+      "sourceSha256": "902d188040a60c5d130790222442158ff12879232357ee34ab410e0d7b9b5e76",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/hyperdrive/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/hyperdrive/README.md",
+      "sourceSha256": "4d0e1a0e8366975d6ac0dcfd183e8b0a925f582c35917897aace568addff09f6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/hyperdrive/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/hyperdrive/api.md",
+      "sourceSha256": "7e7bb032dc6151ca8e3c30b278efa19d617362e9225f7a5f77a176585f10f7e5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/hyperdrive/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/hyperdrive/configuration.md",
+      "sourceSha256": "9c66135e7d5ed7a0e4f6b1395b71387b62aa22166d7eb26ab7d918b1fb5b5e57",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/hyperdrive/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/hyperdrive/gotchas.md",
+      "sourceSha256": "46ff6cb426e0da125ba119484b2d1182423a94c947c6384f61a80864b73fe1b5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/hyperdrive/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/hyperdrive/patterns.md",
+      "sourceSha256": "0ba6b647a9e5fbd2cd72534a82bb99dfff15cc8d69c79b0acd386028a1c5bd4c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/images/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/images/README.md",
+      "sourceSha256": "2df48cf4d8d5269c55a2c2e94ec331c576200db80cb33bdb3f08f104fee88676",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/images/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/images/api.md",
+      "sourceSha256": "92c62bd77b133bf58287e93f12dced76725c0dc699b28ecad2acdae709ceea3c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/images/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/images/configuration.md",
+      "sourceSha256": "f38fd695cbf8d628158b04eb679b8b2508db2099694f9c95da984a3ca3a61c38",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/images/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/images/gotchas.md",
+      "sourceSha256": "447ec285923c9ab4b29e56ec7ec0318f30a559c05c257d37b02f60e62971b9d2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/images/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/images/patterns.md",
+      "sourceSha256": "b1cfebd7afdd7024e581e4a1002a304af0c00e630d4cd4623e97caae1c02fcd1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/kv/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/kv/README.md",
+      "sourceSha256": "c141ec2f48645a0f0884511baceee0265776075f3073aefbd199f3037b420681",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/kv/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/kv/api.md",
+      "sourceSha256": "94a2fc711801bf91b2697d3690ca5b5f6c7732f22ec50965e1eb0eafed204ff4",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/kv/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/kv/configuration.md",
+      "sourceSha256": "59138344e7c23b43b360e0df44a23ee56253d013a4a1a9633c5b459b3d4ebac3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/kv/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/kv/gotchas.md",
+      "sourceSha256": "e168b7fd1417dd6df633306180715b92e62823163b5f6725e93379e97816a11d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/kv/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/kv/patterns.md",
+      "sourceSha256": "a78bbcbee191b6fbeb60375945671416db8528a5e52c2a7667c81174cffa9d8e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/miniflare/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/miniflare/README.md",
+      "sourceSha256": "484f0edc585d46559ee0be2bc443da8c7e96d6cde31e2c18ea52a2ae6c73bb95",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/miniflare/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/miniflare/api.md",
+      "sourceSha256": "e17cff9393c0d55d9b2b012f55e0fc611535e899529eed33827c3a285bb00e60",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/miniflare/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/miniflare/configuration.md",
+      "sourceSha256": "795d95a8250db63d38ffc161452337f2b149bfed232e6217559f3f79af18f2ad",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/miniflare/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/miniflare/gotchas.md",
+      "sourceSha256": "e76a8b55021a492ec15964d07e5abe7255c99f1f4012eab88e35ac17ad7b2bec",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/miniflare/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/miniflare/patterns.md",
+      "sourceSha256": "43f3f131601675c688cf78f465e1ff92bcaaba747dc7839d818f434a86c66bb8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/network-interconnect/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/network-interconnect/README.md",
+      "sourceSha256": "00aa27f34cbe4277a1c79624a06bfe3ab8cf910e2c847eb5ba9c5206f1e12b3e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/network-interconnect/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/network-interconnect/api.md",
+      "sourceSha256": "7cd2e2eb39604a96d4cb4c5bdbf2c1f6c36b2f04a6b5d4fdd2dbe96ba4a8e433",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/network-interconnect/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/network-interconnect/configuration.md",
+      "sourceSha256": "3edfa1d1642a0aed71121156acd7e4f76258b027b8f3758cbca68ab0ea5a1956",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/network-interconnect/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/network-interconnect/gotchas.md",
+      "sourceSha256": "d8e4694e9e93544d62deb0d3b3f739a9607ab8125ec921b13b08dac61b204597",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/network-interconnect/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/network-interconnect/patterns.md",
+      "sourceSha256": "e696a628f29643cb7955ed5d0607875188d462dcdff8a2758d287302d6b0fa1f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/observability/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/observability/README.md",
+      "sourceSha256": "5b6085ff9ff70483e47af484f554ed6a0214886bfbb74add0a146d9454514635",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/observability/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/observability/api.md",
+      "sourceSha256": "76314fff61f53d6d84fcaf49b37a74d3ba57926fb186f713f91483a2ed717000",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/observability/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/observability/configuration.md",
+      "sourceSha256": "63acfd61395d4ac56a0f031443ce796db04077da26010c7e41d853793645ae69",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/observability/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/observability/gotchas.md",
+      "sourceSha256": "1f7dadd3d639fca56b0fe2ff1b8aebf6c97cda0875467f0b932095392cb658d2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/observability/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/observability/patterns.md",
+      "sourceSha256": "e83a6eb55b3f84ecc20faf7af32a82d4a9c29cdd6803a94d82faf96fe70f5272",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages/README.md",
+      "sourceSha256": "0b79f0e3bd7dd929d03de09ac7c35e006547c99763399f01b64436749085afe8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages/api.md",
+      "sourceSha256": "22875bfabcdb615581d4626cca0e16802346e39fe122733e6607125d517af6ae",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages/configuration.md",
+      "sourceSha256": "879c40184f11a7885744d2d4fc970a7e4ae8e555f04c823e82b93a37265391f4",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages/gotchas.md",
+      "sourceSha256": "ea22f35759126845f554ebce03af6a6a424788673bb158b0731fb2deb21598d0",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages/patterns.md",
+      "sourceSha256": "75d82bb097dec9196f07fb0c788d37f057e7d665f40de46c49cabf72d0317b68",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages-functions/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages-functions/README.md",
+      "sourceSha256": "7961024c9fafd29555b98395a738b1c434ac27dc243c8efdf3a0d08dc0cf5c6a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages-functions/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages-functions/api.md",
+      "sourceSha256": "554c3c9ee62930772525ec87e0c1a97fc48824bb3bec21e28ba36434078dda7c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages-functions/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages-functions/configuration.md",
+      "sourceSha256": "463941304e559b73b31ab4de3d63164e55c3226aae2790dbaa35cd2255557f4d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages-functions/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages-functions/gotchas.md",
+      "sourceSha256": "58dc17275b825d37dec143484c67ea52ef76b4c67332f96c476f60090bc8cd8c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pages-functions/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pages-functions/patterns.md",
+      "sourceSha256": "c64d4bc8f55725a2192a1f610efddd102faa3b3dcc0a4c99ff8e8dd4effa93c4",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pipelines/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pipelines/README.md",
+      "sourceSha256": "d54b5370b84a7acbf02edaa3f0d77b67b5bab23a63ad4f8c73b56eaed995972a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pipelines/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pipelines/api.md",
+      "sourceSha256": "2ff9125d3cbd5d61be9b6db87e508b83c4b77315e6946f26392c8299e62d7e2b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pipelines/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pipelines/configuration.md",
+      "sourceSha256": "2b838aaa75b3e304b586799bf07f66d878e1e6ef4911c6f4c0252c597ef2fb14",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pipelines/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pipelines/gotchas.md",
+      "sourceSha256": "c227e49aba59e449ea3f5bb8751bc5c623287ea35f898db2deb873808d326e69",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pipelines/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pipelines/patterns.md",
+      "sourceSha256": "75d05267912d6023aa850316401992131c2ae5ee5dcceea2682328cd4bec71a3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pulumi/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pulumi/README.md",
+      "sourceSha256": "2803dd115110b5f4b8ac414fb78debbe06c3a653d57032aee2374f89eca4d2d5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pulumi/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pulumi/api.md",
+      "sourceSha256": "5e6459dbe3bcd802965fbc8467c54744671d5a9b3c600fececb2db314295797d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pulumi/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pulumi/configuration.md",
+      "sourceSha256": "bf11548bfce495214d530d8cf859eb320180e1cb79439f70f4ed0fabe16dbd36",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pulumi/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pulumi/gotchas.md",
+      "sourceSha256": "96ad9f0bb2204a96621acb257ebf1f6587255fe5c38a71e1e805190ef9a5198b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/pulumi/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/pulumi/patterns.md",
+      "sourceSha256": "975cd37cd6735d790624d042982a683f05f96dd6509f9da8ada7e78f8e645f2e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/queues/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/queues/README.md",
+      "sourceSha256": "faa1106897e0f1b89a0b87040e14955f7594a48ef966d3ee88ece436cbef9359",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/queues/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/queues/api.md",
+      "sourceSha256": "a702d7161738bc49949db6efc44208a933688354b0434f01f647bbbc2432bc42",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/queues/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/queues/configuration.md",
+      "sourceSha256": "94bae22a6cf3d854b2c32ec82bb9919b27b6d5e5a8f1f81ee3f8863278e83864",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/queues/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/queues/gotchas.md",
+      "sourceSha256": "74d8a45524b4a58f5f66e783e1d6e04aacd5794b873a06ff4dfe3800e1bcf7a1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/queues/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/queues/patterns.md",
+      "sourceSha256": "1481924df521e162967cba5c20deeb8f42f17d8194ec2e275399a7659c71316d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2/README.md",
+      "sourceSha256": "23446f0ea3b5145c151f82cccb601ddfd10f141e6082e86a710ee125614cdce8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2/api.md",
+      "sourceSha256": "d229e1d53595db452fb893ab5053d37781e782bd46f5ead3193599474abbba88",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2/configuration.md",
+      "sourceSha256": "c2e3bb6047af5ca71e4e539a3dedaf9c62b7d41d4ef7f41c298495e9e9380fd3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2/gotchas.md",
+      "sourceSha256": "aba6af95a628ad1852895cd9bac34507768af7a6314713613ae13ffed6fb7b41",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2/patterns.md",
+      "sourceSha256": "2719546b3c5451d4adf0cfe1a2b572f06a64765d11d6e32ec826190d19eeeafd",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-data-catalog/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-data-catalog/README.md",
+      "sourceSha256": "e1c0c6bfbdba3cfd2e9ab4d051cc88f947d8656e89d8912b998bfd7fcb80b762",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-data-catalog/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-data-catalog/api.md",
+      "sourceSha256": "d5389cca0a4151ba3d400bbb587bdf437cfd8f863f183469ad8457e2133dd46b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-data-catalog/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-data-catalog/configuration.md",
+      "sourceSha256": "4b6f9ede6a838e6d9f3da9dd06e3a637180ad0ef7e2063eb543eca3ff934c319",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-data-catalog/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-data-catalog/gotchas.md",
+      "sourceSha256": "0670519b5998d5b0fb723af6ca65cfa93c4dff11132d3abf3ec60da4e0de7bc3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-data-catalog/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-data-catalog/patterns.md",
+      "sourceSha256": "2b3a790749b2a3a31fbbf90c457de9aa05b2cf31ef4428acc6f6e545f80a907a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-sql/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-sql/README.md",
+      "sourceSha256": "2e131d74778370969ae905ccc904adee9e4d7ff8abfe7269ebee0a8beda90f36",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-sql/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-sql/api.md",
+      "sourceSha256": "1750e8f7b6ad5dbba86a05c186b6d8d67afd3674e75e4210c6500c4968c1cae1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-sql/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-sql/configuration.md",
+      "sourceSha256": "c7f20114aad49340e78cf493404fecbe53a8c835b428f3c52900f37c82ba83da",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-sql/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-sql/gotchas.md",
+      "sourceSha256": "431c0ff58838ef453b8f99ac099acc926d50dfe4a04c926f47245127ad8e2f40",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/r2-sql/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/r2-sql/patterns.md",
+      "sourceSha256": "d22e1fe727aafb2cf6543bb392475c6302b5593c563b665b402020d29c66479a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtime-sfu/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtime-sfu/README.md",
+      "sourceSha256": "2c1a23b8c44198e95eabb9f8db96453db61d935f96292932e9a5d1feea31e98c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtime-sfu/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtime-sfu/api.md",
+      "sourceSha256": "1d8f55d422f74b12954390163fea82bc7264faa3bd1450bbde6464c8b889306e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtime-sfu/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtime-sfu/configuration.md",
+      "sourceSha256": "97e6946d51b1852d420cad08319b3f33f28d65a0c3ad3749ad0272f034ff9163",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtime-sfu/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtime-sfu/gotchas.md",
+      "sourceSha256": "452719661f7cc207a2f5311340b008b13498059a8fbc23911857ebcbb0cb2f11",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtime-sfu/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtime-sfu/patterns.md",
+      "sourceSha256": "f43a3aae433b55fdcf09eba89540daca591de023038ac691c8ab85d2b62e5528",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtimekit/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtimekit/README.md",
+      "sourceSha256": "190ecae4bb2ed00795cec6b59df4b0b3045cbc07d09b818abe398c239e97d531",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtimekit/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtimekit/api.md",
+      "sourceSha256": "37020e6102c6f4f080f430f3de20c83532930e59cdcaaee52752d1fe62190152",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtimekit/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtimekit/configuration.md",
+      "sourceSha256": "4d4ccf99fa72d8923df1eb3910eade99021cb77c5d9b4aa95310a01aeade0aaf",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtimekit/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtimekit/gotchas.md",
+      "sourceSha256": "83cecda63bad4c55c4b375f0b83fd90bcdc9a15a257fc95809ab08fa4c102618",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/realtimekit/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/realtimekit/patterns.md",
+      "sourceSha256": "6deff54b73b75100eeac50039ad068ea89325fa9eb2834d3d37f8cea962b0527",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/sandbox/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/sandbox/README.md",
+      "sourceSha256": "977f6726a5f860a7e670f5f4bc1381cbdaf7d177e39956be2d480f5483161085",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/sandbox/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/sandbox/api.md",
+      "sourceSha256": "a2cf0729c6e816e8c9facb3c4448acb6ed7ea5afcd2e395b48b4a2278c944dbf",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/sandbox/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/sandbox/configuration.md",
+      "sourceSha256": "23b985835048fa965f6cd7aefb2d76062602b435751ea63b2af6a0164ccc8b9d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/sandbox/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/sandbox/gotchas.md",
+      "sourceSha256": "abca00f4f9b66ac7c34ed3ed6decf2b0cb5455e17b35d4316bee60446b4c52f9",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/sandbox/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/sandbox/patterns.md",
+      "sourceSha256": "f1968a5a6fc36357d8bffbcd89a9ac46c5b83fe92ed4c635e0139dc4b2bf52c9",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/secrets-store/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/secrets-store/README.md",
+      "sourceSha256": "82c078e9d71d9bd28b2f23535f086e74bec7adad08e3cb6c289326a4a6e14550",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/secrets-store/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/secrets-store/api.md",
+      "sourceSha256": "d6453c2646c9b2a7fa74b9a63a7a6aa0707ceb499a06705bdda367cfe3e8a1fd",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/secrets-store/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/secrets-store/configuration.md",
+      "sourceSha256": "a7cb7ba5afedecbd005217d6155d85e2800b9f5029bc49f16f15498fc99f17ba",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/secrets-store/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/secrets-store/gotchas.md",
+      "sourceSha256": "a8e41a019bf5edda9fe9d13c1390cf674b21ce443dd9bcbf1c9be81a3891e945",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/secrets-store/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/secrets-store/patterns.md",
+      "sourceSha256": "e27860d6a752b5f56b5552b6117c4cf767c41b53061b1333fb681462e28a26e1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/smart-placement/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/smart-placement/README.md",
+      "sourceSha256": "12eeb912c202c82ee2a41b16c53c1eba4b87d6df8511221b47cb24f793854872",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/smart-placement/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/smart-placement/api.md",
+      "sourceSha256": "a57aaf74c479e9f45db165fab1e762c1f5d58aeb4111a27425865cbac4f4a648",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/smart-placement/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/smart-placement/configuration.md",
+      "sourceSha256": "e9267bbc9cde1db801743f451cd65a2d1b335b382199d817d1be2df29d06cc7a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/smart-placement/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/smart-placement/gotchas.md",
+      "sourceSha256": "8e56c052e6b513b9ab565f0eaf0e7f84bca236dfc30bb77ec6715b70821a5b92",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/smart-placement/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/smart-placement/patterns.md",
+      "sourceSha256": "367d10f1429c3a3aba9fcaa4a8cfe1f5a4e754c92e8ab451f4e24c742e25777a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/snippets/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/snippets/README.md",
+      "sourceSha256": "4f66291949e5fb2a66e49a98b392c2d18057ff36ba74906feae3aeef94f9701f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/snippets/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/snippets/api.md",
+      "sourceSha256": "6180b06d9a9da3f5ab233bc595fab937006dd7bd3f5c0596ea8c7087b002aa88",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/snippets/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/snippets/configuration.md",
+      "sourceSha256": "ba51bb247f31d446e72237f19c716c620ea9612932edf97f128d35cd3a91c391",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/snippets/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/snippets/gotchas.md",
+      "sourceSha256": "301c7167f03075505498f1f6b5fe1c72a393065a8228f42c435fde9f1b694150",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/snippets/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/snippets/patterns.md",
+      "sourceSha256": "d23080b676011160f7c72791381ea8bfa9c7a5b3b9cb4a41a87b762550139c7f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/spectrum/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/spectrum/README.md",
+      "sourceSha256": "6dfd516d6e54696accbe6bb499f4e70686061abd0afa192897b32d7fd0c3f32e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/spectrum/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/spectrum/api.md",
+      "sourceSha256": "bef098862434f4c8e253d718d3437091813e45c3bfaa5004e8e86d6ceb83beb2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/spectrum/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/spectrum/configuration.md",
+      "sourceSha256": "9a653312707a79c2a35ed8337f77500edafc3b9affdd9d5c1b35e3ab286f2609",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/spectrum/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/spectrum/gotchas.md",
+      "sourceSha256": "3969902e536361a818752d02a49524c079ee3da1c2ee4bbe330a8047fdd39181",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/spectrum/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/spectrum/patterns.md",
+      "sourceSha256": "087e7d9a1a1a308eb13614332df217137296501cf57082077f05bb3a1f2bf7b0",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/static-assets/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/static-assets/README.md",
+      "sourceSha256": "ef31f6ca300cb5fb1f111a626f6d92ef2b5b48a3ed97c2203874c33a2f38c0e8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/static-assets/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/static-assets/api.md",
+      "sourceSha256": "619acb0a8d9732395316fc0beeed11e1a10557e08c639338ac92473cea1c5701",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/static-assets/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/static-assets/configuration.md",
+      "sourceSha256": "c35204c02177893d0b8c5b9bf2341d7814ed9d1e8e2ca3fc7c87d05603e9ec50",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/static-assets/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/static-assets/gotchas.md",
+      "sourceSha256": "400e448cc085ecb01811669d01a6498f1846e2fd47d45bd90a28672da6432540",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/static-assets/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/static-assets/patterns.md",
+      "sourceSha256": "a9b508f7936d8edf7c63c65fb217d27f6aa555209a21e0a65eadf7a32d9ec9c4",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/stream/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/stream/README.md",
+      "sourceSha256": "ead31da7979689bffda222b1b1c20903fb1aca03301b208eff0b3682a422b6ab",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/stream/api-live.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/stream/api-live.md",
+      "sourceSha256": "e7b22992f52df4585aad1574e33b2ab01ab5ada737aedc1fc10adc02c2bddb41",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/stream/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/stream/api.md",
+      "sourceSha256": "5440838fb2fb329fe815aecde94709a3d32be08c917491355709314ff7e3d8f1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/stream/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/stream/configuration.md",
+      "sourceSha256": "74c156e9c665e9d523bcd7c5d9a763339aba0356b1dc69d723ef6bab41a25328",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/stream/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/stream/gotchas.md",
+      "sourceSha256": "fdb901e88bab4654e0156f9c4a98c1469b53bad1a6e4827119f61badb142ddfb",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/stream/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/stream/patterns.md",
+      "sourceSha256": "6148708948bcce4162ccb839983b37e88d7246a235289d79558913a9ca27beae",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tail-workers/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tail-workers/README.md",
+      "sourceSha256": "22776dd6348b07d2c7132ee4a52715f49bc61c1bb50d0af81e49281e44bb9799",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tail-workers/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tail-workers/api.md",
+      "sourceSha256": "038077a73cc61376e0f2a299ee313b0db79b504e712d784a5e39a060aebacc28",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tail-workers/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tail-workers/configuration.md",
+      "sourceSha256": "8efac4877ad572f631f78643712a9c1e151661d4efedd728ee23fe2877669845",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tail-workers/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tail-workers/gotchas.md",
+      "sourceSha256": "f4d2fb7bfec50643c145eb1680756b5e3a067f6f950fb315b622bdfef9c97931",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tail-workers/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tail-workers/patterns.md",
+      "sourceSha256": "d6a82a85e888047f23a9ad37dcddd4bb3702c8fb12da4fb41d006b691ab561d6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/terraform/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/terraform/README.md",
+      "sourceSha256": "5654b9d1a8c4a9373c241f805011e98947fbe46ecad87bd4f70f5c7a1c4498ed",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/terraform/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/terraform/api.md",
+      "sourceSha256": "5dc812c078d06454d801b0e126d50c48031c1a7b0ffef7ebf77a97cf7b41e768",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/terraform/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/terraform/configuration.md",
+      "sourceSha256": "4d12cad256eaf2b021c1c19e7be29ef79e2d76183e387eefce2d4eb50b8d483e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/terraform/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/terraform/gotchas.md",
+      "sourceSha256": "d6e7b425b9c4ccea6ddd0efeb975648b7e75d458c4d4b4baf251d70f9a6ffd2b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/terraform/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/terraform/patterns.md",
+      "sourceSha256": "59e1eb6f7ca0d1fdbf9600dbc2e77ff030dbf3a4f9e4133087669ced4870b33e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tunnel/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tunnel/README.md",
+      "sourceSha256": "811dd2ab508b059b66617c95d426dea327444ce01ed40eafa0815935d1154b58",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tunnel/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tunnel/api.md",
+      "sourceSha256": "698055870e668a0827b8bbb83d9016b093e22e4a95f4aabeaca7ef2e0d1e099f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tunnel/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tunnel/configuration.md",
+      "sourceSha256": "c656471269c97e7a02760cf195abb01b4db202e7d8e14e1540c2b5550fc46ca7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tunnel/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tunnel/gotchas.md",
+      "sourceSha256": "267e3fad1f1a328bec1786ce883f7d658ee328ee5e812c2a4ee61739b507c691",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tunnel/networking.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tunnel/networking.md",
+      "sourceSha256": "99f51bcb065fdd62df94aa116f11effde03d81c4299f369770492346add235ca",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/tunnel/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/tunnel/patterns.md",
+      "sourceSha256": "696d5fe99640934a94b6facb6e3198d93dc38bfac3c3324fd817e47f620bc40d",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turn/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turn/README.md",
+      "sourceSha256": "9b1e36931f40b1faf3c8f24f89acb12c4f4223de0afc83e6b8de636f4730d542",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turn/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turn/api.md",
+      "sourceSha256": "edb24cd2264d1373e2cb02528fa292c0ba786ba36ff1d92ddef1ac51fb989bf8",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turn/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turn/configuration.md",
+      "sourceSha256": "8df0cf402a41dd2a8205b9fc94f868df48273ef9e85cf1ad690732ac1e2469b7",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turn/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turn/gotchas.md",
+      "sourceSha256": "5607b14328a49807750badbf308d24c1794376f588305a3eff04ccec9415a510",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turn/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turn/patterns.md",
+      "sourceSha256": "38c6deb1f2c48e3b2179aed6fcf88e0870724056c0a19347f4fa421eb7edb0da",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turnstile/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turnstile/README.md",
+      "sourceSha256": "7db62e2aa8c2bdbedbdedc23b4db9051d04aafbd4a944663ce681f347ab30b41",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turnstile/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turnstile/api.md",
+      "sourceSha256": "7394663f7284c4cdb31bafb4387b3785809abdb36fa4a6f9bf62cfe5d488a5e0",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/turnstile/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turnstile/configuration.md",
+      "sourceSha256": "bb218eba0ddd17e6449e281514f39d31681246fb3518d5c8955f27ddc630ef9b",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/turnstile/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turnstile/gotchas.md",
+      "sourceSha256": "ec480b0a32f0815b8d15e8ac96085922317f58e64937c1e198fd5355bad2bb1e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/turnstile/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/turnstile/patterns.md",
+      "sourceSha256": "7e73d6d9f009823c856bcb7fed73418a5fb157f1cf2b5d01b8de90e180123062",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/vectorize/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/vectorize/README.md",
+      "sourceSha256": "0f2b2a0b920c04d5ee49efa3d5233d61400bb707649f5d66a6e9a489ac484861",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/vectorize/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/vectorize/api.md",
+      "sourceSha256": "c0aab15c2d7fc72b875b26e9a96a32bb2f899bd64ff3db33107208aacbf7347b",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/vectorize/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/vectorize/configuration.md",
+      "sourceSha256": "057eaef43f53e8bd71699ca17a3d296eb0c165ce1c1a304d71dea53ee9ab0908",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/vectorize/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/vectorize/gotchas.md",
+      "sourceSha256": "41368d07e71f80db6d649b07ed871b9ac463bcc8db8d53563e07d24634fd5633",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/vectorize/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/vectorize/patterns.md",
+      "sourceSha256": "dcc4227997e7a856444a701b9243a9a1c8d1cb38680429ac3047b761f85e71c3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/waf/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/waf/README.md",
+      "sourceSha256": "3e4ce7314101178adc16f422bc6ff2758656ae9baa07a3dbaebe78240cc13117",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/waf/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/waf/api.md",
+      "sourceSha256": "21b038b9215a41500d58d525b5196ceb58756979686b078eda61e3463c76000d",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/waf/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/waf/configuration.md",
+      "sourceSha256": "e4fb36ebccdb73eb8be9513d316a7294ab62a6ce355b7e09498a77af91cdb095",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/waf/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/waf/gotchas.md",
+      "sourceSha256": "144ba47292507ef90e45f0514468b92484efcc28c8018e1a049716c2e7c219a3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/waf/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/waf/patterns.md",
+      "sourceSha256": "5173bbd81e048dc9b70521f04a8062ef700816325e2924bd58fbccced5da5008",
+      "adapted": true
+    },
+    {
+      "path": "skills/cloudflare/references/web-analytics/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/web-analytics/README.md",
+      "sourceSha256": "bff5f576b9fc55ee7f3c448a7e5aff30e653bcc214d4040f476f392a69213218",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/web-analytics/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/web-analytics/configuration.md",
+      "sourceSha256": "075434a2076f5a98b7a03f929a91bd5716bfe7a08faf468f26dcdb6b6027d516",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/web-analytics/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/web-analytics/gotchas.md",
+      "sourceSha256": "4b7dba8a0221295e32bed592ab74f1fe514d40cb50178f3adf3fc47484729e07",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/web-analytics/integration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/web-analytics/integration.md",
+      "sourceSha256": "904815684b97837074c6a5ae995d74dd3ed88e87c1059a1bc3843b3a9c9b2e1e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/web-analytics/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/web-analytics/patterns.md",
+      "sourceSha256": "b14483238f89c0679c869b43b7088efdd64692c976fc24dabdd58f44fd86c873",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workerd/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workerd/README.md",
+      "sourceSha256": "daed9e582eff91b2c29dc77701c7c18a3d92fde0dc6883b2913df26094c0c597",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workerd/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workerd/api.md",
+      "sourceSha256": "97522502d284040248da050f7c6fce4b67ff77f08ebf13313ecb9da0fbdca4b3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workerd/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workerd/configuration.md",
+      "sourceSha256": "a22a90fb354b5e01cec488586f68a3f4f13e4284ae72e2376bec5d320e084cee",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workerd/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workerd/gotchas.md",
+      "sourceSha256": "ed3107537e54d440445408131b89db5f81f869902bade11cda7978f31234f74a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workerd/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workerd/patterns.md",
+      "sourceSha256": "db771fb75822afa39974f7ee1ac291a6fa903f1cc9a85400b099b589a7c8573a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers/README.md",
+      "sourceSha256": "fb58d3e290aacafd9423fcbea9197da4e4d43e34303790717fe4d0f55aeb74d3",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers/api.md",
+      "sourceSha256": "dad6c81d6209ba2ca84155fc57820cac4d44e882bb25820071edfd208c909fc5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers/configuration.md",
+      "sourceSha256": "279df475e2be3e2d5f344bead417da7f06ee5341a50ba9fda1a1bbc3c7add8e9",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers/frameworks.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers/frameworks.md",
+      "sourceSha256": "520538d460fa6a11360163e3ed0725d840946c776feb9e00bd0bafd9f1cff699",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers/gotchas.md",
+      "sourceSha256": "be10691f70ee9fc94602a07fd08308185c1caa1712c5135023024d32ba45c09c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers/patterns.md",
+      "sourceSha256": "07bd565af6bec9a9fcfe413c48f611c6b4ae346a887befc3eb2262b3f1dd3de1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-ai/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-ai/README.md",
+      "sourceSha256": "3e6d6fca26f243e214689c0c735784447d503ef118cb752315ac846b45db9c9f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-ai/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-ai/api.md",
+      "sourceSha256": "2b6093736b90376cf9089726eddc580f77d9f719be5031a1552cd05a4f3e991c",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-ai/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-ai/configuration.md",
+      "sourceSha256": "acfe8100a30a006b2b35ba9f81897130402825b062a087984258fa597ea8fa1a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-ai/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-ai/gotchas.md",
+      "sourceSha256": "10fe3b26750c2fc92ff6ccdefc1200352cdae88c573071cd7735d0a84ff925da",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-ai/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-ai/patterns.md",
+      "sourceSha256": "1ebfd949690bd1e8150435c1bd1bf7b5cd3e6ab35eec5442f7af8bf39ea80198",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-for-platforms/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-for-platforms/README.md",
+      "sourceSha256": "f4ccefa36d15ca0f500722a86e0ff933f587c859d78ab96c17da6c25c4d2a8e1",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-for-platforms/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-for-platforms/api.md",
+      "sourceSha256": "e8c61ee7e1e6113e374fbc9df94962e072b53e011f93c9c82fd8b83e63867055",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-for-platforms/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-for-platforms/configuration.md",
+      "sourceSha256": "d671398898e46dcaf2c72eb52f8d4048aa1fa6f8722a46688f6ff42dbeb8dbf2",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-for-platforms/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-for-platforms/gotchas.md",
+      "sourceSha256": "6697732e34bdfc7f98496d94efc23c82f860dacd9ee7ba37c6c86e0e7ef924d5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-for-platforms/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-for-platforms/patterns.md",
+      "sourceSha256": "d24005af33bc58a671ef3a8a1aa4ea0d2ef48da22dd07cabe7ddeb8e50db3168",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-playground/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-playground/README.md",
+      "sourceSha256": "5429f6fbb3300f1e190e8024ae8fd63f5e345ea22ecdaea4e405766351177496",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-playground/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-playground/api.md",
+      "sourceSha256": "bf8f93589789b19c0834815dd498d09a0eaf526502d66691c4797b6c2906ad49",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-playground/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-playground/configuration.md",
+      "sourceSha256": "eee7eeb85e60ee4a2b9d91f445448dc93c3d2875a80b35888f93847e990d128f",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-playground/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-playground/gotchas.md",
+      "sourceSha256": "85e262f98373f1631dcef3f44a57b6d9e30f8e930e013dc8667fa5993bb6dfae",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-playground/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-playground/patterns.md",
+      "sourceSha256": "c95d27741ecccbad12386ff4fa9dae6c8ff21438bf83f3edfd177ec156a8da69",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-vpc/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-vpc/README.md",
+      "sourceSha256": "580ffb65b02faa9e0089ac2abe1a6caa92e21a7c8a9622d2455f2ef701cdb369",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-vpc/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-vpc/api.md",
+      "sourceSha256": "97d8fef3e492ea7e3261111099f35668ad434c689841912bd46b70c9fa7a0ab9",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-vpc/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-vpc/configuration.md",
+      "sourceSha256": "2bff2271b75ed4db399fe927324e6304577fef7022b19e4a6631a3bd415482de",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-vpc/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-vpc/gotchas.md",
+      "sourceSha256": "70e2d004800e75ccdbbdcc37623b97d9f5b4592183aae1421e21bad19e111d80",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workers-vpc/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workers-vpc/patterns.md",
+      "sourceSha256": "9099d7e9198127b55d0fbcfae97880830bf052aecd827b6799718be265fb882e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workflows/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workflows/README.md",
+      "sourceSha256": "7b37fcec0fd349ced16b9e0cb521cbd0b92561ec93297ded54fb6ee1c18ee262",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workflows/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workflows/api.md",
+      "sourceSha256": "f9daa528ae883afcab07036e1b7c5e341b1b10d579fadaa782553243c41881ee",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workflows/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workflows/configuration.md",
+      "sourceSha256": "b225758f917ce33939a86e016264de225a33c61f29b1bdd732bac1e4061c4ed5",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workflows/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workflows/gotchas.md",
+      "sourceSha256": "210201efd4b7c553db3c4c6bd7010ace0b9181f60fbcfc9604584ab05af3c677",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/workflows/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/workflows/patterns.md",
+      "sourceSha256": "0e0624989bcf0b4e45eabb63010226eca48a1004d70d1656bf546139d07bba91",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/wrangler/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/wrangler/README.md",
+      "sourceSha256": "56755918e607276c7e7b5f67dcbc11a3f38e378dcf087dc9e7c453c80991f73e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/wrangler/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/wrangler/api.md",
+      "sourceSha256": "9285a26c93753a01f0232ec5a35c61e23d02c023cfd8b6d1327dbfb58ae063b6",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/wrangler/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/wrangler/configuration.md",
+      "sourceSha256": "a7ee9674843b961b590de94f81052183aa740c1aa431383de24e4d3366f02860",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/wrangler/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/wrangler/gotchas.md",
+      "sourceSha256": "66ed97547ed7eb44c3707e640e621ae8e51aac01db26cfa7b235b5ecfabe28dd",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/wrangler/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/wrangler/patterns.md",
+      "sourceSha256": "208f4f1b7c288a4ce1f635b35f6aeef830e4e7a87e551b078fbde305ee8f7426",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/zaraz/IMPLEMENTATION_SUMMARY.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/zaraz/IMPLEMENTATION_SUMMARY.md",
+      "sourceSha256": "eba1671fc4ba17fae19d1ff2d1b312d5042b5821e7a4dbc2f6367a4fa8bd5506",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/zaraz/README.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/zaraz/README.md",
+      "sourceSha256": "929bee8e3efffad15b1a2ee2e20ff87b5d89cc724b4f450f07f6ef15caf4b2f9",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/zaraz/api.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/zaraz/api.md",
+      "sourceSha256": "6b28a3e1525d46aad707b1bf4edd2739df9f48ae880f71a705448270b42f8b9e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/zaraz/configuration.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/zaraz/configuration.md",
+      "sourceSha256": "6f3666ac64d1b36b4a708b3dea9d3b1d9679b34c58a00e3ca8e254edd602418a",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/zaraz/gotchas.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/zaraz/gotchas.md",
+      "sourceSha256": "30378f48fde6e866780466228a3e698005a9ce23a24188c8ed520195b03eac3e",
+      "adapted": false
+    },
+    {
+      "path": "skills/cloudflare/references/zaraz/patterns.md",
+      "sourcePath": "plugins/cloudflare/skills/cloudflare/references/zaraz/patterns.md",
+      "sourceSha256": "2ea1d00fe81b1e881c00090fd18c96d8c78ebb41fcc55f540b68150320d90d17",
+      "adapted": false
+    },
+    {
+      "path": "skills/durable-objects/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/durable-objects/SKILL.md",
+      "sourceSha256": "cd6797cb18f3ae8f721dfd2e5cb27b73a0aa8636683f1a38163dab2fd51a8dfb",
+      "adapted": true
+    },
+    {
+      "path": "skills/durable-objects/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/durable-objects/agents/openai.yaml",
+      "sourceSha256": "43ff2f2809ae14955c0361f3de62b4f8f5fe86333c527df527671256c8e0cc7e",
+      "adapted": false
+    },
+    {
+      "path": "skills/durable-objects/references/rules.md",
+      "sourcePath": "plugins/cloudflare/skills/durable-objects/references/rules.md",
+      "sourceSha256": "92f12b305df75710fed778c22880ca7de73797f8f4fbbc4cffcf3e6c8ac919e5",
+      "adapted": true
+    },
+    {
+      "path": "skills/durable-objects/references/testing.md",
+      "sourcePath": "plugins/cloudflare/skills/durable-objects/references/testing.md",
+      "sourceSha256": "08c4064e090ff1a8692543c38fc694c42622f59a27390af26c5825b3970f7f02",
+      "adapted": true
+    },
+    {
+      "path": "skills/durable-objects/references/workers.md",
+      "sourcePath": "plugins/cloudflare/skills/durable-objects/references/workers.md",
+      "sourceSha256": "3149c3ee371b5dbf3a84dac7d5bb42c4c6553762480741f6d2808e4ca20fd932",
+      "adapted": true
+    },
+    {
+      "path": "skills/sandbox-sdk/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/sandbox-sdk/SKILL.md",
+      "sourceSha256": "0f3501e6510921401be3f54bcb24d2a432a1b5c63af8f719eded3a087ad88ea9",
+      "adapted": true
+    },
+    {
+      "path": "skills/sandbox-sdk/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/sandbox-sdk/agents/openai.yaml",
+      "sourceSha256": "02653aeb3bf62054f8b4379e9eb86ca3063f094a6f78d256ebb5d1774a073017",
+      "adapted": false
+    },
+    {
+      "path": "skills/sandbox-sdk/references/api-quick-ref.md",
+      "sourcePath": "plugins/cloudflare/skills/sandbox-sdk/references/api-quick-ref.md",
+      "sourceSha256": "c8a2bd3eca1afee7c9182b7dc7a3dceb9fdd13266c2a5e0730fd52b263b1aea3",
+      "adapted": false
+    },
+    {
+      "path": "skills/sandbox-sdk/references/examples.md",
+      "sourcePath": "plugins/cloudflare/skills/sandbox-sdk/references/examples.md",
+      "sourceSha256": "f13c04a728f023349dbd5d30c6df4fa253ff58f4831981b8b704c0cd8f3457f9",
+      "adapted": false
+    },
+    {
+      "path": "skills/workers-best-practices/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/workers-best-practices/SKILL.md",
+      "sourceSha256": "099432ff265ff6080327ef0b392c118b835d2a5bda98a7de07e1afd115ed6458",
+      "adapted": true
+    },
+    {
+      "path": "skills/workers-best-practices/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/workers-best-practices/agents/openai.yaml",
+      "sourceSha256": "ad7c8f6a0f2d016a9caae277483a91f891b7509f176400062df1bf0fd9d2f235",
+      "adapted": false
+    },
+    {
+      "path": "skills/workers-best-practices/references/review.md",
+      "sourcePath": "plugins/cloudflare/skills/workers-best-practices/references/review.md",
+      "sourceSha256": "3e32da345be0906d020e5235d01f2b6398a41216900b5370a267e3f17757ade0",
+      "adapted": false
+    },
+    {
+      "path": "skills/workers-best-practices/references/rules.md",
+      "sourcePath": "plugins/cloudflare/skills/workers-best-practices/references/rules.md",
+      "sourceSha256": "b0273b18c7fa40fadf33262e7da7c8f2a52f2f1240ce66d590e4c31663261380",
+      "adapted": false
+    },
+    {
+      "path": "skills/wrangler/LICENSE.txt",
+      "sourcePath": "plugins/cloudflare/skills/wrangler/LICENSE.txt",
+      "sourceSha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "adapted": false
+    },
+    {
+      "path": "skills/wrangler/SKILL.md",
+      "sourcePath": "plugins/cloudflare/skills/wrangler/SKILL.md",
+      "sourceSha256": "0aa6fbe6932df4392779bfda67b1a0165697369668cb2dbef66d018a34f44c11",
+      "adapted": true
+    },
+    {
+      "path": "skills/wrangler/agents/openai.yaml",
+      "sourcePath": "plugins/cloudflare/skills/wrangler/agents/openai.yaml",
+      "sourceSha256": "3df482def3f6c6f71a107a214a7ab1b46d01cc1a6be994e5927f4fbd3b96d598",
+      "adapted": false
+    },
+    {
+      "path": "skills/wrangler/assets/cloudflare-small.svg",
+      "sourcePath": "plugins/cloudflare/skills/wrangler/assets/cloudflare-small.svg",
+      "sourceSha256": "48f68d56ac6c83734e8aa64af35fa3f6a0613a9a2293158153db1402be104f17",
+      "adapted": false
+    },
+    {
+      "path": "skills/wrangler/assets/cloudflare.png",
+      "sourcePath": "plugins/cloudflare/skills/wrangler/assets/cloudflare.png",
+      "sourceSha256": "ccef528d73dfe224cfb4817bcb7e15d63922421249d688031ff48c5eef2a2189",
+      "adapted": false
+    },
+    {
+      "path": "icon.png",
+      "sourcePath": "plugins/cloudflare/assets/cloudflare.png",
+      "sourceSha256": "ccef528d73dfe224cfb4817bcb7e15d63922421249d688031ff48c5eef2a2189",
+      "adapted": false
+    }
+  ],
+  "excluded": [
+    ".codex-plugin",
+    ".mcp.json",
+    "commands",
+    "skills/web-perf",
+    "assets/cloudflare-small.svg"
+  ],
+  "serverRepository": "https://github.com/cloudflare/mcp",
+  "serverReferenceCommit": "1027dbd2865fc1932120db42ed53749bc30d2af0",
+  "serverVersionPinned": false
+}

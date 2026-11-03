@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "bilibili-comment-plugin",
+  "displayName": "B站评论分析",
+  "version": "1.0.1",
+  "description": "B站评论分析工具,输入B站视频链接或BV号即可获取一级评论数据,支持分页浏览与四维情感分析(积极/负面/需求/竞品),并生成可离线保存的深色主题交互式 HTML 报告。适用于 UP主复盘、品牌舆情监测、竞品分析与用户研究。",
+  "author": "redfox",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "查看B站视频 BV1xx411c7mD 的评论",
+    "分析这条B站视频的负面评论与用户需求",
+    "粘贴B站视频链接,生成评论分析 HTML 报告"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/bilibili-comment/SKILL.md"
+  ]
+}

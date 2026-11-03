@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "game-studio",
+  "displayName": "游戏工作室",
+  "version": "0.1.2",
+  "description": "面向浏览器游戏的设计、原型与交付工作流，覆盖 Phaser、Three.js、React Three Fiber、游戏 UI、素材管线和试玩验收，并使用 MCode 原生生图能力生成精灵素材。",
+  "author": "OpenAI",
+  "icon": "icon.webp",
+  "category": "Code",
+  "exampleQueries": [
+    "帮我设计一个浏览器战棋游戏，并规划核心玩法循环和技术栈。",
+    "用 Phaser 实现一个带 HUD、关卡状态和角色动画的 2D 游戏原型。",
+    "用现有角色图生成一致的精灵动画条，并完成规范化和预览验收。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/game-studio/SKILL.md",
+    "skills/web-game-foundations/SKILL.md",
+    "skills/phaser-2d-game/SKILL.md",
+    "skills/three-webgl-game/SKILL.md",
+    "skills/react-three-fiber-game/SKILL.md",
+    "skills/web-3d-asset-pipeline/SKILL.md",
+    "skills/game-ui-frontend/SKILL.md",
+    "skills/sprite-pipeline/SKILL.md",
+    "skills/game-playtest/SKILL.md"
+  ]
+}

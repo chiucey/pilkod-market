@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "word",
+  "displayName": "Word",
+  "version": "1.0.5",
+  "description": "创建、套用模板、编辑、读取、修复和比较 Word DOCX 文档，支持正式报告、合同、公文等交付场景，以及结构分析、版式检查和 DOCX 转 PDF 验证。",
+  "author": "Pilkod",
+  "icon": "word.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Office",
+  "exampleQueries": [
+    "根据我上传的调研材料，创建一份结构完整、排版专业的 Word 报告，包含封面、目录、分级标题、表格和参考资料，并在交付前检查文档结构与页面效果。",
+    "结合我上传的 Word 模板和文档材料生成一份正式 DOCX，保留模板的页面设置、样式、页眉页脚和编号体系，并验证生成结果没有版式异常。",
+    "在不破坏现有格式的前提下，修改我上传的合同 Word 文档，替换指定条款、补全缺失字段并保留批注和修订信息。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/docx/SKILL.md"
+  ]
+}

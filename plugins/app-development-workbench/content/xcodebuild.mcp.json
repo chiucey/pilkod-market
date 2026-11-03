@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "xcodebuildmcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "xcodebuildmcp@2.7.0",
+        "mcp"
+      ],
+      "env": {
+        "XCODEBUILDMCP_ENABLED_WORKFLOWS": "simulator,ui-automation,debugging,logging",
+        "XCODEBUILDMCP_SENTRY_DISABLED": "true"
+      }
+    }
+  }
+}

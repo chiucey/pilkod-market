@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "qixin",
+  "displayName": "启信慧眼",
+  "version": "1.0.5",
+  "description": "连接启信慧眼，查询企业工商、股权结构、经营状况与风险信息。",
+  "author": "Pilkod",
+  "icon": "qixin.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Business",
+  "exampleQueries": [
+    "查询这家企业的工商登记信息和股权结构",
+    "分析这家企业的实际控制人和关联企业",
+    "检查这家企业的经营风险和司法风险"
+  ],
+  "apps": [
+    "qixin.app.json"
+  ],
+  "mcpServers": [],
+  "skills": []
+}

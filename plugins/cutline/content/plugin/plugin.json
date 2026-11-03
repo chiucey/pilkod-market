@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "cutline",
+  "displayName": "Cutline",
+  "version": "0.1.1",
+  "description": "浏览器里的视频剪辑台：时间线剪切、字幕、动效、调色与导出，聊天里一句话就能剪片。",
+  "author": "klarkxy",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "打开 Cutline 剪辑台",
+    "用 Cutline 把这段素材剪成一条竖屏短视频",
+    "Cutline 现在时间线上有什么？帮我加个字幕"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/cutline/SKILL.md"
+  ]
+}

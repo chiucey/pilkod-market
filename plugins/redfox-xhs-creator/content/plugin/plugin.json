@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "name": "redfox-xhs-creator",
+  "displayName": "小红书爆款内容创作师",
+  "version": "1.0.1",
+  "description": "基于红狐数据的小红书爆款内容一站式创作套件：覆盖爆款笔记生成、爆款封面设计、标题生成与评分、文案改写、违禁词检测 5 个 Skill，串起发布前全链路打磨流程。",
+  "author": "红狐数据",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "帮我写一篇关于减脂餐的小红书爆款笔记",
+    "评估这个标题的爆款潜力：早八通勤穿搭天花板",
+    "检测一下这篇笔记有没有违禁词"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/xiaohongshu-cover/SKILL.md",
+    "skills/xiaohongshu-prohibited-word/SKILL.md",
+    "skills/xiaohongshu-rewrite/SKILL.md",
+    "skills/xiaohongshu-title-score/SKILL.md",
+    "skills/xiaohongshu-write/SKILL.md"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "pdf",
+  "displayName": "PDF",
+  "version": "1.0.4",
+  "description": "读取、生成、重排、填写和处理 PDF 文件，支持文本与表格提取、扫描件和图表识别、专业报告生成、Markdown、HTML 与 LaTeX 转 PDF、表单填写、合并拆分及交付前质量检查。",
+  "author": "Pilkod",
+  "icon": "pdf.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Office",
+  "exampleQueries": [
+    "根据我上传的调研材料和数据，制作一份排版专业的 A4 PDF 报告，包含封面、可点击目录、关键指标、图表、结论和来源，并检查页面尺寸、图片完整性和目录链接。",
+    "将我上传的 Markdown、文本或现有 PDF 重新排版为一份专业 PDF，保留原始内容层级，统一字体、颜色、页眉页脚和分页，并生成可点击目录。",
+    "填写我上传的 PDF 表单。先识别它是 AcroForm 还是普通扫描表单，再根据材料填写全部字段，检查文字没有溢出、遮挡或错位，并输出填写结果。"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/pdf/SKILL.md"
+  ]
+}

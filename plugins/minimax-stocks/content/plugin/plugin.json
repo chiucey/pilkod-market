@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "minimax-stocks",
+  "displayName": "股市",
+  "version": "1.4.0",
+  "description": "股市：A股行情终端，接入恒生行情 Connector，舆情来自 Alpha派（填 API Key 即用）、进门财经、知识星球与腾讯文档，统一检索工具一次查遍已接入的数据源并按知识图谱别名同步检索；资产页可用访达 / 系统对话框关联本地资料文件夹，由后台 Agent 按可自定义的分析视角（产业链、供需、竞争等）整理成产业链 Wiki（公司节点按股票代码唯一化），提供产业链图、知识图谱；行情页自动匹配与当前股票相关的资料并一键归集到公司页；数据源页查看并检测各数据源的连接状态。",
+  "author": "Github社区",
+  "icon": "icon.png",
+  "category": "Business",
+  "exampleQueries": [
+    "打开 股市 看贵州茅台",
+    "我现在看的这只股票最近有什么舆情",
+    "根据我的资料库，光模块的上游有哪些环节和公司"
+  ],
+  "apps": [
+    "hengsheng-market.app.json"
+  ],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/llm-wiki/SKILL.md",
+    "skills/stock-dossier/SKILL.md",
+    "skills/sentiment-search/SKILL.md"
+  ]
+}

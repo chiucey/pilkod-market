@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "treg",
+  "displayName": "treg",
+  "version": "0.12.3",
+  "description": "OpenRouter for tools：2,600 余个 agent 可直接调用的外部工具，按量付费、无需订阅。覆盖 SEO 与 SERP 数据、反链与域名权重、关键词搜索量、社交账号资料与趋势、人物与企业信息补全、广告库和网页抓取；按任务搜索即可，调用前显示价格，无需管理各家供应商的 API key。",
+  "author": "Superdesign dev, Inc.",
+  "icon": "icon.png",
+  "darkIcon": "icon-dark.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "查询 example.com 的反链情况和域名权重",
+    "查找 Notion 市场负责人的工作邮箱和 LinkedIn 主页",
+    "拉取 @nike 最近 30 天的 TikTok 帖子及互动数据"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/treg/SKILL.md"
+  ]
+}

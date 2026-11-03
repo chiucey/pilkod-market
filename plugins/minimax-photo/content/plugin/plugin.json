@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "minimax-photo",
+  "displayName": "MiniMax Photo",
+  "version": "0.2.38",
+  "description": "打开图片编辑图层、选区和色彩，或让 AI 生成图片、修改照片、逐笔绘画。",
+  "author": "WebGuHui",
+  "icon": "icon.png",
+  "category": "Design & Sites",
+  "exampleQueries": [
+    "打开 MiniMax Photo，帮我调整这张照片的曝光和色彩",
+    "照这张图画一幅简单的铅笔素描，逐笔画给我看",
+    "在 MiniMax Photo 中生成一张咖啡海报"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/minimax-photo/SKILL.md"
+  ]
+}

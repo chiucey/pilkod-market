@@ -1,0 +1,32 @@
+{
+  "upstreamRepository": "https://github.com/larksuite/meegle-cli",
+  "upstreamRef": "main",
+  "upstreamCommit": "e5ca19052b81cbba99c48ef0eab1f515552076e1",
+  "cliPackage": "@lark-project/meegle",
+  "cliVersion": "1.0.26",
+  "nodeEngine": ">=16",
+  "skillCount": 1,
+  "skills": ["meegle"],
+  "upstreamSkillFileCount": 27,
+  "license": "MIT",
+  "scope": "Official CN Marketplace plugin; desktop-only; user-managed installation.",
+  "checksumSource": "https://registry.npmjs.org/@lark-project/meegle/1.0.26",
+  "cliArchiveUrl": "https://registry.npmjs.org/@lark-project/meegle/-/meegle-1.0.26.tgz",
+  "cliArchiveIntegrity": "sha512-XE0LD2bXwp0nGQUQYQu/4UYmrrXRd6JJmub4n4Nt5v1y6PUiaNBQusivWjf8WnQ3bZDHeAelHm/M6QTyLXWbqg==",
+  "cliArchiveSha256": "f77e74d2c9b15fcfc0433faab3ac088933809c41254905c32538c499006d2504",
+  "standaloneBinarySource": "Verified npm archive includes package/bin/meegle-{darwin,linux}-{arm64,x64} and meegle-win32-{arm64,x64}.exe; no GitHub Release asset assumption.",
+  "iconSourcePage": "https://project.feishu.cn/",
+  "iconSourceUrl": "https://sf3-cn.feishucdn.com/obj/meego-static/front/static/20251121-114942.png",
+  "iconSourceEvidence": "Official Feishu Project homepage references this PNG as shortcut icon, icon and og:image.",
+  "iconSha256": "d565a970cb67eaaf38bca7f86e4d2d26fef6c6ac2382d982a57e5608aa863d0a",
+  "localAdaptations": [
+    {"path": "skills/meegle/SKILL.md", "reason": "Narrow trigger to Feishu Project/Meegle; distinguish lark-task; add setup/auth boundaries and explicit-request-only handoff."},
+    {"path": "skills/meegle/references/auth-guard.md", "reason": "Default CN host only when no existing/explicit host; preserve profile and reject mismatch; non-TTY device-code; distinguish status exit 2 network failure from login failure; no credential access."},
+    {"path": "skills/meegle/references/cli-guide.md", "reason": "Correct npm Node engine; link CLI-only fixed-version and standalone setup."},
+    {"path": "skills/meegle/references/ai-handoff.md", "reason": "No automatic availability or handoff; user request and host authorization required; no automatic preference changes."}
+  ],
+  "formattingAdaptations": ["skills/meegle/references/rich-text-editor-markdown-syntax.md: remove upstream trailing whitespace"],
+  "localAdditions": [".pilkod-plugin/plugin.json", "hooks/hooks.json", "scripts/check-meegle-cli.sh", "scripts/check-meegle-cli.ps1", "skills/meegle/references/minimax-code-cli-setup.md", "README.md", "upstream.json", "icon.png"],
+  "hookReference": "origin/main:plugins/lark (0.1.4); local path detection and JSON escaping reused with Meegle names and fixed version.",
+  "compatibilityNotes": ["Business command schemas remain server-discovered; preserve upstream inspect guidance.", "Only macOS arm64 standalone version/help was executed; no real-account login or business writes tested."]
+}

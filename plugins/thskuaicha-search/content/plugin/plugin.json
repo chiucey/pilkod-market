@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "thskuaicha-search",
+  "displayName": "同花顺快查企业数据",
+  "version": "1.0.0",
+  "description": "涵盖中国企业金融股票、企业工商、股权投资、司法风险、知识产权、招投标、新闻舆情、法律法规、案件文书等数据，结果可溯源，避免幻觉。用自然语言快速完成企业身份核验与背景调查。",
+  "author": "同花顺",
+  "icon": "icon.png",
+  "category": "Business",
+  "exampleQueries": [
+    "查询宁德时代的工商信息、主要股东和对外投资，并附上数据来源",
+    "核验这家企业的身份信息，汇总司法风险与近期新闻舆情",
+    "查询这家企业的知识产权和招投标记录，并提供可追溯的原始链接"
+  ],
+  "apps": [
+    "kuaicha365.app.json"
+  ],
+  "mcpServers": [],
+  "skills": []
+}

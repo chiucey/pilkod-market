@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "wechat-search-plugin",
+  "displayName": "公众号爆款文章搜索",
+  "version": "1.0.1",
+  "description": "公众号搜索工具，支持按关键词搜索爆款文章，展示推荐热门文章，助力内容创作者把握趋势与获取灵感。提供三维评分排序、热门推荐、HTML 报告生成与日历订阅推送能力。",
+  "author": "redfox",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "搜索公众号「职场沟通」近 7 天的爆款文章",
+    "查询全站最近一周的公众号热门文章",
+    "搜「美食,旅行,育儿」三个关键词的近期爆款"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/wechat-search/SKILL.md"
+  ]
+}

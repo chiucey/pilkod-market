@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "tencent-meeting",
+  "displayName": "腾讯会议",
+  "version": "1.0.17",
+  "description": "连接腾讯会议 Connector，管理会议、参会成员、录制、转写、元宝纪要与会中操作。",
+  "author": "腾讯会议",
+  "icon": "icon.png",
+  "category": "Office",
+  "exampleQueries": [
+    "帮我创建明天下午 3 点的项目评审会议",
+    "查找上周关于预算的腾讯会议纪要",
+    "获取这场会议的参会人和录制转写"
+  ],
+  "apps": [
+    "tencent-meeting.app.json"
+  ],
+  "mcpServers": [],
+  "skills": [
+    "skills/tencent-meeting/SKILL.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "name": "minimax-for-legal",
+  "displayName": "Pilkod For Legal",
+  "version": "1.0.0-pilkod-dev.228",
+  "description": "面向企业法务与律师的可追溯法律工作空间。",
+  "author": "Pilkod",
+  "icon": "assets/minimax-icon.png",
+  "category": "Business",
+  "exampleQueries": [
+    "打开 Pilkod For Legal。"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "servers.mcp.json"
+  ],
+  "skills": [
+    "skills/tabular-review/SKILL.md",
+    "skills/document-editor/SKILL.md",
+    "skills/timeline-analysis/SKILL.md"
+  ],
+  "hooks": [
+    "hooks/hooks.json"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "performance-experts",
+  "version": "1.0.3",
+  "displayName": "性能优化专家",
+  "description": "一键拥有 Vercel、Addy Osmani、Paul Hudson 与 Seth Hobson 的 7 个热门性能 Skill，覆盖 Web、React/Next.js、React Native、SwiftUI 与 Python；先测量，再定位，改完复测。",
+  "author": "Pilkod",
+  "icon": "performance-experts.webp",
+  "darkIcon": "icon-dark.png",
+  "category": "Code",
+  "exampleQueries": [
+    "帮我测出这个 React 页面最影响体验的性能瓶颈，并按收益排序修复",
+    "分析这个 iOS 或 React Native 客户端的卡顿，给出可复现、可验证的优化方案",
+    "排查这个 Python 服务的延迟和内存问题，先测量再优化"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/performance-optimization/SKILL.md",
+    "skills/performance/SKILL.md",
+    "skills/core-web-vitals/SKILL.md",
+    "skills/vercel-react-best-practices/SKILL.md",
+    "skills/vercel-react-native-skills/SKILL.md",
+    "skills/swiftui-pro/SKILL.md",
+    "skills/python-performance-optimization/SKILL.md"
+  ]
+}

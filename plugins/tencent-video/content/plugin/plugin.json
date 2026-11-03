@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "tencent-video",
+  "displayName": "腾讯视频影视助手",
+  "version": "1.0.24",
+  "description": "检索腾讯视频影视内容、查询排播进度、设置追剧提醒",
+  "author": "腾讯视频",
+  "icon": "icon.png",
+  "darkIcon": "icon-dark.png",
+  "category": "Other",
+  "exampleQueries": [
+    "小羊皮鞋不能沾水是哪部剧？",
+    "蜘蛛侠系列按什么顺序补？",
+    "心动的信号9更新时提醒我"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/tencent-video/SKILL.md"
+  ]
+}

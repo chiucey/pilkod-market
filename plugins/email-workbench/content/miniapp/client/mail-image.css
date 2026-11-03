@@ -1,0 +1,27 @@
+/* Workbench-owned controls only. Provider text, images and tables retain their styles. */
+figure[data-workbench-image] {margin:0; max-width:100%; vertical-align:middle}
+figure[data-workbench-image]:not([data-state='ready']) {display:block; width:min(100%, 560px)}
+figure[data-workbench-image] > .mail-image-controls {
+  display:flex; align-items:center; gap:12px; box-sizing:border-box; margin:12px 0;
+  padding:16px; border:1px solid var(--mcode-border); border-radius:8px;
+  background:var(--mcode-surface-muted); color:var(--mcode-text);
+  font:400 var(--mcode-ui-small)/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-align:left; white-space:normal;
+}
+figure[data-workbench-image] > .mail-image-controls[hidden] {display:none}
+.mail-image-controls > .icon {width:20px; height:20px; flex:none; color:var(--mcode-text-muted)}
+.mail-image-controls .mail-image-identity {flex:1; min-width:0; display:flex; flex-direction:column; gap:4px}
+.mail-image-identity strong {font-size:var(--mcode-ui-small); font-weight:500; color:var(--mcode-text)}
+.mail-image-identity > span,.mail-image-identity small {font-size:var(--mcode-ui-assist); color:var(--mcode-text-muted); overflow-wrap:anywhere}
+.mail-image-controls .mail-image-retry {
+  display:inline-flex; align-items:center; justify-content:center; gap:6px; flex:none;
+  min-height:30px; padding:4px 10px; border:1px solid var(--mcode-border); border-radius:8px;
+  font:inherit; color:var(--mcode-text); background:var(--mcode-surface); cursor:pointer;
+}
+.mail-image-retry .icon {width:16px; height:16px}
+.mail-image-retry:hover:not(:disabled) {background:var(--mcode-hover)}
+.mail-image-retry:focus-visible {outline:2px solid var(--mcode-accent); outline-offset:2px}
+.mail-image-retry:disabled {color:var(--mcode-text-muted); cursor:default}
+@media (max-width:360px) {
+  figure[data-workbench-image] > .mail-image-controls {gap:8px; padding:12px; flex-wrap:wrap}
+}

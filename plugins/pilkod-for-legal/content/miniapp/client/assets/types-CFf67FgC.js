@@ -1,0 +1,1 @@
+var e={formats:[`bold`,`italic`,`name`,`size`,`color`],agentScope:`body`,docxOnly:!0};function t(e,t){return e.startOffset===e.endOffset||t.startOffset===t.endOffset?e.startOffset<=t.endOffset&&t.startOffset<=e.endOffset:e.startOffset<t.endOffset&&t.startOffset<e.endOffset}export{t as n,e as t};

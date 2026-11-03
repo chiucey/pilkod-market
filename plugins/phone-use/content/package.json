@@ -1,0 +1,11 @@
+{
+  "name": "phone-use",
+  "version": "0.5.2",
+  "private": true,
+  "description": "Pilkod Mini App that shows a live iPhone or Android screen and ships the Phone Use MCP servers.",
+  "license": "MIT",
+  "mcode": {
+    "schemaVersion": 2,
+    "miniApp": "./miniapp/miniapp.json"
+  }
+}

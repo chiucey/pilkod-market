@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "minimax-stocks": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:9/mcp/minimax-stocks",
+      "headers": {},
+      "description": "股市 运行时工具：自选股增删改查、当前用户浏览上下文 Brief、统一舆情检索（Alpha派、进门财经、知识星球、腾讯文档、本地资料库，按知识图谱别名同步检索）、产业链 Wiki 检索 / 读页 / 关系子图 / 写入（基于用户关联的资料文件夹）。",
+      "timeout": 30000
+    }
+  }
+}

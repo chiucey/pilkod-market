@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "xiaohongshu-search-plugin",
+  "displayName": "小红书爆款笔记搜索",
+  "version": "1.0.1",
+  "description": "小红书热门笔记搜索工具，支持按关键词搜索热门内容，基于相关性、热度、时效三维评分排序推荐热门笔记，助力创作者发现热门趋势、获取创作灵感。提供细分赛道引导、热门推荐、HTML 报告与日历订阅推送能力。",
+  "author": "redfox",
+  "icon": "icon.png",
+  "category": "Studio",
+  "exampleQueries": [
+    "搜索小红书「减脂餐」近 7 天的爆款笔记",
+    "查询小红书全站最近一周的热门笔记",
+    "搜「职场穿搭,健身,生酮饮食」三个关键词的近期爆款"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/xiaohongshu-search/SKILL.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "humanizer",
+  "displayName": "Humanizer",
+  "version": "2.11.3",
+  "description": "在不改变原意的前提下，识别并改写生硬、模板化或带有明显 AI 痕迹的英文文本，使表达更自然。",
+  "author": "blader",
+  "icon": "icon.webp",
+  "category": "Office",
+  "exampleQueries": [
+    "把这段英文改得更自然，但不要改变事实和语气",
+    "检查这篇文章里明显像 AI 写作的表达并重写",
+    "精简这封英文邮件，保留作者本来的声音"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/humanizer/SKILL.md"
+  ]
+}
