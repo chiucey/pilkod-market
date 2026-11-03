@@ -1,0 +1,54 @@
+# Document Pro 配置设置
+
+processing:
+  # 文本处理参数
+  min_paragraph_length: 100  # 最小段落长度
+  max_summary_length: 1000   # 最大摘要长度（字符）
+  keyword_count: 10          # 关键词数量
+
+  # 语言设置
+  language: zh-CN            # 输出语言：zh-CN / en
+
+  # 摘要模式
+  default_mode: full         # 默认输出模式：summary / extract / structure / full
+
+file:
+  # 支持的文件格式
+  allowed_extensions:
+    - .pdf
+    - .docx
+    - .doc
+    - .pptx
+    - .ppt
+    - .txt
+    - .md
+    - .markdown
+
+  # 文件大小限制（MB）
+  max_file_size_mb: 50
+
+output:
+  # 输出格式
+  format: structured         # structured / simple
+
+  # 是否包含元数据
+  include_metadata: true
+
+  # 是否包含段落详情
+  include_paragraphs: true
+
+  # 是否包含表格数据
+  include_tables: true
+
+privacy:
+  # 隐私保护设置
+  local_only: true           # 仅本地处理
+  no_storage: true            # 不存储文档
+  no_network: true            # 不进行网络请求
+
+dependencies:
+  python:
+    - PyPDF2>=3.0.0          # PDF 解析
+    - python-docx>=0.8.11    # Word 解析
+    - python-pptx>=0.6.21    # PowerPoint 解析
+    - PyYAML>=6.0            # 配置文件

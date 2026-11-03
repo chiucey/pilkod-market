@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-14",
+  "dependencies": [
+    "python-pptx",
+    "beautifulsoup4",
+    "lxml"
+  ],
+  "description": "教学PPT设计优化助手，支持HTML转PPT、PPT内容分析和设计优化",
+  "files": [
+    "SKILL.md",
+    "scripts/html_to_ppt.py",
+    "scripts/ppt_analyzer.py",
+    "scripts/ppt_optimizer.py",
+    "references/design_principles.md"
+  ],
+  "id": 387454817099851,
+  "name": "educational-ppt-optimizer",
+  "platform": "minimax",
+  "scripts": [
+    "html_to_ppt.py",
+    "ppt_analyzer.py",
+    "ppt_optimizer.py"
+  ],
+  "skill_id": 897403394,
+  "tags": [
+    "PPT",
+    "教学设计",
+    "HTML转换",
+    "PPT分析",
+    "PPT优化"
+  ],
+  "updated_at": 1776146416980,
+  "version": "1.0.0"
+}

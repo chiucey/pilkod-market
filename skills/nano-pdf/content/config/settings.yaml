@@ -1,0 +1,7 @@
+# Nano PDF 配置文件
+default_output_directory: "./nano_pdf_output"
+default_page_start: 1
+max_merge_files: 20
+allowed_file_extensions:
+  - ".pdf"
+timeout_seconds: 60

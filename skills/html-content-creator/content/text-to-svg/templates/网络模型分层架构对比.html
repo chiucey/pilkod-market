@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- Chart-Type: 对比图谱 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>文本核心内容可视化</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #eaedf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 28px;
+  }
+  .container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    padding: 28px;
+    display: inline-block;
+  }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+  <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+    <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+  <marker id="arrowGray" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 7 2.5, 0 5" fill="#78909c"/>
+  </marker>
+</defs>
+
+<rect width="800" height="600" fill="#ffffff"/>
+
+<text x="400" y="32" fill="#1a1a1a" font-size="19" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle">网络模型分层架构对比</text>
+<text x="400" y="52" fill="#64748b" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle">OSI 七层参考模型  ↔  TCP/IP 四层模型（互联网实际运行标准）</text>
+
+<rect x="40" y="64" width="240" height="24" rx="4" fill="#1565c0"/>
+<text x="160" y="80" fill="#fff" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">OSI 七层参考模型</text>
+
+<rect x="520" y="64" width="240" height="24" rx="4" fill="#00695c"/>
+<text x="640" y="80" fill="#fff" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">TCP/IP 四层模型</text>
+
+<g transform="translate(0, 24)">
+<g fill="none" stroke="#78909c" stroke-width="2" stroke-linecap="round">
+  <line x1="315" y1="101" x2="315" y2="225"/>
+  <line x1="315" y1="101" x2="280" y2="101"/>
+  <line x1="315" y1="163" x2="280" y2="163"/>
+  <line x1="315" y1="225" x2="280" y2="225"/>
+  <line x1="315" y1="163" x2="520" y2="163" marker-end="url(#arrowGray)"/>
+
+  <line x1="280" y1="287" x2="520" y2="287" marker-end="url(#arrowGray)"/>
+  <line x1="280" y1="349" x2="520" y2="349" marker-end="url(#arrowGray)"/>
+
+  <line x1="315" y1="411" x2="315" y2="473"/>
+  <line x1="315" y1="411" x2="280" y2="411"/>
+  <line x1="315" y1="473" x2="280" y2="473"/>
+  <line x1="315" y1="442" x2="520" y2="442" marker-end="url(#arrowGray)"/>
+</g>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" fill="#475569" font-size="11" text-anchor="middle" dominant-baseline="central">
+  <text x="418" y="125">HTTP/FTP/DNS</text>
+  <text x="418" y="287">TCP/UDP</text>
+  <text x="418" y="349">IP</text>
+  <text x="418" y="405">Ethernet/WiFi</text>
+</g>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif">
+  <circle cx="25" cy="101" r="11" fill="#1565c0"/>
+  <text x="25" y="102" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">7</text>
+  <rect x="40" y="76" width="240" height="50" rx="5" fill="#fbe9e7" stroke="#ffab91" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="93" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">应用层</text>
+  <text x="155" y="112" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">网页浏览 · 文件传输 · 即时通讯</text>
+
+  <circle cx="25" cy="163" r="11" fill="#1565c0"/>
+  <text x="25" y="164" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">6</text>
+  <rect x="40" y="138" width="240" height="50" rx="5" fill="#fff3e0" stroke="#ffcc80" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="155" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">表示层</text>
+  <text x="155" y="174" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">格式转换 · 加密解密 · 压缩解压</text>
+
+  <circle cx="25" cy="225" r="11" fill="#1565c0"/>
+  <text x="25" y="226" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">5</text>
+  <rect x="40" y="200" width="240" height="50" rx="5" fill="#fff8e1" stroke="#ffe082" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="217" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">会话层</text>
+  <text x="155" y="236" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">建立 · 维持 · 终止通信会话</text>
+
+  <circle cx="25" cy="287" r="11" fill="#1565c0"/>
+  <text x="25" y="288" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">4</text>
+  <rect x="40" y="262" width="240" height="50" rx="5" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="279" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">传输层</text>
+  <text x="155" y="298" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">数据分段 · 可靠传输 · TCP/UDP</text>
+
+  <circle cx="25" cy="349" r="11" fill="#1565c0"/>
+  <text x="25" y="350" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">3</text>
+  <rect x="40" y="324" width="240" height="50" rx="5" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="341" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">网络层</text>
+  <text x="155" y="360" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">路由寻址 · IP定位 · 最优路径</text>
+
+  <circle cx="25" cy="411" r="11" fill="#1565c0"/>
+  <text x="25" y="412" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">2</text>
+  <rect x="40" y="386" width="240" height="50" rx="5" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="403" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">数据链路层</text>
+  <text x="155" y="422" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">封装数据帧 · 校验完整性 · 纠错</text>
+
+  <circle cx="25" cy="473" r="11" fill="#1565c0"/>
+  <text x="25" y="474" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="central">1</text>
+  <rect x="40" y="448" width="240" height="50" rx="5" fill="#fce4ec" stroke="#f48fb1" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="155" y="465" fill="#1a1a1a" font-size="13" font-weight="bold" text-anchor="middle" dominant-baseline="central">物理层</text>
+  <text x="155" y="484" fill="#666" font-size="11" text-anchor="middle" dominant-baseline="central">比特流收发 · 网线/光纤/网卡</text>
+</g>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif">
+  <rect x="520" y="76" width="240" height="174" rx="5" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="640" y="120" fill="#00695c" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">应用层</text>
+  <text x="640" y="143" fill="#475569" font-size="11" text-anchor="middle" dominant-baseline="central">HTTP · FTP · SMTP · DNS · SSH</text>
+  <text x="640" y="161" fill="#475569" font-size="11" text-anchor="middle" dominant-baseline="central">Web浏览 · 文件传输 · 邮件</text>
+  <text x="640" y="212" fill="#78909c" font-size="10" text-anchor="middle" dominant-baseline="central">合并 OSI 应用层+表示层+会话层</text>
+
+  <rect x="520" y="262" width="240" height="50" rx="5" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="640" y="279" fill="#00695c" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">传输层</text>
+  <text x="640" y="298" fill="#475569" font-size="11" text-anchor="middle" dominant-baseline="central">TCP 可靠传输 / UDP 高效传输</text>
+
+  <rect x="520" y="324" width="240" height="50" rx="5" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="640" y="341" fill="#00695c" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">网际层</text>
+  <text x="640" y="360" fill="#475569" font-size="11" text-anchor="middle" dominant-baseline="central">IP 路由寻址 · 分组转发</text>
+
+  <rect x="520" y="386" width="240" height="112" rx="5" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="640" y="420" fill="#00695c" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">网络接口层</text>
+  <text x="640" y="443" fill="#475569" font-size="11" text-anchor="middle" dominant-baseline="central">Ethernet · WiFi · PPP</text>
+  <text x="640" y="472" fill="#78909c" font-size="10" text-anchor="middle" dominant-baseline="central">合并 OSI 数据链路层+物理层</text>
+</g>
+</g>
+
+<rect x="60" y="530" width="680" height="58" rx="10" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="1.5" filter="url(#shadowLight)"/>
+<text x="400" y="550" fill="#1a1a1a" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">分层设计价值：单层独立解耦 · 标准化互通 · 全球设备兼容 · 网络技术持续演进</text>
+<text x="400" y="573" fill="#5c6bc0" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">网络模型是网络通信的"通用语言"与"运行骨架"</text>
+</svg>
+</div>
+</body>
+</html>

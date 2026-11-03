@@ -1,0 +1,20 @@
+{
+  "author": "MiniMax Agent",
+  "category": "medical",
+  "created": "2026-03-23",
+  "description": "肿瘤患者病历分析专家。用于RECIST评估、临床试验筛选、MDT报告生成",
+  "displayName": "肿瘤患者病历分析专家",
+  "id": 379714767458484,
+  "name": "oncology-case-analyzer",
+  "platform": "minimax",
+  "tags": [
+    "oncology",
+    "RECIST",
+    "clinical-trial",
+    "MDT",
+    "medical-analysis"
+  ],
+  "updated": "2026-03-23",
+  "updated_at": 1774257477842,
+  "version": "1.0.0"
+}

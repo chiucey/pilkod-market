@@ -1,0 +1,50 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "url_access",
+    "header_spoofing",
+    "retry_logic",
+    "content_extraction",
+    "link_collection",
+    "image_collection",
+    "content_cleaning",
+    "summary_generation"
+  ],
+  "created_at": "2026-04-06",
+  "description": "通用网页爬虫技能，支持公开网页内容爬取与解析，提取标题、正文、链接、图片等",
+  "id": 385044917429059,
+  "input_schema": {
+    "mode": "string (optional, enum: full|content|links|images)",
+    "retry": "number (optional, default: 1)",
+    "timeout": "number (optional, default: 10)",
+    "url": "string (required)"
+  },
+  "name": "browser-crawler",
+  "output_schema": {
+    "content": "string",
+    "images": "array",
+    "links": "array",
+    "msg": "string",
+    "status": "string (enum: success|fail)",
+    "summary": "string",
+    "title": "string",
+    "url": "string"
+  },
+  "platform": "minimax",
+  "security_constraints": [
+    "no_auth_pages",
+    "no_intranet",
+    "no_localhost",
+    "no_anti_crawl_bypass",
+    "respect_robots_txt"
+  ],
+  "tags": [
+    "crawler",
+    "web",
+    "scraping",
+    "html",
+    "content-extraction"
+  ],
+  "updated_at": 1775558049081,
+  "version": "1.0.0"
+}

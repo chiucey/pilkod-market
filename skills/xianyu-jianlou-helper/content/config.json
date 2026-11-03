@@ -1,0 +1,432 @@
+{
+  "version": "3.0",
+  "update_date": "2026-04-26",
+  "platforms": {
+    "xianyu": {
+      "name": "闲鱼",
+      "type": "二手",
+      "base_url": "https://www.goofish.com/search?q=",
+      "sort_param": "&sortField=1"
+    },
+    "taobao": {
+      "name": "淘宝",
+      "type": "电商",
+      "base_url": "https://s.taobao.com/search?q="
+    },
+    "tmall": {
+      "name": "天猫",
+      "type": "电商",
+      "base_url": "https://list.tmall.com/search_product?q="
+    },
+    "jd": {
+      "name": "京东",
+      "type": "电商",
+      "base_url": "https://search.jd.com/Search?keyword="
+    },
+    "pdd": {
+      "name": "拼多多",
+      "type": "电商",
+      "base_url": "https://pinduoduo.com/search?q="
+    },
+    "1688": {
+      "name": "1688",
+      "type": "批发",
+      "base_url": "https://s.1688.com/so/search?q="
+    },
+    "xhs": {
+      "name": "小红书",
+      "type": "社区",
+      "base_url": "https://www.xiaohongshu.com/search_result?keyword="
+    },
+    "douyin": {
+      "name": "抖音",
+      "type": "短视频",
+      "base_url": "https://www.douyin.com/search/"
+    }
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "手机",
+      "sub_items": [
+        {"name": "iPhone 15 Pro Max", "keywords": ["iPhone 15PM", "iPhone 15 Pro Max", "苹果15顶配"], "max_price": 5200, "hot_price": 4600},
+        {"name": "iPhone 15 Pro", "keywords": ["iPhone 15 Pro", "苹果15Pro"], "max_price": 4200, "hot_price": 3700},
+        {"name": "iPhone 14 Pro Max", "keywords": ["iPhone 14PM", "iPhone 14 Pro Max"], "max_price": 3800, "hot_price": 3300},
+        {"name": "华为 Mate 60 Pro", "keywords": ["华为Mate60", "Mate60 Pro", "华为mate60"], "max_price": 3500, "hot_price": 3000},
+        {"name": "华为 P70 Pro", "keywords": ["华为P70", "P70 Pro", "华为p70"], "max_price": 3200, "hot_price": 2800},
+        {"name": "三星 S24 Ultra", "keywords": ["三星S24U", "S24 Ultra", "三星s24"], "max_price": 4500, "hot_price": 4000},
+        {"name": "小米 14 Ultra", "keywords": ["小米14U", "小米14Ultra"], "max_price": 2800, "hot_price": 2500},
+        {"name": "OPPO Find X7 Ultra", "keywords": ["OPPO Find X7", "Find X7 Ultra"], "max_price": 2600, "hot_price": 2300},
+        {"name": "vivo X100 Pro", "keywords": ["vivo X100", "X100 Pro"], "max_price": 2400, "hot_price": 2100},
+        {"name": "一加 12", "keywords": ["一加12", "OnePlus 12"], "max_price": 2000, "hot_price": 1800}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "平板",
+      "sub_items": [
+        {"name": "iPad Pro M4", "keywords": ["iPad Pro M4", "iPadPro2024"], "max_price": 5000, "hot_price": 4500},
+        {"name": "iPad Air 5 M1", "keywords": ["iPad Air 5", "iPadAir M1"], "max_price": 2300, "hot_price": 2000},
+        {"name": "iPad Air 6", "keywords": ["iPad Air 6", "iPadAir M2"], "max_price": 2800, "hot_price": 2500},
+        {"name": "iPad mini 6", "keywords": ["iPad mini 6", "iPadmini"], "max_price": 1800, "hot_price": 1500},
+        {"name": "华为 MatePad Pro 13", "keywords": ["华为MatePad", "MatePad Pro"], "max_price": 2500, "hot_price": 2200},
+        {"name": "华为 MatePad Air", "keywords": ["MatePad Air", "华为matepad air"], "max_price": 1500, "hot_price": 1200},
+        {"name": "小米平板6 Pro", "keywords": ["小米平板6", "小米平板6Pro"], "max_price": 1400, "hot_price": 1200},
+        {"name": "三星 Tab S9 Ultra", "keywords": ["三星Tab", "Tab S9", "三星平板"], "max_price": 4000, "hot_price": 3500}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "游戏主机",
+      "sub_items": [
+        {"name": "Switch 2", "keywords": ["Switch 2", "NS2", "switch2"], "max_price": 1800, "hot_price": 1600},
+        {"name": "Switch OLED", "keywords": ["Switch OLED", "NS OLED", "switcholed"], "max_price": 1300, "hot_price": 1100},
+        {"name": "Switch Lite", "keywords": ["Switch Lite", "NS Lite"], "max_price": 700, "hot_price": 600},
+        {"name": "PS5 Slim", "keywords": ["PS5 Slim", "PS5slim", "索尼PS5"], "max_price": 3200, "hot_price": 2900},
+        {"name": "PS5 原版光驱", "keywords": ["PS5光驱版", "PS5原版"], "max_price": 2800, "hot_price": 2500},
+        {"name": "PS5 数字版", "keywords": ["PS5数字版", "PS5无光驱"], "max_price": 2200, "hot_price": 1900},
+        {"name": "Xbox Series X", "keywords": ["XSX", "Xbox Series X"], "max_price": 2800, "hot_price": 2500}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "游戏卡带/光盘",
+      "sub_items": [
+        {"name": "塞尔达王国之泪", "keywords": ["王国之泪", "塞尔达王国之泪", "TOTK"], "max_price": 280, "hot_price": 230},
+        {"name": "动物森友会", "keywords": ["动森", "动物森友会", "动物之森"], "max_price": 320, "hot_price": 280},
+        {"name": "GTA 6", "keywords": ["GTA6", "GTA VI", "荒野大镖客"], "max_price": 450, "hot_price": 380},
+        {"name": "健身环大冒险", "keywords": ["健身环", "Ring Fit", "健身环大冒险"], "max_price": 380, "hot_price": 320},
+        {"name": "艾尔登法环", "keywords": ["艾尔登法环", "老头环", "Elden Ring"], "max_price": 180, "hot_price": 150}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "显卡",
+      "sub_items": [
+        {"name": "RTX 4060", "keywords": ["RTX 4060", "4060显卡", "4060ti"], "max_price": 2100, "hot_price": 1700},
+        {"name": "RTX 4060 Ti", "keywords": ["RTX 4060Ti", "4060 Ti"], "max_price": 2800, "hot_price": 2400},
+        {"name": "RTX 4070", "keywords": ["RTX 4070", "4070显卡"], "max_price": 3500, "hot_price": 3000},
+        {"name": "RTX 4070 Super", "keywords": ["RTX 4070S", "4070Super"], "max_price": 4200, "hot_price": 3700},
+        {"name": "RTX 4070 Ti Super", "keywords": ["RTX 4070TiS", "4070TiSuper"], "max_price": 5500, "hot_price": 4800},
+        {"name": "RTX 4080 Super", "keywords": ["RTX 4080S", "4080Super"], "max_price": 7000, "hot_price": 6200},
+        {"name": "RTX 5060 Ti", "keywords": ["RTX 5060Ti", "5060显卡"], "max_price": 3500, "hot_price": 3000},
+        {"name": "RTX 5070", "keywords": ["RTX 5070", "5070显卡"], "max_price": 4200, "hot_price": 3800}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "游戏本",
+      "sub_items": [
+        {"name": "拯救者 Y9000P RTX4060", "keywords": ["拯救者9000P", "Y9000P", "联想拯救者"], "max_price": 6500, "hot_price": 5800},
+        {"name": "拯救者 Y7000P RTX4060", "keywords": ["拯救者7000P", "Y7000P"], "max_price": 5000, "hot_price": 4500},
+        {"name": "暗影精灵 9 RTX4060", "keywords": ["暗影精灵", "暗影精灵9", "惠普游戏本"], "max_price": 5500, "hot_price": 4800},
+        {"name": "天选 5 Pro RTX4060", "keywords": ["天选5", "天选5Pro", "华硕天选"], "max_price": 5200, "hot_price": 4600},
+        {"name": "ROG 魔霸新锐 RTX4060", "keywords": ["魔霸新锐", "ROG魔霸"], "max_price": 7500, "hot_price": 6800},
+        {"name": "戴尔 G15 RTX4060", "keywords": ["戴尔G15", "G15游戏本"], "max_price": 4800, "hot_price": 4200}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Win掌机",
+      "sub_items": [
+        {"name": "7840U掌机 32G+2T", "keywords": ["7840U掌机", "AMD掌机", "win掌机"], "max_price": 3600, "hot_price": 3200},
+        {"name": "6800U掌机 16G+512G", "keywords": ["6800U掌机", "SteamDeck替代"], "max_price": 2200, "hot_price": 1900},
+        {"name": "Steam Deck OLED", "keywords": ["Steam Deck", "SteamDeck", "SD掌机"], "max_price": 3500, "hot_price": 3100},
+        {"name": "ROG Ally", "keywords": ["ROG Ally", "rog掌机", "华硕掌机"], "max_price": 4500, "hot_price": 4000},
+        {"name": "ROG Ally X", "keywords": ["ROG Ally X", "allyx"], "max_price": 5500, "hot_price": 4900}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "投影仪",
+      "sub_items": [
+        {"name": "极米 Z7X", "keywords": ["极米Z7X", "极米z7x"], "max_price": 2000, "hot_price": 1700},
+        {"name": "极米 H3S", "keywords": ["极米H3S", "极米h3s"], "max_price": 2800, "hot_price": 2400},
+        {"name": "极米 H6", "keywords": ["极米H6", "极米h6"], "max_price": 4000, "hot_price": 3500},
+        {"name": "坚果 N1 Air", "keywords": ["坚果N1", "坚果投影"], "max_price": 1800, "hot_price": 1500},
+        {"name": "当贝 X5", "keywords": ["当贝X5", "当贝投影"], "max_price": 3200, "hot_price": 2800}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "显示器",
+      "sub_items": [
+        {"name": "27寸 2K 144Hz", "keywords": ["2K显示器", "27寸2K", "2K144Hz"], "max_price": 900, "hot_price": 700},
+        {"name": "27寸 4K 144Hz", "keywords": ["4K显示器", "27寸4K", "4K144Hz"], "max_price": 1800, "hot_price": 1500},
+        {"name": "34寸 带鱼屏", "keywords": ["带鱼屏", "21:9显示器", "超宽带鱼屏"], "max_price": 1500, "hot_price": 1200},
+        {"name": "27寸 MiniLED", "keywords": ["MiniLED显示器", "MiniLED屏幕"], "max_price": 2000, "hot_price": 1700},
+        {"name": "49寸 超宽屏", "keywords": ["49寸显示器", "超宽屏", "32:9"], "max_price": 3500, "hot_price": 3000},
+        {"name": "便携屏 15.6寸", "keywords": ["便携屏", "便携显示器", "便携屏幕"], "max_price": 600, "hot_price": 450},
+        {"name": "32寸 4K 60Hz", "keywords": ["32寸4K", "32寸显示器"], "max_price": 1500, "hot_price": 1200}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mac/苹果设备",
+      "sub_items": [
+        {"name": "Mac mini M4", "keywords": ["Mac mini", "Macmini", "苹果主机"], "max_price": 3500, "hot_price": 3000},
+        {"name": "MacBook Air M2", "keywords": ["MBA M2", "MacBookAir", "苹果笔记本"], "max_price": 4500, "hot_price": 4000},
+        {"name": "MacBook Air M3", "keywords": ["MBA M3", "MacBookAir M3"], "max_price": 5500, "hot_price": 4800},
+        {"name": "MacBook Pro 14 M3", "keywords": ["MBP 14", "MacBookPro14"], "max_price": 9000, "hot_price": 8000},
+        {"name": "MacBook Pro 16 M3 Max", "keywords": ["MBP 16", "MacBookPro16", "M3Max"], "max_price": 18000, "hot_price": 16000},
+        {"name": "Studio Display", "keywords": ["Studio Display", "苹果显示器"], "max_price": 8000, "hot_price": 7000}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "AI设备/服务",
+      "sub_items": [
+        {"name": "OpenClaw", "keywords": ["OpenClaw", "openclaw"], "max_price": 5000, "hot_price": 4000},
+        {"name": "Mac mini AI集群", "keywords": ["Macmini集群", "AI集群"], "max_price": 15000, "hot_price": 12000},
+        {"name": "GPU算力服务器", "keywords": ["GPU服务器", "AI服务器", "算力服务器"], "max_price": 50000, "hot_price": 40000}
+      ]
+    },
+    {
+      "id": 12,
+      "name": "相机",
+      "sub_items": [
+        {"name": "索尼 A7M4", "keywords": ["索尼A7M4", "A7M4", "A7IV"], "max_price": 11000, "hot_price": 9500},
+        {"name": "索尼 A7C2", "keywords": ["索尼A7C2", "A7C2", "A7C"], "max_price": 9500, "hot_price": 8500},
+        {"name": "索尼 A7R5", "keywords": ["索尼A7R5", "A7R5", "A7RV"], "max_price": 16000, "hot_price": 14000},
+        {"name": "富士 X-T5", "keywords": ["富士XT5", "X-T5", "富士相机"], "max_price": 9500, "hot_price": 8500},
+        {"name": "大疆 Mini 4 Pro", "keywords": ["大疆Mini4", "DJI Mini4", "无人机"], "max_price": 4500, "hot_price": 3800},
+        {"name": "佳能 R6 Mark II", "keywords": ["佳能R62", "R6M2", "佳能微单"], "max_price": 12000, "hot_price": 10500},
+        {"name": "尼康 Z6 III", "keywords": ["尼康Z63", "Z6III", "尼康微单"], "max_price": 11000, "hot_price": 9500}
+      ]
+    },
+    {
+      "id": 13,
+      "name": "耳机/音频",
+      "sub_items": [
+        {"name": "AirPods Pro 2", "keywords": ["AirPods Pro 2", "APP2", "苹果耳机"], "max_price": 1100, "hot_price": 900},
+        {"name": "AirPods Max", "keywords": ["AirPods Max", "APM", "苹果头戴"], "max_price": 2800, "hot_price": 2400},
+        {"name": "索尼 WH-1000XM5", "keywords": ["索尼XM5", "XM5", "索尼头戴"], "max_price": 1500, "hot_price": 1200},
+        {"name": "索尼 WF-1000XM5", "keywords": ["索尼降噪豆", "XM5耳机", "WF1000XM5"], "max_price": 1100, "hot_price": 900},
+        {"name": "森海塞尔 HD660S2", "keywords": ["HD660S2", "森海塞尔", "HD660S"], "max_price": 2800, "hot_price": 2400},
+        {"name": "Marshall 音箱", "keywords": ["Marshall", "马歇尔音箱", "音箱蓝牙"], "max_price": 1800, "hot_price": 1500}
+      ]
+    },
+    {
+      "id": 14,
+      "name": "机械键盘",
+      "sub_items": [
+        {"name": "三模 Gasket 机械键盘", "keywords": ["Gasket键盘", "三模机械键盘", " gasket"], "max_price": 350, "hot_price": 250},
+        {"name": "HHKB Professional", "keywords": ["HHKB", "hhkb键盘", "静电容键盘"], "max_price": 1800, "hot_price": 1500},
+        {"name": "Keychron Q1 Pro", "keywords": ["Keychron", "Q1 Pro", "客制化键盘"], "max_price": 800, "hot_price": 650},
+        {"name": "ROG 夜魔", "keywords": ["ROG夜魔", "ROG游侠", "华硕键盘"], "max_price": 900, "hot_price": 750},
+        {"name": "腹灵 CMK98", "keywords": ["腹灵CMK", "CMK98", "腹灵键盘"], "max_price": 450, "hot_price": 350}
+      ]
+    },
+    {
+      "id": 15,
+      "name": "鼠标/游戏外设",
+      "sub_items": [
+        {"name": "GPW 2 代", "keywords": ["GPW2", "狗屁王2", "罗技GPW"], "max_price": 600, "hot_price": 480},
+        {"name": "蝰蛇 V3 Pro", "keywords": ["蝰蛇V3", "V3 Pro", "雷蛇鼠标"], "max_price": 450, "hot_price": 380},
+        {"name": "MX Master 3S", "keywords": ["MX Master", "罗技鼠标", "Master3S"], "max_price": 450, "hot_price": 380},
+        {"name": "PS5 DualSense", "keywords": ["PS5手柄", "DualSense", "PS5手柄二手"], "max_price": 380, "hot_price": 320},
+        {"name": "Xbox Elite 2", "keywords": ["Xbox手柄", "Elite2", "精英手柄"], "max_price": 800, "hot_price": 650}
+      ]
+    },
+    {
+      "id": 16,
+      "name": "扫地机器人",
+      "sub_items": [
+        {"name": "石头 G20S", "keywords": ["石头G20S", "G20S", "石头扫地机"], "max_price": 1800, "hot_price": 1500},
+        {"name": "石头 P10 Pro", "keywords": ["石头P10", "P10Pro", "石头p10"], "max_price": 1200, "hot_price": 1000},
+        {"name": "追觅 X40", "keywords": ["追觅X40", "X40扫地机"], "max_price": 2000, "hot_price": 1700},
+        {"name": "科沃斯 T30", "keywords": ["科沃斯T30", "T30扫地机"], "max_price": 1400, "hot_price": 1200},
+        {"name": "云鲸 J4", "keywords": ["云鲸J4", "J4扫地机"], "max_price": 1500, "hot_price": 1300}
+      ]
+    },
+    {
+      "id": 17,
+      "name": "智能家电",
+      "sub_items": [
+        {"name": "戴森 V15", "keywords": ["戴森V15", "DysonV15", "戴森吸尘器"], "max_price": 2000, "hot_price": 1600},
+        {"name": "戴森 V12", "keywords": ["戴森V12", "DysonV12"], "max_price": 1600, "hot_price": 1300},
+        {"name": "洗烘一体机", "keywords": ["洗烘一体", "洗衣机烘干一体"], "max_price": 3500, "hot_price": 2800},
+        {"name": "净水器", "keywords": ["净水器", "厨下净水器"], "max_price": 1500, "hot_price": 1200},
+        {"name": "戴森吹风机", "keywords": ["戴森吹风机", "Dyson吹风机", "HD15"], "max_price": 1800, "hot_price": 1500},
+        {"name": "空气净化器", "keywords": ["空气净化器", "IAM空气净化器"], "max_price": 1200, "hot_price": 900}
+      ]
+    },
+    {
+      "id": 18,
+      "name": "智能手表/穿戴",
+      "sub_items": [
+        {"name": "Apple Watch S9", "keywords": ["Apple Watch S9", "AW S9", "苹果手表"], "max_price": 2200, "hot_price": 1900},
+        {"name": "Apple Watch Ultra 2", "keywords": ["AW Ultra", "Apple Ultra", "苹果手表ultra"], "max_price": 4500, "hot_price": 4000},
+        {"name": "华为 GT4", "keywords": ["华为GT4", "GT4手表"], "max_price": 800, "hot_price": 650},
+        {"name": "佳明 Forerunner 265", "keywords": ["佳明265", "Garmin265", "运动手表"], "max_price": 2200, "hot_price": 1900},
+        {"name": "三星 Watch 6", "keywords": ["三星手表", "Watch6", "Galaxy Watch"], "max_price": 1200, "hot_price": 950}
+      ]
+    },
+    {
+      "id": 19,
+      "name": "充电/储能",
+      "sub_items": [
+        {"name": "Anker 氮化镓 100W", "keywords": ["Anker充电器", "氮化镓充电器", "GaN充电器"], "max_price": 250, "hot_price": 180},
+        {"name": "Anker 充电宝 20000mAh", "keywords": ["Anker充电宝", "移动电源"], "max_price": 350, "hot_price": 280},
+        {"name": "EcoFlow 正浩 户外电源", "keywords": ["户外电源", "EcoFlow", "正浩电源"], "max_price": 3500, "hot_price": 2800},
+        {"name": "小米 充电宝 10000mAh", "keywords": ["小米充电宝", "小米移动电源"], "max_price": 120, "hot_price": 90}
+      ]
+    },
+    {
+      "id": 20,
+      "name": "潮玩/手办",
+      "sub_items": [
+        {"name": "泡泡玛特 MEGA", "keywords": ["泡泡玛特MEGA", "MEGA珍藏", "泡泡玛特大娃"], "max_price": 3000, "hot_price": 2000},
+        {"name": "乐高 兰博基尼", "keywords": ["乐高兰博基尼", "乐高超跑"], "max_price": 2500, "hot_price": 2000},
+        {"name": "高达 MG", "keywords": ["高达MG", "MG高达", "高达模型"], "max_price": 350, "hot_price": 280},
+        {"name": "Jellycat 邦尼兔", "keywords": ["Jellycat", "jellycat兔子", "玩偶"], "max_price": 400, "hot_price": 320},
+        {"name": "一番赏 赏品", "keywords": ["一番赏", "手办一番赏"], "max_price": 500, "hot_price": 350}
+      ]
+    },
+    {
+      "id": 21,
+      "name": "集换式卡牌",
+      "sub_items": [
+        {"name": "宝可梦 卡牌", "keywords": ["宝可梦卡", "宝可梦PTCG", "宝可梦卡牌"], "max_price": 800, "hot_price": 600},
+        {"name": "NBA 球星卡", "keywords": ["球星卡", "NBA球星卡", "帕尼尼"], "max_price": 500, "hot_price": 350},
+        {"name": "万智牌 单卡", "keywords": ["万智牌", "MTG单卡"], "max_price": 300, "hot_price": 200},
+        {"name": "游戏王 卡牌", "keywords": ["游戏王", "游戏王卡牌", "YGO"], "max_price": 400, "hot_price": 280}
+      ]
+    },
+    {
+      "id": 22,
+      "name": "户外/露营",
+      "sub_items": [
+        {"name": "牧高笛 帐篷", "keywords": ["牧高笛帐篷", "户外帐篷", "露营帐篷"], "max_price": 800, "hot_price": 600},
+        {"name": "始祖鸟 冲锋衣", "keywords": ["始祖鸟", "ARCTERYX", "冲锋衣二手"], "max_price": 2500, "hot_price": 1800},
+        {"name": "Osprey 双肩包", "keywords": ["Osprey", "osprey背包", "户外背包"], "max_price": 800, "hot_price": 600},
+        {"name": "挪客 折叠椅", "keywords": ["露营椅", "折叠椅", "户外椅"], "max_price": 200, "hot_price": 150},
+        {"name": "露营 装备套装", "keywords": ["露营装备", "露营套装"], "max_price": 1500, "hot_price": 1200}
+      ]
+    },
+    {
+      "id": 23,
+      "name": "运动/健身",
+      "sub_items": [
+        {"name": "划船机", "keywords": ["划船机", "水阻划船机"], "max_price": 2500, "hot_price": 2000},
+        {"name": "健身环 大冒险", "keywords": ["健身环", "RingFit"], "max_price": 380, "hot_price": 320},
+        {"name": "瑜伽垫", "keywords": ["瑜伽垫", "lululemon"], "max_price": 300, "hot_price": 220},
+        {"name": "Nike 跑鞋", "keywords": ["Nike跑鞋", "耐克跑鞋"], "max_price": 500, "hot_price": 380},
+        {"name": "椭圆机", "keywords": ["椭圆机", "家用椭圆机"], "max_price": 2000, "hot_price": 1600}
+      ]
+    },
+    {
+      "id": 24,
+      "name": "手表",
+      "sub_items": [
+        {"name": "卡西欧 G-SHOCK", "keywords": ["G-SHOCK", "卡西欧", "gshock"], "max_price": 800, "hot_price": 600},
+        {"name": "精工 5号", "keywords": ["精工5号", "SEIKO", "机械表入门"], "max_price": 1200, "hot_price": 900},
+        {"name": "浪琴 名匠", "keywords": ["浪琴名匠", "Longines"], "max_price": 8000, "hot_price": 7000},
+        {"name": "天梭 力洛克", "keywords": ["天梭", "TISSOT", "力洛克"], "max_price": 2800, "hot_price": 2400}
+      ]
+    },
+    {
+      "id": 25,
+      "name": "电动工具/DIY",
+      "sub_items": [
+        {"name": "博世 电钻", "keywords": ["博世电钻", "BOSCH电钻"], "max_price": 600, "hot_price": 450},
+        {"name": "角磨机", "keywords": ["角磨机", "电动角磨机"], "max_price": 350, "hot_price": 280},
+        {"name": "电动螺丝刀", "keywords": ["电动螺丝刀", "电起子"], "max_price": 300, "hot_price": 220}
+      ]
+    },
+    {
+      "id": 26,
+      "name": "书籍/教材",
+      "sub_items": [
+        {"name": "考研教材", "keywords": ["考研教材", "考研资料", "张宇考研"], "max_price": 200, "hot_price": 150},
+        {"name": "畅销书", "keywords": ["畅销书", "热门书籍"], "max_price": 80, "hot_price": 50}
+      ]
+    },
+    {
+      "id": 27,
+      "name": "母婴用品",
+      "sub_items": [
+        {"name": "婴儿推车", "keywords": ["婴儿推车", "遛娃神器"], "max_price": 800, "hot_price": 600},
+        {"name": "安全座椅", "keywords": ["安全座椅", "儿童安全座椅"], "max_price": 1000, "hot_price": 800},
+        {"name": "乐高 大颗粒", "keywords": ["乐高大颗粒", "大颗粒积木"], "max_price": 400, "hot_price": 300},
+        {"name": "费雪 健身架", "keywords": ["费雪健身架", "婴儿健身架"], "max_price": 300, "hot_price": 220}
+      ]
+    },
+    {
+      "id": 28,
+      "name": "乐器",
+      "sub_items": [
+        {"name": "雅马哈 吉他", "keywords": ["雅马哈吉他", "Yamaha吉他"], "max_price": 800, "hot_price": 600},
+        {"name": "罗兰 电钢琴", "keywords": ["罗兰电钢", "Roland电钢", "电钢琴"], "max_price": 3500, "hot_price": 2800},
+        {"name": "尤克里里", "keywords": ["尤克里里", "UKULELE"], "max_price": 400, "hot_price": 300},
+        {"name": "电子琴", "keywords": ["电子琴", "卡西欧电子琴"], "max_price": 600, "hot_price": 450}
+      ]
+    },
+    {
+      "id": 29,
+      "name": "NAS/网络存储",
+      "sub_items": [
+        {"name": "群晖 DS224+", "keywords": ["群晖224", "群晖NAS", "DS224"], "max_price": 1500, "hot_price": 1200},
+        {"name": "群晖 DS423+", "keywords": ["群晖423", "DS423"], "max_price": 2800, "hot_price": 2400},
+        {"name": "绿联 NAS", "keywords": ["绿联NAS", "UGREEN NAS"], "max_price": 1200, "hot_price": 950}
+      ]
+    },
+    {
+      "id": 30,
+      "name": "路由器/网络",
+      "sub_items": [
+        {"name": "小米 AX6000", "keywords": ["小米AX6000", "小米路由器"], "max_price": 400, "hot_price": 320},
+        {"name": "华硕 AX86U", "keywords": ["华硕AX86U", "华硕路由器"], "max_price": 900, "hot_price": 750},
+        {"name": "WiFi 7 路由器", "keywords": ["WiFi7路由器", "wifi7路由器"], "max_price": 800, "hot_price": 650}
+      ]
+    }
+  ],
+  "emotion_keywords": [
+    "换新了",
+    "搬家出",
+    "升级换代",
+    "老婆不让买",
+    "冲动了",
+    "吃灰",
+    "落灰",
+    "闲置",
+    "回血",
+    "换钱",
+    "急需用钱",
+    "骨折价",
+    "跳楼价",
+    "白菜价",
+    "亏本出"
+  ],
+  "fake_risk_categories": [
+    "AirPods",
+    "iPhone",
+    "始祖鸟",
+    "投影仪",
+    "泡泡玛特",
+    "潮玩手办"
+  ],
+  "mining_risk_categories": [
+    "RTX 4060",
+    "RTX 4070",
+    "RTX 4080",
+    "RTX 5060",
+    "RTX 5070",
+    "显卡"
+  ],
+  "profit_formula": {
+    "type": "resale",
+    "calculation": "(sell_price - purchase_price - platform_fee - shipping_fee) / purchase_price * 100",
+    "platform_fee_rate": 0.05,
+    "target_margin": 15
+  },
+  "search_priority": {
+    "tier1": 15,
+    "tier2": 40,
+    "tier3": "on_demand"
+  },
+  "data_sources": {
+    "primary": ["nickys.cn", "smzdm.com", "zhihu.com"],
+    "secondary": ["ithome.com", "sohu.com", "sina.com.cn", "pconline.com.cn"]
+  }
+}

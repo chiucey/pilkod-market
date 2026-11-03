@@ -1,0 +1,1149 @@
+{
+  "files": [
+    {
+      "path": "QUICK_REFERENCE.md",
+      "sha": "a6abe913edd22cf9d6901d1c1ee6a67deacabf1e",
+      "size": 4724
+    },
+    {
+      "path": "README.md",
+      "sha": "ddc4b1770b744b8780350814d299a3761835e299",
+      "size": 8006
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "14c74a00fb24a15c96ab882e8a1ecea9dc7277ee",
+      "size": 2659
+    },
+    {
+      "path": "_meta.json",
+      "sha": "2031ecd0589335d89afddcf693ab673ca5c45a22",
+      "size": 244
+    },
+    {
+      "path": "metadata.json",
+      "sha": "e5ddc760274885abf3b278eb2ea46ed1442e667c",
+      "size": 819
+    },
+    {
+      "path": "reference/README.md",
+      "sha": "0216230b5e389e4bb93c5adf68d07ded460b609b",
+      "size": 28415
+    },
+    {
+      "path": "reference/all_links.json",
+      "sha": "814129ffa6bea1c92c44ec2708a9f6bf1a3154a5",
+      "size": 36403
+    },
+    {
+      "path": "reference/接口文档/AH股比价.md",
+      "sha": "ddc640e70612afc3080f940ad24d588a3a5867a1",
+      "size": 3805
+    },
+    {
+      "path": "reference/接口文档/ETF份额规模.md",
+      "sha": "def3b49fc7f6a59db2266378c7419014545bd173",
+      "size": 3353
+    },
+    {
+      "path": "reference/接口文档/ETF分钟行情.md",
+      "sha": "595b2d5fcb5a4d91a6c94d74b47703cea9d561ac",
+      "size": 3325
+    },
+    {
+      "path": "reference/接口文档/ETF基准指数.md",
+      "sha": "8c20100f442350f37af8b7ae54ef8a48c33c4aa1",
+      "size": 2427
+    },
+    {
+      "path": "reference/接口文档/ETF基本信息.md",
+      "sha": "9c719f953cc9ea0925b30ac877c22ae256b61063",
+      "size": 6282
+    },
+    {
+      "path": "reference/接口文档/ETF复权因子.md",
+      "sha": "9414cc5bd8b4befac7ec2974e8fe81bc7783db6f",
+      "size": 2551
+    },
+    {
+      "path": "reference/接口文档/ETF实时日线.md",
+      "sha": "8ed70f53b76163da00017a2ae2d723328829f246",
+      "size": 3452
+    },
+    {
+      "path": "reference/接口文档/ETF日线行情.md",
+      "sha": "a21f1257561ee27091fad9fe8eff42f2ae1ff816",
+      "size": 3003
+    },
+    {
+      "path": "reference/接口文档/Hibor利率.md",
+      "sha": "c750ece01b810ad8bb736f086121b3d182bd650b",
+      "size": 3906
+    },
+    {
+      "path": "reference/接口文档/IPO新股上市.md",
+      "sha": "f09ec1860c4fa4c395729d4b50bc79d58a076ca6",
+      "size": 3735
+    },
+    {
+      "path": "reference/接口文档/LPR贷款基础利率.md",
+      "sha": "cfc8f43b653d48b4ca89f9ee1e014c1557b23969",
+      "size": 2840
+    },
+    {
+      "path": "reference/接口文档/Libor利率.md",
+      "sha": "66309afd54802dfc4395f0d4e51ffc26a87454da",
+      "size": 4304
+    },
+    {
+      "path": "reference/接口文档/ST股票列表.md",
+      "sha": "62b3c5f5a21439eefef83fe68fa059e52d2c80e0",
+      "size": 2290
+    },
+    {
+      "path": "reference/接口文档/Shibor利率.md",
+      "sha": "8042522b614e3cda616c3fa146f3692cd45f06dd",
+      "size": 4489
+    },
+    {
+      "path": "reference/接口文档/Shibor报价数据.md",
+      "sha": "a5c70edf90acb69521974c7eefa75912fccf3ff5",
+      "size": 5601
+    },
+    {
+      "path": "reference/接口文档/上市公司公告.md",
+      "sha": "4eea4c999c8e36028c5e634f79b957e4c53cb830",
+      "size": 3116
+    },
+    {
+      "path": "reference/接口文档/上市公司基本信息.md",
+      "sha": "df7c8d421dcd9b6b68e4a84b9d849a3ab0d5b1a5",
+      "size": 4171
+    },
+    {
+      "path": "reference/接口文档/上市公司管理层.md",
+      "sha": "042c85212d7097cf766238e7b91e3fc77ffcebb4",
+      "size": 4422
+    },
+    {
+      "path": "reference/接口文档/上海黄金基础信息.md",
+      "sha": "ab2abccc3bb1b2c6c11fa705ede733dabb37603e",
+      "size": 3477
+    },
+    {
+      "path": "reference/接口文档/上海黄金现货日行情.md",
+      "sha": "5afb5c31d93145ca1dc176db580e9f456d3664be",
+      "size": 3823
+    },
+    {
+      "path": "reference/接口文档/上证e互动问答.md",
+      "sha": "eef94c43ea3c9922b0fab69d1978b4e69b40dc01",
+      "size": 5414
+    },
+    {
+      "path": "reference/接口文档/业绩快报.md",
+      "sha": "58f73d6aafdaa64c5fe9de468779e1ecdaced81f",
+      "size": 4649
+    },
+    {
+      "path": "reference/接口文档/业绩预告.md",
+      "sha": "d8032c8288f4e921e31d3f615b53951d56c23f87",
+      "size": 4404
+    },
+    {
+      "path": "reference/接口文档/东方财富App热榜.md",
+      "sha": "16afaa24a8d7f441f3d7f634519b959375f31b9d",
+      "size": 2745
+    },
+    {
+      "path": "reference/接口文档/东方财富概念成分.md",
+      "sha": "46cf66c863ea0a118d206dd284e05c63578f0996",
+      "size": 2191
+    },
+    {
+      "path": "reference/接口文档/东方财富概念板块.md",
+      "sha": "034e5b11bebaad840395a657b34097fd298b54eb",
+      "size": 3090
+    },
+    {
+      "path": "reference/接口文档/东财概念和行业指数行情.md",
+      "sha": "c9cfde0e68e314393d8afd174a6794a02b82bf2a",
+      "size": 3353
+    },
+    {
+      "path": "reference/接口文档/中信行业成分.md",
+      "sha": "6475707dee63f0c1c6d93d9e6faa9c2317b6568b",
+      "size": 5469
+    },
+    {
+      "path": "reference/接口文档/中信行业指数日行情.md",
+      "sha": "69abec09575351fca66685b9956efe2e00e31740",
+      "size": 2860
+    },
+    {
+      "path": "reference/接口文档/中央结算系统持股明细.md",
+      "sha": "e1ed300ef171b35a371d3d4a41ddd91cc7a3046a",
+      "size": 3229
+    },
+    {
+      "path": "reference/接口文档/中央结算系统持股统计.md",
+      "sha": "7de2db15f375869336274f90881402d49353aca5",
+      "size": 3070
+    },
+    {
+      "path": "reference/接口文档/主营业务构成.md",
+      "sha": "07269b65adbc4be5a34802497cc114053b0ca671",
+      "size": 2677
+    },
+    {
+      "path": "reference/接口文档/交易日历.md",
+      "sha": "b6b5e83990e4a948c6dd8f324ded896e04537cc0",
+      "size": 3520
+    },
+    {
+      "path": "reference/接口文档/仓单日报.md",
+      "sha": "bb015f3ffd567b034ba79d6b8f4ac791051e45f6",
+      "size": 4236
+    },
+    {
+      "path": "reference/接口文档/债券回购日行情.md",
+      "sha": "a679d627aa145aeda7e035fe5f5afd995991ea32",
+      "size": 5534
+    },
+    {
+      "path": "reference/接口文档/做市借券交易汇总(停).md",
+      "sha": "3f9ea9a00f9e4f7021599e5fd71fbe12f9d9e652",
+      "size": 2528
+    },
+    {
+      "path": "reference/接口文档/全国电影剧本备案数据.md",
+      "sha": "48daf749cc0f3e62d4c21799cdfaf1a748dfdc2b",
+      "size": 1859
+    },
+    {
+      "path": "reference/接口文档/全国电视剧备案公示数据.md",
+      "sha": "b4a35d5bbea9c6c13956d7ee7387743e6176e861",
+      "size": 9990
+    },
+    {
+      "path": "reference/接口文档/全球财经事件.md",
+      "sha": "8016d500d86bac9464e23222831071f8db680aef",
+      "size": 4433
+    },
+    {
+      "path": "reference/接口文档/分红送股数据.md",
+      "sha": "81cc4fe0dcaeb86fb13543a25d11638448c27956",
+      "size": 2843
+    },
+    {
+      "path": "reference/接口文档/利润表.md",
+      "sha": "822ffdc91e42935838f837e0be5984fac9886ed8",
+      "size": 12532
+    },
+    {
+      "path": "reference/接口文档/券商月度金股.md",
+      "sha": "d8e300354265387e201ceba7f2ff4b2f3183c83a",
+      "size": 1708
+    },
+    {
+      "path": "reference/接口文档/券商盈利预测数据.md",
+      "sha": "98b9f17d376e056529368389ffaa93ac65495c06",
+      "size": 4246
+    },
+    {
+      "path": "reference/接口文档/前十大流通股东.md",
+      "sha": "88ae1af6a245c38d7deb7ad5efe2aee95e514d8a",
+      "size": 2945
+    },
+    {
+      "path": "reference/接口文档/前十大股东.md",
+      "sha": "596a88334677324404fe9fb8d31cbd2e07a62955",
+      "size": 3083
+    },
+    {
+      "path": "reference/接口文档/北交所新旧代码对照.md",
+      "sha": "92b7a2688e5fa9ef2870e55e2838657d9f9ed8a5",
+      "size": 1342
+    },
+    {
+      "path": "reference/接口文档/南华期货指数行情.md",
+      "sha": "cb82e4777335c6cefc30a8e0c835e4b7641cb635",
+      "size": 6624
+    },
+    {
+      "path": "reference/接口文档/历史Tick行情.md",
+      "sha": "64377b81522c17ae920e50e3180b81d991094f5e",
+      "size": 2152
+    },
+    {
+      "path": "reference/接口文档/历史分钟.md",
+      "sha": "5ba92b7d2cfe868009fe20c78bdb8b0ed8f0d05b",
+      "size": 3283
+    },
+    {
+      "path": "reference/接口文档/历史分钟行情.md",
+      "sha": "70d983057c34f0fd1194ede317975d60c79ff8ab",
+      "size": 3820
+    },
+    {
+      "path": "reference/接口文档/历史日线.md",
+      "sha": "ab5be8927ed733701a9172e5a9de2cb58c117649",
+      "size": 3646
+    },
+    {
+      "path": "reference/接口文档/可转债发行.md",
+      "sha": "016177f40597af6f7ebe8e4a61050c4eef8cb50e",
+      "size": 4942
+    },
+    {
+      "path": "reference/接口文档/可转债基础信息.md",
+      "sha": "bc53e89ce78f5b4aa93544b034a027b8d7a7e583",
+      "size": 4622
+    },
+    {
+      "path": "reference/接口文档/可转债技术面因子(专业版).md",
+      "sha": "c2736d93d96edc3cc99181497424363bdce30cbc",
+      "size": 11773
+    },
+    {
+      "path": "reference/接口文档/可转债票面利率.md",
+      "sha": "24d2306e120cb25a4fe7651b8f58085cf281494e",
+      "size": 2219
+    },
+    {
+      "path": "reference/接口文档/可转债行情.md",
+      "sha": "355808c76f5d3a4c8b9dd9dfc3a43c0735d742f8",
+      "size": 5022
+    },
+    {
+      "path": "reference/接口文档/可转债赎回信息.md",
+      "sha": "80529a6a3edb7defe47645f7839dbdbb641a13c2",
+      "size": 3242
+    },
+    {
+      "path": "reference/接口文档/可转债转股价变动.md",
+      "sha": "3daef5f6985144d8083830ffbf45e83b2abd3862",
+      "size": 2054
+    },
+    {
+      "path": "reference/接口文档/可转债转股结果.md",
+      "sha": "e47f0619bd8ebc04525f4a24c6a460da9592deca",
+      "size": 3631
+    },
+    {
+      "path": "reference/接口文档/台湾电子产业月营收.md",
+      "sha": "dc6eb0b1aebddd64e3dad9619d1677921a0b5cbd",
+      "size": 5220
+    },
+    {
+      "path": "reference/接口文档/台湾电子产业月营收明细.md",
+      "sha": "57a1a46e39a974d72fd65949da88da9131e5a8c6",
+      "size": 43630
+    },
+    {
+      "path": "reference/接口文档/各渠道公募基金销售保有规模占比.md",
+      "sha": "591426cef19ddcec707847f82fd5273360252e13",
+      "size": 1623
+    },
+    {
+      "path": "reference/接口文档/合约信息.md",
+      "sha": "d6880405b33343c60ba5ae9168d0ea7ca0d065ad",
+      "size": 4032
+    },
+    {
+      "path": "reference/接口文档/同花顺App热榜数.md",
+      "sha": "4d847b60115f1df90ce9c2795b0c15c838d0e187",
+      "size": 3388
+    },
+    {
+      "path": "reference/接口文档/同花顺概念和行业指数行情.md",
+      "sha": "e8b98c21bcdd27c45543a9068eed5943a4907cdb",
+      "size": 3468
+    },
+    {
+      "path": "reference/接口文档/同花顺涨跌停榜单.md",
+      "sha": "d5f6532b25ba8011c4f405c061f6ac14a04d71c2",
+      "size": 4684
+    },
+    {
+      "path": "reference/接口文档/同花顺行业概念成分.md",
+      "sha": "802f7ddea4b9b19764a58302fb32b18edcc69c20",
+      "size": 1996
+    },
+    {
+      "path": "reference/接口文档/同花顺行业概念板块.md",
+      "sha": "f6cf3b72c5459a9e66a94355532deb42a326ca9d",
+      "size": 2407
+    },
+    {
+      "path": "reference/接口文档/周_月线复权行情(每日更新).md",
+      "sha": "64d5f2708363d4950af01e4d885dfd41cf6651b7",
+      "size": 5503
+    },
+    {
+      "path": "reference/接口文档/周_月线行情(每日更新).md",
+      "sha": "7bb0c26d89b6a09820f911fd901d5cde42482819",
+      "size": 3385
+    },
+    {
+      "path": "reference/接口文档/周线行情.md",
+      "sha": "85785052b0e6781a71e66fc19bc9a141419d9448",
+      "size": 4041
+    },
+    {
+      "path": "reference/接口文档/国债实际收益率曲线利率.md",
+      "sha": "04a9068e8454a10168a0728a052875f0abd92dac",
+      "size": 2237
+    },
+    {
+      "path": "reference/接口文档/国债收益率曲线.md",
+      "sha": "5b7218d9b40f18154bc7806e5183eaeab8a4120a",
+      "size": 2885
+    },
+    {
+      "path": "reference/接口文档/国债收益率曲线利率.md",
+      "sha": "8f985801afda0c6f8eab423ca06a69eceb6721fb",
+      "size": 3253
+    },
+    {
+      "path": "reference/接口文档/国债长期利率.md",
+      "sha": "2ace53849b5eb5805818d89ef3bb297e60a103a6",
+      "size": 1939
+    },
+    {
+      "path": "reference/接口文档/国债长期利率平均值.md",
+      "sha": "22488582d0a1ddce01405d84083c1226fb726c37",
+      "size": 1630
+    },
+    {
+      "path": "reference/接口文档/国内生产总值(GDP).md",
+      "sha": "7d21a2258af0e6b7e1572d8e06e3e3a2a6422189",
+      "size": 3093
+    },
+    {
+      "path": "reference/接口文档/国家政策库.md",
+      "sha": "4671dd455cf4d239d1304ea79e580d2a4196b2b1",
+      "size": 4049
+    },
+    {
+      "path": "reference/接口文档/国际主要指数.md",
+      "sha": "4187e8d2d990f9c5a9b1565c966fe94755c004c1",
+      "size": 4911
+    },
+    {
+      "path": "reference/接口文档/基金净值.md",
+      "sha": "93cdc08eff9e05a4be0c310b48464eea70a88b2c",
+      "size": 2672
+    },
+    {
+      "path": "reference/接口文档/基金分红.md",
+      "sha": "8fbdf2fc1d852913411f45ca69709272cac0611c",
+      "size": 3688
+    },
+    {
+      "path": "reference/接口文档/基金列表.md",
+      "sha": "cdc6ed53d9337d3add737aad488eebe2dbea752c",
+      "size": 4065
+    },
+    {
+      "path": "reference/接口文档/基金技术面因子(专业版).md",
+      "sha": "a3e15be44a5556ebfb990406f4bc1b8fba25b595",
+      "size": 10456
+    },
+    {
+      "path": "reference/接口文档/基金持仓.md",
+      "sha": "e0ec3d6dc86aa5ddc3e4f718cccd8b89d005e926",
+      "size": 3338
+    },
+    {
+      "path": "reference/接口文档/基金管理人.md",
+      "sha": "0b6b7f8aa38803c1cd39b91c87e230ca45f39e4e",
+      "size": 3202
+    },
+    {
+      "path": "reference/接口文档/基金经理.md",
+      "sha": "095e1bd22737fe437764f95b2bed33d54e71f495",
+      "size": 2824
+    },
+    {
+      "path": "reference/接口文档/基金规模.md",
+      "sha": "f82f4dfac455eff1984c9f3e829284253616adcb",
+      "size": 2105
+    },
+    {
+      "path": "reference/接口文档/基金销售行业数据.md",
+      "sha": "ccd2cd852ea6d82183ef6b33685b01c5d9519473",
+      "size": 202
+    },
+    {
+      "path": "reference/接口文档/备用行情.md",
+      "sha": "7bf67948b30e0fe2959edc746a96971720218c21",
+      "size": 4247
+    },
+    {
+      "path": "reference/接口文档/复权因子.md",
+      "sha": "4063038c6b7b7c1f847d566f70f7c0a536867a00",
+      "size": 2484
+    },
+    {
+      "path": "reference/接口文档/复权行情.md",
+      "sha": "da05065bf81e253a986a75b554acc200feea163d",
+      "size": 2646
+    },
+    {
+      "path": "reference/接口文档/外汇基础信息(海外).md",
+      "sha": "188f385d31914fe3230b3b77ce3165b644c9e294",
+      "size": 3950
+    },
+    {
+      "path": "reference/接口文档/外汇日线行情.md",
+      "sha": "f6ba22dabb5ab07d9d80d74d79b8d9ad3208a1c0",
+      "size": 5120
+    },
+    {
+      "path": "reference/接口文档/大宗交易.md",
+      "sha": "cfc4c4124aba3610fb4818abdf3d77ba97db46e4",
+      "size": 2358
+    },
+    {
+      "path": "reference/接口文档/大宗交易明细.md",
+      "sha": "01656e3d05fb8ed17c7ef52f7d36ac81775ed981",
+      "size": 3473
+    },
+    {
+      "path": "reference/接口文档/大盘指数每日指标.md",
+      "sha": "7cd79c2bdac8c865dd0e230126f3df2d7e66fd3d",
+      "size": 2892
+    },
+    {
+      "path": "reference/接口文档/实时Tick(爬虫).md",
+      "sha": "4cfcdcbed19111caf97dbbd6a9b5359d1163b1ee",
+      "size": 4854
+    },
+    {
+      "path": "reference/接口文档/实时分钟.md",
+      "sha": "c3d2833e34b8e36d20f4a399af57f482e0ec47f2",
+      "size": 2074
+    },
+    {
+      "path": "reference/接口文档/实时分钟行情.md",
+      "sha": "5cb40c55a6264698be908bc876f6d4ce6c837b71",
+      "size": 3001
+    },
+    {
+      "path": "reference/接口文档/实时成交(爬虫).md",
+      "sha": "4c0995af72ce344c8d631d32b765893f44b8efce",
+      "size": 2846
+    },
+    {
+      "path": "reference/接口文档/实时排名(爬虫).md",
+      "sha": "ffe7ec6a070ba887454aaa1fd57bd96185f7baf8",
+      "size": 3811
+    },
+    {
+      "path": "reference/接口文档/实时日线.md",
+      "sha": "64a09bb0c4a37aae98854367740c852b5d93ee35",
+      "size": 3662
+    },
+    {
+      "path": "reference/接口文档/市场游资最全名录.md",
+      "sha": "31f63bf23ddb8c0e6c67d4f8db8c22d65142f845",
+      "size": 38655
+    },
+    {
+      "path": "reference/接口文档/广州民间借贷利率.md",
+      "sha": "39ab4f5488e4dc29d39b38f566215931124d68b1",
+      "size": 3219
+    },
+    {
+      "path": "reference/接口文档/开盘竞价成交(当日).md",
+      "sha": "e91dd6271d6b1a62f9a6c6e8966b0918adc0b678",
+      "size": 3126
+    },
+    {
+      "path": "reference/接口文档/影院日度票房.md",
+      "sha": "cf07bc2a5c3385ad02d4ab0c2363014192145588",
+      "size": 3205
+    },
+    {
+      "path": "reference/接口文档/指数周线行情.md",
+      "sha": "e1f01cb78fa7708d2820bc22dd159f92ba416e23",
+      "size": 4221
+    },
+    {
+      "path": "reference/接口文档/指数基本信息.md",
+      "sha": "7b9a856311cd4487bfdcf6e3f3c61130de4c1c54",
+      "size": 4186
+    },
+    {
+      "path": "reference/接口文档/指数实时日线.md",
+      "sha": "cda9281c5d0f37aeb1cb96b20327236972c1348d",
+      "size": 2536
+    },
+    {
+      "path": "reference/接口文档/指数成分和权重.md",
+      "sha": "b9615794df075f02bb1cf79d4819124b8ad15230",
+      "size": 2127
+    },
+    {
+      "path": "reference/接口文档/指数技术面因子(专业版).md",
+      "sha": "93d8c8bd9d5f6e326ece6364147f88dab48d5cbe",
+      "size": 10455
+    },
+    {
+      "path": "reference/接口文档/指数日线行情.md",
+      "sha": "cf50cf8e5271830ca2feaa7127c8e0f192bad75b",
+      "size": 3597
+    },
+    {
+      "path": "reference/接口文档/指数月线行情.md",
+      "sha": "d8f9380b2f26ec6809246828a63c271a407a97a3",
+      "size": 3756
+    },
+    {
+      "path": "reference/接口文档/数据索引.md",
+      "sha": "2b21569e3dffb7a16e7db5c33a11e3a8ebb87e81",
+      "size": 668
+    },
+    {
+      "path": "reference/接口文档/新闻快讯(短讯).md",
+      "sha": "f03b901cf40c5dbe0f46bcff4ce101bd88e79088",
+      "size": 2385
+    },
+    {
+      "path": "reference/接口文档/新闻联播文字稿.md",
+      "sha": "499e1ec13e23390b63ee04ba343478a7a92c4522",
+      "size": 3493
+    },
+    {
+      "path": "reference/接口文档/新闻通讯(长篇).md",
+      "sha": "63e4f4e72f15d211e6b4cdfd6911ec63092feb35",
+      "size": 4405
+    },
+    {
+      "path": "reference/接口文档/日线行情.md",
+      "sha": "23966378b7ab97551fdfc2c434ba1cf2aad52f09",
+      "size": 6470
+    },
+    {
+      "path": "reference/接口文档/月线行情.md",
+      "sha": "11a8a24387e74c85c504ccbdb840f9be61991e55",
+      "size": 4274
+    },
+    {
+      "path": "reference/接口文档/期权分钟行情.md",
+      "sha": "6123f204b12a54de12d56c02efd6cbea22439a6e",
+      "size": 3476
+    },
+    {
+      "path": "reference/接口文档/期权合约信息.md",
+      "sha": "16cfca5bb221af6b86676f3667f700f78e2877b5",
+      "size": 4660
+    },
+    {
+      "path": "reference/接口文档/期权日线行情.md",
+      "sha": "9108ddf3589405e6aee39b121a80aa72331c0f22",
+      "size": 3186
+    },
+    {
+      "path": "reference/接口文档/期货主力与连续合约.md",
+      "sha": "3068dd0bc12066d939bcb14d05c0bb3ebe2fcbe0",
+      "size": 2324
+    },
+    {
+      "path": "reference/接口文档/期货主要品种交易周报.md",
+      "sha": "dc9ecaa2db8c897fadd2a81d1552b5f91766bc5f",
+      "size": 7543
+    },
+    {
+      "path": "reference/接口文档/期货合约涨跌停价格.md",
+      "sha": "5c710bda6bcd79a48d4efe314d76282e928545fb",
+      "size": 3156
+    },
+    {
+      "path": "reference/接口文档/期货周_月线行情(每日更新).md",
+      "sha": "97c8459ce96c0a5c371469ba82b15b73a6d98890",
+      "size": 2559
+    },
+    {
+      "path": "reference/接口文档/机构调研数据.md",
+      "sha": "6c7ca6cef893313ae883dced58335b36ef376090",
+      "size": 3365
+    },
+    {
+      "path": "reference/接口文档/柜台流通式债券报价.md",
+      "sha": "b1bf0d29959d86e5b79dc1deacebe71aec744194",
+      "size": 3378
+    },
+    {
+      "path": "reference/接口文档/柜台流通式债券最优报价.md",
+      "sha": "e08dd454f3cfa1902549da4e2054bd7119bbb62a",
+      "size": 3080
+    },
+    {
+      "path": "reference/接口文档/榜单数据(开盘啦).md",
+      "sha": "183b46da3859187f03be3e771c6213a2a5f060e4",
+      "size": 4411
+    },
+    {
+      "path": "reference/接口文档/每日停复牌信息.md",
+      "sha": "602b1637cb0c177047f89fbc50653ec022986362",
+      "size": 2962
+    },
+    {
+      "path": "reference/接口文档/每日持仓排名.md",
+      "sha": "1fb4279a1081ad8164b280d1d205f52f7d4e5bdc",
+      "size": 4345
+    },
+    {
+      "path": "reference/接口文档/每日指标.md",
+      "sha": "97fd52729fe4cbab353eaf83de4e898eb3230c29",
+      "size": 4468
+    },
+    {
+      "path": "reference/接口文档/每日涨跌停价格.md",
+      "sha": "72c979a6ef63385175ca6bc6e01f783514b9c6a0",
+      "size": 2872
+    },
+    {
+      "path": "reference/接口文档/每日筹码分布.md",
+      "sha": "35845ed4a8898c4814223135426a3ea1779455ce",
+      "size": 2018
+    },
+    {
+      "path": "reference/接口文档/每日筹码及胜率.md",
+      "sha": "202292ed896156629eb725c2ec7555c81d46fd9c",
+      "size": 3100
+    },
+    {
+      "path": "reference/接口文档/每日结算参数.md",
+      "sha": "a682852622b524c2dc873429d084a2654b27266b",
+      "size": 6323
+    },
+    {
+      "path": "reference/接口文档/每日股本(盘前).md",
+      "sha": "1b3ff90c378da430a53dbfd131c1db31f5bfdf9e",
+      "size": 2729
+    },
+    {
+      "path": "reference/接口文档/沪深市场每日交易统计.md",
+      "sha": "1b1cb90198ab8eb44235c883ebf1810d7b3bbe47",
+      "size": 6041
+    },
+    {
+      "path": "reference/接口文档/沪深港通股票列表.md",
+      "sha": "ec5dd32722eb82c62a719b6e49edfb34d3ef01c9",
+      "size": 2789
+    },
+    {
+      "path": "reference/接口文档/沪深股通十大成交股.md",
+      "sha": "2ff95670bac71e058ea8cd1981451a376de8881b",
+      "size": 3429
+    },
+    {
+      "path": "reference/接口文档/沪深股通持股明细.md",
+      "sha": "1921874806712c716155512732d343f89b6cc17b",
+      "size": 3872
+    },
+    {
+      "path": "reference/接口文档/涨停最强板块统计.md",
+      "sha": "dacee8ab701762880b2960c1dd59d6267c69730f",
+      "size": 3783
+    },
+    {
+      "path": "reference/接口文档/涨停股票连板天梯.md",
+      "sha": "a1b91ff9dc4d3f6503126085313cd0f416f385a5",
+      "size": 3745
+    },
+    {
+      "path": "reference/接口文档/涨跌停和炸板数据.md",
+      "sha": "3c5b2ec142a3843d0a4604622af56e5c6a1d23dd",
+      "size": 4375
+    },
+    {
+      "path": "reference/接口文档/深圳市场每日交易情况.md",
+      "sha": "be573fcdfc826ab87991bd91d1a71f304b19a422",
+      "size": 5514
+    },
+    {
+      "path": "reference/接口文档/深证易互动问答.md",
+      "sha": "bd38152d816fc2883bb1e761c0df9320a2ec75a7",
+      "size": 9897
+    },
+    {
+      "path": "reference/接口文档/温州民间借贷利率.md",
+      "sha": "cd0c1aa5e4e254fd32015ec65e581f05ac7ccd79",
+      "size": 6069
+    },
+    {
+      "path": "reference/接口文档/港股交易日历.md",
+      "sha": "585693e95657d0206049344931eaace37bceba35",
+      "size": 1514
+    },
+    {
+      "path": "reference/接口文档/港股分钟行情.md",
+      "sha": "c4332b399afbd282acd5dbb72e276a956b60b7c7",
+      "size": 3236
+    },
+    {
+      "path": "reference/接口文档/港股利润表.md",
+      "sha": "2503bfba495064ea9d08c3b724cbf64406e22ae8",
+      "size": 4093
+    },
+    {
+      "path": "reference/接口文档/港股基础信息.md",
+      "sha": "56f171dff205b28416d71af3433adee3a7e2323c",
+      "size": 3407
+    },
+    {
+      "path": "reference/接口文档/港股复权因子.md",
+      "sha": "6a7989d1da543e01b68bf79d761be6df89cba6ea",
+      "size": 2229
+    },
+    {
+      "path": "reference/接口文档/港股复权行情.md",
+      "sha": "34e17554fe217f731339c05babb7c2fbeb1ba6f8",
+      "size": 3888
+    },
+    {
+      "path": "reference/接口文档/港股实时日线.md",
+      "sha": "681a68f17d5e5f34fdc0926fb77077599aceed42",
+      "size": 2528
+    },
+    {
+      "path": "reference/接口文档/港股日线行情.md",
+      "sha": "a33550ba0ee04c8302275f68d64bc61c0ce4a6ac",
+      "size": 3639
+    },
+    {
+      "path": "reference/接口文档/港股现金流量表.md",
+      "sha": "e176a0ed95cebc0e8dea8c91181e2304de0d9e72",
+      "size": 6377
+    },
+    {
+      "path": "reference/接口文档/港股财务指标数据.md",
+      "sha": "d45c9be270659c8e00ee8dd7b4c6f0867768c0fe",
+      "size": 10733
+    },
+    {
+      "path": "reference/接口文档/港股资产负债表.md",
+      "sha": "e40fbf88aa40062b67d289e6d8ed8e4996a22b1f",
+      "size": 6592
+    },
+    {
+      "path": "reference/接口文档/港股通十大成交股.md",
+      "sha": "71996e86a793415d710e00f423ef3889c4150d2c",
+      "size": 7145
+    },
+    {
+      "path": "reference/接口文档/港股通每日成交统计.md",
+      "sha": "a60b08692af2a63911a6a03feab3fcd942a0cd02",
+      "size": 3328
+    },
+    {
+      "path": "reference/接口文档/港股通每月成交统计.md",
+      "sha": "abe087d6178e9aa712aba5c868ac02740273f3d2",
+      "size": 3358
+    },
+    {
+      "path": "reference/接口文档/游资交易每日明细.md",
+      "sha": "166759be5e5c9ef8cb7ec99402193b069b2077f8",
+      "size": 2043
+    },
+    {
+      "path": "reference/接口文档/现金流量表.md",
+      "sha": "44f5d20ce08179728455baea78219dd582b4ca22",
+      "size": 14000
+    },
+    {
+      "path": "reference/接口文档/申万行业分类.md",
+      "sha": "f7982c73e97af98b8e0bfbd89b032d6499eb8382",
+      "size": 89691
+    },
+    {
+      "path": "reference/接口文档/申万行业成分(分级).md",
+      "sha": "d0b79fd40f7f87ad4467bc7c6ec71baa08f4b0da",
+      "size": 3857
+    },
+    {
+      "path": "reference/接口文档/申万行业指数日行情.md",
+      "sha": "2e236f65731bd12a457cb21debf36b248f3907a3",
+      "size": 3263
+    },
+    {
+      "path": "reference/接口文档/电影周度票房.md",
+      "sha": "11e7b4fa8f790020110fea3aa22d3c220e0f747e",
+      "size": 2458
+    },
+    {
+      "path": "reference/接口文档/电影日度票房.md",
+      "sha": "228e5cdbf4e7836405c7f012c1879a90e928d2ea",
+      "size": 2524
+    },
+    {
+      "path": "reference/接口文档/电影月度票房.md",
+      "sha": "71ff8e8bcd1fccad635d3dd04506ba607457841f",
+      "size": 2697
+    },
+    {
+      "path": "reference/接口文档/短期国债利率.md",
+      "sha": "5c5a96f2dbba4ebdbea7741e89282bb99f69e529",
+      "size": 3367
+    },
+    {
+      "path": "reference/接口文档/社区捐助.md",
+      "sha": "8c7ecb57a619e53e853b9e95d438e996f9227a34",
+      "size": 1267
+    },
+    {
+      "path": "reference/接口文档/社融增量(月度).md",
+      "sha": "3d676dd5b63170f12de3d7ce7243bd51a9051980",
+      "size": 2439
+    },
+    {
+      "path": "reference/接口文档/神奇九转指标.md",
+      "sha": "f9497c2d1562adaa50265e1b80453264a0806881",
+      "size": 3823
+    },
+    {
+      "path": "reference/接口文档/管理层薪酬和持股.md",
+      "sha": "a322b8ca411b2c2debbc4f0f12f354ad4a458e8d",
+      "size": 3208
+    },
+    {
+      "path": "reference/接口文档/美股交易日历.md",
+      "sha": "1b3a60dd8f5b9d38899613ef80d5756691152c95",
+      "size": 1671
+    },
+    {
+      "path": "reference/接口文档/美股利润表.md",
+      "sha": "f745d6fad6aeb51615482f23334ec023e0b237eb",
+      "size": 3490
+    },
+    {
+      "path": "reference/接口文档/美股基础信息.md",
+      "sha": "3e2d804167dc68a966fa157c18b3ea6069827333",
+      "size": 2164
+    },
+    {
+      "path": "reference/接口文档/美股复权因子.md",
+      "sha": "cee9a42980d3cbbf27097297e41fa894f056fb29",
+      "size": 2412
+    },
+    {
+      "path": "reference/接口文档/美股复权行情.md",
+      "sha": "497101cf4714910e13c1137cbc26187034f973c6",
+      "size": 4650
+    },
+    {
+      "path": "reference/接口文档/美股日线行情.md",
+      "sha": "f5631195d340370c7d1b727887352def957b35de",
+      "size": 3876
+    },
+    {
+      "path": "reference/接口文档/美股现金流量表.md",
+      "sha": "32d244ff64dec802052fe7ec91fd698205f54201",
+      "size": 3607
+    },
+    {
+      "path": "reference/接口文档/美股财务指标数据.md",
+      "sha": "64f83fde7870e67a05b49481f19aa2331af42fc4",
+      "size": 11621
+    },
+    {
+      "path": "reference/接口文档/美股资产负债表.md",
+      "sha": "e6cdb28275ec695ed795772dea8d66fb3fb6cf5f",
+      "size": 3489
+    },
+    {
+      "path": "reference/接口文档/股东人数.md",
+      "sha": "4f4672ad6c1bc56882055c37549a66d554cab460",
+      "size": 2167
+    },
+    {
+      "path": "reference/接口文档/股东增减持.md",
+      "sha": "f7088b8241922a0ef8368d045d03266719693bdd",
+      "size": 4623
+    },
+    {
+      "path": "reference/接口文档/股权质押明细数据.md",
+      "sha": "e93804f72b9dacdeea81b4ad46b4e41f2190b070",
+      "size": 2902
+    },
+    {
+      "path": "reference/接口文档/股权质押统计数据.md",
+      "sha": "e24be7ffb4be989c3f2285743cae0824f7ee92c5",
+      "size": 2744
+    },
+    {
+      "path": "reference/接口文档/股票列表.md",
+      "sha": "2691d8ea9e45b46c85846acbe245fae45955c84e",
+      "size": 4743
+    },
+    {
+      "path": "reference/接口文档/股票历史列表.md",
+      "sha": "9f32e01e30a5274bc8600f3a2835371bd6538670",
+      "size": 3589
+    },
+    {
+      "path": "reference/接口文档/股票回购.md",
+      "sha": "5ee2675312e2d1dd6b2b6312dd701405c12cc05d",
+      "size": 3140
+    },
+    {
+      "path": "reference/接口文档/股票开户数据(停).md",
+      "sha": "9213c01b16850513d389c5a8a2523996e255369a",
+      "size": 2978
+    },
+    {
+      "path": "reference/接口文档/股票开户数据(旧).md",
+      "sha": "92e8289d29027fac8b66183e9f1595fb0a4403dc",
+      "size": 4128
+    },
+    {
+      "path": "reference/接口文档/股票开盘集合竞价数据.md",
+      "sha": "02d8752fcc973ed11d7bccc8c18e180ab1548206",
+      "size": 2889
+    },
+    {
+      "path": "reference/接口文档/股票技术面因子(专业版).md",
+      "sha": "07efd9afda25e5700843374a5dca02e5c0949a56",
+      "size": 28564
+    },
+    {
+      "path": "reference/接口文档/股票技术面因子.md",
+      "sha": "3876ec428fcc2f9f10c1763f4719ef1ce7f2f105",
+      "size": 5052
+    },
+    {
+      "path": "reference/接口文档/股票收盘集合竞价数据.md",
+      "sha": "96b68e3d42277200e0be9009038072f06b0f78a6",
+      "size": 2757
+    },
+    {
+      "path": "reference/接口文档/股票曾用名.md",
+      "sha": "c0a0ad46cf75883f2816491bfb000ff6ceb6e7d9",
+      "size": 1756
+    },
+    {
+      "path": "reference/接口文档/融资融券交易明细.md",
+      "sha": "72e53d832730a8cba2c31c270d194387c38a2565",
+      "size": 5532
+    },
+    {
+      "path": "reference/接口文档/融资融券交易汇总.md",
+      "sha": "530a6d94d87c91ddf728d68bd3e1c0576a0ce38d",
+      "size": 2935
+    },
+    {
+      "path": "reference/接口文档/融资融券标的(盘前).md",
+      "sha": "f6318c814a6f4a541342b6859d39f14f49f6d36f",
+      "size": 2268
+    },
+    {
+      "path": "reference/接口文档/财务审计意见.md",
+      "sha": "a2d811ec47cc6c2bfc146cbab93f97f2765bc16d",
+      "size": 2891
+    },
+    {
+      "path": "reference/接口文档/财务指标数据.md",
+      "sha": "60baee600692e34aabe00864450c5ecceeb7734c",
+      "size": 19013
+    },
+    {
+      "path": "reference/接口文档/财报披露日期表.md",
+      "sha": "aeddec55a7d22154e79c41252c101ebd022d9db1",
+      "size": 2917
+    },
+    {
+      "path": "reference/接口文档/货币供应量(月).md",
+      "sha": "9fdc17512908834fcbf2c2ed961b5ea30898b3ee",
+      "size": 3304
+    },
+    {
+      "path": "reference/接口文档/资产负债表.md",
+      "sha": "f9cbce937b94c2ee80ecc591dacf29e854e276e3",
+      "size": 17821
+    },
+    {
+      "path": "reference/接口文档/转融券交易明细(停).md",
+      "sha": "0d848c1a75a5e2c01a8e47f97e39f509ad98c5c6",
+      "size": 2312
+    },
+    {
+      "path": "reference/接口文档/转融券交易汇总(停).md",
+      "sha": "f2fafe60928dd98437ce05c198ec28c56510033f",
+      "size": 2573
+    },
+    {
+      "path": "reference/接口文档/转融资交易汇总.md",
+      "sha": "5fffe5b54895abea5f43a241ea3db0e52d941317",
+      "size": 2454
+    },
+    {
+      "path": "reference/接口文档/通用行情接口.md",
+      "sha": "51b359366e12edf899cda9918f4eddcd55df7292",
+      "size": 5894
+    },
+    {
+      "path": "reference/接口文档/通达信板块信息.md",
+      "sha": "62884e79149d3f01a377dc8761c69800cc468417",
+      "size": 2559
+    },
+    {
+      "path": "reference/接口文档/通达信板块成分.md",
+      "sha": "68e364041c7a76ffff9418fba4dcc2530cf097ec",
+      "size": 1949
+    },
+    {
+      "path": "reference/接口文档/通达信板块行情.md",
+      "sha": "eae7e610f0e4e312c00338fc569f722ed95bcd96",
+      "size": 5516
+    },
+    {
+      "path": "reference/接口文档/采购经理指数(PMI).md",
+      "sha": "85d22095c24d5aff82ecf6606e615efca24d8534",
+      "size": 9186
+    },
+    {
+      "path": "reference/接口文档/销售机构公募基金销售保有规模.md",
+      "sha": "00bd7fd04175987b813bd691d4eeeb115d431fb3",
+      "size": 2795
+    },
+    {
+      "path": "reference/接口文档/限售股解禁.md",
+      "sha": "8ebf9a7c6ef9035aad65237542145cd4481bd480",
+      "size": 4149
+    },
+    {
+      "path": "reference/接口文档/题材成分(开盘啦).md",
+      "sha": "2aa49a894578f35df96b2dda3415f07c0f4b9909",
+      "size": 2560
+    },
+    {
+      "path": "reference/接口文档/题材数据(开盘啦).md",
+      "sha": "d7f11bcfade3b7e2fb34938154fdf38709cbd285",
+      "size": 2343
+    },
+    {
+      "path": "reference/接口文档/龙虎榜机构交易单.md",
+      "sha": "e17e3869d3a4c3111ff131b5b69deef1036d5bca",
+      "size": 3922
+    },
+    {
+      "path": "reference/接口文档/龙虎榜每日统计单.md",
+      "sha": "289a09b9c33db0f00173800083f258013e353be3",
+      "size": 6414
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "4c23429874b48dcc9ff27d8622b57462bbeedc4d",
+      "size": 30
+    },
+    {
+      "path": "scripts/api_client.py",
+      "sha": "487156c9e52c44063cbf12ef5d3a2f8360ed6d95",
+      "size": 8786
+    }
+  ]
+}

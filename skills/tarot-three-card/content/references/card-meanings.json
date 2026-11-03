@@ -1,0 +1,194 @@
+{
+  "tarot_cards": {
+    "fool": {
+      "name": "The Fool",
+      "name_cn": "愚者",
+      "symbol": "fool",
+      "upright": "新的开始、自由、纯真、冒险精神、信任生命",
+      "reversed": "冲动、鲁莽、幼稚、天真、愚蠢的决定",
+      "keywords": ["开始", "自由", "纯真", "冒险", "信任"]
+    },
+    "magician": {
+      "name": "The Magician",
+      "name_cn": "魔术师",
+      "symbol": "magician",
+      "upright": "创造力、技巧、意志力、显现、行动力",
+      "reversed": "操控、欺骗、无力、浪费天赋、缺乏意志力",
+      "keywords": ["创造", "技巧", "意志", "显现", "行动"]
+    },
+    "priestess": {
+      "name": "The High Priestess",
+      "name_cn": "女祭司",
+      "symbol": "priestess",
+      "upright": "直觉、神秘、智慧、内在声音、潜意识的提示",
+      "reversed": "隐藏的秘密、误导、模糊不清、直觉迟钝",
+      "keywords": ["直觉", "神秘", "智慧", "内在", "秘密"]
+    },
+    "empress": {
+      "name": "The Empress",
+      "name_cn": "女皇",
+      "symbol": "empress",
+      "upright": "丰盛、创造力、自然、母亲般的爱、培养",
+      "reversed": "依赖、停滞、创作障碍、空虚、忽视",
+      "keywords": ["丰盛", "创造", "自然", "母性", "培养"]
+    },
+    "emperor": {
+      "name": "The Emperor",
+      "name_cn": "皇帝",
+      "symbol": "emperor",
+      "upright": "权威、结构、稳定、领导力、父亲般的保护",
+      "reversed": " rigidty、缺乏自律、滥用权力、缺乏控制",
+      "keywords": ["权威", "结构", "稳定", "领导", "控制"]
+    },
+    "hierophant": {
+      "name": "The Hierophant",
+      "name_cn": "教皇",
+      "symbol": "hierophant",
+      "upright": "传统、信仰、启示、精神指导、道德规范",
+      "reversed": "叛逆、不合常规、个人信仰、打破传统",
+      "keywords": ["传统", "信仰", "精神", "指导", "道德"]
+    },
+    "lovers": {
+      "name": "The Lovers",
+      "name_cn": "恋人",
+      "symbol": "lovers",
+      "upright": "爱、和谐、选择、吸引力、完美的结合",
+      "reversed": "失衡、冲突、错误选择、不和谐、价值观差异",
+      "keywords": ["爱", "和谐", "选择", "吸引", "结合"]
+    },
+    "chariot": {
+      "name": "The Chariot",
+      "name_cn": "战车",
+      "symbol": "chariot",
+      "upright": "意志力、胜利、决心、控制、克服障碍",
+      "reversed": "失控、失去方向、缺乏自律、失去控制",
+      "keywords": ["意志", "胜利", "决心", "控制", "克服"]
+    },
+    "strength": {
+      "name": "Strength",
+      "name_cn": "力量",
+      "symbol": "strength",
+      "upright": "勇气、耐心、慈悲、内心力量、以柔克刚",
+      "reversed": "自我怀疑、软弱、缺乏勇气、内心恐惧",
+      "keywords": ["勇气", "耐心", "慈悲", "力量", "内在"]
+    },
+    "hermit": {
+      "name": "The Hermit",
+      "name_cn": "隐士",
+      "symbol": "hermit",
+      "upright": "内省、孤独、寻找真理、内在指引、谨慎",
+      "reversed": "孤立、孤独、迷失方向、过度内省",
+      "keywords": ["内省", "孤独", "真理", "指引", "谨慎"]
+    },
+    "wheel": {
+      "name": "Wheel of Fortune",
+      "name_cn": "命运之轮",
+      "symbol": "wheel",
+      "upright": "命运、转变、循环、机会、好运降临",
+      "reversed": "厄运、停滞、坏运气、外部阻碍、失去控制",
+      "keywords": ["命运", "转变", "循环", "机会", "变化"]
+    },
+    "justice": {
+      "name": "Justice",
+      "name_cn": "正义",
+      "symbol": "justice",
+      "upright": "公平、真相、法律、因果、责任",
+      "reversed": "不公、不诚实、法律问题、缺乏责任感、报复",
+      "keywords": ["公平", "真相", "法律", "因果", "责任"]
+    },
+    "hanged": {
+      "name": "The Hanged Man",
+      "name_cn": "倒吊人",
+      "symbol": "hanged",
+      "upright": "暂停、牺牲、新的视角、等待、顺其自然",
+      "reversed": "停滞、拒绝牺牲、拖延、徒劳、牺牲无意义",
+      "keywords": ["暂停", "牺牲", "视角", "等待", "顺从"]
+    },
+    "death": {
+      "name": "Death",
+      "name_cn": "死神",
+      "symbol": "death",
+      "upright": "结束、转变、过渡、释放、蜕变",
+      "reversed": "抗拒改变、僵化、停滞不前、恐惧结束",
+      "keywords": ["结束", "转变", "过渡", "释放", "蜕变"]
+    },
+    "temperance": {
+      "name": "Temperance",
+      "name_cn": "节制",
+      "symbol": "temperance",
+      "upright": "平衡、耐心、目的、调整、适度",
+      "reversed": "失衡、过度、缺乏调整、极端、不耐",
+      "keywords": ["平衡", "耐心", "调整", "适度", "融合"]
+    },
+    "devil": {
+      "name": "The Devil",
+      "name_cn": "恶魔",
+      "symbol": "devil",
+      "upright": "束缚、物质主义、诱惑、阴影面、执着",
+      "reversed": "释放、挣脱束缚、打破模式、克服依赖",
+      "keywords": ["束缚", "物质", "诱惑", "阴影", "执着"]
+    },
+    "tower": {
+      "name": "The Tower",
+      "name_cn": "塔",
+      "symbol": "tower",
+      "upright": "突变、启示、解放、觉醒、打破幻象",
+      "reversed": "害怕改变、避免灾难、内部冲突、压抑",
+      "keywords": ["突变", "启示", "解放", "觉醒", "破坏"]
+    },
+    "star": {
+      "name": "The Star",
+      "name_cn": "星星",
+      "symbol": "star",
+      "upright": "希望、灵感、平静、疗愈、恢复活力",
+      "reversed": "绝望、迷失、缺乏信念、失去希望",
+      "keywords": ["希望", "灵感", "平静", "疗愈", "信念"]
+    },
+    "moon": {
+      "name": "The Moon",
+      "name_cn": "月亮",
+      "symbol": "moon",
+      "upright": "幻觉、恐惧、潜意识、直觉、神秘",
+      "reversed": "恐惧、混乱、隐藏的真相被揭露、梦魇",
+      "keywords": ["幻觉", "恐惧", "潜意识", "直觉", "幻象"]
+    },
+    "sun": {
+      "name": "The Sun",
+      "name_cn": "太阳",
+      "symbol": "sun",
+      "upright": "快乐、成功、活力、温暖、乐观",
+      "reversed": "过度乐观、表面的成功、暂时的挫折、抑郁",
+      "keywords": ["快乐", "成功", "活力", "温暖", "乐观"]
+    },
+    "judgement": {
+      "name": "Judgement",
+      "name_cn": "审判",
+      "symbol": "judgement",
+      "upright": "觉醒、重生、复兴、判决、召唤",
+      "reversed": "自我怀疑、犹豫、错失机会、后悔",
+      "keywords": ["觉醒", "重生", "审判", "召唤", "复兴"]
+    },
+    "world": {
+      "name": "The World",
+      "name_cn": "世界",
+      "symbol": "world",
+      "upright": "完成、成就、整合、成就感、旅行",
+      "reversed": "缺乏成就感、未完成、失败、拖延",
+      "keywords": ["完成", "成就", "整合", "圆满", "旅行"]
+    }
+  },
+  "positions": {
+    "past": {
+      "name": "过 去",
+      "description": "代表问题的根源与背景，揭示隐藏的影响因素，以及已经发生的事件如何塑造当前的局面。"
+    },
+    "present": {
+      "name": "当 下",
+      "description": "代表当前面临的状况与挑战，以及你此刻的应对方式和心态。"
+    },
+    "future": {
+      "name": "未 来",
+      "description": "代表可能的结果与发展方向，提供建议与指引，展示如果保持现状可能发生的事。"
+    }
+  }
+}

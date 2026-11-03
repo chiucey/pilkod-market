@@ -1,0 +1,55 @@
+# 贵金属价格监控配置示例
+# 复制此文件为 config.yaml 并修改参数
+
+monitoring:
+  # 监控目标列表
+  targets:
+    # 工商银行积存金监控
+    - bank: icbc
+      product: 积存金
+      price_type: 买入价  # 买入价 / 赎回价 / 定期积存价
+      baseline: 600.00      # 基准价格（元/克）
+      threshold: 10.0        # 触发阈值（元）
+      direction: above       # above=高于基准 / below=低于基准 / both=双向
+
+    # 建设银行黄金积存监控
+    - bank: ccb
+      product: 黄金积存
+      price_type: 买入价
+      baseline: 580.00
+      threshold: 8.0
+      direction: both
+
+    # 更多银行产品可在此添加
+    # - bank: ocbc
+    #   product: 易存金
+    #   price_type: 买入价
+    #   baseline: 550.00
+    #   threshold: 5.0
+    #   direction: above
+
+  # 检查间隔（秒）
+  # 建议值：
+  #   3600    = 1小时
+  #   1800    = 30分钟
+  #   900     = 15分钟（交易时段推荐）
+  #   300     = 5分钟（高频监控）
+  check_interval: 3600
+
+  # 通知渠道
+  notify_channels:
+    - console          # 控制台输出
+    # - webhook         # Webhook通知（需配置webhook_url）
+    # - email           # 邮件通知（需配置email）
+
+# Webhook配置（可选）
+webhook_url: "https://your-webhook-endpoint.com/notify"
+
+# 邮件配置（可选）
+email:
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  username: "your-email@gmail.com"
+  password: "your-app-password"
+  from_addr: "your-email@gmail.com"
+  to_addr: "recipient@example.com"

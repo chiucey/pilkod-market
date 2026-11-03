@@ -1,0 +1,88 @@
+{
+  "author": "MiniMax Agent",
+  "code_conversion": {
+    "beijing": {
+      "example": "430001 → bj430001",
+      "pattern": "[48][0-9]{5}",
+      "prefix": "bj"
+    },
+    "shanghai": {
+      "example": "601456 → sh601456",
+      "pattern": "6[0-9]{5}",
+      "prefix": "sh"
+    },
+    "shenzhen": {
+      "example": "002532 → sz002532",
+      "pattern": "[03][0-9]{5}",
+      "prefix": "sz"
+    }
+  },
+  "created": "2026-04-01",
+  "data_sources": {
+    "tier1": "腾讯财经API(实时行情)【必须首先调用】",
+    "tier2": "网页搜索(行业新闻、国际新闻)",
+    "tier3": "MCP工具(财务补充)",
+    "tier4": "本地缓存(备用)"
+  },
+  "description": "股票深度分析 SKILL v4.0.5 - 强制触发机制 + 股票代码识别转换系统。4层架构（腾讯API优先、网页搜索、MCP工具、本地缓存）。",
+  "dimensions": [
+    "行情走势分析(腾讯实时)",
+    "区间分析(34日)",
+    "财务分析(近3年)",
+    "板块联动",
+    "黄金分割(144日)",
+    "期货关联",
+    "筹码分析(3季度)",
+    "综合概念(三层评级)",
+    "多股票对比"
+  ],
+  "id": 383922557714845,
+  "key_fields": {
+    "52w_high": "[67]",
+    "52w_low": "[68]",
+    "change_amount": "[31]",
+    "change_percent": "[32]",
+    "current_price": "[3]",
+    "market_cap_float": "[44]",
+    "market_cap_total": "[45]",
+    "pb": "[46]",
+    "pe": "[39]"
+  },
+  "markets": [
+    "A股",
+    "港股",
+    "美股"
+  ],
+  "name": "stock-analysis-v4",
+  "platform": "minimax",
+  "stock_name_map": {
+    "中国铝业": "sh601600",
+    "云铝股份": "sz000807",
+    "国联民生": "sh601456",
+    "天山铝业": "sz002532",
+    "神火股份": "sz000933",
+    "贵州茅台": "sh600519"
+  },
+  "tags": [
+    "股票",
+    "分析",
+    "腾讯API",
+    "强制触发",
+    "代码识别"
+  ],
+  "trigger_conditions": {
+    "analysis_intent": "匹配分析意图词",
+    "explicit_request": "匹配明确请求词",
+    "stock_code": "匹配6位/4位/8位数字代码",
+    "stock_name": "匹配股票名称关键词"
+  },
+  "updated": "2026-04-03",
+  "updated_at": 1775285452009,
+  "version": "4.0.5",
+  "wrong_fields_warning": {
+    "[33]": "今日最高价，不是52周最高",
+    "[34]": "今日最低价，不是52周最低",
+    "[47]": "涨停价，不是52周最高",
+    "[48]": "跌停价，不是52周最低"
+  }
+}

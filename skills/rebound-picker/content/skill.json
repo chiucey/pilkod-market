@@ -1,0 +1,10 @@
+{
+  "name": "超跌反弹选股系统",
+  "description": "每日14:30自动扫描A股全市场，找出从高点跌25~45%、今日跌幅3~8%、量比放大的超跌反弹候选股，尾盘买入次日冲高卖。适合T+1隔夜短差操作。",
+  "tags": ["A股", "选股", "超跌反弹", "T+1", "尾盘策略"],
+  "version": "1.0.0",
+  "author": "陈小群",
+  "trigger": "每日14:30执行",
+  "runtime": "python3",
+  "path": "scripts/chenxiaoqun_rebound.py"
+}

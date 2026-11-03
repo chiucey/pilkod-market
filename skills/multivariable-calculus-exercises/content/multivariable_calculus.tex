@@ -1,0 +1,175 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[xetex]{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{[SimSun.ttf]}{SimSun}
+\setCJKsansfont{[SimHei.ttf]}{SimHei}
+
+% 数学包
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+% 图形包
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,decorations.pathreplacing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins}
+
+% 页面设置
+\usepackage[top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+\usepackage{fancyhdr}
+
+% 颜色定义
+\definecolor{primary}{HTML}{1E3A5F}
+\definecolor{accent}{HTML}{3498DB}
+\definecolor{secondary}{HTML}{2ECC71}
+\definecolor{bg}{HTML}{F8FAFC}
+
+% 定理环境
+\tcbset{
+    theorem style/definition={
+        before={\par\nopagebreak\small\，天津大学数学科学学院},
+        fonttitle={\bfseries\sffamily},
+        fontupper={\rmfamily},
+        boxrule=0.5pt,
+        colback=rgba(255,255,255,0.7),
+        colframe=accent,
+    },
+    definition style={
+        boxrule=0.5pt,
+        colback=rgba(255,255,255,0.7),
+        colframe=primary,
+    },
+}
+
+\newtheorem*{definition}{\heiti 定义}
+\newtheorem*{theorem}{\heiti 定理}
+\newtheorem*{lemma}{\heiti 引理}
+\newtheorem*{corollary}{\heiti 推论}
+\newtheorem*{example}{\heiti 例题}
+\newtheorem*{exercise}{\heiti 练习}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\color{primary}\small{多元函数极限与连续}}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\color{accent}\small{张明}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\begin{document}
+
+% 封面
+\thispagestyle{empty}
+\begin{center}
+\vspace*{2cm}
+\parbox{0.9\textwidth}{
+\centering
+\rule{\textwidth}{3pt}\\[0.5cm]
+{\Huge\bfseries\sffamily\color{primary}多元函数极限与连续}\\[0.8cm]
+\ifdefined\{第二章  偏导数与全微分}\\
+{\Large\color{accent}\subtitle}\\
+\fi
+\rule{\textwidth}{1pt}\\[2cm]
+{\large\bfseries张明}\\[0.3cm]
+{\large数学科学学院}\\[1cm]
+{\large\color{secondary}2026年03月26日}
+}
+\end{center}
+\newpage
+
+% 目录
+\tableofcontents
+\newpage
+
+% 正文
+
+\section{第一章  多元函数基础}
+\subsection{1.1 概念判定方法}
+\begin{definition}设函数 $f(x,y)$ 在点 $P_0(x_0,y_0)$ 的某去心邻域内有定义，如果对于任意 $\varepsilon>0$，存在 $\delta>0$，使得当 $0<\sqrt{(x-x_0)^2+(y-y_0)^2}<\delta$ 时，有 $|f(x,y)-A|<\varepsilon$，则称 $A$ 为函数 $f(x,y)$ 当 $(x,y)\to(x_0,y_0)$ 时的极限，记作 $\lim_{(x,y)\to(x_0,y_0)}f(x,y)=A$。\end{definition}\nopagebreak\\
+\begin{theorem}（夹逼定理）设函数 $f(x,y)$、$g(x,y)$、$h(x,y)$ 在点 $P_0$ 的去心邻域内有定义，且满足 $g(x,y)\leq f(x,y)\leq h(x,y)$，若 $\lim_{(x,y)\to P_0}g(x,y)=\lim_{(x,y)\to P_0}h(x,y)=A$，则 $\lim_{(x,y)\to P_0}f(x,y)=A$。\end{theorem}\nopagebreak\\
+\begin{example}求 $\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^2}$。解：利用极坐标变换 $x=r\cos\theta$，$y=r\sin\theta$，得 $\left|\frac{x^2y}{x^2+y^2}\right|=\frac{r^3|\cos^2\theta\sin\theta|}{r^2}=r|\cos^2\theta\sin\theta|\leq r\to0$，故极限为 $0$。\end{example}\nopagebreak\\
+\subsection{1.2 关系图谱}
+\begin{tcolorbox}[title={\textbf{概念关系图}},
+    colback=rgba(255,255,255,0.7),
+    coltitle=#1E3A5F,
+    colframe=#3498DB]
+多元函数分析中的核心概念蕴含关系：\begin{center}\begin{tikzpicture}[node distance=2cm]
+\node (limit) {极限存在};
+\node (cont) [right=of limit] {连续};
+\node (partial) [right=of cont] {偏导存在};
+\node (diff) [right=of partial] {可微};
+\node (partialcont) [below=of diff] {偏导连续};
+\draw[->,>=Stealth] (limit) -- (cont);
+\draw[->,>=Stealth] (cont) -- (partial);
+\draw[->,>=Stealth] (partial) -- (diff);
+\draw[->,>=Stealth] (diff) -- (partialcont);
+\end{tikzpicture}\end{center}
+\end{tcolorbox}\\
+
+\section{第二章  偏导数与全微分}
+\subsection{2.1 偏导数定义}
+\begin{definition}设函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 的某邻域内有定义，若极限 $\lim_{\Delta x\to0}\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}$ 存在，则称此极限为函数 $f$ 在点 $(x_0,y_0)$ 处对 $x$ 的偏导数，记作 $f_x(x_0,y_0)$ 或 $\frac{\partial f}{\partial x}\bigg|_{(x_0,y_0)}$。\end{definition}\nopagebreak\\
+\subsection{2.2 全微分}
+\begin{definition}设函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 的某邻域内有定义，如果函数在该点的全增量 $\Delta z=f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)$ 可以表示为 $\Delta z=A\Delta x+B\Delta y+o(\rho)$，其中 $\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$，$A,B$ 为常数，则称函数在点 $(x_0,y_0)$ 处可微，并称 $A\Delta x+B\Delta y$ 为函数在点 $(x_0,y_0)$ 处的全微分，记作 $dz=A\Delta x+B\Delta y$。\end{definition}\nopagebreak\\
+
+\section{第三章  经典反例分析}
+
+\section*{经典反例}
+\addcontentsline{{toc}}{{section}}{{经典反例}}
+
+\begin{tcolorbox}[title={\textbf{【反例】偏导存在 ≠ 连续}},
+    colback=white,
+    coltitle=#3498DB,
+    colframe=#3498DB,
+    fonttitle={\bfseries},
+    sharp corners=rounded,
+    rounded corners={at={(0,0)}},
+    width={\textwidth}]
+
+\textbf{函数定义：}\\
+$f(x,y) = \begin{cases} \frac{xy}{x^2+y^2}, & (x,y) \neq (0,0) \\ 0, & (x,y) = (0,0) \end{cases}$
+
+\vspace{0.3cm}
+\textbf{分析：}\\
+在 (0,0) 点处，$f_x(0,0)=0$, $f_y(0,0)=0$，但沿路径 $y=x$ 趋近时，极限值为 $\frac{1}{2} \neq f(0,0)$，故不连续。
+
+\vspace{0.3cm}
+\colorbox{rgba(255,255,255,0.7)}{\parbox{0.95\textwidth}{
+\textbf{关键结论：}偏导数存在仅是局部可导的必要条件，不能保证连续性。
+}}
+\end{tcolorbox}\\
+\vspace{0.5cm}
+
+\begin{tcolorbox}[title={\textbf{【反例】可微 ≠ 偏导连续}},
+    colback=white,
+    coltitle=#3498DB,
+    colframe=#3498DB,
+    fonttitle={\bfseries},
+    sharp corners=rounded,
+    rounded corners={at={(0,0)}},
+    width={\textwidth}]
+
+\textbf{函数定义：}\\
+$f(x,y) = \begin{cases} (x^2+y^2)\sin\left(\frac{1}{\sqrt{x^2+y^2}}\right), & (x,y) \neq (0,0) \\ 0, & (x,y) = (0,0) \end{cases}$
+
+\vspace{0.3cm}
+\textbf{分析：}\\
+该函数在 (0,0) 处可微，但偏导数 $f_x$ 和 $f_y$ 在 (0,0) 处不连续。
+
+\vspace{0.3cm}
+\colorbox{rgba(255,255,255,0.7)}{\parbox{0.95\textwidth}{
+\textbf{关键结论：}可微仅要求偏导数存在且线性逼近有效，不要求偏导数连续。
+}}
+\end{tcolorbox}\\
+\vspace{0.5cm}
+
+\section{第四章  考研真题解析}
+\subsection{4.1 极限计算题型}
+\begin{example}【2024年真题】求 $\lim_{(x,y)\to(0,0)}\frac{1-\cos(x^2+y^2)}{x^2+y^2}$。解：利用等价无穷小 $1-\cos t\sim\frac{t^2}{2}$，得原式 $=\lim_{(x,y)\to(0,0)}\frac{\frac{1}{2}(x^2+y^2)^2}{x^2+y^2}=\lim_{(x,y)\to(0,0)}\frac{1}{2}(x^2+y^2)=0$。\end{example}\nopagebreak\\
+\subsection{4.2 偏导数计算题型}
+\begin{example}【2023年真题】设 $z=f(x,y)$ 由方程 $e^z+xyz=0$ 确定，求 $\frac{\partial z}{\partial x}$。解：对方程两边关于 $x$ 求偏导：$e^z\frac{\partial z}{\partial x}+yz+xy\frac{\partial z}{\partial x}=0$，整理得 $\frac{\partial z}{\partial x}=-\frac{yz}{e^z+xy}$。\end{example}\nopagebreak\\
+\end{document}

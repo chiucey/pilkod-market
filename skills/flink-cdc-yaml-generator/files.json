@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "path": "INSTALL.md",
+      "sha": "915d68638dc521bd2c2595eee727d1d3831e5bb1",
+      "size": 4435
+    },
+    {
+      "path": "README.md",
+      "sha": "4940a687d5f6643a99d4402c7c8cc652cf577924",
+      "size": 7551
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "254006fb24aed81db3eba745c9cacd9c036c375d",
+      "size": 7361
+    },
+    {
+      "path": "VERIFICATION.md",
+      "sha": "c9b2f57591bd729fa9850ec7950e04966b1138e5",
+      "size": 7511
+    },
+    {
+      "path": "_meta.json",
+      "sha": "566b0eeac127caf3dad9df77dcca73b7bc1b92eb",
+      "size": 143
+    },
+    {
+      "path": "connectors/sink/doris.md",
+      "sha": "b3f3ed332a968c34ed0b94db81eb992a23f0b29b",
+      "size": 2832
+    },
+    {
+      "path": "connectors/sink/elasticsearch.md",
+      "sha": "aedabe639a2a367af8e22a2543d1cbaa7393d3d8",
+      "size": 2141
+    },
+    {
+      "path": "connectors/sink/fluss.md",
+      "sha": "f8e4e1ff542ec0615bf3cc095ff2a828e163ddde",
+      "size": 1577
+    },
+    {
+      "path": "connectors/sink/hudi.md",
+      "sha": "43af0ddb92dca4a4c9651d9db62124702e6b8c96",
+      "size": 2639
+    },
+    {
+      "path": "connectors/sink/iceberg.md",
+      "sha": "37a63e9ffed23e62e1806b3a5612a8b2a5ab74d6",
+      "size": 2711
+    },
+    {
+      "path": "connectors/sink/kafka.md",
+      "sha": "b53fb982c5a9402ed91adac21d592ec2ad6e022b",
+      "size": 2774
+    },
+    {
+      "path": "connectors/sink/maxcompute.md",
+      "sha": "a22f4bf72ae0cc16e57912398d6a66ef5f0b5484",
+      "size": 2184
+    },
+    {
+      "path": "connectors/sink/oceanbase.md",
+      "sha": "6dbf1a2a672e20a254543ced0fe289b697e55f25",
+      "size": 2508
+    },
+    {
+      "path": "connectors/sink/paimon.md",
+      "sha": "318638d49d9bcd527ee85da3b0a0f6bf4c06f324",
+      "size": 2316
+    },
+    {
+      "path": "connectors/sink/starrocks.md",
+      "sha": "bcfa3587bead779e012db70f3592146d70450ffb",
+      "size": 2792
+    },
+    {
+      "path": "connectors/source/mysql.md",
+      "sha": "a31ff446b45e9441c534cd5e014dc75796918316",
+      "size": 4445
+    },
+    {
+      "path": "connectors/source/oracle.md",
+      "sha": "aa367117dfef5a95374d1d289b9214c7cff91d93",
+      "size": 3096
+    },
+    {
+      "path": "connectors/source/postgres.md",
+      "sha": "23f99d0427cad964db75d2d158f179c0c100a87e",
+      "size": 3721
+    },
+    {
+      "path": "manifest.json",
+      "sha": "caac8d13df947c6b3174dffa21fd645635212f7c",
+      "size": 1044
+    },
+    {
+      "path": "modules/route.md",
+      "sha": "76d5717d90f70df2d2d8cdf5c95fa27c16dac0ae",
+      "size": 3818
+    },
+    {
+      "path": "modules/transform.md",
+      "sha": "56936c87c791241df0f1e7a4c44ceaa40854abad",
+      "size": 10882
+    }
+  ]
+}

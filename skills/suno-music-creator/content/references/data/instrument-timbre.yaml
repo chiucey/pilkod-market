@@ -1,0 +1,410 @@
+# Instrument Timbre Descriptions for Suno AI
+# 结构：[乐器名, 音色特征, 演奏方式, 声场/质感]
+# 所有描述词均来自 Suno 官方文档 / 社区验证来源
+
+instrument_timbre:
+
+  # ═══════════════════════════════════
+  # 键盘 / 钢琴类
+  # ═══════════════════════════════════
+  piano:
+    - id: sparse-piano
+      label: 稀疏钢琴
+      timbre: 留白多，断奏，minimalist
+      play_style: sparse chords, sustained sustain pedal, open voicing
+      sound: clean, intimate, small room
+      best_for: [sad ballad, folk, intimate ballad, melancholic]
+      prompt: "sparse piano chords, sustain pedal, intimate"
+
+    - id: warm-piano
+      label: 温暖钢琴
+      timbre: 温暖，有共鸣，rich
+      play_style: full chords, legato melody line
+      sound: warm, natural room reverb
+      best_for: [ballad, soul, romantic, jazz]
+      prompt: "warm piano, full chords, natural"
+
+    - id: bright-piano
+      label: 明亮钢琴
+      timbre: 清晰，bell-like，的高频
+      play_style: melodic, crisp attack
+      sound: bright, polished
+      best_for: [pop, teen pop, upbeat, acoustic pop]
+      prompt: "bright piano, melodic, crisp"
+
+    - id: jazzy-piano
+      label: 爵士钢琴
+      timbre: syncopated，complex，丰富
+      play_style: jazzy chords, walking bass, syncopated
+      sound: warm, slight room
+      best_for: [jazz, soul, rnb, blues]
+      prompt: "jazzy piano chords, syncopated, walking bass"
+
+    - id: percussive-piano
+      label: 打击感钢琴
+      timbre: percussive，有力，aggressive
+      play_style: aggressive attack, driving rhythm
+      sound: punchy, room mic
+      best_for: [rock, indie rock, anthem]
+      prompt: "percussive piano, driving rhythm, punchy"
+
+    - id: solo-piano
+      label: 独奏钢琴
+      timbre: 纯净，exposed，no layering
+      play_style: solo, unaccompanied
+      sound: close-miked, clean
+      best_for: [ballad intro, outro, intimate moment]
+      prompt: "solo piano, unaccompanied, close-miked"
+
+  electric-piano:
+    - id: rhodes-piano
+      label: Rhodes 电钢琴
+      timbre: bell-like，metallic，soft
+      play_style: sustained chords, mellow
+      sound: warm, tape saturation
+      best_for: [lo-fi, jazz, soul, rnb]
+      prompt: "rhodes piano, bell-like tone, warm, tape saturation"
+
+    - id: wurlitzer-electric
+      label: Wurlitzer 电钢琴
+      timbre: bright，bell-like，tremolo
+      play_style: bright chords, slight tremolo
+      sound: bright, vintage, natural
+      best_for: [classic pop, soul, 70s ballad]
+      prompt: "vintage wurlitzer electric piano, bright bell-like tone"
+
+    - id: hammond-organ
+      label: Hammond 风琴
+      timbre: gritty，warm，percussive
+      play_style: chord stabs, drawbar pull
+      sound: gritty, warm, slightly overdriven
+      best_for: [rock, blues, gospel, jazz]
+      prompt: "hammond organ, gritty, warm, drawbar pull"
+
+    - id: synth-pad
+      label: 合成器垫
+      timbre: lush，detuned，atmospheric
+      play_style: long sustain, evolving texture
+      sound: lush, spacious, reverb
+      best_for: [ambient, cinematic, ballad, synth-pop]
+      prompt: "synth pad, lush, detuned, spacious reverb"
+
+    - id: synth-lead
+      label: 主音合成器
+      timbre: bright，cutting，穿头
+      play_style: melodic lead, arpeggiated
+      sound: bright, clean, in-your-face
+      best_for: [edm, synth-pop, electronic]
+      prompt: "synth lead, bright, cutting, arpeggiated"
+
+  # ═══════════════════════════════════
+  # 吉他类
+  # ═══════════════════════════════════
+  guitar:
+    - id: fingerpicked-acoustic
+      label: 指弹原声吉他
+      timbre: intricate，delicate，intimate
+      play_style: fingerpicked, intricate pattern
+      sound: warm, close-miked, small room
+      best_for: [folk, indie, intimate ballad, acoustic]
+      prompt: "fingerpicked acoustic guitar, intricate, warm"
+
+    - id: strummed-acoustic
+      label: 扫弦原声吉他
+      timbre: rhythmic，warm，percussive
+      play_style: strummed chords, driving rhythm
+      sound: warm, natural
+      best_for: [pop, country, folk, acoustic ballad]
+      prompt: "acoustic guitar, strummed chords, warm"
+
+    - id: clean-electric
+      label: 清音电吉他
+      timbre: clean，smooth，bright
+      play_style: sustained chords, clean
+      sound: clean, bright, slight reverb
+      best_for: [indie, dream-pop, ballad]
+      prompt: "clean electric guitar, smooth, bright"
+
+    - id: distorted-rock
+      label: 摇滚失真吉他
+      timbre: aggressive，powerful，raw
+      play_style: power chords, aggressive riff
+      sound: raw, overdriven, punchy
+      best_for: [rock, punk, grunge, metal]
+      prompt: "distorted guitar, powerful, raw, aggressive riff"
+
+    - id: blues-guitar
+      label: 蓝调电吉他
+      timbre: gritty，soulful，bending
+      play_style: bends, vibrato, soulful phrasing
+      sound: warm, natural, slightly overdriven
+      best_for: [blues, blues-rock, soul]
+      prompt: "blues guitar, gritty, soulful bends, warm"
+
+    - id: nylon-guitar
+      label: 尼龙弦吉他
+      timbre: soft，warm，mellow
+      play_style: gentle fingerpicking, arpeggio
+      sound: soft, warm, intimate
+      best_for: [bossa nova, latin, classical, romantic]
+      prompt: "nylon string guitar, soft, warm, intimate"
+
+    - id: slide-guitar
+      label: 滑棒吉他
+      timbre: emotive，crying，lamenting
+      play_style: slide, bottleneck, sustain
+      sound: emotive, warm, reverb
+      best_for: [blues, country, soul, cinematic]
+      prompt: "slide guitar, emotive, sustain, warm reverb"
+
+  # ═══════════════════════════════════
+  # 弦乐类
+  # ═══════════════════════════════════
+  strings:
+    - id: orchestral-strings
+      label: 管弦弦乐
+      timbre: lush，sweep，cinematic
+      play_style: long sustains, swelling dynamics
+      sound: lush, hall reverb, cinematic
+      best_for: [cinematic, ballad, epic, orchestral]
+      prompt: "orchestral strings, lush, sweeping, hall reverb"
+
+    - id: string-quartet
+      label: 弦乐四重奏
+      timbre: warm，intimate，legato
+      play_style: legato, minimal vibrato, intimate
+      sound: warm, natural, close-miked
+      best_for: [classic ballad, intimate, acoustic]
+      prompt: "string quartet, warm, legato, minimal vibrato"
+
+    - id: cello-solo
+      label: 大提琴独奏
+      timbre: deep，melancholic，rich
+      play_style: solo melody, deep register
+      sound: rich, close-miked, warm
+      best_for: [cinematic, melancholic, ballad]
+      prompt: "cello solo, deep, melancholic, rich"
+
+    - id: soaring-strings
+      label: 飙升弦乐
+      timbre: ethereal，soaring，building
+      play_style: crescendo, building to climax
+      sound: ethereal, hall reverb, expansive
+      best_for: [epic, anthem, final chorus]
+      prompt: "soaring strings, building crescendo, ethereal"
+
+    - id: chinese-strings
+      label: 中国弦乐
+      timbre: 古朴，婉转，忧伤
+      play_style: traditional phrasing, ornamentation
+      sound: warm, natural, acoustic
+      best_for: [chinese traditional, 古风, 民乐融合]
+      prompt: "chinese string instrument, traditional, ornate"
+
+  # ═══════════════════════════════════
+  # 木管/吹奏类
+  # ═══════════════════════════════════
+  woodwind:
+    - id: saxophone-soul
+      label: 萨克斯（灵魂）
+      timbre: warm，smooth，emotional
+      play_style: sustained melody, soulful phrasing
+      sound: warm, smooth, natural room
+      best_for: [soul, rnb, jazz, ballad]
+      prompt: "saxophone, warm, smooth, soulful melody"
+
+    - id: saxophone-jazz
+      label: 萨克斯（爵士）
+      timbre: gritty，powerful，cutting
+      play_style: improvisation, powerful projection
+      sound: gritty, punchy, in-your-face
+      best_for: [jazz, blues-rock, fusion]
+      prompt: "saxophone, gritty, powerful, jazz improvisation"
+
+    - id: bamboo-flute
+      label: 竹笛
+      timbre: airy，ethereal，traditional
+      play_style: ornamented melody, traditional
+      sound: airy, natural reverb, intimate
+      best_for: [chinese traditional, 古风, folk]
+      prompt: "bamboo flute, airy, ethereal, natural reverb"
+
+    - id: harmonica-blues
+      label: 口琴
+      timbre: small，intimate，bluesy
+      play_style: short phrases, acoustic
+      sound: intimate, close-miked, warm
+      best_for: [blues, folk, country, acoustic]
+      prompt: "harmonica, intimate, bluesy, close-miked"
+
+  # ═══════════════════════════════════
+  # 鼓组类
+  # ═══════════════════════════════════
+  drums:
+    - id: standard-kit
+      label: 标准鼓组
+      timbre: punchy，full，balanced
+      play_style: standard groove, kick-snare pattern
+      sound: punchy, room mic, full
+      best_for: [rock, pop, indie, ballad]
+      prompt: "punchy drums, full sound, room mic"
+
+    - id: brushed-drums
+      label: 刷奏鼓
+      timbre: soft，subtle，jazz
+      play_style: brushes on snare, light touch
+      sound: soft, subtle, jazz feel
+      best_for: [jazz, bossa, folk, intimate ballad]
+      prompt: "brushed drums, soft, jazz feel, light"
+
+    - id: epic-drums
+      label: 史诗鼓
+      timbre: powerful，massive，building
+      play_style: building fills, massive impact
+      sound: epic, huge, hall reverb
+      best_for: [epic, cinematic, anthem, rock anthem]
+      prompt: "epic drums, powerful, massive impact, building"
+
+    - id: electronic-drums
+      label: 电子鼓
+      timbre: punchy，modern，tight
+      play_style: tight production, electronic
+      sound: punchy, clean, tight
+      best_for: [edm, synth-pop, pop, hip-hop]
+      prompt: "electronic drums, punchy, modern, clean"
+
+    - id: taiko-drums
+      label: 太鼓
+      timbre: powerful，rhythmic，ritual
+      play_style: rhythmic patterns, build
+      sound: powerful, room-shaking, epic
+      best_for: [epic, cinematic, cultural]
+      prompt: "taiko drums, powerful, rhythmic, epic"
+
+    - id: hiphop-drums
+      label: Hip-hop鼓
+      timbre: tight，punchy，synocopated
+      play_style: 808 kick, snappy snare, hi-hats
+      sound: tight, punchy, sub-bass
+      best_for: [hip-hop, trap, rnb]
+      prompt: "hip-hop drums, tight 808 kick, snappy snare"
+
+  # ═══════════════════════════════════
+  # 低音/贝斯类
+  # ═══════════════════════════════════
+  bass:
+    - id: warm-bass
+      label: 温暖贝斯
+      timbre: warm，rounded，subtle
+      play_style: walking line, subtle bottom
+      sound: warm, rounded, natural
+      best_for: [jazz, soul, ballad, acoustic]
+      prompt: "warm bass, rounded, walking line, subtle"
+
+    - id: punchy-bass
+      label: 强劲贝斯
+      timbre: punchy，prominent，driving
+      play_style: driving bass line, prominent
+      sound: punchy, up front, powerful
+      best_for: [rock, pop, rnb, dance]
+      prompt: "punchy bass, driving, up front, powerful"
+
+    - id: synth-bass
+      label: 合成器贝斯
+      timbre: deep，tight，modern
+      play_style: sub bass, tight pattern
+      sound: deep, tight, clean
+      best_for: [edm, synth-pop, trap, electronic]
+      prompt: "synth bass, deep, tight, sub"
+
+  # ═══════════════════════════════════
+  # 氛围/特殊音色类
+  # ═══════════════════════════════════
+  atmospheric:
+    - id: vinyl-crackle
+      label: 黑胶唱片底噪
+      timbre: nostalgic，warm，lo-fi
+      play_style: continuous texture, looped
+      sound: lo-fi, nostalgic, warm
+      best_for: [lo-fi, indie, nostalgic ballad, acoustic]
+      prompt: "vinyl crackle, nostalgic, lo-fi warmth"
+
+    - id: tape-saturation
+      label: 磁带饱和
+      timbre: warm，compressed，vintage
+      play_style: continuous texture
+      sound: warm, compressed, vintage
+      best_for: [vintage, lo-fi, retro, soul]
+      prompt: "tape saturation, warm, vintage, compressed"
+
+    - id: hall-reverb
+      label: 大厅混响
+      timbre: expansive，immersive，natural
+      play_style: tail reverb, spatial
+      sound: expansive, immersive, natural
+      best_for: [cinematic, ballad, epic, acoustic]
+      prompt: "hall reverb, expansive, immersive, natural"
+
+    - id: tape-hiss
+      label: 磁带嘶声
+      timbre: nostalgic，intimate，lo-fi
+      play_style: continuous texture
+      sound: lo-fi, intimate, nostalgic
+      best_for: [lo-fi, intimate, acoustic, folk]
+      prompt: "tape hiss, nostalgic, lo-fi, intimate"
+
+# ═════════════════════════════════════
+# 音色特征词（所有乐器通用）
+# ═════════════════════════════════════
+# 来自：Suno 官方 Music Glossary + Blake Crosley 验证来源
+# Suno 官方确认词：Staccato, Legato, Vibrato
+
+timbre_descriptors:
+  # 音色明暗
+  bright:      { desc: "高频丰富，有光泽感，穿透力强", instruments: [piano, guitar, synth] }
+  dark:        { desc: "低频主导，暗沉，有阴影感", instruments: [piano, strings, synth] }
+  warm:        { desc: "低频厚实，温暖，有共鸣", instruments: [all] }
+  cool:        { desc: "偏冷，干净，略带距离感", instruments: [piano, guitar, strings] }
+
+  # 质感/纹理
+  rich:        { desc: "饱满，共鸣腔充分，厚实", instruments: [all] }
+  raw:         { desc: "未打磨，原始，直接", instruments: [guitar, drums] }
+  clean:       { desc: "干净，无杂质，清晰", instruments: [all] }
+  lofi:        { desc: "低保真，温暖，有噪音质感", instruments: [all] }
+  polished:    { desc: "精致，制作精良", instruments: [all] }
+
+  # 动态/触键
+  punchy:      { desc: "打击感强，有冲击力", instruments: [piano, drums, bass] }
+  crisp:       { desc: "清脆，干净，attack清晰", instruments: [piano, guitar] }
+  smooth:      { desc: "流畅，无棱角，滑顺", instruments: [all] }
+  delicate:    { desc: "精致，轻柔，纤细", instruments: [piano, strings, guitar] }
+
+  # 空间感
+  spacious:    { desc: "宽广，有空间感，层次深", instruments: [all] }
+  intimate:   { desc: "亲密，近耳，小空间感", instruments: [all] }
+  ethereal:   { desc: "空灵，超脱，飘渺", instruments: [strings, synth, woodwind] }
+  haunting:   { desc: "萦绕不散，挥之不去", instruments: [strings, guitar, piano] }
+
+  # 演奏方式（Suno 官方确认词）
+  legato:     { desc: "连奏，音符平滑过渡", instruments: [strings, piano, guitar, woodwind] }
+  staccato:   { desc: "断奏，短促，跳跃感", instruments: [strings, piano, brass] }
+  vibrato:    { desc: "揉弦，颤音，情感丰富", instruments: [strings, woodwind, guitar] }
+  sustain:    { desc: "延音，持续，延展", instruments: [piano, synth, strings] }
+  arpeggio:   { desc: "琶音，和弦分解", instruments: [piano, guitar, synth] }
+  crescendo:   { desc: "渐强，张力积累", instruments: [strings, drums, all] }
+  decrescendo: { desc: "渐弱，消散，收束", instruments: [strings, piano, all] }
+
+# ═════════════════════════════════════
+# 声场/制作质感词
+# ═════════════════════════════════════
+sound_signature:
+  hall_reverb:     { desc: "大厅混响，宽广深远", verified: true }
+  room_reverb:     { desc: "房间混响，亲密自然", verified: true }
+  tape_saturation: { desc: "磁带饱和，温暖复古", verified: true }
+  close_miked:     { desc: "近距离拾音，亲密", verified: true }
+  distant_miked:   { desc: "远距离拾音，有空间", verified: true }
+  vinyl_crackle:   { desc: "黑胶噪音，怀旧", verified: true }
+  analog_warmth:   { desc: "模拟温暖，磁带质感", verified: true }
+  lofi:            { desc: "低保真质感", verified: true }
+  polished:        { desc: "精致制作感", verified: true }
+  raw_production:  { desc: "粗粝制作感，原始", verified: false }

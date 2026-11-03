@@ -1,0 +1,72 @@
+{
+  "author": "Matrix Agent",
+  "capabilities": {
+    "bytecode_analysis": true,
+    "control_flow_analysis": true,
+    "exec_decryption": true,
+    "hyperion_deobfuscation": true,
+    "obfuscation_detection": true,
+    "pyinstaller_extraction": true
+  },
+  "created_at": "2026-04-17",
+  "description": "Python代码反混淆与字节码分析技能",
+  "id": 388534661894972,
+  "name": "python-deobfuscator",
+  "platform": "minimax",
+  "references": [
+    {
+      "description": "各种Python混淆技术的详细说明和反混淆方法",
+      "file": "references/python_obfuscation_types.md",
+      "title": "Python混淆技术详解"
+    },
+    {
+      "description": "Python字节码结构、dis模块使用和反编译技术指南",
+      "file": "references/bytecode_analysis_guide.md",
+      "title": "字节码分析与逆向工程"
+    }
+  ],
+  "scripts": [
+    {
+      "description": "解码exec加密的Python代码",
+      "file": "scripts/exec_decryptor.py",
+      "name": "exec_decryptor",
+      "usage": "python exec_decryptor.py \u003ccode_file_or_string\u003e"
+    },
+    {
+      "description": "提取PyInstaller打包的exe中的Python字节码",
+      "file": "scripts/pyinstxtractor.py",
+      "name": "pyinstxtractor",
+      "usage": "python pyinstxtractor.py \u003cexe_file\u003e [output_dir] [--decompile] [--fix-header]"
+    },
+    {
+      "description": "分析Python字节码和检测混淆模式",
+      "file": "scripts/bytecode_analyzer.py",
+      "name": "bytecode_analyzer",
+      "usage": "python bytecode_analyzer.py \u003csource_file_or_code\u003e [--cfg] [--dis] [--strings]"
+    },
+    {
+      "description": "还原Hyperion混淆的Python代码",
+      "file": "scripts/hyperion_deobfuscator.py",
+      "name": "hyperion_deobfuscator",
+      "usage": "python hyperion_deobfuscator.py \u003cfile_or_code\u003e [--analyze]"
+    }
+  ],
+  "supported_patterns": [
+    "base64_encoding",
+    "marshal_encryption",
+    "zlib_compression",
+    "hex_encoding",
+    "multi_layer_encryption",
+    "pyinstaller_packages",
+    "hyperion_obfuscation"
+  ],
+  "tags": [
+    "python",
+    "deobfuscation",
+    "reverse-engineering",
+    "bytecode",
+    "pyinstaller"
+  ],
+  "updated_at": 1776412182329,
+  "version": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-22",
+  "description": "A股股票逃顶信号判断技能，使用BIAS(6,12)和EXPMA(13,55,100,150)组合判断逃顶时机",
+  "id": 379255067029970,
+  "name": "a-stock-top-escape-signal",
+  "platform": "minimax",
+  "tags": [
+    "china-stocks",
+    "technical-analysis",
+    "top-escape",
+    "BIAS",
+    "EXPMA",
+    "stock-market"
+  ],
+  "updated_at": 1774144681601,
+  "version": "1.0.0"
+}

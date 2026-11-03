@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-24",
+  "description": "Help students quickly search for university admission scores from 2021-2025, with official data sources and cross-validation for college application decisions.",
+  "id": 379962492604725,
+  "name": "gaokao-admission-score-lookup",
+  "platform": "minimax",
+  "status": "active",
+  "tags": [
+    "gaokao",
+    "admission-score",
+    "enrollment-info",
+    "college-application",
+    "historical-scores"
+  ],
+  "trigger_phrases": [
+    "university admission scores",
+    "gaokao historical scores",
+    "major admission line",
+    "check admission scores",
+    "historical gaokao scores",
+    "college admission scores",
+    "score lookup",
+    "university admission line",
+    "gaokao scores",
+    "admission status",
+    "高校录取分数线",
+    "高考历年分数",
+    "专业录取线",
+    "查录取成绩",
+    "历年高考分数线"
+  ],
+  "updated_at": 1774317809612,
+  "version": "1.0.0"
+}

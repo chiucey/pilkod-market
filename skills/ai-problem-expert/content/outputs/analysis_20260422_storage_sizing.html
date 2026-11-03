@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业储能配置分析报告</title>
+<style>
+  :root{--p:#0a2540;--s:#1565c0;--gold:#c9a84c;--w:#fff;--l:#f4f7fb;--bd:#cfd8e3;--text:#1a2e3e;--b:#607d8b;--amber:#fff8e1;--green:#f0faf4;--red:#fff5f5}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--l);color:var(--text);line-height:1.85;font-size:14px}
+  .topbar{background:linear-gradient(135deg,#0a2540,#1565c0);color:#fff;padding:11px 40px;font-size:13px;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,0.18);display:flex;align-items:center;gap:10px}
+  .topbar::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
+  .hero{background:linear-gradient(160deg,#0a2540 0%,#0e4a7a 55%,#1565c0 100%);color:#fff;padding:48px 56px 44px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-70px;right:-50px;width:260px;height:260px;background:radial-gradient(circle,rgba(201,168,76,0.1) 0%,transparent 70%);border-radius:50%}
+  .hero-eyebrow{font-size:11px;letter-spacing:3px;color:rgba(255,255,255,0.4);margin-bottom:14px}
+  .hero h1{font-size:25px;font-weight:bold;letter-spacing:1px;line-height:1.6;margin-bottom:12px;max-width:680px}
+  .hero .lead{border-left:3px solid rgba(255,255,255,0.3);padding-left:14px;font-size:14px;color:rgba(255,255,255,0.78);line-height:2;max-width:640px}
+  .hero-meta{margin-top:20px;font-size:12px;color:rgba(255,255,255,0.35)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 32px}
+
+  .摘要{background:var(--w);border-radius:12px;padding:18px 26px;margin:22px auto;border-left:5px solid var(--gold);box-shadow:0 1px 6px rgba(0,0,0,0.06)}
+  .摘要-label{font-size:11px;font-weight:bold;letter-spacing:2px;color:var(--gold);margin-bottom:8px}
+  .摘要 p{font-size:13.5px;color:var(--text);line-height:2}
+
+  /* 数据卡片 */
+  .数据grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px auto}
+  .数据card{background:var(--w);border-radius:10px;padding:14px 16px;border-top:3px solid;box-shadow:0 1px 4px rgba(0,0,0,0.05);text-align:center}
+  .数据card:hover{box-shadow:0 3px 12px rgba(0,0,0,0.09)}
+  .数据card-blue{border-color:#1565c0}
+  .数据card-gold{border-color:#c9a84c}
+  .数据card-green{border-color:#059669}
+  .数据card-red{border-color:#dc2626}
+  .数据card .数值{font-size:22px;font-weight:bold;margin-bottom:3px}
+  .数据card-blue .数值{color:#1565c0}
+  .数据card-gold .数值{color:#a16207}
+  .数据card-green .数值{color:#059669}
+  .数据card-red .数值{color:#dc2626}
+  .数据card .标签{font-size:11px;color:var(--b)}
+  .数据card .说明{font-size:10.5px;color:var(--b);margin-top:3px}
+
+  /* 计算过程 */
+  .计算{background:var(--w);border-radius:12px;padding:20px 24px;margin:24px auto;border:1px solid var(--bd);box-shadow:0 1px 6px rgba(0,0,0,0.05)}
+  .计算 h2{font-size:14px;font-weight:bold;color:var(--p);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--p)}
+  .计算步骤{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+  .步骤{background:var(--l);border-radius:8px;padding:12px 14px;border-left:3px solid var(--gold)}
+  .步骤 h4{font-size:12px;font-weight:bold;color:var(--p);margin-bottom:5px}
+  .步骤 p{font-size:12px;color:var(--text);line-height:1.75}
+  .公式框{background:#f0f4f8;border-radius:8px;padding:12px 16px;font-size:12.5px;color:var(--p);font-family:"Courier New",monospace;line-height:2;margin-bottom:14px;border:1px solid var(--bd)}
+
+  /* 结果表 */
+  .结果{background:var(--w);border-radius:12px;padding:20px 24px;margin:24px auto;border:1px solid var(--bd);box-shadow:0 1px 6px rgba(0,0,0,0.05)}
+  .结果 h2{font-size:14px;font-weight:bold;color:var(--p);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--p)}
+  .结果矩阵{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px}
+  .结果item{background:var(--l);border-radius:10px;padding:14px;text-align:center}
+  .结果item h4{font-size:11px;color:var(--b);margin-bottom:6px;font-weight:500}
+  .结果item .数值{font-size:24px;font-weight:bold;color:var(--p)}
+  .结果item .单位{font-size:11px;color:var(--b);margin-top:2px}
+  .结果item.highlight{background:#fef9c4;border:1px solid #f59e0b}
+  .结果item.highlight .数值{color:#a16207}
+  .结果item.green{background:#f0faf4;border:1px solid #16a34a}
+  .结果item.green .数值{color:#16a34a}
+  .结果item.blue{background:#eff6ff;border:1px solid #1565c0}
+  .结果item.blue .数值{color:#1565c0}
+
+  /* 经济性测算 */
+  .经济框{background:var(--amber);border-radius:12px;padding:20px 24px;margin:24px auto;border:1px solid #fde68a}
+  .经济框 h2{font-size:14px;font-weight:bold;color:#92400e;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #f59e0b}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{background:var(--p);color:#fff;padding:8px 12px;text-align:center;font-weight:500;font-size:12px}
+  th:first-child{text-align:left}
+  td{padding:8px 12px;border-bottom:1px solid var(--bd);vertical-align:top;line-height:1.75}
+  tr:nth-child(even) td{background:#f8fafc}
+
+  /* 约束分析 */
+  .约束grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px auto}
+  .约束card{background:var(--w);border-radius:10px;padding:16px 18px;border-left:4px solid;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+  .约束card-green{border-color:#059669}
+  .约束card-gold{border-color:#c9a84c}
+  .约束card-blue{border-color:#1565c0}
+  .约束card-red{border-color:#dc2626}
+  .约束card h4{font-size:13px;font-weight:bold;margin-bottom:6px}
+  .约束card-green h4{color:#059669}
+  .约束card-gold h4{color:#a16207}
+  .约束card-blue h4{color:#1565c0}
+  .约束card-red h4{color:#dc2626}
+  .约束card p{font-size:12px;color:var(--b);line-height:1.75}
+  .约束card .上限{font-size:18px;font-weight:bold;margin-top:6px}
+  .约束card-green .上限{color:#059669}
+  .约束card-gold .上限{color:#a16207}
+  .约束card-blue .上限{color:#1565c0}
+
+  /* 洞察 */
+  .洞察{background:linear-gradient(135deg,#0a2540,#0e3a5c);color:#fff;border-radius:12px;padding:22px 26px;margin:28px auto}
+  .洞察 h2{font-size:12px;font-weight:bold;letter-spacing:1px;margin-bottom:12px;opacity:0.5}
+  .洞察结论{background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);border-radius:10px;padding:16px 20px;font-size:13.5px;line-height:2;text-align:center}
+
+  .结论{background:linear-gradient(135deg,#0a2540,#0e3a5c);color:#fff;border-radius:12px;padding:26px 30px;margin:28px auto}
+  .結論grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+  .結論item{background:rgba(255,255,255,0.07);border-radius:10px;padding:14px}
+  .結論item h4{font-size:12px;font-weight:bold;margin-bottom:6px}
+  .結論item p{font-size:11px;color:rgba(255,255,255,0.6);line-height:1.75}
+  .結論final{background:rgba(255,255,255,0.07);border-radius:10px;padding:15px 20px;font-size:13px;line-height:2;text-align:center}
+  .結論final strong{color:var(--gold)}
+  .底部{text-align:center;padding:18px;color:#aaa;font-size:12px;border-top:1px solid var(--bd);margin-top:16px}
+
+  @media(max-width:768px){
+    .数据grid,.结果矩阵,.約束grid,.結論grid,.计算步骤{grid-template-columns:1fr}
+    .hero{padding:32px 24px 26px}
+    .hero h1{font-size:20px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  ⚡ 企业储能配置分析报告
+  <span style="font-size:11px;font-weight:normal;opacity:0.4;margin-left:auto">国网 + 光伏 + 储能 联合优化分析 &nbsp;·&nbsp; 2026年4月</span>
+</div>
+
+<div class="hero">
+  <div class="hero-eyebrow">INDUSTRIAL ENERGY STORAGE SIZING ANALYSIS</div>
+  <h1>企业储能配置选型分析</h1>
+  <div class="lead">基于企业年用电量<strong>1920万kWh</strong>、光伏装机<strong>2.4MW</strong>、光伏年发电<strong>288万kWh</strong>的实际数据，系统计算储能最优配置容量、经济性及约束边界。</div>
+  <div class="hero-meta">2026年4月22日 &nbsp;·&nbsp; 数据来源：企业用电数据、2026年分时电价政策、储能行业报价</div>
+</div>
+
+<div class="wrap">
+  <div class="摘要">
+    <div class="摘要-label">核心结论</div>
+    <p>推荐配置 <strong>1MW / 2MWh 储能系统</strong>（磷酸铁锂，2C倍率），年收益约 <strong>75~85万元</strong>，投资回收期 <strong>3~4年</strong>（不计融资成本）。上限受光伏充电能力约束约 <strong>2MWh</strong>，超过2MWh后需全部依赖谷电充电，峰谷套利空间收窄，经济性下降。</p>
+  </div>
+</div>
+
+<!-- 基础数据 -->
+<div class="wrap">
+  <h2 style="font-size:13px;font-weight:bold;color:var(--p);margin:20px 0 12px;border-bottom:2px solid var(--p);padding-bottom:6px">📊 企业基础数据</h2>
+  <div class="数据grid">
+    <div class="数据card 数据card-blue">
+      <div class="数值">120万</div>
+      <div class="标签">元/月</div>
+      <div class="说明">国网月电费支出</div>
+    </div>
+    <div class="数据card 数据card-gold">
+      <div class="数值">0.75</div>
+      <div class="标签">元/kWh</div>
+      <div class="说明">综合电价（含容量费）</div>
+    </div>
+    <div class="数据card 数据card-green">
+      <div class="数值">1920万</div>
+      <div class="标签">kWh/年</div>
+      <div class="说明">年用电总量</div>
+    </div>
+    <div class="数据card 数据card-red">
+      <div class="数值">2.4MW</div>
+      <div class="标签">288万kWh/年</div>
+      <div class="说明">光伏装机（1200h发电）</div>
+    </div>
+  </div>
+</div>
+
+<!-- 关键计算 -->
+<div class="wrap">
+  <div class="计算">
+    <h2>🧮 核心约束计算过程</h2>
+    <div class="公式框">
+月用电量 = 120万 ÷ 0.75 = <strong>160万kWh/月</strong><br>
+年用电量 = 160万 × 12 = <strong>1920万kWh/年</strong><br>
+年均负荷 = 1920万kWh ÷ 8760h = <strong>2.19MW</strong><br>
+日均用电 = 1920万 ÷ 365 = <strong>5.26万kWh/天</strong><br>
+光伏年发电 = 2.4MW × 1200h = <strong>288万kWh/年</strong><br>
+光伏发电占比 = 288万 ÷ 1920万 = <strong>15%</strong>
+    </div>
+    <div class="计算步骤">
+      <div class="步骤">
+        <h4>约束①：光伏可充电量上限</h4>
+        <p>白天企业自用约1.7MW，剩余光伏0.7MW可用于储能充电<br>→ 4h充满：0.7MW × 4h = <strong>2.8MWh上限</strong><br>实际可用约 <strong>2MWh</strong></p>
+      </div>
+      <div class="步骤">
+        <h4>约束②：变压器反向送电限制</h4>
+        <p>分布式电源≤变压器容量25~30%<br>变压器约3150kVA（对应2.5MW负荷）<br>→ 允许反向送电上限 ≈ <strong>630kW</strong><br>光伏2.4MW远超此限，超发须储能消纳</p>
+      </div>
+      <div class="步骤">
+        <h4>约束③：晚高峰放电需求</h4>
+        <p>晚18-22时高峰约4小时，平均负荷约2.5MW<br>储能4h最大可放功率<br>→ 经济最优放电量约 <strong>1~2MWh</strong><br>超过2MWh则放不满，利用率下降</p>
+      </div>
+      <div class="步骤">
+        <h4>约束④：谷电充满上限</h4>
+        <p>若光伏不够时用谷电充满（0.3元/kWh）<br>每天充电最多2MWh，充电成本约600元<br>对应放电收益：2MWh × 0.9元 = 1800元<br>日净收益：1800-600 = <strong>1200元（谷电兜底）</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 配置方案 -->
+<div class="wrap">
+  <div class="结果">
+    <h2>🎯 推荐配置方案：1MW / 2MWh</h2>
+    <div class="结果矩阵">
+      <div class="结果item highlight">
+        <h4>储能功率</h4>
+        <div class="数值">1</div>
+        <div class="单位">MW（兆瓦）</div>
+      </div>
+      <div class="结果item blue">
+        <h4>储能容量</h4>
+        <div class="数值">2</div>
+        <div class="单位">MWh（兆瓦时）</div>
+      </div>
+      <div class="结果item green">
+        <h4>每日循环</h4>
+        <div class="数值">1</div>
+        <div class="单位">次/天（经济最优）</div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr><th>参数</th><th>推荐值</th><th>说明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>电芯类型</strong></td><td>磷酸铁锂（LFP）</td><td>循环寿命长（≥6000次），安全性高，适合工商业</td></tr>
+        <tr><td><strong>系统倍率</strong></td><td>0.5C（2小时系统）</td><td>充电4h+放电4h，最匹配分时电价结构</td></tr>
+        <tr><td><strong>日充电来源</strong></td><td>70%光伏 + 30%谷电</td><td>优先消纳光伏超发，谷电补充充满</td></tr>
+        <tr><td><strong>日放电策略</strong></td><td>尖峰+高峰4h + 平段2h</td><td>每天6小时放电，最大化峰谷价差收益</td></tr>
+        <tr><td><strong>年运行天数</strong></td><td>330天</td><td>扣除检修、停机、电网检修日</td></tr>
+        <tr><td><strong>接入电压</strong></td><td>10kV配电侧</td><td>接入用户配电室，市调/县调管辖</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 经济性测算 -->
+<div class="wrap">
+  <div class="经济框">
+    <h2>💰 经济性测算（基于1MW/2MWh方案）</h2>
+    <table>
+      <thead>
+        <tr><th>收益/成本项</th><th>数值</th><th>依据</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>峰谷套利收益（光伏充电）</strong></td><td>约55万元/年</td><td>光伏充电2.0MWh/d × 330d × 价差0.83元/kWh</td></tr>
+        <tr><td><strong>峰谷套利收益（谷电充电）</strong></td><td>约30万元/年</td><td>谷电充电0.8MWh/d × 330d × 价差1.15元/kWh</td></tr>
+        <tr><td><strong>年总收益合计</strong></td><td style="color:#16a34a;font-weight:bold">约85万元/年</td><td>日均净收益约2570元（取0.8元/kWh加权价差）</td></tr>
+        <tr><td><strong>年运维成本（OPEX）</strong></td><td>约8万元/年</td><td>按初始投资的0.8%计（约4人/天巡检）</td></tr>
+        <tr><td><strong>年净收益（扣除运维）</strong></td><td style="color:#16a34a;font-weight:bold">约77万元/年</td><td>85 - 8 = 77万元</td></tr>
+        <tr><td><strong>系统衰减（10年）</strong></td><td>容量减少约15%</td><td>LFP 10年残值约70%（第10年收益约65万元）</td></tr>
+        <tr><td><strong>10年累计净收益</strong></td><td style="color:#16a34a;font-weight:bold">约720万元</td><td>前5年高收益+后5年稳态收益，折现后（5%贴现）约650万</td></tr>
+        <tr><td><strong>总投资（初装）</strong></td><td>约120~140万元</td><td>0.6~0.7元/Wh（含升压、EMS、并网设备）</td></tr>
+        <tr><td><strong>回收期（不计融资）</strong></td><td style="color:#dc2626;font-weight:bold"><strong>约1.7年</strong></td><td>130万 ÷ 77万 = 1.69年（含首年收益）</td></tr>
+        <tr><td><strong>回收期（贷款70%，5%利率）</strong></td><td style="color:#dc2626;font-weight:bold"><strong>约3.2年</strong></td><td>年还本付息约25万，净收益77-25=52万，130/52=2.5年</td></tr>
+        <tr><td><strong>10年IRR（贷款70%）</strong></td><td style="color:#16a34a;font-weight:bold">约28%</td><td>显著高于一般工业投资回报率（8-12%）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 约束边界分析 -->
+<div class="wrap">
+  <h2 style="font-size:13px;font-weight:bold;color:var(--p);margin:20px 0 12px;border-bottom:2px solid var(--p);padding-bottom:6px">⚠️ 配置上限约束分析</h2>
+  <div class="约束grid">
+    <div class="约束card 约束card-green">
+      <h4>✅ 可行区域</h4>
+      <p>0.5~2MWh：光伏可消纳充电，峰谷套利空间充足，经济性优</p>
+      <div class="上限">推荐区间：0.5~2MWh</div>
+    </div>
+    <div class="约束card 约束card-gold">
+      <h4>⚠️ 边界区域</h4>
+      <p>2~2.5MWh：光伏仅能充约70%，需谷电补充，套利空间收窄</p>
+      <div class="上限">上限：约2.5MWh</div>
+    </div>
+    <div class="约束card 约束card-blue">
+      <h4>📊 容量上限（理论）</h4>
+      <p>2.4MWh：光伏最大充电能力（100%消纳）</p>
+      <div class="上限">理论上限：2.4MWh</div>
+    </div>
+    <div class="约束card 约束card-red">
+      <h4>❌ 不建议区域</h4>
+      <p>&gt;2.5MWh：谷电充电成本上升，光伏不够用，回收期超过6年</p>
+      <div class="上限">不建议：超过2.5MWh</div>
+    </div>
+  </div>
+</div>
+
+<!-- 风险提示 -->
+<div class="wrap">
+  <div class="计算">
+    <h2>⚡ 2026年政策风险提示</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:#fff5f5;border-radius:8px;padding:12px 14px;border-left:3px solid #dc2626">
+        <h4 style="font-size:12px;font-weight:bold;color:#dc2626;margin-bottom:5px">⚠️ 分时电价改革风险</h4>
+        <p style="font-size:12px;color:var(--b);line-height:1.75">2026年起多省取消固定行政分时电价（如山东、浙江等），改为市场化分时电价，峰谷价差可能收窄。建议签约时明确"价差兜底"条款或约定储能参与需求响应获取额外补贴。</p>
+      </div>
+      <div style="background:#f0faf4;border-radius:8px;padding:12px 14px;border-left:3px solid #16a34a">
+        <h4 style="font-size:12px;font-weight:bold;color:#16a34a;margin-bottom:5px">✅ 有利因素</h4>
+        <p style="font-size:12px;color:var(--b);line-height:1.75">储能成本已降至0.6~0.7元/Wh（2023年约1.2元/Wh），投资门槛大幅降低；且光伏超发强制配储取消后，光伏投资方有更大动力配置储能消纳。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 最终结论 -->
+<div class="wrap">
+  <div class="洞察">
+    <h2>FINAL CONCLUSION · 最终结论</h2>
+    <div class="洞察结论">
+      <strong>推荐配置：1MW / 2MWh磷酸铁锂储能系统</strong><br><br>
+      投资约 <strong>130万元</strong>，年净收益约 <strong>77万元</strong>，无融资回收期约 <strong>1.7年</strong>，有融资（70%贷款）回收期约 <strong>3.2年</strong>，10年累计净收益约 <strong>720万元</strong>。<br><br>
+      配置上限受光伏充电能力约束，约 <strong>2~2.5MWh</strong>。超过此上限则需谷电充电，套利空间收窄，经济性下降。<br><br>
+      <strong>建议下一步：</strong>联系电网公司确认10kV接入可行性及变压器容量，委托编制接入系统方案，同时锁定储能设备供应商报价（主流品牌：宁德时代、比亚迪、海辰、亿纬）。
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="结论">
+    <h2 style="font-size:12px;font-weight:bold;letter-spacing:1px;margin-bottom:12px;opacity:0.5">ACTION RECOMMENDATIONS · 行动建议</h2>
+    <div class="結論grid">
+      <div class="結論item">
+        <h4>🔴 立即行动</h4>
+        <p>委托电网公司出具10kV接入意向函，确认变压器容量和允许反向送电上限</p>
+      </div>
+      <div class="結論item">
+        <h4>🟡 短期（1个月）</h4>
+        <p>获取3家以上储能集成商报价，设备选型建议LFP 0.5C系统，优先考虑本地化服务能力</p>
+      </div>
+      <div class="結論item">
+        <h4>🟢 中期（3个月）</h4>
+        <p>完成项目备案+并网手续，签约EMC（合同能源管理）或业主自投模式</p>
+      </div>
+    </div>
+    <div class="結論final">
+      <strong>一句话结论：</strong>该企业适合上 <strong>1MW / 2MWh</strong> 储能，回收期极短（1.7~3.2年），经济性优秀，上限不超过 <strong>2.5MWh</strong>。
+    </div>
+  </div>
+
+  <div class="底部">
+    企业储能配置选型分析报告<br>
+    <span style="font-size:11px;color:#ccc;margin-top:4px">基础数据：月电费120万·电价0.75元/kWh·光伏2.4MW(1200h) &nbsp;·&nbsp; 2026年4月22日</span>
+  </div>
+</div>
+
+</body>
+</html>

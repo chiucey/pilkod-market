@@ -1,0 +1,28 @@
+#!/bin/bash
+# Post-installation script
+# Executed after files are extracted
+
+set -e
+
+case "$1" in
+    configure)
+        # Final configuration steps
+        # Example: Set permissions, start services, etc.
+
+        # Set executable permissions
+        if [ -d "/usr/bin/{{PACKAGE_NAME}}" ]; then
+            chmod 755 /usr/bin/{{PACKAGE_NAME}} 2>/dev/null || true
+        fi
+
+        # Reload systemd if needed
+        if command -v systemctl &> /dev/null; then
+            systemctl daemon-reload 2>/dev/null || true
+        fi
+        ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+        # Rollback actions on failure
+        exit 0
+        ;;
+esac
+
+exit 0

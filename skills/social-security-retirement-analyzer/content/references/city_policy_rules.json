@@ -1,0 +1,213 @@
+{
+  "description": "各省市社保政策规则配置 - 通过参保地+性别自动锁定政策参数",
+  "last_updated": "2025-01-01",
+  "version": "1.0.0",
+  "data_source": "基于2024年9月全国人大常委会决定及各地政策汇总",
+
+  "cities": {
+    "杭州": {
+      "province": "浙江",
+      "social_avg_wage_monthly": 8400,
+      "medical_years_male": 20,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": "special",
+      "special_rules": {
+        "female_retirement": {
+          "2025_before_zhejiang_record": {
+            "description": "2025年1月1日前有浙江参保记录",
+            "retirement_age": "50岁（按延迟后年龄执行）",
+            "example": "1980年出生女性，原50岁退休，延迟后为54岁9个月"
+          },
+          "2025_after_first_insurance": {
+            "description": "2025年1月1日后首次参保",
+            "retirement_age": "55岁"
+          },
+          "laid_off_worker": {
+            "description": "企业下岗职工",
+            "retirement_age": "按原企业职工身份认定"
+          }
+        },
+        "early_retirement_conditions": [
+          "50岁前落户杭州",
+          "有企业参保记录",
+          "养老保险累计缴费满15年"
+        ]
+      },
+      "medical_years_detail": "杭州医保需连续或累计缴纳20年，退休后可享医保待遇"
+    },
+
+    "宁波": {
+      "province": "浙江",
+      "social_avg_wage_monthly": 7800,
+      "medical_years_male": 20,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": "special",
+      "special_rules": {
+        "note": "与杭州类似，2025年前有浙江参保记录可50岁退休"
+      }
+    },
+
+    "上海": {
+      "province": "上海",
+      "social_avg_wage_monthly": 12000,
+      "medical_years_male": 15,
+      "medical_years_female": 15,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "上海医保缴费年限较短，统一15年"
+      }
+    },
+
+    "北京": {
+      "province": "北京",
+      "social_avg_wage_monthly": 12000,
+      "medical_years_male": 25,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "北京男性医保需25年，女性20年"
+      }
+    },
+
+    "深圳": {
+      "province": "广东",
+      "social_avg_wage_monthly": 11000,
+      "medical_years_male": 25,
+      "medical_years_female": 25,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "深圳医保缴费年限较长，男女均需25年"
+      }
+    },
+
+    "广州": {
+      "province": "广东",
+      "social_avg_wage_monthly": 8000,
+      "medical_years_male": 15,
+      "medical_years_female": 15,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "广州医保缴费年限较短，统一15年"
+      }
+    },
+
+    "武汉": {
+      "province": "湖北",
+      "social_avg_wage_monthly": 7500,
+      "medical_years_male": 30,
+      "medical_years_female": 25,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "武汉医保缴费年限较长，男性30年，女性25年"
+      }
+    },
+
+    "成都": {
+      "province": "四川",
+      "social_avg_wage_monthly": 7200,
+      "medical_years_male": 25,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "成都男性医保需25年，女性20年"
+      }
+    },
+
+    "南京": {
+      "province": "江苏",
+      "social_avg_wage_monthly": 7800,
+      "medical_years_male": 25,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "南京男性医保需25年，女性20年"
+      }
+    },
+
+    "苏州": {
+      "province": "江苏",
+      "social_avg_wage_monthly": 7600,
+      "medical_years_male": 25,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "苏州男性医保需25年，女性20年"
+      }
+    },
+
+    "西安": {
+      "province": "陕西",
+      "social_avg_wage_monthly": 7000,
+      "medical_years_male": 30,
+      "medical_years_female": 25,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "西安男性医保需30年，女性25年"
+      }
+    },
+
+    "重庆": {
+      "province": "重庆",
+      "social_avg_wage_monthly": 6800,
+      "medical_years_male": 25,
+      "medical_years_female": 25,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "重庆医保缴费年限，男女均需25年"
+      }
+    },
+
+    "天津": {
+      "province": "天津",
+      "social_avg_wage_monthly": 8500,
+      "medical_years_male": 25,
+      "medical_years_female": 20,
+      "flexible_female_retirement_age": 55,
+      "special_rules": {
+        "note": "天津男性医保需25年，女性20年"
+      }
+    }
+  },
+
+  "default_values": {
+    "flexible_female_retirement_age": 55,
+    "medical_years_male": 25,
+    "medical_years_female": 20
+  },
+
+  "national_rules": {
+    "male_retirement_age": {
+      "original": 60,
+      "final": 63,
+      "delay_rule": "每4个月延迟1个月"
+    },
+    "female_worker_retirement_age": {
+      "original": 50,
+      "final": 55,
+      "delay_rule": "每2个月延迟1个月"
+    },
+    "female_cadre_retirement_age": {
+      "original": 55,
+      "final": 58,
+      "delay_rule": "每4个月延迟1个月"
+    },
+    "min_contribution_years": {
+      "2025_2029": 15,
+      "2030": "15年6个月",
+      "2039_and_after": 20
+    }
+  },
+
+  "account_type_rules": {
+    "general_account": {
+      "male_age": "50岁前参保",
+      "female_age": "40岁前参保",
+      "description": "可作为退休地"
+    },
+    "temporary_account": {
+      "male_age": "50岁后参保",
+      "female_age": "40岁后参保",
+      "description": "需转回原参保地退休"
+    }
+  }
+}

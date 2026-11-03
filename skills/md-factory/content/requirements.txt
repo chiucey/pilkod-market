@@ -1,0 +1,8 @@
+# MarkITdown Converter - 依赖列表
+# 安装命令: pip install -r requirements.txt
+
+# 核心库 - 微软开源MarkITdown
+markitdown>=0.1.0
+
+# 可选依赖（完整安装）
+# pip install 'markitdown[all]'

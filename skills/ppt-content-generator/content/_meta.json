@@ -1,0 +1,117 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "根据主题生成完整PPT大纲",
+    "为每个页面生成专业文案内容",
+    "创建封面页、目录页、内容页、结尾页",
+    "支持中英文双语内容",
+    "根据受众调整语气和风格",
+    "生成演讲逐字稿",
+    "提炼关键词和要点",
+    "提供视觉设计建议"
+  ],
+  "category": "office",
+  "color": "#FF6B35",
+  "created_at": "2026-04-06T23:54:57Z",
+  "description": "专业的PPT内容生成专家，能够根据主题自动生成结构化的大纲和详细内容填充，涵盖封面、目录、内容页、结尾页等完整PPT结构。支持中英文双语内容创作。",
+  "icon": "presentation",
+  "id": 384767736074962,
+  "input_schema": {
+    "properties": {
+      "audience": {
+        "default": "商务人士",
+        "description": "目标受众",
+        "type": "string"
+      },
+      "language": {
+        "default": "zh",
+        "description": "内容语言",
+        "enum": [
+          "zh",
+          "en",
+          "bilingual"
+        ],
+        "type": "string"
+      },
+      "page_count": {
+        "default": 10,
+        "description": "页数要求",
+        "maximum": 50,
+        "minimum": 5,
+        "type": "number"
+      },
+      "style": {
+        "default": "商务",
+        "description": "PPT风格",
+        "enum": [
+          "商务",
+          "教育",
+          "科技",
+          "简约",
+          "创意"
+        ],
+        "type": "string"
+      },
+      "subtopic": {
+        "description": "PPT副标题/关键词",
+        "type": "string"
+      },
+      "tone": {
+        "default": "professional",
+        "description": "语气风格",
+        "enum": [
+          "formal",
+          "casual",
+          "friendly",
+          "professional"
+        ],
+        "type": "string"
+      },
+      "topic": {
+        "description": "PPT主题",
+        "required": true,
+        "type": "string"
+      }
+    },
+    "required": [
+      "topic"
+    ],
+    "type": "object"
+  },
+  "name": "ppt-content-generator",
+  "name_zh": "PPT内容生成器",
+  "platform": "minimax",
+  "subcategory": "presentation",
+  "tags": [
+    "PPT",
+    "演示文稿",
+    "幻灯片",
+    "PowerPoint",
+    "WPS",
+    "内容生成",
+    "文案撰写"
+  ],
+  "trigger_phrases": [
+    "生成PPT",
+    "制作PPT",
+    "创建PPT",
+    "写PPT内容",
+    "PPT内容",
+    "PPT文案",
+    "演示文稿",
+    "幻灯片内容",
+    "PPT大纲",
+    "PPT文字"
+  ],
+  "trigger_phrases_en": [
+    "generate PPT",
+    "create PPT",
+    "make PPT",
+    "write PPT content",
+    "PPT outline",
+    "presentation content",
+    "slide content"
+  ],
+  "updated_at": 1775491121667,
+  "version": "1.0.0"
+}

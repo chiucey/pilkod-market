@@ -1,0 +1,13 @@
+interface:
+  display_name: Multi-Stock Investment Analysis Assistant
+  short_description: 用技术图、盘口与五维共振分析美港股单股、多股及组合
+  default_prompt: 使用 $multi-stock-investment-analysis-assistant 完整分析【AAPL】；周期【中短期】；持仓【空仓】；风险【单笔占账户1%，最大仓位15%】；其余按默认完整输出。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

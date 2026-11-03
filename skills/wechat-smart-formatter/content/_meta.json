@@ -1,0 +1,71 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-02",
+  "dependencies": {
+    "packages": [
+      "requests",
+      "opencv-python",
+      "Pillow"
+    ],
+    "python": "\u003e=3.8"
+  },
+  "description": "微信公众号智能排版配图工具。当用户需要将文章进行公众号排版、智能配图、去除水印、布局优化时使用。",
+  "features": {
+    "ai_generation": {
+      "local_sd": {
+        "configurable": true,
+        "enabled": true
+      },
+      "minimax": true
+    },
+    "color_schemes": [
+      "business",
+      "warm",
+      "nature",
+      "minimal",
+      "energetic",
+      "vintage"
+    ],
+    "image_search": {
+      "auto_detect_watermark": true,
+      "providers": [
+        "unsplash",
+        "pexels"
+      ]
+    },
+    "logo_support": true,
+    "watermark_removal": {
+      "auto_detect": true,
+      "methods": [
+        "inpaint",
+        "blur",
+        "gradient"
+      ]
+    }
+  },
+  "files": [
+    "SKILL.md",
+    "scripts/__init__.py",
+    "scripts/ai_image_generator.py",
+    "scripts/article_generator.py",
+    "scripts/image_search.py",
+    "scripts/layout_optimizer.py",
+    "scripts/watermark_removal.py",
+    "scripts/config.example.json",
+    "styles/article-templates.css"
+  ],
+  "id": 383249898484308,
+  "name": "wechat-smart-formatter",
+  "platform": "minimax",
+  "skill_id": 123456,
+  "tags": [
+    "wechat",
+    "public-account",
+    "formatting",
+    "image",
+    "ai-generation",
+    "watermark-removal"
+  ],
+  "updated_at": 1775120081780,
+  "version": "1.0.0"
+}

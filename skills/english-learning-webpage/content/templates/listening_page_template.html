@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{TITLE}}</title>
+<style>
+:root{--bg-top:#748ca0;--bg-mid:#5f788d;--bg-bottom:#b7c1c8;--fg:#1f2937;--muted:#6b7280;--line:#d7e0e7;--soft:#f3f7fa;--done:#22c55e;--hl:#ffe066;--selected:#bbf7d0;--anchor:#16a34a;--btn:#fff;--btnfg:#111827;--primary:#2563eb}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-mid) 55%,var(--bg-bottom) 100%) fixed;color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55}
+.sticky{position:sticky;top:0;z-index:20;background:rgba(242,247,250,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header{padding:12px 14px}
+.toprow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;position:relative}
+h1{font-size:18px;margin:0 10px 0 0}
+.controls{padding:0 14px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.progressbar{height:5px;background:rgba(34,197,94,.16);overflow:hidden}
+.progressfill{height:100%;width:0;background:linear-gradient(90deg,#22c55e,#16a34a);transition:width .25s ease}
+.wrap{max-width:900px;margin:0 auto;padding:14px 14px 92px}
+.card{border:1px solid var(--line);border-radius:12px;background:#fff;margin:12px 0;padding:12px}
+.card.done{border-color:var(--done);background:#dcfce7}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.idx{font-weight:700;color:var(--muted);min-width:38px}
+.time{color:var(--muted);font-size:13px}
+#progress{white-space:nowrap;font-size:14px;font-weight:700;text-align:left}
+.btn{border:1px solid var(--line);background:var(--btn);color:var(--btnfg);border-radius:8px;padding:6px 10px;font-size:14px;cursor:pointer;min-height:34px}
+.btn.primary{border-color:var(--primary);color:var(--primary)}
+.btn.donebtn{border-color:var(--done);color:#15803d}
+.btn:disabled{opacity:.48;cursor:not-allowed}
+.pronline,.wordline,.translation,.chunks{display:none;margin-top:10px}
+.pronline{color:#166534;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:8px 10px;font-size:16px;line-height:1.8}
+.wordline{font-size:18px;line-height:1.45;user-select:none}
+.wordunit{display:inline-flex;flex-direction:column;align-items:flex-start;vertical-align:bottom;margin:0 5px 6px 0;min-height:2.9em}
+.wordgroup{display:inline-flex;flex-direction:column;align-items:center;vertical-align:bottom;margin:0 8px 6px 0;min-height:2.9em}
+.wordrow{display:inline-flex;gap:5px}
+.pronmark{height:1.35em;color:#166534;font-size:12px;line-height:1.2;white-space:nowrap}
+.pronmark:empty{visibility:hidden}
+.translation,.chunks{color:#374151;background:var(--soft);border-radius:8px;padding:8px 10px}
+.chunk-title{font-weight:700;color:#475569;margin-bottom:6px}
+.chunk{padding:6px 0;border-top:1px dashed var(--line)}
+.chunk:first-of-type{border-top:0}
+.chunk .phrase{font-weight:700;color:#1e3a8a}
+.chunk .meaning{color:#475569;margin-left:6px}
+.word{display:inline-block;padding:0 4px;border-radius:5px;cursor:pointer;touch-action:manipulation}
+.word.selected{background:var(--selected);box-shadow:0 0 0 1px rgba(22,163,74,.16) inset}
+.word.anchor{background:var(--anchor);color:#fff}
+.word.active{background:var(--hl);color:var(--fg);box-shadow:none}
+.word.bg-blue{background:#93c5fd}
+.word.bg-orange{background:#fdba74}
+.word.bg-green{background:#86efac}
+.word.bg-red{background:#fca5a5}
+.word.bg-purple{background:#d8b4fe}
+.word.bg-blue.selected,.word.bg-orange.selected,.word.bg-green.selected,.word.bg-red.selected,.word.bg-purple.selected{background:var(--selected);box-shadow:0 0 0 1px rgba(22,163,74,.16) inset}
+.word.bg-blue.active,.word.bg-orange.active,.word.bg-green.active,.word.bg-red.active,.word.bg-purple.active{background:var(--hl);color:var(--fg);box-shadow:none}
+.targetbar{display:none;margin-top:10px;padding:9px 10px;border:1px solid #bfdbfe;border-radius:8px;background:#eff6ff;color:#1e3a8a}
+.color-dropdown-wrap{position:relative;margin-left:auto}
+.color-menu{position:absolute;top:100%;right:0;margin-top:6px;background:#fff;border:1px solid #bfdbfe;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);padding:4px;z-index:50;width:110px}
+.citem{display:flex;align-items:center;gap:8px;padding:6px 8px;cursor:pointer;border-radius:6px;font-size:14px;color:#1e3a8a;transition:background 0.15s;user-select:none}
+.citem:hover{background:#f1f5f9}
+.cdot{width:14px;height:14px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,0.1)}
+.cdot.c-clear{background:#fff;position:relative}
+.cdot.c-clear::after{content:'';position:absolute;top:5px;left:1px;right:1px;height:1px;background:#ef4444;transform:rotate(-45deg)}
+.cdot.c-blue{background:#93c5fd}
+.cdot.c-orange{background:#fdba74}
+.cdot.c-green{background:#86efac}
+.cdot.c-red{background:#fca5a5}
+.cdot.c-purple{background:#d8b4fe}
+.targetbar.on{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.selectedText,.mobile-target-text{font-weight:700}
+input{border:1px solid var(--line);border-radius:8px;padding:6px 8px;width:72px;min-height:34px}
+.mobile-target-bar{display:none}
+.copy-panel{position:fixed;left:12px;right:12px;bottom:calc(72px + env(safe-area-inset-bottom));z-index:42}
+.copy-box{max-width:560px;margin:0 auto;padding:12px;border:1px solid #bfdbfe;border-radius:10px;background:#fff;box-shadow:0 16px 40px rgba(15,23,42,.22)}
+.copy-title{font-weight:700;color:#1e3a8a;margin-bottom:8px}
+.copy-text{width:100%;min-height:74px;border:1px solid var(--line);border-radius:8px;padding:9px 10px;font:16px/1.5 inherit;color:var(--fg);resize:none;user-select:text;-webkit-user-select:text}
+.copy-tip{margin:8px 0;color:var(--muted);font-size:13px}
+@media(max-width:640px){
+  body{font-size:15px}
+  #progress{width:auto;text-align:left}
+  .wrap{padding:10px 10px 104px}
+  .card{border-radius:8px;margin:10px 0;padding:10px}
+  .time{width:100%;margin-left:46px}
+  .btn{padding:7px 9px}
+  .wordline{font-size:17px}
+  .word{padding:2px 7px;margin:1px 0}
+  .targetbar{display:none!important}
+  .mobile-target-bar{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:30;display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:12px;border:1px solid #bfdbfe;border-radius:12px;background:rgba(239,246,255,.96);box-shadow:0 10px 30px rgba(15,23,42,.18);backdrop-filter:blur(8px)}
+  .mt-row1{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .mt-row2{display:flex;gap:8px}
+  .mt-row2 .btn{flex:1;white-space:nowrap;padding:9px}
+  .mobile-target-text{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#1e3a8a;font-size:16px}
+  .color-dropdown-wrap{margin-left:0}
+  .mobile-target-bar .color-menu{top:auto;bottom:100%;margin-bottom:6px;margin-top:0;right:0}
+}
+</style>
+</head>
+<body>
+<div class="sticky">
+<header><div class="toprow"><h1>{{TITLE}}</h1><button class="btn" id="toggleHeader">收起/展开</button><span id="progress" class="time"></span></div></header>
+<div class="controls" id="headerControls"><span>从 #</span><input id="fromNo" inputmode="numeric"><span>到 #</span><input id="toNo" inputmode="numeric"><button class="btn donebtn" id="batchDone">批量完成</button><button class="btn" id="batchReset">批量重置</button><span>高亮延迟</span><input id="hlDelay" inputmode="decimal" value="0.12" style="width:56px"><span>秒</span></div>
+<div class="progressbar"><div class="progressfill" id="progressFill"></div></div>
+</div>
+<main class="wrap" id="app"></main>
+<div class="mobile-target-bar" id="mobileTargetBar" hidden><div class="mt-row1"><span class="mobile-target-text" id="mobileTargetText"></span><div class="color-dropdown-wrap"><button class="btn color-trigger" id="mobileColorTrigger">底色 ▴</button><div class="color-menu" hidden><div class="citem" data-c="clear"><span class="cdot c-clear"></span>无底色</div><div class="citem" data-c="blue"><span class="cdot c-blue"></span>蓝色</div><div class="citem" data-c="orange"><span class="cdot c-orange"></span>橘黄</div><div class="citem" data-c="green"><span class="cdot c-green"></span>绿色</div><div class="citem" data-c="red"><span class="cdot c-red"></span>红色</div><div class="citem" data-c="purple"><span class="cdot c-purple"></span>紫色</div></div></div></div><div class="mt-row2"><button class="btn primary" id="mobilePlayTarget">▶ 播放</button><button class="btn smartColor" id="mobileSmartColor">智能底色</button><button class="btn" id="mobileCopyTarget">复制</button><button class="btn" id="mobileClearTarget">取消</button></div></div>
+<div class="copy-panel" id="copyPanel" hidden><div class="copy-box"><div class="copy-title">手动复制</div><textarea class="copy-text" id="copyText" readonly></textarea><div class="copy-tip">如果手机浏览器没有自动复制，请长按上方文字并选择复制。</div><button class="btn" id="closeCopyPanel">关闭</button></div></div>
+<script id="DATA" type="application/json">{{DATA_JSON}}</script>
+<script>
+const DATA=JSON.parse(document.getElementById('DATA').textContent);
+const STORE='listening:'+('{{ID}}'||location.pathname);
+const STORE_HL=STORE+':hlDelay';
+const STORE_SCROLL=STORE+':scrollY';
+const STORE_COLORS=STORE+':colors';
+const STORE_COLORS_VERSION=STORE_COLORS+':v2';
+let wordColors=JSON.parse(localStorage.getItem(STORE_COLORS)||'{}');
+const COLOR_OPTIONS=['blue','orange','green','red','purple'];
+let audio=new Audio();
+let raf=null;
+let playToken=0;
+let currentWords=[];
+let currentLine=null;
+let selected={no:null,start:null,end:null,open:false};
+let pointerSelecting=false;
+let dragMoved=false;
+let done=new Set(JSON.parse(localStorage.getItem(STORE)||'[]'));
+const $=s=>document.querySelector(s),app=$('#app');
+$('#hlDelay').value=localStorage.getItem(STORE_HL)||'0.12';
+$('#hlDelay').addEventListener('change',()=>localStorage.setItem(STORE_HL,$('#hlDelay').value));
+window.addEventListener('scroll',()=>localStorage.setItem(STORE_SCROLL,window.scrollY));
+function save(){localStorage.setItem(STORE,JSON.stringify([...done]));progress()}
+function fmt(t){t=Math.max(0,Math.round(t));return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+function stamp(a,b){return fmt(a)+'–'+fmt(b)}
+function toggle(el){el.style.display=(el.style.display==='block')?'none':'block'}
+function toggleCaption(card){let line=card.querySelector('.wordline'),pron=card.querySelector('.pronline');let show=line.style.display!=='block';line.style.display=show?'block':'none';if(pron&&pron.textContent.trim())pron.style.display=show?'block':'none'}
+function progress(){let n=done.size,total=DATA.length;let pct=total?((n/total)*100).toFixed(1):0;$('#progress').textContent=`完成 ${n}/${total} (${pct}%)`;$('#progressFill').style.width=pct+'%'}
+function displayNo(i){let no=DATA[i]&&DATA[i].no;return no??i+1}
+function colorNoFromIndex(i){let card=document.querySelector(`.card[data-i="${i}"]`);return card?card.dataset.no:String(displayNo(i))}
+function migrateWordColors(){if(localStorage.getItem(STORE_COLORS_VERSION)==='2')return;if(!wordColors||typeof wordColors!=='object'){localStorage.setItem(STORE_COLORS_VERSION,'2');return}let migrated={};Object.entries(wordColors).forEach(([key,value])=>{let n=Number(key);let newKey=Number.isInteger(n)&&DATA[n]?String(displayNo(n)):key;migrated[newKey]=value});wordColors=migrated;localStorage.setItem(STORE_COLORS,JSON.stringify(wordColors));localStorage.setItem(STORE_COLORS_VERSION,'2')}
+migrateWordColors();
+function wordText(w){return w.t||w.word||w[0]||''}
+function wordStart(w){return Number(w.s??w[1]??0)}
+function wordEnd(w){return Number(w.e??w[2]??(wordStart(w)+.2))}
+function normHints(seg){return (seg.rh||seg.hints||[]).map(h=>{let from=Number(h.i??h.k??h.word??h.from),to=Number(h.to??h.end??from);return {from,to,t:h.t||h.text||''}}).filter(h=>Number.isFinite(h.from)&&Number.isFinite(h.to)&&h.t).sort((a,b)=>a.from-b.from)}
+function wordHtml(w,j,no){
+  let c = (wordColors[no] && wordColors[no][j]) ? ` bg-${wordColors[no][j]}` : '';
+  return `<span class="word${c}" data-k="${j}" title="点第一个词，再点最后一个词">${escapeHtml(wordText(w))}</span>`;
+}
+function hintHtml(t){return escapeHtml(t).replace(/_([^_]+)_/g,'<em>$1</em>')}
+function wordSpans(seg,no){
+  let words=seg.w||[],hints=normHints(seg),out=[],i=0;
+  while(i<words.length){
+    let h=hints.find(x=>x.from===i);
+    if(h){
+      let to=Math.min(words.length-1,h.to);
+      let row=[];
+      for(let j=i;j<=to;j++)row.push(wordHtml(words[j],j,no));
+      out.push(`<span class="wordgroup"><span class="pronmark">${hintHtml(h.t)}</span><span class="wordrow">${row.join('')}</span></span>`);
+      i=to+1;
+    }else{
+      out.push(`<span class="wordunit"><span class="pronmark"></span>${wordHtml(words[i],i,no)}</span>`);
+      i++;
+    }
+  }
+  return out.join(' ');
+}
+function render(){app.innerHTML='';DATA.forEach((seg,i)=>{let no=displayNo(i);let card=document.createElement('section');card.className='card'+(done.has(no)?' done':'');card.dataset.no=no;card.dataset.i=i;let words=wordSpans(seg,no);let hasLocalHints=(seg.rh||seg.hints||[]).length;card.innerHTML=`<div class="row"><span class="idx">#${no}</span><button class="btn primary play">▶ 全句播放</button><button class="btn cap">全句字幕</button><button class="btn cn">全句中文</button><button class="btn chunksBtn" ${seg.c&&seg.c.length?'':'style="display:none"'}>固定搭配</button><button class="btn donebtn mark">完成</button><span class="time">${stamp(seg.s,seg.e)}</span></div><div class="targetbar"><span>已选：</span><span class="selectedText"></span><div class="color-dropdown-wrap"><button class="btn color-trigger">底色 ▾</button><div class="color-menu" hidden><div class="citem" data-c="clear"><span class="cdot c-clear"></span>无底色</div><div class="citem" data-c="blue"><span class="cdot c-blue"></span>蓝色</div><div class="citem" data-c="orange"><span class="cdot c-orange"></span>橘黄</div><div class="citem" data-c="green"><span class="cdot c-green"></span>绿色</div><div class="citem" data-c="red"><span class="cdot c-red"></span>红色</div><div class="citem" data-c="purple"><span class="cdot c-purple"></span>紫色</div></div></div><button class="btn smartColor">智能底色</button><button class="btn primary targetplay">▶ 播放选中目标</button><button class="btn copyTarget">复制选中目标</button><button class="btn clearTarget">取消</button></div><div class="pronline">${hasLocalHints?'':escapeHtml(seg.r||seg.pron||'')}</div><div class="wordline">${words||escapeHtml(seg.t)}</div><div class="translation">${escapeHtml(seg.z||'')}</div><div class="chunks"><div class="chunk-title">固定搭配 / 常用表达</div>${(seg.c||[]).map(c=>`<div class="chunk"><span class="phrase">${escapeHtml(c.p||c.phrase||'')}</span><span class="meaning">${escapeHtml(c.z||c.meaning||'')}</span></div>`).join('')}</div>`;app.appendChild(card)});progress();paintSelection()}
+function clearActiveWords(){document.querySelectorAll('.word.active').forEach(x=>x.classList.remove('active'))}
+function cleanupPlayback(){cancelAnimationFrame(raf);raf=null;clearActiveWords();currentWords=[];currentLine=null}
+audio.addEventListener('pause',cleanupPlayback);
+audio.addEventListener('ended',cleanupPlayback);
+function audioSrc(seg){if(seg.src)return seg.src;if(seg.a){let a=String(seg.a);return a.startsWith('data:')?a:`data:${seg.m||'audio/mpeg'};base64,${a}`}return ''}
+function defaultStop(seg){let words=seg.w||[];let last=words.length?wordEnd(words[words.length-1]):0;let slice=(seg.slice_end!=null&&seg.slice_start!=null)?Number(seg.slice_end)-Number(seg.slice_start):0;return Math.max(slice,(seg.e-seg.s)||0,last)||999}
+function playSeg(seg,start=0,end=null,line=null){cancelAnimationFrame(raf);playToken++;let token=playToken;audio.pause();audio.oncanplay=null;clearActiveWords();let stop=end??defaultStop(seg);currentWords=seg.w||[];currentLine=line||document.querySelector(`.card[data-i="${DATA.indexOf(seg)}"] .wordline`);const src=audioSrc(seg);if(!src)return;const go=()=>{if(token!==playToken)return;audio.currentTime=Math.max(0,start);audio.play().then(()=>{if(token===playToken)tick(stop,token)}).catch(()=>{})};if(audio.src!==new URL(src,location.href).href){audio.src=src;audio.oncanplay=()=>{audio.oncanplay=null;go()}}else{go()}}
+function tick(stop,token){if(token!==playToken||audio.paused)return;let t=audio.currentTime-parseFloat($('#hlDelay').value||0);clearActiveWords();currentWords.forEach((w,i)=>{let s=wordStart(w),e=wordEnd(w);if(t>=s&&t<=e&&currentLine){let el=currentLine.querySelector(`[data-k="${i}"]`);if(el)el.classList.add('active')}});if(t>=stop){clearActiveWords();audio.pause();return}raf=requestAnimationFrame(()=>tick(stop,token))}
+function beginSelect(no,k){selected={no,start:k,end:k,open:true};paintSelection()}
+function extendSelect(no,k,close=false){if(selected.no!==no||selected.start===null){beginSelect(no,k);return}selected.end=k;selected.open=!close;paintSelection()}
+function clearSelection(){selected={no:null,start:null,end:null,open:false};paintSelection()}
+function selectedBounds(){if(selected.no===null||selected.start===null||selected.end===null)return null;return {lo:Math.min(selected.start,selected.end),hi:Math.max(selected.start,selected.end)}}
+function selectedLabel(seg,b){return (seg.w||[]).slice(b.lo,b.hi+1).map(wordText).join(' ')}
+function flashCopy(btn,msg){if(!btn)return;let old=btn.textContent;btn.textContent=msg;setTimeout(()=>{btn.textContent=old},1200)}
+function selectCopyText(){let ta=$('#copyText');ta.focus();ta.select();ta.setSelectionRange(0,ta.value.length)}
+function showManualCopy(text){$('#copyText').value=text;$('#copyPanel').hidden=false;setTimeout(selectCopyText,80)}
+function hideManualCopy(){$('#copyPanel').hidden=true}
+function legacyCopy(text){let ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.left='0';ta.style.top='0';ta.style.width='1px';ta.style.height='1px';ta.style.opacity='0.01';ta.style.fontSize='16px';document.body.appendChild(ta);ta.focus();ta.select();ta.setSelectionRange(0,text.length);let ok=false;try{ok=document.execCommand('copy')}catch(_){ok=false}ta.remove();return ok}
+async function copySelectedTarget(btn){let b=selectedBounds();if(!b)return;let text=selectedLabel(DATA[selected.no],b);let ok=false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);ok=true}else{ok=legacyCopy(text)}}catch(_){ok=legacyCopy(text)}if(ok){hideManualCopy();flashCopy(btn,'已复制')}else{showManualCopy(text);flashCopy(btn,'手动复制')}}
+function applySelectedColor(c){let b=selectedBounds();if(!b||selected.no===null)return;let no=colorNoFromIndex(selected.no);if(!wordColors[no])wordColors[no]={};let card=document.querySelector(`.card[data-i="${selected.no}"]`);for(let i=b.lo;i<=b.hi;i++){let el=card&&card.querySelector(`.word[data-k="${i}"]`);if(el){el.classList.remove('bg-blue','bg-orange','bg-green','bg-red','bg-purple');if(c==='clear'){delete wordColors[no][i]}else{wordColors[no][i]=c;el.classList.add('bg-'+c)}}}if(Object.keys(wordColors[no]).length===0)delete wordColors[no];localStorage.setItem(STORE_COLORS,JSON.stringify(wordColors));clearSelection()}
+function smartColorChoice(){let b=selectedBounds();if(!b||selected.no===null)return COLOR_OPTIONS[Math.floor(Math.random()*COLOR_OPTIONS.length)];let no=colorNoFromIndex(selected.no),left=b.lo-1,leftColor=left>=0&&wordColors[no]?wordColors[no][left]:null;let choices=COLOR_OPTIONS.filter(c=>c!==leftColor);return choices[Math.floor(Math.random()*choices.length)]}
+function applySmartColor(){applySelectedColor(smartColorChoice())}
+function paintSelection(){document.querySelectorAll('.word.selected,.word.anchor').forEach(el=>el.classList.remove('selected','anchor'));document.querySelectorAll('.targetbar').forEach(el=>el.classList.remove('on'));$('#mobileTargetBar').hidden=true;let b=selectedBounds();if(!b)return;let card=document.querySelector(`.card[data-i="${selected.no}"]`),seg=DATA[selected.no];if(!card||!seg)return;for(let i=b.lo;i<=b.hi;i++){card.querySelectorAll(`.word[data-k="${i}"]`).forEach(el=>el.classList.add('selected'))}card.querySelectorAll(`.word[data-k="${selected.start}"]`).forEach(el=>el.classList.add('anchor'));let label=selectedLabel(seg,b);let bar=card.querySelector('.targetbar');bar.classList.add('on');bar.querySelector('.selectedText').textContent=label;$('#mobileTargetText').textContent=label;$('#mobileTargetBar').hidden=false}
+function playSelectedTarget(){let b=selectedBounds();if(!b)return;let seg=DATA[selected.no],card=document.querySelector(`.card[data-i="${selected.no}"]`);let words=seg.w||[];if(!words[b.lo]||!words[b.hi])return;let line=card.querySelector('.wordline');line.style.display='block';playSeg(seg,wordStart(words[b.lo]),wordEnd(words[b.hi]),line)}
+app.addEventListener('pointerdown',e=>{let word=e.target.closest('.word');if(!word)return;let card=e.target.closest('.card');if(!card)return;let no=+card.dataset.i,k=+word.dataset.k;dragMoved=false;if(selected.no===no&&selected.open&&selected.start!==null){extendSelect(no,k,true);pointerSelecting=false;e.preventDefault();return}pointerSelecting=true;beginSelect(no,k);e.preventDefault()});
+app.addEventListener('pointerover',e=>{if(!pointerSelecting)return;let word=e.target.closest('.word');if(!word)return;let card=e.target.closest('.card');if(!card)return;dragMoved=true;extendSelect(+card.dataset.i,+word.dataset.k,false)});
+document.addEventListener('pointerup',()=>{if(pointerSelecting){pointerSelecting=false;selected.open=!dragMoved;paintSelection()}});
+app.addEventListener('click',e=>{
+  let card=e.target.closest('.card');
+  if(!card)return;
+  let seg=DATA[+card.dataset.i];
+  if(e.target.closest('.word'))return;
+  if(e.target.matches('.play'))playSeg(seg,0);
+  if(e.target.matches('.cap'))toggleCaption(card);
+  if(e.target.matches('.cn'))toggle(card.querySelector('.translation'));
+  if(e.target.matches('.chunksBtn'))toggle(card.querySelector('.chunks'));
+  if(e.target.matches('.targetplay'))playSelectedTarget();
+  if(e.target.matches('.smartColor'))applySmartColor();
+  if(e.target.matches('.copyTarget'))copySelectedTarget(e.target);
+  if(e.target.matches('.clearTarget'))clearSelection();
+  if(e.target.matches('.mark')){
+    let no=+card.dataset.no;
+    done.has(no)?done.delete(no):done.add(no);
+    card.classList.toggle('done');
+    save();
+  }
+});
+$('#mobilePlayTarget').onclick=playSelectedTarget;
+$('#mobileSmartColor').onclick=applySmartColor;
+$('#mobileCopyTarget').onclick=e=>copySelectedTarget(e.currentTarget);
+$('#mobileClearTarget').onclick=clearSelection;
+$('#closeCopyPanel').onclick=hideManualCopy;
+$('#toggleHeader').onclick=()=>toggle($('#headerControls'));
+function range(fn){let a=+$('#fromNo').value,b=+$('#toNo').value;if(!a||!b)return;for(let n=Math.min(a,b);n<=Math.max(a,b);n++)fn(n);render();save()}
+$('#batchDone').onclick=()=>range(n=>done.add(n));
+$('#batchReset').onclick=()=>range(n=>done.delete(n));
+function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+document.addEventListener('click',e=>{
+  let trigger = e.target.closest('.color-trigger');
+  if(trigger) {
+    let wrap = trigger.closest('.color-dropdown-wrap');
+    let menu = wrap.querySelector('.color-menu');
+    menu.hidden = !menu.hidden;
+    document.querySelectorAll('.color-menu').forEach(m => {
+      if(m !== menu) m.hidden = true;
+    });
+    return;
+  }
+  
+  if(!e.target.closest('.color-menu')) {
+    document.querySelectorAll('.color-menu').forEach(m => m.hidden = true);
+  }
+
+  let citem = e.target.closest('.citem');
+  if(citem){
+    let c = citem.dataset.c;
+    document.querySelectorAll('.color-menu').forEach(m => m.hidden = true);
+    applySelectedColor(c);
+  }
+});
+render();
+let _savedScroll=parseInt(localStorage.getItem(STORE_SCROLL)||'0');
+if(_savedScroll)requestAnimationFrame(()=>window.scrollTo(0,_savedScroll));
+</script>
+</body>
+</html>

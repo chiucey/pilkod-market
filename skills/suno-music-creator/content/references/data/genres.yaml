@@ -1,0 +1,300 @@
+# Suno AI 流派参数数据 v3.4
+# 来源：Suno Official + HowToPromptSuno + Suno Reddit/SunoAI Community
+# 用途：GMIVE G槽位选取genre，不复制正文
+
+genres:
+
+  # ═══════════════════════════════════════
+  # POP 流行
+  # ═══════════════════════════════════════
+  - id: pop
+    label: Pop 主流流行
+    subgenres:
+      - { id: mainstream-pop, label: Mainstream Pop, mood: [upbeat, catchy], bpm: [100,130], instruments: [synth, drums], vocal: [female, bright]}
+      - { id: indie-pop, label: Indie Pop, mood: [dreamy, introspective], bpm: [85,115], instruments: [acoustic-guitar, synth], vocal: [female, breathy]}
+      - { id: synth-pop, label: Synth-Pop, mood: [retro, energetic], bpm: [110,140], instruments: [synth, drum-machine], vocal: [male, smooth]}
+      - { id: electro-pop, label: Electropop, mood: [modern, electronic], bpm: [115,145], instruments: [synth-lead, 808], vocal: [female, bright]}
+      - { id: dream-pop, label: Dream Pop, mood: [ethereal, hazy], bpm: [70,100], instruments: [synth-pad, guitar], vocal: [female, breathy]}
+      - { id: power-pop, label: Power Pop, mood: [energetic, melodic], bpm: [120,145], instruments: [electric-guitar, drums], vocal: [male, full]}
+      - { id: bedroom-pop, label: Bedroom Pop, mood: [intimate, lo-fi], bpm: [70,100], instruments: [acoustic-guitar, synth-pad], vocal: [female, intimate]}
+      - { id: soft-pop, label: Soft Pop, mood: [gentle, romantic], bpm: [70,95], instruments: [piano, strings], vocal: [female, warm]}
+      - { id: neon-pop, label: Neon Pop, mood: [retro, vibrant], bpm: [110,135], instruments: [synth, drums], vocal: [female, bright]}
+      - { id: psychedelic-pop, label: Psychedelic Pop, mood: [trippy, dreamy], bpm: [85,115], instruments: [synth, guitar], vocal: [male, smooth]}
+      - { id: noise-pop, label: Noise Pop, mood: [chaotic, raw], bpm: [130,160], instruments: [electric-guitar, drums], vocal: [male, rough]}
+      - { id: adult-contemporary, label: Adult Contemporary, mood: [soft, mature], bpm: [70,95], instruments: [piano, strings], vocal: [female, warm]}
+      - { id: disco, label: Disco, mood: [upbeat, funky], bpm: [115,130], instruments: [synth, bass, drums], vocal: [female, full]}
+      - { id: disco-funk, label: Disco Funk, mood: [groovy, funky], bpm: [100,120], instruments: [bass, electric-guitar, drums], vocal: [male, smooth]}
+
+  # ═══════════════════════════════════════
+  # 华语流行
+  # ═══════════════════════════════════════
+  - id: chinese-pop
+    label: 华语流行
+    subgenres:
+      - { id: mandarin-ballad, label: 普通话抒情, mood: [melancholic, bittersweet], bpm: [65,85], instruments: [piano, strings], vocal: [female, breathy]}
+      - { id: cantonese-pop, label: 粤语流行, mood: [nostalgic, melancholic], bpm: [70,90], instruments: [synth, bass, drums], vocal: [male, warm]}
+      - { id: chinese-traditional, label: 中国风/古风, mood: [melancholic, ethereal], bpm: [60,75], instruments: [guzheng, erhu, bamboo-flute], vocal: [female, ethereal]}
+      - { id: cpop-modern, label: C-pop 现代华语, mood: [upbeat, romantic], bpm: [85,110], instruments: [synth, electric-guitar, drums], vocal: [female, bright]}
+      - { id: chinese-ballad, label: 华语抒情, mood: [emotional, nostalgic], bpm: [70,85], instruments: [piano, guitar], vocal: [female, emotional]}
+      - { id: j-pop, label: J-Pop 日本流行, mood: [bright, uplifting], bpm: [110,140], instruments: [synth, guitar, drums], vocal: [female, bright]}
+      - { id: k-pop, label: K-Pop 韩流, mood: [energetic, polished], bpm: [110,145], instruments: [synth, 808, bass], vocal: [female, full]}
+      - { id: thai-pop, label: Thai Pop, mood: [romantic, upbeat], bpm: [95,120], instruments: [synth, guitar, drums], vocal: [female, bright]}
+      - { id: cantonese-ballad, label: 港风抒情, mood: [nostalgic, bittersweet], bpm: [68,82], instruments: [piano, strings], vocal: [female, warm]}
+
+  # ═══════════════════════════════════════
+  # ROCK 摇滚
+  # ═══════════════════════════════════════
+  - id: rock
+    label: Rock 摇滚
+    subgenres:
+      - { id: classic-rock, label: Classic Rock, mood: [energetic, timeless], bpm: [110,140], instruments: [electric-guitar, drums, bass], vocal: [male, full]}
+      - { id: hard-rock, label: Hard Rock, mood: [powerful, aggressive], bpm: [120,145], instruments: [distorted-guitar, drums], vocal: [male, powerful]}
+      - { id: indie-rock, label: Indie Rock, mood: [raw, introspective], bpm: [100,130], instruments: [electric-guitar, drums], vocal: [male, rough]}
+      - { id: alternative-rock, label: Alternative Rock, mood: [dark, introspective], bpm: [100,130], instruments: [electric-guitar, bass, drums], vocal: [male, rough]}
+      - { id: pop-rock, label: Pop Rock, mood: [catchy, upbeat], bpm: [110,140], instruments: [electric-guitar, synth, drums], vocal: [male, smooth]}
+      - { id: folk-rock, label: Folk Rock, mood: [warm, storytelling], bpm: [85,110], instruments: [acoustic-guitar, electric-guitar, drums], vocal: [male, warm]}
+      - { id: psychedelic-rock, label: Psychedelic Rock, mood: [trippy, atmospheric], bpm: [80,120], instruments: [electric-guitar, synth, drums], vocal: [male, smooth]}
+      - { id: blues-rock, label: Blues Rock, mood: [soulful, raw], bpm: [90,120], instruments: [electric-guitar, blues-guitar, drums], vocal: [male, raspy]}
+      - { id: funk-rock, label: Funk Rock, mood: [groovy, energetic], bpm: [100,125], instruments: [electric-guitar, bass, drums], vocal: [male, full]}
+      - { id: garage-rock, label: Garage Rock, mood: [raw, energetic], bpm: [130,160], instruments: [distorted-guitar, drums], vocal: [male, rough]}
+      - { id: post-rock, label: Post Rock, mood: [atmospheric, epic], bpm: [70,100], instruments: [electric-guitar, synth, drums], vocal: [none, instrumental]}
+      - { id: punk-rock, label: Punk Rock, mood: [fast, aggressive], bpm: [150,180], instruments: [distorted-guitar, drums], vocal: [male, rough]}
+      - { id: grunge, label: Grunge, mood: [angry, raw], bpm: [110,140], instruments: [distorted-guitar, drums], vocal: [male, raspy]}
+      - { id: soft-rock, label: Soft Rock, mood: [gentle, romantic], bpm: [75,95], instruments: [piano, acoustic-guitar], vocal: [male, smooth]}
+      - { id: progressive-rock, label: Progressive Rock, mood: [complex, epic], bpm: [80,130], instruments: [electric-guitar, bass, drums, synth], vocal: [male, full]}
+      - { id: space-rock, label: Space Rock, mood: [ambient, cosmic], bpm: [60,90], instruments: [synth, electric-guitar], vocal: [male, smooth]}
+      - { id: surf-rock, label: Surf Rock, mood: [retro, summery], bpm: [120,145], instruments: [electric-guitar, drums], vocal: [male, bright]}
+      - { id: southern-rock, label: Southern Rock, mood: [soulful, twangy], bpm: [90,120], instruments: [electric-guitar, bass, drums], vocal: [male, warm]}
+      - { id: glam-rock, label: Glam Rock, mood: [flashy, theatrical], bpm: [110,140], instruments: [electric-guitar, bass, drums], vocal: [male, full]}
+      - { id: industrial-rock, label: Industrial Rock, mood: [dark, mechanical], bpm: [110,145], instruments: [synth, distorted-guitar, drums], vocal: [male, rough]}
+      - { id: piano-rock, label: Piano Rock, mood: [melodic, emotional], bpm: [85,115], instruments: [piano, drums, bass], vocal: [male, full]}
+
+  # ═══════════════════════════════════════
+  # METAL 金属
+  # ═══════════════════════════════════════
+  - id: metal
+    label: Metal 金属
+    subgenres:
+      - { id: heavy-metal, label: Heavy Metal, mood: [powerful, epic], bpm: [120,150], instruments: [distorted-guitar, bass, drums], vocal: [male, powerful]}
+      - { id: black-metal, label: Black Metal, mood: [dark, atmospheric], bpm: [130,180], instruments: [distorted-guitar, drums], vocal: [male, harsh]}
+      - { id: death-metal, label: Death Metal, mood: [aggressive, brutal], bpm: [150,200], instruments: [distorted-guitar, bass, drums], vocal: [male, harsh]}
+      - { id: melodic-death-metal, label: Melodic Death Metal, mood: [epic, aggressive], bpm: [130,165], instruments: [distorted-guitar, drums], vocal: [male, harsh]}
+      - { id: progressive-metal, label: Progressive Metal, mood: [complex, atmospheric], bpm: [90,140], instruments: [electric-guitar, bass, drums, synth], vocal: [male, full]}
+      - { id: power-metal, label: Power Metal, mood: [epic, triumphant], bpm: [130,170], instruments: [electric-guitar, bass, drums], vocal: [male, powerful]}
+      - { id: thrash-metal, label: Thrash Metal, mood: [fast, aggressive], bpm: [160,200], instruments: [distorted-guitar, bass, drums], vocal: [male, harsh]}
+      - { id: doom-metal, label: Doom Metal, mood: [dark, slow, heavy], bpm: [40,80], instruments: [distorted-guitar, bass, drums], vocal: [male, rough]}
+      - { id: folk-metal, label: Folk Metal, mood: [epic, traditional], bpm: [110,150], instruments: [electric-guitar, drums, folk-instruments], vocal: [male, full]}
+      - { id: gothic-metal, label: Gothic Metal, mood: [dark, romantic], bpm: [80,120], instruments: [electric-guitar, synth, drums], vocal: [female, ethereal]}
+      - { id: symphonic-metal, label: Symphonic Metal, mood: [epic, orchestral], bpm: [100,150], instruments: [electric-guitar, orchestral-strings, drums], vocal: [female, powerful]}
+      - { id: metalcore, label: Metalcore, mood: [aggressive, intense], bpm: [140,180], instruments: [distorted-guitar, bass, drums], vocal: [male, harsh]}
+      - { id: nu-metal, label: Nu Metal, mood: [aggressive, modern], bpm: [110,140], instruments: [distorted-guitar, synth, 808, drums], vocal: [male, rough]}
+      - { id: oriental-metal, label: Oriental Metal, mood: [exotic, epic], bpm: [110,150], instruments: [electric-guitar, drums, traditional-instruments], vocal: [male, powerful]}
+
+  # ═══════════════════════════════════════
+  # ELECTRONIC 电子
+  # ═══════════════════════════════════════
+  - id: electronic
+    label: Electronic 电子
+    subgenres:
+      - { id: edm, label: EDM, mood: [energetic, euphoric], bpm: [125,150], instruments: [synth-lead, 808, bass], vocal: [female, full]}
+      - { id: house, label: House, mood: [groovy, danceable], bpm: [120,130], instruments: [synth, bass, drum-machine], vocal: [female, smooth]}
+      - { id: deep-house, label: Deep House, mood: [moody, groovy], bpm: [120,128], instruments: [synth-pad, bass, drums], vocal: [female, breathy]}
+      - { id: tech-house, label: Tech House, mood: [minimal, driving], bpm: [125,132], instruments: [synth, bass, drums], vocal: [none, instrumental]}
+      - { id: progressive-house, label: Progressive House, mood: [uplifting, building], bpm: [125,132], instruments: [synth-lead, bass, drums], vocal: [female, full]}
+      - { id: tropical-house, label: Tropical House, mood: [summer, relaxed], bpm: [100,115], instruments: [synth-pad, marimba, drums], vocal: [female, smooth]}
+      - { id: future-bass, label: Future Bass, mood: [bright, emotional], bpm: [140,175], instruments: [synth-lead, 808], vocal: [female, bright]}
+      - { id: synthwave, label: Synthwave, mood: [retro, nostalgic], bpm: [100,125], instruments: [synth, bass, drums], vocal: [female, smooth]}
+      - { id: vaporwave, label: Vaporwave, mood: [nostalgic, dreamy], bpm: [70,100], instruments: [synth-pad, vinyl-crackle], vocal: [female, breathy]}
+      - { id: ambient, label: Ambient, mood: [atmospheric, meditative], bpm: [40,90], instruments: [synth-pad, drone], vocal: [none, instrumental]}
+      - { id: dark-ambient, label: Dark Ambient, mood: [dark, ominous], bpm: [40,80], instruments: [synth-pad, drone], vocal: [none, instrumental]}
+      - { id: chillwave, label: Chillwave, mood: [hazy, nostalgic], bpm: [70,100], instruments: [synth-pad, guitar], vocal: [female, breathy]}
+      - { id: dubstep, label: Dubstep, mood: [heavy, dark], bpm: [135,142], instruments: [bass, synth, drums], vocal: [male, rough]}
+      - { id: drum-and-bass, label: Drum and Bass, mood: [fast, intense], bpm: [160,180], instruments: [drum-machine, bass, synth], vocal: [male, smooth]}
+      - { id: dub-techno, label: Dub Techno, mood: [minimal, hypnotic], bpm: [120,140], instruments: [synth, bass], vocal: [none, instrumental]}
+      - { id: electro, label: Electro, mood: [driving, funky], bpm: [120,140], instruments: [synth, 808, bass], vocal: [none, instrumental]}
+      - { id: downtempo, label: Downtempo, mood: [chill, atmospheric], bpm: [70,100], instruments: [synth-pad, bass], vocal: [female, smooth]}
+      - { id: trip-hop, label: Trip Hop, mood: [moody, groovy], bpm: [70,105], instruments: [synth, bass, drums], vocal: [female, breathy]}
+      - { id: lofi, label: Lo-Fi, mood: [relaxed, nostalgic], bpm: [65,95], instruments: [rhodes, vinyl-crackle, drums], vocal: [female, breathy]}
+      - { id: idm, label: IDM, mood: [experimental, abstract], bpm: [80,180], instruments: [synth, glitch], vocal: [none, instrumental]}
+      - { id: glitch, label: Glitch, mood: [experimental, abstract], bpm: [90,160], instruments: [synth, glitch], vocal: [none, instrumental]}
+      - { id: cyberpunk, label: Cyberpunk, mood: [futuristic, dark], bpm: [120,160], instruments: [synth-lead, 808, bass], vocal: [male, rough]}
+      - { id: hyperpop, label: Hyperpop, mood: [chaotic, maximalist], bpm: [140,180], instruments: [synth, 808], vocal: [female, bright]}
+      - { id: electro-swing, label: Electro Swing, mood: [retro, playful], bpm: [120,145], instruments: [saxophone, brass, drums], vocal: [male, smooth]}
+      - { id: trance, label: Trance, mood: [euphoric, uplifting], bpm: [138,145], instruments: [synth-lead, bass, drums], vocal: [female, full]}
+      - { id: vocal-trance, label: Vocal Trance, mood: [euphoric, emotional], bpm: [138,145], instruments: [synth-lead, bass, drums], vocal: [female, emotional]}
+      - { id: goa-trance, label: Goa Trance, mood: [psychedelic, intense], bpm: [140,160], instruments: [synth-lead, bass], vocal: [none, instrumental]}
+
+  # ═══════════════════════════════════════
+  # HIP-HOP / RAP
+  # ═══════════════════════════════════════
+  - id: hiphop
+    label: Hip-Hop / Rap
+    subgenres:
+      - { id: trap, label: Trap, mood: [dark, aggressive], bpm: [130,170], instruments: [808, synth, hi-hats], vocal: [male, rough]}
+      - { id: boom-bap, label: Boom Bap, mood: [raw, nostalgic], bpm: [85,105], instruments: [bass, drum-machine, sample], vocal: [male, rapped]}
+      - { id: old-school-hip-hop, label: Old School Hip-Hop, mood: [funky, nostalgic], bpm: [85,110], instruments: [bass, drums, sample], vocal: [male, rapped]}
+      - { id: rnb-contemporary, label: Contemporary R&B, mood: [smooth, romantic], bpm: [70,100], instruments: [synth, bass, drums], vocal: [male, smooth]}
+      - { id: uk-drill, label: UK Drill, mood: [dark, aggressive], bpm: [135,145], instruments: [808, bass, hi-hats], vocal: [male, rapped]}
+      - { id: mumble-rap, label: Mumble Rap, mood: [laid-back, melodic], bpm: [130,170], instruments: [808, synth], vocal: [male, auto-tuned]}
+      - { id: jazz-rap, label: Jazz Rap, mood: [chill, intellectual], bpm: [75,105], instruments: [piano, bass, drums], vocal: [male, rapped]}
+      - { id: pop-rap, label: Pop Rap, mood: [catchy, mainstream], bpm: [100,130], instruments: [synth, drums], vocal: [male, smooth]}
+
+  # ═══════════════════════════════════════
+  # JAZZ / BLUES 爵士/布鲁斯
+  # ═══════════════════════════════════════
+  - id: jazz
+    label: Jazz 爵士
+    subgenres:
+      - { id: jazz-standard, label: Jazz Standard, mood: [smooth, sophisticated], bpm: [90,130], instruments: [piano, saxophone, upright-bass, drums], vocal: [male, smooth]}
+      - { id: smooth-jazz, label: Smooth Jazz, mood: [relaxed, romantic], bpm: [80,105], instruments: [saxophone, piano, bass], vocal: [female, smooth]}
+      - { id: bebop, label: Bebop, mood: [energetic, complex], bpm: [140,180], instruments: [piano, saxophone, bass, drums], vocal: [male, rapped]}
+      - { id: cool-jazz, label: Cool Jazz, mood: [relaxed, moody], bpm: [70,100], instruments: [piano, saxophone, bass], vocal: [female, breathy]}
+      - { id: jazz-fusion, label: Jazz Fusion, mood: [energetic, complex], bpm: [100,160], instruments: [electric-guitar, synth, bass, drums], vocal: [male, smooth]}
+      - { id: acid-jazz, label: Acid Jazz, mood: [groovy, funky], bpm: [110,130], instruments: [saxophone, bass, drums, synth], vocal: [male, full]}
+      - { id: soul-jazz, label: Soul Jazz, mood: [funky, warm], bpm: [90,120], instruments: [organ, saxophone, bass, drums], vocal: [female, warm]}
+      - { id: nu-jazz, label: Nu Jazz, mood: [modern, groovy], bpm: [90,125], instruments: [synth, bass, drums], vocal: [female, smooth]}
+      - { id: swing, label: Swing, mood: [upbeat, joyful], bpm: [140,180], instruments: [brass, bass, drums], vocal: [male, full]}
+      - { id: big-band, label: Big Band, mood: [energetic, triumphant], bpm: [120,160], instruments: [brass, bass, drums], vocal: [male, full]}
+      - { id: blues, label: Blues, mood: [melancholic, soulful], bpm: [60,100], instruments: [electric-guitar, harmonica, drums], vocal: [male, raspy]}
+      - { id: blues-rock, label: Blues Rock, mood: [soulful, raw], bpm: [90,120], instruments: [electric-guitar, bass, drums], vocal: [male, raspy]}
+      - { id: acoustic-blues, label: Acoustic Blues, mood: [raw, intimate], bpm: [60,90], instruments: [acoustic-guitar, harmonica], vocal: [male, rough]}
+      - { id: gypsy-jazz, label: Gypsy Jazz, mood: [playful, energetic], bpm: [150,200], instruments: [nylon-guitar, saxophone, bass], vocal: [none, instrumental]}
+
+  # ═══════════════════════════════════════
+  # FOLK / COUNTRY 民谣/乡村
+  # ═══════════════════════════════════════
+  - id: folk
+    label: Folk / Country 民谣
+    subgenres:
+      - { id: acoustic-folk, label: Acoustic Folk, mood: [intimate, storytelling], bpm: [70,100], instruments: [acoustic-guitar, fingerpicked-guitar], vocal: [male, rough]}
+      - { id: indie-folk, label: Indie Folk, mood: [warm, introspective], bpm: [80,110], instruments: [acoustic-guitar, piano], vocal: [female, warm]}
+      - { id: folk-pop, label: Folk Pop, mood: [upbeat, wholesome], bpm: [90,115], instruments: [acoustic-guitar, piano, strings], vocal: [female, warm]}
+      - { id: psychedelic-folk, label: Psychedelic Folk, mood: [trippy, dreamy], bpm: [70,100], instruments: [acoustic-guitar, synth-pad], vocal: [female, breathy]}
+      - { id: neofolk, label: Neofolk, mood: [dark, atmospheric], bpm: [60,90], instruments: [acoustic-guitar, strings], vocal: [male, rough]}
+      - { id: celtic-folk, label: Celtic Folk, mood: [traditional, lively], bpm: [100,150], instruments: [acoustic-guitar, fiddle, bagpipes], vocal: [male, full]}
+      - { id: irish-folk, label: Irish Folk, mood: [joyful, traditional], bpm: [100,150], instruments: [acoustic-guitar, fiddle, bodhran], vocal: [male, full]}
+      - { id: nordic-folk, label: Nordic Folk, mood: [atmospheric, melancholic], bpm: [70,100], instruments: [acoustic-guitar, strings], vocal: [female, ethereal]}
+      - { id: bluegrass, label: Bluegrass, mood: [energetic, acoustic], bpm: [130,180], instruments: [acoustic-guitar, banjo, fiddle], vocal: [male, full]}
+      - { id: country, label: Country, mood: [storytelling, warm], bpm: [80,120], instruments: [acoustic-guitar, electric-guitar, drums], vocal: [male, warm]}
+      - { id: country-rock, label: Country Rock, mood: [upbeat, rocking], bpm: [110,140], instruments: [electric-guitar, bass, drums], vocal: [male, full]}
+      - { id: outlaw-country, label: Outlaw Country, mood: [rebellious, raw], bpm: [80,120], instruments: [electric-guitar, bass, drums], vocal: [male, raspy]}
+      - { id: honky-tonk, label: Honky Tonk, mood: [drunk, playful], bpm: [110,140], instruments: [electric-guitar, piano, drums], vocal: [male, rough]}
+      - { id: singer-songwriter, label: Singer-Songwriter, mood: [intimate, confessional], bpm: [65,90], instruments: [acoustic-guitar, piano], vocal: [female, intimate]}
+      - { id: americana, label: Americana, mood: [nostalgic, poetic], bpm: [75,105], instruments: [acoustic-guitar, electric-guitar, piano], vocal: [male, warm]}
+
+  # ═══════════════════════════════════════
+  # SOUL / R&B 灵魂/节奏布鲁斯
+  # ═══════════════════════════════════════
+  - id: soul
+    label: Soul / R&B
+    subgenres:
+      - { id: soul, label: Soul, mood: [emotional, warm], bpm: [80,120], instruments: [piano, bass, drums], vocal: [female, full]}
+      - { id: neo-soul, label: Neo Soul, mood: [smooth, modern], bpm: [70,100], instruments: [rhodes, bass, guitar], vocal: [female, smooth]}
+      - { id: funk, label: Funk, mood: [groovy, funky], bpm: [100,125], instruments: [bass, electric-guitar, drums], vocal: [male, full]}
+      - { id: motown, label: Motown, mood: [nostalgic, warm], bpm: [100,125], instruments: [bass, drums, strings], vocal: [female, full]}
+      - { id: disco-funk, label: Disco Funk, mood: [groovy, danceable], bpm: [100,125], instruments: [bass, synth, drums], vocal: [female, full]}
+      - { id: psychedelic-soul, label: Psychedelic Soul, mood: [trippy, groovy], bpm: [80,120], instruments: [guitar, bass, synth], vocal: [female, full]}
+      - { id: quiet-storm, label: Quiet Storm, mood: [smooth, romantic], bpm: [60,85], instruments: [piano, synth-pad, bass], vocal: [male, smooth]}
+      - { id: doo-wop, label: Doo Wop, mood: [nostalgic, harmonic], bpm: [80,110], instruments: [vocals, bass, guitar], vocal: [male, harmonic]}
+      - { id: gospel, label: Gospel, mood: [powerful, uplifting], bpm: [90,130], instruments: [piano, bass, drums], vocal: [female, powerful]}
+
+  # ═══════════════════════════════════════
+  # CLASSICAL / CINEMATIC 古典/影视
+  # ═══════════════════════════════════════
+  - id: classical
+    label: Classical / Cinematic
+    subgenres:
+      - { id: orchestral, label: Orchestral, mood: [epic, cinematic], bpm: [60,120], instruments: [orchestral-strings, brass, percussion], vocal: [none, instrumental]}
+      - { id: cinematic, label: Cinematic, mood: [epic, dramatic], bpm: [70,120], instruments: [orchestral-strings, piano, synth-pad], vocal: [none, instrumental]}
+      - { id: neoclassical, label: Neoclassical, mood: [dramatic, elegant], bpm: [70,130], instruments: [piano, orchestral-strings], vocal: [none, instrumental]}
+      - { id: soundtrack, label: Film Score, mood: [dramatic, emotional], bpm: [60,120], instruments: [orchestral-strings, piano, synth], vocal: [none, instrumental]}
+      - { id: video-game-music, label: Video Game Music, mood: [epic, adventurous], bpm: [100,180], instruments: [orchestral-strings, synth, drums], vocal: [none, instrumental]}
+      - { id: ambient-classical, label: Ambient Classical, mood: [meditative, atmospheric], bpm: [40,80], instruments: [piano, strings, synth-pad], vocal: [none, instrumental]}
+      - { id: modern-classical, label: Modern Classical, mood: [contemplative, minimal], bpm: [50,90], instruments: [piano, cello, strings], vocal: [none, instrumental]}
+      - { id: romantic-classical, label: Romantic Era, mood: [passionate, lush], bpm: [60,100], instruments: [piano, orchestral-strings], vocal: [none, instrumental]}
+      - { id: chamber-music, label: Chamber Music, mood: [intimate, elegant], bpm: [60,100], instruments: [violin, cello, piano], vocal: [none, instrumental]}
+      - { id: opera, label: Opera, mood: [dramatic, operatic], bpm: [60,120], instruments: [orchestral-strings, opera-vocals], vocal: [female, powerful]}
+
+  # ═══════════════════════════════════════
+  # WORLD / REGIONAL 世界/地区音乐
+  # ═══════════════════════════════════════
+  - id: world
+    label: World 世界/地区
+    subgenres:
+      - { id: reggae, label: Reggae, mood: [chill, laid-back], bpm: [60,90], instruments: [guitar, bass, drums], vocal: [male, smooth]}
+      - { id: roots-reggae, label: Roots Reggae, mood: [spiritual, deep], bpm: [60,85], instruments: [guitar, bass, drums], vocal: [male, warm]}
+      - { id: dancehall, label: Dancehall, mood: [energetic, upbeat], bpm: [85,110], instruments: [bass, drums, synth], vocal: [male, rapped]}
+      - { id: salsa, label: Salsa, mood: [energetic, latin], bpm: [165,185], instruments: [percussion, brass, piano], vocal: [male, full]}
+      - { id: reggaeton, label: Reggaeton, mood: [urban, danceable], bpm: [85,100], instruments: [bass, drums, synth], vocal: [male, rapped]}
+      - { id: cumbia, label: Cumbia, mood: [festive, traditional], bpm: [80,120], instruments: [percussion, bass, accordion], vocal: [male, full]}
+      - { id: bossa-nova, label: Bossa Nova, mood: [smooth, romantic], bpm: [120,150], instruments: [nylon-guitar, piano, bass], vocal: [female, smooth]}
+      - { id: samba, label: Samba, mood: [energetic, festive], bpm: [150,180], instruments: [percussion, brass, bass], vocal: [male, full]}
+      - { id: tango, label: Tango, mood: [dramatic, passionate], bpm: [120,140], instruments: [bandoneon, violin, bass], vocal: [male, rough]}
+      - { id: flamenco, label: Flamenco, mood: [passionate, intense], bpm: [120,160], instruments: [nylon-guitar, percussion, vocals], vocal: [male, rough]}
+      - { id: african, label: African Music, mood: [rhythmic, uplifting], bpm: [80,150], instruments: [percussion, bass, drums], vocal: [male, full]}
+      - { id: afrobeat, label: Afrobeat, mood: [groovy, rhythmic], bpm: [90,120], instruments: [bass, percussion, horns], vocal: [male, full]}
+      - { id: rai, label: Rai, mood: [energetic, traditional], bpm: [100,140], instruments: [synth, bass, drums], vocal: [male, full]}
+      - { id: bolero, label: Bolero, mood: [romantic, passionate], bpm: [60,80], instruments: [nylon-guitar      - { id: bolero, label: Bolero, mood: [romantic, passionate], bpm: [60,80], instruments: [nylon-guitar, piano, strings], vocal: [male, smooth]}
+      - { id: mambo, label: Mambo, mood: [energetic, latin], bpm: [140,170], instruments: [percussion, brass, piano], vocal: [male, full]}
+      - { id: cha-cha, label: Cha-Cha, mood: [fun, danceable], bpm: [120,140], instruments: [percussion, bass, piano], vocal: [male, full]}
+      - { id: forro, label: Forró, mood: [festive, traditional], bpm: [110,140], instruments: [accordion, bass, percussion], vocal: [male, warm]}
+      - { id: mor忽, label: Mor忽, mood: [nostalgic, bittersweet], bpm: [80,110], instruments: [nylon-guitar, accordion], vocal: [male, warm]}
+      - { id: ranchera, label: Ranchera, mood: [dramatic, passionate], bpm: [80,120], instruments: [acoustic-guitar, bass, trumpet], vocal: [male, rough]}
+      - { id: mariachi, label: Mariachi, mood: [joyful, festive], bpm: [100,140], instruments: [trumpet, violin, guitar], vocal: [male, full]}
+      - { id: indian-classical, label: Indian Classical, mood: [spiritual, meditative], bpm: [50,120], instruments: [sitar, tabla, harmonium], vocal: [male, ethereal]}
+      - { id: hindustani, label: Hindustani, mood: [spiritual, ornate], bpm: [50,100], instruments: [sitar, tabla, tanpura], vocal: [male, ethereal]}
+      - { id: qawwali, label: Qawwali, mood: [spiritual, euphoric], bpm: [90,140], instruments: [harmonium, tabla, chorus], vocal: [male, full]}
+      - { id: caribbean, label: Caribbean, mood: [tropical, upbeat], bpm: [90,140], instruments: [guitar, percussion, bass], vocal: [male, smooth]}
+      - { id: calypso, label: Calypso, mood: [playful, festive], bpm: [100,140], instruments: [guitar, steel-drum, bass], vocal: [male, full]}
+      - { id: polynesian, label: Hawaiian/Pacific, mood: [relaxed, tropical], bpm: [80,120], instruments: [ukulele, guitar, percussion], vocal: [male, warm]}
+      - { id: klezmer, label: Klezmer, mood: [joyful, traditional], bpm: [120,160], instruments: [clarinet, accordion, violin], vocal: [male, full]}
+      - { id: balkan, label: Balkan, mood: [energetic, complex], bpm: [100,160], instruments: [brass, percussion, accordion], vocal: [male, full]}
+      - { id: taarab, label: Taarab, mood: [elegant, traditional], bpm: [80,110], instruments: [accordion, oud, percussion], vocal: [male, smooth]}
+      - { id: sephardic, label: Sephardic, mood: [traditional, melancholic], bpm: [70,100], instruments: [oud, guitar, violin], vocal: [male, warm]}
+      - { id: celtic, label: Celtic, mood: [lively, traditional], bpm: [100,160], instruments: [fiddle, bagpipes, guitar], vocal: [male, full]}
+      - { id: russian-folk, label: Russian Folk, mood: [melancholic, dramatic], bpm: [70,120], instruments: [accordion, balalaika, bass], vocal: [male, rough]}
+      - { id: polynesia, label: Polynesian, mood: [tropical, relaxed], bpm: [70,100], instruments: [ukulele, guitar, bass], vocal: [male, warm]}
+      - { id: world-fusion, label: World Fusion, mood: [experimental, global], bpm: [80,150], instruments: [mixed-world, synth, bass], vocal: [mixed, full]}
+      - { id: taarab, label: Taarab, mood: [elegant, Swahili-coastal], bpm: [80,110], instruments: [accordion, oud, drums], vocal: [male, warm]}
+
+  # ═══════════════════════════════════════
+  # EXPERIMENTAL / AVANT-GARDE 实验/先锋
+  # ═══════════════════════════════════════
+  - id: experimental
+    label: Experimental 实验/先锋
+    subgenres:
+      - { id: avant-garde, label: Avant-Garde, mood: [experimental, abstract], bpm: [40,180], instruments: [mixed, unusual], vocal: [varies, none]}
+      - { id: noise, label: Noise, mood: [chaotic, abrasive], bpm: [40,200], instruments: [guitar, drums, electronics], vocal: [varies]}
+      - { id: industrial, label: Industrial, mood: [dark, mechanical], bpm: [80,180], instruments: [synth, distorted-guitar, drums], vocal: [male, harsh]}
+      - { id: dark-cabaret, label: Dark Cabaret, mood: [dramatic, noir], bpm: [80,120], instruments: [piano, bass, drums], vocal: [male, dramatic]}
+      - { id: sound-art, label: Sound Art, mood: [conceptual, atmospheric], bpm: [0,120], instruments: [electronics, found-sounds], vocal: [varies]}
+      - { id: musique-concrete, label: Musique Concrète, mood: [abstract, sonic], bpm: [0,120], instruments: [found-sounds, tape], vocal: [none]}
+
+  # ═══════════════════════════════════════
+  # SOUNDTRACK / SCORE 影视/游戏配乐
+  # ═══════════════════════════════════════
+  - id: soundtrack
+    label: Soundtrack 影视/游戏
+    subgenres:
+      - { id: film-score, label: Film Score, mood: [dramatic, cinematic], bpm: [60,120], instruments: [orchestral-strings, piano, synth], vocal: [none, instrumental]}
+      - { id: movie-soundtrack, label: Movie Soundtrack, mood: [emotional, narrative], bpm: [60,130], instruments: [orchestral, piano, synth], vocal: [varies]}
+      - { id: video-game-music, label: Video Game Music, mood: [adventurous, epic], bpm: [100,180], instruments: [orchestral, synth, drums], vocal: [none, choral]}
+      - { id: anime-score, label: Anime Score, mood: [dramatic, emotional], bpm: [80,160], instruments: [orchestral, rock, synth], vocal: [female, full]}
+      - { id: tv-themes, label: TV Themes, mood: [catchy, energetic], bpm: [100,140], instruments: [rock-band, synth], vocal: [full]}
+      - { id: trailer-music, label: Trailer Music, mood: [epic, dramatic], bpm: [80,160], instruments: [orchestral-strings, brass, drums], vocal: [none, choral]}
+      - { id: horror-score, label: Horror Score, mood: [dark, tense], bpm: [40,120], instruments: [synth, strings, bass], vocal: [none]}
+      - { id: western-score, label: Spaghetti Western, mood: [dusty, nostalgic], bpm: [60,120], instruments: [electric-guitar, harmonica, brass], vocal: [male]}
+
+  # ═══════════════════════════════════════
+  # VOCAL / CHORAL 人声/合唱
+  # ═══════════════════════════════════════
+  - id: vocal
+    label: Vocal 人声/合唱
+    subgenres:
+      - { id: a cappella, label: A Cappella, mood: [harmonic, pure], bpm: [60,140], instruments: [none, vocal-percussion], vocal: [chorus, harmonic]}
+      - { id: choir, label: Choir, mood: [spiritual, grand], bpm: [50,120], instruments: [none, organ], vocal: [chorus, ethereal]}
+      - { id: barbershop, label: Barbershop, mood: [nostalgic, harmonic], bpm: [70,110], instruments: [none], vocal: [male, harmonic]}
+      - { id: gregorian-chant, label: Gregorian Chant, mood: [meditative, sacred], bpm: [40,80], instruments: [none], vocal: [male, monophonic]}
+      - { id: vocaloid, label: Vocaloid, mood: [electronic, cute], bpm: [100,170], instruments: [synth, drums], vocal: [female, bright]}
+      - { id: throat-singing, label: Throat Singing, mood: [spiritual, unique], bpm: [60,120], instruments: [none], vocal: [male, harmonic]}
+      - { id: gospel, label: Gospel, mood: [powerful, spiritual], bpm: [90,130], instruments: [piano, bass, drums], vocal: [chorus, full]}

@@ -1,0 +1,32 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "Search Douyin real estate hot topics",
+    "Extract topic view count data",
+    "Topic type classification",
+    "Source and origin analysis",
+    "Generate daily reports"
+  ],
+  "created_at": "2026-04-02",
+  "description": "Automatically search Douyin real estate hot topics, extract view counts, types, and sources. Supports daily scheduled report generation.",
+  "id": 383269040013722,
+  "name": "douyin-real-estate-hot-topics",
+  "platform": "minimax",
+  "tags": [
+    "douyin",
+    "real-estate",
+    "hot-topics",
+    "trend-tracking",
+    "data-analysis"
+  ],
+  "trigger_phrases": [
+    "douyin real estate hot",
+    "real estate trends",
+    "real estate topic analysis",
+    "douyin real estate topics",
+    "real estate daily report",
+    "hot real estate topics"
+  ],
+  "updated_at": 1775125366923,
+  "version": "1.0.0"
+}

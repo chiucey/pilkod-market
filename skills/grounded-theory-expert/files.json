@@ -1,0 +1,269 @@
+{
+  "files": [
+    {
+      "path": "ITERATION-IMPLEMENTATION-SUMMARY.md",
+      "sha": "3c068a9aa4e9c5d9834c7a18a4446dd4ede6d37b",
+      "size": 7503
+    },
+    {
+      "path": "README.md",
+      "sha": "beffc3de86121026e2b409fef62bd6fe5f22fc5a",
+      "size": 3255
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "10a03ab3672e03c084ebba55ef0fe5f65edecff1",
+      "size": 16775
+    },
+    {
+      "path": "_meta.json",
+      "sha": "39896d0c63f727c4a2e5183db94860d878d02c92",
+      "size": 141
+    },
+    {
+      "path": "cases/negative/case-001-presumption.md",
+      "sha": "ae6b678f0130119fad3579486e3e854320a01a12",
+      "size": 7992
+    },
+    {
+      "path": "cases/positive/case-001-gt-complete.md",
+      "sha": "7a454bb30af02f6846dacb353bd717c57eaaf7d7",
+      "size": 6345
+    },
+    {
+      "path": "data/segments_marriage_20260409.json",
+      "sha": "b92a9db4986e7c45f7a5316936dce3759945b8d3",
+      "size": 4741
+    },
+    {
+      "path": "examples/batch-coding-with-subagents.md",
+      "sha": "4bbb813acb9c8acfad69aedfef000cc61dcd7be6",
+      "size": 6046
+    },
+    {
+      "path": "examples/input-example.json",
+      "sha": "57bd6b47f7750b13d2e7cdccdf0067b24a6a83cf",
+      "size": 1164
+    },
+    {
+      "path": "experience/patterns.md",
+      "sha": "7f2f0bb22170ce7533782416b903985736264424",
+      "size": 8179
+    },
+    {
+      "path": "index.html",
+      "sha": "6b9ef356a98729c93faae3b6b88f79e3c8db35b4",
+      "size": 28393
+    },
+    {
+      "path": "lesson-memory.md",
+      "sha": "9e7ebffd7e230c3984724e1a16923fcb8548d411",
+      "size": 2870
+    },
+    {
+      "path": "prompts/axial-coding-prompt.md",
+      "sha": "72e2cd8d2810a7d86d0ceca8c9ee103c40b7dd60",
+      "size": 3673
+    },
+    {
+      "path": "prompts/open-coding-prompt.md",
+      "sha": "b17092181403b3bcf13b6fa53fbdc2d6687f8872",
+      "size": 2798
+    },
+    {
+      "path": "prompts/saturation-check-prompt.md",
+      "sha": "3b026b222986e435dbc4a8be4a443b580820585d",
+      "size": 4233
+    },
+    {
+      "path": "prompts/selective-coding-prompt.md",
+      "sha": "ba620dc8e6dd505a947b0e88415ef7c55123f7d5",
+      "size": 3939
+    },
+    {
+      "path": "prompts/system-prompt.md",
+      "sha": "a5ec69a5f9410c8b3a49964d3dd500a9dbd94c22",
+      "size": 7144
+    },
+    {
+      "path": "prompts/validation-prompt.md",
+      "sha": "496276916b1430c76d6c54c3540c3db250a1a333",
+      "size": 5628
+    },
+    {
+      "path": "qwen-skill.yaml",
+      "sha": "280964f1adfb5a7285aac1cf7a8fdb97fa06b280",
+      "size": 2497
+    },
+    {
+      "path": "references/classic-literature.md",
+      "sha": "a6f409cb7b6f8df743c0e09a8eee3c90a4b5230f",
+      "size": 10737
+    },
+    {
+      "path": "references/detailed-guide.md",
+      "sha": "b2f1ad1cc1a79234d70e4528b2432c98d73f5c59",
+      "size": 16906
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "4c5cc9dbe4c4ced0097d72cef17cbfe8c60c0614",
+      "size": 28
+    },
+    {
+      "path": "scripts/iteration-controller.sh",
+      "sha": "104840439600a7505fac83ecbae20d758378bf78",
+      "size": 6758
+    },
+    {
+      "path": "scripts/quality-review.sh",
+      "sha": "fcdeabc5557c2d7f9880275264c921a682906479",
+      "size": 8705
+    },
+    {
+      "path": "scripts/self-correction.sh",
+      "sha": "dbcb2dd8d8ccf4b772a22ef9f833641a6b1cd279",
+      "size": 7702
+    },
+    {
+      "path": "sessions/s012-reality-check/axial_result.json",
+      "sha": "24724b7e6e2c5329f08d387afcc92c55927e13e2",
+      "size": 9668
+    },
+    {
+      "path": "sessions/s012-reality-check/interviews.json",
+      "sha": "a7f7dcc5a6e9aa81f38b869b2a8eeae6f701a3a0",
+      "size": 7021
+    },
+    {
+      "path": "sessions/s012-reality-check/open_coding_result.json",
+      "sha": "ab955ed664590cbcd6c0b85f3ce4df3d7186f496",
+      "size": 7704
+    },
+    {
+      "path": "sessions/s012-reality-check/segments.json",
+      "sha": "89a2476a1ccdd474c4f5d93d59180427dcc22698",
+      "size": 10281
+    },
+    {
+      "path": "skill-hooks.yaml",
+      "sha": "0d3180c151173dab37882f721af8fb4170faa0b0",
+      "size": 11350
+    },
+    {
+      "path": "skill.yaml",
+      "sha": "e7f270f4135fe6b611244ff09a7a4c542c3fe704",
+      "size": 4196
+    },
+    {
+      "path": "soul.md",
+      "sha": "58d0c011dc7766f0a019111d9e45650599fb25ff",
+      "size": 7637
+    },
+    {
+      "path": "subagents.yaml",
+      "sha": "e228f6be189c29486a1a28c1f75ea6bfc2180a3a",
+      "size": 7397
+    },
+    {
+      "path": "templates/findings.md.template",
+      "sha": "6018f629785358755dd4ba563b41f2e6d05d68eb",
+      "size": 3897
+    },
+    {
+      "path": "templates/progress.md.template",
+      "sha": "9d4ee0ae1508149d05cdad704b28806726db984d",
+      "size": 3591
+    },
+    {
+      "path": "templates/task_plan.md.template",
+      "sha": "3f3773471519bcc9cb35c3f57f6f82235f889fbd",
+      "size": 1416
+    },
+    {
+      "path": "test-prompts.json",
+      "sha": "a8898b6a294724e4768df0870669b558c4fce943",
+      "size": 925
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml",
+      "sha": "e6ffa1e95db1063bd5516707c86171ca27e098d6",
+      "size": 1798
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml.bak",
+      "sha": "9700097ce5dd0ad572734a2331bb0ceb8d93768c",
+      "size": 2245
+    },
+    {
+      "path": "tools/IMPLEMENTATION_GUIDE.md",
+      "sha": "ab36c5982af8f8d540c7f0acb3a4741d944d23e9",
+      "size": 15969
+    },
+    {
+      "path": "tools/analyze.py",
+      "sha": "c3716d4e8ff35444a887ec54be3c445db545140d",
+      "size": 6571
+    },
+    {
+      "path": "tools/anonymize-data.py",
+      "sha": "2e4f299c9c170e5828039a3ded940d33f3454309",
+      "size": 2541
+    },
+    {
+      "path": "tools/assess-saturation.py",
+      "sha": "3b81910a74ac82a5b72b2ee79d34db948ca77baa",
+      "size": 10513
+    },
+    {
+      "path": "tools/axial_coding.py",
+      "sha": "03e88964054313e1a8f1a0972045cb8cbaf980e9",
+      "size": 8552
+    },
+    {
+      "path": "tools/batch_analyzer.py",
+      "sha": "d23ab9508429d8f188a406cc8479c6fec889ace2",
+      "size": 33266
+    },
+    {
+      "path": "tools/calculate-reliability.py",
+      "sha": "000423b3d5f51bc8ab10f97f21fe30ebb9b987b1",
+      "size": 5677
+    },
+    {
+      "path": "tools/correct.py",
+      "sha": "6219701555300a3e17775daf96191833c84d17c6",
+      "size": 41459
+    },
+    {
+      "path": "tools/evolution.py",
+      "sha": "d7387a1413e15f63ae6208fb26911407628580f4",
+      "size": 2322
+    },
+    {
+      "path": "tools/iteration_controller.py",
+      "sha": "7fee0f92a284b6cf612dc7b745665b0a535b39f5",
+      "size": 40921
+    },
+    {
+      "path": "tools/memo_manager.py",
+      "sha": "1010a822d5726d39aa0692095142be681d376297",
+      "size": 13638
+    },
+    {
+      "path": "tools/planning-integration.py",
+      "sha": "15d76a7691581a29df2dd770c66427323b449b90",
+      "size": 1580
+    },
+    {
+      "path": "tools/segment-data.py",
+      "sha": "30dfc41d5add65ef1512872d50700ebf215a8110",
+      "size": 3735
+    },
+    {
+      "path": "tools/selective_coding.py",
+      "sha": "8ae0c5743fa1ce5c313ac918d0e2400990063bd9",
+      "size": 16521
+    }
+  ]
+}

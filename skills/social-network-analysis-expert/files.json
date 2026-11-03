@@ -1,0 +1,234 @@
+{
+  "files": [
+    {
+      "path": "OPTIMIZATION_COMPLETE.md",
+      "sha": "d4b6ed7065fe8673451e682f51806258cf79ac66",
+      "size": 11488
+    },
+    {
+      "path": "README.md",
+      "sha": "fbcbdaf24c29664700d92be661be33a18be5bf5d",
+      "size": 2740
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "def2577b2ec45be24aa9b66461b1b7102da950dc",
+      "size": 16461
+    },
+    {
+      "path": "_meta.json",
+      "sha": "a884011ce6dc3610c11dfffa1ee55b519876f1e8",
+      "size": 149
+    },
+    {
+      "path": "cases/negative/case-001-node-overload.md",
+      "sha": "f23beb762fd3d46f92191eefcd08a565eec6c56a",
+      "size": 4273
+    },
+    {
+      "path": "cases/negative/case-002-ignoring-weights.md",
+      "sha": "a649c3e1bb1373cce98578a26ef7e8ac7a5c998f",
+      "size": 4709
+    },
+    {
+      "path": "cases/negative/case-003-visualization-misinterpretation.md",
+      "sha": "5a17c6d2f7c37768664f56e16c16942fa4806e12",
+      "size": 5238
+    },
+    {
+      "path": "cases/negative/case-004-overgeneralization.md",
+      "sha": "536c627a6c9dec1a3d4031255a9321aaba6743b5",
+      "size": 6032
+    },
+    {
+      "path": "cases/positive/case-001-centrality-analysis.md",
+      "sha": "9a2cc00c9a897a9cfc8772717888a07f61b75815",
+      "size": 3492
+    },
+    {
+      "path": "cases/positive/case-001-sna-collaboration.md",
+      "sha": "2b7587cda168dbfc9a5910213caf138a06037027",
+      "size": 7916
+    },
+    {
+      "path": "cases/positive/case-002-community-detection.md",
+      "sha": "4b63ca7f8108a426a50b07890904d8080786fe2e",
+      "size": 3931
+    },
+    {
+      "path": "cases/positive/case-003-structural-holes.md",
+      "sha": "484909f6b46a3ef543603938882be53aaeba5144",
+      "size": 3867
+    },
+    {
+      "path": "examples/temporal-sna-with-subagents.md",
+      "sha": "4f2e2e537e1946acaa7046a55046b893f4d8513a",
+      "size": 5204
+    },
+    {
+      "path": "experience/patterns.md",
+      "sha": "837810987f397c581b7d5bbb3b0696760aad2212",
+      "size": 7854
+    },
+    {
+      "path": "index.html",
+      "sha": "811e09ebf49170c8b61b13f9209d8cc122372ec5",
+      "size": 26409
+    },
+    {
+      "path": "lesson-memory.md",
+      "sha": "eccbc0ffe18a52865ace45dd23f7dd0041dd4afa",
+      "size": 2687
+    },
+    {
+      "path": "prompts/centrality-analysis-prompt.md",
+      "sha": "fc23e0b67d1b7472e40e2b4659ca9d43df2fad5f",
+      "size": 1496
+    },
+    {
+      "path": "prompts/community-detection-prompt.md",
+      "sha": "490dd31d2b375fd67da3a5794a4c709e2c37384e",
+      "size": 1342
+    },
+    {
+      "path": "prompts/network-building-prompt.md",
+      "sha": "d709620d9e95186ae59e7f2161f9c907d261c2dd",
+      "size": 1267
+    },
+    {
+      "path": "prompts/structural-holes-prompt.md",
+      "sha": "84dafb33c85bad8b85a129949b8022c291f7b85e",
+      "size": 1998
+    },
+    {
+      "path": "prompts/system-prompt.md",
+      "sha": "744bfdf9411642f7a62f1442a931da3e9b692ed2",
+      "size": 7527
+    },
+    {
+      "path": "qwen-skill.yaml",
+      "sha": "2360f8cd96e70a5011907bcf7a437adf76eeeda4",
+      "size": 1736
+    },
+    {
+      "path": "references/analysis-types.md",
+      "sha": "3b17fd53b7e2ba355cbacb22d0ad4e390374958e",
+      "size": 5788
+    },
+    {
+      "path": "references/classic-literature.md",
+      "sha": "44069b7887ea454ef0eb863bc12bb6d2b82cb9a3",
+      "size": 7299
+    },
+    {
+      "path": "references/detailed-guide.md",
+      "sha": "4d42d5f74541704d46e0631f473fec092ee2de4d",
+      "size": 14449
+    },
+    {
+      "path": "references/long-term-tasks.md",
+      "sha": "e513f0be5ad22b646f5c8357a4bb1796ea033808",
+      "size": 5653
+    },
+    {
+      "path": "references/quality-standards.md",
+      "sha": "9d79cc7cf7f49494d0ff0108a44a8f2a3735ee6b",
+      "size": 4607
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "04092948bd546dec2ca7048c6d731a01f0bc3517",
+      "size": 67
+    },
+    {
+      "path": "skill-hooks.yaml",
+      "sha": "dd87cac62476ede5d26b035fafa9beec51afead3",
+      "size": 1898
+    },
+    {
+      "path": "skill.yaml",
+      "sha": "9e167fbd96705122238aa3cd8c30861287d9bcdc",
+      "size": 4543
+    },
+    {
+      "path": "soul.md",
+      "sha": "a7fe236f03d120e0a9dd8bf4f622910e647962ea",
+      "size": 7399
+    },
+    {
+      "path": "subagents.yaml",
+      "sha": "357f5fc250ab4032889690694010588e261315c6",
+      "size": 2191
+    },
+    {
+      "path": "templates/findings.md.template",
+      "sha": "787d5d3e821b0d27d259c538764d8bd527c7d912",
+      "size": 2660
+    },
+    {
+      "path": "templates/progress.md.template",
+      "sha": "49ecbd43918579e1250cbf91214b08ce078ec160",
+      "size": 3476
+    },
+    {
+      "path": "templates/task_plan.md.template",
+      "sha": "e6747222eb19605bd0a46a80f98b960f9d81967e",
+      "size": 1424
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml",
+      "sha": "9174c6ecb31aca1a4c81bebca2f74c29444ccb44",
+      "size": 1346
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml.bak",
+      "sha": "0a183de52bfb6eb780e088eb97235a75032c78f6",
+      "size": 1953
+    },
+    {
+      "path": "tools/analyze-structural-holes.py",
+      "sha": "f1655a658d56f45bfcf66ffb3acda3dabde342b3",
+      "size": 4906
+    },
+    {
+      "path": "tools/analyze.py",
+      "sha": "d1bce789527bf9d488691638c5f94194f8411082",
+      "size": 2468
+    },
+    {
+      "path": "tools/build-network.py",
+      "sha": "6a04db4f9cf08338d8e4204104093a9bdcd7a037",
+      "size": 4536
+    },
+    {
+      "path": "tools/calculate-centrality.py",
+      "sha": "1de468d43d3e4a7bc93127be8c61c6b82521a9c4",
+      "size": 7442
+    },
+    {
+      "path": "tools/detect-communities.py",
+      "sha": "d6d640965c6fd6fa8aae1055b3a5d1844d26edad",
+      "size": 5734
+    },
+    {
+      "path": "tools/evolution.py",
+      "sha": "73232518ba3addf41cbb898b19143eb8c6ad36a0",
+      "size": 5407
+    },
+    {
+      "path": "tools/network_visualizer.py",
+      "sha": "8118b1a380bf0a944652049cd595bd451af1c173",
+      "size": 8840
+    },
+    {
+      "path": "tools/planning-integration.py",
+      "sha": "15d76a7691581a29df2dd770c66427323b449b90",
+      "size": 1580
+    },
+    {
+      "path": "tools/temporal_analyzer.py",
+      "sha": "a811b8e2925c15c521655df090db70fb4e10a7b4",
+      "size": 10425
+    }
+  ]
+}

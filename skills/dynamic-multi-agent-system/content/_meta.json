@@ -1,0 +1,72 @@
+{
+  "author": "MiniMax Agent",
+  "category": "orchestration",
+  "components": {
+    "core": [
+      "task-classifier",
+      "task-decomposer",
+      "subagent-manager",
+      "executor-coordinator",
+      "quality-checker",
+      "error-handler",
+      "smart-retry",
+      "shared-memory",
+      "skill-evolution",
+      "resource-cleaner"
+    ],
+    "extra": [
+      "budget-controller",
+      "model-selector",
+      "refinement-analyzer",
+      "user-feedback",
+      "visual-monitor",
+      "exporter",
+      "api",
+      "browser"
+    ],
+    "templates": [
+      "batch-processor",
+      "cache",
+      "monitoring",
+      "multi-task-queue",
+      "optimization",
+      "progressive-processor",
+      "result-reuse",
+      "agency-hq-integration"
+    ]
+  },
+  "created": "2026-04-08",
+  "description": "混合动态多Agent协作系统。自动识别任务类型，动态创建子Agent团队，执行复杂任务。支持单一任务、标准任务、创新任务三种模式。",
+  "id": 385287463133417,
+  "metadata": {
+    "openclaw": {
+      "category": "orchestration",
+      "emoji": "🤖",
+      "requires": {
+        "models": [
+          "modelstudio/qwen3.5-plus"
+        ]
+      }
+    }
+  },
+  "name": "dynamic-multi-agent-system",
+  "platform": "minimax",
+  "statistics": {
+    "agent_roles": 30,
+    "checklists": 6,
+    "scripts": 25,
+    "templates": 24,
+    "total_files": 150
+  },
+  "tags": [
+    "multi-agent",
+    "collaboration",
+    "orchestration",
+    "task-decomposition",
+    "subagent-management",
+    "quality-control"
+  ],
+  "updated": "2026-04-08",
+  "updated_at": 1775617998154,
+  "version": "1.4.0"
+}

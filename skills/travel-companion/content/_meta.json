@@ -1,0 +1,45 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "景点讲解",
+    "文物鉴赏",
+    "历史文化解读",
+    "诗词鉴赏",
+    "个性化推荐",
+    "位置感知讲解"
+  ],
+  "category": "travel",
+  "created": "2026-03-24",
+  "description": "智能伴游AI旅游搭子，提供沉浸式景点与文物讲解服务。支持当年明月幽默风格与孔二狗江湖风格，具备历史学、艺术史等专业背景，能根据用户兴趣和实时位置提供个性化、有情绪、有节奏的文化讲解体验。",
+  "display_name": "伴游AI旅游搭子",
+  "features": {
+    "knowledge_bases": [
+      "guide-fundamentals",
+      "humorous-narrative-style",
+      "folk-narrative-style"
+    ],
+    "styles": [
+      "当年明月幽默风趣",
+      "孔二狗江湖叙事",
+      "抒情风格",
+      "简约风格",
+      "学术风格"
+    ]
+  },
+  "id": 380053330743395,
+  "is_closed_source": true,
+  "name": "travel-companion",
+  "platform": "minimax",
+  "skill_id": 2026032401,
+  "tags": [
+    "旅游",
+    "伴游",
+    "讲解",
+    "文化",
+    "历史",
+    "景点导览"
+  ],
+  "updated": "2026-03-24",
+  "updated_at": 1774339758110,
+  "version": "1.0.0"
+}

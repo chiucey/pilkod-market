@@ -1,0 +1,110 @@
+# Environment Variables Template
+# Copy this file to .env and fill in your values
+
+# ===========================================
+# Application Settings
+# ===========================================
+
+NODE_ENV=development
+PORT=3000
+APP_NAME=my-project
+APP_URL=http://localhost:3000
+
+# ===========================================
+# Database Configuration
+# ===========================================
+
+DATABASE_URL=postgresql://user:password@localhost:5432/database
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=user
+DB_PASSWORD=password
+DB_NAME=database
+
+# ===========================================
+# Redis Configuration
+# ===========================================
+
+REDIS_URL=redis://localhost:6379/0
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+
+# ===========================================
+# Authentication
+# ===========================================
+
+JWT_SECRET=your-super-secret-jwt-key-change-in-production
+JWT_EXPIRES_IN=7d
+JWT_REFRESH_EXPIRES_IN=30d
+
+# OAuth (if using social login)
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+
+# ===========================================
+# Email Configuration
+# ===========================================
+
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=noreply@example.com
+SMTP_PASSWORD=
+SMTP_FROM=noreply@example.com
+
+# ===========================================
+# File Storage
+# ===========================================
+
+STORAGE_TYPE=local
+# For S3:
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=us-east-1
+AWS_S3_BUCKET=my-bucket
+# For local storage:
+UPLOAD_DIR=./uploads
+MAX_FILE_SIZE=10485760
+
+# ===========================================
+# External Services
+# ===========================================
+
+API_KEY_EXTERNAL_SERVICE=
+EXTERNAL_API_URL=https://api.example.com
+
+# ===========================================
+# Logging & Monitoring
+# ===========================================
+
+LOG_LEVEL=info
+LOG_FORMAT=json
+
+# APM (Application Performance Monitoring)
+APM_SERVICE_NAME=my-project
+APM_SERVER_URL=http://localhost:8200
+APM_SECRET_TOKEN=
+
+# ===========================================
+# Feature Flags
+# ===========================================
+
+FEATURE_NEW_DASHBOARD=false
+FEATURE_BETA_API=true
+
+# ===========================================
+# Security
+# ===========================================
+
+CORS_ORIGIN=http://localhost:3000
+RATE_LIMIT_MAX=100
+RATE_LIMIT_WINDOW_MS=60000
+
+# ===========================================
+# Development Settings
+# ===========================================
+
+DEBUG=true
+SEED_DATA=true

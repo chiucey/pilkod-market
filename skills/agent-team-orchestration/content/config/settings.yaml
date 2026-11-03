@@ -1,0 +1,224 @@
+# Agent Team Orchestration Configuration
+# Version: 4.0.0
+
+default_settings:
+  # Shared artifact base path
+  shared_artifact_base_path: "/shared/artifacts"
+
+  # Workspace path
+  workspace_path: "/workspace"
+
+  # Default team configuration
+  default_team:
+    min_agents: 2
+    max_agents: 20
+    default_roles:
+      - "Orchestrator"
+      - "Builder"
+      - "Reviewer"
+
+  # Task lifecycle configuration
+  task_lifecycle:
+    states:
+      - "Inbox"
+      - "Assigned"
+      - "In Progress"
+      - "Review"
+      - "Done"
+      - "Failed"
+    allow_self_state_update: false
+    require_comments: true
+    max_retry_count: 3
+
+  # Handoff protocol settings
+  handoff:
+    require_5_elements: true
+    validate_before_transfer: true
+    log_all_handoffs: true
+    elements:
+      - "completed_work"
+      - "artifact_location"
+      - "verification_method"
+      - "known_issues"
+      - "next_action"
+
+  # Quality rules
+  quality:
+    enforce_iron_rules: true
+    require_review: true
+    skip_review_allowed: false
+    review_cycles: 1
+
+  # Monitoring configuration
+  monitoring:
+    enabled: true
+    metrics:
+      - "task_completion_rate"
+      - "average_duration"
+      - "conflict_frequency"
+      - "handoff_efficiency"
+    alert_thresholds:
+      warning: 0.7
+      critical: 0.5
+    dashboard:
+      refresh_interval: 5
+      retention_days: 30
+
+  # Collaboration settings
+  collaboration:
+    communication_modes:
+      - "real_time_sync"
+      - "scheduled_reporting"
+      - "hybrid"
+    conflict_resolution:
+      modes:
+        - "priority"
+        - "voting"
+        - "human_intervention"
+      default: "priority"
+
+  # Security settings
+  security:
+    data_isolation: true
+    permission_tiers:
+      - "Administrator"
+      - "Executor"
+      - "Observer"
+    audit_logging: true
+    resource_limits:
+      max_concurrent_tasks: 10
+      max_execution_time: 3600
+      storage_quota_mb: 100
+
+# Role definitions with model recommendations
+role_models:
+  Orchestrator:
+    recommended_model: "high_reasoning"
+    rationale: "Responsible for judgment calls and priority decisions"
+    capabilities:
+      - "task_routing"
+      - "state_tracking"
+      - "priority_decisions"
+
+  Builder:
+    recommended_model: "cost_effective"
+    rationale: "Handles mechanical and repetitive work"
+    capabilities:
+      - "artifact_generation"
+      - "code_writing"
+      - "document_creation"
+
+  Reviewer:
+    recommended_model: "high_reasoning"
+    rationale: "Detects blind spots and quality issues"
+    capabilities:
+      - "quality_verification"
+      - "defect_detection"
+      - "standards_alignment"
+
+  Ops:
+    recommended_model: "stable_low_cost"
+    rationale: "Maintenance activities require stability"
+    capabilities:
+      - "health_checks"
+      - "event_dispatching"
+      - "scheduled_tasks"
+
+  Researcher:
+    recommended_model: "balanced"
+    rationale: "Knowledge retrieval and preliminary analysis"
+    capabilities:
+      - "information_collection"
+      - "data_capture"
+      - "preliminary_analysis"
+
+  Analyst:
+    recommended_model: "high_reasoning"
+    rationale: "Pattern recognition and insight extraction"
+    capabilities:
+      - "deep_analysis"
+      - "trend_identification"
+      - "insight_extraction"
+
+# Scenario templates
+scenario_templates:
+  scientific_research:
+    name: "Scientific Research Collaboration"
+    roles: ["Researcher", "Analyst", "Statistician", "Writer", "Reviewer"]
+    task_flow:
+      - "Literature review"
+      - "Data collection"
+      - "Analysis"
+      - "Statistical processing"
+      - "Paper writing"
+    communication: "scheduled_reporting"
+    monitoring_metrics:
+      - "research_progress"
+      - "data_quality"
+      - "writing_progress"
+
+  business_analysis:
+    name: "Business Analysis"
+    roles: ["DataCollector", "BusinessAnalyst", "FinancialAnalyst", "ReportWriter"]
+    task_flow:
+      - "Data gathering"
+      - "Market analysis"
+      - "Financial modeling"
+      - "Report compilation"
+    communication: "hybrid"
+    monitoring_metrics:
+      - "analysis_accuracy"
+      - "report_quality"
+      - "deadline_adherence"
+
+  content_creation:
+    name: "Content Creation"
+    roles: ["CreativeDirector", "Researcher", "Writer", "Editor", "MediaSpecialist"]
+    task_flow:
+      - "Ideation"
+      - "Research"
+      - "Writing"
+      - "Editing"
+      - "Media production"
+    communication: "real_time_sync"
+    monitoring_metrics:
+      - "content_quality"
+      - "production_speed"
+      - "engagement_metrics"
+
+  software_development:
+    name: "Software Development"
+    roles: ["Architect", "Developer", "Tester", "DevOps", "ProjectManager"]
+    task_flow:
+      - "Requirements"
+      - "Design"
+      - "Development"
+      - "Testing"
+      - "Deployment"
+    communication: "hybrid"
+    monitoring_metrics:
+      - "code_quality"
+      - "test_coverage"
+      - "deployment_success"
+
+# Performance targets
+performance:
+  task_initiation:
+    target_seconds: 3
+    max_seconds: 5
+  max_team_scale: 20
+  max_team_scale_hard_limit: 50
+  task_decomposition:
+    target_seconds: 0.8
+    max_seconds: 1
+    scale_100_tasks: true
+  capability_matching:
+    target_seconds: 1.5
+    max_seconds: 2
+  monitoring_latency:
+    target_seconds: 0.5
+    max_seconds: 1
+  result_integration:
+    target_seconds: 8
+    max_seconds: 10
+    scale_1000_tasks: true

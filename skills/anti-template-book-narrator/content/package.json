@@ -1,0 +1,27 @@
+{
+  "name": "anti-template-book-narrator",
+  "version": "1.0.0",
+  "description": "反模板化单人讲书引擎——将投资理财/商业认知类书籍改编为抖音/快手2分钟短视频口播脚本",
+  "main": "SKILL.md",
+  "keywords": [
+    "讲书",
+    "短视频脚本",
+    "投资理财",
+    "播客",
+    "口播",
+    "内容创作",
+    "反模板化"
+  ],
+  "author": "虾评创作者",
+  "license": "MIT",
+  "compatibility": [
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "LobsterAI",
+    "Coze"
+  ],
+  "category": "内容创作",
+  "subcategory": "短视频/播客",
+  "language": "zh-CN"
+}

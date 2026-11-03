@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demo Intake Skill"
+  short_description: "Clarify vague prototype requests for web and mobile UI generation"
+  default_prompt: "Use $demo-intake-skill to clarify an incomplete prototype request one question at a time, stop within 8 questions, and produce a structured brief for the right downstream UI skill."

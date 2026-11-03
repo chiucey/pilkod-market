@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>精美时钟 - 屏保展示</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&family=Share+Tech+Mono&family=Oswald:wght@300;400;500;600;700&family=DSEG7+Classic:wght@400;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #0a0a0f;
+            --text-color: #ffffff;
+            --accent-color: #00f5ff;
+            --clock-size: 300px;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background 0.3s ease;
+        }
+
+        body.fullscreen-mode {
+            overflow: hidden;
+        }
+
+        /* 控制面板 */
+        .control-panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 100%);
+            padding: 15px 20px;
+            z-index: 100;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .control-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            white-space: nowrap;
+        }
+
+        /* 时钟样式选择器 */
+        .style-selector {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            max-width: 600px;
+            justify-content: center;
+        }
+
+        .style-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .style-btn:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .style-btn.active {
+            background: var(--accent-color);
+            color: #000;
+            border-color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* 颜色选择器 */
+        .color-picker {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .color-preset {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .color-preset:hover {
+            transform: scale(1.15);
+        }
+
+        .color-preset.active {
+            border-color: white;
+            box-shadow: 0 0 10px currentColor;
+        }
+
+        .color-input {
+            width: 40px;
+            height: 32px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background: transparent;
+        }
+
+        /* 大小滑块 */
+        .size-slider {
+            width: 150px;
+            height: 6px;
+            -webkit-appearance: none;
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .size-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .size-value {
+            font-size: 14px;
+            min-width: 50px;
+            text-align: center;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* 全屏按钮 */
+        .fullscreen-btn {
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #00f5ff, #00a8ff);
+            border: none;
+            border-radius: 25px;
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .fullscreen-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0,245,255,0.5);
+        }
+
+        .exit-fullscreen-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 1000;
+            display: none;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .exit-fullscreen-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        body.fullscreen-mode .exit-fullscreen-btn {
+            display: block;
+        }
+
+        body.fullscreen-mode .control-panel {
+            display: none;
+        }
+
+        /* 时钟展示区 */
+        .clock-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 100px 20px 20px;
+        }
+
+        body.fullscreen-mode .clock-container {
+            padding: 20px;
+        }
+
+        .clock-wrapper {
+            position: relative;
+        }
+
+        /* ========== 30种时钟样式 ========== */
+
+        /* 1. Neon Glow */
+        .clock-neon {
+            font-family: 'Orbitron', monospace;
+            font-size: var(--clock-size);
+            font-weight: 900;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #00f5ff,
+                0 0 40px #00f5ff,
+                0 0 80px #00f5ff;
+            letter-spacing: 0.1em;
+        }
+
+        .clock-neon .colon {
+            animation: neonFlicker 2s infinite;
+        }
+
+        @keyframes neonFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+            52% { opacity: 1; }
+            54% { opacity: 0.9; }
+        }
+
+        /* 2. Digital Seven-Segment */
+        .clock-seven-segment {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+            background: #1a0000;
+            padding: 20px 40px;
+            border-radius: 10px;
+            border: 3px solid #330000;
+            letter-spacing: 0.05em;
+        }
+
+        .clock-seven-segment span {
+            display: inline-block;
+            background: linear-gradient(180deg, #ff3333 0%, #990000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* 3. Minimalist */
+        .clock-minimalist {
+            font-family: 'Oswald', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 300;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 0.2em;
+            position: relative;
+        }
+
+        .clock-minimalist::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+        }
+
+        /* 4. Retro Flip */
+        .clock-flip {
+            display: flex;
+            gap: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: calc(var(--clock-size) * 0.3);
+        }
+
+        .flip-card {
+            perspective: 400px;
+        }
+
+        .flip-digit {
+            width: 1.2em;
+            height: 1.5em;
+            background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 50%, #2a2a2a 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            font-size: var(--clock-size);
+        }
+
+        .clock-flip .colon {
+            font-size: var(--clock-size);
+            animation: flipBlink 1s infinite;
+        }
+
+        @keyframes flipBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* 5. Binary */
+        .clock-binary {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: calc(var(--clock-size) * 0.25);
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            display: flex;
+            gap: 30px;
+        }
+
+        .binary-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .binary-label {
+            font-size: 0.5em;
+            color: rgba(0,255,0,0.5);
+        }
+
+        .binary-dots {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .binary-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .binary-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(0,255,0,0.2);
+            border: 1px solid rgba(0,255,0,0.4);
+        }
+
+        .binary-dot.on {
+            background: #00ff00;
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        /* 6. Circular Arc */
+        .clock-circular {
+            width: var(--clock-size);
+            height: var(--clock-size);
+            position: relative;
+        }
+
+        .clock-circular svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .clock-circular .time-display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Orbitron', monospace;
+            font-size: calc(var(--clock-size) * 0.2);
+            font-weight: 700;
+        }
+
+        .arc-bg {
+            fill: none;
+            stroke: rgba(255,255,255,0.1);
+            stroke-width: 8;
+        }
+
+        .arc-hours {
+            fill: none;
+            stroke: #ff6b6b;
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke-dasharray: 251.2;
+            stroke-dashoffset: calc(251.2 - (251.2 * var(--hours) / 24));
+        }
+
+        .arc-minutes {
+            fill: none;
+            stroke: #4ecdc4;
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke-dasharray: 251.2;
+            stroke-dashoffset: calc(251.2 - (251.2 * var(--minutes) / 60));
+        }
+
+        .arc-seconds {
+            fill: none;
+            stroke: #ffe66d;
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-dasharray: 251.2;
+            stroke-dashoffset: calc(251.2 - (251.2 * var(--seconds) / 60));
+        }
+
+        /* 7. Dot Matrix */
+        .clock-dot-matrix {
+            font-family: 'Roboto Mono', monospace;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            color: transparent;
+            background: radial-gradient(circle at 30% 30%, #fff 1px, transparent 1px),
+                        radial-gradient(circle at 60% 30%, #fff 1px, transparent 1px),
+                        radial-gradient(circle at 30% 60%, #fff 1px, transparent 1px),
+                        radial-gradient(circle at 60% 60%, #fff 1px, transparent 1px);
+            background-size: 50% 50%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+            letter-spacing: 0.05em;
+        }
+
+        /* 8. Chrome Metal */
+        .clock-chrome {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 900;
+            background: linear-gradient(180deg, #fff 0%, #999 20%, #fff 40%, #666 60%, #fff 80%, #ccc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+            letter-spacing: 0.1em;
+        }
+
+        /* 9. Liquid Fill */
+        .clock-liquid {
+            font-family: 'Orbitron', monospace;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clock-liquid span {
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(90deg, #00f5ff, #00a8ff, #0055ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .clock-liquid::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: liquidShine 3s infinite;
+        }
+
+        @keyframes liquidShine {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50%); }
+        }
+
+        /* 10. Gradient Fade */
+        .clock-gradient {
+            font-family: 'Oswald', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #ff6b6b);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientMove 5s linear infinite;
+            letter-spacing: 0.1em;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        /* 11. Pixel Art */
+        .clock-pixel {
+            font-family: 'Press Start 2P', cursive;
+            font-size: calc(var(--clock-size) * 0.2);
+            color: #fff;
+            image-rendering: pixelated;
+            text-shadow: 4px 4px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+            letter-spacing: 0.1em;
+        }
+
+        /* 12. LED Matrix */
+        .clock-led {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 4px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: calc(var(--clock-size) * 0.3);
+        }
+
+        .led-digit {
+            display: grid;
+            grid-template-columns: repeat(4, 8px);
+            gap: 4px;
+        }
+
+        .led-segment {
+            width: 8px;
+            height: 8px;
+            background: #1a1a2e;
+            border-radius: 2px;
+        }
+
+        .led-segment.active {
+            background: #00ff00;
+            box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+        }
+
+        .clock-led .colon {
+            font-size: calc(var(--clock-size) * 0.3);
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+        }
+
+        /* 13. Skeleton */
+        .clock-skeleton {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 400;
+            color: transparent;
+            -webkit-text-stroke: 2px rgba(255,255,255,0.8);
+            letter-spacing: 0.1em;
+            position: relative;
+        }
+
+        .clock-skeleton::after {
+            content: attr(data-time);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgba(255,255,255,0.1);
+            animation: skeletonPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes skeletonPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 14. Ink Wash */
+        .clock-ink {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: calc(var(--clock-size) * 1.2);
+            color: #1a1a1a;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            opacity: 0.85;
+            letter-spacing: 0.1em;
+        }
+
+        /* 15. Cyberpunk */
+        .clock-cyberpunk {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 900;
+            position: relative;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #ff00ff,
+                0 0 20px #ff00ff,
+                0 0 40px #00ffff,
+                0 0 80px #00ffff;
+            letter-spacing: 0.1em;
+        }
+
+        .clock-cyberpunk::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid #ff00ff;
+            background: linear-gradient(45deg, transparent 48%, #ff00ff 48%, #ff00ff 52%, transparent 52%);
+            background-size: 20px 20px;
+            opacity: 0.3;
+        }
+
+        .clock-cyberpunk::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            border: 1px solid #00ffff;
+            opacity: 0.5;
+        }
+
+        /* 16. Glowing Orb */
+        .clock-orb {
+            position: relative;
+            width: var(--clock-size);
+            height: var(--clock-size);
+        }
+
+        .clock-orb .orb-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #4facfe, #00f2fe);
+            filter: blur(20px);
+            opacity: 0.6;
+            animation: orbPulse 4s ease-in-out infinite;
+        }
+
+        .clock-orb .orb-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Orbitron', monospace;
+            font-size: calc(var(--clock-size) * 0.2);
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255,255,255,0.8);
+        }
+
+        @keyframes orbPulse {
+            0%, 100% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        /* 17. Segment Wheel */
+        .clock-segment-wheel {
+            position: relative;
+            width: var(--clock-size);
+            height: var(--clock-size);
+        }
+
+        .segment-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: calc(var(--clock-size) * 0.08) solid transparent;
+            border-top-color: #ff6b6b;
+            animation: segmentSpin 3s linear infinite;
+        }
+
+        .segment-ring:nth-child(2) {
+            width: 85%;
+            height: 85%;
+            top: 7.5%;
+            left: 7.5%;
+            border-top-color: #4ecdc4;
+            animation-duration: 2s;
+            animation-direction: reverse;
+        }
+
+        .segment-ring:nth-child(3) {
+            width: 70%;
+            height: 70%;
+            top: 15%;
+            left: 15%;
+            border-top-color: #ffe66d;
+            animation-duration: 1.5s;
+        }
+
+        .segment-ring:nth-child(4) {
+            width: 55%;
+            height: 55%;
+            top: 22.5%;
+            left: 22.5%;
+            border-top-color: #ff9ff3;
+            animation-duration: 1s;
+            animation-direction: reverse;
+        }
+
+        .clock-segment-wheel .time-display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Orbitron', monospace;
+            font-size: calc(var(--clock-size) * 0.18);
+            font-weight: 700;
+            color: #fff;
+        }
+
+        @keyframes segmentSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* 18. Bubble */
+        .clock-bubble {
+            position: relative;
+            font-family: 'Orbitron', monospace;
+            font-size: var(--clock-size);
+            font-weight: 700;
+        }
+
+        .clock-bubble span {
+            position: relative;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), rgba(0,245,255,0.2));
+            animation: bubbleFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes bubbleFloat {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+            50% { transform: translateY(-30px) scale(1.1); opacity: 0.8; }
+        }
+
+        /* 19. Abstract */
+        .clock-abstract {
+            font-family: 'Oswald', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            position: relative;
+            color: transparent;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            letter-spacing: 0.05em;
+        }
+
+        .clock-abstract::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        /* 20. Sci-Fi HUD */
+        .clock-hud {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: calc(var(--clock-size) * 0.35);
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            position: relative;
+            padding: 30px 50px;
+            border: 2px solid rgba(0,255,0,0.3);
+        }
+
+        .clock-hud::before,
+        .clock-hud::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #00ff00;
+        }
+
+        .clock-hud::before {
+            top: -5px;
+            left: -5px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .clock-hud::after {
+            bottom: -5px;
+            right: -5px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .hud-label {
+            position: absolute;
+            font-size: 0.4em;
+            color: rgba(0,255,0,0.6);
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* 21. Elegant Script */
+        .clock-script {
+            font-family: 'Dancing Script', cursive;
+            font-size: calc(var(--clock-size) * 1.3);
+            color: #f8e1f4;
+            text-shadow: 2px 2px 10px rgba(248,225,244,0.5);
+            letter-spacing: 0.05em;
+        }
+
+        /* 22. Monospace */
+        .clock-mono {
+            font-family: 'Roboto Mono', monospace;
+            font-size: var(--clock-size);
+            font-weight: 500;
+            color: #e0e0e0;
+            letter-spacing: 0.3em;
+        }
+
+        /* 23. Futuristic */
+        .clock-futuristic {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            position: relative;
+            color: #00f5ff;
+            text-shadow:
+                0 0 10px #00f5ff,
+                0 0 20px #00f5ff,
+                0 0 40px #0088ff;
+            letter-spacing: 0.15em;
+        }
+
+        .clock-futuristic::before {
+            content: attr(data-time);
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            color: #ff0080;
+            text-shadow:
+                0 0 10px #ff0080,
+                0 0 20px #ff0080;
+            z-index: -1;
+        }
+
+        /* 24. Vintage LCD */
+        .clock-lcd {
+            font-family: 'DSEG7 Classic', monospace;
+            font-size: var(--clock-size);
+            color: #7cba3d;
+            background: #1a2a0a;
+            padding: 20px 40px;
+            border-radius: 10px;
+            border: 3px solid #0d1506;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+            letter-spacing: 0.1em;
+        }
+
+        /* 25. Waveform */
+        .clock-waveform {
+            position: relative;
+            width: calc(var(--clock-size) * 2);
+            height: var(--clock-size);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .waveform-bar {
+            width: calc(var(--clock-size) * 0.15);
+            height: 100%;
+            background: linear-gradient(180deg, #ff6b6b, #4ecdc4, #ffe66d);
+            margin: 0 5px;
+            border-radius: 5px;
+            animation: waveformPulse 1s ease-in-out infinite;
+        }
+
+        @keyframes waveformPulse {
+            0%, 100% { transform: scaleY(0.3); }
+            50% { transform: scaleY(1); }
+        }
+
+        .clock-waveform .time-display {
+            position: absolute;
+            font-family: 'Orbitron', monospace;
+            font-size: calc(var(--clock-size) * 0.2);
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255,255,255,0.8);
+        }
+
+        /* 26. Glitch */
+        .clock-glitch {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 900;
+            color: #fff;
+            position: relative;
+            letter-spacing: 0.1em;
+        }
+
+        .clock-glitch::before,
+        .clock-glitch::after {
+            content: attr(data-time);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .clock-glitch::before {
+            color: #ff0080;
+            animation: glitch1 0.3s infinite;
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        }
+
+        .clock-glitch::after {
+            color: #00ffff;
+            animation: glitch2 0.3s infinite;
+            clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+        }
+
+        @keyframes glitch1 {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-5px); }
+            40% { transform: translateX(5px); }
+            60% { transform: translateX(-3px); }
+            80% { transform: translateX(3px); }
+        }
+
+        @keyframes glitch2 {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(5px); }
+            40% { transform: translateX(-5px); }
+            60% { transform: translateX(3px); }
+            80% { transform: translateX(-3px); }
+        }
+
+        /* 27. Tron Style */
+        .clock-tron {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            position: relative;
+            color: #000;
+            -webkit-text-stroke: 3px #00ffff;
+            letter-spacing: 0.1em;
+        }
+
+        .clock-tron::before {
+            content: attr(data-time);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #00ffff;
+            filter: drop-shadow(0 0 10px #00ffff) drop-shadow(0 0 20px #00ffff);
+        }
+
+        .tron-line {
+            position: absolute;
+            background: #00ffff;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        .tron-line.top {
+            top: -20px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            animation: tronScan 2s linear infinite;
+        }
+
+        .tron-line.bottom {
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            animation: tronScan 2s linear infinite reverse;
+        }
+
+        @keyframes tronScan {
+            0% { transform: scaleX(0); transform-origin: left; }
+            50% { transform: scaleX(1); transform-origin: left; }
+            51% { transform-origin: right; }
+            100% { transform: scaleX(0); transform-origin: right; }
+        }
+
+        /* 28. Aurora */
+        .clock-aurora {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 700;
+            position: relative;
+            background: linear-gradient(90deg,
+                #00ff88 0%,
+                #00ffcc 25%,
+                #00ccff 50%,
+                #8866ff 75%,
+                #ff66aa 100%);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: auroraShift 8s ease-in-out infinite;
+            filter: blur(1px);
+        }
+
+        .clock-aurora::after {
+            content: attr(data-time);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: inherit;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: auroraShift 8s ease-in-out infinite reverse;
+            filter: blur(0);
+        }
+
+        @keyframes auroraShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* 29. Clock Tower */
+        .clock-tower {
+            position: relative;
+            text-align: center;
+        }
+
+        .tower-top {
+            width: calc(var(--clock-size) * 0.3);
+            height: calc(var(--clock-size) * 0.4);
+            margin: 0 auto;
+            background: linear-gradient(180deg, #8b7355 0%, #5c4033 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        .tower-body {
+            font-family: 'Playfair Display', serif;
+            font-size: calc(var(--clock-size) * 0.5);
+            font-weight: 700;
+            color: #f5f5dc;
+            background: linear-gradient(180deg, #f5f5dc 0%, #d4c4a8 50%, #8b7355 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+        }
+
+        /* 30. Diamond Cut */
+        .clock-diamond {
+            font-family: 'Orbitron', sans-serif;
+            font-size: var(--clock-size);
+            font-weight: 900;
+            position: relative;
+            color: #fff;
+            letter-spacing: 0.05em;
+        }
+
+        .clock-diamond span {
+            display: inline-block;
+            background: linear-gradient(135deg,
+                #fff 0%,
+                #c0c0c0 25%,
+                #fff 50%,
+                #c0c0c0 75%,
+                #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+            animation: diamondShine 3s ease-in-out infinite;
+        }
+
+        @keyframes diamondShine {
+            0%, 100% {
+                filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)) brightness(1);
+            }
+            50% {
+                filter: drop-shadow(0 0 20px rgba(255,255,255,0.8)) brightness(1.2);
+            }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .control-panel {
+                padding: 10px;
+                gap: 10px;
+            }
+
+            .style-selector {
+                max-width: 100%;
+            }
+
+            .style-btn {
+                padding: 6px 12px;
+                font-size: 10px;
+            }
+
+            .control-group {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .size-slider {
+                width: 100px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .clock-container {
+                padding-top: 120px;
+            }
+
+            .size-slider {
+                width: 200px;
+            }
+        }
+
+        /* 全屏模式优化 */
+        body.fullscreen-mode .clock-wrapper {
+            transform: scale(1);
+        }
+
+        @media (min-width: 1024px) {
+            body.fullscreen-mode .clock-wrapper {
+                transform: scale(1.5);
+            }
+        }
+
+        /* Google Fonts fallback for special fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Dancing+Script:wght@700&family=Ma+Shan+Zheng&family=Playfair+Display:wght@700&display=swap');
+    </style>
+</head>
+<body>
+    <!-- 控制面板 -->
+    <div class="control-panel">
+        <div class="control-group">
+            <span class="control-label">时钟样式:</span>
+            <div class="style-selector" id="styleSelector"></div>
+        </div>
+        <div class="control-group">
+            <span class="control-label">背景色:</span>
+            <div class="color-picker" id="colorPicker"></div>
+            <input type="color" class="color-input" id="customColor" value="#0a0a0f">
+        </div>
+        <div class="control-group">
+            <span class="control-label">大小:</span>
+            <input type="range" class="size-slider" id="sizeSlider" min="100" max="500" value="200">
+            <span class="size-value" id="sizeValue">200px</span>
+        </div>
+        <button class="fullscreen-btn" id="fullscreenBtn">全屏展示</button>
+    </div>
+
+    <button class="exit-fullscreen-btn" id="exitFullscreenBtn">退出全屏 (ESC)</button>
+
+    <!-- 时钟展示区 -->
+    <div class="clock-container">
+        <div class="clock-wrapper" id="clockWrapper"></div>
+    </div>
+
+    <script>
+        // 时钟样式列表
+        const clockStyles = [
+            { id: 'neon', name: '霓虹发光' },
+            { id: 'seven-segment', name: '数码管' },
+            { id: 'minimalist', name: '极简线条' },
+            { id: 'flip', name: '复古翻页' },
+            { id: 'binary', name: '二进制' },
+            { id: 'circular', name: '圆形弧线' },
+            { id: 'dot-matrix', name: '点阵' },
+            { id: 'chrome', name: '金属质感' },
+            { id: 'liquid', name: '液体填充' },
+            { id: 'gradient', name: '渐变褪色' },
+            { id: 'pixel', name: '像素艺术' },
+            { id: 'led', name: 'LED矩阵' },
+            { id: 'skeleton', name: '镂空骨架' },
+            { id: 'ink', name: '水墨风格' },
+            { id: 'cyberpunk', name: '赛博朋克' },
+            { id: 'orb', name: '发光球体' },
+            { id: 'segment-wheel', name: '分段轮盘' },
+            { id: 'bubble', name: '气泡漂浮' },
+            { id: 'abstract', name: '抽象艺术' },
+            { id: 'hud', name: '科幻HUD' },
+            { id: 'script', name: '优雅手写' },
+            { id: 'mono', name: '等宽字体' },
+            { id: 'futuristic', name: '未来科技' },
+            { id: 'lcd', name: '复古LCD' },
+            { id: 'waveform', name: '波形显示' },
+            { id: 'glitch', name: '故障艺术' },
+            { id: 'tron', name: '创战纪' },
+            { id: 'aurora', name: '极光效果' },
+            { id: 'tower', name: '钟楼样式' },
+            { id: 'diamond', name: '钻石切割' }
+        ];
+
+        // 预设颜色
+        const presetColors = [
+            '#0a0a0f', // 深黑
+            '#1a1a2e', // 深蓝
+            '#16213e', // 海军蓝
+            '#0f3460', // 午夜蓝
+            '#1b1b2f', // 暗紫
+            '#2d132c', // 深紫
+            '#1e1e1e', // 炭黑
+            '#0d1117', // GitHub暗
+            '#0f1923', // 极深蓝
+            '#000000', // 纯黑
+            '#1a0a2e', // 暗紫蓝
+            '#0a1628', // 深海蓝
+        ];
+
+        let currentStyle = 'neon';
+        let currentTime = { h: '00', m: '00', s: '00', hours: 0, minutes: 0, seconds: 0 };
+
+        // 初始化UI
+        function initUI() {
+            const styleSelector = document.getElementById('styleSelector');
+            const colorPicker = document.getElementById('colorPicker');
+            const sizeSlider = document.getElementById('sizeSlider');
+            const customColor = document.getElementById('customColor');
+
+            // 创建样式按钮
+            clockStyles.forEach(style => {
+                const btn = document.createElement('button');
+                btn.className = `style-btn ${style.id === currentStyle ? 'active' : ''}`;
+                btn.textContent = style.name;
+                btn.dataset.style = style.id;
+                btn.addEventListener('click', () => selectStyle(style.id));
+                styleSelector.appendChild(btn);
+            });
+
+            // 创建颜色预设
+            presetColors.forEach(color => {
+                const preset = document.createElement('div');
+                preset.className = 'color-preset';
+                preset.style.backgroundColor = color;
+                preset.dataset.color = color;
+                if (color === '#0a0a0f') preset.classList.add('active');
+                preset.addEventListener('click', () => selectColor(color, preset));
+                colorPicker.appendChild(preset);
+            });
+
+            // 大小滑块
+            sizeSlider.addEventListener('input', (e) => {
+                const size = e.target.value;
+                document.getElementById('sizeValue').textContent = `${size}px`;
+                document.documentElement.style.setProperty('--clock-size', `${size}px`);
+            });
+
+            // 自定义颜色
+            customColor.addEventListener('input', (e) => {
+                selectColor(e.target.value, null);
+                document.querySelectorAll('.color-preset').forEach(p => p.classList.remove('active'));
+            });
+
+            // 全屏按钮
+            document.getElementById('fullscreenBtn').addEventListener('click', enterFullscreen);
+            document.getElementById('exitFullscreenBtn').addEventListener('click', exitFullscreen);
+
+            // ESC键退出全屏
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') exitFullscreen();
+            });
+        }
+
+        // 选择时钟样式
+        function selectStyle(styleId) {
+            currentStyle = styleId;
+            document.querySelectorAll('.style-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.style === styleId);
+            });
+            renderClock();
+        }
+
+        // 选择颜色
+        function selectColor(color, preset) {
+            document.body.style.background = color;
+            document.documentElement.style.setProperty('--bg-color', color);
+            if (preset) {
+                document.querySelectorAll('.color-preset').forEach(p => p.classList.remove('active'));
+                preset.classList.add('active');
+            }
+        }
+
+        // 全屏模式
+        function enterFullscreen() {
+            document.body.classList.add('fullscreen-mode');
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            }
+        }
+
+        function exitFullscreen() {
+            document.body.classList.remove('fullscreen-mode');
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+
+        // 获取当前时间
+        function getCurrentTime() {
+            const now = new Date();
+            const h = now.getHours().toString().padStart(2, '0');
+            const m = now.getMinutes().toString().padStart(2, '0');
+            const s = now.getSeconds().toString().padStart(2, '0');
+            return {
+                h, m, s,
+                hours: now.getHours(),
+                minutes: now.getMinutes(),
+                seconds: now.getSeconds()
+            };
+        }
+
+        // 获取数码管样式数字
+        function getSevenSegmentDigits(num) {
+            const segments = {
+                '0': [1,1,1,1,1,1,0],
+                '1': [0,1,1,0,0,0,0],
+                '2': [1,1,0,1,1,0,1],
+                '3': [1,1,1,1,0,0,1],
+                '4': [0,1,1,0,0,1,1],
+                '5': [1,0,1,1,0,1,1],
+                '6': [1,0,1,1,1,1,1],
+                '7': [1,1,1,0,0,0,0],
+                '8': [1,1,1,1,1,1,1],
+                '9': [1,1,1,1,0,1,1]
+            };
+            return segments[num] || segments['0'];
+        }
+
+        // 获取LED点阵
+        function getLEDMatrix(num) {
+            const patterns = {
+                '0': [1,1,1,1,0,1,1,1,1],
+                '1': [0,0,1,0,0,1,0,0,1],
+                '2': [1,1,1,0,0,1,0,1,1],
+                '3': [1,1,1,0,0,1,1,1,1],
+                '4': [0,0,1,1,1,1,0,0,1],
+                '5': [1,0,1,1,0,1,1,1,1],
+                '6': [1,0,1,1,1,1,1,1,1],
+                '7': [1,1,1,0,0,1,0,0,0],
+                '8': [1,1,1,1,1,1,1,1,1],
+                '9': [1,1,1,1,0,1,1,1,1]
+            };
+            return patterns[num] || patterns['0'];
+        }
+
+        // 二进制转换
+        function decimalToBinary(num, digits) {
+            return num.toString(2).padStart(digits, '0');
+        }
+
+        // 渲染时钟
+        function renderClock() {
+            const wrapper = document.getElementById('clockWrapper');
+            const time = currentTime;
+            const timeStr = `${time.h}:${time.m}:${time.s}`;
+
+            let html = '';
+
+            switch(currentStyle) {
+                case 'neon':
+                    html = `<div class="clock-neon">${time.h}<span class="colon">:</span>${time.m}<span class="colon">:</span>${time.s}</div>`;
+                    break;
+
+                case 'seven-segment':
+                    html = `<div class="clock-seven-segment">${time.h}${time.m}${time.s}</div>`;
+                    break;
+
+                case 'minimalist':
+                    html = `<div class="clock-minimalist">${time.h}:${time.m}:${time.s}</div>`;
+                    break;
+
+                case 'flip':
+                    html = `<div class="clock-flip">
+                        <div class="flip-card"><div class="flip-digit">${time.h[0]}</div></div>
+                        <div class="flip-card"><div class="flip-digit">${time.h[1]}</div></div>
+                        <span class="colon">:</span>
+                        <div class="flip-card"><div class="flip-digit">${time.m[0]}</div></div>
+                        <div class="flip-card"><div class="flip-digit">${time.m[1]}</div></div>
+                        <span class="colon">:</span>
+                        <div class="flip-card"><div class="flip-digit">${time.s[0]}</div></div>
+                        <div class="flip-card"><div class="flip-digit">${time.s[1]}</div></div>
+                    </div>`;
+                    break;
+
+                case 'binary':
+                    const hBin = decimalToBinary(time.hours, 6);
+                    const mBin = decimalToBinary(time.minutes, 6);
+                    const sBin = decimalToBinary(time.seconds, 6);
+                    html = `<div class="clock-binary">
+                        <div class="binary-group">
+                            <span class="binary-label">HRS</span>
+                            <div class="binary-dots">${hBin.split('').map(b => `<div class="binary-row"><div class="binary-dot ${b === '1' ? 'on' : ''}"></div></div>`).join('')}</div>
+                        </div>
+                        <div class="binary-group">
+                            <span class="binary-label">MIN</span>
+                            <div class="binary-dots">${mBin.split('').map(b => `<div class="binary-row"><div class="binary-dot ${b === '1' ? 'on' : ''}"></div></div>`).join('')}</div>
+                        </div>
+                        <div class="binary-group">
+                            <span class="binary-label">SEC</span>
+                            <div class="binary-dots">${sBin.split('').map(b => `<div class="binary-row"><div class="binary-dot ${b === '1' ? 'on' : ''}"></div></div>`).join('')}</div>
+                        </div>
+                    </div>`;
+                    break;
+
+                case 'circular':
+                    html = `<div class="clock-circular">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="arc-bg" cx="50" cy="50" r="40"/>
+                            <circle class="arc-hours" cx="50" cy="50" r="40" style="--hours: ${time.hours}"/>
+                            <circle class="arc-minutes" cx="50" cy="50" r="32" style="--minutes: ${time.minutes}"/>
+                            <circle class="arc-seconds" cx="50" cy="50" r="24" style="--seconds: ${time.seconds}"/>
+                        </svg>
+                        <div class="time-display">${time.h}:${time.m}:${time.s}</div>
+                    </div>`;
+                    break;
+
+                case 'dot-matrix':
+                    html = `<div class="clock-dot-matrix">${timeStr}</div>`;
+                    break;
+
+                case 'chrome':
+                    html = `<div class="clock-chrome">${timeStr}</div>`;
+                    break;
+
+                case 'liquid':
+                    html = `<div class="clock-liquid"><span>${timeStr}</span></div>`;
+                    break;
+
+                case 'gradient':
+                    html = `<div class="clock-gradient">${timeStr}</div>`;
+                    break;
+
+                case 'pixel':
+                    html = `<div class="clock-pixel">${timeStr}</div>`;
+                    break;
+
+                case 'led':
+                    html = `<div class="clock-led">
+                        ${time.h.split('').map(d => `<div class="led-digit">${getLEDMatrix(d).map(v => `<div class="led-segment ${v ? 'active' : ''}"></div>`).join('')}</div>`).join('')}
+                        <span class="colon">:</span>
+                        ${time.m.split('').map(d => `<div class="led-digit">${getLEDMatrix(d).map(v => `<div class="led-segment ${v ? 'active' : ''}"></div>`).join('')}</div>`).join('')}
+                        <span class="colon">:</span>
+                        ${time.s.split('').map(d => `<div class="led-digit">${getLEDMatrix(d).map(v => `<div class="led-segment ${v ? 'active' : ''}"></div>`).join('')}</div>`).join('')}
+                    </div>`;
+                    break;
+
+                case 'skeleton':
+                    html = `<div class="clock-skeleton" data-time="${timeStr}">${timeStr}</div>`;
+                    break;
+
+                case 'ink':
+                    html = `<div class="clock-ink">${timeStr}</div>`;
+                    break;
+
+                case 'cyberpunk':
+                    html = `<div class="clock-cyberpunk">${timeStr}</div>`;
+                    break;
+
+                case 'orb':
+                    html = `<div class="clock-orb">
+                        <div class="orb-bg"></div>
+                        <div class="orb-content">${timeStr}</div>
+                    </div>`;
+                    break;
+
+                case 'segment-wheel':
+                    html = `<div class="clock-segment-wheel">
+                        <div class="segment-ring"></div>
+                        <div class="segment-ring"></div>
+                        <div class="segment-ring"></div>
+                        <div class="segment-ring"></div>
+                        <div class="time-display">${timeStr}</div>
+                    </div>`;
+                    break;
+
+                case 'bubble':
+                    const bubbles = Array(8).fill(0).map((_, i) => {
+                        const size = 10 + Math.random() * 30;
+                        const top = Math.random() * 100;
+                        const left = Math.random() * 100;
+                        const delay = Math.random() * 3;
+                        return `<div class="bubble" style="width:${size}px;height:${size}px;top:${top}%;left:${left}%;animation-delay:${delay}s"></div>`;
+                    }).join('');
+                    html = `<div class="clock-bubble"><span>${timeStr}</span>${bubbles}</div>`;
+                    break;
+
+                case 'abstract':
+                    html = `<div class="clock-abstract">${timeStr}</div>`;
+                    break;
+
+                case 'hud':
+                    html = `<div class="clock-hud">
+                        <span class="hud-label">SYS.TIME</span>
+                        ${timeStr}
+                    </div>`;
+                    break;
+
+                case 'script':
+                    html = `<div class="clock-script">${time.h}:${time.m}:${time.s}</div>`;
+                    break;
+
+                case 'mono':
+                    html = `<div class="clock-mono">${time.h}:${time.m}:${time.s}</div>`;
+                    break;
+
+                case 'futuristic':
+                    html = `<div class="clock-futuristic" data-time="${timeStr}">${timeStr}</div>`;
+                    break;
+
+                case 'lcd':
+                    html = `<div class="clock-lcd">${time.h}${time.m}${time.s}</div>`;
+                    break;
+
+                case 'waveform':
+                    const bars = Array(8).fill(0).map((_, i) => {
+                        const height = 20 + Math.sin(Date.now() / 200 + i) * 30 + 30;
+                        const delay = i * 0.1;
+                        return `<div class="waveform-bar" style="animation-delay:${delay}s;height:${height}%"></div>`;
+                    }).join('');
+                    html = `<div class="clock-waveform">
+                        ${bars}
+                        <div class="time-display">${timeStr}</div>
+                    </div>`;
+                    break;
+
+                case 'glitch':
+                    html = `<div class="clock-glitch" data-time="${timeStr}">${timeStr}</div>`;
+                    break;
+
+                case 'tron':
+                    html = `<div class="clock-tron" data-time="${timeStr}">
+                        ${timeStr}
+                        <div class="tron-line top"></div>
+                        <div class="tron-line bottom"></div>
+                    </div>`;
+                    break;
+
+                case 'aurora':
+                    html = `<div class="clock-aurora" data-time="${timeStr}">${timeStr}</div>`;
+                    break;
+
+                case 'tower':
+                    html = `<div class="clock-tower">
+                        <div class="tower-top"></div>
+                        <div class="tower-body">${timeStr}</div>
+                    </div>`;
+                    break;
+
+                case 'diamond':
+                    html = `<div class="clock-diamond"><span>${timeStr}</span></div>`;
+                    break;
+
+                default:
+                    html = `<div class="clock-neon">${timeStr}</div>`;
+            }
+
+            wrapper.innerHTML = html;
+        }
+
+        // 更新时间
+        function updateTime() {
+            currentTime = getCurrentTime();
+            renderClock();
+        }
+
+        // 初始化
+        function init() {
+            initUI();
+            updateTime();
+            setInterval(updateTime, 1000);
+        }
+
+        init();
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

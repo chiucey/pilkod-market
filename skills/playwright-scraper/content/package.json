@@ -1,0 +1,22 @@
+{
+  "name": "playwright-scraper-skill",
+  "version": "1.0.0",
+  "description": "基于 Playwright 的网页爬虫，支持反爬保护",
+  "main": "index.js",
+  "scripts": {
+    "simple": "node scripts/playwright-simple.js",
+    "stealth": "node scripts/playwright-stealth.js",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "keywords": [
+    "playwright",
+    "scraper",
+    "crawler",
+    "web-scraping"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

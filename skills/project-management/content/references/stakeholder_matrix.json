@@ -1,0 +1,15 @@
+{
+  "name": "Stakeholder Matrix",
+  "fields": [
+    {"name": "stakeholder_id", "label": "干系人ID", "type": "text"},
+    {"name": "name", "label": "姓名/名称", "type": "text"},
+    {"name": "role", "label": "角色", "type": "text"},
+    {"name": "power", "label": "权力等级", "type": "select", "options": ["高", "中", "低"]},
+    {"name": "interest", "label": "利益程度", "type": "select", "options": ["高", "中", "低"]},
+    {"name": "attitude", "label": "态度", "type": "select", "options": ["支持", "中立", "反对"]},
+    {"name": "strategy", "label": "管理策略", "type": "select", "options": ["重点管理", "保持满意", "随时告知", "监督"]},
+    {"name": "communication", "label": "沟通方式", "type": "text"},
+    {"name": "frequency", "label": "沟通频率", "type": "select", "options": ["随时", "每周", "每月", "按需"]},
+    {"name": "contact", "label": "联系方式", "type": "text"}
+  ]
+}

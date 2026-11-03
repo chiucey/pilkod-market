@@ -1,0 +1,38 @@
+{
+  "author": "MiniMax Agent",
+  "created_date": "2026-03-23",
+  "dependencies": [],
+  "description": "Insightful Experiment Designer 1.0.0。秉持「目的优先，逻辑驱动」的理念，帮助研究者明智、高效地设计实验，拒绝机械套用模板。通过四步深度交互工作流（需求挖掘→方向确认→方案分析→方案输出），引导研究者理解每个选择背后的逻辑。支持自然科学（生物、化学、医学、物理）、工程（电子、机械、软件）、信息技术、人工智能等多领域。特别新增方案共性分析功能——不仅分析不同方法之间的差异（为什么不同），还分析它们之间的共性（为什么相同）——共性揭示了领域共识与必要元素，差异反映了目标权衡与场景适配。如有问题或需求，联系 c.li2024@outlook.com",
+  "id": 379819615338681,
+  "language": "zh-CN",
+  "last_updated": "2026-03-24",
+  "name": "insightful-experiment-designer",
+  "optional_dependencies": [
+    "Literature Reviewer",
+    "Data Analyst",
+    "Academic Writer",
+    "Peer Reviewer"
+  ],
+  "platform": "minimax",
+  "skill_type": "research-assistant",
+  "supported_platforms": [
+    "OpenClaw",
+    "MaxClaw"
+  ],
+  "tags": [
+    "experimental-design",
+    "hypothesis-testing",
+    "scientific-method",
+    "power-analysis",
+    "sample-size",
+    "A/B-testing",
+    "biomedical",
+    "engineering",
+    "ai-ml",
+    "software-testing",
+    "data-science",
+    "protocol-analysis"
+  ],
+  "updated_at": 1774284950097,
+  "version": "1.0.0"
+}

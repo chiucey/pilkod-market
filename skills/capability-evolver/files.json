@@ -1,0 +1,444 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "d466bcf470906d62db5610545a03fffa28d272ad",
+      "size": 305
+    },
+    {
+      "path": ".npmignore",
+      "sha": "1871b66d029140a48956f868fc523ff25a2e2741",
+      "size": 126
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "c6803fd166572cbe062799001409fe718ad4c3f5",
+      "size": 327
+    },
+    {
+      "path": "LICENSE",
+      "sha": "b1956cd104a12dddefaaa0e7c8b184ae2eb0ad2e",
+      "size": 1066
+    },
+    {
+      "path": "README.md",
+      "sha": "66d396c61ddc78beebb52f924a475239ba80b4d1",
+      "size": 13086
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "30bac172f7ab6aeeeba44a8282df4496b8e2d644",
+      "size": 11544
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "95841046de65715ea9ac4f9fd2a4ef5f51902624",
+      "size": 12050
+    },
+    {
+      "path": "assets/cover.png",
+      "sha": "869c7ec4ddf03019ce9e84fedf2d5c8310c3acad",
+      "size": 127630
+    },
+    {
+      "path": "assets/gep/capsules.json",
+      "sha": "40f9ee5845008f9d605f47a5ea421dae23ca6e00",
+      "size": 2851
+    },
+    {
+      "path": "assets/gep/events.jsonl",
+      "sha": "ec31e3e81696c67075bb1cedddc82a7b1786cbbd",
+      "size": 12678
+    },
+    {
+      "path": "assets/gep/genes.json",
+      "sha": "4a0d07af3035feb4c8f39eb95ac2c0c830790c92",
+      "size": 3568
+    },
+    {
+      "path": "index.js",
+      "sha": "aa771f786f744d62dcf65f158d79028658e35406",
+      "size": 27152
+    },
+    {
+      "path": "package.json",
+      "sha": "c03b8ab9c8554f6d9a27a9e7e3daa4455df32208",
+      "size": 986
+    },
+    {
+      "path": "scripts/a2a_export.js",
+      "sha": "a89dead836d4b10d03c997b9140e6a4cd0d7d947",
+      "size": 2367
+    },
+    {
+      "path": "scripts/a2a_ingest.js",
+      "sha": "c74409c56e51ce32e4ca36226df29c3947c05fd9",
+      "size": 2671
+    },
+    {
+      "path": "scripts/a2a_promote.js",
+      "sha": "d1d376d607f91e2387c6e3e7b7c588b007ecd464",
+      "size": 4785
+    },
+    {
+      "path": "scripts/analyze_by_skill.js",
+      "sha": "14ae3c44d5c9e783954e2e0f052505c583d9bca0",
+      "size": 4848
+    },
+    {
+      "path": "scripts/build_public.js",
+      "sha": "b3acef4ccfbb2cab78afac6876ed556b7259c7d0",
+      "size": 10821
+    },
+    {
+      "path": "scripts/extract_log.js",
+      "sha": "bff71902503b47c70967a5d3304ffd01ae8b3a4b",
+      "size": 2600
+    },
+    {
+      "path": "scripts/generate_history.js",
+      "sha": "f36d19573133ad0a99e1778e5bfd10be31813aab",
+      "size": 2593
+    },
+    {
+      "path": "scripts/gep_append_event.js",
+      "sha": "e863c416ffce921f43a40e943cfc32c89b73a48d",
+      "size": 3049
+    },
+    {
+      "path": "scripts/gep_personality_report.js",
+      "sha": "080f2d7eed31c3be9fae5c11f93f5df00484624e",
+      "size": 7918
+    },
+    {
+      "path": "scripts/human_report.js",
+      "sha": "64c5e79b73901b1738cd720869bdde0e34365e56",
+      "size": 5796
+    },
+    {
+      "path": "scripts/publish_public.js",
+      "sha": "4ebc10905266c32d47fda895216b3db176aeecd5",
+      "size": 20340
+    },
+    {
+      "path": "scripts/recover_loop.js",
+      "sha": "5e494f3ee030eae1e70f58eab2fde0797e56ad67",
+      "size": 1691
+    },
+    {
+      "path": "scripts/suggest_version.js",
+      "sha": "49c4177b5065083cc93b64dbfc85cdf54dd30167",
+      "size": 3037
+    },
+    {
+      "path": "scripts/validate-modules.js",
+      "sha": "752a5caefd9d49d5401b7786497d9610ae124af7",
+      "size": 437
+    },
+    {
+      "path": "src/canary.js",
+      "sha": "389a0e5ab24f2660e951cd2a1d6aeec39239242a",
+      "size": 486
+    },
+    {
+      "path": "src/evolve.js",
+      "sha": "377e9b95c9fd97147a9ce88d7b324e4c271b0d09",
+      "size": 77923
+    },
+    {
+      "path": "src/gep/a2a.js",
+      "sha": "f47a7cf67287f7dae23492947e1cbc237ff705a4",
+      "size": 6480
+    },
+    {
+      "path": "src/gep/a2aProtocol.js",
+      "sha": "ab508908a2c786e598820fe07bac577bba2b20a8",
+      "size": 25670
+    },
+    {
+      "path": "src/gep/analyzer.js",
+      "sha": "7fd3f7a77c8d15b57a54fe6166f5cd38c29fbd1b",
+      "size": 988
+    },
+    {
+      "path": "src/gep/assetCallLog.js",
+      "sha": "b28c97ab84c7549a86229be1840b3208ec868ea0",
+      "size": 3478
+    },
+    {
+      "path": "src/gep/assetStore.js",
+      "sha": "e4571f510c1fa56f60641ae916b39bc98322a3bd",
+      "size": 13519
+    },
+    {
+      "path": "src/gep/assets.js",
+      "sha": "333ce4cbc23963b777cbcaca9ad797f21937643e",
+      "size": 1110
+    },
+    {
+      "path": "src/gep/bridge.js",
+      "sha": "92a4db9e807ab39c8df143b6d92903ae677ad82b",
+      "size": 2096
+    },
+    {
+      "path": "src/gep/candidates.js",
+      "sha": "eb73c4b85defc03c0d68fd7e4e1053846cf9ac62",
+      "size": 8252
+    },
+    {
+      "path": "src/gep/contentHash.js",
+      "sha": "58c3f60a36ed311af92add48c3f28476f635a66f",
+      "size": 2196
+    },
+    {
+      "path": "src/gep/deviceId.js",
+      "sha": "3f67038810ab01a7ad3211abcd831bce35e23e40",
+      "size": 6728
+    },
+    {
+      "path": "src/gep/envFingerprint.js",
+      "sha": "8872208e713d6c94ccbf0210f92bdd71e7421c3a",
+      "size": 2989
+    },
+    {
+      "path": "src/gep/executionTrace.js",
+      "sha": "170f178fb482ee4ab79a4c13583c83a28a749814",
+      "size": 6922
+    },
+    {
+      "path": "src/gep/hubReview.js",
+      "sha": "1f4d1eaa703d135111898c734a36a729dbda0a85",
+      "size": 6561
+    },
+    {
+      "path": "src/gep/hubSearch.js",
+      "sha": "a7c8ecc23759d3c132204962ff068677eaf462ce",
+      "size": 10354
+    },
+    {
+      "path": "src/gep/issueReporter.js",
+      "sha": "77bec8c6ba8d8e16651de35022bb0cf42a2a5862",
+      "size": 9062
+    },
+    {
+      "path": "src/gep/learningSignals.js",
+      "sha": "0eff45a6f6174067d6882047f2eb42284ba68d2e",
+      "size": 3001
+    },
+    {
+      "path": "src/gep/llmReview.js",
+      "sha": "7f33f9bd5490bce43a9e19cd78e9974e60568659",
+      "size": 3137
+    },
+    {
+      "path": "src/gep/memoryGraph.js",
+      "sha": "e22d9d9645288dede3439b70cf701a3422ae59db",
+      "size": 27559
+    },
+    {
+      "path": "src/gep/memoryGraphAdapter.js",
+      "sha": "15b79d3b014a4f53ef8cf9935632413f3d2a9e8c",
+      "size": 7134
+    },
+    {
+      "path": "src/gep/mutation.js",
+      "sha": "a7c6bed5a4e4358d6e9c5c9a9c62d84ceeccb327",
+      "size": 6902
+    },
+    {
+      "path": "src/gep/narrativeMemory.js",
+      "sha": "fae88549a5eb3385494e064fa6ab6500f855958d",
+      "size": 3782
+    },
+    {
+      "path": "src/gep/paths.js",
+      "sha": "d55e9bcd8ac9f1e15e0743495661c02b453aae76",
+      "size": 3790
+    },
+    {
+      "path": "src/gep/personality.js",
+      "sha": "7923dac7a9006b3850d1cad7e0d27b428b3f8221",
+      "size": 13482
+    },
+    {
+      "path": "src/gep/prompt.js",
+      "sha": "bdfec3a954735f3d275dcfe3c6fa13be0c290cfc",
+      "size": 24723
+    },
+    {
+      "path": "src/gep/questionGenerator.js",
+      "sha": "fa4dcbd08f6666283ca3ac07a9786fb9cdfb649a",
+      "size": 8698
+    },
+    {
+      "path": "src/gep/reflection.js",
+      "sha": "fac1aff0f96aff4b6730f977e75bfd038ffd21db",
+      "size": 4298
+    },
+    {
+      "path": "src/gep/sanitize.js",
+      "sha": "595aa8dd2b5237f28d5162500fe6d26b7e130548",
+      "size": 2211
+    },
+    {
+      "path": "src/gep/selector.js",
+      "sha": "e5c24658044eaa8c21a077f86af90779a56e2db9",
+      "size": 13939
+    },
+    {
+      "path": "src/gep/signals.js",
+      "sha": "d570c7504249e86e5800affa6db661db23d5a0d3",
+      "size": 20116
+    },
+    {
+      "path": "src/gep/skillDistiller.js",
+      "sha": "5b29814a6bbfca7e64c5f8cc673464e8021d79e5",
+      "size": 36323
+    },
+    {
+      "path": "src/gep/skillPublisher.js",
+      "sha": "e1efcca4e2dfbdcf58034b434c722f9fb994cc4f",
+      "size": 10512
+    },
+    {
+      "path": "src/gep/solidify.js",
+      "sha": "a56e2b0c7f5cd7463e5ea2088a6700701e1b985b",
+      "size": 79208
+    },
+    {
+      "path": "src/gep/strategy.js",
+      "sha": "c35a12abadcbf86fd9cf7439c999212fbda8d16d",
+      "size": 4456
+    },
+    {
+      "path": "src/gep/taskReceiver.js",
+      "sha": "20231405cc5bdb7d7e39acee71714269fae64c48",
+      "size": 17736
+    },
+    {
+      "path": "src/gep/validationReport.js",
+      "sha": "cafb0d23463db46a41d663d320f184e0f9eea926",
+      "size": 2194
+    },
+    {
+      "path": "src/ops/cleanup.js",
+      "sha": "71cd4fad14849807e5c123b822fd3184c4c5fe0f",
+      "size": 2611
+    },
+    {
+      "path": "src/ops/commentary.js",
+      "sha": "8f3aeed0ad43ee0e4d608fdb700a19efa43046a0",
+      "size": 1762
+    },
+    {
+      "path": "src/ops/health_check.js",
+      "sha": "9b3ac760f5a297e4653c1bfafcd6a17d72081bc3",
+      "size": 4049
+    },
+    {
+      "path": "src/ops/index.js",
+      "sha": "65157e2a4589c77085929e757d13eb51337c431f",
+      "size": 376
+    },
+    {
+      "path": "src/ops/innovation.js",
+      "sha": "e1bb64174e1efb8cf23536f85521744d367436b4",
+      "size": 3156
+    },
+    {
+      "path": "src/ops/lifecycle.js",
+      "sha": "82b6ecb2cf91292db0b9e8e030e4881ac4e72d36",
+      "size": 6314
+    },
+    {
+      "path": "src/ops/self_repair.js",
+      "sha": "69eb52791151f505bd771bc988e00eea938aa0e8",
+      "size": 2582
+    },
+    {
+      "path": "src/ops/skills_monitor.js",
+      "sha": "aea4e0e8a05ea27c8ee370305566aecccbf6e604",
+      "size": 5457
+    },
+    {
+      "path": "src/ops/trigger.js",
+      "sha": "954940c16b32429f2d35883a992bfd2a46afd500",
+      "size": 837
+    },
+    {
+      "path": "test/a2aProtocol.test.js",
+      "sha": "fc145f78817eecf48330571646ca8732f80b2afb",
+      "size": 6611
+    },
+    {
+      "path": "test/candidates.test.js",
+      "sha": "83490e2ef7690ee60f426d6b76b39a59c776e511",
+      "size": 1318
+    },
+    {
+      "path": "test/contentHash.test.js",
+      "sha": "b735ff6095dad21ca3872d5628f894a15a9191a4",
+      "size": 3601
+    },
+    {
+      "path": "test/envFingerprint.test.js",
+      "sha": "56d8b8535b89b66f37839c857cf6976d29761ae9",
+      "size": 3076
+    },
+    {
+      "path": "test/evolvePolicy.test.js",
+      "sha": "c318d07d5c33ddec909b9d5316e6b5df2907efac",
+      "size": 1380
+    },
+    {
+      "path": "test/idleGating.test.js",
+      "sha": "04daf0d665166eb404d555b9439fb3952afe81df",
+      "size": 4356
+    },
+    {
+      "path": "test/loopMode.test.js",
+      "sha": "293b38dfbb8602f788f39f70fc60c8f31accf369",
+      "size": 3292
+    },
+    {
+      "path": "test/mutation.test.js",
+      "sha": "f8dc46f9941a62d24c407e2fe57aebb532bce019",
+      "size": 4718
+    },
+    {
+      "path": "test/sanitize.test.js",
+      "sha": "7df23ed0a20c8605c3b774f6b86224132a807f5b",
+      "size": 3976
+    },
+    {
+      "path": "test/selector.test.js",
+      "sha": "c2f7be4a5df0dbc20ccda9009e71f4f79dccf6c6",
+      "size": 5762
+    },
+    {
+      "path": "test/signals.test.js",
+      "sha": "4d77b7733dfa2fd73f90d00f814c6215d0ba8d8a",
+      "size": 10105
+    },
+    {
+      "path": "test/skillDistiller.test.js",
+      "sha": "d04e7fa0a69ce9f7622209b8b75142463d50eb15",
+      "size": 20770
+    },
+    {
+      "path": "test/solidifyLearning.test.js",
+      "sha": "29b86b2d4b117246279a238c5a77f4f9fdb3c95c",
+      "size": 3056
+    },
+    {
+      "path": "test/strategy.test.js",
+      "sha": "ccb172e747ae54a1302d69faac84b6f6f3dcb18b",
+      "size": 4923
+    },
+    {
+      "path": "test/validationReport.test.js",
+      "sha": "4ad15b1ff38db57909822d863bb6cd4d19ef98d3",
+      "size": 4913
+    }
+  ]
+}

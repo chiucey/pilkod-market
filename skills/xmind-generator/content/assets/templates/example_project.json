@@ -1,0 +1,105 @@
+{
+  "root": "项目管理",
+  "structure": {
+    "topics": [
+      {
+        "title": "项目启动",
+        "notes": {
+          "content": "项目启动阶段的主要目标：\n1. 确定项目范围\n2. 组建团队\n3. 制定初步计划",
+          "type": "text"
+        },
+        "topics": [
+          {
+            "title": "需求调研",
+            "labels": ["priority-high"],
+            "topics": [
+              {"title": "用户访谈"},
+              {"title": "问卷调查"},
+              {"title": "竞品分析"}
+            ]
+          },
+          {
+            "title": "团队组建",
+            "markers": {
+              "task": {
+                "status": "inProgress",
+                "percent": 30
+              }
+            },
+            "topics": [
+              {"title": "技术团队"},
+              {"title": "产品团队"},
+              {"title": "设计团队"}
+            ]
+          }
+        ]
+      },
+      {
+        "title": "项目规划",
+        "topics": [
+          {
+            "title": "WBS分解",
+            "topics": [
+              {"title": "模块划分"},
+              {"title": "任务分解"},
+              {"title": "时间估算"}
+            ]
+          },
+          {
+            "title": "资源分配",
+            "topics": [
+              {"title": "人员分配"},
+              {"title": "预算规划"}
+            ]
+          },
+          {
+            "title": "风险评估",
+            "labels": ["warning"]
+          }
+        ]
+      },
+      {
+        "title": "项目执行",
+        "topics": [
+          {
+            "title": "开发阶段",
+            "markers": {
+              "task": {
+                "status": "notStarted",
+                "percent": 0
+              }
+            },
+            "topics": [
+              {"title": "前端开发"},
+              {"title": "后端开发"},
+              {"title": "接口联调"}
+            ]
+          },
+          {
+            "title": "测试阶段",
+            "topics": [
+              {"title": "单元测试"},
+              {"title": "集成测试"},
+              {"title": "系统测试"}
+            ]
+          }
+        ]
+      },
+      {
+        "title": "项目收尾",
+        "topics": [
+          {"title": "上线部署"},
+          {"title": "文档归档"},
+          {"title": "经验总结"}
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "title": "需求驱动",
+      "end1Title": "需求调研",
+      "end2Title": "WBS分解"
+    }
+  ]
+}

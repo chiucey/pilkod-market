@@ -1,0 +1,40 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2024-03-22",
+  "dependencies": [
+    "financial_report_parsing",
+    "ratio_calculation",
+    "trend_analysis",
+    "anomaly_detection",
+    "data_visualization"
+  ],
+  "description": "上市公司财报深度分析技能，支持A股/港股/美股年报/中报/季报解析，覆盖利润表/资产负债表/现金流量表多维度分析",
+  "id": 379342344245852,
+  "language": "zh-CN",
+  "name": "financial-report-analyzer",
+  "platform": "minimax",
+  "security": {
+    "analysis_no_fraud_judgment": true,
+    "data_isolation": true,
+    "financial_ratio_compliance": true,
+    "no_external_call": true,
+    "only_official_report_access": true
+  },
+  "tags": [
+    "财务分析",
+    "财报",
+    "投资研究",
+    "财务报表"
+  ],
+  "trigger_words": [
+    "财报分析",
+    "利润表解析",
+    "资产负债表",
+    "现金流量表",
+    "财务比率",
+    "同比分析",
+    "异常指标"
+  ],
+  "updated_at": 1774166154232,
+  "version": "2.1.3"
+}

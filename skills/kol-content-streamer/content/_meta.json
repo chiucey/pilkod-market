@@ -1,0 +1,82 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "multi-platform-scraping",
+    "kol-profile-building",
+    "content-aggregation",
+    "topic-tracking",
+    "interview-scraping",
+    "documentary-extraction",
+    "fact-verification",
+    "persona-knowledge-base",
+    "scheduled-streaming"
+  ],
+  "config_schema": {
+    "kol_streamer": {
+      "general": {
+        "encryption_enabled": "boolean",
+        "output_base_path": "string",
+        "parallel_scraping": "number"
+      },
+      "platforms": {
+        "bilibili": "platform_config",
+        "douyin": "platform_config",
+        "tiktok": "platform_config",
+        "weibo": "platform_config",
+        "x_twitter": "platform_config",
+        "xiaohongshu": "platform_config"
+      },
+      "traditional_media": {
+        "documentary_sources": "array",
+        "interview_sources": "array"
+      }
+    }
+  },
+  "content_types": [
+    "social_media_posts",
+    "interviews",
+    "documentaries",
+    "tv_programs",
+    "films",
+    "podcasts",
+    "news_articles"
+  ],
+  "created_at": "2026-03-27",
+  "description": "KOL information flow content streamer and knowledge base builder",
+  "id": 381229549232662,
+  "name": "kol-content-streamer",
+  "platform": "minimax",
+  "requirements": {
+    "dependencies": [],
+    "environment": {
+      "maxclaw_version": "\u003e=2.0.0"
+    }
+  },
+  "supported_platforms": [
+    "x_twitter",
+    "weibo",
+    "xiaohongshu",
+    "douyin",
+    "tiktok",
+    "bilibili",
+    "news_feeds",
+    "video_platforms"
+  ],
+  "tags": [
+    "KOL",
+    "content-streaming",
+    "social-media-scraping",
+    "twitter",
+    "weibo",
+    "xiaohongshu",
+    "douyin",
+    "tiktok",
+    "bilibili",
+    "interview",
+    "documentary",
+    "fact-verification",
+    "persona-building"
+  ],
+  "updated_at": 1774627344856,
+  "version": "1.0.0"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "douyin-kol-search",
+  "slug": "douyin-kol-search",
+  "name": "douyin-kol-search",
+  "description": "Douyin high commercial value KOL finder",
+  "tags": [
+    "douyin",
+    "KOL",
+    "creator",
+    "e-commerce"
+  ],
+  "profession": [
+    "blogger-individual",
+    "operations"
+  ],
+  "industry": [
+    "media",
+    "ecommerce"
+  ],
+  "hidden": false,
+  "auth": {
+    "type": "api-key",
+    "header": "X-API-Key",
+    "tenantHeader": "X-Tenant-Id"
+  },
+  "comingSoon": false,
+  "invocationMode": "execute",
+  "invocation": {
+    "type": "execute",
+    "executePath": "/api/execute"
+  },
+  "formSchema": {
+    "type": "object",
+    "x-at-least-one-of": [
+      "keyword",
+      "contentTag"
+    ],
+    "properties": {
+      "contentTag": {
+        "type": "string",
+        "title": "Content Category",
+        "description": "Content tag code, pass tag-{id}. Can search by track using only this field.",
+        "x-component": "CategorySelect",
+        "x-direction-map": {
+          "Beauty": "tag-1",
+          "Fashion": "tag-6",
+          "Pets": "tag-11",
+          "Reviews": "tag-15",
+          "Gaming": "tag-23",
+          "Anime": "tag-25",
+          "Travel": "tag-27",
+          "Automotive": "tag-31",
+          "Lifestyle": "tag-36",
+          "Music": "tag-41",
+          "Dance": "tag-46",
+          "Food": "tag-48",
+          "Parenting": "tag-55",
+          "Sports & Fitness": "tag-60",
+          "Tech & Digital": "tag-64",
+          "Education & Training": "tag-68",
+          "Looks": "tag-72",
+          "Talent & Skills": "tag-79",
+          "Entertainment": "tag-85",
+          "Art & Culture": "tag-87",
+          "Finance & Investment": "tag-91",
+          "Agriculture": "tag-95",
+          "Comedy & Drama": "tag-97",
+          "Relationships": "tag-100",
+          "Gardening": "tag-102",
+          "Casual": "tag-130",
+          "Real Estate": "tag-139",
+          "Home & Living": "tag-1001",
+          "Media": "tag-1002"
+        }
+      },
+      "keyword": {
+        "type": "string",
+        "title": "Search Term",
+        "description": "Track keyword, e.g. 'Shenzhen BBQ Bar'. At least one of keyword or contentTag is required."
+      },
+      "followerRange": {
+        "type": "string",
+        "title": "Follower Range",
+        "description": "Format 'min-max', unit is 10k, e.g. '10-100' means 100k to 1M followers."
+      }
+    }
+  },
+  "providerType": "api",
+  "providerConfig": {
+    "apiSource": "tikhub",
+    "endpoint": "/api/v1/douyin/xingtu/search_kol_v2"
+  }
+}

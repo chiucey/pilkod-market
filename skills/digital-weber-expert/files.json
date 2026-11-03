@@ -1,0 +1,174 @@
+{
+  "files": [
+    {
+      "path": "OPTIMIZATION_COMPLETE.md",
+      "sha": "2948ba0231fb7be37cdd76b45ea3977594be7f16",
+      "size": 8114
+    },
+    {
+      "path": "README.md",
+      "sha": "1afba9859b7095d55dec8d8817b5b1939e280352",
+      "size": 594
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "f54862ca4dad23655b84f8dd141c6f4d6ca2e365",
+      "size": 16282
+    },
+    {
+      "path": "_meta.json",
+      "sha": "5cd6bd468f31be7e1b3a55f9431002a45f2548c9",
+      "size": 139
+    },
+    {
+      "path": "cases/negative/case-001-economic-determinism.md",
+      "sha": "996d2b9b7545c1510ab2b4ac3101cdfa8792abd9",
+      "size": 1551
+    },
+    {
+      "path": "cases/positive/case-001-digital-weber-expert.md",
+      "sha": "8f174bc1d1b3adf904de778947403901b92f7e6a",
+      "size": 3330
+    },
+    {
+      "path": "cases/positive/case-001-platform-rationalization.md",
+      "sha": "9c66b7f13f9a56b84c5df599173f63c5e8144bb9",
+      "size": 10796
+    },
+    {
+      "path": "cases/positive/case-002-digital-weber-expert.md",
+      "sha": "19d5aaedd837321ad3eb449d4af90f0e41f0a917",
+      "size": 3865
+    },
+    {
+      "path": "examples/with-subagents.md",
+      "sha": "c4441fc7ab93f82925766140c229ce95ef584de5",
+      "size": 2700
+    },
+    {
+      "path": "experience/patterns.md",
+      "sha": "286ab634675b15bc730c55dd9aeff06b6ada1fd3",
+      "size": 9217
+    },
+    {
+      "path": "index.html",
+      "sha": "a17886747533628b29d346e01b185d6a7b79740e",
+      "size": 14179
+    },
+    {
+      "path": "lesson-memory.md",
+      "sha": "aeba3535b9d2dcbffe812cbcd747bdf0c2e76302",
+      "size": 1542
+    },
+    {
+      "path": "prompts/system-prompt.md",
+      "sha": "947eda08b21f450bc9b4369992cde1657dfacb96",
+      "size": 10579
+    },
+    {
+      "path": "references/classic-literature.md",
+      "sha": "12358e6a16897c723aecd1b4053fb17d64744dc0",
+      "size": 1767
+    },
+    {
+      "path": "references/long-term-tasks.md",
+      "sha": "8050a9995866db9ae26967073efbec40c5dcaf08",
+      "size": 684
+    },
+    {
+      "path": "references/weber-concepts.md",
+      "sha": "4fa69d7be076c388c52f5e7bbb5577d81aea4be3",
+      "size": 5210
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "94051e2d46b200fe80ec3ffdc2652df25a3115a1",
+      "size": 43
+    },
+    {
+      "path": "retest-baseline.md",
+      "sha": "4cb616cc07b839df36df6758c5efe740124f085f",
+      "size": 11977
+    },
+    {
+      "path": "retest-with-skill.md",
+      "sha": "0a5c5f9aff58848f6878e00f0cd3512b8315af48",
+      "size": 16503
+    },
+    {
+      "path": "skill.yaml",
+      "sha": "e06c08e6b145c8aeb4ce8a5523c3b8fced8868f0",
+      "size": 3879
+    },
+    {
+      "path": "soul.md",
+      "sha": "539c566ba42583d2d21e8b67feb11426664ef3da",
+      "size": 6481
+    },
+    {
+      "path": "subagents.yaml",
+      "sha": "bca2b313c2924c6d37351deea4e7fa733624c7c2",
+      "size": 5250
+    },
+    {
+      "path": "templates/task_plan.md.template",
+      "sha": "064036a958e2e7ed3df977242ce557b41bd42196",
+      "size": 1414
+    },
+    {
+      "path": "test-prompts.json",
+      "sha": "6dadbbf5252df5d776c5453cc062ef5009b2338a",
+      "size": 782
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml",
+      "sha": "cf20bef13545ee67341838ddc4a16dfa4b483e92",
+      "size": 1298
+    },
+    {
+      "path": "tools/analyze.py",
+      "sha": "7dce7fd149607f75d06e23a9a8b4dae066707c27",
+      "size": 2428
+    },
+    {
+      "path": "tools/authority_analyzer.py",
+      "sha": "4cd73cf9dff2d9731a6ffa7a363c4555e3d7ec3d",
+      "size": 1831
+    },
+    {
+      "path": "tools/bureaucracy_analyzer.py",
+      "sha": "f5cc03a511a57d5e6d20c05d25c98c12aed115a6",
+      "size": 2040
+    },
+    {
+      "path": "tools/evolution.py",
+      "sha": "140063b0bcc66bdb617c03f2e3078fb3817efd38",
+      "size": 4744
+    },
+    {
+      "path": "tools/planning-integration.py",
+      "sha": "15d76a7691581a29df2dd770c66427323b449b90",
+      "size": 1580
+    },
+    {
+      "path": "tools/protestant_ethic_analyzer.py",
+      "sha": "97a39349f241b42d82f7c4864b1a31c3be988cff",
+      "size": 2042
+    },
+    {
+      "path": "tools/rationalization_analyzer.py",
+      "sha": "c435daebdf737170d604b9f9257e5dd0b24a3ffc",
+      "size": 3734
+    },
+    {
+      "path": "tools/social_action_analyzer.py",
+      "sha": "1f6928fe7e141437b99e0587a6b60a086d991baa",
+      "size": 5497
+    },
+    {
+      "path": "tools/status_group_analyzer.py",
+      "sha": "54846b4faeed0b636cf8d08ff2f15b96bb97a00f",
+      "size": 1683
+    }
+  ]
+}

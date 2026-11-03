@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "6ad921cdbfd59808745ca2e05fd41510c097ae15",
+      "size": 6987
+    },
+    {
+      "path": "_meta.json",
+      "sha": "3e45b64c62d18233e7f3f0988cca62e98bd848aa",
+      "size": 137
+    },
+    {
+      "path": "assets/thesis.cover.example.json",
+      "sha": "4107d30d12034a8fd3004c5280fc8d0adc29b5ba",
+      "size": 593
+    },
+    {
+      "path": "references/add-references.md",
+      "sha": "56f959b25afdcd75b09f2adc64bcce3bc762a02d",
+      "size": 3731
+    },
+    {
+      "path": "references/markdown-writing-spec.md",
+      "sha": "c2a3f8418fee49cb85a2b7e3b0e3742f194e3d74",
+      "size": 6495
+    },
+    {
+      "path": "scripts/check_markdown.js",
+      "sha": "cb78c009b187088f4adaaefb087b76338042887b",
+      "size": 26029
+    },
+    {
+      "path": "scripts/compose_docx.js",
+      "sha": "6a3d19ca31e82f5f109e53b9c3e097526e6b6ba6",
+      "size": 41760
+    },
+    {
+      "path": "scripts/enable_update_fields.js",
+      "sha": "b307694221b93bcc41a52bd72966f3c36c0a3bdb",
+      "size": 1696
+    },
+    {
+      "path": "scripts/extract_docx_images.js",
+      "sha": "d2e92f68b95c36993efce9c951ee58e2be7d47bd",
+      "size": 3903
+    },
+    {
+      "path": "scripts/generate_thesis.js",
+      "sha": "91ef699f297998aaa1315eae7d82c4fe9ae2b892",
+      "size": 62363
+    },
+    {
+      "path": "scripts/md2doc.js",
+      "sha": "22c3a1fcfc528cc092d23d1f55c6c9e1b29f2916",
+      "size": 5483
+    }
+  ]
+}

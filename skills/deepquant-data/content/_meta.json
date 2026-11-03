@@ -1,0 +1,33 @@
+{
+  "author": "MiniMax Agent",
+  "config": {
+    "api_type": "tushare_pro",
+    "data_coverage": [
+      "stock",
+      "index",
+      "fund",
+      "convertible_bond",
+      "financial",
+      "consensus"
+    ]
+  },
+  "created_at": "2024-03-27",
+  "dependencies": [],
+  "description": "提供中国金融市场数据查询服务，包括A股、指数、基金、可转债等市场行情，上市公司基本信息、财务数据、股本发行及一致性预期数据",
+  "id": 381047737193122,
+  "name": "deepquant-data",
+  "permissions": [],
+  "platform": "minimax",
+  "tags": [
+    "deepquant",
+    "quantitative",
+    "financial-data",
+    "a-share",
+    "fund",
+    "convertible-bond",
+    "tushare",
+    "investment-strategy"
+  ],
+  "updated_at": 1774582498789,
+  "version": "1.0.0"
+}

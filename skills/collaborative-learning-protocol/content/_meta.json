@@ -1,0 +1,30 @@
+{
+  "author": "MiniMax Agent",
+  "config_schema": {
+    "privacy": {
+      "default_level": "string",
+      "sensitive_patterns": "array"
+    },
+    "sync": {
+      "enabled": "boolean",
+      "sync_interval_seconds": "number"
+    }
+  },
+  "created_at": "2024-01-15",
+  "dependencies": [],
+  "display_name": "Collaborative Learning Protocol",
+  "id": 381869841646145,
+  "name": "collaborative-learning-protocol",
+  "platform": "minimax",
+  "skill_id": 10002,
+  "tags": [
+    "collaborative-learning",
+    "experience-sharing",
+    "multi-agent",
+    "skill-sync",
+    "knowledge-base",
+    "collective-intelligence"
+  ],
+  "updated_at": 1774782755743,
+  "version": "1.0.0"
+}

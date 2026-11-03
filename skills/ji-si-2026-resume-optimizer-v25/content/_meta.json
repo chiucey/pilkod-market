@@ -1,0 +1,27 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "简历解析识别",
+    "ATS关键词优化",
+    "真实性校验",
+    "三段式输出"
+  ],
+  "compliance": true,
+  "description": "智能简历ATS适配优化专家，支持图片/PDF/文本识别，自动输出三段式优化结果",
+  "id": 384003546866203,
+  "name": "ji-si-2026-resume-optimizer-v25",
+  "output_format": "三段式（优化简历+3条说明+合规声明）",
+  "platform": "minimax",
+  "trigger_keywords": [
+    "上传简历",
+    "简历优化",
+    "ATS优化",
+    "简历诊断",
+    "简历修改",
+    "简历润色",
+    "resume",
+    "简历"
+  ],
+  "updated_at": 1775305851967,
+  "version": "2.5.0"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="2.0" unique-identifier="uuid_id" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:publisher>中信出版社</dc:publisher>
+    <meta content="谈判力" name="calibre:title_sort" />
+    <dc:language>zh</dc:language>
+    <dc:creator opf:file-as="布鲁斯·巴顿, 罗杰·费希尔 威廉·尤里" opf:role="aut">[美]罗杰·费希尔 威廉·尤里 布鲁斯·巴顿</dc:creator>
+    <meta content="2018-02-09T10:11:41.795000+00:00" name="calibre:timestamp" />
+    <dc:title>谈判力</dc:title>
+    <meta name="cover" content="cover" />
+    <dc:date>2012-07-31T16:00:00+00:00</dc:date>
+    <dc:contributor opf:role="bkp">calibre (1.48.0) [http://calibre-ebook.com]</dc:contributor>
+    <dc:identifier opf:scheme="ISBN">9787508634340</dc:identifier>
+    <dc:identifier opf:scheme="uuid" id="uuid_id">46d83e46-2979-48d0-800e-dea8f4b2beba</dc:identifier>
+    <dc:identifier opf:scheme="calibre">46d83e46-2979-48d0-800e-dea8f4b2beba</dc:identifier>
+    <meta content="0.9.8" name="Sigil version" />
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2018-02-09</dc:date>
+  </metadata>
+  <manifest>
+    <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
+    <item id="x001.jpg" href="Images/001.jpg" media-type="image/jpeg"/>
+    <item id="x002.jpg" href="Images/002.jpg" media-type="image/jpeg"/>
+    <item id="x003.jpg" href="Images/003.jpg" media-type="image/jpeg"/>
+    <item id="x004.jpg" href="Images/004.jpg" media-type="image/jpeg"/>
+    <item id="x005.jpg" href="Images/005.jpg" media-type="image/jpeg"/>
+    <item id="x006.jpg" href="Images/006.jpg" media-type="image/jpeg"/>
+    <item id="x1.jpg" href="Images/1.jpg" media-type="image/jpeg"/>
+    <item id="P71_135_437_773_1118.jpg" href="Images/P71_135_437_773_1118.jpg" media-type="image/jpeg"/>
+    <item id="chapter1.html" href="Text/chapter1.html" media-type="application/xhtml+xml"/>
+    <item id="chapter10.html" href="Text/chapter10.html" media-type="application/xhtml+xml"/>
+    <item id="chapter11.html" href="Text/chapter11.html" media-type="application/xhtml+xml"/>
+    <item id="chapter12.html" href="Text/chapter12.html" media-type="application/xhtml+xml"/>
+    <item id="chapter13.html" href="Text/chapter13.html" media-type="application/xhtml+xml"/>
+    <item id="chapter2.html" href="Text/chapter2.html" media-type="application/xhtml+xml"/>
+    <item id="chapter3.html" href="Text/chapter3.html" media-type="application/xhtml+xml"/>
+    <item id="chapter4.html" href="Text/chapter4.html" media-type="application/xhtml+xml"/>
+    <item id="chapter5.html" href="Text/chapter5.html" media-type="application/xhtml+xml"/>
+    <item id="chapter6.html" href="Text/chapter6.html" media-type="application/xhtml+xml"/>
+    <item id="chapter7.html" href="Text/chapter7.html" media-type="application/xhtml+xml"/>
+    <item id="chapter8.html" href="Text/chapter8.html" media-type="application/xhtml+xml"/>
+    <item id="chapter9.html" href="Text/chapter9.html" media-type="application/xhtml+xml"/>
+    <item id="copyright.html" href="Text/copyright.html" media-type="application/xhtml+xml"/>
+    <item id="foreword.html" href="Text/foreword.html" media-type="application/xhtml+xml"/>
+    <item id="part1.html" href="Text/part1.html" media-type="application/xhtml+xml"/>
+    <item id="part2.html" href="Text/part2.html" media-type="application/xhtml+xml"/>
+    <item id="part3.html" href="Text/part3.html" media-type="application/xhtml+xml"/>
+    <item id="part4.html" href="Text/part4.html" media-type="application/xhtml+xml"/>
+    <item id="part5.html" href="Text/part5.html" media-type="application/xhtml+xml"/>
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="cover.jpg" href="Images/cover.jpg" media-type="image/jpeg"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="copyright.html"/>
+    <itemref idref="foreword.html"/>
+    <itemref idref="part1.html"/>
+    <itemref idref="chapter1.html"/>
+    <itemref idref="part2.html"/>
+    <itemref idref="chapter2.html"/>
+    <itemref idref="chapter3.html"/>
+    <itemref idref="chapter4.html"/>
+    <itemref idref="chapter5.html"/>
+    <itemref idref="chapter6.html"/>
+    <itemref idref="part3.html"/>
+    <itemref idref="chapter7.html"/>
+    <itemref idref="chapter8.html"/>
+    <itemref idref="chapter9.html"/>
+    <itemref idref="part4.html"/>
+    <itemref idref="part5.html"/>
+    <itemref idref="chapter10.html"/>
+    <itemref idref="chapter11.html"/>
+    <itemref idref="chapter12.html"/>
+    <itemref idref="chapter13.html"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover" href="Text/cover.xhtml"/>
+  </guide>
+</package>

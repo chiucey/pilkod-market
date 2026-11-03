@@ -1,0 +1,151 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "提供专业的配色方案和色值",
+    "推荐适合的字体搭配",
+    "设计页面布局和排版结构",
+    "提供装饰元素和图标建议",
+    "根据主题推荐最佳设计风格",
+    "提供品牌色融入方案",
+    "设计视觉层次和焦点",
+    "给出可落地的实施建议"
+  ],
+  "category": "office",
+  "color": "#4ECDC4",
+  "created_at": "2026-04-06T23:55:02Z",
+  "description": "专业的PPT视觉设计顾问，提供配色方案、字体搭配、排版布局等专业建议，帮助用户创建视觉吸引力强的演示文稿。支持多种设计风格，包括简约商务、轻奢商务、东方美学、科技未来等。",
+  "design_styles": {
+    "东方美学": {
+      "colors": [
+        "#2C3E50",
+        "#E74C3C",
+        "#F39C12",
+        "#27AE60"
+      ],
+      "fonts": [
+        "思源宋体",
+        "楷体"
+      ],
+      "layout": "竖排文字，印章装饰"
+    },
+    "科技未来": {
+      "colors": [
+        "#0F0F23",
+        "#667EEA",
+        "#764BA2",
+        "#00D9FF"
+      ],
+      "fonts": [
+        "Roboto",
+        "思源黑体"
+      ],
+      "layout": "深色背景，高对比度"
+    },
+    "简约大气": {
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#333333",
+        "#666666"
+      ],
+      "fonts": [
+        "思源黑体",
+        "Arial"
+      ],
+      "layout": "大量留白，焦点突出"
+    },
+    "轻奢商务": {
+      "colors": [
+        "#1A1A2E",
+        "#16213E",
+        "#D4AF37",
+        "#C0C0C0"
+      ],
+      "fonts": [
+        "苹方",
+        "Montserrat"
+      ],
+      "layout": "左右分栏，层次分明"
+    }
+  },
+  "icon": "palette",
+  "id": 384762653971245,
+  "input_schema": {
+    "properties": {
+      "brand_colors": {
+        "description": "品牌色（可选）",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "current_style": {
+        "description": "当前风格（如有）",
+        "type": "string"
+      },
+      "need_icon": {
+        "default": true,
+        "description": "是否需要图标建议",
+        "type": "boolean"
+      },
+      "ppt_topic": {
+        "description": "PPT主题",
+        "required": true,
+        "type": "string"
+      },
+      "preference": {
+        "default": "简约大气",
+        "description": "风格偏好",
+        "enum": [
+          "简约大气",
+          "轻奢商务",
+          "东方美学",
+          "科技未来",
+          "清新插画",
+          "杂志时尚"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "ppt_topic"
+    ],
+    "type": "object"
+  },
+  "name": "slide-designer",
+  "name_zh": "PPT视觉设计师",
+  "platform": "minimax",
+  "subcategory": "design",
+  "tags": [
+    "PPT设计",
+    "视觉设计",
+    "配色方案",
+    "字体搭配",
+    "排版布局",
+    "设计风格"
+  ],
+  "trigger_phrases": [
+    "PPT设计",
+    "幻灯片设计",
+    "PPT配色",
+    "PPT排版",
+    "PPT风格",
+    "演示文稿美化",
+    "PPT视觉",
+    "幻灯片布局",
+    "PPT颜色搭配",
+    "字体搭配"
+  ],
+  "trigger_phrases_en": [
+    "PPT design",
+    "slide design",
+    "PPT layout",
+    "PPT style",
+    "presentation design",
+    "color scheme",
+    "font pairing",
+    "visual design"
+  ],
+  "updated_at": 1775491216844,
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "xykz-team",
+  "agents": [
+    {
+      "name": "pm",
+      "emoji": "📋",
+      "role": "产品",
+      "model": "minimax/MiniMax-M2.5"
+    },
+    {
+      "name": "ui",
+      "emoji": "🎨",
+      "role": "设计",
+      "model": "minimax/MiniMax-M2.5"
+    },
+    {
+      "name": "coding",
+      "emoji": "💻",
+      "role": "开发",
+      "model": "openai-codex/gpt-5.4"
+    }
+  ]
+}

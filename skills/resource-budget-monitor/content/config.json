@@ -1,0 +1,40 @@
+{
+  "monitoring": {
+    "enabled": true,
+    "session_timeout_minutes": 60,
+    "record_retention_days": 30
+  },
+  "thresholds": {
+    "token_daily_soft": 30000,
+    "token_daily_hard": 50000,
+    "token_per_call_warning": 8000,
+    "token_per_call_critical": 10000,
+    "api_rpm_soft": 50,
+    "api_rpm_hard": 60,
+    "api_hourly_soft": 1500,
+    "api_hourly_hard": 2000,
+    "api_daily_soft": 8000,
+    "api_daily_hard": 10000,
+    "execution_time_ms_soft": 30000,
+    "execution_time_ms_hard": 60000,
+    "execution_daily_total_ms_soft": 3600000,
+    "execution_daily_total_ms_hard": 7200000
+  },
+  "rate_limiting": {
+    "enabled": true,
+    "gradual_recovery": true,
+    "recovery_rate_per_minute": 0.1,
+    "initial_cooldown_seconds": 60
+  },
+  "alerts": {
+    "notification": true,
+    "webhook_url": null,
+    "email_recipients": []
+  },
+  "reporting": {
+    "auto_generate": false,
+    "schedule": "0 9 * * *",
+    "format": "markdown",
+    "output_dir": "reports"
+  }
+}

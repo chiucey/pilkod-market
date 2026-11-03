@@ -1,0 +1,183 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-01-01",
+  "description": "Daily French exercises for A1-B2 learners using TV5Monde resources",
+  "exercises": {
+    "A1": [
+      {
+        "day": 1,
+        "title": "Hello!",
+        "topic": "greetings",
+        "topic_description": "Basic greetings and introductions",
+        "grammar": ["self-introduction with je m'appelle"],
+        "vocabulary": ["Bonjour", "Au revoir", "Je m'appelle", "Enchanté(e)"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/hello",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 1,
+        "estimated_minutes": 15
+      },
+      {
+        "day": 2,
+        "title": "A day!",
+        "topic": "daily_routine",
+        "topic_description": "Describing your daily routine",
+        "grammar": ["time expressions", "verb conjugation"],
+        "vocabulary": ["Je me réveille", "Je prends le petit-déjeuner", "Je vais au travail"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/day",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 1,
+        "estimated_minutes": 20
+      },
+      {
+        "day": 3,
+        "title": "Our clothes",
+        "topic": "clothing",
+        "topic_description": "Clothing and accessories vocabulary",
+        "grammar": ["articles le, la, les, un, une, des", "gender agreement"],
+        "vocabulary": ["le jean", "la robe", "le chemisier", "porter"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/our-clothes",
+        "has_speaking": true,
+        "has_listening": false,
+        "difficulty": 1,
+        "estimated_minutes": 15
+      },
+      {
+        "day": 4,
+        "title": "Trips",
+        "topic": "prepositions",
+        "topic_description": "Location prepositions",
+        "grammar": ["prepositions à, dans, sur, sous, entre"],
+        "vocabulary": ["à côté de", "devant", "derrière", "entre", "sur"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/trips",
+        "has_speaking": false,
+        "has_listening": true,
+        "difficulty": 2,
+        "estimated_minutes": 20
+      },
+      {
+        "day": 5,
+        "title": "Eating habits: flexitarianism",
+        "topic": "food",
+        "topic_description": "Food and eating habits",
+        "grammar": ["partitive articles du, de la, des"],
+        "vocabulary": ["du pain", "de l'eau", "des fruits", "je mange"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/eating-habits-flexitarianism",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 2,
+        "estimated_minutes": 25
+      },
+      {
+        "day": 6,
+        "title": "Christmas",
+        "topic": "festivals",
+        "topic_description": "Christmas vocabulary and traditions",
+        "grammar": ["festival vocabulary", "expressing preferences"],
+        "vocabulary": ["Noël", "le réveillon", "offrir", "recevoir", "Joyeux Noël"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/christmas",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 1,
+        "estimated_minutes": 15
+      },
+      {
+        "day": 7,
+        "title": "Music!",
+        "topic": "music",
+        "topic_description": "Music preferences and opinions",
+        "grammar": ["expressing preferences with aimer, adorer, détester"],
+        "vocabulary": ["la musique", "écouter", "chanter", "jouer", "le concert"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/music",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 1,
+        "estimated_minutes": 20
+      },
+      {
+        "day": 8,
+        "title": "Sports in middle school",
+        "topic": "sports",
+        "topic_description": "Sports and physical activities",
+        "grammar": ["verb + preposition combinations: jouer à, faire du"],
+        "vocabulary": ["jouer au foot", "faire du vélo", "la natation", "le terrain"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a1-breakthrough/sports-middle-school",
+        "has_speaking": false,
+        "has_listening": true,
+        "difficulty": 2,
+        "estimated_minutes": 20
+      }
+    ],
+    "A2": [
+      {
+        "day": 9,
+        "title": "Family and friends",
+        "topic": "family",
+        "topic_description": "Family relationships and possessives",
+        "grammar": ["possessive adjectives mon, ma, mes"],
+        "vocabulary": ["frère", "soeur", "cousin", "grand-parent", "se marier"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a2-intermediate",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 3,
+        "estimated_minutes": 25
+      },
+      {
+        "day": 10,
+        "title": "At the restaurant",
+        "topic": "restaurant",
+        "topic_description": "Ordering food and polite requests",
+        "grammar": ["imperative mood", "polite expressions"],
+        "vocabulary": ["je voudrais", "l'addition", "réserver", "le serveur", "le plats"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/a2-intermediate/at-restaurant",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 3,
+        "estimated_minutes": 25
+      }
+    ],
+    "B1": [
+      {
+        "day": 20,
+        "title": "Current events",
+        "topic": "news",
+        "topic_description": "Expressing opinions on current events",
+        "grammar": ["conditional mood", "subjunctive"],
+        "vocabulary": ["selon", "d'après", "il paraît que", "à mon avis"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/b1-threshold",
+        "has_speaking": false,
+        "has_listening": true,
+        "difficulty": 5,
+        "estimated_minutes": 30
+      }
+    ],
+    "B2": [
+      {
+        "day": 30,
+        "title": "Debate and discussion",
+        "topic": "debate",
+        "topic_description": "Advanced debate structures and arguments",
+        "grammar": ["advanced sentence structures"],
+        "vocabulary": ["néanmoins", "par conséquent", "en revanche", "quoique"],
+        "url": "https://apprendre.tv5monde.com/en/exercises/b2-advanced",
+        "has_speaking": true,
+        "has_listening": true,
+        "difficulty": 7,
+        "estimated_minutes": 40
+      }
+    ]
+  },
+  "learning_path": {
+    "A1": {"duration_weeks": 4, "exercises_count": 30, "target_vocabulary": 300},
+    "A2": {"duration_weeks": 8, "exercises_count": 50, "target_vocabulary": 800},
+    "B1": {"duration_weeks": 12, "exercises_count": 60, "target_vocabulary": 1500},
+    "B2": {"duration_weeks": 12, "exercises_count": 70, "target_vocabulary": 2500}
+  },
+  "spaced_repetition_intervals": [1, 3, 7, 14, 30, 60],
+  "daily_goal_minutes": 60,
+  "speaking_practice_ratio": 0.3,
+  "listening_practice_ratio": 0.3,
+  "reading_practice_ratio": 0.2,
+  "writing_practice_ratio": 0.2
+}

@@ -1,0 +1,18 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-06-18",
+  "description": "Agent Neural Hub Decision System. Use when users need to solve issues like context drift, logical contradictions, and execution efficiency decline in multi-turn conversations. Core functions include: remembering all user requirements and execution traces, detecting conflicts in sequential requirements, providing expert-level optimization suggestions, and assisting user decision-making. Applicable scenarios: complex multi-round tasks, long-term project development, code refactoring, and requirement change management.",
+  "id": 410140651516335,
+  "name": "agent-decision-hub",
+  "platform": "minimax",
+  "skill_id": 5871,
+  "tags": [
+    "agent",
+    "decision",
+    "optimization",
+    "conflict-detection",
+    "context-management"
+  ],
+  "updated_at": 1781751699187,
+  "version": "1.0.0"
+}

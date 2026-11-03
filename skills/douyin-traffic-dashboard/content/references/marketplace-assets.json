@@ -1,0 +1,53 @@
+{
+  "brandTitle": "AI Skills Library: Valuable AI Skills for Every Scenario",
+  "sourceGuideSlug": "ai-skills-site-readme",
+  "hero": {
+    "title": "AI Skills Official Website Guide",
+    "alt": "AI Skills Official Website Scene Guide",
+    "description": "Unified entry to AI Skills official website, supporting skill search by profession, industry and use case.",
+    "relativePath": "assets/marketplace/content-01.webp",
+    "cdnUrl": "https://cdn.aiskillsbest.com/guides/ai-skills-site-readme/content-01.webp"
+  },
+  "workflowSteps": [
+    {
+      "step": 1,
+      "title": "Scan to Login",
+      "alt": "Scan to login AI Skills account",
+      "description": "First complete scan login on AI Skills official website to ensure API Key, installation commands, and skill calls are all bound to the same account.",
+      "relativePath": "assets/marketplace/1-scan-login.png",
+      "cdnUrl": "https://cdn.aiskillsbest.com/guides/ai-skills-site-readme/step/1-scan-login.png"
+    },
+    {
+      "step": 2,
+      "title": "Apply for API Key",
+      "alt": "Apply for API Key on AI Skills site",
+      "description": "After login, go to API Key page to apply for a key. Both CLI installation and skill execution will read AISKILLS_API_KEY.",
+      "relativePath": "assets/marketplace/2-request-api-key.png",
+      "cdnUrl": "https://cdn.aiskillsbest.com/guides/ai-skills-site-readme/step/2-request-api-key.png"
+    },
+    {
+      "step": 3,
+      "title": "Copy Installation Command",
+      "alt": "Copy AI Skills skill installation command",
+      "description": "Copy the installation command from AI Skills official website, skills.sh, or ClawHub page. Prefer using the official CLI to avoid manual parameter stitching.",
+      "relativePath": "assets/marketplace/3-copy-install-command.png",
+      "cdnUrl": "https://cdn.aiskillsbest.com/guides/ai-skills-site-readme/step/3-copy-install-command.png"
+    },
+    {
+      "step": 4,
+      "title": "Execute Installation Command",
+      "alt": "Execute AI Skills installation command in terminal",
+      "description": "Return to terminal and execute the installation command. CLI will write AISKILLS_API_KEY and call the downstream skills add to complete skill installation.",
+      "relativePath": "assets/marketplace/4-run-install-command.png",
+      "cdnUrl": "https://cdn.aiskillsbest.com/guides/ai-skills-site-readme/step/4-run-install-command.png"
+    },
+    {
+      "step": 5,
+      "title": "Successfully Obtain Skill",
+      "alt": "AI Skills skill installation success interface",
+      "description": "After successful installation, you will see the corresponding Skill in your agent's skill list. You can call it directly and replicate it in your workflow.",
+      "relativePath": "assets/marketplace/5-install-success.png",
+      "cdnUrl": "https://cdn.aiskillsbest.com/guides/ai-skills-site-readme/step/5-install-success.png"
+    }
+  ]
+}

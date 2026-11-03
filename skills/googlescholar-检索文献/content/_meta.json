@@ -1,0 +1,10 @@
+{
+  "description": "Search Google Scholar for academic papers by keywords. Returns results with title, authors, journal, year, citation count, and full-text links. Use when the user wants to search Google Scholar.",
+  "id": 382142176502435,
+  "name": "googlescholar-检索文献",
+  "platform": "minimax",
+  "skill_id": 201001,
+  "source": "https://github.com/cookjohn/gs-skills",
+  "updated_at": 1774849929695,
+  "version": "1.0.0"
+}

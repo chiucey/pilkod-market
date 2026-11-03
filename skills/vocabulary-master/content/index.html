@@ -1,0 +1,4015 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语词汇大师 | English Vocabulary Master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B4332;
+            --primary-light: #2D6A4F;
+            --primary-dark: #14332A;
+            --accent: #E07A5F;
+            --accent-light: #E8927A;
+            --background: #FEFAE0;
+            --surface: #FFFFFF;
+            --text-primary: #1A1A2E;
+            --text-secondary: #6B7280;
+            --success: #059669;
+            --error: #DC2626;
+            --warning: #D97706;
+            --border: #E5E7EB;
+            --shadow: rgba(27, 67, 50, 0.1);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --radius-xs: 4px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 64px;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            z-index: 100;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .nav.scrolled {
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        .nav-logo {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-logo svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+
+        .nav-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content */
+        .main {
+            padding-top: 64px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: calc(100vh - 64px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 24px;
+            background: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231B4332' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .hero-badge svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .hero-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Word Input Section */
+        .input-section {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: 0 4px 24px var(--shadow);
+            margin-bottom: 48px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .word-input {
+            flex: 1;
+            padding: 14px 18px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.2s;
+            background: var(--surface);
+        }
+
+        .word-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(27, 67, 50, 0.1);
+        }
+
+        .word-input::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .input-separator {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(27, 67, 50, 0.3);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Preset Section */
+        .preset-section {
+            margin-top: 32px;
+        }
+
+        .preset-title {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .preset-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .preset-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .preset-word {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .preset-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Features Section */
+        .features-section {
+            margin-top: 80px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .features-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Learning View */
+        .learning-view {
+            display: none;
+            min-height: calc(100vh - 64px);
+            background: var(--background);
+        }
+
+        .learning-view.active {
+            display: block;
+        }
+
+        .learning-header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 64px;
+            z-index: 50;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .back-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .word-pair-display {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .word-pair-display span {
+            color: var(--accent);
+            margin: 0 8px;
+        }
+
+        .exercise-btn {
+            padding: 10px 24px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .exercise-btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+        }
+
+        .exercise-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Tab Navigation */
+        .tab-nav {
+            background: var(--surface);
+            padding: 0 24px;
+            display: flex;
+            gap: 4px;
+            overflow-x: auto;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            padding: 16px 20px;
+            background: transparent;
+            border: none;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            white-space: nowrap;
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px 3px 0 0;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            padding: 32px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* Definition Cards */
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .definition-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+            border-left: 4px solid var(--primary);
+            transition: transform 0.2s;
+        }
+
+        .definition-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .definition-card.indifferent {
+            border-left-color: var(--accent);
+        }
+
+        .word-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Inter', monospace;
+            margin-bottom: 12px;
+        }
+
+        .definition-card.indifferent .word-badge {
+            background: var(--accent);
+        }
+
+        .pos-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--background);
+            color: var(--text-secondary);
+            border-radius: var(--radius-xs);
+            font-size: 0.75rem;
+            font-style: italic;
+            margin-left: 8px;
+        }
+
+        .definition-text {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .definition-key {
+            background: linear-gradient(120deg, rgba(27, 67, 50, 0.15) 0%, rgba(27, 67, 50, 0.1) 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .definition-key.accent {
+            background: linear-gradient(120deg, rgba(224, 122, 95, 0.15) 0%, rgba(224, 122, 95, 0.1) 100%);
+            color: var(--accent);
+        }
+
+        /* Comparison Section */
+        .comparison-table {
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table th:first-child {
+            width: 120px;
+        }
+
+        .comparison-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover td {
+            background: rgba(254, 250, 224, 0.5);
+        }
+
+        .comparison-label {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Examples Section */
+        .examples-section {
+            margin-bottom: 32px;
+        }
+
+        .examples-section h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .examples-section h3 svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .example-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px var(--shadow);
+            border-left: 3px solid var(--primary);
+        }
+
+        .example-card.alt {
+            border-left-color: var(--accent);
+        }
+
+        .example-sentence {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            line-height: 1.7;
+            margin-bottom: 8px;
+            font-family: 'Inter', 'Noto Sans SC', serif;
+        }
+
+        .example-highlight {
+            background: linear-gradient(120deg, rgba(224, 122, 95, 0.2) 0%, rgba(224, 122, 95, 0.1) 100%);
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .example-translation {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Metaphor Section */
+        .metaphor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .metaphor-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+            text-align: center;
+        }
+
+        .metaphor-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .metaphor-icon.alt {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+        }
+
+        .metaphor-icon svg {
+            width: 32px;
+            height: 32px;
+            color: white;
+        }
+
+        .metaphor-word {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .metaphor-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Collocations Section */
+        .collocations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .collocation-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .collocation-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .collocation-title {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .collocation-list {
+            list-style: none;
+        }
+
+        .collocation-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .collocation-item:last-child {
+            border-bottom: none;
+        }
+
+        .collocation-phrase {
+            font-family: 'Inter', monospace;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .collocation-meaning {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Grammar Section */
+        .grammar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .grammar-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .grammar-word {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Inter', monospace;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .grammar-card.alt .grammar-word {
+            color: var(--accent);
+        }
+
+        .grammar-item {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .grammar-label {
+            width: 80px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .grammar-value {
+            flex: 1;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        /* Register Section */
+        .register-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .register-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .register-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .register-word {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .register-level {
+            padding: 4px 12px;
+            background: var(--background);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .register-scale {
+            margin: 16px 0;
+        }
+
+        .scale-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        .scale-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            border-radius: 4px;
+            transition: width 0.6s ease;
+        }
+
+        .scale-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .register-desc {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 12px;
+        }
+
+        /* Memory Section */
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .memory-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .memory-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .memory-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .memory-icon.alt {
+            background: var(--accent);
+        }
+
+        .memory-icon svg {
+            width: 20px;
+            height: 20px;
+            color: white;
+        }
+
+        .memory-word {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .memory-section {
+            margin-bottom: 16px;
+        }
+
+        .memory-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .memory-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+        }
+
+        .memory-content {
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .root-prefix {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--background);
+            border-radius: var(--radius-xs);
+            font-family: 'Inter', monospace;
+            font-size: 0.9rem;
+            margin-right: 4px;
+        }
+
+        /* Exercise View */
+        .exercise-view {
+            display: none;
+            min-height: calc(100vh - 64px);
+            background: var(--background);
+            padding: 32px 24px;
+        }
+
+        .exercise-view.active {
+            display: block;
+        }
+
+        .exercise-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .exercise-progress {
+            margin-bottom: 32px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            border-radius: 4px;
+            transition: width 0.6s ease;
+        }
+
+        .exercise-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: 0 4px 24px var(--shadow);
+        }
+
+        .exercise-level {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .exercise-question {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .exercise-highlight {
+            background: linear-gradient(120deg, rgba(224, 122, 95, 0.2) 0%, rgba(224, 122, 95, 0.1) 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .exercise-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .option-btn {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 1rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .option-btn:hover:not(.disabled) {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        .option-btn.selected {
+            border-color: var(--primary);
+            background: rgba(27, 67, 50, 0.1);
+        }
+
+        .option-btn.correct {
+            border-color: var(--success);
+            background: rgba(5, 150, 105, 0.1);
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--error);
+            background: rgba(220, 38, 38, 0.1);
+        }
+
+        .option-btn.disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .option-letter {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .option-btn.correct .option-letter {
+            background: var(--success);
+        }
+
+        .option-btn.incorrect .option-letter {
+            background: var(--error);
+        }
+
+        .option-text {
+            flex: 1;
+            color: var(--text-primary);
+        }
+
+        /* Feedback */
+        .feedback {
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 24px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: rgba(5, 150, 105, 0.1);
+            border: 1px solid var(--success);
+        }
+
+        .feedback.incorrect {
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid var(--error);
+        }
+
+        .feedback-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .feedback.correct .feedback-header {
+            color: var(--success);
+        }
+
+        .feedback.incorrect .feedback-header {
+            color: var(--error);
+        }
+
+        .feedback-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .feedback-text {
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Exercise Actions */
+        .exercise-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        .action-btn {
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-btn.primary {
+            background: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .action-btn.primary:hover {
+            background: var(--primary-light);
+            transform: translateY(-1px);
+        }
+
+        .action-btn.secondary {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .action-btn.secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .action-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Writing Input */
+        .writing-area {
+            width: 100%;
+            min-height: 120px;
+            padding: 16px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+            margin-bottom: 16px;
+            transition: border-color 0.2s;
+        }
+
+        .writing-area:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .writing-hint {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        /* Results View */
+        .results-view {
+            display: none;
+            min-height: calc(100vh - 64px);
+            background: var(--background);
+            padding: 48px 24px;
+        }
+
+        .results-view.active {
+            display: block;
+        }
+
+        .results-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .results-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .results-icon svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+
+        .results-score {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .results-label {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .results-message {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            margin-top: 16px;
+        }
+
+        /* Results Summary */
+        .results-summary {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .summary-title {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-title svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .summary-item {
+            text-align: center;
+            padding: 16px;
+            background: var(--background);
+            border-radius: var(--radius-sm);
+        }
+
+        .summary-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .summary-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Results Detail */
+        .results-detail {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .detail-item {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .detail-question {
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .detail-answer {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .detail-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .detail-icon.correct {
+            color: var(--success);
+        }
+
+        .detail-icon.incorrect {
+            color: var(--error);
+        }
+
+        .detail-text {
+            font-size: 0.95rem;
+        }
+
+        .detail-correct {
+            color: var(--success);
+        }
+
+        .detail-wrong {
+            color: var(--error);
+        }
+
+        /* Results Actions */
+        .results-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .input-separator {
+                display: none;
+            }
+
+            .word-input {
+                width: 100%;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .learning-header {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .word-pair-display {
+                order: -1;
+                width: 100%;
+                text-align: center;
+            }
+
+            .tab-nav {
+                padding: 0 12px;
+            }
+
+            .tab-btn {
+                padding: 12px 14px;
+                font-size: 0.8rem;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Utility */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Home View */
+        .home-view {
+            display: block;
+        }
+
+        .home-view.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-brand" onclick="showHome()">
+            <div class="nav-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    <path d="M8 7h8"/>
+                    <path d="M8 11h6"/>
+                </svg>
+            </div>
+            <span class="nav-title">英语词汇大师</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link" onclick="showHome()">首页</a>
+            <a href="#" class="nav-link" onclick="alert('功能开发中，敬请期待！')">我的收藏</a>
+            <a href="#" class="nav-link" onclick="alert('功能开发中，敬请期待！')">学习记录</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home View -->
+        <section class="home-view" id="homeView">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        九维深度解析框架
+                    </div>
+                    <h1 class="hero-title">英语词汇大师</h1>
+                    <p class="hero-subtitle">
+                        像语言学家一样学、用单词。首创九维深度解析框架，科学、高效、有趣又不乏严谨地解析每一个英文单词。
+                    </p>
+
+                    <!-- Word Input Section -->
+                    <div class="input-section">
+                        <label class="input-label">输入一组易混词，开启学习之旅</label>
+                        <div class="input-group">
+                            <input type="text" class="word-input" id="word1" placeholder="apathetic" autocomplete="off">
+                            <span class="input-separator">vs</span>
+                            <input type="text" class="word-input" id="word2" placeholder="indifferent" autocomplete="off">
+                        </div>
+                        <button class="submit-btn" onclick="startLearning()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            开始学习
+                        </button>
+
+                        <!-- Preset Section -->
+                        <div class="preset-section">
+                            <div class="preset-title">或选择一组预设易混词</div>
+                            <div class="preset-grid">
+                                <div class="preset-card" onclick="selectPreset('apathetic', 'indifferent')">
+                                    <div class="preset-word">apathetic vs indifferent</div>
+                                    <div class="preset-desc">冷漠 / 漠然</div>
+                                </div>
+                                <div class="preset-card" onclick="selectPreset('affect', 'effect')">
+                                    <div class="preset-word">affect vs effect</div>
+                                    <div class="preset-desc">影响（动词）/ 影响（名词）</div>
+                                </div>
+                                <div class="preset-card" onclick="selectPreset('fewer', 'less')">
+                                    <div class="preset-word">fewer vs less</div>
+                                    <div class="preset-desc">可数 / 不可数</div>
+                                </div>
+                                <div class="preset-card" onclick="selectPreset('imply', 'infer')">
+                                    <div class="preset-word">imply vs infer</div>
+                                    <div class="preset-desc">暗示 / 推断</div>
+                                </div>
+                                <div class="preset-card" onclick="selectPreset('i.e.', 'e.g.')">
+                                    <div class="preset-word">i.e. vs e.g.</div>
+                                    <div class="preset-desc">即 / 例如</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="features-section">
+                        <h2 class="features-title">为什么选择英语词汇大师？</h2>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">九维深度解析</h3>
+                                <p class="feature-desc">首创九维解析框架，不仅提供表浅的释义，更深入词源、语境、语域等核心维度。</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">三级互动练习</h3>
+                                <p class="feature-desc">从识别到填空再到创作，循序渐进，真正掌握词汇的灵活运用。</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <line x1="10" y1="9" x2="8" y2="9"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">直击易混词痛点</h3>
+                                <p class="feature-desc">专为攻克易混词设计，通过对比分析，让你彻底弄清词义边界。</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">智能反馈系统</h3>
+                                <p class="feature-desc">AI驱动的个性化反馈，提供针对性建议，拒绝冰冷千篇一律的标准答案。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning View -->
+        <section class="learning-view" id="learningView">
+            <div class="learning-header">
+                <button class="back-btn" onclick="showHome()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                    返回
+                </button>
+                <div class="word-pair-display" id="wordPairDisplay">apathetic <span>vs</span> indifferent</div>
+                <button class="exercise-btn" onclick="startExercise()">
+                    开始练习
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" onclick="switchTab('definition')">核心定义</button>
+                <button class="tab-btn" onclick="switchTab('examples')">语境示例</button>
+                <button class="tab-btn" onclick="switchTab('comparison')">表格提炼</button>
+                <button class="tab-btn" onclick="switchTab('metaphor')">视觉隐喻</button>
+                <button class="tab-btn" onclick="switchTab('collocations')">词语搭配</button>
+                <button class="tab-btn" onclick="switchTab('grammar')">语法功能</button>
+                <button class="tab-btn" onclick="switchTab('register')">语域风格</button>
+                <button class="tab-btn" onclick="switchTab('memory')">记忆方法</button>
+                <button class="tab-btn" onclick="switchTab('exercise')">互动练习</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="tabContent">
+                <!-- Definition Tab -->
+                <div class="tab-panel active" id="tab-definition">
+                    <div class="definition-grid" id="definitionGrid"></div>
+                </div>
+
+                <!-- Examples Tab -->
+                <div class="tab-panel" id="tab-examples">
+                    <div class="examples-section" id="examplesSection"></div>
+                </div>
+
+                <!-- Comparison Tab -->
+                <div class="tab-panel" id="tab-comparison">
+                    <div class="comparison-table" id="comparisonTable"></div>
+                </div>
+
+                <!-- Metaphor Tab -->
+                <div class="tab-panel" id="tab-metaphor">
+                    <div class="metaphor-grid" id="metaphorGrid"></div>
+                </div>
+
+                <!-- Collocations Tab -->
+                <div class="tab-panel" id="tab-collocations">
+                    <div class="collocations-grid" id="collocationsGrid"></div>
+                </div>
+
+                <!-- Grammar Tab -->
+                <div class="tab-panel" id="tab-grammar">
+                    <div class="grammar-grid" id="grammarGrid"></div>
+                </div>
+
+                <!-- Register Tab -->
+                <div class="tab-panel" id="tab-register">
+                    <div class="register-grid" id="registerGrid"></div>
+                </div>
+
+                <!-- Memory Tab -->
+                <div class="tab-panel" id="tab-memory">
+                    <div class="memory-grid" id="memoryGrid"></div>
+                </div>
+
+                <!-- Exercise Tab -->
+                <div class="tab-panel" id="tab-exercise">
+                    <div style="text-align: center; padding: 48px 24px;">
+                        <h2 style="color: var(--primary); margin-bottom: 16px;">准备好测试自己了吗？</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px;">通过三级进阶练习，从"知道"到"会用"，真正掌握词汇。</p>
+                        <button class="exercise-btn" onclick="startExercise()" style="margin: 0 auto;">
+                            开始练习
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise View -->
+        <section class="exercise-view" id="exerciseView">
+            <div class="exercise-container">
+                <div class="exercise-progress">
+                    <div class="progress-info">
+                        <span id="currentQuestion">第 1 题</span>
+                        <span id="progressPercent">1/10</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 10%"></div>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <div class="exercise-level" id="exerciseLevel">第一级：识别</div>
+                    <div class="exercise-question" id="exerciseQuestion"></div>
+                    <div class="exercise-options" id="exerciseOptions"></div>
+                    <div class="feedback" id="feedback">
+                        <div class="feedback-header">
+                            <svg class="feedback-icon" id="feedbackIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg>
+                            <span id="feedbackTitle"></span>
+                        </div>
+                        <div class="feedback-text" id="feedbackText"></div>
+                    </div>
+                    <div class="exercise-actions">
+                        <button class="action-btn secondary" onclick="showHome()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m15 18-6-6 6-6"/>
+                            </svg>
+                            退出
+                        </button>
+                        <button class="action-btn primary" id="nextBtn" onclick="nextQuestion()" style="display: none;">
+                            下一题
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results View -->
+        <section class="results-view" id="resultsView">
+            <div class="results-container">
+                <div class="results-header">
+                    <div class="results-icon" id="resultsIcon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <div class="results-score" id="resultsScore">8/10</div>
+                    <div class="results-label">练习得分</div>
+                    <div class="results-message" id="resultsMessage">表现优秀！继续保持！</div>
+                </div>
+
+                <div class="results-summary">
+                    <h3 class="summary-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="m19 9-5 5-4-4-3 3"/>
+                        </svg>
+                        学习统计
+                    </h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <div class="summary-value" id="totalQuestions">10</div>
+                            <div class="summary-label">总题数</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-value" id="correctCount">8</div>
+                            <div class="summary-label">正确</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-value" id="accuracy">80%</div>
+                            <div class="summary-label">正确率</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-detail" id="resultsDetail"></div>
+
+                <div class="results-actions">
+                    <button class="action-btn secondary" onclick="showHome()">
+                        返回首页
+                    </button>
+                    <button class="action-btn primary" onclick="startExercise()">
+                        再练一次
+                    </button>
+                    <button class="action-btn primary" onclick="showLearning()">
+                        重新学习
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Word Data - 预置易混词数据
+        const wordData = {
+            'apathetic-indifferent': {
+                words: ['apathetic', 'indifferent'],
+                analysis: {
+                    definitions: {
+                        apathetic: {
+                            pos: 'adj.',
+                            text: '对某事<span class="definition-key">完全缺乏兴趣或情感</span>，表现出麻木不仁、冷漠无情的态度。常用于形容人对本应关心的事物毫无反应。',
+                            essence: '强调情感上的冷漠 = 无动于衷'
+                        },
+                        indifferent: {
+                            pos: 'adj.',
+                            text: '对某事<span class="definition-key accent">持中立态度或不关心</span>，既不积极也不消极。强调的是一种不偏不倚的立场。',
+                            essence: '强调立场上的中立 = 无所谓'
+                        }
+                    },
+                    examples: {
+                        apathetic: [
+                            {
+                                sentence: 'The <span class="example-highlight">apathetic</span> students sat silently, showing no interest in the lecture whatsoever.',
+                                translation: '那些冷漠的学生静静地坐着，对讲座毫无兴趣。'
+                            },
+                            {
+                                sentence: 'Voters have become increasingly <span class="example-highlight">apathetic</span> about politics.',
+                                translation: '选民对政治越来越漠不关心。'
+                            },
+                            {
+                                sentence: 'His <span class="example-highlight">apathetic</span> attitude towards his health eventually led to serious problems.',
+                                translation: '他对自身健康的漠视态度最终导致了严重的问题。'
+                            }
+                        ],
+                        indifferent: [
+                            {
+                                sentence: 'She was <span class="example-highlight">indifferent</span> to the outcome of the game, as she had no stake in either team.',
+                                translation: '她对比赛结果漠不关心，因为她与两支球队都没有利害关系。'
+                            },
+                            {
+                                sentence: 'The quality of the food seems to be <span class="example-highlight">indifferent</span> to customer satisfaction.',
+                                translation: '食物质量似乎与顾客满意度无关。'
+                            },
+                            {
+                                sentence: 'Being <span class="example-highlight">indifferent</span> to criticism is actually a virtue in some cultures.',
+                                translation: '在某些文化中，对批评持无所谓态度实际上是一种美德。'
+                            }
+                        ]
+                    },
+                    comparison: {
+                        similarities: [
+                            '都表示"不关心"的状态',
+                            '都可以描述人对事物的态度',
+                            '都是形容词'
+                        ],
+                        differences: [
+                            'Apathetic强调情感缺失，indifferent强调立场中立',
+                            'Apathetic通常带有负面含义，indifferent更中性',
+                            'Apathetic可用于形容整体态度，indifferent可用于特定情境'
+                        ],
+                        scenarios: [
+                            { word: 'apathetic', desc: '形容对某事的麻木不仁，如"apathetic voters"（冷漠的选民）' },
+                            { word: 'indifferent', desc: '形容中立的立场，如"indifferent to criticism"（对批评无所谓）' }
+                        ]
+                    },
+                    metaphors: {
+                        apathetic: {
+                            icon: 'heart',
+                            text: '就像一潭死水，没有任何波澜，对外界的风吹草动毫无反应'
+                        },
+                        indifferent: {
+                            icon: 'scale',
+                            text: '就像站在天平的中央，既不偏左也不偏右，保持中立平衡'
+                        }
+                    },
+                    collocations: {
+                        apathetic: [
+                            { phrase: 'apathetic attitude', meaning: '冷漠的态度' },
+                            { phrase: 'apathetic towards something', meaning: '对某事漠不关心' },
+                            { phrase: 'apathetic voter', meaning: '冷漠的选民' },
+                            { phrase: 'seem apathetic', meaning: '显得冷漠' }
+                        ],
+                        indifferent: [
+                            { phrase: 'indifferent to something', meaning: '对某事漠不关心' },
+                            { phrase: 'indifferent attitude', meaning: '中立的态度' },
+                            { phrase: 'completely indifferent', meaning: '完全无所谓' },
+                            { phrase: 'indifferent observer', meaning: '冷漠的旁观者' }
+                        ]
+                    },
+                    grammar: {
+                        apathetic: {
+                            pos: 'adjective',
+                            usage: '作表语或定语',
+                            example: 'He seemed apathetic about his future.',
+                            note: '通常描述人的态度或状态'
+                        },
+                        indifferent: {
+                            pos: 'adjective',
+                            usage: '作表语或定语，常与介词to/ towards连用',
+                            example: 'She remained indifferent to all his pleas.',
+                            note: '可描述人或事物的属性'
+                        }
+                    },
+                    register: {
+                        apathetic: {
+                            level: 3,
+                            desc: '较正式，常用于学术、政治或社会议题的讨论中',
+                            note: '带有较强的主观评判色彩'
+                        },
+                        indifferent: {
+                            level: 2,
+                            desc: '通用词汇，既可用于正式语境也可用于日常对话',
+                            note: '语气相对客观和中性'
+                        }
+                    },
+                    memory: {
+                        apathetic: {
+                            roots: 'a-（无）+ pathos（情感）= 无情感 → 冷漠',
+                            tips: '谐音记忆："啊怕-thetic" → 害怕才会冷漠',
+                            association: '联想：A是蝙蝠侠的敌人吗？(Apathetic)? 蝙蝠侠对敌人A总是很冷漠'
+                        },
+                        indifferent: {
+                            roots: 'in-（不）+ different（不同）= 没有不同 → 无所谓',
+                            tips: '谐音记忆："印第安人"对很多事都无所谓',
+                            association: '联想：看到不同意见，in的人（内向的人）总是显得无所谓'
+                        }
+                    }
+                },
+                exercises: {
+                    level1: [
+                        {
+                            question: 'Which word best describes someone who shows no emotional response to important events?',
+                            options: ['apathetic', 'indifferent'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！apathetic 强调对重要事物的情感缺失，表现出麻木不仁的状态。',
+                                incorrect: 'apathetic 更合适。这里强调的是对重要事件的情感冷漠，apathetic 正是描述这种"无动于衷"的状态。'
+                            }
+                        },
+                        {
+                            question: 'If someone takes a neutral stance on a controversial topic, they are being ______.',
+                            options: ['apathetic', 'indifferent'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！indifferent 强调中立的立场，不偏向任何一方。',
+                                incorrect: 'indifferent 更合适。这里强调的是对争议话题保持中立立场，indifferent 正是描述这种"不偏不倚"的态度。'
+                            }
+                        },
+                        {
+                            question: 'The _______ voter refused to participate in the election.',
+                            options: ['apathetic', 'indifferent'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！形容选民对政治缺乏兴趣和热情，用 apathetic 更准确。',
+                                incorrect: 'apathetic 更合适。形容选民对政治参与缺乏热情，apathetic 强调的是情感上的冷漠和麻木。'
+                            }
+                        }
+                    ],
+                    level2: [
+                        {
+                            question: 'The new policy left many citizens ______ to its effects.',
+                            options: ['apathetic', 'indifferent'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！indifferent to 搭配，表示对政策效果持中立态度。',
+                                incorrect: 'indifferent 更合适。这里需要与介词 to 搭配使用，表示对政策效果的中立态度。'
+                            }
+                        },
+                        {
+                            question: 'His _______ attitude towards work eventually cost him his job.',
+                            options: ['apathetic', 'indifferent'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！apathetic attitude 搭配，表示对工作的冷漠态度。',
+                                incorrect: 'apathetic 更合适。apathetic attitude 是固定搭配，强调对工作的冷漠和缺乏热情。'
+                            }
+                        }
+                    ],
+                    level3: [
+                        {
+                            question: 'Write a sentence using "apathetic" to describe a student\'s lack of interest in studying.',
+                            answer: 'The apathetic student showed no motivation to complete assignments or participate in class discussions.',
+                            hint: 'Try to include a context that explains why the apathy might be problematic.'
+                        },
+                        {
+                            question: 'Write a sentence using "indifferent" to show a character\'s neutral stance in an argument.',
+                            answer: 'She remained indifferent to both sides of the debate, offering no opinion on either position.',
+                            hint: 'Focus on showing the neutral, non-committal nature of the character.'
+                        }
+                    ]
+                }
+            },
+            'affect-effect': {
+                words: ['affect', 'effect'],
+                analysis: {
+                    definitions: {
+                        affect: {
+                            pos: 'v.',
+                            text: '<span class="definition-key">影响</span>，指对某人或某事物产生作用或引起变化。通常描述过程。',
+                            essence: '动词 = 施加影响'
+                        },
+                        effect: {
+                            pos: 'n.',
+                            text: '<span class="definition-key accent">影响（的结果）</span>，指由某种原因引起的变化或结果。通常描述结果。',
+                            essence: '名词 = 影响的结果'
+                        }
+                    },
+                    examples: {
+                        affect: [
+                            {
+                                sentence: 'Climate change will <span class="example-highlight">affect</span> agricultural productivity worldwide.',
+                                translation: '气候变化将影响全球农业生产力。'
+                            },
+                            {
+                                sentence: 'The new law <span class="example-highlight">affected</span> thousands of small businesses.',
+                                translation: '新法律影响了数千家小型企业。'
+                            },
+                            {
+                                sentence: 'Her criticism didn\'t seem to <span class="example-highlight">affect</span> his confidence.',
+                                translation: '她的批评似乎没有影响他的自信心。'
+                            }
+                        ],
+                        effect: [
+                            {
+                                sentence: 'The new policy had a positive <span class="example-highlight">effect</span> on employee morale.',
+                                translation: '新政策对员工士气产生了积极影响。'
+                            },
+                            {
+                                sentence: 'The medicine had no noticeable <span class="example-highlight">effect</span> on the patient.',
+                                translation: '药物对病人没有明显的效果。'
+                            },
+                            {
+                                sentence: 'The <span class="example-highlight">effects</span> of the storm were devastating.',
+                                translation: '风暴造成的后果是毁灭性的。'
+                            }
+                        ]
+                    },
+                    comparison: {
+                        similarities: [
+                            '都与"影响"相关',
+                            '在某些技术语境中可以互换（如 effect as verb）'
+                        ],
+                        differences: [
+                            '词性不同：affect 主要作动词，effect 主要作名词',
+                            '含义侧重：affect 强调过程，effect 强调结果',
+                            'effect 可作动词，意为"实现/引起"'
+                        ],
+                        scenarios: [
+                            { word: 'affect', desc: '描述影响因素，如"Smoking affects health"（吸烟影响健康）' },
+                            { word: 'effect', desc: '描述影响结果，如"The effect is significant"（影响是显著的）' }
+                        ]
+                    },
+                    metaphors: {
+                        affect: {
+                            icon: 'hand',
+                            text: '就像一只手推动某物，强调主动的施加作用'
+                        },
+                        effect: {
+                            icon: 'wave',
+                            text: '就像水波荡漾的结果，强调被引发出来的变化'
+                        }
+                    },
+                    collocations: {
+                        affect: [
+                            { phrase: 'affect something', meaning: '影响某事' },
+                            { phrase: 'negatively affect', meaning: '负面影响' },
+                            { phrase: 'affect dramatically', meaning: '剧烈影响' }
+                        ],
+                        effect: [
+                            { phrase: 'have an effect on', meaning: '对...有影响' },
+                            { phrase: 'side effect', meaning: '副作用' },
+                            { phrase: 'take effect', meaning: '生效' },
+                            { phrase: 'cause and effect', meaning: '因果' }
+                        ]
+                    },
+                    grammar: {
+                        affect: {
+                            pos: 'verb',
+                            usage: '及物动词，直接接宾语',
+                            example: 'The weather affects my mood.',
+                            note: '重音在第二音节 /əˈfekt/'
+                        },
+                        effect: {
+                            pos: 'noun (verb)',
+                            usage: '名词：常与介词 on 连用；动词：正式用法，意为"实现"',
+                            example: 'The new policy took effect immediately.',
+                            note: '重音在第二音节 /ɪˈfekt/'
+                        }
+                    },
+                    register: {
+                        affect: {
+                            level: 1,
+                            desc: '通用词汇，适用于各种语境',
+                            note: '日常和学术写作都常用'
+                        },
+                        effect: {
+                            level: 1,
+                            desc: '通用词汇，尤其在讨论因果关系时',
+                            note: '常见于新闻、学术和政策文件中'
+                        }
+                    },
+                    memory: {
+                        affect: {
+                            roots: 'af-（朝向）+ fect（做）= 做向某事 → 影响',
+                            tips: 'A像动作(Action)，强调主动行为 → 动词"影响"',
+                            association: '联想：act 行动会影响结果，加上 f 就变成了 affect'
+                        },
+                        effect: {
+                            roots: 'ef-（出）+ fect（做）= 做出结果 → 效果',
+                            tips: 'E像结果(Result)，强调结果 → 名词"效果"',
+                            association: '联想：exe- 是"执行"前缀，做出来的东西就是 effect'
+                        }
+                    }
+                },
+                exercises: {
+                    level1: [
+                        {
+                            question: 'Complete: The drought will _____ crop production significantly.',
+                            options: ['affect', 'effect'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！affect 是动词，意为"影响"。',
+                                incorrect: '这里需要动词 affect，表示"影响"这一动作。'
+                            }
+                        },
+                        {
+                            question: 'The new law had a positive _____ on the economy.',
+                            options: ['affect', 'effect'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！effect 是名词，意为"影响（的结果）"。',
+                                incorrect: '这里需要名词 effect，表示"影响"这一结果。'
+                            }
+                        }
+                    ],
+                    level2: [
+                        {
+                            question: '_____ to radiation can cause serious health problems.',
+                            options: ['Being affected', 'Effect'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！这里需要动名词形式 "being affected" 来描述受影响的状态。',
+                                incorrect: '需要用 "being affected" 来描述受到辐射影响的状态。'
+                            }
+                        }
+                    ],
+                    level3: [
+                        {
+                            question: 'Write a sentence demonstrating the difference between "affect" and "effect."',
+                            answer: 'The noise from construction affected (verb) my concentration, and the effect (noun) was that I couldn\'t finish my work on time.',
+                            hint: 'Try to use both words in the same sentence to show the distinction.'
+                        }
+                    ]
+                }
+            },
+            'fewer-less': {
+                words: ['fewer', 'less'],
+                analysis: {
+                    definitions: {
+                        fewer: {
+                            pos: 'adj.',
+                            text: '<span class="definition-key">更少的</span>，用于修饰<span class="definition-key">可数名词</span>的复数形式。',
+                            essence: '可数名词专用 = 1, 2, 3...'
+                        },
+                        less: {
+                            pos: 'adj.',
+                            text: '<span class="definition-key accent">更少的</span>，用于修饰<span class="definition-key accent">不可数名词</span>。',
+                            essence: '不可数名词专用 = 水, 糖, 时间...'
+                        }
+                    },
+                    examples: {
+                        fewer: [
+                            {
+                                sentence: 'There are <span class="example-highlight">fewer</span> students attending the seminar this year.',
+                                translation: '今年参加研讨会学生更少了。'
+                            },
+                            {
+                                sentence: 'I made <span class="example-highlight">fewer</span> mistakes on this test than the last one.',
+                                translation: '这次考试我犯的错误比上次少。'
+                            },
+                            {
+                                sentence: 'We need <span class="example-highlight">fewer</span> meetings and more action.',
+                                translation: '我们需要更少的会议，更多的行动。'
+                            }
+                        ],
+                        less: [
+                            {
+                                sentence: 'I have <span class="example-highlight">less</span> time to spend on hobbies now.',
+                                translation: '现在我花在爱好上的时间更少了。'
+                            },
+                            {
+                                sentence: 'This recipe requires <span class="example-highlight">less</span> sugar than the original.',
+                                translation: '这个食谱比原配方需要更少的糖。'
+                            },
+                            {
+                                sentence: 'With practice, you\'ll make <span class="example-highlight">less</span> mistakes.',
+                                translation: '通过练习，你会减少错误。'
+                            }
+                        ]
+                    },
+                    comparison: {
+                        similarities: [
+                            '都表示"更少"的意思',
+                            '都是形容词',
+                            '都可以用于比较级结构'
+                        ],
+                        differences: [
+                            'fewer 修饰可数名词复数，less 修饰不可数名词',
+                            'fewer 用于数字相关语境，less 用于量/程度',
+                            '现代英语中，less 有时被用于可数名词（非标准）'
+                        ],
+                        scenarios: [
+                            { word: 'fewer', desc: '修饰可数事物，如"fewer books, fewer people, fewer options"' },
+                            { word: 'less', desc: '修饰不可数事物，如"less water, less time, less money"' }
+                        ]
+                    },
+                    metaphors: {
+                        fewer: {
+                            icon: 'apples',
+                            text: '就像数苹果时一个一个减少，强调可数性'
+                        },
+                        less: {
+                            icon: 'water',
+                            text: '就像倒水时水位慢慢下降，强调不可数的流动性'
+                        }
+                    },
+                    collocations: {
+                        fewer: [
+                            { phrase: 'fewer people', meaning: '更少的人' },
+                            { phrase: 'fewer options', meaning: '更少的选择' },
+                            { phrase: 'fewer and fewer', meaning: '越来越少' },
+                            { phrase: 'less than 10 items', meaning: '少于10件' }
+                        ],
+                        less: [
+                            { phrase: 'less time', meaning: '更少的时间' },
+                            { phrase: 'less money', meaning: '更少的钱' },
+                            { phrase: 'less and less', meaning: '越来越少' },
+                            { phrase: 'less than', meaning: '少于' }
+                        ]
+                    },
+                    grammar: {
+                        fewer: {
+                            pos: 'adjective',
+                            usage: '修饰可数名词复数，常与 than 连用',
+                            example: 'Fewer students passed the exam this year.',
+                            note: '遵循主谓一致原则'
+                        },
+                        less: {
+                            pos: 'adjective',
+                            usage: '修饰不可数名词，或用于数词+名词前',
+                            example: 'I have less homework than you.',
+                            note: '"less than 10 dollars" 是常见用法'
+                        }
+                    },
+                    register: {
+                        fewer: {
+                            level: 2,
+                            desc: '较正式，多用于书面语和正式场合',
+                            note: '语法严格度较高'
+                        },
+                        less: {
+                            level: 1,
+                            desc: '口语和非正式语境更常用',
+                            note: '现代英语中用法逐渐放宽'
+                        }
+                    },
+                    memory: {
+                        fewer: {
+                            roots: 'few（少）+ -er（比较级）= 更少',
+                            tips: '记忆：few 和 fewer 都有 "w"，代表可数的多个事物',
+                            association: '联想：fewer sounds like "few-ner"，数数的声音，提示可数'
+                        },
+                        less: {
+                            roots: 'less 本身就是词根，表示"更少的"',
+                            tips: '记忆：less 和 loss 有相同的读音，失去的更少',
+                            association: '联想：没有具体的字母暗示不可数，但可以记"less is more"（少即是多）'
+                        }
+                    }
+                },
+                exercises: {
+                    level1: [
+                        {
+                            question: 'Choose the correct option: There are _____ students in the library today. (可数)',
+                            options: ['fewer', 'less'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！students 是可数名词，所以用 fewer。',
+                                incorrect: 'students 是可数名词，应该用 fewer。'
+                            }
+                        },
+                        {
+                            question: 'Choose the correct option: I have _____ patience than before. (不可数)',
+                            options: ['fewer', 'less'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！patience 是不可数名词，所以用 less。',
+                                incorrect: 'patience 是不可数名词，应该用 less。'
+                            }
+                        }
+                    ],
+                    level2: [
+                        {
+                            question: '_____ people attended the conference this year compared to last year.',
+                            options: ['Fewer', 'Less'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！people 是可数名词的复数形式。',
+                                incorrect: 'people 是可数名词的复数，应该用 Fewer。'
+                            }
+                        }
+                    ],
+                    level3: [
+                        {
+                            question: 'Write a sentence using "fewer" with a countable noun.',
+                            answer: 'I have fewer books than my sister because I donated some to charity.',
+                            hint: 'Use a countable noun like books, friends, or problems.'
+                        }
+                    ]
+                }
+            },
+            'imply-infer': {
+                words: ['imply', 'infer'],
+                analysis: {
+                    definitions: {
+                        imply: {
+                            pos: 'v.',
+                            text: '<span class="definition-key">暗示</span>，指说话者或作者传达某种含义，但不明说。强调传达者的意图。',
+                            essence: '传达者 → 暗示含义'
+                        },
+                        infer: {
+                            pos: 'v.',
+                            text: '<span class="definition-key accent">推断</span>，指听者或读者根据信息得出结论。强调接收者的理解。',
+                            essence: '接收者 ← 推断含义'
+                        }
+                    },
+                    examples: {
+                        imply: [
+                            {
+                                sentence: 'What are you trying to <span class="example-highlight">imply</span>? Just say it directly.',
+                                translation: '你到底想暗示什么？直接说出来吧。'
+                            },
+                            {
+                                sentence: 'The teacher\'s silence seemed to <span class="example-highlight">imply</span> disapproval.',
+                                translation: '老师的沉默似乎暗示着不赞成。'
+                            },
+                            {
+                                sentence: 'Are you <span class="example-highlight">implying</span> that I\'m lying?',
+                                translation: '你是在暗示我在撒谎吗？'
+                            }
+                        ],
+                        infer: [
+                            {
+                                sentence: 'From her tone, I <span class="example-highlight">inferred</span> that she was not happy with the decision.',
+                                translation: '从她的语气，我推断她对这个决定不满意。'
+                            },
+                            {
+                                sentence: 'It\'s difficult to <span class="example-highlight">infer</span> the author\'s intentions from this text alone.',
+                                translation: '仅从这篇文章很难推断作者的真实意图。'
+                            },
+                            {
+                                sentence: 'What can we <span class="example-highlight">infer</span> from the survey results?',
+                                translation: '从调查结果中我们可以推断出什么？'
+                            }
+                        ]
+                    },
+                    comparison: {
+                        similarities: [
+                            '都与"含义传递"相关',
+                            '都是动词',
+                            '都涉及言外之意的理解'
+                        ],
+                        differences: [
+                            'imply 是传达者发出的动作，infer 是接收者执行的动作',
+                            'imply 在前（发送），infer 在后（接收）',
+                            'imply 强调意图，infer 强调推理'
+                        ],
+                        scenarios: [
+                            { word: 'imply', desc: '说话者暗示，如"She implied that she was not interested."' },
+                            { word: 'infer', desc: '听者推断，如"We inferred from her tone that she was upset."' }
+                        ]
+                    },
+                    metaphors: {
+                        imply: {
+                            icon: 'send',
+                            text: '就像发送加密信息，发送者知道真正的含义但不明说'
+                        },
+                        infer: {
+                            icon: 'decode',
+                            text: '就像解码者根据线索破解信息，强调理解的过程'
+                        }
+                    },
+                    collocations: {
+                        imply: [
+                            { phrase: 'imply something', meaning: '暗示某事' },
+                            { phrase: 'imply that...', meaning: '暗示...' },
+                            { phrase: 'seem to imply', meaning: '似乎在暗示' },
+                            { phrase: 'clearly imply', meaning: '明确暗示' }
+                        ],
+                        infer: [
+                            { phrase: 'infer from', meaning: '从...推断' },
+                            { phrase: 'infer that...', meaning: '推断...' },
+                            { phrase: 'can infer', meaning: '可以推断' },
+                            { phrase: 'wrongly infer', meaning: '错误推断' }
+                        ]
+                    },
+                    grammar: {
+                        imply: {
+                            pos: 'verb',
+                            usage: '及物动词，直接接宾语或 that 从句',
+                            example: 'His words implied a hidden threat.',
+                            note: '常用于询问或指出他人的暗示'
+                        },
+                        infer: {
+                            pos: 'verb',
+                            usage: '及物动词，常与 from 连用',
+                            example: 'We can infer from the data that sales are declining.',
+                            note: '强调基于证据的推理过程'
+                        }
+                    },
+                    register: {
+                        imply: {
+                            level: 2,
+                            desc: '学术、文学和日常对话中都常用',
+                            note: '在分析文本时经常使用'
+                        },
+                        infer: {
+                            level: 2,
+                            desc: '学术和分析语境中使用较多',
+                            note: '在阅读理解和批判性分析中常见'
+                        }
+                    },
+                    memory: {
+                        imply: {
+                            roots: 'im-（进入）+ ply（折叠）= 把意思折叠进去 → 暗示',
+                            tips: 'I am PLYing the message with hidden meaning → 我在折叠信息',
+                            association: '联想：imply 的 i 像一根针（imply 暗示），刺入信息传达含义'
+                        },
+                        infer: {
+                            roots: 'in-（进入）+ fer（携带）= 携带信息进来 → 推断',
+                            tips: 'INformation + FER → 从信息中带来理解',
+                            association: '联想：infer 的 in- 像"在里面"，把外面的线索带进去得出结论'
+                        }
+                    }
+                },
+                exercises: {
+                    level1: [
+                        {
+                            question: 'The speaker _____ that the project might be cancelled. (推断发送者的意图)',
+                            options: ['implied', 'inferred'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！说话者暗示，用 imply。',
+                                incorrect: '这里是在描述说话者的暗示行为，应该用 implied。'
+                            }
+                        },
+                        {
+                            question: 'Based on the evidence, we can _____ that the company is struggling. (根据证据得出结论)',
+                            options: ['imply', 'infer'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！根据证据推断，用 infer。',
+                                incorrect: '根据证据得出结论是推断者的行为，应该用 infer。'
+                            }
+                        }
+                    ],
+                    level2: [
+                        {
+                            question: 'From her hesitation, I _____ that she was unsure about the plan.',
+                            options: ['implied', 'inferred'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！"From her hesitation" 表示从证据推断。',
+                                incorrect: '"From her hesitation" 表示从迹象推断，应该用 inferred。'
+                            }
+                        }
+                    ],
+                    level3: [
+                        {
+                            question: 'Write a dialogue where one person implies something and another person infers it correctly.',
+                            answer: 'A: "I\'ve been looking at other job opportunities lately." (implies dissatisfaction)\nB: "So you\'re not happy here?" (infers the meaning)\nA: "I didn\'t say that!"',
+                            hint: 'Make sure the inferrer\'s conclusion matches what was implied.'
+                        }
+                    ]
+                }
+            },
+            'i.e.-e.g.': {
+                words: ['i.e.', 'e.g.'],
+                analysis: {
+                    definitions: {
+                        'i.e.': {
+                            pos: 'abbr.',
+                            text: '拉丁语 <em>id est</em> 的缩写，意为<span class="definition-key">"即"或"也就是说"</span>，用于进一步解释或澄清前面的内容。',
+                            essence: 'i.e. = that is = 也就是说'
+                        },
+                        'e.g.': {
+                            pos: 'abbr.',
+                            text: '拉丁语 <em>exempli gratia</em> 的缩写，意为<span class="definition-key accent">"例如"</span>，用于给出具体例子。',
+                            essence: 'e.g. = for example = 例如'
+                        }
+                    },
+                    examples: {
+                        'i.e.': [
+                            {
+                                sentence: 'Bring your documents, <span class="example-highlight">i.e.</span> passport and visa.',
+                                translation: '带上你的文件，即护照和签证。'
+                            },
+                            {
+                                sentence: 'The meeting is for senior staff <span class="example-highlight">i.e.</span> managers and directors.',
+                                translation: '会议面向高级员工，即经理和总监。'
+                            },
+                            {
+                                sentence: 'She prefers non-alcoholic beverages <span class="example-highlight">i.e.</span> juice or water.',
+                                translation: '她更喜欢无酒精饮料，也就是果汁或水。'
+                            }
+                        ],
+                        'e.g.': [
+                            {
+                                sentence: 'Many fruits <span class="example-highlight">e.g.</span> apples and oranges are rich in vitamins.',
+                                translation: '许多水果，例如苹果和橙子，富含维生素。'
+                            },
+                            {
+                                sentence: 'Popular programming languages <span class="example-highlight">e.g.</span> Python and JavaScript are widely used.',
+                                translation: '流行的编程语言，例如 Python 和 JavaScript，被广泛使用。'
+                            },
+                            {
+                                sentence: 'She enjoys outdoor activities <span class="example-highlight">e.g.</span> hiking and cycling.',
+                                translation: '她喜欢户外活动，比如徒步和骑行。'
+                            }
+                        ]
+                    },
+                    comparison: {
+                        similarities: [
+                            '都是拉丁语缩写',
+                            '都用于学术或正式写作',
+                            '都用于补充说明'
+                        ],
+                        differences: [
+                            'i.e. 用于澄清或定义，e.g. 用于举例',
+                            'i.e. 的例子是穷尽的，e.g. 的例子是代表性的',
+                            'i.e. 可以替换成"that is"，e.g. 可以替换成"for example"'
+                        ],
+                        scenarios: [
+                            { word: 'i.e.', desc: '明确范围或定义，如"Capital cities, i.e. London and Paris"' },
+                            { word: 'e.g.', desc: '列举例子，如"Fruits, e.g. apples and oranges"' }
+                        ]
+                    },
+                    metaphors: {
+                        'i.e.': {
+                            icon: 'target',
+                            text: '就像瞄准靶心，精确指出具体是什么'
+                        },
+                        'e.g.': {
+                            icon: 'samples',
+                            text: '就像从箱子里拿出几个样品展示'
+                        }
+                    },
+                    collocations: {
+                        'i.e.': [
+                            { phrase: 'i.e. this means', meaning: '这意味着' },
+                            { phrase: 'i.e. in other words', meaning: '换句话说' },
+                            { phrase: 'specifically i.e.', meaning: '具体来说' }
+                        ],
+                        'e.g.': [
+                            { phrase: 'e.g. such as', meaning: '例如' },
+                            { phrase: 'including e.g.', meaning: '包括如' },
+                            { phrase: 'like e.g.', meaning: '比如' }
+                        ]
+                    },
+                    grammar: {
+                        'i.e.': {
+                            pos: 'abbreviation',
+                            usage: '用逗号隔开，后面紧跟解释',
+                            example: 'The project requires basic skills (i.e. reading and writing).',
+                            note: '通常用括号括起来'
+                        },
+                        'e.g.': {
+                            pos: 'abbreviation',
+                            usage: '用逗号隔开，后面跟逗号分隔的多个例子',
+                            example: 'Healthy foods (e.g. vegetables, fruits) are recommended.',
+                            note: '例子通常2-3个即可'
+                        }
+                    },
+                    register: {
+                        'i.e.': {
+                            level: 3,
+                            desc: '非常正式，主要用于学术写作和技术文档',
+                            note: '在日常写作中可用"that is"替代'
+                        },
+                        'e.g.': {
+                            level: 3,
+                            desc: '正式，在学术和商务写作中使用',
+                            note: '在日常写作中可用"for example"替代'
+                        }
+                    },
+                    memory: {
+                        'i.e.': {
+                            roots: 'id est（that is）= 也就是说',
+                            tips: 'i.e. = iDentical → 点明identical/确切的内容',
+                            association: '联想：i.e. 里的 i 像是"就是"的嘴型'
+                        },
+                        'e.g.': {
+                            roots: 'exempli gratia（for the sake of example）= 为了例子的缘故',
+                            tips: 'e.g. = exAmple → 给出例子',
+                            association: '联想：e.g. 里的 e 像是"example"的开头'
+                        }
+                    }
+                },
+                exercises: {
+                    level1: [
+                        {
+                            question: 'Which would you use to give examples of programming languages?',
+                            options: ['i.e.', 'e.g.'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！给出编程语言的例子应该用 e.g.',
+                                incorrect: '给出例子应该用 e.g.，比如"e.g. Python and JavaScript"。'
+                            }
+                        },
+                        {
+                            question: 'Which would you use to clarify that "senior staff" means "directors only"?',
+                            options: ['i.e.', 'e.g.'],
+                            correct: 0,
+                            feedback: {
+                                correct: '正确！澄清定义应该用 i.e.',
+                                incorrect: '澄清或定义应该用 i.e.，比如"senior staff i.e. directors"。'
+                            }
+                        }
+                    ],
+                    level2: [
+                        {
+                            question: 'Complete: Many mammals _____ dogs and cats _____ domesticated animals.',
+                            options: ['i.e. ... i.e.', 'e.g. ... are'],
+                            correct: 1,
+                            feedback: {
+                                correct: '正确！"dogs and cats" 是 "mammals" 的例子，所以用 e.g.，后面用 are 表示定义。',
+                                incorrect: '"dogs and cats" 是例子，应该用 e.g.；后面描述特征用 are。'
+                            }
+                        }
+                    ],
+                    level3: [
+                        {
+                            question: 'Write a sentence using both "i.e." and "e.g." correctly.',
+                            answer: 'Citrus fruits (e.g. oranges, lemons) are fruits with acidic juice, i.e. they taste sour.',
+                            hint: 'Use e.g. for examples and i.e. for clarification.'
+                        }
+                    ]
+                }
+            }
+        };
+
+        // State
+        let currentWordPair = null;
+        let currentExercise = 0;
+        let exerciseResults = [];
+        let selectedExerciseLevel = 1;
+        let currentExercises = [];
+
+        // Functions
+        function showHome() {
+            document.getElementById('homeView').classList.remove('hidden');
+            document.getElementById('learningView').classList.remove('active');
+            document.getElementById('exerciseView').classList.remove('active');
+            document.getElementById('resultsView').classList.remove('active');
+            window.location.hash = 'home';
+        }
+
+        function selectPreset(word1, word2) {
+            document.getElementById('word1').value = word1;
+            document.getElementById('word2').value = word2;
+            startLearning();
+        }
+
+        function startLearning() {
+            const word1 = document.getElementById('word1').value.trim().toLowerCase();
+            const word2 = document.getElementById('word2').value.trim().toLowerCase();
+
+            if (!word1 || !word2) {
+                alert('请输入两个单词进行学习');
+                return;
+            }
+
+            // Normalize i.e. and e.g.
+            const normalized1 = word1 === 'ie' || word1 === 'i.e.' ? 'i.e.' : word1;
+            const normalized2 = word2 === 'ie' || word2 === 'i.e.' ? 'i.e.' : word2;
+            const normalized3 = word1 === 'eg' || word1 === 'e.g.' ? 'e.g.' : word1;
+            const normalized4 = word2 === 'eg' || word2 === 'e.g.' ? 'e.g.' : word2;
+
+            const key1 = `${normalized1}-${normalized2}`;
+            const key2 = `${normalized2}-${normalized1}`;
+            const key3 = `${normalized3}-${normalized4}`;
+            const key4 = `${normalized4}-${normalized3}`;
+
+            const dataKey = wordData[key1] ? key1 : (wordData[key2] ? key2 : (wordData[key3] ? key3 : (wordData[key4] ? key4 : null)));
+
+            if (!dataKey) {
+                alert('抱歉，该词组暂未收录在我们的数据库中。请尝试其他易混词组，或期待我们未来添加更多内容！');
+                return;
+            }
+
+            currentWordPair = wordData[dataKey];
+
+            // Update display
+            document.getElementById('wordPairDisplay').innerHTML =
+                `${currentWordPair.words[0]} <span>vs</span> ${currentWordPair.words[1]}`;
+
+            // Render all tabs
+            renderDefinition();
+            renderExamples();
+            renderComparison();
+            renderMetaphor();
+            renderCollocations();
+            renderGrammar();
+            renderRegister();
+            renderMemory();
+
+            // Switch views
+            document.getElementById('homeView').classList.add('hidden');
+            document.getElementById('learningView').classList.add('active');
+            document.getElementById('exerciseView').classList.remove('active');
+            document.getElementById('resultsView').classList.remove('active');
+
+            // Reset tab
+            switchTab('definition');
+            window.location.hash = 'learn';
+        }
+
+        function switchTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(
+                    tabName === 'definition' ? '核心定义' :
+                    tabName === 'examples' ? '语境示例' :
+                    tabName === 'comparison' ? '表格提炼' :
+                    tabName === 'metaphor' ? '视觉隐喻' :
+                    tabName === 'collocations' ? '词语搭配' :
+                    tabName === 'grammar' ? '语法功能' :
+                    tabName === 'register' ? '语域风格' :
+                    tabName === 'memory' ? '记忆方法' : '互动练习'
+                )) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Update tab panels
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+        }
+
+        function renderDefinition() {
+            const grid = document.getElementById('definitionGrid');
+            const analysis = currentWordPair.analysis;
+
+            grid.innerHTML = `
+                <div class="definition-card">
+                    <div class="word-badge">${currentWordPair.words[0]} <span class="pos-tag">${analysis.definitions[currentWordPair.words[0]].pos}</span></div>
+                    <p class="definition-text">${analysis.definitions[currentWordPair.words[0]].text}</p>
+                    <p style="color: var(--accent); font-weight: 600; margin-top: 12px;">
+                        <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                        一句话区分：${analysis.definitions[currentWordPair.words[0]].essence}
+                    </p>
+                </div>
+                <div class="definition-card indifferent">
+                    <div class="word-badge">${currentWordPair.words[1]} <span class="pos-tag">${analysis.definitions[currentWordPair.words[1]].pos}</span></div>
+                    <p class="definition-text">${analysis.definitions[currentWordPair.words[1]].text}</p>
+                    <p style="color: var(--accent); font-weight: 600; margin-top: 12px;">
+                        <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                        一句话区分：${analysis.definitions[currentWordPair.words[1]].essence}
+                    </p>
+                </div>
+            `;
+        }
+
+        function renderExamples() {
+            const section = document.getElementById('examplesSection');
+            const analysis = currentWordPair.analysis;
+
+            let html = `
+                <h3>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    ${currentWordPair.words[0]} 的例句
+                </h3>
+            `;
+
+            analysis.examples[currentWordPair.words[0]].forEach((ex, i) => {
+                html += `
+                    <div class="example-card">
+                        <p class="example-sentence">${ex.sentence}</p>
+                        <p class="example-translation">${ex.translation}</p>
+                    </div>
+                `;
+            });
+
+            html += `
+                <h3 style="margin-top: 32px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    ${currentWordPair.words[1]} 的例句
+                </h3>
+            `;
+
+            analysis.examples[currentWordPair.words[1]].forEach((ex, i) => {
+                html += `
+                    <div class="example-card alt">
+                        <p class="example-sentence">${ex.sentence}</p>
+                        <p class="example-translation">${ex.translation}</p>
+                    </div>
+                `;
+            });
+
+            section.innerHTML = html;
+        }
+
+        function renderComparison() {
+            const table = document.getElementById('comparisonTable');
+            const comp = currentWordPair.analysis.comparison;
+
+            let scenariosHtml = comp.scenarios.map(s => `
+                <tr>
+                    <td><span class="comparison-label">${s.word}</span></td>
+                    <td colspan="2">${s.desc}</td>
+                </tr>
+            `).join('');
+
+            table.innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>${currentWordPair.words[0]}</th>
+                            <th>${currentWordPair.words[1]}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="comparison-label">共同点</span></td>
+                            <td colspan="2">${comp.similarities.join('；')}</td>
+                        </tr>
+                        <tr>
+                            <td><span class="comparison-label">核心区别</span></td>
+                            <td colspan="2">${comp.differences.join('；')}</td>
+                        </tr>
+                        ${scenariosHtml}
+                    </tbody>
+                </table>
+            `;
+        }
+
+        function renderMetaphor() {
+            const grid = document.getElementById('metaphorGrid');
+            const meta = currentWordPair.analysis.metaphors;
+
+            const icons = {
+                heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
+                scale: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>',
+                hand: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>',
+                wave: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>',
+                apples: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="12" r="4"/><circle cx="17" cy="12" r="4"/><path d="M12 8V2"/><path d="M9 2h6"/></svg>',
+                water: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>',
+                send: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>',
+                decode: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
+                target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+                samples: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>'
+            };
+
+            grid.innerHTML = `
+                <div class="metaphor-card">
+                    <div class="metaphor-icon">
+                        ${icons[meta[currentWordPair.words[0]].icon] || icons.heart}
+                    </div>
+                    <div class="metaphor-word">${currentWordPair.words[0]}</div>
+                    <p class="metaphor-text">${meta[currentWordPair.words[0]].text}</p>
+                </div>
+                <div class="metaphor-card">
+                    <div class="metaphor-icon alt">
+                        ${icons[meta[currentWordPair.words[1]].icon] || icons.scale}
+                    </div>
+                    <div class="metaphor-word">${currentWordPair.words[1]}</div>
+                    <p class="metaphor-text">${meta[currentWordPair.words[1]].text}</p>
+                </div>
+            `;
+        }
+
+        function renderCollocations() {
+            const grid = document.getElementById('collocationsGrid');
+            const coll = currentWordPair.analysis.collocations;
+
+            const renderList = (items) => items.map(c => `
+                <li class="collocation-item">
+                    <span class="collocation-phrase">${c.phrase}</span>
+                    <span class="collocation-meaning">${c.meaning}</span>
+                </li>
+            `).join('');
+
+            grid.innerHTML = `
+                <div class="collocation-card">
+                    <div class="collocation-header">
+                        <span class="collocation-title">${currentWordPair.words[0]}</span>
+                    </div>
+                    <ul class="collocation-list">
+                        ${renderList(coll[currentWordPair.words[0]])}
+                    </ul>
+                </div>
+                <div class="collocation-card">
+                    <div class="collocation-header">
+                        <span class="collocation-title">${currentWordPair.words[1]}</span>
+                    </div>
+                    <ul class="collocation-list">
+                        ${renderList(coll[currentWordPair.words[1]])}
+                    </ul>
+                </div>
+            `;
+        }
+
+        function renderGrammar() {
+            const grid = document.getElementById('grammarGrid');
+            const gram = currentWordPair.analysis.grammar;
+
+            const renderCard = (word, data, isAlt) => `
+                <div class="grammar-card ${isAlt ? 'alt' : ''}">
+                    <div class="grammar-word">${word}</div>
+                    <div class="grammar-item">
+                        <span class="grammar-label">词性</span>
+                        <span class="grammar-value">${data.pos}</span>
+                    </div>
+                    <div class="grammar-item">
+                        <span class="grammar-label">用法</span>
+                        <span class="grammar-value">${data.usage}</span>
+                    </div>
+                    <div class="grammar-item">
+                        <span class="grammar-label">例句</span>
+                        <span class="grammar-value" style="font-style: italic;">${data.example}</span>
+                    </div>
+                    <div class="grammar-item">
+                        <span class="grammar-label">备注</span>
+                        <span class="grammar-value">${data.note}</span>
+                    </div>
+                </div>
+            `;
+
+            grid.innerHTML = `
+                ${renderCard(currentWordPair.words[0], gram[currentWordPair.words[0]], false)}
+                ${renderCard(currentWordPair.words[1], gram[currentWordPair.words[1]], true)}
+            `;
+        }
+
+        function renderRegister() {
+            const grid = document.getElementById('registerGrid');
+            const reg = currentWordPair.analysis.register;
+
+            const renderCard = (word, data, isAlt) => {
+                const levelText = data.level <= 2 ? '口语/日常' : (data.level <= 3 ? '通用/正式' : '学术/专业');
+                return `
+                    <div class="register-card">
+                        <div class="register-header">
+                            <span class="register-word">${word}</span>
+                            <span class="register-level">${levelText}</span>
+                        </div>
+                        <div class="register-scale">
+                            <div class="scale-bar">
+                                <div class="scale-fill" style="width: ${data.level * 20}%"></div>
+                            </div>
+                            <div class="scale-labels">
+                                <span>口语</span>
+                                <span>学术</span>
+                            </div>
+                        </div>
+                        <p class="register-desc">${data.desc}</p>
+                        <p class="register-desc" style="margin-top: 8px; font-style: italic; color: var(--text-secondary);">${data.note}</p>
+                    </div>
+                `;
+            };
+
+            grid.innerHTML = `
+                ${renderCard(currentWordPair.words[0], reg[currentWordPair.words[0]], false)}
+                ${renderCard(currentWordPair.words[1], reg[currentWordPair.words[1]], true)}
+            `;
+        }
+
+        function renderMemory() {
+            const grid = document.getElementById('memoryGrid');
+            const mem = currentWordPair.analysis.memory;
+
+            const renderCard = (word, data, isAlt) => `
+                <div class="memory-card">
+                    <div class="memory-header">
+                        <div class="memory-icon ${isAlt ? 'alt' : ''}">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
+                                <path d="M8.5 8.5v.01"/>
+                                <path d="M16 15.5v.01"/>
+                                <path d="M12 12v.01"/>
+                                <path d="M11 17v.01"/>
+                                <path d="M7 14v.01"/>
+                            </svg>
+                        </div>
+                        <span class="memory-word">${word}</span>
+                    </div>
+                    <div class="memory-section">
+                        <div class="memory-label">词根词缀</div>
+                        <p class="memory-content">${data.roots}</p>
+                    </div>
+                    <div class="memory-section">
+                        <div class="memory-label">记忆技巧</div>
+                        <p class="memory-content">${data.tips}</p>
+                    </div>
+                    <div class="memory-section">
+                        <div class="memory-label">联想记忆</div>
+                        <p class="memory-content">${data.association}</p>
+                    </div>
+                </div>
+            `;
+
+            grid.innerHTML = `
+                ${renderCard(currentWordPair.words[0], mem[currentWordPair.words[0]], false)}
+                ${renderCard(currentWordPair.words[1], mem[currentWordPair.words[1]], true)}
+            `;
+        }
+
+        function startExercise() {
+            if (!currentWordPair) {
+                alert('请先选择要学习的词组');
+                return;
+            }
+
+            // Prepare exercises from all levels
+            const allExercises = [];
+            const levels = currentWordPair.exercises;
+
+            // Level 1: Recognition
+            if (levels.level1) {
+                levels.level1.forEach(ex => {
+                    allExercises.push({ ...ex, type: 'recognition', level: 1 });
+                });
+            }
+
+            // Level 2: Completion
+            if (levels.level2) {
+                levels.level2.forEach(ex => {
+                    allExercises.push({ ...ex, type: 'completion', level: 2 });
+                });
+            }
+
+            // Level 3: Creation (limit to available)
+            if (levels.level3) {
+                levels.level3.slice(0, 2).forEach(ex => {
+                    allExercises.push({ ...ex, type: 'creation', level: 3 });
+                });
+            }
+
+            currentExercises = allExercises;
+            currentExercise = 0;
+            exerciseResults = [];
+
+            // Switch views
+            document.getElementById('homeView').classList.add('hidden');
+            document.getElementById('learningView').classList.remove('active');
+            document.getElementById('exerciseView').classList.add('active');
+            document.getElementById('resultsView').classList.remove('active');
+
+            renderExercise();
+            window.location.hash = 'exercise';
+        }
+
+        function renderExercise() {
+            const exercise = currentExercises[currentExercise];
+
+            // Update progress
+            document.getElementById('currentQuestion').textContent = `第 ${currentExercise + 1} 题`;
+            document.getElementById('progressPercent').textContent = `${currentExercise + 1}/${currentExercises.length}`;
+            document.getElementById('progressFill').style.width = `${((currentExercise + 1) / currentExercises.length) * 100}%`;
+
+            // Update level
+            const levelNames = { 1: '第一级：识别', 2: '第二级：填空', 3: '第三级：创作' };
+            document.getElementById('exerciseLevel').textContent = levelNames[exercise.level];
+
+            // Render question
+            document.getElementById('exerciseQuestion').innerHTML = exercise.question;
+
+            // Render options or writing area
+            const optionsContainer = document.getElementById('exerciseOptions');
+
+            if (exercise.type === 'creation') {
+                optionsContainer.innerHTML = `
+                    <textarea class="writing-area" id="writingInput" placeholder="在这里输入你的句子..."></textarea>
+                    <p class="writing-hint">提示：${exercise.hint || ''}</p>
+                `;
+            } else {
+                const letters = ['A', 'B', 'C', 'D'];
+                optionsContainer.innerHTML = exercise.options.map((opt, i) => `
+                    <button class="option-btn" onclick="selectOption(${i})" data-index="${i}">
+                        <span class="option-letter">${letters[i]}</span>
+                        <span class="option-text">${opt}</span>
+                    </button>
+                `).join('');
+            }
+
+            // Hide feedback
+            document.getElementById('feedback').classList.remove('show', 'correct', 'incorrect');
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        function selectOption(index) {
+            const exercise = currentExercises[currentExercise];
+            const buttons = document.querySelectorAll('.option-btn');
+            const isCorrect = index === exercise.correct;
+
+            // Disable all buttons
+            buttons.forEach(btn => btn.classList.add('disabled'));
+
+            // Mark selected
+            buttons[index].classList.add(isCorrect ? 'correct' : 'incorrect');
+
+            // If wrong, highlight correct answer
+            if (!isCorrect) {
+                buttons[exercise.correct].classList.add('correct');
+            }
+
+            // Show feedback
+            showFeedback(isCorrect, exercise.feedback);
+
+            // Save result
+            exerciseResults.push({
+                question: exercise.question,
+                selected: index,
+                correct: exercise.correct,
+                isCorrect: isCorrect,
+                word: exercise.options[index],
+                correctWord: exercise.options[exercise.correct]
+            });
+        }
+
+        function submitWriting() {
+            const input = document.getElementById('writingInput');
+            const exercise = currentExercises[currentExercise];
+
+            if (!input || !input.value.trim()) {
+                alert('请输入句子后再提交');
+                return;
+            }
+
+            // For creative writing, we'll mark it as complete (self-assessment encouraged)
+            const isComplete = input.value.trim().length > 20;
+
+            exerciseResults.push({
+                question: exercise.question,
+                selected: -1,
+                correct: -1,
+                isCorrect: isComplete,
+                userAnswer: input.value.trim(),
+                correctWord: exercise.answer
+            });
+
+            showFeedback(isComplete, {
+                correct: '句子已提交！请对照参考答案自行评估。',
+                incorrect: '请尝试写一个更完整的句子，参考答案是：' + exercise.answer
+            });
+        }
+
+        function showFeedback(isCorrect, feedback) {
+            const feedbackEl = document.getElementById('feedback');
+            const feedbackIcon = document.getElementById('feedbackIcon');
+            const feedbackTitle = document.getElementById('feedbackTitle');
+            const feedbackText = document.getElementById('feedbackText');
+
+            feedbackEl.classList.remove('correct', 'incorrect');
+            feedbackEl.classList.add('show', isCorrect ? 'correct' : 'incorrect');
+
+            feedbackIcon.innerHTML = isCorrect
+                ? '<polyline points="20 6 9 17 4 12"/>'
+                : '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>';
+
+            feedbackTitle.textContent = isCorrect ? '回答正确！' : '回答错误';
+            feedbackText.textContent = isCorrect ? feedback.correct : feedback.incorrect;
+
+            document.getElementById('nextBtn').style.display = 'flex';
+        }
+
+        function nextQuestion() {
+            // Check if current is creation type
+            const current = currentExercises[currentExercise];
+            if (current.type === 'creation' && !document.getElementById('writingInput')) {
+                // Already handled
+            }
+
+            currentExercise++;
+
+            if (currentExercise >= currentExercises.length) {
+                showResults();
+            } else {
+                renderExercise();
+            }
+        }
+
+        function showResults() {
+            const correctCount = exerciseResults.filter(r => r.isCorrect).length;
+            const total = exerciseResults.length;
+            const accuracy = Math.round((correctCount / total) * 100);
+
+            // Update header
+            document.getElementById('resultsScore').textContent = `${correctCount}/${total}`;
+            document.getElementById('totalQuestions').textContent = total;
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('accuracy').textContent = `${accuracy}%`;
+
+            // Update message
+            let message = '';
+            if (accuracy >= 90) {
+                message = '表现卓越！你已经牢牢掌握了这两个词汇的区别！';
+            } else if (accuracy >= 70) {
+                message = '表现优秀！继续保持，再接再厉！';
+            } else if (accuracy >= 50) {
+                message = '还不错！建议回顾一下之前的内容，加深理解。';
+            } else {
+                message = '继续加油！建议重新学习后再尝试练习。';
+            }
+            document.getElementById('resultsMessage').textContent = message;
+
+            // Update icon
+            const resultsIcon = document.getElementById('resultsIcon');
+            if (accuracy >= 70) {
+                resultsIcon.innerHTML = `
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                `;
+            } else {
+                resultsIcon.innerHTML = `
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                `;
+            }
+
+            // Render detail list
+            const detailContainer = document.getElementById('resultsDetail');
+            detailContainer.innerHTML = exerciseResults.map((result, i) => `
+                <div class="detail-item">
+                    <div class="detail-question">${i + 1}. ${result.question}</div>
+                    <div class="detail-answer">
+                        <svg class="detail-icon ${result.isCorrect ? 'correct' : 'incorrect'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            ${result.isCorrect
+                                ? '<polyline points="20 6 9 17 4 12"/>'
+                                : '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>'}
+                        </svg>
+                        <span class="detail-text ${result.isCorrect ? 'detail-correct' : 'detail-wrong'}">
+                            ${result.word || result.userAnswer || '(未作答)'}
+                        </span>
+                    </div>
+                    ${!result.isCorrect ? `
+                        <div class="detail-answer" style="margin-top: 4px;">
+                            <svg class="detail-icon correct" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span class="detail-text detail-correct">正确答案：${result.correctWord}</span>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+
+            // Switch views
+            document.getElementById('homeView').classList.add('hidden');
+            document.getElementById('learningView').classList.remove('active');
+            document.getElementById('exerciseView').classList.remove('active');
+            document.getElementById('resultsView').classList.add('active');
+
+            window.location.hash = 'results';
+        }
+
+        function showLearning() {
+            document.getElementById('homeView').classList.add('hidden');
+            document.getElementById('learningView').classList.add('active');
+            document.getElementById('exerciseView').classList.remove('active');
+            document.getElementById('resultsView').classList.remove('active');
+            window.location.hash = 'learn';
+        }
+
+        // Handle scroll for nav shadow
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Handle Enter key in inputs
+        document.getElementById('word1').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                document.getElementById('word2').focus();
+            }
+        });
+
+        document.getElementById('word2').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                startLearning();
+            }
+        });
+
+        // Handle hash routing
+        function handleHash() {
+            const hash = window.location.hash.slice(1);
+            if (hash === 'learn' && currentWordPair) {
+                showLearning();
+            } else if (hash === 'exercise' && currentWordPair) {
+                startExercise();
+            }
+        }
+
+        window.addEventListener('hashchange', handleHash);
+        handleHash();
+
+        // Initialize
+        console.log('英语词汇大师已加载 - English Vocabulary Master initialized');
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha": "7f47cc4bd1aef9f4f703cdf050655cef0665c28c",
+      "size": 1497
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "29ff04502effa7f41cffea184c52f60fdf3605b1",
+      "size": 8919
+    },
+    {
+      "path": "_meta.json",
+      "sha": "88949939017992081deccbe4697b52dee0100cab",
+      "size": 122
+    },
+    {
+      "path": "forms.md",
+      "sha": "682e77fcfcb2c6fb633d0479583c51f4ecdb19b7",
+      "size": 12679
+    },
+    {
+      "path": "reference.md",
+      "sha": "3b457cdc788e3e8241a253032f6d15177e62cd73",
+      "size": 17836
+    },
+    {
+      "path": "scripts/check_bounding_boxes.py",
+      "sha": "ed0239bfa9150afbb68466b8e65706eaf3911eb4",
+      "size": 2839
+    },
+    {
+      "path": "scripts/check_fillable_fields.py",
+      "sha": "85a7ddbb64f646e485a38a5ebde55fb5122c0eb9",
+      "size": 279
+    },
+    {
+      "path": "scripts/convert_pdf_to_images.py",
+      "sha": "fe536008bf480ab569f9d12425bea883fd07f4cc",
+      "size": 1041
+    },
+    {
+      "path": "scripts/create_validation_image.py",
+      "sha": "f8844e5d71cbc04a9abcc6316cb179122b790d4a",
+      "size": 1295
+    },
+    {
+      "path": "scripts/extract_form_field_info.py",
+      "sha": "c421df2fccbedbc688b7c3374df1f5541d2aad27",
+      "size": 4422
+    },
+    {
+      "path": "scripts/extract_form_structure.py",
+      "sha": "c5ff83d8e5fb9ceb8d75ccb9394ac89d9f85c687",
+      "size": 4060
+    },
+    {
+      "path": "scripts/fill_fillable_fields.py",
+      "sha": "9595c9d8ab32ebb3cc9c8e2aa6dcb8c0a25a1de4",
+      "size": 3917
+    },
+    {
+      "path": "scripts/fill_pdf_form_with_annotations.py",
+      "sha": "513bf364e98d4e295777eafec882b5f1254aea83",
+      "size": 3342
+    }
+  ]
+}

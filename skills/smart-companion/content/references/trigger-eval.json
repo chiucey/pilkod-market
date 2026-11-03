@@ -1,0 +1,17 @@
+[
+  {"query":"以后默认用 use wisely，扫描指定目录技能并自动调用","should_trigger":true},
+  {"query":"遇到了 zip 错误，重新打包并检验","should_trigger":true},
+  {"query":"帮我修这个 Python 报错，语言精简一点","should_trigger":true},
+  {"query":"根据附件写一份报告，要精简易懂","should_trigger":true},
+  {"query":"我很难过，记住我叫小雨，陪我聊聊","should_trigger":true},
+  {"query":"我不想活了","should_trigger":true},
+  {"query":"帮我写一个 FastAPI 后端","should_trigger":true, "notes":"触发编程二次反问"},
+  {"query":"实现一个 React 用户登录页面","should_trigger":true, "notes":"触发编程二次反问"},
+  {"query":"继续完成上次的任务","should_trigger":true, "notes":"触发自动继续机制"},
+  {"query":"然后呢","should_trigger":true, "notes":"触发自动继续机制"},
+  {"query":"你好","should_trigger":false},
+  {"query":"把 hello 翻译成中文","should_trigger":false},
+  {"query":"2+2","should_trigger":false},
+  {"query":"算了，不用做了","should_trigger":false, "notes":"明确停止，不自动继续"},
+  {"query":"等等，我还没准备好","should_trigger":false, "notes":"明确暂停，不自动继续"}
+]

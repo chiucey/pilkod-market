@@ -1,0 +1,26 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "创建基本计算字段",
+    "编写表计算公式",
+    "构建详细级别表达式(LOD)",
+    "使用聚合和日期函数",
+    "逻辑判断和条件计算",
+    "性能优化建议"
+  ],
+  "description": "基于Tableau Desktop帮助文档的专业技能，帮助用户准确编写计算字段、表计算、LOD表达式和函数公式。",
+  "display_name": "Tableau计算字段专家",
+  "id": 390256294691354,
+  "language": "zh-CN",
+  "name": "tableau-calculation-skill-package",
+  "platform": "minimax",
+  "tags": [
+    "tableau",
+    "calculated-field",
+    "lod",
+    "table-calculation",
+    "data-analysis"
+  ],
+  "updated_at": 1776832648793,
+  "version": "1.0.0"
+}

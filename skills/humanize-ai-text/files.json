@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "0440453a3140ad002215c5115ed4f21ca5c36e54",
+      "size": 1862
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "4e09e326b11f064e13d7a4a70b84012d1158bd92",
+      "size": 23789
+    },
+    {
+      "path": "_meta.json",
+      "sha": "ac069c2e07b30688e8dd502370e04e603a88d589",
+      "size": 220
+    },
+    {
+      "path": "references/api.md",
+      "sha": "43695a9a92a7c7eb18c55e675d0b63cfa842ab70",
+      "size": 7284
+    },
+    {
+      "path": "references/best_practices.md",
+      "sha": "b8de59061039aceebbcf2b563ec690f6569e646b",
+      "size": 6561
+    },
+    {
+      "path": "references/compliance.md",
+      "sha": "a71f600a8e72248bc8fe3a4a049eb760985f0727",
+      "size": 4157
+    },
+    {
+      "path": "references/deep_rewrite_guide.md",
+      "sha": "d5e780adf12aa75f30c90bf3ea2ca0e7509b2e8c",
+      "size": 3020
+    },
+    {
+      "path": "references/errors.md",
+      "sha": "4a34c946969cde0ba96875fe6cdb872417aae340",
+      "size": 6154
+    },
+    {
+      "path": "references/examples.md",
+      "sha": "bcd92dd3a598190211bd734bd922c3faeae067fb",
+      "size": 13765
+    },
+    {
+      "path": "references/faq.md",
+      "sha": "375e15cd6216469f2894b001d5d0980705dbf115",
+      "size": 9728
+    },
+    {
+      "path": "references/pdf_confidence.md",
+      "sha": "c3678b1b725cc73984a7109b64cabeee6ab43c8c",
+      "size": 4289
+    },
+    {
+      "path": "references/pitfalls.md",
+      "sha": "9d59d74b408ebb009a5c643c8bae39097cd5c1b6",
+      "size": 4376
+    },
+    {
+      "path": "references/style_guide_en.md",
+      "sha": "caf58a863ec253b28266eb58bb0302a4c2c465b9",
+      "size": 5937
+    },
+    {
+      "path": "references/style_guide_zh.md",
+      "sha": "321a4d6260d3d843cd8be989485d66a72c06516f",
+      "size": 6381
+    },
+    {
+      "path": "scripts/_sections_block.py",
+      "sha": "0b765a978daa3d62e3e5608c4d29c8fdc2e73213",
+      "size": 2163
+    },
+    {
+      "path": "scripts/check_stats.py",
+      "sha": "5acfb6220e29e35a4005022d72fcd30ebe25bc1f",
+      "size": 16641
+    },
+    {
+      "path": "scripts/check_terms.py",
+      "sha": "e0d51839d23dba7ab7425d28251fd0c275c88226",
+      "size": 9413
+    },
+    {
+      "path": "scripts/compare.py",
+      "sha": "be453d987a3d2e089380eecb48e5d22415e4c7cb",
+      "size": 6881
+    },
+    {
+      "path": "scripts/detect.py",
+      "sha": "273b5b3677917c4e6f56d0c9f48cbe64d8dc5960",
+      "size": 19548
+    },
+    {
+      "path": "scripts/extract_terms.py",
+      "sha": "613e1479e4ec259c5715bbf88b2767141b2360df",
+      "size": 6291
+    },
+    {
+      "path": "scripts/hxt_core.py",
+      "sha": "35cca7e60574099949896244173dbc96c27b09ad",
+      "size": 67784
+    },
+    {
+      "path": "scripts/learn_guards.py",
+      "sha": "d94c36368c9bfcc37395c4cb124cee6fa20c99e0",
+      "size": 9281
+    },
+    {
+      "path": "scripts/patterns_en.json",
+      "sha": "351deb8fcc38ae89a60c747015cfbe2da99c1aef",
+      "size": 20203
+    },
+    {
+      "path": "scripts/patterns_zh.json",
+      "sha": "86a5c6bfaf461d4806fc101722214965b079b9de",
+      "size": 15667
+    },
+    {
+      "path": "scripts/pipeline.py",
+      "sha": "473599723268d9e56678c35f99ded3164e3bdb54",
+      "size": 22489
+    },
+    {
+      "path": "scripts/plan.py",
+      "sha": "61b4b085f1749b39a2bb368d659dbd22f355f2ac",
+      "size": 14715
+    },
+    {
+      "path": "scripts/reporter.py",
+      "sha": "bbf1c0e76d82af0fb933df9221d0ca5a14afafb5",
+      "size": 20247
+    },
+    {
+      "path": "scripts/stylecheck.py",
+      "sha": "4fca8d410f9b0422208e2815deaa4774921afb2e",
+      "size": 8019
+    },
+    {
+      "path": "scripts/transform.py",
+      "sha": "5d929e701bd064a707823490a75e8a0f52cb6528",
+      "size": 14253
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha": "23fa3fc8450bad665e796f0b3de4d10a65c3dd58",
+      "size": 13768
+    }
+  ]
+}

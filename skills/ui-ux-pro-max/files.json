@@ -1,0 +1,289 @@
+{
+  "files": [
+    {
+      "path": ".clawhub/origin.json",
+      "sha": "84e72ef0b7d11e6a4d0204433371c58edee9dd8f",
+      "size": 145
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "b94ef5969bcac95db93aaddb99e43a85ce07a0c9",
+      "size": 2635
+    },
+    {
+      "path": "_meta.json",
+      "sha": "71bf46595c1f704460e4e8d2caf7daddba14dbb5",
+      "size": 132
+    },
+    {
+      "path": "assets/data/charts.csv",
+      "sha": "8b99663166cba24ae28ef6f9e867229c4242a9ae",
+      "size": 7654
+    },
+    {
+      "path": "assets/data/colors.csv",
+      "sha": "d9fd0438bcf79b724a66c22aca5788455f76dae2",
+      "size": 9713
+    },
+    {
+      "path": "assets/data/icons.csv",
+      "sha": "a85e97f8418783953f86ab13de513e2a5261d1c6",
+      "size": 13384
+    },
+    {
+      "path": "assets/data/landing.csv",
+      "sha": "b0e52d15347254f5acecd1781ca05f90e334da6f",
+      "size": 14390
+    },
+    {
+      "path": "assets/data/products.csv",
+      "sha": "3f95afd9de2d205b12776b1581daa8ce5bb8318c",
+      "size": 29790
+    },
+    {
+      "path": "assets/data/react-performance.csv",
+      "sha": "671465f29ce8d1b12e1576ab81c7b610161f2f6d",
+      "size": 14822
+    },
+    {
+      "path": "assets/data/stacks/astro.csv",
+      "sha": "cacba81c96005b527b55bdb56e37d69bd616ca54",
+      "size": 11868
+    },
+    {
+      "path": "assets/data/stacks/flutter.csv",
+      "sha": "2e32c6a29bf8e4ceeb61e92e33193adbe1219a75",
+      "size": 10469
+    },
+    {
+      "path": "assets/data/stacks/html-tailwind.csv",
+      "sha": "0efe300f3c0d0fd2de3e07c90b38c08b44b5bbeb",
+      "size": 11361
+    },
+    {
+      "path": "assets/data/stacks/jetpack-compose.csv",
+      "sha": "971ff9e3074c9a1a414b1a7e69745f286291d3f6",
+      "size": 8195
+    },
+    {
+      "path": "assets/data/stacks/nextjs.csv",
+      "sha": "6e9bea577c8c9294113d741b3f8dd3e6b1770b1c",
+      "size": 12546
+    },
+    {
+      "path": "assets/data/stacks/nuxt-ui.csv",
+      "sha": "7146e84836c504d4374a9b1cace3262b771a2956",
+      "size": 14010
+    },
+    {
+      "path": "assets/data/stacks/nuxtjs.csv",
+      "sha": "c275d0de8c6a06a06f8439be017af660fefe91bb",
+      "size": 16539
+    },
+    {
+      "path": "assets/data/stacks/react-native.csv",
+      "sha": "209e893c3b2441813add061270009d9b6fe3e512",
+      "size": 10035
+    },
+    {
+      "path": "assets/data/stacks/react.csv",
+      "sha": "ff08ee203acc0ea69a2444c8420e5a80dd07a0e2",
+      "size": 13016
+    },
+    {
+      "path": "assets/data/stacks/shadcn.csv",
+      "sha": "fb86e8d1c135aa384df284f216c3db9c5187ae57",
+      "size": 15921
+    },
+    {
+      "path": "assets/data/stacks/svelte.csv",
+      "sha": "1c6b4562d5d1c4ca98ad70959367ffcd68df5611",
+      "size": 11063
+    },
+    {
+      "path": "assets/data/stacks/swiftui.csv",
+      "sha": "e20f9f90e11d61b92ce39b05a672f2a660aa48ec",
+      "size": 10872
+    },
+    {
+      "path": "assets/data/stacks/vue.csv",
+      "sha": "77cb4b06fd179153ec5a8d11e2b35f8f79522183",
+      "size": 11056
+    },
+    {
+      "path": "assets/data/styles.csv",
+      "sha": "ab0152b95ce10b5d16bbaef6c9c5a31d126f02ca",
+      "size": 96553
+    },
+    {
+      "path": "assets/data/typography.csv",
+      "sha": "e70112102e615cc24688525aefed83ef547bded3",
+      "size": 31877
+    },
+    {
+      "path": "assets/data/ui-reasoning.csv",
+      "sha": "4553ddd27f677afcdde3dfb07377f19eadc4a8f4",
+      "size": 31071
+    },
+    {
+      "path": "assets/data/ux-guidelines.csv",
+      "sha": "e347aeda7401aac08879a7b11c3907782c7bcadb",
+      "size": 18766
+    },
+    {
+      "path": "assets/data/web-interface.csv",
+      "sha": "4713aadc133ff853263f5e598343e35b01c0c78e",
+      "size": 7472
+    },
+    {
+      "path": "data/charts.csv",
+      "sha": "8b99663166cba24ae28ef6f9e867229c4242a9ae",
+      "size": 7654
+    },
+    {
+      "path": "data/colors.csv",
+      "sha": "d9fd0438bcf79b724a66c22aca5788455f76dae2",
+      "size": 9713
+    },
+    {
+      "path": "data/icons.csv",
+      "sha": "a85e97f8418783953f86ab13de513e2a5261d1c6",
+      "size": 13384
+    },
+    {
+      "path": "data/landing.csv",
+      "sha": "b0e52d15347254f5acecd1781ca05f90e334da6f",
+      "size": 14390
+    },
+    {
+      "path": "data/products.csv",
+      "sha": "3f95afd9de2d205b12776b1581daa8ce5bb8318c",
+      "size": 29790
+    },
+    {
+      "path": "data/react-performance.csv",
+      "sha": "671465f29ce8d1b12e1576ab81c7b610161f2f6d",
+      "size": 14822
+    },
+    {
+      "path": "data/stacks/astro.csv",
+      "sha": "cacba81c96005b527b55bdb56e37d69bd616ca54",
+      "size": 11868
+    },
+    {
+      "path": "data/stacks/flutter.csv",
+      "sha": "2e32c6a29bf8e4ceeb61e92e33193adbe1219a75",
+      "size": 10469
+    },
+    {
+      "path": "data/stacks/html-tailwind.csv",
+      "sha": "0efe300f3c0d0fd2de3e07c90b38c08b44b5bbeb",
+      "size": 11361
+    },
+    {
+      "path": "data/stacks/jetpack-compose.csv",
+      "sha": "971ff9e3074c9a1a414b1a7e69745f286291d3f6",
+      "size": 8195
+    },
+    {
+      "path": "data/stacks/nextjs.csv",
+      "sha": "6e9bea577c8c9294113d741b3f8dd3e6b1770b1c",
+      "size": 12546
+    },
+    {
+      "path": "data/stacks/nuxt-ui.csv",
+      "sha": "7146e84836c504d4374a9b1cace3262b771a2956",
+      "size": 14010
+    },
+    {
+      "path": "data/stacks/nuxtjs.csv",
+      "sha": "c275d0de8c6a06a06f8439be017af660fefe91bb",
+      "size": 16539
+    },
+    {
+      "path": "data/stacks/react-native.csv",
+      "sha": "209e893c3b2441813add061270009d9b6fe3e512",
+      "size": 10035
+    },
+    {
+      "path": "data/stacks/react.csv",
+      "sha": "ff08ee203acc0ea69a2444c8420e5a80dd07a0e2",
+      "size": 13016
+    },
+    {
+      "path": "data/stacks/shadcn.csv",
+      "sha": "fb86e8d1c135aa384df284f216c3db9c5187ae57",
+      "size": 15921
+    },
+    {
+      "path": "data/stacks/svelte.csv",
+      "sha": "1c6b4562d5d1c4ca98ad70959367ffcd68df5611",
+      "size": 11063
+    },
+    {
+      "path": "data/stacks/swiftui.csv",
+      "sha": "e20f9f90e11d61b92ce39b05a672f2a660aa48ec",
+      "size": 10872
+    },
+    {
+      "path": "data/stacks/vue.csv",
+      "sha": "77cb4b06fd179153ec5a8d11e2b35f8f79522183",
+      "size": 11056
+    },
+    {
+      "path": "data/styles.csv",
+      "sha": "ab0152b95ce10b5d16bbaef6c9c5a31d126f02ca",
+      "size": 96553
+    },
+    {
+      "path": "data/typography.csv",
+      "sha": "e70112102e615cc24688525aefed83ef547bded3",
+      "size": 31877
+    },
+    {
+      "path": "data/ui-reasoning.csv",
+      "sha": "4553ddd27f677afcdde3dfb07377f19eadc4a8f4",
+      "size": 31071
+    },
+    {
+      "path": "data/ux-guidelines.csv",
+      "sha": "e347aeda7401aac08879a7b11c3907782c7bcadb",
+      "size": 18766
+    },
+    {
+      "path": "data/web-interface.csv",
+      "sha": "4713aadc133ff853263f5e598343e35b01c0c78e",
+      "size": 7472
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "6c96f63a4fa89232f41fdd39c82d043dbdb8b854",
+      "size": 199
+    },
+    {
+      "path": "references/upstream-README.md",
+      "sha": "010062d07d061ddc9836bf5a3de3c1505c786326",
+      "size": 23615
+    },
+    {
+      "path": "references/upstream-skill-content.md",
+      "sha": "77a689d8853cc86d50bf21237da3f1b1df3cd47e",
+      "size": 10051
+    },
+    {
+      "path": "scripts/core.py",
+      "sha": "b7ba227be500c1b8e0ed04c610f48a85f5339e99",
+      "size": 10227
+    },
+    {
+      "path": "scripts/design_system.py",
+      "sha": "1bca159a2dd54a18ffa306250ec5bb5f27093b55",
+      "size": 43778
+    },
+    {
+      "path": "scripts/search.py",
+      "sha": "53185146f91f8a24516382cebfae095b1222bbbb",
+      "size": 5383
+    }
+  ]
+}

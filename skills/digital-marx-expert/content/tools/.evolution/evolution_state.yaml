@@ -1,0 +1,52 @@
+benchmark:
+  benchmark_score: 7.0
+  eval_mode: tool_test(alienation_calculator.py)
+  output: "[TOOL: alienation_calculator.py]\n{\n  \"data_type\": \"str\",\n  \"labor_type\"\
+    : \"general\",\n  \"theory_memo\": \"=== 异化理论备忘录：马克思《1844年经济学哲学手稿》===\\n\\n【理论核心】\\\
+    n马克思在《1844年经济学哲学手稿》中指出，资本主义制度下劳动异化表现为四个基本维度：\\n\\n1. 产品异化（Product Alienation）\\\
+    n   - 定义：劳动者创造的劳动产品不属于劳动者，而被资本家占有\\n   - 识别信号：劳动者失去对产品的控制，产品作为异己力量与劳动者对立\\n  \
+    \ - 提问方向：劳动者与产品之间是什么关系？谁占有产品？谁从中获益？\\n\\n2. 劳动过程异化（Process Alienation）\\n   -\
+    \ 定义：劳动对劳动者来说是外在的、强制的、痛苦的活动，而非自我实现\\n   - 识别信号：劳动是被迫的、非自愿的，劳动者在劳动中感到痛苦和压抑\\n \
+    \  - 提问方向：劳动者如何看待劳动过程？劳动是自我实现还是谋生手段？\\n\\n3. 自我异化（Self Alienation）\\n   - 定义：劳动者无法实现自我的潜能和全面发展，人格被分裂\\\
+    n   - 识别信号：劳动者只是机器的附属品，无法发挥创造性和个性\\n   - 提问方向：劳动是否允许个人才能的发挥？劳动者是否有自我发展的空间？\\n\\\
+    n4. 类本质异化（Species Alienation）\\n   - 定义：劳动者失去人的类本质——自由自觉的活动和社会性本质\\n   - 识别信号：劳动者与他人、与社会的联系被削弱，社会性交往受损\\\
+    n   - 提问方向：劳动者之间的社会关系如何？是否存在有意识的合作与交往？\\n\\n【数字劳动异化扩展维度】（可选，针对数字劳动）\\n   - 数据监控：算法对劳动者的实时监控与评分\\\
+    n   - 平台控制：平台对劳动者的准入与淘汰机"
+  passed: true
+  test_prompt: 分析外卖骑手的劳动状况，用马克思主义剩余价值理论。
+dimensions:
+  architecture:
+    score: 9.0
+    weight: 15
+  benchmark:
+    score: 7.0
+    weight: 25
+  boundary:
+    score: 8.0
+    weight: 10
+  checkpoint:
+    score: 9.0
+    weight: 7
+  frontmatter:
+    score: 8.0
+    weight: 8
+  resources:
+    score: 8.0
+    weight: 5
+  specificity:
+    score: 9.0
+    weight: 15
+  workflow:
+    score: 9.0
+    weight: 15
+improved: true
+previous_score: 51.65
+quality_score: 63.78
+refinement_history:
+- delta: 12.130000000000003
+  quality_score: 63.78
+  timestamp: '2026-04-27T15:05:02.817283+00:00'
+skill: digital-marx-expert
+structure_base: 82.7
+timestamp: '2026-04-27T15:05:02.817283+00:00'
+total_100: 100.2

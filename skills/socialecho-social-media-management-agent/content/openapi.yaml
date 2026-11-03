@@ -1,0 +1,916 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "SocialEcho Social Media OpenAPI",
+    "version": "2.1.1",
+    "description": "Team API Key integration for SocialEcho. Supply credentials explicitly; clients must not discover keys from environment variables, credential stores, or files. GET parameters use QueryString and GET requests must not include a body. Success requires HTTP 2xx and JSON code 0. Live write operations require an immediate user confirmation after reviewing their target and payload."
+  },
+  "servers": [
+    {
+      "url": "https://api.socialecho.net",
+      "description": "Production"
+    }
+  ],
+  "paths": {
+    "/v1/team": {
+      "get": {
+        "operationId": "getTeam",
+        "summary": "Get current team",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/account": {
+      "get": {
+        "operationId": "listAccounts",
+        "summary": "List social media accounts",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1,
+                2
+              ],
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/oauth/links": {
+      "get": {
+        "operationId": "getOauthLinks",
+        "summary": "Get platform authorization links",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/article": {
+      "get": {
+        "operationId": "listArticles",
+        "summary": "List articles",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            }
+          },
+          {
+            "name": "account_ids[]",
+            "in": "query",
+            "required": false,
+            "description": "Repeat the bracketed key for each account ID.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/report": {
+      "get": {
+        "operationId": "getReport",
+        "summary": "Get report data",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "start_date",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "time_type",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1,
+                2
+              ]
+            }
+          },
+          {
+            "name": "group",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "day",
+                "app",
+                "account"
+              ]
+            }
+          },
+          {
+            "name": "account_ids[]",
+            "in": "query",
+            "required": false,
+            "description": "Repeat the bracketed key for each account ID.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/upload/url": {
+      "get": {
+        "operationId": "getUploadUrl",
+        "summary": "Create an OSS upload URL",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "content_type",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "maxLength": 255
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/reddit/communities": {
+      "get": {
+        "operationId": "listRedditCommunities",
+        "summary": "List Reddit communities",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "account_id",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/pinterest/boards": {
+      "get": {
+        "operationId": "listPinterestBoards",
+        "summary": "List Pinterest boards",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "account_id",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/tiktokshop/products": {
+      "get": {
+        "operationId": "listTiktokShopProducts",
+        "summary": "List TikTok Shop products",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "account_id",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "maxLength": 500
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/tiktokshop/products/sync": {
+      "post": {
+        "operationId": "syncTiktokShopProducts",
+        "summary": "Submit TikTok Shop product sync",
+        "description": "LIVE WRITE: changes the selected TikTok Shop account. Show the exact account ID to the user and obtain explicit confirmation immediately before invoking this operation. Do not infer authorization from an earlier or unrelated request.",
+        "x-requires-explicit-confirmation": true,
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "account_id"
+                ],
+                "properties": {
+                  "account_id": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/tiktokshop/music/genres": {
+      "get": {
+        "operationId": "listTikTokShopMusicGenres",
+        "summary": "List TikTok commercial music genres",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/tiktokshop/music/trending": {
+      "get": {
+        "operationId": "listTikTokShopTrendingMusic",
+        "summary": "List TikTok commercial trending music",
+        "parameters": [
+          {
+            "name": "X-Lang",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh_CN",
+                "en"
+              ],
+              "default": "zh_CN"
+            }
+          },
+          {
+            "name": "X-Team-Id",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "account_id",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "country_code",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 2
+            }
+          },
+          {
+            "name": "genre",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "maxLength": 80
+            }
+          },
+          {
+            "name": "date_range",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "1DAY",
+                "7DAY",
+                "30DAY",
+                "90DAY"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/publish/article": {
+      "post": {
+        "operationId": "publishArticle",
+        "summary": "Publish cross-platform article",
+        "description": "LIVE WRITE: can publish immediately or schedule public content on a connected social account. Before invoking, show the target account, content, attachments, privacy/settings, and schedule to the user and obtain explicit confirmation for that exact payload. Do not infer authorization from an earlier or unrelated request.",
+        "x-requires-explicit-confirmation": true,
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublishPayload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/Success"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "Team API Key",
+        "description": "Pass the user-provided Team API Key explicitly. Never search environment variables, credential stores, or files for a key, and never print or persist it."
+      }
+    },
+    "responses": {
+      "Success": {
+        "description": "HTTP 2xx with code 0",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Response"
+            }
+          }
+        }
+      }
+    },
+    "schemas": {
+      "Response": {
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "enum": [
+              0
+            ]
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {},
+          "request_id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "SelectedMusic": {
+        "type": "object",
+        "required": [
+          "url",
+          "uuid",
+          "cover",
+          "title",
+          "artist",
+          "duration",
+          "selection",
+          "music_volume",
+          "original_sound_volume"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "uuid": {
+            "type": "string"
+          },
+          "cover": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string"
+          },
+          "artist": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number",
+            "minimum": 0
+          },
+          "selection": {
+            "type": "string",
+            "enum": [
+              "trending_clip",
+              "full_track"
+            ]
+          },
+          "music_volume": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "original_sound_volume": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      },
+      "PublishPayload": {
+        "type": "object",
+        "required": [
+          "account_id",
+          "type",
+          "status",
+          "comment",
+          "extra",
+          "attachments"
+        ],
+        "properties": {
+          "account_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "scheduled_at": {
+            "type": "string"
+          },
+          "comment": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "content": {
+            "type": "string"
+          },
+          "extra": {
+            "type": "object",
+            "properties": {
+              "music": {
+                "$ref": "#/components/schemas/SelectedMusic"
+              }
+            },
+            "additionalProperties": true
+          },
+          "attachments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

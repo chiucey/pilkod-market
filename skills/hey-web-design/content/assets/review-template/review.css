@@ -1,0 +1,374 @@
+:root {
+  color-scheme: light;
+  --review-ink: #17201c;
+  --review-muted: #607068;
+  --review-line: #cbd3ce;
+  --review-paper: #f4f1e9;
+  --review-surface: #fffdf7;
+  --review-accent: #176b4d;
+  --review-accent-dark: #0d4c36;
+  --review-gutter: clamp(1rem, 4vw, 4rem);
+  --review-max: 86rem;
+  font-family:
+    "SF Pro SC",
+    "PingFang SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--review-paper);
+  color: var(--review-ink);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--review-accent);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--review-ink);
+  color: white;
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.review-header,
+.review-nav,
+main,
+footer {
+  width: 100%;
+  max-width: var(--review-max);
+  margin-inline: auto;
+  padding-inline: var(--review-gutter);
+}
+
+.review-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: 15rem;
+  padding-block: 4rem 2rem;
+  border-bottom: 1px solid var(--review-line);
+}
+
+.review-kicker,
+.review-section-heading p,
+.review-next > div > p:first-child {
+  margin: 0 0 0.6rem;
+  color: var(--review-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+h1,
+h2,
+p {
+  max-width: 46rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.15rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: normal;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: normal;
+}
+
+p,
+li,
+dd,
+figcaption {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.review-stage {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 13rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--review-accent);
+}
+
+.review-stage span {
+  color: var(--review-muted);
+  font-size: 0.9rem;
+}
+
+.review-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 4.5rem;
+  border-bottom: 1px solid var(--review-line);
+}
+
+.review-nav a {
+  text-underline-offset: 0.3em;
+}
+
+button {
+  border: 1px solid var(--review-ink);
+  border-radius: 0;
+  padding: 0.7rem 1rem;
+  background: transparent;
+  color: var(--review-ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--review-ink);
+  color: white;
+}
+
+.review-nav button {
+  margin-left: auto;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 6vw, 7rem);
+  padding-block: clamp(3.5rem, 8vw, 8rem);
+  border-bottom: 1px solid var(--review-line);
+}
+
+.review-intro > p {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  line-height: 1.6;
+}
+
+.review-list,
+.review-decisions {
+  display: grid;
+  gap: 1.15rem;
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.review-list li,
+.review-decisions li {
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--review-line);
+}
+
+.review-evidence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 2rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.review-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 16rem;
+  border: 1px dashed var(--review-muted);
+  background: var(--review-surface);
+  color: var(--review-muted);
+}
+
+figcaption {
+  margin-top: 0.85rem;
+  color: var(--review-muted);
+}
+
+.review-routes {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--review-line);
+}
+
+.review-routes a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--review-line);
+  text-decoration: none;
+}
+
+.review-routes a:hover strong {
+  color: var(--review-accent);
+}
+
+.review-routes span {
+  color: var(--review-muted);
+}
+
+.review-status {
+  margin: 0;
+}
+
+.review-status > div {
+  display: grid;
+  grid-template-columns: minmax(5rem, 0.35fr) 1fr;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--review-line);
+}
+
+.review-status dt {
+  font-weight: 700;
+}
+
+.review-status dd {
+  margin: 0;
+  color: var(--review-muted);
+}
+
+.review-status dd[data-status="pass"] {
+  color: var(--review-accent-dark);
+}
+
+main > .review-next {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  background: var(--review-ink);
+  color: white;
+  margin-inline: calc(var(--review-gutter) * -1);
+  padding-inline: var(--review-gutter);
+  width: calc(100% + var(--review-gutter) * 2);
+  max-width: none;
+}
+
+.review-next h2 {
+  margin-bottom: 1.5rem;
+}
+
+.review-next code {
+  display: block;
+  width: fit-content;
+  padding: 0.8rem 1rem;
+  border: 1px solid #779087;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.review-next button {
+  border-color: white;
+  color: white;
+}
+
+.review-next button:hover {
+  background: white;
+  color: var(--review-ink);
+}
+
+footer {
+  padding-block: 2rem 4rem;
+  color: var(--review-muted);
+}
+
+.review-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+  padding: 0.8rem 1rem;
+  background: var(--review-accent-dark);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.5rem);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.review-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 48rem) {
+  .review-header {
+    display: grid;
+    min-height: 0;
+    padding-top: 3rem;
+  }
+
+  .review-stage {
+    min-width: 0;
+  }
+
+  .review-nav {
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    padding-block: 1rem;
+  }
+
+  .review-nav button {
+    margin-left: 0;
+  }
+
+  main > section,
+  main > .review-next {
+    grid-template-columns: 1fr;
+  }
+
+  main > .review-next {
+    align-items: start;
+  }
+
+  .review-next button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

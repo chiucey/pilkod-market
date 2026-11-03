@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{QUIZ_TITLE}} - 童趣探索版</title>
+    <style>
+        :root {
+            --primary: #FF6B9D;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-bg: #FFFFFF;
+            --text: #2D3436;
+            --text-light: #636E72;
+            --success: #00B894;
+            --error: #FF7675;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Microsoft YaHei', cursive, sans-serif;
+            background: var(--background);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            background: rgba(255,255,255,0.3);
+            border-radius: 25px;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        /* Score Display */
+        .score-display {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+
+        .score-item {
+            background: var(--card-bg);
+            padding: 15px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .score-item .icon {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .score-item .value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .score-item .label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Card */
+        .card {
+            background: var(--card-bg);
+            border-radius: 30px;
+            padding: 35px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        }
+
+        .question-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            color: var(--text);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Options */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            padding: 18px 25px;
+            border: 3px solid #E8E8E8;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .option:hover {
+            border-color: var(--secondary);
+            background: rgba(78, 205, 196, 0.1);
+            transform: translateX(5px);
+        }
+
+        .option .letter {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .option.correct {
+            border-color: var(--success);
+            background: rgba(0, 184, 148, 0.15);
+            animation: correctPulse 0.5s ease;
+        }
+
+        .option.incorrect {
+            border-color: var(--error);
+            background: rgba(255, 118, 117, 0.15);
+            animation: shake 0.5s ease;
+        }
+
+        @keyframes correctPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        /* Feedback */
+        .feedback {
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            display: none;
+        }
+
+        .feedback.correct {
+            background: rgba(0, 184, 148, 0.15);
+            color: var(--success);
+            display: block;
+        }
+
+        .feedback.incorrect {
+            background: rgba(255, 118, 117, 0.15);
+            color: var(--error);
+            display: block;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 18px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 3px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Results */
+        .result-card {
+            text-align: center;
+        }
+
+        .result-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .result-title {
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .result-score {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .result-message {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            animation: confettiFall 3s ease-out forwards;
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+            }
+        }
+
+        /* Stars Animation */
+        .stars {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            display: inline-block;
+            animation: starPop 0.3s ease backwards;
+        }
+
+        .star:nth-child(1) { animation-delay: 0.1s; }
+        .star:nth-child(2) { animation-delay: 0.2s; }
+        .star:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes starPop {
+            0% { transform: scale(0) rotate(-180deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+
+        /* Start Screen */
+        .start-screen {
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .start-screen .emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .start-screen h2 {
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .start-screen p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        /* Hidden */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .question-text {
+                font-size: 1.2rem;
+            }
+
+            .score-display {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>{{QUIZ_TITLE}}</h1>
+            <div class="subtitle">童趣探索版</div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 0%">
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+
+        <!-- Score Display -->
+        <div class="score-display">
+            <div class="score-item">
+                <div class="icon">⭐</div>
+                <div class="value" id="currentScore">0</div>
+                <div class="label">当前得分</div>
+            </div>
+            <div class="score-item">
+                <div class="icon">📝</div>
+                <div class="value" id="questionCounter">0/0</div>
+                <div class="label">题目进度</div>
+            </div>
+        </div>
+
+        <!-- Quiz Card -->
+        <div class="card" id="quizCard">
+            <!-- Start Screen -->
+            <div class="start-screen" id="startScreen">
+                <div class="emoji">🚀</div>
+                <h2>准备好开始了吗?</h2>
+                <p>共有 <strong>{{QUESTION_COUNT}}</strong> 道趣味题目等你挑战！</p>
+                <button class="btn btn-primary" onclick="startQuiz()">
+                    <span>开始探险</span>
+                    <span>▶</span>
+                </button>
+            </div>
+
+            <!-- Question Screen -->
+            <div id="questionScreen" class="hidden">
+                <span class="question-number" id="questionNumber">第 1 题</span>
+                <div class="question-text" id="questionText"></div>
+                <div class="options" id="optionsContainer"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="resultScreen" class="hidden result-card">
+                <div class="result-icon" id="resultIcon">🎉</div>
+                <div class="stars" id="resultStars"></div>
+                <h2 class="result-title" id="resultTitle">太棒了!</h2>
+                <div class="result-score" id="resultScore">0</div>
+                <p class="result-message" id="resultMessage"></p>
+                <button class="btn btn-primary" onclick="restartQuiz()">
+                    <span>再玩一次</span>
+                    <span>🔄</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti" id="confetti"></div>
+
+    <script>
+        // Quiz Data - 请在下方替换为您的题目
+        const quizData = {{QUIZ_DATA}};
+
+        // Quiz State
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        // Start Quiz
+        function startQuiz() {
+            document.getElementById('startScreen').classList.add('hidden');
+            document.getElementById('questionScreen').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        // Load Question
+        function loadQuestion() {
+            answered = false;
+            const q = quizData[currentQuestion];
+
+            document.getElementById('questionNumber').textContent = `第 ${currentQuestion + 1} 题`;
+            document.getElementById('questionText').textContent = q.question;
+            document.getElementById('questionCounter').textContent =
+                `${currentQuestion + 1}/${quizData.length}`;
+
+            // Update progress
+            const progress = ((currentQuestion) / quizData.length) * 100;
+            document.getElementById('progressBar').style.width = `${progress}%`;
+            document.getElementById('progressText').textContent = `${Math.round(progress)}%`;
+
+            // Generate options
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+
+            const letters = ['A', 'B', 'C', 'D'];
+            q.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+                optionDiv.innerHTML = `
+                    <span class="letter">${letters[index]}</span>
+                    <span>${option}</span>
+                `;
+                optionDiv.onclick = () => selectOption(index);
+                optionsContainer.appendChild(optionDiv);
+            });
+
+            // Hide feedback
+            document.getElementById('feedback').className = 'feedback';
+            document.getElementById('feedback').textContent = '';
+        }
+
+        // Select Option
+        function selectOption(index) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizData[currentQuestion];
+            const options = document.querySelectorAll('.option');
+            const feedback = document.getElementById('feedback');
+
+            // Disable all options
+            options.forEach(opt => opt.style.pointerEvents = 'none');
+
+            // Check answer
+            if (index === q.correct) {
+                options[index].classList.add('correct');
+                feedback.className = 'feedback correct';
+                feedback.innerHTML = '🎉 太棒了！回答正确！';
+                score += q.points || 10;
+                document.getElementById('currentScore').textContent = score;
+            } else {
+                options[index].classList.add('incorrect');
+                options[q.correct].classList.add('correct');
+                feedback.className = 'feedback incorrect';
+                feedback.innerHTML = `💡 正确答案是: ${q.options[q.correct]}`;
+            }
+
+            // Update progress bar
+            const progress = ((currentQuestion + 1) / quizData.length) * 100;
+            document.getElementById('progressBar').style.width = `${progress}%`;
+            document.getElementById('progressText').textContent = `${Math.round(progress)}%`;
+
+            // Next button
+            setTimeout(() => {
+                const btn = document.createElement('button');
+                btn.className = 'btn btn-primary';
+                btn.style.marginTop = '20px';
+                btn.innerHTML = currentQuestion < quizData.length - 1
+                    ? '<span>下一题</span><span>→</span>'
+                    : '<span>查看结果</span><span>🏆</span>';
+                btn.onclick = nextQuestion;
+                feedback.appendChild(btn);
+            }, 500);
+        }
+
+        // Next Question
+        function nextQuestion() {
+            currentQuestion++;
+
+            if (currentQuestion < quizData.length) {
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        // Show Results
+        function showResults() {
+            document.getElementById('questionScreen').classList.add('hidden');
+            document.getElementById('resultScreen').classList.remove('hidden');
+            document.getElementById('progressBar').style.width = '100%';
+            document.getElementById('progressText').textContent = '100%';
+
+            const percentage = Math.round((score / (quizData.length * 10)) * 100);
+            document.getElementById('resultScore').textContent = `${percentage}%`;
+
+            // Dynamic result based on score
+            const resultIcon = document.getElementById('resultIcon');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultMessage = document.getElementById('resultMessage');
+            const resultStars = document.getElementById('resultStars');
+
+            if (percentage >= 90) {
+                resultIcon.textContent = '🏆';
+                resultTitle.textContent = '满分表现!';
+                resultMessage.textContent = '你是知识小达人！继续保持！';
+                resultStars.innerHTML = '<span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>';
+                createConfetti();
+            } else if (percentage >= 70) {
+                resultIcon.textContent = '🎉';
+                resultTitle.textContent = '太棒了!';
+                resultMessage.textContent = '做得很好！再接再厉！';
+                resultStars.innerHTML = '<span class="star">⭐</span><span class="star">⭐</span>';
+            } else if (percentage >= 50) {
+                resultIcon.textContent = '👍';
+                resultTitle.textContent = '还不错!';
+                resultMessage.textContent = '继续加油，你可以做得更好！';
+                resultStars.innerHTML = '<span class="star">⭐</span>';
+            } else {
+                resultIcon.textContent = '💪';
+                resultTitle.textContent = '再试一次!';
+                resultMessage.textContent = '不要灰心，多练习一定能进步！';
+                resultStars.innerHTML = '';
+            }
+        }
+
+        // Create Confetti
+        function createConfetti() {
+            const confettiContainer = document.getElementById('confetti');
+            const colors = ['#FF6B9D', '#4ECDC4', '#FFE66D', '#667eea', '#764ba2'];
+
+            for (let i = 0; i < 100; i++) {
+                const piece = document.createElement('div');
+                piece.className = 'confetti-piece';
+                piece.style.left = Math.random() * 100 + '%';
+                piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                piece.style.animationDelay = Math.random() * 2 + 's';
+                piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                confettiContainer.appendChild(piece);
+            }
+
+            setTimeout(() => confettiContainer.innerHTML = '', 5000);
+        }
+
+        // Restart Quiz
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            answered = false;
+
+            document.getElementById('currentScore').textContent = '0';
+            document.getElementById('resultScreen').classList.add('hidden');
+            document.getElementById('questionScreen').classList.remove('hidden');
+
+            loadQuestion();
+        }
+    </script>
+</body>
+</html>

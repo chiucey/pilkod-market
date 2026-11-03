@@ -1,0 +1,17 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2024-05-16",
+  "description": "神经网络向量记忆搜索系统，解决MaxHermes上下文记忆堆栈溢出问题",
+  "id": 398874584654340,
+  "name": "vector-memory-search",
+  "platform": "minimax",
+  "tags": [
+    "memory",
+    "vector",
+    "embedding",
+    "maxhermes",
+    "context-overflow"
+  ],
+  "updated_at": 1778935308920,
+  "version": "1.0.0"
+}

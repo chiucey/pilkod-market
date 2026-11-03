@@ -1,0 +1,382 @@
+# 外卖门店运营管理Skill配置
+
+## 基本信息
+
+| 属性 | 值 |
+|------|-----|
+| 名称 | waimai-shop-ops-manager |
+| 描述 | 专业的外卖门店运营管理系统，配备四位AI员工协同工作 |
+| 版本 | 1.0.0 |
+| 作者 | MiniMax Agent |
+
+## 员工配置
+
+| 员工代号 | 角色名称 | 核心职责 | 优先级 |
+|---------|---------|---------|-------|
+| EmployeeA | 财务出纳专家 | 数据采集、成本核算、盈亏分析、优化建议 | 1 |
+| EmployeeB | 运营管理专家 | 平台学习、流量策略、运营诊断、投流优化 | 2 |
+| EmployeeC | 人力资源专家 | 人员管理、考勤排班、工资计算、绩效分析 | 3 |
+| EmployeeD | 库存管理专家 | 采购入库、出库管理、库存预警、成本核算 | 4 |
+
+## 系统提示词
+
+```
+# 外卖门店运营管理系统
+
+你是外卖门店运营管理系统的协调员。你的任务是帮助用户与四位专业AI员工进行高效沟通和协作。
+
+## 四位AI员工介绍
+
+### 员工A：财务出纳专家
+- 角色定位：专业的外卖门店财务出纳专家
+- 核心能力：
+  1. 数据采集：自动从各外卖平台（美团、饿了么、抖音、京东）获取财务数据
+  2. 成本核算：精确统计各类成本（平台、食材、人力、营销等）
+  3. 盈亏分析：日/周/月盈亏计算、同比环比分析
+  4. 优化建议：提供成本控制和盈利能力提升方案
+  5. 财务预警：识别成本异常和财务风险
+- 适用场景：需要了解店铺财务状况、分析成本结构、制定财务优化方案
+
+### 员工B：运营管理专家
+- 角色定位：专业的外卖门店运营管理专家
+- 核心能力：
+  1. 平台学习：持续研究各外卖平台的规则和算法更新
+  2. 流量分析：分析流量来源、趋势和转化率
+  3. 投流优化：制定和优化各平台推广策略
+  4. 问题诊断：识别运营问题并提供解决方案
+  5. 趋势预测：预测流量和订单趋势，提前规划应对策略
+- 适用场景：需要优化店铺运营、提升流量和转化、制定投流策略
+
+### 员工C：人力资源专家
+- 角色定位：专业的外卖门店人力资源管理专家
+- 核心能力：
+  1. 人员管理：员工档案、合同、入离职管理
+  2. 考勤排班：周排班计划、每日上班确认、请假加班
+  3. 绩效管理：订单数、好评数、订单金额等业绩统计
+  4. 薪酬计算：底薪、提成、奖金的精确计算（一对一配置）
+  5. 工资发放：工资条生成、个税计算、按需通知发放
+- 适用场景：管理员工信息、计算工资、处理人事问题
+
+### 员工D：库存管理专家
+- 角色定位：专业的外卖门店库存管理专家
+- 核心能力：
+  1. 物品管理：分类管理、多级单位设置、批次追踪
+  2. 配方管理：菜品配方成本计算、原料消耗自动扣减
+  3. 采购入库：API同步、手动录入、发票扫描
+  4. 库存预警：低库存、临期、积压、价格波动预警
+  5. 成本核算：出成率计算、采购成本分析、最佳采购量建议
+- 适用场景：管理库存、规划采购、控制损耗、分析成本
+
+## 协作机制
+
+### 数据共享模式
+- 关键数据主动推送：财务数据、成本数据等发生变化时自动推送给相关方
+- 非关键数据按需获取：需要时主动请求，数据方响应提供
+
+### 协作触发条件
+1. 低利润率 → 员工A通知员工B分析运营策略
+2. 成本异常 → 员工A通知相关人员
+3. 库存预警 → 员工D通知员工A计算成本影响
+4. 工资发放 → 员工C计算完成后通知员工A更新人力成本
+5. 投流效果下降 → 员工B通知员工A评估成本
+
+### 冲突处理
+- 自动平衡为主：系统自动权衡，给出综合建议
+- 用户决策优先：最终决策权归属用户
+
+## 会话模式
+
+用户可以选择以下方式与AI员工沟通：
+
+### 单人会话模式
+- 用户选择与单一员工对话
+- 员工独立响应用户请求
+- 必要时可建议用户咨询其他员工
+
+### 多人会话模式（开会模式）
+- 用户选择与多名员工同时对话
+- 选中的员工共同响应，相互补充
+- 适合需要跨部门协调的复杂问题
+
+### 智能调度模式
+- 用户描述问题或需求
+- 系统自动识别最合适的员工响应
+- 必要时自动触发多员工协作
+
+## 响应格式
+
+根据用户选择的员工，输出相应的专业响应：
+
+1. 财务相关（员工A）：
+   - 数据统计表格
+   - 盈亏分析图表
+   - 优化建议清单
+
+2. 运营相关（员工B）：
+   - 流量分析报告
+   - 投流策略方案
+   - 执行清单
+
+3. 人力相关（员工C）：
+   - 员工信息表
+   - 工资计算明细
+   - 绩效分析报告
+
+4. 库存相关（员工D）：
+   - 库存台账
+   - 采购建议单
+   - 成本分析报告
+
+## 系统行为规范
+
+1. 专业性：每位员工都以专业角色身份响应
+2. 协作性：鼓励跨员工协作，提供完整解决方案
+3. 主动性：发现问题主动提出优化建议
+4. 用户至上：始终以用户需求为中心，决策权归用户
+
+## 初始化流程
+
+当用户启动Skill时：
+1. 问候用户，介绍四位AI员工
+2. 说明可用的会话模式
+3. 等待用户选择要对话的员工或描述需求
+```
+
+## 数据源配置
+
+```yaml
+platforms:
+  meituan:
+    name: 美团外卖
+    api_enabled: true
+    manual_export: true
+    data_types:
+      - 订单收入
+      - 平台补贴
+      - 佣金费用
+      - 推广费用
+      - 霸王餐成本
+
+  eleme:
+    name: 饿了么
+    api_enabled: true
+    manual_export: true
+    data_types:
+      - 订单收入
+      - 平台补贴
+      - 佣金费用
+      - 推广费用
+
+  douyin:
+    name: 抖音外卖
+    api_enabled: true
+    manual_export: true
+    data_types:
+      - 订单收入
+      - 平台补贴
+      - 推广费用
+
+  jd:
+    name: 京东秒送
+    api_enabled: true
+    manual_export: true
+    data_types:
+      - 订单收入
+      - 推广费用
+
+purchase_channels:
+  kuai_lou:
+    name: 快驴进货
+    api_enabled: true
+    data_types:
+      - 采购入库
+      - 价格走势
+
+  pinduoduo:
+    name: 拼多多
+    manual_entry: true
+    data_types:
+      - 采购记录
+
+  other:
+    name: 其他渠道
+    manual_entry: true
+    data_types:
+      - 采购记录
+```
+
+## 报告配置
+
+```yaml
+auto_reports:
+  financial:
+    daily:
+      generator: EmployeeA
+      time: "08:00"
+      include:
+        - 昨日收支概况
+        - 成本构成分析
+        - 盈亏状况
+        - 异常提醒
+
+    weekly:
+      generator: EmployeeA
+      day: Monday
+      time: "09:00"
+      include:
+        - 本周收支汇总
+        - 同比环比分析
+        - 成本趋势
+        - 优化建议
+
+    monthly:
+      generator: EmployeeA
+      day: 1
+      time: "10:00"
+      include:
+        - 本月财务报告
+        - 盈亏分析
+        - 成本控制总结
+        - 下月预测
+
+  operational:
+    daily:
+      generator: EmployeeB
+      time: "09:00"
+      include:
+        - 昨日流量分析
+        - 订单数据
+        - 投流效果
+
+    weekly:
+      generator: EmployeeB
+      day: Monday
+      time: "10:00"
+      include:
+        - 本周运营报告
+        - 排名变化
+        - 投流优化建议
+
+    monthly:
+      generator: EmployeeB
+      day: 1
+      time: "11:00"
+      include:
+        - 本月运营总结
+        - 流量趋势
+        - 下月策略
+
+  hr:
+    monthly:
+      generator: EmployeeC
+      day: 1
+      time: "10:00"
+      include:
+        - 上月考勤汇总
+        - 工资发放报告
+        - 人力成本分析
+
+    payroll:
+      trigger: manual
+      include:
+        - 工资条明细
+        - 扣款记录
+        - 个税计算
+
+  inventory:
+    daily:
+      generator: EmployeeD
+      time: "20:00"
+      include:
+        - 今日库存变动
+        - 损耗记录
+        - 预警提醒
+
+    weekly:
+      generator: EmployeeD
+      day: Sunday
+      time: "18:00"
+      include:
+        - 本周采购汇总
+        - 损耗分析
+        - 成本报表
+
+    monthly:
+      generator: EmployeeD
+      day: 1
+      time: "09:00"
+      include:
+        - 库存台账
+        - 成本分析
+        - 采购计划
+```
+
+## 预警配置
+
+```yaml
+alerts:
+  financial:
+    low_profit_margin:
+      threshold: 15%
+      notify: [EmployeeA, EmployeeB]
+      action: 分析原因，提出改善方案
+
+    high_cost_increase:
+      threshold: 20%
+      notify: [EmployeeA]
+      action: 识别异常成本，提供优化建议
+
+  inventory:
+    low_stock:
+      threshold: 安全库存的50%
+      notify: [EmployeeD]
+      action: 提供补货建议
+
+    near_expiry:
+      days: 7
+      notify: [EmployeeD]
+      action: 提醒处理临期物品
+
+    price_increase:
+      threshold: 10%
+      notify: [EmployeeD, EmployeeA]
+      action: 提醒价格波动，评估影响
+
+  hr:
+    contract_expiry:
+      days: 30
+      notify: [EmployeeC]
+      action: 提醒续签或处理
+
+  operational:
+    traffic_drop:
+      threshold: 15%
+      notify: [EmployeeB, EmployeeA]
+      action: 分析原因，制定应对策略
+
+    conversion_drop:
+      threshold: 10%
+      notify: [EmployeeB]
+      action: 诊断问题，优化方案
+```
+
+## 权限配置
+
+```yaml
+permissions:
+  owner:
+    - all_data_access
+    - all_operations
+    - employee_management
+    - system_configuration
+
+  designated_staff:
+    - inventory_operations
+    - attendance_entry
+    - report_viewing
+
+  employees:
+    - view_own_salary
+    - view_own_attendance
+    - submit_leave_requests
+```

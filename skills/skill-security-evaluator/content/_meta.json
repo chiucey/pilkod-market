@@ -1,0 +1,17 @@
+{
+  "author": "MiniMax Agent",
+  "category": "security",
+  "created": "2026-03-26",
+  "description": "全面评估 Agent Skill 的安全程度。当用户要求评估 skill 安全性、分析安全风险、进行安全审计、检查潜在漏洞或评估 skill 信任等级时使用。",
+  "id": 380662197014778,
+  "name": "skill-security-evaluator",
+  "platform": "minimax",
+  "tags": [
+    "security",
+    "audit",
+    "evaluation",
+    "risk-assessment"
+  ],
+  "updated_at": 1774488537887,
+  "version": "1.0.0"
+}

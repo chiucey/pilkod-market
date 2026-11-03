@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领聚 x 牧高笛 项目协同对接表</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f5;color:#1a1a1a;font-size:13px;line-height:1.6}
+.doc-header{background:#fff;border-bottom:3px solid #dc2626;display:flex;align-items:stretch;flex-wrap:wrap}
+.brand-block{background:#dc2626;color:#fff;padding:18px 22px;min-width:190px;display:flex;flex-direction:column;justify-content:center}
+.brand-block .brand{font-size:17px;font-weight:800}
+.brand-block .ver{font-size:10px;opacity:.8;margin-top:3px}
+.meta{flex:1;padding:16px 20px}
+.meta h1{font-size:17px;font-weight:800;color:#1a1a1a}
+.meta .sub{font-size:11px;color:#888;margin-top:3px}
+.meta .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
+.tag{font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px}
+.tag.r{background:#fef2f2;color:#dc2626;border:1px solid #fecaca}
+.tag.g{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0}
+.tag.y{background:#fffbeb;color:#d97706;border:1px solid #fde68a}
+.tag.b{background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe}
+.mobi-section{background:#fff;margin:14px 20px;border-radius:0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.sec-head{background:#dc2626;color:#fff;padding:8px 18px;display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700}
+.sec-head .sec-num{font-size:10px;font-weight:800;background:rgba(255,255,255,.2);padding:2px 7px;border-radius:4px}
+.sec-head .sec-label{flex:1}
+.sec-head .sec-en{font-size:11px;font-weight:400;opacity:.85;margin-left:auto}
+.sec-body{padding:16px 18px}
+.s-title{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
+.s-title .zh{font-size:14px;font-weight:700;color:#1a1a1a}
+.st-row{display:flex;gap:0;margin-bottom:14px;flex-wrap:wrap}
+.st-item{flex:1;min-width:105px;padding:9px 12px;border:1px solid #f0f0f0;display:flex;align-items:center;gap:7px;font-size:12px}
+.st-item:first-child{border-radius:6px 0 0 6px}
+.st-item:last-child{border-radius:0 6px 6px 0;border-left:none}
+.st-item:not(:last-child){border-right:none}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.d-g{background:#16a34a}.d-y{background:#d97706}.d-r{background:#dc2626}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:768px){.grid-2{grid-template-columns:1fr}}
+.party-banner{display:flex;margin-bottom:14px;border-radius:8px;overflow:hidden;border:1px solid #e5e5e5}
+.party{flex:1;padding:12px 16px}
+.party.lj{background:#fef2f2;border-right:1px solid #e5e5e5}
+.party.mg{background:#f0fdf4}
+.party .party-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.party.lj .party-tag{color:#dc2626}
+.party.mg .party-tag{color:#16a34a}
+.party .party-name{font-size:15px;font-weight:800}
+.party .party-desc{font-size:11px;color:#666;margin-top:2px}
+.party .party-role{font-size:11px;margin-top:5px;color:#555}
+table.tbl{width:100%;border-collapse:collapse;font-size:12px}
+table.tbl th{background:#fafafa;text-align:left;padding:8px 12px;font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid #e5e5e5}
+table.tbl td{padding:9px 12px;border-bottom:1px solid #f0f0f0;vertical-align:top;color:#333;line-height:1.5}
+table.tbl tr:last-child td{border-bottom:none}
+.num-badge{display:inline-flex;width:19px;height:19px;background:#dc2626;color:#fff;border-radius:50%;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin-right:5px;flex-shrink:0}
+table.coop-tbl{width:100%;border-collapse:collapse;font-size:11px;margin-top:10px}
+table.coop-tbl thead th{background:#1a1a1a;color:#fff;padding:7px 9px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-align:left;border:1px solid #333}
+table.coop-tbl thead th.center{text-align:center}
+table.coop-tbl tbody td{padding:7px 9px;border:1px solid #e5e5e5;vertical-align:middle;background:#fff;line-height:1.45}
+table.coop-tbl tbody tr:last-child td{border-bottom:none}
+table.coop-tbl tbody tr:nth-child(even) td{background:#fafafa}
+.checkbox-cell{text-align:center}
+.custom-checkbox{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:2px solid #ccc;border-radius:3px;font-size:9px;color:#fff;font-weight:800}
+.custom-checkbox.checked{background:#dc2626;border-color:#dc2626}
+.item-name{font-weight:700;color:#1a1a1a;font-size:12px}
+.item-sub{font-size:10px;color:#888;margin-top:2px}
+.priority-tag{display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:4px}
+.priority-hi{background:#fef2f2;color:#dc2626}
+.priority-md{background:#fffbeb;color:#d97706}
+.priority-lo{background:#f0fdf4;color:#16a34a}
+.col-badge{display:inline-block;font-size:10px;padding:1px 7px;border-radius:4px;margin-right:3px}
+.col-date{background:#eff6ff;color:#2563eb}
+.col-ddl{background:#fef2f2;color:#dc2626}
+.date-input{width:100%;min-width:70px;padding:4px 6px;font-size:11px;border:1px solid #e5e5e5;border-radius:4px;color:#333;background:#fff;font-family:inherit;box-sizing:border-box}
+.table-note{font-size:10px;color:#aaa;margin-top:6px;text-align:right}
+.prob-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:768px){.prob-row{grid-template-columns:1fr}}
+.prob-card{border:1px solid #f0f0f0;border-radius:8px;overflow:hidden}
+.prob-header{padding:9px 12px;background:#fafafa;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:8px}
+.prob-num{font-size:10px;font-weight:800;background:#dc2626;color:#fff;padding:2px 6px;border-radius:4px}
+.prob-title{font-size:12px;font-weight:700;flex:1}
+.prob-body{padding:10px 12px;font-size:11px;color:#444;line-height:1.6}
+.prob-body strong{font-size:10px;color:#888;text-transform:uppercase;display:block;margin-bottom:3px}
+.prob-body p{margin-bottom:0}
+.expect-block{background:#fef2f2;border-radius:5px;padding:7px 9px;margin:7px 0;border-left:3px solid #dc2626}
+.coop-block{background:#f0fdf4;border-radius:5px;padding:7px 9px;margin-top:6px;border-left:3px solid #16a34a}
+.block-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+.expect-block .block-label{color:#dc2626}
+.coop-block .block-label{color:#16a34a}
+.tl-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:12px}
+.tl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.tl-label{width:110px;font-weight:600;color:#333;flex-shrink:0}
+.tl-bar{flex:1;height:5px;background:#e5e5e5;border-radius:3px;overflow:hidden}
+.tl-fill{height:100%;border-radius:3px}
+.tl-pct{width:36px;text-align:right;color:#888;font-size:11px;flex-shrink:0}
+.q-block{background:#fafafa;border-left:3px solid #dc2626;padding:10px 14px;border-radius:0 5px 5px 0;margin-top:12px}
+.q-block .q-label{font-size:10px;font-weight:700;color:#dc2626;text-transform:uppercase;margin-bottom:5px;letter-spacing:.4px}
+.q-block p{font-size:11px;color:#333;line-height:1.7}
+.biweek-strip{background:#1a1a1a;border-radius:8px;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:14px}
+.biweek-strip .biweek-main{flex:1}
+.biweek-strip .biweek-title{color:#fff;font-size:13px;font-weight:700;margin-bottom:3px}
+.biweek-strip .biweek-desc{color:rgba(255,255,255,.6);font-size:11px;line-height:1.5}
+.biweek-strip .biweek-tag{background:#dc2626;color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:6px;flex-shrink:0;white-space:nowrap}
+.doc-footer{text-align:center;padding:12px 18px;font-size:10px;color:#bbb;border-top:1px solid #f0f0f0;background:#fff;margin:0 20px 14px}
+</style>
+</head>
+<body>
+<div class="doc-header">
+  <div class="brand-block"><div class="brand">MOBI GARDEN</div><div class="ver">Internal Document</div></div>
+  <div class="meta">
+    <h1>项目协同对接表 Collaboration Brief</h1>
+    <div class="sub">Max Claw Second Wayne 2026-05-18</div>
+    <div class="tags"><span class="tag r">全案合作</span><span class="tag y">运营落地阶段</span><span class="tag g">独立站已上线</span><span class="tag b">Shopify 北美</span></div>
+  </div>
+</div>
+
+<div class="mobi-section">
+  <div class="sec-head"><span class="sec-num">00</span><span class="sec-label">项目总览</span><span class="sec-en">Project Overview Parties</span></div>
+  <div class="sec-body">
+    <div class="party-banner">
+      <div class="party lj"><div class="party-tag">A 方 服务方</div><div class="party-name">领聚</div><div class="party-desc">跨境营销Agency 全案服务执行方</div><div class="party-role">牵头：独立站 / 投流 / 社媒运维 / 运营执行</div></div>
+      <div class="party mg"><div class="party-tag">B 方 品牌方</div><div class="party-name">牧高笛</div><div class="party-desc">MOBI GARDEN 北美品牌出海</div><div class="party-role">牵头：素材提供 / 内容审核 / 品牌决策 / 内部协调</div></div>
+    </div>
+    <div class="st-row">
+      <div class="st-item"><div class="dot d-g"></div><strong>Q2 2026</strong></div>
+      <div class="st-item"><div class="dot d-g"></div><strong>Shopify</strong> 独立站平台</div>
+      <div class="st-item"><div class="dot d-y"></div><strong>5%</strong> 月度净销售佣金</div>
+      <div class="st-item"><div class="dot d-g"></div><strong>北美</strong> 目标市场</div>
+    </div>
+    <div class="grid-2">
+      <div>
+        <div class="s-title"><span class="zh">已完成</span></div>
+        <div class="st-row" style="flex-direction:column;gap:4px">
+          <div class="st-item"><div class="dot d-g"></div>独立站框架搭建并上线</div>
+          <div class="st-item"><div class="dot d-g"></div>首批产品全部上架</div>
+          <div class="st-item"><div class="dot d-g"></div>品牌定位框架确认</div>
+          <div class="st-item"><div class="dot d-g"></div>TOV 语调四柱定义完成</div>
+          <div class="st-item"><div class="dot d-g"></div>创意素材规范制定</div>
+        </div>
+      </div>
+      <div>
+        <div class="s-title"><span class="zh">进行中 / 待推进</span></div>
+        <div class="st-row" style="flex-direction:column;gap:4px">
+          <div class="st-item"><div class="dot d-y"></div>首批运营动作落地</div>
+          <div class="st-item"><div class="dot d-r"></div>Meta 投流启动筹备</div>
+          <div class="st-item"><div class="dot d-r"></div>Phase 2 站点优化规划</div>
+          <div class="st-item"><div class="dot d-r"></div>社媒达人合作机制建立</div>
+          <div class="st-item"><div class="dot d-y"></div>品牌素材排期与审核流程</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobi-section">
+  <div class="sec-head"><span class="sec-num">01</span><span class="sec-label">服务范围与职责划分</span><span class="sec-en">Service Scope Responsibilities</span></div>
+  <div class="sec-body">
+    <table class="tbl">
+      <tr><th>模块</th><th>领聚（服务方）</th><th>牧高笛（品牌方）</th></tr>
+      <tr><td><strong>独立站</strong></td><td>搭建 优化 技术维护</td><td>品牌内容提供 最终审核确认</td></tr>
+      <tr><td><strong>付费投流</strong></td><td>策略制定 执行 数据优化</td><td>预算审批 素材需求确认</td></tr>
+      <tr><td><strong>站内运营</strong></td><td>活动策划 评价建设 用户运营</td><td>活动素材提供 品牌调性把控</td></tr>
+      <tr><td><strong>社媒运维</strong></td><td>红人对接 内容制作 账号运维</td><td>内容终审 品牌合规确认</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="mobi-section">
+  <div class="sec-head"><span class="sec-num">02</span><span class="sec-label">核心问题 期望与合作形式</span><span class="sec-en">Key Issues Expectations Cooperation</span></div>
+  <div class="sec-body">
+    <div class="prob-row">
+      <div class="prob-card">
+        <div class="prob-header"><span class="prob-num">01</span><span class="prob-title">前置推进与待办同步不足</span></div>
+        <div class="prob-body"><strong>问题</strong><p>关键节点临时通知，跨部门协调周期约1周。全案合作要求服务方提前梳理节点、主动同步待办。</p>
+          <div class="expect-block"><div class="block-label">牧高笛期望</div><p>提前1~2个月输出排期，区分「领聚牵头」与「牧高笛配合」项。</p></div>
+          <div class="coop-block"><div class="block-label">磨合合作形式</div><p>每月双方对齐会，领聚主动发清单，牧高笛仅确认，不用追。</p></div>
+        </div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-header"><span class="prob-num">02</span><span class="prob-title">运营/投流动作前置不足</span></div>
+        <div class="prob-body"><strong>问题</strong><p>新客优惠、评价建设、Meta投流无提前规划；品牌素材审核周期长，临时通知无法保障质量。</p>
+          <div class="expect-block"><div class="block-label">牧高笛期望</div><p>所有素材类工作提前明确启动时间，预留1~2个月准备与内部审核周期。</p></div>
+          <div class="coop-block"><div class="block-label">磨合合作形式</div><p>领聚提供年度素材日历，牧高笛按节点交付；紧急需求双方协商。</p></div>
+        </div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-header"><span class="prob-num">03</span><span class="prob-title">品控自检流程缺位</span></div>
+        <div class="prob-body"><strong>问题</strong><p>交付内容存在较多基础问题，未建立内部自检流程，沟通修正成本高。</p>
+          <div class="expect-block"><div class="block-label">牧高笛期望</div><p>领聚内部先完成基础核验，再交付牧高笛做最终验收，减少重复往返。</p></div>
+          <div class="coop-block"><div class="block-label">磨合合作形式</div><p>建立交付检查清单（Checklist），牧高笛只做终验，不做替代表检。</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="prob-row" style="grid-template-columns:1fr 1fr">
+      <div class="prob-card">
+        <div class="prob-header"><span class="prob-num">04</span><span class="prob-title">社媒协同效率偏低</span></div>
+        <div class="prob-body"><strong>问题</strong><p>红人/博主资料、内容素材、项目进度无专人主动跟进，基础运维工作需牧高笛承担。</p>
+          <div class="expect-block"><div class="block-label">牧高笛期望</div><p>明确社媒助理岗位职责：红人资料收集、内容素材整理、项目进度跟进由领聚主动承接。</p></div>
+          <div class="coop-block"><div class="block-label">磨合合作形式</div><p>建立共享进度表，领聚维护，牧高笛查看；每周一次进度摘要推送。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobi-section">
+  <div class="sec-head"><span class="sec-num">03</span><span class="sec-label">协同管理表 项目追踪</span><span class="sec-en">Collaboration Tracker Project Items</span></div>
+  <div class="sec-body">
+    <div class="s-title"><span class="zh">填写说明 Legend</span></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;font-size:11px;color:#555">
+      <span><span style="display:inline-block;width:9px;height:9px;background:#2563eb;border-radius:50%;margin-right:4px;vertical-align:middle"></span><span class="col-badge col-date">需求时间</span> 牧高笛提出需求日期</span>
+      <span><span class="custom-checkbox checked" style="margin-right:4px">OK</span>牵头负责方（打勾方）</span>
+      <span><span class="col-badge col-ddl">DDL</span> 项目交付截止时间</span>
+      <span style="color:#888">表内时间可由领聚直接编辑填写</span>
+    </div>
+    <table class="coop-tbl">
+      <thead>
+        <tr>
+          <th style="width:30px">#</th>
+          <th>项目 / 项目描述</th>
+          <th style="width:55px">优先级</th>
+          <th style="width:82px"><span class="col-badge col-date">需求时间</span></th>
+          <th style="width:82px">领聚预计<br>完成时间</th>
+          <th style="width:78px">牧高笛<br>审核周期</th>
+          <th style="width:82px"><span class="col-badge col-ddl">DDL</span><br>交付截止</th>
+          <th style="width:58px" class="center">OK 领聚</th>
+          <th style="width:58px" class="center">OK 牧高笛</th>
+          <th style="width:88px">备注 / 状态</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="num-badge">1</span></td>
+          <td><div class="item-name">新客收单优惠弹窗</div><div class="item-sub">First-order incentive Shopify popup 新客首单转化</div></td>
+          <td><span class="priority-tag priority-hi">高</span></td>
+          <td><input class="date-input" type="text" value="2026/05/25"></td>
+          <td><input class="date-input" type="text" value="2026/06/05"></td>
+          <td><input class="date-input" type="text" value="5 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/06/12"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value="待启动" style="color:#dc2626;font-weight:600"></td>
+        </tr>
+        <tr>
+          <td><span class="num-badge">2</span></td>
+          <td><div class="item-name">Meta 广告素材</div><div class="item-sub">投流物料 图片/视频 须符合创意素材规范</div></td>
+          <td><span class="priority-tag priority-hi">高</span></td>
+          <td><input class="date-input" type="text" value="2026/05/25"></td>
+          <td><input class="date-input" type="text" value="2026/06/10"></td>
+          <td><input class="date-input" type="text" value="7 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/06/19"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value="待启动" style="color:#dc2626;font-weight:600"></td>
+        </tr>
+        <tr>
+          <td><span class="num-badge">3</span></td>
+          <td><div class="item-name">EDM 邮件营销</div><div class="item-sub">邮件内容制作 节日/大促/新品通知</div></td>
+          <td><span class="priority-tag priority-md">中</span></td>
+          <td><input class="date-input" type="text" value="2026/06/01"></td>
+          <td><input class="date-input" type="text" value="2026/06/15"></td>
+          <td><input class="date-input" type="text" value="5 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/06/22"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value=""></td>
+        </tr>
+        <tr>
+          <td><span class="num-badge">4</span></td>
+          <td><div class="item-name">核心产品页面优化（PDP）</div><div class="item-sub">PDP 页面优化 部分涉及特效动画</div></td>
+          <td><span class="priority-tag priority-md">中</span></td>
+          <td><input class="date-input" type="text" value="2026/06/01"></td>
+          <td><input class="date-input" type="text" value="2026/06/20"></td>
+          <td><input class="date-input" type="text" value="5 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/06/27"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value=""></td>
+        </tr>
+        <tr>
+          <td><span class="num-badge">5</span></td>
+          <td><div class="item-name">红人 Promo Code Affiliate 启动</div><div class="item-sub">Sherry 已开始建联、触达红人 评估 promo code affiliate 机制</div></td>
+          <td><span class="priority-tag priority-md">中</span></td>
+          <td><input class="date-input" type="text" value="2026/06/01"></td>
+          <td><input class="date-input" type="text" value="2026/06/15"></td>
+          <td><input class="date-input" type="text" value="3 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/06/20"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value="Sherry 建联中" style="color:#d97706;font-weight:600"></td>
+        </tr>
+        <tr>
+          <td><span class="num-badge">6</span></td>
+          <td><div class="item-name">站点网页项目表</div><div class="item-sub">Phase 2 站点优化清单 独立站功能/页面优先级排序</div></td>
+          <td><span class="priority-tag priority-hi">高</span></td>
+          <td><input class="date-input" type="text" value="2026/05/25"></td>
+          <td><input class="date-input" type="text" value="2026/06/10"></td>
+          <td><input class="date-input" type="text" value="5 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/06/17"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value=""></td>
+        </tr>
+        <tr>
+          <td><span class="num-badge">7</span></td>
+          <td><div class="item-name">网站内容竞对数据追踪</div><div class="item-sub">牌桌上的竞品持续跟进 月度竞对分析报告</div></td>
+          <td><span class="priority-tag priority-lo">低</span></td>
+          <td><input class="date-input" type="text" value="2026/06/15"></td>
+          <td><input class="date-input" type="text" value="2026/06/30"></td>
+          <td><input class="date-input" type="text" value="3 工作日"></td>
+          <td><input class="date-input" type="text" value="2026/07/05"></td>
+          <td class="checkbox-cell"><span class="custom-checkbox checked">OK</span></td>
+          <td class="checkbox-cell"><span class="custom-checkbox">o</span></td>
+          <td><input class="date-input" type="text" value="持续进行" style="color:#16a34a;font-weight:600"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="table-note">领聚可直接在表内编辑日期，完成后同步更新版本至共享文档</div>
+  </div>
+</div>
+
+<div class="mobi-section">
+  <div class="sec-head"><span class="sec-num">04</span><span class="sec-label">下一步待办</span><span class="sec-en">Next Steps Tracker</span></div>
+  <div class="sec-body">
+    <div class="grid-2">
+      <div>
+        <div class="s-title"><span class="zh" style="color:#dc2626">待启动</span></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#dc2626"></div><div class="tl-label">排期表输出</div><div class="tl-bar"><div class="tl-fill" style="width:0%;background:#dc2626"></div></div><div class="tl-pct">0%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#dc2626"></div><div class="tl-label">新客收单优惠</div><div class="tl-bar"><div class="tl-fill" style="width:0%;background:#dc2626"></div></div><div class="tl-pct">0%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#dc2626"></div><div class="tl-label">Meta 素材启动</div><div class="tl-bar"><div class="tl-fill" style="width:0%;background:#dc2626"></div></div><div class="tl-pct">0%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#dc2626"></div><div class="tl-label">站点网页项目表</div><div class="tl-bar"><div class="tl-fill" style="width:0%;background:#dc2626"></div></div><div class="tl-pct">0%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#dc2626"></div><div class="tl-label">EDM 邮件规划</div><div class="tl-bar"><div class="tl-fill" style="width:0%;background:#dc2626"></div></div><div class="tl-pct">0%</div></div>
+      </div>
+      <div>
+        <div class="s-title"><span class="zh" style="color:#d97706">进行中</span></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#d97706"></div><div class="tl-label">Phase 2 规划</div><div class="tl-bar"><div class="tl-fill" style="width:30%;background:#d97706"></div></div><div class="tl-pct">30%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#d97706"></div><div class="tl-label">评价体系建设</div><div class="tl-bar"><div class="tl-fill" style="width:40%;background:#d97706"></div></div><div class="tl-pct">40%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#d97706"></div><div class="tl-label">Meta 投流启动</div><div class="tl-bar"><div class="tl-fill" style="width:20%;background:#d97706"></div></div><div class="tl-pct">20%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#d97706"></div><div class="tl-label">红人 Promo Code</div><div class="tl-bar"><div class="tl-fill" style="width:25%;background:#d97706"></div></div><div class="tl-pct">25%</div></div>
+        <div class="tl-row"><div class="tl-dot" style="background:#d97706"></div><div class="tl-label">竞对数据追踪</div><div class="tl-bar"><div class="tl-fill" style="width:15%;background:#d97706"></div></div><div class="tl-pct">15%</div></div>
+      </div>
+    </div>
+
+    <div class="biweek-strip">
+      <div class="biweek-main">
+        <div class="biweek-title">双周会对齐机制 Bi-Weekly Sync</div>
+        <div class="biweek-desc">每两周一次快速对齐会，内容少可快速完成（建议15分钟），保持双周沟通节奏不中断。领聚主持，牧高笛确认，双向同步进度与阻塞项。</div>
+      </div>
+      <div class="biweek-tag">双周会</div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-label">磨合原则 Cooperation Principle</div>
+      <p>领聚主导执行与主动同步，牧高笛提供品牌素材与最终决策。双方通过前置对齐减少无效往返，建立清晰、高效的全案合作节奏。</p>
+    </div>
+  </div>
+</div>
+
+<div class="doc-footer">
+  MOBI GARDEN Engineered in the Hengduan Built for your trailhead<br>
+  Max Claw Second Wayne 领聚 x 牧高笛 Internal Document 2026-05-18
+</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-08",
+  "description": "租房合同诈骗风险识别与审核。当用户上传租房合同（PDF/图片）、提交合同文本、遇到疑似诈骗的租房情况、担心租金变贷款、需要审核租房条款时使用。支持提取合同内容、逐条分析风险点、生成详细审核报告。",
+  "id": 385439074423219,
+  "name": "rental-fraud-detector",
+  "platform": "minimax",
+  "skill_id": "rental-fraud-detector",
+  "tags": [
+    "租房",
+    "合同审核",
+    "诈骗识别",
+    "风险评估",
+    "法律"
+  ],
+  "updated_at": 1775656252357,
+  "version": "1.0.0"
+}

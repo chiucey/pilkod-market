@@ -1,0 +1,83 @@
+{
+  "id": "tiktok-dev-api-auto-integrator",
+  "name": "TikTok Dev API Auto Integrator",
+  "version": "1.0.0",
+  "description": "TikTok开发者API自动集成器 - 全自动完成开发者后台操作",
+  "author": "MiniMax Agent",
+  "tags": [
+    "tiktok",
+    "minigame",
+    "api-integration",
+    "developer",
+    "automation",
+    "advertising",
+    "API自动化"
+  ],
+  "platform": "Claw/LobsterAI/OpenClaw",
+  "capabilities": {
+    "oauth_auth": true,
+    "app_management": true,
+    "package_upload": true,
+    "ad_unit_management": true,
+    "review_monitoring": true,
+    "multi_account": true
+  },
+  "triggers": [
+    "TikTok小游戏上线",
+    "申请TikTok广告位",
+    "上传TikTok游戏包",
+    "TikTok开发者API",
+    "自动申请AppID",
+    "监控审核状态",
+    "TikTok开发者自动化",
+    "多账号切换"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "requests": ">=2.28.0",
+    "PyJWT": ">=2.6.0",
+    "PyYAML": ">=6.0"
+  },
+  "files": {
+    "main": "scripts/main.py",
+    "auth": "scripts/auth.py",
+    "api_client": "scripts/api_client.py",
+    "app_manager": "scripts/app_manager.py",
+    "upload_manager": "scripts/upload_manager.py",
+    "review_monitor": "scripts/review_monitor.py",
+    "config_loader": "scripts/config_loader.py",
+    "api_guide": "references/api_guide.md",
+    "oauth_tutorial": "references/oauth_tutorial.md",
+    "troubleshooting": "references/troubleshooting.md",
+    "config_params": "references/config_params.md"
+  },
+  "config": {
+    "language": "zh-CN",
+    "platform": "TikTok",
+    "region": "overseas",
+    "api_base_url": "https://open.tiktokapis.com/v2",
+    "oauth_base_url": "https://www.tiktok.com/v2/auth/authorize",
+    "upload_max_size_mb": 100,
+    "upload_chunk_size_mb": 5,
+    "max_retry": 3,
+    "poll_interval_seconds": 60
+  },
+  "api_endpoints": {
+    "oauth_token": "/oauth/token/",
+    "refresh_token": "/oauth/token/refresh/",
+    "app_create": "/miniapp/v2/app/create/",
+    "app_list": "/miniapp/v2/app/list/",
+    "app_update": "/miniapp/v2/app/update/",
+    "app_info": "/miniapp/v2/app/info/",
+    "package_upload": "/miniapp/v2/app/package/upload/",
+    "package_submit": "/miniapp/v2/app/package/submit/",
+    "ad_create": "/miniapp/v2/app/ad/create/",
+    "ad_list": "/miniapp/v2/app/ad/list/",
+    "review_status": "/miniapp/v2/app/review/status/"
+  },
+  "resources": {
+    "references": "references/",
+    "config": "config/",
+    "templates": "templates/"
+  }
+}

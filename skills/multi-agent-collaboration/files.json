@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "path": "AGENT_PROMPTS.md",
+      "sha": "29885093dcf74701f9ac8830726c320373c5b66c",
+      "size": 15317
+    },
+    {
+      "path": "README.md",
+      "sha": "8c4a60dd59a3e6a4129a3410aa47fcb1c1f979e4",
+      "size": 2624
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "5383892b2e9c6a2b0d2bfce3fe79e5543db09e27",
+      "size": 10596
+    },
+    {
+      "path": "UPGRADE_REPORT.md",
+      "sha": "0e45be311512ccf0c923c1ef18617c67329b265c",
+      "size": 13217
+    },
+    {
+      "path": "_meta.json",
+      "sha": "54d89e21f12940c3e2fb80c4527a872e57cff466",
+      "size": 311
+    },
+    {
+      "path": "agent-collaboration-demo.js",
+      "sha": "b3521418f92fec69dc68a33506ce9a4c123be3ad",
+      "size": 19987
+    },
+    {
+      "path": "demo.js",
+      "sha": "b5b1e0af8eca7d8f9175bc37546b8fc26ab2dc35",
+      "size": 23388
+    },
+    {
+      "path": "dist/core/memory.d.ts",
+      "sha": "e115a3d90f57d545ca268712b25a07e2b582275a",
+      "size": 3152
+    },
+    {
+      "path": "dist/core/memory.js",
+      "sha": "b1d6e16cdc0e3c7b5ed7878a119e16d765e67bd5",
+      "size": 16567
+    },
+    {
+      "path": "dist/example.d.ts",
+      "sha": "196f713ad53821685f7ccd6c2b1024ed5f05e8aa",
+      "size": 95
+    },
+    {
+      "path": "dist/example.js",
+      "sha": "57ac0f2799c509c25d13f522cd8a7620daa110ef",
+      "size": 4074
+    },
+    {
+      "path": "dist/index.d.ts",
+      "sha": "cc8593c04af35439456419c2ab4c224c71382e5f",
+      "size": 1659
+    },
+    {
+      "path": "dist/index.js",
+      "sha": "2e8306ea3fa4315284814185e2a74beca9f14d6b",
+      "size": 3578
+    },
+    {
+      "path": "dist/systems/goal.d.ts",
+      "sha": "8b1268b20f2ed7c51188a3e6bcc7a20a996ed7df",
+      "size": 3151
+    },
+    {
+      "path": "dist/systems/goal.js",
+      "sha": "f33d86bd0b29ec5dd6eea8a4d16b4ee01542477f",
+      "size": 8050
+    },
+    {
+      "path": "dist/systems/signal.d.ts",
+      "sha": "e56a34a4c7f9919d86d30b12cb84aee1c79372f9",
+      "size": 1317
+    },
+    {
+      "path": "dist/systems/signal.js",
+      "sha": "70df5f6a4ca3a30aa9157c0894c2239dcaf3034f",
+      "size": 4203
+    },
+    {
+      "path": "dist/systems/workflow.d.ts",
+      "sha": "e69d25e9c0d6a9983b1923416bb7fe8b14a60dde",
+      "size": 1631
+    },
+    {
+      "path": "dist/systems/workflow.js",
+      "sha": "de3bacaefa4736f17b52716a65339c5d5cb81b08",
+      "size": 4676
+    },
+    {
+      "path": "docs/AI侦捧ⅲ掉祯ⅲ+_僟斋畹颚酡+哭沪的酽_md",
+      "sha": "bc3f3c544317aebe3bc00c52a0d73e30ccaf45ae",
+      "size": 65276
+    },
+    {
+      "path": "docs/斋畹颚酡+康腼斟_md",
+      "sha": "e355646f7fa227006f5529f20418545e6b40b35e",
+      "size": 2232
+    },
+    {
+      "path": "docs/邙艴阝傀ⅵ殿缯禊.md",
+      "sha": "9b42eb9c290cf1a4b40b26338cea937234957cc2",
+      "size": 272
+    },
+    {
+      "path": "duty-demo.js",
+      "sha": "86c649498d6044880eac05d4d9125ea41da004ef",
+      "size": 22138
+    },
+    {
+      "path": "examples/holiday-duty.js",
+      "sha": "e858a369be6ea698103d521d7bbb6773a2da1909",
+      "size": 14292
+    },
+    {
+      "path": "install.sh",
+      "sha": "04938f06d2f739fad6bdbea50713f8aaebaff355",
+      "size": 3058
+    },
+    {
+      "path": "memory-v2-demo.js",
+      "sha": "178360a5653f633c4b24d45c606b87e1d4057469",
+      "size": 17831
+    },
+    {
+      "path": "memory/today_hotspot/L1_working/WORKING_MEMORY.md",
+      "sha": "7cc2f05207369911e026e2d0cef7ad38d3ca6592",
+      "size": 181
+    },
+    {
+      "path": "memory/today_hotspot/L2_experience/EXPERIENCE_MEMORY.json",
+      "sha": "3d8db08925dab457fdb4d92be7e22a2022f7e00e",
+      "size": 2016
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "6738d46ff93913c7984ad9f1665dd9efbc614464",
+      "size": 1483
+    },
+    {
+      "path": "package.json",
+      "sha": "ceed08d4b97f3b359c9552c073860593aee7fbf3",
+      "size": 661
+    },
+    {
+      "path": "references/data-flow.md",
+      "sha": "c6cef355ab03d90013246614eb567890db2f8cb8",
+      "size": 7834
+    },
+    {
+      "path": "references/workflow-design.md",
+      "sha": "bf9aff3a67751025e5d2f9ff238fc8ee698324e1",
+      "size": 8224
+    },
+    {
+      "path": "time-decay-demo.js",
+      "sha": "a811b793c61963b0d49a7c85df7aee1a65915cd5",
+      "size": 18442
+    },
+    {
+      "path": "today-hotspot-demo.js",
+      "sha": "217dd458616fe0785bb65c442770b7c4c97515e5",
+      "size": 19283
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "ad86d9687f69850c8c364c7905be1371503d7975",
+      "size": 463
+    }
+  ]
+}

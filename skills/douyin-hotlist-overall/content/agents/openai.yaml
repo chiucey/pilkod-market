@@ -1,0 +1,7 @@
+interface:
+  display_name: "douyin-hotlist-overall"
+  short_description: "Douyin real-time hot topics"
+  default_prompt: "Use $douyin-hotlist-overall to help with Douyin real-time hot topics"
+
+policy:
+  allow_implicit_invocation: true

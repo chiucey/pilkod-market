@@ -1,0 +1,22 @@
+{
+  "adaptations": [
+    "Added MaxClaw support",
+    "Added MiniMax Agent web tool support",
+    "Added platform detection logic",
+    "Added platform comparison table",
+    "Translated to English"
+  ],
+  "created_from": "user_input_files/SKILL.md",
+  "description": "Fetch Knowledge Planet content via OpenClaw/MaxClaw browser or MiniMax Agent web tools",
+  "id": 382171719528548,
+  "name": "knowledge-planet-fetch",
+  "platform": "minimax",
+  "platforms": [
+    "openclaw",
+    "maxclaw",
+    "minimax-agent"
+  ],
+  "skill_id": 1712395036,
+  "updated_at": 1774857388258,
+  "version": "1.0.0"
+}

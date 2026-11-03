@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "5e059969298a1425e8a8e4da36c7759144b188b8",
+      "size": 3657
+    },
+    {
+      "path": "_meta.json",
+      "sha": "f19f736af67aa05c9fe2d8a00c4b2cb8e617c326",
+      "size": 141
+    },
+    {
+      "path": "assets/long_sentence_template.html",
+      "sha": "787c4b8622b252e0fca5bbadd0636fd50b9a3251",
+      "size": 11530
+    },
+    {
+      "path": "dist/english-long-sentences-1.0.0-20260325115907.skill",
+      "sha": "54c706895c1d8eec3be057d4ba27d6f2f3179f35",
+      "size": 1653932
+    },
+    {
+      "path": "references/bbdc_99005149_20260225165137.pdf",
+      "sha": "3ff66e0d4b445c387ece2a00413541384068dc6d",
+      "size": 2556600
+    },
+    {
+      "path": "references/test_long_sentences.html",
+      "sha": "6800f929182f91fc4a16551df021ed6eaee0e102",
+      "size": 14437
+    },
+    {
+      "path": "references/test_long_sentences.pdf",
+      "sha": "cc38ca712a0352ab5f82c38faafa6ddb23dbb69a",
+      "size": 197070
+    },
+    {
+      "path": "scripts/generate_vocab_pdf.py",
+      "sha": "27549b057f61fd07f40c9b4e8498ceca691bafb9",
+      "size": 3261
+    },
+    {
+      "path": "scripts/html_to_pdf.py",
+      "sha": "bbedf0e34b41372b0a1a22676b117f2bef430a9b",
+      "size": 3920
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "9467b2f79f1c9a76b024b83f53c32497de826dd7",
+      "size": 3757
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "291bae05a9d3ca90a8d369768b639b4afe06dc85",
+      "size": 4182
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "07daf71633d7e4596c28f115023d6b2c3caa7f6c",
+      "size": 287
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "fece4129b6bcc749d95d01b54b2a7b2fb08b3ce7",
+      "size": 1281
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e179ba06c6ebdff4cc73b64228e9d1e507e3f206",
+      "size": 141
+    },
+    {
+      "path": "check_health.js",
+      "sha": "75b7810f6f5e3829cbc526bee1b83df369d53bfa",
+      "size": 2494
+    },
+    {
+      "path": "cleanup.js",
+      "sha": "c97d133ab5e9c31c43870c35749d26bccaa89101",
+      "size": 1659
+    },
+    {
+      "path": "commentary.js",
+      "sha": "a8b771caaba4061b99958c1ea27f86c0a5564018",
+      "size": 1659
+    },
+    {
+      "path": "daemon.sh",
+      "sha": "40f5252569aa0c10202d8e663bbba7a2196df603",
+      "size": 1512
+    },
+    {
+      "path": "exec_cache.js",
+      "sha": "93f500059472b0bddd22e078f47e093386164555",
+      "size": 803
+    },
+    {
+      "path": "export_history.js",
+      "sha": "1d88ae3289d471fc251632b2356a1d8701bb17da",
+      "size": 3512
+    },
+    {
+      "path": "feishu-helper.js",
+      "sha": "e6f1ede8936d163f62ec668c6f773bda0bdb99b5",
+      "size": 3092
+    },
+    {
+      "path": "index.js",
+      "sha": "440c86f928b3b513e25b8321cbfc833c719803f7",
+      "size": 88231
+    },
+    {
+      "path": "issue_tracker.js",
+      "sha": "06b1f42ed10bbcb8b30f079209dd298bdabdc77a",
+      "size": 5343
+    },
+    {
+      "path": "lifecycle.js",
+      "sha": "1d5cc52622d380a7e4cbcfa7dcc0901faff779bd",
+      "size": 34458
+    },
+    {
+      "path": "package.json",
+      "sha": "e28438677d82f3889596898fc56974ed0a8c77aa",
+      "size": 208
+    },
+    {
+      "path": "report.js",
+      "sha": "f3179bd22235e92e91090cf841e620a7b71c8026",
+      "size": 23522
+    },
+    {
+      "path": "self-repair.js",
+      "sha": "be94ce7a280c08ebf5327857d34330b8969cae6b",
+      "size": 1990
+    },
+    {
+      "path": "send-card-cli.js",
+      "sha": "36e7227d72ba03757b48b0b617781bc3f1fd7425",
+      "size": 1026
+    },
+    {
+      "path": "skills_monitor.js",
+      "sha": "7f763e08080af55a8ccbc8d2609b767edb37b012",
+      "size": 6024
+    },
+    {
+      "path": "trigger.js",
+      "sha": "4d671a95cd7833105161755cddd9ffe188a0263c",
+      "size": 410
+    },
+    {
+      "path": "utils/dashboard-generator.js",
+      "sha": "d4d88a305a023db7bd3796040aaea357bb71438b",
+      "size": 4074
+    },
+    {
+      "path": "utils/logger.js",
+      "sha": "9d73fe51b62a7d66836cd4b9236f58ed4fa1bab1",
+      "size": 926
+    },
+    {
+      "path": "utils/sleep.js",
+      "sha": "26cdecce561d8fb0ee7cbfb0ce00941a901bca9b",
+      "size": 402
+    },
+    {
+      "path": "visualize_dashboard.js",
+      "sha": "77b4a262d13fc35af4de7faf9b9a0c9ee350b8b0",
+      "size": 7415
+    },
+    {
+      "path": "weekly_insight.js",
+      "sha": "b37499e6aaa91e02b539902e09eaefa83549d112",
+      "size": 4768
+    }
+  ]
+}

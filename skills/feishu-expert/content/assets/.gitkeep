@@ -1,0 +1,17 @@
+# Assets Directory
+
+This directory contains static assets for the Feishu skill.
+
+## Directory Structure
+
+```
+assets/
+├── icons/          # Skill icons and logos
+├── templates/      # Email and document templates
+└── docs/           # Additional documentation
+```
+
+## Usage
+
+Place any static assets (images, icons, templates) in this directory.
+These assets will be packaged with the skill.

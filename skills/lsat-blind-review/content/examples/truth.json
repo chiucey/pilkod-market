@@ -1,0 +1,51 @@
+{
+  "questions": {
+    "3": {
+      "answer": "C",
+      "user_pick": "B",
+      "type": "Method/EXCEPT",
+      "anchor": "How do the airlines expect to prevent",
+      "critical_phrases": ["airline deregulation", "1980s"]
+    },
+    "7": {
+      "answer": "A",
+      "user_pick": "E",
+      "type": "Weaken",
+      "anchor": "Golden Lake Development",
+      "critical_phrases": ["subdivision", "zoning board"]
+    },
+    "10": {
+      "answer": "E",
+      "user_pick": "A",
+      "type": "Assumption",
+      "anchor": "privatization",
+      "critical_phrases": ["government regulation"]
+    },
+    "17": {
+      "answer": "B",
+      "user_pick": "C",
+      "type": "MBT",
+      "anchor": "Danaxil",
+      "critical_phrases": ["pharmaceutical"]
+    },
+    "26": {
+      "answer": "B",
+      "user_pick": "D",
+      "type": "Principle (Apply)",
+      "anchor": "Psychotherapy has been described",
+      "critical_phrases": ["behavioral therapy", "outcome study"]
+    }
+  },
+  "header_pattern": "Day {qid} · Q{n} ·",
+  "forbidden_part1": ["正确答案", "可迁移 Takeaway", "答案速览"],
+  "section_titles": [
+    "① 题型识别",
+    "② 任务翻译",
+    "③ 论证结构拆解",
+    "④ BR 预判",
+    "⑤ 正确答案为何对",
+    "⑥ 你所选为何有吸引力又为何不对",
+    "⑦ 其余选项排除",
+    "⑧ 可迁移 Takeaway"
+  ]
+}

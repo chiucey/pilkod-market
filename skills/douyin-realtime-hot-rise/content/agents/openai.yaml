@@ -1,0 +1,7 @@
+interface:
+  display_name: "douyin-realtime-hot-rise"
+  short_description: "Douyin rising hot topics topic selector assistant"
+  default_prompt: "Use $douyin-realtime-hot-rise to help with Douyin rising hot topics topic selector assistant"
+
+policy:
+  allow_implicit_invocation: true

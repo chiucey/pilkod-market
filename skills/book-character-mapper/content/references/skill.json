@@ -1,0 +1,38 @@
+{
+  "id": "book-character-mapper",
+  "name": "小说人物关系图谱生成器",
+  "name_en": "Book Character Relationship Mapper",
+  "version": "1.0.0",
+  "description": "从小说文件中提取人物信息，自动生成力导向关系图谱可视化白板。支持epub、pdf、txt等常见电子书格式。",
+  "description_en": "Extract character information from novels and automatically generate force-directed relationship graph visualizations. Supports epub, pdf, txt formats.",
+  "keywords": ["人物图谱", "关系图谱", "角色关系", "小说分析", "人物关系图", "character map", "novel analysis", "relationship graph"],
+  "author": "摩西的理由",
+  "created": "2026-03-29",
+  "category": "productivity",
+  "icon": "📚",
+  "triggers": [
+    "小说人物图谱",
+    "生成角色关系图",
+    "分析书中人物关系",
+    "人物关系可视化",
+    "book character map",
+    "novel character analysis"
+  ],
+  "dependencies": {
+    "python_packages": ["ebooklib", "beautifulsoup4"],
+    "mcp_tools": ["extract_pdfs_full_content", "bash", "Write", "deploy"]
+  },
+  "config": {
+    "default_theme": "深邃星空",
+    "themes": [
+      "深邃星空", "经典蓝白", "暗夜紫罗兰", "森林秘境",
+      "沙漠黄昏", "极简灰白", "复古羊皮", "薄荷清晨", "天空蓝调"
+    ],
+    "physics_default": {
+      "repulsion": 3000,
+      "stiffness": 40,
+      "centerForce": 8,
+      "damping": 850
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "capabilities": [
+    "Contract review and triage",
+    "Matter intake and management",
+    "Employment law analysis",
+    "Privacy compliance workflows",
+    "IP protection and enforcement",
+    "Corporate governance drafting",
+    "Regulatory comment tracking",
+    "Product launch review",
+    "AI governance assessment",
+    "Law student education",
+    "Legal clinic operations"
+  ],
+  "created": "2026-05-18",
+  "description": "Comprehensive legal advisor handling contracts, litigation, employment, privacy, IP, corporate, regulatory, product, AI governance, law student, and legal clinic matters",
+  "domains": [
+    "commercial-contracts",
+    "litigation",
+    "employment",
+    "privacy",
+    "intellectual-property",
+    "corporate-governance",
+    "regulatory-compliance",
+    "product-legal",
+    "ai-governance",
+    "law-student",
+    "legal-clinic"
+  ],
+  "id": 399256113066936,
+  "name": "comprehensive-legal-advisor",
+  "platform": "minimax",
+  "trigger_phrases": [
+    "legal review",
+    "review this contract",
+    "litigation matter",
+    "employment issue",
+    "privacy compliance",
+    "IP protection",
+    "corporate governance",
+    "regulatory compliance",
+    "product launch legal",
+    "law school help",
+    "legal clinic"
+  ],
+  "updated_at": 1779034126388,
+  "version": "1.0.0"
+}

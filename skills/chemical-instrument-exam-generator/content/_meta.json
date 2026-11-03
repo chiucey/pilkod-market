@@ -1,0 +1,53 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "difficulty_levels": [
+      "易",
+      "中",
+      "难"
+    ],
+    "exam_types": [
+      "填空题"
+    ],
+    "question_count": 30,
+    "supported_topics": [
+      "压力变送器",
+      "差压变送器",
+      "流量仪表",
+      "液位仪表",
+      "温度仪表",
+      "控制阀",
+      "DCS系统"
+    ]
+  },
+  "created_at": "2026-05-06",
+  "description": "为化工企业变换工段员工生成仪表相关知识的培训考试卷（填空题）",
+  "display_name": "化工仪表培训考试卷生成器",
+  "id": 395230924091879,
+  "name": "chemical-instrument-exam-generator",
+  "platform": "minimax",
+  "tags": [
+    "化工",
+    "仪表",
+    "培训",
+    "出题",
+    "考试卷",
+    "填空题"
+  ],
+  "target_users": [
+    "变换工段长",
+    "硫回收工段长",
+    "化工企业培训管理员"
+  ],
+  "triggers": [
+    "制定培训考试卷",
+    "出培训题",
+    "生成仪表考试卷",
+    "培训考试",
+    "仪表知识考试",
+    "压力变送器培训",
+    "差压变送器培训"
+  ],
+  "updated_at": 1778047969781,
+  "version": "1.0.0"
+}

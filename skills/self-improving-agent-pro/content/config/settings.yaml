@@ -1,0 +1,33 @@
+# Self-Improving Agent Configuration
+
+# 学习记录存储目录
+learnings_dir: "./.learnings"
+
+# 推广目标文件路径
+promote_targets:
+  claude: "./CLAUDE.md"
+  agents: "./AGENTS.md"
+  soul: "./SOUL.md"
+  tools: "./TOOLS.md"
+
+# 默认优先级设置
+default_priority:
+  learning: "medium"
+  error: "high"
+  feature_request: "medium"
+
+# 定期回顾提醒间隔（天）
+review_interval_days: 7
+
+# 进化追踪配置
+evolution_tracking:
+  enabled: true
+  track_success_rate: true
+  track_patterns: true
+  milestone_check: true
+
+# 模式识别配置
+pattern_recognition:
+  min_recurrence: 2
+  auto_tag: true
+  cross_reference: true

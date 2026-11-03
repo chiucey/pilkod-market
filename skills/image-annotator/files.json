@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "ebd4dba9215a5a605f1335ea525740e3d5f3c4fe",
+      "size": 4909
+    },
+    {
+      "path": "scripts/annotate.py",
+      "sha": "a8261e9ceb931cf5a2e79fddb042abd04a85ec6a",
+      "size": 6325
+    },
+    {
+      "path": "scripts/detect_markers.py",
+      "sha": "bf4a857c7d198c89f250047e0631c388ebc936ac",
+      "size": 1963
+    },
+    {
+      "path": "scripts/extract_from_pdf.py",
+      "sha": "ff8ce872d8e8d9a57e4b72b223944d41524a4705",
+      "size": 1752
+    },
+    {
+      "path": "scripts/extract_from_text.py",
+      "sha": "b052e920ff9b0d1ba65ff81d2bae26427bfb7c11",
+      "size": 3490
+    },
+    {
+      "path": "scripts/overlay_labels.py",
+      "sha": "41170038d6473cbfabf631b5595d83bd443594b1",
+      "size": 4268
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "entries": {
+    "001": {
+      "comment": "【NPC-姓名】隐性触发设定",
+      "disable": false,
+      "constant": true,
+      "position": 1,
+      "role": 0,
+      "depth": 5,
+      "order": 9000,
+      "probability": 100,
+      "key": ["角色名", "角色名"],
+      "keysecondary": ["触发动作"],
+      "content": "仅{{user}}主动[触发动作]时才能告知——\n角色名[完整隐藏信息描述]。\n当[触发条件满足]时，角色名的反应是[符合角色性格的行为反应]。",
+      "uid": "001"
+    }
+  }
+}

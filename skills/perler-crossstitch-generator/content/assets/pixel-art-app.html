@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼豆十字绣图纸生成器</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-info {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .main-content {
+            display: flex;
+            min-height: calc(100vh - 100px);
+        }
+
+        .toolbar {
+            width: 60px;
+            background: #f8f9fa;
+            border-right: 1px solid #e0e0e0;
+            padding: 15px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .tool-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .canvas-area {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f0f2f5;
+        }
+
+        .canvas-wrapper {
+            position: relative;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            max-width: 100%;
+            max-height: calc(100vh - 200px);
+        }
+
+        #pixelCanvas {
+            display: block;
+            cursor: crosshair;
+        }
+
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+            background: white;
+        }
+
+        .upload-area:hover {
+            background: #f0f4ff;
+            border-color: #764ba2;
+        }
+
+        .upload-area.dragover {
+            background: #e8ecff;
+            transform: scale(1.02);
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            width: 320px;
+            background: white;
+            border-left: 1px solid #e0e0e0;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 100px);
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .setting-label {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .setting-value {
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            min-width: 40px;
+            text-align: right;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 3px;
+            margin-top: 10px;
+        }
+
+        .color-swatch {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .color-swatch:hover {
+            transform: scale(1.2);
+            z-index: 1;
+        }
+
+        .color-swatch.selected {
+            border-color: #333;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #667eea;
+        }
+
+        .current-color {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .current-color-preview {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+
+        .current-color-info {
+            flex: 1;
+        }
+
+        .current-color-code {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .current-color-hex {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .stats {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 13px;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+
+        .color-legend {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 5px;
+            background: #f8f9fa;
+        }
+
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .legend-info {
+            flex: 1;
+        }
+
+        .legend-code {
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .legend-count {
+            font-size: 11px;
+            color: #888;
+        }
+
+        .zoom-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .zoom-btn {
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .zoom-value {
+            font-size: 13px;
+            font-weight: 600;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .mode-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .mode-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .palette-select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .grid-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            pointer-events: none;
+        }
+
+        .size-presets {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .size-preset {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .size-preset:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .size-preset.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="2" y="2" width="8" height="8" fill="#FF6B6B"/>
+                    <rect x="12" y="2" width="8" height="8" fill="#4ECDC4"/>
+                    <rect x="22" y="2" width="8" height="8" fill="#FFE66D"/>
+                    <rect x="2" y="12" width="8" height="8" fill="#95E1D3"/>
+                    <rect x="12" y="12" width="8" height="8" fill="#F38181"/>
+                    <rect x="22" y="12" width="8" height="8" fill="#AA96DA"/>
+                    <rect x="2" y="22" width="8" height="8" fill="#FCBAD3"/>
+                    <rect x="12" y="22" width="8" height="8" fill="#A8D8EA"/>
+                    <rect x="22" y="22" width="8" height="8" fill="#C3AED6"/>
+                </svg>
+                拼豆十字绣图纸生成器
+            </h1>
+            <div class="header-info">
+                <span id="canvasSize">32 x 32</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="toolbar">
+                <button class="tool-btn active" data-tool="brush" title="画笔 (B)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                        <path d="M2 2l7.586 7.586"></path>
+                    </svg>
+                </button>
+                <button class="tool-btn" data-tool="eraser" title="橡皮 (E)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 20H7L3 16l9-9 8 8-2.5 2.5"></path>
+                        <path d="M6 11l8 8"></path>
+                    </svg>
+                </button>
+                <button class="tool-btn" data-tool="fill" title="填充 (G)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 11l-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11z"></path>
+                        <path d="M5 2l5 5"></path>
+                        <path d="M2 13h15"></path>
+                        <path d="M22 20c0 1.1-1.3 2-2 2s-2-.9-2-2c0-1.4 2-3 2-3s2 1.6 2 3z"></path>
+                    </svg>
+                </button>
+                <button class="tool-btn" data-tool="eyedropper" title="吸管 (I)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 22l1-1h3l9-9"></path>
+                        <path d="M3 21v-3l9-9"></path>
+                        <path d="M14.5 5.5l4 4"></path>
+                        <path d="M18.5 1.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                </button>
+                <button class="tool-btn" data-tool="replace" title="颜色替换 (R)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 3v18"></path>
+                        <path d="M3 12h18"></path>
+                    </svg>
+                </button>
+                <div style="flex: 1;"></div>
+                <button class="tool-btn" id="undoBtn" title="撤销 (Ctrl+Z)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 7v6h6"></path>
+                        <path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path>
+                    </svg>
+                </button>
+                <button class="tool-btn" id="redoBtn" title="重做 (Ctrl+Y)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 7v6h-6"></path>
+                        <path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3L21 13"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="canvas-area">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="1.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <p style="font-size: 16px; color: #666; margin-bottom: 10px;">拖拽图片到这里或点击上传</p>
+                    <p style="font-size: 13px; color: #999;">支持 JPG, PNG, GIF, WebP 格式</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                </div>
+
+                <div class="canvas-wrapper hidden" id="canvasWrapper">
+                    <canvas id="pixelCanvas"></canvas>
+                </div>
+
+                <div class="zoom-controls" id="zoomControls" style="margin-top: 15px;">
+                    <button class="zoom-btn" id="zoomOut">-</button>
+                    <span class="zoom-value" id="zoomValue">100%</span>
+                    <button class="zoom-btn" id="zoomIn">+</button>
+                    <button class="btn btn-secondary" id="fitBtn" style="width: auto; padding: 8px 15px; margin-left: 15px;">适应</button>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="section">
+                    <div class="section-title">当前颜色</div>
+                    <div class="current-color">
+                        <div class="current-color-preview" id="currentColorPreview" style="background: #000000;"></div>
+                        <div class="current-color-info">
+                            <div class="current-color-code" id="currentColorCode">BK</div>
+                            <div class="current-color-hex" id="currentColorHex">#000000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">工具设置</div>
+                    <div class="mode-toggle">
+                        <button class="mode-btn active" data-mode="edit">编辑模式</button>
+                        <button class="mode-btn" data-mode="preview">预览模式</button>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">图像设置</div>
+                    <div class="setting-row">
+                        <span class="setting-label">图纸尺寸</span>
+                    </div>
+                    <div class="size-presets">
+                        <span class="size-preset" data-size="16">16x16</span>
+                        <span class="size-preset" data-size="32" class="active">32x32</span>
+                        <span class="size-preset" data-size="48">48x48</span>
+                        <span class="size-preset" data-size="64">64x64</span>
+                        <span class="size-preset" data-size="96">96x96</span>
+                        <span class="size-preset" data-size="128">128x128</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">图像调整</div>
+                    <div class="setting-row">
+                        <span class="setting-label">颜色数量</span>
+                        <span class="setting-value" id="colorCountValue">64</span>
+                    </div>
+                    <input type="range" id="colorCount" min="8" max="256" value="64" step="8">
+
+                    <div class="setting-row" style="margin-top: 15px;">
+                        <span class="setting-label">缩放模式</span>
+                    </div>
+                    <select id="scaleMode" class="palette-select">
+                        <option value="nearest">最近邻（像素风）</option>
+                        <option value="bilinear">双线性（平滑）</option>
+                        <option value="bicubic">双三次（高清）</option>
+                    </select>
+
+                    <div class="setting-row">
+                        <span class="setting-label">抖动处理</span>
+                    </div>
+                    <select id="ditherMode" class="palette-select">
+                        <option value="none">无</option>
+                        <option value="floyd-steinberg" selected>Floyd-Steinberg</option>
+                    </select>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">色库选择</div>
+                    <select id="paletteSelect" class="palette-select">
+                        <option value="perler">Perler 标准 (62色)</option>
+                        <option value="dmc">DMC 十字绣 (450色)</option>
+                        <option value="custom">自定义色库</option>
+                    </select>
+                    <button class="btn btn-secondary" id="importPalette">导入 CSV 色库</button>
+                    <input type="file" id="csvInput" accept=".csv" style="display: none;">
+                </div>
+
+                <div class="section">
+                    <div class="section-title">颜色图例</div>
+                    <div class="color-legend" id="colorLegend"></div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">图纸统计</div>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span class="stat-label">画布尺寸</span>
+                            <span class="stat-value" id="statSize">32 x 32</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">总格数</span>
+                            <span class="stat-value" id="statTotal">1024</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">使用颜色</span>
+                            <span class="stat-value" id="statColors">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">导出选项</div>
+                    <button class="btn btn-primary" id="exportPDF">导出 PDF 图纸</button>
+                    <button class="btn btn-secondary" id="exportCSV">导出 CSV 数据</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 拼豆十字绣图纸生成器 - 主应用脚本
+        class PixelPatternApp {
+            constructor() {
+                this.canvas = document.getElementById('pixelCanvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.pixelData = null;
+                this.gridSize = 32;
+                this.currentColor = '#000000';
+                this.currentPalette = [];
+                this.paletteType = 'perler';
+                this.zoom = 1;
+                this.isDrawing = false;
+                this.currentTool = 'brush';
+                this.history = [];
+                this.historyIndex = -1;
+                this.cellSize = 20;
+
+                this.init();
+            }
+
+            async init() {
+                this.loadPalettes();
+                this.setupEventListeners();
+                this.createEmptyCanvas();
+            }
+
+            async loadPalettes() {
+                // 加载内置色库
+                const perlerResponse = await fetch('data:image/json;base64,' + btoa(JSON.stringify({
+                    colors: [
+                        {code: "WH", name: "白色", hex: "#FFFFFF"},
+                        {code: "BK", name: "黑色", hex: "#000000"},
+                        {code: "RD", name: "红色", hex: "#FF0000"},
+                        {code: "OR", name: "橙色", hex: "#FF6600"},
+                        {code: "YL", name: "黄色", hex: "#FFFF00"},
+                        {code: "GR", name: "绿色", hex: "#00FF00"},
+                        {code: "BL", name: "蓝色", hex: "#0000FF"},
+                        {code: "PR", name: "紫色", hex: "#800080"},
+                        {code: "PK", name: "粉色", hex: "#FF69B4"},
+                        {code: "BR", name: "棕色", hex: "#8B4513"},
+                        {code: "GY", name: "灰色", hex: "#808080"}
+                    ]
+                })));
+
+                // 使用内嵌色库
+                this.currentPalette = this.getDefaultPalette();
+                this.renderPalette();
+            }
+
+            getDefaultPalette() {
+                return [
+                    {code: "WH", name: "白色", hex: "#FFFFFF"},
+                    {code: "BK", name: "黑色", hex: "#000000"},
+                    {code: "RD", name: "红色", hex: "#FF0000"},
+                    {code: "OR", name: "橙色", hex: "#FF6600"},
+                    {code: "YL", name: "黄色", hex: "#FFFF00"},
+                    {code: "LG", name: "浅绿", hex: "#90EE90"},
+                    {code: "GR", name: "绿色", hex: "#00FF00"},
+                    {code: "DG", name: "深绿", hex: "#008000"},
+                    {code: "TQ", name: "青色", hex: "#00CED1"},
+                    {code: "BL", name: "蓝色", hex: "#0000FF"},
+                    {code: "NB", name: "海军蓝", hex: "#000080"},
+                    {code: "PR", name: "紫色", hex: "#800080"},
+                    {code: "PK", name: "粉色", hex: "#FF69B4"},
+                    {code: "RP", name: "玫红", hex: "#FF1493"},
+                    {code: "BR", name: "棕色", hex: "#8B4513"},
+                    {code: "TN", name: "棕褐", hex: "#D2B48C"},
+                    {code: "GY", name: "灰色", hex: "#808080"},
+                    {code: "SG", name: "银灰", hex: "#C0C0C0"},
+                    {code: "CR", name: "米色", hex: "#F5F5DC"},
+                    {code: "PK1", name: "浅粉", hex: "#FFB6C1"},
+                    {code: "PK2", name: "中粉", hex: "#FF69B4"},
+                    {code: "RD1", name: "浅红", hex: "#FF6B6B"},
+                    {code: "RD2", name: "中红", hex: "#E60000"},
+                    {code: "OR1", name: "浅橙", hex: "#FFA500"},
+                    {code: "YL1", name: "浅黄", hex: "#FFFACD"},
+                    {code: "YL2", name: "中黄", hex: "#FFD700"}
+                ];
+            }
+
+            renderPalette() {
+                const paletteContainer = document.querySelector('.color-palette') || this.createPaletteContainer();
+                paletteContainer.innerHTML = '';
+
+                this.currentPalette.forEach(color => {
+                    const swatch = document.createElement('div');
+                    swatch.className = 'color-swatch';
+                    swatch.style.background = color.hex;
+                    swatch.title = `${color.code} - ${color.name}`;
+                    swatch.dataset.hex = color.hex;
+                    swatch.dataset.code = color.code;
+
+                    if (color.hex.toUpperCase() === this.currentColor.toUpperCase()) {
+                        swatch.classList.add('selected');
+                    }
+
+                    swatch.addEventListener('click', () => this.selectColor(color));
+                    paletteContainer.appendChild(swatch);
+                });
+            }
+
+            createPaletteContainer() {
+                const container = document.createElement('div');
+                container.className = 'color-palette';
+                document.querySelector('.sidebar .section:first-child').appendChild(container);
+                return container;
+            }
+
+            selectColor(color) {
+                this.currentColor = color.hex;
+                document.getElementById('currentColorPreview').style.background = color.hex;
+                document.getElementById('currentColorCode').textContent = color.code;
+                document.getElementById('currentColorHex').textContent = color.hex;
+
+                document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('selected'));
+                document.querySelector(`.color-swatch[data-hex="${color.hex}"]`)?.classList.add('selected');
+            }
+
+            setupEventListeners() {
+                // 上传区域
+                const uploadArea = document.getElementById('uploadArea');
+                const fileInput = document.getElementById('fileInput');
+
+                uploadArea.addEventListener('click', () => fileInput.click());
+                uploadArea.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    uploadArea.classList.add('dragover');
+                });
+                uploadArea.addEventListener('dragleave', () => {
+                    uploadArea.classList.remove('dragover');
+                });
+                uploadArea.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    uploadArea.classList.remove('dragover');
+                    const file = e.dataTransfer.files[0];
+                    if (file && file.type.startsWith('image/')) {
+                        this.processImage(file);
+                    }
+                });
+                fileInput.addEventListener('change', (e) => {
+                    if (e.target.files[0]) {
+                        this.processImage(e.target.files[0]);
+                    }
+                });
+
+                // 工具按钮
+                document.querySelectorAll('.tool-btn[data-tool]').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.currentTool = btn.dataset.tool;
+                        document.querySelectorAll('.tool-btn[data-tool]').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                    });
+                });
+
+                // 撤销/重做
+                document.getElementById('undoBtn').addEventListener('click', () => this.undo());
+                document.getElementById('redoBtn').addEventListener('click', () => this.redo());
+
+                // 缩放
+                document.getElementById('zoomIn').addEventListener('click', () => this.setZoom(this.zoom + 0.25));
+                document.getElementById('zoomOut').addEventListener('click', () => this.setZoom(this.zoom - 0.25));
+                document.getElementById('fitBtn').addEventListener('click', () => this.fitToView());
+
+                // 尺寸预设
+                document.querySelectorAll('.size-preset').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.gridSize = parseInt(btn.dataset.size);
+                        document.querySelectorAll('.size-preset').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        this.createEmptyCanvas();
+                    });
+                });
+
+                // 颜色数量
+                document.getElementById('colorCount').addEventListener('input', (e) => {
+                    document.getElementById('colorCountValue').textContent = e.target.value;
+                });
+
+                // 色库选择
+                document.getElementById('paletteSelect').addEventListener('change', (e) => {
+                    this.paletteType = e.target.value;
+                    // 切换色库
+                });
+
+                // CSV导入
+                document.getElementById('importPalette').addEventListener('click', () => {
+                    document.getElementById('csvInput').click();
+                });
+                document.getElementById('csvInput').addEventListener('change', (e) => {
+                    if (e.target.files[0]) {
+                        this.importCSV(e.target.files[0]);
+                    }
+                });
+
+                // 导出
+                document.getElementById('exportPDF').addEventListener('click', () => this.exportPDF());
+                document.getElementById('exportCSV').addEventListener('click', () => this.exportCSV());
+
+                // 画布事件
+                this.canvas.addEventListener('mousedown', (e) => this.startDrawing(e));
+                this.canvas.addEventListener('mousemove', (e) => this.draw(e));
+                this.canvas.addEventListener('mouseup', () => this.stopDrawing());
+                this.canvas.addEventListener('mouseleave', () => this.stopDrawing());
+
+                // 键盘快捷键
+                document.addEventListener('keydown', (e) => {
+                    if (e.ctrlKey && e.key === 'z') {
+                        e.preventDefault();
+                        this.undo();
+                    } else if (e.ctrlKey && e.key === 'y') {
+                        e.preventDefault();
+                        this.redo();
+                    } else if (e.key === 'b') {
+                        this.setTool('brush');
+                    } else if (e.key === 'e') {
+                        this.setTool('eraser');
+                    } else if (e.key === 'g') {
+                        this.setTool('fill');
+                    } else if (e.key === 'i') {
+                        this.setTool('eyedropper');
+                    }
+                });
+            }
+
+            setTool(tool) {
+                this.currentTool = tool;
+                document.querySelectorAll('.tool-btn[data-tool]').forEach(b => b.classList.remove('active'));
+                document.querySelector(`.tool-btn[data-tool="${tool}"]`)?.classList.add('active');
+            }
+
+            async processImage(file) {
+                const img = new Image();
+                img.onload = () => {
+                    const tempCanvas = document.createElement('canvas');
+                    const tempCtx = tempCanvas.getContext('2d');
+
+                    tempCanvas.width = this.gridSize;
+                    tempCanvas.height = this.gridSize;
+
+                    const scaleMode = document.getElementById('scaleMode').value;
+                    tempCtx.imageSmoothingEnabled = scaleMode !== 'nearest';
+                    tempCtx.drawImage(img, 0, 0, this.gridSize, this.gridSize);
+
+                    // 获取并处理像素数据
+                    const imageData = tempCtx.getImageData(0, 0, this.gridSize, this.gridSize);
+                    const colorCount = parseInt(document.getElementById('colorCount').value);
+                    const ditherMode = document.getElementById('ditherMode').value;
+
+                    this.pixelData = this.quantizeColors(imageData, colorCount, ditherMode);
+
+                    // 显示画布
+                    document.getElementById('uploadArea').classList.add('hidden');
+                    document.getElementById('canvasWrapper').classList.remove('hidden');
+
+                    this.renderCanvas();
+                    this.saveHistory();
+                    this.updateStats();
+                    this.updateLegend();
+                };
+                img.src = URL.createObjectURL(file);
+            }
+
+            quantizeColors(imageData, maxColors, ditherMethod) {
+                const data = imageData.data;
+                const width = imageData.width;
+                const height = imageData.height;
+
+                // 收集颜色
+                const colorMap = new Map();
+                for (let i = 0; i < data.length; i += 4) {
+                    const r = data[i];
+                    const g = data[i + 1];
+                    const b = data[i + 2];
+                    const hex = this.rgbToHex(r, g, b);
+                    colorMap.set(hex, (colorMap.get(hex) || 0) + 1);
+                }
+
+                // 选择主要颜色
+                const sortedColors = [...colorMap.entries()]
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, maxColors)
+                    .map(([hex]) => hex);
+
+                // 量化像素
+                const pixels = [];
+                for (let y = 0; y < height; y++) {
+                    pixels[y] = [];
+                    for (let x = 0; x < width; x++) {
+                        const i = (y * width + x) * 4;
+                        let r = data[i];
+                        let g = data[i + 1];
+                        let b = data[i + 2];
+
+                        if (ditherMethod === 'floyd-steinberg') {
+                            const oldPixel = {r, g, b};
+                            const newColor = this.findClosestColor(oldPixel, sortedColors);
+                            const newRgb = this.hexToRgb(newColor);
+                            pixels[y][x] = newColor;
+
+                            const error = {r: oldPixel.r - newRgb.r, g: oldPixel.g - newRgb.g, b: oldPixel.b - newRgb.b};
+
+                            this.addDitherError(data, width, height, x + 1, y, error, 7 / 16);
+                            this.addDitherError(data, width, height, x - 1, y + 1, error, 3 / 16);
+                            this.addDitherError(data, width, height, x, y + 1, error, 5 / 16);
+                            this.addDitherError(data, width, height, x + 1, y + 1, error, 1 / 16);
+                        } else {
+                            pixels[y][x] = this.findClosestColor({r, g, b}, sortedColors);
+                        }
+                    }
+                }
+
+                return pixels;
+            }
+
+            addDitherError(data, width, height, x, y, error, factor) {
+                if (x < 0 || x >= width || y < 0 || y >= height) return;
+                const i = (y * width + x) * 4;
+                data[i] = Math.max(0, Math.min(255, data[i] + error.r * factor));
+                data[i + 1] = Math.max(0, Math.min(255, data[i + 1] + error.g * factor));
+                data[i + 2] = Math.max(0, Math.min(255, data[i + 2] + error.b * factor));
+            }
+
+            findClosestColor(pixel, palette) {
+                let closest = palette[0];
+                let minDist = Infinity;
+
+                for (const hex of palette) {
+                    const rgb = this.hexToRgb(hex);
+                    const dist = Math.sqrt(
+                        Math.pow(pixel.r - rgb.r, 2) +
+                        Math.pow(pixel.g - rgb.g, 2) +
+                        Math.pow(pixel.b - rgb.b, 2)
+                    );
+                    if (dist < minDist) {
+                        minDist = dist;
+                        closest = hex;
+                    }
+                }
+                return closest;
+            }
+
+            rgbToHex(r, g, b) {
+                return '#' + [r, g, b].map(x => {
+                    const hex = x.toString(16);
+                    return hex.length === 1 ? '0' + hex : hex;
+                }).join('');
+            }
+
+            hexToRgb(hex) {
+                const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                return result ? {
+                    r: parseInt(result[1], 16),
+                    g: parseInt(result[2], 16),
+                    b: parseInt(result[3], 16)
+                } : {r: 255, g: 255, b: 255};
+            }
+
+            createEmptyCanvas() {
+                this.pixelData = [];
+                for (let y = 0; y < this.gridSize; y++) {
+                    this.pixelData[y] = [];
+                    for (let x = 0; x < this.gridSize; x++) {
+                        this.pixelData[y][x] = '#FFFFFF';
+                    }
+                }
+                this.renderCanvas();
+                this.updateStats();
+                this.updateLegend();
+            }
+
+            renderCanvas() {
+                this.canvas.width = this.gridSize;
+                this.canvas.height = this.gridSize;
+                this.canvas.style.width = `${this.gridSize * this.cellSize * this.zoom}px`;
+                this.canvas.style.height = `${this.gridSize * this.cellSize * this.zoom}px`;
+
+                this.ctx.imageSmoothingEnabled = false;
+
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        const color = this.pixelData[y][x] || '#FFFFFF';
+                        this.ctx.fillStyle = color;
+                        this.ctx.fillRect(x, y, 1, 1);
+                    }
+                }
+
+                // 绘制网格
+                this.ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+                this.ctx.lineWidth = 0.05;
+                for (let i = 0; i <= this.gridSize; i++) {
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(i, 0);
+                    this.ctx.lineTo(i, this.gridSize);
+                    this.ctx.stroke();
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(0, i);
+                    this.ctx.lineTo(this.gridSize, i);
+                    this.ctx.stroke();
+                }
+
+                document.getElementById('canvasSize').textContent = `${this.gridSize} x ${this.gridSize}`;
+            }
+
+            setZoom(level) {
+                this.zoom = Math.max(0.25, Math.min(4, level));
+                document.getElementById('zoomValue').textContent = `${Math.round(this.zoom * 100)}%`;
+                this.renderCanvas();
+            }
+
+            fitToView() {
+                this.setZoom(1);
+            }
+
+            getCanvasCoords(e) {
+                const rect = this.canvas.getBoundingClientRect();
+                const scaleX = this.canvas.width / rect.width;
+                const scaleY = this.canvas.height / rect.height;
+                return {
+                    x: Math.floor((e.clientX - rect.left) * scaleX),
+                    y: Math.floor((e.clientY - rect.top) * scaleY)
+                };
+            }
+
+            startDrawing(e) {
+                this.isDrawing = true;
+                this.draw(e);
+            }
+
+            draw(e) {
+                if (!this.isDrawing || !this.pixelData) return;
+
+                const {x, y} = this.getCanvasCoords(e);
+                if (x < 0 || x >= this.gridSize || y < 0 || y >= this.gridSize) return;
+
+                switch (this.currentTool) {
+                    case 'brush':
+                        this.pixelData[y][x] = this.currentColor;
+                        break;
+                    case 'eraser':
+                        this.pixelData[y][x] = '#FFFFFF';
+                        break;
+                    case 'eyedropper':
+                        const color = this.pixelData[y][x];
+                        const paletteItem = this.currentPalette.find(p => p.hex.toUpperCase() === color.toUpperCase());
+                        if (paletteItem) {
+                            this.selectColor(paletteItem);
+                        }
+                        break;
+                    case 'fill':
+                        this.floodFill(x, y, this.currentColor);
+                        this.isDrawing = false;
+                        break;
+                    case 'replace':
+                        const targetColor = this.pixelData[y][x];
+                        this.replaceColor(targetColor, this.currentColor);
+                        this.isDrawing = false;
+                        break;
+                }
+
+                this.renderCanvas();
+                this.updateStats();
+                this.updateLegend();
+            }
+
+            stopDrawing() {
+                if (this.isDrawing && (this.currentTool === 'brush' || this.currentTool === 'eraser')) {
+                    this.saveHistory();
+                }
+                this.isDrawing = false;
+            }
+
+            floodFill(startX, startY, newColor) {
+                const targetColor = this.pixelData[startY][startX];
+                if (targetColor === newColor) return;
+
+                const stack = [[startX, startY]];
+                const visited = new Set();
+
+                while (stack.length > 0) {
+                    const [x, y] = stack.pop();
+                    const key = `${x},${y}`;
+
+                    if (visited.has(key)) continue;
+                    if (x < 0 || x >= this.gridSize || y < 0 || y >= this.gridSize) continue;
+                    if (this.pixelData[y][x] !== targetColor) continue;
+
+                    visited.add(key);
+                    this.pixelData[y][x] = newColor;
+
+                    stack.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]);
+                }
+
+                this.saveHistory();
+            }
+
+            replaceColor(oldColor, newColor) {
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        if (this.pixelData[y][x] === oldColor) {
+                            this.pixelData[y][x] = newColor;
+                        }
+                    }
+                }
+                this.saveHistory();
+            }
+
+            saveHistory() {
+                const state = JSON.stringify(this.pixelData);
+                this.history = this.history.slice(0, this.historyIndex + 1);
+                this.history.push(state);
+                this.historyIndex = this.history.length - 1;
+                if (this.history.length > 50) {
+                    this.history.shift();
+                    this.historyIndex--;
+                }
+            }
+
+            undo() {
+                if (this.historyIndex > 0) {
+                    this.historyIndex--;
+                    this.pixelData = JSON.parse(this.history[this.historyIndex]);
+                    this.renderCanvas();
+                    this.updateStats();
+                    this.updateLegend();
+                }
+            }
+
+            redo() {
+                if (this.historyIndex < this.history.length - 1) {
+                    this.historyIndex++;
+                    this.pixelData = JSON.parse(this.history[this.historyIndex]);
+                    this.renderCanvas();
+                    this.updateStats();
+                    this.updateLegend();
+                }
+            }
+
+            updateStats() {
+                if (!this.pixelData) return;
+
+                const colors = new Set();
+                let total = 0;
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        if (this.pixelData[y][x] !== '#FFFFFF') {
+                            colors.add(this.pixelData[y][x]);
+                        }
+                        total++;
+                    }
+                }
+
+                document.getElementById('statSize').textContent = `${this.gridSize} x ${this.gridSize}`;
+                document.getElementById('statTotal').textContent = total;
+                document.getElementById('statColors').textContent = colors.size;
+            }
+
+            updateLegend() {
+                if (!this.pixelData) return;
+
+                const stats = new Map();
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        const color = this.pixelData[y][x] || '#FFFFFF';
+                        stats.set(color, (stats.get(color) || 0) + 1);
+                    }
+                }
+
+                const sorted = Array.from(stats.entries())
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 20);
+
+                const legend = document.getElementById('colorLegend');
+                legend.innerHTML = '';
+
+                sorted.forEach(([color, count]) => {
+                    const item = document.createElement('div');
+                    item.className = 'legend-item';
+
+                    const paletteItem = this.currentPalette.find(p => p.hex.toUpperCase() === color.toUpperCase());
+                    const code = paletteItem ? paletteItem.code : color;
+
+                    item.innerHTML = `
+                        <div class="legend-color" style="background: ${color}"></div>
+                        <div class="legend-info">
+                            <div class="legend-code">${code}</div>
+                            <div class="legend-count">${count} 颗</div>
+                        </div>
+                    `;
+                    legend.appendChild(item);
+                });
+            }
+
+            async importCSV(file) {
+                const text = await file.text();
+                const lines = text.split('\n');
+                const colors = [];
+
+                lines.forEach(line => {
+                    const parts = line.split(',');
+                    if (parts.length >= 2) {
+                        colors.push({
+                            code: parts[0].trim(),
+                            name: parts[1].trim(),
+                            hex: parts[2]?.trim() || '#000000'
+                        });
+                    }
+                });
+
+                this.currentPalette = colors;
+                this.paletteType = 'custom';
+                this.renderPalette();
+            }
+
+            async exportPDF() {
+                if (!this.pixelData) return;
+
+                const {jsPDF} = window.jspdf;
+                const doc = new jsPDF({
+                    orientation: 'landscape',
+                    unit: 'mm',
+                    format: 'a4'
+                });
+
+                const pageWidth = 297;
+                const pageHeight = 210;
+                const margin = 15;
+                const titleHeight = 20;
+
+                // 标题
+                doc.setFontSize(20);
+                doc.setFont('helvetica', 'bold');
+                doc.text('拼豆图纸', pageWidth / 2, margin + 8, {align: 'center'});
+
+                // 信息
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'normal');
+                doc.text(`尺寸: ${this.gridSize} x ${this.gridSize}`, margin, margin + 15);
+                doc.text(`日期: ${new Date().toLocaleDateString()}`, pageWidth - margin, margin + 15, {align: 'right'});
+
+                // 画布区域
+                const canvasWidth = pageWidth - margin * 2 - 60;
+                const canvasHeight = pageHeight - margin * 2 - titleHeight;
+                const cellSize = Math.min(canvasWidth / this.gridSize, canvasHeight / this.gridSize);
+
+                const startX = margin;
+                const startY = margin + titleHeight;
+
+                // 绘制网格
+                doc.setDrawColor(200, 200, 200);
+                doc.setLineWidth(0.1);
+                for (let i = 0; i <= this.gridSize; i++) {
+                    doc.line(startX + i * cellSize, startY, startX + i * cellSize, startY + this.gridSize * cellSize);
+                    doc.line(startX, startY + i * cellSize, startX + this.gridSize * cellSize, startY + i * cellSize);
+                }
+
+                // 绘制像素
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        const color = this.pixelData[y][x] || '#FFFFFF';
+                        const rgb = this.hexToRgb(color);
+
+                        doc.setFillColor(rgb.r, rgb.g, rgb.b);
+                        doc.rect(
+                            startX + x * cellSize,
+                            startY + y * cellSize,
+                            cellSize,
+                            cellSize,
+                            'F'
+                        );
+
+                        doc.setDrawColor(180, 180, 180);
+                        doc.setLineWidth(0.05);
+                        doc.rect(
+                            startX + x * cellSize,
+                            startY + y * cellSize,
+                            cellSize,
+                            cellSize,
+                            'S'
+                        );
+                    }
+                }
+
+                // 图例
+                const legendX = pageWidth - margin - 55;
+                let legendY = startY + 5;
+
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'bold');
+                doc.text('颜色图例', legendX, legendY);
+                legendY += 8;
+
+                const stats = this.getColorStats();
+                stats.slice(0, 15).forEach(({color, count}) => {
+                    const paletteItem = this.currentPalette.find(p => p.hex.toUpperCase() === color.toUpperCase());
+                    const code = paletteItem ? paletteItem.code : color.substring(1, 3);
+                    const rgb = this.hexToRgb(color);
+
+                    doc.setFillColor(rgb.r, rgb.g, rgb.b);
+                    doc.rect(legendX, legendY - 4, 5, 5, 'F');
+                    doc.setDrawColor(100, 100, 100);
+                    doc.setLineWidth(0.2);
+                    doc.rect(legendX, legendY - 4, 5, 5, 'S');
+
+                    doc.setFontSize(7);
+                    doc.setFont('helvetica', 'normal');
+                    doc.text(`${code}`, legendX + 7, legendY);
+                    doc.text(`${count}`, legendX + 25, legendY);
+
+                    legendY += 6;
+                });
+
+                // 统计
+                legendY += 5;
+                doc.setFontSize(9);
+                doc.setFont('helvetica', 'bold');
+                const total = this.gridSize * this.gridSize;
+                doc.text(`总计: ${total} 颗`, legendX, legendY);
+                doc.text(`颜色: ${stats.length} 种`, legendX, legendY + 5);
+
+                doc.save('pattern.pdf');
+            }
+
+            getColorStats() {
+                const stats = new Map();
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        const color = this.pixelData[y][x] || '#FFFFFF';
+                        stats.set(color, (stats.get(color) || 0) + 1);
+                    }
+                }
+                return Array.from(stats.entries())
+                    .map(([color, count]) => ({color, count}))
+                    .sort((a, b) => b.count - a.count);
+            }
+
+            exportCSV() {
+                if (!this.pixelData) return;
+
+                const lines = ['X,Y,Color,Code'];
+                for (let y = 0; y < this.gridSize; y++) {
+                    for (let x = 0; x < this.gridSize; x++) {
+                        const color = this.pixelData[y][x] || '#FFFFFF';
+                        const paletteItem = this.currentPalette.find(p => p.hex.toUpperCase() === color.toUpperCase());
+                        const code = paletteItem ? paletteItem.code : color;
+                        lines.push(`${x + 1},${y + 1},${color},${code}`);
+                    }
+                }
+
+                const blob = new Blob([lines.join('\n')], {type: 'text/csv'});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'pattern.csv';
+                a.click();
+                URL.revokeObjectURL(url);
+            }
+        }
+
+        // 初始化应用
+        document.addEventListener('DOMContentLoaded', () => {
+            new PixelPatternApp();
+        });
+    </script>
+</body>
+</html>

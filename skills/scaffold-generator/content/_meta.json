@@ -1,0 +1,28 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-14",
+  "description": "Generates software project basic scaffolding with support for multiple programming languages and frameworks",
+  "id": 387393657193457,
+  "languages": [
+    "python",
+    "javascript",
+    "typescript",
+    "java",
+    "go",
+    "rust",
+    "csharp",
+    "ruby",
+    "php"
+  ],
+  "name": "scaffold-generator",
+  "platform": "minimax",
+  "status": "active",
+  "tags": [
+    "scaffold",
+    "project-generator",
+    "framework",
+    "development"
+  ],
+  "updated_at": 1776133057864,
+  "version": "1.0.0"
+}

@@ -1,0 +1,130 @@
+{
+  "_comment": "表情含义列表模板 - 用于规划和记录表情包内容",
+  "project_name": "项目名称",
+  "total_count": 16,
+  "meanings": [
+    {
+      "index": "01",
+      "keyword": "开心",
+      "description": "非常开心地笑",
+      "action": "眯眼大笑",
+      "suggested_frames": 8
+    },
+    {
+      "index": "02",
+      "keyword": "生气",
+      "description": "气呼呼的样子",
+      "action": "叉腰瞪眼",
+      "suggested_frames": 6
+    },
+    {
+      "index": "03",
+      "keyword": "难过",
+      "description": "委屈伤心的表情",
+      "action": "低头流泪",
+      "suggested_frames": 10
+    },
+    {
+      "index": "04",
+      "keyword": "惊讶",
+      "description": "震惊的表情",
+      "action": "瞪眼张嘴",
+      "suggested_frames": 6
+    },
+    {
+      "index": "05",
+      "keyword": "害羞",
+      "description": "脸红害羞",
+      "action": "捂脸扭头",
+      "suggested_frames": 8
+    },
+    {
+      "index": "06",
+      "keyword": "得意",
+      "description": "得意洋洋",
+      "action": "仰头叉腰",
+      "suggested_frames": 6
+    },
+    {
+      "index": "07",
+      "keyword": "点赞",
+      "description": "竖起大拇指",
+      "action": "伸出拇指",
+      "suggested_frames": 6
+    },
+    {
+      "index": "08",
+      "keyword": "加油",
+      "description": "握拳加油",
+      "action": "握拳举手",
+      "suggested_frames": 8
+    },
+    {
+      "index": "09",
+      "keyword": "OK",
+      "description": "比出OK手势",
+      "action": "OK手势",
+      "suggested_frames": 6
+    },
+    {
+      "index": "10",
+      "keyword": "比心",
+      "description": "双手比心",
+      "action": "双手爱心",
+      "suggested_frames": 8
+    },
+    {
+      "index": "11",
+      "keyword": "么么哒",
+      "description": "飞吻动作",
+      "action": "飞吻眨眼",
+      "suggested_frames": 10
+    },
+    {
+      "index": "12",
+      "keyword": "抓狂",
+      "description": "崩溃抓狂",
+      "action": "双手抓头",
+      "suggested_frames": 8
+    },
+    {
+      "index": "13",
+      "keyword": "困",
+      "description": "犯困想睡觉",
+      "action": "打哈欠",
+      "suggested_frames": 10
+    },
+    {
+      "index": "14",
+      "keyword": "无语",
+      "description": "无奈无语",
+      "action": "翻白眼",
+      "suggested_frames": 6
+    },
+    {
+      "index": "15",
+      "keyword": "委屈",
+      "description": "可怜巴巴",
+      "action": "瘪嘴看人",
+      "suggested_frames": 8
+    },
+    {
+      "index": "16",
+      "keyword": "嘚瑟",
+      "description": "得意地晃动",
+      "action": "摇摆身体",
+      "suggested_frames": 8
+    }
+  ],
+  "_additional_notes": "如需24张表情，可添加以下内容：",
+  "additional_16": [
+    {"index": "17", "keyword": "思考", "description": "认真思考"},
+    {"index": "18", "keyword": "发呆", "description": "放空发呆"},
+    {"index": "19", "keyword": "流汗", "description": "尴尬流汗"},
+    {"index": "20", "keyword": "吃货", "description": "看到美食"},
+    {"index": "21", "keyword": "爱你", "description": "表达爱意"},
+    {"index": "22", "keyword": "摸头", "description": "安慰摸头"},
+    {"index": "23", "keyword": "转圈", "description": "开心转圈"},
+    {"index": "24", "keyword": "撒花", "description": "庆祝撒花"}
+  ]
+}

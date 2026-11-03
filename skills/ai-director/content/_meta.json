@@ -1,0 +1,75 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "autonomous": true,
+    "end_to_end": true,
+    "no_human_required": true
+  },
+  "category": "creative",
+  "created_at": "2026-03-30",
+  "description": "AI短剧导演+摄影+剪辑师技能。当用户要求创作AI短剧、生成短视频、制作剧情视频、将剧本可视化为视频、制作故事短片、自动生成视频内容、或需要端到端AI视频创作时使用。触发短语包括：创作短剧、生成AI视频、制作短视频、剧本转视频、故事可视化、AI短片、自动剪辑、剧情生成视频等。",
+  "id": 383164559430231,
+  "input": {
+    "examples": [
+      "创作一个职场逆袭的AI短剧",
+      "根据这个剧本生成完整视频",
+      "把小说片段拍成短视频"
+    ],
+    "format": [
+      "剧本",
+      "剧情描述",
+      "故事大纲",
+      "分镜文字"
+    ]
+  },
+  "name": "ai-director",
+  "output": {
+    "delivery": [
+      "MP4视频",
+      "分镜PDF",
+      "角色设定集",
+      "完整项目文档"
+    ],
+    "format": [
+      "视频文件",
+      "分镜脚本",
+      "角色设定",
+      "制作文档"
+    ]
+  },
+  "platform": "minimax",
+  "skill_id": 2026033016,
+  "tags": [
+    "AI视频",
+    "短剧创作",
+    "视频生成",
+    "剧本可视化",
+    "自动化剪辑",
+    "AI导演"
+  ],
+  "tools_used": [
+    "image_synthesize",
+    "batch_image_to_video",
+    "gen_videos",
+    "batch_text_to_audio",
+    "images_understand",
+    "videos_understand",
+    "images_search_and_download",
+    "batch_web_search",
+    "render_mermaid",
+    "html_to_pdf"
+  ],
+  "updated_at": 1775099324361,
+  "version": "1.0",
+  "workflow_stages": [
+    "剧本分析",
+    "人物设计",
+    "场景设计",
+    "分镜创作",
+    "图像生成",
+    "视频生成",
+    "音频制作",
+    "后期剪辑",
+    "输出交付"
+  ]
+}

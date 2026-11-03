@@ -1,0 +1,413 @@
+<!-- 预印本科研动态日报 HTML模板参考 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>预印本科研动态日报 · 第010期 · 2026-04-16</title>
+  <style>
+    :root {
+      --primary: #1A5F3C;
+      --accent: #E84545;
+      --accent2: #F59E0B;
+      --bg: #F5F7FA;
+      --card: #FFFFFF;
+      --text: #2D3748;
+      --muted: #718096;
+      --border: #E2E8F0;
+      --tag-bg: #EBF8F1;
+      --tag-color: #1A5F3C;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+      background: #F5F7FA;
+      color: #2D3748;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #FFFFFF;
+    }
+    /* Banner */
+    .brand-banner {
+      background: linear-gradient(135deg, #1A5F3C 0%, #0D3D26 100%);
+      padding: 28px 24px 22px;
+      text-align: center;
+    }
+    .brand-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+    .brand-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.65);
+      margin-top: 4px;
+    }
+    .brand-tag {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 3px 12px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 20px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+    }
+    /* Issue bar */
+    .issue-bar {
+      background: #F7F9FC;
+      border-bottom: 1px solid #E2E8F0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #718096;
+    }
+    .issue-no {
+      font-weight: 600;
+      color: #1A5F3C;
+    }
+    /* Date section */
+    .date-section {
+      padding: 20px 24px 10px;
+      border-bottom: 2px solid #1A5F3C;
+    }
+    .date-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1A5F3C;
+    }
+    /* Stats bar */
+    .stats-bar {
+      display: flex;
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .stat-item {
+      flex: 1;
+      text-align: center;
+      padding: 12px 8px;
+      border-right: 1px solid #E2E8F0;
+    }
+    .stat-num {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1A5F3C;
+    }
+    /* TOC */
+    .toc-section {
+      padding: 16px 24px;
+      background: #F7FDF9;
+      border-bottom: 1px solid #E2E8F0;
+    }
+    /* Category header */
+    .cat-header {
+      padding: 14px 24px 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #E2E8F0;
+      margin-top: 8px;
+    }
+    .cat-icon {
+      width: 28px; height: 28px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cat-icon.review { background: #FEF3C7; }
+    .cat-icon.research { background: #EBF8F1; }
+    .cat-icon.tech { background: #EBF4FF; }
+    /* Paper card */
+    .paper-card {
+      margin: 12px 16px;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid #F0F4F8;
+      display: flex;
+      gap: 10px;
+    }
+    .card-num {
+      flex-shrink: 0;
+      width: 24px; height: 24px;
+      border-radius: 6px;
+      background: #1A5F3C;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1A2733;
+    }
+    .card-meta {
+      font-size: 11px;
+      color: #718096;
+    }
+    .card-badge {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .badge-biorxiv { background: #E0F2FE; color: #0369A1; }
+    .badge-medrxiv { background: #FEF9C3; color: #92400E; }
+    .card-body { padding: 12px 16px; }
+    .highlight-box {
+      background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+      border-left: 3px solid #1A5F3C;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #1A5F3C;
+      font-weight: 600;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #1A5F3C;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      margin-top: 10px;
+    }
+    .findings-list {
+      list-style: none;
+      padding: 0;
+    }
+    .findings-list li {
+      font-size: 13px;
+      color: #4A5568;
+      padding: 3px 0 3px 16px;
+      position: relative;
+    }
+    .findings-list li::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      color: #1A5F3C;
+      font-size: 9px;
+      top: 6px;
+    }
+    .method-row {
+      background: #F8FAFC;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+    .method-label {
+      font-weight: 700;
+      color: #1A5F3C;
+      margin-right: 6px;
+    }
+    .tags-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 12px;
+      background: #EBF8F1;
+      color: #1A5F3C;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .trend-section {
+      margin: 16px;
+      background: linear-gradient(135deg, #1A5F3C 0%, #0D3D26 100%);
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+    }
+    .trend-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .trend-dot {
+      flex-shrink: 0;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      font-size: 11px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .footer {
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 11px;
+      color: #718096;
+      border-top: 1px solid #E2E8F0;
+      background: #F7F9FC;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- Brand Banner -->
+  <div class="brand-banner">
+    <div class="brand-name">预印本科研动态日报</div>
+    <div class="brand-sub">bioRxiv · medRxiv · 全学科精选</div>
+    <div class="brand-tag">Preprint Daily · 科研最前沿</div>
+  </div>
+
+  <!-- Issue Bar -->
+  <div class="issue-bar">
+    <div><span class="issue-no">第 010 期</span> &nbsp;|&nbsp; 2026年04月16日 星期四</div>
+    <div>数据来源：bioRxiv + medRxiv</div>
+  </div>
+
+  <!-- Date Section -->
+  <div class="date-section">
+    <div class="date-title">2026-04-16 科研动态精选</div>
+    <div class="date-meta">覆盖学科：微生物学 · 免疫学 · 癌症生物学 · 生物信息学 · 神经科学 · 遗传学 · 组学技术 · 神经病学 · 蛋白质组学</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">8</div>
+      <div class="stat-label">精选文献</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">1</div>
+      <div class="stat-label">综述类</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5</div>
+      <div class="stat-label">研究类</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">2</div>
+      <div class="stat-label">技术/工具</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">9+</div>
+      <div class="stat-label">涵盖学科</div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc-section">
+    <div class="toc-title">本期目录</div>
+    <div class="toc-cat">
+      <span class="toc-cat-label">📖 综述类</span>
+      <span class="toc-items">文献标题</span>
+    </div>
+    <div class="toc-cat">
+      <span class="toc-cat-label">🔬 研究类</span>
+      <span class="toc-items">文献标题1 · 文献标题2 · 文献标题3</span>
+    </div>
+    <div class="toc-cat">
+      <span class="toc-cat-label">⚙️ 技术类</span>
+      <span class="toc-items">工具名称1 · 工具名称2</span>
+    </div>
+  </div>
+
+  <!-- ========== 综述类 ========== -->
+  <div class="cat-header">
+    <div class="cat-icon review">📖</div>
+    <div class="cat-name">综述类</div>
+    <div class="cat-count">N篇</div>
+  </div>
+
+  <!-- Paper Card -->
+  <div class="paper-card">
+    <div class="card-header">
+      <div class="card-num">01</div>
+      <div class="card-title-wrap">
+        <div class="card-title">
+          <a href="论文URL" target="_blank">论文中文标题</a>
+        </div>
+        <div class="card-title" style="font-weight:400;font-size:12px;color:#718096;margin-top:2px;">论文英文标题</div>
+        <div class="card-meta">
+          <span class="card-badge badge-biorxiv">bioRxiv</span>
+          <span>作者 et al.</span>
+          <span>通讯：通讯作者</span>
+          <span>日期</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="highlight-box">
+        亮点：创新点一句话概括
+      </div>
+      <div class="section-label">摘要</div>
+      <div class="abstract-text">
+        摘要内容...
+      </div>
+      <div class="section-label">主要发现</div>
+      <ul class="findings-list">
+        <li>发现1</li>
+        <li>发现2</li>
+        <li>发现3</li>
+      </ul>
+      <div class="method-row">
+        <span class="method-label">方法</span>方法描述
+      </div>
+      <div class="tags-row">
+        <span class="tag">标签1</span>
+        <span class="tag">标签2</span>
+        <span class="tag">标签3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 研究类 ========== -->
+  <div class="cat-header">
+    <div class="cat-icon research">🔬</div>
+    <div class="cat-name">研究类</div>
+    <div class="cat-count">N篇</div>
+  </div>
+
+  <!-- Paper Cards... -->
+
+  <!-- ========== 技术类 ========== -->
+  <div class="cat-header">
+    <div class="cat-icon tech">⚙️</div>
+    <div class="cat-name">技术类</div>
+    <div class="cat-count">N篇</div>
+  </div>
+
+  <!-- Paper Cards... -->
+
+  <!-- Trend Summary -->
+  <div class="trend-section">
+    <div class="trend-title">📊 本期趋势观察</div>
+    <div class="trend-item">
+      <div class="trend-dot">1</div>
+      <div class="trend-text"><strong>趋势标题：</strong>趋势描述</div>
+    </div>
+    <div class="trend-item">
+      <div class="trend-dot">2</div>
+      <div class="trend-text"><strong>趋势标题：</strong>趋势描述</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>📅 本期编辑：日期 | 数据来源：bioRxiv & medRxiv</p>
+    <p>🔍 覆盖领域：领域1 · 领域2 · 领域3</p>
+    <p style="margin-top:8px;">🌐 访问 <a href="https://www.biorxiv.org" target="_blank">bioRxiv.org</a> · <a href="https://www.medrxiv.org" target="_blank">medRxiv.org</a> 获取更多预印本</p>
+  </div>
+
+</div>
+</body>
+</html>

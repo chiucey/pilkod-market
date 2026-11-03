@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": ".env.example",
+      "sha": "d71d3a562b197625b01f6f3e08d5f06fa46135c6",
+      "size": 542
+    },
+    {
+      "path": ".gitignore",
+      "sha": "7f63c8ec458ffb6120eecf2e2ee9b8fa376ec785",
+      "size": 25
+    },
+    {
+      "path": "README.md",
+      "sha": "dcc6a5da1a9ee6acc880479c99f24fa07956daef",
+      "size": 4225
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "8deb2c190faa3b57b9647fd6919d335e016d23ce",
+      "size": 5209
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e04b377d7bbf8a7717725e0886d74f39b6830c0e",
+      "size": 131
+    },
+    {
+      "path": "bin/_lib.sh",
+      "sha": "3b230f7f23dad3f19cfd4a556c91a5d03930b719",
+      "size": 9338
+    },
+    {
+      "path": "bin/_schema.json",
+      "sha": "a4229e121c5449fdf99f2afadbcef92d11fa9e21",
+      "size": 3425
+    },
+    {
+      "path": "bin/pi-analyze.sh",
+      "sha": "44b5ae6905bd6ae7cf3d261d4409a37294380ad5",
+      "size": 3929
+    },
+    {
+      "path": "bin/pi-fix-plan.sh",
+      "sha": "135d7131ce44540bb080e2e6739ea0c6279b3e78",
+      "size": 6403
+    },
+    {
+      "path": "bin/pi-review.sh",
+      "sha": "0dc40fde5ce499fb7beda621feb327c3e8a41fbb",
+      "size": 4999
+    },
+    {
+      "path": "examples/diff.sample.patch",
+      "sha": "71b24eac40d91d999519eb204516a8389f119d8d",
+      "size": 1746
+    },
+    {
+      "path": "examples/first-pass-review.sample.md",
+      "sha": "74ab8f369dd169cb487efefd7b9a027e0f5a30d0",
+      "size": 1028
+    },
+    {
+      "path": "examples/plan.sample.md",
+      "sha": "f3f00d7489e0985e69c9f69730966292a5ea0f82",
+      "size": 782
+    },
+    {
+      "path": "prompts/analyze.md",
+      "sha": "14e27413b4e9860d2f3ae317e6a19eb73a7ebee2",
+      "size": 1649
+    },
+    {
+      "path": "prompts/fix-plan.md",
+      "sha": "b5a75f52f4123797ef4d101b9cd8171b40e26304",
+      "size": 4013
+    },
+    {
+      "path": "prompts/review-code.md",
+      "sha": "cd4e28e36afab81f69faac0875bb9850a08f1e98",
+      "size": 3120
+    },
+    {
+      "path": "prompts/reviewer-base.md",
+      "sha": "38e733a702b06d00908a5b7ac7dd08ba1d38d058",
+      "size": 2788
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "author": "Clawdbot Team",
+  "categories": [
+    "documentation",
+    "reference"
+  ],
+  "created_at": "2024-03-22",
+  "dependencies": [],
+  "description": "Clawdbot Documentation Expert - 基于Clawddocs完整文档的专业解答助手，无任何依赖，精准解答Clawdbot使用、功能、配置等所有文档问题",
+  "id": 380834231108418,
+  "name": "clawdbot-documentation-expert",
+  "permissions": {
+    "network": false
+  },
+  "platform": "minimax",
+  "security": {
+    "no_credential_request": true,
+    "no_external_call": true,
+    "pure_local_logic": true
+  },
+  "trigger_words": [
+    "Clawdbot",
+    "clawddocs",
+    "文档",
+    "使用指南",
+    "功能说明",
+    "配置方法",
+    "Clawdbot帮助"
+  ],
+  "updated_at": 1774529913935,
+  "version": "1.0.0"
+}

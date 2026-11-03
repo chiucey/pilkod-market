@@ -1,0 +1,429 @@
+# -*- coding: utf-8 -*-
+"""pipeline.py — 一键管线：自查 → 机械清理 → 深改任务简报 → 完整性守卫。
+
+把 SKILL.md 的五步工作流合成一条命令（面向不想串多个脚本的用户/agent）：
+
+    python scripts/pipeline.py draft.txt -o final.txt [--terms terms.txt] [--json]
+
+产物:
+    final.txt        机械清理后的文本（深度改写由 agent 按指南执行）
+    (stdout)         管线报告：前后特征分、完整性判定、给 agent 的深改任务简报
+
+--rewrite rewritten.txt: 已有人工/agent 改稿时，直接对改稿跑守卫+对比（跳过清理）。
+
+退出码: 0 完成（完整性 FAIL 也算完成，看报告）| 2 用法/文件错误
+--exit-verdict（v2.3.0 自动化集成档）: 0=干净 | 1=完整性 FAIL（与 verify 契约同义）
+    | 3=风格特征中及以上（需深改）| 4=命中模型残留 | 2=用法/文件错误不变。
+    pipeline 是唯一提供 1/3/4 全档判定的命令——CI/agent 门禁推荐用它。
+"""
+
+import argparse
+import json
+import re
+import sys
+import os
+import time
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import hxt_core
+import transform as tf
+import verify as vf
+
+GUIDE = {"zh": "references/style_guide_zh.md", "en": "references/style_guide_en.md",
+         "mix": "references/style_guide_zh.md + _en.md"}
+
+
+def _read(path):
+    try:
+        return hxt_core.read_text(path)
+    except OSError as e:
+        print("错误: 无法读取 %s（%s）" % (path, e), file=sys.stderr)
+        sys.exit(2)
+    except ValueError as e:
+        print("错误: %s" % e, file=sys.stderr)
+        sys.exit(2)
+
+
+def main():
+    ap = argparse.ArgumentParser(description="一键管线：自查→清理→深改简报→守卫")
+    ap.add_argument("file", nargs="?", help="原稿（--batch 模式下传目录）")
+    ap.add_argument("-o", "--output", help="清理结果落盘文件（建议必填）")
+    ap.add_argument("--rewrite", help="已有改稿（提供则跳过机械清理，直接守卫+对比）")
+    ap.add_argument("--terms", help="术语表文件（每行一个）；传 auto 则先自动生成"
+                    "术语草稿（extract_terms 口径）再用——草稿未经人工确认，"
+                    "守卫口径偏松，正式稿件建议人工过一遍后重跑")
+    ap.add_argument("--lang", choices=["zh", "en", "mix", "auto"], default="auto")
+    ap.add_argument("--profile", choices=["academic", "general"], default="academic",
+                    help="academic=论文口径（默认）；general=非学术文本")
+    ap.add_argument("--max-length-change", type=float, default=25.0)
+    ap.add_argument("--suggestions", help="输出修订建议工作单（markdown 侧车）到此路径")
+    ap.add_argument("--html", help="生成单文件 HTML 报告到此路径")
+    ap.add_argument("--track", help="输出修订记录（.md+.json）到此路径基名")
+    ap.add_argument("--batch", help="批量模式：目录内全部 .txt/.md/.docx/.pdf 逐个「清理+守卫」，汇总 CSV 输出到 stdout/此路径")
+    ap.add_argument("--json", action="store_true")
+    ap.add_argument("--check-stats", action="store_true", dest="check_stats",
+                    help="统计一致性阶段（v3.3.0）：对原稿跑 check_stats 三查"
+                         "（百分比求和/分组 n/风格混用），结果进报告与 JSON；仅提示不改退出码")
+    ap.add_argument("--pdf-min-confidence", choices=["高", "中", "低"], default=None,
+                 help="PDF 最低置信度门闸（v3.3.0）：低于阈值即拒收并提示导出 UTF-8；缺省不拦截只标注")
+    ap.add_argument("--exit-verdict", action="store_true",
+                    help="自动化集成（CI/agent 门禁）：按判定设退出码——0=干净，"
+                         "1=完整性 FAIL，3=风格特征中及以上，4=模型残留。缺省恒 0")
+    ap.add_argument("--ci", action="store_true", dest="exit_verdict",
+                 help="CI 门禁模式：--exit-verdict 的短别名（机器退出码 0/1/3/4）")
+    ap.add_argument("--deep", action="store_true",
+                    help="深改档（v2.4.0）：清理阶段追加句式级确定性转换"
+                         "（句首八股删除/排除式连接合并），操作进 --track 可审计。"
+                         "--rewrite/--batch 下不生效")
+    ap.add_argument("--step-timeout", type=float, default=hxt_core.SCAN_TIME_BUDGET,
+                    help="单步墙钟预算秒（v2.5.0，缺省 120，须 >0）：清理与扫描各阶段"
+                         "超时即干净报错（exit 2）并给拆分建议；分块扫描时为每块独立"
+                         "预算（最坏 k 块 k 倍）；JSON 报告含各步耗时")
+    ap.add_argument("--version", action="version", version="%(prog)s " + hxt_core.__version__)
+    args = ap.parse_args()
+
+    # ── 批量模式：逐文件 清理+守卫 汇总 ──
+    if getattr(args, "step_timeout", 0) is not None and args.step_timeout <= 0:
+        hxt_core.fail("--step-timeout 必须为正数（收到 %s）" % args.step_timeout,
+                      hint="秒数请 >0；缺省 120 秒")
+    if args.batch:
+        import csv as _csv
+        root = args.batch
+        if not os.path.isdir(root):
+            print("错误: --batch 需要目录（%s）" % root, file=sys.stderr)
+            sys.exit(2)
+        rows_out = []
+        pending = []  # (fp, 行索引)——二遍重试队列（v2.5.0 stability 处方）
+        for fn in sorted(os.listdir(root)):
+            if not fn.lower().endswith((".txt", ".md", ".docx", ".pdf")):
+                continue
+            fp = os.path.join(root, fn)
+            try:
+                if fp.lower().endswith(".pdf"):
+                    o, _pm = hxt_core.read_text_ex(fp)
+                    if _pm and not hxt_core.pdf_confidence_ok(
+                            _pm.get("confidence"), args.pdf_min_confidence):
+                        raise ValueError(
+                            "PDF 抽取置信度 %s 低于门闸 --pdf-min-confidence %s——请导出 UTF-8 文本/OCR 后重试，或调低门闸"
+                            % (_pm.get("confidence"), args.pdf_min_confidence))
+                    pdf_conf = _pm.get("confidence", "")
+                else:
+                    o = hxt_core.read_text(fp)
+                    pdf_conf = ""
+                if not o.strip():
+                    rows_out.append((fn, "-", "-", "空文件", "-"))
+                    continue
+                fx = tf.load_fixes(None, False)
+                n, _ap = tf.apply_auto_fixes(o, fx)
+                n, _rm = tf.drop_flagged_sentences(n)
+                n, _nq = tf.normalize_quotes(n)
+                v = vf.verify(o, n)
+                before = hxt_core.scan(o, time_budget=args.step_timeout)
+                after = hxt_core.scan(n, time_budget=args.step_timeout)
+                conf_suffix = (" [置信度:%s]" % pdf_conf) if pdf_conf else ""
+                rows_out.append((fn, "%d[%s]" % (before["score"], before["level"]),
+                                 "%d[%s]%s" % (after["score"], after["level"], conf_suffix),
+                                 "PASS" if v["ok"] else "FAIL(%d)" % len(v["violations"]),
+                                 "%+d%%" % v["stats"]["length_delta_pct"]))
+            except (OSError, ValueError):
+                # 首遍失败不放弃：进二遍重试队列（超时/IO 抖动多为瞬时态）
+                pending.append((fp, len(rows_out)))
+                rows_out.append((fn, "-", "-", "错误（待重试）", "-"))
+        retried = {}
+        for fp, idx in pending:
+            fn = rows_out[idx][0]
+            try:
+                if fp.lower().endswith(".pdf"):
+                    o, _pm = hxt_core.read_text_ex(fp)
+                    if _pm and not hxt_core.pdf_confidence_ok(
+                            _pm.get("confidence"), args.pdf_min_confidence):
+                        raise ValueError(
+                            "PDF 抽取置信度 %s 低于门闸 --pdf-min-confidence %s——请导出 UTF-8 文本/OCR 后重试，或调低门闸"
+                            % (_pm.get("confidence"), args.pdf_min_confidence))
+                    pdf_conf = _pm.get("confidence", "")
+                else:
+                    o = hxt_core.read_text(fp)
+                    pdf_conf = ""
+                fx = tf.load_fixes(None, False)
+                n, _ap = tf.apply_auto_fixes(o, fx)
+                n, _rm = tf.drop_flagged_sentences(n)
+                n, _nq = tf.normalize_quotes(n)
+                v = vf.verify(o, n)
+                before = hxt_core.scan(o, time_budget=hxt_core.SCAN_TIME_BUDGET * 2)
+                after = hxt_core.scan(n, time_budget=hxt_core.SCAN_TIME_BUDGET * 2)
+                conf_suffix = (" [置信度:%s]" % pdf_conf) if pdf_conf else ""
+                rows_out[idx] = (fn, "%d[%s]" % (before["score"], before["level"]),
+                                 "%d[%s]%s" % (after["score"], after["level"], conf_suffix),
+                                 "PASS" if v["ok"] else "FAIL(%d)" % len(v["violations"]),
+                                 "%+d%%" % v["stats"]["length_delta_pct"])
+                retried[fn] = True
+            except (OSError, ValueError) as e:
+                rows_out[idx] = (fn, "-", "-", "错误: %s（已重试 1 次）" % str(e)[:60], "-")
+                retried[fn] = False
+        if retried:
+            n_ok = sum(1 for v in retried.values() if v)
+            print("[重试] 二遍处理：%d 个失败文件重试，%d 个恢复" % (len(retried), n_ok),
+                  file=sys.stderr)
+        if getattr(args, "html", None):
+            print("[提示] pipeline --batch 暂不生成 --html（可用 detect --batch --html）", file=sys.stderr)
+        if getattr(args, "track", None):
+            print("[提示] pipeline --batch 暂不生成 --track 修订记录", file=sys.stderr)
+        if getattr(args, "suggestions", None):
+            print("[提示] pipeline --batch 暂不生成 --suggestions 工作单", file=sys.stderr)
+        if getattr(args, "deep", False):
+            print("[提示] --deep 在 --batch 下暂不生效（逐文件请单跑 pipeline --deep）", file=sys.stderr)
+        writer = _csv.writer(sys.stdout)
+        writer.writerow(["file", "before", "after", "integrity", "len_delta"])
+        for row in rows_out:
+            writer.writerow(row)
+        if args.output:
+            try:
+                with open(args.output, "w", encoding="utf-8", newline="") as cf:
+                    cw = _csv.writer(cf)
+                    cw.writerow(["file", "before", "after", "integrity", "len_delta"])
+                    cw.writerows(rows_out)
+                print("汇总 CSV 已写入 %s" % args.output, file=sys.stderr)
+            except OSError as e:
+                print("错误: 无法写入 %s（%s）" % (args.output, e), file=sys.stderr)
+                sys.exit(2)
+        if getattr(args, "exit_verdict", False):
+            # 聚合最坏行：integrity FAIL 优先（1），其次残留（4）/分数档（3）
+            worst = 0
+            for row in rows_out:
+                integrity, after = row[3], row[2]
+                if str(integrity).startswith("FAIL"):
+                    worst = max(worst, 1)
+                    continue
+                if str(integrity).startswith("错误"):
+                    # fail-closed：扫描不出的文件门禁不放行
+                    worst = max(worst, 2)
+                    continue
+                m = re.match(r"^(\d+)", str(after))
+                score = int(m.group(1)) if m else 0
+                worst = max(worst, hxt_core.verdict_exit_code(score))
+            sys.exit(worst)
+        sys.exit(0)
+
+    if not args.file:
+        print("错误: 需要 原稿 参数（或使用 --batch 目录模式）", file=sys.stderr)
+        sys.exit(2)
+    pdf_meta = None
+    if args.file.lower().endswith(".pdf"):
+        try:
+            orig, pdf_meta = hxt_core.read_text_ex(args.file)
+            if pdf_meta and not hxt_core.pdf_confidence_ok(
+                    pdf_meta.get("confidence"), args.pdf_min_confidence):
+                raise ValueError(
+                    "PDF 抽取置信度 %s 低于门闸 --pdf-min-confidence %s——请导出 UTF-8 文本/OCR 后重试，或调低门闸接受人工抽查（注记: %s）"
+                    % (pdf_meta.get("confidence"), args.pdf_min_confidence,
+                       "；".join(pdf_meta.get("notes") or []) or "无"))
+        except (OSError, ValueError) as e:
+            print("错误: %s" % e, file=sys.stderr)
+            sys.exit(2)
+    else:
+        orig = _read(args.file)
+    track_base = getattr(args, "track", None)
+    profile = args.profile
+    terms = None
+    terms_note = ""
+    if args.terms == "auto":
+        import extract_terms as _et
+        draft_path = (os.path.splitext(args.output or args.file)[0]
+                      + ".terms.auto.txt")
+        cands = _et.extract(orig, min_count=1)  # auto 档放宽到 1 次（去噪仍在），草稿供人工筛
+        with open(draft_path, "w", encoding="utf-8") as _tf:
+            for term, _n, _kind in cands:
+                _tf.write(term + "\n")
+        terms = vf.load_terms(draft_path)
+        terms_note = ("术语表=自动草稿 %s（%d 条，未经人工确认）——正式稿件建议"
+                      "人工过一遍后重跑" % (draft_path, len(cands)))
+        print("[术语] " + terms_note, file=sys.stderr)
+    elif args.terms:
+        terms = vf.load_terms(args.terms)
+
+    if args.rewrite:
+        if getattr(args, "deep", False):
+            print("[提示] --deep 在 --rewrite 下不生效（无清理阶段）", file=sys.stderr)
+        new = _read(args.rewrite)
+        mode = "对已有改稿守卫"
+        applied, removed = {}, []
+        cleanup_s = None
+    else:
+        t_clean = time.monotonic()
+        _deadline = t_clean + args.step_timeout
+        fixes = tf.load_fixes(None, False)
+        new, applied = tf.apply_auto_fixes(orig, fixes)
+        if time.monotonic() > _deadline:
+            hxt_core.fail("清理阶段超时（预算 %g 秒）" % args.step_timeout,
+                          hint="文件较大时请按章节拆分后分别处理，或调大 --step-timeout")
+        new, removed = tf.drop_flagged_sentences(new)
+        new, _ = tf.normalize_quotes(new)
+        new, _nfw = tf.normalize_fullwidth_alnum(new)
+        if _nfw:
+            applied["全角字母数字归一"] = _nfw
+        deep_ops = []
+        if getattr(args, "deep", False):
+            new, deep_ops, deep_changed = tf.deep_polish_ex(new)
+            for op in deep_ops:
+                applied["深改档:%s" % op["op"]] = op["count"]
+        if time.monotonic() > _deadline:
+            hxt_core.fail("清理阶段超时（预算 %g 秒）" % args.step_timeout,
+                          hint="文件较大时请按章节拆分后分别处理，或调大 --step-timeout")
+        cleanup_s = time.monotonic() - t_clean
+        mode = "机械清理" + ("+深改档" if deep_ops else "")
+        if args.output:
+            try:
+                with open(args.output, "w", encoding="utf-8") as f:
+                    f.write(new)
+            except OSError as e:
+                print("错误: 无法写入 %s（%s）" % (args.output, e), file=sys.stderr)
+                sys.exit(2)
+
+    scan_fn = hxt_core.scan_chunked if max(len(orig), len(new)) > 1_000_000 else hxt_core.scan
+    t_scan = time.monotonic()
+    try:
+        ro = scan_fn(orig, profile=profile, time_budget=args.step_timeout)
+        rn = scan_fn(new, profile=profile, time_budget=args.step_timeout)
+    except ValueError as e:
+        print("错误: %s" % e, file=sys.stderr)
+        sys.exit(2)
+    scan_s = time.monotonic() - t_scan
+    t_ver = time.monotonic()
+    vr = vf.verify(orig, new, terms, args.max_length_change,
+                   expected_new=(deep_changed if args.deep else None))
+    verify_s = time.monotonic() - t_ver
+
+    lang = rn["lang"]
+    top = sorted(rn["categories"].items(),
+                 key=lambda kv: -kv[1]["count"] * kv[1]["weight"])[:5]
+    brief = {
+        "guide": GUIDE.get(lang, GUIDE["mix"]),
+        "remaining_patterns": ["%s ×%d" % (v["label"], v["count"]) for _, v in top],
+        "auto_fixes_applied": applied,
+        "sentences_removed": len(removed),
+        "next_action": ("agent 按 %s 对 %s 做深度改写（保护数字/引用/术语），"
+                        "然后重跑本命令 --rewrite 改稿文件复核" % (GUIDE.get(lang, ""), args.output or "改稿"))
+                      if rn["score"] >= 28 else
+                      ("特征已低；按 %s 复核语义自然度即可" % GUIDE.get(lang, "指南")),
+    }
+
+    if args.suggestions:
+        guide = {"zh": "references/style_guide_zh.md",
+                 "en": "references/style_guide_en.md"}.get(lang,
+                                                           "references/style_guide_zh.md")
+        try:
+            with open(args.suggestions, "w", encoding="utf-8") as f:
+                f.write(hxt_core.build_suggestions(orig, rn, guide))
+        except OSError as e:
+            print("错误: 无法写入 %s（%s）" % (args.suggestions, e), file=sys.stderr)
+            sys.exit(2)
+
+    stats_issues = None
+    if getattr(args, "check_stats", False):
+        import check_stats as _cst
+        _g, stats_issues = _cst.run_checks(orig)
+
+    report = {
+        "mode": mode,
+        "before": {"score": ro["score"], "level": ro["level"], "critical": ro["critical_hit"]},
+        "after": {"score": rn["score"], "level": rn["level"], "critical": rn["critical_hit"]},
+        "verify": vr,
+        "agent_brief": brief,
+        "exit_verdict": hxt_core.verdict_exit_code(rn["score"], rn["critical_hit"],
+                                                   verify_ok=vr["ok"]),
+        "hints": hxt_core.build_hints(new, rn, profile=profile),
+        "terms_note": terms_note,
+        "stats_consistency": (
+            {"total": len(stats_issues), "issues": stats_issues,
+             "note": "内部一致性启发式，非统计审查；以原始数据为准"}
+            if stats_issues is not None else None),
+        "pdf_meta": pdf_meta,
+        "timings": ({"cleanup_s": round(cleanup_s, 2), "scan_s": round(scan_s, 2),
+                     "verify_s": round(verify_s, 2),
+                     "total_s": round(cleanup_s + scan_s + verify_s, 2)}
+                    if cleanup_s is not None else
+                    {"cleanup_s": None, "scan_s": round(scan_s, 2),
+                     "verify_s": round(verify_s, 2),
+                     "total_s": round(scan_s + verify_s, 2)}),
+        "honest_note": "本地启发式风格特征评分，非任何官方检测分数",
+    }
+
+    if track_base:
+        md, jobj = hxt_core.build_revision_log(applied, removed, source=args.file)
+        try:
+            with open(track_base + ".md", "w", encoding="utf-8") as f:
+                f.write(md + "\n")
+            with open(track_base + ".json", "w", encoding="utf-8") as f:
+                json.dump(jobj, f, ensure_ascii=False, indent=2)
+        except OSError as e:
+            print("错误: 无法写入修订记录（%s）" % e, file=sys.stderr)
+            sys.exit(2)
+        print("修订记录: " + track_base + ".md/.json", file=sys.stderr)
+
+    if args.json:
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        if args.exit_verdict:
+            sys.exit(report["exit_verdict"])
+        sys.exit(0)
+    else:
+        print("=" * 62)
+        print("一键管线报告（%s）" % mode)
+        print("=" * 62)
+        print("风格特征分: %d [%s] → %d [%s]%s" % (
+            ro["score"], ro["level"], rn["score"], rn["level"],
+            "  ⚠ 仍含模型残留" if rn["critical_hit"] else ""))
+        print("完整性守卫: %s" % ("PASS ✓" if vr["ok"] else "FAIL ✗"))
+        for v in vr["violations"]:
+            print("  ✗ [%s] %s" % (v["check"], v["detail"]))
+        for w in vr["warnings"]:
+            print("  ⚠ [%s] %s" % (w["check"], w["detail"]))
+        print("深改任务简报:")
+        print("  指南: " + brief["guide"])
+        for p in brief["remaining_patterns"]:
+            print("  · 剩余特征: " + p)
+        print("  下一步: " + brief["next_action"])
+        if getattr(args, "suggestions", None):
+            print("修订建议工作单: " + args.suggestions)
+        if getattr(args, "html", None):
+            import reporter
+            try:
+                with open(args.html, "w", encoding="utf-8") as hf:
+                    hf.write(reporter.render_pipeline(orig, new, ro, rn, vr, brief,
+                                                      chunked=getattr(rn, "get", lambda k: None)("chunked")))
+            except OSError as e:
+                print("错误: 无法写入 %s（%s）" % (args.html, e), file=sys.stderr)
+                sys.exit(2)
+            print("HTML 报告: " + args.html)
+        sc = report.get("stats_consistency")
+        if sc is not None:
+            print("")
+            if sc["total"]:
+                print("统计一致性：%d 项" % sc["total"])
+                for x in sc["issues"]:
+                    print("  [%s] %s" % (x["kind"], x["detail"]))
+            else:
+                print("统计一致性：未发现问题")
+            print("口径: " + sc["note"])
+        tm = report["timings"]
+        clean_disp = "—" if tm["cleanup_s"] is None else "%.1fs" % tm["cleanup_s"]
+        print("耗时: 清理 %s | 扫描 %.1fs | 守卫 %.1fs（合计 %.1fs，单步预算 %g 秒）"
+              % (clean_disp, tm["scan_s"], tm["verify_s"], tm["total_s"],
+                 args.step_timeout))
+        if report["hints"]:
+            print("处置提示:")
+            for h in report["hints"]:
+                print("  → " + h)
+        if rn["stats"].get("uniform_flag"):
+            print("节奏规整旗: 句长高度集中（统计倾向信号，规整文体也可能触发，非检测结论）")
+        if pdf_meta:
+            print("PDF 抽取置信度: %s" % pdf_meta["confidence"])
+            for note in pdf_meta["notes"]:
+                print("  ⚠ " + note)
+        print("口径: " + report["honest_note"])
+    if args.exit_verdict:
+        sys.exit(report["exit_verdict"])
+    sys.exit(0)
+
+
+if __name__ == "__main__":
+    hxt_core.cli_entry(main)

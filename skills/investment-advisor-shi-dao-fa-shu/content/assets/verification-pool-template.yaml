@@ -1,0 +1,52 @@
+# 敏感信息验证池模板
+# 使用场景：接收到可能影响持仓的信息时
+
+verification_pool:
+  info_id: "VER-2026-0412-001"  # 自动生成UUID
+  submission_date: "2026-04-12"
+
+  # 信息内容
+  information:
+    type: "政策"  # 政策/业绩/事件/传言
+    source: "国务院文件"
+    summary: "新型电力系统建设方案发布"
+    link: "https://example.com/policy.pdf"
+
+  # 用户初步判断
+  initial_assessment:
+    sentiment: "正面"  # 正面/负面/中性
+    impact_direction: "新型电力"
+    expected_magnitude: "中等"  # 轻微/中等/重大
+
+  # 验证指标
+  verification:
+    metrics:
+      - name: "相关ETF资金流向"
+        check_frequency: "每3日"
+        target: "连续净流入"
+      - name: "后续催化事件"
+        check_frequency: "每周"
+        target: "具体政策细则出台"
+    tracking_period: 14  # 跟踪天数
+    start_date: "2026-04-12"
+    end_date: "2026-04-26"
+
+  # 评估结果（两周后由系统填写）
+  evaluation:
+    result: ""  # 通过/未通过/待观察
+    evidence: ""
+    action_required: ""
+
+# 验证问题（三分满足两分原则）
+verification_questions:
+  - "两周内资金是否持续流入该方向？"
+  - "是否有至少一个后续催化事件发生？"
+  - "相关ETF价格是否企稳或上涨？"
+
+# 评估标准
+evaluation_rules:
+  passed_threshold: 2  # 满足2个问题即通过
+  monitoring_frequency: "每3天"
+  early_termination:
+    enabled: true
+    condition: "如出现重大负面信号，可提前评估"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flet Development"
+  short_description: "Guide Flet 1.0+ desktop/web app development with breaking changes and best practices"
+  default_prompt: "Use $flet-development to explain or implement a Flet application, resolve version compatibility issues, or debug Flet errors."

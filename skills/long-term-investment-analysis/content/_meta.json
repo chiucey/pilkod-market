@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-04-25",
+  "description": "Long-term investment analysis framework for A-share, Hong Kong, Beijing, and New Third Board stocks. Use when users request fundamental stock analysis, financial due diligence, valuation calculation, or moat assessment for investment periods over 1 year. Supports investment memo, analysis report, and decision assistant output formats.",
+  "id": 391356510220529,
+  "name": "long-term-investment-analysis",
+  "platform": "minimax",
+  "source": "user_input_files/long-term-investment-framework-v1.2.2.md",
+  "trigger_keywords": [
+    "long-term investment",
+    "value investing",
+    "stock analysis",
+    "fundamental analysis",
+    "moat assessment",
+    "valuation analysis",
+    "A-share",
+    "Hong Kong stock"
+  ],
+  "updated_at": 1777103152464,
+  "version": "1.0.0"
+}

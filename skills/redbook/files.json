@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": ".clawhub/origin.json",
+      "sha": "2a9e54e0d5e0ee9f2e8c8e0880466a5a53c4dc41",
+      "size": 139
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha": "d221e55edabfce23e98a7bc3d5f9bd66be9d827a",
+      "size": 2423
+    },
+    {
+      "path": "README.md",
+      "sha": "fc15144314d164ee623d34f51c0cecd449976a88",
+      "size": 28412
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "6c88af0b8be57df4df161d539432512eea17a15c",
+      "size": 39295
+    },
+    {
+      "path": "_meta.json",
+      "sha": "358f8071dc793546f3017d4a68ce58e86563c083",
+      "size": 126
+    },
+    {
+      "path": "docs/research-task-1789.md",
+      "sha": "0ecf9356e60601f3d8aa253e8ab359cc41846edc",
+      "size": 12027
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "5233d4f29b6b053a05123138dfd0bd9740bd4b30",
+      "size": 37516
+    },
+    {
+      "path": "package.json",
+      "sha": "9a77bc939d2e7521c56a67a2ee322ebe376bd46c",
+      "size": 1644
+    },
+    {
+      "path": "scripts/postinstall.js",
+      "sha": "e8f75617c53944db5ac7781f3f29ef0f441b13f1",
+      "size": 4634
+    },
+    {
+      "path": "scripts/preuninstall.js",
+      "sha": "b5f7ef16fa5f365ba0c6d8723fcd7107c5d6bd0a",
+      "size": 1448
+    },
+    {
+      "path": "social-preview.html",
+      "sha": "247af910239e9f3d4f7899a75115c34d79fe8afa",
+      "size": 5184
+    },
+    {
+      "path": "src/cli.ts",
+      "sha": "4e8594e576dd915e3a0de25b7aedc1d393cbabe4",
+      "size": 50966
+    },
+    {
+      "path": "src/lib/analyze.ts",
+      "sha": "ba543748d32c47feae863d3460e7df2f6cf388e8",
+      "size": 20458
+    },
+    {
+      "path": "src/lib/cdp-cookies.ts",
+      "sha": "13731e771301cc3284fe52839505c491184e09a4",
+      "size": 13405
+    },
+    {
+      "path": "src/lib/client.ts",
+      "sha": "54f72392855270cb41acce22f4ccc9fe01f4acd6",
+      "size": 21236
+    },
+    {
+      "path": "src/lib/cookies.ts",
+      "sha": "48bf8a11fae9b4b39cf9c4163f0beeecfc6edcac",
+      "size": 12860
+    },
+    {
+      "path": "src/lib/creator-signing.ts",
+      "sha": "c8ca871171ea2be28ab7213a0d648b74023ec502",
+      "size": 1805
+    },
+    {
+      "path": "src/lib/fingerprint-data.ts",
+      "sha": "2b39dd9cda41b3ef9d90aa07d088a73ac96bd175",
+      "size": 2376
+    },
+    {
+      "path": "src/lib/health.ts",
+      "sha": "6e48a909d3d7f2288cfc93ba00336526f81db89f",
+      "size": 5631
+    },
+    {
+      "path": "src/lib/render.ts",
+      "sha": "7e1dd499923f07d14fd24fac20f8a7628c64fe9e",
+      "size": 19962
+    },
+    {
+      "path": "src/lib/reply-strategy.ts",
+      "sha": "fbc2d17a4f0bf7432f4f19948e33005336814188",
+      "size": 6099
+    },
+    {
+      "path": "src/lib/signing.ts",
+      "sha": "4bf71096d4f357080d919f54ee68ec31dd299cfa",
+      "size": 21536
+    },
+    {
+      "path": "src/lib/template.ts",
+      "sha": "b509c940941de5ce6714a57a359012b6cdeddead",
+      "size": 8176
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "f44baa9ff8dd8193482337d164d63dc324f5706c",
+      "size": 458
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "evomap-fast-publisher",
+  "version": "4.0.0",
+  "description": "EvoMap 资产快速发布守护进程 - 完整验证版",
+  "main": "scripts/fast-publish-daemon-v2.js",
+  "scripts": {
+    "start": "node scripts/fast-publish-daemon-v2.js",
+    "start:task": "node scripts/task-mode-daemon.js",
+    "install": "./install.sh",
+    "stop": "./stop.sh"
+  },
+  "keywords": [
+    "evomap",
+    "gep",
+    "a2a",
+    "publisher",
+    "daemon"
+  ],
+  "author": "蒋鹏程",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "file:///workspace/skills/evomap-fast-publisher"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

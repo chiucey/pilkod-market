@@ -1,0 +1,214 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha": "9c21446d74315a78839d8798dc517a1fa2912b5c",
+      "size": 182
+    },
+    {
+      "path": ".github/workflows/monthly-links.yml",
+      "sha": "faddb40f4c75613e895b7c466ec0c488030743a5",
+      "size": 2163
+    },
+    {
+      "path": ".github/workflows/quarterly-baseline.yml",
+      "sha": "c62bd5d640627111bf7a5e9c8e9265c9b1c156ea",
+      "size": 2010
+    },
+    {
+      "path": ".github/workflows/weekly-health.yml",
+      "sha": "92723562124650b3e75ae3da94c3a97b77a63ecd",
+      "size": 2017
+    },
+    {
+      "path": ".gitignore",
+      "sha": "e61d30ac8183a3aa591f93b953e8c9a7e5e52011",
+      "size": 466
+    },
+    {
+      "path": "README.md",
+      "sha": "569645a09fdf77685a319ef821299141c177fe51",
+      "size": 6798
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "80d2e18f70b1cc30ca5d293e1531ef60781b5847",
+      "size": 8264
+    },
+    {
+      "path": "_meta.json",
+      "sha": "923c28fadd206adf389b38a410377ecdcb514528",
+      "size": 139
+    },
+    {
+      "path": "architecture.md",
+      "sha": "cd1c380e125bfb544baa70f5a2eb7ebe684dd7e4",
+      "size": 7360
+    },
+    {
+      "path": "modules/01-foundation.md",
+      "sha": "2705f6bda93fa30c47011d5dc594e091e91a97b0",
+      "size": 8817
+    },
+    {
+      "path": "modules/02-data-sources.md",
+      "sha": "9b3aad4f49b676158f20126b574ebc92532f781b",
+      "size": 16183
+    },
+    {
+      "path": "modules/03-core-api-cheatsheet.md",
+      "sha": "e73f8f2c43c1e9f3feef6aca3fe9aa53623aa288",
+      "size": 10900
+    },
+    {
+      "path": "modules/04-interaction-and-viz.md",
+      "sha": "f3a0c4f33beb166a7d4e03c93db0e565d40fc4c2",
+      "size": 10492
+    },
+    {
+      "path": "modules/05-performance-and-rendering.md",
+      "sha": "a92a58778f3ab49b865d3c3eff2bd4e26de0b9a0",
+      "size": 7586
+    },
+    {
+      "path": "modules/06-engineering.md",
+      "sha": "0c047763fd44afcbdae635e85c5fe33823e14734",
+      "size": 10044
+    },
+    {
+      "path": "modules/07-typical-scenarios.md",
+      "sha": "311fab3e96e4947d6618a5d984cdd155b37fec78",
+      "size": 11398
+    },
+    {
+      "path": "modules/08-domestic-alternatives.md",
+      "sha": "6b11c0a9c391d1c7afc0bce4146caa8df4f9173a",
+      "size": 8328
+    },
+    {
+      "path": "modules/09-pitfalls-and-traps.md",
+      "sha": "b22f91262780be56993bb2105de278ed1642d339",
+      "size": 9824
+    },
+    {
+      "path": "modules/10-cesium-for-unity.md",
+      "sha": "9337d63dcbb0dd400555176fb067ac431e9680e4",
+      "size": 10467
+    },
+    {
+      "path": "modules/11-cesium-for-unreal.md",
+      "sha": "44bac19ce131ced5afaa30f33757af28c1988e0c",
+      "size": 14735
+    },
+    {
+      "path": "recipes/custom-3dtiles.md",
+      "sha": "f049228c8856ea0e41476aec313568e16535bab0",
+      "size": 4887
+    },
+    {
+      "path": "recipes/flood-inundation.md",
+      "sha": "5d8c8134508f3faf9001f2208368dedb731fec64",
+      "size": 5299
+    },
+    {
+      "path": "recipes/ion-token-rotation.md",
+      "sha": "154c2e738fc36e5c9067d766387a21068e9e8d6e",
+      "size": 5711
+    },
+    {
+      "path": "recipes/load-mvt.md",
+      "sha": "238c7ae54a13ff2a260feb052d1b34f32e346a44",
+      "size": 9667
+    },
+    {
+      "path": "recipes/measure-distance.md",
+      "sha": "aadd5ca9401721e068405883d1e06cae6f89350b",
+      "size": 3658
+    },
+    {
+      "path": "recipes/terrain-profile.md",
+      "sha": "072ba2f8140d65dc26873d3ba24a8a3bf3eb945a",
+      "size": 3200
+    },
+    {
+      "path": "recipes/trajectory-replay.md",
+      "sha": "dece81bec4678afc9a5d498db656b6de8d8aea64",
+      "size": 6143
+    },
+    {
+      "path": "recipes/underground-mode.md",
+      "sha": "9f1fbf2ba5f903ef77a65ef991ab53648ba2e3a3",
+      "size": 4771
+    },
+    {
+      "path": "recipes/viewshed-analysis.md",
+      "sha": "edb9bced4360eaf39e3b190dd3b19f169256eb56",
+      "size": 4927
+    },
+    {
+      "path": "references/api-quick-ref.md",
+      "sha": "a7b63de81e1d73903ed075b7dc2654e28163793b",
+      "size": 7665
+    },
+    {
+      "path": "references/glossary.md",
+      "sha": "b30fb9615812eb2775b624429ced377d2da38383",
+      "size": 9525
+    },
+    {
+      "path": "references/official-sites.md",
+      "sha": "4cf5f5956fc358b507b2327f47710aaa94718cc5",
+      "size": 12359
+    },
+    {
+      "path": "scripts/check-baseline.sh",
+      "sha": "dd3e9441ef09f122deb94c7086583c965d25c4b5",
+      "size": 3329
+    },
+    {
+      "path": "scripts/check-coverage.sh",
+      "sha": "0e4b903b138759bdd1bc1c480494b111287a897c",
+      "size": 3558
+    },
+    {
+      "path": "scripts/check-links.sh",
+      "sha": "47802e34c44dda1a6d9cc1ea98094b15cf6da86f",
+      "size": 2644
+    },
+    {
+      "path": "scripts/health-check.sh",
+      "sha": "58ac1eaf803e145f4d0f7d9f883c48f49bc88b25",
+      "size": 13128
+    },
+    {
+      "path": "scripts/install.sh",
+      "sha": "e1ad3dada30881b1b30577ff15cc16bb91c8d972",
+      "size": 3051
+    },
+    {
+      "path": "scripts/release-diff.sh",
+      "sha": "01b0b15127161608db07ed6fe3531d934c1f3d4e",
+      "size": 3261
+    },
+    {
+      "path": "self-evolution/changelog.md",
+      "sha": "15ca1beb8e0a66446a58dcba00a06e5fb0bbf453",
+      "size": 14368
+    },
+    {
+      "path": "self-evolution/coverage-gap-detector.md",
+      "sha": "149972cd1bbefa70890ea4b1cee2c588fa6aba4e",
+      "size": 7082
+    },
+    {
+      "path": "self-evolution/extension-contract.md",
+      "sha": "2790cbaa547108ec5ab5d57aa0de37319e3bc758",
+      "size": 6129
+    },
+    {
+      "path": "self-evolution/maintenance-playbook.md",
+      "sha": "334468be33746550f72247ce5d60bb63b4a72835",
+      "size": 9844
+    }
+  ]
+}

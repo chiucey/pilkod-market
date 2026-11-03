@@ -1,0 +1,30 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "data-quality-check",
+    "statistical-analysis",
+    "anomaly-detection",
+    "problem-diagnosis",
+    "root-cause-analysis",
+    "report-generation"
+  ],
+  "created": "2026-03-28",
+  "description": "Deep Excel data analysis skill for data quality checking, statistical analysis, anomaly detection, problem diagnosis, and root cause analysis",
+  "id": 381539370824617,
+  "input_formats": [
+    ".xlsx",
+    ".xls",
+    ".csv"
+  ],
+  "name": "excel-deep-analyzer",
+  "output_format": "markdown-report + data-tables + optional-visualization",
+  "platform": "minimax",
+  "tags": [
+    "excel",
+    "data-analysis",
+    "anomaly-detection",
+    "root-cause-analysis"
+  ],
+  "updated_at": 1774702885078,
+  "version": "1.0.0"
+}

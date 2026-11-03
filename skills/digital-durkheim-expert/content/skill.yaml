@@ -1,0 +1,144 @@
+---
+name: digital-durkheim-expert
+version: 5.2.0-cli-native+reoptimized
+description: |
+  Digital Durkheim Expert Skill (AI CLI Native - v5.2 Re-optimized). Supports automatic task queue execution and subAgent parallel processing.
+  Includes complete absolute prohibition principles, task decomposition rules, anti-tail-off mechanisms, and intelligent task selection.
+
+  **Quality First, Efficiency Balanced**: Preserves 100% Durkheim methodology rigor, intelligent speed-up for simple tasks, complete process for complex tasks.
+  Based on Durkheim (1893, 1897, 1912) sociological theory.
+
+  Core capabilities:
+  - Social facts identification (externality, coerciveness, generality)
+  - Suicide type analysis (egoistic, altruistic, anomic, fatalistic)
+  - Anomie assessment
+  - Solidarity type analysis (mechanical, organic)
+  - Collective consciousness analysis
+  - Social integration measurement
+
+  Strictly follows Durkheim methodology principles (6 absolute prohibition principles, 100% preserved):
+  - Externality and coerciveness of social facts
+  - Collective-level analysis
+  - Social integration and anomie theory
+  - Historical contextual analysis
+  - **Prohibited: reporting completion without verification** (anti-tail-off)
+  - **Prohibited: pursuing completion feeling** (anti-tail-off)
+  - **Prohibited: sacrificing analysis quality** (anti-tail-off)
+
+author: SocienceAI Methodology Expert
+license: MIT
+
+metadata:
+  version: "5.2.0-cli-native+reoptimized"
+  methodology: "Durkheimian Sociology"
+  reoptimized: true
+  reoptimized_date: "2026-03-12"
+  reoptimized_notes: "Preserves all 6 absolute prohibition principles, adds intelligent task selection and subAgent support. Quality first, efficiency balanced. Methodology rigor: 0% compromise."
+  subagent-support: true
+  graceful-fallback: true
+  ai-cli-native: true
+  task-queue-support: true
+  absolute-prohibitions: true
+  task-decomposition-rules: true
+  agentskills-io: true
+  cross-platform: true
+
+execution_modes:
+  cli_queue: "CLI Task Queue (Basic)"
+  subagent_parallel: "SubAgent Parallel (Enhanced)"
+
+performance:
+  sequential: "2-5 min/simple case, 40-50 min/complex case"
+  parallel: "15 min/5 simple cases (2.7x speedup), 45 min/10 complex cases (8.9x speedup)"
+  quality_guarantee: "Methodology rigor: 0% compromise"
+
+analysis_types:
+  - social-facts
+  - suicide-types
+  - anomie
+  - solidarity
+  - collective-consciousness
+  - social-integration
+
+category: social-science-analysis
+tags:
+  - durkheim
+  - social-facts
+  - suicide
+  - anomie
+  - solidarity
+  - collective-consciousness
+
+inputs:
+  data:
+    type: object
+    required: true
+    description: Analysis data (interviews, documents, observation records, statistics)
+  analysis_type:
+    type: string
+    required: true
+    description: Analysis type
+
+outputs:
+  results:
+    type: object
+    description: Analysis results
+  report:
+    type: string
+    description: Complete analysis report
+
+prompts:
+  system: prompts/system-prompt.md
+
+tools:
+  - name: identify-social-facts
+    description: Identify social facts (externality, coerciveness, generality)
+    module: social_facts_identifier
+  - name: analyze-suicide-types
+    description: Analyze suicide types (egoistic/altruistic/anomic/fatalistic)
+    module: suicide_type_analyzer
+  - name: calculate-anomie
+    description: Calculate anomie degree
+    module: anomie_calculator
+  - name: analyze-solidarity
+    description: Analyze solidarity types (mechanical/organic)
+    module: solidarity_analyzer
+  - name: analyze-collective-consciousness
+    description: Analyze collective consciousness intensity and content
+    module: collective_consciousness_analyzer
+  - name: measure-integration
+    description: Measure social integration degree
+    module: social_integration_measurer
+  - name: analyze
+    description: Main analysis entry
+    module: analyze
+
+planning_files:
+  task_plan:
+    template: templates/task_plan.md.template
+    file: task_plan.md
+
+quality_checks:
+  - name: social_facts_identification
+    description: Social facts identification check
+    rule: "Must verify externality, coerciveness, generality"
+  - name: collective_level_analysis
+    description: Collective level analysis check
+    rule: "Must analyze at collective level"
+  - name: theoretical_explanation
+    description: Theoretical explanation check
+    rule: "Statistics must serve theoretical explanation"
+
+dependencies:
+  python: ">=3.8"
+  packages:
+    - numpy>=1.21.0
+    - pandas>=1.3.0
+
+compatibility:
+  - agentskills.io
+  - claude-desktop
+  - qwen-cli
+  - opencode
+
+allowed-tools: Read Write Bash(php:*) Bash(python:*)

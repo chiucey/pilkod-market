@@ -1,0 +1,65 @@
+{
+  "author": "MiniMax Agent",
+  "category": "video-editing",
+  "config_schema": {
+    "enable_finance_filter": {
+      "default": true,
+      "description": "是否应用财经滤镜",
+      "type": "boolean"
+    },
+    "enable_subtitle": {
+      "default": true,
+      "description": "是否生成字幕",
+      "type": "boolean"
+    },
+    "max_parallel_generations": {
+      "default": 3,
+      "description": "并行生成数量",
+      "max": 10,
+      "min": 1,
+      "type": "integer"
+    },
+    "max_retries": {
+      "default": 3,
+      "description": "最大重试次数",
+      "max": 5,
+      "min": 1,
+      "type": "integer"
+    },
+    "video_duration": {
+      "default": 5,
+      "description": "每个 B-roll 片段时长(秒)",
+      "max": 30,
+      "min": 1,
+      "type": "integer"
+    },
+    "video_resolution": {
+      "default": "4k",
+      "description": "输出分辨率",
+      "options": [
+        "720p",
+        "1080p",
+        "4k"
+      ],
+      "type": "string"
+    }
+  },
+  "created_at": "2024-12-01",
+  "dependencies": {
+    "max_claw_sdk": "\u003e=1.0.0"
+  },
+  "id": 391364209676484,
+  "name": "finance-video-editor",
+  "platform": "minimax",
+  "status": "ready",
+  "tags": [
+    "finance",
+    "video",
+    "automation",
+    "b-roll",
+    "hailuo",
+    "video-editing"
+  ],
+  "updated_at": 1777101202065,
+  "version": "1.0.0"
+}

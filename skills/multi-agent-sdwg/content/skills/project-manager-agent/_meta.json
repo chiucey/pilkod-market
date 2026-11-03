@@ -1,0 +1,13 @@
+{
+  "id": "1234567896",
+  "version": "1.0.0",
+  "author": "MiniMax Agent",
+  "description": "项目经理智能体：任务拆解分配、进度跟踪、阻塞协调、决策日志、知识库构建",
+  "training_methods": ["Vector Database", "Knowledge Retrieval", "Agent Feedback Loop"],
+  "core_skills": [
+    "任务拆解与分配",
+    "进度跟踪与阻塞协调",
+    "决策日志与知识库"
+  ],
+  "collaboration": ["product-analyst-agent", "architect-agent", "dev-agent-group", "test-engineer-agent", "devops-agent"]
+}

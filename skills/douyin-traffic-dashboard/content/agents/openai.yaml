@@ -1,0 +1,7 @@
+interface:
+  display_name: "douyin-traffic-dashboard"
+  short_description: "Douyin traffic distribution overview"
+  default_prompt: "Use $douyin-traffic-dashboard to help with Douyin traffic distribution overview"
+
+policy:
+  allow_implicit_invocation: true

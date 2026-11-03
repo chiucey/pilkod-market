@@ -1,0 +1,39 @@
+{
+  "author": "MiniMax Agent",
+  "chart_types": [
+    "bar",
+    "line",
+    "pie",
+    "histogram",
+    "scatter",
+    "stacked",
+    "boxplot"
+  ],
+  "colors": [
+    "black",
+    "red",
+    "green",
+    "yellow",
+    "blue",
+    "magenta",
+    "cyan",
+    "white"
+  ],
+  "created_at": "2026-04-10",
+  "description": "生成 ASCII 艺术图表工具，支持可自定义的样式和颜色。当用户要求创建 ASCII 图表、文本图表、终端图表、命令行图表可视化时使用。",
+  "id": 386098482962716,
+  "name": "ascii-chart-art",
+  "platform": "minimax",
+  "skill_id": "170823",
+  "styles": [
+    "minimal",
+    "classic",
+    "modern",
+    "bordered",
+    "double",
+    "rounded",
+    "dense"
+  ],
+  "updated_at": 1775816376659,
+  "version": "1.0.0"
+}

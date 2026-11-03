@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CADModel version="1.0" units="mm">
+  <Metadata>
+    <ProductName>T53-8402000-002-20170727</ProductName>
+    <Author>CAD System</Author>
+    <CreatedDate>2017-07-27</CreatedDate>
+    <Revision>A</Revision>
+    <Description>Mechanical Part Assembly</Description>
+  </Metadata>
+
+  <BoundingBox>
+    <Min x="-120.5" y="-80.3" z="0"/>
+    <Max x="120.5" y="80.3" z="75.0"/>
+  </BoundingBox>
+
+  <Materials>
+    <Material id="0" name="Steel_Matte">
+      <Color r="0.65" g="0.65" b="0.70" a="1.0"/>
+      <Metalness value="0.85"/>
+      <Roughness value="0.45"/>
+      <Emissive r="0" g="0" b="0"/>
+    </Material>
+    <Material id="1" name="Aluminum_Polished">
+      <Color r="0.85" g="0.85" b="0.90" a="1.0"/>
+      <Metalness value="0.75"/>
+      <Roughness value="0.15"/>
+      <Emissive r="0" g="0" b="0"/>
+    </Material>
+    <Material id="2" name="Plastic_Black">
+      <Color r="0.15" g="0.15" b="0.18" a="1.0"/>
+      <Metalness value="0.05"/>
+      <Roughness value="0.70"/>
+      <Emissive r="0" g="0" b="0"/>
+    </Material>
+  </Materials>
+
+  <Assembly>
+    <!-- Main Body Part -->
+    <Part id="1" name="MainBody" parentId="0" materialId="0">
+      <Geometry type="mesh">
+        <Vertices count="8">
+          <Vertex index="0" x="-100" y="-60" z="0"/>
+          <Vertex index="1" x="100" y="-60" z="0"/>
+          <Vertex index="2" x="100" y="60" z="0"/>
+          <Vertex index="3" x="-100" y="60" z="0"/>
+          <Vertex index="4" x="-100" y="-60" z="50"/>
+          <Vertex index="5" x="100" y="-60" z="50"/>
+          <Vertex index="6" x="100" y="60" z="50"/>
+          <Vertex index="7" x="-100" y="60" z="50"/>
+        </Vertices>
+        <Triangles count="12">
+          <!-- Bottom face -->
+          <Triangle v1="0" v2="2" v3="1" normal="0,0,-1"/>
+          <Triangle v1="0" v2="3" v3="2" normal="0,0,-1"/>
+          <!-- Top face -->
+          <Triangle v1="4" v2="5" v3="6" normal="0,0,1"/>
+          <Triangle v1="4" v2="6" v3="7" normal="0,0,1"/>
+          <!-- Front face -->
+          <Triangle v1="0" v2="1" v3="5" normal="0,-1,0"/>
+          <Triangle v1="0" v2="5" v3="4" normal="0,-1,0"/>
+          <!-- Back face -->
+          <Triangle v1="2" v2="3" v2="7" normal="0,1,0"/>
+          <Triangle v1="2" v2="7" v3="6" normal="0,1,0"/>
+          <!-- Left face -->
+          <Triangle v1="3" v2="0" v3="4" normal="-1,0,0"/>
+          <Triangle v1="3" v2="4" v3="7" normal="-1,0,0"/>
+          <!-- Right face -->
+          <Triangle v1="1" v2="2" v3="6" normal="1,0,0"/>
+          <Triangle v1="1" v2="6" v3="5" normal="1,0,0"/>
+        </Triangles>
+      </Geometry>
+      <Transform>
+        <Translation x="0" y="0" z="0"/>
+        <Rotation axisX="0" axisY="0" axisZ="1" angle="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+    </Part>
+
+    <!-- Bolt Hole 1 -->
+    <Part id="2" name="Bolt_Hole_1" parentId="1" materialId="1">
+      <Geometry type="primitive">
+        <Primitive type="cylinder" radius="8" height="55" segments="16"/>
+      </Geometry>
+      <Transform>
+        <Translation x="50" y="30" z="0"/>
+        <Rotation axisX="1" axisY="0" axisZ="0" angle="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+    </Part>
+
+    <!-- Bolt Hole 2 -->
+    <Part id="3" name="Bolt_Hole_2" parentId="1" materialId="1">
+      <Geometry type="primitive">
+        <Primitive type="cylinder" radius="8" height="55" segments="16"/>
+      </Geometry>
+      <Transform>
+        <Translation x="-50" y="30" z="0"/>
+        <Rotation axisX="1" axisY="0" axisZ="0" angle="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+    </Part>
+
+    <!-- Bolt Hole 3 -->
+    <Part id="4" name="Bolt_Hole_3" parentId="1" materialId="1">
+      <Geometry type="primitive">
+        <Primitive type="cylinder" radius="8" height="55" segments="16"/>
+      </Geometry>
+      <Transform>
+        <Translation x="50" y="-30" z="0"/>
+        <Rotation axisX="1" axisY="0" axisZ="0" angle="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+    </Part>
+
+    <!-- Bolt Hole 4 -->
+    <Part id="5" name="Bolt_Hole_4" parentId="1" materialId="1">
+      <Geometry type="primitive">
+        <Primitive type="cylinder" radius="8" height="55" segments="16"/>
+      </Geometry>
+      <Transform>
+        <Translation x="-50" y="-30" z="0"/>
+        <Rotation axisX="1" axisY="0" axisZ="0" angle="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+    </Part>
+
+    <!-- Mounting Bracket -->
+    <Part id="6" name="MountingBracket" parentId="1" materialId="2">
+      <Geometry type="mesh">
+        <Vertices count="16">
+          <Vertex index="0" x="-30" y="-70" z="10"/>
+          <Vertex index="1" x="30" y="-70" z="10"/>
+          <Vertex index="2" x="30" y="-85" z="10"/>
+          <Vertex index="3" x="-30" y="-85" z="10"/>
+          <Vertex index="4" x="-30" y="-70" z="25"/>
+          <Vertex index="5" x="30" y="-70" z="25"/>
+          <Vertex index="6" x="30" y="-85" z="25"/>
+          <Vertex index="7" x="-30" y="-85" z="25"/>
+          <Vertex index="8" x="-20" y="-77" z="10"/>
+          <Vertex index="9" x="20" y="-77" z="10"/>
+          <Vertex index="10" x="20" y="-78" z="10"/>
+          <Vertex index="11" x="-20" y="-78" z="10"/>
+          <Vertex index="12" x="-20" y="-77" z="25"/>
+          <Vertex index="13" x="20" y="-77" z="25"/>
+          <Vertex index="14" x="20" y="-78" z="25"/>
+          <Vertex index="15" x="-20" y="-78" z="25"/>
+        </Vertices>
+        <Triangles count="12">
+          <Triangle v1="0" v2="1" v3="4"/>
+          <Triangle v1="1" v2="5" v3="4"/>
+          <Triangle v1="1" v2="2" v3="5"/>
+          <Triangle v1="2" v2="6" v3="5"/>
+          <Triangle v1="2" v2="3" v3="6"/>
+          <Triangle v1="3" v2="7" v3="6"/>
+          <Triangle v1="3" v2="0" v3="7"/>
+          <Triangle v1="0" v2="4" v3="7"/>
+          <Triangle v1="8" v2="9" v3="12"/>
+          <Triangle v1="9" v2="13" v3="12"/>
+          <Triangle v1="9" v2="10" v3="13"/>
+          <Triangle v1="10" v2="14" v3="13"/>
+        </Triangles>
+      </Geometry>
+      <Transform>
+        <Translation x="0" y="0" z="0"/>
+        <Rotation axisX="0" axisY="0" axisZ="1" angle="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+    </Part>
+  </Assembly>
+
+  <AdditionalData>
+    <Mass unit="kg">12.5</Mass>
+    <SurfaceArea unit="mm2">45000.2</SurfaceArea>
+    <Volume unit="mm3">1500000.0</Volume>
+    <CenterOfMass x="0" y="0" z="25"/>
+  </AdditionalData>
+
+  <RenderingHints>
+    <DefaultCamera position="300" target="0,0,25"/>
+    <AutoFit enabled="true" padding="1.2"/>
+    <AmbientLight intensity="0.4"/>
+    <DirectionalLight intensity="0.8" direction="1,1,1"/>
+  </RenderingHints>
+</CADModel>

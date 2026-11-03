@@ -1,0 +1,159 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "fd5941dddd0dfb6a19b4debb7071215394227332",
+      "size": 4087
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "a6241059c192a059bcb64e81688f677d0ff572b6",
+      "size": 2969
+    },
+    {
+      "path": "_meta.json",
+      "sha": "0be1de4829b9ef9d931c55f8ab260ad73b78ce4f",
+      "size": 137
+    },
+    {
+      "path": "assets/checklists/bronze-misc-image-checklist.md",
+      "sha": "7a74126989da34e71363633ace5a7d1410c2ce45",
+      "size": 406
+    },
+    {
+      "path": "assets/checklists/jade-image-checklist.md",
+      "sha": "195cac9fd80b95c563ae2a83ace3de4ddfced4ff",
+      "size": 384
+    },
+    {
+      "path": "assets/checklists/painting-image-checklist.md",
+      "sha": "314e149d59a468c5d0959fdb06dd7c44f620553e",
+      "size": 399
+    },
+    {
+      "path": "assets/checklists/porcelain-image-checklist.md",
+      "sha": "7cc4d212b2788c670eb1f6d7f79f6a0deb739d61",
+      "size": 399
+    },
+    {
+      "path": "assets/reply-templates/collection-advice-template.md",
+      "sha": "c660fd5cda10977e9f5ffd34fe53ae9a96469c15",
+      "size": 610
+    },
+    {
+      "path": "assets/reply-templates/image-request-template.md",
+      "sha": "f001b84b1f14fcd5fe665c77cd227b175b682d25",
+      "size": 621
+    },
+    {
+      "path": "assets/reply-templates/initial-assessment-template.md",
+      "sha": "4ec150541c2d54d3204fcec9a02d494d29820df3",
+      "size": 920
+    },
+    {
+      "path": "assets/reply-templates/pre-auction-consult-template.md",
+      "sha": "f0502b3fd30c417834235b32b7490aa28d3d7f5c",
+      "size": 800
+    },
+    {
+      "path": "assets/reply-templates/risk-warning-template.md",
+      "sha": "7d3f30e2b6b6921b0f8d7681e5e6c9a633a7e066",
+      "size": 641
+    },
+    {
+      "path": "assets/tone-guide.md",
+      "sha": "3eb39556b493cbd25c7fb835a30fbe1d2fdcc22a",
+      "size": 1864
+    },
+    {
+      "path": "assets/welcome-message.txt",
+      "sha": "3abba8e4d81b83145d5a7ed59485d7c99983c825",
+      "size": 691
+    },
+    {
+      "path": "manifest.json",
+      "sha": "4c0cc74ec9cdcb9ace3a691c98c45eefa2b7c7df",
+      "size": 2022
+    },
+    {
+      "path": "references/bronze-misc-appraisal-keypoints.md",
+      "sha": "3d825e9b944abbd717d71875746494cdb8fffccc",
+      "size": 2716
+    },
+    {
+      "path": "references/category-appraisal-guidelines.md",
+      "sha": "fb871dfc545837a1111fd3d9783e5f7e7c44498b",
+      "size": 4337
+    },
+    {
+      "path": "references/common-forgery-methods.md",
+      "sha": "2e2a413a7e85263bd5b8edc7e2745bb81692722f",
+      "size": 3281
+    },
+    {
+      "path": "references/conclusion-level-template.md",
+      "sha": "581e7cdc64ec6377ca82c880374afbf5a7abd5f8",
+      "size": 3011
+    },
+    {
+      "path": "references/image-request-checklist.md",
+      "sha": "d3e8c046655a1ceb1ddb87f54b0c4b2aa6aaae47",
+      "size": 2129
+    },
+    {
+      "path": "references/jade-appraisal-keypoints.md",
+      "sha": "95705807cc4b5877bd7bc3b5f39aa49ca4d89e31",
+      "size": 3047
+    },
+    {
+      "path": "references/painting-appraisal-keypoints.md",
+      "sha": "5d5b7a885f3ea29e042b19a19488e6df271cc566",
+      "size": 4030
+    },
+    {
+      "path": "references/porcelain-appraisal-keypoints.md",
+      "sha": "3e1bcb3946a1bd2408703f7f8c09d8c59379627f",
+      "size": 3673
+    },
+    {
+      "path": "references/risk-scenarios-and-boundaries.md",
+      "sha": "0a9a044f57bfa327510c4fab9e920b1a8aa32afd",
+      "size": 3848
+    },
+    {
+      "path": "references/terminology.md",
+      "sha": "3eec20042305b030fd329e5b9785ecd919aea21a",
+      "size": 2877
+    },
+    {
+      "path": "scripts/intake_checklist.py",
+      "sha": "ea35caf896adf5d10628afbbe5fceda6eb85e465",
+      "size": 2049
+    },
+    {
+      "path": "scripts/missing_info_prompt.py",
+      "sha": "7e3ab2180c5e77aa48794b6442d2c2fc499af2fc",
+      "size": 4299
+    },
+    {
+      "path": "scripts/response_formatter.py",
+      "sha": "d3b23c5691717486a1f02e14a4f107c68535f52c",
+      "size": 3166
+    },
+    {
+      "path": "scripts/risk_flagger.py",
+      "sha": "8d4cb49397762c19f51198b22e0264086d4040a7",
+      "size": 2771
+    },
+    {
+      "path": "skill.json",
+      "sha": "45bbdfb4271ffbf7809b5cce50fa211b2303a38e",
+      "size": 1848
+    },
+    {
+      "path": "system_prompt.txt",
+      "sha": "63e4334e44abdb94fda1e3609b63a32830cb20c1",
+      "size": 3799
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "harness-doc-engineering",
+  "version": "1.0.0",
+  "description": "工程文档全生命周期管理技能包",
+  "main": "index.js",
+  "scripts": {
+    "validate": "tsx scripts/validate-traceability.ts",
+    "test": "echo \"Run npm run validate to test traceability\""
+  },
+  "keywords": ["documentation", "engineering", "traceability", "lifecycle"],
+  "author": "MiniMax Agent",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0"
+  }
+}

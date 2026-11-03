@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "e2403f9371eca02efd309e72f59b79390feb4b79",
+      "size": 3566
+    },
+    {
+      "path": "_meta.json",
+      "sha": "b6e1f16c522166021d973d472609c1643e97c74a",
+      "size": 232
+    },
+    {
+      "path": "references/build-commands.md",
+      "sha": "a522919bdd5d6c11ceb53a83c79ca7305f7e02a3",
+      "size": 3222
+    },
+    {
+      "path": "references/control-file-spec.md",
+      "sha": "33e5ad167689b0a23953e061b8f19aed090b3aa3",
+      "size": 2521
+    },
+    {
+      "path": "references/scripts-guide.md",
+      "sha": "1fe5b01b9507808fdd06c7562b32b9f694ac4d95",
+      "size": 3820
+    },
+    {
+      "path": "scripts/create_deb_project.py",
+      "sha": "beb424d29b64af31f61f915c112d512e1ed88714",
+      "size": 12849
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "97483d6f642da222b29afcb9cffc40b2a6ea35fa",
+      "size": 1949
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "1fe4670c20927e71b2bc5b12a39ca2eb893d64b3",
+      "size": 2721
+    },
+    {
+      "path": "scripts/validate_deb_structure.py",
+      "sha": "26abaf146fe7b814a5157bd841f3fa186a7d7541",
+      "size": 4141
+    },
+    {
+      "path": "templates/control.template",
+      "sha": "d637e50bfed00171b9818ebfea7b90c85b09a54c",
+      "size": 199
+    },
+    {
+      "path": "templates/postinst.template",
+      "sha": "e6d2d5b00a825631a17ebf36dba3c33c31c5e64d",
+      "size": 667
+    },
+    {
+      "path": "templates/postrm.template",
+      "sha": "6f1d72f9eaed939962e4601ed093e28b0de9e66e",
+      "size": 702
+    },
+    {
+      "path": "templates/preinst.template",
+      "sha": "3bc2dfbd68563f41baef20679395cb42c479972e",
+      "size": 366
+    },
+    {
+      "path": "templates/prerm.template",
+      "sha": "4a93ae161f894eff531d0b443082a6c2095b6c7c",
+      "size": 478
+    }
+  ]
+}

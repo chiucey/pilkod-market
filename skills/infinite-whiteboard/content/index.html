@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无限白板 - Infinite Whiteboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Canvas Container */
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            cursor: crosshair;
+            transition: background-color 0.3s ease;
+        }
+
+        #drawing-canvas {
+            position: absolute;
+            touch-action: none;
+        }
+
+        /* Toolbar Styles */
+        .toolbar {
+            position: fixed;
+            background: rgba(30, 30, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .toolbar.hidden-mode {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-20px);
+        }
+
+        .toolbar-top {
+            top: 20px;
+            left: 20px;
+        }
+
+        .toolbar-right {
+            top: 20px;
+            right: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 320px;
+            justify-content: flex-end;
+        }
+
+        .toolbar-bottom {
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 90vw;
+            justify-content: center;
+        }
+
+        .toolbar-bottom.hidden-mode {
+            transform: translateX(-50%) translateY(100px);
+        }
+
+        .tool-btn {
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .tool-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+
+        .tool-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .tool-btn svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .tool-btn .badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 18px;
+            height: 18px;
+            background: #ff4757;
+            border-radius: 50%;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Brush Preview */
+        .brush-preview {
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .brush-preview:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .brush-preview .preview-dot {
+            border-radius: 50%;
+            background: #fff;
+            transition: all 0.2s ease;
+        }
+
+        /* Color Picker */
+        .color-picker-wrapper {
+            position: relative;
+        }
+
+        .color-picker {
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 10px;
+            padding: 0;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .color-picker::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+
+        .color-picker::-webkit-color-swatch {
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Slider Styles */
+        .slider-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .slider-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100px;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-value {
+            color: #fff;
+            font-size: 12px;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        /* Preset Colors */
+        .color-presets {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            max-width: 220px;
+            justify-content: center;
+        }
+
+        .color-preset {
+            width: 28px;
+            height: 28px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .color-preset:hover {
+            transform: scale(1.15);
+        }
+
+        .color-preset.active {
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Background Presets */
+        .bg-presets {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            max-width: 280px;
+            justify-content: center;
+        }
+
+        .bg-preset {
+            width: 32px;
+            height: 32px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .bg-preset:hover {
+            transform: scale(1.1);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .bg-preset.active {
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.5);
+        }
+
+        .bg-white { background: #ffffff; }
+        .bg-black { background: #1a1a2e; }
+        .bg-grid {
+            background: #ffffff;
+            background-image:
+                linear-gradient(rgba(200, 200, 200, 0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .bg-dots {
+            background: #ffffff;
+            background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+            background-size: 15px 15px;
+        }
+        .bg-cream { background: #fef9e7; }
+        .bg-gray { background: #f0f0f0; }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background: rgba(40, 40, 45, 0.98);
+            border-radius: 12px;
+            padding: 12px;
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            min-width: 180px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1001;
+        }
+
+        .dropdown-content.show {
+            display: flex;
+        }
+
+        .dropdown-item {
+            padding: 10px 14px;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-item svg {
+            width: 18px;
+            height: 18px;
+            opacity: 0.8;
+        }
+
+        /* Toggle Button */
+        .toggle-group {
+            display: flex;
+            gap: 4px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        .toggle-btn {
+            padding: 8px 12px;
+            border: none;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .toggle-btn:hover {
+            color: #fff;
+        }
+
+        .toggle-btn.active {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+
+        /* Presentation Mode Indicator */
+        .mode-indicator {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1002;
+        }
+
+        .mode-indicator.show {
+            opacity: 1;
+        }
+
+        /* Help Tooltip */
+        .help-tooltip {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 400px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1003;
+        }
+
+        .help-tooltip.show {
+            opacity: 1;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 4px 0;
+        }
+
+        .divider-v {
+            width: 1px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 0 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .toolbar-top {
+                top: 10px;
+                left: 10px;
+            }
+            .toolbar-right {
+                top: auto;
+                bottom: 100px;
+                right: 10px;
+                max-width: 200px;
+            }
+            .toolbar-bottom {
+                bottom: 10px;
+                padding: 8px;
+            }
+            .tool-btn {
+                width: 38px;
+                height: 38px;
+            }
+            .slider {
+                width: 60px;
+            }
+        }
+
+        /* Canvas Backgrounds */
+        #canvas-container.bg-white { background: #ffffff; }
+        #canvas-container.bg-black { background: #1a1a2e; }
+        #canvas-container.bg-cream { background: #fef9e7; }
+        #canvas-container.bg-gray { background: #f0f0f0; }
+        #canvas-container.bg-grid {
+            background: #ffffff;
+            background-image:
+                linear-gradient(rgba(200, 200, 200, 0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        #canvas-container.bg-dots {
+            background: #ffffff;
+            background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+            background-size: 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Canvas Container -->
+    <div id="canvas-container" class="bg-white">
+        <canvas id="drawing-canvas"></canvas>
+    </div>
+
+    <!-- Top Toolbar - Tools -->
+    <div class="toolbar toolbar-top" id="toolbar-top">
+        <button class="tool-btn active" data-tool="brush" title="画笔 (B)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+            </svg>
+        </button>
+        <button class="tool-btn" data-tool="eraser" title="橡皮擦 (E)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 20H7L3 16c-.8-.8-.8-2 0-2.8l10-10c.8-.8 2-.8 2.8 0l6 6c.8.8.8 2 0 2.8L14 20"></path>
+                <path d="M6.5 13.5L14 6"></path>
+            </svg>
+        </button>
+        <button class="tool-btn" data-tool="line" title="直线 (L)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="19" x2="19" y2="5"></line>
+            </svg>
+        </button>
+        <button class="tool-btn" data-tool="rect" title="矩形 (R)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            </svg>
+        </button>
+        <button class="tool-btn" data-tool="circle" title="圆形 (C)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"></circle>
+            </svg>
+        </button>
+        <button class="tool-btn" data-tool="arrow" title="箭头 (A)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="19" x2="19" y2="5"></line>
+                <polyline points="10 5 19 5 19 14"></polyline>
+            </svg>
+        </button>
+
+        <div class="divider"></div>
+
+        <!-- Brush Style -->
+        <div class="dropdown">
+            <button class="brush-preview" id="brush-preview" title="画笔样式">
+                <div class="preview-dot" style="width: 8px; height: 8px;"></div>
+            </button>
+            <div class="dropdown-content" id="brush-menu">
+                <div class="dropdown-item" data-brush="round">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg>
+                    圆形
+                </div>
+                <div class="dropdown-item" data-brush="square">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16"/></svg>
+                    方形
+                </div>
+                <div class="dropdown-item" data-brush="spray">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="8" r="2"/><circle cx="8" cy="14" r="1.5"/><circle cx="16" cy="14" r="1.5"/><circle cx="12" cy="16" r="1"/>
+                    </svg>
+                    喷雾
+                </div>
+                <div class="dropdown-item" data-brush="highlighter">
+                    <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.5"><rect x="4" y="10" width="16" height="4"/></svg>
+                    荧光笔
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <button class="tool-btn" id="undo-btn" title="撤销 (Ctrl+Z)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 10h10a5 5 0 0 1 5 5v2"></path>
+                <polyline points="3 10 8 5 3 10 8 15"></polyline>
+            </svg>
+        </button>
+        <button class="tool-btn" id="redo-btn" title="重做 (Ctrl+Y)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10H11a5 5 0 0 0-5 5v2"></path>
+                <polyline points="21 10 16 5 21 10 16 15"></polyline>
+            </svg>
+        </button>
+        <button class="tool-btn" id="clear-btn" title="清空画布">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Right Toolbar - Colors & Settings -->
+    <div class="toolbar toolbar-right" id="toolbar-right">
+        <!-- Color Presets -->
+        <div class="color-presets">
+            <button class="color-preset active" style="background: #000000;" data-color="#000000"></button>
+            <button class="color-preset" style="background: #ffffff; border: 1px solid #ccc;" data-color="#ffffff"></button>
+            <button class="color-preset" style="background: #ff4757;" data-color="#ff4757"></button>
+            <button class="color-preset" style="background: #ff6b81;" data-color="#ff6b81"></button>
+            <button class="color-preset" style="background: #ffa502;" data-color="#ffa502"></button>
+            <button class="color-preset" style="background: #ffda79;" data-color="#ffda79"></button>
+            <button class="color-preset" style="background: #2ed573;" data-color="#2ed573"></button>
+            <button class="color-preset" style="background: #7bed9f;" data-color="#7bed9f"></button>
+            <button class="color-preset" style="background: #1e90ff;" data-color="#1e90ff"></button>
+            <button class="color-preset" style="background: #70a1ff;" data-color="#70a1ff"></button>
+            <button class="color-preset" style="background: #5352ed;" data-color="#5352ed"></button>
+            <button class="color-preset" style="background: #a55eea;" data-color="#a55eea"></button>
+            <button class="color-preset" style="background: #cd84f1;" data-color="#cd84f1"></button>
+            <button class="color-preset" style="background: #57606f;" data-color="#57606f"></button>
+            <button class="color-preset" style="background: #ffa8a8;" data-color="#ffa8a8"></button>
+        </div>
+
+        <!-- Custom Color -->
+        <div class="color-picker-wrapper">
+            <input type="color" class="color-picker" id="color-picker" value="#000000" title="自定义颜色">
+        </div>
+
+        <div class="divider-v"></div>
+
+        <!-- Size Slider -->
+        <div class="slider-group">
+            <span class="slider-label">粗细</span>
+            <div class="slider-container">
+                <input type="range" class="slider" id="size-slider" min="1" max="50" value="4">
+                <span class="slider-value" id="size-value">4</span>
+            </div>
+        </div>
+
+        <div class="divider-v"></div>
+
+        <!-- Opacity Slider -->
+        <div class="slider-group">
+            <span class="slider-label">透明度</span>
+            <div class="slider-container">
+                <input type="range" class="slider" id="opacity-slider" min="10" max="100" value="100">
+                <span class="slider-value" id="opacity-value">100%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Toolbar - Background & Actions -->
+    <div class="toolbar toolbar-bottom" id="toolbar-bottom">
+        <!-- Background Presets -->
+        <div class="bg-presets">
+            <button class="bg-preset bg-white active" data-bg="white" title="白色背景"></button>
+            <button class="bg-preset bg-black" data-bg="black" title="黑色背景"></button>
+            <button class="bg-preset bg-cream" data-bg="cream" title="米色背景"></button>
+            <button class="bg-preset bg-gray" data-bg="gray" title="灰色背景"></button>
+            <button class="bg-preset bg-grid" data-bg="grid" title="方格背景"></button>
+            <button class="bg-preset bg-dots" data-bg="dots" title="点阵背景"></button>
+        </div>
+
+        <div class="divider-v"></div>
+
+        <!-- Toggle View Mode -->
+        <div class="toggle-group">
+            <button class="toggle-btn" id="toggle-ui-btn" title="隐藏/显示工具栏 (H)">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+            </button>
+            <button class="toggle-btn" id="toggle-download-btn" title="隐藏/显示下载按钮 (D)">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="divider-v"></div>
+
+        <!-- Download Menu -->
+        <div class="dropdown" id="download-dropdown">
+            <button class="tool-btn" id="download-btn" title="下载画作">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+            <div class="dropdown-content" id="download-menu">
+                <div class="dropdown-item" data-format="png">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                    </svg>
+                    PNG 格式 (无损)
+                </div>
+                <div class="dropdown-item" data-format="jpeg">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    JPEG 格式 (压缩)
+                </div>
+                <div class="dropdown-item" data-format="webp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    WebP 格式
+                </div>
+                <div class="dropdown-item" data-format="svg">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    SVG 矢量格式
+                </div>
+            </div>
+        </div>
+
+        <!-- Zoom Controls -->
+        <button class="tool-btn" id="zoom-in-btn" title="放大 (+)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+        </button>
+        <button class="tool-btn" id="zoom-out-btn" title="缩小 (-)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+        </button>
+        <button class="tool-btn" id="reset-zoom-btn" title="重置缩放 (0)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mode Indicator -->
+    <div class="mode-indicator" id="mode-indicator">演示模式 - 按 H 显示工具栏</div>
+
+    <!-- Help Tooltip -->
+    <div class="help-tooltip" id="help-tooltip">
+        <strong>快捷键：</strong><br>
+        B - 画笔 | E - 橡皮擦 | L - 直线 | R - 矩形 | C - 圆形<br>
+        H - 隐藏/显示工具栏 | D - 隐藏/显示下载<br>
+        Ctrl+Z - 撤销 | Ctrl+Y - 重做 | +/- - 缩放 | 0 - 重置缩放
+    </div>
+
+    <script>
+        // ========== Infinite Whiteboard Application ==========
+        class InfiniteWhiteboard {
+            constructor() {
+                this.canvas = document.getElementById('drawing-canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.container = document.getElementById('canvas-container');
+
+                // State
+                this.currentTool = 'brush';
+                this.brushStyle = 'round';
+                this.currentColor = '#000000';
+                this.brushSize = 4;
+                this.brushOpacity = 1;
+                this.isDrawing = false;
+                this.lastX = 0;
+                this.lastY = 0;
+
+                // Transform state
+                this.scale = 1;
+                this.offsetX = 0;
+                this.offsetY = 0;
+                this.isPanning = false;
+                this.panStartX = 0;
+                this.panStartY = 0;
+
+                // History for undo/redo
+                this.history = [];
+                this.historyIndex = -1;
+                this.maxHistory = 50;
+                this.isRedoing = false;
+
+                // Shape drawing state
+                this.shapeStartX = 0;
+                this.shapeStartY = 0;
+                this.tempCanvas = null;
+                this.tempCtx = null;
+
+                // UI state
+                this.uiVisible = true;
+                this.downloadVisible = true;
+
+                this.init();
+            }
+
+            init() {
+                this.setupCanvas();
+                this.bindEvents();
+                this.saveState();
+            }
+
+            setupCanvas() {
+                const resize = () => {
+                    // Create a temporary canvas to preserve drawing
+                    const tempCanvas = document.createElement('canvas');
+                    tempCanvas.width = this.canvas.width;
+                    tempCanvas.height = this.canvas.height;
+                    tempCanvas.getContext('2d').drawImage(this.canvas, 0, 0);
+
+                    // Resize main canvas
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight;
+
+                    // Restore drawing with transform
+                    this.ctx.save();
+                    this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+                    this.ctx.drawImage(tempCanvas, 0, 0);
+                    this.ctx.restore();
+                };
+
+                resize();
+                window.addEventListener('resize', resize);
+            }
+
+            bindEvents() {
+                // Canvas events
+                this.canvas.addEventListener('mousedown', (e) => this.handleMouseDown(e));
+                this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+                this.canvas.addEventListener('mouseup', (e) => this.handleMouseUp(e));
+                this.canvas.addEventListener('mouseleave', (e) => this.handleMouseUp(e));
+                this.canvas.addEventListener('wheel', (e) => this.handleWheel(e));
+
+                // Touch events
+                this.canvas.addEventListener('touchstart', (e) => this.handleTouchStart(e));
+                this.canvas.addEventListener('touchmove', (e) => this.handleTouchMove(e));
+                this.canvas.addEventListener('touchend', (e) => this.handleTouchEnd(e));
+
+                // Tool buttons
+                document.querySelectorAll('.tool-btn[data-tool]').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.setTool(btn.dataset.tool);
+                    });
+                });
+
+                // Brush style
+                document.querySelectorAll('#brush-menu .dropdown-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        this.brushStyle = item.dataset.brush;
+                        document.getElementById('brush-preview').querySelector('.preview-dot').style.borderRadius =
+                            this.brushStyle === 'square' ? '2px' : '50%';
+                        this.updateBrushPreview();
+                    });
+                });
+
+                document.getElementById('brush-preview').addEventListener('click', () => {
+                    document.getElementById('brush-menu').classList.toggle('show');
+                });
+
+                // Color presets
+                document.querySelectorAll('.color-preset').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        document.querySelectorAll('.color-preset').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        this.currentColor = btn.dataset.color;
+                        document.getElementById('color-picker').value = btn.dataset.color;
+                    });
+                });
+
+                // Custom color picker
+                document.getElementById('color-picker').addEventListener('input', (e) => {
+                    document.querySelectorAll('.color-preset').forEach(b => b.classList.remove('active'));
+                    this.currentColor = e.target.value;
+                });
+
+                // Size slider
+                document.getElementById('size-slider').addEventListener('input', (e) => {
+                    this.brushSize = parseInt(e.target.value);
+                    document.getElementById('size-value').textContent = this.brushSize;
+                    this.updateBrushPreview();
+                });
+
+                // Opacity slider
+                document.getElementById('opacity-slider').addEventListener('input', (e) => {
+                    this.brushOpacity = parseInt(e.target.value) / 100;
+                    document.getElementById('opacity-value').textContent = e.target.value + '%';
+                });
+
+                // Background presets
+                document.querySelectorAll('.bg-preset').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        document.querySelectorAll('.bg-preset').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        this.setBackground(btn.dataset.bg);
+                    });
+                });
+
+                // Action buttons
+                document.getElementById('undo-btn').addEventListener('click', () => this.undo());
+                document.getElementById('redo-btn').addEventListener('click', () => this.redo());
+                document.getElementById('clear-btn').addEventListener('click', () => this.clearCanvas());
+
+                // Toggle buttons
+                document.getElementById('toggle-ui-btn').addEventListener('click', () => this.toggleUI());
+                document.getElementById('toggle-download-btn').addEventListener('click', () => this.toggleDownload());
+
+                // Download
+                document.getElementById('download-btn').addEventListener('click', () => {
+                    if (this.downloadVisible) {
+                        document.getElementById('download-menu').classList.toggle('show');
+                    }
+                });
+
+                document.querySelectorAll('#download-menu .dropdown-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        this.downloadImage(item.dataset.format);
+                        document.getElementById('download-menu').classList.remove('show');
+                    });
+                });
+
+                // Zoom
+                document.getElementById('zoom-in-btn').addEventListener('click', () => this.zoomIn());
+                document.getElementById('zoom-out-btn').addEventListener('click', () => this.zoomOut());
+                document.getElementById('reset-zoom-btn').addEventListener('click', () => this.resetZoom());
+
+                // Keyboard shortcuts
+                document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+
+                // Close dropdowns when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('.dropdown')) {
+                        document.querySelectorAll('.dropdown-content').forEach(d => d.classList.remove('show'));
+                    }
+                });
+
+                // Help tooltip
+                setTimeout(() => {
+                    document.getElementById('help-tooltip').classList.add('show');
+                    setTimeout(() => {
+                        document.getElementById('help-tooltip').classList.remove('show');
+                    }, 5000);
+                }, 1000);
+            }
+
+            getCanvasCoords(e) {
+                const rect = this.canvas.getBoundingClientRect();
+                return {
+                    x: (e.clientX - rect.left - this.offsetX) / this.scale,
+                    y: (e.clientY - rect.top - this.offsetY) / this.scale
+                };
+            }
+
+            handleMouseDown(e) {
+                const coords = this.getCanvasCoords(e);
+
+                // Right click or middle click for panning
+                if (e.button === 1 || (e.button === 0 && e.altKey)) {
+                    this.isPanning = true;
+                    this.panStartX = e.clientX - this.offsetX;
+                    this.panStartY = e.clientY - this.offsetY;
+                    this.canvas.style.cursor = 'grabbing';
+                    return;
+                }
+
+                if (e.button !== 0) return;
+
+                if (this.currentTool === 'brush' || this.currentTool === 'eraser') {
+                    this.isDrawing = true;
+                    this.lastX = coords.x;
+                    this.lastY = coords.y;
+                    this.drawPoint(coords.x, coords.y);
+                } else if (['line', 'rect', 'circle', 'arrow'].includes(this.currentTool)) {
+                    this.isDrawing = true;
+                    this.shapeStartX = coords.x;
+                    this.shapeStartY = coords.y;
+                    this.createTempCanvas();
+                }
+            }
+
+            handleMouseMove(e) {
+                const coords = this.getCanvasCoords(e);
+
+                if (this.isPanning) {
+                    this.offsetX = e.clientX - this.panStartX;
+                    this.offsetY = e.clientY - this.panStartY;
+                    this.updateTransform();
+                    return;
+                }
+
+                if (!this.isDrawing) return;
+
+                if (this.currentTool === 'brush' || this.currentTool === 'eraser') {
+                    this.drawLine(this.lastX, this.lastY, coords.x, coords.y);
+                    this.lastX = coords.x;
+                    this.lastY = coords.y;
+                } else if (['line', 'rect', 'circle', 'arrow'].includes(this.currentTool)) {
+                    this.redrawTemp();
+                    this.drawShapePreview(coords.x, coords.y);
+                }
+            }
+
+            handleMouseUp(e) {
+                if (this.isPanning) {
+                    this.isPanning = false;
+                    this.canvas.style.cursor = 'crosshair';
+                    return;
+                }
+
+                if (!this.isDrawing) return;
+
+                const coords = this.getCanvasCoords(e);
+
+                if (['line', 'rect', 'circle', 'arrow'].includes(this.currentTool)) {
+                    this.drawShape(coords.x, coords.y);
+                    this.removeTempCanvas();
+                }
+
+                this.isDrawing = false;
+                this.saveState();
+            }
+
+            handleWheel(e) {
+                e.preventDefault();
+                const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                const newScale = Math.min(Math.max(this.scale * delta, 0.1), 5);
+
+                // Zoom towards mouse position
+                const rect = this.canvas.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+
+                this.offsetX = mouseX - (mouseX - this.offsetX) * (newScale / this.scale);
+                this.offsetY = mouseY - (mouseY - this.offsetY) * (newScale / this.scale);
+                this.scale = newScale;
+
+                this.updateTransform();
+            }
+
+            handleTouchStart(e) {
+                e.preventDefault();
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    this.handleMouseDown({ clientX: touch.clientX, clientY: touch.clientY, button: 0 });
+                } else if (e.touches.length === 2) {
+                    this.isPanning = true;
+                    this.lastTouchDist = Math.hypot(
+                        e.touches[0].clientX - e.touches[1].clientX,
+                        e.touches[0].clientY - e.touches[1].clientY
+                    );
+                }
+            }
+
+            handleTouchMove(e) {
+                e.preventDefault();
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    this.handleMouseMove({ clientX: touch.clientX, clientY: touch.clientY });
+                } else if (e.touches.length === 2) {
+                    const dist = Math.hypot(
+                        e.touches[0].clientX - e.touches[1].clientX,
+                        e.touches[0].clientY - e.touches[1].clientY
+                    );
+                    const delta = dist / this.lastTouchDist;
+                    this.scale = Math.min(Math.max(this.scale * delta, 0.1), 5);
+                    this.updateTransform();
+                    this.lastTouchDist = dist;
+                }
+            }
+
+            handleTouchEnd(e) {
+                this.handleMouseUp({ clientX: 0, clientY: 0 });
+                this.isPanning = false;
+            }
+
+            handleKeyboard(e) {
+                if (e.target.tagName === 'INPUT') return;
+
+                if (e.ctrlKey || e.metaKey) {
+                    if (e.key === 'z') {
+                        e.preventDefault();
+                        this.undo();
+                    } else if (e.key === 'y') {
+                        e.preventDefault();
+                        this.redo();
+                    }
+                } else {
+                    switch(e.key.toLowerCase()) {
+                        case 'b': this.setTool('brush'); break;
+                        case 'e': this.setTool('eraser'); break;
+                        case 'l': this.setTool('line'); break;
+                        case 'r': this.setTool('rect'); break;
+                        case 'c': this.setTool('circle'); break;
+                        case 'a': this.setTool('arrow'); break;
+                        case 'h': this.toggleUI(); break;
+                        case 'd': this.toggleDownload(); break;
+                        case '+':
+                        case '=': this.zoomIn(); break;
+                        case '-': this.zoomOut(); break;
+                        case '0': this.resetZoom(); break;
+                    }
+                }
+            }
+
+            setTool(tool) {
+                this.currentTool = tool;
+                document.querySelectorAll('.tool-btn[data-tool]').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.tool === tool);
+                });
+            }
+
+            setBackground(bg) {
+                this.container.className = 'bg-' + bg;
+            }
+
+            drawPoint(x, y) {
+                this.ctx.save();
+                this.ctx.translate(this.offsetX, this.offsetY);
+                this.ctx.scale(this.scale, this.scale);
+
+                if (this.currentTool === 'eraser') {
+                    this.ctx.globalCompositeOperation = 'destination-out';
+                    this.ctx.strokeStyle = 'rgba(0,0,0,1)';
+                    this.ctx.lineWidth = this.brushSize * 3;
+                } else {
+                    this.ctx.globalCompositeOperation = 'source-over';
+                    this.ctx.fillStyle = this.currentColor;
+                    this.ctx.globalAlpha = this.brushOpacity;
+                }
+
+                this.ctx.beginPath();
+                this.ctx.arc(x, y, this.brushSize / 2, 0, Math.PI * 2);
+                this.ctx.fill();
+                this.ctx.restore();
+            }
+
+            drawLine(x1, y1, x2, y2) {
+                this.ctx.save();
+                this.ctx.translate(this.offsetX, this.offsetY);
+                this.ctx.scale(this.scale, this.scale);
+
+                if (this.brushStyle === 'spray') {
+                    this.drawSpray(x2, y2);
+                } else {
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(x1, y1);
+                    this.ctx.lineTo(x2, y2);
+
+                    if (this.currentTool === 'eraser') {
+                        this.ctx.globalCompositeOperation = 'destination-out';
+                        this.ctx.lineWidth = this.brushSize * 3;
+                        this.ctx.lineCap = 'round';
+                        this.ctx.strokeStyle = 'rgba(0,0,0,1)';
+                    } else {
+                        this.ctx.globalCompositeOperation = 'source-over';
+                        this.ctx.strokeStyle = this.currentColor;
+                        this.ctx.lineWidth = this.brushSize;
+                        this.ctx.lineCap = this.brushStyle === 'square' ? 'square' : 'round';
+                        this.ctx.lineJoin = 'round';
+                        this.ctx.globalAlpha = this.brushStyle === 'highlighter' ? 0.4 : this.brushOpacity;
+                    }
+
+                    this.ctx.stroke();
+                }
+
+                this.ctx.restore();
+            }
+
+            drawSpray(x, y) {
+                const density = this.brushSize * 3;
+                for (let i = 0; i < density; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const radius = Math.random() * this.brushSize;
+                    const sx = x + Math.cos(angle) * radius;
+                    const sy = y + Math.sin(angle) * radius;
+                    this.ctx.fillStyle = this.currentColor;
+                    this.ctx.globalAlpha = Math.random() * 0.3;
+                    this.ctx.fillRect(sx, sy, 1, 1);
+                }
+            }
+
+            createTempCanvas() {
+                this.tempCanvas = document.createElement('canvas');
+                this.tempCanvas.width = this.canvas.width;
+                this.tempCanvas.height = this.canvas.height;
+                this.tempCtx = this.tempCanvas.getContext('2d');
+                this.tempCtx.drawImage(this.canvas, 0, 0);
+            }
+
+            redrawTemp() {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                if (this.tempCanvas) {
+                    this.ctx.drawImage(this.tempCanvas, 0, 0);
+                }
+            }
+
+            removeTempCanvas() {
+                this.tempCanvas = null;
+                this.tempCtx = null;
+            }
+
+            drawShapePreview(x, y) {
+                this.ctx.save();
+                this.ctx.translate(this.offsetX, this.offsetY);
+                this.ctx.scale(this.scale, this.scale);
+
+                this.ctx.strokeStyle = this.currentColor;
+                this.ctx.lineWidth = this.brushSize;
+                this.ctx.lineCap = 'round';
+                this.ctx.lineJoin = 'round';
+                this.ctx.globalAlpha = this.brushOpacity;
+
+                switch(this.currentTool) {
+                    case 'line':
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(this.shapeStartX, this.shapeStartY);
+                        this.ctx.lineTo(x, y);
+                        this.ctx.stroke();
+                        break;
+                    case 'rect':
+                        this.ctx.strokeRect(
+                            this.shapeStartX,
+                            this.shapeStartY,
+                            x - this.shapeStartX,
+                            y - this.shapeStartY
+                        );
+                        break;
+                    case 'circle':
+                        const rx = Math.abs(x - this.shapeStartX);
+                        const ry = Math.abs(y - this.shapeStartY);
+                        this.ctx.beginPath();
+                        this.ctx.ellipse(this.shapeStartX, this.shapeStartY, rx, ry, 0, 0, Math.PI * 2);
+                        this.ctx.stroke();
+                        break;
+                    case 'arrow':
+                        this.drawArrow(this.shapeStartX, this.shapeStartY, x, y);
+                        break;
+                }
+
+                this.ctx.restore();
+            }
+
+            drawShape(x, y) {
+                this.drawShapePreview(x, y);
+            }
+
+            drawArrow(x1, y1, x2, y2) {
+                const angle = Math.atan2(y2 - y1, x2 - x1);
+                const headLen = this.brushSize * 4;
+
+                this.ctx.beginPath();
+                this.ctx.moveTo(x1, y1);
+                this.ctx.lineTo(x2, y2);
+                this.ctx.stroke();
+
+                this.ctx.beginPath();
+                this.ctx.moveTo(x2, y2);
+                this.ctx.lineTo(
+                    x2 - headLen * Math.cos(angle - Math.PI / 6),
+                    y2 - headLen * Math.sin(angle - Math.PI / 6)
+                );
+                this.ctx.moveTo(x2, y2);
+                this.ctx.lineTo(
+                    x2 - headLen * Math.cos(angle + Math.PI / 6),
+                    y2 - headLen * Math.sin(angle + Math.PI / 6)
+                );
+                this.ctx.stroke();
+            }
+
+            updateTransform() {
+                this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                // Redraw from history
+                if (this.history.length > 0 && this.historyIndex >= 0) {
+                    this.ctx.drawImage(this.history[this.historyIndex], 0, 0);
+                }
+
+                // Apply new transform for drawing
+                this.ctx.translate(this.offsetX, this.offsetY);
+                this.ctx.scale(this.scale, this.scale);
+            }
+
+            updateBrushPreview() {
+                const preview = document.getElementById('brush-preview').querySelector('.preview-dot');
+                const size = Math.min(this.brushSize, 30);
+                preview.style.width = size + 'px';
+                preview.style.height = size + 'px';
+                preview.style.background = this.currentTool === 'eraser' ? '#888' : this.currentColor;
+            }
+
+            saveState() {
+                if (this.isRedoing) return;
+
+                // Remove any states after current index
+                this.history = this.history.slice(0, this.historyIndex + 1);
+
+                // Create state snapshot
+                const stateCanvas = document.createElement('canvas');
+                stateCanvas.width = this.canvas.width;
+                stateCanvas.height = this.canvas.height;
+                const stateCtx = stateCanvas.getContext('2d');
+
+                // Draw without transform
+                stateCtx.setTransform(1, 0, 0, 1, 0, 0);
+                stateCtx.drawImage(this.canvas, 0, 0);
+
+                this.history.push(stateCanvas);
+
+                // Limit history size
+                if (this.history.length > this.maxHistory) {
+                    this.history.shift();
+                } else {
+                    this.historyIndex++;
+                }
+            }
+
+            undo() {
+                if (this.historyIndex > 0) {
+                    this.historyIndex--;
+                    this.restoreState();
+                }
+            }
+
+            redo() {
+                if (this.historyIndex < this.history.length - 1) {
+                    this.historyIndex++;
+                    this.restoreState();
+                }
+            }
+
+            restoreState() {
+                this.isRedoing = true;
+                this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                if (this.history[this.historyIndex]) {
+                    this.ctx.drawImage(this.history[this.historyIndex], 0, 0);
+                }
+
+                this.ctx.translate(this.offsetX, this.offsetY);
+                this.ctx.scale(this.scale, this.scale);
+                this.isRedoing = false;
+            }
+
+            clearCanvas() {
+                if (confirm('确定要清空画布吗？')) {
+                    this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    this.saveState();
+                }
+            }
+
+            toggleUI() {
+                this.uiVisible = !this.uiVisible;
+                const indicator = document.getElementById('mode-indicator');
+
+                if (this.uiVisible) {
+                    document.getElementById('toolbar-top').classList.remove('hidden-mode');
+                    document.getElementById('toolbar-right').classList.remove('hidden-mode');
+                    document.getElementById('toolbar-bottom').classList.remove('hidden-mode');
+                } else {
+                    document.getElementById('toolbar-top').classList.add('hidden-mode');
+                    document.getElementById('toolbar-right').classList.add('hidden-mode');
+                    document.getElementById('toolbar-bottom').classList.add('hidden-mode');
+                }
+
+                indicator.textContent = this.uiVisible ? '' : '演示模式 - 按 H 显示工具栏';
+                indicator.classList.toggle('show', !this.uiVisible);
+            }
+
+            toggleDownload() {
+                this.downloadVisible = !this.downloadVisible;
+                const downloadBtn = document.getElementById('download-btn');
+                downloadBtn.style.display = this.downloadVisible ? 'flex' : 'none';
+            }
+
+            zoomIn() {
+                this.scale = Math.min(this.scale * 1.2, 5);
+                this.updateTransform();
+            }
+
+            zoomOut() {
+                this.scale = Math.max(this.scale * 0.8, 0.1);
+                this.updateTransform();
+            }
+
+            resetZoom() {
+                this.scale = 1;
+                this.offsetX = 0;
+                this.offsetY = 0;
+                this.updateTransform();
+            }
+
+            downloadImage(format) {
+                // Create export canvas
+                const exportCanvas = document.createElement('canvas');
+                exportCanvas.width = this.canvas.width;
+                exportCanvas.height = this.canvas.height;
+                const exportCtx = exportCanvas.getContext('2d');
+
+                // Draw background
+                const bgColor = this.container.className.replace('bg-', '') || 'white';
+                const colors = {
+                    white: '#ffffff',
+                    black: '#1a1a2e',
+                    cream: '#fef9e7',
+                    gray: '#f0f0f0',
+                    grid: '#ffffff',
+                    dots: '#ffffff'
+                };
+                exportCtx.fillStyle = colors[bgColor] || '#ffffff';
+                exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+
+                // Draw content without transform
+                exportCtx.setTransform(1, 0, 0, 1, 0, 0);
+                exportCtx.drawImage(this.canvas, 0, 0);
+
+                // Generate download
+                const timestamp = new Date().toISOString().slice(0, 10);
+                let filename = `whiteboard-${timestamp}`;
+                let mimeType = 'image/png';
+
+                switch(format) {
+                    case 'png':
+                        mimeType = 'image/png';
+                        filename += '.png';
+                        break;
+                    case 'jpeg':
+                    case 'jpg':
+                        mimeType = 'image/jpeg';
+                        filename += '.jpg';
+                        break;
+                    case 'webp':
+                        mimeType = 'image/webp';
+                        filename += '.webp';
+                        break;
+                    case 'svg':
+                        this.downloadSVG();
+                        return;
+                }
+
+                const link = document.createElement('a');
+                link.download = filename;
+                link.href = exportCanvas.toDataURL(mimeType, 0.95);
+                link.click();
+            }
+
+            downloadSVG() {
+                const svgNS = 'http://www.w3.org/2000/svg';
+                const svg = document.createElementNS(svgNS, 'svg');
+                svg.setAttribute('width', this.canvas.width);
+                svg.setAttribute('height', this.canvas.height);
+                svg.setAttribute('xmlns', svgNS);
+
+                // Add background
+                const bg = document.createElementNS(svgNS, 'rect');
+                bg.setAttribute('width', '100%');
+                bg.setAttribute('height', '100%');
+                const bgColor = this.container.className.replace('bg-', '') || 'white';
+                const colors = {
+                    white: '#ffffff',
+                    black: '#1a1a2e',
+                    cream: '#fef9e7',
+                    gray: '#f0f0f0',
+                    grid: '#ffffff',
+                    dots: '#ffffff'
+                };
+                bg.setAttribute('fill', colors[bgColor] || '#ffffff');
+                svg.appendChild(bg);
+
+                // Convert canvas to image and embed
+                const img = this.canvas.toDataURL('image/png');
+                const image = document.createElementNS(svgNS, 'image');
+                image.setAttribute('x', '0');
+                image.setAttribute('y', '0');
+                image.setAttribute('width', this.canvas.width);
+                image.setAttribute('height', this.canvas.height);
+                image.setAttribute('href', img);
+                svg.appendChild(image);
+
+                // Download
+                const blob = new Blob([new XMLSerializer().serializeToString(svg)], { type: 'image/svg+xml' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.download = `whiteboard-${new Date().toISOString().slice(0, 10)}.svg`;
+                link.href = url;
+                link.click();
+                URL.revokeObjectURL(url);
+            }
+        }
+
+        // Initialize
+        const whiteboard = new InfiniteWhiteboard();
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

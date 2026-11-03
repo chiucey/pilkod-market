@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "3389a1e205449610c52614ececdce8df1d2ccaf1",
+      "size": 4435
+    },
+    {
+      "path": "_meta.json",
+      "sha": "bdeabc013004136215d115d14ff81f540344ce91",
+      "size": 238
+    },
+    {
+      "path": "data/trading_record.json",
+      "sha": "d978ac36802c8a97bbd629b04d391dba7947f126",
+      "size": 359
+    },
+    {
+      "path": "references/indicators.md",
+      "sha": "fd05b5ae86d83779caef804b81bff215fa3c217f",
+      "size": 2369
+    },
+    {
+      "path": "scripts/analyze_fund_flow.py",
+      "sha": "de63d880f7592adbe297b5eb878b0b29cef15805",
+      "size": 6235
+    },
+    {
+      "path": "scripts/analyze_leaders.py",
+      "sha": "57499ef87360e19af7fbdff94332f73092fbd488",
+      "size": 6186
+    },
+    {
+      "path": "scripts/analyze_potential.py",
+      "sha": "0d0dc6e564e131cd1ff4fbf435451a480278d647",
+      "size": 5377
+    },
+    {
+      "path": "scripts/analyze_sectors.py",
+      "sha": "d90e3f7826b2b89b7a1b01064cfe2d588a32a836",
+      "size": 4905
+    },
+    {
+      "path": "scripts/analyze_sentiment.py",
+      "sha": "fc2edad9a948a0bdae972db3abb29e4cd899cc65",
+      "size": 8389
+    },
+    {
+      "path": "scripts/batch_query.py",
+      "sha": "8777c5afafcc41a89fe818bc9b46c63d22f97b2d",
+      "size": 2677
+    },
+    {
+      "path": "scripts/get_news.py",
+      "sha": "88313ed1c4f78a146a31dbbf5eebd58153796b59",
+      "size": 1465
+    },
+    {
+      "path": "scripts/get_price.py",
+      "sha": "90739208d474a813ea5265048afe69af98e60072",
+      "size": 3246
+    },
+    {
+      "path": "scripts/set_alert.py",
+      "sha": "a6c6cb1978ff88b8fa2d461ce4c101ab03664a9b",
+      "size": 2461
+    },
+    {
+      "path": "scripts/simulate_trading.py",
+      "sha": "d5cd8cde3730145444be11bb5685d4b459d8b573",
+      "size": 11617
+    }
+  ]
+}

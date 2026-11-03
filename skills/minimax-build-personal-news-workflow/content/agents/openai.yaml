@@ -1,0 +1,4 @@
+interface:
+  display_name: "MiniMax Personal News Workflow"
+  short_description: "MiniMax-only personalized news workflow builder"
+  default_prompt: "Use $minimax-build-personal-news-workflow to plan my recurring news briefing and website."

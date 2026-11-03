@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "6e33d6af1db7cb5e6fea6309185d283aa9d73cb0",
+      "size": 5465
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "736bb970bf2cc616352fea174a762046ac4947e1",
+      "size": 5121
+    },
+    {
+      "path": "_meta.json",
+      "sha": "89c6bb1f759cc4c72be2934f8892090780cf6938",
+      "size": 187
+    },
+    {
+      "path": "assets/.gitkeep",
+      "sha": "2b311458688b808dddb053928e79a409a94a7a26",
+      "size": 19
+    },
+    {
+      "path": "config/settings.yaml",
+      "sha": "65b74fd0c024a4de768f4af460fa4ef4c8b18f81",
+      "size": 1396
+    },
+    {
+      "path": "instructions/system_prompt.md",
+      "sha": "80d6c82eafc8d73fe4696b429023d15149259b85",
+      "size": 3335
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha": "246db6f0811eeb88828fa305e11e889a662d5977",
+      "size": 18
+    },
+    {
+      "path": "scripts/ddg_search.py",
+      "sha": "91fed47a0d3416a3ecb4226a6cf8532f4db0bafa",
+      "size": 2116
+    },
+    {
+      "path": "scripts/multi_source.py",
+      "sha": "64c33fa192b534809c8b9751be0b6f1b6ec9f089",
+      "size": 21734
+    },
+    {
+      "path": "scripts/news.py",
+      "sha": "d4c4153a55844856b8a84376ed3c413da0ff8df6",
+      "size": 3068
+    },
+    {
+      "path": "scripts/options_links.py",
+      "sha": "8b3dcb6cb85dc9843e470e3293555be6f442ed21",
+      "size": 1929
+    },
+    {
+      "path": "scripts/uw.py",
+      "sha": "dfbec7ba5240262b0832f515173d55d7c1acd97d",
+      "size": 1233
+    },
+    {
+      "path": "scripts/yf.py",
+      "sha": "1eecc1276d4cb7c03cfb672ba28a6a4564a32421",
+      "size": 2637
+    },
+    {
+      "path": "src/__init__.py",
+      "sha": "474c82ac9e31171ee3bf883c54165b0cdbe612a3",
+      "size": 6163
+    },
+    {
+      "path": "src/main.py",
+      "sha": "474c82ac9e31171ee3bf883c54165b0cdbe612a3",
+      "size": 6163
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha": "65140f2e3919fe56b74572d1518910df4a331030",
+      "size": 16
+    },
+    {
+      "path": "tests/test_main.py",
+      "sha": "34b950642c58b87059fe54f7829da2a38e83f696",
+      "size": 4163
+    }
+  ]
+}

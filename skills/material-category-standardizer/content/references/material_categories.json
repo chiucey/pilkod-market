@@ -1,0 +1,651 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-04-11",
+  "update_source": {
+    "enabled": true,
+    "last_sync": null,
+    "sources": [
+      "national_standards",
+      "industry_standards",
+      "local_standards"
+    ]
+  },
+  "categories": [
+    {
+      "code": "0101",
+      "name": "钢筋/螺纹钢",
+      "parent": "金属材料",
+      "keywords": ["钢筋", "螺纹钢", "带肋钢筋", "HRB", "HPB"],
+      "aliases": ["盘条钢筋", "三级钢筋", "二级钢筋", "一级钢筋"],
+      "examples": ["HRB400钢筋", "HPB300光圆钢筋", "三级钢", "抗震钢筋"],
+      "standards": {
+        "execution_standard": "GB/T 1499.2-2018",
+        "related_standards": ["GB/T 1499.1", "GB 50010", "JGJ 95"],
+        "inspection_items": ["屈服强度", "抗拉强度", "伸长率", "冷弯性能", "重量偏差"],
+        "grade_range": ["HPB300", "HRB335", "HRB400", "HRB500", "HRB600"],
+        "common_specs": ["φ6-50mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0102",
+      "name": "钢丝绳/钢绞线",
+      "parent": "金属材料",
+      "keywords": ["钢绞线", "钢丝绳", "钢芯", "预应力"],
+      "aliases": ["钢索", "缆索", "绞线", "镀锌钢绞线"],
+      "examples": ["预应力钢绞线", "无粘结钢绞线", "热镀锌钢绞线", "15.2钢绞线"],
+      "standards": {
+        "execution_standard": "GB/T 5224-2014",
+        "related_standards": ["GB/T 20118", "YB/T 5195"],
+        "inspection_items": ["整根拉伸", "破断拉力", "伸长率", "镀锌层质量"],
+        "grade_range": ["1570MPa", "1720MPa", "1860MPa", "1960MPa"],
+        "common_specs": ["φ9.5-21.6mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0103",
+      "name": "钢管",
+      "parent": "金属材料",
+      "keywords": ["钢管", "无缝钢管", "焊接钢管", "镀锌管"],
+      "aliases": ["无缝管", "焊管", "镀锌钢管", "水煤气管"],
+      "examples": ["热镀锌钢管", "直缝钢管", "螺旋钢管", "镀锌焊管"],
+      "standards": {
+        "execution_standard": "GB/T 8163-2018",
+        "related_standards": ["GB/T 9711", "SY/T 5037", "GB/T 3091"],
+        "inspection_items": ["拉伸性能", "弯曲性能", "压扁性能", "液压试验"],
+        "grade_range": ["10#", "20#", "Q295", "Q345"],
+        "common_specs": ["DN15-DN1200"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0104",
+      "name": "钢板/钢带",
+      "parent": "金属材料",
+      "keywords": ["钢板", "钢带", "薄板", "中厚板", "卷板"],
+      "aliases": ["冷轧板", "热轧板", "镀锌板", "花纹板"],
+      "examples": ["Q235钢板", "热轧薄钢板", "冷轧钢带", "镀锌薄钢板"],
+      "standards": {
+        "execution_standard": "GB/T 3274-2017",
+        "related_standards": ["GB/T 700", "GB/T 1591", "GB/T 2518"],
+        "inspection_items": ["拉伸性能", "弯曲性能", "冲击性能", "厚度偏差"],
+        "grade_range": ["Q235", "Q355", "Q390", "Q420", "Q460"],
+        "common_specs": ["1.0-200mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0105",
+      "name": "型钢",
+      "parent": "金属材料",
+      "keywords": ["型钢", "工字钢", "槽钢", "角钢", "H型钢"],
+      "aliases": ["角铁", "丁字钢", "H钢", "I型钢"],
+      "examples": ["热轧H型钢", "等边角钢", "普通槽钢", "Q345B工字钢"],
+      "standards": {
+        "execution_standard": "GB/T 11263-2019",
+        "related_standards": ["GB/T 706", "GB/T 707", "YB/T 4112"],
+        "inspection_items": ["外形尺寸", "重量偏差", "力学性能", "工艺性能"],
+        "grade_range": ["Q235", "Q355", "Q390", "Q420", "Q460"],
+        "common_specs": ["100-1000mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0106",
+      "name": "铝材/铝合金",
+      "parent": "金属材料",
+      "keywords": ["铝材", "铝合金", "铝板", "铝型材", "铝管"],
+      "aliases": ["铝合金型材", "铝单板", "铝扣板", "铝方通"],
+      "examples": ["6063铝合金", "铝合金门窗", "铝幕墙板", "工业铝型材"],
+      "standards": {
+        "execution_standard": "GB/T 5237.1-2017",
+        "related_standards": ["GB/T 3190", "GB/T 6892", "JG/T 255"],
+        "inspection_items": ["化学成分", "力学性能", "尺寸偏差", "膜厚"],
+        "grade_range": ["6061", "6063", "6063A", "6082"],
+        "common_specs": ["壁厚0.6-20mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0107",
+      "name": "铜材/铜合金",
+      "parent": "金属材料",
+      "keywords": ["铜材", "铜管", "铜板", "铜棒", "铜线"],
+      "aliases": ["紫铜", "黄铜", "青铜", "纯铜"],
+      "examples": ["T2紫铜管", "黄铜板", "铜芯线", "铜排"],
+      "standards": {
+        "execution_standard": "GB/T 5231-2012",
+        "related_standards": ["GB/T 1527", "GB/T 2059", "GB/T 4423"],
+        "inspection_items": ["化学成分", "力学性能", "尺寸偏差", "表面质量"],
+        "grade_range": ["T1", "T2", "T3", "H62", "H65", "H68"],
+        "common_specs": ["直径1-200mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0108",
+      "name": "不锈钢",
+      "parent": "金属材料",
+      "keywords": ["不锈钢", "不锈钢板", "不锈钢管", "304", "316"],
+      "aliases": ["不锈钢材", "食品级不锈钢", "工业不锈钢"],
+      "examples": ["304不锈钢", "316L不锈钢板", "不锈钢法兰", "不锈钢焊管"],
+      "standards": {
+        "execution_standard": "GB/T 3280-2015",
+        "related_standards": ["GB/T 4237", "GB/T 14976", "GB/T 12771"],
+        "inspection_items": ["化学成分", "力学性能", "耐腐蚀性能", "晶间腐蚀"],
+        "grade_range": ["201", "304", "304L", "316", "316L", "321"],
+        "common_specs": ["0.3-100mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0201",
+      "name": "水泥",
+      "parent": "非金属材料",
+      "keywords": ["水泥", "硅酸盐水泥", "普通水泥", "矿渣水泥"],
+      "aliases": ["PC水泥", "PO水泥", "PSA水泥", "火山灰水泥"],
+      "examples": ["P.O42.5水泥", "P.S.A32.5水泥", "硅酸盐水泥52.5", "普通硅酸盐水泥"],
+      "standards": {
+        "execution_standard": "GB 8076-2015",
+        "related_standards": ["GB/T 1346", "GB/T 17671", "GB/T 750"],
+        "inspection_items": ["细度", "凝结时间", "安定性", "强度", "烧失量"],
+        "grade_range": ["32.5", "32.5R", "42.5", "42.5R", "52.5", "52.5R"],
+        "common_specs": ["散装/袋装"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0202",
+      "name": "砂石骨料",
+      "parent": "非金属材料",
+      "keywords": ["砂", "碎石", "卵石", "粗骨料", "细骨料"],
+      "aliases": ["河砂", "机制砂", "山砂", "石英砂", "粗砂", "细砂"],
+      "examples": ["中粗砂", "细骨料", "5-25mm碎石", "天然级配卵石"],
+      "standards": {
+        "execution_standard": "GB/T 14684-2022",
+        "related_standards": ["GB/T 14685", "JTG E42", "JGJ 52"],
+        "inspection_items": ["颗粒级配", "细度模数", "含泥量", "泥块含量", "压碎指标"],
+        "grade_range": ["粗砂", "中砂", "细砂", "机制砂I类/II类/III类"],
+        "common_specs": ["0.15-9.5mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0203",
+      "name": "石灰/石膏",
+      "parent": "非金属材料",
+      "keywords": ["石灰", "石膏", "生石灰", "熟石灰"],
+      "aliases": ["建筑石膏", "高强石膏", "粉刷石膏", "石灰粉"],
+      "examples": ["消石灰", "建筑生石灰", "抹灰石膏", "腻子石膏"],
+      "standards": {
+        "execution_standard": "JC/T 479-2014",
+        "related_standards": ["GB/T 9776", "JC/T 517", "JGJ/T 220"],
+        "inspection_items": ["CaO含量", "MgO含量", "细度", "凝结时间", "安定性"],
+        "grade_range": ["钙质生石灰", "镁质生石灰", "建筑石膏"],
+        "common_specs": ["I级/II级/III级"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0204",
+      "name": "玻璃",
+      "parent": "非金属材料",
+      "keywords": ["玻璃", "平板玻璃", "钢化玻璃", "中空玻璃"],
+      "aliases": ["浮法玻璃", "安全玻璃", "隔音玻璃", "LOW-E玻璃"],
+      "examples": ["5mm浮法玻璃", "钢化中空玻璃", "夹胶玻璃", "防火玻璃"],
+      "standards": {
+        "execution_standard": "GB 11614-2009",
+        "related_standards": ["GB/T 15763.2", "GB/T 11944", "JC/T 1079"],
+        "inspection_items": ["厚度偏差", "外观质量", "光学变形", "气泡", "划伤"],
+        "grade_range": ["普通平板玻璃", "优等品", "一等品", "合格品"],
+        "common_specs": ["2-25mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0205",
+      "name": "陶瓷砖",
+      "parent": "非金属材料",
+      "keywords": ["瓷砖", "陶瓷砖", "墙砖", "地砖", "瓷片"],
+      "aliases": ["釉面砖", "玻化砖", "仿古砖", "马赛克"],
+      "examples": ["600x600抛光砖", "300x600釉面砖", "通体砖", "劈开砖"],
+      "standards": {
+        "execution_standard": "GB/T 4100-2015",
+        "related_standards": ["GB/T 3810", "ISO 13006", "JG/T 484"],
+        "inspection_items": ["尺寸偏差", "吸水率", "破坏强度", "断裂模数", "耐磨性"],
+        "grade_range": ["瓷质砖", "炻瓷砖", "炻质砖", "陶质砖"],
+        "common_specs": ["100x100-1200x2400mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0301",
+      "name": "混凝土",
+      "parent": "建筑主体材料",
+      "keywords": ["混凝土", "砼", "商品混凝土", "预拌混凝土"],
+      "aliases": ["C30混凝土", "C25混凝土", "抗渗混凝土", "细石混凝土"],
+      "examples": ["C30普通混凝土", "C40抗渗混凝土", "C20豆石混凝土", "自密实混凝土"],
+      "standards": {
+        "execution_standard": "GB/T 14902-2012",
+        "related_standards": ["GB 50010", "GB 50204", "JGJ 55", "JGJ/T 283"],
+        "inspection_items": ["坍落度", "扩展度", "抗压强度", "抗渗等级", "抗冻等级"],
+        "grade_range": ["C15", "C20", "C25", "C30", "C35", "C40", "C45", "C50", "C60"],
+        "common_specs": ["塌落度100-220mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0302",
+      "name": "砂浆",
+      "parent": "建筑主体材料",
+      "keywords": ["砂浆", "水泥砂浆", "混合砂浆", "抹灰砂浆"],
+      "aliases": ["M5砂浆", "M10砂浆", "砌筑砂浆", "防水砂浆"],
+      "examples": ["M5水泥砂浆", "M7.5混合砂浆", "抹灰砂浆", "保温粘结砂浆"],
+      "standards": {
+        "execution_standard": "JGJ/T 98-2010",
+        "related_standards": ["GB/T 25181", "JC/T 984", "JC/T 890"],
+        "inspection_items": ["稠度", "分层度", "抗压强度", "粘结强度", "收缩性能"],
+        "grade_range": ["M5", "M7.5", "M10", "M15", "M20", "M25", "M30"],
+        "common_specs": ["砌筑/抹灰/地面"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0303",
+      "name": "砖砌体",
+      "parent": "建筑主体材料",
+      "keywords": ["砖", "砌块", "砖块", "砌体"],
+      "aliases": ["红砖", "青砖", "空心砖", "多孔砖", "加气块"],
+      "examples": ["烧结普通砖", "蒸压加气混凝土砌块", "混凝土空心砌块", "页岩多孔砖"],
+      "standards": {
+        "execution_standard": "GB 5101-2017",
+        "related_standards": ["GB 11945", "GB 11968", "JC/T 862", "JGJ/T 14"],
+        "inspection_items": ["尺寸偏差", "外观质量", "抗压强度", "抗折强度", "冻融试验"],
+        "grade_range": ["MU10", "MU15", "MU20", "MU25", "MU30"],
+        "common_specs": ["240x115x53mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0304",
+      "name": "石材",
+      "parent": "建筑主体材料",
+      "keywords": ["石材", "大理石", "花岗石", "人造石"],
+      "aliases": ["天然石材", "文化石", "蘑菇石", "路沿石"],
+      "examples": ["花岗岩板材", "大理石地面", "人造石英石", "青石板"],
+      "standards": {
+        "execution_standard": "GB/T 18601-2009",
+        "related_standards": ["GB/T 19766", "GB/T 9966.1", "JC/T 908"],
+        "inspection_items": ["干燥压缩强度", "弯曲强度", "吸水率", "耐磨性", "放射性"],
+        "grade_range": ["A类", "B类", "C类"],
+        "common_specs": ["板材厚度10-100mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0401",
+      "name": "保温板",
+      "parent": "保温隔热材料",
+      "keywords": ["保温板", "挤塑板", "聚苯板", "岩棉板"],
+      "aliases": ["XPS板", "EPS板", "保温装饰一体板", "硬泡聚氨酯板"],
+      "examples": ["30mm挤塑聚苯板", "聚苯乙烯保温板", "岩棉保温板", "聚氨酯保温板"],
+      "standards": {
+        "execution_standard": "GB/T 10801.1-2021",
+        "related_standards": ["GB/T 10801.2", "GB 8624", "JG 149", "JG/T 228"],
+        "inspection_items": ["导热系数", "压缩强度", "吸水率", "燃烧性能", "尺寸稳定性"],
+        "grade_range": ["XPS B1级", "XPS B2级", "EPS B1级", "EPS B2级"],
+        "common_specs": ["厚度20-100mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0402",
+      "name": "保温砂浆/涂料",
+      "parent": "保温隔热材料",
+      "keywords": ["保温砂浆", "保温涂料", "珍珠岩", "玻化微珠"],
+      "aliases": ["无机保温砂浆", "胶粉聚苯颗粒", "膨胀珍珠岩"],
+      "examples": ["无机保温砂浆", "胶粉聚苯颗粒保温浆料", "珍珠岩保温砂浆"],
+      "standards": {
+        "execution_standard": "JG/T 158-2013",
+        "related_standards": ["JG 253", "GB 8624", "JGJ 144"],
+        "inspection_items": ["干密度", "抗压强度", "导热系数", "拉伸粘结强度", "燃烧性能"],
+        "grade_range": ["I型", "II型", "III型"],
+        "common_specs": ["包装25kg/袋"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0403",
+      "name": "吸声/隔声材料",
+      "parent": "保温隔热材料",
+      "keywords": ["吸声", "隔声", "隔音", "消声"],
+      "aliases": ["隔音棉", "吸音板", "隔声垫", "声学板"],
+      "examples": ["岩棉吸声板", "隔音毡", "吸音棉", "隔声门"],
+      "standards": {
+        "execution_standard": "GB/T 19889-2005",
+        "related_standards": ["GB/T 18696.1", "GB/T 19889.3", "JC/T 430"],
+        "inspection_items": ["吸声系数", "降噪系数", "隔声量", "防火性能"],
+        "grade_range": ["NRC 0.85+", "NRC 0.80-0.85", "NRC 0.70-0.80"],
+        "common_specs": ["厚度20-100mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0501",
+      "name": "防水卷材",
+      "parent": "防水密封材料",
+      "keywords": ["防水卷材", "SBS卷材", "APP卷材", "自粘卷材"],
+      "aliases": ["改性沥青卷材", "高分子卷材", "自粘防水卷材"],
+      "examples": ["3mm厚SBS改性沥青卷材", "自粘聚合物防水卷材", "聚乙烯丙纶卷材"],
+      "standards": {
+        "execution_standard": "GB 18242-2008",
+        "related_standards": ["GB 18243", "GB 18967", "JC/T 1076"],
+        "inspection_items": ["可溶物含量", "耐热性", "低温柔性", "拉力", "延伸率", "不透水性"],
+        "grade_range": ["I型", "II型", "PY类", "G类", "PE类"],
+        "common_specs": ["厚度2-4mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0502",
+      "name": "防水涂料",
+      "parent": "防水密封材料",
+      "keywords": ["防水涂料", "JS涂料", "聚氨酯", "丙烯酸"],
+      "aliases": ["聚合物水泥防水涂料", "911聚氨酯", "K11防水"],
+      "examples": ["JS-II型聚合物水泥防水涂料", "单组分聚氨酯防水涂料", "丙烯酸酯防水涂料"],
+      "standards": {
+        "execution_standard": "JC/T 2090-2011",
+        "related_standards": ["GB/T 19250", "JC/T 864", "JC/T 1017"],
+        "inspection_items": ["固体含量", "拉伸强度", "断裂伸长率", "粘结强度", "不透水性"],
+        "grade_range": ["I型", "II型", "III型"],
+        "common_specs": ["包装5-25kg/桶"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0503",
+      "name": "密封材料",
+      "parent": "防水密封材料",
+      "keywords": ["密封胶", "密封条", "密封垫", "填缝剂"],
+      "aliases": ["硅酮密封胶", "聚氨酯密封胶", "泡沫填缝剂"],
+      "examples": ["中性硅酮密封胶", "门窗密封条", "遇水膨胀止水条"],
+      "standards": {
+        "execution_standard": "GB/T 14683-2017",
+        "related_standards": ["GB/T 16776", "JC/T 882", "JC/T 485"],
+        "inspection_items": ["表干时间", "挤出性", "拉伸模量", "位移能力", "贮存期"],
+        "grade_range": ["25LM", "25HM", "20LM", "20HM"],
+        "common_specs": ["包装300-600ml/支"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0601",
+      "name": "涂料/油漆",
+      "parent": "装饰装修材料",
+      "keywords": ["涂料", "油漆", "乳胶漆", "真石漆"],
+      "aliases": ["内墙漆", "外墙漆", "氟碳漆", "防锈漆"],
+      "examples": ["内墙乳胶漆", "外墙真石漆", "钢结构防火涂料", "环氧富锌底漆"],
+      "standards": {
+        "execution_standard": "GB/T 9756-2018",
+        "related_standards": ["GB/T 9755", "GB 14907", "HG/T 3668", "JG/T 24"],
+        "inspection_items": ["容器中状态", "施工性", "干燥时间", "对比率", "耐碱性", "耐洗刷性"],
+        "grade_range": ["合格品", "一等品", "优等品"],
+        "common_specs": ["包装5-25kg/桶"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0602",
+      "name": "板材/吊顶",
+      "parent": "装饰装修材料",
+      "keywords": ["板材", "石膏板", "硅酸钙板", "铝扣板"],
+      "aliases": ["吊顶板", "隔墙板", "饰面板", "集成吊顶"],
+      "examples": ["9.5mm石膏板", "硅酸钙板吊顶", "铝扣板天花", "木质吸音板"],
+      "standards": {
+        "execution_standard": "GB/T 9775-2008",
+        "related_standards": ["JC/T 564.1", "GB/T 12754", "JC/T 430"],
+        "inspection_items": ["尺寸偏差", "外观质量", "断裂荷载", "硬度", "防火性能"],
+        "grade_range": ["普通纸面石膏板", "耐水纸面石膏板", "耐火纸面石膏板"],
+        "common_specs": ["厚度9.5-25mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0603",
+      "name": "门窗",
+      "parent": "装饰装修材料",
+      "keywords": ["门", "窗", "铝合金门窗", "塑钢窗"],
+      "aliases": ["防盗门", "防火门", "断桥铝", "塑钢门窗"],
+      "examples": ["铝合金推拉窗", "钢质防火门", "断桥铝合金窗", "PVC塑钢窗"],
+      "standards": {
+        "execution_standard": "GB/T 8478-2020",
+        "related_standards": ["GB 12955", "GB 17565", "JG/T 140", "JG/T 180"],
+        "inspection_items": ["气密性", "水密性", "抗风压性能", "保温性能", "隔声性能"],
+        "grade_range": ["1-9级"],
+        "common_specs": ["洞口尺寸600-3000mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0604",
+      "name": "地板/地毯",
+      "parent": "装饰装修材料",
+      "keywords": ["地板", "木地板", "复合地板", "地毯", "地砖"],
+      "aliases": ["实木地板", "强化地板", "PVC地板", "橡胶地板"],
+      "examples": ["实木复合地板", "spc石塑地板", "满铺地毯", "方块地毯"],
+      "standards": {
+        "execution_standard": "GB/T 18102-2020",
+        "related_standards": ["GB/T 18103", "GB/T 4085", "GB/T 6669"],
+        "inspection_items": ["耐磨转数", "甲醛释放量", "尺寸偏差", "表面胶合强度", "吸水厚度膨胀率"],
+        "grade_range": ["E0级", "E1级", "AC3-AC5"],
+        "common_specs": ["厚度8-18mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0605",
+      "name": "幕墙材料",
+      "parent": "装饰装修材料",
+      "keywords": ["幕墙", "铝单板", "玻璃幕墙", "石材幕墙"],
+      "aliases": ["幕墙板", "蜂窝铝板", "陶板", "搪瓷钢板"],
+      "examples": ["3mm氟碳铝单板", "玻璃幕墙", "干挂石材", "陶土板幕墙"],
+      "standards": {
+        "execution_standard": "GB/T 3880.1-2012",
+        "related_standards": ["GB/T 17748", "GB/T 21086", "JG 255"],
+        "inspection_items": ["厚度偏差", "涂层厚度", "光泽度", "硬度", "耐候性"],
+        "grade_range": ["聚酯", "氟碳"],
+        "common_specs": ["厚度1.5-4.0mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0701",
+      "name": "给排水管",
+      "parent": "管材管件",
+      "keywords": ["给水管", "排水管", "PVC管", "PE管"],
+      "aliases": ["PPR管", "HDPE管", "UPVC管", "铸铁管"],
+      "examples": ["PPR给水管", "De25 PPR管", "PVC-U排水管", "HDPE双壁波纹管"],
+      "standards": {
+        "execution_standard": "GB/T 18742.2-2017",
+        "related_standards": ["GB/T 10002.1", "GB/T 13663", "GB/T 5836.1", "CJ/T 189"],
+        "inspection_items": ["液压试验", "维卡软化温度", "落锤冲击", "纵向回缩率", "密度"],
+        "grade_range": ["S5", "S4", "S3.2", "S2.5", "S2"],
+        "common_specs": ["De20-De160"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0702",
+      "name": "电线管/线槽",
+      "parent": "管材管件",
+      "keywords": ["电线管", "线槽", "KBG管", "JDG管", "PVC线管"],
+      "aliases": ["金属线管", "塑料线管", "桥架"],
+      "examples": ["KBG薄壁电线管", "JDG紧定式钢管", "PVC阻燃线管", "电缆桥架"],
+      "standards": {
+        "execution_standard": "JG/T 526-2017",
+        "related_standards": ["GB/T 13381.1", "GB 8624", "JG/T 5031"],
+        "inspection_items": ["尺寸偏差", "力学性能", "阻燃性能", "耐腐蚀性能"],
+        "grade_range": ["轻型", "中型", "重型"],
+        "common_specs": ["φ16-φ63"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0703",
+      "name": "燃气管",
+      "parent": "管材管件",
+      "keywords": ["燃气管", "天然气管", "PE燃气管"],
+      "aliases": ["燃气钢管", "埋地燃气管"],
+      "examples": ["PE80燃气管", "钢骨架聚乙烯复合管", "天然气埋地管"],
+      "standards": {
+        "execution_standard": "GB 15558.1-2015",
+        "related_standards": ["GB 15558.2", "GB 15558.3", "CJJ 63"],
+        "inspection_items": ["液压试验", "断裂伸长率", "热稳定性", "耐气体组分", "熔接强度"],
+        "grade_range": ["PE80", "PE100", "PE112"],
+        "common_specs": ["De20-De630"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0704",
+      "name": "管件/阀门",
+      "parent": "管材管件",
+      "keywords": ["管件", "阀门", "法兰", "弯头", "三通"],
+      "aliases": ["接头", "接头", "阀门", "截止阀", "球阀"],
+      "examples": ["PPR直接头", "热熔弯头", "法兰蝶阀", "不锈钢三通"],
+      "standards": {
+        "execution_standard": "GB/T 12459-2017",
+        "related_standards": ["GB/T 14382", "GB/T 12224", "GB/T 8464"],
+        "inspection_items": ["外观质量", "尺寸偏差", "压力试验", "密封性能", "操作力矩"],
+        "grade_range": ["PN1.0-4.0MPa"],
+        "common_specs": ["DN15-DN400"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0801",
+      "name": "紧固件",
+      "parent": "其他材料",
+      "keywords": ["螺栓", "螺钉", "螺母", "垫圈", "膨胀螺栓"],
+      "aliases": ["高强螺栓", "自攻螺钉", "化学螺栓", "锚栓"],
+      "examples": ["M20高强螺栓", "六角螺栓", "膨胀螺栓", "化学锚栓"],
+      "standards": {
+        "execution_standard": "GB/T 5782-2016",
+        "related_standards": ["GB/T 93", "GB/T 6170", "GB/T 3098.1", "JG 160"],
+        "inspection_items": ["外观质量", "尺寸偏差", "力学性能", "楔负载", "保证载荷"],
+        "grade_range": ["4.8级", "8.8级", "10.9级", "12.9级"],
+        "common_specs": ["M6-M100"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0802",
+      "name": "胶粘剂",
+      "parent": "其他材料",
+      "keywords": ["胶粘剂", "粘合剂", "结构胶", "云石胶"],
+      "aliases": ["AB胶", "万能胶", "瓷砖胶", "植筋胶"],
+      "examples": ["硅酮结构胶", "瓷砖粘结剂", "云石胶", "环氧树脂胶"],
+      "standards": {
+        "execution_standard": "GB 18583-2008",
+        "related_standards": ["GB/T 16777", "JC/T 887", "JC 887"],
+        "inspection_items": ["拉伸粘结强度", "剪切强度", "剥离强度", "耐老化性能", "甲醛释放量"],
+        "grade_range": ["室内型", "室外型", "结构型"],
+        "common_specs": ["包装1-25kg/桶"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0803",
+      "name": "焊接材料",
+      "parent": "其他材料",
+      "keywords": ["焊条", "焊丝", "焊剂", "焊接材料"],
+      "aliases": ["电焊条", "气保焊丝", "氩弧焊丝"],
+      "examples": ["E4303焊条", "ER50-6气保焊丝", "氩弧焊丝", "埋弧焊丝"],
+      "standards": {
+        "execution_standard": "GB/T 5117-2012",
+        "related_standards": ["GB/T 8110", "GB/T 12449", "GB/T 5293"],
+        "inspection_items": ["化学成分", "熔敷金属力学性能", "工艺性能", "X射线探伤"],
+        "grade_range": ["E43系列", "E50系列", "E55系列"],
+        "common_specs": ["φ2.5-5.0mm"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0804",
+      "name": "防护用品",
+      "parent": "其他材料",
+      "keywords": ["安全帽", "防护服", "手套", "安全带"],
+      "aliases": ["劳保用品", "防护用品", "安全用品"],
+      "examples": ["安全帽", "防护手套", "安全带", "反光背心"],
+      "standards": {
+        "execution_standard": "GB 2811-2019",
+        "related_standards": ["GB 6095", "GB 8965.1", "GB 10216", "GB/T 3609.1"],
+        "inspection_items": ["冲击吸收性能", "耐穿刺性能", "佩戴高度", "垂直间距"],
+        "grade_range": ["普通型", "特殊型"],
+        "common_specs": ["安全帽/安全带/防护手套"],
+        "last_updated": "2026-04-11"
+      }
+    },
+    {
+      "code": "0805",
+      "name": "建筑五金",
+      "parent": "其他材料",
+      "keywords": ["五金", "合页", "门锁", "拉手", "滑轨"],
+      "aliases": ["建筑小五金", "门用五金", "家具五金"],
+      "examples": ["不锈钢合页", "防盗门锁", "抽屉滑轨", "玻璃门夹"],
+      "standards": {
+        "execution_standard": "QB/T 3888-1999",
+        "related_standards": ["QB/T 2474", "QB/T 2476", "QB/T 2189"],
+        "inspection_items": ["外观质量", "尺寸偏差", "力学性能", "使用寿命", "耐腐蚀性能"],
+        "grade_range": ["普通级", "中级", "高级"],
+        "common_specs": ["各种规格"],
+        "last_updated": "2026-04-11"
+      }
+    }
+  ],
+  "special_rules": [
+    {
+      "pattern": "C\\d{1,2}[0-9]?混凝土",
+      "rule": "extract_strength",
+      "description": "自动识别混凝土强度等级"
+    },
+    {
+      "pattern": "M[1-9][0-9]?砂浆",
+      "rule": "extract_strength",
+      "description": "自动识别砂浆强度等级"
+    },
+    {
+      "pattern": "\\d+mm.*板",
+      "rule": "extract_spec",
+      "description": "自动提取板材厚度规格"
+    },
+    {
+      "pattern": "HRB[0-9]{3}",
+      "rule": "extract_steel_grade",
+      "description": "自动识别钢筋牌号"
+    }
+  ],
+  "update_sources": {
+    "national_standards": {
+      "name": "国家标准全文公开系统",
+      "url": "https://open.samr.gov.cn/",
+      "api_endpoint": null,
+      "update_frequency": "weekly",
+      "last_sync": null
+    },
+    "industry_standards": {
+      "name": "行业标准信息服务平台",
+      "url": "https://hbba.sacinfo.org.cn/",
+      "api_endpoint": null,
+      "update_frequency": "monthly",
+      "last_sync": null
+    },
+    "custom_source": {
+      "name": "自定义标准文件",
+      "file_path": "references/custom_standards.json",
+      "format": "json",
+      "enabled": true
+    }
+  }
+}

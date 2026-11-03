@@ -1,0 +1,13 @@
+{
+  "id": "1234567892",
+  "version": "1.0.0",
+  "author": "MiniMax Agent",
+  "description": "架构师智能体：技术选型、模块划分、接口设计、风险识别",
+  "training_methods": ["Pre-training Transfer", "Reinforcement Learning", "ADR Dataset"],
+  "core_skills": [
+    "技术栈推荐",
+    "模块划分与接口定义",
+    "风险识别与规避"
+  ],
+  "collaboration": ["product-analyst-agent", "dev-agent-group", "test-engineer-agent", "devops-agent"]
+}

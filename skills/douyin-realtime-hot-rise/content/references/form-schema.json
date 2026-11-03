@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "string",
+      "title": "Sort Method",
+      "enum": [
+        "rank",
+        "rank_diff"
+      ],
+      "enumNames": [
+        "Heat Sort",
+        "Change Sort"
+      ],
+      "default": "rank"
+    },
+    "tag": {
+      "type": "string",
+      "title": "Hot Topic Category",
+      "description": "Hot topic category tag, pass numeric id or comma-separated id combinations.",
+      "x-component": "CategorySelect",
+      "x-direction-map": {
+        "Entertainment": "2001,2002,2003,2004,2005,2006,2007,2008,2012",
+        "Gaming": "12000,12001",
+        "Anime": "13000",
+        "Music": "29000,29001",
+        "Dance": "28000,28001",
+        "Drama": "18000",
+        "Looks": "30000",
+        "Food": "9000",
+        "Travel": "10000",
+        "Pets": "8000",
+        "Fashion": "16000",
+        "Sports": "5000",
+        "Automotive": "11000",
+        "Home & Living": "17000,17001",
+        "Parenting": "19000",
+        "Relationships": "23000",
+        "Tech": "6000",
+        "Finance": "7000",
+        "Education": "14000,14001",
+        "Health": "15000",
+        "Humanities": "24000",
+        "Law": "27000",
+        "Career": "26000",
+        "Society": "4003,4005",
+        "Current Affairs": "3001,3002",
+        "Military": "21000",
+        "Platform Activities": "1001,1002,1003",
+        "Topic Interaction": "20002,20003,20005",
+        "Talent": "25000",
+        "Agriculture": "22000",
+        "Outdoor Sports": "31000",
+        "Senior Living": "32000"
+      }
+    },
+    "keyword": {
+      "type": "string",
+      "title": "Search Term"
+    }
+  }
+}

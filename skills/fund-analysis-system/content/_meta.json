@@ -1,0 +1,94 @@
+{
+  "author": "MiniMax Agent",
+  "commands": [
+    {
+      "module": "analysis-report",
+      "trigger": "分析报告"
+    },
+    {
+      "module": "report-optimization",
+      "trigger": "报告优化"
+    },
+    {
+      "module": "model-report",
+      "trigger": "模型报告"
+    },
+    {
+      "module": "system-report",
+      "trigger": "系统报告"
+    },
+    {
+      "module": "data-update",
+      "trigger": "数据更新"
+    },
+    {
+      "module": "model-optimization",
+      "trigger": "模型优化"
+    },
+    {
+      "module": "system-optimization",
+      "trigger": "系统优化"
+    },
+    {
+      "module": "feedback",
+      "trigger": "提交反馈"
+    }
+  ],
+  "created": "2026-03-26",
+  "description": "基金分析预测系统 - 全面的A股基金投资分析与预测平台",
+  "id": 380770863812693,
+  "modules": [
+    {
+      "description": "基金实时分析和预测报告生成",
+      "id": "1719327501",
+      "name": "analysis-report",
+      "path": "fund-analysis-report"
+    },
+    {
+      "description": "基金分析报告扩增和优化",
+      "id": "1719327502",
+      "name": "report-optimization",
+      "path": "fund-report-optimization"
+    },
+    {
+      "description": "模型状态和性能报告",
+      "id": "1719327503",
+      "name": "model-report",
+      "path": "fund-model-report"
+    },
+    {
+      "description": "系统全面状态报告",
+      "id": "1719327504",
+      "name": "system-report",
+      "path": "fund-system-report"
+    },
+    {
+      "description": "数据管理中心",
+      "id": "1719327505",
+      "name": "data-update",
+      "path": "fund-data-update"
+    },
+    {
+      "description": "模型优化和训练",
+      "id": "1719327506",
+      "name": "model-optimization",
+      "path": "fund-model-optimization"
+    },
+    {
+      "description": "系统全面优化",
+      "id": "1719327507",
+      "name": "system-optimization",
+      "path": "fund-system-optimization"
+    },
+    {
+      "description": "反馈提交和登记",
+      "id": "1719327508",
+      "name": "feedback",
+      "path": "fund-feedback"
+    }
+  ],
+  "name": "fund-analysis-system",
+  "platform": "minimax",
+  "updated_at": 1774514733620,
+  "version": "1.0.0"
+}

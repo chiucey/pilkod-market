@@ -1,0 +1,28 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "financial-functions",
+    "data-classification",
+    "yoy-qoq-analysis",
+    "anomaly-detection",
+    "intelligent-suggestion"
+  ],
+  "created": "2026-03-27",
+  "data_sources": [
+    "Excel",
+    "CSV",
+    "manual-input"
+  ],
+  "id": 381083906417506,
+  "name": "fingence-financial-analysis",
+  "platform": "minimax",
+  "tags": [
+    "finance",
+    "analysis",
+    "assistant",
+    "data-analysis",
+    "suggestion"
+  ],
+  "updated_at": 1774591365765,
+  "version": "1.0.0"
+}

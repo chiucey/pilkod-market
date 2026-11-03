@@ -1,0 +1,13 @@
+{
+  "id": "1234567895",
+  "version": "1.0.0",
+  "author": "MiniMax Agent",
+  "description": "DevOps智能体：CI/CD配置、Dockerfile、监控告警、故障诊断与恢复",
+  "training_methods": ["Best Practice Repository", "Fault Injection Training"],
+  "core_skills": [
+    "DevOps配置生成",
+    "监控告警与自动伸缩",
+    "故障诊断与恢复"
+  ],
+  "collaboration": ["architect-agent", "dev-agent-group", "project-manager-agent"]
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Chart-Type: 流程图 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>文本核心内容可视化</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #eaedf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 28px;
+  }
+  .container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    padding: 28px;
+    display: inline-block;
+  }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+  <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.10"/>
+  </filter>
+  <marker id="arrowDown" markerWidth="10" markerHeight="7" refX="5" refY="7" orient="auto">
+    <polygon points="0 0, 10 0, 5 7" fill="#90a4ae"/>
+  </marker>
+  <marker id="arrowLoop" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#f57c00"/>
+  </marker>
+</defs>
+
+<rect width="800" height="600" fill="#ffffff"/>
+
+<text x="400" y="30" fill="#1a1a1a" font-size="20" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle">智能体完整工作流程</text>
+<text x="400" y="50" fill="#64748b" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle">感知 → 认知 → 决策 → 执行 → 迭代 — 自主运行闭环</text>
+
+<!-- Background flow tracks -->
+<rect x="182" y="78" width="10" height="402" rx="5" fill="#eceff1"/>
+<rect x="590" y="78" width="10" height="402" rx="5" fill="#eceff1"/>
+
+<!-- Left side stage labels -->
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" fill="#78909c" font-size="12" text-anchor="end" dominant-baseline="central">
+  <text x="170" y="111">感知输入</text>
+  <text x="170" y="195">认知处理</text>
+  <text x="170" y="279">决策规划</text>
+  <text x="170" y="363">动作执行</text>
+  <text x="170" y="447">反馈迭代</text>
+</g>
+
+<!-- Connector lines left labels → track -->
+<g fill="none" stroke="#cfd8dc" stroke-width="1.5" stroke-dasharray="4,3">
+  <line x1="174" y1="111" x2="182" y2="111"/>
+  <line x1="174" y1="195" x2="182" y2="195"/>
+  <line x1="174" y1="279" x2="182" y2="279"/>
+  <line x1="174" y1="363" x2="182" y2="363"/>
+  <line x1="174" y1="447" x2="182" y2="447"/>
+</g>
+
+<!-- Left-side down arrows between boxes -->
+<g fill="none" stroke="#90a4ae" stroke-width="3" stroke-linecap="round">
+  <line x1="187" y1="144" x2="187" y2="158" marker-end="url(#arrowDown)"/>
+  <line x1="187" y1="228" x2="187" y2="242" marker-end="url(#arrowDown)"/>
+  <line x1="187" y1="312" x2="187" y2="326" marker-end="url(#arrowDown)"/>
+  <line x1="187" y1="396" x2="187" y2="410" marker-end="url(#arrowDown)"/>
+</g>
+
+<!-- ====== 5 Process Boxes ====== -->
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" dominant-baseline="central">
+  <!-- Box 1: 感知 -->
+  <rect x="215" y="78" width="360" height="66" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="264" cy="111" r="17" fill="#e65100"/>
+  <text x="264" y="112" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+  <text x="300" y="100" fill="#1a1a1a" font-size="14" font-weight="bold" text-anchor="start">环境感知与信息输入</text>
+  <text x="300" y="121" fill="#666" font-size="12" text-anchor="start">传感器·数据·文本抓取 — 全方位环境采集</text>
+
+  <!-- Box 2: 认知 -->
+  <rect x="215" y="162" width="360" height="66" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="264" cy="195" r="17" fill="#1565c0"/>
+  <text x="264" y="196" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">2</text>
+  <text x="300" y="184" fill="#1a1a1a" font-size="14" font-weight="bold" text-anchor="start">认知理解与信息处理</text>
+  <text x="300" y="205" fill="#666" font-size="12" text-anchor="start">大模型解析·知识关联 — 原始数据转化为有效信息</text>
+
+  <!-- Box 3: 决策 -->
+  <rect x="215" y="246" width="360" height="66" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="264" cy="279" r="17" fill="#7b1fa2"/>
+  <text x="264" y="280" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+  <text x="300" y="268" fill="#1a1a1a" font-size="14" font-weight="bold" text-anchor="start">自主决策与路径规划</text>
+  <text x="300" y="289" fill="#666" font-size="12" text-anchor="start">多方案推演·任务拆解排序 — 筛选最优执行方案</text>
+
+  <!-- Box 4: 执行 -->
+  <rect x="215" y="330" width="360" height="66" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="264" cy="363" r="17" fill="#2e7d32"/>
+  <text x="264" y="364" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">4</text>
+  <text x="300" y="352" fill="#1a1a1a" font-size="14" font-weight="bold" text-anchor="start">指令输出与动作执行</text>
+  <text x="300" y="373" fill="#666" font-size="12" text-anchor="start">软件操作·物理动作·实时监控 — 动态调整保障落地</text>
+
+  <!-- Box 5: 迭代 -->
+  <rect x="215" y="414" width="360" height="66" rx="8" fill="#e0f7fa" stroke="#00838f" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="264" cy="447" r="17" fill="#00838f"/>
+  <text x="264" y="448" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">5</text>
+  <text x="300" y="436" fill="#1a1a1a" font-size="14" font-weight="bold" text-anchor="start">反馈复盘与迭代优化</text>
+  <text x="300" y="457" fill="#666" font-size="12" text-anchor="start">执行日志分析·算法调优 — 沉淀经验实现自我迭代</text>
+</g>
+
+<!-- Feedback loop arrow on right side -->
+<g fill="none" stroke="#f57c00" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8,4">
+  <path d="M 595,447 Q 680,447 680,300 Q 680,111 595,111" marker-end="url(#arrowLoop)"/>
+</g>
+
+<rect x="639" y="282" width="82" height="28" rx="6" fill="#fff" stroke="#f57c00" stroke-width="1.5"/>
+<text x="680" y="296" fill="#e65100" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">闭环迭代</text>
+
+<!-- Bottom summary -->
+<rect x="60" y="515" width="680" height="50" rx="10" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="400" y="533" fill="#1a1a1a" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">感知·认知·决策·执行·迭代 五大环节环环相扣、循环往复</text>
+<text x="400" y="552" fill="#5c6bc0" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">智能体从被动响应走向自主思考、主动执行、持续优化的智能化核心能力</text>
+</svg>
+</div>
+</body>
+</html>

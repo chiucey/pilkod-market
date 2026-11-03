@@ -1,0 +1,70 @@
+{
+  "primary": "write-yuzhou-novels",
+  "single_entrypoint": "write-yuzhou-novels/SKILL.md",
+  "sources": [
+    {
+      "name": "write-yuzhou-novels",
+      "bytes": 66289,
+      "sha256": "314efaebf004af34500302cd0fe07806be67623daedf2fcd7e41190cd65bf576"
+    },
+    {
+      "name": "sepia-review",
+      "bytes": 194308,
+      "sha256": "3fac37448af75410e46ed400001dec8341c04b3271e00c943f9e5827611aabfc"
+    },
+    {
+      "name": "sepia-write",
+      "bytes": 194217,
+      "sha256": "008a109bb2034110b20df32e7e51ea73437ad56ee58e550861c6e081431dcc08"
+    },
+    {
+      "name": "piqie-writing",
+      "bytes": 18109,
+      "sha256": "9c2eb71b59d692a7fca4c9c38737e45f95ad8ff9b9fd1e0c8f31c3eba1c0465f"
+    },
+    {
+      "name": "writing-novel",
+      "bytes": 47272,
+      "sha256": "df206af1b832c13b16fdfbc94e50b82abd343ebb4ffbdf3e35ae3cf99ed02521"
+    },
+    {
+      "name": "novel-improver",
+      "bytes": 16778,
+      "sha256": "622809f966408c355a965724f047dc1359f548c72024a6dcf879480ba03cdec6"
+    }
+  ],
+  "deduplicated": [
+    "core.md",
+    "LICENSE",
+    "references/discourse-pass.md",
+    "references/model-fingerprints.md",
+    "references/narrative-pass.md",
+    "references/professional-pass.md",
+    "references/rubric.md",
+    "references/style-pass.md",
+    "references/voice-skills.md",
+    "research/citations-narrative.md",
+    "research/citations-style.md",
+    "research/detectors.md",
+    "research/ecosystem.md",
+    "research/hemingway.md",
+    "research/newswriting-guides.md",
+    "research/platforms.md",
+    "research/rhythm-syntax.md",
+    "research/sources.md",
+    "research/storyscope.md",
+    "research/zh-news-corpus.md",
+    "references/domains/dev-replies.md",
+    "references/domains/journalism.md",
+    "references/domains/postmortems.md",
+    "references/domains/release-notes.md",
+    "references/domains/tech-articles.md",
+    "references/domains/tickets.md",
+    "references/languages/zh.md",
+    "references/voices/hemingway.md",
+    "references/voices/PERSONA-TEMPLATE.md",
+    "references/voices/registry.md",
+    "references/voices/tw-journalism.md",
+    "references/voices/personas/nyaneko.md"
+  ]
+}

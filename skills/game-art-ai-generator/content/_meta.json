@@ -1,0 +1,27 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "ai_image_generation": true,
+    "asset_packaging": true,
+    "c3p_integration": true,
+    "color_scheme_matching": true,
+    "pixel_art_generation": true,
+    "sound_effect_matching": true,
+    "tiktok_integration": true,
+    "ui_component_generation": true
+  },
+  "created": "2026-04-09",
+  "description": "游戏美术AI生成器 - 全自动生成游戏美术素材包",
+  "id": 385707148427640,
+  "name": "game-art-ai-generator",
+  "platform": "minimax",
+  "tags": [
+    "game-art",
+    "pixel-art",
+    "ai-generator",
+    "construct3",
+    "game-dev"
+  ],
+  "updated_at": 1775720477549,
+  "version": "1.0.0"
+}

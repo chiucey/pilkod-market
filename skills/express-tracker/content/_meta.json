@@ -1,0 +1,20 @@
+{
+  "author": "MiniMax Agent",
+  "compatibility": {
+    "laudecode": true,
+    "workbuddy": true
+  },
+  "description": "Express tracking assistant - Query express logistics information via official websites, Kuaidi100, Cainiao, Baidu and other channels. User provides express company and tracking number.",
+  "id": 386740945449142,
+  "name": "express-tracker",
+  "platform": "minimax",
+  "tags": [
+    "express",
+    "logistics",
+    "tracking",
+    "delivery",
+    "package"
+  ],
+  "updated_at": 1775975734042,
+  "version": "1.0.0"
+}

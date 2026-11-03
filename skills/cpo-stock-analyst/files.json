@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "afcb81a0b11d94ad6a84170fd8f2c856c37a4c2a",
+      "size": 11481
+    },
+    {
+      "path": "_meta.json",
+      "sha": "8b4abd5d82b79ab32b2481c680464f9e94f8dc8f",
+      "size": 8707
+    },
+    {
+      "path": "references/analysis-dimensions.md",
+      "sha": "079193e1616db7c5984767f4aaec4166bd7d5c52",
+      "size": 4788
+    },
+    {
+      "path": "references/command-workflows.md",
+      "sha": "6b56e5097eb3874366647e3f0430ad195b5a5e23",
+      "size": 7126
+    },
+    {
+      "path": "references/data-sources.md",
+      "sha": "cef5f2da9d15184cc67404b1e4c5732fcf1ad740",
+      "size": 10999
+    },
+    {
+      "path": "references/hot-sectors.md",
+      "sha": "c69b01ef855842ebd20036ee0d52442df4565764",
+      "size": 4503
+    },
+    {
+      "path": "references/model-config.md",
+      "sha": "31c9f53812fb8ad5539b1c39871a029fb55cd165",
+      "size": 10169
+    },
+    {
+      "path": "references/report-templates.md",
+      "sha": "ef86c056a5e356527e47b4027ff4f82916b3b000",
+      "size": 8683
+    },
+    {
+      "path": "references/risk-management.md",
+      "sha": "5d7258f51515816feccbebd516785ad327d1af73",
+      "size": 5401
+    },
+    {
+      "path": "scripts/data_manager.py",
+      "sha": "c058ffa6d7859b76da62ae46fd55cedc51a0a33e",
+      "size": 13849
+    },
+    {
+      "path": "scripts/model_trainer.py",
+      "sha": "f07a8bb48fcf3fd44ee4ab2fdfaafa2425a16628",
+      "size": 22752
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "4102be91fc3c67fb39ba4f9b8e6f5d6c2f98286c",
+      "size": 8347
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "45e1a568f6158aaeb599eaecc573bcfc4fe89dab",
+      "size": 8765
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "data_type": "str",
+  "analysis_type": "traffic_rules_analysis",
+  "dimensions": {
+    "externality": {
+      "type": null,
+      "score": null,
+      "evidence": [],
+      "description": "外在性 - 社会事实独立于个体存在"
+    },
+    "coerciveness": {
+      "type": null,
+      "score": null,
+      "evidence": [],
+      "description": "强制性 - 社会事实对个体施加外在压力"
+    },
+    "generality": {
+      "type": null,
+      "score": null,
+      "evidence": [],
+      "description": "普遍性 - 社会事实在社会中广泛存在"
+    },
+    "functionality": {
+      "type": null,
+      "score": null,
+      "evidence": [],
+      "description": "功能性 - 社会事实对社会具有维持整合的作用"
+    },
+    "materiality": {
+      "type": null,
+      "score": null,
+      "evidence": [],
+      "description": "物质性/精神性 - 社会事实的存在形式"
+    }
+  },
+  "specific_facts": [],
+  "strength": null,
+  "classification": {
+    "is_social_fact": null,
+    "fact_type": null,
+    "confidence": null
+  },
+  "verdict": null,
+  "theory_memo": "=== 涂尔干社会事实（Social Facts）理论备忘录 ===\n\n【核心定义】（《社会学方法的准则》, 1895）\n\"社会事实是存在于个人意识之外的任何行为方式，……具有强制性。\"\n\n【三大判别标准】\n\n1. 外在性（Exteriority）:\n   - 社会事实独立于个体意志而存在\n   - 不是个人心理现象的简单加总\n   - 分析要点：\n     * 该规范/价值观/制度是否先于个体存在？\n     * 个体能否单方面改变它？\n     * 它是否超越个人生命周期？\n\n2. 强制性（Constraint/Coerciveness）:\n   - 社会事实对个体施加外在压力\n   - 表现为：规范、期待、制裁\n   - 分析要点：\n     * 违背该社会事实会有什么后果？\n     * 是否存在社会制裁（惩罚或奖励）？\n     * 是否存在\"应当/必须/禁止\"的行为规范？\n\n3. 普遍性（Generality）:\n   - 社会事实在社会或群体中广泛存在\n   - 不是个别现象\n   - 分析要点：\n     * 该现象在多大范围内被共享？\n     * 是否具有跨个体的一致性？\n\n【社会事实的两分法】\n\n物质性社会事实（Material Social Facts）:\n- 具有物理存在形式的外在制度\n- 典型：法律、 政治组织、教育制度、宗教组织、经济制度\n- 分析要点：是否有明确的机构/组织形态？\n\n精神性社会事实（Non-material / Moral Social Facts）:\n- 存在于集体意识中的道德/价值观/信仰\n- 典型：集体情感、共同信念、社会潮流、时尚\n- 分析要点：是否弥漫于社会但无物理形态？\n\n【涂尔干法则（Durkheim's Rule）】\n\"将社会事实视为事物\"（treat social facts as things）\n—— 即用客观实证方法来研究主观意义的社会现象\n\n【分析方法论】\n- 三标准是分析性工具，不必全部满足才称为社会事实\n- 关注制度化的程度：法律 > 惯例 > 时尚\n- 社会事实是不断再生产的过程，需分析其再生产机制\n- 典型社会事实类别（供LLM识别）：\n  * 法律规范（外在+强制+普遍）\n  * 道德规范（精神+强制+普遍）\n  * 宗教信仰（精神+强制+普遍）\n  * 社会制度/组织（物质+强制+普遍）\n  * 集体意识/社会共识（精神+弱强制+普遍）",
+  "raw_data_for_llm": "在现代城市中，交通规则具有明显的强制性。所有驾驶员必须遵守红绿灯，违反会面临罚款。即使个人不认同，也必须执行。这种现象普遍存在于所有现代城市。"
+}

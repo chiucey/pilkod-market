@@ -1,0 +1,109 @@
+examples:
+  - id: career-transition
+    title:
+      zh: 职业转型简历优化
+      en: Career Transition Resume Optimization
+    description:
+      zh: 为跨行业求职者定制针对性简历
+      en: Create targeted resumes for cross-industry job seekers
+    prompt:
+      zh: |-
+        我是一名有5年前端开发经验的工程师，希望转向产品经理岗位。
+
+        目标职位：初级产品经理
+        目标行业：互联网科技公司
+        核心优势：
+        - 技术背景深厚，理解开发流程
+        - 用户体验意识强，善于发现问题
+        - 沟通协调能力强，能连接技术和业务
+        - 有项目管理实战经验
+
+        申请策略：
+        1. 突出技术背景对产品工作的价值
+        2. 强调用户思维和商业敏感度
+        3. 展示项目统筹和跨部门协作能力
+        4. 体现学习能力和适应性
+
+        请帮我：
+        1. 分析目标岗位的核心要求
+        2. 重新梳理工作经历的表述角度
+        3. 突出可迁移的核心技能
+        4. 优化简历结构和关键词
+        5. 提供面试准备建议
+      en: |-
+        I'm a front-end engineer with 5 years of experience looking to transition to a product manager role.
+
+        Target position: Junior Product Manager
+        Target industry: Internet technology companies
+        Core advantages:
+        - Strong technical background with understanding of development processes
+        - Strong user experience awareness, good at identifying problems
+        - Strong communication and coordination skills, can bridge tech and business
+        - Hands-on project management experience
+
+        Application strategy:
+        1. Highlight the value of technical background to product work
+        2. Emphasize user thinking and business acumen
+        3. Showcase project coordination and cross-department collaboration abilities
+        4. Demonstrate learning ability and adaptability
+
+        Please help me:
+        1. Analyze core requirements of target positions
+        2. Restructure work experience presentation angles
+        3. Highlight transferable core skills
+        4. Optimize resume structure and keywords
+        5. Provide interview preparation suggestions
+  - id: senior-position
+    title:
+      zh: 高级职位简历包装
+      en: Senior Position Resume Packaging
+    description:
+      zh: 为资深专业人士打造高端简历
+      en: Create premium resumes for senior professionals
+    prompt:
+      zh: |-
+        我要申请跨国公司的技术总监职位。
+
+        背景优势：
+        - 12年技术管理经验
+        - 带领过50+人技术团队
+        - 成功交付多个千万级项目
+        - 具备国际化团队管理经验
+        - 技术视野广阔，熟悉前沿趋势
+
+        简历要求：
+        1. 突出战略思维和领导力
+        2. 量化业务成果和影响力
+        3. 体现国际化视野和格局
+        4. 展示技术创新和变革能力
+        5. 符合高管级别的表达水准
+
+        请帮我：
+        1. 设计符合高级职位的简历架构
+        2. 量化和包装核心成就
+        3. 突出战略决策和影响力
+        4. 优化语言的专业度和说服力
+        5. 提供LinkedIn等平台同步建议
+      en: |-
+        I'm applying for a CTO position at a multinational company.
+
+        Background advantages:
+        - 12 years of technical management experience
+        - Led 50+ person technical teams
+        - Successfully delivered multiple million-dollar projects
+        - Experience managing international teams
+        - Broad technical vision, familiar with cutting-edge trends
+
+        Resume requirements:
+        1. Highlight strategic thinking and leadership
+        2. Quantify business results and influence
+        3. Demonstrate international perspective and vision
+        4. Showcase technical innovation and transformation capabilities
+        5. Meet executive-level expression standards
+
+        Please help me:
+        1. Design resume architecture suitable for senior positions
+        2. Quantify and package core achievements
+        3. Highlight strategic decision-making and influence
+        4. Optimize language professionalism and persuasiveness
+        5. Provide LinkedIn and other platform synchronization suggestions

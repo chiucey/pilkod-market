@@ -1,0 +1,51 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "天气查询",
+    "穿衣搭配建议",
+    "出行提示",
+    "健康建议"
+  ],
+  "category": "生活服务",
+  "created_date": "2026-04-09",
+  "description": "天气查询与穿衣出行建议技能，根据指定日期和地点获取天气信息，提供专业的穿衣搭配和出行建议",
+  "display_name": "天气穿衣出行顾问",
+  "id": 385814463255169,
+  "name": "weather-outfit-advisor",
+  "parameters": [
+    {
+      "description": "城市名称",
+      "name": "location",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "description": "日期（支持今天、明天、具体日期）",
+      "name": "date",
+      "required": false,
+      "type": "string"
+    }
+  ],
+  "platform": "minimax",
+  "tags": [
+    "天气",
+    "穿衣",
+    "出行",
+    "生活服务",
+    "天气预报",
+    "搭配建议"
+  ],
+  "trigger_keywords": [
+    "天气查询",
+    "穿衣建议",
+    "今日天气",
+    "明天天气",
+    "天气预报",
+    "出行提示",
+    "要不要带伞",
+    "带什么衣服",
+    "适合出门吗"
+  ],
+  "updated_at": 1775745937677,
+  "version": "1.0.0"
+}

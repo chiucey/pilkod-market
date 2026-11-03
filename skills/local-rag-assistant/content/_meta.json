@@ -1,0 +1,17 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-26",
+  "description": "本地RAG检索增强生成助手。当用户需要基于本地文档进行问答、检索知识库、提取文档信息、分析本地文件内容，或需要实现私有知识库问答系统时使用此技能。",
+  "id": 380792491795319,
+  "name": "local-rag-assistant",
+  "platform": "minimax",
+  "tags": [
+    "RAG",
+    "本地部署",
+    "文档检索",
+    "知识库",
+    "向量数据库"
+  ],
+  "updated_at": 1774521281338,
+  "version": "1.0.0"
+}

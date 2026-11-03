@@ -1,0 +1,23 @@
+{
+  "skill_name": "my-prompt-generator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我生成提示词：一个穿着白无垢的新娘站在樱花树下，夕阳的光线透过花瓣洒下来，眼神温柔",
+      "expected_output": "中文句子描述新娘站在樱花树下的画面 + 英文Danbooru标签（包括新娘服装、樱花、夕阳等元素）",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我优化这段提示词，让它更有氛围感：1girl, solo, long_hair, black_hair, red_eyes, school_uniform, skirt, standing, classroom, looking_at_viewer, masterpiece, best_quality",
+      "expected_output": "优化后的提示词，增加了光影、氛围、构图相关的标签",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把这段提示词从写实风格改成二次元动漫风格：1girl, solo, realistic, detailed skin, pores, skin texture, natural lighting, outdoor, park, brown hair, green eyes, freckles, casual dress, smiling, holding coffee cup, depth of field, masterpiece, best quality",
+      "expected_output": "风格转换为二次元风格，去掉写实相关标签，加入动漫风格标签",
+      "files": []
+    }
+  ]
+}

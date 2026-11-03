@@ -1,0 +1,119 @@
+{
+  "manifest_version": "1.0.0",
+  "skill": {
+    "name": "amazon-image-requirements",
+    "skill_id": "129772509903893",
+    "version": "1.0.0",
+    "author": "Matrix Agent",
+    "description": "亚马逊主图套图和A+套图设计需求文档生成器。专门为RC遥控车/攀爬车产品（基于FMS品牌5款产品模板）设计，\n根据用户提供的产品信息（基础信息、车型/外观、核心卖点、技术参数、素材情况）自动生成符合公司标准格式的Excel设计需求文档。",
+    "category": "亚马逊 / 电商设计 / RC 攀爬车",
+    "tags": [
+      "亚马逊",
+      "设计需求",
+      "RC攀爬车",
+      "Excel",
+      "FMS",
+      "主图",
+      "A+"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "repository": "",
+    "created": "2026-06-25T16:20:58.595513",
+    "updated": "2026-06-25T16:20:58.595513"
+  },
+  "requirements": {
+    "python": ">=3.9",
+    "dependencies": [
+      "openpyxl>=3.0.0"
+    ],
+    "platform": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ]
+  },
+  "package": {
+    "total_files": 10,
+    "total_size_bytes": 77152,
+    "total_size_human": "75.34 KB",
+    "files": [
+      {
+        "path": "SKILL.md",
+        "size_bytes": 6936,
+        "size_human": "6.77 KB",
+        "sha256": "ef76979455c580f4c20d45c4789e730db776d22025a8fd05ab022c638dd8d6b1",
+        "modified": "2026-06-25T16:20:30.617536"
+      },
+      {
+        "path": "validation_report.json",
+        "size_bytes": 253,
+        "size_human": "253.00 B",
+        "sha256": "5300725207868cb639bfe420413bd6ed14c47ab1df8f4d6216221d43223e9180",
+        "modified": "2026-06-25T16:20:46.559131"
+      },
+      {
+        "path": "_meta.json",
+        "size_bytes": 51,
+        "size_human": "51.00 B",
+        "sha256": "20effc295b689b31a480fa120373121cb4bea84f5697c477115c082ab002bd41",
+        "modified": "2026-06-25T16:10:32.156180"
+      },
+      {
+        "path": "assets/template_structure.md",
+        "size_bytes": 3979,
+        "size_human": "3.89 KB",
+        "sha256": "51b66e95655d81ef8174b725c9597d4b7304d0294a84f19a34f8bbe5eaa11d40",
+        "modified": "2026-06-25T15:49:45.975226"
+      },
+      {
+        "path": "dist/amazon-image-requirements_v1.0.0_20260625_161622.skill",
+        "size_bytes": 19113,
+        "size_human": "18.67 KB",
+        "sha256": "6f22f81baee9e687a4708edfcafd2c9ba0494e464ee8760faf741ffaa898b415",
+        "modified": "2026-06-25T16:16:22.905107"
+      },
+      {
+        "path": "examples/118L01_Ford_F-100_example.json",
+        "size_bytes": 838,
+        "size_human": "838.00 B",
+        "sha256": "443a3aed3d245de6eecf4a684c88bf92e6ea0628782aadbc27a301ec78b09646",
+        "modified": "2026-06-25T15:49:26.679455"
+      },
+      {
+        "path": "scripts/generate_requirements.py",
+        "size_bytes": 18162,
+        "size_human": "17.74 KB",
+        "sha256": "1c371b5fa712443618e6e6db25f1c1da48812d105932a648980a079b7b3b581e",
+        "modified": "2026-06-25T15:49:20.085779"
+      },
+      {
+        "path": "scripts/package.py",
+        "size_bytes": 11354,
+        "size_human": "11.09 KB",
+        "sha256": "806161648d6d1e90b7bc6aa33d5778223557f1cd6a7bf668fb483e8627206db7",
+        "modified": "2026-06-25T16:19:42.554563"
+      },
+      {
+        "path": "scripts/package_skill.py",
+        "size_bytes": 4277,
+        "size_human": "4.18 KB",
+        "sha256": "c0cbd321ed2a823a10e2666e8be6c07d6780faf5697657e629253f1bfd0ae199",
+        "modified": "2026-06-25T16:16:06.562184"
+      },
+      {
+        "path": "scripts/validate.py",
+        "size_bytes": 12189,
+        "size_human": "11.90 KB",
+        "sha256": "818709df0486f7e38b01b2ea3bf28c672ff5eb37d95998096c26a8f084557e33",
+        "modified": "2026-06-25T16:18:58.448814"
+      }
+    ]
+  },
+  "installation": {
+    "type": "local",
+    "target_dir": "~/.minimaxagent/skills/{name}/",
+    "method": "auto-load",
+    "notes": "将解压后的文件夹移动到 ~/.minimaxagent/skills/ 即可自动加载"
+  }
+}

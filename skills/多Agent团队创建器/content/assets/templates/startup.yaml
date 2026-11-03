@@ -1,0 +1,13 @@
+name: startup
+description: 适合创业项目的小团队，包含产品、设计、开发、增长。
+tags: [startup, growth]
+recommended_for: 0-1 阶段产品验证与增长探索
+default_bind_feishu: true
+extends: base-default
+agents:
+  - name: founder-office
+    emoji: "🧭"
+    role: 产品
+  - name: growth
+    emoji: "📈"
+    role: 研究

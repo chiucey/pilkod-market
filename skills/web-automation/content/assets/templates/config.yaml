@@ -1,0 +1,179 @@
+# Web Automation 配置文件
+# 所有功能的统一配置管理
+
+# ========================================
+# 浏览器配置
+# ========================================
+browser:
+  # 默认浏览器类型
+  default_mode: chromium  # chromium / firefox / webkit
+  
+  # 是否无头模式
+  headless: false
+  
+  # 默认超时时间（毫秒）
+  timeout: 30000
+  
+  # 视口大小
+  viewport:
+    width: 1920
+    height: 1080
+  
+  # 语言设置
+  locale: zh-CN
+  
+  # 时区
+  timezone_id: Asia/Shanghai
+  
+  # 是否启用 JavaScript
+  java_script_enabled: true
+  
+  # 是否忽略 HTTPS 错误
+  ignore_https_errors: true
+
+# ========================================
+# 代理配置
+# ========================================
+proxy:
+  # 是否启用代理
+  enabled: false
+  
+  # 代理服务器地址
+  server: ""
+  
+  # 代理类型
+  type: socks5  # socks5 / http / https
+  
+  # 用户名（可选）
+  username: ""
+  
+  # 密码（可选）
+  password: ""
+
+# ========================================
+# User-Agent 配置
+# ========================================
+user_agent:
+  # 是否使用自定义 User-Agent
+  enabled: false
+  
+  # 自定义 User-Agent 字符串
+  custom: ""
+  
+  # 预设模板
+  preset: chrome_win  # chrome_win / chrome_mac / firefox_win / firefox_mac
+
+# ========================================
+# 反爬配置
+# ========================================
+anti_scraping:
+  # 是否启用人类行为模拟
+  human_simulation: true
+  
+  # 是否启用随机延迟
+  random_delay: true
+  
+  # 延迟范围（秒）
+  delay_range:
+    min: 0.5
+    max: 2.0
+  
+  # 是否启用浏览器指纹伪装
+  fingerprint_spoofing: true
+
+# ========================================
+# 资源控制
+# ========================================
+resource_control:
+  # 是否拦截图片
+  block_images: false
+  
+  # 是否拦截字体
+  block_fonts: false
+  
+  # 是否拦截媒体文件
+  block_media: false
+
+# ========================================
+# OCR 配置
+# ========================================
+ocr:
+  # 默认语言
+  language: ch  # ch / en
+  
+  # 是否使用 GPU
+  gpu: false
+  
+  # 是否显示日志
+  show_log: false
+
+# ========================================
+# PDF 解析配置
+# ========================================
+pdf:
+  # 默认输出格式
+  output_format: markdown  # markdown / json / html
+  
+  # 是否启用 OCR（扫描版 PDF）
+  ocr_enabled: true
+  
+  # 是否提取图片
+  extract_images: false
+
+# ========================================
+# 文档转换配置
+# ========================================
+conversion:
+  # 输出目录
+  output_dir: .web-automation/converted
+  
+  # 是否删除源文件
+  remove_source: false
+  
+  # 是否递归处理子目录
+  recursive: false
+
+# ========================================
+# 日志配置
+# ========================================
+logging:
+  # 是否启用日志
+  enabled: true
+  
+  # 日志级别
+  level: info  # debug / info / warn / error
+  
+  # 日志文件路径
+  file_path: .web-automation/logs/browser.log
+  
+  # 是否输出到控制台
+  console: true
+
+# ========================================
+# 截图配置
+# ========================================
+screenshot:
+  # 是否自动截图
+  auto_capture: false
+  
+  # 截图保存路径
+  save_path: .web-automation/screenshots
+  
+  # 截图格式
+  format: png  # png / jpeg
+  
+  # 是否全页截图
+  full_page: false
+
+# ========================================
+# Cookie 管理
+# ========================================
+cookies:
+  # 是否启用 Cookie 管理
+  enabled: false
+  
+  # Cookie 文件路径
+  file_path: .web-automation/cookies.json
+  
+  # 是否自动保存 Cookie
+  auto_save: true

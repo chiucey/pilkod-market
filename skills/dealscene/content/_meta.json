@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "created_from": "scene_deal skill.zip",
+  "description": "Sales pitch preparation using DEALSCENE methodology - maps pain points, validates cases, designs demo concepts",
+  "files": {
+    "SKILL.md": "Main skill definition",
+    "examples/": "Example quadrant charts",
+    "references/demo-storyteller.md": "Module 3 workflow",
+    "references/scene-foundation.md": "Module 1 workflow",
+    "references/scene-methodology.md": "Methodology reference",
+    "references/value-proofer.md": "Module 2 workflow",
+    "scripts/generate_quadrant_chart.py": "Quadrant chart generator"
+  },
+  "id": 407029600641662,
+  "modules": [
+    "Scene-Foundation",
+    "Value-Proofer",
+    "Demo-Storyteller"
+  ],
+  "name": "dealscene",
+  "platform": "minimax",
+  "skill_id": 174952,
+  "updated_at": 1781000786158,
+  "version": "1.0.0"
+}

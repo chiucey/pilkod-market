@@ -1,0 +1,7 @@
+interface:
+  display_name: "kuaishou-sentiment-dashboard"
+  short_description: "Kuaishou short video operations growth assistant"
+  default_prompt: "Use $kuaishou-sentiment-dashboard to help with Kuaishou short video operations growth assistant"
+
+policy:
+  allow_implicit_invocation: true

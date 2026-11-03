@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-mem-sys",
+  "version": "1.0.0",
+  "description": "Persistent Memory Compression System for OpenClaw",
+  "main": "scripts/worker.js",
+  "scripts": {
+    "init": "node scripts/init-db.js",
+    "worker": "node scripts/worker.js",
+    "start": "npm run init && npm run worker"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.0.0"
+  },
+  "keywords": ["openclaw", "memory", "context", "session"],
+  "author": "OpenClaw Community",
+  "license": "MIT"
+}

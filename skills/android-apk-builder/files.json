@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "baa6ca133994c5014b155adb0e59279b0ccc5418",
+      "size": 14233
+    },
+    {
+      "path": "_meta.json",
+      "sha": "5fcdc486377c7785c61b247b2879782947278cef",
+      "size": 138
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "sha": "84f04cc936f009039d28a18f59123fb7bcfb5ea2",
+      "size": 8342
+    },
+    {
+      "path": "scripts/build.sh",
+      "sha": "303fbaef6e5120df4f275a1673c1b61a569bfe24",
+      "size": 6419
+    },
+    {
+      "path": "scripts/deliver.sh",
+      "sha": "df2a5af7f618cea9da18884db83c6d3f30e47fd5",
+      "size": 3799
+    },
+    {
+      "path": "scripts/env-setup.sh",
+      "sha": "98f428d86228750a527af54500d08ecc3dbbf6a4",
+      "size": 8093
+    },
+    {
+      "path": "scripts/new-project.sh",
+      "sha": "dc73c405c6c6ee16eacfdf58781c37e46ec7218d",
+      "size": 5478
+    },
+    {
+      "path": "scripts/package-source.sh",
+      "sha": "b2879c6391e884af20263fc27acf9976d5b07fa8",
+      "size": 1280
+    },
+    {
+      "path": "templates/base/app/build.gradle.kts",
+      "sha": "e4187240322bea4c6e0f6591125d209d4fd5c6c5",
+      "size": 1810
+    },
+    {
+      "path": "templates/base/app/proguard-rules.pro",
+      "sha": "f49f84e31febae3038da70608bf58bde2658912c",
+      "size": 106
+    },
+    {
+      "path": "templates/base/app/src/main/AndroidManifest.xml",
+      "sha": "155a7c145a7f85baa8e0085db1e85b8eea817cc6",
+      "size": 1064
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/MainActivity.kt",
+      "sha": "bb2310764e3cb38f68dcd7a8bead89ddff3c7a16",
+      "size": 893
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/TemplateApp.kt",
+      "sha": "31f783253b00d487baf4e2582911af129c223655",
+      "size": 90
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/data/SettingsRepo.kt",
+      "sha": "797d5e1ee7c1ed33e0fea18edfb41935f18c15d7",
+      "size": 1119
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/feature/home/HomeScreen.kt",
+      "sha": "36b3646810633ba4698a15aeb1725fbd907e7b22",
+      "size": 2401
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/feature/home/HomeViewModel.kt",
+      "sha": "7c2da08207e50d6ad004fb10a0745bcbbfea29f5",
+      "size": 641
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/feature/settings/SettingsScreen.kt",
+      "sha": "2cfed1f8e1cb4a31f1bda68f95aa1a9745496004",
+      "size": 2550
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/feature/settings/SettingsViewModel.kt",
+      "sha": "39e5f4ea3c147ea2976412d22131c07936e24180",
+      "size": 587
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/ui/nav/AppNav.kt",
+      "sha": "cbf87bc404a53a8f80fa89cb01a82eab564a005b",
+      "size": 2499
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/ui/theme/Color.kt",
+      "sha": "1792e5d1929e472d1fad4d9bb294dfdedb8d3b14",
+      "size": 1133
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/ui/theme/Theme.kt",
+      "sha": "22c47df14e8170fc10eb458e2732844a4dca211d",
+      "size": 2519
+    },
+    {
+      "path": "templates/base/app/src/main/java/com/mavis/template/ui/theme/Type.kt",
+      "sha": "f27ac983eb9d6fcaca5d09036e48824033adba0e",
+      "size": 885
+    },
+    {
+      "path": "templates/base/app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "sha": "b2aca7e0089e1b900dfe78113147184c6166e277",
+      "size": 462
+    },
+    {
+      "path": "templates/base/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha": "5c84730caa7b72dfe85126020edffbd0e39e64fa",
+      "size": 341
+    },
+    {
+      "path": "templates/base/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "sha": "5c84730caa7b72dfe85126020edffbd0e39e64fa",
+      "size": 341
+    },
+    {
+      "path": "templates/base/app/src/main/res/values-night/themes.xml",
+      "sha": "1f99caf88064befea344bae246a1f57117f73428",
+      "size": 144
+    },
+    {
+      "path": "templates/base/app/src/main/res/values/colors.xml",
+      "sha": "6aff23681748e9826f98e8651ca40a67343a76d7",
+      "size": 121
+    },
+    {
+      "path": "templates/base/app/src/main/res/values/strings.xml",
+      "sha": "937457716381ca228d1fce2940bb5f7043faba71",
+      "size": 112
+    },
+    {
+      "path": "templates/base/app/src/main/res/values/themes.xml",
+      "sha": "d303f2062ad1d44a479291077a0e12736faff23c",
+      "size": 150
+    },
+    {
+      "path": "templates/base/app/src/main/res/xml/backup_rules.xml",
+      "sha": "45845c311a3575cd5ff0d0d78ed07c59813787e4",
+      "size": 129
+    },
+    {
+      "path": "templates/base/app/src/main/res/xml/data_extraction_rules.xml",
+      "sha": "9e2c689a0aa0a243c82639ef197bfab6351e7d35",
+      "size": 270
+    },
+    {
+      "path": "templates/base/build.gradle.kts",
+      "sha": "af41a67664caff0d0989077ffd6604f1f8f13ad9",
+      "size": 194
+    },
+    {
+      "path": "templates/base/gradle.properties",
+      "sha": "cb7f985f22c19b88f693675f5243a9c35d3d2f69",
+      "size": 275
+    },
+    {
+      "path": "templates/base/gradle/libs.versions.toml",
+      "sha": "59672e503faccd3eeb3149455e16c06e05fcecce",
+      "size": 1785
+    },
+    {
+      "path": "templates/base/settings.gradle.kts",
+      "sha": "188176542c7481201f9cb74b753ca1da350c48ff",
+      "size": 539
+    }
+  ]
+}

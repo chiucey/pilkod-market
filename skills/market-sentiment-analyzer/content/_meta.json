@@ -1,0 +1,20 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-22",
+  "description": "金融市场情绪分析技能：支持A股/港股/美股市场情绪多维度分析",
+  "id": 379342452895901,
+  "name": "market-sentiment-analyzer",
+  "platform": "minimax",
+  "security_level": "public",
+  "trigger_words": [
+    "市场情绪",
+    "舆情分析",
+    "北向资金",
+    "赚钱效应",
+    "情绪评分",
+    "情绪拐点",
+    "主力资金"
+  ],
+  "updated_at": 1774166131404,
+  "version": "1.7.2"
+}

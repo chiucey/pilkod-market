@@ -1,0 +1,53 @@
+# Douyin Account Manager Configuration
+# Configure monitored Douyin accounts and Feishu sync settings
+
+# Account List
+accounts:
+  - douyin_id: "1234567890"
+    name: "Official Account"
+    monitor_enabled: true
+    alert_threshold:
+      follower_change: 100
+      new_videos: 1
+
+  - douyin_id: "9876543210"
+    name: "Sub Account"
+    monitor_enabled: true
+    alert_threshold:
+      follower_change: 50
+      new_videos: 1
+
+# Feishu Configuration
+feishu:
+  # Bot Webhook for notifications
+  webhook: "https://open.feishu.cn/open-apis/bot/v2/hook/xxx-xxx-xxx"
+
+  # Multi-dimensional Table for data sync
+  app_token: "xxx"
+  table_id: "tblxxx"
+
+  # Data Sync Field Mapping
+  field_mapping:
+    account_id: "account_id"
+    account_name: "account_name"
+    followers: "followers"
+    following: "following"
+    likes: "likes"
+    videos: "videos"
+    last_update: "last_update"
+
+# Monitor Configuration
+monitor:
+  # Collection interval (minutes)
+  interval: 60
+
+  # Daily report settings
+  daily_report:
+    enabled: true
+    time: "09:00"
+
+  # Enable anomaly alerts
+  alert_on_anomaly: true
+
+  # Data retention days
+  data_retention_days: 90

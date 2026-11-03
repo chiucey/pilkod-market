@@ -1,0 +1,41 @@
+# automation-workflows Skill Configuration
+
+# Default language setting (ISO 639-1 code)
+default_language: "zh-CN"
+
+# Execution timeout in seconds
+timeout_seconds: 30
+
+# Code execution settings
+enable_code_execution: false
+
+# Skill-specific settings
+skill_settings:
+  # Supported automation tools
+  supported_tools:
+    - name: "Zapier"
+      tier: "starter"
+      max_workflow_steps: 3
+    - name: "Make"
+      tier: "pro"
+      max_workflow_steps: 100
+    - name: "n8n"
+      tier: "self-hosted"
+      max_workflow_steps: unlimited
+
+  # Default ROI calculation parameters
+  roi_calculation:
+    hourly_rate: 50  # USD
+    default_amortization_months: 12
+
+  # Automation opportunity thresholds
+  opportunity_thresholds:
+    minimum_frequency_per_week: 2
+    minimum_time_per_task_minutes: 10
+    recommended_payback_months: 3
+
+  # Monitoring settings
+  monitoring:
+    daily_check_enabled: true
+    weekly_review_enabled: true
+    monthly_audit_enabled: true

@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-26",
+  "description": "Stock K-line analysis skill for calculating risk indicators, liquidity indicators, valuation indicators and providing buy/sell recommendations",
+  "id": 380682553839986,
+  "name": "stock-kline-analysis",
+  "platform": "minimax",
+  "tags": [
+    "stock",
+    "kline",
+    "technical-analysis",
+    "risk-evaluation",
+    "investment-recommendation",
+    "trading"
+  ],
+  "trigger_keywords": [
+    "stock analysis",
+    "kline",
+    "buy sell",
+    "technical indicators",
+    "risk indicators",
+    "volatility",
+    "beta",
+    "var",
+    "turnover rate",
+    "pe",
+    "pb",
+    "dividend yield",
+    "stock diagnosis",
+    "valuation analysis",
+    "fund flow"
+  ],
+  "updated_at": 1774493366479,
+  "version": "1.0.0"
+}

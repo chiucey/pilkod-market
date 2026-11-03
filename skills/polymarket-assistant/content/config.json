@@ -1,0 +1,58 @@
+{
+  "name": "polymarket-assistant",
+  "version": "1.0.0",
+  "description": "Polymarket 预测市场助手，支持市场查询、账户管理和交易操作",
+  "api": {
+    "base_url": "https://clob.polymarket.com",
+    "markets_url": "https://clob.polymarket.com/markets",
+    "orders_url": "https://clob.polymarket.com/orders",
+    "api_key_required": true,
+    "api_key_env_var": "POLYMARKET_API_KEY"
+  },
+  "web3": {
+    "network": "polygon",
+    "chain_id": 137,
+    "native_currency": "MATIC",
+    "trading_token": "USDC"
+  },
+  "credentials": {
+    "api_key": {
+      "type": "string",
+      "description": "Polymarket API 密钥，用于认证和交易操作",
+      "required": false,
+      "env_var": "POLYMARKET_API_KEY"
+    },
+    "wallet_address": {
+      "type": "string",
+      "description": "用户的 Web3 钱包地址（Polygon 网络）",
+      "required": false,
+      "env_var": "POLYMARKET_WALLET_ADDRESS"
+    },
+    "private_key": {
+      "type": "string",
+      "description": "钱包私钥（用于签名交易），强烈建议使用环境变量",
+      "required": false,
+      "env_var": "POLYMARKET_PRIVATE_KEY"
+    }
+  },
+  "features": {
+    "market_search": {
+      "enabled": true,
+      "description": "搜索和查询预测市场"
+    },
+    "account_info": {
+      "enabled": true,
+      "description": "查询账户余额和持仓"
+    },
+    "trading": {
+      "enabled": true,
+      "description": "执行买入和卖出操作",
+      "requires_api_key": true
+    }
+  },
+  "limits": {
+    "max_search_results": 20,
+    "max_positions_display": 50,
+    "rate_limit_per_minute": 60
+  }
+}

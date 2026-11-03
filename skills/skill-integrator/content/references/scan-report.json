@@ -1,0 +1,709 @@
+{
+  "skills": [
+    {
+      "name": "agent-autopilot",
+      "raw_name": "agent-autopilot",
+      "description": "Self-driving agent workflow with heartbeat-driven task execution, day/night progress reports, and long-term memory consolidation. Integrates with todo-management for task tracking.",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "json",
+        "openclaw"
+      ],
+      "tech_details": [
+        "通过 `memory/report-state"
+      ],
+      "file_count": 1,
+      "sk_md_length": 8632
+    },
+    {
+      "name": "Agent Browser",
+      "raw_name": "agent-browser",
+      "description": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "node",
+        "npm",
+        "json",
+        "requests",
+        "browser"
+      ],
+      "tech_details": [],
+      "file_count": 1,
+      "sk_md_length": 9020
+    },
+    {
+      "name": "agent-migrator",
+      "raw_name": "agent-migrator",
+      "description": "智能体跨平台迁移分析器。当用户要求将 AI Agent 从 A 平台迁移到 B 平台时触发，例如\"帮我迁移智能体\"、\"从 OpenClaw 迁移到 Dify\"、\"迁移到 Coze\"、\"如何把机器人迁移到新服务器\"。自动检测源平台配置、子代理、MCP Server 和外挂数据库，生成完整迁移方案和分步指南。",
+      "functions": [],
+      "tech_stack": [
+        "python",
+        "bash",
+        "yaml",
+        "json",
+        "sqlite",
+        "openclaw",
+        "discord",
+        "telegram"
+      ],
+      "tech_details": [],
+      "file_count": 7,
+      "sk_md_length": 2593
+    },
+    {
+      "name": "agent-migrator",
+      "raw_name": "agent-migrator_backup_v1",
+      "description": "智能体迁移分析器。当用户需要将 AI Agent 从 A 平台迁移到 B 平台时触发。分析源平台配置，生成完整文件清单 + 具体实施步骤。支持子代理、MCP Server、外挂数据库的迁移分析。",
+      "functions": [],
+      "tech_stack": [
+        "python",
+        "bash",
+        "yaml",
+        "json",
+        "sqlite",
+        "feishu",
+        "openclaw",
+        "cherry studio",
+        "discord",
+        "telegram"
+      ],
+      "tech_details": [],
+      "file_count": 4,
+      "sk_md_length": 3905
+    },
+    {
+      "name": "auto-updater",
+      "raw_name": "auto-updater",
+      "description": "Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.",
+      "functions": [],
+      "tech_stack": [
+        "cron",
+        "openclaw"
+      ],
+      "tech_details": [],
+      "file_count": 1,
+      "sk_md_length": 1143
+    },
+    {
+      "name": "automation-workflows",
+      "raw_name": "automation-workflows-0.1.0",
+      "description": "Design and implement automation workflows to save time and scale operations as a solopreneur. Use when identifying repetitive tasks to automate, building workflows across tools, setting up triggers and actions, or optimizing existing automations. Cov",
+      "functions": [],
+      "tech_stack": [
+        "webhook"
+      ],
+      "tech_details": [],
+      "file_count": 2,
+      "sk_md_length": 10315
+    },
+    {
+      "name": "cron-mastery",
+      "raw_name": "cron-mastery-1.0.3",
+      "description": "Master OpenClaw's timing systems. Use for scheduling reliable reminders, setting up periodic maintenance (janitor jobs), and understanding when to use Cron vs Heartbeat for time-sensitive tasks.",
+      "functions": [],
+      "tech_stack": [
+        "json",
+        "cron",
+        "openclaw",
+        "telegram"
+      ],
+      "tech_details": [],
+      "file_count": 3,
+      "sk_md_length": 6062
+    },
+    {
+      "name": "Find",
+      "raw_name": "find",
+      "description": "Locate anything with progressive search expansion, multi-source validation, and iterative refinement until found.",
+      "functions": [],
+      "tech_stack": [],
+      "tech_details": [],
+      "file_count": 3,
+      "sk_md_length": 1946
+    },
+    {
+      "name": "find-skills",
+      "raw_name": "find-skills-0.1.0",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for fu",
+      "functions": [],
+      "tech_stack": [
+        "bash"
+      ],
+      "tech_details": [],
+      "file_count": 2,
+      "sk_md_length": 4627
+    },
+    {
+      "name": "investment-advisor",
+      "raw_name": "investment-advisor",
+      "description": "投资顾问 Agent「钱龙」- 提供股票、基金、宏观经济数据分析与投资建议。使用场景：'帮我分析 XXX 股票'、'推荐一只基金'、'最近经济形势怎么样'、'我的投资组合表现如何'。",
+      "functions": [],
+      "tech_stack": [
+        "python",
+        "tavily",
+        "browser"
+      ],
+      "tech_details": [
+        "使用 **self-improving-agent** 记录分析中"
+      ],
+      "file_count": 8,
+      "sk_md_length": 2054
+    },
+    {
+      "name": "maxclaw-helper",
+      "raw_name": "maxclaw-helper-1.1.0",
+      "description": "Usage guidance and runtime diagnostics for MaxClaw / OpenClaw. Activate when: (1) User asks how to use a feature — e.g. 'how to enable Feishu long polling', 'how to configure Cron', 'how to install a skill'; (2) User is unsure about a config field's ",
+      "functions": [],
+      "tech_stack": [
+        "json",
+        "cron",
+        "webhook",
+        "feishu",
+        "openclaw",
+        "discord",
+        "telegram"
+      ],
+      "tech_details": [],
+      "file_count": 4,
+      "sk_md_length": 7150
+    },
+    {
+      "name": "self-improvement",
+      "raw_name": "self-improving-agent",
+      "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist,",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "npm",
+        "yaml",
+        "json",
+        "requests",
+        "openclaw"
+      ],
+      "tech_details": [],
+      "file_count": 42,
+      "sk_md_length": 17300
+    },
+    {
+      "name": "self-improvement",
+      "raw_name": "self-improving-agent-1.0.11",
+      "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist,",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "npm",
+        "yaml",
+        "json",
+        "requests",
+        "openclaw"
+      ],
+      "tech_details": [],
+      "file_count": 14,
+      "sk_md_length": 19610
+    },
+    {
+      "name": "skill-integrator",
+      "raw_name": "skill-integrator",
+      "description": ">",
+      "functions": [],
+      "tech_stack": [
+        "python",
+        "bash",
+        "json"
+      ],
+      "tech_details": [],
+      "file_count": 3,
+      "sk_md_length": 1276
+    },
+    {
+      "name": "skill-vetter",
+      "raw_name": "skill-vetter",
+      "description": "Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "requests",
+        "browser",
+        "openclaw"
+      ],
+      "tech_details": [],
+      "file_count": 1,
+      "sk_md_length": 3915
+    },
+    {
+      "name": "tavily",
+      "raw_name": "tavily-search",
+      "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "node",
+        "tavily"
+      ],
+      "tech_details": [],
+      "file_count": 5,
+      "sk_md_length": 1192
+    },
+    {
+      "name": "tencent-docs",
+      "raw_name": "tencent-docs-1.0.7",
+      "description": "腾讯文档，提供完整的腾讯文档操作能力。当用户需要操作腾讯文档时使用此skill，包括：(1) 创建各类在线文档（智能文档、Word、Excel、幻灯片、思维导图、流程图）(2) 查询、搜索文档空间与文件 (3) 管理空间节点、文件夹结构 (4) 读取文档内容 (5) 编辑操作智能表 （6）编辑操作智能文档。",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "node",
+        "openclaw"
+      ],
+      "tech_details": [
+        "使用 create_smartcanvas_by_markdown",
+        "使用 smartcanvas",
+        "使用 create_excel_by_markdown",
+        "使用 create_slide_by_markdown",
+        "使用 create_mind_by_markdown",
+        "使用 create_flowchart_by_mermaid",
+        "使用 smartsheet",
+        "使用 create_word_by_markdown（仅在明确需要"
+      ],
+      "file_count": 7,
+      "sk_md_length": 9173
+    },
+    {
+      "name": "todo-management",
+      "raw_name": "todo-management",
+      "description": "Per-workspace JSON todo manager (./todo.json) with groups and task statuses (pending/in_progress/done/skipped), operated via {baseDir}/scripts/todo.sh for adding, listing, editing, moving, and removing entries and managing groups.",
+      "functions": [],
+      "tech_stack": [
+        "python",
+        "bash",
+        "json",
+        "requests",
+        "openclaw"
+      ],
+      "tech_details": [],
+      "file_count": 6,
+      "sk_md_length": 4372
+    },
+    {
+      "name": "token-tracker",
+      "raw_name": "token-tracker",
+      "description": "Token/积分消耗追踪器 - 记录并汇报每一步推理的 token 消耗，支持实时显示和事后分析，确保 AI 使用合理可控。使用场景：'查看当前消耗'、'生成消耗报告'、'分析哪些操作最耗 token'。",
+      "functions": [],
+      "tech_stack": [],
+      "tech_details": [
+        "通过 `session_status` 工具获取："
+      ],
+      "file_count": 3,
+      "sk_md_length": 1001
+    },
+    {
+      "name": "using-superpowers",
+      "raw_name": "using-superpowers",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions",
+      "functions": [],
+      "tech_stack": [],
+      "tech_details": [],
+      "file_count": 1,
+      "sk_md_length": 2772
+    },
+    {
+      "name": "weixin-connect",
+      "raw_name": "weixin-connect",
+      "description": "连接个人微信（不是企业微信）。用户说\"连接个人微信\"、\"接入个人微信\"、\"绑定个人微信\"、\"个人微信扫码\"时使用本 skill。注意：如果用户说的是\"企业微信\"或\"企微\"，本 skill 不适用，请使用 wecom-connect skill。一旦匹配本 skill，必须严格按流程执行到底，不得跳步或自由发挥。",
+      "functions": [],
+      "tech_stack": [
+        "bash",
+        "node",
+        "npm",
+        "json",
+        "openclaw",
+        "wecom",
+        "weixin"
+      ],
+      "tech_details": [
+        "使用 wecom-connect skill",
+        "调用 ilink API 获取二维码"
+      ],
+      "file_count": 1,
+      "sk_md_length": 4503
+    }
+  ],
+  "l1_containment": [],
+  "l2_overlap": [
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "todo-management",
+      "shared_keywords": [],
+      "shared_functions": [],
+      "overlap_score": 0.3,
+      "recommendation": "描述重叠率 0%，技术栈重叠 60%，综合得分 0.30"
+    },
+    {
+      "skill_a": "cron-mastery",
+      "skill_b": "maxclaw-helper",
+      "shared_keywords": [],
+      "shared_functions": [],
+      "overlap_score": 0.29,
+      "recommendation": "描述重叠率 0%，技术栈重叠 57%，综合得分 0.29"
+    },
+    {
+      "skill_a": "self-improvement",
+      "skill_b": "todo-management",
+      "shared_keywords": [],
+      "shared_functions": [],
+      "overlap_score": 0.29,
+      "recommendation": "描述重叠率 0%，技术栈重叠 57%，综合得分 0.29"
+    }
+  ],
+  "l3_association": [
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "agent-migrator",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，agent-migrator 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "auto-updater",
+      "link_reason": "同属主题: schedule",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，auto-updater 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "automation-workflows",
+      "link_reason": "同属主题: automation",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，automation-workflows 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "cron-mastery",
+      "link_reason": "同属主题: schedule",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，cron-mastery 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "find-skills",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，find-skills 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "investment-advisor",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，investment-advisor 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "maxclaw-helper",
+      "link_reason": "同属主题: schedule",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，maxclaw-helper 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "self-improvement",
+      "link_reason": "同属主题: memory",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，self-improvement 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-autopilot",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-autopilot 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "agent-autopilot",
+      "link_reason": "同属主题: automation, coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，agent-autopilot 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "agent-migrator",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，agent-migrator 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "automation-workflows",
+      "link_reason": "同属主题: automation",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，automation-workflows 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "find-skills",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，find-skills 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "investment-advisor",
+      "link_reason": "同属主题: browser, coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，investment-advisor 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: browser, coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Agent Browser",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Agent Browser 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-migrator",
+      "skill_b": "find-skills",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-migrator 负责 X，find-skills 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-migrator",
+      "skill_b": "investment-advisor",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-migrator 负责 X，investment-advisor 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-migrator",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-migrator 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-migrator",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-migrator 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "agent-migrator",
+      "skill_b": "maxclaw-helper",
+      "link_reason": "同属主题: feishu",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——agent-migrator 负责 X，maxclaw-helper 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "cron-mastery",
+      "link_reason": "同属主题: cron, schedule",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，cron-mastery 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "find-skills",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，find-skills 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "maxclaw-helper",
+      "link_reason": "同属主题: cron, schedule, skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，maxclaw-helper 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "auto-updater",
+      "skill_b": "weixin-connect",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——auto-updater 负责 X，weixin-connect 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Find",
+      "skill_b": "find-skills",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Find 负责 X，find-skills 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Find",
+      "skill_b": "investment-advisor",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Find 负责 X，investment-advisor 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Find",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Find 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Find",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Find 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "Find",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——Find 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "investment-advisor",
+      "link_reason": "同属主题: coding, search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，investment-advisor 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "maxclaw-helper",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，maxclaw-helper 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: coding, skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: coding, search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: search, skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: search, skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "find-skills",
+      "skill_b": "weixin-connect",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——find-skills 负责 X，weixin-connect 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "investment-advisor",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: browser, coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——investment-advisor 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "investment-advisor",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: coding, search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——investment-advisor 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "investment-advisor",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——investment-advisor 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "investment-advisor",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——investment-advisor 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "maxclaw-helper",
+      "skill_b": "skill-vetter",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——maxclaw-helper 负责 X，skill-vetter 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "maxclaw-helper",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——maxclaw-helper 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "maxclaw-helper",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——maxclaw-helper 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "maxclaw-helper",
+      "skill_b": "weixin-connect",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——maxclaw-helper 负责 X，weixin-connect 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "skill-vetter",
+      "skill_b": "tavily",
+      "link_reason": "同属主题: coding",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——skill-vetter 负责 X，tavily 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "skill-vetter",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——skill-vetter 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "skill-vetter",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——skill-vetter 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "skill-vetter",
+      "skill_b": "weixin-connect",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——skill-vetter 负责 X，weixin-connect 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "tavily",
+      "skill_b": "tencent-docs",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——tavily 负责 X，tencent-docs 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "tavily",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: search",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——tavily 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "tencent-docs",
+      "skill_b": "using-superpowers",
+      "link_reason": "同属主题: search, skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——tencent-docs 负责 X，using-superpowers 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "tencent-docs",
+      "skill_b": "weixin-connect",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——tencent-docs 负责 X，weixin-connect 负责 Y，合并后统一调度。"
+    },
+    {
+      "skill_a": "using-superpowers",
+      "skill_b": "weixin-connect",
+      "link_reason": "同属主题: skill",
+      "proposal": "主题相同但功能分立，建议评估是否可融合——using-superpowers 负责 X，weixin-connect 负责 Y，合并后统一调度。"
+    }
+  ]
+}

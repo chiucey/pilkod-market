@@ -1,0 +1,13 @@
+interface:
+  display_name: "专业侦探小说创作"
+  short_description: "从案件真相、线索推理链、伏笔管理到逐章创作与终稿审计"
+  default_prompt: "使用 $craft-detective-fiction 和我协作设计一部长篇侦探小说，并先建立案件真相与公平线索链。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true

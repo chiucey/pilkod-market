@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "ba3cb83d3b3c6153ab5cb77e8b6776c410edee38",
+      "size": 22352
+    },
+    {
+      "path": "_meta.json",
+      "sha": "4a05105b3e07d1f9d454476ac935f19bbe6f090f",
+      "size": 129
+    },
+    {
+      "path": "scripts/activation.sh",
+      "sha": "7b2fa5eae6438620ca2745502a209eddd870170c",
+      "size": 808
+    },
+    {
+      "path": "scripts/balance.sh",
+      "sha": "a431541765d07f70c255bc7c958e1ac9da68b436",
+      "size": 887
+    },
+    {
+      "path": "scripts/inbound.sh",
+      "sha": "3dd3c3b7cf7441b8a65816479eafa32f530e84c5",
+      "size": 1464
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "db87aa8d1d5940281135351b402d6676daa8dabc",
+      "size": 2784
+    },
+    {
+      "path": "scripts/prompt_update.sh",
+      "sha": "7ea47d52310698d365f48be423af332ff6711c2a",
+      "size": 797
+    },
+    {
+      "path": "scripts/query.sh",
+      "sha": "4a41fd13cf362c7e6a78b76832351949e1b0cb1f",
+      "size": 637
+    },
+    {
+      "path": "scripts/send.sh",
+      "sha": "89cf77c834fc47bb60579e8890d5e488c82eb24e",
+      "size": 1131
+    }
+  ]
+}

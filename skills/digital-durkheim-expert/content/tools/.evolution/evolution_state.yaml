@@ -1,0 +1,49 @@
+benchmark:
+  benchmark_score: 3.0
+  eval_mode: tool_test(analyze.py)
+  output: "[TOOL: analyze.py]\n{\n  \"status\": \"success\",\n  \"skill\": \"digital-durkheim-expert\"\
+    ,\n  \"timestamp\": \"2026-04-29T00:38:54.469725\",\n  \"data\": {\n    \"test\"\
+    : \"data\"\n  },\n  \"analysis\": {\n    \"status\": \"completed\",\n    \"analysis_type\"\
+    : \"digital-durkheim-expert_analysis\",\n    \"summary\": \"分析已完成\",\n    \"timestamp\"\
+    : \"2026-04-29T00:38:54.469725\"\n  }\n}"
+  passed: false
+  test_prompt: 分析微博热搜热搜对社会团结的影响，用涂尔干社会团结理论。
+dimensions:
+  architecture:
+    score: 10.0
+    weight: 15
+  benchmark:
+    score: 3.0
+    weight: 25
+  boundary:
+    score: 10.0
+    weight: 10
+  checkpoint:
+    score: 10.0
+    weight: 7
+  frontmatter:
+    score: 8.0
+    weight: 8
+  resources:
+    score: 10.0
+    weight: 5
+  specificity:
+    score: 10.0
+    weight: 15
+  workflow:
+    score: 10.0
+    weight: 15
+improved: true
+previous_score: 47.75
+quality_score: 61.43
+refinement_history:
+- delta: 57.12
+  quality_score: 57.12
+  timestamp: '2026-04-26T11:08:51.522494+00:00'
+- delta: 13.68
+  quality_score: 61.43
+  timestamp: '2026-04-28T16:38:54.495486+00:00'
+skill: digital-durkheim-expert
+structure_base: 80.9
+timestamp: '2026-04-28T16:38:54.495486+00:00'
+total_100: 88.4

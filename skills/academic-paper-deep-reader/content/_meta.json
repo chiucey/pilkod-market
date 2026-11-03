@@ -1,0 +1,27 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-29",
+  "description": "学术论文深度解读工具，覆盖八大关键维度",
+  "id": 382232436638185,
+  "input_types": [
+    "url",
+    "document"
+  ],
+  "name": "academic-paper-deep-reader",
+  "platform": "minimax",
+  "supported_formats": [
+    "pdf",
+    "docx",
+    "html",
+    "webpage"
+  ],
+  "tags": [
+    "学术论文",
+    "论文解读",
+    "研究方法",
+    "深度分析",
+    "认知框架"
+  ],
+  "updated_at": 1774872544009,
+  "version": "1.0.0"
+}

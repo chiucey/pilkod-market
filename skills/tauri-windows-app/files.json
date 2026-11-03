@@ -1,0 +1,164 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "d39f658be90e758d06ab22c23a537d155e958d8c",
+      "size": 25058
+    },
+    {
+      "path": "_meta.json",
+      "sha": "c2e2e6de85b09d2672818a8e400de4208e43de8a",
+      "size": 136
+    },
+    {
+      "path": "assets/tauri-template/index.html",
+      "sha": "e28b544b476e7eed10ceac354b29796aed9ea7be",
+      "size": 356
+    },
+    {
+      "path": "assets/tauri-template/package.json",
+      "sha": "1ba223350943a3a3c075325f0e9baa31662df137",
+      "size": 868
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/Cargo.toml",
+      "sha": "88d9787aa8ca0d30a60098fd16f887bff0d51dcc",
+      "size": 1370
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/build.rs",
+      "sha": "689bf3fffa9ca9973bedb956c2a7c5ca47dc3ada",
+      "size": 794
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/capabilities/default.json",
+      "sha": "94f2d40738018ecd0ef509c0f3b37088e520b516",
+      "size": 383
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/commands.rs",
+      "sha": "bb196bb0895b8c74be401d4cba62df24ffc962d9",
+      "size": 2264
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/core/log.rs",
+      "sha": "f30940e6ee561477b264e9eb90322df831443799",
+      "size": 2769
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/core/mod.rs",
+      "sha": "f3cb4cf5d77af2722067b054cb18c2754ef698f3",
+      "size": 87
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/core/settings.rs",
+      "sha": "b03b194d97192357a2ba49e49006b49a4ef2a721",
+      "size": 4441
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/core/timer.rs",
+      "sha": "49bca723fc9fc90911c4e0d57587e1d1fb0c4eb7",
+      "size": 7822
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/core/tray.rs",
+      "sha": "be8cbe040ff18e97699fb685176a82f1da73a350",
+      "size": 5110
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/lib.rs",
+      "sha": "b4784def2e161053960ea574d53f72007dc0ab5a",
+      "size": 4519
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/src/main.rs",
+      "sha": "ea9a4f566837b6b5427d3aa53add7bc8dbd17094",
+      "size": 348
+    },
+    {
+      "path": "assets/tauri-template/src-tauri/tauri.conf.json",
+      "sha": "489cd228da9a886a73ce774c4f47bd664f53f626",
+      "size": 828
+    },
+    {
+      "path": "assets/tauri-template/src/App.tsx",
+      "sha": "26cc31292abe9408ebdc610ccccb035ec80f62ea",
+      "size": 2431
+    },
+    {
+      "path": "assets/tauri-template/src/hooks/useSettings.ts",
+      "sha": "58e7b21affa49484f937b727c89f74f6e8080cfb",
+      "size": 2214
+    },
+    {
+      "path": "assets/tauri-template/src/index.css",
+      "sha": "8a4d3e13b648828d6473354beafbc67dec1df910",
+      "size": 8643
+    },
+    {
+      "path": "assets/tauri-template/src/lib/api.ts",
+      "sha": "3a8722b0a6ab05c11cf372ab28f995018f2dd3d9",
+      "size": 1743
+    },
+    {
+      "path": "assets/tauri-template/src/main.tsx",
+      "sha": "f91fa8bf6597f11ec6db50789a1984d6fdd3df8a",
+      "size": 332
+    },
+    {
+      "path": "assets/tauri-template/src/types.ts",
+      "sha": "d7a7d6c63fb90cacbe96a77e06ced9d9facc2356",
+      "size": 814
+    },
+    {
+      "path": "assets/tauri-template/tsconfig.json",
+      "sha": "1a54b594f2c7b411957d4ee20812cf5c0632fc58",
+      "size": 673
+    },
+    {
+      "path": "assets/tauri-template/tsconfig.node.json",
+      "sha": "ee1b5574258290bfdb25dc0f2a75ab7d202858c4",
+      "size": 349
+    },
+    {
+      "path": "assets/tauri-template/vite.config.ts",
+      "sha": "9744701fc1001868398b12a78fdb3e6d06472533",
+      "size": 905
+    },
+    {
+      "path": "assets/tauri-template/vitest.config.ts",
+      "sha": "8512b92a8ce4f4d37f75db880c6a6edbd7505d9b",
+      "size": 307
+    },
+    {
+      "path": "references/env-setup.md",
+      "sha": "5951a96ff7dcdfc1ca132890fb2bd8cffe885b69",
+      "size": 9521
+    },
+    {
+      "path": "references/tauri-v2-patterns.md",
+      "sha": "48f1729d239c2783e5c8842e0f157df25b57768d",
+      "size": 11038
+    },
+    {
+      "path": "references/tauri-v2-setup.md",
+      "sha": "f4ff8ba221232ec7e39f81ef6ec87bfbd5b978e1",
+      "size": 8691
+    },
+    {
+      "path": "references/windows-notes.md",
+      "sha": "646aa80c90a33a910c61ff446a9ed3fe128787e5",
+      "size": 6380
+    },
+    {
+      "path": "scripts/generate-icons.mjs",
+      "sha": "725b266766562fc9d0effd9cbbc5dfc5bc461a89",
+      "size": 9611
+    },
+    {
+      "path": "scripts/verify-bundle.mjs",
+      "sha": "9b939ce84022f839225c44d7c194201a8431db1a",
+      "size": 6672
+    }
+  ]
+}

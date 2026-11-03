@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "12392fcb72ad53fba5fed6c3cffa067f97c3030f",
+      "size": 2642
+    },
+    {
+      "path": "_meta.json",
+      "sha": "c7edf995a7dcd98e948633aa67ecf2c9ec620372",
+      "size": 489
+    },
+    {
+      "path": "data/best_sellers.json",
+      "sha": "b291debdf5ee2791954cc5ecfa04346c4668cb5e",
+      "size": 1908
+    },
+    {
+      "path": "data/categories.json",
+      "sha": "f3601b865a73b064862e15feb1062354a26a30ab",
+      "size": 1404
+    },
+    {
+      "path": "data/hot_topics.json",
+      "sha": "178d041649c84d50fd57f4fd33b99c239580eef9",
+      "size": 889
+    },
+    {
+      "path": "data/market_trends.json",
+      "sha": "b0b325169023d9b3482d4faa6f43fa2041caf458",
+      "size": 1651
+    },
+    {
+      "path": "references/product_trends_guide.md",
+      "sha": "2e4482664b1819e348cbe7b25e09d6d010b447a9",
+      "size": 3347
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "7ee5cee5f88aab33e1f4b1752fc7871c4ecda2ba",
+      "size": 3874
+    },
+    {
+      "path": "scripts/product_selector.py",
+      "sha": "ad383e9e46f372aae3d1cbbd673182895035a8b2",
+      "size": 18979
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "1ca1f5a898e4bc015cd3f59b84291d012355842f",
+      "size": 5643
+    },
+    {
+      "path": "scripts/test_skill.py",
+      "sha": "83854d4883fb3b3344b36cea16eb62291d3c22cc",
+      "size": 5975
+    }
+  ]
+}

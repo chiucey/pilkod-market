@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="46d83e46-2979-48d0-800e-dea8f4b2beba"/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>谈判力</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+      <navLabel>
+        <text>封面</text>
+      </navLabel>
+      <content src="Text/cover.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-2" playOrder="2">
+      <navLabel>
+        <text>版权页</text>
+      </navLabel>
+      <content src="Text/copyright.html"/>
+    </navPoint>
+    <navPoint id="navPoint-3" playOrder="3">
+      <navLabel>
+        <text>前言</text>
+      </navLabel>
+      <content src="Text/foreword.html"/>
+    </navPoint>
+    <navPoint id="navPoint-4" playOrder="4">
+      <navLabel>
+        <text>第一部分 问 题</text>
+      </navLabel>
+      <content src="Text/part1.html"/>
+    </navPoint>
+    <navPoint id="navPoint-5" playOrder="5">
+      <navLabel>
+        <text>第1章不要在立场上讨价还价</text>
+      </navLabel>
+      <content src="Text/chapter1.html"/>
+    </navPoint>
+    <navPoint id="navPoint-6" playOrder="6">
+      <navLabel>
+        <text>第二部分 谈判方式</text>
+      </navLabel>
+      <content src="Text/part2.html"/>
+    </navPoint>
+    <navPoint id="navPoint-7" playOrder="7">
+      <navLabel>
+        <text>第2章 把人和事分开</text>
+      </navLabel>
+      <content src="Text/chapter3.html"/>
+    </navPoint>
+    <navPoint id="navPoint-8" playOrder="8">
+      <navLabel>
+        <text>第3章 着眼于利益，而不是立场</text>
+      </navLabel>
+      <content src="Text/chapter4.html"/>
+    </navPoint>
+    <navPoint id="navPoint-9" playOrder="9">
+      <navLabel>
+        <text>第4章 为共同利益创造选择方案</text>
+      </navLabel>
+      <content src="Text/chapter5.html"/>
+    </navPoint>
+    <navPoint id="navPoint-10" playOrder="10">
+      <navLabel>
+        <text>第5章 坚持使用客观标准</text>
+      </navLabel>
+      <content src="Text/chapter6.html"/>
+    </navPoint>
+    <navPoint id="navPoint-11" playOrder="11">
+      <navLabel>
+        <text>第三部分 但是……</text>
+      </navLabel>
+      <content src="Text/part3.html"/>
+    </navPoint>
+    <navPoint id="navPoint-12" playOrder="12">
+      <navLabel>
+        <text>第6章 如果对方实力更强大怎么办？</text>
+      </navLabel>
+      <content src="Text/chapter7.html"/>
+    </navPoint>
+    <navPoint id="navPoint-13" playOrder="13">
+      <navLabel>
+        <text>第7章 如果对方不合作怎么办？</text>
+      </navLabel>
+      <content src="Text/chapter8.html"/>
+    </navPoint>
+    <navPoint id="navPoint-14" playOrder="14">
+      <navLabel>
+        <text>第8章 如果对方使用卑鄙手段怎么办？</text>
+      </navLabel>
+      <content src="Text/chapter9.html"/>
+    </navPoint>
+    <navPoint id="navPoint-15" playOrder="15">
+      <navLabel>
+        <text>第四部分 结 论</text>
+      </navLabel>
+      <content src="Text/part4.html"/>
+    </navPoint>
+    <navPoint id="navPoint-16" playOrder="16">
+      <navLabel>
+        <text>第五部分 关于本书，人们常问的10个问题</text>
+      </navLabel>
+      <content src="Text/part5.html"/>
+    </navPoint>
+    <navPoint id="navPoint-17" playOrder="17">
+      <navLabel>
+        <text>关于公平与“原则谈判”的问题</text>
+      </navLabel>
+      <content src="Text/chapter10.html"/>
+    </navPoint>
+    <navPoint id="navPoint-18" playOrder="18">
+      <navLabel>
+        <text>关于人际关系问题</text>
+      </navLabel>
+      <content src="Text/chapter11.html"/>
+    </navPoint>
+    <navPoint id="navPoint-19" playOrder="19">
+      <navLabel>
+        <text>关于策略问题</text>
+      </navLabel>
+      <content src="Text/chapter12.html"/>
+    </navPoint>
+    <navPoint id="navPoint-20" playOrder="20">
+      <navLabel>
+        <text>关于实力的问题</text>
+      </navLabel>
+      <content src="Text/chapter13.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

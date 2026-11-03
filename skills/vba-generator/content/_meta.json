@@ -1,0 +1,117 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "根据大纲自动生成完整VBA代码",
+    "支持创建多种幻灯片类型",
+    "批量插入文本和图片",
+    "自动应用样式和格式",
+    "支持PowerPoint和WPS双平台",
+    "提供详细的使用说明",
+    "包含常见问题解答",
+    "支持代码注释和说明"
+  ],
+  "category": "office",
+  "color": "#845EC2",
+  "created_at": "2026-04-06T23:55:06Z",
+  "description": "PPT VBA代码生成专家，能够根据用户提供的PPT大纲自动生成可运行的VBA代码，快速创建幻灯片结构、填充内容和设置格式。支持PowerPoint和WPS平台。",
+  "icon": "code",
+  "id": 384770859623368,
+  "input_schema": {
+    "properties": {
+      "content": {
+        "description": "各页面内容",
+        "type": "object"
+      },
+      "outline": {
+        "description": "PPT大纲结构",
+        "required": true,
+        "type": "object"
+      },
+      "platform": {
+        "default": "PowerPoint",
+        "description": "目标平台",
+        "enum": [
+          "PowerPoint",
+          "WPS",
+          "Both"
+        ],
+        "type": "string"
+      },
+      "styling": {
+        "description": "样式设置",
+        "type": "object"
+      },
+      "template_file": {
+        "description": "模板文件路径（可选）",
+        "type": "string"
+      }
+    },
+    "required": [
+      "outline"
+    ],
+    "type": "object"
+  },
+  "name": "vba-generator",
+  "name_zh": "PPT VBA代码生成器",
+  "platform": "minimax",
+  "platform_differences": {
+    "PowerPoint": {
+      "api": "PPTX Object Model",
+      "extensions": [
+        ".pptm",
+        ".pptx"
+      ],
+      "notes": "支持完整的VBA编程"
+    },
+    "WPS": {
+      "api": "ET Object Model",
+      "extensions": [
+        ".wps",
+        ".et"
+      ],
+      "notes": "兼容大部分PowerPoint VBA语法"
+    }
+  },
+  "subcategory": "automation",
+  "supported_operations": [
+    "创建/删除幻灯片",
+    "设置幻灯片布局",
+    "插入文本框和设置格式",
+    "插入图片和调整位置",
+    "创建表格和图表",
+    "设置幻灯片母版",
+    "批量处理多张幻灯片",
+    "导出和保存操作"
+  ],
+  "tags": [
+    "VBA",
+    "宏",
+    "自动化",
+    "PowerPoint",
+    "WPS",
+    "代码生成",
+    "批量处理"
+  ],
+  "trigger_phrases": [
+    "PPT VBA",
+    "VBA代码",
+    "PowerPoint VBA",
+    "WPS VBA",
+    "自动生成PPT",
+    "批量生成PPT",
+    "PPT宏",
+    "幻灯片自动化",
+    "VBA脚本"
+  ],
+  "trigger_phrases_en": [
+    "PPT VBA",
+    "PowerPoint VBA",
+    "WPS VBA",
+    "VBA code",
+    "PPT macro",
+    "slide automation",
+    "batch generate PPT"
+  ],
+  "updated_at": 1775491354044,
+  "version": "1.0.0"
+}

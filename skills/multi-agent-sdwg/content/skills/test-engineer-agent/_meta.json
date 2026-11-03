@@ -1,0 +1,13 @@
+{
+  "id": "1234567894",
+  "version": "1.0.0",
+  "author": "MiniMax Agent",
+  "description": "测试工程师智能体：测试用例生成、测试执行、缺陷定位、测试报告与质量门禁",
+  "training_methods": ["Defect Dataset Training", "Coverage Feedback Optimization"],
+  "core_skills": [
+    "集成测试/端到端测试生成",
+    "测试执行与缺陷定位",
+    "测试报告与质量门禁"
+  ],
+  "collaboration": ["product-analyst-agent", "dev-agent-group", "architect-agent", "project-manager-agent"]
+}

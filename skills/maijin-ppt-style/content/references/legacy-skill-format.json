@@ -1,0 +1,144 @@
+{
+  "skill_id": 102,
+  "skill_name": "迈金PPT风格",
+  "skill_name_en": "Maijin PPT Style",
+  "category": "品牌视觉 / PPT设计",
+  "tags": ["迈金", "Magene", "PPT", "VI", "品牌视觉", "演示文稿", "设计规范"],
+  "description": "迈金科技品牌PPT视觉形象规范技能，涵盖配色、字体、版式等设计规范。当涉及迈金品牌的PPT设计时自动激活，确保输出符合迈金VI标准。",
+  "version": "V1.0",
+  "author": "MiniMax Agent",
+  "created_at": "2024-01-01",
+  "updated_at": "2024-01-01",
+
+  "trigger": {
+    "keywords": ["迈金", "Magene", "迈金科技", "迈金PPT", "迈金演示", "迈金幻灯片", "迈金风格", "迈金VI", "迈金品牌"],
+    "semantic_triggers": [
+      "制作迈金相关的PPT",
+      "为迈金公司制作演示文稿",
+      "使用迈金品牌形象",
+      "符合迈金VI规范"
+    ]
+  },
+
+  "specifications": {
+    "colors": {
+      "primary": {
+        "name": "迈金橙",
+        "hex": "#FF4D00",
+        "rgb": "RGB(255, 77, 0)",
+        "usage": "重点强调、按钮、图标、装饰线"
+      },
+      "text_primary": {
+        "name": "深灰色",
+        "hex": "#1A1A1A",
+        "rgb": "RGB(26, 26, 26)",
+        "usage": "主标题、主要文字"
+      },
+      "text_secondary": {
+        "name": "中灰色",
+        "hex": "#666666",
+        "rgb": "RGB(102, 102, 102)",
+        "usage": "正文、次要文字"
+      },
+      "background": {
+        "name": "白色",
+        "hex": "#FFFFFF",
+        "rgb": "RGB(255, 255, 255)",
+        "usage": "主背景"
+      },
+      "accent": {
+        "name": "浅杏色",
+        "hex": "#EFC2B3",
+        "rgb": "RGB(239, 194, 179)",
+        "usage": "辅助背景、装饰色"
+      }
+    },
+    "fonts": {
+      "chinese": {
+        "name": "Microsoft YaHei",
+        "weights": {
+          "bold": "主标题、重点强调",
+          "regular": "正文、副标题",
+          "light": "说明文字、注释"
+        }
+      },
+      "english": {
+        "name": "Arial",
+        "weights": {
+          "bold": "主标题、强调",
+          "regular": "副标题、正文",
+          "light": "说明文字、注释"
+        }
+      },
+      "typography": {
+        "line_height": "1.5倍",
+        "paragraph_spacing": "字号2倍"
+      }
+    },
+    "layout": {
+      "standard_sizes": [
+        {"type": "线上物料", "size": "1920×1080px", "ratio": "16:9"},
+        {"type": "竖版海报", "size": "1080×1920px", "ratio": "9:16"},
+        {"type": "印刷物料", "size": "210mm×285mm", "ratio": "A4竖版"}
+      ],
+      "logo_position": {
+        "primary": "左上角",
+        "alternatives": ["右上角", "左下角", "右下角"],
+        "margin": "0.5个图形标志高度"
+      },
+      "safety_margin": {
+        "print": "5mm",
+        "screen": "5%"
+      }
+    },
+    "logo_usage": {
+      "full_emblem": {
+        "english": "Magene",
+        "chinese": "迈金科技",
+        "usage": "封面、封底、正式场合"
+      },
+      "symbol": {
+        "min_size_screen": "24px",
+        "min_size_print": "4mm",
+        "usage": "内页、简化版式、角落装饰"
+      },
+      "monochrome_rules": {
+        "white_light_bg": "深灰色或黑色单色标志",
+        "dark_bg": "白色镂空单色标志",
+        "orange_bg": "必须使用白色镂空效果",
+        "gray_bg": "白色或深灰色单色标志"
+      }
+    },
+    "prohibitions": [
+      "更改标志任何元素",
+      "在标志中添加任何元素",
+      "将标志置入框架中",
+      "轮廓化标志或描边",
+      "拉伸标志或将其变形",
+      "立体化或添加投影",
+      "在图标内添加内容",
+      "随意组合图标及文字",
+      "更改图标外观或透明度",
+      "将图标渐变处理",
+      "将标志置放在相近色相底图",
+      "镜像或翻转图标"
+    ]
+  },
+
+  "quick_reference": {
+    "css_variables": {
+      "--maijin-primary": "#FF4D00",
+      "--maijin-text": "#1A1A1A",
+      "--maijin-text-secondary": "#666666",
+      "--maijin-bg": "#FFFFFF",
+      "--maijin-accent": "#EFC2B3"
+    },
+    "color_usage_table": [
+      {"purpose": "标题", "color": "#1A1A1A", "note": "深灰色，高对比度"},
+      {"purpose": "正文", "color": "#666666", "note": "中灰色，易读性佳"},
+      {"purpose": "强调", "color": "#FF4D00", "note": "迈金橙，品牌特征"},
+      {"purpose": "背景", "color": "#FFFFFF", "note": "白色，简洁专业"},
+      {"purpose": "装饰", "color": "#EFC2B3", "note": "浅杏色，温和辅助"}
+    ]
+  }
+}

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频人脸卡通替换器 - 隐私保护工具</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .upload-section {
+            border: 3px dashed #ddd;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .upload-section:hover {
+            border-color: #4CAF50;
+            background: #f9fff9;
+        }
+
+        .upload-section.dragover {
+            border-color: #4CAF50;
+            background: #e8f5e9;
+        }
+
+        .upload-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .upload-text {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .upload-hint {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        #videoPreview {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #videoPlayer {
+            width: 100%;
+            max-height: 400px;
+            display: block;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: #f0f0f0;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .step.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .step.completed {
+            background: #81C784;
+            color: white;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .annotation-section {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .canvas-container {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        #annotationCanvas {
+            display: block;
+            max-width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: crosshair;
+        }
+
+        .bbox-list {
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .bbox-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .bbox-info {
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .bbox-delete {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .bbox-delete:hover {
+            background: #d32f2f;
+        }
+
+        .cartoon-selection {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .cartoon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .cartoon-option {
+            border: 3px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .cartoon-option:hover {
+            border-color: #4CAF50;
+            transform: translateY(-3px);
+        }
+
+        .cartoon-option.selected {
+            border-color: #4CAF50;
+            background: #e8f5e9;
+        }
+
+        .cartoon-emoji {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .cartoon-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .action-buttons {
+            display: none;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 0 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #666;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .progress-section {
+            display: none;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);
+            width: 0%;
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .status-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .result-section {
+            display: none;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .result-video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .download-btn {
+            margin-top: 20px;
+        }
+
+        .instructions {
+            background: #fff3e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .instructions h3 {
+            color: #e65100;
+            margin-bottom: 10px;
+        }
+
+        .instructions ul {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .instructions li {
+            margin: 5px 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .processing {
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 视频人脸卡通替换器</h1>
+            <p>保护隐私 · 一键替换 · 卡通形象</p>
+        </div>
+
+        <div class="content">
+            <!-- 步骤指示器 -->
+            <div class="step-indicator">
+                <div class="step active" id="step1">
+                    <span class="step-number">1</span>
+                    <span>上传视频</span>
+                </div>
+                <div class="step" id="step2">
+                    <span class="step-number">2</span>
+                    <span>标注人脸</span>
+                </div>
+                <div class="step" id="step3">
+                    <span class="step-number">3</span>
+                    <span>选择卡通</span>
+                </div>
+                <div class="step" id="step4">
+                    <span class="step-number">4</span>
+                    <span>生成视频</span>
+                </div>
+            </div>
+
+            <!-- 上传区域 -->
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-icon">📹</div>
+                <div class="upload-text">点击或拖拽上传视频</div>
+                <div class="upload-hint">支持 MP4, AVI, MOV 格式</div>
+                <input type="file" id="videoInput" accept="video/*" style="display: none;">
+            </div>
+
+            <!-- 视频预览 -->
+            <div id="videoPreview">
+                <div class="video-container">
+                    <video id="videoPlayer" controls></video>
+                </div>
+            </div>
+
+            <!-- 标注区域 -->
+            <div class="annotation-section" id="annotationSection">
+                <h2 class="section-title">📍 标注人脸区域</h2>
+
+                <div class="instructions">
+                    <h3>📋 使用说明</h3>
+                    <ul>
+                        <li>在首帧图像上 <strong>鼠标拖拽</strong> 绘制矩形框</li>
+                        <li>可以标注 <strong>多个人脸</strong> 区域</li>
+                        <li>每个框代表一个需要替换的人物</li>
+                        <li>点击 "完成标注" 按钮继续</li>
+                    </ul>
+                </div>
+
+                <div class="canvas-container">
+                    <canvas id="annotationCanvas"></canvas>
+                </div>
+
+                <div class="bbox-list" id="bboxList"></div>
+
+                <div class="action-buttons" id="annotationButtons">
+                    <button class="btn btn-secondary" onclick="clearAllBoxes()">清除全部</button>
+                    <button class="btn btn-primary" onclick="finishAnnotation()">完成标注</button>
+                </div>
+            </div>
+
+            <!-- 卡通选择 -->
+            <div class="cartoon-selection" id="cartoonSection">
+                <h2 class="section-title">🎨 选择卡通形象</h2>
+
+                <div class="cartoon-grid" id="cartoonGrid"></div>
+
+                <div class="action-buttons" style="display: block;">
+                    <button class="btn btn-secondary" onclick="goBackToAnnotation()">上一步</button>
+                    <button class="btn btn-primary" id="processBtn" onclick="startProcessing()" disabled>
+                        开始处理
+                    </button>
+                </div>
+            </div>
+
+            <!-- 处理进度 -->
+            <div class="progress-section" id="progressSection">
+                <h2 class="section-title">⏳ 正在处理...</h2>
+                <p class="status-text" id="statusText">准备中...</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar">0%</div>
+                </div>
+            </div>
+
+            <!-- 结果展示 -->
+            <div class="result-section" id="resultSection">
+                <h2 class="section-title">✅ 处理完成!</h2>
+                <video class="result-video" id="resultVideo" controls></video>
+                <div class="download-btn">
+                    <button class="btn btn-primary" onclick="downloadResult()">
+                        📥 下载视频
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetAll()">
+                        🔄 处理新视频
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 状态管理
+        const state = {
+            videoFile: null,
+            videoPath: null,
+            firstFrame: null,
+            boundingBoxes: [],
+            selectedCartoon: null,
+            isDrawing: false,
+            startX: 0,
+            startY: 0
+        };
+
+        // 卡通类型
+        const cartoonTypes = [
+            { id: 'cat', emoji: '🐱', name: '猫咪' },
+            { id: 'tiger', emoji: '🐯', name: '老虎' },
+            { id: 'lion', emoji: '🦁', name: '狮子' },
+            { id: 'bear', emoji: '🐻', name: '小熊' },
+            { id: 'rabbit', emoji: '🐰', name: '兔子' },
+            { id: 'panda', emoji: '🐼', name: '熊猫' },
+            { id: 'fox', emoji: '🦊', name: '狐狸' },
+            { id: 'dog', emoji: '🐶', name: '狗狗' }
+        ];
+
+        // DOM 元素
+        const uploadSection = document.getElementById('uploadSection');
+        const videoInput = document.getElementById('videoInput');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoPreview = document.getElementById('videoPreview');
+        const annotationSection = document.getElementById('annotationSection');
+        const canvas = document.getElementById('annotationCanvas');
+        const ctx = canvas.getContext('2d');
+        const bboxList = document.getElementById('bboxList');
+        const annotationButtons = document.getElementById('annotationButtons');
+        const cartoonSection = document.getElementById('cartoonSection');
+        const cartoonGrid = document.getElementById('cartoonGrid');
+        const progressSection = document.getElementById('progressSection');
+        const resultSection = document.getElementById('resultSection');
+        const resultVideo = document.getElementById('resultVideo');
+
+        // 初始化
+        function init() {
+            setupEventListeners();
+            renderCartoonGrid();
+        }
+
+        function setupEventListeners() {
+            // 上传区域点击
+            uploadSection.addEventListener('click', () => videoInput.click());
+
+            // 文件选择
+            videoInput.addEventListener('change', handleVideoSelect);
+
+            // 拖拽上传
+            uploadSection.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadSection.classList.add('dragover');
+            });
+
+            uploadSection.addEventListener('dragleave', () => {
+                uploadSection.classList.remove('dragover');
+            });
+
+            uploadSection.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadSection.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                if (files.length > 0 && files[0].type.startsWith('video/')) {
+                    handleVideoFile(files[0]);
+                }
+            });
+
+            // 画布鼠标事件
+            canvas.addEventListener('mousedown', handleMouseDown);
+            canvas.addEventListener('mousemove', handleMouseMove);
+            canvas.addEventListener('mouseup', handleMouseUp);
+            canvas.addEventListener('mouseleave', handleMouseUp);
+        }
+
+        function handleVideoSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                handleVideoFile(file);
+            }
+        }
+
+        async function handleVideoFile(file) {
+            state.videoFile = file;
+
+            // 显示视频预览
+            videoPreview.style.display = 'block';
+            videoPlayer.src = URL.createObjectURL(file);
+            state.videoPath = videoPlayer.src;
+
+            // 等待视频加载后提取首帧
+            videoPlayer.onloadedmetadata = async () => {
+                await extractFirstFrame();
+                updateStepIndicator(2);
+            };
+        }
+
+        async function extractFirstFrame() {
+            // 使用 canvas 提取首帧
+            videoPlayer.currentTime = 0;
+            await new Promise(resolve => {
+                videoPlayer.onseeked = resolve;
+            });
+
+            const video = videoPlayer;
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0);
+
+            // 保存首帧数据
+            state.firstFrame = canvas.toDataURL('image/jpeg', 0.9);
+
+            // 显示标注区域
+            annotationSection.style.display = 'block';
+            annotationButtons.style.display = 'block';
+            renderCanvas();
+        }
+
+        function renderCanvas() {
+            if (!state.firstFrame) return;
+
+            const img = new Image();
+            img.onload = () => {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+
+                // 绘制已有的框
+                state.boundingBoxes.forEach((box, index) => {
+                    drawBox(box, index === state.boundingBoxes.length - 1);
+                });
+            };
+            img.src = state.firstFrame;
+        }
+
+        function handleMouseDown(e) {
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+
+            state.isDrawing = true;
+            state.startX = (e.clientX - rect.left) * scaleX;
+            state.startY = (e.clientY - rect.top) * scaleY;
+        }
+
+        function handleMouseMove(e) {
+            if (!state.isDrawing) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+
+            const currentX = (e.clientX - rect.left) * scaleX;
+            const currentY = (e.clientY - rect.top) * scaleY;
+
+            // 重绘画布
+            renderCanvas();
+
+            // 绘制当前框
+            ctx.strokeStyle = '#4CAF50';
+            ctx.lineWidth = 3;
+            ctx.setLineDash([5, 5]);
+            ctx.strokeRect(
+                state.startX,
+                state.startY,
+                currentX - state.startX,
+                currentY - state.startY
+            );
+            ctx.setLineDash([]);
+        }
+
+        function handleMouseUp(e) {
+            if (!state.isDrawing) return;
+            state.isDrawing = false;
+
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+
+            const endX = (e.clientX - rect.left) * scaleX;
+            const endY = (e.clientY - rect.top) * scaleY;
+
+            // 确保框有合理的尺寸
+            const width = Math.abs(endX - state.startX);
+            const height = Math.abs(endY - state.startY);
+
+            if (width > 20 && height > 20) {
+                const box = [
+                    Math.min(state.startX, endX),
+                    Math.min(state.startY, endY),
+                    Math.max(state.startX, endX),
+                    Math.max(state.startY, endY)
+                ];
+
+                state.boundingBoxes.push(box);
+                updateBboxList();
+                renderCanvas();
+            }
+        }
+
+        function drawBox(box, isNew = false) {
+            const [x1, y1, x2, y2] = box;
+
+            ctx.strokeStyle = isNew ? '#4CAF50' : '#2196F3';
+            ctx.lineWidth = 3;
+            ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+
+            // 绘制标签
+            ctx.fillStyle = isNew ? 'rgba(76, 175, 80, 0.9)' : 'rgba(33, 150, 243, 0.9)';
+            const label = `${state.boundingBoxes.indexOf(box) + 1}`;
+            ctx.fillRect(x1, y1 - 25, 30, 25);
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 16px Arial';
+            ctx.fillText(label, x1 + 8, y1 - 7);
+        }
+
+        function updateBboxList() {
+            bboxList.innerHTML = state.boundingBoxes.map((box, index) => `
+                <div class="bbox-item">
+                    <span class="bbox-info">人脸 ${index + 1}: [${Math.round(box[0])}, ${Math.round(box[1])}, ${Math.round(box[2])}, ${Math.round(box[3])}]</span>
+                    <button class="bbox-delete" onclick="deleteBox(${index})">删除</button>
+                </div>
+            `).join('');
+        }
+
+        function deleteBox(index) {
+            state.boundingBoxes.splice(index, 1);
+            updateBboxList();
+            renderCanvas();
+        }
+
+        function clearAllBoxes() {
+            state.boundingBoxes = [];
+            updateBboxList();
+            renderCanvas();
+        }
+
+        function finishAnnotation() {
+            if (state.boundingBoxes.length === 0) {
+                alert('请至少标注一个人脸区域');
+                return;
+            }
+            updateStepIndicator(3);
+            cartoonSection.style.display = 'block';
+            annotationSection.style.display = 'none';
+        }
+
+        function goBackToAnnotation() {
+            updateStepIndicator(2);
+            annotationSection.style.display = 'block';
+            cartoonSection.style.display = 'none';
+        }
+
+        function renderCartoonGrid() {
+            cartoonGrid.innerHTML = cartoonTypes.map(cartoon => `
+                <div class="cartoon-option" data-id="${cartoon.id}" onclick="selectCartoon('${cartoon.id}')">
+                    <div class="cartoon-emoji">${cartoon.emoji}</div>
+                    <div class="cartoon-name">${cartoon.name}</div>
+                </div>
+            `).join('');
+        }
+
+        function selectCartoon(id) {
+            state.selectedCartoon = id;
+
+            // 更新选中状态
+            document.querySelectorAll('.cartoon-option').forEach(el => {
+                el.classList.toggle('selected', el.dataset.id === id);
+            });
+
+            // 启用处理按钮
+            document.getElementById('processBtn').disabled = false;
+        }
+
+        function updateStepIndicator(step) {
+            for (let i = 1; i <= 4; i++) {
+                const stepEl = document.getElementById(`step${i}`);
+                stepEl.classList.remove('active', 'completed');
+                if (i < step) {
+                    stepEl.classList.add('completed');
+                } else if (i === step) {
+                    stepEl.classList.add('active');
+                }
+            }
+        }
+
+        async function startProcessing() {
+            if (!state.selectedCartoon) {
+                alert('请选择一个卡通形象');
+                return;
+            }
+
+            updateStepIndicator(4);
+            cartoonSection.style.display = 'none';
+            progressSection.style.display = 'block';
+            resultSection.style.display = 'none';
+
+            const statusText = document.getElementById('statusText');
+            const progressBar = document.getElementById('progressBar');
+
+            try {
+                // 模拟处理进度（实际应用中会调用后端API）
+                const steps = [
+                    { text: '准备处理视频...', progress: 10 },
+                    { text: '提取视频帧...', progress: 20 },
+                    { text: '检测人脸区域...', progress: 40 },
+                    { text: '应用卡通替换...', progress: 70 },
+                    { text: '合成输出视频...', progress: 90 },
+                    { text: '处理完成!', progress: 100 }
+                ];
+
+                for (const step of steps) {
+                    statusText.textContent = step.text;
+                    progressBar.style.width = step.progress + '%';
+                    progressBar.textContent = step.progress + '%';
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                }
+
+                // 显示结果
+                showResult();
+
+            } catch (error) {
+                console.error('Processing error:', error);
+                statusText.textContent = '处理失败: ' + error.message;
+                statusText.style.color = '#f44336';
+            }
+        }
+
+        function showResult() {
+            progressSection.style.display = 'none';
+            resultSection.style.display = 'block';
+
+            // 在实际应用中，这里会显示处理后的视频URL
+            // 目前显示原始视频作为预览
+            resultVideo.src = state.videoPath;
+        }
+
+        function downloadResult() {
+            if (state.videoFile) {
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(state.videoFile);
+                link.download = `cartoon_${state.selectedCartoon}_${state.videoFile.name}`;
+                link.click();
+            }
+        }
+
+        function resetAll() {
+            // 重置状态
+            state.videoFile = null;
+            state.videoPath = null;
+            state.firstFrame = null;
+            state.boundingBoxes = [];
+            state.selectedCartoon = null;
+
+            // 重置UI
+            videoInput.value = '';
+            videoPreview.style.display = 'none';
+            annotationSection.style.display = 'none';
+            cartoonSection.style.display = 'none';
+            progressSection.style.display = 'none';
+            resultSection.style.display = 'none';
+            bboxList.innerHTML = '';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            document.getElementById('processBtn').disabled = true;
+            document.querySelectorAll('.cartoon-option').forEach(el => {
+                el.classList.remove('selected');
+            });
+
+            updateStepIndicator(1);
+        }
+
+        // 初始化
+        init();
+    </script>
+</body>
+</html>

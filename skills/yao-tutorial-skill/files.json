@@ -1,0 +1,129 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "848be1c0b294c6e8440188dca2ff51e20553c6d5",
+      "size": 4085
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "9b1bd12df8189ce3a0bf4c465f4132163ff2f220",
+      "size": 3120
+    },
+    {
+      "path": "_meta.json",
+      "sha": "12782f3dc1565673f419129e88ffa6313412bd41",
+      "size": 137
+    },
+    {
+      "path": "agents/interface.yaml",
+      "sha": "492da5b73f6d01c843b894afc3c278bd7b3b1a96",
+      "size": 912
+    },
+    {
+      "path": "evals/semantic_config.json",
+      "sha": "8bc02ea0eb9a87f2210cd2c393d1b99d703fcc36",
+      "size": 5014
+    },
+    {
+      "path": "evals/trigger_cases.json",
+      "sha": "750ef6e5c9a84fc0db820230dd4d87090de6a4ed",
+      "size": 1426
+    },
+    {
+      "path": "manifest.json",
+      "sha": "f1efb0ed38f562d7bbfdb13c793fa6589f05aa9c",
+      "size": 508
+    },
+    {
+      "path": "references/course-design-principles.md",
+      "sha": "d8232d5232777e2b55437d79c3eeb331d7d22e3d",
+      "size": 4506
+    },
+    {
+      "path": "references/editorial-production.md",
+      "sha": "aa213c40780162bbe5e8c2c81b10056deac8d0ba",
+      "size": 9685
+    },
+    {
+      "path": "references/export-workflow.md",
+      "sha": "bbe1b7d7f25141b5974039c045c8e936e99fb555",
+      "size": 5734
+    },
+    {
+      "path": "references/input-adaptation.md",
+      "sha": "abf7399d4e99976d914baf0c76d0dcb98a75be01",
+      "size": 4787
+    },
+    {
+      "path": "references/research-sourcing.md",
+      "sha": "2b05888c8be5bbb7ab2dd4b4dcc5428e458c4e47",
+      "size": 6781
+    },
+    {
+      "path": "references/tutorial-outline-and-writing.md",
+      "sha": "a164604f3151499cad108f7ac8e5c0e4af13a21a",
+      "size": 7241
+    },
+    {
+      "path": "references/visual-board-benchmarks.md",
+      "sha": "dd0d7efea2a9097538ff709ada32190fe239b0df",
+      "size": 5337
+    },
+    {
+      "path": "references/visual-html-workflow.md",
+      "sha": "4624831534556145acec5c79ff151eeb21482867",
+      "size": 6683
+    },
+    {
+      "path": "reports/course-marketing-design-notes.md",
+      "sha": "13126b17c79ccdf54e686ecf6d3092e4b5499134",
+      "size": 1983
+    },
+    {
+      "path": "reports/reference-scan.md",
+      "sha": "6e6f0d49f6bd4129860a232e3b673368e11f2741",
+      "size": 5314
+    },
+    {
+      "path": "scripts/build_reference_doc.py",
+      "sha": "c729f56afbb71326d6220e88ebb198d010f28129",
+      "size": 6542
+    },
+    {
+      "path": "scripts/build_visual_pack.py",
+      "sha": "7a34fc446bf9021df27f4c867a0889e95082df31",
+      "size": 28394
+    },
+    {
+      "path": "scripts/capture_visuals.py",
+      "sha": "5a433024ecbbc0bbe2e0a555a44bde97cdfc9ea8",
+      "size": 5320
+    },
+    {
+      "path": "scripts/export_tutorial.py",
+      "sha": "4601373fddc103e5bfc2685545d1ad1850fbe8f0",
+      "size": 13459
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "sha": "9c0fa85cdb62cc3126044fede63d591573ee8143",
+      "size": 23210
+    },
+    {
+      "path": "templates/topic-brief-template.json",
+      "sha": "4a85c99f83686e82aee7ec6717124226f9e52862",
+      "size": 1487
+    },
+    {
+      "path": "templates/tutorial-style.css",
+      "sha": "fa695d07b0f0a307e67775595a9310c91995d355",
+      "size": 7286
+    },
+    {
+      "path": "templates/visual-spec-template.json",
+      "sha": "84abc53f3696bc32305b7ee6a594b60d7a78ec19",
+      "size": 1677
+    }
+  ]
+}

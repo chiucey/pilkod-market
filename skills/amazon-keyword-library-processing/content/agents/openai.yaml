@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Keyword Library Processing"
+  short_description: "Process Amazon keyword libraries into SEO and ad actions."
+  default_prompt: "Use $amazon-keyword-library-processing to turn an Amazon keyword library into main keywords, test terms, negative terms, backend terms, and ad/listing actions."

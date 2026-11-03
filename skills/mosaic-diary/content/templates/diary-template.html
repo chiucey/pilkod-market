@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{DATE}} · 马赛克日记</title>
+<style>
+  :root {
+    --bg: #FAF9F6;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --accent: #3A5A40;
+    --card: #FFFFFF;
+    --line: #ECECE7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  body { padding: 48px 24px 80px; }
+  .container { max-width: 920px; margin: 0 auto; }
+
+  /* ====== 顶部 ====== */
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+  }
+  .date {
+    font-size: 14px;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+  }
+  .meta .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: #F0EFE8;
+    border-radius: 999px;
+  }
+
+  /* ====== 日记正文 ====== */
+  .narrative {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 32px 36px;
+    border-radius: 4px 16px 16px 4px;
+    margin-bottom: 48px;
+    font-size: 16.5px;
+    color: var(--ink);
+    line-height: 1.95;
+  }
+  .narrative h2 {
+    font-size: 14px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .narrative p { margin-bottom: 14px; }
+  .narrative p:last-child { margin-bottom: 0; }
+
+  /* ====== 今日一句 ====== */
+  .quote-block {
+    position: relative;
+    text-align: center;
+    padding: 40px 24px 36px;
+    margin: 0 auto 48px;
+    max-width: 720px;
+  }
+  .quote-block::before,
+  .quote-block::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.35;
+    margin: 0 auto;
+  }
+  .quote-block::before { margin-bottom: 28px; }
+  .quote-block::after { margin-top: 28px; }
+  .quote-mark {
+    font-size: 56px;
+    line-height: 1;
+    color: var(--accent);
+    opacity: 0.25;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: -8px;
+  }
+  .quote-text {
+    font-size: 22px;
+    line-height: 1.7;
+    color: var(--ink);
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    margin-bottom: 16px;
+  }
+  .quote-author {
+    font-size: 13px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+  }
+  .quote-author::before {
+    content: "— ";
+  }
+
+  /* ====== 卡片墙 ====== */
+  .section-title {
+    font-size: 14px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 22px 24px 24px 28px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 8px;
+    background: var(--bar);
+  }
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+  .card-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .card-icon {
+    font-size: 22px;
+    margin-right: 6px;
+  }
+  .card-count {
+    font-size: 12px;
+    color: var(--ink-soft);
+    background: #F5F4EF;
+    padding: 2px 10px;
+    border-radius: 999px;
+  }
+  .card ul {
+    list-style: none;
+  }
+  .card li {
+    font-size: 14.5px;
+    color: var(--ink);
+    padding: 8px 0;
+    border-bottom: 1px dashed #EFE9DD;
+    line-height: 1.65;
+  }
+  .card li:last-child { border-bottom: none; padding-bottom: 0; }
+  .card li::before {
+    content: "•";
+    color: var(--bar);
+    font-weight: bold;
+    display: inline-block;
+    width: 14px;
+    margin-right: 4px;
+  }
+
+  /* ====== 页脚 ====== */
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+  footer .signature {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ====== 移动端 ====== */
+  @media (max-width: 600px) {
+    body { padding: 28px 16px 56px; }
+    h1 { font-size: 28px; }
+    .narrative { padding: 22px 22px; font-size: 15.5px; }
+    .quote-block { padding: 28px 8px 28px; margin-bottom: 36px; }
+    .quote-text { font-size: 18px; }
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date">{{DATE_LABEL}}</div>
+    <h1>{{TITLE}}</h1>
+    <div class="meta">
+      <span class="chip">📂 {{MODE_LABEL}}</span>
+      <span class="chip">🧺 {{TOTAL_COUNT}} 条句子</span>
+      <span class="chip">🪟 {{CARD_COUNT}} 张卡片</span>
+      {{QUOTE_SOURCE_CHIP}}
+    </div>
+  </header>
+
+  <section class="narrative">
+    <h2>📖 今天的日记</h2>
+    {{NARRATIVE_PARAGRAPHS}}
+  </section>
+
+  <section class="quote-block">
+    <div class="quote-mark">"</div>
+    <blockquote class="quote-text">{{QUOTE_TEXT}}</blockquote>
+    <div class="quote-author">{{QUOTE_AUTHOR}}</div>
+  </section>
+
+  <h3 class="section-title">🪟 卡片墙</h3>
+  <div class="grid">
+    {{CARDS}}
+  </div>
+
+  <footer>
+    由 <span class="signature">Mavis · Mosaic Diary</span> 整理 · {{GENERATED_AT}}
+  </footer>
+
+</div>
+</body>
+</html>

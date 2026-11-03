@@ -1,0 +1,12 @@
+{
+  "name": "systematic-debugging",
+  "description": "系统化Bug排查技能。当用户遇到bug需要排查、需要排障方法论指导、需要使用排障模板、或询问\"怎么排查XX问题\"时使用。关键词：bug、调试、排查、修复、问题定位、crash、闪退、异常、报错。",
+  "author": "Wind",
+  "version": "1.0.0",
+  "tags": ["调试", "排查", "bug修复", "问题定位", "方法论"],
+  "icon": "bug",
+  "readme": "SKILL.md",
+  "references": [
+    "references/debugging-template.md"
+  ]
+}

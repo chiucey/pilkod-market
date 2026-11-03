@@ -1,0 +1,7 @@
+interface:
+  display_name: "software-dev-cost-dashboard"
+  short_description: "Software cost estimation dashboard"
+  default_prompt: "Use $software-dev-cost-dashboard to help with software cost estimation dashboard"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>国资资料库检索</title>
+  <style>
+    :root { --blue:#2f6fec; --blue-bg:#edf3ff; --text:#1f2937; --muted:#6b7280; --line:#dbe3f2; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"Microsoft YaHei",sans-serif; background:#f7f9fc; color:var(--text); }
+    .container { max-width:1100px; margin:24px auto; padding:0 16px 24px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:14px; }
+    .title { margin:0 0 12px; font-size:22px; color:#0f3ea7; }
+    .search-row { display:flex; gap:10px; align-items:center; position:relative; }
+    #keyword { flex:1; height:42px; border:1px solid var(--line); border-radius:10px; padding:0 12px; font-size:14px; }
+    .btn { height:42px; min-width:88px; border:0; border-radius:10px; background:var(--blue); color:#fff; cursor:pointer; }
+    .btn-light { background:#fff; border:1px solid var(--line); color:#1e3a8a; }
+    .filter-panel { position:absolute; top:50px; right:0; width:420px; max-height:420px; overflow:auto; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 10px 24px rgba(16,24,40,.12); z-index:10; padding:12px; display:none; }
+    .filter-actions { display:flex; gap:8px; margin-bottom:10px; }
+    .tree-item { border:1px solid #eef3ff; border-radius:10px; margin-bottom:8px; }
+    .tree-head { display:flex; align-items:center; gap:8px; padding:8px 10px; cursor:pointer; background:#f8fbff; }
+    .tree-arrow { width:20px; text-align:center; color:#1e40af; }
+    .tree-children { display:none; padding:8px 10px; border-top:1px solid #eef3ff; }
+    .tree-row { display:flex; align-items:center; gap:8px; margin:6px 0; }
+    .selected-filters { margin-top:10px; }
+    .section-label { font-size:14px; color:var(--muted); margin-bottom:8px; }
+    .chips { display:flex; gap:8px; flex-wrap:wrap; }
+    .chip { border:1px solid var(--line); background:var(--blue-bg); color:var(--blue); border-radius:999px; padding:4px 10px; font-size:13px; cursor:pointer; }
+    .chip.active { background:var(--blue); color:#fff; border-color:var(--blue); }
+    .result-item { border:1px solid var(--line); border-radius:10px; padding:12px; margin-bottom:10px; }
+    .file-link { color:#0f3ea7; font-weight:700; text-decoration:none; }
+    .file-link:hover { text-decoration:underline; }
+    .path { font-size:12px; color:var(--muted); margin:8px 0; }
+    .meta { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:12px; color:var(--muted); }
+    .pager { display:flex; gap:8px; align-items:center; justify-content:flex-end; margin-top:8px; }
+    .pager button { border:1px solid var(--line); background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">国资资料库检索</h1>
+      <div class="search-row">
+        <input id="keyword" placeholder="输入关键词（文件名/内容）..." />
+        <button id="btnFilter" class="btn btn-light" title="分类筛选">⏷ 筛选</button>
+        <button id="btnSearch" class="btn">搜索</button>
+        <div id="filterPanel" class="filter-panel">
+          <div class="filter-actions">
+            <button id="btnCategorySelectAll" class="btn btn-light">全选</button>
+            <button id="btnCategoryClear" class="btn btn-light">清空</button>
+            <button id="btnCategoryApply" class="btn">应用</button>
+          </div>
+          <div id="categoryTree"></div>
+        </div>
+      </div>
+      <div class="selected-filters">
+        <div class="section-label">已选分类（点击移除）</div>
+        <div id="selectedCategories" class="chips"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">热门标签（TOP20）</div>
+      <div id="hotTags" class="chips"></div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">已选标签（点击移除）</div>
+      <div id="selectedTags" class="chips"></div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">检索结果</div>
+      <div id="resultList"></div>
+      <div id="pager" class="pager"></div>
+    </div>
+  </div>
+
+  <script>
+    const state = { keyword: "", tags: [], categories: [], pendingCategories: [], page: 1, pageSize: 20, pages: 1, total: 0 };
+    const categoryMeta = { level1: {}, level2: {} };
+    let timer = null;
+
+    const elKeyword = document.getElementById("keyword");
+    const elHotTags = document.getElementById("hotTags");
+    const elSelectedTags = document.getElementById("selectedTags");
+    const elSelectedCategories = document.getElementById("selectedCategories");
+    const elResultList = document.getElementById("resultList");
+    const elPager = document.getElementById("pager");
+    const elFilterPanel = document.getElementById("filterPanel");
+    const elCategoryTree = document.getElementById("categoryTree");
+
+    function debounceSearch() {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => { state.page = 1; search(); }, 500);
+    }
+
+    function renderSelectedTags() {
+      elSelectedTags.innerHTML = "";
+      if (!state.tags.length) {
+        elSelectedTags.innerHTML = "<span class='section-label'>暂无</span>";
+        return;
+      }
+      state.tags.forEach(tag => {
+        const chip = document.createElement("span");
+        chip.className = "chip active";
+        chip.textContent = tag + " ×";
+        chip.onclick = () => {
+          state.tags = state.tags.filter(t => t !== tag);
+          state.page = 1;
+          search();
+        };
+        elSelectedTags.appendChild(chip);
+      });
+    }
+
+    function renderSelectedCategories() {
+      elSelectedCategories.innerHTML = "";
+      if (!state.categories.length) {
+        elSelectedCategories.innerHTML = "<span class='section-label'>暂无</span>";
+        return;
+      }
+      state.categories.forEach(code => {
+        const text = categoryMeta.level2?.[code?.[0]]?.[code] || code;
+        const chip = document.createElement("span");
+        chip.className = "chip active";
+        chip.textContent = `分类：${text} ×`;
+        chip.onclick = () => {
+          state.categories = state.categories.filter(c => c !== code);
+          state.pendingCategories = state.categories.slice();
+          syncCategoryCheckboxes();
+          state.page = 1;
+          search();
+        };
+        elSelectedCategories.appendChild(chip);
+      });
+    }
+
+    function addTag(tag) {
+      if (!state.tags.includes(tag)) {
+        state.tags.push(tag);
+        state.page = 1;
+        search();
+      }
+    }
+
+    function renderHotTags(items) {
+      elHotTags.innerHTML = "";
+      items.forEach(it => {
+        const chip = document.createElement("span");
+        chip.className = "chip";
+        chip.textContent = `${it.tag} (${it.count})`;
+        chip.onclick = () => addTag(it.tag);
+        elHotTags.appendChild(chip);
+      });
+    }
+
+    function toggleFilterPanel(show) {
+      const visible = typeof show === "boolean" ? show : elFilterPanel.style.display !== "block";
+      elFilterPanel.style.display = visible ? "block" : "none";
+      if (visible) {
+        state.pendingCategories = state.categories.slice();
+        syncCategoryCheckboxes();
+      }
+    }
+
+    function syncCategoryCheckboxes() {
+      elCategoryTree.querySelectorAll("input[type='checkbox'][data-code]").forEach(cb => {
+        cb.checked = state.pendingCategories.includes(cb.dataset.code);
+      });
+    }
+
+    function renderCategoryTree() {
+      elCategoryTree.innerHTML = "";
+      Object.entries(categoryMeta.level1 || {}).forEach(([c1, c1Name]) => {
+        const wrap = document.createElement("div");
+        wrap.className = "tree-item";
+        const head = document.createElement("div");
+        head.className = "tree-head";
+        head.innerHTML = `<span class="tree-arrow">▶</span><span>${c1Name}</span>`;
+        const children = document.createElement("div");
+        children.className = "tree-children";
+        const secondary = categoryMeta.level2?.[c1] || {};
+        Object.entries(secondary).forEach(([code, name]) => {
+          const row = document.createElement("label");
+          row.className = "tree-row";
+          row.innerHTML = `<input type="checkbox" data-code="${code}"><span>${name}</span>`;
+          const cb = row.querySelector("input");
+          cb.onchange = () => {
+            if (cb.checked) {
+              if (!state.pendingCategories.includes(code)) state.pendingCategories.push(code);
+            } else {
+              state.pendingCategories = state.pendingCategories.filter(c => c !== code);
+            }
+          };
+          children.appendChild(row);
+        });
+        head.onclick = () => {
+          const isOpen = children.style.display === "block";
+          children.style.display = isOpen ? "none" : "block";
+          head.querySelector(".tree-arrow").textContent = isOpen ? "▶" : "▼";
+        };
+        wrap.appendChild(head);
+        wrap.appendChild(children);
+        elCategoryTree.appendChild(wrap);
+      });
+      syncCategoryCheckboxes();
+    }
+
+    async function loadCategories() {
+      const res = await fetch("/api/categories");
+      const data = await res.json();
+      if (!data.ok) return;
+      categoryMeta.level1 = data.level1 || {};
+      categoryMeta.level2 = data.level2 || {};
+      renderCategoryTree();
+    }
+
+    async function loadHotTags() {
+      const res = await fetch("/api/hot_tags");
+      const data = await res.json();
+      if (data.ok) renderHotTags(data.items || []);
+    }
+
+    function openFile(path) {
+      fetch(`/open_file?path=${encodeURIComponent(path)}`)
+        .then(r => r.json())
+        .then(d => {
+          if (!d.ok) {
+            if (d.code === "NOT_FOUND") {
+              alert("文件可能已被移动或删除，请刷新后重试。");
+            } else {
+              alert("打开失败: " + (d.error || "未知错误"));
+            }
+          }
+        })
+        .catch(err => alert("打开失败: " + err));
+    }
+
+    function renderResults(items) {
+      elResultList.innerHTML = "";
+      if (!items.length) {
+        elResultList.innerHTML = "<div class='section-label'>未检索到结果</div>";
+        return;
+      }
+      items.forEach(item => {
+        const tagsHtml = (item.tags || []).map(t => `<span class="chip">${t}</span>`).join("");
+        const row = document.createElement("div");
+        row.className = "result-item";
+        row.innerHTML = `
+          <a href="#" class="file-link">${item.file_name}</a>
+          <div class="path">${item.category_path}</div>
+          <div class="chips">${tagsHtml}</div>
+          <div class="meta">
+            <span>文件日期：${item.file_date || "-"}</span>
+            <span>归档处理时间：${item.processed_time || "-"}</span>
+            <span title="${item.file_path || ""}">${item.file_path || ""}</span>
+          </div>
+        `;
+        row.querySelector(".file-link").onclick = (e) => {
+          e.preventDefault();
+          openFile(item.file_path);
+        };
+        elResultList.appendChild(row);
+      });
+    }
+
+    function renderPager() {
+      elPager.innerHTML = "";
+      const info = document.createElement("span");
+      info.textContent = `共 ${state.total} 条 / 第 ${state.page} 页，共 ${state.pages || 1} 页`;
+      const prev = document.createElement("button");
+      prev.textContent = "上一页";
+      prev.disabled = state.page <= 1;
+      prev.onclick = () => { state.page -= 1; search(); };
+      const next = document.createElement("button");
+      next.textContent = "下一页";
+      next.disabled = state.page >= state.pages;
+      next.onclick = () => { state.page += 1; search(); };
+      elPager.appendChild(info);
+      elPager.appendChild(prev);
+      elPager.appendChild(next);
+    }
+
+    async function search() {
+      state.keyword = elKeyword.value.trim();
+      renderSelectedTags();
+      renderSelectedCategories();
+      const params = new URLSearchParams({
+        keyword: state.keyword,
+        page: String(state.page),
+        page_size: String(state.pageSize),
+        tags: state.tags.join(","),
+        categories: state.categories.join(",")
+      });
+      const res = await fetch(`/api/search?${params.toString()}`);
+      const data = await res.json();
+      if (!data.ok) return;
+      state.total = data.total || 0;
+      state.pages = data.pages || 1;
+      renderResults(data.items || []);
+      renderPager();
+    }
+
+    document.getElementById("btnSearch").onclick = () => { state.page = 1; search(); };
+    document.getElementById("btnFilter").onclick = (e) => { e.stopPropagation(); toggleFilterPanel(); };
+    document.getElementById("btnCategorySelectAll").onclick = () => {
+      const allCodes = [];
+      Object.values(categoryMeta.level2 || {}).forEach(group => Object.keys(group || {}).forEach(code => allCodes.push(code)));
+      state.pendingCategories = allCodes;
+      syncCategoryCheckboxes();
+    };
+    document.getElementById("btnCategoryClear").onclick = () => {
+      state.pendingCategories = [];
+      syncCategoryCheckboxes();
+    };
+    document.getElementById("btnCategoryApply").onclick = () => {
+      state.categories = Array.from(new Set(state.pendingCategories));
+      state.page = 1;
+      toggleFilterPanel(false);
+      search();
+    };
+    elKeyword.addEventListener("input", debounceSearch);
+    document.addEventListener("click", (e) => {
+      if (!elFilterPanel.contains(e.target) && e.target.id !== "btnFilter") {
+        toggleFilterPanel(false);
+      }
+    });
+
+    Promise.all([loadCategories(), loadHotTags()]).then(search);
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+name: lincoln-report
+description: 生成林肯舆情日报文字版，根据Excel监测数据自动分析并输出标准格式的日报内容
+
+tools:
+  - bash
+
+args:
+  - name: excel_path
+    description: 林肯舆情监测Excel文件路径
+    required: true
+
+prompt: |
+  请使用林肯舆情日报生成器分析提供的Excel数据文件，生成标准格式的日报文字版。
+
+  执行步骤：
+  1. 读取用户提供的Excel文件路径：{{excel_path}}
+  2. 运行分析脚本生成日报内容
+
+  命令：
+  ```bash
+  python3 ~/.claude/skills/lincoln-report/lincoln_report.py "{{excel_path}}"
+  ```
+
+  输出格式说明：
+  - 第1部分：投诉进度（预留空白，供手动填写）
+  - 第2部分：声量统计（正面/中性/敏感占比）
+  - 第3部分：正面传播话题（销售优惠、车型推荐、种草分享）
+  - 第4部分：敏感话题（销量下滑、二线豪华危机等）
+
+  注意事项：
+  - Excel文件必须包含名为"3.31"的sheet
+  - 数据表头必须在第2行
+  - 必须包含列：标题、媒体名称、情感、转载数量、关键字
+
+  请直接输出生成的日报内容。

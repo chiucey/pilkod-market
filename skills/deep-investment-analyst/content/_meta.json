@@ -1,0 +1,46 @@
+{
+  "author": "MiniMax Agent",
+  "category": "finance",
+  "created_at": "2026-04-14",
+  "description": "专业股票投资研究分析技能，专注于A股、港股、北交所及新三板市场的深度财务数据分析与投资策略。支持长线和短线两种投资期限分析。",
+  "display_name": "深度投研分析专家",
+  "id": 387667004186965,
+  "investment_horizons": [
+    "短线(\u003c3个月)",
+    "长线(\u003e1年)"
+  ],
+  "language": "zh-CN",
+  "markets": [
+    "A股",
+    "港股",
+    "北交所",
+    "新三板"
+  ],
+  "name": "deep-investment-analyst",
+  "platform": "minimax",
+  "source_spec": "/workspace/user_input_files/深度投研分析专家规范V209.md",
+  "spec_version": "v2.09",
+  "tags": [
+    "投资分析",
+    "财务分析",
+    "股票研究",
+    "长线投资",
+    "短线交易",
+    "A股",
+    "港股",
+    "北交所",
+    "新三板"
+  ],
+  "triggers": [
+    "分析股票",
+    "投资研究",
+    "财务分析",
+    "交易策略",
+    "深度投研",
+    "基本面分析",
+    "技术面分析",
+    "估值分析"
+  ],
+  "updated_at": 1776205367160,
+  "version": "2.09"
+}

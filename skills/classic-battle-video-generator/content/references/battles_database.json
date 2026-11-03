@@ -1,0 +1,226 @@
+{
+  "description": "经典战役数据库 - 包含主要战役的基础信息、地理坐标和解说素材",
+  "battles": [
+    {
+      "id": "chibi",
+      "name": "赤壁之战",
+      "year": "208年",
+      "date": "建安十三年冬",
+      "location": {
+        "name": "赤壁（今湖北省武汉市江夏区）",
+        "coordinates": [114.28, 30.35]
+      },
+      "combatants": {
+        "wei": {
+          "name": "曹操军",
+          "commander": "曹操",
+          "strength": "约20万"
+        },
+        "shu_wu": {
+          "name": "孙刘联军",
+          "commander": "周瑜、刘备",
+          "strength": "约5万"
+        }
+      },
+      "background": "曹操统一北方后，率军南下，欲统一全国。孙权、刘备联合抵抗，在长江赤壁一带与曹军决战。",
+      "key_events": [
+        {
+          "sequence": 1,
+          "title": "曹操南征",
+          "description": "曹操率军南下，荆州刘琮投降",
+          "animation": "箭头从北方指向南方"
+        },
+        {
+          "sequence": 2,
+          "title": "孙刘联盟",
+          "description": "刘备与孙权结盟，共抗曹操",
+          "animation": "两股力量汇聚"
+        },
+        {
+          "sequence": 3,
+          "title": "火烧赤壁",
+          "description": "周瑜采用火攻，大败曹军",
+          "animation": "火焰动画标记"
+        },
+        {
+          "sequence": 4,
+          "title": "曹操败退",
+          "description": "曹操率残部北返",
+          "animation": "箭头从南方指向北方"
+        }
+      ],
+      "significance": "奠定了三国鼎立的基础，阻止了曹操统一全国的步伐",
+      "narration_template": "公元208年，曹操率二十万大军南下，与孙权、刘备五万联军在赤壁展开决战。面对强大的曹军，周瑜采用火攻战术，以少胜多，大败曹操。此战奠定了三国鼎立的格局，是中国历史上最著名的以少胜多战例之一。"
+    },
+    {
+      "id": "feishui",
+      "name": "淝水之战",
+      "year": "383年",
+      "date": "太元八年冬",
+      "location": {
+        "name": "淝水（今安徽省寿县东南）",
+        "coordinates": [116.78, 31.98]
+      },
+      "combatants": {
+        "qin": {
+          "name": "前秦军",
+          "commander": "苻坚",
+          "strength": "约97万"
+        },
+        "jin": {
+          "name": "东晋军",
+          "commander": "谢安、谢玄",
+          "strength": "约8万"
+        }
+      },
+      "background": "前秦苻坚统一北方后，率大军南征东晋，欲统一南北。东晋以八万北府兵迎战。",
+      "key_events": [
+        {
+          "sequence": 1,
+          "title": "秦军南下",
+          "description": "苻坚率九十余万大军分三路南下",
+          "animation": "大规模军队南移动画"
+        },
+        {
+          "sequence": 2,
+          "title": "洛涧大捷",
+          "description": "刘牢之率北府兵夜袭洛涧，秦军大败",
+          "animation": "局部战斗标记"
+        },
+        {
+          "sequence": 3,
+          "title": "淝水对峙",
+          "description": "双方在淝水两岸对峙",
+          "animation": "河流标记，对峙箭头"
+        },
+        {
+          "sequence": 4,
+          "title": "秦军溃败",
+          "description": "苻坚中计退兵，秦军大乱，自相践踏",
+          "animation": "混乱撤退动画"
+        },
+        {
+          "sequence": 5,
+          "title": "风声鹤唳",
+          "description": "秦军溃逃，闻风声鹤鸣以为追兵",
+          "animation": "溃逃路线标记"
+        }
+      ],
+      "significance": "保卫了南方的汉族政权，延缓了北方统一南方的进程",
+      "narration_template": "公元383年，前秦苻坚率九十七万大军南下，与东晋八万北府兵在淝水展开决战。东晋名将谢玄巧用计谋，诱使秦军后撤渡河，趁其混乱之际发起猛攻。苻坚大败，仓皇北逃，留下了风声鹤唳、草木皆兵的典故。此战保卫了南方的汉族政权。"
+    },
+    {
+      "id": "guandu",
+      "name": "官渡之战",
+      "year": "200年",
+      "date": "建安五年",
+      "location": {
+        "name": "官渡（今河南省中牟县东北）",
+        "coordinates": [113.97, 34.71]
+      },
+      "combatants": {
+        "cao": {
+          "name": "曹操军",
+          "commander": "曹操",
+          "strength": "约2万"
+        },
+        "yuan": {
+          "name": "袁绍军",
+          "commander": "袁绍",
+          "strength": "约10万"
+        }
+      },
+      "background": "曹操与袁绍为争夺北方霸权，在官渡展开决战。此战是三国时期最关键的战役之一。",
+      "key_events": [
+        {
+          "sequence": 1,
+          "title": "相持官渡",
+          "description": "袁绍率十万大军与曹操两万兵马在官渡对峙",
+          "animation": "两军对峙位置标记"
+        },
+        {
+          "sequence": 2,
+          "title": "乌巢烧粮",
+          "description": "曹操亲率五千精兵夜袭乌巢，烧毁袁军粮草",
+          "animation": "突袭路线箭头"
+        },
+        {
+          "sequence": 3,
+          "title": "袁军溃散",
+          "description": "粮草被焚，袁军大乱，曹操乘势进攻",
+          "animation": "溃败动画"
+        },
+        {
+          "sequence": 4,
+          "title": "袁绍败北",
+          "description": "袁绍带八百残兵逃回北方",
+          "animation": "撤退路线"
+        }
+      ],
+      "significance": "奠定了曹操统一北方的基础，改变了北方政治格局",
+      "narration_template": "公元200年，曹操与袁绍在官渡展开决战。袁绍拥兵十万，曹操仅有两万，兵力悬殊。相持数月后，曹操亲率五千精兵夜袭袁军粮草重地乌巢，一把火烧尽袁军粮草。袁军大乱，曹操趁机全面反击，大败袁绍。此战奠定了曹操统一北方的基础。"
+    },
+    {
+      "id": "yiling",
+      "name": "夷陵之战",
+      "year": "222年",
+      "date": "章武元年至二年",
+      "location": {
+        "name": "夷陵（今湖北省宜昌市）",
+        "coordinates": [111.28, 30.70]
+      },
+      "combatants": {
+        "shu": {
+          "name": "刘备军",
+          "commander": "刘备",
+          "strength": "约5万"
+        },
+        "wu": {
+          "name": "孙权军",
+          "commander": "陆逊",
+          "strength": "约5万"
+        }
+      },
+      "background": "刘备为替关羽报仇，率军东征孙吴。孙权任命陆逊为大都督，率军抵抗。",
+      "key_events": [
+        {
+          "sequence": 1,
+          "title": "刘备东征",
+          "description": "刘备率五万大军顺江而下，进攻东吴",
+          "animation": "军队沿长江移动"
+        },
+        {
+          "sequence": 2,
+          "title": "陆逊坚守",
+          "description": "陆逊避其锋锐，坚守不战，消耗蜀军锐气",
+          "animation": "防御标记"
+        },
+        {
+          "sequence": 3,
+          "title": "火烧连营",
+          "description": "陆逊发起火攻，蜀军大营连营被烧",
+          "animation": "火焰蔓延动画"
+        },
+        {
+          "sequence": 4,
+          "title": "刘备败退",
+          "description": "刘备败退至白帝城",
+          "animation": "撤退路线"
+        }
+      ],
+      "significance": "蜀汉元气大伤，三国鼎立格局最终稳定",
+      "narration_template": "公元222年，刘备为替关羽报仇，率五万大军东征东吴。孙权任命年轻将领陆逊为大都督。陆逊采取坚守策略，消耗蜀军锐气达数月之久。随后抓住战机，以火攻大破蜀军，连营七百里化为灰烬。刘备败退至白帝城，蜀汉元气大伤。此战标志着三国鼎立格局的最终稳定。"
+    }
+  ],
+  "narration_guidelines": {
+    "style": "专业历史纪录片风格",
+    "pace": "中速，便于观众理解",
+    "emphasis_keywords": ["著名将领", "关键战术", "战略意义"],
+    "background_music_suggestions": [
+      {"mood": "紧张", "type": "战争鼓点"},
+      {"mood": "叙事", "type": "古典弦乐"},
+      {"mood": "高潮", "type": "史诗交响"},
+      {"mood": "结尾", "type": "深沉反思"}
+    ]
+  }
+}

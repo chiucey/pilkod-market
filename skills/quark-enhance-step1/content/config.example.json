@@ -1,0 +1,28 @@
+{
+  "_说明": "复制本文件为 config.json 后填写。API Key 也可用环境变量 QUARK_AI_API_KEY 提供，环境变量优先。切勿把填好的 config.json 提交到版本库或外传。",
+
+  "quark": {
+    "endpoint": "https://scan-mcp.quark.cn/mcp",
+    "aiApiKey": "<在此填写，或改用环境变量 QUARK_AI_API_KEY>",
+    "timeout_sec": 120
+  },
+
+  "prepare": {
+    "max_long_edge": 800,
+    "max_payload_mb": 1.4,
+    "jpeg_quality": 85,
+    "strip_exif": true,
+    "keep_format_if_lossless": true
+  },
+
+  "probe": {
+    "edge_white_threshold": 252,
+    "paper_match_tolerance_pct": 0.5,
+    "dpi_local_threshold": 300
+  },
+
+  "output": {
+    "dir": "./_out",
+    "keep_mcp_raw": true
+  }
+}

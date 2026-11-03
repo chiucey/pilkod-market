@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "e71799725e7603501181d0ab743527b7fa05aaa1",
+      "size": 3255
+    },
+    {
+      "path": "_meta.json",
+      "sha": "985906d4fc5ea669c5146b006946e173f19f3fa7",
+      "size": 134
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha": "1d4a5514097bdbe7c9c1ca9666a624f8d9dfbf18",
+      "size": 706
+    },
+    {
+      "path": "scripts/cli.py",
+      "sha": "b84b1b1e352be00065b1547e8998a80a6b16f339",
+      "size": 9813
+    },
+    {
+      "path": "scripts/config.py",
+      "sha": "bb393940c8b85b64f63d76c439b855e1c549ea9c",
+      "size": 2413
+    },
+    {
+      "path": "scripts/document_processor.py",
+      "sha": "99514f71f2fedc61bd264c815e9f2c68317605cf",
+      "size": 9256
+    },
+    {
+      "path": "scripts/knowledge_base.py",
+      "sha": "d9043c3969c2cac58867bfe02f727fdd23063ea5",
+      "size": 16138
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "sha": "2e27c6233b06596cdc41a124e894e66be8903f01",
+      "size": 417
+    },
+    {
+      "path": "scripts/vector_store.py",
+      "sha": "be4db462805487d4e962d69f02e0a25881674014",
+      "size": 12038
+    }
+  ]
+}

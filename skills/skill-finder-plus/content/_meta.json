@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-22",
+  "dependencies": [
+    "advanced_matching",
+    "category_filter",
+    "combination_recommendation",
+    "conflict_resolution",
+    "team_sync"
+  ],
+  "description": "MaxClaw增强版技能搜索技能：在基础find-skills能力上扩展团队级技能管理功能，支持技能分类筛选（按类型/场景/版本）、多维度匹配（能力/性能/权限）、技能组合推荐（针对复杂任务的最优技能组合）、技能冲突自动解决、团队技能库同步，适配大型Agent团队（≥10个Agent）的精细化技能管理需求",
+  "id": 379364901794464,
+  "name": "skill-finder-plus",
+  "platform": "minimax",
+  "security_rules": {
+    "conflict_prevention": true,
+    "data_isolation": true,
+    "no_external_call": true,
+    "team_permission_control": true,
+    "version_lock": true
+  },
+  "skill_id": "skill-finder-plus",
+  "trigger_words": [
+    "增强版技能搜索",
+    "skill finder plus",
+    "技能分类筛选",
+    "多维度匹配",
+    "技能组合推荐",
+    "技能冲突解决",
+    "团队技能库同步"
+  ],
+  "type": "native",
+  "updated_at": 1774172402617,
+  "version": "3.5.2"
+}

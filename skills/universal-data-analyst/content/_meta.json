@@ -1,0 +1,24 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-04-08",
+  "dependencies": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "openpyxl"
+  ],
+  "description": "基于数据本体论的智能数据分析技能",
+  "id": 386407516955022,
+  "name": "universal-data-analyst",
+  "platform": "minimax",
+  "tags": [
+    "data-analysis",
+    "ontology",
+    "llm",
+    "automation"
+  ],
+  "updated_at": 1775891253830,
+  "version": "1.0.0"
+}

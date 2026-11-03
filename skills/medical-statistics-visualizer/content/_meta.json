@@ -1,0 +1,28 @@
+{
+  "author": "MiniMax Agent",
+  "created_date": "2026-04-04",
+  "dependencies": [
+    "lifelines",
+    "statsmodels",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "pandas",
+    "openpyxl"
+  ],
+  "description": "Professional medical statistics analysis and visualization tool supporting survival analysis, statistical tests, regression analysis, and ROC curve plotting",
+  "id": 384021109301486,
+  "name": "medical-statistics-visualizer",
+  "platform": "minimax",
+  "tags": [
+    "medical-statistics",
+    "survival-analysis",
+    "cox-regression",
+    "roc-curve",
+    "sci-charts",
+    "clinical-research"
+  ],
+  "updated_at": 1775310882604,
+  "version": "1.0.0"
+}

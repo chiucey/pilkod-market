@@ -1,0 +1,33 @@
+{
+  "author": "MiniMax Agent",
+  "category": "productivity",
+  "compatibility": {
+    "openclaw": "\u003e=1.0.0"
+  },
+  "description": "长篇网文创作助手，支持200万字量级连载创作，通过上下文管理和追读力系统解决AI写作中的遗忘和幻觉问题",
+  "features": [
+    "项目初始化",
+    "章节规划",
+    "章节撰写",
+    "章节审核",
+    "角色管理",
+    "世界观管理",
+    "追读力系统"
+  ],
+  "id": 380991919628902,
+  "name": "webnovel-writer",
+  "platform": "minimax",
+  "source": {
+    "adapted_for": "OpenClaw",
+    "original": "https://github.com/lingfengQAQ/webnovel-writer"
+  },
+  "tags": [
+    "writing",
+    "novel",
+    "webnovel",
+    "creative",
+    "fiction"
+  ],
+  "updated_at": 1774570368435,
+  "version": "1.0.0"
+}

@@ -1,0 +1,45 @@
+benchmark:
+  benchmark_score: 7.0
+  eval_mode: tool_test(analyze.py)
+  output: "[TOOL: analyze.py]\n{\n  \"status\": \"success\",\n  \"skill\": \"msqca-analysis-expert\"\
+    ,\n  \"summary\": \"msqca-analysis-expert 分析完成. \",\n  \"key_findings\": [\n \
+    \   \"关键发现 1\",\n    \"关键发现 2\",\n    \"关键发现 3\"\n  ],\n  \"main_results\": {\n\
+    \    \"status\": \"analyzed\"\n  },\n  \"detail_level\": 2\n}"
+  passed: true
+  test_prompt: 我需要做定性比较分析（QCA）：影响企业数字化转型成功的条件有哪些？
+dimensions:
+  architecture:
+    score: 13.0
+    weight: 15
+  benchmark:
+    score: 7.0
+    weight: 25
+  boundary:
+    score: 8.0
+    weight: 10
+  checkpoint:
+    score: 7.0
+    weight: 7
+  frontmatter:
+    score: 8.0
+    weight: 8
+  resources:
+    score: 7.0
+    weight: 5
+  specificity:
+    score: 13.0
+    weight: 15
+  workflow:
+    score: 13.0
+    weight: 15
+improved: true
+previous_score: 69.43
+quality_score: 75.85
+refinement_history:
+- delta: 6.4199999999999875
+  quality_score: 75.85
+  timestamp: '2026-04-27T15:08:00.347564+00:00'
+skill: qca-analysis-expert
+structure_base: 98.8
+timestamp: '2026-04-27T15:08:00.347564+00:00'
+total_100: 116.3

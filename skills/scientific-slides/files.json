@@ -1,0 +1,94 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "c87dbea11b3ce7fac8ff905e4402ec939faefc44",
+      "size": 47235
+    },
+    {
+      "path": "_meta.json",
+      "sha": "7c68be617c9704d79d61ff407861043d93eeb85e",
+      "size": 136
+    },
+    {
+      "path": "assets/beamer_template_conference.tex",
+      "sha": "831373d3934b9e4b6a94fd65dbb487292507c11b",
+      "size": 9983
+    },
+    {
+      "path": "assets/beamer_template_defense.tex",
+      "sha": "8f6c14fb53cc9c1afdeefd00843b298875d3d845",
+      "size": 26503
+    },
+    {
+      "path": "assets/beamer_template_seminar.tex",
+      "sha": "1464a5ba36e21655b5569ddc4afa52121b4fff47",
+      "size": 23247
+    },
+    {
+      "path": "assets/powerpoint_design_guide.md",
+      "sha": "ae1d43ecad4163e7c81dc4cfd2d4523673ae7abb",
+      "size": 18989
+    },
+    {
+      "path": "assets/timing_guidelines.md",
+      "sha": "cf9fdaba9edaf5b101dacffb2817bfc5dc40c393",
+      "size": 14723
+    },
+    {
+      "path": "references/beamer_guide.md",
+      "sha": "8ce9387bce818cee2282585fc45117878cfc40e3",
+      "size": 19321
+    },
+    {
+      "path": "references/data_visualization_slides.md",
+      "sha": "9090989c1eb4d4cf84459a233e8d6658911640e1",
+      "size": 17863
+    },
+    {
+      "path": "references/presentation_structure.md",
+      "sha": "56c89d778f6cc65497b95d3e16cef41417d05cd7",
+      "size": 22220
+    },
+    {
+      "path": "references/slide_design_principles.md",
+      "sha": "3e36ea20558766eec3fbc9979e7858309e751cde",
+      "size": 23878
+    },
+    {
+      "path": "references/talk_types_guide.md",
+      "sha": "a5b58808d427693df69a2cc3da763d85f0ae2f40",
+      "size": 20146
+    },
+    {
+      "path": "references/visual_review_workflow.md",
+      "sha": "76de8847d90f4ebba7709498c3a862f2e417e38d",
+      "size": 20170
+    },
+    {
+      "path": "scripts/generate_slide_image.py",
+      "sha": "d946a79d11983a9b2d1d0432230293c628c3045c",
+      "size": 5309
+    },
+    {
+      "path": "scripts/generate_slide_image_ai.py",
+      "sha": "2a7780b473c2942698b3cda9e8051cf4c2e8e340",
+      "size": 29060
+    },
+    {
+      "path": "scripts/pdf_to_images.py",
+      "sha": "0bc3234a575dea27fb6a2594bea8eb83373f8553",
+      "size": 6644
+    },
+    {
+      "path": "scripts/slides_to_pdf.py",
+      "sha": "550a828adca6f86f012002eea4b66ddd1874a9c5",
+      "size": 7423
+    },
+    {
+      "path": "scripts/validate_presentation.py",
+      "sha": "4142ca1be95740eff56c6a909ad12f21b0f3c339",
+      "size": 13115
+    }
+  ]
+}

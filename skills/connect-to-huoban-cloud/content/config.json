@@ -1,0 +1,13 @@
+{
+  "_comment": "========================================",
+  "_version": "1.0.0",
+  "_description": "伙伴云连接器配置文件",
+  "_how_to_use": "1. 运行 'python huoban_cloud.py setup <your_access_token>' 自动写入 API Token",
+  "_how_to_use2": "2. 运行 'python huoban_cloud.py init <your_space_id>' 自动获取表格配置",
+  "_how_to_use3": "3. 或手动编辑此文件，添加表格配置信息",
+  "_note": "此文件会在运行 setup/init 命令时自动更新",
+  "========================================": "",
+  "access_token": "",
+  "current_wecom_user": "",
+  "tables": {}
+}

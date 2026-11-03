@@ -1,0 +1,28 @@
+{
+  "author": "MiniMax Agent",
+  "category": "productivity",
+  "created_at": "2025-04-25",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "user-guide.md",
+    "scripts/format_doc.py",
+    "test_demo.py",
+    "sample_petition_before.docx",
+    "sample_petition_after.docx",
+    "test_petition.txt"
+  ],
+  "id": 391280651031065,
+  "name": "word-document-formatter",
+  "platform": "minimax",
+  "skill_id": 20250425001,
+  "tags": [
+    "word",
+    "document",
+    "formatter",
+    "公文",
+    "office"
+  ],
+  "updated_at": 1777083790064,
+  "version": "1.0.0"
+}

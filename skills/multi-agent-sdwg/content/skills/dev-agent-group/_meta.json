@@ -1,0 +1,15 @@
+{
+  "id": "1234567893",
+  "version": "1.0.0",
+  "author": "MiniMax Agent",
+  "description": "开发智能体组：单模块专注、代码生成、单元测试、自修复、代码审查",
+  "training_methods": ["Instruction Fine-tuning", "Reinforcement Learning", "Compilation Feedback"],
+  "core_skills": [
+    "代码生成",
+    "单元测试生成",
+    "代码自修复",
+    "代码审查"
+  ],
+  "collaboration": ["architect-agent", "test-engineer-agent", "project-manager-agent"],
+  "notes": "多实例运行，每个实例专注一个子模块"
+}

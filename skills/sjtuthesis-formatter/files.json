@@ -1,0 +1,139 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "2410310a1a133028c3637ec4102a8a5c03033b73",
+      "size": 4328
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "a0408fb5c6f3443a1550853528ac9ae09f3276a2",
+      "size": 21305
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e0c2c00677a2bd9590599fd4fc47d7a182cbcfad",
+      "size": 316
+    },
+    {
+      "path": "examples/feedback.md",
+      "sha": "7020980dc1af5755b2efa658779585987a2805d2",
+      "size": 2406
+    },
+    {
+      "path": "examples/sample.md",
+      "sha": "f1921aee4b181d5f9d43151154dc1db203bc3f9f",
+      "size": 7903
+    },
+    {
+      "path": "modules/__init__.py",
+      "sha": "16fb421341bbcd6e202bba6e6a2e87342f35f471",
+      "size": 163
+    },
+    {
+      "path": "modules/change_log.py",
+      "sha": "8b8d4396ee2d148cf7a76c652c27d32d4f0b043b",
+      "size": 9888
+    },
+    {
+      "path": "modules/citation_handler.py",
+      "sha": "44062de2fec43824d16fb3221314811dc024c741",
+      "size": 15020
+    },
+    {
+      "path": "modules/cleaning_engine.py",
+      "sha": "dfc6b0e5a703be965efb55c8835fc03600cec427",
+      "size": 13612
+    },
+    {
+      "path": "modules/document_merger.py",
+      "sha": "4e9ba586bb6c785a520274f3a5e71440b5811594",
+      "size": 5894
+    },
+    {
+      "path": "modules/figure_handler.py",
+      "sha": "9decc0a9d8dfbaa85f32b57be5f9a6e66559bb29",
+      "size": 9453
+    },
+    {
+      "path": "modules/format_detector.py",
+      "sha": "9eeef340d154f8902b87754657abd1b252fab76e",
+      "size": 8848
+    },
+    {
+      "path": "modules/helpers.py",
+      "sha": "3c3a5e8e4535fc9827e2444ad241bb6d1e46b756",
+      "size": 6742
+    },
+    {
+      "path": "modules/latex_renderer.py",
+      "sha": "23ca74ae9a74fbb28f3a9a4e41f35a0c9cec7abb",
+      "size": 13597
+    },
+    {
+      "path": "modules/math_typesetting.py",
+      "sha": "2e2d23c5f2b9cc7a472e97952f971a7506bbe9c5",
+      "size": 12803
+    },
+    {
+      "path": "modules/pdf_bookmarks.py",
+      "sha": "b93066b8d419e5d3e4b04077f6a49b08bd8812eb",
+      "size": 10527
+    },
+    {
+      "path": "modules/semantic_parser.py",
+      "sha": "0a0855b34d443d33f93c924684b858b12ec280c5",
+      "size": 14134
+    },
+    {
+      "path": "modules/space_auditor.py",
+      "sha": "76119e51868aac598346f5addb77b2f16ddd9070",
+      "size": 10103
+    },
+    {
+      "path": "modules/style_mapper.py",
+      "sha": "c5b0187c1476bc0a787f2f9a88543c7e666ae47b",
+      "size": 15589
+    },
+    {
+      "path": "modules/thesis_info.py",
+      "sha": "5ba7f13181644a9e0eaaa93d45c6c5164f4a9dd8",
+      "size": 12679
+    },
+    {
+      "path": "modules/user_preferences.py",
+      "sha": "5a93d0e58e931c03e8e0b6cd1bcdca85a3cd70b4",
+      "size": 11114
+    },
+    {
+      "path": "modules/validator.py",
+      "sha": "1df09c44011e1a662a8b1433f09db1887ad67c07",
+      "size": 10306
+    },
+    {
+      "path": "modules/word_renderer.py",
+      "sha": "b9bada4844bae175cbc8f19b718a06a35bee3e1f",
+      "size": 25572
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "7f8248c6476999e00b8a24152a15b4ac0c357a65",
+      "size": 32
+    },
+    {
+      "path": "scripts/validate.sh",
+      "sha": "e8da3dc100e9ffeafb4abaddb76a4ecc44f21a9c",
+      "size": 5388
+    },
+    {
+      "path": "sjtuthesis_engine.py",
+      "sha": "1c7dd33a0503429fbb1623e2b10de68a0bc1557a",
+      "size": 41864
+    },
+    {
+      "path": "template.md",
+      "sha": "684e49fd3d2369ca8c398841d208b00509539c47",
+      "size": 22434
+    }
+  ]
+}

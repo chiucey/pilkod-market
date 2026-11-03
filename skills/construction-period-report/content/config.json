@@ -1,0 +1,49 @@
+{
+  "business_date": "2026-03-03",
+  "year_range": [2022, 2026],
+  "high_quality_duration": {
+    "construction_period_days": 274,
+    "construction_phase_days": 182,
+    "acceptance_control_days": 152
+  },
+  "status_labels": {
+    "1": "工期符合管控",
+    "2": "未到管控期",
+    "3": "工期超期"
+  },
+  "column_mapping": {
+    "project_code": "项目编码",
+    "project_name": "项目名称",
+    "construction_unit": "建设单位",
+    "approval_date": "第一次立项批复完成时间",
+    "approval_amount": "最新立项批复金额",
+    "start_date": "开工报告完成（填报）时间",
+    "handover_date": "割接上线交维（填报）时间",
+    "completion_date": "竣工验收完成时间",
+    "completion_archive_date": "竣工备案完成时间",
+    "final_accounting_date": "决算审计完成时间",
+    "pms_close_date": "PMS第一次项目关闭时间",
+    "project_year": "项目年份",
+    "manager_main": "工程实施经理-主",
+    "manager_sub": "工程实施经理-辅",
+    "process_template": "工程实施流程模板",
+    "level1_profession": "一级专业名称",
+    "level2_profession": "二级专业名称",
+    "level3_profession": "三级专业名称",
+    "level4_profession": "四级专业名称",
+    "project_set": "项目集名称",
+    "design_approval_date": "第一次设计批复完成时间",
+    "quality_inspection_date": "质监申报完成（填报）时间"
+  },
+  "data_source": {
+    "sheet_name": "项目明细查询报表",
+    "header_row": 1,
+    "amount_unit": "元"
+  },
+  "output_settings": {
+    "hide_overdue": true,
+    "show_provincial": false,
+    "auto_refresh": true,
+    "amount_unit_convert": "万元"
+  }
+}

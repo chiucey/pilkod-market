@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>综合模板 · 全部区段类型</title>
+<style>
+/* ===== 复制自 base.css ===== */
+:root{
+  --bg:#1a1b26;--bg-soft:#16161e;--surface:#24283b;--surface-2:#2f334d;
+  --border:rgba(192,202,245,.12);--border-strong:rgba(192,202,245,.24);
+  --text-1:#c0caf5;--text-2:#a9b1d6;--text-3:#565f89;
+  --accent:#7aa2f7;--accent-2:#bb9af7;--accent-3:#7dcfff;
+  --good:#9ece6a;--warn:#e0af68;--bad:#f7768e;
+  --grad:linear-gradient(135deg,#7aa2f7,#bb9af7 55%,#f7768e);
+  --grad-soft:linear-gradient(135deg,#24283b,#2f334d);
+  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 24px 62px rgba(0,0,0,.6);
+  --font-sans:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono','Fira Code','Consolas',monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text-1)}
+a{color:var(--accent);text-decoration:none}
+.scroll-section{padding:60px 64px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--border)}
+.scroll-section:last-child{border-bottom:none}
+.scroll-section.full{align-items:center;text-align:center}
+.scroll-section h2{margin-top:0}
+.kicker{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:5px 14px;border-radius:100px;background:var(--accent);color:var(--bg);margin-bottom:16px}
+.h1{font-size:clamp(32px,4.2vw,64px);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px}
+.h2{font-size:clamp(22px,2.8vw,40px);font-weight:700;line-height:1.3;letter-spacing:-.01em;margin-bottom:16px}
+.h3{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:10px}
+.h4{font-size:15px;font-weight:600;line-height:1.4;margin-bottom:6px}
+.lede{font-size:clamp(14px,1.2vw,18px);line-height:1.7;color:var(--text-2);max-width:620px}
+.dim{color:var(--text-2);font-size:14px;line-height:1.6}
+.dim2{color:var(--text-3);font-size:13px}
+.mt-s{margin-top:12px}.mt-m{margin-top:24px}.mt-l{margin-top:36px}.mt-xl{margin-top:48px}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-soft{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card-accent{border-top:3px solid var(--accent);background:var(--surface);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-outline{background:transparent;border:1px solid var(--border-strong);border-radius:var(--radius);padding:24px}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1fr 1fr 1fr}
+.g4{grid-template-columns:1fr 1fr 1fr 1fr}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.split-c{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.formula-box{text-align:center;font-size:38px;font-weight:700;padding:28px;background:var(--surface-2);border-radius:var(--radius);margin:16px 0;font-family:var(--font-mono);letter-spacing:.02em;border:1px solid var(--border)}
+.formula-box .sub{font-size:14px;font-weight:400;color:var(--text-3);display:block;margin-top:8px}
+.formula-sm{text-align:center;font-size:20px;font-weight:600;padding:12px;background:var(--surface-2);border-radius:var(--radius-sm);margin:8px 0;font-family:var(--font-mono);border:1px solid var(--border)}
+ul{list-style:none;padding:0}
+li{padding:5px 0;font-size:14px;line-height:1.6;color:var(--text-2)}
+li::before{content:"\25B8 ";color:var(--accent);font-weight:700}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--surface-2);color:var(--text-2);margin-right:6px;margin-bottom:6px;letter-spacing:.06em}
+.pill-accent{background:var(--accent);color:var(--bg)}
+.insight{background:linear-gradient(135deg,rgba(122,162,247,.1),rgba(187,154,247,.06));border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:16px 0;font-size:14px;line-height:1.7;color:var(--text-2)}
+.highlight{background:rgba(122,162,247,.15);padding:2px 6px;border-radius:4px;color:var(--accent-3);font-weight:500}
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.compare-table th{background:var(--surface-2);padding:10px 14px;text-align:left;font-weight:600;color:var(--text-2);border-bottom:2px solid var(--border)}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)}
+.compare-table tr:last-child td{border-bottom:none}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+.data-table th{background:var(--surface-2);padding:8px 12px;text-align:center;font-weight:600;color:var(--text-1);border-bottom:2px solid var(--border);font-size:12px}
+.data-table td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);color:var(--text-2)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table .hl{color:var(--accent);font-weight:600}
+.step-card{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px}
+.step-num{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;flex-shrink:0}
+.step-card .step-body h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.step-card .step-body p{font-size:13px;color:var(--text-2);line-height:1.5}
+.arch{display:grid;gap:20px}
+.arch .tier{display:grid;grid-template-columns:110px 1fr;align-items:stretch;gap:14px}
+.arch .tname{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border-radius:var(--radius);padding:12px;font-weight:600;font-size:12px;color:var(--text-2);text-transform:uppercase;letter-spacing:.08em;text-align:center}
+.arch .cells{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.arch .cell{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;box-shadow:var(--shadow)}
+.arch .cell .ic{font-size:20px;margin-bottom:4px}
+.arch .cell h4{font-size:13px;font-weight:600;margin-bottom:2px}
+.arch .cell p{font-size:11px;color:var(--text-3);margin:0;line-height:1.4}
+.arch .tier.hl .cell{border-top:3px solid var(--accent)}
+.timeline{position:relative;padding-left:32px;margin-top:20px}
+.timeline::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;padding:0 0 24px 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-24px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl-item .year{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.tl-item p{font-size:13px;color:var(--text-2);line-height:1.5;margin-top:2px}
+.contrast-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.contrast-cards .ex-card{padding:18px;border-radius:var(--radius);font-size:14px;line-height:1.6}
+.contrast-cards .ex-card.good{background:rgba(158,206,106,.08);border:1px solid rgba(158,206,106,.2)}
+.contrast-cards .ex-card.bad{background:rgba(247,118,142,.08);border:1px solid rgba(247,118,142,.2)}
+.contrast-cards .ex-card h4{margin-bottom:6px;font-size:14px}
+.contrast-cards .ex-card.good h4{color:var(--good)}
+.contrast-cards .ex-card.bad h4{color:var(--bad)}
+.anim-fade-up,.anim-fade-left,.anim-fade-right,.anim-scale-in{opacity:0;transition:opacity .5s ease,transform .5s ease}
+.anim-fade-up.is-visible{opacity:1;transform:translateY(0)}
+.anim-fade-left.is-visible{opacity:1;transform:translateX(0)}
+.anim-fade-right.is-visible{opacity:1;transform:translateX(0)}
+.anim-scale-in.is-visible{opacity:1;transform:scale(1)}
+.anim-fade-up{transform:translateY(24px)}
+.anim-fade-left{transform:translateX(-24px)}
+.anim-fade-right{transform:translateX(24px)}
+.anim-scale-in{transform:scale(.92)}
+.anim-fade-up.is-exiting{opacity:0;transform:translateY(-18px)}
+.anim-fade-left.is-exiting{opacity:0;transform:translateX(18px)}
+.anim-fade-right.is-exiting{opacity:0;transform:translateX(-18px)}
+.anim-scale-in.is-exiting{opacity:0;transform:scale(.95)}
+.anim-stagger-list.is-visible>*{opacity:0;animation:fadeUp .45s ease forwards}
+.anim-stagger-list.is-visible>*:nth-child(1){animation-delay:0s}
+.anim-stagger-list.is-visible>*:nth-child(2){animation-delay:.1s}
+.anim-stagger-list.is-visible>*:nth-child(3){animation-delay:.2s}
+.anim-stagger-list.is-visible>*:nth-child(4){animation-delay:.3s}
+.anim-stagger-list.is-visible>*:nth-child(5){animation-delay:.4s}
+.anim-stagger-list.is-visible>*:nth-child(6){animation-delay:.5s}
+.anim-stagger-list.is-visible>*:nth-child(7){animation-delay:.6s}
+.anim-stagger-list.is-visible>*:nth-child(8){animation-delay:.7s}
+.anim-stagger-list.is-exiting>*{opacity:1;animation:fadeDown .35s ease forwards}
+.anim-stagger-list.is-exiting>*:nth-child(1){animation-delay:.35s}
+.anim-stagger-list.is-exiting>*:nth-child(2){animation-delay:.3s}
+.anim-stagger-list.is-exiting>*:nth-child(3){animation-delay:.25s}
+.anim-stagger-list.is-exiting>*:nth-child(4){animation-delay:.2s}
+.anim-stagger-list.is-exiting>*:nth-child(5){animation-delay:.15s}
+.anim-stagger-list.is-exiting>*:nth-child(6){animation-delay:.1s}
+.anim-stagger-list.is-exiting>*:nth-child(7){animation-delay:.05s}
+.anim-stagger-list.is-exiting>*:nth-child(8){animation-delay:0s}
+.anim-stagger-list>*{opacity:0;transition:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(18px)}}
+@media(max-width:900px){
+  .scroll-section{padding:40px 28px}
+  .split,.split-c{grid-template-columns:1fr;gap:20px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .arch .tier{grid-template-columns:1fr;gap:10px}
+  .arch .tname{padding:10px;font-size:11px}
+  .arch .cells{grid-template-columns:repeat(2,1fr)}
+  .formula-box{font-size:26px;padding:18px}
+}
+@media(max-width:480px){
+  .arch .cells{grid-template-columns:1fr}
+}
+
+/* ===== 18. 导航栏 ===== */
+.nav-bar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;gap:4px;padding:8px 24px;background:rgba(26,27,38,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-bar a{display:inline-block;padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-2);border-radius:100px;transition:background .2s,color .2s;text-decoration:none;flex-shrink:0}
+.nav-bar a:hover,.nav-bar a.active{background:var(--accent);color:var(--bg)}
+.scroll-section:first-of-type{padding-top:120px}
+@media(max-width:900px){
+  .nav-bar{padding:6px 12px;gap:2px}
+  .nav-bar a{padding:5px 10px;font-size:11px}
+  .scroll-section:first-of-type{padding-top:100px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航栏 ===== -->
+<nav class="nav-bar">
+  <a href="#s-cover">封面</a>
+  <a href="#s-side">双栏</a>
+  <a href="#s-formula">公式</a>
+  <a href="#s-data">数据</a>
+  <a href="#s-step">推导</a>
+  <a href="#s-arch">体系</a>
+  <a href="#s-timeline">时间线</a>
+  <a href="#s-contrast">辨析</a>
+  <a href="#s-grid">总结</a>
+  <a href="#s-insight">提示</a>
+</nav>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 封面 → layout-cover.html                                -->
+<!-- 结构: section.full > div.anim-stagger-list > kicker+h1(双语)+lede -->
+<!-- ================================================================ -->
+<section id="s-cover" class="scroll-section full">
+  <div class="anim-stagger-list">
+    <p class="kicker">Physics · Topic Name</p>
+    <h1 class="h1">
+      物理主题名称<br>
+      <span class="gradient-text" style="font-size:.65em">副标题或英文标题</span><br>
+      <span class="dim" style="font-size:.3em;font-weight:400;letter-spacing:0">English Subtitle</span>
+    </h1>
+    <p class="lede" style="max-width:700px;margin:24px auto 0">展示内容的导语描述，概括本展示的核心主题和意义。</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 双栏概念 → layout-side-by-side.html                      -->
+<!-- 结构: section > kicker+h2 > div.split > 左card + 右card           -->
+<!-- ================================================================ -->
+<section id="s-side" class="scroll-section">
+  <p class="kicker">Concept · Section Name</p>
+  <h2 class="h2">核心概念标题<br><span class="dim" style="font-size:.55em;font-weight:400">概念副标题或英文</span></h2>
+  <div class="split mt-m">
+    <div class="card anim-fade-left">
+      <h3>左侧标题</h3>
+      <p class="dim" style="margin-bottom:12px">左侧内容描述文字。</p>
+      <ul>
+        <li>要点一：简要说明</li>
+        <li>要点二：简要说明</li>
+        <li>要点三：简要说明</li>
+      </ul>
+    </div>
+    <div class="card anim-fade-right">
+      <h3>右侧标题</h3>
+      <p class="dim" style="margin-bottom:12px">右侧内容描述文字。</p>
+      <div class="insight" style="margin-top:12px">
+        <strong>要点提示</strong>：这里可以放置强调内容或关键信息。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 公式展示                                                 -->
+<!-- 结构: section > kicker+h2 > formula-box + .pill 标签组             -->
+<!-- ================================================================ -->
+<section id="s-formula" class="scroll-section">
+  <p class="kicker">Formula</p>
+  <h2 class="h2">核心公式<br><span class="dim" style="font-size:.55em;font-weight:400">公式名称 / 英文</span></h2>
+  <div style="text-align:center" class="anim-fade-up">
+    <div class="formula-box" style="display:inline-block;min-width:300px">
+      <strong>公式表达式</strong>
+      <span class="sub">公式说明文字</span>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:16px;justify-content:center;flex-wrap:wrap">
+      <span class="pill">符号A — 含义</span>
+      <span class="pill pill-accent">符号B — 含义</span>
+      <span class="pill">符号C — 含义</span>
+    </div>
+    <p class="dim mt-m" style="max-width:600px;margin:24px auto 0">公式的补充说明文字，解释每个符号的物理意义。</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 对比表格 + 数据表格                                      -->
+<!-- 结构: section > kicker+h2 > split > compare-table + data-table    -->
+<!-- ================================================================ -->
+<section id="s-data" class="scroll-section">
+  <p class="kicker">Comparison · Data</p>
+  <h2 class="h2">对比与数据<br><span class="dim" style="font-size:.55em;font-weight:400">规律对比 / 实验数据</span></h2>
+  <div class="split mt-m">
+    <div class="anim-fade-left">
+      <h3 style="margin-bottom:10px">概念对比</h3>
+      <table class="compare-table">
+        <tr><th>项目</th><th>情形 A</th><th>情形 B</th></tr>
+        <tr><td>对比项 1</td><td>描述 A1</td><td>描述 B1</td></tr>
+        <tr><td>对比项 2</td><td>描述 A2</td><td>描述 B2</td></tr>
+        <tr><td>对比项 3</td><td>描述 A3</td><td>描述 B3</td></tr>
+      </table>
+    </div>
+    <div class="anim-fade-right">
+      <h3 style="margin-bottom:10px">实验数据</h3>
+      <table class="data-table">
+        <tr><th>变量 X</th><th>变量 Y</th><th>比值</th></tr>
+        <tr><td>1.00</td><td>2.00</td><td>0.50</td></tr>
+        <tr><td>2.00</td><td>4.10</td><td class="hl">0.49</td></tr>
+        <tr><td>3.00</td><td>6.05</td><td>0.50</td></tr>
+      </table>
+      <p class="dim mt-s" style="font-size:12px">数据趋势说明文字。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 步骤推导 → layout-derivation.html                        -->
+<!-- 结构: section > kicker+h2 > div.step-card + div.step-num 序列     -->
+<!-- ================================================================ -->
+<section id="s-step" class="scroll-section">
+  <p class="kicker">Derivation</p>
+  <h2 class="h2">推导过程<br><span class="dim" style="font-size:.55em;font-weight:400">从已知到未知的逻辑链</span></h2>
+  <div style="max-width:700px;margin:0 auto" class="anim-fade-up">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>已知条件</h4>
+        <p>列出推导的起点已知量或基本公式。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>代入变换</h4>
+        <p>将已知条件代入相关公式进行代数变换。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>化简整理</h4>
+        <p>合并同类项、消去中间变量。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>得到结论</h4>
+        <p>最终推导结果与物理意义解读。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 知识体系 Arch 三层网格                                    -->
+<!-- 结构: section > kicker+h2 > div.arch > .tier > .cells > .cell    -->
+<!-- ================================================================ -->
+<section id="s-arch" class="scroll-section">
+  <p class="kicker">Knowledge Architecture</p>
+  <h2 class="h2">知识体系架构<br><span class="dim" style="font-size:.55em;font-weight:400">三大层次 / 分类</span></h2>
+  <div class="arch mt-m anim-stagger-list" data-anim-target>
+    <div class="tier hl">
+      <div class="tname">层级一</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">①</div><h4>核心概念</h4><p>简要描述</p></div>
+        <div class="cell"><div class="ic">②</div><h4>基本原理</h4><p>简要描述</p></div>
+        <div class="cell"><div class="ic">③</div><h4>关键公式</h4><p>简要描述</p></div>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="tname">层级二</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">④</div><h4>应用场景</h4><p>简要描述</p></div>
+        <div class="cell"><div class="ic">⑤</div><h4>实验验证</h4><p>简要描述</p></div>
+        <div class="cell"><div class="ic">⑥</div><h4>数据分析</h4><p>简要描述</p></div>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="tname">层级三</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">⑦</div><h4>拓展延伸</h4><p>简要描述</p></div>
+        <div class="cell"><div class="ic">⑧</div><h4>前沿发展</h4><p>简要描述</p></div>
+        <div class="cell"><div class="ic">⑨</div><h4>实际意义</h4><p>简要描述</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 时间线                                                   -->
+<!-- 结构: section > kicker+h2 > div.timeline > .tl-item > .year + p  -->
+<!-- ================================================================ -->
+<section id="s-timeline" class="scroll-section">
+  <p class="kicker">Timeline · History</p>
+  <h2 class="h2">历史发展时间线<br><span class="dim" style="font-size:.55em;font-weight:400">关键里程碑</span></h2>
+  <div style="max-width:600px;margin:0 auto" class="anim-fade-up">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="year">年份 1</div>
+        <p>该年份发生的关键事件或发现。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">年份 2</div>
+        <p>第二个关键里程碑事件。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">年份 3</div>
+        <p>进一步的重大进展或理论突破。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">年份 4</div>
+        <p>至今的应用与影响。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 对比卡片（正确 vs 误解）                                  -->
+<!-- 结构: section > kicker+h2 > div.contrast-cards > .good + .bad    -->
+<!-- ================================================================ -->
+<section id="s-contrast" class="scroll-section">
+  <p class="kicker">Common Misconceptions</p>
+  <h2 class="h2">常见误区辨析<br><span class="dim" style="font-size:.55em;font-weight:400">正确理解 vs 常见误解</span></h2>
+  <div class="contrast-cards mt-m anim-fade-up">
+    <div class="ex-card good">
+      <h4>✅ 正确理解</h4>
+      <p style="font-size:12px;color:var(--text-2)">正确的物理概念描述，强调正确的理解方式。</p>
+    </div>
+    <div class="ex-card bad">
+      <h4>❌ 常见误解</h4>
+      <p style="font-size:12px;color:var(--text-2)">常见的错误理解及其解释说明。</p>
+    </div>
+  </div>
+  <div class="insight mt-m" style="max-width:700px;margin:24px auto 0">
+    对正确和误解的进一步补充说明。
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 网格总结 → layout-knowledge-grid.html                    -->
+<!-- 结构: section > kicker+h2 > div.grid.g2 > card+card               -->
+<!-- ================================================================ -->
+<section id="s-grid" class="scroll-section">
+  <p class="kicker">Summary · Key Takeaways</p>
+  <h2 class="h2">核心要点回顾<br><span class="dim" style="font-size:.55em;font-weight:400">总结与关键公式</span></h2>
+  <div class="grid g2 mt-m">
+    <div class="card-accent anim-fade-left" style="height:100%">
+      <h3>核心公式</h3>
+      <div style="margin-top:12px">
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--accent)">核心公式</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">公式名称</div>
+        </div>
+      </div>
+    </div>
+    <div class="anim-fade-right" style="height:100%">
+      <div class="card" style="height:100%">
+        <h3>N 句话总结</h3>
+        <ul>
+          <li><strong>要点一</strong>——简要说明</li>
+          <li><strong>要点二</strong>——简要说明</li>
+          <li><strong>要点三</strong>——简要说明</li>
+          <li><strong>要点四</strong>——简要说明</li>
+          <li><strong>要点五</strong>——简要说明</li>
+        </ul>
+      </div>
+      <div class="insight mt-m">
+        <em>"总结性引语，强调本展示的核心思想。"</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- 布局类型: 提示块（insight + highlight 两种用法）                    -->
+<!-- 结构: div.insight 或 span.highlight 可嵌入任何区段                  -->
+<!-- ================================================================ -->
+<section id="s-insight" class="scroll-section">
+  <p class="kicker">Notes · Highlights</p>
+  <h2 class="h2">提示与高亮<br><span class="dim" style="font-size:.55em;font-weight:400">强调重要信息</span></h2>
+  <div style="max-width:700px;margin:0 auto" class="anim-fade-up">
+    <div class="card">
+      <h3>用法示例</h3>
+      <p class="dim mt-s">使用 <span class="highlight">span.highlight</span> 在段落中高亮关键词。</p>
+      <p class="dim">使用 div.insight 放置独立的提示框：</p>
+    </div>
+    <div class="insight">
+      <strong>💡 insight 提示框</strong>：用于放置重要的补充说明、核心要点或教学提示。带左侧 accent 色条，视觉上与其他内容区分。
+    </div>
+    <div class="card-soft mt-m">
+      <h3>适用范围</h3>
+      <ul>
+        <li>关键公式的补充解释</li>
+        <li>理解误区提醒</li>
+        <li>核心结论的再次强调</li>
+        <li>教学备注（结合 <span class="highlight">.notes</span> 类）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JS: 复制自 base.js ===== -->
+<script>
+(function(){
+  const animateElements = document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-stagger-list');
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        entry.target.classList.remove('is-exiting');
+      } else {
+        entry.target.classList.add('is-exiting');
+        entry.target.classList.remove('is-visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  animateElements.forEach(el => observer.observe(el));
+})();
+
+/* 导航栏滚动高亮 */
+(function(){
+  var sections = document.querySelectorAll('.scroll-section[id]');
+  var links = document.querySelectorAll('.nav-bar a');
+  function update(){
+    var scrollY = window.scrollY + 100;
+    var activeId = '';
+    sections.forEach(function(s){
+      if(s.offsetTop <= scrollY) activeId = s.id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+    });
+  }
+  window.addEventListener('scroll', update);
+  update();
+})();
+</script>
+
+</body>
+</html>

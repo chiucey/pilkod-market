@@ -1,0 +1,32 @@
+{
+  "author": "MiniMax Agent",
+  "config": {
+    "default_greeting": "您好，看您的简历背景与我们的职位需求比较匹配，不知道方便聊聊吗？期待您的回复~",
+    "require_user_input": true,
+    "user_input_fields": [
+      "筛选条件",
+      "筛选关键词"
+    ]
+  },
+  "created_at": "2026-04-28",
+  "dependencies": {
+    "skills": [],
+    "tools": [
+      "interact_with_website",
+      "mcp__matrix__extract_content_from_websites"
+    ]
+  },
+  "description": "在猎聘平台搜索人才、筛选候选人、批量沟通、索要简历的自动化寻访技能",
+  "id": 392366047805794,
+  "name": "lietou-candidate-hunter",
+  "platform": "minimax",
+  "tags": [
+    "猎聘",
+    "招聘",
+    "候选人筛选",
+    "简历寻访",
+    "批量沟通"
+  ],
+  "updated_at": 1777346368711,
+  "version": "1.0.0"
+}

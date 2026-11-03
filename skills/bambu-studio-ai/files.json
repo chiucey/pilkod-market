@@ -1,0 +1,264 @@
+{
+  "files": [
+    {
+      "path": ".clawignore",
+      "sha": "859239af193c29fabcb8ca43fb6f28eb45c1767e",
+      "size": 216
+    },
+    {
+      "path": ".gitignore",
+      "sha": "da0c2120b313ba051b2128aa6475722ec1d3fd84",
+      "size": 474
+    },
+    {
+      "path": "LICENSE",
+      "sha": "f71dd329b941964b7fce715d7a5749392cdc6377",
+      "size": 1066
+    },
+    {
+      "path": "README.md",
+      "sha": "e7c6261167111e770dd79557fbbc0231c6420d39",
+      "size": 14957
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "231381048fc478c30f0d0135fe3d14391c4581e5",
+      "size": 32603
+    },
+    {
+      "path": "_meta.json",
+      "sha": "385d9208a61398ca931445c5a19e5531f5081456",
+      "size": 134
+    },
+    {
+      "path": "config/.secrets.example.json",
+      "sha": "8f0ddc694592ad79acc22ca56f3ef4e0fbbd2f2d",
+      "size": 135
+    },
+    {
+      "path": "config/config.example.json",
+      "sha": "ac40d794a12bdcaf3f477ec102e59a1bd86be450",
+      "size": 375
+    },
+    {
+      "path": "pyproject.toml",
+      "sha": "e85d66cd7618b91f2a8eb7a6c8c8776a46c532b7",
+      "size": 826
+    },
+    {
+      "path": "references/3d-generation-apis.md",
+      "sha": "a76131b484291c56a62601e1943b40e4f8568784",
+      "size": 1377
+    },
+    {
+      "path": "references/3d-prompt-guide.md",
+      "sha": "c31a78487bd779009ee01d3e9c1a9d1c8d4335af",
+      "size": 4667
+    },
+    {
+      "path": "references/bambu-cloud-api.md",
+      "sha": "121e57744894f387be65a46f9f25faaebc5b44f2",
+      "size": 945
+    },
+    {
+      "path": "references/bambu-mqtt-protocol.md",
+      "sha": "6e769a776aa38ddbdaa25220b88f3cc00883e456",
+      "size": 2007
+    },
+    {
+      "path": "references/bambu_filament_colors.json",
+      "sha": "fbad02174d6a7f48019a5638071cf9a5536d5587",
+      "size": 1907
+    },
+    {
+      "path": "references/colorize-geometry-enhancement.md",
+      "sha": "c8bc3b0aaf5bbada9279e4f42a145981ee981224",
+      "size": 3829
+    },
+    {
+      "path": "references/manifold-examples.md",
+      "sha": "889fa581b7ff663cf8bbe9981ca1efe6a17bcd92",
+      "size": 9298
+    },
+    {
+      "path": "references/model-specs.md",
+      "sha": "69b33d0df882bafcc1c0fe2157a6a312255dae47",
+      "size": 1034
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha": "9573d4808083cf569612bc8a46fe5070a1028600",
+      "size": 32
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "8c72cf8ada56c045787c65946558a80e070fd727",
+      "size": 199
+    },
+    {
+      "path": "research/optimize_analyze.md",
+      "sha": "ed373e69bf6217bc8a6d47f315aab959bdd805cd",
+      "size": 33804
+    },
+    {
+      "path": "research/optimize_colorize.md",
+      "sha": "2e92169b1800d564378099ffeff9b3b9936fe93c",
+      "size": 29725
+    },
+    {
+      "path": "research/optimize_generation.md",
+      "sha": "7f2d09a0a7d865342b9235f5cb515f01fc5dbaaa",
+      "size": 24772
+    },
+    {
+      "path": "research/optimize_preview_search.md",
+      "sha": "cddfeef5c8d1bc1fc07686eae675977385621522",
+      "size": 45092
+    },
+    {
+      "path": "scripts/analyze.py",
+      "sha": "b6d1a543fe6034755ea2ac00f98a1104d9022535",
+      "size": 36385
+    },
+    {
+      "path": "scripts/bambu.py",
+      "sha": "95101c606878009fb3333b69c66aae614a0f2274",
+      "size": 41975
+    },
+    {
+      "path": "scripts/colorize/__init__.py",
+      "sha": "13da85e517d83b448ef887eb88b65d8dfeb9b800",
+      "size": 11788
+    },
+    {
+      "path": "scripts/colorize/__main__.py",
+      "sha": "b168e600a1fb17cf0ea689a5dc2657f71610cd67",
+      "size": 3515
+    },
+    {
+      "path": "scripts/colorize/bambu_map.py",
+      "sha": "6053035fa14c3c4b0bfe3baab6c74c4e2694fe54",
+      "size": 3613
+    },
+    {
+      "path": "scripts/colorize/color_science.py",
+      "sha": "f0c822e75883236c49c1bf18ce76985d74b5872d",
+      "size": 3528
+    },
+    {
+      "path": "scripts/colorize/geometry.py",
+      "sha": "df7ac6c7d0de436c3c4e2263b666a4639bff795f",
+      "size": 5562
+    },
+    {
+      "path": "scripts/colorize/selection.py",
+      "sha": "2363b6f79faa5b615dd01e85332e6743b1efd8ba",
+      "size": 8924
+    },
+    {
+      "path": "scripts/colorize/texture.py",
+      "sha": "190895cba63a003173e7c7065cd620f2a5b73591",
+      "size": 5697
+    },
+    {
+      "path": "scripts/colorize/vertex_colors.py",
+      "sha": "25adffdfc82ab90e24d55451a5821e6391aa0ce8",
+      "size": 8705
+    },
+    {
+      "path": "scripts/common.py",
+      "sha": "06ef917112a775cfcc3f289f6c88e4faf3b61a28",
+      "size": 7921
+    },
+    {
+      "path": "scripts/doctor.py",
+      "sha": "0bad835c5678a81a187f8f2309da10a4e20e6fc1",
+      "size": 7310
+    },
+    {
+      "path": "scripts/generate.py",
+      "sha": "2d83d2f8924305a73a198ea9de5de2ed883c0443",
+      "size": 50273
+    },
+    {
+      "path": "scripts/monitor.py",
+      "sha": "6ec369df42c95f30c63aa1305fb49d1f6b487dc0",
+      "size": 15547
+    },
+    {
+      "path": "scripts/parametric.py",
+      "sha": "4b57626cd8f96d13308d010fd036ab09e3866eb3",
+      "size": 16243
+    },
+    {
+      "path": "scripts/preview.py",
+      "sha": "6216e5305c269268b76bac54f5374ccc61b63caa",
+      "size": 16392
+    },
+    {
+      "path": "scripts/search.py",
+      "sha": "0756b8b111fd9766e10813df632336cc6d8b3e40",
+      "size": 4721
+    },
+    {
+      "path": "scripts/slice.py",
+      "sha": "aed807605c1ebd77ea89cce7acc0e3347ac99128",
+      "size": 22000
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha": "437a84552047c6d49c8350c1ae748099cecf445a",
+      "size": 215
+    },
+    {
+      "path": "tests/test_boundary.py",
+      "sha": "49e7fda6e2d9f104b7b82c9abc0801b80b7ac08e",
+      "size": 6109
+    },
+    {
+      "path": "tests/test_color_science.py",
+      "sha": "02f4459068d61b62c004e2e0f9886aa593831189",
+      "size": 2903
+    },
+    {
+      "path": "tests/test_doctor.py",
+      "sha": "abb2ef06d2b0a107cc5513228a35fc216ff23dfc",
+      "size": 1672
+    },
+    {
+      "path": "tests/test_generate_cli.py",
+      "sha": "d4a50076ac219f93017eb76dbacc23d2a8ad90a4",
+      "size": 1853
+    },
+    {
+      "path": "tests/test_parametric.py",
+      "sha": "b54f872e11bfaa2ff288704e2648e8b81ae75d9d",
+      "size": 4654
+    },
+    {
+      "path": "tests/test_preview_cli.py",
+      "sha": "8857c4b57bda31575c9b5250545397766170daa6",
+      "size": 979
+    },
+    {
+      "path": "tests/test_scoring.py",
+      "sha": "887e5ac214406781e629e0da571acd6b261b4492",
+      "size": 2872
+    },
+    {
+      "path": "tests/test_search_cli.py",
+      "sha": "f820768533c6109c2555ec6d90053678dabb5c5b",
+      "size": 1885
+    },
+    {
+      "path": "tests/test_selection.py",
+      "sha": "b1101d008d7a79352409a1cbdb4eb11d201eb14d",
+      "size": 2401
+    },
+    {
+      "path": "tests/test_snap_colors.py",
+      "sha": "d9bcad7429b248b80644e530eb14a37702f3fdcc",
+      "size": 2262
+    }
+  ]
+}

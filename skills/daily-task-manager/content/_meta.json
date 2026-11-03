@@ -1,0 +1,30 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-06-02",
+  "description": "管理每日任务的家务、采购、健身和个人事务。当用户要求创建每日任务清单、管理任务优先级、查看任务进度、继承前一天未完成任务、进行任务统计复盘时使用。",
+  "features": [
+    "任务输入与自动分类",
+    "优先级管理 (A/B/C/D)",
+    "任务继承机制",
+    "软硬时间任务",
+    "网页清单生成",
+    "统计分析复盘",
+    "Supabase 持久化",
+    "跨设备同步"
+  ],
+  "id": 404719138513720,
+  "name": "daily-task-manager",
+  "platform": "minimax",
+  "requirements": {
+    "frontend": true,
+    "supabase": true
+  },
+  "tags": [
+    "task-management",
+    "daily-planner",
+    "productivity",
+    "supabase"
+  ],
+  "updated_at": 1780387067614,
+  "version": "1.0.0"
+}

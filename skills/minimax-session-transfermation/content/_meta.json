@@ -1,0 +1,11 @@
+{
+  "author": "Original author from source repository",
+  "created_at": "2026-10-03T01:59:00Z",
+  "description": "Move a MiniMax Code conversation, its attachments and its project to another computer, then keep chatting there. Use when the user says things like '把这个对话迁移到新电脑', '把这个 session 搬过去', '换个电脑继续这个项目', '把当前项目连同对话打包拷过去', '只迁移到某句话为止', or the English equivalents ('move this conversation to my other machine', 'migrate this session', 'export a session bundle', 'truncate the conversation at ...'). Also when they hand you a migration bundle to import.",
+  "id": 447303076471318,
+  "name": "minimax-session-transfermation",
+  "platform": "minimax",
+  "skill_id": 173265,
+  "updated_at": 1790964683747,
+  "version": "1.0"
+}

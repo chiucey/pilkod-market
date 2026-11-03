@@ -1,0 +1,43 @@
+{
+  "brand_info": {
+    "brand_name": "[品牌名称]",
+    "brand_id": "BRAND_[时间戳]",
+    "company_legal_name": "[公司全称]",
+    "industry": "[行业类别]",
+    "region": "[地区]"
+  },
+  "positioning": {
+    "one_sentence": "[一句话描述品牌的核心定位和差异化优势]",
+    "audience": ["[受众群体1]", "[受众群体2]"],
+    "scenarios": ["[场景1]", "[场景2]"],
+    "differentiation": ["[优势1]", "[优势2]", "[优势3]"]
+  },
+  "capability_pack": {
+    "core_offers": ["[产品/服务1]", "[产品/服务2]"],
+    "delivery_modes": ["[模式1]", "[模式2]"],
+    "strengths": ["[优势1]", "[优势2]", "[优势3]"],
+    "limitations": ["[局限1]", "[局限2]"]
+  },
+  "voice_and_style": {
+    "tone": "[专业/可信/简洁/亲切/权威]",
+    "vocabulary": {
+      "[术语1]": "[定义]",
+      "[术语2]": "[定义]"
+    },
+    "forbidden_terms": ["[禁忌1]", "[禁忌2]"]
+  },
+  "product_matrix": [
+    {
+      "product_name": "[产品名]",
+      "specs": ["[规格1]", "[规格2]"],
+      "use_cases": ["[案例1]", "[案例2]"],
+      "differentiators": ["[差异1]", "[差异2]"],
+      "certifications": ["[认证1]"]
+    }
+  ],
+  "versioning": {
+    "version_id": "v[时间戳]",
+    "updated_at": "[ISO 8601时间]",
+    "change_log": ["[变更1]", "[变更2]"]
+  }
+}

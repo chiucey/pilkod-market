@@ -1,0 +1,209 @@
+{
+  "模块": {
+    "胸部细节极致描述": {
+      "description": "所有胸部相关描述均服务于**视觉控制、结构写实、材质反馈与衣物物理效果**，不涉及性行为描写。",
+      "details": [],
+      "sd_tags": [],
+      "mj_rule": ""
+    },
+    "脸部细节极致描述": {
+      "description": "核心目标：",
+      "details": [],
+      "sd_tags": [],
+      "mj_rule": ""
+    },
+    "身材细节极致描述": {
+      "description": "核心目标：",
+      "details": [],
+      "sd_tags": [],
+      "mj_rule": ""
+    },
+    "服饰细节极致描述": {
+      "description": "核心目标：",
+      "details": [],
+      "sd_tags": [],
+      "mj_rule": ""
+    },
+    "丝袜细节极致拆解": {
+      "description": "",
+      "details": [
+        "stockings type: pantyhose / thigh-high / knee-high / garter stockings",
+        "coverage: full leg / mid-thigh / above-knee",
+        "toe style: reinforced / sheer toe",
+        "heel reinforcement visible",
+        "denier: ultra sheer / semi-sheer / opaque",
+        "skin tone visible through fabric",
+        "gradient transparency near knees and ankles",
+        "nylon texture",
+        "silk-like sheen",
+        "matte finish",
+        "micro weave pattern visible",
+        "fabric stretched over calf muscles",
+        "slight tension around knees",
+        "wrinkles forming at ankle joint",
+        "stocking edge gently pressing into thigh",
+        "lace top band",
+        "silicone grip strip",
+        "subtle seam line at back of leg",
+        "minor snags or imperfections"
+      ],
+      "sd_tags": [
+        "(sheer thigh-high stockings:1.3)",
+        "(visible skin tone underneath)",
+        "(silk-like sheen)",
+        "(stockings stretched over legs)",
+        "(lace top band)",
+        "(subtle wrinkles at ankles)"
+      ],
+      "mj_rule": ""
+    },
+    "内衣细节极致拆解": {
+      "description": "\"...delicate lace lingerie with fine mesh panels and satin trims, fitting closely to the body, the fabric softly following natural contours with subtle tension and refined craftsmanship visible in every seam...\"",
+      "details": [
+        "bra type: balconette / plunge / triangle / corset bra",
+        "panty type: briefs / thong / high-waist / lace panties",
+        "support structure: underwire / soft cup",
+        "lace fabric with floral pattern",
+        "mesh panels",
+        "satin finish",
+        "elastic band texture",
+        "fine stitching visible",
+        "bra lifting effect",
+        "fabric gently pressing into skin",
+        "elastic tension marks",
+        "natural body contour emphasized",
+        "small ribbon at center",
+        "metal adjusters",
+        "decorative straps"
+      ],
+      "sd_tags": [],
+      "mj_rule": "...delicate lace lingerie with fine mesh panels and satin trims, fitting closely to the body, the fabric softly following natural contours with subtle tension and refined craftsmanship visible in every seam..."
+    },
+    "外套细节极致拆解": {
+      "description": "",
+      "details": [
+        "coat type: trench coat / blazer / cape / long overcoat",
+        "jacket type: leather jacket / denim jacket / tailored blazer",
+        "structured shoulders",
+        "relaxed fit draping over inner layers",
+        "length covering hips / thighs / calves",
+        "wool texture",
+        "leather grain visible",
+        "heavy fabric weight causing deep folds",
+        "lining fabric visible when open",
+        "coat worn open",
+        "belt loosely tied",
+        "sleeves slightly oversized",
+        "fabric reacting to wind"
+      ],
+      "sd_tags": [
+        "(long wool coat)",
+        "(structured shoulders)",
+        "(heavy fabric folds)",
+        "(coat worn open)",
+        "(inner lining visible)",
+        "(realistic outerwear shadows)"
+      ],
+      "mj_rule": ""
+    },
+    "配饰细节极致拆解": {
+      "description": "\"...subtle accessories including a fine metal necklace resting along the collarbone and small earrings catching light as she moves, each piece adding quiet complexity through texture, reflection, and scale...\"",
+      "details": [
+        "necklace type: choker / pendant / layered chains",
+        "earrings: studs / hoops / dangling",
+        "bracelets: thin chain / rigid bangle",
+        "rings: minimal / gemstone",
+        "polished metal",
+        "brushed metal texture",
+        "gemstone light refraction",
+        "leather strap grain",
+        "necklace resting against collarbone",
+        "earrings swinging slightly with movement",
+        "bracelet sliding down wrist",
+        "ring catching highlights on fingers",
+        "tiny scratches on metal surface",
+        "clasp mechanism visible",
+        "asymmetrical accessory placement"
+      ],
+      "sd_tags": [],
+      "mj_rule": "...subtle accessories including a fine metal necklace resting along the collarbone and small earrings catching light as she moves, each piece adding quiet complexity through texture, reflection, and scale..."
+    },
+    "动作 / 姿态": {
+      "description": "动作不是标签，而是**力学 + 重心 + 关节 + 肌肉反应**的综合结果。",
+      "details": [
+        "weight shifted to one leg",
+        "center of gravity slightly off-axis",
+        "supporting leg straight, free leg relaxed",
+        "hip dropped on one side",
+        "micro imbalance for natural stance",
+        "natural S-curve spine",
+        "subtle spine twist",
+        "upper body leaning forward/backward slightly",
+        "chest opening vs hunching",
+        "lower back curve depth",
+        "shoulders relaxed and dropped",
+        "one shoulder slightly raised",
+        "neck extended / neck slightly tucked",
+        "head tilt angle subtle",
+        "arms resting naturally at sides",
+        "elbow angle relaxed",
+        "forearm tension minimal",
+        "fingers slightly curved, not stiff",
+        "thumb relaxed position",
+        "hand resting on hip / thigh / chest",
+        "hands interacting with clothing: pulling, holding, adjusting",
+        "knees slightly bent",
+        "legs crossed casually / parallel stance",
+        "inner thighs touching lightly",
+        "feet angle outward/inward subtly",
+        "heel pressure visible in posture",
+        "fabric reacting to movement",
+        "hair mid-sway",
+        "slight motion blur suggestion",
+        "muscle tension hint during action"
+      ],
+      "sd_tags": [],
+      "mj_rule": ""
+    },
+    "表情 / 微表情": {
+      "description": "表情 ≠ 大笑大哭",
+      "details": [
+        "gaze direction: direct / side glance / downward",
+        "eye focus intensity",
+        "half-lidded eyes / wide attentive eyes",
+        "pupil size responding to light/emotion",
+        "eyebrows slightly raised",
+        "inner brows drawn together",
+        "asymmetrical eyebrow position",
+        "brow tension subtle",
+        "lower eyelid tension",
+        "fine lines forming at outer corners",
+        "waterline moisture",
+        "tear residue / glassy eyes",
+        "lips slightly parted",
+        "mouth corners lifted subtly",
+        "jaw relaxed / clenched lightly",
+        "tongue barely visible behind teeth, optional",
+        "breathing implied through mouth shape",
+        "soft gaze + relaxed mouth = calm",
+        "side glance + tightened lips = guarded",
+        "half-lidded eyes + parted lips = intimate mood",
+        "downward gaze + brow tension = restrained emotion"
+      ],
+      "sd_tags": [],
+      "mj_rule": ""
+    },
+    "光影效果极致拆解": {
+      "description": "核心目标：",
+      "details": [],
+      "sd_tags": [],
+      "mj_rule": ""
+    }
+  },
+  "光影预设": {
+    "人像写实": "soft side light + gentle fill + skin SSS",
+    "情绪冷感": "hard side light + deep shadows + cool tone",
+    "高级时装": "top light + strong contrast + rim light",
+    "电影感": "low-key lighting + volumetric rays + color grading"
+  }
+}

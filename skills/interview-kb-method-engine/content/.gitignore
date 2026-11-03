@@ -1,0 +1,71 @@
+# ── 用户生成 / 含个人数据 —— 绝不提交 ─────────────────────
+cards/
+source/
+resume/
+profile.yaml
+resume.md
+config.yaml
+# 网页版「对话」页写的记录 —— 含使用者的原话与求职细节，绝不提交/分发
+chat/
+# setup 向导记录的选择（找岗模块是否启用）—— 因人而异，不该分发
+.boss_enabled
+
+# ── Boss 找岗产生的数据 —— 含浏览器登录凭据，绝不能提交 ────
+# 数据目录解析顺序：--data-dir > BOSS_DATA_DIR > cwd/.boss > skill同级/boss_data > 临时。
+# 登录态在 browser_profile/ 下 —— 那等同于你的账号 Cookie。
+# 实测：不写这几条时，`git add -A` 会把 .boss/browser_profile/Default/Cookies
+# 直接暂存并提交出去。
+#
+# 补充（2026 审计）：除了按目录名挡，再按**文件名**挡一层 ——
+# 因为 profile 可能出现在任何自定义 --data-dir / --profile 路径下，
+# 只靠 .boss/ 这类目录名挡不住。Cookies / Login Data 是账号级凭据。
+.boss/
+.boss_profile/
+boss_data/
+browser_profile/
+.login_profile/
+boss_jobs*.json
+boss_jd*.json
+boss_scrolled*.json
+boss_all.json
+boss_*.md
+筛选_*.md
+**/Cookies
+**/Login Data
+**/Login Data For Account
+**/Local State
+**/SingletonLock
+.jd_tmp_*
+
+# 用户实际使用的输入文件（示例版 resume.example.md / jd.txt / new.txt 保留）
+# 若你把真实内容写进 jd.txt / new.txt，取消下面注释即可不提交：
+# jd.txt
+# new.txt
+
+# ── 运行生成的报告产物（每次 report/strategy 等都会重写）────
+求职总报.md
+求职定位*.md
+求职诊断*.md
+痛点优势*.md
+跨场分析.md
+跨场总结*.md
+求职动态洞察*.md
+诊断*.md
+pulse*.md
+*_v2.md
+卡片表.csv
+*.pdf
+
+# ── Python ─────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── 编辑器/系统 ────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.last

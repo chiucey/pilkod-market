@@ -1,0 +1,17 @@
+name: image-to-video
+version: 1.0.0
+description: 基于静态图片生成逼真人物动态视频的图生视频技能。
+author: AI Assistant
+type: skill
+main: SKILL.md
+
+metadata:
+  tags:
+    - image-to-video
+    - video
+    - animation
+    - ai-video
+    - 图生视频
+  categories:
+    - media
+    - video-generation

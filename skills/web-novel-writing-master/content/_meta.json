@@ -1,0 +1,47 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-27",
+  "description": "专业网文写作技能系统，包含追读感校准、剧情结构设计、节奏控制、章尾钩子、悬念管理等核心模块。当用户需要创作网文、提升追读率、设计章节结构、管理读者期待、排查追读故障时使用此技能。",
+  "id": 381201401938223,
+  "name": "web-novel-writing-master",
+  "platform": "minimax",
+  "sub_skills": [
+    {
+      "description": "建立网文写作的核心底层认知，从根源纠正写作方向偏差",
+      "file": "sub-skills/reading-pulse-cognition.md",
+      "name": "reading-pulse-cognition"
+    },
+    {
+      "description": "掌握高追读网文的底层运转逻辑，搭建具备持续牵引力的故事核心结构",
+      "file": "sub-skills/four-step-loop-structure.md",
+      "name": "four-step-loop-structure"
+    },
+    {
+      "description": "实现从写零散片段到写完整连载系统的进阶",
+      "file": "sub-skills/serialized-structure-design.md",
+      "name": "serialized-structure-design"
+    },
+    {
+      "description": "打造张弛有度、高低起伏的健康剧情节奏",
+      "file": "sub-skills/rhythm-tension-control.md",
+      "name": "rhythm-tension-control"
+    },
+    {
+      "description": "掌握高转化率章尾钩子的设计方法",
+      "file": "sub-skills/chapter-hook-design.md",
+      "name": "chapter-hook-design"
+    },
+    {
+      "description": "平衡挖坑与填坑的关系，建立读者信任",
+      "file": "sub-skills/expectation-iteration.md",
+      "name": "expectation-iteration"
+    },
+    {
+      "description": "快速定位并修复追读低迷的核心问题",
+      "file": "sub-skills/troubleshooting.md",
+      "name": "troubleshooting"
+    }
+  ],
+  "updated_at": 1774620360858,
+  "version": "1.0.0"
+}

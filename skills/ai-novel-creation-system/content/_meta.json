@@ -1,0 +1,58 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-03",
+  "description": "AI小说创作辅助系统，包含完整的13阶段创作工作流，从核心DNA生成到章节创作的全流程指导",
+  "id": 383624662905372,
+  "language": "zh",
+  "name": "ai-novel-creation-system",
+  "phases": [
+    {
+      "name": "preparation",
+      "phase": 1,
+      "steps": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "structure-design",
+      "phase": 2,
+      "steps": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "content-creation",
+      "phase": 3,
+      "steps": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "knowledge-support",
+      "phase": 4,
+      "steps": [
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "platform": "minimax",
+  "steps_count": 13,
+  "tags": [
+    "novel-writing",
+    "creative-writing",
+    "storytelling",
+    "character-design",
+    "worldbuilding"
+  ],
+  "updated_at": 1775212720052,
+  "version": "1.0.0"
+}

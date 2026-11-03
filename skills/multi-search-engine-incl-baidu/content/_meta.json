@@ -1,0 +1,141 @@
+{
+  "author": "Customized for MaxClaw",
+  "created_at": "2024-03-22",
+  "description": "多搜索引擎聚合工具，支持Bing、Google、百度搜索，集成高级搜索运算符、时间筛选、站点搜索、隐私搜索、知识查询能力，满足全场景的搜索需求",
+  "engines": {
+    "core": [
+      "Bing",
+      "Google",
+      "Baidu"
+    ],
+    "template": {
+      "developer": [
+        "GitHub",
+        "Stack Overflow",
+        "Google Scholar"
+      ],
+      "domestic": [
+        "百度",
+        "Bing CN",
+        "360搜索",
+        "搜狗",
+        "神马"
+      ],
+      "international": [
+        "Google",
+        "DuckDuckGo",
+        "Yahoo",
+        "Bing"
+      ],
+      "knowledge": [
+        "WolframAlpha"
+      ],
+      "privacy": [
+        "DuckDuckGo",
+        "Startpage",
+        "Brave",
+        "Ecosia"
+      ],
+      "social": [
+        "微博",
+        "知乎",
+        "Twitter",
+        "YouTube"
+      ]
+    }
+  },
+  "envVars": [
+    {
+      "description": "Bing搜索API的密钥，用于使用Bing搜索功能",
+      "name": "BING_API_KEY",
+      "required": false
+    },
+    {
+      "description": "Google搜索API的密钥，用于使用Google搜索功能",
+      "name": "GOOGLE_API_KEY",
+      "required": false
+    },
+    {
+      "description": "百度搜索API的密钥，用于使用百度搜索功能，可在百度智能云控制台申请",
+      "name": "BAIDU_API_KEY",
+      "required": false
+    }
+  ],
+  "functions": [
+    {
+      "description": "通用多引擎搜索接口，支持切换不同搜索引擎，内置高级搜索、时间筛选、站点搜索能力",
+      "name": "universal_search",
+      "parameters": {
+        "properties": {
+          "count": {
+            "default": 10,
+            "description": "返回的搜索结果数量，范围1-50，默认10",
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "engine": {
+            "default": "bing",
+            "description": "选择搜索引擎，可选值：bing, google, baidu",
+            "enum": [
+              "bing",
+              "google",
+              "baidu"
+            ],
+            "type": "string"
+          },
+          "freshness": {
+            "default": null,
+            "description": "时间范围筛选，仅百度引擎生效，支持两种格式：1. 日期范围：YYYY-MM-DDtoYYYY-MM-DD 2. 快捷时间：pd(过去24小时)、pw(过去7天)、pm(过去31天)、py(过去365天)",
+            "type": "string"
+          },
+          "query": {
+            "description": "搜索查询词，支持所有引擎的高级搜索运算符：site:指定站点、filetype:指定文件类型、intitle:标题匹配、inurl:链接匹配",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      }
+    }
+  ],
+  "id": 379762039186313,
+  "license": "MIT",
+  "name": "multi-search-engine-incl-baidu",
+  "platform": "minimax",
+  "skill_type": "native",
+  "tags": [
+    "search",
+    "multi-engine",
+    "baidu",
+    "google",
+    "bing",
+    "privacy",
+    "tool"
+  ],
+  "trigger_words": [
+    "搜索",
+    "多引擎搜索",
+    "全网搜索",
+    "百度搜索",
+    "搜狗搜索",
+    "360搜索",
+    "Google搜索",
+    "谷歌搜索",
+    "Bing搜索",
+    "Yahoo搜索",
+    "隐私搜索",
+    "无追踪搜索",
+    "高级搜索",
+    "站点搜索",
+    "文件搜索",
+    "时间筛选",
+    "汇率转换",
+    "单位换算",
+    "数学求解"
+  ],
+  "updated_at": 1774268420969,
+  "version": "2.0.0"
+}

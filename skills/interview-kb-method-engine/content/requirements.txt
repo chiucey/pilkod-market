@@ -1,0 +1,17 @@
+# Dependencies (v3.1)
+#
+# NOTE: this package needs more than Python packages.
+# The Boss job-search commands also require:
+#   - Node.js 18+        (for tools/boss.mjs, tools/boss_jd.mjs)
+#   - Chrome or Edge     (auto-detected; no path config needed)
+#
+# If you only use the interview-notes engine
+# (main.py record / report / apply / job / evaluate ...),
+# pyyaml below is all you need -- no Node, no browser.
+# See tools/BOSS.md for the full dependency notes (in Chinese).
+#
+# KEEP THIS FILE ASCII-ONLY: pip reads requirements.txt using the system
+# locale encoding, so non-ASCII characters break it on Windows GBK.
+
+# Interview engine (required by all commands)
+pyyaml>=6.0

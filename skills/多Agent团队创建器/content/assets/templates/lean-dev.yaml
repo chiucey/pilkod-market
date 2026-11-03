@@ -1,0 +1,13 @@
+name: lean-dev
+description: 适合轻量开发团队，保留核心角色并补一个 QA。
+tags: [lean, dev]
+recommended_for: 小步快跑的迭代开发
+default_bind_feishu: false
+extends: base-default
+agents:
+  - name: coding
+    model: minimax/MiniMax-M2.5
+    emoji: "🛠️"
+  - name: qa
+    emoji: "🧪"
+    role: 测试

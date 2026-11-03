@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": ".clawhub/origin.json",
+      "sha": "a4d54cfcedc819284f3a2735f0bd33ea0ee8d48b",
+      "size": 144
+    },
+    {
+      "path": "README.md",
+      "sha": "305b76077e3e681dff619e5742abb15b2f222a80",
+      "size": 5617
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "f4e40b6e8898c5fc9c8a79a95fbafded2e938dcc",
+      "size": 1687
+    },
+    {
+      "path": "_meta.json",
+      "sha": "c85b3e5c4ee360ff6dd7d3826884debd53e855a7",
+      "size": 131
+    },
+    {
+      "path": "cli/entity.py",
+      "sha": "1b72f53925250e8252b77c9e92da46ba227e6e07",
+      "size": 3626
+    },
+    {
+      "path": "cli/fact.py",
+      "sha": "183f9aa53230f5d31d82fc74c1c2855ff19a6db0",
+      "size": 3462
+    },
+    {
+      "path": "cli/learn.py",
+      "sha": "ef71b20ac16d2b3b971bd00617ab500c13eb94c9",
+      "size": 2392
+    },
+    {
+      "path": "examples/basic_usage.py",
+      "sha": "21f728c0ae005995b680d7cc6e04d90c18f5fb9b",
+      "size": 2848
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "e997477680ea73df9b24e0d62f7b9b16866a1350",
+      "size": 48
+    },
+    {
+      "path": "src/__init__.py",
+      "sha": "fae18535153b33e7c5df51a28f2af0a3b7ffccda",
+      "size": 212
+    },
+    {
+      "path": "src/memory.py",
+      "sha": "c73f14558c5e7b5925106202e0c4a5ac6a629b98",
+      "size": 22097
+    },
+    {
+      "path": "tests/test_memory.py",
+      "sha": "90dba3c62679efd556a04b6d7fc62313cdefadac",
+      "size": 5253
+    }
+  ]
+}

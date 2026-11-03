@@ -1,0 +1,4 @@
+interface:
+  display_name: "MiniMax 人生决策圆桌"
+  short_description: "让六个角色先独立判断，再充分辩论并给出具体行动建议"
+  default_prompt: "使用 $minimax-decision-roundtable 帮我分析一个重要的人生决策。"

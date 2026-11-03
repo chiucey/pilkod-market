@@ -1,0 +1,659 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "71ee78285f54e931b5e67353810f31e5cb05e7fc",
+      "size": 9857
+    },
+    {
+      "path": "_meta.json",
+      "sha": "2f9c5ade1f24e78ce87b3d2401ae7d86b82e3b49",
+      "size": 136
+    },
+    {
+      "path": "references/01_框架总览_Map_v0.5.md",
+      "sha": "bc58ea0236c642e8eb47e17a1e10fd31b26dc816",
+      "size": 14363
+    },
+    {
+      "path": "references/industry-profiles/02_Xi-Fen-Xing-Ye-Hua-Xiang-_Shu-Zi-Hua-Yu-Zhi-Neng-Hua-_v1.3.md",
+      "sha": "1f564b5b5ad88ae394bb06d509ec44ff89d5ba2f",
+      "size": 20714
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_低空经济_v1.0.md",
+      "sha": "f85a040ab1ffb756356d689caf2453182f8b5ba0",
+      "size": 6114
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_低空经济_v1.1.md",
+      "sha": "1d0b92a4867f734596d4a1d1804a8ceeb29f327a",
+      "size": 4279
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_低空经济_v1.2.md",
+      "sha": "990207f463f804b402a67c8564e3f5a62f39e197",
+      "size": 8879
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_数字化与智能化_v1.0.md",
+      "sha": "71f5536236b57633533d47dfff1944b312372aeb",
+      "size": 2654
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_数字化与智能化_v1.1.md",
+      "sha": "e3308a13995bdc6e72dc9c69f31e15a059899722",
+      "size": 3104
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_数字化与智能化_v1.2.md",
+      "sha": "e4162c57010c2f58062a77cca67f01cde4e2f580",
+      "size": 7555
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_新能源与双碳_v1.0.md",
+      "sha": "31ed1c75082c40111d5e1fd5933264189f3d670a",
+      "size": 2568
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_新能源与双碳_v1.1.md",
+      "sha": "a336bbd9cefe527842566cd9cbfb061e2fb0d397",
+      "size": 3087
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_新能源与双碳_v1.2.md",
+      "sha": "55598e3d12014499062be1c3da1f7d85f47fe4af",
+      "size": 7456
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_新能源与双碳_v1.3.md",
+      "sha": "f0ab9d52e8651b42fe5451e0c9d0e4cf97d40f7e",
+      "size": 20689
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_智能经济新形态_v1.0.md",
+      "sha": "d96f9aa01ac625fb615bf67029deef1710f3255f",
+      "size": 6345
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_智能经济新形态_v1.1.md",
+      "sha": "9f3983255ce716de943ff9158b62828ea518f54c",
+      "size": 3196
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_智能经济新形态_v1.2.md",
+      "sha": "9655800b029cee01f26fbe876e8313c0c96c5af8",
+      "size": 10841
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_消费与品牌升级_v1.0.md",
+      "sha": "2f46a2ce17330ac406d5c57fd3ef17f2b813bf3b",
+      "size": 2562
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_消费与品牌升级_v1.1.md",
+      "sha": "16807c5a1d9d0b6b7fee963f87a7c4a9f106a0e6",
+      "size": 2884
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_消费与品牌升级_v1.2.md",
+      "sha": "acd84981ac6e27153b381efd9cf9cb988896b71b",
+      "size": 7426
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_生命科学_创新药_v1.0.md",
+      "sha": "808f7730b5e756a0c6b5d307edcf7d0a313fcad4",
+      "size": 9868
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_生命科学_创新药_v1.1.md",
+      "sha": "68ffd9a701e8add62682a95611e28f263d53b1aa",
+      "size": 2884
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_生命科学_创新药_v1.2.md",
+      "sha": "6c741cfabf0ee118b31a94295fe64aa584646df9",
+      "size": 9753
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_生命科学_医疗器械_v1.0.md",
+      "sha": "b53ef0c75e8490e621da144a385d21136d2402df",
+      "size": 6588
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_生命科学_医疗器械_v1.1.md",
+      "sha": "ce1d760f02ad2ee188dfe19ae8c94a3060d1ba97",
+      "size": 2899
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_生命科学_医疗器械_v1.2.md",
+      "sha": "e5c0b2e5ccead8e87f4ce54ee8696db78d9905e8",
+      "size": 9452
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_航天航空_v1.0.md",
+      "sha": "0b76e5493fa29fcaef3e1d350086b7b2224bb007",
+      "size": 2485
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_航天航空_v1.1.md",
+      "sha": "c18f2b8591f411f0c5c19d9ee70feb98bc425b1a",
+      "size": 2833
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_航天航空_v1.2.md",
+      "sha": "e9a6bd214f5053c903353252b02fcfd33478efb4",
+      "size": 8915
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_集成电路_v1.0.md",
+      "sha": "36616731237dcbafbdbb0ba8371a59ce780b76a5",
+      "size": 9877
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_集成电路_v1.1.md",
+      "sha": "6f7a6a31dd131e5f211cffc3267126964e89831d",
+      "size": 3436
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_集成电路_v1.2.md",
+      "sha": "4fa9bb572055df1f0df24d2df19c8b9e9c5ab634",
+      "size": 9988
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_高端装备_v1.0.md",
+      "sha": "f190e86360cf332f32ca9d43042641eb0c5c053d",
+      "size": 4921
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_高端装备_v1.1.md",
+      "sha": "636471692a2716c050d44eac5a4a02a322429c10",
+      "size": 2745
+    },
+    {
+      "path": "references/industry-profiles/02_细分行业画像_高端装备_v1.2.md",
+      "sha": "615618dc96bd710b231b96da0814fcd263a4ff7b",
+      "size": 9063
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_低空经济_eVTOL_v0.1.md",
+      "sha": "eeb16a96c7443d4e7a7a70a80397f4bdb4eb53ae",
+      "size": 2049
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_低空经济_eVTOL_v1.1.md",
+      "sha": "384ff2cbff5cb684dcb024ad55c7c46b43505eca",
+      "size": 3915
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_低空经济_eVTOL_v1.2.md",
+      "sha": "5dd1a313e6f8f1f4a08ecb55bfe35eca288291ef",
+      "size": 8174
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_低空经济_工业级无人机_v0.1.md",
+      "sha": "ebf40bc3201df362b54641d5d7862ad2a071c24d",
+      "size": 1488
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_低空经济_工业级无人机_v1.1.md",
+      "sha": "61cb86da6e8825708108e1c600509433478a225f",
+      "size": 3015
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_低空经济_工业级无人机_v1.2.md",
+      "sha": "e1911d203312791bce87ba4636e990423761be8a",
+      "size": 8391
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与信息安全_v1.1.md",
+      "sha": "5308b5d2d7e5f9a266ac050580999079c8e7ca9e",
+      "size": 2959
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与信息安全_v1.2.md",
+      "sha": "99b7b2ba3ccd53fba1bef61ec8a2c78b75801c8d",
+      "size": 8612
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_工业软件_v1.0.md",
+      "sha": "2f3eb03318d023f0f43af0ec368de8c377102895",
+      "size": 2184
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_工业软件_v1.2.md",
+      "sha": "51312f9f9d3b4f9bdc2121c54d4b38b9bc7d999a",
+      "size": 8603
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_数据要素与隐私计算_v1.0.md",
+      "sha": "3a3bdf3b5e3c4a7af2e2b971e5558fce4718593e",
+      "size": 2208
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_数据要素与隐私计算_v1.2.md",
+      "sha": "66c4d260ddb6dce4c9c247a391b373795dcd5ac5",
+      "size": 8249
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_智能制造与数字工厂_v1.0.md",
+      "sha": "b15f160987ef30268810485f55353f00e06d7375",
+      "size": 2121
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_智能制造与数字工厂_v1.2.md",
+      "sha": "5a6777c75be4a65f983b3a468be2bfd60bda74f5",
+      "size": 8233
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_网络与信息安全_v1.0.md",
+      "sha": "bc0a2eea4b835b7a81150cf843c57109b8c59248",
+      "size": 2255
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_网络与信息安全_v1.2.md",
+      "sha": "2c602e78026276681f3979d7c65b6b8e9b465d37",
+      "size": 8717
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_金融科技_v1.0.md",
+      "sha": "93e74cd5250bbfd71bfb1f991b6890e740476a28",
+      "size": 2181
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字化与智能化_金融科技_v1.2.md",
+      "sha": "5076ee8806043a431dfda8df3414ca6a184c4f4f",
+      "size": 8519
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_数字空间_元宇宙_v0.1.md",
+      "sha": "ba823021f17aeaa39bd2fba3f334af28c5924cbe",
+      "size": 7559
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_光伏_v1.0.md",
+      "sha": "dc4f0fb991789b57b0ac2cc0b57861586bfa32b7",
+      "size": 2086
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_光伏_v1.2.md",
+      "sha": "b2cfcb80c9a634fa0fa3ed03163120ad779eac1e",
+      "size": 8258
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_动力电池与储能_v1.0.md",
+      "sha": "1082371fcb9978f1ee06079f215c3cd955ed62ab",
+      "size": 2116
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_动力电池与储能_v1.2.md",
+      "sha": "39001d2e892af50f8ce4d3e08aec2bf094999aeb",
+      "size": 7252
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_新能源汽车_v1.0.md",
+      "sha": "bda4d46984586a294ba9231cc417cfc00b768db3",
+      "size": 2142
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_新能源汽车_v1.2.md",
+      "sha": "fb516e5e35f5f9cb0df3456a91d6bb280101800a",
+      "size": 8385
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_氢能_v1.0.md",
+      "sha": "5273a958323202accecfbf8ee93ff936c27dc19a",
+      "size": 2180
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_氢能_v1.2.md",
+      "sha": "2acc1c45fea54927880fbe162a603522d48c4293",
+      "size": 7185
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_风电_v1.0.md",
+      "sha": "8c7f71860fb8d6dfdbf7ee0a25f3f43b313c4aac",
+      "size": 1898
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_新能源与双碳_风电_v1.2.md",
+      "sha": "d955924aaaca146bd8457328951be517ba9d862e",
+      "size": 8145
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_AI芯片_v0.1.md",
+      "sha": "91e441c037c649a3a8554af32e6526430ee297c3",
+      "size": 2394
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_AI芯片_v1.2.md",
+      "sha": "ddcfd2bd0f0da402fd992c6e20b39f22670801e8",
+      "size": 8149
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_人形机器人_v0.1.md",
+      "sha": "e5023f3c8e551a24591398f5e54ffb1450edaf69",
+      "size": 4916
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_人形机器人_v1.2.md",
+      "sha": "5884393a375c22e5e7cc372f0c67ff504cd24aa8",
+      "size": 6389
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_具身智能_v0.1.md",
+      "sha": "e37c640f15c785dee1be218e4f89aa912d69f95d",
+      "size": 2820
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_具身智能_v1.2.md",
+      "sha": "80ea492549d5b106c47d274e26e44a07d1de7f2b",
+      "size": 5625
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_自动驾驶_v0.1.md",
+      "sha": "794a3ea33b4d1c2518053478d76b4df490b34f8d",
+      "size": 4499
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_自动驾驶_v1.2.md",
+      "sha": "a1e5c2b865b07b2d0c62d738c3ce8a53f02fe655",
+      "size": 7284
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_通用大模型_v0.1.md",
+      "sha": "511757f706b8ff16416d330b87d0ffd994146655",
+      "size": 5585
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_智能经济_通用大模型_v1.2.md",
+      "sha": "a7746304f802d1bd01726539c357625667d759f1",
+      "size": 6175
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_机器人_工业机器人_v0.1.md",
+      "sha": "ebef7c23a746fccafb246368519f061ab6333227",
+      "size": 3000
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_机器人_工业机器人_v1.1.md",
+      "sha": "2d0b2d44863e19d9ecfe17ad030a301fe1a3104d",
+      "size": 2855
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_机器人_工业机器人_v1.2.md",
+      "sha": "9cb6a227cc714e3cd0efbd7b38ed6f34268cc975",
+      "size": 8645
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_机器人_核心零部件_v0.1.md",
+      "sha": "e0efed439bfc54fd6a2e58664cb9362b9cdfcfe7",
+      "size": 2911
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_机器人_核心零部件_v1.1.md",
+      "sha": "09f7ae570bea70eda0d8417c8c28b52ed4819dec",
+      "size": 2786
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_机器人_核心零部件_v1.2.md",
+      "sha": "155a0001f4769b11a187ee11cb00b507fe6e15a1",
+      "size": 7173
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_消费与品牌升级_新消费品牌_v1.0.md",
+      "sha": "4495e37fafcfb2945396eb4bc7498dfb238225c3",
+      "size": 2192
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_消费与品牌升级_新消费品牌_v1.2.md",
+      "sha": "f278c41d2477c0eca74786fbd7650ffd5b89feaa",
+      "size": 8015
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_消费与品牌升级_消费电子_v1.0.md",
+      "sha": "9fc7920bd05cbcc48635fbb094acffcd15f56346",
+      "size": 2175
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_消费与品牌升级_消费电子_v1.2.md",
+      "sha": "64c5b4359cbbcf2b5aa989739666e17a29a62aa2",
+      "size": 6131
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_消费与品牌升级_跨境电商与出海品牌_v1.0.md",
+      "sha": "839994e47a8b7c54129751eab07cff1dc2af830f",
+      "size": 2160
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_消费与品牌升级_跨境电商与出海品牌_v1.2.md",
+      "sha": "85f9362cd55c346f5aa1f04906ec1187b3488582",
+      "size": 7154
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_创新药_基因与细胞疗法_v0.1.md",
+      "sha": "e19ae433cbb62508fa4965d4fe39096ed3c31ad8",
+      "size": 2861
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_创新药_基因与细胞疗法_v1.2.md",
+      "sha": "3a6578333c8e9608393a9b465a1bf304855cf84f",
+      "size": 6157
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_创新药_大分子_v0.2.md",
+      "sha": "c92d74fd20ea4bbb6ee1bf1d8096b258ba8ef72f",
+      "size": 5280
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_创新药_大分子_v1.2.md",
+      "sha": "c49ddfa6e0a0c31aca0f1d6e629342f0679e559f",
+      "size": 8470
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_创新药_小分子_v0.1.md",
+      "sha": "e58c39309225710d0ff4941d8b4e00966c0dc359",
+      "size": 2832
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_创新药_小分子_v1.2.md",
+      "sha": "a0dea6111c419ad54bedde2ccfdd04f7fb10ece1",
+      "size": 7055
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_体外诊断_v0.1.md",
+      "sha": "8846ac67a3d69e87b3fa664aecf303a81168f859",
+      "size": 2285
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_体外诊断_v1.2.md",
+      "sha": "0596ca6337e289894b6525ebb5c49ad3a1cc652e",
+      "size": 6975
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_医学影像_v0.1.md",
+      "sha": "c0f6fe9590a9cc5e13a67a082342bbc845bd98b6",
+      "size": 2882
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_医学影像_v1.2.md",
+      "sha": "658707565976727d07ec39543f839bbc900abb86",
+      "size": 7192
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_手术机器人_v0.1.md",
+      "sha": "b4ce4f2fde15b530d50069d41668730ed5cd1a92",
+      "size": 2866
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_手术机器人_v1.2.md",
+      "sha": "24c4201b5eb32c67b6c8303538e8467f17127cdd",
+      "size": 7163
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_高值耗材_v0.1.md",
+      "sha": "12d7010197dc0e453c8d3471266fea9ae2bf08d9",
+      "size": 5189
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_生命科学_医疗器械_高值耗材_v1.2.md",
+      "sha": "8dfe9dab7ca80eaccdba816fd8e4e972c6f29488",
+      "size": 7195
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_EDA与IP_v0.1.md",
+      "sha": "c7883d99e43aa72b81e8b49c34d5918f93ecd576",
+      "size": 2834
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_EDA与IP_v1.1.md",
+      "sha": "2858c6f555d5d359e55a416268b0d2f348d6a45d",
+      "size": 2951
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_EDA与IP_v1.2.md",
+      "sha": "fcb6c045c9c0a05fcaa04388ce6217a9c9a618bc",
+      "size": 7068
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_功率半导体_v1.0.md",
+      "sha": "da9ebe0d4a45b55abaa8b8670761cd51c86c6047",
+      "size": 1978
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_功率半导体_v1.1.md",
+      "sha": "3cefded5bd87c2d677e003100c5f43478c051820",
+      "size": 3104
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_功率半导体_v1.2.md",
+      "sha": "505963b4e28e2e1c57290034e2e00c4c095db30e",
+      "size": 7267
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_半导体材料_v0.1.md",
+      "sha": "cb7e2fd648ae1f161afeaa35d85780dc3ef47dad",
+      "size": 2888
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_半导体材料_v1.1.md",
+      "sha": "8aec1717bfde14e0c0bfdc206fd9af178c573109",
+      "size": 2992
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_半导体材料_v1.2.md",
+      "sha": "0b162b6d6807b55bce25d9d2166424380676857a",
+      "size": 7145
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_半导体设备_v0.1.md",
+      "sha": "25223979f7f6d62f0617d67df33d4e850c552ce6",
+      "size": 4859
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_半导体设备_v1.1.md",
+      "sha": "0ccf13c93e1215ae9778a2f388385082f90c63cc",
+      "size": 2943
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_半导体设备_v1.2.md",
+      "sha": "dfd084042789bcde2da4b4ba6c1587331b32966b",
+      "size": 4734
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_封装测试_v0.1.md",
+      "sha": "44f24f7d161e7f2c153dfb82999fc8e701dee025",
+      "size": 2623
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_封装测试_v1.1.md",
+      "sha": "8a0d37cd85d142c526f4f94753a0a14facb384dc",
+      "size": 2788
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_封装测试_v1.2.md",
+      "sha": "7339ccbd350f37429abca7a4bcaff267cdf15a0f",
+      "size": 6675
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_晶圆制造_v0.1.md",
+      "sha": "fcca27d7ec78cba61ee0f63bf96dfebf59a0ec0a",
+      "size": 2673
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_晶圆制造_v1.1.md",
+      "sha": "ca564a68eb709ef508f3569944952c8c7439e6c5",
+      "size": 2800
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_晶圆制造_v1.2.md",
+      "sha": "768b352098638905029e8d0ce3651bfbecdb69b7",
+      "size": 6577
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_芯片设计-数字_v1.0.md",
+      "sha": "f8271699af18d3605f7522b92c145579d3f2a279",
+      "size": 2022
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_芯片设计-数字_v1.2.md",
+      "sha": "704a0ccc70492b973cce08287bb0b7d60e357df7",
+      "size": 4723
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_芯片设计-模拟_v1.0.md",
+      "sha": "439f1b94b07b64ebd5696d01811a9f96389ac7eb",
+      "size": 2060
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_芯片设计-模拟_v1.1.md",
+      "sha": "2ee670c27733ae5ae06a9d2d31869cd4b70b031d",
+      "size": 2959
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_集成电路_芯片设计-模拟_v1.2.md",
+      "sha": "fa45070a31f36bac77dbecdbb60b3989f1ca808e",
+      "size": 8144
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_高端装备_商业航天_v0.1.md",
+      "sha": "b3fb64a6fc39dd31ef96eee07174442fc0397281",
+      "size": 3875
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_高端装备_商业航天_v1.1.md",
+      "sha": "10653f103cf2fddb57fd91ebf9a5580c65472c1a",
+      "size": 3126
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_高端装备_商业航天_v1.2.md",
+      "sha": "8c31b2a025545ad732e7d6909e36304aa35d20be",
+      "size": 6346
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_高端装备_高端装备_v1.0.md",
+      "sha": "d64141d44eb91d408cb2de98824cc40049dc523e",
+      "size": 2221
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_高端装备_高端装备_v1.1.md",
+      "sha": "828292e6be5d506d03f339b4f025f619c3926cd3",
+      "size": 3011
+    },
+    {
+      "path": "references/industry-profiles/03_细分行业画像_高端装备_高端装备_v1.2.md",
+      "sha": "27e42f462ee4769fb7a5ef1f9b5e5a0245d2f23f",
+      "size": 7245
+    },
+    {
+      "path": "references/industry-profiles/README.md",
+      "sha": "bc0d9985b075f86e7e56320ec9c786a4dfef443e",
+      "size": 752
+    },
+    {
+      "path": "references/report-framework-v2.md",
+      "sha": "72842beb2dd4c015247d5e5adf18c0ff9e31f28b",
+      "size": 18462
+    }
+  ]
+}

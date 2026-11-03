@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-06-06",
+  "description": "Extract structured data (title, author, publish_time, body) from Tencent News web pages. Use when users need to extract article content, parse news metadata, or batch process Tencent News pages.",
+  "id": 405925744616221,
+  "name": "tencent-news-extractor",
+  "platform": "minimax",
+  "skill_id": 3069,
+  "updated_at": 1780714049087,
+  "version": "1.0.0"
+}

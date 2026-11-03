@@ -1,0 +1,45 @@
+{
+  "strategy_name": "资金效率动量策略",
+  "version": "2.0",
+  "description": "纯日线数据版本的资金流向估算与主力行为识别策略（优化版）",
+  "author": "资金效率策略团队",
+  "params": {
+    "max_holding": 10,
+    "stop_loss": 0.05,
+    "trailing_stop": 0.08,
+    "min_amount": 50000000,
+    "min_market_cap": 200000000,
+    "rebalance_freq": 5
+  },
+  "weights": {
+    "fund": 0.30,
+    "mfi": 0.20,
+    "volume": 0.15,
+    "obv": 0.15,
+    "divergence": 0.10,
+    "breakout": 0.10
+  },
+  "signals": {
+    "buy_score_threshold": 0.6,
+    "sell_score_threshold": 0.4,
+    "mfi_dynamic_p20": true,
+    "mfi_dynamic_p80": true,
+    "mfi_overbought": 80,
+    "mfi_oversold": 20,
+    "volume_concentration_threshold": 1.2,
+    "obv_health_min": 0.5,
+    "fake_volume_filter": true
+  },
+  "data_requirements": {
+    "required_columns": ["open", "high", "low", "close", "vol", "amount", "float_shares", "market_cap"],
+    "min_history_days": 30
+  },
+  "new_features_v2": [
+    "动态MFI阈值（基于60日分位数）",
+    "关键价位突破验证机制",
+    "股票代码三码验证",
+    "OBV成交量真实性验证",
+    "虚假成交量检测",
+    "复合策略信号确认框架"
+  ]
+}

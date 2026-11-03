@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "INSTALLATION.md",
+      "sha": "2592cacfccc92e5f0ebe38ad5c09f206ea8432e1",
+      "size": 4444
+    },
+    {
+      "path": "README.md",
+      "sha": "1ec6e09db9210a598d3693df12cf920f3d8eb609",
+      "size": 2543
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "bf8e52a5ffc7422cdc7ab7f7ebe38e2e6708efdb",
+      "size": 4024
+    },
+    {
+      "path": "_meta.json",
+      "sha": "a5d98a798c1ed5cdb21eb1176166ca6fd8200463",
+      "size": 252
+    },
+    {
+      "path": "install.sh",
+      "sha": "0285aabecffecadc967c9c9e4c18bfdf86c8d075",
+      "size": 1128
+    },
+    {
+      "path": "mcporter_adapter.py",
+      "sha": "853a4f5beec8385966e1f67be5609ab6bf7a5d9d",
+      "size": 7010
+    },
+    {
+      "path": "openclaw.yaml",
+      "sha": "7e28841a1dbafd242ad0d63c9f2e827ee96c4213",
+      "size": 1335
+    },
+    {
+      "path": "package.json",
+      "sha": "b3104c916a51cb309dcd09f119cf636682bca92c",
+      "size": 817
+    },
+    {
+      "path": "src/cli.ts",
+      "sha": "9953354974b621ea7443a51b370ab568193f5a9a",
+      "size": 5312
+    },
+    {
+      "path": "src/index.ts",
+      "sha": "3215bb82f5594563aa335b5927bed88d489fc9c5",
+      "size": 9233
+    },
+    {
+      "path": "src/mcp-tools.ts",
+      "sha": "c4b307124fc76788c9fa4d714d2aecd852d17c56",
+      "size": 2875
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "9e766fc50fc60118a530ff827ebc3f6d0d070c5b",
+      "size": 422
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+# 每半月数据喂入模板
+# 提交时间：每月1日或16日（48小时内提交）
+# 提交格式：直接粘贴以下模板，填写所有字段
+
+data_submission:
+  period: "2026-04-上半月"  # 格式：YYYY-MM-上半月/下半月
+  market_type: "A股+港股"    # A股/港股/A股+港股
+
+# 一、持仓概况（必填）
+portfolio:
+  a_share:
+    main_positions:  # 主仓：宽基ETF
+      - code: "510300"      # ETF代码
+        name: "沪深300ETF"  # ETF名称
+        ratio: 0.35        # 占比（0-1之间）
+        current_value: 350000  # 当前市值（元）
+      - code: "588000"
+        name: "科创50ETF"
+        ratio: 0.15
+        current_value: 150000
+    satellite_positions:  # 卫星仓：行业ETF
+      - code: "512760"      # AI算力方向
+        name: "芯片ETF"
+        ratio: 0.12
+        current_value: 120000
+        direction: "AI算力" # 方向标注
+      - code: "502015"
+        name: "航天ETF"
+        ratio: 0.08
+        current_value: 80000
+        direction: "商业航天"
+    flexible_positions:  # 机动仓
+      - code: "159819"
+        name: "AI算力ETF"
+        ratio: 0.10
+        current_value: 100000
+        direction: "AI算力"
+    cash_reserve: 0.20  # 现金储备比例
+    total_value: 1000000  # 总市值（元）
+
+  hk_share:
+    main_positions:
+      - code: "02800"
+        name: "盈富基金"
+        ratio: 0.25
+        current_value: 250000
+    satellite_positions:
+      - code: "03033"
+        name: "恒生科技ETF"
+        ratio: 0.10
+        current_value: 100000
+        direction: "科技"
+
+# 二、本周操作记录（若无操作填「无」）
+operations:
+  this_week:
+    - date: "2026-04-10"
+      action: "买入"  # 买入/卖出/无操作
+      code: "512760"
+      name: "芯片ETF"
+      quantity: 1000
+      price: 1.20
+      amount: 1200
+      reason: "AI算力方向加仓"
+  last_week:
+    - date: "2026-04-03"
+      action: "卖出"
+      code: "515050"
+      name: "5G ETF"
+      quantity: 500
+      price: 1.15
+      amount: 575
+      reason: "调仓至AI算力方向"
+
+# 三、账户盈亏情况（必填）
+account_performance:
+  period_return: 0.035     # 本期收益率（如3.5%填0.035）
+  ytd_return: 0.085         # 年初至今收益率
+  benchmark_return: 0.042   # 同期基准收益率（沪深300）
+  max_drawdown: 0.045        # 本期最大回撤（如4.5%填0.045）
+
+  # 各方向盈亏
+  direction_returns:
+    AI算力: 0.065
+    商业航天: 0.028
+    生物制造: -0.015
+    新型电力: 0.012
+
+# 四、认知更新（必填，至少填写一个模块）
+cognitive_updates:
+  # 模块A：方向认知更新
+  direction_insights:
+    - direction: "AI算力"
+      insight: "近期观察到国内大模型密集发布，算力需求超预期，但芯片国产化率仍低，需关注供应链安全"
+      confidence: 0.80  # 信心程度0-1
+      source: "行业研报+个人观察"
+    - direction: "商业航天"
+      insight: "商业航天进入快速发展期，但估值偏高，需要等待更好的入场时机"
+      confidence: 0.60
+      source: "政策文件+市场观察"
+
+  # 模块B：操作反思
+  operation_reflections:
+    - operation: "买入芯片ETF"
+      reflection: "操作过于急躁，在没有确认趋势的情况下追高，下次应在回调时买入"
+      lesson: "追高容易被动，应该耐心等待买点"
+
+  # 模块C：认知盲点
+  blind_spots:
+    - description: "对港股市场的流动性风险认识不足"
+      improvement: "需要增加对港股ETF折溢价的关注频率"
+
+# 五、方向评分（必填，对四个方向进行1-5分评分）
+direction_scores:
+  AI算力: 4.5   # 1=不看好的，5=非常看好
+  商业航天: 3.5
+  生物制造: 3.0
+  新型电力: 3.5
+
+# 六、需要解答的问题（可选）
+questions:
+  - "当前AI算力方向估值是否偏高？是否应该等待回调？"
+  - "商业航天方向有无具体的催化剂时间节点？"
+  - "生物制造方向的仓位是否应该止损？"
+
+# 七、情绪状态自评（必填）
+emotional_state:
+  overall: "平稳"  # 平稳/略有焦虑/焦虑/恐慌
+  confidence: 0.75  # 对当前持仓的信心0-1
+  impulse_level: 0.20  # 想操作的冲动0-1（0=完全不想动，1=非常想操作）
+
+  # 如有焦虑，需说明原因
+  anxiety_source: ""  # 如无焦虑填「无」
+
+  # 是否需要道Agent介入
+  need_dao_intervention: false  # true/false

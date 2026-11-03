@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "d8883d4327ab43b01c665a7623ad178e465418d4",
+      "size": 7694
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "b67ee290135299cf409b66e606b418bec2ecb8af",
+      "size": 3358
+    },
+    {
+      "path": "SPEC.md",
+      "sha": "82cd9a0f14c960451297f3755a456706bc2d3119",
+      "size": 3405
+    },
+    {
+      "path": "_meta.json",
+      "sha": "5d1efa81eb3393f91b202b9f4576f65ed3b8ba78",
+      "size": 146
+    },
+    {
+      "path": "main.py",
+      "sha": "9b8a1c96f93e52b46a292f61d0e39264b9b18466",
+      "size": 4633
+    },
+    {
+      "path": "modules/__init__.py",
+      "sha": "57e012e969ae7df382adc88d2e24b6f48187cbf5",
+      "size": 390
+    },
+    {
+      "path": "modules/config_loader.py",
+      "sha": "87a5781134f564146288d4519f82faeadb87141f",
+      "size": 4709
+    },
+    {
+      "path": "modules/news_fetcher.py",
+      "sha": "13260a504ce39bc122090a95a778f503474841b5",
+      "size": 6502
+    },
+    {
+      "path": "modules/news_formatter.py",
+      "sha": "da9e6136900985142f4f87288fe161a9744f1c79",
+      "size": 16966
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "ca1a15c7072ce4d7b3c6356165240ef906b2953a",
+      "size": 171
+    }
+  ]
+}

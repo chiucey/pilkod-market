@@ -1,0 +1,60 @@
+benchmark:
+  benchmark_score: 5.0
+  eval_mode: tool_test(analyze.py)
+  output: '[TOOL: analyze.py]
+
+    === Detail Level 1 ===
+
+    输出字段：[''status'', ''skill'', ''summary'', ''key_findings'', ''detail_level'']
+
+
+    === Detail Level 2 ===
+
+    输出字段：[''status'', ''skill'', ''summary'', ''key_findings'', ''main_results'',
+    ''detail_level'']
+
+
+    === Detail Level 3 ===
+
+    输出字段：[''status'', ''skill'', ''timestamp'', ''detail_level'', ''data'', ''phases'']'
+  passed: true
+  test_prompt: 评估某项减税政策对企业投资的因果效应，用双重差分法。
+dimensions:
+  architecture:
+    score: 9.0
+    weight: 15
+  benchmark:
+    score: 5.0
+    weight: 25
+  boundary:
+    score: 8.0
+    weight: 10
+  checkpoint:
+    score: 7.0
+    weight: 7
+  frontmatter:
+    score: 8.0
+    weight: 8
+  resources:
+    score: 9.0
+    weight: 5
+  specificity:
+    score: 9.0
+    weight: 15
+  workflow:
+    score: 9.0
+    weight: 15
+improved: true
+previous_score: 49.2
+quality_score: 58.85
+refinement_history:
+- delta: 60.95
+  quality_score: 60.95
+  timestamp: '2026-04-26T11:05:51.578481+00:00'
+- delta: 9.649999999999999
+  quality_score: 58.85
+  timestamp: '2026-04-30T04:44:27.882433+00:00'
+skill: did-analysis-expert
+structure_base: 76.8
+timestamp: '2026-04-30T04:44:27.882433+00:00'
+total_100: 89.3

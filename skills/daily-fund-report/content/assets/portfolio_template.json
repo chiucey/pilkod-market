@@ -1,0 +1,47 @@
+{
+  "holdings": [
+    {
+      "code": "000001",
+      "name": "平安先锋混合A",
+      "shares": 1000.00,
+      "cost": 1.5000,
+      "buy_date": "2024-01-15",
+      "remark": "示例基金，请替换为您的实际持仓"
+    },
+    {
+      "code": "000400",
+      "name": "兴全全球视野",
+      "shares": 500.00,
+      "cost": 2.8000,
+      "buy_date": "2024-02-20",
+      "remark": ""
+    },
+    {
+      "code": "270002",
+      "name": "广发稳健增长A",
+      "shares": 2000.00,
+      "cost": 1.2300,
+      "buy_date": "2024-03-10",
+      "remark": ""
+    },
+    {
+      "code": "110022",
+      "name": "易方达消费行业",
+      "shares": 800.00,
+      "cost": 4.1200,
+      "buy_date": "2024-04-05",
+      "remark": ""
+    },
+    {
+      "code": "163402",
+      "name": "兴全趋势投资",
+      "shares": 1200.00,
+      "cost": 0.9500,
+      "buy_date": "2024-05-18",
+      "remark": ""
+    }
+  ],
+  "total_investment": 15000.00,
+  "currency": "CNY",
+  "update_date": "2024-12-20"
+}

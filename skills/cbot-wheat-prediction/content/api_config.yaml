@@ -1,0 +1,78 @@
+# CBOT小麦价格预测模型 - API配置文件 v5.0
+# 龙虾专用版本
+
+# ===============================================
+# 数据源配置
+# ===============================================
+
+data_sources:
+  # Yahoo Finance - 主数据源（无需API密钥）
+  yfinance:
+    enabled: true
+    ticker: "ZW=F"
+    description: "CBOT小麦期货主连合约"
+    api_url: "https://query1.finance.yahoo.com/v8/finance/chart/"
+    rate_limit: 2000  # 请求/小时
+
+  # USDA WASDE - 供需数据（可选）
+  usda_wasde:
+    enabled: false
+    description: "美国农业部全球小麦供需报告"
+    api_url: "https://apps.fas.usda.gov/psdonline/api/rds/dailybunker"
+    api_key: "YOUR_API_KEY_HERE"  # 请填写您的USDA API密钥
+    rate_limit: 100  # 请求/小时
+
+  # OpenWeatherMap - 天气数据（可选）
+  weather:
+    enabled: false
+    description: "小麦主产区天气数据"
+    api_url: "https://api.openweathermap.org/data/2.5/"
+    api_key: "YOUR_API_KEY_HERE"  # 请填写您的OpenWeatherMap API密钥
+    rate_limit: 60  # 请求/分钟
+
+  # USITC - 贸易数据（可选）
+  usitc:
+    enabled: false
+    description: "美国国际贸易委员会贸易数据"
+    api_url: "https://api.usitc.gov/"
+    api_key: "YOUR_API_KEY_HERE"  # 请填写您的USITC API密钥
+    rate_limit: 100  # 请求/小时
+
+  # CFTC持仓报告 - 持仓数据（可选）
+  cftc:
+    enabled: false
+    description: "美国商品期货交易委员会持仓报告"
+    api_url: "https://publicreporting.cftc.gov/resource/"
+    rate_limit: 500  # 请求/小时
+
+# ===============================================
+# API密钥配置说明（龙虾专用）
+# ===============================================
+#
+# 1. 主数据源（yfinance）无需API密钥，可直接使用
+# 2. 其他数据源为可选配置，不影响模型运行
+# 3. 如需启用，请将 "YOUR_API_KEY_HERE" 替换为实际密钥
+# 4. 获取API密钥地址：
+#    - USDA: https://apps.fas.usda.gov/psdonline/
+#    - OpenWeatherMap: https://openweathermap.org/api
+#    - CFTC: https://publicreporting.cftc.gov/
+# 5. 环境变量方式：可将密钥设置为环境变量（如 USDA_API_KEY）
+#    然后在代码中通过 os.environ['USDA_API_KEY'] 读取
+
+# ===============================================
+# 数据更新频率配置
+# ===============================================
+update_frequency:
+  prices: "1day"      # 价格数据：每日更新
+  weather: "6hour"     # 天气数据：每6小时
+  fundamental: "1month" # 基本面数据：每月更新
+
+# ===============================================
+# 数据缓存配置
+# ===============================================
+cache:
+  enabled: true
+  cache_dir: "./cache"
+  ttl_prices: 86400       # 24小时
+  ttl_weather: 21600       # 6小时
+  ttl_fundamental: 2592000 # 30天

@@ -1,0 +1,39 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "audio_mixing": true,
+    "mood_detection": true,
+    "music_generation": true,
+    "video_analysis": true,
+    "video_export": true
+  },
+  "category": "creative",
+  "description": "Smart video soundtrack generator - creates mood-matched background music using MiniMax Music 2.6 model for video creators",
+  "id": 387880875073870,
+  "input_formats": [
+    "mp4",
+    "mov",
+    "avi",
+    "webm"
+  ],
+  "max_duration_minutes": 30,
+  "model": "MiniMax-Music-2.6",
+  "name": "video-soundtrack",
+  "output_formats": [
+    "mp4",
+    "mp3",
+    "wav"
+  ],
+  "platform": "minimax",
+  "tags": [
+    "video",
+    "music",
+    "soundtrack",
+    "BGM",
+    "background-music",
+    "video-editing",
+    "mood-matching"
+  ],
+  "updated_at": 1776251036768,
+  "version": "1.0.0"
+}

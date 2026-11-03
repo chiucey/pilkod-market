@@ -1,0 +1,67 @@
+{
+  "character_id": "protagonist_001",
+  "name": "叶尘",
+  "role": "protagonist",
+  "realm": "筑基初期",
+  "level": 2,
+  "exp": 0,
+  "exp_threshold": 225,
+  "base_stats": {
+    "life": 1500.0,
+    "mana": 750.0,
+    "stamina": 1200.0,
+    "attack": 135.0,
+    "defense": 120.0,
+    "speed": 135.0,
+    "crit_rate": 0.07500000000000001,
+    "crit_damage": 2.25
+  },
+  "elements": {},
+  "special": {
+    "luck": 10,
+    "charisma": 10,
+    "perception": 10,
+    "comprehension": 10
+  },
+  "buffs": [],
+  "debuffs": [],
+  "history": [
+    {
+      "chapter": 0,
+      "event": "角色创建",
+      "description": "创建protagonist角色叶尘"
+    },
+    {
+      "chapter": 1,
+      "event": "获得经验",
+      "exp_gained": 150,
+      "current_exp": 0,
+      "level_ups": 1
+    },
+    {
+      "chapter": 5,
+      "event": "修炼青云诀",
+      "stat": "attack",
+      "change_type": "percentage",
+      "value": 0.2,
+      "old_value": 100,
+      "new_value": 120.0
+    },
+    {
+      "chapter": 16,
+      "event": "被暗算重伤",
+      "stat": "attack",
+      "change_type": "absolute",
+      "value": -30.0,
+      "old_value": 120.0,
+      "new_value": 90.0
+    },
+    {
+      "chapter": 20,
+      "event": "境界突破",
+      "old_realm": "炼气期",
+      "new_realm": "筑基初期",
+      "growth_rate": "+50.0%"
+    }
+  ]
+}

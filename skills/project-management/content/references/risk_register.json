@@ -1,0 +1,16 @@
+{
+  "name": "Risk Register",
+  "fields": [
+    {"name": "risk_id", "label": "风险ID", "type": "text", "required": true, "example": "R001"},
+    {"name": "description", "label": "风险描述", "type": "textarea", "required": true},
+    {"name": "category", "label": "风险类别", "type": "select", "options": ["技术风险", "人员风险", "外部风险", "进度风险", "成本风险"]},
+    {"name": "probability", "label": "发生概率", "type": "select", "options": ["高", "中", "低"]},
+    {"name": "impact", "label": "影响程度", "type": "select", "options": ["高", "中", "低"]},
+    {"name": "score", "label": "风险评分", "type": "text", "formula": "probability × impact"},
+    {"name": "strategy", "label": "应对策略", "type": "select", "options": ["规避", "转移", "减轻", "接受"]},
+    {"name": "owner", "label": "责任人", "type": "text"},
+    {"name": "status", "label": "状态", "type": "select", "options": ["识别", "监控中", "已解决", "已关闭"]},
+    {"name": "create_date", "label": "创建日期", "type": "date"},
+    {"name": "review_date", "label": "下次评审", "type": "date"}
+  ]
+}

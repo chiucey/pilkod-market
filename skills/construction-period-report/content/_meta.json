@@ -1,0 +1,22 @@
+{
+  "author": "MiniMax Agent",
+  "created_date": "2026-03-25",
+  "dependencies": [
+    "pandas",
+    "openpyxl"
+  ],
+  "display_name": "工期统计通报",
+  "file_count": 4,
+  "id": 380383125504114,
+  "name": "construction-period-report",
+  "platform": "minimax",
+  "skill_id": 123456,
+  "tags": [
+    "工期统计",
+    "项目管理",
+    "统计分析",
+    "报表生成"
+  ],
+  "updated_at": 1774420255021,
+  "version": "1.0.0"
+}

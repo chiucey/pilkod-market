@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日金融早报 - {日期}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 16px; margin-bottom: 24px; text-align: center; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3); }
+        .header h1 { font-size: 2.2em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .header .subtitle { font-size: 1.1em; opacity: 0.9; }
+        .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .section-title { font-size: 1.4em; color: #667eea; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0; display: flex; align-items: center; gap: 10px; }
+        .section-title::before { content: ""; width: 4px; height: 24px; background: linear-gradient(180deg, #667eea, #764ba2); border-radius: 2px; }
+        .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+        .market-card { background: #f8f9fa; border-radius: 10px; padding: 16px; border-left: 4px solid #667eea; transition: transform 0.2s, box-shadow 0.2s; }
+        .market-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .market-card.up { border-left-color: #e74c3c; }
+        .market-card.down { border-left-color: #27ae60; }
+        .market-name { font-size: 0.9em; color: #666; margin-bottom: 6px; }
+        .market-value { font-size: 1.5em; font-weight: 700; color: #333; margin-bottom: 4px; }
+        .market-change { font-size: 0.95em; font-weight: 600; }
+        .market-change.up { color: #e74c3c; }
+        .market-change.down { color: #27ae60; }
+        .news-item { padding: 16px; background: #f8f9fa; border-radius: 10px; margin-bottom: 12px; border-left: 3px solid #667eea; }
+        .news-item:last-child { margin-bottom: 0; }
+        .news-title { font-size: 1.1em; font-weight: 600; color: #333; margin-bottom: 8px; }
+        .news-content { color: #555; margin-bottom: 10px; }
+        .news-source { font-size: 0.85em; color: #888; }
+        .alert-box { background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e74c3c; padding: 16px; border-radius: 10px; margin-bottom: 16px; }
+        .alert-box.success { background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%); border-left-color: #27ae60; }
+        .alert-title { font-weight: 600; color: #c53030; margin-bottom: 6px; }
+        .alert-box.success .alert-title { color: #276749; }
+        .focus-stocks { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+        .stock-card { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 20px; }
+        .stock-name { font-size: 1.2em; font-weight: 700; color: #333; margin-bottom: 8px; text-align: center; }
+        .stock-price { font-size: 2em; font-weight: 700; color: #667eea; margin-bottom: 8px; text-align: center; }
+        .stock-change { font-size: 1.1em; font-weight: 600; text-align: center; }
+        .stock-meta { font-size: 0.85em; color: #666; margin-top: 10px; }
+        .footer { text-align: center; padding: 20px; color: #888; font-size: 0.9em; }
+        .highlight { background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%); padding: 2px 8px; border-radius: 4px; font-weight: 500; }
+        .source-tag { background: #e9ecef; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; color: #666; }
+        .toc { background: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .toc h3 { margin-bottom: 12px; color: #667eea; }
+        .toc-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; }
+        .toc-list a { color: #555; text-decoration: none; padding: 8px 12px; background: white; border-radius: 6px; display: block; transition: all 0.2s; }
+        .toc-list a:hover { background: #667eea; color: white; }
+        .reason-box { background: white; border-radius: 8px; padding: 12px; margin-top: 10px; }
+        .reason-content { color: #555; font-size: 0.9em; line-height: 1.7; }
+        .indicator-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+        .indicator-table th, .indicator-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; }
+        .indicator-table th { background: #f8f9fa; font-weight: 600; color: #667eea; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>每日金融早报</h1>
+            <div class="subtitle">{日期} {星期} | 早上好，新的一天从金融市场开始</div>
+        </div>
+
+        <div class="toc">
+            <h3>目录</h3>
+            <ul class="toc-list">
+                <li><a href="#market">市场数据</a></li>
+                <li><a href="#alert">大幅波动分析</a></li>
+                <li><a href="#global">全球市场</a></li>
+                <li><a href="#macro">宏观经济</a></li>
+                <li><a href="#commodity">大宗商品</a></li>
+                <li><a href="#crypto">加密货币</a></li>
+                <li><a href="#focus">重点关注</a></li>
+            </ul>
+        </div>
+
+        <div id="market" class="section">
+            <div class="section-title">昨日市场数据（{昨日日期}收盘）</div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">中国A股</div>
+                <div class="market-grid">
+                    <div class="market-card {上证涨跌}">
+                        <div class="market-name">上证指数</div>
+                        <div class="market-value">{上证数值}</div>
+                        <div class="market-change {上证涨跌}">{上证涨跌符号} {上证涨跌幅}</div>
+                    </div>
+                    <div class="market-card {深证涨跌}">
+                        <div class="market-name">深证成指</div>
+                        <div class="market-value">{深证数值}</div>
+                        <div class="market-change {深证涨跌}">{深证涨跌符号} {深证涨跌幅}</div>
+                    </div>
+                    <div class="market-card {创业板涨跌}">
+                        <div class="market-name">创业板指</div>
+                        <div class="market-value">{创业板数值}</div>
+                        <div class="market-change {创业板涨跌}">{创业板涨跌符号} {创业板涨跌幅}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">美股三大指数</div>
+                <div class="market-grid">
+                    <div class="market-card {道指涨跌}">
+                        <div class="market-name">道琼斯指数</div>
+                        <div class="market-value">{道指数值}</div>
+                        <div class="market-change {道指涨跌}">{道指涨跌符号} {道指涨跌幅}</div>
+                    </div>
+                    <div class="market-card {纳指涨跌}">
+                        <div class="market-name">纳斯达克</div>
+                        <div class="market-value">{纳指数值}</div>
+                        <div class="market-change {纳指涨跌}">{纳指涨跌符号} {纳指涨跌幅}</div>
+                    </div>
+                    <div class="market-card {标普涨跌}">
+                        <div class="market-name">标普500</div>
+                        <div class="market-value">{标普数值}</div>
+                        <div class="market-change {标普涨跌}">{标普涨跌符号} {标普涨跌幅}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">亚太股市</div>
+                <div class="market-grid">
+                    <div class="market-card {恒指涨跌}">
+                        <div class="market-name">恒生指数（港）</div>
+                        <div class="market-value">{恒指数值}</div>
+                        <div class="market-change {恒指涨跌}">{恒指涨跌符号} {恒指涨跌幅}</div>
+                    </div>
+                    <div class="market-card {日经涨跌}">
+                        <div class="market-name">日经225（日）</div>
+                        <div class="market-value">{日经数值}</div>
+                        <div class="market-change {日经涨跌}">{日经涨跌符号} {日经涨跌幅}</div>
+                    </div>
+                    <div class="market-card {韩指涨跌}">
+                        <div class="market-name">韩国综合指数</div>
+                        <div class="market-value">{韩指数值}</div>
+                        <div class="market-change {韩指涨跌}">{韩指涨跌符号} {韩指涨跌幅}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">欧洲主要股指</div>
+                <div class="market-grid">
+                    <div class="market-card {富时涨跌}">
+                        <div class="market-name">英国富时100（英）</div>
+                        <div class="market-value">{富时数值}</div>
+                        <div class="market-change {富时涨跌}">{富时涨跌符号} {富时涨跌幅}</div>
+                    </div>
+                    <div class="market-card {DAX涨跌}">
+                        <div class="market-name">德国DAX（德）</div>
+                        <div class="market-value">{DAX数值}</div>
+                        <div class="market-change {DAX涨跌}">{DAX涨跌符号} {DAX涨跌幅}</div>
+                    </div>
+                    <div class="market-card {CAC涨跌}">
+                        <div class="market-name">法国CAC40（法）</div>
+                        <div class="market-value">{CAC数值}</div>
+                        <div class="market-change {CAC涨跌}">{CAC涨跌符号} {CAC涨跌幅}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">新兴市场股指</div>
+                <div class="market-grid">
+                    <div class="market-card {印度涨跌}">
+                        <div class="market-name">印度Sensex30（印）</div>
+                        <div class="market-value">{印度数值}</div>
+                        <div class="market-change {印度涨跌}">{印度涨跌符号} {印度涨跌幅}</div>
+                    </div>
+                    <div class="market-card {印尼涨跌}">
+                        <div class="market-name">印尼综合指数JCI（印尼）</div>
+                        <div class="market-value">{印尼数值}</div>
+                        <div class="market-change {印尼涨跌}">{印尼涨跌符号} {印尼涨跌幅}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">外汇与加密货币</div>
+                <div class="market-grid">
+                    <div class="market-card {美指涨跌}">
+                        <div class="market-name">美元指数</div>
+                        <div class="market-value">{美指数值}</div>
+                        <div class="market-change {美指涨跌}">{美指涨跌符号} {美指涨跌幅}</div>
+                    </div>
+                    <div class="market-card">
+                        <div class="market-name">美元/人民币</div>
+                        <div class="market-value">{美元人民币数值}</div>
+                        <div class="market-change">{美元人民币涨跌}</div>
+                    </div>
+                    <div class="market-card {比特币涨跌}">
+                        <div class="market-name">比特币</div>
+                        <div class="market-value">{比特币数值}</div>
+                        <div class="market-change {比特币涨跌}">{比特币涨跌符号} {比特币涨跌幅}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">债券市场收益率</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新收益率</th><th>变化</th><th>备注</th></tr>
+                    <tr><td>中国10年期国债</td><td>{中债10Y}</td><td>{中债10Y变化}</td><td>{中债10Y备注}</td></tr>
+                    <tr><td>中国30年期国债</td><td>{中债30Y}</td><td>{中债30Y变化}</td><td>{中债30Y备注}</td></tr>
+                    <tr><td>美国10年期国债</td><td>{美债10Y}</td><td>{美债10Y变化}</td><td>{美债10Y备注}</td></tr>
+                    <tr><td>美国30年期国债</td><td>{美债30Y}</td><td>{美债30Y变化}</td><td>{美债30Y备注}</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="alert" class="section">
+            <div class="section-title">大幅波动分析（涨跌幅超1.3%）</div>
+            <!-- 大幅波动条目将动态填充 -->
+        </div>
+
+        <div id="global" class="section">
+            <div class="section-title">全球市场动态</div>
+            <!-- 新闻条目将动态填充 -->
+        </div>
+
+        <div id="macro" class="section">
+            <div class="section-title">货币政策与宏观经济</div>
+            <!-- 宏观新闻将动态填充 -->
+        </div>
+
+        <div id="commodity" class="section">
+            <div class="section-title">大宗商品期货市场</div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">能源期货</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新价</th><th>涨跌幅</th><th>单位</th><th>备注</th></tr>
+                    <!-- 能源期货数据 -->
+                </table>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">煤炭期货</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新价</th><th>涨跌幅</th><th>单位</th><th>备注</th></tr>
+                    <!-- 煤炭期货数据 -->
+                </table>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">工业金属期货</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新价</th><th>涨跌幅</th><th>单位</th><th>备注</th></tr>
+                    <!-- 工业金属数据 -->
+                </table>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">贵金属期货</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新价</th><th>涨跌幅</th><th>单位</th><th>备注</th></tr>
+                    <!-- 贵金属数据 -->
+                </table>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">农产品期货</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新价</th><th>涨跌幅</th><th>单位</th><th>备注</th></tr>
+                    <!-- 农产品数据 -->
+                </table>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div class="section-title" style="font-size: 1.1em;">化工期货</div>
+                <table class="indicator-table">
+                    <tr><th>品种</th><th>最新价</th><th>涨跌幅</th><th>单位</th><th>备注</th></tr>
+                    <!-- 化工数据 -->
+                </table>
+            </div>
+        </div>
+
+        <div id="crypto" class="section">
+            <div class="section-title">加密货币市场</div>
+            <!-- 加密货币新闻将动态填充 -->
+        </div>
+
+        <div id="focus" class="section">
+            <div class="section-title">重点关注股票</div>
+            <div class="focus-stocks">
+                <div class="stock-card">
+                    <div class="stock-name">NVIDIA 英伟达 (NVDA)</div>
+                    <div class="stock-price">{NVDA价格}</div>
+                    <div class="stock-change {NVDA涨跌}">{NVDA涨跌符号} {NVDA涨跌幅}</div>
+                    <div class="stock-meta">
+                        <strong>市值：</strong>{NVDA市值} | <strong>市盈率：</strong>{NVDA市盈率}<br><br>
+                        <strong>近期表现：</strong><br>
+                        {NVDA近期表现}
+                    </div>
+                </div>
+
+                <div class="stock-card">
+                    <div class="stock-name">MiniMax (00100.HK)</div>
+                    <div class="stock-price">HK${MiniMax价格}</div>
+                    <div class="stock-change {MiniMax涨跌}">{MiniMax涨跌符号} {MiniMax涨跌幅}</div>
+                    <div class="stock-meta">
+                        <strong>近期表现：</strong><br>
+                        {MiniMax近期表现}
+                    </div>
+                </div>
+
+                <div class="stock-card">
+                    <div class="stock-name">OpenClaw / QClaw 生态</div>
+                    <div class="stock-price">开源项目</div>
+                    <div class="stock-meta">
+                        <strong>腾讯QClaw最新进展：</strong><br>
+                        {QClaw动态}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">今日操作建议</div>
+            <div class="news-item">
+                <div class="news-content">
+                    <strong>大盘研判：</strong>{大盘研判}<br><br>
+                    <strong>操作策略：</strong>{操作策略}<br><br>
+                    <strong>板块建议：</strong><br>
+                    {板块建议}
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>本报告由 MiniMax Agent 自动生成 | 数据截至 {日期} 8:30</p>
+            <p>免责声明：本报告仅供参考，不构成投资建议</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+interface:
+  display_name: "xhs-sentiment-dashboard"
+  short_description: "Xiaohongshu short video operations growth assistant"
+  default_prompt: "Use $xhs-sentiment-dashboard to help with Xiaohongshu short video operations growth assistant"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,144 @@
+{
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha": "a9bfce8fb9fcff967c470ba063a24b98d1719a0a",
+      "size": 1606
+    },
+    {
+      "path": "README.md",
+      "sha": "7c606214ea067df9a9978e254d833e467d15e156",
+      "size": 3335
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "8613e8ab3d2c16159080b305060dbb8d3a2e5c8e",
+      "size": 5730
+    },
+    {
+      "path": "_meta.json",
+      "sha": "632ff107107e366059ec501d1000709392bd56be",
+      "size": 128
+    },
+    {
+      "path": "evals/evals.json",
+      "sha": "cf59f08a973b4c787eeb447062e1eb27388d305e",
+      "size": 1414
+    },
+    {
+      "path": "evals/trigger-evals.json",
+      "sha": "39571c8181c5a613e5a4f2877376b4a6f680babd",
+      "size": 1484
+    },
+    {
+      "path": "install.ps1",
+      "sha": "69c566575245beff75f734918d5cd43a6505ad33",
+      "size": 969
+    },
+    {
+      "path": "install.sh",
+      "sha": "260b202365196627e6eada514a82b70dc193ce2a",
+      "size": 504
+    },
+    {
+      "path": "references/appendices/check-prd-appendix-guide.md",
+      "sha": "9fb8e9502eeaf44e7e4bd6a45060b80e293ad2b7",
+      "size": 9140
+    },
+    {
+      "path": "references/appendices/check-prd-appendix-veto.md",
+      "sha": "c8fa4b0ee26af0fe2412573a915013f75d1649a0",
+      "size": 9061
+    },
+    {
+      "path": "references/dimensions/check-prd-01-business.md",
+      "sha": "2ba40116cbadbf44b802aa1e516e440f8ab203c7",
+      "size": 8409
+    },
+    {
+      "path": "references/dimensions/check-prd-02-product-type.md",
+      "sha": "45447af1fa45b29dde64a5ac965764257042775a",
+      "size": 7892
+    },
+    {
+      "path": "references/dimensions/check-prd-03-positioning.md",
+      "sha": "1d73788ad556685af5b2d71768a6c31c4f9a2491",
+      "size": 8401
+    },
+    {
+      "path": "references/dimensions/check-prd-04-scenario.md",
+      "sha": "97c35b60456bd2394689a7cc4e550ad6c7218693",
+      "size": 9434
+    },
+    {
+      "path": "references/dimensions/check-prd-05-structure.md",
+      "sha": "210761d84b3d7c859edb3b37725f3778ac3363d6",
+      "size": 9687
+    },
+    {
+      "path": "references/dimensions/check-prd-06-architecture.md",
+      "sha": "7ef519fda6fcfd4e84224497f492cce9ba371f4c",
+      "size": 14858
+    },
+    {
+      "path": "references/dimensions/check-prd-07-data.md",
+      "sha": "5c0cd6ea8085f73519b9d3dacd06a233ee09e301",
+      "size": 9060
+    },
+    {
+      "path": "references/dimensions/check-prd-08-process.md",
+      "sha": "4917e3eff12909e7904aebee509324021c9a0d52",
+      "size": 8790
+    },
+    {
+      "path": "references/dimensions/check-prd-09-ux.md",
+      "sha": "888b8ad49f602a7c0689a5e6cdcaaab8227e85be",
+      "size": 12018
+    },
+    {
+      "path": "references/dimensions/check-prd-10-commercial.md",
+      "sha": "00ab963a862f310679164fdb1508656825a11ef9",
+      "size": 8174
+    },
+    {
+      "path": "references/dimensions/check-prd-11-mvp.md",
+      "sha": "58a9e9e3fcbe72f9c82a29c418bb04b6d561cbc4",
+      "size": 7439
+    },
+    {
+      "path": "references/dimensions/check-prd-12-exception.md",
+      "sha": "ac95d8b008266ea14965ea7cdb6936680c620f6a",
+      "size": 6548
+    },
+    {
+      "path": "references/dimensions/check-prd-13-ai.md",
+      "sha": "fd84828adfbd2b806a555956cc96c1b6b70d0844",
+      "size": 10881
+    },
+    {
+      "path": "references/dimensions/check-prd-14-operations.md",
+      "sha": "064bd4d4aff301568858749e0a728b75ee1acf8b",
+      "size": 8308
+    },
+    {
+      "path": "references/universal-prompt-intro.md",
+      "sha": "14e5d85454d9397166996cc1189c3e2757299756",
+      "size": 4953
+    },
+    {
+      "path": "scripts/build.py",
+      "sha": "f4b8d080e3515578899e373eb99958838e06e746",
+      "size": 3339
+    },
+    {
+      "path": "scripts/install_skill.py",
+      "sha": "1e615a1cad25b88ae5d679df75d6ab7596a9ff91",
+      "size": 1111
+    },
+    {
+      "path": "scripts/validate.py",
+      "sha": "952c11a28eb6eb427e6bc18f73ccf0c15f0ce236",
+      "size": 2090
+    }
+  ]
+}

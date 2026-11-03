@@ -1,0 +1,24 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-26",
+  "dependencies": [
+    "industry-research-report",
+    "investment-research-analyst",
+    "pptx-generator"
+  ],
+  "description": "Research-to-Presentation generator combining industry research, investment analysis, and PowerPoint creation",
+  "id": 380699608499023,
+  "license": "MIT",
+  "name": "research-to-ppt",
+  "platform": "minimax",
+  "tags": [
+    "research",
+    "presentation",
+    "ppt",
+    "analysis",
+    "investment",
+    "finance"
+  ],
+  "updated_at": 1774497205997,
+  "version": "1.0.0"
+}

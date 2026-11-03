@@ -1,0 +1,32 @@
+{
+  "strategy_name": "资金效率动量策略",
+  "version": "1.0",
+  "description": "纯日线数据版本的资金流向估算与主力行为识别策略",
+  "author": "资金效率策略团队",
+  "params": {
+    "max_holding": 10,
+    "stop_loss": 0.05,
+    "trailing_stop": 0.08,
+    "min_amount": 50000000,
+    "min_market_cap": 200000000,
+    "rebalance_freq": 5
+  },
+  "weights": {
+    "fund": 0.35,
+    "mfi": 0.25,
+    "volume": 0.20,
+    "obv": 0.15,
+    "divergence": 0.05
+  },
+  "signals": {
+    "buy_score_threshold": 0.6,
+    "sell_score_threshold": 0.4,
+    "mfi_overbought": 80,
+    "mfi_oversold": 20,
+    "volume_concentration_threshold": 1.2
+  },
+  "data_requirements": {
+    "required_columns": ["open", "high", "low", "close", "volume", "amount", "float_shares"],
+    "min_history_days": 30
+  }
+}

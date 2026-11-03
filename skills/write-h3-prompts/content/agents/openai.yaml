@@ -1,0 +1,4 @@
+interface:
+  display_name: "H3 Prompt Writer"
+  short_description: "把创意简报与参考素材意图扩写成结构化 H3 视频 Prompt"
+  default_prompt: "Use $write-h3-prompts to expand my video idea and reference intent into a polished MiniMax-H3 prompt."

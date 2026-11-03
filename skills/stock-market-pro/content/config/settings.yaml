@@ -1,0 +1,54 @@
+# Stock Market Pro Multi-Source Configuration
+
+# Default settings
+default_data_source: "auto"  # auto, dfcf, futu, sina, tushare, wind, akshare, yfinance
+output_directory: "/tmp"
+default_period: "6mo"  # 1mo, 3mo, 6mo, 1y, 2y, 5y
+default_chart_type: "candlestick"  # candlestick, line
+max_news_results: 8
+timeout_seconds: 60
+
+# Default technical indicators
+default_indicators:
+  - rsi
+  - macd
+  - bb
+
+# Optional indicators
+available_indicators:
+  - rsi      # Relative Strength Index
+  - macd     # Moving Average Convergence Divergence
+  - bb       # Bollinger Bands
+  - vwap     # Volume Weighted Average Price
+  - atr      # Average True Range
+
+# Data source API configuration (set via environment variables)
+tushare_token: "${TUSHARE_TOKEN}"
+wind_username: "${WIND_USERNAME}"
+wind_password: "${WIND_PASSWORD}"
+
+# Futu OpenD configuration
+futu_opend_host: "127.0.0.1"
+futu_opend_port: 11111
+
+# Chart settings
+chart:
+  width: 12
+  height_per_indicator: 3
+  style: "seaborn-v0_8-darkgrid"
+  dpi: 100
+
+# Supported markets
+supported_markets:
+  - name: "A-Share (China)"
+    code_format: "^[0-9]{6}$"
+    recommended_source: "dfcf"
+  - name: "HK Stock"
+    code_format: "^[0-9]{4,5}$|^[0-9]{4,5}\\.HK$"
+    recommended_source: "futu"
+  - name: "US Stock"
+    code_format: "^[A-Z]{1,5}$"
+    recommended_source: "yfinance"
+  - name: "Global"
+    code_format: ".*"
+    recommended_source: "akshare"

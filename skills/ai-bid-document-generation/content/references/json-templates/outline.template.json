@@ -1,0 +1,22 @@
+{
+  "document_title": "标书大纲",
+  "generation_mode": "full|commercial|technical",
+  "sections": [
+    {
+      "title": "一级标题（来自投标文件组成）",
+      "level": 1,
+      "children": [
+        {
+          "title": "二级标题（来自评分标准或采购需求）",
+          "level": 2,
+          "children": [
+            {
+              "title": "三级标题（具体评分点或采购点）",
+              "level": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

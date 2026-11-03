@@ -1,0 +1,384 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "59072c51c478dec87e398591a28732be95d782fc",
+      "size": 17
+    },
+    {
+      "path": "LICENSE",
+      "sha": "53218a2ed6d176e4c189e0c2925aeea64996e348",
+      "size": 1066
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "1b8ff8a079539fad2f9ea0e92dc6a2a6c9f77b82",
+      "size": 16366
+    },
+    {
+      "path": "_meta.json",
+      "sha": "fd44fb774c2edc1ec9474328ff6f7d1476647179",
+      "size": 151
+    },
+    {
+      "path": "assets/styles/academic_styles.xml",
+      "sha": "85d1d06c850a89d3eb53f6f6ad715cf2c2c4f66e",
+      "size": 7408
+    },
+    {
+      "path": "assets/styles/corporate_styles.xml",
+      "sha": "5d7e2faf014b7c4de5522c69631508136f6c5652",
+      "size": 8524
+    },
+    {
+      "path": "assets/styles/default_styles.xml",
+      "sha": "6efe7f83f83c96aa017c7ff4ff34be0645ebb7ed",
+      "size": 12324
+    },
+    {
+      "path": "assets/xsd/aesthetic-rules.xsd",
+      "sha": "e42303523032ad79fd328564d561d38f79b59db0",
+      "size": 25219
+    },
+    {
+      "path": "assets/xsd/business-rules.xsd",
+      "sha": "c8e29e4e637730a3ee080ceefdbc4906ea918f94",
+      "size": 5593
+    },
+    {
+      "path": "assets/xsd/common-types.xsd",
+      "sha": "c90a4870cbb86fdc92474439ec9182d1642f3395",
+      "size": 5175
+    },
+    {
+      "path": "assets/xsd/wml-subset.xsd",
+      "sha": "fb2416dca421ef0b8e89f3e3fe6e29c5bdd8804d",
+      "size": 25751
+    },
+    {
+      "path": "references/cjk_typography.md",
+      "sha": "e468f10d48856a6396d3b9811629fc0c76762778",
+      "size": 11927
+    },
+    {
+      "path": "references/cjk_university_template_guide.md",
+      "sha": "da4cfb01731944eed8fe75fb3221065b067fc67e",
+      "size": 7901
+    },
+    {
+      "path": "references/comments_guide.md",
+      "sha": "fa1249304ab8f74a45afea74507b0e0153b00829",
+      "size": 6530
+    },
+    {
+      "path": "references/design_good_bad_examples.md",
+      "sha": "82b7c5077d1d735a6c16c3da7cd6b5290d573c00",
+      "size": 30831
+    },
+    {
+      "path": "references/design_principles.md",
+      "sha": "6d81dd3831e909d33c4d5aa312b76514e0dfe756",
+      "size": 27641
+    },
+    {
+      "path": "references/openxml_element_order.md",
+      "sha": "a84b5a2bd0f3c64efbf9016a458a2a1caf1364d6",
+      "size": 10930
+    },
+    {
+      "path": "references/openxml_encyclopedia_part1.md",
+      "sha": "177182f5d29d499046c8804e6558f9e265d3cac9",
+      "size": 140456
+    },
+    {
+      "path": "references/openxml_encyclopedia_part2.md",
+      "sha": "3cf04760080c1bcb1f8261f6e2b8026db7077a9e",
+      "size": 94465
+    },
+    {
+      "path": "references/openxml_encyclopedia_part3.md",
+      "sha": "04da2134c6a90f8e41635acf6d1f07e6a0ba37c4",
+      "size": 121826
+    },
+    {
+      "path": "references/openxml_namespaces.md",
+      "sha": "f1d6afa52a8265d4f4a606e222b7bd82c7113899",
+      "size": 5561
+    },
+    {
+      "path": "references/openxml_units.md",
+      "sha": "50a6b07f6f9c601c18e91d3b42748eedcc3b8e30",
+      "size": 2369
+    },
+    {
+      "path": "references/scenario_a_create.md",
+      "sha": "4d1663e82c0920e441d4bee94cf40eb8b2fcaa71",
+      "size": 7841
+    },
+    {
+      "path": "references/scenario_b_edit_content.md",
+      "sha": "8bd98a5f2915a88891c73024743ad3ca65e8ded1",
+      "size": 7947
+    },
+    {
+      "path": "references/scenario_c_apply_template.md",
+      "sha": "fb74a0730fb4a607676d04386206d241307c8c36",
+      "size": 18408
+    },
+    {
+      "path": "references/track_changes_guide.md",
+      "sha": "9bcfa34efb45dfa18e6ac73c5f2a7534f591ab9e",
+      "size": 5323
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "sha": "a2f750ecb71143d0741568e32a9914a1a94d7a47",
+      "size": 18963
+    },
+    {
+      "path": "references/typography_guide.md",
+      "sha": "039c99cc26648265d585d559419153ea56ebac33",
+      "size": 10097
+    },
+    {
+      "path": "references/xsd_validation_guide.md",
+      "sha": "8f67ef31fe6f714f760f5c328917da6b644d06cb",
+      "size": 5068
+    },
+    {
+      "path": "scripts/doc_to_docx.sh",
+      "sha": "a89ffab8462c5ab2c16ade53b33a967e9bb9fdef",
+      "size": 872
+    },
+    {
+      "path": "scripts/docx_preview.sh",
+      "sha": "a20589e2271c2638d6d7b2a9c3cb5b6708a46616",
+      "size": 836
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Cli/MiniMaxAIDocx.Cli.csproj",
+      "sha": "a1cd2149de26faec96cb2110a2aea11349e015e8",
+      "size": 497
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Cli/Program.cs",
+      "sha": "ec083449b69d6700e9c0f7b44835267a74feb2e2",
+      "size": 591
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/AnalyzeCommand.cs",
+      "sha": "73a72b045bca6cd148ce7c90983870a2e513038b",
+      "size": 6171
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/ApplyTemplateCommand.cs",
+      "sha": "81b369fde4f355813baf94e3d65b0adbfabe3d11",
+      "size": 12991
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/CreateCommand.cs",
+      "sha": "b53e4be0e6a8084e99ea4894cd90aca2bc9206bd",
+      "size": 14530
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/DiffCommand.cs",
+      "sha": "7241f044d271fb3847e5da2238fdbc2065463cd4",
+      "size": 6097
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/EditContentCommand.cs",
+      "sha": "c8bedca2111cf9b8e22f380eea76709e15c03b25",
+      "size": 19780
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/FixOrderCommand.cs",
+      "sha": "588428883d0dd7ab266a20d616e8a53b8144c0d0",
+      "size": 4495
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/MergeRunsCommand.cs",
+      "sha": "dbf997245bded4036e191aa3cc48e0e8a2127e44",
+      "size": 4794
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Commands/ValidateCommand.cs",
+      "sha": "30901385db8aa9bed419de763730738dec8db288",
+      "size": 4214
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/MiniMaxAIDocx.Core.csproj",
+      "sha": "b43f09a109e66660c6e23a87a54fb72598d094b9",
+      "size": 425
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/CommentSynchronizer.cs",
+      "sha": "4ef16c1f6aa288f303c25285f4c67917e60b1071",
+      "size": 6476
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/ElementOrder.cs",
+      "sha": "70db9ee0eca55b4ed6e2984303dae76f49639457",
+      "size": 4155
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/NamespaceConstants.cs",
+      "sha": "5a1581a016b32892c867865eb609213257f315b8",
+      "size": 3584
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/RunMerger.cs",
+      "sha": "2c9d4d387816f1bf617c9b325181f78826553df8",
+      "size": 2630
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/StyleAnalyzer.cs",
+      "sha": "d4be3cc3467bf08f161718821fd88e61dd4f489b",
+      "size": 2999
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/TrackChangesHelper.cs",
+      "sha": "d468ad24756527ab5f211778c5fed26c597e7782",
+      "size": 3032
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/OpenXml/UnitConverter.cs",
+      "sha": "981829b3e7fbbf62be8d7b0c4aa66812437c3854",
+      "size": 1057
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+      "sha": "9b1ba2cbcbc546fad81bd4df03feb4c239a35420",
+      "size": 77371
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples_Batch1.cs",
+      "sha": "2527c3c60010e66970dd488f5a396d44deecab9e",
+      "size": 38797
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples_Batch2.cs",
+      "sha": "81fad0ddb5c145737181c3fdf930ddfed0c76897",
+      "size": 43403
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples_Batch3.cs",
+      "sha": "c1e89c83e18fae683ca541ec24855bf16f44c335",
+      "size": 45319
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples_Batch4.cs",
+      "sha": "636814819da6ce2276ed4b6967fb45e58bb258dc",
+      "size": 48195
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/CharacterFormattingSamples.cs",
+      "sha": "1d4fdc95dd29188d82122b822695fac3ebfceaef",
+      "size": 47171
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/DocumentCreationSamples.cs",
+      "sha": "bb42ed88810fcb44d96a0f4661368cb12aafc61f",
+      "size": 53357
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/FieldAndTocSamples.cs",
+      "sha": "ba98850d97ac1eca0bf68a4284dd25098fcd6994",
+      "size": 26933
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/FootnoteAndCommentSamples.cs",
+      "sha": "3c5898565717846a42a3a92ad0e4aa51c8155b5a",
+      "size": 30838
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/HeaderFooterSamples.cs",
+      "sha": "90a48d03422a135c4ab65b959f49674d9fb93d9b",
+      "size": 36271
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/ImageSamples.cs",
+      "sha": "2a8dce7fae4317a730caac9f18c065d958d8fc6a",
+      "size": 40191
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/ListAndNumberingSamples.cs",
+      "sha": "22ef1b5621a264a19e329e4f120fd4c24f0d7de3",
+      "size": 35152
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/ParagraphFormattingSamples.cs",
+      "sha": "86270b73f58fbf1e20296d477238bbbbc18a453b",
+      "size": 56837
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/StyleSystemSamples.cs",
+      "sha": "75d97e3035aaad1f126d9fd111e90398563a5077",
+      "size": 65581
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/TableSamples.cs",
+      "sha": "2229b3697f3bbad4a85577faf494aa85d7574ebd",
+      "size": 51771
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Samples/TrackChangesSamples.cs",
+      "sha": "5f258106dfd56ed54b43cc2407fd0d18ff889cf3",
+      "size": 26780
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Typography/CjkHelper.cs",
+      "sha": "64b11b10b455c648be730c8031bc29fa0b3131ca",
+      "size": 1200
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Typography/FontDefaults.cs",
+      "sha": "5839dde2a96c8cb44171ad7f7aa27401ba69edd9",
+      "size": 898
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Typography/PageSizes.cs",
+      "sha": "7e0cc646c8c41de86446aad02fd5eb1ff5751642",
+      "size": 979
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Validation/BusinessRuleValidator.cs",
+      "sha": "0974a9472575e9747c617bf24f8c9e02e005c19a",
+      "size": 9229
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Validation/GateCheckValidator.cs",
+      "sha": "811ac60c8272cecde44959ea1f44ea52d23f2466",
+      "size": 5952
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Validation/ValidationResult.cs",
+      "sha": "1c4350ebcb8878921a77c533d7f4f91930cea119",
+      "size": 651
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.Core/Validation/XsdValidator.cs",
+      "sha": "1b9a17ea377fffda5118d9efc593eecc572c6633",
+      "size": 2175
+    },
+    {
+      "path": "scripts/dotnet/MiniMaxAIDocx.slnx",
+      "sha": "a8f5a50fa42b4dd9a1d46216158214f8207b84ec",
+      "size": 153
+    },
+    {
+      "path": "scripts/env_check.sh",
+      "sha": "871317ca61b2f69dbe03d8ab349c3205a82d1788",
+      "size": 7097
+    },
+    {
+      "path": "scripts/setup.ps1",
+      "sha": "86ac12a5f9d8b752033e4f6010972655be557f90",
+      "size": 10156
+    },
+    {
+      "path": "scripts/setup.sh",
+      "sha": "2e4bccab5d53ff1d361129146479c9d41aa263f9",
+      "size": 16481
+    }
+  ]
+}

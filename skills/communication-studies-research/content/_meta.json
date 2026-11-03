@@ -1,0 +1,29 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-31",
+  "dependencies": [],
+  "description": "传播学专用学术研究助手，支持文献综述、研究提案、学术论文写作等全流程研究辅助",
+  "id": 382637188559223,
+  "license": "MIT",
+  "name": "communication-studies-research",
+  "platform": "minimax",
+  "requirements": {
+    "optional_packages": [
+      "pandas",
+      "numpy",
+      "nltk",
+      "networkx",
+      "scikit-learn"
+    ],
+    "python_version": "3.9+"
+  },
+  "tags": [
+    "communication-studies",
+    "academic-research",
+    "media-studies",
+    "journalism",
+    "computational-communication"
+  ],
+  "updated_at": 1774972572200,
+  "version": "1.0.0"
+}

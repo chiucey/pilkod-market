@@ -1,0 +1,49 @@
+{
+  "skill_name": "",
+  "display_name": "B2B线索开发技能包",
+  "version": "1.0.0",
+  "skill_id": 160362,
+  "packaged_at": "2026-03-23T09:18:51.483999",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size": 12248,
+      "compressed_size": 5427
+    },
+    {
+      "path": "_meta.json",
+      "size": 1139,
+      "compressed_size": 642
+    },
+    {
+      "path": "dist/_20260323_091851.skill",
+      "size": 6147,
+      "compressed_size": 6152
+    },
+    {
+      "path": "references/data-sources.md",
+      "size": 4287,
+      "compressed_size": 2191
+    },
+    {
+      "path": "references/outreach-templates.md",
+      "size": 7930,
+      "compressed_size": 4003
+    },
+    {
+      "path": "references/verification-rules.md",
+      "size": 6263,
+      "compressed_size": 2479
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "size": 5501,
+      "compressed_size": 1990
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "size": 7371,
+      "compressed_size": 2128
+    }
+  ]
+}

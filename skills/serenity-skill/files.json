@@ -1,0 +1,149 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "affc54f5e46d95550cd5737aca68077b87ce2a5d",
+      "size": 41
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "6c08cccdf523f91f23a6813ebe21edeb02201fc2",
+      "size": 549
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "9810eac90fa766a66e0d70f577cbce32ffedae64",
+      "size": 1291
+    },
+    {
+      "path": "LICENSE",
+      "sha": "dda6d726c243715bb8b699db221c31bf926b5394",
+      "size": 1061
+    },
+    {
+      "path": "README.en.md",
+      "sha": "205f7f3f427af98a06039f577737e95456ad5cef",
+      "size": 6220
+    },
+    {
+      "path": "README.md",
+      "sha": "f84a8a272060f88910ebcf1d92dfe1fa41733513",
+      "size": 9322
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "eccaa63d402d82d18fcf30692e4d5ca01259c99c",
+      "size": 4432
+    },
+    {
+      "path": "SECURITY.md",
+      "sha": "259ef633bcf4bacac172e9f0af9ce254a6ba6f09",
+      "size": 886
+    },
+    {
+      "path": "SHA256.txt",
+      "sha": "72a703a541714453199fc2e2fc7e12313be208e9",
+      "size": 2460
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "a139f330ed3297ef8ab0750ed4aba7fd7e1217e8",
+      "size": 14248
+    },
+    {
+      "path": "_meta.json",
+      "sha": "537f8aa3f3bbff075e6b984644ffe0f28161309f",
+      "size": 133
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "a3f8e41061cc0428cc57e2e89d26194ae6edf968",
+      "size": 425
+    },
+    {
+      "path": "assets/bottleneck-scorecard.json",
+      "sha": "1a4f3fe5de5ddd95449d3656773cec26cd6fe87f",
+      "size": 845
+    },
+    {
+      "path": "assets/research-prompt-pack.md",
+      "sha": "ec3143dcd3f779c0b8c0ddaff268756463f2c295",
+      "size": 2152
+    },
+    {
+      "path": "assets/thesis-template.md",
+      "sha": "e1b31c2997add282b79cea4d9592fe7153fa00cf",
+      "size": 1192
+    },
+    {
+      "path": "evals/test-cases.md",
+      "sha": "5b9a9451af818941a8e58e29a0689db32ae4ee7f",
+      "size": 2929
+    },
+    {
+      "path": "examples/a-share-ai-semiconductor-demo.md",
+      "sha": "8f6d5029f6da1fe176db9ac74df451116682120b",
+      "size": 2599
+    },
+    {
+      "path": "examples/ai-infrastructure-chokepoint-demo.md",
+      "sha": "745a854d008fc9650a1c0e1cc7a8f137d9959942",
+      "size": 3821
+    },
+    {
+      "path": "examples/demo-conversation.md",
+      "sha": "e2e5735e42b91f25157c012ed425d97157124dd9",
+      "size": 2475
+    },
+    {
+      "path": "references/deep-research-workflow.md",
+      "sha": "e2cc3f25bed870295359dd1c1e4c07cd111bdd38",
+      "size": 8387
+    },
+    {
+      "path": "references/evidence-ladder.md",
+      "sha": "693495da40d73105f7c70bf7351ebcb90a942fbe",
+      "size": 2791
+    },
+    {
+      "path": "references/market-source-playbook.md",
+      "sha": "615a6d068270fca5230065dc5b10cddd16323796",
+      "size": 3027
+    },
+    {
+      "path": "references/output-style-and-language.md",
+      "sha": "1c814b684095f8baf6b41462f1eae9b2098a5914",
+      "size": 2387
+    },
+    {
+      "path": "references/public-profile-and-evaluation.md",
+      "sha": "1a9783dab47c84e87f8d4505e890f3c64f8f18a4",
+      "size": 3832
+    },
+    {
+      "path": "references/research-sources.md",
+      "sha": "78a009b14f5647cad3f2c7f6379c6529fceef952",
+      "size": 3209
+    },
+    {
+      "path": "references/risk-and-compliance.md",
+      "sha": "550f88a29125437da3df4ee333a7fefc1a982dd5",
+      "size": 2413
+    },
+    {
+      "path": "references/serenity-dialogue-protocol.md",
+      "sha": "a8ab72130c84624d7ca4c1bea0eff51eef4cf486",
+      "size": 2201
+    },
+    {
+      "path": "scripts/serenity_scorecard.py",
+      "sha": "1b6db36513a1ce49b5fd9c0eefb776afa9c05c79",
+      "size": 6555
+    },
+    {
+      "path": "scripts/validate_skill.py",
+      "sha": "b58d99d0bb1526d20a6befee47db52805d563a7e",
+      "size": 1963
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "46148aaa3783bdf73dc699489bf8233b635c85f9",
+      "size": 6380
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "016ce2dd8d3fa2cadb9afaaf8c628914c7fd04f3",
+      "size": 9599
+    },
+    {
+      "path": "_meta.json",
+      "sha": "aae81b443f2db2a22ef999aa3db26398dc9796e3",
+      "size": 132
+    },
+    {
+      "path": "references/README_for_agent.md",
+      "sha": "c2ef9dd765583024db868467333c63218084265b",
+      "size": 3621
+    },
+    {
+      "path": "references/README_for_user.md",
+      "sha": "dd13ee8370a8d35a727e5558319fc02a7c38db00",
+      "size": 1536
+    },
+    {
+      "path": "references/TIPS.md",
+      "sha": "86e729310186acc2ff34e3c9cbac728a829030e9",
+      "size": 6924
+    },
+    {
+      "path": "references/protocol.md",
+      "sha": "14cee49ef1f81eb249513e72004b5e63a83f6c07",
+      "size": 1153
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "4a5625c72d25e33fd9b5b13498a2118954dba4ae",
+      "size": 17
+    },
+    {
+      "path": "scripts/http_transfer.py",
+      "sha": "c5560337b9af099581073dfabbecfae827c04a46",
+      "size": 3527
+    },
+    {
+      "path": "scripts/tunnel_login.py",
+      "sha": "14b7f746cfceb516550b1a4ac303876cd2158e9e",
+      "size": 450
+    }
+  ]
+}

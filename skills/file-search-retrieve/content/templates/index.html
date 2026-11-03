@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State-Owned Asset Archive Search</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 30px 0; margin-bottom: 30px; border-radius: 0 0 16px 16px; box-shadow: 0 4px 20px rgba(26,115,232,0.3); }
+        .header h1 { font-size: 28px; font-weight: 600; text-align: center; }
+        .header p { text-align: center; opacity: 0.9; margin-top: 8px; font-size: 14px; }
+        .search-section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .search-box { display: flex; gap: 12px; margin-bottom: 16px; }
+        .search-input { flex: 1; padding: 14px 20px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; transition: border-color 0.3s; }
+        .search-input:focus { outline: none; border-color: #1a73e8; }
+        .search-btn { padding: 14px 32px; background: #1a73e8; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; transition: background 0.3s; }
+        .search-btn:hover { background: #1557b0; }
+        .filters { display: flex; flex-wrap: wrap; gap: 16px; }
+        .filter-card { background: #f8f9fa; border-radius: 8px; padding: 16px; flex: 1; min-width: 280px; }
+        .filter-card h3 { font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 500; }
+        .tags-container { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag-chip { padding: 6px 14px; background: white; border: 1px solid #ddd; border-radius: 20px; font-size: 13px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+        .tag-chip:hover { border-color: #1a73e8; color: #1a73e8; }
+        .tag-chip.active { background: #1a73e8; color: white; border-color: #1a73e8; }
+        .tag-chip .count { font-size: 11px; opacity: 0.7; }
+        .selected-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+        .selected-tag { padding: 6px 12px; background: #e3f2fd; color: #1565c0; border-radius: 20px; font-size: 13px; display: flex; align-items: center; gap: 6px; }
+        .selected-tag .remove { cursor: pointer; opacity: 0.7; }
+        .selected-tag .remove:hover { opacity: 1; }
+        .category-toggle { cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 8px 0; }
+        .category-toggle::after { content: "+"; font-size: 18px; color: #666; }
+        .category-toggle.expanded::after { content: "-"; }
+        .category-content { display: none; padding: 12px 0; }
+        .category-content.show { display: block; }
+        .category-group { margin-bottom: 12px; }
+        .category-group-title { font-size: 13px; font-weight: 500; color: #333; margin-bottom: 8px; }
+        .category-checkboxes { display: flex; flex-wrap: wrap; gap: 8px; padding-left: 12px; }
+        .category-checkbox { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; }
+        .apply-btn { padding: 10px 24px; background: #34a853; color: white; border: none; border-radius: 6px; font-size: 14px; cursor: pointer; margin-top: 12px; }
+        .apply-btn:hover { background: #2d8f4a; }
+        .results-section { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #eee; }
+        .results-count { font-size: 15px; color: #666; }
+        .results-count strong { color: #1a73e8; }
+        .results-list { display: flex; flex-direction: column; gap: 16px; }
+        .result-item { padding: 20px; background: #fafafa; border-radius: 10px; border: 1px solid #eee; transition: all 0.2s; }
+        .result-item:hover { border-color: #1a73e8; box-shadow: 0 4px 12px rgba(26,115,232,0.1); }
+        .file-name { font-size: 16px; font-weight: 500; color: #1a73e8; cursor: pointer; margin-bottom: 8px; }
+        .file-name:hover { text-decoration: underline; }
+        .file-meta { font-size: 13px; color: #666; margin-bottom: 8px; }
+        .file-path { font-family: monospace; font-size: 12px; color: #888; margin-bottom: 8px; word-break: break-all; }
+        .file-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+        .file-tag { padding: 3px 10px; background: #e8f0fe; color: #1a56db; border-radius: 12px; font-size: 12px; }
+        .file-highlight { font-size: 13px; color: #555; padding: 10px; background: #fffde7; border-radius: 6px; margin-top: 8px; }
+        .file-highlight em { background: #fff59d; padding: 0 2px; font-style: normal; }
+        .processed-time { font-size: 12px; color: #999; margin-top: 8px; }
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 24px; }
+        .page-btn { padding: 8px 16px; border: 1px solid #ddd; background: white; border-radius: 6px; cursor: pointer; font-size: 14px; transition: all 0.2s; }
+        .page-btn:hover:not(:disabled) { border-color: #1a73e8; color: #1a73e8; }
+        .page-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .page-btn.active { background: #1a73e8; color: white; border-color: #1a73e8; }
+        .loading { text-align: center; padding: 40px; color: #666; }
+        .loading::after { content: ""; display: inline-block; width: 20px; height: 20px; border: 3px solid #1a73e8; border-radius: 50%; border-top-color: transparent; animation: spin 1s linear infinite; margin-left: 12px; vertical-align: middle; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .empty-state { text-align: center; padding: 60px 20px; color: #999; }
+        .toast { position: fixed; bottom: 30px; right: 30px; padding: 14px 24px; background: #333; color: white; border-radius: 8px; font-size: 14px; z-index: 1000; opacity: 0; transform: translateY(20px); transition: all 0.3s; }
+        .toast.show { opacity: 1; transform: translateY(0); }
+        .toast.success { background: #34a853; }
+        .toast.error { background: #ea4335; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>State-Owned Asset Archive Search</h1>
+            <p>Full-text search with tag and category filtering</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="Enter keywords to search..." autocomplete="off">
+                <button class="search-btn" onclick="doSearch()">Search</button>
+            </div>
+            <div class="selected-tags" id="selectedTags"></div>
+            <div class="filters">
+                <div class="filter-card">
+                    <h3>Hot Tags</h3>
+                    <div class="tags-container" id="hotTags"><div class="loading" style="padding:20px 0;">Loading...</div></div>
+                </div>
+                <div class="filter-card">
+                    <h3>Category Filter</h3>
+                    <div class="category-toggle" onclick="toggleCategory()">Select Categories</div>
+                    <div class="category-content" id="categoryContent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="results-section">
+            <div class="results-header">
+                <div class="results-count" id="resultsCount">Found <strong>0</strong> results</div>
+            </div>
+            <div class="results-list" id="resultsList">
+                <div class="empty-state"><p>Enter keywords to search, or click hot tags to filter</p></div>
+            </div>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+
+    <script>
+        let currentPage = 1, totalResults = 0, selectedTags = [], selectedCategories = [], searchTimeout = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHotTags();
+            loadCategories();
+            document.getElementById('searchInput').addEventListener('keypress', function(e) { if (e.key === 'Enter') doSearch(); });
+            document.getElementById('searchInput').addEventListener('input', function() { clearTimeout(searchTimeout); searchTimeout = setTimeout(doSearch, 500); });
+        });
+
+        async function loadHotTags() {
+            try {
+                const res = await fetch('/api/hot_tags');
+                const data = await res.json();
+                if (data.success && data.hot_tags.length > 0) {
+                    document.getElementById('hotTags').innerHTML = data.hot_tags.map(tag =>
+                        `<div class="tag-chip ${selectedTags.includes(tag.name) ? 'active' : ''}" onclick="toggleTag('${tag.name}')">${tag.name} <span class="count">(${tag.count})</span></div>`
+                    ).join('');
+                } else {
+                    document.getElementById('hotTags').innerHTML = '<span style="color:#999;font-size:13px;">No tags available</span>';
+                }
+            } catch (e) {
+                document.getElementById('hotTags').innerHTML = '<span style="color:#999;">Load failed</span>';
+            }
+        }
+
+        async function loadCategories() {
+            try {
+                const res = await fetch('/api/categories');
+                const data = await res.json();
+                if (data.success) {
+                    let html = '';
+                    for (const [cat1, cat2s] of Object.entries(data.categories)) {
+                        html += `<div class="category-group"><div class="category-group-title">${cat1}</div><div class="category-checkboxes">` +
+                            Object.entries(cat2s).map(([code, name]) =>
+                                `<label class="category-checkbox"><input type="checkbox" value="${code}" ${selectedCategories.includes(code) ? 'checked' : ''} onchange="toggleCategorySelection('${code}')">${code} ${name}</label>`
+                            ).join('') + '</div></div>';
+                    }
+                    html += '<button class="apply-btn" onclick="applyFilters()">Apply</button>';
+                    document.getElementById('categoryContent').innerHTML = html;
+                }
+            } catch (e) { document.getElementById('categoryContent').innerHTML = '<span style="color:#999;">Load failed</span>'; }
+        }
+
+        function toggleCategory() {
+            document.querySelector('.category-toggle').classList.toggle('expanded');
+            document.getElementById('categoryContent').classList.toggle('show');
+        }
+
+        function toggleTag(tag) {
+            const idx = selectedTags.indexOf(tag);
+            if (idx > -1) selectedTags.splice(idx, 1);
+            else selectedTags.push(tag);
+            renderSelectedTags();
+            loadHotTags();
+            doSearch();
+        }
+
+        function toggleCategorySelection(code) {
+            const idx = selectedCategories.indexOf(code);
+            if (idx > -1) selectedCategories.splice(idx, 1);
+            else selectedCategories.push(code);
+        }
+
+        function applyFilters() { currentPage = 1; doSearch(); }
+
+        function renderSelectedTags() {
+            const container = document.getElementById('selectedTags');
+            if (selectedTags.length === 0 && selectedCategories.length === 0) { container.innerHTML = ''; return; }
+            container.innerHTML = selectedTags.map(t => `<div class="selected-tag">${t}<span class="remove" onclick="toggleTag('${t}')">x</span></div>`).join('') +
+                selectedCategories.map(c => `<div class="selected-tag" style="background:#e8f5e9;color:#2e7d32;">${c}<span class="remove" onclick="removeCategory('${c}')">x</span></div>`).join('');
+        }
+
+        function removeCategory(code) { selectedCategories.splice(selectedCategories.indexOf(code), 1); renderSelectedTags(); loadCategories(); doSearch(); }
+
+        async function doSearch() {
+            const q = document.getElementById('searchInput').value.trim();
+            const params = new URLSearchParams();
+            if (q) params.set('q', q);
+            if (selectedTags.length > 0) params.set('tags', selectedTags.join(','));
+            if (selectedCategories.length > 0) params.set('categories', selectedCategories.join(','));
+            params.set('page', currentPage);
+            params.set('limit', 20);
+            document.getElementById('resultsList').innerHTML = '<div class="loading">Searching...</div>';
+            try {
+                const res = await fetch('/api/search?' + params);
+                const data = await res.json();
+                if (data.success) {
+                    totalResults = data.total;
+                    renderResults(data.results);
+                    renderPagination();
+                    document.getElementById('resultsCount').innerHTML = `Found <strong>${totalResults}</strong> results`;
+                } else { showError('Search failed'); }
+            } catch (e) { showError('Network error'); }
+        }
+
+        function renderResults(results) {
+            const container = document.getElementById('resultsList');
+            if (results.length === 0) {
+                container.innerHTML = '<div class="empty-state"><p>No matching files found</p></div>';
+                return;
+            }
+            container.innerHTML = results.map(r => `
+                <div class="result-item">
+                    <div class="file-name" onclick="openFile('${encodeURIComponent(r.file_path)}')">${r.file_name}</div>
+                    <div class="file-path">${r.file_path}</div>
+                    ${r.tags.length > 0 ? `<div class="file-tags">${r.tags.map(t => `<span class="file-tag">${t}</span>`).join('')}</div>` : ''}
+                    ${r.highlight ? `<div class="file-highlight">${r.highlight}</div>` : ''}
+                    <div class="processed-time">Archived: ${r.processed_time} | Category: ${r.category_path}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderPagination() {
+            const container = document.getElementById('pagination');
+            const totalPages = Math.ceil(totalResults / 20);
+            if (totalPages <= 1) { container.innerHTML = ''; return; }
+            let html = `<button class="page-btn" onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
+            for (let i = Math.max(1, currentPage - 2); i <= Math.min(totalPages, currentPage + 2); i++) {
+                html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+            }
+            html += `<button class="page-btn" onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+            container.innerHTML = html;
+        }
+
+        function goToPage(page) { currentPage = page; doSearch(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+        async function openFile(encodedPath) {
+            try {
+                const res = await fetch('/api/open?path=' + encodedPath);
+                const data = await res.json();
+                showToast(data.success ? 'File opened' : 'Failed: ' + data.message, data.success ? 'success' : 'error');
+            } catch (e) { showToast('Network error', 'error'); }
+        }
+
+        function showToast(message, type = 'info') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = 'toast ' + type + ' show';
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function showError(message) {
+            document.getElementById('resultsList').innerHTML = '<div class="empty-state"><p>' + message + '</p></div>';
+        }
+    </script>
+</body>
+</html>

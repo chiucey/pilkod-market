@@ -1,0 +1,10 @@
+{
+  "description": "Export Google Scholar paper(s) to Zotero via BibTeX. Gets citation data from Google Scholar's cite dialog, then pushes to Zotero desktop. Supports single or batch export.",
+  "id": 382143150514343,
+  "name": "googlescholar-导出zotero",
+  "platform": "minimax",
+  "skill_id": 201006,
+  "source": "https://github.com/cookjohn/gs-skills",
+  "updated_at": 1774849933465,
+  "version": "1.0.0"
+}

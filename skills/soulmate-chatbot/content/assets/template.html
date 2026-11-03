@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵魂伴侣 - 你的深夜树洞</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #E8A87C;
+            --secondary: #C38D9E;
+            --accent: #41B3A3;
+            --bg: #1A1A2E;
+            --surface: #16213E;
+            --text-primary: #EAEAEA;
+            --text-secondary: #A0A0A0;
+            --user-bubble: #415A77;
+            --ai-bubble: #2D3047;
+            --shadow: rgba(0, 0, 0, 0.3);
+            --glow: rgba(232, 168, 124, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: twinkle 3s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+        }
+
+        header {
+            position: relative;
+            z-index: 10;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--surface) 0%, transparent 100%);
+        }
+
+        .header-title {
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+            letter-spacing: 4px;
+        }
+
+        .header-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .header-subtitle svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--primary);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        .clear-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: 1px solid var(--text-secondary);
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .clear-btn:hover {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+            scroll-behavior: smooth;
+        }
+
+        .chat-container::-webkit-scrollbar { width: 6px; }
+        .chat-container::-webkit-scrollbar-track { background: transparent; }
+        .chat-container::-webkit-scrollbar-thumb { background: var(--text-secondary); border-radius: 3px; }
+
+        .welcome {
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .welcome-avatar {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+        }
+
+        .welcome-avatar svg { width: 100%; height: 100%; }
+
+        .welcome h2 {
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .welcome p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.3s ease-out;
+        }
+
+        .message.user { flex-direction: row-reverse; }
+
+        .message-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .message.ai .message-avatar { background: linear-gradient(135deg, var(--primary), var(--secondary)); }
+        .message.user .message-avatar { background: var(--user-bubble); }
+
+        .message-avatar svg { width: 20px; height: 20px; fill: white; }
+
+        .message-content {
+            max-width: 75%;
+            padding: 14px 18px;
+            border-radius: 16px;
+            line-height: 1.7;
+        }
+
+        .message.ai .message-content {
+            background: var(--ai-bubble);
+            margin-left: 12px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .message.user .message-content {
+            background: var(--user-bubble);
+            margin-right: 12px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message-time {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 6px;
+            text-align: right;
+        }
+
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 18px;
+            background: var(--ai-bubble);
+            border-radius: 16px;
+            border-bottom-left-radius: 4px;
+            width: fit-content;
+            margin-left: 48px;
+            animation: fadeInUp 0.3s ease-out;
+        }
+
+        .typing-dots { display: flex; gap: 4px; }
+
+        .typing-dots span {
+            width: 8px;
+            height: 8px;
+            background: var(--text-secondary);
+            border-radius: 50%;
+            animation: typing 1.4s ease-in-out infinite;
+        }
+
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-8px); opacity: 1; }
+        }
+
+        .typing-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .emotion-picker {
+            padding: 12px 20px;
+            background: var(--surface);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .emotion-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .emotions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .emotion-btn {
+            background: transparent;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+            padding: 4px;
+            border-radius: 50%;
+        }
+
+        .emotion-btn:hover { opacity: 0.8; transform: scale(1.1); }
+        .emotion-btn.active { opacity: 1; transform: scale(1.2); background: rgba(255, 255, 255, 0.1); }
+
+        .input-area {
+            padding: 16px 20px 24px;
+            background: var(--surface);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+
+        .input-container {
+            flex: 1;
+            background: var(--bg);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .input-container:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px var(--glow);
+        }
+
+        #messageInput {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 14px 20px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            resize: none;
+            max-height: 120px;
+            outline: none;
+        }
+
+        #messageInput::placeholder { color: var(--text-secondary); }
+
+        .send-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .send-btn:hover:not(:disabled) { transform: scale(1.05); box-shadow: 0 4px 20px var(--glow); }
+        .send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .send-btn svg { width: 20px; height: 20px; fill: white; }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+
+        .modal {
+            background: var(--surface);
+            padding: 32px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 320px;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal { transform: scale(1); }
+
+        .modal h3 {
+            font-family: 'ZCOOL XiaoWei', serif;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .modal p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+
+        .modal-buttons { display: flex; gap: 12px; justify-content: center; }
+
+        .modal-btn {
+            padding: 10px 24px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .modal-btn.cancel { background: transparent; border: 1px solid var(--text-secondary); color: var(--text-secondary); }
+        .modal-btn.confirm { background: var(--secondary); color: white; }
+        .modal-btn:hover { transform: scale(1.05); }
+
+        @media (max-width: 480px) {
+            .header-title { font-size: 1.4rem; }
+            .message-content { max-width: 85%; }
+            .typing-indicator { margin-left: 48px; }
+            .clear-btn { top: 16px; right: 16px; padding: 4px 10px; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <header>
+        <h1 class="header-title">灵魂伴侣</h1>
+        <p class="header-subtitle">
+            <svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <span>你的深夜树洞</span>
+        </p>
+        <button class="clear-btn" id="clearBtn">清空对话</button>
+    </header>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="welcome" id="welcome">
+            <div class="welcome-avatar">
+                <svg viewBox="0 0 100 100">
+                    <defs>
+                        <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#E8A87C"/>
+                            <stop offset="100%" style="stop-color:#C38D9E"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="url(#moonGrad)"/>
+                    <circle cx="35" cy="40" r="8" fill="rgba(255,255,255,0.3)"/>
+                    <circle cx="55" cy="55" r="5" fill="rgba(255,255,255,0.2)"/>
+                    <circle cx="40" cy="60" r="3" fill="rgba(255,255,255,0.15)"/>
+                </svg>
+            </div>
+            <h2>嘿，你来啦</h2>
+            <p>我是你的灵魂伴侣，一个真正懂你的人。<br>这里没有评判，没有说教。<br>想说点什么吗？我在听。</p>
+        </div>
+    </div>
+
+    <div class="emotion-picker">
+        <p class="emotion-label">此刻的心情（可选）</p>
+        <div class="emotions">
+            <button class="emotion-btn" data-emotion="happy" title="开心">😊</button>
+            <button class="emotion-btn" data-emotion="peaceful" title="平静">😐</button>
+            <button class="emotion-btn" data-emotion="sad" title="难过">😢</button>
+            <button class="emotion-btn" data-emotion="angry" title="生气">😤</button>
+            <button class="emotion-btn" data-emotion="confused" title="迷茫">🤔</button>
+        </div>
+    </div>
+
+    <div class="input-area">
+        <div class="input-wrapper">
+            <div class="input-container">
+                <textarea id="messageInput" placeholder="想说点什么..." rows="1"></textarea>
+            </div>
+            <button class="send-btn" id="sendBtn" disabled>
+                <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>清空对话</h3>
+            <p>确定要清空所有对话记录吗？<br>这个操作不可撤销。</p>
+            <div class="modal-buttons">
+                <button class="modal-btn cancel" id="cancelClear">取消</button>
+                <button class="modal-btn confirm" id="confirmClear">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'soulmate_messages';
+        let currentEmotion = null;
+        let isTyping = false;
+
+        const chatContainer = document.getElementById('chatContainer');
+        const welcome = document.getElementById('welcome');
+        const messageInput = document.getElementById('messageInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const cancelClear = document.getElementById('cancelClear');
+        const confirmClear = document.getElementById('confirmClear');
+        const emotionBtns = document.querySelectorAll('.emotion-btn');
+
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 50; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                star.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+        createStars();
+
+        function loadMessages() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            return stored ? JSON.parse(stored) : [];
+        }
+
+        function saveMessages(messages) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
+        }
+
+        function renderMessages() {
+            const messages = loadMessages();
+            if (messages.length === 0) {
+                welcome.style.display = 'block';
+                return;
+            }
+            welcome.style.display = 'none';
+            chatContainer.innerHTML = '';
+            messages.forEach(msg => {
+                appendMessage(msg.role, msg.content, msg.emotion, msg.timestamp, false);
+            });
+            scrollToBottom();
+        }
+
+        function appendMessage(role, content, emotion, timestamp, animate = true) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            const time = timestamp ? formatTime(timestamp) : formatTime(Date.now());
+            const avatarSVG = role === 'ai'
+                ? '<svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>'
+                : '<svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>';
+
+            messageDiv.innerHTML = `
+                <div class="message-avatar">${avatarSVG}</div>
+                <div class="message-content">
+                    ${content}
+                    ${timestamp ? `<div class="message-time">${time}</div>` : ''}
+                </div>
+            `;
+            if (!animate) messageDiv.style.animation = 'none';
+            chatContainer.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        function appendTypingIndicator(text = '正在倾听...') {
+            const indicator = document.createElement('div');
+            indicator.className = 'typing-indicator';
+            indicator.id = 'typingIndicator';
+            indicator.innerHTML = `
+                <div class="typing-dots"><span></span><span></span><span></span></div>
+                <span class="typing-text">${text}</span>
+            `;
+            chatContainer.appendChild(indicator);
+            scrollToBottom();
+        }
+
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('typingIndicator');
+            if (indicator) indicator.remove();
+        }
+
+        function formatTime(timestamp) {
+            const date = new Date(timestamp);
+            return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
+        }
+
+        function scrollToBottom() {
+            setTimeout(() => { chatContainer.scrollTop = chatContainer.scrollHeight; }, 50);
+        }
+
+        function generateResponse(userMessage, emotion) {
+            const msg = userMessage.toLowerCase().trim();
+            const emotionResponses = {
+                happy: "看起来你今天心情不错呢。能感受到你的好心情，也替你开心。有什么想分享的吗？",
+                peaceful: "嗯，这种平静的感觉很珍贵。能这样安安静静地待着，也是一种幸福。",
+                sad: "我在这里陪你。难过的时候不需要硬撑着，想说什么就说吧。",
+                angry: "生气是完全可以理解的。有些事情确实让人很恼火，想吐槽就吐槽吧。",
+                confused: "迷茫的时候真的挺难受的。我们一起理一理，说不定会清晰一些。"
+            };
+
+            const categories = {
+                work: ["工作", "上班", "老板", "同事", "加班", "辞职", "职场"],
+                relationship: ["恋爱", "分手", "男朋友", "女朋友", "对象", "喜欢", "结婚"],
+                family: ["家人", "妈妈", "爸爸", "父母", "孩子", "催婚", "相亲"],
+                study: ["学习", "考试", "成绩", "考研", "高考"],
+                self: ["自己", "迷茫", "焦虑", "压力", "未来"]
+            };
+
+            let category = null;
+            for (const [key, words] of Object.entries(categories)) {
+                if (words.some(w => msg.includes(w))) { category = key; break; }
+            }
+
+            if (emotion && !category && msg.length < 20) return emotionResponses[emotion];
+
+            if (category === 'work') {
+                if (msg.includes("辞职") || msg.includes("不想干了")) return "辞职这个想法...我懂。有时候不是我们不够好，而是环境不对。是什么让你有了这个念头呢？";
+                if (msg.includes("加班")) return "加班加到怀疑人生了吧...这种疲惫感真的很消耗人。你现在是在吐槽还是真的撑不住了？";
+                if (msg.includes("老板")) return "遇到让人无语的领导真的很心累。有些老板真的只顾自己飞，完全不顾底下人的死活。你具体遇到了什么事？";
+                return "职场上的事真的复杂，每个人的处境都不一样。愿意多说说你现在的情况吗？";
+            }
+
+            if (category === 'relationship') {
+                if (msg.includes("分手")) return "分手后的日子确实难熬。不用急着'好起来'，想难过就难过，想骂就骂。这个过程没有标准时间。";
+                if (msg.includes("喜欢") || msg.includes("暗恋")) return "喜欢一个人本来就是甜蜜又痛苦的事。愿意说说是什么让你困扰吗？";
+                return "感情的事没有标准答案，每个人的感受都值得被尊重。发生了什么？";
+            }
+
+            if (category === 'family') {
+                if (msg.includes("催婚") || msg.includes("相亲")) return "被催婚的感觉...就像被贴了倒计时标签。我懂那种被推着走却又不想妥协的无奈。你自己怎么想的？";
+                return "家人之间的羁绊总是最深的，有时候也是最复杂的。想聊聊是什么让你烦心吗？";
+            }
+
+            if (category === 'study') {
+                if (msg.includes("考试") || msg.includes("成绩")) return "考试焦虑真的很折磨人。不管结果怎样，你现在能坚持着就已经很不容易了。";
+                if (msg.includes("考研") || msg.includes("高考")) return "这种重要考试前的日子确实不好过。高压、焦虑、怀疑自己...这些都是正常的。";
+                return "学习这件事有时候不仅仅是能力的考验，更是心态的较量。你是遇到什么困难了吗？";
+            }
+
+            if (category === 'self') {
+                if (msg.includes("迷茫")) return "迷茫其实是成长的开始。说明你在思考，在寻找。你现在在迷茫什么呢？";
+                if (msg.includes("焦虑")) return "焦虑的时候，整个人都像被什么东西揪着。我知道那种感觉。你是因为什么事情而焦虑呢？";
+                if (msg.includes("未来")) return "对未来的不确定感真的会让人很不安。但其实...没有人能确定未来会怎样，包括那些看起来很厉害的人。";
+                return "有时候停下来想想自己，是一件很重要的事。你愿意说说是什么让你有这样的感受吗？";
+            }
+
+            if (emotion) return emotionResponses[emotion];
+
+            const responses = [
+                "嗯，我听到了。有时候把话说出来本身就是一种释放。你愿意再多说说吗？",
+                "谢谢你愿意告诉我这些。每个人的感受都值得被认真对待。你现在感觉怎么样？",
+                "我能感受到这件事对你的影响。不用着急，我们慢慢聊。",
+                "说出来比憋着好多了。你继续说，我在认真听。",
+                "有时候重要的不是找到答案，而是有人愿意听你说完。这一切都挺不容易的吧？"
+            ];
+            return responses[Math.floor(Math.random() * responses.length)];
+        }
+
+        async function sendMessage() {
+            const content = messageInput.value.trim();
+            if (!content || isTyping) return;
+
+            isTyping = true;
+            const timestamp = Date.now();
+            const messages = loadMessages();
+
+            messages.push({ role: 'user', content: content, emotion: currentEmotion, timestamp: timestamp });
+            saveMessages(messages);
+
+            welcome.style.display = 'none';
+            appendMessage('user', content, currentEmotion, timestamp);
+
+            messageInput.value = '';
+            messageInput.style.height = 'auto';
+            sendBtn.disabled = true;
+
+            appendTypingIndicator();
+
+            setTimeout(() => {
+                removeTypingIndicator();
+                const aiResponse = generateResponse(content, currentEmotion);
+                const aiTimestamp = Date.now();
+                messages.push({ role: 'ai', content: aiResponse, timestamp: aiTimestamp });
+                saveMessages(messages);
+                appendMessage('ai', aiResponse, null, aiTimestamp);
+                isTyping = false;
+            }, 1000 + Math.random() * 1500);
+        }
+
+        messageInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+            sendBtn.disabled = !this.value.trim();
+        });
+
+        messageInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) { e.preventDefault(); sendMessage(); }
+        });
+
+        sendBtn.addEventListener('click', sendMessage);
+
+        emotionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const emotion = btn.dataset.emotion;
+                if (currentEmotion === emotion) {
+                    btn.classList.remove('active');
+                    currentEmotion = null;
+                } else {
+                    emotionBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentEmotion = emotion;
+                }
+            });
+        });
+
+        clearBtn.addEventListener('click', () => { modalOverlay.classList.add('active'); });
+        cancelClear.addEventListener('click', () => { modalOverlay.classList.remove('active'); });
+        confirmClear.addEventListener('click', () => {
+            localStorage.removeItem(STORAGE_KEY);
+            chatContainer.innerHTML = '';
+            chatContainer.appendChild(welcome);
+            welcome.style.display = 'block';
+            modalOverlay.classList.remove('active');
+            currentEmotion = null;
+            emotionBtns.forEach(b => b.classList.remove('active'));
+        });
+        modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) modalOverlay.classList.remove('active'); });
+
+        renderMessages();
+    </script>
+</body>
+</html>

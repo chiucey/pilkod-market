@@ -1,0 +1,299 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "02a1e2c01000fb2f6efdaac39ffcbdc0acdd62ea",
+      "size": 2159
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha": "6df7143b15392e9216b116f32973b02cef4ac0e0",
+      "size": 1005
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "2869d7797b3e2c21cb71f9fc7dd8367e82e45313",
+      "size": 11865
+    },
+    {
+      "path": "SKILL_GUIDE.md",
+      "sha": "d7ef42d5c9b8b37fb8c9efb97be8155d55b733f1",
+      "size": 16060
+    },
+    {
+      "path": "_meta.json",
+      "sha": "88eff4d7e3cf1456ddd1020df5e710830a7c869c",
+      "size": 145
+    },
+    {
+      "path": "cards/_template.yaml",
+      "sha": "5b228d442bdb70faa43cf3e5c8f212fcd0d6e579",
+      "size": 2672
+    },
+    {
+      "path": "config.example.yaml",
+      "sha": "0f39cbc89b0c3b7ab2f1cffdd34f88346932bc77",
+      "size": 6133
+    },
+    {
+      "path": "example/README.md",
+      "sha": "6d8430baa64ba9afb798357eddc0d2e1f39391f8",
+      "size": 1160
+    },
+    {
+      "path": "example/card_example.yaml",
+      "sha": "fc28d2a0cb7eb2a8e47b3d10cd2e6f2c09e2fb03",
+      "size": 1642
+    },
+    {
+      "path": "example/开工示范.md",
+      "sha": "0207d864bee417619a3cc9da5856081aa640c500",
+      "size": 3011
+    },
+    {
+      "path": "jd.txt",
+      "sha": "90097b9686689aa2a6007ba36c45559311894727",
+      "size": 738
+    },
+    {
+      "path": "new.txt",
+      "sha": "cc21def4264c43662698f80dc4348e417a4e94d6",
+      "size": 750
+    },
+    {
+      "path": "profile.yaml.example",
+      "sha": "bbd564e46adef71de2452c9531475621966f321a",
+      "size": 1563
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "7427acb9384917926208a3f60af6f64ac89cbd36",
+      "size": 678
+    },
+    {
+      "path": "resume.example.md",
+      "sha": "7bf9bbd9b790069e49bbd68dfbd2e896580ae909",
+      "size": 972
+    },
+    {
+      "path": "resume_src.example.yaml",
+      "sha": "03cebdca117a6893d764d38e244c561e7da8c0cc",
+      "size": 3895
+    },
+    {
+      "path": "schema.yaml",
+      "sha": "25b488e747fb6930c53ca39d56f5903ab22af8a6",
+      "size": 3360
+    },
+    {
+      "path": "scripts/README.md",
+      "sha": "2be1b9139745e0eb2f0446d232dfc815462fbfda",
+      "size": 842
+    },
+    {
+      "path": "scripts/pack.py",
+      "sha": "a160e079568f912065cd7f82248f0fd9b2e3feb0",
+      "size": 7335
+    },
+    {
+      "path": "tools/BOSS.md",
+      "sha": "11e957487eb9abffe2e62d9972004c1f56a19784",
+      "size": 14316
+    },
+    {
+      "path": "tools/CONTRACT.md",
+      "sha": "431a65ddcbd82d8bcf967f4b6ef3e265255796d2",
+      "size": 2644
+    },
+    {
+      "path": "tools/ENGINE.md",
+      "sha": "a4cdff9c433612073b41aef35dc878b653b35081",
+      "size": 22332
+    },
+    {
+      "path": "tools/README.md",
+      "sha": "c44dc123fb7fa42ba9350cb33fa10cc5e629564b",
+      "size": 2775
+    },
+    {
+      "path": "tools/STRATEGY.md",
+      "sha": "f9d87eff766d4a22d7565097f8f4bbe663c70e0d",
+      "size": 2383
+    },
+    {
+      "path": "tools/analyzer.py",
+      "sha": "90caf84056e9fd88a92a3bb6456b42c1c6ce3ed3",
+      "size": 10550
+    },
+    {
+      "path": "tools/answer.py",
+      "sha": "540ee4e00a9ce1547eefe94e1248e6d35d8cf256",
+      "size": 37548
+    },
+    {
+      "path": "tools/backtest.py",
+      "sha": "770ba08ecdab293751f8c814fd3873562afc28ef",
+      "size": 8000
+    },
+    {
+      "path": "tools/boss.mjs",
+      "sha": "16e6e7c8c217a13a4b11474f2286e68baa1142f2",
+      "size": 24943
+    },
+    {
+      "path": "tools/boss.py",
+      "sha": "a6dc19cfda5c4281f3546f01198a1871f9193d76",
+      "size": 33435
+    },
+    {
+      "path": "tools/boss_jd.mjs",
+      "sha": "def4006aca3203b82618d0da927622619c4a8cae",
+      "size": 7877
+    },
+    {
+      "path": "tools/build_card.py",
+      "sha": "b9772b18b25c7b6e685f40cdcd4c1965bc84b96e",
+      "size": 16896
+    },
+    {
+      "path": "tools/cross_analysis.py",
+      "sha": "01095690b19c8863a5f4f139c2c7f3d13ce61792",
+      "size": 7386
+    },
+    {
+      "path": "tools/decision.py",
+      "sha": "caeea85609038ba299a3d47fc88ea6db77e415ba",
+      "size": 13809
+    },
+    {
+      "path": "tools/diagnosis.py",
+      "sha": "b32fa23e82e8763d7fe6277bb1196d3990abf969",
+      "size": 12501
+    },
+    {
+      "path": "tools/digest_guide.md",
+      "sha": "03801e1f18dfa9a535969dded010596a0cd5f437",
+      "size": 2971
+    },
+    {
+      "path": "tools/export_table.py",
+      "sha": "53598530ce0453686d9224bbbcb8af40d25714ba",
+      "size": 3051
+    },
+    {
+      "path": "tools/industry_taxonomy.py",
+      "sha": "bae370af146a88c66c0a89df1db83037ece8e8e5",
+      "size": 31286
+    },
+    {
+      "path": "tools/insights.py",
+      "sha": "04cbd79a4473165f738bbc429ca4d29e33c3061d",
+      "size": 9565
+    },
+    {
+      "path": "tools/main.py",
+      "sha": "f37b86930a6901efe72f9fbec325ba4d7355e1a8",
+      "size": 13193
+    },
+    {
+      "path": "tools/merge.py",
+      "sha": "beee1e7121c1876e9a3b88d0221f0db7f65896d7",
+      "size": 6269
+    },
+    {
+      "path": "tools/predict.py",
+      "sha": "daab4632e59f2cc2e796aeb61d210c659fd995d3",
+      "size": 5351
+    },
+    {
+      "path": "tools/predict_apply.py",
+      "sha": "a7bb56af86e8fc211023f0509379285af15bb22d",
+      "size": 6227
+    },
+    {
+      "path": "tools/record.py",
+      "sha": "be945140c7f69dbd9e714f502651e4bce0cf6d27",
+      "size": 13123
+    },
+    {
+      "path": "tools/remind.py",
+      "sha": "ebd915c5b1d33eee0350961964922ccadc6d1695",
+      "size": 8407
+    },
+    {
+      "path": "tools/report2.py",
+      "sha": "bce19c1d3d727c977e90743cd13a57da21ebf41c",
+      "size": 6325
+    },
+    {
+      "path": "tools/report3.py",
+      "sha": "639025eec7190bfb36aedef3e6573801ab978d32",
+      "size": 9182
+    },
+    {
+      "path": "tools/report_all.py",
+      "sha": "b2fec7fbdf517056ec70d9c58c7348cd7cbbb267",
+      "size": 20939
+    },
+    {
+      "path": "tools/requirements.txt",
+      "sha": "2dbd376a5aae94293154f283eef1033439fb5940",
+      "size": 698
+    },
+    {
+      "path": "tools/resume_check.py",
+      "sha": "84915def77238d95f016753977902b23ce4f2c55",
+      "size": 27978
+    },
+    {
+      "path": "tools/resume_edit.py",
+      "sha": "71705e293c9fa6c98ad3deafdfabb757d37e8222",
+      "size": 7046
+    },
+    {
+      "path": "tools/resume_render.py",
+      "sha": "7cdb4c7731dd233c69775ab7e26783b2baf4d1da",
+      "size": 11852
+    },
+    {
+      "path": "tools/schema.yaml",
+      "sha": "8c52cdc95d7be5df16bc28d765b569cd1e43b549",
+      "size": 3825
+    },
+    {
+      "path": "tools/setup.py",
+      "sha": "d2bdf27f48af54a88efb2326a078e52b9c9c608b",
+      "size": 14836
+    },
+    {
+      "path": "tools/strategy.py",
+      "sha": "3ca978a7f3c989068ee5d991a20d5d95bb8b5a39",
+      "size": 12228
+    },
+    {
+      "path": "tools/tracks.py",
+      "sha": "8a878d64d3c15ca5750da899c2c6caccd9a90240",
+      "size": 8584
+    },
+    {
+      "path": "tools/validate.py",
+      "sha": "639c948737498b83c554d6fdf4d631a8283d630b",
+      "size": 68088
+    },
+    {
+      "path": "tools/webserve.py",
+      "sha": "270db74b4a60d8790e07f86ab57ba360417c48e3",
+      "size": 60612
+    },
+    {
+      "path": "tools/优化建议与演进路线.md",
+      "sha": "e0a22601aedc853190306ec05fbadc08410832ce",
+      "size": 5962
+    },
+    {
+      "path": "方法学.md",
+      "sha": "a361cd030c2eefb85625c56666560385b827ec95",
+      "size": 3207
+    }
+  ]
+}

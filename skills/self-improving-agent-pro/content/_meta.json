@@ -1,0 +1,75 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "五层进化机制（探索、反馈、萃取、教训、迭代）",
+    "Python可执行代码实现",
+    "单元测试覆盖",
+    "YAML配置管理",
+    "进化状态自动追踪",
+    "模式识别自动提取",
+    "知识推广四类目标",
+    "经验库与教训库管理",
+    "成功率实时计算",
+    "举一反三与跨领域迁移"
+  ],
+  "created": "2026-03-27",
+  "dependencies": {
+    "python": [
+      "3.8+"
+    ]
+  },
+  "description": "自我提升代理专业版，融合五层进化机制与完整Python实现，支持记录学习、错误、功能请求、知识推广、进化追踪和模式识别。提供可执行的代码、单元测试和配置管理，适合需要深度定制的用户。",
+  "edition": "pro",
+  "edition_features": [
+    "完整Python可执行代码",
+    "单元测试套件",
+    "YAML配置文件",
+    "增强的五层进化机制",
+    "自动进化追踪",
+    "模式识别引擎"
+  ],
+  "evolution_state": {
+    "experience_count": 0,
+    "feature_request_count": 0,
+    "iteration_count": 0,
+    "last_update": "2026-03-27",
+    "lesson_count": 0,
+    "success_rate": "N/A"
+  },
+  "id": 381076603662501,
+  "milestones": {
+    "v1.0": "专业版发布 - 完整项目结构"
+  },
+  "name": "self-improving-agent-pro",
+  "permissions": [
+    "read:file",
+    "write:file",
+    "network:false"
+  ],
+  "platform": "minimax",
+  "tags": [
+    "self-improvement",
+    "learning",
+    "evolution",
+    "iteration",
+    "pattern-recognition",
+    "pro",
+    "advanced"
+  ],
+  "triggers": [
+    "log learning",
+    "log error",
+    "log feature request",
+    "promote learning",
+    "review learnings",
+    "持续改进",
+    "自我反思",
+    "举一反三",
+    "萃取经验",
+    "吸取教训",
+    "进化"
+  ],
+  "updated": "2026-03-27",
+  "updated_at": 1774589879330,
+  "version": "1.0.0"
+}

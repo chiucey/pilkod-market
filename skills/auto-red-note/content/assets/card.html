@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1440">
+    <title>小红书内容卡片</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 1080px;
+            min-height: 1440px;
+            background: var(--theme-background);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            padding: 40px;
+        }
+        .container {
+            width: 1000px;
+            min-height: 1360px;
+            background: var(--theme-card-bg);
+            border-radius: 32px;
+            border: 4px solid var(--theme-border);
+            padding: 50px;
+            position: relative;
+        }
+        .card-number {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 36px;
+            color: var(--theme-accent);
+            font-weight: 600;
+        }
+        .heading {
+            font-size: 72px;
+            font-weight: 700;
+            color: var(--theme-heading);
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+        .content {
+            font-size: 42px;
+            color: var(--theme-text);
+            line-height: 1.8;
+        }
+        .content h1, .content h2, .content h3 {
+            color: var(--theme-heading);
+            margin: 30px 0 20px 0;
+        }
+        .content h1 { font-size: 60px; }
+        .content h2 { font-size: 52px; }
+        .content h3 { font-size: 48px; }
+        .content p { margin: 20px 0; }
+        .content ul, .content ol {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+        .content li { margin: 15px 0; }
+        .content blockquote {
+            border-left: 6px solid var(--theme-accent);
+            padding-left: 30px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--theme-accent);
+        }
+        .content code {
+            background: var(--theme-background);
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-family: 'SF Mono', Consolas, monospace;
+        }
+        .content pre {
+            background: var(--theme-background);
+            padding: 30px;
+            border-radius: 16px;
+            overflow-x: auto;
+        }
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+        /* 主题变体 */
+        body.theme-default {
+            --theme-background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            --theme-card-bg: #ffffff;
+            --theme-border: #d1d5db;
+            --theme-heading: #1f2937;
+            --theme-text: #374151;
+            --theme-accent: #6b7280;
+        }
+        body.theme-playful-geometric {
+            --theme-background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            --theme-card-bg: #ffffff;
+            --theme-border: #ff9a9e;
+            --theme-heading: #e63946;
+            --theme-text: #2d3436;
+            --theme-accent: #ff6b6b;
+        }
+        body.theme-neo-brutalism {
+            --theme-background: #ffeb3b;
+            --theme-card-bg: #ffffff;
+            --theme-border: #000000;
+            --theme-heading: #000000;
+            --theme-text: #000000;
+            --theme-accent: #ff00ff;
+            box-shadow: 4px 4px 0px #000000;
+        }
+        body.theme-botanical {
+            --theme-background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            --theme-card-bg: #f1f8e9;
+            --theme-border: #81c784;
+            --theme-heading: #2e7d32;
+            --theme-text: #388e3c;
+            --theme-accent: #4caf50;
+        }
+        body.theme-professional {
+            --theme-background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            --theme-card-bg: #ffffff;
+            --theme-border: #e3f2fd;
+            --theme-heading: #1565c0;
+            --theme-text: #0d47a1;
+            --theme-accent: #1976d2;
+        }
+        body.theme-retro {
+            --theme-background: linear-gradient(135deg, #f5f5dc 0%, #deb887 100%);
+            --theme-card-bg: #fffaf0;
+            --theme-border: #d2691e;
+            --theme-heading: #8b4513;
+            --theme-text: #654321;
+            --theme-accent: #cd853f;
+        }
+        body.theme-terminal {
+            --theme-background: #1e1e1e;
+            --theme-card-bg: #252526;
+            --theme-border: #3c3c3c;
+            --theme-heading: #4ec9b0;
+            --theme-text: #d4d4d4;
+            --theme-accent: #569cd6;
+            font-family: Consolas, 'Courier New', monospace;
+        }
+        body.theme-sketch {
+            --theme-background: #fefefe;
+            --theme-card-bg: #fafafa;
+            --theme-border: #424242;
+            --theme-heading: #212121;
+            --theme-text: #616161;
+            --theme-accent: #9e9e9e;
+        }
+    </style>
+</head>
+<body class="theme-default">
+    <div class="container">
+        <span class="card-number">{{CARD_NUMBER}}</span>
+        {{#if HEADING}}
+        <div class="heading">{{HEADING}}</div>
+        {{/if}}
+        <div class="content">{{{CONTENT}}}</div>
+    </div>
+</body>
+</html>

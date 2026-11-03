@@ -1,0 +1,43 @@
+# 张雪峰技能配置文件
+# 无OpenClaw依赖，纯本地运行
+
+data_source: "mock"  # mock: 使用内置模拟数据, file: 使用本地CSV数据文件
+data_file_path: "./assets/gaokao_data.csv"
+
+output_directory: "./output"
+
+default_language: "zh-CN"
+
+timeout_seconds: 30
+
+# 数据覆盖省份
+supported_provinces:
+  - "北京"
+  - "河南"
+  - "山东"
+  - "江苏"
+  - "浙江"
+  - "广东"
+  - "四川"
+  - "湖北"
+
+# 默认推荐专业列表
+recommended_majors:
+  - "计算机"
+  - "软件工程"
+  - "电子信息"
+  - "电气工程"
+  - "口腔医学"
+  - "临床医学"
+  - "法学"
+  - "自动化"
+
+# 劝退专业列表（四大天坑+其他）
+warning_majors:
+  - "生物"
+  - "化学"
+  - "环境"
+  - "材料"
+  - "物理学"
+  - "哲学"
+  - "历史学"

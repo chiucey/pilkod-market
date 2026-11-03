@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "60fcfb69f59ebbc51543fa156fcac637eb8aaaae",
+      "size": 6423
+    },
+    {
+      "path": "RELEASE_v1.2.0.md",
+      "sha": "273cefc27bd080519176f6bc284de103b8e8041e",
+      "size": 8418
+    },
+    {
+      "path": "RELEASE_v1.3.0.md",
+      "sha": "994903ecc0c4e1a79bcb67b62babf36a342f315e",
+      "size": 4759
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "a9ad44c2312eedf6ca08c155c550dddd0fd8d1e3",
+      "size": 27428
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e08977f309b6dcc3d7512306806f50421f122c7f",
+      "size": 246
+    },
+    {
+      "path": "bugfix/001-daily-review-extract.md",
+      "sha": "ba8ec627e7843c0dcc8c7231f29db45e418be4ab",
+      "size": 6605
+    },
+    {
+      "path": "bugfix/002-memory-manager-updateCoreMemory.md",
+      "sha": "3076c6de2de0d6ed7bed58bb584b45ee79711da4",
+      "size": 7429
+    },
+    {
+      "path": "bugfix/003-session-archiver.md",
+      "sha": "eb3ebf4028aa1367e5d6a049c3e11dc98f54ef57",
+      "size": 12899
+    },
+    {
+      "path": "bugfix/003-session-saver.md",
+      "sha": "3c4fa9b8eeccec87925d67a1457035a7d047618d",
+      "size": 8167
+    },
+    {
+      "path": "bugfix/004-cron-execution.md",
+      "sha": "02c8575ebaa4018eede43fbd024eba3a5485b021",
+      "size": 2968
+    },
+    {
+      "path": "bugfix/005-moment-detector-integration.md",
+      "sha": "94d802c9fcb28ac842212c5555518da280341a6c",
+      "size": 10650
+    },
+    {
+      "path": "bugfix/006-command-parser-integration.md",
+      "sha": "0f3f743f5861154cbf82581c55ee82e51bb16283",
+      "size": 6876
+    },
+    {
+      "path": "bugfix/007-detailed-conversation-format.md",
+      "sha": "2fc4a0ace02715ce978e512206aa60fbaaf4e2ab",
+      "size": 7224
+    },
+    {
+      "path": "bugfix/008-daily-note-spec.md",
+      "sha": "f2fe4b178e275fe73321f1bc581cb1a13f870962",
+      "size": 6875
+    },
+    {
+      "path": "bugfix/009-semantic-search.md",
+      "sha": "79a6af6abade3784183c88a8a21ccc01c23d8233",
+      "size": 8051
+    },
+    {
+      "path": "bugfix/010-monthly-report.md",
+      "sha": "a02b00cd9b47b21598d488e6669f86ecb04d860c",
+      "size": 9508
+    },
+    {
+      "path": "bugfix/bugfix.md",
+      "sha": "e32a3f03bcf0bc8c960675cf5f2f2677e21b155f",
+      "size": 10132
+    },
+    {
+      "path": "bugfix/phase1-summary.md",
+      "sha": "a6b87e86f1833a3f9b94357d98ff26795ea18d3a",
+      "size": 4654
+    },
+    {
+      "path": "bugfix/phase2-summary.md",
+      "sha": "20f2fc1d31c7d8b929c177bf2d9fcbcf9022db1d",
+      "size": 6494
+    },
+    {
+      "path": "config/default-config.json",
+      "sha": "3f48dbff84b1ef8ebbce5f4db6458da06ebadeba",
+      "size": 1909
+    },
+    {
+      "path": "scripts/archive.js",
+      "sha": "f4f8206cdc301b38462db92a9c12d13beed63e1f",
+      "size": 5660
+    },
+    {
+      "path": "scripts/command-parser.js",
+      "sha": "7d03b3ac2a607c370b68a0ca2ce916be2b963da9",
+      "size": 7064
+    },
+    {
+      "path": "scripts/daily-review-optimized.js",
+      "sha": "4dbc672f910383fb0e5abf318bef2a7c1bedac25",
+      "size": 12447
+    },
+    {
+      "path": "scripts/daily-review.js",
+      "sha": "295df72e541054bb7fdea5681b0fb75c8fb1ea03",
+      "size": 18183
+    },
+    {
+      "path": "scripts/daily-session-backup.js",
+      "sha": "45fb7576daff368ed712251cb8c8ff0095d97ddf",
+      "size": 8454
+    },
+    {
+      "path": "scripts/generate-report.js",
+      "sha": "7b13845fee2ca6bbff13f330de4d55e86ddd802d",
+      "size": 8138
+    },
+    {
+      "path": "scripts/memory-manager.js",
+      "sha": "d82b5540d6a3daac5538ce18f504400a9a86accf",
+      "size": 14030
+    },
+    {
+      "path": "scripts/moment-detector.js",
+      "sha": "d18f33cf99bbe080f2fa1065e8a9b85bd7120ad8",
+      "size": 15446
+    },
+    {
+      "path": "scripts/monthly-session-archive.js",
+      "sha": "dd2cfc2ad275372c0e58383c16541b330a00c43a",
+      "size": 6260
+    },
+    {
+      "path": "scripts/synonyms.js",
+      "sha": "14d3d90ad145c26ced8e87d3330ec253178cd788",
+      "size": 2304
+    }
+  ]
+}

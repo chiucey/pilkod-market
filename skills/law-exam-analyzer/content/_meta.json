@@ -1,0 +1,21 @@
+{
+  "author": "MiniMax Agent",
+  "changelog": "Added OCR support for scanned PDFs using Tesseract OCR engine",
+  "created": "2026-03-27",
+  "description": "Law exam error analysis skill - Converts law exam error PDF (including scanned PDFs with OCR) into structured knowledge summaries, mind maps, and data visualization charts",
+  "id": 381100639961337,
+  "name": "law-exam-analyzer",
+  "platform": "minimax",
+  "tags": [
+    "law",
+    "bar-exam",
+    "error-analysis",
+    "pdf-processing",
+    "data-visualization",
+    "ocr",
+    "scanned-pdf"
+  ],
+  "updated": "2026-03-27",
+  "updated_at": 1774595842408,
+  "version": "1.1.0"
+}

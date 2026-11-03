@@ -1,0 +1,27 @@
+{
+  "author": "Paul \u0026 Dama \u0026 MiniMax Agent",
+  "created": "2026-03-23",
+  "description": "深度科研文献调研助手v1.0.0。秉持文献「贵精不贵多」的理念，帮助科研人员高效完成高质量文献调研，拒绝信息过载。面向自然科学研究者，提供选择性文献调研、KOL追踪、经典文献锚定等三大方法体系。支持关键词搜索、学者定向、概念溯源等多种调研策略，自动进行四维质量筛选（引用量、期刊等级、发表时效、引用量增速），生成结构化六模块调研报告。特别新增引用量增速分析，帮助判断领域未来发展趋势。如有问题或需求，联系c.li2024@outlook.com",
+  "disciplines": [
+    "biology",
+    "chemistry",
+    "physics",
+    "medicine",
+    "engineering",
+    "materials",
+    "environmental"
+  ],
+  "id": 379788262720373,
+  "name": "deep-literature-reviewer",
+  "platform": "minimax",
+  "tags": [
+    "literature-review",
+    "research",
+    "scientific",
+    "meta-analysis",
+    "academic"
+  ],
+  "updated": "2026-03-23",
+  "updated_at": 1774275463601,
+  "version": "1.0.0"
+}

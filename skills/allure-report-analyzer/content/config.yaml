@@ -1,0 +1,93 @@
+# Allure 报告分析器配置文件
+# 用于自定义分析规则和分类
+
+# 分析器设置
+analyzer:
+  # 最慢测试显示数量
+  slowest_tests_limit: 10
+
+  # 失败详情最大显示数量
+  max_failure_details: 20
+
+  # 执行超时阈值（毫秒），超过此值的测试将被标记
+  slow_test_threshold: 30000
+
+# 失败分类规则
+# 支持正则表达式匹配失败消息和堆栈
+failure_categories:
+  - name: "网络问题"
+    pattern: "(timeout|connection|network|socket|connect|refused)"
+    severity: high
+    description: "网络相关问题"
+
+  - name: "断言失败"
+    pattern: "(assert|expected|actual|mismatch)"
+    severity: medium
+    description: "断言或预期值不匹配"
+
+  - name: "空指针"
+    pattern: "(null|nullpointer|nil)"
+    severity: high
+    description: "空值引用异常"
+
+  - name: "超时问题"
+    pattern: "(timed out|timeout|elapsed)"
+    severity: medium
+    description: "执行超时"
+
+  - name: "前置条件失败"
+    pattern: "(assumption|precondition|skip)"
+    severity: low
+    description: "测试前置条件不满足"
+
+# 通知设置
+notifications:
+  enabled: false
+
+  # Webhook 配置
+  webhooks:
+    - name: "Slack"
+      url: "${SLACK_WEBHOOK_URL}"
+      enabled: false
+
+    - name: "企业微信"
+      url: "${WECOM_WEBHOOK_URL}"
+      enabled: false
+
+    - name: "钉钉"
+      url: "${DINGTALK_WEBHOOK_URL}"
+      enabled: false
+
+# 趋势分析设置
+trend_analysis:
+  enabled: true
+
+  # 历史报告保留天数
+  retention_days: 30
+
+  # 趋势报告输出路径
+  output_path: "./trend-reports"
+
+  # 警告阈值
+  thresholds:
+    pass_rate_warning: 90    # 通过率低于此值时警告
+    pass_rate_critical: 80  # 通过率低于此值时严重警告
+    failure_increase_warning: 10  # 失败增加百分比警告
+
+# 输出格式设置
+output:
+  # 终端输出配色
+  color_enabled: true
+
+  # JSON 格式化
+  json_indent: 2
+
+  # 包含详细堆栈跟踪
+  include_stack_trace: true
+
+# 报告生成设置
+report_generation:
+  # 是否生成 HTML 报告
+  generate_html: false
+
+  # 模板路径

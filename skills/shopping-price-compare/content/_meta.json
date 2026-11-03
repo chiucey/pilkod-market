@@ -1,0 +1,65 @@
+{
+  "author": "中贸宏图",
+  "cleaned_from": {
+    "removed": [
+      "__MACOSX/**",
+      ".DS_Store",
+      "._* 资源分支文件"
+    ],
+    "restructured": "技能本体提升到压缩包根目录（原为双层嵌套）"
+  },
+  "data_flow": "脚本仅通过 HTTPS POST 将本次购物参数（关键词、预算、条件、用户原话）发送给作者运营的购物推荐服务，返回商品、到手价与购买链接；不读取本机其他文件，不收集账号、密钥或个人信息。",
+  "description": "实时查询淘宝/天猫、京东、拼多多的商品价格，比较到手价、优惠券与拼单价，返回对比表和购买链接。",
+  "display_name": "淘宝京东拼多多比价 · 购物推荐",
+  "entrypoint": "SKILL.md",
+  "id": 456560695824514,
+  "license": "MIT",
+  "name": "shopping-price-compare",
+  "original_package": "shopping-price-compare.zip",
+  "original_skill_name": "taobao-jd-pdd-price-compare",
+  "platform": "minimax",
+  "requirements": {
+    "credentials": "不需要账号、密钥或任何配置",
+    "network": "需要访问外部 HTTPS 服务",
+    "python": "3.x（仅标准库，无第三方依赖）"
+  },
+  "resources": [
+    {
+      "note": "取商品数据的脚本，仅使用 Python 标准库",
+      "path": "scripts/shop_search.py",
+      "type": "file"
+    },
+    {
+      "note": "触发与降级测试用例",
+      "path": "examples/cases.json",
+      "type": "file"
+    },
+    {
+      "note": "技能图标 512x512 PNG",
+      "path": "assets/icon.png",
+      "type": "file"
+    },
+    {
+      "note": "安装与使用说明",
+      "path": "README.md",
+      "type": "file"
+    },
+    {
+      "note": "MIT 许可证",
+      "path": "LICENSE",
+      "type": "file"
+    }
+  ],
+  "script": "scripts/shop_search.py",
+  "tags": [
+    "shopping",
+    "price-comparison",
+    "ecommerce",
+    "taobao",
+    "jd",
+    "pdd",
+    "shopping"
+  ],
+  "updated_at": 1793017994358,
+  "version": "1.0.0"
+}

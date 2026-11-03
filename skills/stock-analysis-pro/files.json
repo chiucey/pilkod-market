@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "31d65f2506fb21719dd78d81d35b16eee11a74f5",
+      "size": 2461
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "90248bdac7235ffe864cfac1b130a75d7cffe5c4",
+      "size": 5023
+    },
+    {
+      "path": "_meta.json",
+      "sha": "f1c7febcedee43d0b95cbfa29060cb8670ee5914",
+      "size": 602
+    },
+    {
+      "path": "assets/.gitkeep",
+      "sha": "9f28fd04e26d03b5c010ae6454d9d2929a5a95b4",
+      "size": 94
+    },
+    {
+      "path": "config/settings.yaml",
+      "sha": "138f0f936bc10a2221b2388d4865a3889f5e506b",
+      "size": 1882
+    },
+    {
+      "path": "instructions/system_prompt.md",
+      "sha": "99b30c38c3da50ab849c56af62c5334ebaf306c2",
+      "size": 1716
+    },
+    {
+      "path": "references/financial_indicators.md",
+      "sha": "b443b2f95f40b600dba6101c8cd9b14da5053160",
+      "size": 1023
+    },
+    {
+      "path": "references/risk_assessment.md",
+      "sha": "bb718c1ef859f6e35ee975213af43d8627cc8eb2",
+      "size": 1005
+    },
+    {
+      "path": "references/technical_indicators.md",
+      "sha": "33f600381795c5b9dbdcccd5b08f8e9cbff2bb2e",
+      "size": 1659
+    },
+    {
+      "path": "references/valuation_models.md",
+      "sha": "1c467cb0758c0315d7afd353d7e50c7fc52370e7",
+      "size": 1041
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "418398983c4e3452c2a9968adf80e2f51a3b282a",
+      "size": 1777
+    },
+    {
+      "path": "scripts/validate_skill.py",
+      "sha": "979e0a4d0bb4acd2c3ee81f51080e1fdd72880cf",
+      "size": 3493
+    },
+    {
+      "path": "src/main.py",
+      "sha": "990530c0b9556c30ad6d3cd384072f183ea12016",
+      "size": 26890
+    },
+    {
+      "path": "tests/test_main.py",
+      "sha": "df5873550d80403a3664144726c11bc8a3501325",
+      "size": 10031
+    }
+  ]
+}

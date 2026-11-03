@@ -1,0 +1,26 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-23",
+  "dependencies": {
+    "packages": [
+      "pdfplumber",
+      "openpyxl",
+      "pandas",
+      "Pillow"
+    ],
+    "python": "\u003e=3.8"
+  },
+  "description": "智能发票处理工具 - 自动整理、去重、分类并生成报销报表",
+  "entry": "main.py",
+  "id": 379798667485965,
+  "name": "invoice-processor",
+  "platform": "minimax",
+  "tags": [
+    "发票",
+    "报销",
+    "财务",
+    "出差"
+  ],
+  "updated_at": 1774277500164,
+  "version": "1.0.0"
+}

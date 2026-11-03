@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "fb28c08b884c4e21a72bf81ffa0cc258b54e65ed",
+      "size": 6395
+    },
+    {
+      "path": "_meta.json",
+      "sha": "54c774f4aa084db85145ec49df19b1480a293e0c",
+      "size": 2248
+    },
+    {
+      "path": "references/bytecode_analysis_guide.md",
+      "sha": "7c68939ed7a6cde225ba0c2ee5f1e4e1894904f1",
+      "size": 7786
+    },
+    {
+      "path": "references/python_obfuscation_types.md",
+      "sha": "2a0fccaaed693b3d2165b1dbf9026e214842c2ab",
+      "size": 5824
+    },
+    {
+      "path": "scripts/bytecode_analyzer.py",
+      "sha": "381cfffd30dd346800c9fffdc6b8c2e88cd6e06e",
+      "size": 16590
+    },
+    {
+      "path": "scripts/exec_decryptor.py",
+      "sha": "e352708147de2e7cbfe46733e2f60062cd894686",
+      "size": 17823
+    },
+    {
+      "path": "scripts/hyperion_deobfuscator.py",
+      "sha": "12c034f8a651e2f2f26ae66840e36c56f8f87ff9",
+      "size": 13753
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "9bae252c7229868022f984ce2fd70a8880498f74",
+      "size": 3553
+    },
+    {
+      "path": "scripts/pyinstxtractor.py",
+      "sha": "d419e4b8f8b918ee408ee8e8b4c7631a49f27194",
+      "size": 17605
+    },
+    {
+      "path": "scripts/validate_skill.py",
+      "sha": "8545ea11e48563152f3c75edc5ebbe609195b018",
+      "size": 7327
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "b2b-marketing-ops",
+  "created_at": "2026-03-30T09:56:31.511818",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size": 7918
+    },
+    {
+      "path": "_meta.json",
+      "size": 514
+    },
+    {
+      "path": "dist/b2b-marketing-ops.skill",
+      "size": 3972
+    },
+    {
+      "path": "dist/b2b-marketing-ops.skill.json",
+      "size": 1076
+    },
+    {
+      "path": "dist/b2b-marketing-ops.skill.sha256",
+      "size": 64
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "size": 6517
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "size": 7917
+    },
+    {
+      "path": "scripts/test_package.py",
+      "size": 2281
+    },
+    {
+      "path": "scripts/test_validate.py",
+      "size": 1901
+    },
+    {
+      "path": "scripts/__pycache__/package_skill.cpython-312.pyc",
+      "size": 9718
+    },
+    {
+      "path": "scripts/__pycache__/quick_validate.cpython-312.pyc",
+      "size": 11917
+    }
+  ],
+  "file_count": 7,
+  "total_size": 28124,
+  "checksum": "fc8b2b8037477f233336fbbe97c1ae6df34575ec25a7e30f0708d8e0f29a467c"
+}

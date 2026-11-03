@@ -1,0 +1,254 @@
+{
+  "files": [
+    {
+      "path": "CLI_TEST_GUIDE.md",
+      "sha": "4a93d7e210ae45622cb841975bf338fd88f43d04",
+      "size": 13069
+    },
+    {
+      "path": "OPTIMIZATION_COMPLETE.md",
+      "sha": "c4e3c0c4299db5e39019b382e1df074ff41aaac2",
+      "size": 9811
+    },
+    {
+      "path": "README.md",
+      "sha": "72a5bdab1304b00b3c81d8ba71228faca86afd0b",
+      "size": 1486
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "b0c14132ebbe36000ea01206cf11dbb2be092821",
+      "size": 12264
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "sha": "e2d5aab10133506778f4c0187f20ca20b32c400d",
+      "size": 13281
+    },
+    {
+      "path": "UPGRADE_V5.0.0_SUMMARY.md",
+      "sha": "28239db664e7f825a74d97189a91cd1c8affbe72",
+      "size": 11399
+    },
+    {
+      "path": "_meta.json",
+      "sha": "f5cf6cdcc7a49ac5cddfa212a910832d0749ea34",
+      "size": 148
+    },
+    {
+      "path": "cases/negative/case-001-human-nonhuman-dichotomy.md",
+      "sha": "cfb1f12903661a1848b2d3c27df3293d2aa7b116",
+      "size": 4762
+    },
+    {
+      "path": "cases/negative/case-002-not-tracing-far-enough.md",
+      "sha": "af549ba83ebadbe61c73156f50a0baccd8fd4c88",
+      "size": 5313
+    },
+    {
+      "path": "cases/negative/case-003-functionalism.md",
+      "sha": "2f8b134e925a8bb2e3d1d01342d1d546b2c57731",
+      "size": 5461
+    },
+    {
+      "path": "cases/negative/case-004-accepting-black-boxes.md",
+      "sha": "c1d1d8dd886f864dfe0ab79d0f8510e399e86155",
+      "size": 6174
+    },
+    {
+      "path": "cases/positive/case-001-ant-analysis.md",
+      "sha": "21cc757fd90d6b8d9389cdccc31a2f3b01564e81",
+      "size": 12748
+    },
+    {
+      "path": "cases/positive/case-001-technology-implementation.md",
+      "sha": "ef73e8713b5ac17f31c1917d51646cad933a5b66",
+      "size": 4810
+    },
+    {
+      "path": "cases/positive/case-002-policy-implementation.md",
+      "sha": "03c04640a31fc0857b6b1992bc874a6bab0c995e",
+      "size": 4840
+    },
+    {
+      "path": "cases/positive/case-003-boundary-crossing.md",
+      "sha": "b451c4138b3ca1907c6fab83ac177cda3284e9aa",
+      "size": 5574
+    },
+    {
+      "path": "examples/with-subagents.md",
+      "sha": "65b9dc70c318904f7357236ec5b5dfaef23550f7",
+      "size": 3418
+    },
+    {
+      "path": "experience/patterns.md",
+      "sha": "6156d0c0e891c368fd18f116567096c5c1005ccc",
+      "size": 13734
+    },
+    {
+      "path": "index.html",
+      "sha": "acdec9209ce2392983d8a1704def0a7da01c9d66",
+      "size": 14175
+    },
+    {
+      "path": "lesson-memory.md",
+      "sha": "8337ef3bcb8194fc30fb350075858c57dfa4551a",
+      "size": 1596
+    },
+    {
+      "path": "prompts/actor-identification-prompt.md",
+      "sha": "48f7f7f7d1abaa8c7b48037d954154fffdb03ef6",
+      "size": 1471
+    },
+    {
+      "path": "prompts/controversy-mapping-prompt.md",
+      "sha": "a4992f72c9d8183e3a83918d866acba36dfde51c",
+      "size": 1287
+    },
+    {
+      "path": "prompts/symmetry-analysis-prompt.md",
+      "sha": "35fc89ec4996f7f664b70992bf43df72edea8273",
+      "size": 1596
+    },
+    {
+      "path": "prompts/system-prompt.md",
+      "sha": "c5ce3218e246fd60db718e2017cdbf57d1351739",
+      "size": 2621
+    },
+    {
+      "path": "prompts/translation-process-prompt.md",
+      "sha": "9cdfc6fc7daa95ec4e1ad251b3f3420721f049ae",
+      "size": 2017
+    },
+    {
+      "path": "references/ant-concepts.md",
+      "sha": "9606bcf2d3692ca9034cf2cac98f0553530edf0e",
+      "size": 8233
+    },
+    {
+      "path": "references/classic-literature.md",
+      "sha": "52dc8a3476e9d0df2d140fd1817e44da874c46f9",
+      "size": 12201
+    },
+    {
+      "path": "references/detailed-guide.md",
+      "sha": "9568dc123b479f81ad850fb110339bb443528d88",
+      "size": 16669
+    },
+    {
+      "path": "references/long-term-tasks.md",
+      "sha": "b1eadb4570e621849a2292e326cd87d33084ae7d",
+      "size": 8084
+    },
+    {
+      "path": "references/quality-standards.md",
+      "sha": "cb768655bdf0e87fadafb62e954a2a8b2278e6c6",
+      "size": 6260
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "04092948bd546dec2ca7048c6d731a01f0bc3517",
+      "size": 67
+    },
+    {
+      "path": "skill.yaml",
+      "sha": "3c2825ce18cb38359652546a2b118483b6320d03",
+      "size": 3955
+    },
+    {
+      "path": "soul.md",
+      "sha": "c9cca87d68e4bea15b06963c99029407daf37e2f",
+      "size": 6183
+    },
+    {
+      "path": "subagents.yaml",
+      "sha": "5606c9022cad6b29d016a4be0d423f38d832c195",
+      "size": 2428
+    },
+    {
+      "path": "templates/task_plan.md.template",
+      "sha": "c44b5f38cbc514d88eb20cd97a99eca0a3468b54",
+      "size": 1423
+    },
+    {
+      "path": "test-prompts.json",
+      "sha": "7c5cd6cd4a2b523d0531a7fa1660693a0446c7ad",
+      "size": 856
+    },
+    {
+      "path": "test_data/README.md",
+      "sha": "b15cc556ad8aece3b3b9fa2d8b041236efb3c4bb",
+      "size": 2471
+    },
+    {
+      "path": "test_data/case_01_smart_city/interview_01.txt",
+      "sha": "c1d69a2fb23ce0d0fcfdbde42e95607391581be8",
+      "size": 2945
+    },
+    {
+      "path": "test_data/case_01_smart_city/interview_02.txt",
+      "sha": "cd6f53e4e04b8727a0680deb10ce0a3c8c00639e",
+      "size": 3020
+    },
+    {
+      "path": "test_data/case_02_healthcare_ai/case_description.txt",
+      "sha": "fcc642a35021862a663dcf659d14c6f90d548e14",
+      "size": 3953
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml",
+      "sha": "0f602e08cd8f71d8f0933b0cf22a731e62e2aa2c",
+      "size": 1553
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml.bak",
+      "sha": "ead55672e39556ea2d84ec776fbbaa3de4aec3e8",
+      "size": 2466
+    },
+    {
+      "path": "tools/actor_extractor.py",
+      "sha": "74f1e5d25421d78340a0a84d09d7de85387780b0",
+      "size": 11396
+    },
+    {
+      "path": "tools/analyze.py",
+      "sha": "517bb5ee1dece8f545c7e0c90c59263ce8f7dca1",
+      "size": 16448
+    },
+    {
+      "path": "tools/assess_network_saturation.py",
+      "sha": "4ef8384c4ec41242384d0e903e4c670b511e8510",
+      "size": 9058
+    },
+    {
+      "path": "tools/blackbox_opener.py",
+      "sha": "7b1a652cda196a7e77d74bc395c7429307c4c795",
+      "size": 10179
+    },
+    {
+      "path": "tools/controversy_recorder.py",
+      "sha": "e0471fcd9ff8ddfb6c4ee2cdea7990099c14ee19",
+      "size": 12634
+    },
+    {
+      "path": "tools/evolution.py",
+      "sha": "d8b81962f2ac37bf070a9cdbc93218b6fdf3acc6",
+      "size": 5089
+    },
+    {
+      "path": "tools/planning-integration.py",
+      "sha": "15d76a7691581a29df2dd770c66427323b449b90",
+      "size": 1580
+    },
+    {
+      "path": "tools/symmetry_checker.py",
+      "sha": "6ee4177d4443121cc335f3ad671460ed3a9adcff",
+      "size": 9401
+    },
+    {
+      "path": "tools/translation_stage_controller.py",
+      "sha": "280cd7be21fb9ec648bf7e6868b5f4e90151bac8",
+      "size": 17565
+    }
+  ]
+}

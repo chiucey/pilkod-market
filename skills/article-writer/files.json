@@ -1,0 +1,689 @@
+{
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha": "0669699416313a32d6628d4e4cc275a5c716d16f",
+      "size": 660
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "f39f7d880b0d90adde0a448a7596460d731eae27",
+      "size": 32330
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha": "0669699416313a32d6628d4e4cc275a5c716d16f",
+      "size": 660
+    },
+    {
+      "path": "IMPLEMENTATION_SUMMARY.md",
+      "sha": "83c1c7e68c827f48d7e81e0e405ab45828d96587",
+      "size": 5416
+    },
+    {
+      "path": "README.md",
+      "sha": "168d8728bcb64a6aedd48a07ad795c931f9abfe9",
+      "size": 20274
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "835a77f3b12590c19f1cd2f6fe48e3ac2f0c9b48",
+      "size": 2563
+    },
+    {
+      "path": "_knowledge_base/README.md",
+      "sha": "78face4ec4ebdd3b28d78f3a5d116742ed4f4356",
+      "size": 1711
+    },
+    {
+      "path": "_meta.json",
+      "sha": "6f830c63430aad1fd7afd7069421beb1ad6d9c53",
+      "size": 133
+    },
+    {
+      "path": "docs/INDEX.md",
+      "sha": "a83b7d7c70b13ecc77931d5ee249b12cb19dbecf",
+      "size": 8512
+    },
+    {
+      "path": "docs/article-writer-architecture-flow.svg",
+      "sha": "3ae3b5fef2a1f42c501fb9ce0bcfccf3f68b84e5",
+      "size": 27003
+    },
+    {
+      "path": "docs/commands-design.md",
+      "sha": "c5c66e6036c347abfbe2c3e09e520bed1fd97b0d",
+      "size": 20522
+    },
+    {
+      "path": "docs/crawler-guide.md",
+      "sha": "8b6b5a50b467fcf161088fa697c25a47d94751aa",
+      "size": 8172
+    },
+    {
+      "path": "docs/crawler-quick-test.md",
+      "sha": "913d9c82f9f8a11f55053277eb913926ad8c748d",
+      "size": 5193
+    },
+    {
+      "path": "docs/format-config-guide.md",
+      "sha": "b828d411261741698e6d9e4fc40ab2e0a2ef3157",
+      "size": 5786
+    },
+    {
+      "path": "docs/image-bed-config-guide.md",
+      "sha": "bf8421151e121c39e1bd445e3d648394d5ccbef3",
+      "size": 9291
+    },
+    {
+      "path": "docs/images/prd-08-authentic-workflow.svg",
+      "sha": "666a0f8fa913f2c76dbd7b200f92282d9b4120d5",
+      "size": 8062
+    },
+    {
+      "path": "docs/outline-mode/README.md",
+      "sha": "785659b8f885055f1676482450d57c997dbab6d2",
+      "size": 4082
+    },
+    {
+      "path": "docs/outline-mode/best-practices.md",
+      "sha": "cb1cf6613607050835589c557fe77adab3da6451",
+      "size": 6348
+    },
+    {
+      "path": "docs/outline-mode/quick-start.md",
+      "sha": "253f626244970ed08da391b1c4302e809c57933b",
+      "size": 4608
+    },
+    {
+      "path": "docs/outline-mode/templates-guide.md",
+      "sha": "f3bdb6795b05c3a92ab7c8ec3ec4df0091e9118c",
+      "size": 6808
+    },
+    {
+      "path": "docs/platforms/codex-setup.md",
+      "sha": "36913088fff2ed0cd256d534a369ceca59da3e7f",
+      "size": 5464
+    },
+    {
+      "path": "docs/prd/README.md",
+      "sha": "0ba645d85ff9d0a823c966096687810a44002664",
+      "size": 7500
+    },
+    {
+      "path": "docs/prd/prd-01-workspace-system.md",
+      "sha": "bac32f816ed67642ddf685b0ce7ad4606154fb35",
+      "size": 21696
+    },
+    {
+      "path": "docs/prd/prd-02-anti-ai-library.md",
+      "sha": "4e981be7f240b05d0e961930ff302df06fe630c7",
+      "size": 20153
+    },
+    {
+      "path": "docs/prd/prd-03-materials-system.md",
+      "sha": "443e9637d9250253f0ed0c8d129ad1b79821cf68",
+      "size": 3932
+    },
+    {
+      "path": "docs/prd/prd-04-topic-discussion.md",
+      "sha": "21d11c1d7c44d622896a1df424a6c9bf6e43d907",
+      "size": 4775
+    },
+    {
+      "path": "docs/prd/prd-05-image-system.md",
+      "sha": "9ffaf7851da4ff23ff1dbf72bf2977938f933bf1",
+      "size": 8723
+    },
+    {
+      "path": "docs/prd/prd-06-taste-driven-workflow.md",
+      "sha": "499d28aa2cd6aa3a9efb9fe8e50af89d4b873b22",
+      "size": 43920
+    },
+    {
+      "path": "docs/prd/prd-07-authentic-writing-workflow.md",
+      "sha": "a2f4538aea583e95869c308eebfc8e2d201feb06",
+      "size": 26544
+    },
+    {
+      "path": "docs/prd/prd-08-complete-workflow-redesign.md",
+      "sha": "8d2deea592b873b48684041c0300cc0cd1ca4cde",
+      "size": 57804
+    },
+    {
+      "path": "docs/prd/prd-09-multi-mode-writing.md",
+      "sha": "41df67f78ec387a01249528a4613dd4801a81788",
+      "size": 18337
+    },
+    {
+      "path": "docs/prd/prd-10-style-learning-and-collaboration.md",
+      "sha": "b6b9694e8d379c5e40ba3a36b9b75da5dc25fb27",
+      "size": 36361
+    },
+    {
+      "path": "docs/prd/prd-11-outline-constrained-mode.md",
+      "sha": "e524c24d637e42cc31c8f5b48616199269db9fec",
+      "size": 14392
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha": "2dce9c57402a668a72ee99adf4890ce262c84c66",
+      "size": 15186
+    },
+    {
+      "path": "docs/slash-command-architecture.md",
+      "sha": "94dd92306312e4523b751a5bc4c190473124ea98",
+      "size": 7473
+    },
+    {
+      "path": "docs/slash-command-philosophy.md",
+      "sha": "77f6455fb520911c8694b65b962a240a92e1a2cb",
+      "size": 8383
+    },
+    {
+      "path": "docs/technical-design.md",
+      "sha": "31671907940e82b8874c1ce7b433a36124ae63da",
+      "size": 29627
+    },
+    {
+      "path": "docs/troubleshooting/codex-platform-issues.md",
+      "sha": "495893245b5d361914ae0dd99e8eb451af3038a4",
+      "size": 7531
+    },
+    {
+      "path": "docs/wechat-formatting.md",
+      "sha": "a10652b245443ef1ba1acc877a061ec76c5b8df3",
+      "size": 7347
+    },
+    {
+      "path": "memory/README.md",
+      "sha": "f76353c2743e46d46e616443870aa61754f1bd25",
+      "size": 1223
+    },
+    {
+      "path": "package.json",
+      "sha": "7a2538813311147927a6dd80e32f35e9fab250c4",
+      "size": 2290
+    },
+    {
+      "path": "plugins/README.md",
+      "sha": "0341c8e477074f22e1eb959c07ee83004c5af80f",
+      "size": 2608
+    },
+    {
+      "path": "plugins/ai-detector/README.md",
+      "sha": "8c3d7d4eaa127fd72ab389b230e44033803a127b",
+      "size": 7364
+    },
+    {
+      "path": "plugins/ai-detector/ai-check.md",
+      "sha": "f41565fa9ef2473993ab085349cd002d7d2d2c05",
+      "size": 10298
+    },
+    {
+      "path": "plugins/materials-import/import-materials.md",
+      "sha": "7fb5c69a201bf3368634b0dfaeb2f3da397b76d3",
+      "size": 9330
+    },
+    {
+      "path": "scripts/bash/check-writing-state.sh",
+      "sha": "eb9ba22492ae2ee81afd5d252867c7226289b25b",
+      "size": 9235
+    },
+    {
+      "path": "scripts/bash/collect.sh",
+      "sha": "79f63b13f39adaa885657902ce1847c83eed212a",
+      "size": 1981
+    },
+    {
+      "path": "scripts/bash/common.sh",
+      "sha": "d694a9750850c9342ca2aaea4690837c7f03d374",
+      "size": 4438
+    },
+    {
+      "path": "scripts/bash/format-wechat-haidao.sh",
+      "sha": "c59fe4019cce5798cd28d29d369a56bca0dda891",
+      "size": 16866
+    },
+    {
+      "path": "scripts/bash/format-wechat.sh",
+      "sha": "7837b4e87e2c3ea7155cc89f15e4c0b1180005ba",
+      "size": 9100
+    },
+    {
+      "path": "scripts/bash/images.sh",
+      "sha": "5926dd4a95ec1eedb7e721c09dfb2e47f9914118",
+      "size": 3925
+    },
+    {
+      "path": "scripts/bash/research-docs.sh",
+      "sha": "5fbe5a7188c690ae3a0e45b19ba83ea038be3992",
+      "size": 3525
+    },
+    {
+      "path": "scripts/bash/research.sh",
+      "sha": "c7ece3242b47e633787f471b6137a6ae48d0cb9b",
+      "size": 1654
+    },
+    {
+      "path": "scripts/bash/review.sh",
+      "sha": "f13c8c758244b5524995bde01ddf0cb4bf0055bb",
+      "size": 4770
+    },
+    {
+      "path": "scripts/bash/specify.sh",
+      "sha": "b209922c4863d31182ed1e81728ca0942c3e3a19",
+      "size": 1701
+    },
+    {
+      "path": "scripts/bash/test-word-count.sh",
+      "sha": "0a1545692178cd120223b06c0a84f061fee0851c",
+      "size": 5277
+    },
+    {
+      "path": "scripts/bash/text-audit.sh",
+      "sha": "e1ef33f2fd62ac89587cbd66d4a924f52663fabd",
+      "size": 5019
+    },
+    {
+      "path": "scripts/bash/topic.sh",
+      "sha": "3f41a4aae149190f30678cf2012d5450c08e5e6b",
+      "size": 1152
+    },
+    {
+      "path": "scripts/bash/write.sh",
+      "sha": "55f10542d920d9127b1905c1a84a67b0e02b779c",
+      "size": 2217
+    },
+    {
+      "path": "scripts/build/generate-commands.sh",
+      "sha": "0030c32612303f085358ac381fa442ff80595b93",
+      "size": 13088
+    },
+    {
+      "path": "scripts/postinstall.cjs",
+      "sha": "70e3c94a7dd34ec3bc7f4de980cf6c894a7baa1c",
+      "size": 3451
+    },
+    {
+      "path": "scripts/powershell/check-writing-state.ps1",
+      "sha": "bff13e93193d0f93468de0f843e51381845e8351",
+      "size": 3766
+    },
+    {
+      "path": "scripts/powershell/collect.ps1",
+      "sha": "72598125ef28eabbc7bd008b9f8d61c88bd4d05b",
+      "size": 1356
+    },
+    {
+      "path": "scripts/powershell/common.ps1",
+      "sha": "4f8d8675e041c4e1b7c84b8a1d9205541066eea4",
+      "size": 2957
+    },
+    {
+      "path": "scripts/powershell/format-wechat.ps1",
+      "sha": "8f389562ee3882bea2647eb89740c98df88036dc",
+      "size": 8911
+    },
+    {
+      "path": "scripts/powershell/images.ps1",
+      "sha": "0d4b2b451e0a539ba1455416df7a34793b5c7869",
+      "size": 1351
+    },
+    {
+      "path": "scripts/powershell/research.ps1",
+      "sha": "63db014f78d40e3c32a5862a430e0fdad42b8973",
+      "size": 1231
+    },
+    {
+      "path": "scripts/powershell/review.ps1",
+      "sha": "09e929e276f2885876da16d367932b6f2aa97ad6",
+      "size": 1048
+    },
+    {
+      "path": "scripts/powershell/specify.ps1",
+      "sha": "aa42c70df618d95d31f53e3ccb2c32aaa780bfde",
+      "size": 1913
+    },
+    {
+      "path": "scripts/powershell/text-audit.ps1",
+      "sha": "e610908a0ca3a2457a3a560d061eadbdc312d696",
+      "size": 4285
+    },
+    {
+      "path": "scripts/powershell/topic.ps1",
+      "sha": "3ae0425ebcb5d359055967fb115445cd4e855ce0",
+      "size": 1490
+    },
+    {
+      "path": "scripts/powershell/write.ps1",
+      "sha": "57f37263ecda47f9a5af620163a322e5ee6548cd",
+      "size": 1705
+    },
+    {
+      "path": "spec/presets/anti-ai-detection/ai-sentence-library.md",
+      "sha": "075d3206b39c63a208d02225f4f1ea584f48a7b4",
+      "size": 11790
+    },
+    {
+      "path": "spec/presets/anti-ai-detection/cliche-library.md",
+      "sha": "b17b3fdd295dc36fca57856ef8cb5f90c6b69d9c",
+      "size": 9853
+    },
+    {
+      "path": "spec/presets/anti-ai-detection/written-vocabulary-replacement.md",
+      "sha": "e252b5db26e5104144febb824ac6c8651b25dfb3",
+      "size": 23127
+    },
+    {
+      "path": "spec/presets/workspaces/general.md",
+      "sha": "c62eb65ecfcfcb863896ff2354b55d5fad570056",
+      "size": 8178
+    },
+    {
+      "path": "spec/presets/workspaces/video.md",
+      "sha": "fb4fe359f1db19f43c57213aa3c86e7adadaefc8",
+      "size": 8836
+    },
+    {
+      "path": "spec/presets/workspaces/wechat.md",
+      "sha": "14da246ab7cba0b1daba19e5d8f432a19f48cf0d",
+      "size": 9657
+    },
+    {
+      "path": "src/ai-interface.ts",
+      "sha": "f2678cfcfa6cdaaee42f46114ec88864f01d04d8",
+      "size": 11330
+    },
+    {
+      "path": "src/cli.ts",
+      "sha": "b73ca01d2c38efe09c39b0312a344f3dc35ee797",
+      "size": 67405
+    },
+    {
+      "path": "src/commands/format-config.ts",
+      "sha": "4712ab28a6135421c55e825e7a689144a534a193",
+      "size": 13578
+    },
+    {
+      "path": "src/commands/research-docs.ts",
+      "sha": "054747e365a7d3f936bce15ad7fab88b74c0e651",
+      "size": 3377
+    },
+    {
+      "path": "src/crawler/config.ts",
+      "sha": "c79149be95be44b659f5bc8ef6517d49fbed06d3",
+      "size": 3190
+    },
+    {
+      "path": "src/crawler/crawler-manager.ts",
+      "sha": "667175ea5d1a8846bba86d052676948fda66654c",
+      "size": 6111
+    },
+    {
+      "path": "src/crawler/doc-crawler.ts",
+      "sha": "7ab5cb754a6f54dda4ee967b1ba1f98a01fab8c3",
+      "size": 11263
+    },
+    {
+      "path": "src/crawler/dynamic-crawler.ts",
+      "sha": "0ffa062b1516cc9f6a0a588a65890a3dd763bccc",
+      "size": 4006
+    },
+    {
+      "path": "src/crawler/knowledge-converter.ts",
+      "sha": "d609ef311c76ee2d546c0384f2e8aafb35eb6090",
+      "size": 6118
+    },
+    {
+      "path": "src/crawler/pdf-extractor.ts",
+      "sha": "b170d05a5a6914dd8a24637029f87a0f80d5873b",
+      "size": 4069
+    },
+    {
+      "path": "src/crawler/progress-bar.ts",
+      "sha": "61ac998ee26e94e677120df06344eb82ebca161d",
+      "size": 2839
+    },
+    {
+      "path": "src/crawler/types.ts",
+      "sha": "4f5272d6387f99c9f3b495feb92264225364ab10",
+      "size": 1409
+    },
+    {
+      "path": "src/crawler/utils.ts",
+      "sha": "f9b6b587460b0c1be0a80b1f4fd1bbf04feb8414",
+      "size": 3082
+    },
+    {
+      "path": "src/formatters/wechat-formatter.ts",
+      "sha": "4bbbb0fe75207b9292d0c5628cb53b0939830641",
+      "size": 25655
+    },
+    {
+      "path": "src/hybrid-method.ts",
+      "sha": "90bf103dc4a46d36a6e2437267583d2eddabfc06",
+      "size": 12688
+    },
+    {
+      "path": "src/method-advisor.ts",
+      "sha": "8a5991da53f50baf800cc1df833fe109e78502a8",
+      "size": 10469
+    },
+    {
+      "path": "src/method-converter.ts",
+      "sha": "715071bac6c6b76beabcfd9d24b40b42d018a7d8",
+      "size": 15638
+    },
+    {
+      "path": "src/plugins/manager.ts",
+      "sha": "fc639dd97491402f80c8c31627e365a8ef8b2ed6",
+      "size": 13605
+    },
+    {
+      "path": "src/services/image-bed/README.md",
+      "sha": "dacf8de37488a6b1b4b6ecede8079b748809905e",
+      "size": 7996
+    },
+    {
+      "path": "src/services/image-bed/image-bed-factory.ts",
+      "sha": "190e9d712307ddf4bfdacf69dca98bd665084c72",
+      "size": 6495
+    },
+    {
+      "path": "src/services/image-bed/index.ts",
+      "sha": "89a7de865e4d0c28daca113e07c4a28b6fcb9d46",
+      "size": 884
+    },
+    {
+      "path": "src/services/image-bed/providers/aliyun-oss-provider.ts",
+      "sha": "a6dff72c0f06f6943bc637838c752df774c06453",
+      "size": 4251
+    },
+    {
+      "path": "src/services/image-bed/providers/base64-provider.ts",
+      "sha": "f6820550f6506af1c02df58755f2bb3f488c8ce3",
+      "size": 2269
+    },
+    {
+      "path": "src/services/image-bed/providers/cloudflare-r2-provider.ts",
+      "sha": "46bd880539433fc7585686c23234bdcbdc26ca70",
+      "size": 4604
+    },
+    {
+      "path": "src/services/image-bed/providers/qiniu-provider.ts",
+      "sha": "e7739af799320f6c9638f49bf5d6de00b808d808",
+      "size": 5621
+    },
+    {
+      "path": "src/services/image-bed/providers/tencent-cos-provider.ts",
+      "sha": "6bfb25cfd53f76d5fdf78f1a6adaddbaf99da66a",
+      "size": 4014
+    },
+    {
+      "path": "src/services/image-bed/types.ts",
+      "sha": "d4bdff57b1a79da725196060d6b3d2a50cf4285d",
+      "size": 3977
+    },
+    {
+      "path": "src/types/ali-oss.d.ts",
+      "sha": "331cf31f830f4e7cc291d2d7bf1e0741c6bb48c1",
+      "size": 926
+    },
+    {
+      "path": "src/utils/image-downloader.ts",
+      "sha": "dec35fcb406f26e2462b9ab7c920059b28e8ceac",
+      "size": 10800
+    },
+    {
+      "path": "src/utils/interactive.ts",
+      "sha": "5b5fc7dc860979c41cba316f8031e25cf689d27b",
+      "size": 5154
+    },
+    {
+      "path": "src/utils/logger.ts",
+      "sha": "7701b6b1ac6f9eeec18d44f1c536e5d61c5af743",
+      "size": 626
+    },
+    {
+      "path": "src/utils/project.ts",
+      "sha": "21ff3c7d7a1cf3a7e18196e80cc2c22d6076443f",
+      "size": 2374
+    },
+    {
+      "path": "src/utils/style-options.ts",
+      "sha": "9ae06629c00fa7cbf616a43ad0f9370386e93964",
+      "size": 2886
+    },
+    {
+      "path": "src/utils/workspace.ts",
+      "sha": "d42ccf81c6634d239806082f66d6c060dfef6828",
+      "size": 8702
+    },
+    {
+      "path": "src/version.ts",
+      "sha": "578efe4cdee41d49b5fa51c81813807b5ffcbe2d",
+      "size": 1528
+    },
+    {
+      "path": "templates/brief-templates/general-brief-template.md",
+      "sha": "127d0dc67347cf9cc47fdbdde6f028a7840b30ad",
+      "size": 2971
+    },
+    {
+      "path": "templates/brief-templates/video-brief-template.md",
+      "sha": "d5de54d3e79fe0bb98caf543c65ec8efa6e89fb0",
+      "size": 4653
+    },
+    {
+      "path": "templates/brief-templates/wechat-brief-template.md",
+      "sha": "590e8f5f4f7e0c079469036afc973499e1780447",
+      "size": 4763
+    },
+    {
+      "path": "templates/commands/authentic.md",
+      "sha": "efcde0d11cbd1d21e6dfcfc3bd77a24fbd81504e",
+      "size": 7361
+    },
+    {
+      "path": "templates/commands/check.md",
+      "sha": "daa87ec1632fff43b3b4d21757c0bee5b879cc4c",
+      "size": 2667
+    },
+    {
+      "path": "templates/commands/collect.md",
+      "sha": "724797974863c005a192381586e91be7622a6b24",
+      "size": 18978
+    },
+    {
+      "path": "templates/commands/expand.md",
+      "sha": "f8e92fa02cadedcb3382ae67b8be9cfe0fc6cbc1",
+      "size": 4384
+    },
+    {
+      "path": "templates/commands/extract.md",
+      "sha": "ab5f36fc4c6c66c4a167d95b534560acf3580fc4",
+      "size": 6838
+    },
+    {
+      "path": "templates/commands/fabu.md",
+      "sha": "220ed4ecaf174b4c20dd07c31697a7c7eb4a140e",
+      "size": 5195
+    },
+    {
+      "path": "templates/commands/format-config.md",
+      "sha": "61c018ca52176f8b3c2a2d7612f9cdf16de45bea",
+      "size": 9706
+    },
+    {
+      "path": "templates/commands/hint.md",
+      "sha": "c7b30b0c79030d2d37c24b049a1bc87931874844",
+      "size": 6038
+    },
+    {
+      "path": "templates/commands/images.md",
+      "sha": "3d4b2821aa924f3035887ce314bf381e39a1a284",
+      "size": 30639
+    },
+    {
+      "path": "templates/commands/outline.md",
+      "sha": "8b598cd466f5e70bb72321c0f3457154e0d3d58e",
+      "size": 22627
+    },
+    {
+      "path": "templates/commands/publish.md",
+      "sha": "3a872f980d1e072956695123128a8c69f7191223",
+      "size": 9035
+    },
+    {
+      "path": "templates/commands/research.md",
+      "sha": "04ea506b3b7f1e21629370b49583de487ce3dd67",
+      "size": 14286
+    },
+    {
+      "path": "templates/commands/review.md",
+      "sha": "110943739fe552f7421b1f06d701c297805e5176",
+      "size": 33001
+    },
+    {
+      "path": "templates/commands/specify.md",
+      "sha": "be1d0d1e57e6198826fc99c41c4470dbc1bbb3e3",
+      "size": 26190
+    },
+    {
+      "path": "templates/commands/topic.md",
+      "sha": "4e2a9cb3ecb88bc5742f0617ce940ed74af3e371",
+      "size": 25697
+    },
+    {
+      "path": "templates/commands/write.md",
+      "sha": "2c64e471611293f2aff5ea3867e4c7ba1ac68a26",
+      "size": 38400
+    },
+    {
+      "path": "templates/outlines/project-proposal.yaml",
+      "sha": "3267405bf838c9f0dce59fb3046e97669eeeaf1f",
+      "size": 7698
+    },
+    {
+      "path": "templates/outlines/technical-report.yaml",
+      "sha": "205b17f6a7623a76e23f004797e04b8ebd12ef5c",
+      "size": 8357
+    },
+    {
+      "path": "templates/outlines/thesis-opening.yaml",
+      "sha": "308f729a69d0c831f31b360a20656c93cc3310b1",
+      "size": 6931
+    },
+    {
+      "path": "templates/workspace-config.json",
+      "sha": "69c8ed09b84e937bd53662915d10264770a4ce30",
+      "size": 4143
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "4613db20d54f294ba125e529e5be53ab36f42833",
+      "size": 609
+    }
+  ]
+}

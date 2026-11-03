@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCE Book 1 - Word Battle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 50%, #0a0a2a 100%);
+            min-height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        #gameContainer {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #gameCanvas {
+            background: linear-gradient(180deg, #0a0a1a 0%, #0f0f2f 50%, #1a1a4a 100%);
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0, 150, 255, 0.3);
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        #ui-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        #ui-overlay > * {
+            pointer-events: auto;
+        }
+
+        .screen {
+            display: none;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        #menu-screen {
+            max-width: 800px;
+            padding: 40px;
+        }
+
+        .game-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+            letter-spacing: 4px;
+        }
+
+        .game-subtitle {
+            font-size: 1.2rem;
+            color: #8892b0;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .lesson-btn {
+            background: linear-gradient(145deg, #1a1a3a, #2a2a5a);
+            border: 2px solid #3a3a6a;
+            color: #fff;
+            padding: 15px 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lesson-btn:hover {
+            background: linear-gradient(145deg, #2a2a5a, #4a4a8a);
+            border-color: #00d4ff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .lesson-btn.completed {
+            background: linear-gradient(145deg, #1a3a2a, #2a5a4a);
+            border-color: #4ade80;
+        }
+
+        .lesson-btn.completed::after {
+            content: '★';
+            position: absolute;
+            top: 2px;
+            right: 5px;
+            font-size: 0.7rem;
+            color: #fbbf24;
+        }
+
+        .lesson-btn.locked {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        #game-screen {
+            position: relative;
+        }
+
+        #hud {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            font-size: 1.2rem;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+        }
+
+        .hud-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hud-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        #result-screen {
+            max-width: 500px;
+            padding: 50px;
+            background: linear-gradient(145deg, rgba(26, 26, 58, 0.95), rgba(42, 42, 90, 0.95));
+            border-radius: 20px;
+            border: 2px solid #3a3a6a;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .result-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .result-title.victory {
+            color: #4ade80;
+        }
+
+        .result-title.defeat {
+            color: #f87171;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-item {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00d4ff;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #8892b0;
+            margin-top: 5px;
+        }
+
+        .stars-rating {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            letter-spacing: 10px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+            border: none;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #3a3a6a, #5a5a9a);
+        }
+
+        #word-display {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .word-to-learn {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 600px;
+        }
+
+        .option-btn {
+            background: linear-gradient(145deg, #1a1a3a, #2a2a5a);
+            border: 2px solid #3a3a6a;
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .option-btn:hover {
+            border-color: #00d4ff;
+            background: linear-gradient(145deg, #2a2a5a, #4a4a8a);
+            transform: scale(1.02);
+        }
+
+        .option-btn.correct {
+            border-color: #4ade80;
+            background: linear-gradient(145deg, #1a3a2a, #2a5a4a);
+        }
+
+        .option-btn.wrong {
+            border-color: #f87171;
+            background: linear-gradient(145deg, #3a1a1a, #5a2a2a);
+        }
+
+        .progress-bar {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            transition: width 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .instruction {
+            color: #8892b0;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        .instruction span {
+            color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui-overlay">
+            <!-- Menu Screen -->
+            <div id="menu-screen" class="screen active">
+                <h1 class="game-title">新概念英语</h1>
+                <p class="game-subtitle">单词闯关 · 飞机大战</p>
+
+                <p style="color: #8892b0; margin-bottom: 20px;">选择课程开始闯关</p>
+
+                <div class="lesson-grid" id="lessonGrid"></div>
+
+                <p class="instruction">
+                    <span>操作说明：</span>使用鼠标或触摸选择正确答案击毁敌机
+                </p>
+            </div>
+
+            <!-- Game Screen -->
+            <div id="game-screen" class="screen">
+                <div id="hud">
+                    <div class="hud-item">
+                        <svg class="hud-icon" viewBox="0 0 24 24" fill="#fbbf24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>得分: <span id="score">0</span></span>
+                    </div>
+                    <div class="hud-item">
+                        <svg class="hud-icon" viewBox="0 0 24 24" fill="#f87171">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span>生命: <span id="lives">3</span></span>
+                    </div>
+                    <div class="hud-item">
+                        <svg class="hud-icon" viewBox="0 0 24 24" fill="#4ade80">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/>
+                        </svg>
+                        <span>进度: <span id="progress">0</span>/10</span>
+                    </div>
+                </div>
+
+                <div id="word-display">
+                    <div class="word-to-learn" id="currentWord">word</div>
+                    <div class="options-grid" id="optionsGrid"></div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="result-screen" class="screen">
+                <h2 class="result-title" id="resultTitle">恭喜通关!</h2>
+
+                <div class="stars-rating" id="starsRating">★★★</div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="finalScore">100</div>
+                        <div class="stat-label">最终得分</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="correctCount">10</div>
+                        <div class="stat-label">正确数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="accuracy">100%</div>
+                        <div class="stat-label">正确率</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="lessonNum">第1课</div>
+                        <div class="stat-label">当前课程</div>
+                    </div>
+                </div>
+
+                <button class="btn" onclick="restartGame()">再玩一次</button>
+                <button class="btn btn-secondary" onclick="showMenu()">返回选课</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 新概念英语第一册单词数据
+        const lessonData = [
+            { lesson: 1, words: [
+                { english: "excuse", chinese: "原谅", options: ["原谅", "检查", "例子", "练习"] },
+                { english: "me", chinese: "我", options: ["我", "我的", "我们", "我自己"] },
+                { english: "my", chinese: "我的", options: ["我的", "我", "你的", "他的"] },
+                { english: "is", chinese: "是", options: ["是", "在", "有", "是的"] },
+                { english: "handbag", chinese: "手提包", options: ["手提包", "包裹", "背包", "盒子"] },
+                { english: "it", chinese: "它", options: ["它", "这个", "那个", "我的"] },
+                { english: "thank", chinese: "感谢", options: ["感谢", "思考", "认为", "说"] },
+                { english: "very", chinese: "非常", options: ["非常", "真的", "只有", "甚至"] }
+            ]},
+            { lesson: 2, words: [
+                { english: "card", chinese: "卡片", options: ["卡片", "汽车", "卡片盒", "卡片夹"] },
+                { english: "fresh", chinese: "新鲜的", options: ["新鲜的", "自由的", "快速", "法国"] },
+                { english: "stamp", chinese: "邮票", options: ["邮票", "步骤", "标准", "开始"] },
+                { english: "these", chinese: "这些", options: ["这些", "那个", "这个", "那些"] },
+                { english: "please", chinese: "请", options: ["请", "快乐", "喜欢", "请客"] },
+                { english: "father", chinese: "父亲", options: ["父亲", "母亲", "兄弟", "姐妹"] },
+                { english: "mother", chinese: "母亲", options: ["母亲", "父亲", "父母", "兄弟"] },
+                { english: "blouse", chinese: "衬衫", options: ["衬衫", "外套", "裙子", "裤子"] }
+            ]},
+            { lesson: 3, words: [
+                { english: "ticket", chinese: "票", options: ["票", "选票", "小贴纸", "票根"] },
+                { english: "sorry", chinese: "对不起", options: ["对不起", "谢谢", "好的", "再见"] },
+                { english: "sir", chinese: "先生", options: ["先生", "女士", "小姐", "太太"] },
+                { english: "coat", chinese: "外套", options: ["外套", "帽子", "裙子", "鞋子"] },
+                { english: "bus", chinese: "公共汽车", options: ["公共汽车", "火车", "飞机", "船"] },
+                { english: "shirt", chinese: "衬衫", options: ["衬衫", "外套", "裙子", "领带"] },
+                { english: "skirt", chinese: "裙子", options: ["裙子", "衬衫", "裤子", "帽子"] },
+                { english: "car", chinese: "汽车", options: ["汽车", "公共汽车", "火车", "飞机"] }
+            ]},
+            { lesson: 4, words: [
+                { english: " umbrella", chinese: "雨伞", options: ["雨伞", "阳光", "帽子", "外套"] },
+                { english: "please", chinese: "请", options: ["请", "快乐", "请客", "喜欢"] },
+                { english: "here", chinese: "这里", options: ["这里", "那里", "哪里", "到处"] },
+                { english: "ticket", chinese: "票", options: ["票", "卡片", "邮票", "贴纸"] },
+                { english: "number", chinese: "号码", options: ["号码", "数字", "名字", "地址"] },
+                { english: "five", chinese: "五", options: ["五", "四", "六", "七"] },
+                { english: "sorry", chinese: "对不起", options: ["对不起", "谢谢", "请", "好的"] },
+                { english: "sir", chinese: "先生", options: ["先生", "女士", "小姐", "老师"] }
+            ]},
+            { lesson: 5, words: [
+                { english: "morning", chinese: "早晨", options: ["早晨", "中午", "晚上", "下午"] },
+                { english: "Miss", chinese: "小姐", options: ["小姐", "先生", "太太", "老师"] },
+                { english: "new", chinese: "新的", options: ["新的", "旧的", "好的", "大的"] },
+                { english: "student", chinese: "学生", options: ["学生", "老师", "医生", "护士"] },
+                { english: "nice", chinese: "美好的", options: ["美好的", "坏的", "小的", "大的"] },
+                { english: "meet", chinese: "遇见", options: ["遇见", "看到", "见到", "找到"] },
+                { english: "good", chinese: "好的", options: ["好的", "坏的", "新的", "旧的"] },
+                { english: "too", chinese: "也", options: ["也", "不", "很", "都"] }
+            ]},
+            { lesson: 6, words: [
+                { english: "make", chinese: "制造", options: ["制造", "拿", "给", "去"] },
+                { english: "coffee", chinese: "咖啡", options: ["咖啡", "茶", "牛奶", "水"] },
+                { english: "tea", chinese: "茶", options: ["茶", "咖啡", "牛奶", "果汁"] },
+                { english: "drink", chinese: "喝", options: ["喝", "吃", "拿", "给"] },
+                { english: "white", chinese: "白色的", options: ["白色的", "黑色的", "红色的", "蓝色的"] },
+                { english: "lovely", chinese: "可爱的", options: ["可爱的", "可怕的", "好看的", "好听的"] },
+                { english: "one", chinese: "一", options: ["一", "二", "三", "四"] },
+                { english: "so", chinese: "所以", options: ["所以", "但是", "因为", "如果"] }
+            ]},
+            { lesson: 7, words: [
+                { english: "name", chinese: "名字", options: ["名字", "姓氏", "地址", "号码"] },
+                { english: "nationality", chinese: "国籍", options: ["国籍", "国家", "城市", "地址"] },
+                { english: "job", chinese: "工作", options: ["工作", "学习", "生活", "家庭"] },
+                { english: "keyboard", chinese: "键盘", options: ["键盘", "电脑", "鼠标", "屏幕"] },
+                { english: "operator", chinese: "操作员", options: ["操作员", "工程师", "医生", "老师"] },
+                { english: "engineer", chinese: "工程师", options: ["工程师", "医生", "老师", "律师"] },
+                { english: "hello", chinese: "你好", options: ["你好", "再见", "谢谢", "对不起"] },
+                { english: "fine", chinese: "好的", options: ["好的", "坏的", "小的", "大的"] }
+            ]},
+            { lesson: 8, words: [
+                { english: "what", chinese: "什么", options: ["什么", "谁", "哪个", "哪里"] },
+                { english: "engineer", chinese: "工程师", options: ["工程师", "教师", "医生", "护士"] },
+                { english: "nurse", chinese: "护士", options: ["护士", "医生", "老师", "工程师"] },
+                { english: "mechanic", chinese: "机械师", options: ["机械师", "工程师", "工人", "司机"] },
+                { english: "housewife", chinese: "家庭主妇", options: ["家庭主妇", "教师", "护士", "医生"] },
+                { english: "milkman", chinese: "送奶工", options: ["送奶工", "邮递员", "警察", "消防员"] },
+                { english: "police", chinese: "警察", options: ["警察", "医生", "老师", "护士"] },
+                { english: "taxi", chinese: "出租车", options: ["出租车", "公共汽车", "火车", "飞机"] }
+            ]},
+            { lesson: 9, words: [
+                { english: "hello", chinese: "你好", options: ["你好", "再见", "好的", "谢谢"] },
+                { english: "how", chinese: "怎样", options: ["怎样", "什么", "谁", "哪里"] },
+                { english: "today", chinese: "今天", options: ["今天", "明天", "昨天", "现在"] },
+                { english: "well", chinese: "身体好", options: ["身体好", "很好", "不好", "不好"] },
+                { english: "fine", chinese: "很好", options: ["很好", "不好", "很好", "不好"] },
+                { english: "thanks", chinese: "谢谢", options: ["谢谢", "对不起", "请", "再见"] },
+                { english: "bye", chinese: "再见", options: ["再见", "你好", "好的", "谢谢"] },
+                { english: "again", chinese: "再", options: ["再", "不", "还", "又"] }
+            ]},
+            { lesson: 10, words: [
+                { english: "look", chinese: "看", options: ["看", "听", "说", "读"] },
+                { english: "at", chinese: "在", options: ["在", "到", "从", "向"] },
+                { english: "fat", chinese: "胖的", options: ["胖的", "瘦的", "高的", "矮的"] },
+                { english: "woman", chinese: "女人", options: ["女人", "男人", "孩子", "婴儿"] },
+                { english: "thin", chinese: "瘦的", options: ["瘦的", "胖的", "高的", "矮的"] },
+                { english: "tall", chinese: "高的", options: ["高的", "矮的", "胖的", "瘦的"] },
+                { english: "short", chinese: "矮的", options: ["矮的", "高的", "短的", "长的"] },
+                { english: "dirty", chinese: "脏的", options: ["脏的", "干净的", "新的", "旧的"] }
+            ]},
+            { lesson: 11, words: [
+                { english: "whose", chinese: "谁的", options: ["谁的", "谁", "哪个", "什么"] },
+                { english: "blue", chinese: "蓝色的", options: ["蓝色的", "红色的", "绿色的", "黄色的"] },
+                { english: "perhaps", chinese: "大概", options: ["大概", "肯定", "也许", "一定"] },
+                { english: "white", chinese: "白色的", options: ["白色的", "黑色的", "红色的", "蓝色的"] },
+                { english: "case", chinese: "箱子", options: ["箱子", "包", "盒子", "袋子"] },
+                { english: "car", chinese: "汽车", options: ["汽车", "公共汽车", "火车", "飞机"] },
+                { english: "dog", chinese: "狗", options: ["狗", "猫", "鸟", "鱼"] },
+                { english: "love", chinese: "爱", options: ["爱", "恨", "喜欢", "讨厌"] }
+            ]},
+            { lesson: 12, words: [
+                { english: "father", chinese: "父亲", options: ["父亲", "母亲", "叔叔", "阿姨"] },
+                { english: "mother", chinese: "母亲", options: ["母亲", "父亲", "姐姐", "哥哥"] },
+                { english: "blouse", chinese: "衬衫", options: ["衬衫", "裙子", "裤子", "外套"] },
+                { english: "sister", chinese: "姐妹", options: ["姐妹", "兄弟", "父亲", "母亲"] },
+                { english: "tie", chinese: "领带", options: ["领带", "帽子", "围巾", "手套"] },
+                { english: "brother", chinese: "兄弟", options: ["兄弟", "姐妹", "父亲", "母亲"] },
+                { english: "his", chinese: "他的", options: ["他的", "她的", "我的", "你的"] },
+                { english: "her", chinese: "她的", options: ["她的", "他的", "我的", "你的"] }
+            ]},
+            { lesson: 13, words: [
+                { english: "colour", chinese: "颜色", options: ["颜色", "大小", "形状", "材料"] },
+                { english: "green", chinese: "绿色的", options: ["绿色的", "红色的", "蓝色的", "黄色的"] },
+                { english: "come", chinese: "来", options: ["来", "去", "走", "跑"] },
+                { english: "upstairs", chinese: "楼上", options: ["楼上", "楼下", "这里", "那里"] },
+                { english: "smart", chinese: "时髦的", options: ["时髦的", "丑陋的", "普通的", "奇怪的"] },
+                { english: "hat", chinese: "帽子", options: ["帽子", "围巾", "手套", "领带"] },
+                { english: "same", chinese: "相同的", options: ["相同的", "不同的", "相似的", "相反的"] },
+                { english: "lovely", chinese: "可爱的", options: ["可爱的", "可怕的", "可笑的", "可悲的"] }
+            ]},
+            { lesson: 14, words: [
+                { english: "customs", chinese: "海关", options: ["海关", "邮局", "银行", "学校"] },
+                { english: "officer", chinese: "官员", options: ["官员", "教师", "医生", "服务员"] },
+                { english: "girl", chinese: "女孩", options: ["女孩", "男孩", "女人", "男人"] },
+                { english: "say", chinese: "说", options: ["说", "听", "读", "写"] },
+                { english: "sir", chinese: "先生", options: ["先生", "女士", "小姐", "太太"] },
+                { english: "paper", chinese: "纸", options: ["纸", "书", "笔", "包"] },
+                { english: "please", chinese: "请", options: ["请", "谢谢", "对不起", "好的"] },
+                { english: "things", chinese: "东西", options: ["东西", "人", "地方", "时间"] }
+            ]},
+            { lesson: 15, words: [
+                { english: "your", chinese: "你的", options: ["你的", "我的", "他的", "她的"] },
+                { english: "ticket", chinese: "票", options: ["票", "卡片", "邮票", "贴纸"] },
+                { english: "passport", chinese: "护照", options: ["护照", "身份证", "签证", "机票"] },
+                { english: "brown", chinese: "棕色的", options: ["棕色的", "白色的", "黑色的", "红色的"] },
+                { english: "tourist", chinese: "旅游者", options: ["旅游者", "商人", "学生", "老师"] },
+                { english: "number", chinese: "号码", options: ["号码", "名字", "地址", "国籍"] },
+                { english: "six", chinese: "六", options: ["六", "七", "八", "九"] },
+                { english: "seven", chinese: "七", options: ["七", "六", "八", "九"] }
+            ]},
+            { lesson: 16, words: [
+                { english: "ourselves", chinese: "我们自己", options: ["我们自己", "他们自己", "你们自己", "他自己"] },
+                { english: "myself", chinese: "我自己", options: ["我自己", "你自己", "他自己", "她自己"] },
+                { english: "yourself", chinese: "你自己", options: ["你自己", "我自己", "他自己", "她自己"] },
+                { english: "themselves", chinese: "他们自己", options: ["他们自己", "我们自己", "你们自己", "她自己"] },
+                { english: "himself", chinese: "他自己", options: ["他自己", "我自己", "你自己", "她自己"] },
+                { english: "herself", chinese: "她自己", options: ["她自己", "他自己", "我自己", "你自己"] },
+                { english: "wife", chinese: "妻子", options: ["妻子", "丈夫", "孩子", "父母"] },
+                { english: "children", chinese: "孩子们", options: ["孩子们", "父母", "妻子", "丈夫"] }
+            ]},
+            { lesson: 17, words: [
+                { english: "married", chinese: "已婚的", options: ["已婚的", "未婚的", "离婚的", "单身的"] },
+                { english: "how", chinese: "多么", options: ["多么", "什么", "谁", "哪里"] },
+                { english: "years", chinese: "岁", options: ["岁", "月", "日", "周"] },
+                { english: "old", chinese: "老的", options: ["老的", "新的", "年轻的", "中年的"] },
+                { english: "wife", chinese: "妻子", options: ["妻子", "丈夫", "孩子", "母亲"] },
+                { english: "children", chinese: "孩子", options: ["孩子", "父母", "妻子", "丈夫"] },
+                { english: "still", chinese: "还", options: ["还", "不", "也", "就"] },
+                { english: "yesterday", chinese: "昨天", options: ["昨天", "今天", "明天", "前天"] }
+            ]},
+            { lesson: 18, words: [
+                { english: "married", chinese: "已婚", options: ["已婚", "未婚", "离婚", "单身"] },
+                { english: "engineer", chinese: "工程师", options: ["工程师", "医生", "老师", "护士"] },
+                { english: "husband", chinese: "丈夫", options: ["丈夫", "妻子", "父亲", "母亲"] },
+                { english: "year", chinese: "岁", options: ["岁", "月", "日", "周"] },
+                { english: "old", chinese: "...岁", options: ["...岁", "...高", "...大", "...长"] },
+                { english: "teacher", chinese: "教师", options: ["教师", "学生", "医生", "护士"] },
+                { english: "years", chinese: "岁", options: ["岁", "月", "日", "周"] },
+                { english: "yesterday", chinese: "昨天", options: ["昨天", "今天", "明天", "前天"] }
+            ]},
+            { lesson: 19, words: [
+                { english: "tired", chinese: "累的", options: ["累的", "精神的", "开心的", "难过的"] },
+                { english: "sit", chinese: "坐", options: ["坐", "站", "走", "跑"] },
+                { english: "down", chinese: "向下", options: ["向下", "向上", "向外", "向内"] },
+                { english: "thirsty", chinese: "渴的", options: ["渴的", "饿的", "困的", "饱的"] },
+                { english: "ice", chinese: "冰", options: ["冰", "水", "茶", "咖啡"] },
+                { english: "cream", chinese: "奶油", options: ["奶油", "牛奶", "糖", "盐"] },
+                { english: "left", chinese: "左边", options: ["左边", "右边", "前面", "后面"] },
+                { english: "right", chinese: "右边", options: ["右边", "左边", "前面", "后面"] }
+            ]},
+            { lesson: 20, words: [
+                { english: "big", chinese: "大的", options: ["大的", "小的", "中的", "大的"] },
+                { english: "small", chinese: "小的", options: ["小的", "大的", "中的", "大的"] },
+                { english: "open", chinese: "开着的", options: ["开着的", "关着的", "开", "关"] },
+                { english: "shut", chinese: "关着的", options: ["关着的", "开着的", "新的", "旧的"] },
+                { english: "light", chinese: "灯", options: ["灯", "窗", "门", "墙"] },
+                { english: "heavy", chinese: "重的", options: ["重的", "轻的", "硬的", "软的"] },
+                { english: "long", chinese: "长的", options: ["长的", "短的", "高的", "矮的"] },
+                { english: "shoe", chinese: "鞋子", options: ["鞋子", "袜子", "裤子", "裙子"] }
+            ]},
+            { lesson: 21, words: [
+                { english: "give", chinese: "给", options: ["给", "拿", "送", "买"] },
+                { english: "book", chinese: "书", options: ["书", "笔", "纸", "包"] },
+                { english: "this", chinese: "这", options: ["这", "那", "这些", "那些"] },
+                { english: "here", chinese: "这里", options: ["这里", "那里", "哪里", "到处"] },
+                { english: "there", chinese: "那里", options: ["那里", "这里", "哪里", "到处"] },
+                { english: "which", chinese: "哪个", options: ["哪个", "谁", "什么", "哪里"] },
+                { english: "one", chinese: "一个", options: ["一个", "两个", "三个", "四个"] },
+                { english: "ones", chinese: "一些", options: ["一些", "一个", "两个", "三个"] }
+            ]},
+            { lesson: 22, words: [
+                { english: "empty", chinese: "空的", options: ["空的", "满的", "新的", "旧的"] },
+                { english: "full", chinese: "满的", options: ["满的", "空的", "新的", "旧的"] },
+                { english: "sharp", chinese: "锋利的", options: ["锋利的", "钝的", "硬的", "软的"] },
+                { english: "blunt", chinese: "钝的", options: ["钝的", "锋利的", "新的", "旧的"] },
+                { english: "clean", chinese: "干净的", options: ["干净的", "脏的", "新的", "旧的"] },
+                { english: "dirty", chinese: "脏的", options: ["脏的", "干净的", "新的", "旧的"] },
+                { english: "wet", chinese: "湿的", options: ["湿的", "干的", "冷的", "热的"] },
+                { english: "dry", chinese: "干的", options: ["干的", "湿的", "冷的", "热的"] }
+            ]},
+            { lesson: 23, words: [
+                { english: "on", chinese: "在...上", options: ["在...上", "在...下", "在...里", "在...外"] },
+                { english: "shelf", chinese: "架子", options: ["架子", "桌子", "椅子", "床"] },
+                { english: "desk", chinese: "桌子", options: ["桌子", "椅子", "床", "沙发"] },
+                { english: "table", chinese: "桌子", options: ["桌子", "椅子", "床", "沙发"] },
+                { english: "plate", chinese: "盘子", options: ["盘子", "碗", "杯子", "瓶子"] },
+                { english: "cupboard", chinese: "橱柜", options: ["橱柜", "冰箱", "炉子", "水池"] },
+                { english: "cigarette", chinese: "香烟", options: ["香烟", "雪茄", "烟斗", "烟"] },
+                { english: "television", chinese: "电视", options: ["电视", "电脑", "收音机", "手机"] }
+            ]},
+            { lesson: 24, words: [
+                { english: "living", chinese: "客厅", options: ["客厅", "厨房", "卧室", "浴室"] },
+                { english: "room", chinese: "房间", options: ["房间", "房子", "门", "窗"] },
+                { english: "near", chinese: "附近", options: ["附近", "远处", "旁边", "对面"] },
+                { english: "armchair", chinese: "扶手椅", options: ["扶手椅", "椅子", "沙发", "床"] },
+                { english: "door", chinese: "门", options: ["门", "窗", "墙", "地板"] },
+                { english: "window", chinese: "窗户", options: ["窗户", "门", "墙", "地板"] },
+                { english: "curtain", chinese: "窗帘", options: ["窗帘", "门帘", "地毯", "沙发"] },
+                { english: "picture", chinese: "画", options: ["画", "照片", "镜子", "钟"] }
+            ]},
+            { lesson: 25, words: [
+                { english: "kitchen", chinese: "厨房", options: ["厨房", "客厅", "卧室", "浴室"] },
+                { english: "refrigerator", chinese: "冰箱", options: ["冰箱", "炉子", "水池", "橱柜"] },
+                { english: "electric", chinese: "电的", options: ["电的", "火的", "水的", "气的"] },
+                { english: "right", chinese: "右边的", options: ["右边的", "左边的", "前面的", "后面的"] },
+                { english: "left", chinese: "左边的", options: ["左边的", "右边的", "前面的", "后面的"] },
+                { english: "cooker", chinese: "炉子", options: ["炉子", "冰箱", "水池", "微波炉"] },
+                { english: "middle", chinese: "中间", options: ["中间", "左边", "右边", "前面"] },
+                { english: "of", chinese: "...的", options: ["...的", "...在", "...到", "...从"] }
+            ]},
+            { lesson: 26, words: [
+                { english: "where", chinese: "在哪里", options: ["在哪里", "是什么", "是谁", "怎么样"] },
+                { english: "in", chinese: "在...里", options: ["在...里", "在...上", "在...下", "在...旁"] },
+                { english: "on", chinese: "在...上", options: ["在...上", "在...里", "在...下", "在...旁"] },
+                { english: "under", chinese: "在...下", options: ["在...下", "在...上", "在...里", "在...旁"] },
+                { english: "there", chinese: "那里", options: ["那里", "这里", "哪里", "到处"] },
+                { english: "glass", chinese: "玻璃杯", options: ["玻璃杯", "杯子", "瓶子", "盘子"] },
+                { english: "cup", chinese: "杯子", options: ["杯子", "玻璃杯", "瓶子", "盘子"] },
+                { english: "bottle", chinese: "瓶子", options: ["瓶子", "杯子", "玻璃杯", "盘子"] }
+            ]},
+            { lesson: 27, words: [
+                { english: "bedroom", chinese: "卧室", options: ["卧室", "客厅", "厨房", "浴室"] },
+                { english: "untidy", chinese: "不整洁的", options: ["不整洁的", "整洁的", "干净的", "漂亮的"] },
+                { english: "must", chinese: "必须", options: ["必须", "可以", "应该", "会"] },
+                { english: "open", chinese: "打开", options: ["打开", "关闭", "修理", "打扫"] },
+                { english: "window", chinese: "窗户", options: ["窗户", "门", "墙", "地板"] },
+                { english: "air", chinese: "空气", options: ["空气", "水", "火", "土"] },
+                { english: "put", chinese: "放", options: ["放", "拿", "给", "送"] },
+                { english: "clothes", chinese: "衣服", options: ["衣服", "裤子", "鞋子", "帽子"] }
+            ]},
+            { lesson: 28, words: [
+                { english: "dust", chinese: "掸尘", options: ["掸尘", "打扫", "擦", "洗"] },
+                { english: "sweep", chinese: "扫地", options: ["扫地", "擦地", "拖地", "扫地"] },
+                { english: "clean", chinese: "打扫", options: ["打扫", "清洗", "擦", "扫"] },
+                { english: "read", chinese: "读", options: ["读", "写", "说", "听"] },
+                { english: "sharpen", chinese: "削尖", options: ["削尖", "弄钝", "弄平", "弄圆"] },
+                { english: "pencil", chinese: "铅笔", options: ["铅笔", "钢笔", "圆珠笔", "毛笔"] },
+                { english: "put", chinese: "放", options: ["放", "拿", "给", "送"] },
+                { english: "not", chinese: "不", options: ["不", "是", "有", "在"] }
+            ]},
+            { lesson: 29, words: [
+                { english: "sleep", chinese: "睡觉", options: ["睡觉", "起床", "躺下", "坐下"] },
+                { english: "shave", chinese: "刮脸", options: ["刮脸", "刷牙", "洗澡", "梳头"] },
+                { english: "brush", chinese: "刷", options: ["刷", "洗", "擦", "梳"] },
+                { english: "teeth", chinese: "牙齿", options: ["牙齿", "头发", "脸", "手"] },
+                { english: "upstairs", chinese: "楼上", options: ["楼上", "楼下", "去楼上", "去楼下"] },
+                { english: "downstairs", chinese: "楼下", options: ["楼下", "楼上", "去楼下", "去楼上"] },
+                { english: "jump", chinese: "跳", options: ["跳", "走", "跑", "站"] },
+                { english: "into", chinese: "进入", options: ["进入", "出去", "向上", "向下"] }
+            ]},
+            { lesson: 30, words: [
+                { english: "work", chinese: "工作", options: ["工作", "学习", "休息", "娱乐"] },
+                { english: "hard", chinese: "努力地", options: ["努力地", "慢慢地", "快速地", "慢慢地"] },
+                { english: "day", chinese: "白天", options: ["白天", "晚上", "早晨", "中午"] },
+                { english: "tonight", chinese: "今晚", options: ["今晚", "昨晚", "明晚", "今天"] },
+                { english: "listen", chinese: "听", options: ["听", "说", "读", "写"] },
+                { english: "type", chinese: "打字", options: ["打字", "写", "读", "听"] },
+                { english: "letter", chinese: "信", options: ["信", "书", "纸", "包"] },
+                { english: "soon", chinese: "不久", options: ["不久", "很久", "马上", "永远"] }
+            ]},
+            { lesson: 31, words: [
+                { english: "garden", chinese: "花园", options: ["花园", "公园", "森林", "草地"] },
+                { english: "under", chinese: "在...下", options: ["在...下", "在...上", "在...里", "在...旁"] },
+                { english: "tree", chinese: "树", options: ["树", "花", "草", "叶子"] },
+                { english: "climb", chinese: "爬", options: ["爬", "跳", "跑", "走"] },
+                { english: "who", chinese: "谁", options: ["谁", "什么", "哪个", "哪里"] },
+                { english: "run", chinese: "跑", options: ["跑", "走", "跳", "爬"] },
+                { english: "grass", chinese: "草", options: ["草", "树", "花", "叶子"] },
+                { english: "after", chinese: "在...后", options: ["在...后", "在...前", "在...旁", "在...下"] }
+            ]},
+            { lesson: 32, words: [
+                { english: "run", chinese: "跑", options: ["跑", "走", "跳", "飞"] },
+                { english: "grass", chinese: "草", options: ["草", "树", "花", "土地"] },
+                { english: "cat", chinese: "猫", options: ["猫", "狗", "鸟", "鱼"] },
+                { english: "type", chinese: "打字", options: ["打字", "写", "读", "看"] },
+                { english: "jump", chinese: "跳", options: ["跳", "跑", "走", "爬"] },
+                { english: "who", chinese: "谁", options: ["谁", "什么", "哪里", "哪个"] },
+                { english: "water", chinese: "浇水", options: ["浇水", "喝", "洗", "倒"] },
+                { english: "garden", chinese: "花园", options: ["花园", "公园", "森林", "草地"] }
+            ]},
+            { lesson: 33, words: [
+                { english: "day", chinese: "日子", options: ["日子", "时间", "小时", "分钟"] },
+                { english: "cloud", chinese: "云", options: ["云", "太阳", "月亮", "星星"] },
+                { english: "sky", chinese: "天空", options: ["天空", "地面", "海洋", "陆地"] },
+                { english: "sunshine", chinese: "阳光", options: ["阳光", "月光", "灯光", "火光"] },
+                { english: "between", chinese: "在...之间", options: ["在...之间", "在...旁边", "在...前面", "在...后面"] },
+                { english: "among", chinese: "在...之中", options: ["在...之中", "在...之间", "在...旁边", "在...外面"] },
+                { english: "bank", chinese: "河岸", options: ["河岸", "银行", "海边", "湖边"] },
+                { english: "over", chinese: "跨越", options: ["跨越", "在...上", "在...下", "穿过"] }
+            ]},
+            { lesson: 34, words: [
+                { english: "sleep", chinese: "睡觉", options: ["睡觉", "醒来", "起床", "躺下"] },
+                { english: "wake", chinese: "醒来", options: ["醒来", "睡觉", "起床", "躺下"] },
+                { english: "already", chinese: "已经", options: ["已经", "还没", "刚刚", "将要"] },
+                { english: "late", chinese: "晚", options: ["晚", "早", "快", "慢"] },
+                { english: "sad", chinese: "伤心的", options: ["伤心的", "开心的", "惊讶的", "生气的"] },
+                { english: "cry", chinese: "哭", options: ["哭", "笑", "叫", "唱"] },
+                { english: "buy", chinese: "买", options: ["买", "卖", "送", "给"] },
+                { english: "one", chinese: "一个", options: ["一个", "两个", "三个", "四个"] }
+            ]},
+            { lesson: 35, words: [
+                { english: "want", chinese: "想要", options: ["想要", "需要", "喜欢", "讨厌"] },
+                { english: "week", chinese: "周", options: ["周", "月", "年", "天"] },
+                { english: "tomorrow", chinese: "明天", options: ["明天", "昨天", "今天", "后天"] },
+                { english: "next", chinese: "下一个", options: ["下一个", "上一个", "这个", "那个"] },
+                { english: "year", chinese: "年", options: ["年", "月", "周", "天"] },
+                { english: "tonight", chinese: "今晚", options: ["今晚", "昨晚", "明晚", "今晚"] },
+                { english: "still", chinese: "还", options: ["还", "不", "也", "就"] },
+                { english: "free", chinese: "空闲的", options: ["空闲的", "忙碌的", "累的", "困的"] }
+            ]},
+            { lesson: 36, words: [
+                { english: "weekend", chinese: "周末", options: ["周末", "工作日", "假期", "节日"] },
+                { english: "friday", chinese: "星期五", options: ["星期五", "星期一", "星期三", "星期日"] },
+                { english: "saturday", chinese: "星期六", options: ["星期六", "星期五", "星期日", "星期一"] },
+                { english: "sunday", chinese: "星期日", options: ["星期日", "星期六", "星期五", "星期一"] },
+                { english: "thursday", chinese: "星期四", options: ["星期四", "星期三", "星期五", "星期二"] },
+                { english: "wednesday", chinese: "星期三", options: ["星期三", "星期四", "星期二", "星期五"] },
+                { english: "tuesday", chinese: "星期二", options: ["星期二", "星期一", "星期三", "星期四"] },
+                { english: "monday", chinese: "星期一", options: ["星期一", "星期二", "星期日", "星期五"] }
+            ]},
+            { lesson: 37, words: [
+                { english: "work", chinese: "工作", options: ["工作", "学习", "休息", "睡觉"] },
+                { english: "cook", chinese: "烹饪", options: ["烹饪", "吃饭", "洗碗", "打扫"] },
+                { english: "milk", chinese: "挤奶", options: ["挤奶", "喝水", "喝茶", "喝咖啡"] },
+                { english: "milkman", chinese: "送奶工", options: ["送奶工", "邮递员", "警察", "消防员"] },
+                { english: "shave", chinese: "刮脸", options: ["刮脸", "刷牙", "洗澡", "梳头"] },
+                { english: "wait", chinese: "等待", options: ["等待", "去", "来", "跑"] },
+                { english: "jump", chinese: "跳", options: ["跳", "跑", "走", "飞"] },
+                { english: "really", chinese: "真的", options: ["真的", "假的", "也许", "可能"] }
+            ]},
+            { lesson: 38, words: [
+                { english: "cartoon", chinese: "卡通片", options: ["卡通片", "电影", "戏剧", "新闻"] },
+                { english: "programme", chinese: "节目", options: ["节目", "电影", "戏剧", "歌曲"] },
+                { english: "news", chinese: "新闻", options: ["新闻", "电影", "戏剧", "体育"] },
+                { english: "weather", chinese: "天气", options: ["天气", "时间", "日期", "季节"] },
+                { english: "country", chinese: "国家", options: ["国家", "城市", "村庄", "城镇"] },
+                { english: "Australia", chinese: "澳大利亚", options: ["澳大利亚", "美国", "英国", "加拿大"] },
+                { english: "America", chinese: "美国", options: ["美国", "英国", "澳大利亚", "加拿大"] },
+                { english: "India", chinese: "印度", options: ["印度", "中国", "日本", "韩国"] }
+            ]},
+            { lesson: 39, words: [
+                { english: "uncle", chinese: "叔父", options: ["叔父", "姨母", "父亲", "母亲"] },
+                { english: "aunt", chinese: "姨母", options: ["姨母", "叔父", "父亲", "母亲"] },
+                { english: "tomorrow", chinese: "明天", options: ["明天", "昨天", "今天", "后天"] },
+                { english: "postcard", chinese: "明信片", options: ["明信片", "信", "包裹", "邮票"] },
+                { english: "holiday", chinese: "假期", options: ["假期", "工作", "学习", "休息"] },
+                { english: "stay", chinese: "停留", options: ["停留", "去", "来", "离开"] },
+                { english: "week", chinese: "周", options: ["周", "月", "年", "天"] },
+                { english: "office", chinese: "办公室", options: ["办公室", "学校", "医院", "商店"] }
+            ]},
+            { lesson: 40, words: [
+                { english: "busy", chinese: "忙的", options: ["忙的", "空闲的", "累的", "困的"] },
+                { english: "free", chinese: "空闲的", options: ["空闲的", "忙碌的", "累的", "困的"] },
+                { english: "again", chinese: "再", options: ["再", "不", "还", "又"] },
+                { english: "weekend", chinese: "周末", options: ["周末", "工作日", "假期", "节日"] },
+                { english: "friday", chinese: "星期五", options: ["星期五", "星期一", "星期三", "星期六"] },
+                { english: "Saturday", chinese: "星期六", options: ["星期六", "星期五", "星期日", "星期一"] },
+                { english: "sunday", chinese: "星期日", options: ["星期日", "星期六", "星期五", "星期一"] },
+                { english: "holiday", chinese: "假期", options: ["假期", "工作日", "周末", "节日"] }
+            ]},
+            { lesson: 41, words: [
+                { english: "lunch", chinese: "午餐", options: ["午餐", "早餐", "晚餐", "宵夜"] },
+                { english: "minute", chinese: "分钟", options: ["分钟", "小时", "秒", "天"] },
+                { english: "steak", chinese: "牛排", options: ["牛排", "鱼", "鸡肉", "蔬菜"] },
+                { english: "rare", chinese: "半熟的", options: ["半熟的", "全熟的", "生的", "熟的"] },
+                { english: "medium", chinese: "适中的", options: ["适中的", "小的", "大的", "快的"] },
+                { english: "well", chinese: "全熟的", options: ["全熟的", "半熟的", "生的", "嫩的"] },
+                { english: "egg", chinese: "鸡蛋", options: ["鸡蛋", "鸭蛋", "鹌鹑蛋", "鸟蛋"] },
+                { english: "butter", chinese: "黄油", options: ["黄油", "奶酪", "牛奶", "奶油"] }
+            ]},
+            { lesson: 42, words: [
+                { english: "boil", chinese: "煮", options: ["煮", "炸", "炒", "烤"] },
+                { english: "egg", chinese: "鸡蛋", options: ["鸡蛋", "鸭蛋", "鹌鹑蛋", "鱼"] },
+                { english: "milk", chinese: "牛奶", options: ["牛奶", "水", "茶", "咖啡"] },
+                { english: "tea", chinese: "茶", options: ["茶", "咖啡", "牛奶", "水"] },
+                { english: "cup", chinese: "杯子", options: ["杯子", "碗", "盘", "瓶"] },
+                { english: "glass", chinese: "玻璃杯", options: ["玻璃杯", "杯子", "碗", "盘"] },
+                { english: "newspaper", chinese: "报纸", options: ["报纸", "杂志", "书", "信"] },
+                { english: "still", chinese: "还", options: ["还", "不", "也", "就"] }
+            ]},
+            { lesson: 43, words: [
+                { english: "behind", chinese: "在...后面", options: ["在...后面", "在...前面", "在...旁边", "在...上面"] },
+                { english: "tree", chinese: "树", options: ["树", "花", "草", "叶子"] },
+                { english: "hurrying", chinese: "匆忙", options: ["匆忙", "慢慢", "停下", "等待"] },
+                { english: "past", chinese: "经过", options: ["经过", "走向", "离开", "到达"] },
+                { english: "bank", chinese: "银行", options: ["银行", "商店", "医院", "学校"] },
+                { english: "river", chinese: "河", options: ["河", "海", "湖", "山"] },
+                { english: "wife", chinese: "妻子", options: ["妻子", "丈夫", "孩子", "母亲"] },
+                { english: "water", chinese: "浇水", options: ["浇水", "喝水", "洗澡", "游泳"] }
+            ]},
+            { lesson: 44, words: [
+                { english: "slowly", chinese: "慢慢地", options: ["慢慢地", "快速地", "突然地", "渐渐地"] },
+                { english: "fast", chinese: "快地", options: ["快地", "慢慢地", "突然地", "渐渐地"] },
+                { english: "sadly", chinese: "伤心地", options: ["伤心地", "开心地", "惊讶地", "生气地"] },
+                { english: "quickly", chinese: "迅速地", options: ["迅速地", "慢慢地", "突然地", "渐渐地"] },
+                { english: "happily", chinese: "快乐地", options: ["快乐地", "伤心地", "惊讶地", "生气地"] },
+                { english: "into", chinese: "进入", options: ["进入", "出去", "向上", "向下"] },
+                { english: "out", chinese: "出去", options: ["出去", "进来", "上去", "下去"] },
+                { english: "past", chinese: "经过", options: ["经过", "走向", "离开", "到达"] }
+            ]},
+            { lesson: 45, words: [
+                { english: "new", chinese: "新的", options: ["新的", "旧的", "好的", "大的"] },
+                { english: "car", chinese: "汽车", options: ["汽车", "公共汽车", "火车", "飞机"] },
+                { english: "wonderful", chinese: "极好的", options: ["极好的", "糟糕的", "普通的", "一般的"] },
+                { english: "test", chinese: "测试", options: ["测试", "考试", "练习", "学习"] },
+                { english: "drive", chinese: "驾驶", options: ["驾驶", "乘坐", "走路", "跑步"] },
+                { english: "限速", chinese: "speed limit", options: ["限速", "速度", "快速", "慢速"] },
+                { english: "wrong", chinese: "错误的", options: ["错误的", "正确的", "好的", "坏的"] },
+                { english: "sign", chinese: "标记", options: ["标记", "符号", "信号", "指示"] }
+            ]},
+            { lesson: 46, words: [
+                { english: "out", chinese: "出来", options: ["出来", "进去", "上来", "下去"] },
+                { english: "into", chinese: "进去", options: ["进去", "出来", "上去", "下去"] },
+                { english: "suddenly", chinese: "突然地", options: ["突然地", "渐渐地", "慢慢地", "快速地"] },
+                { english: "break", chinese: "破碎", options: ["破碎", "完整", "损坏", "修理"] },
+                { english: "land", chinese: "着陆", options: ["着陆", "起飞", "降落", "飞行"] },
+                { english: "buy", chinese: "买", options: ["买", "卖", "送", "给"] },
+                { english: "present", chinese: "礼物", options: ["礼物", "卡片", "信", "包裹"] },
+                { english: "present", chinese: "目前的", options: ["目前的", "过去的", "将来的", "现在的"] }
+            ]},
+            { lesson: 47, words: [
+                { english: "like", chinese: "喜欢", options: ["喜欢", "讨厌", "想要", "需要"] },
+                { english: "want", chinese: "想要", options: ["想要", "需要", "喜欢", "讨厌"] },
+                { english: "fresh", chinese: "新鲜的", options: ["新鲜的", "陈旧的", "腐烂的", "过期的"] },
+                { english: "egg", chinese: "鸡蛋", options: ["鸡蛋", "鸭蛋", "鹌鹑蛋", "鸟蛋"] },
+                { english: "butter", chinese: "黄油", options: ["黄油", "奶酪", "牛奶", "奶油"] },
+                { english: "pure", chinese: "纯净的", options: ["纯净的", "脏的", "浑浊的", "混合的"] },
+                { english: "honey", chinese: "蜂蜜", options: ["蜂蜜", "糖", "盐", "酱油"] },
+                { english: "banana", chinese: "香蕉", options: ["香蕉", "苹果", "橙子", "葡萄"] }
+            ]},
+            { lesson: 48, words: [
+                { english: "fresh", chinese: "新鲜的", options: ["新鲜的", "陈旧的", "腐烂的", "过期的"] },
+                { english: "pure", chinese: "纯净的", options: ["纯净的", "脏的", "浑浊的", "混合的"] },
+                { english: "ripe", chinese: "成熟的", options: ["成熟的", "生的", "腐烂的", "干的"] },
+                { english: "unripe", chinese: "未成熟的", options: ["未成熟的", "成熟的", "腐烂的", "干的"] },
+                { english: "cheap", chinese: "便宜的", options: ["便宜的", "贵的", "免费的", "昂贵的"] },
+                { english: "expensive", chinese: "贵的", options: ["贵的", "便宜的", "免费的", "便宜的"] },
+                { english: "sweet", chinese: "甜的", options: ["甜的", "酸的", "苦的", "辣的"] },
+                { english: "sour", chinese: "酸的", options: ["酸的", "甜的", "苦的", "辣的"] }
+            ]},
+            { lesson: 49, words: [
+                { english: "butcher", chinese: "屠夫", options: ["屠夫", "面包师", "理发师", "售货员"] },
+                { english: "meat", chinese: "肉", options: ["肉", "鱼", "鸡", "蔬菜"] },
+                { english: "beef", chinese: "牛肉", options: ["牛肉", "猪肉", "羊肉", "鸡肉"] },
+                { english: "lamb", chinese: "羊肉", options: ["羊肉", "牛肉", "猪肉", "鸡肉"] },
+                { english: "steak", chinese: "牛排", options: ["牛排", "猪排", "羊排", "鱼排"] },
+                { english: "mince", chinese: "肉末", options: ["肉末", "肉片", "肉块", "肉丝"] },
+                { english: "chicken", chinese: "鸡肉", options: ["鸡肉", "牛肉", "猪肉", "羊肉"] },
+                { english: "tell", chinese: "告诉", options: ["告诉", "问", "说", "听"] }
+            ]},
+            { lesson: 50, words: [
+                { english: "baker", chinese: "面包师", options: ["面包师", "屠夫", "理发师", "售货员"] },
+                { english: "bread", chinese: "面包", options: ["面包", "蛋糕", "饼干", "馒头"] },
+                { english: "honey", chinese: "蜂蜜", options: ["蜂蜜", "糖", "盐", "酱油"] },
+                { english: "butter", chinese: "黄油", options: ["黄油", "奶酪", "牛奶", "奶油"] },
+                { english: "pure", chinese: "纯净的", options: ["纯净的", "脏的", "浑浊的", "混合的"] },
+                { english: "ripe", chinese: "成熟的", options: ["成熟的", "生的", "腐烂的", "干的"] },
+                { english: "banana", chinese: "香蕉", options: ["香蕉", "苹果", "橙子", "葡萄"] },
+                { english: "tomato", chinese: "西红柿", options: ["西红柿", "黄瓜", "土豆", "洋葱"] }
+            ]},
+            { lesson: 51, words: [
+                { english: "climate", chinese: "气候", options: ["气候", "天气", "温度", "季节"] },
+                { english: "weather", chinese: "天气", options: ["天气", "气候", "温度", "季节"] },
+                { english: "spring", chinese: "春天", options: ["春天", "夏天", "秋天", "冬天"] },
+                { english: "summer", chinese: "夏天", options: ["夏天", "春天", "秋天", "冬天"] },
+                { english: "autumn", chinese: "秋天", options: ["秋天", "夏天", "春天", "冬天"] },
+                { english: "winter", chinese: "冬天", options: ["冬天", "春天", "夏天", "秋天"] },
+                { english: "January", chinese: "一月", options: ["一月", "二月", "三月", "四月"] },
+                { english: "February", chinese: "二月", options: ["二月", "一月", "三月", "四月"] }
+            ]},
+            { lesson: 52, words: [
+                { english: "weather", chinese: "天气", options: ["天气", "气候", "温度", "季节"] },
+                { english: "climate", chinese: "气候", options: ["气候", "天气", "温度", "季节"] },
+                { english: "spring", chinese: "春天", options: ["春天", "夏天", "秋天", "冬天"] },
+                { english: "countries", chinese: "国家", options: ["国家", "城市", "村庄", "城镇"] },
+                { english: "often", chinese: "经常", options: ["经常", "偶尔", "从不", "有时"] },
+                { english: "rain", chinese: "下雨", options: ["下雨", "下雪", "晴天", "阴天"] },
+                { english: "snow", chinese: "下雪", options: ["下雪", "下雨", "晴天", "阴天"] },
+                { english: "January", chinese: "一月", options: ["一月", "二月", "三月", "四月"] }
+            ]},
+            { lesson: 53, words: [
+                { english: "Australia", chinese: "澳大利亚", options: ["澳大利亚", "美国", "英国", "加拿大"] },
+                { english: "Austria", chinese: "奥地利", options: ["奥地利", "德国", "瑞士", "澳大利亚"] },
+                { english: "Canada", chinese: "加拿大", options: ["加拿大", "美国", "澳大利亚", "英国"] },
+                { english: "China", chinese: "中国", options: ["中国", "日本", "韩国", "印度"] },
+                { english: "Denmark", chinese: "丹麦", options: ["丹麦", "瑞典", "挪威", "芬兰"] },
+                { english: "England", chinese: "英格兰", options: ["英格兰", "苏格兰", "威尔士", "爱尔兰"] },
+                { english: "Finland", chinese: "芬兰", options: ["芬兰", "瑞典", "挪威", "丹麦"] },
+                { english: "France", chinese: "法国", options: ["法国", "德国", "意大利", "西班牙"] }
+            ]},
+            { lesson: 54, words: [
+                { english: "Australia", chinese: "澳大利亚", options: ["澳大利亚", "奥地利", "加拿大", "中国"] },
+                { english: "Austria", chinese: "奥地利", options: ["奥地利", "澳大利亚", "德国", "瑞士"] },
+                { english: "Canada", chinese: "加拿大", options: ["加拿大", "美国", "澳大利亚", "中国"] },
+                { english: "China", chinese: "中国", options: ["中国", "日本", "韩国", "印度"] },
+                { english: "Denmark", chinese: "丹麦", options: ["丹麦", "瑞典", "挪威", "芬兰"] },
+                { english: "England", chinese: "英格兰", options: ["英格兰", "苏格兰", "威尔士", "爱尔兰"] },
+                { english: "Finland", chinese: "芬兰", options: ["芬兰", "瑞典", "挪威", "丹麦"] },
+                { english: "France", chinese: "法国", options: ["法国", "德国", "意大利", "西班牙"] }
+            ]},
+            { lesson: 55, words: [
+                { english: "live", chinese: "居住", options: ["居住", "工作", "学习", "旅行"] },
+                { english: "station", chinese: "车站", options: ["车站", "机场", "码头", "商店"] },
+                { english: "stop", chinese: "停", options: ["停", "走", "跑", "飞"] },
+                { english: "miss", chinese: "错过", options: ["错过", "赶上车", "到达", "乘坐"] },
+                { english: "minute", chinese: "分钟", options: ["分钟", "小时", "秒", "天"] },
+                { english: "wait", chinese: "等待", options: ["等待", "离开", "到达", "去"] },
+                { english: "o'clock", chinese: "点钟", options: ["点钟", "点", "时间", "时候"] },
+                { english: "past", chinese: "过", options: ["过", "到", "差", "在"] }
+            ]},
+            { lesson: 56, words: [
+                { english: "shop", chinese: "商店", options: ["商店", "银行", "医院", "学校"] },
+                { english: "assistant", chinese: "店员", options: ["店员", "经理", "顾客", "老板"] },
+                { english: "serve", chinese: "服务", options: ["服务", "帮助", "销售", "购买"] },
+                { english: "help", chinese: "帮助", options: ["帮助", "服务", "销售", "购买"] },
+                { english: "want", chinese: "要", options: ["要", "给", "拿", "买"] },
+                { english: "size", chinese: "尺寸", options: ["尺寸", "颜色", "样式", "价格"] },
+                { english: "pair", chinese: "一双", options: ["一双", "一只", "一个", "一件"] },
+                { english: "money", chinese: "钱", options: ["钱", "卡", "现金", "支票"] }
+            ]},
+            { lesson: 57, words: [
+                { english: "clock", chinese: "钟", options: ["钟", "表", "铃", "铃铛"] },
+                { english: "kitchen", chinese: "厨房", options: ["厨房", "客厅", "卧室", "浴室"] },
+                { english: "bedroom", chinese: "卧室", options: ["卧室", "厨房", "客厅", "浴室"] },
+                { english: "usually", chinese: "通常", options: ["通常", "偶尔", "从不", "总是"] },
+                { english: "morning", chinese: "早晨", options: ["早晨", "中午", "晚上", "下午"] },
+                { english: "late", chinese: "晚", options: ["晚", "早", "快", "慢"] },
+                { english: "shop", chinese: "商店", options: ["商店", "银行", "医院", "学校"] },
+                { english: "evening", chinese: "晚上", options: ["晚上", "早晨", "中午", "下午"] }
+            ]},
+            { lesson: 58, words: [
+                { english: "always", chinese: "总是", options: ["总是", "偶尔", "从不", "有时"] },
+                { english: "sometimes", chinese: "有时", options: ["有时", "总是", "偶尔", "从不"] },
+                { english: "usually", chinese: "通常", options: ["通常", "偶尔", "从不", "有时"] },
+                { english: "never", chinese: "从不", options: ["从不", "有时", "总是", "偶尔"] },
+                { english: "late", chinese: "迟到", options: ["迟到", "早到", "到达", "离开"] },
+                { english: "early", chinese: "早到", options: ["早到", "迟到", "到达", "离开"] },
+                { english: "morning", chinese: "早晨", options: ["早晨", "中午", "晚上", "下午"] },
+                { english: "shop", chinese: "商店", options: ["商店", "银行", "医院", "学校"] }
+            ]},
+            { lesson: 59, words: [
+                { english: "library", chinese: "图书馆", options: ["图书馆", "书店", "学校", "教室"] },
+                { english: "book", chinese: "书", options: ["书", "笔", "纸", "包"] },
+                { english: "borrow", chinese: "借", options: ["借", "还", "买", "卖"] },
+                { english: "lend", chinese: "借出", options: ["借出", "借入", "还", "给"] },
+                { english: "keep", chinese: "留着", options: ["留着", "还", "借", "给"] },
+                { english: "return", chinese: "归还", options: ["归还", "借", "保留", "给"] },
+                { english: "fine", chinese: "罚款", options: ["罚款", "费用", "价格", "付款"] },
+                { english: "return", chinese: "回来", options: ["回来", "去", "来", "离开"] }
+            ]},
+            { lesson: 60, words: [
+                { english: "lend", chinese: "借出", options: ["借出", "借入", "还", "保留"] },
+                { english: "borrow", chinese: "借入", options: ["借入", "借出", "还", "保留"] },
+                { english: "keep", chinese: "保留", options: ["保留", "还", "借", "给"] },
+                { english: "return", chinese: "归还", options: ["归还", "借", "保留", "来"] },
+                { english: "fine", chinese: "罚款", options: ["罚款", "费用", "价格", "付款"] },
+                { english: "library", chinese: "图书馆", options: ["图书馆", "书店", "学校", "教室"] },
+                { english: "lose", chinese: "丢失", options: ["丢失", "找到", "保留", "归还"] },
+                { english: "book", chinese: "书", options: ["书", "笔", "纸", "包"] }
+            ]},
+            { lesson: 61, words: [
+                { english: "feel", chinese: "感觉", options: ["感觉", "认为", "想", "知道"] },
+                { english: "ill", chinese: "生病的", options: ["生病的", "健康的", "好的", "开心的"] },
+                { word: "look", chinese: "看起来", options: ["看起来", "看见", "看", "看到"] },
+                { english: "well", chinese: "健康的", options: ["健康的", "生病的", "累的", "困的"] },
+                { english: "call", chinese: "叫", options: ["叫", "说", "告诉", "问"] },
+                { english: "doctor", chinese: "医生", options: ["医生", "护士", "老师", "警察"] },
+                { english: "telephone", chinese: "电话", options: ["电话", "手机", "电脑", "电视"] },
+                { english: "remember", chinese: "记得", options: ["记得", "忘记", "知道", "认识"] }
+            ]},
+            { lesson: 62, words: [
+                { english: "headache", chinese: "头痛", options: ["头痛", "胃痛", "背痛", "牙痛"] },
+                { english: "aspirin", chinese: "阿司匹林", options: ["阿司匹林", "感冒药", "退烧药", "止痛药"] },
+                { english: "medicine", chinese: "药", options: ["药", "水", "茶", "咖啡"] },
+                { english: "temperature", chinese: "体温", options: ["体温", "血压", "心跳", "呼吸"] },
+                { english: "flu", chinese: "流感", options: ["流感", "感冒", "发烧", "咳嗽"] },
+                { english: "cold", chinese: "冷", options: ["冷", "热", "暖", "凉"] },
+                { english: "ever", chinese: "曾经", options: ["曾经", "现在", "将来", "从不"] },
+                { english: "better", chinese: "更好", options: ["更好", "更差", "一样", "不同"] }
+            ]},
+            { lesson: 63, words: [
+                { english: "better", chinese: "更好", options: ["更好", "更差", "一样", "不好"] },
+                { english: "certainly", chinese: "当然", options: ["当然", "可能", "不", "也许"] },
+                { english: "get", chinese: "变得", options: ["变得", "保持", "成为", "是"] },
+                { english: "ride", chinese: "骑", options: ["骑", "走", "跑", "坐"] },
+                { english: "experience", chinese: "经验", options: ["经验", "经历", "体验", "教训"] },
+                { english: "away", chinese: "离开", options: ["离开", "来到", "到达", "回去"] },
+                { english: "still", chinese: "还", options: ["还", "不", "也", "就"] },
+                { english: "ill", chinese: "生病", options: ["生病", "健康", "好", "开心"] }
+            ]},
+            { lesson: 64, words: [
+                { english: "remember", chinese: "记得", options: ["记得", "忘记", "知道", "认识"] },
+                { english: "doctor", chinese: "医生", options: ["医生", "护士", "老师", "警察"] },
+                { english: "telephone", chinese: "电话", options: ["电话", "手机", "电脑", "电视"] },
+                { english: "feel", chinese: "感觉", options: ["感觉", "认为", "想", "知道"] },
+                { english: "well", chinese: "健康", options: ["健康", "生病", "累", "困"] },
+                { english: "back", chinese: "背", options: ["背", "头", "胃", "牙"] },
+                { english: "headache", chinese: "头痛", options: ["头痛", "胃痛", "背痛", "牙痛"] },
+                { english: "medicine", chinese: "药", options: ["药", "水", "茶", "咖啡"] }
+            ]},
+            { lesson: 65, words: [
+                { english: "father", chinese: "父亲", options: ["父亲", "母亲", "叔叔", "阿姨"] },
+                { english: "move", chinese: "搬家", options: ["搬家", "旅行", "离开", "到达"] },
+                { english: "start", chinese: "开始", options: ["开始", "结束", "继续", "停止"] },
+                { english: "January", chinese: "一月", options: ["一月", "二月", "三月", "四月"] },
+                { english: "December", chinese: "十二月", options: ["十二月", "十一月", "十月", "一月"] },
+                { english: "November", chinese: "十一月", options: ["十一月", "十月", "十二月", "一月"] },
+                { english: "October", chinese: "十月", options: ["十月", "九月", "十一月", "十二月"] },
+                { english: "September", chinese: "九月", options: ["九月", "八月", "十月", "十一月"] }
+            ]},
+            { lesson: 66, words: [
+                { english: "child", chinese: "孩子", options: ["孩子", "父母", "老师", "医生"] },
+                { english: "children", chinese: "孩子们", options: ["孩子们", "父母", "老师们", "医生们"] },
+                { english: "drive", chinese: "驾驶", options: ["驾驶", "乘坐", "走路", "跑步"] },
+                { english: "July", chinese: "七月", options: ["七月", "六月", "八月", "五月"] },
+                { english: "August", chinese: "八月", options: ["八月", "七月", "九月", "六月"] },
+                { english: "June", chinese: "六月", options: ["六月", "五月", "七月", "四月"] },
+                { english: "May", chinese: "五月", options: ["五月", "四月", "六月", "七月"] },
+                { english: "April", chinese: "四月", options: ["四月", "三月", "五月", "六月"] }
+            ]},
+            { lesson: 67, words: [
+                { english: "absent", chinese: "缺席的", options: ["缺席的", "出席的", "在场的", "在家的"] },
+                { english: "Monday", chinese: "星期一", options: ["星期一", "星期二", "星期日", "星期五"] },
+                { english: "Tuesday", chinese: "星期二", options: ["星期二", "星期一", "星期三", "星期四"] },
+                { english: "Wednesday", chinese: "星期三", options: ["星期三", "星期二", "星期四", "星期五"] },
+                { english: "Thursday", chinese: "星期四", options: ["星期四", "星期三", "星期五", "星期六"] },
+                { english: "keep", chinese: "保持", options: ["保持", "改变", "停止", "继续"] },
+                { english: "day", chinese: "白天", options: ["白天", "晚上", "早晨", "中午"] },
+                { english: "birthday", chinese: "生日", options: ["生日", "节日", "假期", "周末"] }
+            ]},
+            { lesson: 68, words: [
+                { english: "stay", chinese: "停留", options: ["停留", "去", "来", "离开"] },
+                { english: "week", chinese: "周", options: ["周", "月", "年", "天"] },
+                { english: "holiday", chinese: "假期", options: ["假期", "工作", "学习", "周末"] },
+                { english: "Barcelona", chinese: "巴塞罗那", options: ["巴塞罗那", "马德里", "巴黎", "罗马"] },
+                { english: "Spain", chinese: "西班牙", options: ["西班牙", "法国", "意大利", "葡萄牙"] },
+                { english: "wonderful", chinese: "极好的", options: ["极好的", "糟糕的", "普通的", "一般的"] },
+                { english: "leave", chinese: "离开", options: ["离开", "到达", "来到", "去"] },
+                { english: "Madrid", chinese: "马德里", options: ["马德里", "巴塞罗那", "巴黎", "罗马"] }
+            ]},
+            { lesson: 69, words: [
+                { english: "year", chinese: "年", options: ["年", "月", "周", "天"] },
+                { english: "party", chinese: "聚会", options: ["聚会", "会议", "婚礼", "葬礼"] },
+                { english: "birthday", chinese: "生日", options: ["生日", "节日", "假期", "周末"] },
+                { english: "never", chinese: "从不", options: ["从不", "有时", "总是", "偶尔"] },
+                { english: "first", chinese: "第一", options: ["第一", "第二", "最后", "最终"] },
+                { english: "tenth", chinese: "第十", options: ["第十", "第九", "第十一", "第十二"] },
+                { english: "third", chinese: "第三", options: ["第三", "第二", "第四", "第五"] },
+                { english: "win", chinese: "赢", options: ["赢", "输", "平", "得"] }
+            ]},
+            { lesson: 70, words: [
+                { english: "eleventh", chinese: "第十一", options: ["第十一", "第十", "第十二", "第十三"] },
+                { english: "twelfth", chinese: "第十二", options: ["第十二", "第十一", "第十三", "第十四"] },
+                { english: "thirteenth", chinese: "第十三", options: ["第十三", "第十二", "第十四", "第十五"] },
+                { english: "fourteenth", chinese: "第十四", options: ["第十四", "第十三", "第十五", "第十六"] },
+                { english: "fifteenth", chinese: "第十五", options: ["第十五", "第十四", "第十六", "第十七"] },
+                { english: "sixteenth", chinese: "第十六", options: ["第十六", "第十五", "第十七", "第十八"] },
+                { english: "seventeenth", chinese: "第十七", options: ["第十七", "第十六", "第十八", "第十九"] },
+                { english: "eighteenth", chinese: "第十八", options: ["第十八", "第十七", "第十九", "第二十"] }
+            ]},
+            { lesson: 71, words: [
+                { english: "telephone", chinese: "打电话", options: ["打电话", "接电话", "挂电话", "打手机"] },
+                { english: "answer", chinese: "接", options: ["接", "挂", "打", "回"] },
+                { english: "ring", chinese: "响", options: ["响", "打", "接", "挂"] },
+                { english: "last", chinese: "最后的", options: ["最后的", "第一的", "下一个", "前一个"] },
+                { english: "phone", chinese: "电话", options: ["电话", "手机", "电脑", "电视"] },
+                { english: "again", chinese: "再", options: ["再", "不", "还", "就"] },
+                { english: "repeat", chinese: "重复", options: ["重复", "回答", "说", "问"] },
+                { english: "message", chinese: "信息", options: ["信息", "电话", "邮件", "短信"] }
+            ]},
+            { lesson: 72, words: [
+                { english: "message", chinese: "信息", options: ["信息", "电话", "邮件", "短信"] },
+                { english: "for", chinese: "给", options: ["给", "从", "到", "在"] },
+                { english: "him", chinese: "他", options: ["他", "她", "他们", "我们"] },
+                { english: "take", chinese: "拿", options: ["拿", "给", "送", "买"] },
+                { english: "umbrella", chinese: "雨伞", options: ["雨伞", "雨衣", "雨鞋", "雨帽"] },
+                { english: "umbrella", chinese: "雨伞", options: ["雨伞", "阳伞", "帐篷", "遮挡"] },
+                { english: "wait", chinese: "等", options: ["等", "去", "来", "走"] },
+                { english: "him", chinese: "他", options: ["他", "她", "他们", "我们"] }
+            ]}
+        ];
+
+        // Game state
+        let currentLesson = 1;
+        let currentWords = [];
+        let currentWordIndex = 0;
+        let score = 0;
+        let lives = 3;
+        let correctCount = 0;
+        let gameState = 'MENU'; // MENU, PLAYING, GAMEOVER, VICTORY
+        let selectedAnswer = null;
+        let answerLocked = false;
+
+        // Canvas and context
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Game dimensions
+        let canvasWidth = 800;
+        let canvasHeight = 600;
+
+        // Player
+        const player = {
+            x: 0,
+            y: 0,
+            width: 50,
+            height: 60,
+            speed: 8,
+            bullets: [],
+            lastShot: 0,
+            shootDelay: 300
+        };
+
+        // Enemies
+        let enemies = [];
+        let enemySpawnTimer = 0;
+        let enemySpawnDelay = 2000;
+        let currentEnemy = null;
+
+        // Effects
+        let explosions = [];
+        let particles = [];
+
+        // Stars background
+        let stars = [];
+
+        // Initialize canvas size
+        function resizeCanvas() {
+            const container = document.getElementById('gameContainer');
+            const maxWidth = Math.min(container.clientWidth - 40, 800);
+            const maxHeight = Math.min(container.clientHeight - 40, 700);
+
+            canvasWidth = maxWidth;
+            canvasHeight = maxHeight;
+
+            canvas.width = canvasWidth;
+            canvas.height = canvasHeight;
+
+            player.x = canvasWidth / 2 - player.width / 2;
+            player.y = canvasHeight - player.height - 20;
+        }
+
+        // Create stars
+        function createStars() {
+            stars = [];
+            for (let i = 0; i < 100; i++) {
+                stars.push({
+                    x: Math.random() * canvasWidth,
+                    y: Math.random() * canvasHeight,
+                    size: Math.random() * 2 + 0.5,
+                    speed: Math.random() * 0.5 + 0.1,
+                    twinkle: Math.random() * Math.PI * 2
+                });
+            }
+        }
+
+        // Update stars
+        function updateStars() {
+            stars.forEach(star => {
+                star.y += star.speed;
+                star.twinkle += 0.02;
+                if (star.y > canvasHeight) {
+                    star.y = 0;
+                    star.x = Math.random() * canvasWidth;
+                }
+            });
+        }
+
+        // Draw stars
+        function drawStars() {
+            stars.forEach(star => {
+                const alpha = 0.3 + Math.sin(star.twinkle) * 0.3 + 0.4;
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+
+        // Draw player plane
+        function drawPlayer() {
+            ctx.save();
+
+            // Glow effect
+            ctx.shadowBlur = 20;
+            ctx.shadowColor = '#00d4ff';
+
+            // Plane body
+            ctx.fillStyle = '#00d4ff';
+            ctx.beginPath();
+            ctx.moveTo(player.x + player.width / 2, player.y);
+            ctx.lineTo(player.x + player.width, player.y + player.height);
+            ctx.lineTo(player.x + player.width / 2, player.y + player.height - 15);
+            ctx.lineTo(player.x, player.y + player.height);
+            ctx.closePath();
+            ctx.fill();
+
+            // Cockpit
+            ctx.fillStyle = '#7b2ff7';
+            ctx.beginPath();
+            ctx.ellipse(player.x + player.width / 2, player.y + 25, 8, 12, 0, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Engine glow
+            ctx.fillStyle = '#ff6b6b';
+            ctx.shadowColor = '#ff6b6b';
+            ctx.beginPath();
+            ctx.moveTo(player.x + player.width / 2 - 8, player.y + player.height);
+            ctx.lineTo(player.x + player.width / 2, player.y + player.height + 15 + Math.random() * 5);
+            ctx.lineTo(player.x + player.width / 2 + 8, player.y + player.height);
+            ctx.closePath();
+            ctx.fill();
+
+            ctx.restore();
+        }
+
+        // Draw bullets
+        function drawBullets() {
+            player.bullets.forEach(bullet => {
+                ctx.save();
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = '#ffff00';
+                ctx.fillStyle = '#ffff00';
+                ctx.beginPath();
+                ctx.ellipse(bullet.x, bullet.y, 4, 12, 0, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            });
+        }
+
+        // Draw enemies
+        function drawEnemies() {
+            enemies.forEach(enemy => {
+                if (enemy.word && enemy === currentEnemy) {
+                    // Draw enemy plane
+                    ctx.save();
+                    ctx.shadowBlur = 15;
+                    ctx.shadowColor = '#ff4757';
+
+                    ctx.fillStyle = '#ff4757';
+                    ctx.beginPath();
+                    ctx.moveTo(enemy.x + enemy.width / 2, enemy.y + enemy.height);
+                    ctx.lineTo(enemy.x + enemy.width, enemy.y);
+                    ctx.lineTo(enemy.x + enemy.width / 2, enemy.y + 15);
+                    ctx.lineTo(enemy.x, enemy.y);
+                    ctx.closePath();
+                    ctx.fill();
+
+                    // Cockpit
+                    ctx.fillStyle = '#ff6b81';
+                    ctx.beginPath();
+                    ctx.ellipse(enemy.x + enemy.width / 2, enemy.y + enemy.height - 25, 6, 10, 0, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.restore();
+                }
+            });
+        }
+
+        // Draw explosions
+        function drawExplosions() {
+            explosions.forEach((exp, index) => {
+                ctx.save();
+
+                // Outer glow
+                const gradient = ctx.createRadialGradient(exp.x, exp.y, 0, exp.x, exp.y, exp.radius);
+                gradient.addColorStop(0, `rgba(255, 255, 255, ${exp.alpha})`);
+                gradient.addColorStop(0.3, `rgba(255, 200, 50, ${exp.alpha * 0.8})`);
+                gradient.addColorStop(0.6, `rgba(255, 100, 50, ${exp.alpha * 0.5})`);
+                gradient.addColorStop(1, `rgba(255, 50, 50, 0)`);
+
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.arc(exp.x, exp.y, exp.radius, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Particles
+                exp.particles.forEach(p => {
+                    ctx.fillStyle = `rgba(${p.r}, ${p.g}, ${p.b}, ${p.alpha})`;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+
+                ctx.restore();
+            });
+        }
+
+        // Create explosion
+        function createExplosion(x, y, isCorrect) {
+            const colors = isCorrect ?
+                [[50, 255, 130], [100, 255, 180], [150, 255, 220]] :
+                [[255, 50, 50], [255, 100, 50], [255, 150, 50]];
+
+            const particles = [];
+            for (let i = 0; i < 30; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 5 + 2;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                particles.push({
+                    x: x,
+                    y: y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed,
+                    size: Math.random() * 4 + 2,
+                    r: color[0],
+                    g: color[1],
+                    b: color[2],
+                    alpha: 1
+                });
+            }
+
+            explosions.push({
+                x: x,
+                y: y,
+                radius: 10,
+                alpha: 1,
+                particles: particles,
+                isCorrect: isCorrect
+            });
+        }
+
+        // Update explosions
+        function updateExplosions() {
+            explosions.forEach((exp, index) => {
+                exp.radius += 3;
+                exp.alpha -= 0.03;
+
+                exp.particles.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += 0.1;
+                    p.alpha -= 0.02;
+                    p.size *= 0.98;
+                });
+
+                if (exp.alpha <= 0) {
+                    explosions.splice(index, 1);
+                }
+            });
+        }
+
+        // Spawn enemy
+        function spawnEnemy() {
+            if (currentWordIndex >= currentWords.length) return;
+
+            const wordData = currentWords[currentWordIndex];
+
+            enemies = [{
+                x: canvasWidth / 2 - 30,
+                y: -80,
+                width: 60,
+                height: 70,
+                targetY: 100,
+                word: wordData.english,
+                chinese: wordData.chinese,
+                options: wordData.options,
+                speed: 2
+            }];
+
+            currentEnemy = enemies[0];
+            showWordQuestion();
+        }
+
+        // Show word question
+        function showWordQuestion() {
+            if (!currentEnemy) return;
+
+            const wordDisplay = document.getElementById('word-display');
+            const currentWordEl = document.getElementById('currentWord');
+            const optionsGrid = document.getElementById('optionsGrid');
+
+            wordDisplay.style.display = 'block';
+            currentWordEl.textContent = currentEnemy.word;
+
+            optionsGrid.innerHTML = '';
+            currentEnemy.options.forEach((option, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = option;
+                btn.onclick = () => selectAnswer(option, btn);
+                optionsGrid.appendChild(btn);
+            });
+
+            wordDisplay.style.animation = 'none';
+            wordDisplay.offsetHeight;
+            wordDisplay.style.animation = 'fadeIn 0.5s ease';
+        }
+
+        // Select answer
+        function selectAnswer(answer, btnElement) {
+            if (answerLocked) return;
+            answerLocked = true;
+
+            const isCorrect = answer === currentEnemy.chinese;
+            const buttons = document.querySelectorAll('.option-btn');
+
+            buttons.forEach(btn => {
+                btn.style.pointerEvents = 'none';
+                if (btn.textContent === currentEnemy.chinese) {
+                    btn.classList.add('correct');
+                } else if (btn === btnElement && !isCorrect) {
+                    btn.classList.add('wrong');
+                }
+            });
+
+            // Create explosion at enemy position
+            createExplosion(
+                currentEnemy.x + currentEnemy.width / 2,
+                currentEnemy.y + currentEnemy.height / 2,
+                isCorrect
+            );
+
+            if (isCorrect) {
+                score += 10;
+                correctCount++;
+                document.getElementById('score').textContent = score;
+            } else {
+                lives--;
+                document.getElementById('lives').textContent = lives;
+            }
+
+            // Update progress
+            currentWordIndex++;
+            document.getElementById('progress').textContent = currentWordIndex;
+            document.getElementById('progressFill').style.width = `${(currentWordIndex / 10) * 100}%`;
+
+            setTimeout(() => {
+                hideWordQuestion();
+
+                if (lives <= 0) {
+                    endGame(false);
+                } else if (currentWordIndex >= 10) {
+                    endGame(true);
+                } else {
+                    spawnEnemy();
+                }
+                answerLocked = false;
+            }, 1000);
+        }
+
+        // Hide word question
+        function hideWordQuestion() {
+            document.getElementById('word-display').style.display = 'none';
+            enemies = [];
+            currentEnemy = null;
+        }
+
+        // Update game
+        function update() {
+            if (gameState !== 'PLAYING') return;
+
+            updateStars();
+            updateExplosions();
+
+            // Move enemy
+            enemies.forEach(enemy => {
+                if (enemy && enemy.y < enemy.targetY) {
+                    enemy.y += enemy.speed;
+                }
+            });
+        }
+
+        // Draw game
+        function draw() {
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+            // Background gradient
+            const bgGradient = ctx.createLinearGradient(0, 0, 0, canvasHeight);
+            bgGradient.addColorStop(0, '#0a0a1a');
+            bgGradient.addColorStop(0.5, '#0f0f2f');
+            bgGradient.addColorStop(1, '#1a1a4a');
+            ctx.fillStyle = bgGradient;
+            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+
+            drawStars();
+
+            if (gameState === 'PLAYING') {
+                drawEnemies();
+                drawPlayer();
+                drawBullets();
+                drawExplosions();
+            }
+        }
+
+        // Game loop
+        function gameLoop() {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
+
+        // Start game
+        function startGame(lesson) {
+            currentLesson = lesson;
+            currentWords = [...lessonData[lesson - 1].words];
+            shuffleArray(currentWords);
+            currentWords = currentWords.slice(0, 10);
+
+            currentWordIndex = 0;
+            score = 0;
+            lives = 3;
+            correctCount = 0;
+            enemies = [];
+            explosions = [];
+
+            document.getElementById('score').textContent = '0';
+            document.getElementById('lives').textContent = '3';
+            document.getElementById('progress').textContent = '0';
+            document.getElementById('progressFill').style.width = '0%';
+
+            showScreen('game-screen');
+            gameState = 'PLAYING';
+
+            setTimeout(() => {
+                spawnEnemy();
+            }, 500);
+        }
+
+        // End game
+        function endGame(victory) {
+            gameState = victory ? 'VICTORY' : 'GAMEOVER';
+            hideWordQuestion();
+
+            const resultTitle = document.getElementById('resultTitle');
+            const starsRating = document.getElementById('starsRating');
+
+            resultTitle.textContent = victory ? '恭喜通关!' : '游戏结束';
+            resultTitle.className = 'result-title ' + (victory ? 'victory' : 'defeat');
+
+            const accuracy = Math.round((correctCount / 10) * 100);
+            let stars = '';
+            if (accuracy >= 90) stars = '★★★';
+            else if (accuracy >= 70) stars = '★★☆';
+            else if (accuracy >= 50) stars = '★☆☆';
+            else stars = '☆☆☆';
+            starsRating.textContent = stars;
+
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('accuracy').textContent = accuracy + '%';
+            document.getElementById('lessonNum').textContent = '第' + currentLesson + '课';
+
+            showScreen('result-screen');
+        }
+
+        // Restart game
+        function restartGame() {
+            startGame(currentLesson);
+        }
+
+        // Show menu
+        function showMenu() {
+            gameState = 'MENU';
+            showScreen('menu-screen');
+            createLessonGrid();
+        }
+
+        // Show screen
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        // Create lesson grid
+        function createLessonGrid() {
+            const grid = document.getElementById('lessonGrid');
+            grid.innerHTML = '';
+
+            for (let i = 1; i <= 72; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'lesson-btn';
+                btn.textContent = i;
+                btn.onclick = () => startGame(i);
+                grid.appendChild(btn);
+            }
+        }
+
+        // Shuffle array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Create star background
+        function createStarBackground() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 50; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                star.style.width = Math.random() * 2 + 1 + 'px';
+                star.style.height = star.style.width;
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Mouse/touch controls
+        let mouseX = canvasWidth / 2;
+
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            mouseX = e.clientX - rect.left;
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            mouseX = e.touches[0].clientX - rect.left;
+        }, { passive: false });
+
+        // Update player position
+        function updatePlayerPosition() {
+            if (gameState !== 'PLAYING') return;
+
+            const targetX = mouseX - player.width / 2;
+            player.x += (targetX - player.x) * 0.15;
+
+            // Keep player in bounds
+            player.x = Math.max(0, Math.min(canvasWidth - player.width, player.x));
+        }
+
+        // Main update loop
+        function mainLoop() {
+            updatePlayerPosition();
+            update();
+            draw();
+            requestAnimationFrame(mainLoop);
+        }
+
+        // Initialize
+        function init() {
+            resizeCanvas();
+            createStars();
+            createStarBackground();
+            createLessonGrid();
+            mainLoop();
+
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+                createStars();
+            });
+        }
+
+        // Start
+        init();
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

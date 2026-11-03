@@ -1,0 +1,90 @@
+<section class="sandbox" id="sandbox">
+    <div class="sandbox__head">
+      <h2>组件样式库</h2><em>STYLE KIT / 可删除</em>
+    </div>
+    <p class="sandbox__tip">下列是本电子版用到的全部排版组件，按实际章节挑选使用。类名即组件名，复制区块后替换文字即可。</p>
+
+    <div class="demo">
+      <div class="demo__tag">.prose / .prose.no-indent — 正文段落，首行缩进两字</div>
+      <p class="prose">这是标准正文段落，缩进两字符，中文两端对齐，行高两倍。</p>
+      <p class="prose no-indent">加 <code>no-indent</code> 后取消缩进，用于卡片内、列表后的补充说明。</p>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.h--3 / .h--4 — 小标题（深色，h3 前带橙色方点）</div>
+      <h3 class="h h--3">三级小标题</h3>
+      <p class="prose">紧跟在小标题后的正文会自动取消首行缩进。</p>
+      <h4 class="h h--4">四级小标题</h4>
+      <p class="prose">更轻的一级，用于分组或次级说明。</p>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.pull — 引文，橙色竖线</div>
+      <blockquote class="pull">适合放书中金句或作者的核心判断。<cite>—— 出处</cite></blockquote>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.list / .list--dot / .list--check — 三种列表</div>
+      <ol class="list"><li>有序列表：自动编号，编号为橙色两位数。</li></ol>
+      <ul class="list list--dot"><li>圆点列表：并列要点，不强调顺序。</li></ul>
+      <ul class="list list--check"><li>勾选列表：该做 / 不该做、优势 / 劣势。</li></ul>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.cards — 要点卡片网格，自动换列</div>
+      <div class="cards">
+        <div class="card"><div class="card__n">01</div><p class="card__t">要点标题</p><p class="card__d">40–80 字说明。</p></div>
+        <div class="card"><div class="card__n">02</div><p class="card__t">要点标题</p><p class="card__d">卡片之间用 1px 线分隔，不用阴影。</p></div>
+        <div class="card"><div class="card__n">03</div><p class="card__t">要点标题</p><p class="card__d">适合放"三点结论""四个误区"。</p></div>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.bars — 数据条，宽度由 --w 控制（0–100）</div>
+      <div class="bars">
+        <div class="bar__row"><span class="bar__label">标签一</span><span class="bar__track"><span class="bar__fill" style="--w:82"></span></span><span class="bar__val">82%</span></div>
+        <div class="bar__row"><span class="bar__label">标签二</span><span class="bar__track"><span class="bar__fill" style="--w:56"></span></span><span class="bar__val">56%</span></div>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.timeline — 时间轴</div>
+      <ol class="timeline">
+        <li><time>YYYY</time><b>事件标题</b><br>事件说明文字，一到两句。</li>
+        <li><time>YYYY</time><b>事件标题</b><br>适合放技术演进、作者经历的时间线。</li>
+      </ol>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.tablewrap &gt; table — 表格</div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>项目</th><th>说明</th><th>数值</th></tr></thead>
+          <tbody>
+            <tr><td>行一</td><td>说明文字</td><td><em>数值</em></td></tr>
+            <tr><td>行二</td><td>说明文字</td><td><em>数值</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.tags — 关键词标签</div>
+      <div class="tags">
+        <span class="tag tag--amber">关键词</span>
+        <span class="tag">标签</span>
+        <span class="tag">标签</span>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.callout / .callout--note — 提示框（橙 / 灰）</div>
+      <div class="callout"><b>编者按</b><p>橙色底：需要读者注意的补充说明。</p></div>
+      <div class="callout callout--note"><b>延伸阅读</b><p>灰底：延伸材料、参考书目或数据来源。</p></div>
+    </div>
+
+    <div class="demo">
+      <div class="demo__tag">.slot — 还没放图的虚线占位</div>
+      <div class="slot"><b>图位</b>放图后替换为 assets/img/pXXX.jpg</div>
+    </div>
+  </section>

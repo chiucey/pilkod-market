@@ -1,0 +1,104 @@
+{
+  "id": "c3p-project-auto-editor",
+  "name": "C3P Project Auto Editor",
+  "version": "1.0.0",
+  "description": "Construct3 C3P项目自动编辑器 - 程序化编辑.c3p项目文件",
+  "author": "MiniMax Agent",
+  "tags": [
+    "construct3",
+    "c3p",
+    "project-editor",
+    "game-modification",
+    "xml-editor",
+    "资源替换",
+    "项目编辑"
+  ],
+  "platform": "Claw/LobsterAI/OpenClaw",
+  "capabilities": {
+    "c3p_parsing": true,
+    "xml_editing": true,
+    "resource_replacement": true,
+    "event_modification": true,
+    "project_packaging": true
+  },
+  "triggers": [
+    "修改c3p文件",
+    "编辑c3p项目",
+    "替换c3p资源",
+    "修改游戏数值",
+    "编辑事件表",
+    "批量替换游戏素材",
+    "c3p项目定制",
+    "程序化编辑c3p",
+    "修改c3p配置"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "lxml": ">=4.9.0",
+    "Pillow": ">=9.0.0",
+    "pyzip": ">=0.9.4"
+  },
+  "files": {
+    "main": "scripts/main.py",
+    "parser": "scripts/c3p_parser.py",
+    "xml_editor": "scripts/xml_editor.py",
+    "resource_manager": "scripts/resource_manager.py",
+    "event_editor": "scripts/event_editor.py",
+    "config_loader": "scripts/config_loader.py",
+    "c3p_format": "references/c3p_format.md",
+    "xml_parameters": "references/xml_parameters.md",
+    "resource_guide": "references/resource_replacement.md",
+    "event_guide": "references/event_modification.md"
+  },
+  "config": {
+    "language": "zh-CN",
+    "platform": "Construct3",
+    "supported_versions": ["R300+"],
+    "compression": {
+      "method": "deflate",
+      "level": 9
+    },
+    "encryption": {
+      "enabled": true,
+      "algorithm": "ZIP"
+    }
+  },
+  "parameters": {
+    "basic_info": {
+      "game_name": {"type": "string", "required": false},
+      "description": {"type": "string", "required": false},
+      "author": {"type": "string", "required": false},
+      "version": {"type": "string", "required": false, "default": "1.0.0"}
+    },
+    "assets": {
+      "app_icon": {"type": "file", "required": false, "formats": ["png"]},
+      "background": {"type": "file", "required": false, "formats": ["png", "jpg"]},
+      "sprites": {"type": "folder", "required": false}
+    },
+    "game_balance": {
+      "click_reward": {"type": "number", "min": 1, "max": 99999},
+      "upgrade_cost": {"type": "number", "min": 10, "max": 9999999},
+      "difficulty": {"type": "number", "min": 0.1, "max": 10.0},
+      "coin_rate": {"type": "number", "min": 1, "max": 9999},
+      "ad_frequency": {"type": "number", "min": 1, "max": 999}
+    },
+    "advertising": {
+      "tiktok_app_id": {"type": "string", "required": false},
+      "tiktok_rewarded_id": {"type": "string", "required": false},
+      "tiktok_interstitial_id": {"type": "string", "required": false},
+      "admob_app_id": {"type": "string", "required": false},
+      "admob_rewarded_id": {"type": "string", "required": false}
+    },
+    "export": {
+      "package_name": {"type": "string", "required": false},
+      "bundle_id": {"type": "string", "required": false},
+      "orientation": {"type": "string", "enum": ["portrait", "landscape", "any"], "default": "portrait"},
+      "min_sdk": {"type": "number", "min": 16, "max": 33, "default": 21}
+    }
+  },
+  "resources": {
+    "references": "references/",
+    "config": "config/",
+    "templates": "templates/"
+  }
+}

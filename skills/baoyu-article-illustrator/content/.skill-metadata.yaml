@@ -1,0 +1,97 @@
+examples:
+  - id: tech-article
+    title:
+      zh: 技术文章配图生成
+      en: Technical Article Illustration
+    description:
+      zh: 为技术类文章生成专业的信息图表
+      en: Generate professional infographics for technical articles
+    prompt:
+      zh: |-
+        我写了一篇关于人工智能发展趋势的技术文章，需要为文章添加配图。
+
+        文章要点：
+        - AI技术发展时间线
+        - 主要技术分支对比
+        - 应用场景分布图
+        - 未来发展趋势预测
+
+        配图要求：
+        1. 专业、简洁的设计风格
+        2. 符合技术文档的视觉规范
+        3. 图表数据准确清晰
+        4. 中英文双语支持
+
+        请帮我：
+        1. 分析文章结构，确定配图位置
+        2. 设计合适的图表类型
+        3. 生成高质量的插图
+        4. 提供图像使用建议
+      en: |-
+        I wrote a technical article about AI development trends and need illustrations for the article.
+
+        Article key points:
+        - AI technology development timeline
+        - Comparison of major technical branches
+        - Application scenario distribution chart
+        - Future development trend predictions
+
+        Illustration requirements:
+        1. Professional and clean design style
+        2. Comply with technical documentation visual standards
+        3. Accurate and clear chart data
+        4. Chinese-English bilingual support
+
+        Please help me:
+        1. Analyze article structure and determine illustration positions
+        2. Design appropriate chart types
+        3. Generate high-quality illustrations
+        4. Provide image usage suggestions
+  - id: business-report
+    title:
+      zh: 商业报告图表制作
+      en: Business Report Chart Creation
+    description:
+      zh: 为商业分析报告创建专业的数据可视化图表
+      en: Create professional data visualization charts for business analysis reports
+    prompt:
+      zh: |-
+        我需要为季度业务报告制作数据可视化图表。
+
+        报告内容：
+        - 销售业绩对比分析
+        - 市场份额变化趋势
+        - 客户满意度调查结果
+        - 部门绩效雷达图
+
+        设计要求：
+        1. 商务正式风格
+        2. 颜色搭配专业协调
+        3. 图表信息层次清晰
+        4. 适合PPT演示使用
+
+        请帮我：
+        1. 选择最适合的图表类型
+        2. 设计统一的视觉风格
+        3. 优化数据展示效果
+        4. 提供多种配色方案
+      en: |-
+        I need to create data visualization charts for quarterly business reports.
+
+        Report content:
+        - Sales performance comparative analysis
+        - Market share trend changes
+        - Customer satisfaction survey results
+        - Department performance radar chart
+
+        Design requirements:
+        1. Business formal style
+        2. Professional and coordinated color matching
+        3. Clear chart information hierarchy
+        4. Suitable for PPT presentation use
+
+        Please help me:
+        1. Select the most suitable chart types
+        2. Design unified visual style
+        3. Optimize data presentation effects
+        4. Provide multiple color schemes

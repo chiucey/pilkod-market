@@ -1,0 +1,1569 @@
+{
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352",
+      "size": 10776
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "88a05d7e36dd6a39d114648f352d9ef469d2d98b",
+      "size": 8827
+    },
+    {
+      "path": "_meta.json",
+      "sha": "53ca811b806652a5318d87bab6882d0a7bd835df",
+      "size": 136
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "e1162ab0c58b7cf250795df35ee845102092107c",
+      "size": 331
+    },
+    {
+      "path": "assets/cloudflare-small.svg",
+      "sha": "7feedbc2b37ff9f28f81d30aff52e605090bee86",
+      "size": 1221
+    },
+    {
+      "path": "assets/cloudflare.png",
+      "sha": "cf23088bbb1fec745d4ef350b8002a9b5ae42ca8",
+      "size": 1187
+    },
+    {
+      "path": "references/agents-sdk/README.md",
+      "sha": "c30d098840f490bed1416c1ad1d1afa0a2905c88",
+      "size": 2765
+    },
+    {
+      "path": "references/agents-sdk/api.md",
+      "sha": "9e16aa621641d12aa92beb0cdd7b3c2678ee0c7d",
+      "size": 5862
+    },
+    {
+      "path": "references/agents-sdk/configuration.md",
+      "sha": "a99cb033113139675d775f6f7fef3712da570f24",
+      "size": 3575
+    },
+    {
+      "path": "references/agents-sdk/gotchas.md",
+      "sha": "396bd1c7aab034de3657f8b9ef2d45cdb6f10190",
+      "size": 5108
+    },
+    {
+      "path": "references/agents-sdk/patterns.md",
+      "sha": "2e72d4bb4947163b84df9f2a45086f9b23c9ff65",
+      "size": 5595
+    },
+    {
+      "path": "references/ai-gateway/README.md",
+      "sha": "75a12ab215f67c14f9802b24d3db2c44ff1d6cbd",
+      "size": 6308
+    },
+    {
+      "path": "references/ai-gateway/configuration.md",
+      "sha": "78b5615a3632c1b0577867508d6295dbe5e3a5a5",
+      "size": 2954
+    },
+    {
+      "path": "references/ai-gateway/dynamic-routing.md",
+      "sha": "540be5c27944405a188e7479e8d036f9a92e0cfd",
+      "size": 1835
+    },
+    {
+      "path": "references/ai-gateway/features.md",
+      "sha": "4a0d384f2d733d8c1a60c6cf4b1b331f70301dcb",
+      "size": 2726
+    },
+    {
+      "path": "references/ai-gateway/sdk-integration.md",
+      "sha": "7ca4930ef019d2489544cc4a693a071128666810",
+      "size": 2684
+    },
+    {
+      "path": "references/ai-gateway/troubleshooting.md",
+      "sha": "4d6635760fce534cf04d72ef032ca59fb9131bdd",
+      "size": 2420
+    },
+    {
+      "path": "references/ai-search/README.md",
+      "sha": "52d766d7be1a0d3a45eab7d28c5b778fd93b4684",
+      "size": 4521
+    },
+    {
+      "path": "references/ai-search/api.md",
+      "sha": "b6220c464a687aaa35a923f4c0781e4fa6b50f6f",
+      "size": 2519
+    },
+    {
+      "path": "references/ai-search/configuration.md",
+      "sha": "d1f34adb5410af9e4b766e9cd5ae75628af4e6bc",
+      "size": 1760
+    },
+    {
+      "path": "references/ai-search/gotchas.md",
+      "sha": "04c987f6a6813bccec5625ff8e126e84dd145383",
+      "size": 2135
+    },
+    {
+      "path": "references/ai-search/patterns.md",
+      "sha": "4a70f089beb85cc9088176d48c311337d7407257",
+      "size": 2008
+    },
+    {
+      "path": "references/analytics-engine/README.md",
+      "sha": "524123b4cbdca4005c8c05cce308d431a102c3a9",
+      "size": 3195
+    },
+    {
+      "path": "references/analytics-engine/api.md",
+      "sha": "20e7084151fcef6ea33a1613e7dce17a7f20301f",
+      "size": 3161
+    },
+    {
+      "path": "references/analytics-engine/configuration.md",
+      "sha": "a71af96ff553398bfb270c85c1c1060c1edeb9df",
+      "size": 2361
+    },
+    {
+      "path": "references/analytics-engine/gotchas.md",
+      "sha": "ed1767f2f049842192b15284a2d973636241fede",
+      "size": 2018
+    },
+    {
+      "path": "references/analytics-engine/patterns.md",
+      "sha": "dc3fc5d4614eca930bd68826550546276e558d9e",
+      "size": 2312
+    },
+    {
+      "path": "references/api-shield/README.md",
+      "sha": "86613c86fe683ffe0b1fe9f6856614200458659f",
+      "size": 1796
+    },
+    {
+      "path": "references/api-shield/api.md",
+      "sha": "c833501ff6838eb7c602729bfc1f9a5cd2425049",
+      "size": 3900
+    },
+    {
+      "path": "references/api-shield/configuration.md",
+      "sha": "f95744c5e30ba80255ef66d1eee6ca97bc94c513",
+      "size": 5020
+    },
+    {
+      "path": "references/api-shield/gotchas.md",
+      "sha": "255517f064f76ae816fedfd4b331f8e6cff9420e",
+      "size": 4946
+    },
+    {
+      "path": "references/api-shield/patterns.md",
+      "sha": "5721dba456183c1520e034c4332b8028dc409110",
+      "size": 5844
+    },
+    {
+      "path": "references/api/README.md",
+      "sha": "5e02109c69c7176494318c1a72277364ca5d18e7",
+      "size": 2381
+    },
+    {
+      "path": "references/api/api.md",
+      "sha": "33710149c916b6c3bada3a7e3debc229554fc68a",
+      "size": 4308
+    },
+    {
+      "path": "references/api/configuration.md",
+      "sha": "4d4a299c84aa67463f7e07a2011ac85fe872e740",
+      "size": 3748
+    },
+    {
+      "path": "references/api/gotchas.md",
+      "sha": "e6666dc5906b969f945ecc825357eba3e4eb2422",
+      "size": 5390
+    },
+    {
+      "path": "references/api/patterns.md",
+      "sha": "3c7c693b1ae5097b96a7968a813652c52194c8be",
+      "size": 4639
+    },
+    {
+      "path": "references/argo-smart-routing/README.md",
+      "sha": "ef5539d0652a4c777274324272209f2049331ce7",
+      "size": 4060
+    },
+    {
+      "path": "references/argo-smart-routing/api.md",
+      "sha": "5cd8f5e3795acaae4090ee9b4c488f6b2eb6043f",
+      "size": 6579
+    },
+    {
+      "path": "references/argo-smart-routing/configuration.md",
+      "sha": "ba94d382e238fa01975d1ff834b6d49cde7e9957",
+      "size": 4457
+    },
+    {
+      "path": "references/argo-smart-routing/gotchas.md",
+      "sha": "8d011d3cdf584bcbbe7f4d553eaad29503233521",
+      "size": 4327
+    },
+    {
+      "path": "references/argo-smart-routing/patterns.md",
+      "sha": "1173b2d6041912c83cadc7ba44919eb7da8e4795",
+      "size": 3053
+    },
+    {
+      "path": "references/bindings/README.md",
+      "sha": "fc3e8ebfe3d899ab6e4136e168b515fac03112b5",
+      "size": 4042
+    },
+    {
+      "path": "references/bindings/api.md",
+      "sha": "a8ab13b41152cfdd1ab25937738a51d33252960a",
+      "size": 5199
+    },
+    {
+      "path": "references/bindings/configuration.md",
+      "sha": "957350017c78b920e39fb70ca5eefa033a7659a1",
+      "size": 4496
+    },
+    {
+      "path": "references/bindings/gotchas.md",
+      "sha": "90aca1a7c6bb0c4aca5d94abec4d457cdc2d6f8e",
+      "size": 6169
+    },
+    {
+      "path": "references/bindings/patterns.md",
+      "sha": "759305d967d3c5645729fe941e03da2cd9a550e1",
+      "size": 5058
+    },
+    {
+      "path": "references/bot-management/README.md",
+      "sha": "a76808db1bf2abb8ff76677cdf36acee592dd142",
+      "size": 3762
+    },
+    {
+      "path": "references/bot-management/api.md",
+      "sha": "eda958adeb96a286336ccca567f2e298259f31ca",
+      "size": 5803
+    },
+    {
+      "path": "references/bot-management/configuration.md",
+      "sha": "4166bcc2b051b02f22a2a2615b25908337a6af8e",
+      "size": 5744
+    },
+    {
+      "path": "references/bot-management/gotchas.md",
+      "sha": "685bcbdfcbbcb2ab411005f9e2f408afb6460597",
+      "size": 5657
+    },
+    {
+      "path": "references/bot-management/patterns.md",
+      "sha": "4ca70855b6bfa382ee878b2b495d234c6b509999",
+      "size": 4970
+    },
+    {
+      "path": "references/browser-rendering/README.md",
+      "sha": "eca7220bfa4f74def1c030c895b3964882a4ce23",
+      "size": 3092
+    },
+    {
+      "path": "references/browser-rendering/api.md",
+      "sha": "eea56b0726cc9f2e160fa5f18a62b0806e760b57",
+      "size": 2976
+    },
+    {
+      "path": "references/browser-rendering/configuration.md",
+      "sha": "84bad26b88b35639961f10c15d743274e4390e4b",
+      "size": 1802
+    },
+    {
+      "path": "references/browser-rendering/gotchas.md",
+      "sha": "7e34f2bd89610d745f58efd207072734887ac835",
+      "size": 2520
+    },
+    {
+      "path": "references/browser-rendering/patterns.md",
+      "sha": "a652c2b58ab87261904ede1cc8799f24eb34ee4c",
+      "size": 2647
+    },
+    {
+      "path": "references/c3/README.md",
+      "sha": "0516fc6e5854386c47f6e0b2a34268c60837cc0b",
+      "size": 3352
+    },
+    {
+      "path": "references/c3/api.md",
+      "sha": "29c2b0c5eb7a1d9aa8e3419632918f8020dcd32f",
+      "size": 2286
+    },
+    {
+      "path": "references/c3/configuration.md",
+      "sha": "37f9f828240898e23aa2f6ca8b28ef0383a28c96",
+      "size": 1637
+    },
+    {
+      "path": "references/c3/gotchas.md",
+      "sha": "ecd664d88b99ced47b3cf6b6f6877ce46a4d3562",
+      "size": 2307
+    },
+    {
+      "path": "references/c3/patterns.md",
+      "sha": "76379e306fcc05777650f72873d821d5c2caccf5",
+      "size": 2203
+    },
+    {
+      "path": "references/cache-reserve/README.md",
+      "sha": "395347a21dcae34c29d2a25452b0480c2391f58a",
+      "size": 5609
+    },
+    {
+      "path": "references/cache-reserve/api.md",
+      "sha": "18c49d8e000e7eea4c90a303af6c0993dfdbf609",
+      "size": 6018
+    },
+    {
+      "path": "references/cache-reserve/configuration.md",
+      "sha": "84a66161dd8f4f425ec3aeaca9ee501a8ede03d3",
+      "size": 3660
+    },
+    {
+      "path": "references/cache-reserve/gotchas.md",
+      "sha": "9995cf85c79a69160251b7b77256e175f5a2c695",
+      "size": 5797
+    },
+    {
+      "path": "references/cache-reserve/patterns.md",
+      "sha": "65f9488656ec57641cb7bb66fc24d30ebd30b461",
+      "size": 6265
+    },
+    {
+      "path": "references/containers/README.md",
+      "sha": "a6c488db63606beaf73fd453f8bd514f7574305d",
+      "size": 3531
+    },
+    {
+      "path": "references/containers/api.md",
+      "sha": "c41f7213687d6190e3ebc053f69f897b3f7f2f54",
+      "size": 4310
+    },
+    {
+      "path": "references/containers/configuration.md",
+      "sha": "fd39cc4d2ee0a0f069b806c84f2cba530b70afaf",
+      "size": 5424
+    },
+    {
+      "path": "references/containers/gotchas.md",
+      "sha": "306e8c5b379fc3d2c2534c319a201c62eb88db43",
+      "size": 4485
+    },
+    {
+      "path": "references/containers/patterns.md",
+      "sha": "92042942c26d1cad3feb03170504defef4b5e549",
+      "size": 4925
+    },
+    {
+      "path": "references/cron-triggers/README.md",
+      "sha": "67c00f82865d30f8dae63afb34643dbf0343372e",
+      "size": 2949
+    },
+    {
+      "path": "references/cron-triggers/api.md",
+      "sha": "b0242d71fa5a3e8a34f00f1ee089e615df6371dd",
+      "size": 5866
+    },
+    {
+      "path": "references/cron-triggers/configuration.md",
+      "sha": "b5843699e97a020e9115c6e6f2b6dda740de2bc8",
+      "size": 4250
+    },
+    {
+      "path": "references/cron-triggers/gotchas.md",
+      "sha": "5906c3a1f9cbc77d4a9d83b7b8ce5390eaaddcb8",
+      "size": 6316
+    },
+    {
+      "path": "references/cron-triggers/patterns.md",
+      "sha": "a1f18239b37cb200cadc38d9c8d55766e37ac0f2",
+      "size": 6980
+    },
+    {
+      "path": "references/d1/README.md",
+      "sha": "e40d44c1d8e4630383754b65f8080c8c7afeab4e",
+      "size": 4719
+    },
+    {
+      "path": "references/d1/api.md",
+      "sha": "b3c26de7b54c358279632884933bb8d75c4c7f03",
+      "size": 6806
+    },
+    {
+      "path": "references/d1/configuration.md",
+      "sha": "8a073fc731a7a81ca97d808d3e8774ff5612a3c0",
+      "size": 5386
+    },
+    {
+      "path": "references/d1/gotchas.md",
+      "sha": "9f9a95a2be38b3d2bc14ce80f3a5f658710c7353",
+      "size": 4318
+    },
+    {
+      "path": "references/d1/patterns.md",
+      "sha": "f01c7bd1a4deac51d6e13b9871d52da20d523755",
+      "size": 7251
+    },
+    {
+      "path": "references/ddos/README.md",
+      "sha": "117dd21433f509893f155e3b4039af0d9098d928",
+      "size": 2054
+    },
+    {
+      "path": "references/ddos/api.md",
+      "sha": "b96284aa3f2d98dc1083693def220ac29a24b324",
+      "size": 4170
+    },
+    {
+      "path": "references/ddos/configuration.md",
+      "sha": "14c6e32e03bea0f420d66d2fd16a6478abda726a",
+      "size": 3005
+    },
+    {
+      "path": "references/ddos/gotchas.md",
+      "sha": "f2a97d1cc2bfb08ca135ebef0b1989cfd6505d52",
+      "size": 3912
+    },
+    {
+      "path": "references/ddos/patterns.md",
+      "sha": "a46ef2f0a104ff4eac1a3ac7141abcd47ee77fa5",
+      "size": 5680
+    },
+    {
+      "path": "references/do-storage/README.md",
+      "sha": "426d2c45075ef785256b4b2a47aea7c0a74b763e",
+      "size": 2765
+    },
+    {
+      "path": "references/do-storage/api.md",
+      "sha": "e659598b41d6ab2aa76a902953ab9286f7ee73e3",
+      "size": 3571
+    },
+    {
+      "path": "references/do-storage/configuration.md",
+      "sha": "18b41bbe877b9d90f58bd5b0952f09af5fbbe7f2",
+      "size": 2235
+    },
+    {
+      "path": "references/do-storage/gotchas.md",
+      "sha": "8898f08a927dd0aac654dc232178e8e62e190e9c",
+      "size": 5200
+    },
+    {
+      "path": "references/do-storage/patterns.md",
+      "sha": "2885915891cce366f13906711bf975e654eba5f2",
+      "size": 5278
+    },
+    {
+      "path": "references/do-storage/testing.md",
+      "sha": "d348d87372b8e7337356586721d3469f2059a6e5",
+      "size": 4912
+    },
+    {
+      "path": "references/durable-objects/README.md",
+      "sha": "8e965588f9168a0a8d962600d8b1ca6344944f96",
+      "size": 6609
+    },
+    {
+      "path": "references/durable-objects/api.md",
+      "sha": "89c7e4d7b07d49f131e3e5e9861d128e6e25c244",
+      "size": 6142
+    },
+    {
+      "path": "references/durable-objects/configuration.md",
+      "sha": "651599a4a5c404d88747b8e3075fbf297532d686",
+      "size": 4266
+    },
+    {
+      "path": "references/durable-objects/gotchas.md",
+      "sha": "72495f9402469c00dedf4a210a8a30bffd351232",
+      "size": 7318
+    },
+    {
+      "path": "references/durable-objects/patterns.md",
+      "sha": "d91f382b13fc0633bf65d3b004858a2db7bbc0cc",
+      "size": 6691
+    },
+    {
+      "path": "references/email-routing/README.md",
+      "sha": "7fa902ee08b4012e3bdcd73e52e1289a06ab9ada",
+      "size": 3431
+    },
+    {
+      "path": "references/email-routing/api.md",
+      "sha": "33b8bf0203ceffddc934e26e17b88885cae3f242",
+      "size": 5311
+    },
+    {
+      "path": "references/email-routing/configuration.md",
+      "sha": "3f9613e392e99d2f78e1a3440042dca47b8765c2",
+      "size": 3571
+    },
+    {
+      "path": "references/email-routing/gotchas.md",
+      "sha": "20ea419e3b5cf2fd500d1ff07be939987c7e9fe0",
+      "size": 4106
+    },
+    {
+      "path": "references/email-routing/patterns.md",
+      "sha": "21636779ea0a38edbd3b6b5381ccc1730a4f3379",
+      "size": 5480
+    },
+    {
+      "path": "references/email-workers/README.md",
+      "sha": "5a3e3049052d85922c5edb87c77e296cb06567e4",
+      "size": 5368
+    },
+    {
+      "path": "references/email-workers/api.md",
+      "sha": "74da66cddd787cfc1054123b1f364a3d264840a7",
+      "size": 6078
+    },
+    {
+      "path": "references/email-workers/configuration.md",
+      "sha": "7928d04149f8159b45402db41e3898b763010e9f",
+      "size": 2719
+    },
+    {
+      "path": "references/email-workers/gotchas.md",
+      "sha": "3700a50fdd84497e1158b7b24fdf6082a66cccbc",
+      "size": 3041
+    },
+    {
+      "path": "references/email-workers/patterns.md",
+      "sha": "f1e65f506ed6d8ca3e2ca7266fa56802dc40b99b",
+      "size": 2785
+    },
+    {
+      "path": "references/hyperdrive/README.md",
+      "sha": "6626776c11ed3456a32f2fd9dfc071d128632a8b",
+      "size": 2918
+    },
+    {
+      "path": "references/hyperdrive/api.md",
+      "sha": "0e587b93cad6d49f7c09d5f8fe912cb3c50965ca",
+      "size": 3875
+    },
+    {
+      "path": "references/hyperdrive/configuration.md",
+      "sha": "6d429a94d899deef86b2e80056322af2cdf42b90",
+      "size": 3913
+    },
+    {
+      "path": "references/hyperdrive/gotchas.md",
+      "sha": "efa2ead3c3215acc22a03016e3960e12a1a9df40",
+      "size": 3926
+    },
+    {
+      "path": "references/hyperdrive/patterns.md",
+      "sha": "bd794b90122d336a8366829c6a11fd71d9ad268b",
+      "size": 5980
+    },
+    {
+      "path": "references/images/README.md",
+      "sha": "f1dd644b399b1f196d46b611a64125a74b3d1751",
+      "size": 2900
+    },
+    {
+      "path": "references/images/api.md",
+      "sha": "c172e2269e4e1db2eea8912395a825e02e96b89a",
+      "size": 2574
+    },
+    {
+      "path": "references/images/configuration.md",
+      "sha": "9fa2deb33434cf12f6bed6fc35b1c20422f0d013",
+      "size": 4126
+    },
+    {
+      "path": "references/images/gotchas.md",
+      "sha": "6f52455a248b1d7a52c14f9185ca6ba88e69ba6f",
+      "size": 2490
+    },
+    {
+      "path": "references/images/patterns.md",
+      "sha": "c07bf3cd2f9fff0e41830e0b7810b7dda025680f",
+      "size": 3582
+    },
+    {
+      "path": "references/kv/README.md",
+      "sha": "9e43e01027d82c53ac3c960ef6758174eee72666",
+      "size": 2883
+    },
+    {
+      "path": "references/kv/api.md",
+      "sha": "35063f265f428d9c3cc32abcfdc4866dfe970409",
+      "size": 4327
+    },
+    {
+      "path": "references/kv/configuration.md",
+      "sha": "0aefa5f0a083816991047849346808261df97c37",
+      "size": 3083
+    },
+    {
+      "path": "references/kv/gotchas.md",
+      "sha": "5ad321325762acf00eed7e70fd1f15471c0eccdb",
+      "size": 4455
+    },
+    {
+      "path": "references/kv/patterns.md",
+      "sha": "8386074f56fac188ecfa9523e26543f3c6cc48de",
+      "size": 4740
+    },
+    {
+      "path": "references/miniflare/README.md",
+      "sha": "82baf7cb79369a371febf26798396271852f5809",
+      "size": 2976
+    },
+    {
+      "path": "references/miniflare/api.md",
+      "sha": "e4df4d7de5dd2156ca7e186d379ddab8cb45f9e0",
+      "size": 4606
+    },
+    {
+      "path": "references/miniflare/configuration.md",
+      "sha": "b269b2457714cea9c480995a2128dcaa056571f8",
+      "size": 3525
+    },
+    {
+      "path": "references/miniflare/gotchas.md",
+      "sha": "dfcd15782700f18f5210ff7d0e65b10bc73f1610",
+      "size": 3724
+    },
+    {
+      "path": "references/miniflare/patterns.md",
+      "sha": "c89c3a5a1b74a6ddd32838fc1f203f98f1895ee1",
+      "size": 4260
+    },
+    {
+      "path": "references/network-interconnect/README.md",
+      "sha": "e337f1bd54a33362d5d83febae558c875fbdc64e",
+      "size": 3230
+    },
+    {
+      "path": "references/network-interconnect/api.md",
+      "sha": "85e5e12d3b6578dc701057a6103772a658c2b2fe",
+      "size": 5626
+    },
+    {
+      "path": "references/network-interconnect/configuration.md",
+      "sha": "0f1005ccc254096228f997c564f7e05a1f0c9e4a",
+      "size": 4257
+    },
+    {
+      "path": "references/network-interconnect/gotchas.md",
+      "sha": "988080774fba4191bade4e3cf80ae6628b709a3a",
+      "size": 5554
+    },
+    {
+      "path": "references/network-interconnect/patterns.md",
+      "sha": "7ff9dd3057f103f69d988ca9ca63e212e36673b2",
+      "size": 4041
+    },
+    {
+      "path": "references/observability/README.md",
+      "sha": "58feed6363f5efae8b1aafb1aeb56ebf204e9b99",
+      "size": 3887
+    },
+    {
+      "path": "references/observability/api.md",
+      "sha": "a0161dee94fa5a20a15c5cbe579843caae006024",
+      "size": 3480
+    },
+    {
+      "path": "references/observability/configuration.md",
+      "sha": "483de4c7c854acce88d6120f4bf38b62f0c67bf4",
+      "size": 3584
+    },
+    {
+      "path": "references/observability/gotchas.md",
+      "sha": "42bc738018e4b862592603b4a6ca4fc4140993d8",
+      "size": 3755
+    },
+    {
+      "path": "references/observability/patterns.md",
+      "sha": "9135c682f39620045ece3ed2a310698a883f47d6",
+      "size": 2481
+    },
+    {
+      "path": "references/pages-functions/README.md",
+      "sha": "deaf461c8fad7a5ddca776f1e5213f884b1bce6e",
+      "size": 3322
+    },
+    {
+      "path": "references/pages-functions/api.md",
+      "sha": "526337235c5c69f68601bb1bbd31a7891e263d61",
+      "size": 4677
+    },
+    {
+      "path": "references/pages-functions/configuration.md",
+      "sha": "62ba298ce349e049620a6ced7e030263f4394c41",
+      "size": 3002
+    },
+    {
+      "path": "references/pages-functions/gotchas.md",
+      "sha": "f63e60854f51436d7d0e541461f29552490be729",
+      "size": 3850
+    },
+    {
+      "path": "references/pages-functions/patterns.md",
+      "sha": "22289e8d794bc27d2dd752f8c5a3441ee4ff85d8",
+      "size": 4214
+    },
+    {
+      "path": "references/pages/README.md",
+      "sha": "bf0546f519d803e1ce0f75a663fb47b8ddca601c",
+      "size": 2834
+    },
+    {
+      "path": "references/pages/api.md",
+      "sha": "a7195856982e3a480e32c58a0a4af2dc60a76ec9",
+      "size": 5980
+    },
+    {
+      "path": "references/pages/configuration.md",
+      "sha": "30ada89e44ace81517465726238c2a8c7055eede",
+      "size": 5865
+    },
+    {
+      "path": "references/pages/gotchas.md",
+      "sha": "943c2d324c29ecd6886b0a42109b5f861b2e1191",
+      "size": 7998
+    },
+    {
+      "path": "references/pages/patterns.md",
+      "sha": "883c4dae31ce23dc2584c69bf985b9ffb9cbf2aa",
+      "size": 5992
+    },
+    {
+      "path": "references/pipelines/README.md",
+      "sha": "2724485452f91ebbb0e892e4838b37357a855829",
+      "size": 3400
+    },
+    {
+      "path": "references/pipelines/api.md",
+      "sha": "ff302c702e4400ca9339cae4704b0e9c24eccb80",
+      "size": 5109
+    },
+    {
+      "path": "references/pipelines/configuration.md",
+      "sha": "75e65f5f33457400e2e7b52cd578bbad847ac8f1",
+      "size": 2747
+    },
+    {
+      "path": "references/pipelines/gotchas.md",
+      "sha": "2a2a75fdadc52b0ee0017da83233a12eef947a05",
+      "size": 2427
+    },
+    {
+      "path": "references/pipelines/patterns.md",
+      "sha": "186b6a2ce4bc7d756f809f0c359f2786cd64e0d5",
+      "size": 2080
+    },
+    {
+      "path": "references/pulumi/README.md",
+      "sha": "e78d807bbeeb8fa915373715499cafe5793522a8",
+      "size": 3231
+    },
+    {
+      "path": "references/pulumi/api.md",
+      "sha": "332cfef3fb678168ee6b97949679618c74e7951a",
+      "size": 5761
+    },
+    {
+      "path": "references/pulumi/configuration.md",
+      "sha": "449419d56b5021213307b94dc4ee12d8aa5fb8ed",
+      "size": 5657
+    },
+    {
+      "path": "references/pulumi/gotchas.md",
+      "sha": "f01592a7299d2f33a4781a9a92567311e8e61cfa",
+      "size": 6536
+    },
+    {
+      "path": "references/pulumi/patterns.md",
+      "sha": "c843d54a520934fffa29f7b1a0f3fcc4bb890eda",
+      "size": 6974
+    },
+    {
+      "path": "references/queues/README.md",
+      "sha": "5588fd2e388c34477a6b25b5d770682ee34c3dd5",
+      "size": 3058
+    },
+    {
+      "path": "references/queues/api.md",
+      "sha": "ded029cf88a533745794aa1f2eceb14e3a4f1b63",
+      "size": 5563
+    },
+    {
+      "path": "references/queues/configuration.md",
+      "sha": "e6c629fea17990e95df99f520624aa2922ba495b",
+      "size": 3828
+    },
+    {
+      "path": "references/queues/gotchas.md",
+      "sha": "b93cbe291dfe5d03c377fa6556e937927da8e981",
+      "size": 7233
+    },
+    {
+      "path": "references/queues/patterns.md",
+      "sha": "9ff01c1d1c6298596840e82bde247f82757ddea6",
+      "size": 5498
+    },
+    {
+      "path": "references/r2-data-catalog/README.md",
+      "sha": "88702fad986bfc1ff982f2307cb55133638e9074",
+      "size": 7105
+    },
+    {
+      "path": "references/r2-data-catalog/api.md",
+      "sha": "3d57d4fc9d4fe0fcbce3bbcedf23a94662ad940d",
+      "size": 5991
+    },
+    {
+      "path": "references/r2-data-catalog/configuration.md",
+      "sha": "15915daa7d0df7bf2d189f7cf4b74ef6b922c531",
+      "size": 5297
+    },
+    {
+      "path": "references/r2-data-catalog/gotchas.md",
+      "sha": "6bfad9e210006b3d30359baa6249130337032271",
+      "size": 6126
+    },
+    {
+      "path": "references/r2-data-catalog/patterns.md",
+      "sha": "b6b181f7944b516d4234ba03d5162c904fff73f3",
+      "size": 5883
+    },
+    {
+      "path": "references/r2-sql/README.md",
+      "sha": "c59a161a23bf0862b7b207a2e482b822791eb451",
+      "size": 5209
+    },
+    {
+      "path": "references/r2-sql/api.md",
+      "sha": "7e67c8ff3ec50b3bff655d89bbf0a3847ce30568",
+      "size": 4007
+    },
+    {
+      "path": "references/r2-sql/configuration.md",
+      "sha": "3c5cfb2ae8ec537f304bfeeaaa33ddfdcd53632c",
+      "size": 3739
+    },
+    {
+      "path": "references/r2-sql/gotchas.md",
+      "sha": "d16de94a7d0d3a09f635c2f5a60848b097144618",
+      "size": 6235
+    },
+    {
+      "path": "references/r2-sql/patterns.md",
+      "sha": "53de7d3e7a68302ddb0c3a8ee9f572cf67dd7856",
+      "size": 6758
+    },
+    {
+      "path": "references/r2/README.md",
+      "sha": "af3d7d098e1496b963f253c0b97b7976114de497",
+      "size": 2825
+    },
+    {
+      "path": "references/r2/api.md",
+      "sha": "9a8cd28e4ec8ec52ba1885b1a648cde93e1bc72c",
+      "size": 5649
+    },
+    {
+      "path": "references/r2/configuration.md",
+      "sha": "f306acdbe5faf74c9d0f3b217ee7e7201c5bcbab",
+      "size": 3654
+    },
+    {
+      "path": "references/r2/gotchas.md",
+      "sha": "ad755d35fb0b0257772cb8b8384200af3231f6fa",
+      "size": 5048
+    },
+    {
+      "path": "references/r2/patterns.md",
+      "sha": "85191d62e4a357cbda956dec343af548ad848128",
+      "size": 5844
+    },
+    {
+      "path": "references/realtime-sfu/README.md",
+      "sha": "6f999216f421d13fa6ea2aecca5e2f876cb95006",
+      "size": 3078
+    },
+    {
+      "path": "references/realtime-sfu/api.md",
+      "sha": "6e6dae6dbd51ea04991d38278413f1aff9244354",
+      "size": 3768
+    },
+    {
+      "path": "references/realtime-sfu/configuration.md",
+      "sha": "6736b45ebba0c79af87f135ac489928a59efe77e",
+      "size": 3509
+    },
+    {
+      "path": "references/realtime-sfu/gotchas.md",
+      "sha": "efe5ee7759c7f3cfd5256755c49f924bc38b15d5",
+      "size": 4902
+    },
+    {
+      "path": "references/realtime-sfu/patterns.md",
+      "sha": "95ddc42fc4e17dc1ef78aabbb6e239f4feeffc3c",
+      "size": 5403
+    },
+    {
+      "path": "references/realtimekit/README.md",
+      "sha": "6d19f516a8b54ee4dc52afce1d6daa0bc3e9f7fb",
+      "size": 4047
+    },
+    {
+      "path": "references/realtimekit/api.md",
+      "sha": "18e9a3f3a65e6da3ddb0e666ac52347f96b3df40",
+      "size": 8352
+    },
+    {
+      "path": "references/realtimekit/configuration.md",
+      "sha": "efbca8053d02b28c634efe146637c4f8ba3e854a",
+      "size": 5192
+    },
+    {
+      "path": "references/realtimekit/gotchas.md",
+      "sha": "c6e7dfd9c042a03eeacff12d71be29d94bf9bdfd",
+      "size": 6883
+    },
+    {
+      "path": "references/realtimekit/patterns.md",
+      "sha": "ac662ef1684788a0ef5015258c5b93dc737df2f0",
+      "size": 7660
+    },
+    {
+      "path": "references/sandbox/README.md",
+      "sha": "8550be44e152b4634a5cc64876afd4ed4b72ee42",
+      "size": 3119
+    },
+    {
+      "path": "references/sandbox/api.md",
+      "sha": "3eb2fa5e0d98d6f353b1da7436d8df3a184c775f",
+      "size": 4972
+    },
+    {
+      "path": "references/sandbox/configuration.md",
+      "sha": "32a3bd957ea3523cd3c8dd866cff13e257331478",
+      "size": 3415
+    },
+    {
+      "path": "references/sandbox/gotchas.md",
+      "sha": "856c5030884a80f77b2125d544341ab9d56fbe5f",
+      "size": 5456
+    },
+    {
+      "path": "references/sandbox/patterns.md",
+      "sha": "adeb0a047572662f476aa3608e7ee2569a54bc49",
+      "size": 5236
+    },
+    {
+      "path": "references/secrets-store/README.md",
+      "sha": "dc709e95fb0d59bf4d5b7413c4d4a7278ee65fa0",
+      "size": 2215
+    },
+    {
+      "path": "references/secrets-store/api.md",
+      "sha": "2e4e6e2401728afc23a26d97a5e3b20b36218fed",
+      "size": 4358
+    },
+    {
+      "path": "references/secrets-store/configuration.md",
+      "sha": "a1e2eee251db39a9b7e21861e1357da1d12a6394",
+      "size": 3890
+    },
+    {
+      "path": "references/secrets-store/gotchas.md",
+      "sha": "08218b428995a5474dd7a3154bdf3310018983e1",
+      "size": 3838
+    },
+    {
+      "path": "references/secrets-store/patterns.md",
+      "sha": "afac998591bb351b80e55fc796b5294e4c345c9a",
+      "size": 5660
+    },
+    {
+      "path": "references/smart-placement/README.md",
+      "sha": "e8b1041ed93328951d7c1e865cf9d4ca956a5ca2",
+      "size": 5024
+    },
+    {
+      "path": "references/smart-placement/api.md",
+      "sha": "6608985961464dff1132b3c75f7b1ad65e21907b",
+      "size": 5559
+    },
+    {
+      "path": "references/smart-placement/configuration.md",
+      "sha": "4f506ac51ee6d4ec868487df27b6c10e3c2c20c1",
+      "size": 6119
+    },
+    {
+      "path": "references/smart-placement/gotchas.md",
+      "sha": "dc94e9b3b7d613744465e43aee3f31037eabf2b6",
+      "size": 5637
+    },
+    {
+      "path": "references/smart-placement/patterns.md",
+      "sha": "40dc4ddc96c861d1ef86071ef7ed7265d4647f0c",
+      "size": 5784
+    },
+    {
+      "path": "references/snippets/README.md",
+      "sha": "a09a1c41230349545de1ff258164a041670f8ca8",
+      "size": 3132
+    },
+    {
+      "path": "references/snippets/api.md",
+      "sha": "76a5a4bef573b5755ec6477a3f8f77905f9eb6cf",
+      "size": 5133
+    },
+    {
+      "path": "references/snippets/configuration.md",
+      "sha": "b5bea0fb1199e90e314e84c0e01735a0b35c0e94",
+      "size": 6311
+    },
+    {
+      "path": "references/snippets/gotchas.md",
+      "sha": "832077e39f711cbe15e70f215be3538f30fa7db9",
+      "size": 2220
+    },
+    {
+      "path": "references/snippets/patterns.md",
+      "sha": "a60c42057be75f5868473204039aa8df92185f1f",
+      "size": 3346
+    },
+    {
+      "path": "references/spectrum/README.md",
+      "sha": "f78350daff3c265ee16ab95840c31e370c0dd73c",
+      "size": 2355
+    },
+    {
+      "path": "references/spectrum/api.md",
+      "sha": "645fe2e78229c1ae68a11d0e8691d77b362cb7d1",
+      "size": 4924
+    },
+    {
+      "path": "references/spectrum/configuration.md",
+      "sha": "81aa72f382795672f4e9903fd746ee07daf18c9d",
+      "size": 4332
+    },
+    {
+      "path": "references/spectrum/gotchas.md",
+      "sha": "ef31a368e9bc57c01bf5d4d681945c3c418239b9",
+      "size": 3739
+    },
+    {
+      "path": "references/spectrum/patterns.md",
+      "sha": "403248698f5e97d9a55684b4b9ddfac7ef53e7b8",
+      "size": 4778
+    },
+    {
+      "path": "references/static-assets/README.md",
+      "sha": "b2ba96a6ddc4a43cd42dfd2f8d0744daad4c2ac1",
+      "size": 2197
+    },
+    {
+      "path": "references/static-assets/api.md",
+      "sha": "08bb568daabf74ea1817cc7c97d4711f91d7bc4d",
+      "size": 4451
+    },
+    {
+      "path": "references/static-assets/configuration.md",
+      "sha": "2902698e72277f6a02bf1de2934420425710e500",
+      "size": 4826
+    },
+    {
+      "path": "references/static-assets/gotchas.md",
+      "sha": "2577f17e14950a85d003550dbfa09c0d490d5542",
+      "size": 4127
+    },
+    {
+      "path": "references/static-assets/patterns.md",
+      "sha": "11ddda24b45055cafcac51fc39964eef1fac5b59",
+      "size": 4895
+    },
+    {
+      "path": "references/stream/README.md",
+      "sha": "be251e3dff86b37575d17a869eae03e00f5bb80c",
+      "size": 3864
+    },
+    {
+      "path": "references/stream/api-live.md",
+      "sha": "6c4f4c079cdc7c9752494e04117b610f92fd3ea2",
+      "size": 5174
+    },
+    {
+      "path": "references/stream/api.md",
+      "sha": "0c35a7137613faa3de158bd0bfc79e9dbcba9701",
+      "size": 5260
+    },
+    {
+      "path": "references/stream/configuration.md",
+      "sha": "c4e66133368730a6a49faf63f2b904fd2186766a",
+      "size": 3222
+    },
+    {
+      "path": "references/stream/gotchas.md",
+      "sha": "2b1cf8b28bdb313c7773cdcad18f4b212ab80a3a",
+      "size": 4308
+    },
+    {
+      "path": "references/stream/patterns.md",
+      "sha": "2e7782de2cb9006783aeb2958dd0f02cd6fa4ef9",
+      "size": 6394
+    },
+    {
+      "path": "references/tail-workers/README.md",
+      "sha": "d17da7dbccc1f714ff2763b547584396bbaf2833",
+      "size": 3020
+    },
+    {
+      "path": "references/tail-workers/api.md",
+      "sha": "624d9e9636d25fbb6c700e5f3cdf6fe4f8bfb9f3",
+      "size": 5132
+    },
+    {
+      "path": "references/tail-workers/configuration.md",
+      "sha": "96fb33fa47cc3caed922e9e48db29c2231b1a66d",
+      "size": 3474
+    },
+    {
+      "path": "references/tail-workers/gotchas.md",
+      "sha": "4865d0e487ce0aec33cbcc687753979ccd5d448f",
+      "size": 4595
+    },
+    {
+      "path": "references/tail-workers/patterns.md",
+      "sha": "a696ec2622e5c3396a40da046a67f424d0fa99b0",
+      "size": 4034
+    },
+    {
+      "path": "references/terraform/README.md",
+      "sha": "17d8a301b01b0c2aa5c82b331fd95e135d8a8a72",
+      "size": 3680
+    },
+    {
+      "path": "references/terraform/api.md",
+      "sha": "8a06c1c2582074b9be5c514bd74e496244839270",
+      "size": 4020
+    },
+    {
+      "path": "references/terraform/configuration.md",
+      "sha": "4b5eeb583b3fdbf08b4487b79990b593f4def537",
+      "size": 7577
+    },
+    {
+      "path": "references/terraform/gotchas.md",
+      "sha": "eb4731d7ef92f09ee658392094d66a621ef40484",
+      "size": 5268
+    },
+    {
+      "path": "references/terraform/patterns.md",
+      "sha": "aea3a96411c8b031e95f8e6e95e417cf272db255",
+      "size": 6640
+    },
+    {
+      "path": "references/tunnel/README.md",
+      "sha": "f70a6681afb98c7a9a9c375f284852edd5b61e46",
+      "size": 3738
+    },
+    {
+      "path": "references/tunnel/api.md",
+      "sha": "faa3013b5082080bf7eeaf9c78121eae6318d8c0",
+      "size": 4444
+    },
+    {
+      "path": "references/tunnel/configuration.md",
+      "sha": "32b705096da14e1a996b6b89618373ad6af0fcce",
+      "size": 3698
+    },
+    {
+      "path": "references/tunnel/gotchas.md",
+      "sha": "f368856550e9f4a560c23e5275489deeffc7f5fd",
+      "size": 3933
+    },
+    {
+      "path": "references/tunnel/networking.md",
+      "sha": "8c3930d9082f1ced84a7596ff77269f8e1c85deb",
+      "size": 3993
+    },
+    {
+      "path": "references/tunnel/patterns.md",
+      "sha": "7ef6d2944bb1085ba15d899cd16734850326843a",
+      "size": 3853
+    },
+    {
+      "path": "references/turn/README.md",
+      "sha": "cc4b39e8df76cd3cad8e06aaa9f8dab9e05087b1",
+      "size": 3693
+    },
+    {
+      "path": "references/turn/api.md",
+      "sha": "498f5e4b0dc0356e0b9def94c8a161ec938a68bb",
+      "size": 5220
+    },
+    {
+      "path": "references/turn/configuration.md",
+      "sha": "2d49736e8980511962fa3a4a5b1f2cc0c6b65045",
+      "size": 4178
+    },
+    {
+      "path": "references/turn/gotchas.md",
+      "sha": "e2d5bd18e935484c494a32227635330ac621f871",
+      "size": 7020
+    },
+    {
+      "path": "references/turn/patterns.md",
+      "sha": "39333bee42526f9586684035791ee9660433e62c",
+      "size": 6189
+    },
+    {
+      "path": "references/turnstile/README.md",
+      "sha": "29de799532fa3c07129831a3b429d25dffc29980",
+      "size": 3539
+    },
+    {
+      "path": "references/turnstile/api.md",
+      "sha": "f65ee4f8e35dd03ae3e91363fbe6bd8affbb708c",
+      "size": 6424
+    },
+    {
+      "path": "references/turnstile/configuration.md",
+      "sha": "215bdabd1edc981b5fdc79285c63c6b12d970b28",
+      "size": 6719
+    },
+    {
+      "path": "references/turnstile/gotchas.md",
+      "sha": "f7556b4cf24475ed40ee7158ce2db7ee89b34553",
+      "size": 6276
+    },
+    {
+      "path": "references/turnstile/patterns.md",
+      "sha": "c147a6f5ca26bb62775f1dceb298c86d81467f93",
+      "size": 4677
+    },
+    {
+      "path": "references/vectorize/README.md",
+      "sha": "9707a108cf3461ca426e34b6bdeb3670c5049520",
+      "size": 4288
+    },
+    {
+      "path": "references/vectorize/api.md",
+      "sha": "e29d87f6c6f24861798daaec5db9cd9563c01012",
+      "size": 2375
+    },
+    {
+      "path": "references/vectorize/configuration.md",
+      "sha": "8c64d3ee621bdacd862303313f715051f4063fbb",
+      "size": 1986
+    },
+    {
+      "path": "references/vectorize/gotchas.md",
+      "sha": "9282771c6223c5b1e4f2a50054f3f706f18192c5",
+      "size": 2157
+    },
+    {
+      "path": "references/vectorize/patterns.md",
+      "sha": "9ffa2cbbe980b899ea15e96706420072ba0e5297",
+      "size": 2514
+    },
+    {
+      "path": "references/waf/README.md",
+      "sha": "052d0ae3a13730dbbdb9c5d36e0325c9e7f85928",
+      "size": 3455
+    },
+    {
+      "path": "references/waf/api.md",
+      "sha": "a7bc9e0ae964a5275d328a4907c3ece71761b8a8",
+      "size": 5831
+    },
+    {
+      "path": "references/waf/configuration.md",
+      "sha": "796a2910312e3f07475e7518edf47b8302fd2cfc",
+      "size": 4765
+    },
+    {
+      "path": "references/waf/gotchas.md",
+      "sha": "05b0dc11915d641812751b55d7875e8a44c43044",
+      "size": 6290
+    },
+    {
+      "path": "references/waf/patterns.md",
+      "sha": "1fe0004d3e6b197d0edab0993ad3ada42f9d5926",
+      "size": 5356
+    },
+    {
+      "path": "references/web-analytics/README.md",
+      "sha": "fcc19385986c0736385be8863fabca2b3fa29f44",
+      "size": 5236
+    },
+    {
+      "path": "references/web-analytics/configuration.md",
+      "sha": "ff8f18d3c6ab4a286f36b4dac650280334354884",
+      "size": 2003
+    },
+    {
+      "path": "references/web-analytics/gotchas.md",
+      "sha": "cad1424c7c40cc7efb09787d3ce30e40898516be",
+      "size": 1999
+    },
+    {
+      "path": "references/web-analytics/integration.md",
+      "sha": "ec89140dea0347224b13175da1216288f45383cb",
+      "size": 1772
+    },
+    {
+      "path": "references/web-analytics/patterns.md",
+      "sha": "8e83575ee6fe18dc75e5026569c7875721a73458",
+      "size": 2237
+    },
+    {
+      "path": "references/workerd/README.md",
+      "sha": "11b2c6d69d2bd7df3c172b674437dc0d0e8e893e",
+      "size": 2789
+    },
+    {
+      "path": "references/workerd/api.md",
+      "sha": "085f5077dca2faa3e2d21d2c6811f8fbe7870975",
+      "size": 4959
+    },
+    {
+      "path": "references/workerd/configuration.md",
+      "sha": "bad5f43bc90f4289d4bc2b85d272c779e880b4d7",
+      "size": 5263
+    },
+    {
+      "path": "references/workerd/gotchas.md",
+      "sha": "dc35109ec72b752810904442effec5b640338989",
+      "size": 4781
+    },
+    {
+      "path": "references/workerd/patterns.md",
+      "sha": "5aaf0924c32765a56b87cc1df9cd6f94d80a83a4",
+      "size": 4938
+    },
+    {
+      "path": "references/workers-ai/README.md",
+      "sha": "a8419d20270b76f85e8ed6f137ab57920a3910bb",
+      "size": 6042
+    },
+    {
+      "path": "references/workers-ai/api.md",
+      "sha": "e65f97aefbdea5f2d21ec3934783bc6d9c96392e",
+      "size": 2715
+    },
+    {
+      "path": "references/workers-ai/configuration.md",
+      "sha": "f5563b3a5bc499439dbb74ae2564a4a799899ed7",
+      "size": 1989
+    },
+    {
+      "path": "references/workers-ai/gotchas.md",
+      "sha": "c69255f54bac0e95b64710327289c2cb77d29f85",
+      "size": 2693
+    },
+    {
+      "path": "references/workers-ai/patterns.md",
+      "sha": "8295a5bfdd35424b36a405e145f60652ad24d587",
+      "size": 3063
+    },
+    {
+      "path": "references/workers-for-platforms/README.md",
+      "sha": "7bfd9b7200be08131a2d6b28307df13a27d3cf22",
+      "size": 3913
+    },
+    {
+      "path": "references/workers-for-platforms/api.md",
+      "sha": "663c608fa4e21bb8918b329d827744d6b3894c08",
+      "size": 5515
+    },
+    {
+      "path": "references/workers-for-platforms/configuration.md",
+      "sha": "b434999df8f774a5c643563e7dca7ab445a4772e",
+      "size": 3892
+    },
+    {
+      "path": "references/workers-for-platforms/gotchas.md",
+      "sha": "a32fe188ca68a05702adc9566881af97fe1411cc",
+      "size": 5440
+    },
+    {
+      "path": "references/workers-for-platforms/patterns.md",
+      "sha": "d1984309376b43e7fba396d58a3c2894822b4d9e",
+      "size": 5587
+    },
+    {
+      "path": "references/workers-playground/README.md",
+      "sha": "6dee4f974d634b36daa312c7d1e79ea483dd07ca",
+      "size": 4016
+    },
+    {
+      "path": "references/workers-playground/api.md",
+      "sha": "1382ab4b58e35842ecba1a1a66f0f9ce386b68f4",
+      "size": 2224
+    },
+    {
+      "path": "references/workers-playground/configuration.md",
+      "sha": "7d747aceec7879b1a84ceaed858baa5756728a97",
+      "size": 4462
+    },
+    {
+      "path": "references/workers-playground/gotchas.md",
+      "sha": "9271dc435482a37c94c74ba5526be1495c3d85a8",
+      "size": 2019
+    },
+    {
+      "path": "references/workers-playground/patterns.md",
+      "sha": "4af891c532aef30a3453d2fb499b729f098525bc",
+      "size": 3303
+    },
+    {
+      "path": "references/workers-vpc/README.md",
+      "sha": "412d82315bcd3c3286c367752f31bbb1aa30a450",
+      "size": 5484
+    },
+    {
+      "path": "references/workers-vpc/api.md",
+      "sha": "987fb2ed3b432cc993d3c104e270f7fb9cd02257",
+      "size": 5321
+    },
+    {
+      "path": "references/workers-vpc/configuration.md",
+      "sha": "efd2d3535e213374cf8c086e8c92c2d430bf824c",
+      "size": 3898
+    },
+    {
+      "path": "references/workers-vpc/gotchas.md",
+      "sha": "d14faaeca82147b21feeb690c368fec58a4509de",
+      "size": 4477
+    },
+    {
+      "path": "references/workers-vpc/patterns.md",
+      "sha": "392627e2708a3c9d9c63856b7a7b75a49b47fcb2",
+      "size": 6011
+    },
+    {
+      "path": "references/workers/README.md",
+      "sha": "d5b04e184200d3c23c43d33b5652be5f0ac80435",
+      "size": 3451
+    },
+    {
+      "path": "references/workers/api.md",
+      "sha": "a4fc13f71a27ea684968f2f8a13f29d3723bedc7",
+      "size": 5158
+    },
+    {
+      "path": "references/workers/configuration.md",
+      "sha": "9eae70ba1a64747a867ee96b4ae49e7655cabda8",
+      "size": 4355
+    },
+    {
+      "path": "references/workers/frameworks.md",
+      "sha": "6089e6db21f5583a5bac314f1a48722c20de3952",
+      "size": 4276
+    },
+    {
+      "path": "references/workers/gotchas.md",
+      "sha": "d01811b2d35ba405c937682ddb57c9f03914ccf7",
+      "size": 4751
+    },
+    {
+      "path": "references/workers/patterns.md",
+      "sha": "7768c4d6201cf5b809e211ac5a956abf3a689be6",
+      "size": 5447
+    },
+    {
+      "path": "references/workflows/README.md",
+      "sha": "561f907bee1b00bb19e7a3bc718db1ca11f6cb17",
+      "size": 2429
+    },
+    {
+      "path": "references/workflows/api.md",
+      "sha": "7ac5625789451403da5d844564dcec232d5856b9",
+      "size": 6423
+    },
+    {
+      "path": "references/workflows/configuration.md",
+      "sha": "cfe7e4a25332497a580caae277f24b82f58ef0c0",
+      "size": 3707
+    },
+    {
+      "path": "references/workflows/gotchas.md",
+      "sha": "6f854446fdf7141fc94f3e1d1376a9afb9bbe25f",
+      "size": 4649
+    },
+    {
+      "path": "references/workflows/patterns.md",
+      "sha": "72ce024658c1c20718ad5735775dc1e7f58f920c",
+      "size": 6638
+    },
+    {
+      "path": "references/wrangler/README.md",
+      "sha": "0640e7c7536532e6b689b395cbba4ac36fc4a90e",
+      "size": 4668
+    },
+    {
+      "path": "references/wrangler/api.md",
+      "sha": "11384c2cb0cac96a61042fdcdd064ecee3fef7bf",
+      "size": 4624
+    },
+    {
+      "path": "references/wrangler/auth.md",
+      "sha": "16d9934c9a444bc0664ab6d460ba4f491a4b1475",
+      "size": 2169
+    },
+    {
+      "path": "references/wrangler/configuration.md",
+      "sha": "20dc2f00ae9112027594daa4a93e9c483c7f6936",
+      "size": 4722
+    },
+    {
+      "path": "references/wrangler/gotchas.md",
+      "sha": "db6ba08fd9b419cefcd50580740c155f8ef731cc",
+      "size": 5868
+    },
+    {
+      "path": "references/wrangler/patterns.md",
+      "sha": "a22a41ad800c685285d575bf7321dc356bad7128",
+      "size": 4876
+    },
+    {
+      "path": "references/zaraz/IMPLEMENTATION_SUMMARY.md",
+      "sha": "dd8da196be21fd7855fbe93502223f195c3a3842",
+      "size": 3494
+    },
+    {
+      "path": "references/zaraz/README.md",
+      "sha": "0e28155858ad77f0345536fbe758d296bd15c9d2",
+      "size": 3909
+    },
+    {
+      "path": "references/zaraz/api.md",
+      "sha": "5d8e1cc8c1f11e550c261a501033e57bc7c7b1b5",
+      "size": 3197
+    },
+    {
+      "path": "references/zaraz/configuration.md",
+      "sha": "e2e534ce66ec646f62edd15b5abd59100a87e240",
+      "size": 1811
+    },
+    {
+      "path": "references/zaraz/gotchas.md",
+      "sha": "eaa6b4917ab5c77bcfd0494598e887030390537e",
+      "size": 2001
+    },
+    {
+      "path": "references/zaraz/patterns.md",
+      "sha": "c5ef967eddb2e6685b543830244e3eea55f58397",
+      "size": 2133
+    }
+  ]
+}

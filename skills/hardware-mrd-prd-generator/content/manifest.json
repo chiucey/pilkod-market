@@ -1,0 +1,137 @@
+{
+  "skill_id": "hardware-mrd-prd-generator",
+  "name": "Hardware Product MRD & PRD Generator",
+  "name_zh": "硬件产品市场需求与产品规划生成器",
+  "description": "专业硬件产品（智能硬件、IoT设备、运动科技产品）的市场需求文档（MRD）和产品需求文档（PRD）生成方法论。包含市场分析、用户研究、痛点挖掘、场景定义、功能规划、定价策略、商业分析、销售预测、ROI评估等全流程工具。",
+  "description_en": "Professional hardware product MRD and PRD generation methodology for smart hardware, IoT devices, and sports technology products. Includes market analysis, user research, pain point mining, scenario definition, feature planning, pricing strategy, business analysis, sales forecasting, and ROI evaluation.",
+  "version": "1.1-sanitized",
+  "author": "MiniMax Agent",
+  "created": "XXXX-04-14",
+  "tags": [
+    "MRD",
+    "PRD",
+    "市场分析",
+    "产品规划",
+    "需求文档",
+    "硬件产品",
+    "产品定位",
+    "用户画像",
+    "商业分析",
+    "销售预测",
+    "智能硬件",
+    "IoT产品"
+  ],
+  "category": "Product Management",
+  "sub_category": "Product Planning",
+  "trigger_keywords": {
+    "zh": [
+      "MRD",
+      "PRD",
+      "市场分析",
+      "产品规划",
+      "需求文档",
+      "硬件产品",
+      "产品定位",
+      "用户画像",
+      "痛点分析",
+      "商业分析",
+      "销售预测"
+    ],
+    "en": [
+      "MRD",
+      "PRD",
+      "market analysis",
+      "product planning",
+      "requirements document",
+      "hardware product",
+      "product positioning",
+      "user persona",
+      "pain point",
+      "business analysis",
+      "sales forecast"
+    ]
+  },
+  "required_inputs": {
+    "product_type": {
+      "type": "string",
+      "required": true,
+      "description": "产品类型（硬件类别）"
+    },
+    "target_market": {
+      "type": "string",
+      "required": true,
+      "description": "目标市场地理范围"
+    },
+    "competitor_info": {
+      "type": "string",
+      "required": false,
+      "description": "已知竞品或替代品信息"
+    },
+    "price_range": {
+      "type": "string",
+      "required": false,
+      "description": "目标价格区间或利润率"
+    },
+    "integration_requirements": {
+      "type": "string",
+      "required": false,
+      "description": "生态兼容性需求"
+    }
+  },
+  "output_specifications": {
+    "mrd_document": {
+      "languages": ["Chinese", "English"],
+      "formats": ["Markdown", "Word"]
+    },
+    "prd_document": {
+      "languages": ["Chinese", "English"],
+      "formats": ["Markdown", "Word"]
+    },
+    "business_analysis": {
+      "languages": ["Chinese", "English"],
+      "formats": ["Markdown", "Excel"]
+    }
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "description": "Skill主定义文件，包含概述、输入输出规范、方法论框架"
+    },
+    {
+      "path": "METHODOLOGY.md",
+      "description": "完整方法论文档，包含MRD和PRD详细步骤与模板"
+    },
+    {
+      "path": "USAGE.md",
+      "description": "使用指南，包含最佳实践和使用示例"
+    },
+    {
+      "path": "PRIVACY.md",
+      "description": "隐私与安全指南"
+    },
+    {
+      "path": "manifest.json",
+      "description": "Skill元数据配置文件"
+    },
+    {
+      "path": "README.md",
+      "description": "发布说明文档"
+    }
+  ],
+  "privacy": {
+    "data_collection": "none",
+    "pii_handling": "not_applicable",
+    "data_storage": "local_only",
+    "third_party_sharing": "none",
+    "compliance": ["GDPR_awareness", "CCPA_awareness", "data_minimization"],
+    "sensitive_data_removed": true,
+    "business_specific_data": false,
+    "real_company_references": false
+  },
+  "security": {
+    "encryption_required": false,
+    "api_keys_required": false,
+    "network_access": false,
+    "local_processing_only": true
+  }
+}

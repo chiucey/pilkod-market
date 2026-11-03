@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% 页面设置
+\geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+
+% 页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% 章节标题样式
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{black}}
+  {第\chinese{section}部分}{1em}{}
+
+% 题目环境
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{problem}[1][]{
+  colback=gray!5,
+  colframe=blue!60!black,
+  fonttitle=\bfseries,
+  title=#1,
+  boxrule=1pt,
+  arc=2pt,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+}
+
+\begin{document}
+
+% ========== 封面 ==========
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+  % 背景装饰
+  \fill[blue!8] (current page.north east) ++(-3,-3) circle (8cm);
+  \fill[green!6] (current page.south west) ++(2,2) circle (6cm);
+\end{tikzpicture}
+
+\vspace*{6cm}
+\begin{center}
+  {\Huge\bfseries {{TITLE}}}\\[0.8cm]
+  {\color{blue!60!black}\rule{6cm}{2pt}}\\[0.5cm]
+  {\large {{SUBTITLE}}}\\[4cm]
+  {{SERIES}}\\[0.3cm]
+  {{YEAR}}}
+\end{center}
+\end{titlepage}
+
+% ========== 题目内容 ==========
+% 在此处添加章节和题目
+% 使用以下格式：
+
+% \section{章节名称}
+% \begin{problem}[题 N]
+% 题目内容，支持LaTeX数学公式
+% \end{problem}
+
+\end{document}

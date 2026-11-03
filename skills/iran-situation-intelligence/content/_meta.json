@@ -1,0 +1,95 @@
+{
+  "author": "MiniMax Agent",
+  "config": {
+    "max_sources_per_query": 10,
+    "output_language": "zh-CN",
+    "run_interval_hours": 6,
+    "time_zone": "Asia/Shanghai (UTC+8)"
+  },
+  "created_at": "2024-03-22",
+  "dependencies": [],
+  "description": "伊朗局势情报分析助手。用于生成伊朗地区定时简报、分析军事动态、跟踪核风险、监测能源与霍尔木兹海峡安全、评估企业信号（石油/航运）、解读市场反应。触发短语：生成伊朗局势简报、伊朗情报更新、伊朗地区分析、中东局势报告、霍尔木兹海峡监测、伊朗核问题跟踪、伊朗能源市场分析。",
+  "display_name": "伊朗局势情报分析助手",
+  "id": 379266350584779,
+  "information_sources": {
+    "tier1_government": [
+      "伊朗政府/IRGC",
+      "以色列政府/国防部",
+      "美国白宫/国务院",
+      "IAEA/联合国"
+    ],
+    "tier2_enterprise": [
+      "Saudi Aramco",
+      "ExxonMobil",
+      "Chevron",
+      "Shell",
+      "BP",
+      "TotalEnergies",
+      "ADNOC",
+      "QatarEnergy",
+      "NIOC",
+      "ENEOS",
+      "Idemitsu",
+      "SK Energy",
+      "GS Caltex",
+      "S-Oil",
+      "Hyundai Oilbank",
+      "Maersk",
+      "MSC",
+      "Hapag-Lloyd"
+    ],
+    "tier3_media": [
+      "Reuters",
+      "Bloomberg",
+      "AP",
+      "BBC",
+      "FT",
+      "Al Jazeera"
+    ],
+    "tier4_industry": [
+      "S\u0026P Global/Platts",
+      "Argus Media",
+      "EIA",
+      "OPEC"
+    ]
+  },
+  "language": "zh-CN",
+  "name": "iran-situation-intelligence",
+  "output_structure": [
+    "time_range",
+    "kpi_panel",
+    "core_summary",
+    "change_indicators",
+    "political_military",
+    "conflict_sabotage",
+    "nuclear_facilities",
+    "energy_economy",
+    "oil_industry",
+    "hormuz_strait",
+    "info_infrastructure",
+    "international_response",
+    "military_assessment",
+    "market_financial",
+    "source_credibility",
+    "anomalies",
+    "scenario_24_48h",
+    "actionable_points"
+  ],
+  "platform": "minimax",
+  "tags": [
+    "intelligence",
+    "iran",
+    "middle-east",
+    "energy-security",
+    "geopolitics",
+    "hormuz",
+    "nuclear-risk"
+  ],
+  "tools_used": [
+    "batch_web_search",
+    "extract_content_from_websites",
+    "mcp__matrix__bash"
+  ],
+  "updated_at": 1774147534670,
+  "version": "1.0.1"
+}

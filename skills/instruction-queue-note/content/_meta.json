@@ -1,0 +1,18 @@
+{
+  "author": "MiniMax Agent",
+  "description": "Automatically splits large complex requirements into ordered executable short instruction queues, driving AI to continuously execute the entire workflow. Use when users ask to write long novels, create series content, batch process data, or complete multi-step complex tasks.",
+  "entry_point": "instruction_queue_note.py",
+  "function_name": "instruction_queue_note",
+  "id": 381208024314762,
+  "name": "instruction-queue-note",
+  "platform": "minimax",
+  "platform_version": "1.0",
+  "tags": [
+    "automation",
+    "long-task",
+    "content-generation",
+    "ai-execution"
+  ],
+  "updated_at": 1774621433175,
+  "version": "1.0.0"
+}

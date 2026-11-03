@@ -1,0 +1,145 @@
+# 决策日数据模板
+# 使用时间：每月最后一个周末
+# 包含月度复盘和下月规划
+
+data_submission:
+  period: "2026-04-决策日"
+  market_type: "A股+港股"
+  submission_type: "monthly_review"
+
+# 一、月度复盘
+
+monthly_review:
+  # 操作合规性复盘
+  operation_compliance:
+    last_month_operations:
+      - date: "2026-03-28"
+        action: "买入"
+        code: "512760"
+        name: "芯片ETF"
+        amount: 5000
+        decision_day_verified: true  # 是否在决策日执行
+
+    compliance_check:
+      all_operations_on_decision_day: true  # 所有操作是否在决策日执行
+      turnover_within_limit: true  # 是否遵守10%调仓上限
+      cognitive_records_completed: true  # 是否完成认知双轨记录
+
+  # 仓位管理复盘
+  position_management:
+    start_of_month:
+      底仓: 0.50
+      机动仓: 0.20
+      现金: 0.30
+
+    end_of_month:
+      底仓: 0.50
+      机动仓: 0.30
+      现金: 0.20
+
+    deviation_analysis: "机动仓增加10%，现金减少10%，因本月初进行了加仓操作"
+
+  # 方向判断复盘
+  direction_judgment:
+    last_month_scores:
+      AI算力: 4.5
+      商业航天: 3.5
+      生物制造: 3.0
+      新型电力: 3.5
+
+    actual_performance:
+      AI算力: 0.065
+      商业航天: 0.028
+      生物制造: -0.015
+      新型电力: 0.012
+
+    judgment_analysis: "AI算力方向表现超预期，商业航天符合预期，生物制造低于预期"
+
+  # 心理状态复盘
+  psychological_review:
+    overall_status: "平稳"
+    major_events:
+      - date: "2026-03-15"
+        event: "市场大幅波动，持仓回撤约5%"
+        response: "保持冷静，未进行恐慌性操作"
+    lessons_learned: "在市场波动时保持纪律比追逐机会更重要"
+
+# 二、下月规划
+
+next_month_planning:
+  # 方向优先级（基于势Agent评分）
+  direction_priorities:
+    - direction: "AI算力"
+      priority: 1
+      planned_action: "维持或适度加仓"
+      target_ratio: 0.25
+    - direction: "新型电力"
+      priority: 2
+      planned_action: "关注政策催化，等待买点"
+      target_ratio: 0.10
+    - direction: "商业航天"
+      priority: 3
+      planned_action: "维持或逢高减仓"
+      target_ratio: 0.08
+    - direction: "生物制造"
+      priority: 4
+      planned_action: "减配或清仓"
+      target_ratio: 0.05
+
+  # 候选ETF清单
+  candidate_etfs:
+    - code: "159819"
+      name: "AI算力ETF"
+      direction: "AI算力"
+      reason: "跟踪AI算力方向龙头ETF"
+    - code: "588080"
+      name: "科创50ETF"
+      direction: "宽基"
+      reason: "作为主仓配置"
+
+  # 仓位调整目标
+  position_targets:
+    底仓: 0.50
+    机动仓: 0.25
+    现金: 0.25
+    note: "增加现金储备，为市场波动做准备"
+
+  # 验证池计划
+  verification_pool_plan:
+    - info_id: "VER-2026-0401-001"
+      direction: "新型电力"
+      verification_indicators:
+        - "政策细则出台时间"
+        - "相关ETF资金流向"
+      tracking_start: "2026-04-01"
+      tracking_end: "2026-04-15"
+
+# 三、持仓概况（必填，与标准模板相同）
+portfolio:
+  a_share:
+    main_positions:
+      - code: "510300"
+        name: "沪深300ETF"
+        ratio: 0.35
+        current_value: 350000
+    satellite_positions:
+      - code: "512760"
+        name: "芯片ETF"
+        ratio: 0.12
+        current_value: 120000
+        direction: "AI算力"
+    flexible_positions:
+      - code: "159819"
+        name: "AI算力ETF"
+        ratio: 0.10
+        current_value: 100000
+        direction: "AI算力"
+    cash_reserve: 0.20
+    total_value: 1000000
+
+# 四、情绪状态自评
+emotional_state:
+  overall: "平稳"
+  confidence: 0.75
+  impulse_level: 0.20
+  need_dao_intervention: false

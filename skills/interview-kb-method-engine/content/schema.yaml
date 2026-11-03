@@ -1,0 +1,63 @@
+# 面试卡片 Schema（通用版）
+# 每场面试 = 一张 YAML 卡，放在 cards/ 。分析脚本按本结构聚合。
+#
+# ⚠️ **权威版本是 `tools/schema.yaml`**（含字段优先级、边界、真值约定）。
+#    本文件是根目录下的**速查副本**，供不想进 tools/ 的人一眼看全。
+#    两者若冲突，**以 `tools/schema.yaml` 为准**。
+#    历史坑：本文件、`tools/schema.yaml`、`cards/_template.yaml` 曾**三套口径不一致**
+#    （outcome 枚举 unknown vs 待确认；_template 缺 nature/offer/why_ended/process），
+#    会让建卡 / 校验 / 报告对不上。V3.7 起已对齐 —— 改字段请三处一起改。
+
+## 顶层字段
+id: "I001"          # 自增编号，如 I001、I002…
+meta:
+  create_date: 2026-01-01   # 创建日期
+  review_date: ""           # 复盘/补结果日期
+  confirm_by: ""            # 结果最迟确认日（不填 = 记录日+7，remind 据此催）
+
+interview:
+  company: ""       # 目标公司（真实名称）
+  position: ""      # 岗位
+  level: ""         # 级别：初级/中级/高级/负责人…
+  date: 2026-01-01  # 面试日期
+  round: 一面        # 一面/二面/HR面/终面…
+  interviewer_role: 业务  # 面试官角色：业务/产品/技术/HR/COO…
+  channel: 内推       # 渠道：内推/海投/猎头
+  base: 北京         # 城市（可选）
+  nature: 正编       # 正编 | 外包 | 兼职 | 实习 —— 驱动"正编vs外包"统计，建议显式写
+
+context:             # 关键的跨场背景（当前状态/gap/每段经历口径）——**全局统一写到 profile，不逐卡造**
+  ...
+
+questions:
+  - question: ""     # 问法
+    theme: 方法论      # 主题:自我介绍/项目复盘/方法论/指标/情境题/创作者运营/反问…
+    how_answered: "" # 你怎么答的（要点）
+    score: 4         # 自评分 1-5
+    note: ""         # 备注/面试官反馈（可选）
+
+result:
+  # outcome 取值（与 tools/schema.yaml 一致）：
+  #   pass / fail / no_offer / 待确认
+  #   · 「待确认」= 结果还没出（早期文档写过 unknown，两者等价，现统一用「待确认」）
+  outcome: ""
+  reason: ""         # 你判断通过/未通过的真实原因
+  signal: ""         # 面试官给到的信号/暗示
+
+  # ── 拆细字段（推荐新增；老卡可缺省，向后兼容）──
+  round_result: ""   # 这一轮是否通过（pass/fail）——用于逐轮通过率
+  offer: ""          # 最终结果：got(拿offer)/no(没拿)/ongoing(在走) ——决定真正含金量
+  why_ended: ""      # 若没拿到 offer：卡点(二面挂/职级/薪资/base/回流/gap/外包无转正…)
+  process: ""        # 轮次链 id（同流程多轮共用，如"到餐流程A"）——算"这条流程走到底算不算过"
+
+reflection:
+  strength: ""       # 做得好的、可复制的点
+  weakness: ""       # 暴露的短板、踩坑点
+  improvement: ""    # 下次改进动作
+
+skills: []           # 能力标签（如 内容运营/推荐策略/创作者运营/冷启动/方法论/…）
+
+## 约定
+- outcome 真值(尤其 round_result/offer)由安装者本人填，AI 只写「待确认」/推断。
+- score 为 AI 建议，可由本人改。
+- skills 尽量复用已有标签，便于跨场聚合（可在 build/wrapper 配置文件维护常用标签表）。

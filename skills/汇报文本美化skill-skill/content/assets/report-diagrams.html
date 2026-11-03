@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI报告图表库 - 图文并茂示范</title>
+<style>
+:root {
+  --primary: #1F4E79;
+  --secondary: #2E75B6;
+  --accent: #E8F0FE;
+  --bg-light: #F2F2F2;
+  --bg-warm: #FEF7E0;
+  --text-dark: #333333;
+  --text-mid: #555555;
+  --text-light: #999999;
+  --green: #2E7D32;
+  --green-light: #E8F5E9;
+  --orange: #E65100;
+  --orange-light: #FFF3E0;
+  --teal: #00695C;
+  --teal-light: #E0F2F1;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: var(--text-dark); line-height: 1.7;
+  background: #e8e8e8; padding: 20px;
+}
+.report-page {
+  max-width: 210mm; margin: 0 auto 20px; background: white;
+  padding: 54pt 72pt; box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+/* Headings */
+body { counter-reset: h1 0; }
+h1 { counter-increment: h1; counter-reset: h2; margin: 36px 0 16px; font-size: 18pt; color: var(--primary); font-weight: 700; }
+h1::before { content: counter(h1) "  "; }
+h2 { counter-increment: h2; margin: 24px 0 12px; font-size: 14pt; color: var(--secondary); font-weight: 600; }
+h2::before { content: counter(h1) "." counter(h2) "  "; }
+
+p { margin-bottom: 8px; font-size: 11pt; text-align: justify; }
+p.note { font-size: 9pt; color: var(--text-light); font-style: italic; text-align: center; }
+
+/* =========== Diagram Containers =========== */
+.diagram-wrapper {
+  margin: 20px 0;
+  text-align: center;
+}
+.diagram-wrapper svg {
+  max-width: 100%;
+  height: auto;
+}
+.diagram-wrapper .diagram-title {
+  font-size: 10pt;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* =========== Section Divider =========== */
+.section-divider { height: 1px; background: linear-gradient(to right, var(--primary), transparent); margin: 28px 0; }
+</style>
+</head>
+<body>
+
+<div class="report-page">
+
+<h1>报告内嵌图表组件库</h1>
+<p>以下展示可直接嵌入报告的SVG图表组件。所有图表使用纯SVG/CSS实现，颜色统一、矢量化、可缩放，可直接在HTML报告中使用，也可通过浏览器打印为PDF。</p>
+
+<div class="section-divider"></div>
+
+<!-- ============ 1. PDCA 循环图 ============ -->
+<h1>持续运营改善框架（PDCA）</h1>
+<p>PDCA循环是AI报告中最核心的图表类型，展示持续改善的闭环逻辑。以下SVG实现严格遵循报告色彩体系。</p>
+
+<div class="diagram-wrapper">
+  <svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" style="max-width:650px;">
+    <!-- Title -->
+    <text x="350" y="30" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1F4E79">空间资产数据治理 PDCA 持续完善闭环</text>
+
+    <!-- Center circle connector -->
+    <circle cx="350" cy="280" r="30" fill="none" stroke="#CCCCCC" stroke-width="1" stroke-dasharray="4,3"/>
+
+    <!-- P - Plan (top center) -->
+    <g>
+      <rect x="225" y="55" width="250" height="105" rx="8" fill="#E8F0FE" stroke="#1F4E79" stroke-width="2"/>
+      <rect x="225" y="55" width="250" height="32" rx="8" fill="#1F4E79"/>
+      <rect x="225" y="75" width="250" height="12" fill="#1F4E79"/>
+      <text x="350" y="75" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">P - 计划采集 (Plan)</text>
+      <text x="245" y="105" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 项目获取时全量空间资产现场拍摄</text>
+      <text x="245" y="122" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 视频/照片覆盖楼栋、单元、楼层全层级</text>
+      <text x="245" y="139" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• AI辅助识别统计，输出物业费定价区间</text>
+    </g>
+
+    <!-- D - Do (right) -->
+    <g>
+      <rect x="475" y="210" width="220" height="105" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+      <rect x="475" y="210" width="220" height="32" rx="8" fill="#2E7D32"/>
+      <rect x="475" y="230" width="220" height="12" fill="#2E7D32"/>
+      <text x="585" y="230" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">D - 采集录入 (Do)</text>
+      <text x="490" y="260" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• AI辅助进行CRUD操作</text>
+      <text x="490" y="277" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 生成录入建议及审核建议</text>
+      <text x="490" y="294" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 全程证据链留存可追溯</text>
+    </g>
+
+    <!-- C - Check (bottom) -->
+    <g>
+      <rect x="225" y="365" width="250" height="105" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+      <rect x="225" y="365" width="250" height="32" rx="8" fill="#E65100"/>
+      <rect x="225" y="385" width="250" height="12" fill="#E65100"/>
+      <text x="350" y="385" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">C - 运营发现 (Check)</text>
+      <text x="245" y="415" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 工单作业/走场检查即时发现</text>
+      <text x="245" y="432" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 空间对象是否存在、能否关联</text>
+      <text x="245" y="449" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 异常信号自动上报</text>
+    </g>
+
+    <!-- A - Act (left) -->
+    <g>
+      <rect x="15" y="210" width="220" height="105" rx="8" fill="#E0F2F1" stroke="#00695C" stroke-width="2"/>
+      <rect x="15" y="210" width="220" height="32" rx="8" fill="#00695C"/>
+      <rect x="15" y="230" width="220" height="12" fill="#00695C"/>
+      <text x="125" y="230" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">A - 校准改善 (Act)</text>
+      <text x="30" y="260" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 基于发现的问题进行校准</text>
+      <text x="30" y="277" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 上传现场照片/AI识别</text>
+      <text x="30" y="294" font-family="Microsoft YaHei, sans-serif" font-size="9.5" fill="#333333">• 持续改善数据准确性</text>
+    </g>
+
+    <!-- Arrows connecting P→D→C→A→P -->
+    <!-- P→D (top-right) -->
+    <defs>
+      <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4E79"/>
+      </marker>
+      <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#2E7D32"/>
+      </marker>
+      <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#E65100"/>
+      </marker>
+      <marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#00695C"/>
+      </marker>
+    </defs>
+
+    <!-- P→D -->
+    <path d="M 475 160 Q 510 150 530 170 Q 560 195 575 210" fill="none" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <text x="530" y="178" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#1F4E79" font-style="italic">AI辅助CRUD</text>
+
+    <!-- D→C -->
+    <path d="M 585 315 Q 585 340 570 355 Q 550 375 475 380" fill="none" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrowOrange)"/>
+    <text x="545" y="348" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#2E7D32" font-style="italic">运营发现</text>
+
+    <!-- C→A -->
+    <path d="M 225 420 Q 190 420 170 400 Q 145 370 235 315" fill="none" stroke="#E65100" stroke-width="2" marker-end="url(#arrowTeal)"/>
+    <text x="155" y="385" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#E65100" font-style="italic">问题校准</text>
+
+    <!-- A→P -->
+    <path d="M 125 210 Q 125 185 140 170 Q 165 145 225 140" fill="none" stroke="#00695C" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <text x="155" y="178" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#00695C" font-style="italic">数据提升</text>
+
+    <!-- Center text -->
+    <text x="350" y="275" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1F4E79">持续</text>
+    <text x="350" y="290" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1F4E79">改善</text>
+  </svg>
+  <p class="note">图：空间资产数据治理PDCA持续完善闭环</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ============ 2. 新旧模式对比图 ============ -->
+<h1>流程变革：新旧模式对比</h1>
+<p>对比图是AI报告中重要的逻辑呈现方式，展示「从...到...」的变革路径。</p>
+
+<div class="diagram-wrapper">
+  <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="max-width:650px;">
+    <text x="350" y="28" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1F4E79">采集识别流程变革：从「人工CRUD」到「AI辅助」</text>
+
+    <!-- ===== LEFT: Old Mode ===== -->
+    <g>
+      <rect x="30" y="50" width="290" height="295" rx="10" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5" stroke-dasharray="5,3"/>
+      <rect x="30" y="50" width="290" height="36" rx="10" fill="#E65100"/>
+      <rect x="30" y="72" width="290" height="14" fill="#E65100"/>
+      <text x="175" y="73" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">旧模式：人工录入（现状）</text>
+
+      <!-- Step 1 -->
+      <rect x="55" y="105" width="240" height="45" rx="5" fill="#FFFFFF" stroke="#E65100" stroke-width="1"/>
+      <text x="70" y="122" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#E65100">① 员工发现现场变化</text>
+      <text x="70" y="138" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#555555">现场问题 -> 口头汇报 / 个人记录</text>
+
+      <!-- Arrow down -->
+      <text x="175" y="168" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#E65100">↓</text>
+
+      <!-- Step 2 -->
+      <rect x="55" y="180" width="240" height="45" rx="5" fill="#FFFFFF" stroke="#E65100" stroke-width="1"/>
+      <text x="70" y="197" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#E65100">② 手动打开战图系统</text>
+      <text x="70" y="213" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#555555">找到对应录入页面，逐项填写</text>
+
+      <!-- Arrow down -->
+      <text x="175" y="243" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#E65100">↓</text>
+
+      <!-- Step 3 -->
+      <rect x="55" y="255" width="240" height="45" rx="5" fill="#FFFFFF" stroke="#E65100" stroke-width="1"/>
+      <text x="70" y="272" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#E65100">③ 人工核对后保存</text>
+      <text x="70" y="288" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#555555">手动填写名称、类型、面积等信息</text>
+
+      <!-- Time cost -->
+      <text x="175" y="325" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E65100">耗时约20分钟 · 字段填错率约15%</text>
+    </g>
+
+    <!-- Arrow in the middle -->
+    <text x="350" y="200" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#1F4E79" font-weight="bold">→</text>
+    <text x="350" y="225" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#1F4E79" font-weight="bold">变革</text>
+
+    <!-- ===== RIGHT: New Mode ===== -->
+    <g>
+      <rect x="380" y="50" width="290" height="295" rx="10" fill="#E8F0FE" stroke="#1F4E79" stroke-width="2"/>
+      <rect x="380" y="50" width="290" height="36" rx="10" fill="#1F4E79"/>
+      <rect x="380" y="72" width="290" height="14" fill="#1F4E79"/>
+      <text x="525" y="73" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">新模式：AI辅助（目标）</text>
+
+      <!-- Step 1 -->
+      <rect x="405" y="105" width="240" height="45" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5"/>
+      <text x="420" y="122" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#1F4E79">① 员工拍摄现场照片</text>
+      <text x="420" y="138" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#555555">手机拍照/视频上传，GPS定位验证</text>
+
+      <!-- Arrow down -->
+      <text x="525" y="168" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#1F4E79">↓</text>
+
+      <!-- Step 2 -->
+      <rect x="405" y="180" width="240" height="45" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5"/>
+      <text x="420" y="197" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#1F4E79">② AI自动识别解析</text>
+      <text x="420" y="213" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#555555">自动识别空间类型、层级归属、面积</text>
+
+      <!-- Arrow down -->
+      <text x="525" y="243" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#1F4E79">↓</text>
+
+      <!-- Step 3 -->
+      <rect x="405" y="255" width="240" height="45" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5"/>
+      <text x="420" y="272" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#1F4E79">③ 远程确认后入库</text>
+      <text x="420" y="288" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#555555">AI生成录入建议，远程核对关键结果</text>
+
+      <!-- Time cost -->
+      <text x="525" y="325" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1F4E79">耗时约2分钟 · AI置信度92%</text>
+    </g>
+  </svg>
+  <p class="note">图：采集识别流程变革对比——从「人工CRUD」到「AI辅助」</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ============ 3. 空间层级树图 ============ -->
+<h1>标准化空间层级树</h1>
+<p>层级树用于展示结构化数据归属关系，适合展示空间、组织、分类等层级体系。</p>
+
+<div class="diagram-wrapper">
+  <svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" style="max-width:650px;">
+    <text x="350" y="28" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1F4E79">标准空间层级树示例</text>
+
+    <!-- L0 Root -->
+    <rect x="240" y="50" width="220" height="40" rx="20" fill="#1F4E79"/>
+    <text x="350" y="75" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">L0 · 项目：武汉汉口传奇唐樾</text>
+
+    <!-- Vertical line from root -->
+    <line x1="350" y1="90" x2="350" y2="110" stroke="#1F4E79" stroke-width="2"/>
+
+    <!-- Horizontal connectors -->
+    <line x1="100" y1="110" x2="600" y2="110" stroke="#1F4E79" stroke-width="2"/>
+
+    <!-- L1 branch 1 -->
+    <line x1="100" y1="110" x2="100" y2="130" stroke="#1F4E79" stroke-width="2"/>
+    <rect x="30" y="130" width="140" height="36" rx="6" fill="#2E75B6"/>
+    <text x="100" y="153" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">L1 · 1#～2#楼</text>
+
+    <!-- L1 branch 2 -->
+    <line x1="250" y1="110" x2="250" y2="130" stroke="#1F4E79" stroke-width="2"/>
+    <rect x="190" y="130" width="120" height="36" rx="6" fill="#2E75B6"/>
+    <text x="250" y="153" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">L1 · 3#～5#楼</text>
+
+    <!-- L1 branch 3 -->
+    <line x1="450" y1="110" x2="450" y2="130" stroke="#1F4E79" stroke-width="2"/>
+    <rect x="380" y="130" width="140" height="36" rx="6" fill="#2E75B6"/>
+    <text x="450" y="153" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">L1 · 地下车库</text>
+
+    <!-- L1 branch 4 -->
+    <line x1="600" y1="110" x2="600" y2="130" stroke="#1F4E79" stroke-width="2"/>
+    <rect x="550" y="130" width="100" height="36" rx="6" fill="#2E75B6"/>
+    <text x="600" y="153" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">L1 · 公区</text>
+
+    <!-- L2 under 1#～2#楼 -->
+    <line x1="100" y1="166" x2="100" y2="186" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="35" y1="186" x2="165" y2="186" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="35" y1="186" x2="35" y2="206" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="100" y1="186" x2="100" y2="206" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="165" y1="186" x2="165" y2="206" stroke="#1F4E79" stroke-width="1.5"/>
+
+    <g transform="translate(10, 206)">
+      <rect x="0" y="0" width="50" height="28" rx="4" fill="#E8F0FE" stroke="#2E75B6" stroke-width="1"/>
+      <text x="25" y="19" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#1F4E79">1单元</text>
+    </g>
+    <g transform="translate(75, 206)">
+      <rect x="0" y="0" width="50" height="28" rx="4" fill="#E8F0FE" stroke="#2E75B6" stroke-width="1"/>
+      <text x="25" y="19" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#1F4E79">2单元</text>
+    </g>
+    <g transform="translate(140, 206)">
+      <rect x="0" y="0" width="50" height="28" rx="4" fill="#E8F0FE" stroke="#2E75B6" stroke-width="1"/>
+      <text x="25" y="19" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#1F4E79">3单元</text>
+    </g>
+
+    <!-- L3+L4 leaf nodes -->
+    <line x1="25" y1="234" x2="25" y2="254" stroke="#2E75B6" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="100" y1="234" x2="100" y2="254" stroke="#2E75B6" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="165" y1="234" x2="165" y2="254" stroke="#2E75B6" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- L3/L4 details -->
+    <g transform="translate(8, 254)">
+      <rect x="0" y="0" width="35" height="24" rx="3" fill="#F2F2F2" stroke="#999" stroke-width="0.5"/>
+      <text x="17" y="16" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="7" fill="#555">楼层</text>
+    </g>
+    <g transform="translate(82, 254)">
+      <rect x="0" y="0" width="35" height="24" rx="3" fill="#F2F2F2" stroke="#999" stroke-width="0.5"/>
+      <text x="17" y="16" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="7" fill="#555">房屋</text>
+    </g>
+    <g transform="translate(148, 254)">
+      <rect x="0" y="0" width="35" height="24" rx="3" fill="#F2F2F2" stroke="#999" stroke-width="0.5"/>
+      <text x="17" y="16" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="7" fill="#555">设备</text>
+    </g>
+
+    <!-- Bottom legend -->
+    <rect x="35" y="310" width="630" height="85" rx="6" fill="#F8F8F8" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="55" y="332" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1F4E79">层级定义说明：</text>
+    <text x="55" y="350" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#555555">L0 · 项目  →  L1 · 楼栋  →  L2 · 单元  →  L3 · 楼层  →  L4 · 功能空间/设备设施</text>
+    <text x="55" y="370" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#555555">三大价值：① AI识别后自动归位 ② 点击层级查看所有设备及状态 ③ 按楼栋精确统计</text>
+  </svg>
+  <p class="note">图：标准空间层级树及层级定义</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ============ 4. 实施路线图 ============ -->
+<h1>三阶段实施路线图</h1>
+<p>路线图展示分阶段推进的时序逻辑，适合展示战略规划。</p>
+
+<div class="diagram-wrapper">
+  <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="max-width:650px;">
+    <text x="350" y="28" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1F4E79">实施路线图：三阶段推进</text>
+
+    <!-- Timeline base line -->
+    <line x1="80" y1="175" x2="620" y2="175" stroke="#1F4E79" stroke-width="3"/>
+
+    <!-- Phase 1: left -->
+    <g>
+      <circle cx="170" cy="175" r="12" fill="#1F4E79" stroke="white" stroke-width="3"/>
+      <text x="170" y="179" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="white">1</text>
+
+      <rect x="60" y="55" width="220" height="100" rx="8" fill="#E8F0FE" stroke="#1F4E79" stroke-width="1.5"/>
+      <text x="170" y="75" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1F4E79">第一阶段：模式验证</text>
+      <text x="170" y="92" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#1F4E79">1-3个月</text>
+      <text x="80" y="112" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 选定2-3个试点阵地</text>
+      <text x="80" y="127" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 上线索材上传+AI识别功能</text>
+      <text x="80" y="142" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 完成一次全量数据校准治理</text>
+    </g>
+
+    <!-- Arrow 1→2 -->
+    <path d="M 290 160 Q 310 145 330 160" fill="none" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+    <!-- Phase 2: center -->
+    <g>
+      <circle cx="350" cy="175" r="12" fill="#2E7D32" stroke="white" stroke-width="3"/>
+      <text x="350" y="179" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="white">2</text>
+
+      <rect x="240" y="195" width="220" height="100" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+      <text x="350" y="215" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">第二阶段：能力深化</text>
+      <text x="350" y="232" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#2E7D32">3-6个月</text>
+      <text x="260" y="252" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 三大场景均有AI支持</text>
+      <text x="260" y="267" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 差异工单体系运转</text>
+      <text x="260" y="282" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 数据治理标准手册发布</text>
+    </g>
+
+    <!-- Arrow 2→3 -->
+    <path d="M 460 160 Q 480 145 500 160" fill="none" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+    <!-- Phase 3: right -->
+    <g>
+      <circle cx="530" cy="175" r="12" fill="#00695C" stroke="white" stroke-width="3"/>
+      <text x="530" y="179" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="white">3</text>
+
+      <rect x="420" y="55" width="220" height="100" rx="8" fill="#E0F2F1" stroke="#00695C" stroke-width="1.5"/>
+      <text x="530" y="75" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#00695C">第三阶段：机制稳定</text>
+      <text x="530" y="92" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#00695C">6-12个月+</text>
+      <text x="440" y="112" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 机制固化，全量项目推广</text>
+      <text x="440" y="127" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 持续补充校验更新</text>
+      <text x="440" y="142" font-family="Microsoft YaHei, sans-serif" font-size="8.5" fill="#333">✓ 标准化工具包供一线使用</text>
+    </g>
+
+    <!-- Time labels -->
+    <text x="80" y="200" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#999">← 启动</text>
+    <text x="620" y="200" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#999">稳定 →</text>
+  </svg>
+  <p class="note">图：实施路线图三阶段规划</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ============ 5. 数据指标卡片 ============ -->
+<h1>关键数据指标卡</h1>
+<p>用卡片形式呈现核心数据指标，相比纯文本更直观、更有视觉冲击力。</p>
+
+<div class="diagram-wrapper">
+  <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="max-width:650px;">
+    <text x="350" y="25" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#1F4E79">运营效率关键数据指标</text>
+
+    <!-- Card 1 -->
+    <g>
+      <rect x="20" y="45" width="150" height="120" rx="8" fill="#E8F0FE" stroke="#1F4E79" stroke-width="1.5"/>
+      <text x="95" y="80" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="bold" fill="#1F4E79">3,200</text>
+      <text x="95" y="100" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#1F4E79">m²/人</text>
+      <text x="95" y="120" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#555">人均管理面积</text>
+      <text x="95" y="138" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#E65100">▼ 较标杆低22%</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g>
+      <rect x="195" y="45" width="150" height="120" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+      <text x="270" y="80" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="bold" fill="#2E7D32">18%</text>
+      <text x="270" y="100" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#2E7D32">渗透率</text>
+      <text x="270" y="120" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#555">混合用工渗透率</text>
+      <text x="270" y="138" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#1F4E79">▲ 目标45%+</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g>
+      <rect x="370" y="45" width="150" height="120" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+      <text x="445" y="80" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="bold" fill="#E65100">23%</text>
+      <text x="445" y="100" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#E65100">重复率</text>
+      <text x="445" y="120" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#555">重复工单率</text>
+      <text x="445" y="138" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#1F4E79">▲ 需降至≤15%</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g>
+      <rect x="545" y="45" width="135" height="120" rx="8" fill="#E0F2F1" stroke="#00695C" stroke-width="1.5"/>
+      <text x="612" y="80" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="bold" fill="#00695C">76%</text>
+      <text x="612" y="100" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#00695C">占比</text>
+      <text x="612" y="120" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#555">人力成本占比</text>
+      <text x="612" y="138" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8" fill="#E65100">▼ 固定编制63%</text>
+    </g>
+  </svg>
+  <p class="note">图：试点蝶城运营效率关键数据指标（2026年Q1）</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ============ 6. 问题-风险矩阵图 ============ -->
+<h1>问题-风险矩阵分析</h1>
+<p>矩阵图适合展示多维度对比数据，是AI报告中最常见的数据呈现方式之一。</p>
+
+<div class="diagram-wrapper">
+  <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="max-width:650px;">
+    <text x="350" y="25" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#1F4E79">运营效率核心问题与影响矩阵</text>
+
+    <!-- Matrix header -->
+    <rect x="30" y="45" width="640" height="30" rx="4" fill="#1F4E79"/>
+    <text x="80" y="65" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="white">问题场景</text>
+    <text x="280" y="65" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="white">核心表现</text>
+    <text x="480" y="65" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="white">直接影响</text>
+    <text x="660" y="65" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="white">风险等级</text>
+
+    <!-- Row 1 -->
+    <rect x="30" y="75" width="640" height="55" rx="0" fill="#FFF3E0" stroke="#CCCCCC" stroke-width="0.5"/>
+    <text x="80" y="102" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#E65100">工时浪费</text>
+    <text x="280" y="96" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">重复派单率23%</text>
+    <text x="280" y="114" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">有效工时<4.5h/天</text>
+    <text x="480" y="102" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">成本浪费1,800万/年</text>
+    <rect x="620" y="88" width="70" height="24" rx="12" fill="#E65100"/>
+    <text x="655" y="104" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8.5" font-weight="bold" fill="white">高风险</text>
+
+    <!-- Row 2 -->
+    <rect x="30" y="130" width="640" height="55" rx="0" fill="#FFF8E1" stroke="#CCCCCC" stroke-width="0.5"/>
+    <text x="80" y="157" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#E65100">技能错配</text>
+    <text x="280" y="151" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">技能匹配度67%</text>
+    <text x="280" y="169" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">32%工时用于低价值</text>
+    <text x="480" y="157" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">响应延迟38分钟</text>
+    <rect x="620" y="143" width="70" height="24" rx="12" fill="#E65100"/>
+    <text x="655" y="159" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8.5" font-weight="bold" fill="white">高风险</text>
+
+    <!-- Row 3 -->
+    <rect x="30" y="185" width="640" height="55" rx="0" fill="#FFFDE7" stroke="#CCCCCC" stroke-width="0.5"/>
+    <text x="80" y="212" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9.5" font-weight="bold" fill="#F57F17">数据缺失</text>
+    <text x="280" y="206" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">排班依赖经验判断</text>
+    <text x="280" y="224" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">效能无法实时监控</text>
+    <text x="480" y="212" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="9" fill="#333">决策延迟2-3天</text>
+    <rect x="620" y="198" width="70" height="24" rx="12" fill="#F57F17"/>
+    <text x="655" y="214" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="8.5" font-weight="bold" fill="white">中风险</text>
+  </svg>
+  <p class="note">图：运营效率核心问题与影响矩阵分析</p>
+</div>
+
+</div>
+
+</body>
+</html>

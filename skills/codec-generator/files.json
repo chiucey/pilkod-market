@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "38f74a8762b7e85c8b44b9a63b3e8efe9a12280f",
+      "size": 54586
+    },
+    {
+      "path": "_meta.json",
+      "sha": "b0c67af26e61036b1eb2c70dcfd08e9c4ddfd5be",
+      "size": 436
+    },
+    {
+      "path": "_skillhub_meta.json",
+      "sha": "868cbe94e8afc6a14afc2202a8f34aebcd3f0b47",
+      "size": 85
+    },
+    {
+      "path": "assets/CodecTemplate.java",
+      "sha": "b8ff7e3e9b3072a51340f8751ab9964c6234542d",
+      "size": 6000
+    },
+    {
+      "path": "assets/CodecUtilsTemplate.java",
+      "sha": "a2000f1a808d63f25080bea140cfa456a94c6823",
+      "size": 12626
+    },
+    {
+      "path": "assets/DecodedMessageTemplate.java",
+      "sha": "83eb2402b2b2a5b1ba5181a411d1efc12a9951ea",
+      "size": 1394
+    },
+    {
+      "path": "assets/EncodeTemplate.java",
+      "sha": "ea910dbed0bc7156a6fcef9761fa5eda20990e95",
+      "size": 8528
+    },
+    {
+      "path": "assets/EntityTemplate.java",
+      "sha": "3a99611d2f6de03ead219eece982fa16f01eb7ef",
+      "size": 1149
+    },
+    {
+      "path": "assets/TestTemplate.java",
+      "sha": "12e85ea7c6329fffef83207ec417d9de533c8846",
+      "size": 1277
+    },
+    {
+      "path": "assets/pom_template.xml",
+      "sha": "5b5e05844fdf41c297cf20e5d9bcb9fa5eeb281b",
+      "size": 4436
+    },
+    {
+      "path": "lib/dandelion-common-codec-2.2-SNAPSHOT.jar",
+      "sha": "1d8418fa28b3bae1f402cb9a815386190a6deaeb",
+      "size": 16231
+    },
+    {
+      "path": "references/GatewayCommandMessage.java",
+      "sha": "2a6c45791c2a8610ed0f65135713d89da91cb9c5",
+      "size": 994
+    },
+    {
+      "path": "references/GatewayWritePropertyMessage.java",
+      "sha": "404cb0686c5eed12128118dea06c4a1303f086f9",
+      "size": 941
+    },
+    {
+      "path": "references/data-format-reference.md",
+      "sha": "93a8d0309d1dff1db36e5e16d452801d5b6a1dd9",
+      "size": 2989
+    },
+    {
+      "path": "references/data-types-reference.md",
+      "sha": "59ec2b212ac793a7cf394a644bd7ef867f2f5a01",
+      "size": 11257
+    },
+    {
+      "path": "references/decode-message-formats.md",
+      "sha": "7c8482858aee0d1d3dbcfebf6feeb82096429276",
+      "size": 3953
+    },
+    {
+      "path": "references/encode-message-formats-detailed.md",
+      "sha": "512af89eb78790eaf1a21bbc092bc458e3f627b3",
+      "size": 6201
+    }
+  ]
+}

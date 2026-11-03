@@ -1,0 +1,109 @@
+skill:
+  name: heywhale-dataset-assistant
+  version: 1.2.0
+  description: "Interactive Heywhale dataset search, analysis and download assistant with Playwright automation, dynamic quota detection, registration guidance, and dual Python/Node.js support"
+  author: 李昊哲
+  language:
+    - python
+    - javascript
+  runtime:
+    - python>=3.9
+    - playwright>=1.50
+    - requests>=2.28
+    - chardet>=5.0
+  runtime_optional:
+    - nodejs>=18.0
+  entry_points:
+    python: "main.py"
+    nodejs: "download.js"
+  tags:
+    - dataset
+    - heywhale
+    - download
+    - machine-learning
+    - playwright
+    - automation
+    - quota-detection
+    - registration-guidance
+    - dual-runtime
+  triggers:
+    - keyword: [和鲸, heywhale, 数据集下载, dataset download, 找数据集, 注册和鲸]
+    - intent: [search_dataset, download_dataset, recommend_dataset, analyze_dataset, register_heywhale]
+    - pattern: ".*(数据集|dataset|和鲸|heywhale).*(下载|搜索|查找|推荐|分析|注册).*"
+  permissions:
+    - network: true
+    - filesystem: write
+    - browser: true
+    - credentials: session_only
+  features:
+    dynamic_quota:
+      description: "Automatically detect user's actual download quota from confirmation modal instead of assuming fixed 20/day"
+      default_estimate: 3
+      detection_method: "Parse '今日还剩 X 个下载额度' from .dataset-download-confirm-modal .confirm-title"
+    free_datasets:
+      description: "Identify datasets marked as '不消耗下载额度' that don't count against quota"
+      detection_method: "Check for '不消耗' text in download modal"
+    python_detection:
+      description: "Multi-path scanning for Python installation that may not be in PATH"
+      scan_paths_windows:
+        - "%LOCALAPPDATA%\\Programs\\Python\\Python314\\python.exe"
+        - "%LOCALAPPDATA%\\Programs\\Python\\Python313\\python.exe"
+        - "%LOCALAPPDATA%\\Programs\\Python\\Python312\\python.exe"
+        - "C:\\Python314\\python.exe"
+        - "C:\\Python313\\python.exe"
+      scan_paths_unix:
+        - "/usr/local/bin/python3"
+        - "/usr/bin/python3"
+        - "/opt/homebrew/bin/python3"
+    nodejs_detection:
+      description: "Multi-path scanning for Node.js installation that may not be in PATH"
+      scan_paths_windows:
+        - "D:\\dev\\nodejs\\node.exe"
+        - "C:\\Program Files\\nodejs\\node.exe"
+        - "C:\\Program Files (x86)\\nodejs\\node.exe"
+        - "%LOCALAPPDATA%\\nodejs\\node.exe"
+      scan_paths_unix:
+        - "/usr/local/bin/node"
+        - "/usr/bin/node"
+        - "~/.nvm/versions/node/*/bin/node"
+    auto_install:
+      description: "Auto-install Python or Node.js if not detected, with user confirmation"
+      python_version: "3.14.3"
+      python_download_url: "https://www.python.org/ftp/python/3.14.3/python-3.14.3-amd64.exe"
+      nodejs_version: "24.15.0"
+      nodejs_download_url: "https://nodejs.org/dist/v24.15.0/node-v24.15.0-x64.msi"
+    registration_guidance:
+      description: "Guide users through Heywhale account registration with step-by-step instructions"
+      methods:
+        - name: "微信扫码注册"
+          steps:
+            - "打开微信，搜索公众号「和鲸社区」并关注"
+            - "在公众号菜单中点击「登录/注册」"
+            - "扫描二维码完成注册"
+            - "注册后在网页端绑定邮箱（设置→账号安全→绑定邮箱）"
+        - name: "邮箱注册"
+          url: "https://www.heywhale.com/auth/register"
+          fields:
+            - name: "邮箱地址"
+              description: "用于登录和接收通知"
+            - name: "用户名"
+              description: "社区显示名称（2-20个字符）"
+            - name: "密码"
+              description: "至少8位，需包含字母和数字"
+            - name: "确认密码"
+              description: "再次输入密码"
+          agreements:
+            - "用户协议"
+            - "隐私保护指引"
+          verification: "邮箱验证链接"
+    login_flow:
+      description: "Interactive login flow with account check and credential collection"
+      api_endpoint: "POST https://www.heywhale.com/api/auth/login"
+      steps:
+        - "Ask: 已有账号？(Yes/No)"
+        - "If Yes: collect email + password"
+        - "If No: guide registration, then collect credentials"
+        - "Attempt API login"
+        - "On success: proceed to dataset search"
+        - "On failure: troubleshoot (unverified email, wrong password)"
+      password_reset_url: "https://www.heywhale.com/auth/reset-password"

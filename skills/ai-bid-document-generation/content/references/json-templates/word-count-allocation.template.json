@@ -1,0 +1,24 @@
+{
+  "document_title": "投标文件正文",
+  "industry": "行业标签",
+  "generation_mode": "完整标书|商务标书|技术标书",
+  "total_word_count": 30000,
+  "compliance_items": [
+    {
+      "title": "一级标题",
+      "target_words": 3000,
+      "children": [
+        {
+          "title": "二级标题",
+          "target_words": 1200,
+          "children": [
+            {
+              "title": "三级标题",
+              "target_words": 1200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "0d02cebc5638337569e3700e7588829370068238",
+      "size": 8398
+    },
+    {
+      "path": "_meta.json",
+      "sha": "3bf2ae1d5c30160564e577e90005e3d0b05fe155",
+      "size": 151
+    },
+    {
+      "path": "references/create.md",
+      "sha": "8dd42bece41662518a3a7336b002d91f6af77fca",
+      "size": 24602
+    },
+    {
+      "path": "references/edit.md",
+      "sha": "ca70971892ed9c2537cb9ef5e0b8474ed34fa1f6",
+      "size": 24474
+    },
+    {
+      "path": "references/fix.md",
+      "sha": "7aedc8a126570163d3bf6b6487ce7e3eaffb40ae",
+      "size": 1265
+    },
+    {
+      "path": "references/format.md",
+      "sha": "a20723a5878e658bc65d533ada724359f3a9b35e",
+      "size": 34103
+    },
+    {
+      "path": "references/ooxml-cheatsheet.md",
+      "sha": "ed1393fcdd67e9567b303f76685f4c55d881f37a",
+      "size": 6430
+    },
+    {
+      "path": "references/read-analyze.md",
+      "sha": "15337dfced9a1a6d639896e867d7428605af7d09",
+      "size": 4299
+    },
+    {
+      "path": "references/validate.md",
+      "sha": "c02e261a3931e4c7845f63cc72998e831bf23c3d",
+      "size": 30153
+    },
+    {
+      "path": "scripts/formula_check.py",
+      "sha": "ee3ce15709abcc256a60d60683bb96eedde4c22e",
+      "size": 17540
+    },
+    {
+      "path": "scripts/libreoffice_recalc.py",
+      "sha": "5699e89fe53c5d443d96e3032fe11da8b632fb8c",
+      "size": 9415
+    },
+    {
+      "path": "scripts/shared_strings_builder.py",
+      "sha": "9ef359917983cccfd7d0e6542e7c9fbf29bed96a",
+      "size": 5179
+    },
+    {
+      "path": "scripts/style_audit.py",
+      "sha": "96205f825de830dee7051b45a6d6f4c314cc7a2f",
+      "size": 22424
+    },
+    {
+      "path": "scripts/xlsx_add_column.py",
+      "sha": "3374e3bbf3136294b91597231a93c034b40eef99",
+      "size": 14737
+    },
+    {
+      "path": "scripts/xlsx_insert_row.py",
+      "sha": "9dc5d6ec0f62ca5ff3543f873597556af1422bb9",
+      "size": 10046
+    },
+    {
+      "path": "scripts/xlsx_pack.py",
+      "sha": "41bc208e90b0cfbf15122f8a0152fc9460709c9c",
+      "size": 2956
+    },
+    {
+      "path": "scripts/xlsx_reader.py",
+      "sha": "00e343205ca2ff70f619a6dd9da3d60d1d3f3539",
+      "size": 13545
+    },
+    {
+      "path": "scripts/xlsx_shift_rows.py",
+      "sha": "5fef29d2681d608261a1aed31477dbb4e0ed67ee",
+      "size": 13614
+    },
+    {
+      "path": "scripts/xlsx_unpack.py",
+      "sha": "99580ac13147dbdf3b6337b5a6c3716f6549192c",
+      "size": 4804
+    },
+    {
+      "path": "templates/minimal_xlsx/[Content_Types].xml",
+      "sha": "956b440866e79e503d162307214f13df25da6b09",
+      "size": 836
+    },
+    {
+      "path": "templates/minimal_xlsx/_rels/.rels",
+      "sha": "a0af25afd761f54761c8180cf347ad08d37d7032",
+      "size": 309
+    },
+    {
+      "path": "templates/minimal_xlsx/xl/_rels/workbook.xml.rels",
+      "sha": "9758c18a5238f0f4eba8de8ec584b5e81e3368fa",
+      "size": 862
+    },
+    {
+      "path": "templates/minimal_xlsx/xl/sharedStrings.xml",
+      "sha": "f00b424b1e164ed821a8e5555094d0f9cf6c0166",
+      "size": 1167
+    },
+    {
+      "path": "templates/minimal_xlsx/xl/styles.xml",
+      "sha": "21e9c6742b41ea098430520e171f8647dc62dbd5",
+      "size": 8383
+    },
+    {
+      "path": "templates/minimal_xlsx/xl/workbook.xml",
+      "sha": "94001d06f41a436655be0454d99e3478575ef477",
+      "size": 1119
+    },
+    {
+      "path": "templates/minimal_xlsx/xl/worksheets/sheet1.xml",
+      "sha": "9c52f5c605c477f0fc34add656f23541d4c15dc6",
+      "size": 2596
+    }
+  ]
+}

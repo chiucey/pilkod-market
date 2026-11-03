@@ -1,0 +1,22 @@
+Verifying: /Users/log/LSAT_LR_<scope>_Blind_Review_解析_v<n>.docx
+Size: 151453 bytes
+Meta: examples/meta.json
+
+  [PASS] python-docx can read the file — 1127 paragraphs, 5 tables
+  [PASS] unzip -t reports no errors
+  [PASS] textutil -convert txt succeeds — 67829 chars
+  [PASS] footer XML files exist — word/footer1.xml
+  [PASS] PAGE field code in footer
+  [PASS] NUMPAGES field code in footer
+  [PASS] no literal markdown markers rendered in the document — {}
+  [PASS] Part I and Part II headings located
+  [PASS] Part I contains zero answer/analysis markers — {}
+  [PASS] all 5 Q ids appear in Part I
+  [PASS] all 5 Q ids appear in Part II
+  [PASS] answer speed-table found
+  [PASS] speed-table has 5 rows
+  [PASS] every (题号, 正确答案, 你的答案) triple matches
+  [PASS] all stimulus anchors present verbatim in Part I
+  [PASS] critical phrases present verbatim
+
+16 passed, 0 failed

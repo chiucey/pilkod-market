@@ -1,0 +1,93 @@
+# 快递财务系统 - 费用标准配置模板
+# 请根据实际业务修改以下配置
+
+# 派费规则
+dispatch_fee_rules:
+  standard:
+    weight_range: "0-3kg"
+    fee: 1.5
+    unit: "元/票"
+  heavy:
+    weight_range: "3kg+"
+    extra_fee_per_kg: 0.5
+    minimum: 2.0
+  remote_area:
+    additional_fee: 1.0
+    unit: "元/票"
+
+# 中转费规则
+transfer_fee_rules:
+  by_region:
+    tier_1:
+      name: "本区内"
+      fee_per_kg: 0.5
+      minimum: 3.0
+      maximum: 50.0
+    tier_2:
+      name: "省内跨区"
+      fee_per_kg: 0.8
+      minimum: 5.0
+      maximum: 80.0
+    tier_3:
+      name: "省际一类"
+      fee_per_kg: 1.2
+      minimum: 8.0
+      maximum: 120.0
+    tier_4:
+      name: "省际二类"
+      fee_per_kg: 1.5
+      minimum: 10.0
+      maximum: 150.0
+    tier_5:
+      name: "省际三类"
+      fee_per_kg: 2.0
+      minimum: 15.0
+      maximum: 200.0
+    tier_6:
+      name: "偏远地区"
+      fee_per_kg: 2.5
+      minimum: 20.0
+      maximum: 250.0
+
+# 面单费规则
+waybill_fee_rules:
+  electronic:
+    standard: 0.5
+    eco_friendly: 0.6
+    custom_brand: 0.8
+  paper:
+    two_part: 1.0
+    three_part: 1.5
+    thermal: 0.8
+
+# 其他费用规则
+other_fee_rules:
+  upstairs_fee:
+    light_1_3kg: 1.0
+    heavy_over_3kg: 2.0
+  remote_surcharge: 2.0
+  insurance_fee:
+    rate: 0.001
+    minimum: 1.0
+  signature_receipt: 1.0
+  cod_service:
+    rate: 0.01
+    minimum: 5.0
+  rejection_handling: 3.0
+  storage_fee_per_day: 1.0
+
+# 会计科目映射
+accounting_mapping:
+  revenue:
+    dispatch_income: ["6001", "主营业务收入", "派送收入"]
+    freight_income: ["6001", "主营业务收入", "运费收入"]
+    other_income: ["6002", "其他业务收入", "其他"]
+  cost:
+    transfer_cost: ["6401", "主营业务成本", "中转费成本"]
+    dispatch_cost: ["6401", "主营业务成本", "派送费成本"]
+    waybill_cost: ["6401", "主营业务成本", "面单成本"]
+  receivable:
+    accounts_receivable: ["1122", "应收账款"]
+  payable:
+    accounts_payable: ["2202", "应付账款"]
+    dispatch_payable: ["2241", "应付账款", "派送费"]

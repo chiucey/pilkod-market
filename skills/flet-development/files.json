@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "a5e939b5163ead89d098447aa02fd7bcabe54294",
+      "size": 13124
+    },
+    {
+      "path": "_meta.json",
+      "sha": "b20d6e1574c576c397797c9a07367170001eaad5",
+      "size": 203
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "bafb214d1b6b6d404144b87fcbdd789d5021e88e",
+      "size": 300
+    },
+    {
+      "path": "examples/01_basic_app.py",
+      "sha": "c0b540a05421c4e6276dc26132da5ea9a142d389",
+      "size": 1301
+    },
+    {
+      "path": "examples/02_async_clock.py",
+      "sha": "88b966a94ca352596a0b0587a98cd1b9eb7f96e6",
+      "size": 2216
+    },
+    {
+      "path": "examples/03_form_validation.py",
+      "sha": "a2f9dc70bdff5ed1cb70de26d2650457915eaaba",
+      "size": 5005
+    },
+    {
+      "path": "examples/04_file_picker_service.py",
+      "sha": "40760e3cc4b3830f8d0c04ab3f1fe9e6e66e5a0d",
+      "size": 6556
+    },
+    {
+      "path": "examples/05_shared_preferences.py",
+      "sha": "69e4729f152b6208edee14c8450063f1d2e67675",
+      "size": 10777
+    },
+    {
+      "path": "examples/06_animation_effects.py",
+      "sha": "4c9fa86b92bb4687889ee7a405bfcc29c1a242c9",
+      "size": 10384
+    },
+    {
+      "path": "examples/07_dialog_example.py",
+      "sha": "37e7f22b5b5e64ef6319e5ff50ae746e1d0993d9",
+      "size": 11316
+    },
+    {
+      "path": "examples/08_layout_responsive.py",
+      "sha": "db9d643ff6961cb09ea5df35c3e1e4bc48d303a4",
+      "size": 18254
+    },
+    {
+      "path": "examples/09_theme_styling.py",
+      "sha": "0572f8f5ac33719b0965b8fc3705a156ae266b22",
+      "size": 14037
+    },
+    {
+      "path": "examples/10_navigation_menu.py",
+      "sha": "72ecfc9afec770833fa78926dffe482d5c42405b",
+      "size": 13998
+    },
+    {
+      "path": "examples/11_data_table.py",
+      "sha": "2a06c8d6bdafbf18d8e5c29d87ffecfa1079417f",
+      "size": 13054
+    },
+    {
+      "path": "examples/12_window_controls.py",
+      "sha": "9a94a4b1753fab4603af55df326f931e3a965e6a",
+      "size": 11883
+    },
+    {
+      "path": "examples/13_drag_drop.py",
+      "sha": "27040075a6c4e3a77addc3bbf54e4e23afd77358",
+      "size": 4989
+    },
+    {
+      "path": "examples/14_keyboard_events.py",
+      "sha": "2f7ed2b064c85dc6653ee24d0bf7a4f979db1db6",
+      "size": 4289
+    },
+    {
+      "path": "examples/15_gestures.py",
+      "sha": "0d27fa2be6d08878c023e7c1ad58de5857aa0bcc",
+      "size": 6574
+    },
+    {
+      "path": "examples/16_clipboard.py",
+      "sha": "181baab416fbb652c6b4358040e57d2425ddd69b",
+      "size": 5637
+    },
+    {
+      "path": "examples/17_media_player.py",
+      "sha": "4d285a45c2170721ff72d78afaac5e3cbab52284",
+      "size": 2876
+    },
+    {
+      "path": "examples/18_canvas_custom_paint.py",
+      "sha": "658d757fbcaa7935c4a151f3eb04f83978f48889",
+      "size": 10449
+    },
+    {
+      "path": "examples/19_file_operations.py",
+      "sha": "6d7664634f5a7984b5003c497c30fb83d8112723",
+      "size": 6691
+    },
+    {
+      "path": "examples/20_charts_canvas_visualization.py",
+      "sha": "fde75fa0f9d5bd609f0e981dd26dbafc8baddba8",
+      "size": 9828
+    },
+    {
+      "path": "examples/README.md",
+      "sha": "e8f6355a625c75755f706ac5a4a7207c172143db",
+      "size": 4167
+    },
+    {
+      "path": "references/api-quick-reference.md",
+      "sha": "59c91b1d0ce20c6f0aeb200ab32cf5f3aab320a8",
+      "size": 14802
+    },
+    {
+      "path": "references/breaking-changes.md",
+      "sha": "9243b1f7b98ac737f95460f41cb2d4d3f3f02937",
+      "size": 63626
+    },
+    {
+      "path": "references/discovery-log.md",
+      "sha": "ee5d873f56bb35b8f499c7e8412d1e189e34c358",
+      "size": 14285
+    },
+    {
+      "path": "references/error-guide.md",
+      "sha": "b6b49af425fbeb333b548d49fda640637fa8dddc",
+      "size": 27470
+    },
+    {
+      "path": "references/error-quick-reference.md",
+      "sha": "66d736b16d2f42b54445a2599241eed1b810c652",
+      "size": 7623
+    },
+    {
+      "path": "references/new-controls.md",
+      "sha": "16d95a8a7e6694b35e09b5de3e1feef5a85332cf",
+      "size": 21996
+    }
+  ]
+}

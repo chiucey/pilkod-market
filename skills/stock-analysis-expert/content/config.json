@@ -1,0 +1,189 @@
+{
+  "skill_name": "stock-analysis-expert",
+  "display_name": "A股超短线打板复盘专家",
+  "version": "1.0.0",
+  "description": "专业A股超短线打板复盘能力，精通涨停板分析、龙头股识别、情绪周期判断",
+
+  "capabilities": {
+    "market_analysis": {
+      "enabled": true,
+      "features": [
+        "情绪周期判断",
+        "涨停板统计分析",
+        "龙头股识别",
+        "板块热度追踪",
+        "次日策略建议"
+      ]
+    },
+    "data_sources": {
+      "primary": "stocks_price",
+      "secondary": ["stocks_news", "stocks_statistics"],
+      "fallback": "batch_web_search"
+    },
+    "output_formats": [
+      "markdown",
+      "json",
+      "html"
+    ]
+  },
+
+  "parameters": {
+    "risk_control": {
+      "max_position_per_stock": 0.2,
+      "stop_loss_percentage": 0.07,
+      "max_stocks_per_session": 5
+    },
+    "analysis": {
+      "default_market": "A股",
+      "default_action": "复盘",
+      "include_weekend_analysis": true,
+      "max_history_days": 30
+    },
+    "notification": {
+      "enable_alert": true,
+      "alert_threshold": {
+        "limit_up_count": 100,
+        "limit_down_count": 50,
+        "emotion_temperature": 80
+      }
+    }
+  },
+
+  "market_config": {
+    "交易时间": {
+      "早盘竞价": "09:15-09:25",
+      "连续竞价": "09:30-11:30",
+      "午间休市": "11:30-13:00",
+      "下午连续竞价": "13:00-15:00",
+      "尾盘竞价": "14:57-15:00"
+    },
+    "涨停板规则": {
+      "主板": "±10%",
+      "创业板": "±20%",
+      "科创板": "±20%",
+      "ST股": "±5%"
+    },
+    "情绪指标阈值": {
+      "冰点期": {
+        "涨停家数": "<50",
+        "跌停家数": ">50",
+        "连板高度": "<3"
+      },
+      "启动期": {
+        "涨停家数": ">80",
+        "连板高度": "≥4",
+        "板块效应": "明显"
+      },
+      "高潮期": {
+        "涨停家数": ">150",
+        "连板高度": "≥6",
+        "成交额": ">1.2万亿"
+      }
+    }
+  },
+
+  "stock_picking_criteria": {
+    "优选条件": {
+      "流通市值": "30亿-100亿",
+      "股价范围": "10元-50元",
+      "历史股性": "经常涨停且次日溢价率高",
+      "形态位置": "底部首板或二板"
+    },
+    "规避类型": {
+      "禁止买入": [
+        "一字板（缺乏参与机会）",
+        "ST股",
+        "大盘股（流通市值>200亿）",
+        "庄股",
+        "连续缩量加速板",
+        "业绩亏损股",
+        "近期有减持、解禁的股票"
+      ]
+    }
+  },
+
+  "emotion_cycle_config": {
+    "周期阶段": [
+      {
+        "name": "冰点期",
+        "emoji": "❄️",
+        "特征": ["龙头杀跌20-30%", "跌停>涨停", "成交额<8000亿"],
+        "仓位建议": "0-2层",
+        "操作基调": "空仓等待或极小仓试错"
+      },
+      {
+        "name": "混沌期",
+        "emoji": "🌫️",
+        "特征": ["板块无序轮动", "无主线", "赚钱效应差"],
+        "仓位建议": "1-3层",
+        "操作基调": "分散试错，快进快出"
+      },
+      {
+        "name": "启动期",
+        "emoji": "🌱",
+        "特征": ["打破4板空间", "有板块效应", "亏钱效应收敛"],
+        "仓位建议": "3-5层",
+        "操作基调": "试探建仓，确认后加仓"
+      },
+      {
+        "name": "发酵期",
+        "emoji": "🔥",
+        "特征": ["连板增多", "赚钱效应好", "主线明朗"],
+        "仓位建议": "5-8层",
+        "操作基调": "重仓参与，积极做多"
+      },
+      {
+        "name": "主升期",
+        "emoji": "🚀",
+        "特征": ["龙头加速", "6-7板", "成交额放大"],
+        "仓位建议": "8-10层",
+        "操作基调": "积极进攻，聚焦龙头"
+      },
+      {
+        "name": "高潮期",
+        "emoji": "🎉",
+        "特征": ["亢奋", "鸡犬升天", "风险来临"],
+        "仓位建议": "<5层",
+        "操作基调": "边打边退，锁定利润"
+      },
+      {
+        "name": "退潮期",
+        "emoji": "🍂",
+        "特征": ["中位股跳水", "亏钱效应扩散", "炸板大面"],
+        "仓位建议": "0-1层",
+        "操作基调": "严控仓位，禁止高位接力"
+      }
+    ]
+  },
+
+  "tool_config": {
+    "stocks_price": {
+      "enabled": true,
+      "priority": 1,
+      "description": "获取个股价格和历史走势"
+    },
+    "stocks_news": {
+      "enabled": true,
+      "priority": 2,
+      "description": "获取股票相关新闻"
+    },
+    "stocks_statistics": {
+      "enabled": true,
+      "priority": 3,
+      "description": "获取股票统计数据"
+    },
+    "batch_web_search": {
+      "enabled": true,
+      "priority": 4,
+      "description": "搜索市场资讯"
+    }
+  },
+
+  "advanced_settings": {
+    "enable_real_time_alert": true,
+    "enable_auto_report": false,
+    "report_schedule": "16:00",
+    "enable_dingtalk_notification": false,
+    "enable_feishu_notification": false
+  }
+}

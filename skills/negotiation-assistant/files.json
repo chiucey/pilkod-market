@@ -1,0 +1,799 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "08e083bb925789b8b0302873cffc88df65bdc908",
+      "size": 7260
+    },
+    {
+      "path": "_meta.json",
+      "sha": "302f8d370aed8f43ec00d6cf90b4f703a44b1af5",
+      "size": 140
+    },
+    {
+      "path": "assets/books/getting_to_yes/META-INF/container.xml",
+      "sha": "54bfc8da5a95ec89e7a249cbbefd00075fff3d3c",
+      "size": 259
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/001.jpg",
+      "sha": "fbe1ecd085d4c7e9b19785ff2bf63fe3d5f2c75c",
+      "size": 33232
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/002.jpg",
+      "sha": "074e54f8716fd73c5574ca109c3d6dab87ec3d6a",
+      "size": 34160
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/003.jpg",
+      "sha": "c8b9d05c3659272aaae32100fcbcd59e8fb8aa13",
+      "size": 34859
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/004.jpg",
+      "sha": "38a6930bbf56d32ddbc3cc3d665862fad77a7138",
+      "size": 34132
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/005.jpg",
+      "sha": "40d557355c62275023ac0baf023766a9e58812c7",
+      "size": 27616
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/006.jpg",
+      "sha": "347fb888ce25cfbc9dc8f37561962eff2e127cfa",
+      "size": 46713
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/1.jpg",
+      "sha": "69ecd457e2b63020ce646427937c983bc5f033e3",
+      "size": 100199
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/P71_135_437_773_1118.jpg",
+      "sha": "85104167825113ec95e04382a0267ac7315f590f",
+      "size": 76445
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/cover.jpeg",
+      "sha": "3d9e0af2f09308cea36bbd339681543e360f9253",
+      "size": 33043
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Images/cover.jpg",
+      "sha": "1d4b48c7e323c51400c02c868071ce081709cf20",
+      "size": 173992
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter1.html",
+      "sha": "ee300734f7f6cd8e88b119eac797f1d803d21d17",
+      "size": 22120
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter10.html",
+      "sha": "c5272918ddb77ec439cdc2a244b5ead2c5c6da6e",
+      "size": 11430
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter11.html",
+      "sha": "90f9f9629f4215665d9cb2a3a881ad28e6a1262b",
+      "size": 19091
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter12.html",
+      "sha": "375bcfa0d5b8644afefd8bc3710abfd00a1e20a7",
+      "size": 17041
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter13.html",
+      "sha": "19d772cf51eaa2a0f83679424b3ce31845293f92",
+      "size": 20690
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter2.html",
+      "sha": "bcc0de68ee42ae03f90d0da3c9967cdf920d7b3f",
+      "size": 506
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter3.html",
+      "sha": "3eae72eae79999ed43f88600e15b493a19ca3833",
+      "size": 41992
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter4.html",
+      "sha": "0176b6badf1f22e50ab07acbaaa146abe3772b3f",
+      "size": 30693
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter5.html",
+      "sha": "ff8a79f4b92598ff806b3227f66527faac0f354c",
+      "size": 47702
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter6.html",
+      "sha": "e2fb4399bf09bb920a53283963b90e0f13a03737",
+      "size": 27015
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter7.html",
+      "sha": "c945e9aeab6e3f6f35a6af9bf54cea1704c18459",
+      "size": 18360
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter8.html",
+      "sha": "0edd1d04a039bfa2f50f8a1e48eff0a7bac22b96",
+      "size": 38681
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/chapter9.html",
+      "sha": "b6c3170a686914861283d22d6686ae2b12caa83f",
+      "size": 27238
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/copyright.html",
+      "sha": "4a2a99bc2c33428e6f724cd49fc4c91487dc739e",
+      "size": 3314
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/cover.xhtml",
+      "sha": "31ed97b14ea58081e8c0a991d035a28bafdb7afa",
+      "size": 628
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/foreword.html",
+      "sha": "5e7ba2d73aed7406e608d8b08cd540b68f6e6b1e",
+      "size": 5020
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/part1.html",
+      "sha": "5fbfd6b72e2b4c2a58251e405aef32ea814a60ab",
+      "size": 785
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/part2.html",
+      "sha": "5f4a3a23973a3159851a081ee3f22622891a2dd6",
+      "size": 795
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/part3.html",
+      "sha": "f89c4d783e18f1489342b10c08654bea6a5bec85",
+      "size": 795
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/part4.html",
+      "sha": "1fc251d8754bb65cd3bc43ecb9bd89c0f704626e",
+      "size": 3584
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/Text/part5.html",
+      "sha": "fb387829354090637ee5e39da9c693c33627d24e",
+      "size": 853
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/content.opf",
+      "sha": "48620e50af9b3174322bcce1646f7f760c5d86db",
+      "size": 5077
+    },
+    {
+      "path": "assets/books/getting_to_yes/OEBPS/toc.ncx",
+      "sha": "32c749a4f3065e08d19067c1499b81aa416ff9a2",
+      "size": 4324
+    },
+    {
+      "path": "assets/books/getting_to_yes/mimetype",
+      "sha": "57ef03f24a4351df334da53af3b9161bdeac6b1b",
+      "size": 20
+    },
+    {
+      "path": "assets/books/harvard_negotiation/META-INF/container.xml",
+      "sha": "733122a639c7c1ab285b1363a80de092804f3a59",
+      "size": 257
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00000.jpg",
+      "sha": "47f6e1c02f8d634b49af493dd048942e9706a775",
+      "size": 14287
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00001.jpg",
+      "sha": "278e0326578616cd81f2f587c68d0e97f8e79d4f",
+      "size": 115366
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00002.jpg",
+      "sha": "0047295c0fa53f09a9a3a8f403fa55544e31cce4",
+      "size": 119302
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00003.jpg",
+      "sha": "497e91288485d92cd368024b7646b95ebfe828df",
+      "size": 64201
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00004.jpg",
+      "sha": "e9f5615f4d1d626300005ae8bf62ecd645baf999",
+      "size": 81638
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00005.jpg",
+      "sha": "071438c63fe50304fb4df2de76df3f893742714e",
+      "size": 85619
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00006.jpg",
+      "sha": "bad82db9b0f394007337735047f80082031a8913",
+      "size": 106595
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/Image00008.jpg",
+      "sha": "33ea8c8e7b3b3c700c822fdb7a2d11dcd5721562",
+      "size": 7579
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/content.opf",
+      "sha": "4ed278b9ae537e18ddac2e416fecf2962bdf2ce4",
+      "size": 3733
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/cover1.html",
+      "sha": "6e5f5ee4e6c9f4e7353ee490286ebedaa2b286a9",
+      "size": 265
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/flow0001.css",
+      "sha": "1816de2753a394088aa18bc1cb11ebf679f7fd98",
+      "size": 4187
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00000.html",
+      "sha": "d79994a2e826445573619d90aa0f8344e8f23aca",
+      "size": 1381
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00001.html",
+      "sha": "3318a464ba1f11390ed8f56b99cef78bc9bd27f9",
+      "size": 5623
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00002.html",
+      "sha": "8e34a6f3c39e161e50d72759354bfb7fc3dc493a",
+      "size": 2915
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00003.html",
+      "sha": "8875e8cfba689dc0bdca2cfdc74e369071c2822e",
+      "size": 12700
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00004.html",
+      "sha": "d8a7532b1ed86913858abdeef511680440c544e5",
+      "size": 105430
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00005.html",
+      "sha": "ef7223abbe372c60590b153cb6a0249e47358439",
+      "size": 119988
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00006.html",
+      "sha": "5f96d671ce627814747105c707c4a1002ba0ab8a",
+      "size": 167423
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00007.html",
+      "sha": "4a2133430bb918e8d1cd0325b80dcb081295d7c5",
+      "size": 4783
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00008.html",
+      "sha": "99f07f457b895e50a560d99ed7b1f589ef17a557",
+      "size": 1864
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/text00009.html",
+      "sha": "16f3c184cad119b305ab2a51bf0e7e3153407e61",
+      "size": 28298
+    },
+    {
+      "path": "assets/books/harvard_negotiation/OEBPS/toc.ncx",
+      "sha": "758364c0521a56e93606a160e9a5f1ac302cac99",
+      "size": 10163
+    },
+    {
+      "path": "assets/books/harvard_negotiation/mimetype",
+      "sha": "57ef03f24a4351df334da53af3b9161bdeac6b1b",
+      "size": 20
+    },
+    {
+      "path": "assets/books/never_split_difference/META-INF/container.xml",
+      "sha": "f17cad9aeb091183a622e15820967084e3cd1789",
+      "size": 244
+    },
+    {
+      "path": "assets/books/never_split_difference/content.opf",
+      "sha": "7c115105ec4fed54c94db0e82861f3ac9dc81d8d",
+      "size": 11500
+    },
+    {
+      "path": "assets/books/never_split_difference/cover.jpeg",
+      "sha": "b0eb7d1ecc418c0672d39419b9c43e9aefa7bd35",
+      "size": 125868
+    },
+    {
+      "path": "assets/books/never_split_difference/images/00001.jpeg",
+      "sha": "c4a1f08dcc752a07b78560c54c22870d93b1d2de",
+      "size": 104748
+    },
+    {
+      "path": "assets/books/never_split_difference/images/00002.jpeg",
+      "sha": "e1e09ac4961fa2e9aee157fdd6a336e689e617b8",
+      "size": 128676
+    },
+    {
+      "path": "assets/books/never_split_difference/mimetype",
+      "sha": "57ef03f24a4351df334da53af3b9161bdeac6b1b",
+      "size": 20
+    },
+    {
+      "path": "assets/books/never_split_difference/page_styles.css",
+      "sha": "2f7b4519980ac093e4cfe9badf8a60a75152d4ed",
+      "size": 1560
+    },
+    {
+      "path": "assets/books/never_split_difference/stylesheet.css",
+      "sha": "a5f5216d9ecc68486739f85f0498845cece3d004",
+      "size": 5032
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0000.html",
+      "sha": "aa8790421f097574b687af85f512b0c33426032f",
+      "size": 525
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0001.html",
+      "sha": "27b07c0dbcea00d15405b5214bef178ae1859af7",
+      "size": 2795
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0002.html",
+      "sha": "18dadd35f2cc531413383470c60098227b5c59a9",
+      "size": 1665
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0003.html",
+      "sha": "95161295b3a04293324d784f7094937fb1b853cb",
+      "size": 1409
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0004.html",
+      "sha": "d47324d32a5305d0e8f5552eda28d18a0ec33316",
+      "size": 8201
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0005.html",
+      "sha": "eb112b65743a8b15dbf0d1078df60049fdd896b3",
+      "size": 6727
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0006.html",
+      "sha": "c9ac831990394b9f613f352859eea8a96b9879fb",
+      "size": 3312
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0007.html",
+      "sha": "f30cdaeef59cabee62a78c6e750088400e3df275",
+      "size": 519
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0008.html",
+      "sha": "22fac1833d7f37322a6e8377b650d8d76f736893",
+      "size": 21205
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0009.html",
+      "sha": "686f29bced7d425ee85c461e76b2c898f4f2aa34",
+      "size": 14110
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0010.html",
+      "sha": "b06f6a28fb29073160fe8700b959fe75ae53a371",
+      "size": 8911
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0011.html",
+      "sha": "b4aa137765cc53c2523a106e06d2544dd45914c2",
+      "size": 7259
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0012.html",
+      "sha": "fea213fcaa70100baf7cc66ace662f9d65d12d4c",
+      "size": 11902
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0013.html",
+      "sha": "8b963d940af8d6e936dd54d262941217e8428e83",
+      "size": 9945
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0014.html",
+      "sha": "d0d76081d387566a0015801c5d5a3af174232eeb",
+      "size": 519
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0015.html",
+      "sha": "46498b27f07c93a8060ef9aeab4c9abd478f9665",
+      "size": 28744
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0016.html",
+      "sha": "5f565d2d928c1e3d97f5342e74eed52d2c4c9a9c",
+      "size": 5125
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0017.html",
+      "sha": "81020f9d0ab0af97d531c252e2407f295fff2aa5",
+      "size": 6532
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0018.html",
+      "sha": "b04eb672f8f87d225ecaaf61081d53045d1761d5",
+      "size": 5058
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0019.html",
+      "sha": "8febcf27e231fd991eaa144a2c2c0200188d9390",
+      "size": 5951
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0020.html",
+      "sha": "576cab9e44a263b26eaeb4815581102850c3872d",
+      "size": 4829
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0021.html",
+      "sha": "4d22dc9492c73efff827b2c0745f33dead6a588d",
+      "size": 9018
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0022.html",
+      "sha": "63af1efc0c606294782f388b6ca12ed1a7c7788c",
+      "size": 520
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0023.html",
+      "sha": "814031b4ecd03ee60a508c306d6f6f64016a2f37",
+      "size": 12407
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0024.html",
+      "sha": "743b06d9b517f2e7963f604d2091ae60052d059f",
+      "size": 17490
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0025.html",
+      "sha": "65521b3e3f06e0e3e5a570705ca74514b103817e",
+      "size": 7805
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0026.html",
+      "sha": "52515efd508ab5ac742609970ae9b13cfde790dd",
+      "size": 8452
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0027.html",
+      "sha": "7934cd9f374c449e9992733461f783c36f59df55",
+      "size": 6686
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0028.html",
+      "sha": "8a4d952ce73bc125dbf002aa32b75206dbe6c2c9",
+      "size": 523
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0029.html",
+      "sha": "1cb0804c70e0c1deb4ddd25ce30c0bece601a01b",
+      "size": 7974
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0030.html",
+      "sha": "e8de30454fe717245a0e3f15e181f25ea218a085",
+      "size": 3329
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0031.html",
+      "sha": "5946fea8175427851880f7fb8a7e6e1ee64d0ba0",
+      "size": 6812
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0032.html",
+      "sha": "c82a225d832868be943f055201216477c8b3ab42",
+      "size": 2716
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0033.html",
+      "sha": "88ee8396d0053e6512ab14dd56fe730a3beddfdc",
+      "size": 1771
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0034.html",
+      "sha": "504379540a6b26ae2c6d25262281a0e7f6a222ad",
+      "size": 5949
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0035.html",
+      "sha": "f796c9eedd91bc3981c31abb7e52ffdc2f42ddd5",
+      "size": 3174
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0036.html",
+      "sha": "5a98f7d41c3484b19cd6dace7c30b30bfb271d70",
+      "size": 515
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0037.html",
+      "sha": "22ad7a81e7c5985b4db93369d73d40ee1d3e3060",
+      "size": 7359
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0038.html",
+      "sha": "04273e28cccb57c98954c83afdc4c3ad21121f48",
+      "size": 5593
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0039.html",
+      "sha": "1cdae96f688e8fd893577e08120b2dbcd63c03ac",
+      "size": 7352
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0040.html",
+      "sha": "d9387e51245c1ae059e7e593faf67b47ade9e78c",
+      "size": 3183
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0041.html",
+      "sha": "d44011aa9c47aaf2d29e9069a8983e1f8b85c3c2",
+      "size": 4454
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0042.html",
+      "sha": "ba97062cb16947bf32822bcbfe86f14a274f9b88",
+      "size": 4026
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0043.html",
+      "sha": "f506a1982b4a8d2e65819beeabdff8194ba59b9c",
+      "size": 5135
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0044.html",
+      "sha": "fb8b1e1f29d461a57a202b36e0861e5a07cf45e1",
+      "size": 2126
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0045.html",
+      "sha": "4da68eb6bad5bfd7bb52557e189ecdcdf59270e4",
+      "size": 1242
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0046.html",
+      "sha": "fc4dfb56e900a5c05904703daa5bb71df3810f51",
+      "size": 22662
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0047.html",
+      "sha": "286c78643f4185085058707a377bf0d576f14443",
+      "size": 12589
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0048.html",
+      "sha": "75bb6d06fd84c0b3ed3097c1450df956eda84261",
+      "size": 26084
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0049.html",
+      "sha": "101f179a06059907f79adf3dac602339b79d9ccc",
+      "size": 2523
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0050.html",
+      "sha": "5515493a16e1fd2acd02bc534731c8bab771e8d6",
+      "size": 19723
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0051.html",
+      "sha": "851000803fd7c23adf0aab30e8eacdb3d299c5f3",
+      "size": 32870
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0052.html",
+      "sha": "6415b0a1b563005d5387f8af094fd2402fd7c491",
+      "size": 11886
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0053.html",
+      "sha": "2dcc6bacf9e4989083f67cc25d55c12e2aeeb318",
+      "size": 6032
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0054.html",
+      "sha": "4a4b79e471984eb2a688a0afc569265af44d3c1d",
+      "size": 5256
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0055.html",
+      "sha": "64d561bc8cfd94f483f003fafa56054c1186ea45",
+      "size": 10089
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0056.html",
+      "sha": "58f557f36a005d2621c91390a3399f566179337d",
+      "size": 4645
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0057.html",
+      "sha": "c7c6a15b1010f848691efef1ecdc8e34888f3412",
+      "size": 2140
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0058.html",
+      "sha": "8abecb7aaf7811a2b0daddc7f47e44848f23b7a3",
+      "size": 13503
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0059.html",
+      "sha": "f579e6269fb8d6d75a0311791cf3f28eac31a981",
+      "size": 22752
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0060.html",
+      "sha": "ee657985eacf4f826e72f82b7166b3235ac6eb45",
+      "size": 12239
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0061.html",
+      "sha": "64af4052250dea584b1cddfbf64855e086d306f8",
+      "size": 28488
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0062.html",
+      "sha": "0f7f14162293275cdb295340742e5809c444dfb3",
+      "size": 2480
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0063.html",
+      "sha": "a100578733735dce076482deb6476956c89a6489",
+      "size": 27398
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0064.html",
+      "sha": "b697132ff83d99ac814d1a6a2b2355f716d55ac1",
+      "size": 18316
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0065.html",
+      "sha": "37a968c560d14ce315ef9fb7ed52139dbe73be8b",
+      "size": 8201
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0066.html",
+      "sha": "58f3f9515a3f8456219405dc6229d53420deda18",
+      "size": 15897
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0067.html",
+      "sha": "d0ba3874be13cfa481351f13ce3417c97787ec8c",
+      "size": 7235
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0068.html",
+      "sha": "da59071ec7bcb5fb7a48b82e53cb3af57d10a19f",
+      "size": 3962
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0069.html",
+      "sha": "f12e99ce3731933e3bb52e09172dabd4e195a5e4",
+      "size": 13896
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0070.html",
+      "sha": "324f973a19c5b8fcbce6584b5bfdfc8cc3a3c118",
+      "size": 8275
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0071.html",
+      "sha": "9c47d81d3c66233945664e41f50b1ea72d924616",
+      "size": 12105
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0072.html",
+      "sha": "8a7c186730255d0a7132dab88cadfd7bfd479498",
+      "size": 6370
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0073.html",
+      "sha": "38193ee6baf85c57e749ccde833f851a99843c7f",
+      "size": 7083
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0074.html",
+      "sha": "41192f9a3272cb74b95c88e19d8651c6bdfb5026",
+      "size": 6759
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0075.html",
+      "sha": "2adc20b2d5541ca2547b73cc284fde5eb01e1d21",
+      "size": 5109
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0076.html",
+      "sha": "8227ee1deda00f2ac8528dc15939dd80b71ae21b",
+      "size": 5262
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0077.html",
+      "sha": "1c0d45f2012afee55761007e72b95d01d296470f",
+      "size": 7083
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0078.html",
+      "sha": "a3324404e21e21340bb15f4aa825b3997cc3856e",
+      "size": 6579
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0079.html",
+      "sha": "30410d159c867a7b142836c9492d7eecfdb41f4a",
+      "size": 13314
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0080.html",
+      "sha": "e354876268d9faf8968c09a9d6671013d05a0b9a",
+      "size": 12039
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0081.html",
+      "sha": "1db36a239e4eb9094e8ca2cbb62093820994e769",
+      "size": 7417
+    },
+    {
+      "path": "assets/books/never_split_difference/text/part0082.html",
+      "sha": "8e33d4518752e7a8057591a9abd3d73836274612",
+      "size": 1308
+    },
+    {
+      "path": "assets/books/never_split_difference/titlepage.xhtml",
+      "sha": "ca98beba5b6b0e8a0a30709e7b0dfeed23eeede9",
+      "size": 803
+    },
+    {
+      "path": "assets/books/never_split_difference/toc.ncx",
+      "sha": "5fcb27b5dc0970efa7ecbc3cf2ee31d55193e27c",
+      "size": 18942
+    },
+    {
+      "path": "references/negotiation_knowledge_base.md",
+      "sha": "7f01186d6d5f6f6f904fa11a25b46f56a187eda1",
+      "size": 24087
+    },
+    {
+      "path": "references/negotiation_theory.md",
+      "sha": "01c561d608fefc58f650e4c133b58fa46e1a76de",
+      "size": 5808
+    },
+    {
+      "path": "references/scenario_templates.md",
+      "sha": "d85a31ea8b6b6e8bcf1392ed9c22f92dd60c6c32",
+      "size": 7263
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "afb47c8da54eef0d05cca523f418805f7c9274fd",
+      "size": 2525
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "09b40f6ac3a606cc5ac0fb6ff04491919403c0aa",
+      "size": 3929
+    }
+  ]
+}

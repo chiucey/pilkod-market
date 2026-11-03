@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "insight-feed 配置文件格式",
+  "description": "insight-feed 技能的配置文件格式说明",
+  "type": "object",
+  "required": ["topics"],
+  "properties": {
+    "topics": {
+      "type": "array",
+      "description": "话题列表，每个话题独立追踪",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "keywords", "feishuChatId", "schedule", "enabled"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "唯一标识，英文小写+数字+连字符",
+            "examples": ["esim-news", "ev-industry", "competitor-a"]
+          },
+          "name": {
+            "type": "string",
+            "description": "话题名称，用户可见，用于报告标题",
+            "examples": ["eSIM行业动态", "新能源汽车周报", "竞品监控"]
+          },
+          "keywords": {
+            "type": "array",
+            "description": "核心追踪关键词列表（OR关系，满足任一即收录）",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "examples": [["eSIM", "eUICC"], ["新能源汽车", "电动车", "动力电池"]]
+          },
+          "searchTemplates": {
+            "type": "array",
+            "description": "自定义搜索模板，{keyword} 会被替换为 keywords 数组各项",
+            "items": { "type": "string" }
+          },
+          "wechatAccounts": {
+            "type": "array",
+            "description": "要追踪的微信公众号名称列表（只支持已认证公众号）",
+            "items": { "type": "string" },
+            "examples": [["联通eSIM", "物联网智库"], ["紫光同芯", "广和通"]]
+          },
+          "rssSources": {
+            "type": "array",
+            "description": "RSS 订阅源 URL 列表",
+            "items": { "type": "string", "format": "uri" }
+          },
+          "feishuChatId": {
+            "type": "string",
+            "description": "飞书群 ID，格式：oc_xxxxxxxx",
+            "examples": ["oc_3586059a0a77037c5dfc1be0154456bd"]
+          },
+          "schedule": {
+            "type": "string",
+            "enum": ["daily", "weekly"],
+            "description": "推送频率：daily=每个工作日早8点，weekly=每周一早8点",
+            "examples": ["daily", "weekly"]
+          },
+          "enabled": {
+            "type": "boolean",
+            "description": "是否启用该话题追踪"
+          }
+        }
+      }
+    }
+  }
+}

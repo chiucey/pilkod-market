@@ -1,0 +1,6 @@
+# Minimax Excel Enhanced Formula Skill - Global Custom Configuration
+output_directory: "./excel_output"
+default_sheet_name: "Sheet1"
+default_language: "zh-CN"
+timeout_seconds: 30
+auto_create_output_dir: true

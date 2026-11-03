@@ -1,0 +1,143 @@
+# 飞书全链路自动化技能配置文件
+# 对标 ClawHub gog 技能配置
+
+# API 基础配置
+api:
+  base_url: "https://open.feishu.cn"
+  version: "v1"
+  timeout_seconds: 30
+  connect_timeout: 10
+  read_timeout: 30
+
+# Token 缓存配置
+token:
+  cache_enabled: true
+  refresh_ahead_seconds: 60
+  default_expire_seconds: 7200
+
+# 重试策略
+retry:
+  max_attempts: 3
+  backoff_factor: 0.5
+  retry_on_codes:
+    - 500
+    - 502
+    - 503
+    - 504
+    - 99991663  # 权限不足（可重试）
+
+# 默认值配置
+defaults:
+  # 默认文件夹 Token（用户可覆盖）
+  folder_token: ""
+  # 默认日历 ID（primary 为主日历）
+  calendar_id: "primary"
+  # 默认审批模板代码
+  approval_code: "standard"
+  # 默认邮件类型（html/plain）
+  email_body_type: "html"
+  # 默认文档权限
+  document_permission: "view"
+  # 默认会议提醒时间（分钟）
+  reminder_minutes: 15
+
+# 文档配置
+document:
+  # 支持的块类型
+  supported_block_types:
+    - 1  # 文本块
+    - 2  # 段落
+    - 3  # 标题1
+    - 4  # 标题2
+    - 5  # 标题3
+    - 12 # 无序列表
+    - 13 # 有序列表
+    - 14 # 引用
+    - 15 # 代码块
+    - 22 # 分割线
+  # 每批添加的块数量
+  batch_size: 50
+
+# 日历配置
+calendar:
+  # 支持的时区
+  timezone: "Asia/Shanghai"
+  # 最大参会人数
+  max_attendees: 500
+  # 会议链接
+  enable_conference_meeting: true
+
+# 审批配置
+approval:
+  # 表单字段类型
+  form_field_types:
+    - "Text"
+    - "Number"
+    - "Date"
+    - "User"
+    - "Department"
+    - "Attachment"
+  # 超时时间（小时）
+  timeout_hours: 168  # 7天
+
+# 邮件配置
+email:
+  # 最大收件人数量
+  max_recipients: 50
+  # 支持的附件格式
+  supported_attachments:
+    - "pdf"
+    - "doc"
+    - "docx"
+    - "xls"
+    - "xlsx"
+    - "ppt"
+    - "pptx"
+    - "txt"
+    - "jpg"
+    - "png"
+    - "zip"
+  # 最大附件大小（MB）
+  max_attachment_size_mb: 25
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  output_directory: "./logs"
+  # 日志文件保留天数
+  retention_days: 30
+
+# 结果输出配置
+output:
+  directory: "./output"
+  # 是否自动打开结果链接
+  auto_open_url: false
+  # 结果通知方式
+  notification: "console"  # console/feishu/none
+
+# 敏感操作配置
+sensitive:
+  actions:
+    - "create_approval"
+    - "send_email"
+  # 确认超时时间（秒）
+  confirm_timeout: 300
+  # 是否需要输入确认码
+  require_code: false
+
+# 错误提示模板
+error_messages:
+  credential_failed: "获取飞书访问凭证失败，请检查 APP_ID 和 APP_SECRET 是否正确，且应用已在租户内启用。"
+  permission_denied: "权限不足，请在飞书开放平台检查并开通相应权限。"
+  invalid_parameters: "参数错误，请检查输入参数是否符合要求。"
+  network_error: "网络请求失败，请检查网络连接后重试。"
+  timeout: "请求超时，请稍后重试。"
+
+# 成功提示模板
+success_messages:
+  document_created: "文档已创建成功！"
+  document_updated: "文档已更新成功！"
+  calendar_event_created: "日历事件已创建成功！"
+  approval_created: "审批已发起成功！"
+  email_sent: "邮件已发送成功！"

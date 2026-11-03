@@ -1,0 +1,18 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-25",
+  "description": "从校准证书PDF中提取信息并生成Excel汇总表。必须记录所有测试项目名称（包括重复性、稳定性、时间测试等），完整提取测试点数据，排除误差值/重复性稳定性具体数值/不确定度/比较性阈值。",
+  "display_name": "Calibration Certificate Extractor",
+  "id": 392397403783347,
+  "name": "calibration-certificate-extractor",
+  "platform": "minimax",
+  "tags": [
+    "pdf",
+    "excel",
+    "calibration-certificate",
+    "data-extraction",
+    "image-extraction"
+  ],
+  "updated_at": 1777356801139,
+  "version": "2.0.0"
+}

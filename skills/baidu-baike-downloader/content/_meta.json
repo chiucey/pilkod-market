@@ -1,0 +1,29 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-23",
+  "dependencies": [
+    "requests",
+    "beautifulsoup4",
+    "lxml"
+  ],
+  "description": "下载百度百科页面并解析成JSON格式",
+  "entry_point": "baidu_baike_downloader.py",
+  "examples": [
+    "python baidu_baike_downloader.py 人工智能",
+    "python baidu_baike_downloader.py Python -o python.json --pretty"
+  ],
+  "id": 405492491764721,
+  "name": "baidu-baike-downloader",
+  "platform": "minimax",
+  "skill_id": 1865478409,
+  "tags": [
+    "baidu",
+    "baike",
+    "downloader",
+    "json",
+    "parser"
+  ],
+  "updated_at": 1780565377545,
+  "usage": "python baidu_baike_downloader.py \u003c词条名称\u003e [-o output.json] [--pretty]",
+  "version": "1.0.0"
+}

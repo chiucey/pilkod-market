@@ -1,0 +1,26 @@
+{
+  "author": "MiniMax Agent",
+  "category": "agent-system",
+  "config": {
+    "auto_evolution_enabled": true,
+    "evolution_threshold": 20,
+    "memory_layers": 5
+  },
+  "created_at": "2026-04-28",
+  "dependencies": [],
+  "description": "MiniMax Agent 自进化系统，具备 5 层记忆体架构和持续学习能力。当用户要求记住偏好、从上次继续、改进回答、分析失败、自我进化时触发。",
+  "entry_point": "scripts/integration.py",
+  "id": 392506654282032,
+  "name": "minimax-self-evolution",
+  "platform": "minimax",
+  "skill_id": 1713969133,
+  "tags": [
+    "self-evolution",
+    "5-layer-memory",
+    "continuous-learning",
+    "preference-learning",
+    "task-resume"
+  ],
+  "updated_at": 1777384174334,
+  "version": "1.0.0"
+}

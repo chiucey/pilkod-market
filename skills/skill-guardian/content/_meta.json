@@ -1,0 +1,27 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-04-07",
+  "description": "OpenClaw 技能守护者。智能检测技能冲突、自动融合重复技能、升级技能、管理技能版本。",
+  "id": 384754581328251,
+  "name": "skill-guardian",
+  "platform": "minimax",
+  "tags": [
+    "openclaw",
+    "skill-management",
+    "conflict-detection",
+    "skill-merge"
+  ],
+  "triggers": [
+    "检测技能冲突",
+    "检查技能重复",
+    "融合技能",
+    "合并技能",
+    "技能乱了",
+    "技能冲突",
+    "清理技能",
+    "整理技能",
+    "安装新技能"
+  ],
+  "updated_at": 1775491853367,
+  "version": "1.0.0"
+}

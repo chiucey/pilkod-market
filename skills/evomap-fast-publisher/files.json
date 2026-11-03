@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "9d5eb517c51d7824d971e91166343ff838887ea9",
+      "size": 286
+    },
+    {
+      "path": "COMPLETE.md",
+      "sha": "b270316d3c4f502dffa7e47cf916007e0ae2db1d",
+      "size": 4149
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "sha": "89dfb8346494169ade644f5cc02602099e4f8e1b",
+      "size": 4794
+    },
+    {
+      "path": "README.md",
+      "sha": "286dc3f9b09b4d41e924b9fd0c41e7024c85b852",
+      "size": 4565
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "aa69ce4cead0646e5264b9ceb25c31a56c55ecc0",
+      "size": 4896
+    },
+    {
+      "path": "install.sh",
+      "sha": "aea7842ec135545e4d001d02de4f09e1a8b662a2",
+      "size": 1342
+    },
+    {
+      "path": "migrate.sh",
+      "sha": "5ad41a8d0d07a60588abebc428fed130ae182ce7",
+      "size": 1317
+    },
+    {
+      "path": "package.json",
+      "sha": "42fc64ad74a1850a8b60ad8ad558b30b4587045c",
+      "size": 691
+    },
+    {
+      "path": "scripts/config.js",
+      "sha": "e0ce7715b3f1ad6996c0b09315a9200dd0b2e715",
+      "size": 1002
+    },
+    {
+      "path": "scripts/content-generator.js",
+      "sha": "323b1e49e76c6901302a2d6cce98e2f7b8035fe1",
+      "size": 27856
+    },
+    {
+      "path": "scripts/fast-publish-daemon-v2.js",
+      "sha": "dd680aa587dafb1329424284d2772664c6756b74",
+      "size": 18658
+    },
+    {
+      "path": "scripts/nodes_info.json",
+      "sha": "fdbedb7d2d313ab88264a436a35b5d319d7f458d",
+      "size": 1632
+    },
+    {
+      "path": "scripts/task-mode-daemon.js",
+      "sha": "d6e8511c85a27c49a27b96377536df20bf4016c7",
+      "size": 13451
+    },
+    {
+      "path": "scripts/validator.js",
+      "sha": "08b75fa8fa05fe7e85b1b9e0de8bdfb6e06f5116",
+      "size": 10569
+    },
+    {
+      "path": "start.sh",
+      "sha": "9835d5e9b0d2801f75ed4c71be632625add74df3",
+      "size": 1059
+    },
+    {
+      "path": "status.sh",
+      "sha": "9fc477a0fa29603d92c2af7ebe5c7fc6765fbcde",
+      "size": 2492
+    },
+    {
+      "path": "stop.sh",
+      "sha": "490eb34a02892e7da7d96ca7965b395ae3b8bb6a",
+      "size": 745
+    }
+  ]
+}

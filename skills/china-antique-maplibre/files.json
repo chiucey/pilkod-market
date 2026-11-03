@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "c324a6a8291dffcbe8c2f9ff89d81e2edd049c0d",
+      "size": 4240
+    },
+    {
+      "path": "_meta.json",
+      "sha": "d6c3ca50d2d6c7de83c18cb8afa5056a66aec4b4",
+      "size": 200
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "d17a61e7b5904ed7cf18ecd740c9a73882ba2406",
+      "size": 721
+    },
+    {
+      "path": "references/city-tier-schema.md",
+      "sha": "66e84004e60870cd1b0f690f0433d597ccecb563",
+      "size": 2291
+    },
+    {
+      "path": "references/parameter-reference.md",
+      "sha": "1796cc5874a0a20c7a37e3534d106ca1257af186",
+      "size": 3916
+    },
+    {
+      "path": "references/tested-config.md",
+      "sha": "4a4facf71049cb9475dd0d5ebe19c949ec45c08a",
+      "size": 2794
+    },
+    {
+      "path": "references/tuner-workflow.md",
+      "sha": "5413eed575e794897bc09a3edb10e5cb318aa1aa",
+      "size": 2573
+    },
+    {
+      "path": "references/water-overlay.md",
+      "sha": "2b739c61f67cb5bd45accd0034da1c5dcde34e04",
+      "size": 3324
+    },
+    {
+      "path": "schemas/map-preset.schema.json",
+      "sha": "b3e46e03ae1339bccfead30ec1ddc9f0cf918314",
+      "size": 4181
+    },
+    {
+      "path": "schemas/sample-sites.schema.json",
+      "sha": "b0440d7d269d32db50eb452d81adcb21f9b11b2f",
+      "size": 1561
+    },
+    {
+      "path": "tuner/README.md",
+      "sha": "a8ab91b8ed42b0c38ae613a2555b07297ce91c13",
+      "size": 1349
+    },
+    {
+      "path": "tuner/assets/han-city-3d.js",
+      "sha": "4f150dc8d4bd154654278d355c59c1deeb61e901",
+      "size": 36860
+    },
+    {
+      "path": "tuner/assets/sample-sites.json",
+      "sha": "6e2e352c6dab6b7dff14b76dfbc71fd150981edc",
+      "size": 752
+    },
+    {
+      "path": "tuner/assets/water-pack.json",
+      "sha": "67a8670e841d3a6a7e1651002817c383bc662cf2",
+      "size": 292
+    },
+    {
+      "path": "tuner/index.html",
+      "sha": "48c91932b54d0174db9f92af92a115bf1752c54f",
+      "size": 105097
+    },
+    {
+      "path": "tuner/map-tiles.config.example.js",
+      "sha": "7867a171927af5993d568e8b72fb17e37ba8f448",
+      "size": 1971
+    },
+    {
+      "path": "tuner/map-tiles.config.js",
+      "sha": "23c75542fc9d5bb6bf2ef136f20fc134fd92e1ba",
+      "size": 1100
+    },
+    {
+      "path": "tuner/media/hexi-ep07-demo-480p.mp4",
+      "sha": "1e097bebb1571485c7b5b1f834cb820430b0c09d",
+      "size": 645045
+    },
+    {
+      "path": "tuner/preset-antique-default.json",
+      "sha": "ef62db2e54de745389ca4f649bcf4bebf3b2efbd",
+      "size": 1510
+    },
+    {
+      "path": "tuner/presets/antique-default.json",
+      "sha": "ef62db2e54de745389ca4f649bcf4bebf3b2efbd",
+      "size": 1510
+    },
+    {
+      "path": "tuner/verify.mjs",
+      "sha": "c42f81c307024b88f3bfbf7990bf58dd5d39a3bd",
+      "size": 4722
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+# 情绪词汇参数数据 v3.4
+# 来源：Russell(1980) Circumplex Model + Suno AI 官方文档 + 社区验证
+# 用途：GMIVE M槽位选取mood
+
+# ═════════════════════════════════════════════════════
+# 核心：Russell 情绪坐标（ Circumplex Model of Affect）
+# 两轴：Valence（愉悦度） × Arousal（激活度）
+# 16个情绪 → 4个象限
+# ═════════════════════════════════════════════════════
+
+russell_circumplex:
+  description: |
+    Russell(1980) 情绪圆环模型：
+    X轴 = Valence（愉快 ←→ 不愉快）
+    Y轴 = Arousal（激活 ←→ 抑制）
+    16个情绪分布在圆的圆周上
+    
+  quadrants:
+
+    # Q1：高激活 + 正 valence（右上）
+    q1:
+      label: 兴奋/快乐 (Excited-Happy)
+      valence: positive
+      arousal: high
+      suno_moods:
+        - energetic:      { desc: 充满能量，高频活动, best_for: [edm, rock, hip-hop]}
+        - exciting:      { desc: 令人兴奋，刺激感, best_for: [edm, trance, rock]}
+        - cheerful:      { desc: 轻快活泼, best_for: [pop, folk, indie]}
+        - joyful:        { desc: 快乐幸福, best_for: [pop, soul, gospel]}
+        - triumphant:    { desc: 胜利凯旋, best_for: [epic, rock, anthem]}
+        - euphoric:      { desc: 极度欢快，狂喜, best_for: [edm, trance, house]}
+        - elated:        { desc: 兴高采烈，得意, best_for: [soul, pop, disco]}
+        - excited:       { desc: 兴奋激动, best_for: [rock, pop, edm]}
+
+    # Q2：高激活 + 负 valence（左上）
+    q2:
+      label: 愤怒/焦虑 (Tense-Angry)
+      valence: negative
+      arousal: high
+      suno_moods:
+        - aggressive:     { desc: 攻击性强，硬核, best_for: [metal, rock, hip-hop]}
+        - tense:         { desc: 紧张紧绷，压迫感, best_for: [rock, cinematic, thriller]}
+        - anxious:       { desc: 焦虑不安，心神不宁, best_for: [indie, rock, folk]}
+        - intense:       { desc: 强烈激烈，热烈, best_for: [rock, metal, edm]}
+        - distressed:    { desc: 痛苦不安，困扰, best_for: [dark-pop, rock, folk]}
+        - restless:      { desc: 焦躁不安，坐立不安, best_for: [rock, punk, indie]}
+        - turbulent:     { desc: 动荡混乱，风暴感, best_for: [cinematic, rock, electronic]}
+        - frantic:       { desc: 疯狂慌张，极度, best_for: [metal, punk, edm]}
+
+    # Q3：低激活 + 负 valence（左下）
+    q3:
+      label: 悲伤/沮丧 (Sad-Depressed)
+      valence: negative
+      arousal: low
+      suno_moods:
+        - melancholic:   { desc: 忧郁内敛，哀而不伤, best_for: [folk, indie, ballad]}
+        - sad:          { desc: 悲伤难过，明显, best_for: [ballad, folk, blues]}
+        - lonely:       { desc: 孤独寂寞，空旷, best_for: [folk, indie, acoustic]}
+        - depressive:   { desc: 压抑沉闷，阴郁, best_for: [dark-folk, ambient, metal]}
+        - mournful:    { desc: 哀悼悲恸，葬礼感, best_for: [classical, folk, ballad]}
+        - desolate:     { desc: 荒凉凄凉，空虚, best_for: [ambient, dark-folk, post-rock]}
+        - grieving:     { desc: 悲痛惋惜，失落, best_for: [ballad, folk, classical]}
+        - hopeless:     { desc: 无望绝望，放弃, best_for: [dark-ballad, folk, ambient]}
+
+    # Q4：低激活 + 正 valence（右下）
+    q4:
+      label: 平静/满足 (Calm-Peaceful)
+      valence: positive
+      arousal: low
+      suno_moods:
+        - peaceful:      { desc: 和平静谧，祥和, best_for: [ambient, classical, folk]}
+        - calm:          { desc: 平静安稳，舒缓, best_for: [ambient, classical, ballad]}
+        - relaxed:       { desc: 放松悠闲，无压力, best_for: [lo-fi, chillout, folk]}
+        - nostalgic:     { desc: 怀旧留恋，回忆, best_for: [indie, folk, synthwave]}
+        - warm:          { desc: 温暖柔和，舒适, best_for: [soul, ballad, folk]}
+        - intimate:     { desc: 亲密近人，私密, best_for: [ballad, folk, singer-songwriter]}
+        - serene:        { desc: 安详宁静，超脱, best_for: [ambient, classical, world]}
+        - content:       { desc: 满足满意，感恩, best_for: [folk, soul, acoustic]}
+
+  # 16个情绪在圆周上的具体位置（用于精确匹配）
+  circumcircle_positions:
+    - name: excited
+      valence: +0.8
+      arousal: +0.9
+      quadrant: q1
+    - name: happy
+      valence: +0.9
+      arousal: +0.7
+      quadrant: q1
+    - name: elated
+      valence: +0.8
+      arousal: +0.6
+      quadrant: q1
+    - name: delighted
+      valence: +0.9
+      arousal: +0.5
+      quadrant: q1
+    - name: content
+      valence: +0.7
+      arousal: +0.2
+      quadrant: q4
+    - name: serene
+      valence: +0.6
+      arousal: +0.1
+      quadrant: q4
+    - name: calm
+      valence: +0.5
+      arousal: -0.3
+      quadrant: q4
+    - name: relaxed
+      valence: +0.4
+      arousal: -0.5
+      quadrant: q4
+    - name: nostalgic
+      valence: +0.3
+      arousal: -0.2
+      quadrant: q4
+    - name: sad
+      valence: -0.6
+      arousal: -0.3
+      quadrant: q3
+    - name: melancholic
+      valence: -0.5
+      arousal: -0.2
+      quadrant: q3
+    - name: lonely
+      valence: -0.6
+      arousal: -0.1
+      quadrant: q3
+    - name: depressed
+      valence: -0.7
+      arousal: -0.4
+      quadrant: q3
+    - name: anxious
+      valence: -0.5
+      arousal: +0.7
+      quadrant: q2
+    - name: tense
+      valence: -0.4
+      arousal: +0.8
+      quadrant: q2
+    - name: frustrated
+      valence: -0.6
+      arousal: +0.5
+      quadrant: q2
+
+# ═════════════════════════════════════════════════════
+# 独立情绪词（不依赖象限，可自由组合使用）
+# 组合规则：总数 ≤ 2，选自不同类别
+# ═════════════════════════════════════════════════════
+
+standalone_moods:
+  description: "独立情绪词表，选自不同象限/类别，总数 ≤ 2"
+
+  positive:
+    label: 正面情绪
+    moods:
+      - hopeful:     { desc: 怀有希望，充满期待, best_for: [folk, ballad, anthem]}
+      - romantic:    { desc: 浪漫温馨，爱情感, best_for: [ballad, soul, pop]}
+      - dreamy:      { desc: 梦幻飘渺，幻想感, best_for: [dream-pop, ambient, synth]}
+      - ethereal:    { desc: 空灵超脱，飘渺感, best_for: [ambient, classical, chinese]}
+      - uplifting:   { desc: 积极向上，提升感, best_for: [pop, rock, edm]}
+      - triumphant:  { desc: 胜利凯旋，成就感, best_for: [epic, rock, anthem]}
+      - sensual:     { desc: 感性诱惑，情欲感, best_for: [rnb, soul, jazz]}
+      - whimsical:   { desc: 异想天开，俏皮感, best_for: [indie-pop, folk, jazz]}
+      - serene:      { desc: 安详宁静，超然感, best_for: [ambient, classical]}
+
+  negative:
+    label: 负面情绪
+    moods:
+      - dark:        { desc: 暗黑阴沉，阴影感, best_for: [dark-pop, metal, cinematic]}
+      - haunting:    { desc: 萦绕不散，挥之不去, best_for: [cinematic, folk, ballad]}
+      - brooding:    { desc: 忧思重重，沉郁, best_for: [indie, folk, rock]}
+      - anguished:   { desc: 痛苦煎熬，折磨, best_for: [metal, dark-folk, ballad]}
+      - desolate:    { desc: 荒凉凄凉，空旷, best_for: [post-rock, ambient, folk]}
+      - mysterious:  { desc: 神秘未知，悬念, best_for: [cinematic, ambient, folk]}
+
+  complex:
+    label: 复杂情绪
+    moods:
+      - cinematic:       { desc: 电影感，叙事宏大, best_for: [soundtrack, cinematic-pop]}
+      - bittersweet:     { desc: 苦乐参半，五味杂陈, best_for: [indie, folk, ballad]}
+      - contemplative:   { desc: 沉思冥想，内省, best_for: [folk, ambient, classical]}
+      - atmospheric:     { desc: 氛围感，环境音, best_for: [ambient, post-rock, cinematic]}
+      - bittersweet-nostalgic: { desc: 苦乐参半+怀旧, best_for: [indie-folk, synthwave]}
+      - raw-emotional:   { desc: 原始情感流露, best_for: [folk, singer-songwriter, rock]}
+
+  mood_energy:
+    label: 能量类情绪
+    moods:
+      - epic:         { desc: 史诗般宏大，壮丽, best_for: [cinematic, rock, symphonic]}
+      - dark-epic:   { desc: 暗黑史诗，阴郁宏大, best_for: [metal, cinematic]}
+      - delicate:    { desc: 精致脆弱，小心翼翼, best_for: [indie, folk, classical]}
+      - fragile:     { desc: 易碎感，脆弱, best_for: [indie, folk, singer-songwriter]}
+
+# ═════════════════════════════════════════════════════
+# 情绪 × BPM 匹配规则（矛盾时警告）
+# ═════════════════════════════════════════════════════
+
+mood_bpm_rules:
+  melancholic:    { min: 55,  max: 85,  type: slow }
+  sad:            { min: 55,  max: 80,  type: slow }
+  energetic:      { min: 110, max: 170, type: fast }
+  euphoric:       { min: 120, max: 160, type: fast }
+  calm:           { min: 50,  max: 80,  type: slow }
+  epic:           { min: 80,  max: 130, type: mid-fast }
+  romantic:       { min: 65,  max: 95,  type: slow-mid }
+  nostalgic:      { min: 70,  max: 100, type: mid-slow }
+  dark:           { min: 60,  max: 120, type: varies }
+  aggressive:     { min: 130, max: 180, type: fast }
+  tense:          { min: 100, max: 150, type: mid-fast }
+  anxious:        { min: 90,  max: 140, type: mid-fast }
+  peaceful:       { min: 50,  max: 80,  type: slow }
+  uplifting:      { min: 110, max: 150, type: fast }
+  dreamy:         { min: 70,  max: 100, type: slow-mid }
+  haunting:       { min: 60,  max: 100, type: slow }
+
+# ═════════════════════════════════════════════════════
+# 情绪 × 乐器 推荐匹配（辅助快速组合）
+# ═════════════════════════════════════════════════════
+
+mood_instrument_suggestions:
+  melancholic:    [piano, guitar, strings, cello]
+  sad:            [piano, guitar, strings, harmonica]
+  energetic:      [drums, electric-guitar, bass, synth]
+  euphoric:       [synth-lead, drums, bass, brass]
+  calm:           [piano, synth-pad, strings, fingerpicked-guitar]
+  epic:           [orchestral-strings, brass, drums, piano]
+  romantic:       [piano, strings, nylon-guitar, saxophone]
+  nostalgic:      [electric-guitar, synth-pad, vinyl-crackle, piano]
+  dark:           [synth-pad, bass, distorted-guitar, drums]
+  aggressive:     [distorted-guitar, bass, drums, hi-hats]
+  tense:          [synth, bass, drums, strings]
+  peaceful:       [piano, strings, fingerpicked-guitar, ambient]
+  dreamy:         [synth-pad, electric-guitar, strings, harp]
+  haunting:       [piano, strings, synth-pad, electric-guitar]
+  bittersweet:    [piano, strings, guitar, synth]
+  romantic:      [nylon-guitar, piano, saxophone, strings]

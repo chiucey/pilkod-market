@@ -1,0 +1,13 @@
+{
+  "msg_id": "0e4cb2e1-2ec5-41f6-a680-e4fc00505da4",
+  "timestamp": "2026-04-10T03:00:43.319707",
+  "sender": "maxclaw-3",
+  "recipient": "maxclaw-1",
+  "msg_type": "message",
+  "action": "DATA_REQUEST",
+  "payload": {
+    "data_type": "status",
+    "query": "What is your status?"
+  },
+  "correlation_id": null
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>牛顿第二定律 · 力与运动的桥梁</title>
+<style>
+:root{
+  --bg:#1a1b26;--bg-soft:#16161e;--surface:#24283b;--surface-2:#2f334d;
+  --border:rgba(192,202,245,.12);--border-strong:rgba(192,202,245,.24);
+  --text-1:#c0caf5;--text-2:#a9b1d6;--text-3:#565f89;
+  --accent:#7aa2f7;--accent-2:#bb9af7;--accent-3:#7dcfff;
+  --good:#9ece6a;--warn:#e0af68;--bad:#f7768e;
+  --grad:linear-gradient(135deg,#7aa2f7,#bb9af7 55%,#f7768e);
+  --grad-soft:linear-gradient(135deg,#24283b,#2f334d);
+  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 24px 62px rgba(0,0,0,.6);
+  --font-sans:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono','Fira Code','Consolas',monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text-1)}
+a{color:var(--accent);text-decoration:none}
+.scroll-section{padding:60px 64px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--border)}
+.scroll-section:last-child{border-bottom:none}
+.scroll-section.full{align-items:center;text-align:center}
+.scroll-section h2{margin-top:0}
+.kicker{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:5px 14px;border-radius:100px;background:var(--accent);color:var(--bg);margin-bottom:16px}
+.h1{font-size:clamp(32px,4.2vw,64px);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px}
+.h2{font-size:clamp(22px,2.8vw,40px);font-weight:700;line-height:1.3;letter-spacing:-.01em;margin-bottom:16px}
+.h3{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:10px}
+.h4{font-size:15px;font-weight:600;line-height:1.4;margin-bottom:6px}
+.lede{font-size:clamp(14px,1.2vw,18px);line-height:1.7;color:var(--text-2);max-width:620px}
+.dim{color:var(--text-2);font-size:14px;line-height:1.6}
+.dim2{color:var(--text-3);font-size:13px}
+.mt-s{margin-top:12px}.mt-m{margin-top:24px}.mt-l{margin-top:36px}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-soft{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card-accent{border-top:3px solid var(--accent);background:var(--surface);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1fr 1fr 1fr}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.split-c{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.formula-box{text-align:center;font-size:38px;font-weight:700;padding:28px;background:var(--surface-2);border-radius:var(--radius);margin:16px 0;font-family:var(--font-mono);letter-spacing:.02em;border:1px solid var(--border)}
+.formula-box .sub{font-size:14px;font-weight:400;color:var(--text-3);display:block;margin-top:8px}
+.formula-sm{text-align:center;font-size:20px;font-weight:600;padding:12px;background:var(--surface-2);border-radius:var(--radius-sm);margin:8px 0;font-family:var(--font-mono);border:1px solid var(--border)}
+ul{list-style:none;padding:0}
+li{padding:5px 0;font-size:14px;line-height:1.6;color:var(--text-2)}
+li::before{content:"▸ ";color:var(--accent);font-weight:700}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--surface-2);color:var(--text-2);margin-right:6px;margin-bottom:6px;letter-spacing:.06em}
+.pill-accent{background:var(--accent);color:var(--bg)}
+.insight{background:linear-gradient(135deg,rgba(122,162,247,.1),rgba(187,154,247,.06));border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:16px 0;font-size:14px;line-height:1.7;color:var(--text-2)}
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.compare-table th{background:var(--surface-2);padding:10px 14px;text-align:left;font-weight:600;color:var(--text-2);border-bottom:2px solid var(--border)}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)}
+.compare-table tr:last-child td{border-bottom:none}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+.data-table th{background:var(--surface-2);padding:8px 12px;text-align:center;font-weight:600;color:var(--text-1);border-bottom:2px solid var(--border);font-size:12px}
+.data-table td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);color:var(--text-2)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table .hl{color:var(--accent);font-weight:600}
+.step-card{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px}
+.step-num{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;flex-shrink:0}
+.step-card .step-body h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.step-card .step-body p{font-size:13px;color:var(--text-2);line-height:1.5}
+.arch{display:grid;gap:20px}
+.arch .tier{display:grid;grid-template-columns:110px 1fr;align-items:stretch;gap:14px}
+.arch .tname{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border-radius:var(--radius);padding:12px;font-weight:600;font-size:12px;color:var(--text-2);text-transform:uppercase;letter-spacing:.08em;text-align:center}
+.arch .cells{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.arch .cell{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;box-shadow:var(--shadow)}
+.arch .cell .ic{font-size:20px;margin-bottom:4px}
+.arch .cell h4{font-size:13px;font-weight:600;margin-bottom:2px}
+.arch .cell p{font-size:11px;color:var(--text-3);margin:0;line-height:1.4}
+.arch .tier.hl .cell{border-top:3px solid var(--accent)}
+.anim-fade-up,.anim-fade-left,.anim-fade-right,.anim-scale-in{opacity:0;transition:opacity .5s ease,transform .5s ease}
+.anim-fade-up.is-visible{opacity:1;transform:translateY(0)}
+.anim-fade-left.is-visible{opacity:1;transform:translateX(0)}
+.anim-fade-right.is-visible{opacity:1;transform:translateX(0)}
+.anim-scale-in.is-visible{opacity:1;transform:scale(1)}
+.anim-fade-up{transform:translateY(24px)}
+.anim-fade-left{transform:translateX(-24px)}
+.anim-fade-right{transform:translateX(24px)}
+.anim-scale-in{transform:scale(.92)}
+.anim-fade-up.is-exiting{opacity:0;transform:translateY(-18px)}
+.anim-fade-left.is-exiting{opacity:0;transform:translateX(18px)}
+.anim-fade-right.is-exiting{opacity:0;transform:translateX(-18px)}
+.anim-scale-in.is-exiting{opacity:0;transform:scale(.95)}
+.anim-stagger-list.is-visible>*{opacity:0;animation:fadeUp .45s ease forwards}
+.anim-stagger-list.is-visible>*:nth-child(1){animation-delay:0s}
+.anim-stagger-list.is-visible>*:nth-child(2){animation-delay:.1s}
+.anim-stagger-list.is-visible>*:nth-child(3){animation-delay:.2s}
+.anim-stagger-list.is-visible>*:nth-child(4){animation-delay:.3s}
+.anim-stagger-list.is-visible>*:nth-child(5){animation-delay:.4s}
+.anim-stagger-list.is-visible>*:nth-child(6){animation-delay:.5s}
+.anim-stagger-list.is-visible>*:nth-child(7){animation-delay:.6s}
+.anim-stagger-list.is-visible>*:nth-child(8){animation-delay:.7s}
+.anim-stagger-list.is-exiting>*{opacity:1;animation:fadeDown .35s ease forwards}
+.anim-stagger-list.is-exiting>*:nth-child(1){animation-delay:.35s}
+.anim-stagger-list.is-exiting>*:nth-child(2){animation-delay:.3s}
+.anim-stagger-list.is-exiting>*:nth-child(3){animation-delay:.25s}
+.anim-stagger-list.is-exiting>*:nth-child(4){animation-delay:.2s}
+.anim-stagger-list.is-exiting>*:nth-child(5){animation-delay:.15s}
+.anim-stagger-list.is-exiting>*:nth-child(6){animation-delay:.1s}
+.anim-stagger-list.is-exiting>*:nth-child(7){animation-delay:.05s}
+.anim-stagger-list.is-exiting>*:nth-child(8){animation-delay:0s}
+.anim-stagger-list>*{opacity:0;transition:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(18px)}}
+.contrast-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.contrast-cards .ex-card{padding:18px;border-radius:var(--radius);font-size:14px;line-height:1.6}
+.contrast-cards .ex-card.good{background:rgba(158,206,106,.08);border:1px solid rgba(158,206,106,.2)}
+.contrast-cards .ex-card.bad{background:rgba(247,118,142,.08);border:1px solid rgba(247,118,142,.2)}
+.contrast-cards .ex-card h4{margin-bottom:6px;font-size:14px}
+.contrast-cards .ex-card.good h4{color:var(--good)}
+.contrast-cards .ex-card.bad h4{color:var(--bad)}
+@media(max-width:900px){
+  .scroll-section{padding:40px 28px}
+  .split,.split-c{grid-template-columns:1fr;gap:20px}
+  .g2,.g3{grid-template-columns:1fr}
+  .arch .tier{grid-template-columns:1fr;gap:10px}
+  .arch .tname{padding:10px;font-size:11px}
+  .arch .cells{grid-template-columns:repeat(2,1fr)}
+  .formula-box{font-size:26px;padding:18px}
+}
+@media(max-width:480px){
+  .arch .cells{grid-template-columns:1fr}
+}
+
+/* ===== 导航栏 ===== */
+.nav-bar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;gap:4px;padding:8px 24px;background:rgba(26,27,38,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-bar a{display:inline-block;padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-2);border-radius:100px;transition:background .2s,color .2s;text-decoration:none;flex-shrink:0}
+.nav-bar a:hover,.nav-bar a.active{background:var(--accent);color:var(--bg)}
+.scroll-section:first-of-type{padding-top:120px}
+@media(max-width:900px){
+  .nav-bar{padding:6px 12px;gap:2px}
+  .nav-bar a{padding:5px 10px;font-size:11px}
+  .scroll-section:first-of-type{padding-top:100px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav-bar">
+  <a href="#cover">封面</a>
+  <a href="#concept">概念</a>
+  <a href="#formula">公式</a>
+  <a href="#calc">计算</a>
+  <a href="#laws">三定律</a>
+  <a href="#experiment">实验</a>
+  <a href="#summary">总结</a>
+</nav>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: Cover Page                                        -->
+<!-- ============================================================ -->
+<section id="cover" class="scroll-section full">
+  <div class="anim-stagger-list">
+    <p class="kicker">Newton's Second Law · Bridge Between Force and Motion</p>
+    <h1 class="h1">
+      牛顿第二定律<br>
+      <span class="gradient-text" style="font-size:.55em">力与运动的桥梁</span>
+    </h1>
+    <p class="lede" style="max-width:700px;margin:24px auto 0">
+      牛顿第二定律是经典力学的核心——它定量地揭示了力、质量和加速度之间的精确关系：F = ma。
+      从苹果落地到火箭发射，从汽车制动到行星运动，这一定律是理解一切宏观物体运动规律的关键。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: Core Concept                                      -->
+<!-- ============================================================ -->
+<section id="concept" class="scroll-section">
+  <p class="kicker">Core Concept · Fundamental Principle</p>
+  <h2 class="h2">核心概念<br><span class="dim" style="font-size:.55em;font-weight:400">力是改变运动状态的原因</span></h2>
+  <div class="split mt-m">
+    <div class="card anim-fade-left">
+      <h3>定性理解</h3>
+      <ul>
+        <li><strong>力不是维持运动的原因</strong>——没有力，物体继续匀速运动（牛顿第一定律）</li>
+        <li><strong>力是改变运动的原因</strong>——有力才有加速度，运动状态才会变化</li>
+        <li><strong>加速度方向</strong>——始终与合外力方向一致</li>
+        <li><strong>质量是惯性的量度</strong>——质量越大，同等力的作用下加速度越小</li>
+      </ul>
+    </div>
+    <div class="card anim-fade-right">
+      <h3>定量关系</h3>
+      <div class="insight" style="margin-top:8px">
+        <strong>F = ma</strong> 的含义：物体的加速度 a 与所受合外力 F 成正比，与物体质量 m 成反比。
+      </div>
+      <ul>
+        <li><strong>合外力</strong> — 物体所受所有外力的矢量和</li>
+        <li><strong>瞬时性</strong> — 力与加速度同时存在、同时消失</li>
+        <li><strong>矢量性</strong> — F 和 a 都是矢量，方向相同</li>
+        <li><strong>叠加性</strong> — 多个力共同作用的效果等于每个力单独作用的效果的矢量和</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: Formula & Derivation                              -->
+<!-- ============================================================ -->
+<section id="formula" class="scroll-section">
+  <p class="kicker">Formula · Mathematical Expression</p>
+  <h2 class="h2">公式表达<br><span class="dim" style="font-size:.55em;font-weight:400">从定义到应用的数学形式</span></h2>
+  <div style="text-align:center" class="anim-fade-up">
+    <div class="formula-box" style="display:inline-block;min-width:300px">
+      <strong>F = m · a</strong>
+      <span class="sub">合外力 (N) = 质量 (kg) × 加速度 (m/s²)</span>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:20px;justify-content:center;flex-wrap:wrap">
+      <span class="pill pill-accent"><strong>F</strong> — 合外力 (N)</span>
+      <span class="pill"><strong>m</strong> — 质量 (kg)</span>
+      <span class="pill"><strong>a</strong> — 加速度 (m/s²)</span>
+    </div>
+    <p class="dim mt-m" style="max-width:600px;margin:24px auto 0">
+      国际单位制中，1 N = 1 kg·m/s²。这一定律将动力学（力）与运动学（加速度）联系起来，
+      是解决几乎所有经典力学问题的核心方程。
+    </p>
+  </div>
+  <div class="insight mt-m anim-fade-up" style="max-width:700px;margin:24px auto 0">
+    <strong>适用范围</strong>：牛顿第二定律适用于惯性参考系中的宏观低速运动（v ≪ c）。
+    对于高速运动需使用相对论修正，微观尺度需用量子力学描述。
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: Practical Calculation                             -->
+<!-- ============================================================ -->
+<section id="calc" class="scroll-section">
+  <p class="kicker">Calculation · Application</p>
+  <h2 class="h2">实际应用与计算<br><span class="dim" style="font-size:.55em;font-weight:400">从理论到工程实践</span></h2>
+  <div class="split mt-m">
+    <div class="anim-fade-left">
+      <div class="card">
+        <h3>应用场景</h3>
+        <ul>
+          <li><strong>汽车制动</strong> — 由制动力和车重计算制动加速度与制动距离</li>
+          <li><strong>火箭推进</strong> — 由喷气反作用力和火箭质量计算加速度</li>
+          <li><strong>电梯设计</strong> — 计算电梯启动和停止时的超重与失重</li>
+          <li><strong>碰撞分析</strong> — 由碰撞过程中的加速度推算作用力</li>
+        </ul>
+      </div>
+      <div class="insight mt-s">
+        牛顿第二定律是工程力学、航空航天、车辆工程等众多领域的基础计算工具。
+      </div>
+    </div>
+    <div class="card-accent anim-fade-right">
+      <h3>算例：汽车制动</h3>
+      <p class="dim" style="font-size:13px">汽车质量 m = 1500 kg，以 v₀ = 20 m/s 行驶，紧急制动时制动力 F = 6000 N：</p>
+      <div style="margin:12px 0">
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:10px 14px;margin-bottom:8px">
+          <div style="font-family:var(--font-mono);font-size:16px">a = F/m = 6000/1500 = <strong style="color:var(--accent)">4 m/s²</strong></div>
+          <div class="dim2" style="font-size:11px">制动加速度</div>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:10px 14px;margin-bottom:8px">
+          <div style="font-family:var(--font-mono);font-size:16px">t = v₀/a = 20/4 = <strong style="color:var(--accent)">5 s</strong></div>
+          <div class="dim2" style="font-size:11px">制动时间（从开始到停止）</div>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:10px 14px">
+          <div style="font-family:var(--font-mono);font-size:16px">s = v₀²/(2a) = 400/8 = <strong style="color:var(--accent)">50 m</strong></div>
+          <div class="dim2" style="font-size:11px">制动距离</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 5: The Three Laws                                    -->
+<!-- ============================================================ -->
+<section id="laws" class="scroll-section">
+  <p class="kicker">The Three Laws · Unifying Framework</p>
+  <h2 class="h2">牛顿三大定律<br><span class="dim" style="font-size:.55em;font-weight:400">经典力学的完整体系</span></h2>
+  <div class="arch mt-m anim-stagger-list" data-anim-target>
+    <div class="tier hl"><div class="tname">第一定律</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">⚖️</div><h4>惯性定律</h4><p>不受外力时，物体保持静止或匀速直线运动</p></div>
+        <div class="cell"><div class="ic">🛑</div><h4>力不是维持运动的原因</h4><p>力是改变运动状态的原因——没有力，物体继续运动</p></div>
+        <div class="cell"><div class="ic">🌌</div><h4>惯性参考系</h4><p>定义了牛顿力学成立的参考系框架</p></div>
+      </div>
+    </div>
+    <div class="tier"><div class="tname" style="border-top:3px solid var(--accent);background:var(--surface)"><strong style="color:var(--accent)">第二定律</strong></div>
+      <div class="cells">
+        <div class="cell" style="border-top:3px solid var(--accent)"><div class="ic">📐</div><h4>F = ma</h4><p>合外力 = 质量 × 加速度——定量的核心关系</p></div>
+        <div class="cell" style="border-top:3px solid var(--accent)"><div class="ic">↔️</div><h4>矢量性</h4><p>加速度方向与合外力方向始终相同</p></div>
+        <div class="cell" style="border-top:3px solid var(--accent)"><div class="ic">⚡</div><h4>瞬时性</h4><p>力与加速度同时存在，同时消失，无延迟</p></div>
+      </div>
+    </div>
+    <div class="tier"><div class="tname">第三定律</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">🤝</div><h4>作用与反作用</h4><p>F₁₂ = −F₂₁——力总是成对出现</p></div>
+        <div class="cell"><div class="ic">👊</div><h4>拳击墙</h4><p>拳对墙施力，墙对拳施等大反向的力——拳会痛</p></div>
+        <div class="cell"><div class="ic">🚀</div><h4>火箭原理</h4><p>向下喷出气体，气体向上推火箭——反作用力推进</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="insight mt-m anim-fade-up">
+    <strong>三定律的关系</strong>：第一定律定义了研究的框架（惯性系），第二定律提供了定量的核心方程（F = ma），第三定律保证了力的平衡与相互作用。三者共同构成了经典力学的完整基础。
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: Experimental Verification                         -->
+<!-- ============================================================ -->
+<section id="experiment" class="scroll-section">
+  <p class="kicker">Experimental Verification</p>
+  <h2 class="h2">实验验证<br><span class="dim" style="font-size:.55em;font-weight:400">气垫导轨实验：精确验证 F = ma</span></h2>
+  <div class="split-c mt-m">
+    <div class="anim-fade-up">
+      <div class="card">
+        <h3>实验装置</h3>
+        <p class="dim" style="font-size:13px">气垫导轨 + 滑块（消除摩擦）+ 光电门测速</p>
+        <ul>
+          <li>滑块质量 m = 0.500 kg（可加砝码改变）</li>
+          <li>通过细绳绕过定滑轮连接砝码</li>
+          <li>砝码重力提供拉力（改变砝码数量改变力）</li>
+          <li>两个光电门测量滑块通过不同位置的瞬时速度</li>
+          <li>由 v₁, v₂ 和时间差 Δt 计算加速度 a = (v₂−v₁)/Δt</li>
+        </ul>
+      </div>
+      <div class="insight mt-m">
+        <strong>实验原理</strong>：保持质量不变，改变拉力 → 测量加速度；保持拉力不变，改变质量 → 测量加速度。验证 a ∝ F 和 a ∝ 1/m。
+      </div>
+    </div>
+    <div class="card-accent anim-fade-right">
+      <h3>实验数据</h3>
+      <p class="dim" style="font-size:13px;margin-bottom:8px"><strong>保持 m = 0.500kg，改变拉力 F</strong></p>
+      <table class="data-table" style="font-size:12px">
+        <tr><th>拉力 F (N)</th><th>加速度 a (m/s²)</th><th>F/a</th></tr>
+        <tr><td>0.100</td><td>0.196</td><td>0.510</td></tr>
+        <tr><td>0.200</td><td>0.398</td><td>0.503</td></tr>
+        <tr><td>0.300</td><td>0.605</td><td>0.496</td></tr>
+        <tr><td>0.400</td><td>0.802</td><td>0.499</td></tr>
+        <tr><td>0.500</td><td>1.010</td><td>0.495</td></tr>
+        <tr><td class="hl" colspan="3">F/a ≈ 0.500 = m ✓</td></tr>
+      </table>
+      <p class="dim" style="font-size:13px;margin-top:16px;margin-bottom:8px"><strong>保持 F = 0.300N，改变质量 m</strong></p>
+      <table class="data-table" style="font-size:12px">
+        <tr><th>质量 m (kg)</th><th>加速度 a (m/s²)</th><th>m·a</th></tr>
+        <tr><td>0.300</td><td>0.995</td><td>0.299</td></tr>
+        <tr><td>0.400</td><td>0.755</td><td>0.302</td></tr>
+        <tr><td>0.500</td><td>0.605</td><td>0.303</td></tr>
+        <tr><td>0.600</td><td>0.498</td><td>0.299</td></tr>
+        <tr><td>0.700</td><td>0.428</td><td>0.300</td></tr>
+        <tr><td class="hl" colspan="3">m·a ≈ 0.300 = F ✓</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 7: Summary & Key Takeaways                           -->
+<!-- ============================================================ -->
+<section id="summary" class="scroll-section">
+  <p class="kicker">Summary · Key Takeaways</p>
+  <h2 class="h2">核心要点回顾<br><span class="dim" style="font-size:.55em;font-weight:400">F = ma —— 经典力学的核心方程</span></h2>
+  <div class="grid g2 mt-m">
+    <div class="card-accent anim-fade-left" style="height:100%">
+      <h3>核心公式</h3>
+      <div style="margin-top:12px">
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:10px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:24px;font-weight:700;color:var(--accent)"><strong>F</strong> = m<strong>a</strong></div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">牛顿第二定律</div>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:10px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:16px;font-weight:700;color:var(--accent-2)">1 N = 1 kg·m/s²</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">力的单位</div>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:16px;font-weight:700;color:var(--accent-3)">a = F/m</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">加速度 = 合外力 / 质量</div>
+        </div>
+      </div>
+    </div>
+    <div class="anim-fade-right" style="height:100%">
+      <div class="card" style="height:100%">
+        <h3>五句话总结</h3>
+        <ul>
+          <li><strong>力是改变运动的原因</strong>——有力才有加速度，没有力运动状态不变</li>
+          <li><strong>F = ma 是精确的定量关系</strong>——合外力 = 质量 × 加速度，方向一致</li>
+          <li><strong>质量是惯性的量度</strong>——质量越大，同等力下加速度越小</li>
+          <li><strong>矢量性 + 瞬时性</strong>——力和加速度方向相同，且同时产生同时消失</li>
+          <li><strong>广泛的适用性</strong>——从亚原子粒子到星系运动，F = ma 是经典力学的基石</li>
+        </ul>
+      </div>
+      <div class="insight mt-m">
+        <em>"牛顿第二定律是整个经典物理学的核心。它告诉我们：宇宙中的一切运动变化，都可以追溯为力的作用。F = ma 不仅仅是公式——它是理解物理世界的思维方式。"</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Scroll-Triggered Animation JS ===== -->
+<script>
+(function(){
+  const animateElements = document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-stagger-list');
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        entry.target.classList.remove('is-exiting');
+      } else {
+        entry.target.classList.add('is-exiting');
+        entry.target.classList.remove('is-visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  animateElements.forEach(el => observer.observe(el));
+})();
+
+/* 导航栏滚动高亮 */
+(function(){
+  var sections = document.querySelectorAll('.scroll-section[id]');
+  var links = document.querySelectorAll('.nav-bar a');
+  function update(){
+    var scrollY = window.scrollY + 100;
+    var activeId = '';
+    sections.forEach(function(s){
+      if(s.offsetTop <= scrollY) activeId = s.id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+    });
+  }
+  window.addEventListener('scroll', update);
+  update();
+})();
+</script>
+</body>
+</html>

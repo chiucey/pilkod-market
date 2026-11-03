@@ -1,0 +1,4 @@
+interface:
+  display_name: "Avery 的个人网站设计师"
+  short_description: "先分析个人资料与参考网站，预览确认后再生成并上线个人网站"
+  default_prompt: "使用 $avery-personal-site-designer 根据我的资料和参考网站，先给我文案与设计预览，确认后再制作个人网站。"

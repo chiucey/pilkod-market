@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "292deeea6762d9669a7c4842a5381bf1723f1515",
+      "size": 4910
+    },
+    {
+      "path": "_meta.json",
+      "sha": "d182de287f2c74aedc6db97ad8631bac619239d2",
+      "size": 143
+    },
+    {
+      "path": "config.json",
+      "sha": "5fa3e7000768230e88e63f031ddacecffa906594",
+      "size": 1233
+    },
+    {
+      "path": "references/SKILL.md",
+      "sha": "3baa0725c213b75c2407c34e65bb4133567f9a11",
+      "size": 2361
+    },
+    {
+      "path": "references/config.json",
+      "sha": "4b40ed1c7f6d2b9137a6d62639cf5144da908d14",
+      "size": 852
+    },
+    {
+      "path": "references/fund_efficiency_strategy.py",
+      "sha": "ec000467eb19a9b1e9df1beb001362be936f0cbf",
+      "size": 49456
+    },
+    {
+      "path": "scripts/fund_efficiency_strategy.py",
+      "sha": "9235dc84b3665590b5f8bd3bbae4411f493f985b",
+      "size": 52856
+    },
+    {
+      "path": "scripts/init_skill.py",
+      "sha": "3cc8aaba916bbd4be9c9fcfeeb06c9162721127e",
+      "size": 3962
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "f43c5396f3afcc44f0fda71c6251a6e8c8d951a1",
+      "size": 2498
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "cf4f756e9dceb2782b32b8aa194110de9d0ae089",
+      "size": 6389
+    },
+    {
+      "path": "scripts/test_package_skill.py",
+      "sha": "80986ec095549db1046d163fc14ccffc751f208d",
+      "size": 2176
+    },
+    {
+      "path": "scripts/test_quick_validate.py",
+      "sha": "7b5c7f200c06e46da41da6e7394d864134dec799",
+      "size": 2309
+    }
+  ]
+}

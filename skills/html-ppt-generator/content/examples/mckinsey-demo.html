@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企业信息化建设战略规划 - 麦肯锡风格演示</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================================
+       墨水经典主题色（麦肯锡风格）
+       ======================================== */
+    :root {
+      --font-serif: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif;
+      --font-sans: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+      --font-mono: 'IBM Plex Mono', 'SF Mono', 'Consolas', monospace;
+
+      --bg: #FFFFFF;
+      --fg: #1F2937;
+      --bg-secondary: #F8FAFC;
+      --accent: #1E40AF;
+      --accent-light: #DBEAFE;
+      --accent-dark: #1E3A8A;
+
+      --success: #059669;
+      --warning: #D97706;
+      --error: #DC2626;
+      --info: #3B82F6;
+
+      --gray-1: #111827;
+      --gray-2: #374151;
+      --gray-3: #6B7280;
+      --gray-4: #9CA3AF;
+      --gray-5: #D1D5DB;
+      --gray-6: #E5E7EB;
+      --gray-7: #F3F4F6;
+
+      --page-padding: 5vw;
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.4s ease;
+    }
+
+    /* ========================================
+       基础样式
+       ======================================== */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+
+    /* ========================================
+       页面容器
+       ======================================== */
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      display: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide.active { display: flex; flex-direction: column; }
+
+    /* Chrome 顶栏 */
+    .chrome {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5vh 3vw;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--gray-6);
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--gray-4);
+    }
+
+    .chrome .left { font-weight: 500; color: var(--gray-3); }
+    .chrome .center { flex: 1; text-align: center; }
+    .chrome .right { font-weight: 600; color: var(--gray-4); }
+
+    /* Content 主体 */
+    .content {
+      flex: 1;
+      padding: 4vh 6vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Foot 底栏 */
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2vh 3vw;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--gray-6);
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-5);
+    }
+
+    /* ========================================
+       字体系统
+       ======================================== */
+    .kicker {
+      font-family: var(--font-mono);
+      font-size: 0.85vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .display-zh {
+      font-family: var(--font-serif);
+      font-size: 4.5vw;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--fg);
+    }
+
+    .h1-zh {
+      font-family: var(--font-serif);
+      font-size: 3vw;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--fg);
+    }
+
+    .h2-zh {
+      font-family: var(--font-serif);
+      font-size: 2.2vw;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--fg);
+    }
+
+    .h3-zh {
+      font-family: var(--font-sans);
+      font-size: 1.5vw;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    .body-zh {
+      font-family: var(--font-sans);
+      font-size: 1.2vw;
+      line-height: 1.7;
+      color: var(--gray-2);
+    }
+
+    .meta {
+      font-family: var(--font-mono);
+      font-size: 0.85vw;
+      color: var(--gray-4);
+    }
+
+    /* ========================================
+       麦肯锡布局组件
+       ======================================== */
+
+    /* 执行摘要行 */
+    .exec-row {
+      display: flex;
+      align-items: center;
+      padding: 2vh 2vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      margin-bottom: 2vh;
+      border-left: 5px solid var(--accent);
+    }
+
+    .exec-row .num {
+      font-family: var(--font-serif);
+      font-size: 2.5vw;
+      font-weight: 700;
+      color: var(--accent);
+      margin-right: 2vw;
+      min-width: 4vw;
+    }
+
+    .exec-row .text {
+      font-size: 1.4vw;
+      font-weight: 500;
+      color: var(--fg);
+      flex: 1;
+    }
+
+    .exec-row.accent-2 { border-left-color: var(--info); }
+    .exec-row.accent-2 .num { color: var(--info); }
+    .exec-row.accent-3 { border-left-color: var(--success); }
+    .exec-row.accent-3 .num { color: var(--success); }
+    .exec-row.accent-4 { border-left-color: var(--warning); }
+    .exec-row.accent-4 .num { color: var(--warning); }
+
+    /* 核心数据卡片 */
+    .data-card {
+      background: var(--accent-light);
+      border-radius: 12px;
+      padding: 3vh 2vw;
+      text-align: center;
+    }
+
+    .data-card .value {
+      font-size: 3.5vw;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .data-card .label {
+      font-size: 1vw;
+      color: var(--gray-3);
+      margin-top: 0.5vh;
+    }
+
+    /* 影响分析框 */
+    .impact-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 2vh 2vw;
+      border-left: 3px solid var(--accent);
+    }
+
+    .impact-box .title {
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1vh;
+    }
+
+    .impact-list {
+      list-style: none;
+    }
+
+    .impact-list li {
+      font-size: 1.1vw;
+      color: var(--gray-2);
+      margin-bottom: 0.8vh;
+    }
+
+    .impact-list li strong {
+      color: var(--accent);
+    }
+
+    /* 数据来源标注 */
+    .source {
+      font-family: var(--font-mono);
+      font-size: 0.65vw;
+      color: var(--gray-4);
+      text-align: right;
+      margin-top: 1vh;
+    }
+
+    /* 柱状图 */
+    .bar-chart {
+      display: flex;
+      align-items: flex-end;
+      height: 18vh;
+      gap: 2vw;
+      padding: 2vh 0;
+    }
+
+    .bar-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .bar-item .bar {
+      background: var(--accent);
+      border-radius: 4px 4px 0 0;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .bar-item .label {
+      font-size: 0.85vw;
+      color: var(--gray-3);
+      margin-top: 0.8vh;
+    }
+
+    .bar-item .value-label {
+      font-size: 0.75vw;
+      color: var(--gray-4);
+    }
+
+    /* 一句话方案 */
+    .one-sentence {
+      text-align: center;
+      padding: 4vh 0;
+    }
+
+    .one-sentence .main-text {
+      font-family: var(--font-serif);
+      font-size: 3vw;
+      font-weight: 600;
+      color: var(--fg);
+      line-height: 1.4;
+      max-width: 80%;
+      margin: 0 auto 4vh;
+    }
+
+    /* 三大指标 */
+    .three-metrics {
+      display: flex;
+      justify-content: center;
+      gap: 6vw;
+      margin-top: 4vh;
+    }
+
+    .metric-item {
+      text-align: center;
+    }
+
+    .metric-item .metric-value {
+      font-size: 3vw;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .metric-item .metric-value.info { color: var(--info); }
+    .metric-item .metric-value.success { color: var(--success); }
+
+    .metric-item .metric-label {
+      font-size: 1vw;
+      color: var(--gray-3);
+      margin-top: 0.8vh;
+    }
+
+    /* 流程步骤 */
+    .pipeline-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3vw;
+      margin-top: 3vh;
+    }
+
+    .step-card {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 3vh 2vw;
+      border-top: 4px solid var(--accent);
+    }
+
+    .step-card .step-num {
+      font-family: var(--font-serif);
+      font-size: 2vw;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .step-card .step-title {
+      font-size: 1.3vw;
+      font-weight: 600;
+      color: var(--fg);
+      margin: 1.5vh 0 1vh;
+    }
+
+    .step-card .step-desc {
+      font-size: 1vw;
+      color: var(--gray-3);
+      line-height: 1.5;
+    }
+
+    .step-card .step-time {
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+      color: var(--gray-4);
+      margin-top: 1.5vh;
+      padding-top: 1.5vh;
+      border-top: 1px solid var(--gray-6);
+    }
+
+    /* 行动计划 */
+    .action-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vh;
+    }
+
+    .action-item {
+      display: flex;
+      align-items: center;
+      padding: 2vh 2vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .action-item .action-num {
+      width: 3vw;
+      height: 3vw;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2vw;
+      margin-right: 2vw;
+    }
+
+    .action-item .action-content {
+      flex: 1;
+    }
+
+    .action-item .action-title {
+      font-size: 1.2vw;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    .action-item .action-desc {
+      font-size: 0.9vw;
+      color: var(--gray-4);
+      margin-top: 0.5vh;
+    }
+
+    .action-item .action-time {
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+      color: var(--gray-4);
+    }
+
+    /* 大引用 */
+    .big-quote {
+      text-align: center;
+      padding: 4vh 0;
+    }
+
+    .big-quote blockquote {
+      font-family: var(--font-serif);
+      font-size: 2.2vw;
+      font-style: italic;
+      color: var(--fg);
+      line-height: 1.5;
+      max-width: 75%;
+      margin: 0 auto 3vh;
+      position: relative;
+    }
+
+    .big-quote blockquote::before {
+      content: """;
+      font-size: 6vw;
+      color: var(--accent-light);
+      position: absolute;
+      top: -2vw;
+      left: -3vw;
+    }
+
+    .big-quote cite {
+      font-family: var(--font-mono);
+      font-size: 0.9vw;
+      color: var(--gray-4);
+      font-style: normal;
+    }
+
+    /* ========================================
+       导航控件
+       ======================================== */
+    .nav-dots {
+      position: fixed;
+      bottom: 4vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5vw;
+      z-index: 100;
+    }
+
+    .nav-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gray-4);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .nav-dot.active {
+      background: var(--accent);
+      transform: scale(1.3);
+    }
+
+    .nav-hint {
+      position: fixed;
+      bottom: 1.5vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-mono);
+      font-size: 0.65vw;
+      color: var(--gray-4);
+      z-index: 100;
+    }
+
+    /* ========================================
+       动画
+       ======================================== */
+    [data-anim] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    [data-anim].anim-ready {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ========================================
+       打印样式
+       ======================================== */
+    @media print {
+      .slide { page-break-after: always; height: auto; }
+      .nav-dots, .nav-hint { display: none; }
+      [data-anim] { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <div class="slides">
+
+      <!-- ========== 第1页：封面 ========== -->
+      <section class="slide active" data-animate="hero">
+        <div class="chrome">
+          <div class="left">企业数字化战略</div>
+          <div class="center"></div>
+          <div class="right">01</div>
+        </div>
+        <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+          <div class="kicker" data-anim style="margin-bottom:2vh;">STRATEGIC PLANNING · 2024-2028</div>
+          <h1 class="display-zh" data-anim style="max-width:70vw;margin-bottom:3vh;">
+            企业信息化建设<br>战略规划与实施路径
+          </h1>
+          <p class="body-zh" data-anim style="color:var(--gray-3);max-width:55vw;margin-bottom:4vh;">
+            基于业务痛点诊断的系统性解决方案
+          </p>
+          <div class="meta" data-anim>
+            麦肯锡公司 · 企业管理咨询部<br>
+            2024年12月
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">01 / 15</div>
+          <div class="center">企业信息化建设战略规划</div>
+          <div class="right">Cover</div>
+        </div>
+      </section>
+
+      <!-- ========== 第2页：执行摘要 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">执行摘要</div>
+          <div class="center"></div>
+          <div class="right">02</div>
+        </div>
+        <div class="content">
+          <div class="kicker" data-anim>EXECUTIVE SUMMARY</div>
+          <h2 class="h2-zh" data-anim style="margin:2vh 0 4vh;">核心发现与建议</h2>
+
+          <div class="exec-row" data-anim>
+            <div class="num">01</div>
+            <div class="text">系统孤岛制约业务协同，系统集成率仅<span style="color:var(--accent);font-weight:700;">35%</span></div>
+          </div>
+
+          <div class="exec-row accent-2" data-anim>
+            <div class="num">02</div>
+            <div class="text">数据决策能力不足，报表生成周期长达<span style="color:var(--info);font-weight:700;">14天</span></div>
+          </div>
+
+          <div class="exec-row accent-3" data-anim>
+            <div class="num">03</div>
+            <div class="text">人工操作占比<span style="color:var(--success);font-weight:700;">60%</span>，效率提升空间巨大</div>
+          </div>
+
+          <div class="exec-row accent-4" data-anim style="border-left-color:var(--warning);background:rgba(217,119,6,0.1);">
+            <div class="num" style="color:var(--warning);">04</div>
+            <div class="text">建议投入<span style="color:var(--warning);font-weight:700;">2800万</span>进行数字化建设，预期<span style="color:var(--warning);font-weight:700;">ROI 320%</span></div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">02 / 15</div>
+          <div class="center">执行摘要</div>
+          <div class="right">Summary</div>
+        </div>
+      </section>
+
+      <!-- ========== 第3页：问题诊断引导 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">问题诊断</div>
+          <div class="center"></div>
+          <div class="right">03</div>
+        </div>
+        <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+          <div class="kicker" data-anim>PROBLEM DIAGNOSIS</div>
+          <h1 class="display-zh" data-anim style="max-width:60vw;">三大核心问题制约企业发展</h1>
+          <p class="body-zh" data-anim style="max-width:50vw;color:var(--gray-3);margin-top:3vh;">
+            通过对业务流程、信息系统、组织架构的全面诊断，我们识别出三大核心痛点
+          </p>
+          <div class="three-metrics" data-anim style="margin-top:6vh;">
+            <div class="metric-item">
+              <div class="metric-value">35%</div>
+              <div class="metric-label">系统集成率</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value info">14天</div>
+              <div class="metric-label">报表周期</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value success">60%</div>
+              <div class="metric-label">人工操作占比</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">03 / 15</div>
+          <div class="center">问题诊断</div>
+          <div class="right">Diagnosis</div>
+        </div>
+      </section>
+
+      <!-- ========== 第4页：问题1 - 系统孤岛 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">问题诊断 · 问题一</div>
+          <div class="center"></div>
+          <div class="right">04</div>
+        </div>
+        <div class="content" style="display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center;">
+          <div data-anim>
+            <div class="kicker" style="color:var(--accent);">KEY FINDING 01</div>
+            <h2 class="h2-zh" style="color:var(--accent);margin:2vh 0;">系统孤岛制约业务协同</h2>
+
+            <p class="body-zh" style="margin-bottom:3vh;">
+              当前系统集成率仅<span style="font-weight:700;color:var(--accent);">35%</span>，
+              导致跨部门业务协同效率低下，数据重复录入严重。
+            </p>
+
+            <div class="data-card" style="margin-bottom:2vh;">
+              <div class="value">35%</div>
+              <div class="label">系统集成率（目标：85%）</div>
+            </div>
+
+            <div class="impact-box">
+              <div class="title">Impact · 影响分析</div>
+              <ul class="impact-list">
+                <li>数据录入重复率 <strong>68%</strong></li>
+                <li>跨部门审批平均耗时 <strong>3.5天</strong></li>
+                <li>年均人力浪费约 <strong>280人天</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div data-anim>
+            <div class="impact-box" style="padding:3vh;">
+              <div class="title">各系统集成现状</div>
+              <div class="bar-chart">
+                <div class="bar-item">
+                  <div class="bar" style="height:35%;background:var(--accent);"></div>
+                  <div class="label">ERP</div>
+                  <div class="value-label">35%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:60%;background:var(--info);"></div>
+                  <div class="label">CRM</div>
+                  <div class="value-label">60%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:45%;background:var(--success);"></div>
+                  <div class="label">SCM</div>
+                  <div class="value-label">45%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:25%;background:var(--warning);"></div>
+                  <div class="label">HRM</div>
+                  <div class="value-label">25%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:15%;background:var(--error);"></div>
+                  <div class="label">财务</div>
+                  <div class="value-label">15%</div>
+                </div>
+              </div>
+              <div class="source">数据来源：IT部门调研 2024.11</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">04 / 15</div>
+          <div class="center">问题诊断 · 问题一</div>
+          <div class="right">Problem 01</div>
+        </div>
+      </section>
+
+      <!-- ========== 第5页：问题2 - 数据滞后 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">问题诊断 · 问题二</div>
+          <div class="center"></div>
+          <div class="right">05</div>
+        </div>
+        <div class="content" style="display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center;">
+          <div data-anim>
+            <div class="kicker" style="color:var(--info);">KEY FINDING 02</div>
+            <h2 class="h2-zh" style="color:var(--info);margin:2vh 0;">数据决策能力严重不足</h2>
+
+            <p class="body-zh" style="margin-bottom:3vh;">
+              报表生成周期长达<span style="font-weight:700;color:var(--info);">14天</span>，
+              导致管理层无法及时掌握业务动态，决策滞后。
+            </p>
+
+            <div class="data-card" style="background:rgba(59,130,246,0.1);margin-bottom:2vh;">
+              <div class="value" style="color:var(--info);">14天</div>
+              <div class="label">报表生成周期（目标：实时）</div>
+            </div>
+
+            <div class="impact-box" style="border-left-color:var(--info);">
+              <div class="title" style="color:var(--info);">Impact · 影响分析</div>
+              <ul class="impact-list">
+                <li>市场响应速度慢 <strong>3倍</strong></li>
+                <li>错过最佳决策窗口 <strong>67%</strong></li>
+                <li>决策失误成本 <strong>1200万/年</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div data-anim>
+            <div class="impact-box" style="padding:3vh;">
+              <div class="title">数据使用现状</div>
+              <div class="bar-chart" style="height:15vh;">
+                <div class="bar-item">
+                  <div class="bar" style="height:80%;background:var(--gray-5);"></div>
+                  <div class="label">手动收集</div>
+                  <div class="value-label">80%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:50%;background:var(--info);"></div>
+                  <div class="label">半自动</div>
+                  <div class="value-label">50%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:20%;background:var(--success);"></div>
+                  <div class="label">自动化</div>
+                  <div class="value-label">20%</div>
+                </div>
+              </div>
+              <div class="source">数据来源：业务流程调研 2024.11</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">05 / 15</div>
+          <div class="center">问题诊断 · 问题二</div>
+          <div class="right">Problem 02</div>
+        </div>
+      </section>
+
+      <!-- ========== 第6页：问题3 - 效率低下 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">问题诊断 · 问题三</div>
+          <div class="center"></div>
+          <div class="right">06</div>
+        </div>
+        <div class="content" style="display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center;">
+          <div data-anim>
+            <div class="kicker" style="color:var(--success);">KEY FINDING 03</div>
+            <h2 class="h2-zh" style="color:var(--success);margin:2vh 0;">人工操作占比过高效率低下</h2>
+
+            <p class="body-zh" style="margin-bottom:3vh;">
+              核心业务中<span style="font-weight:700;color:var(--success);">60%</span>的操作仍依赖人工，
+              导致效率低下、错误率高。
+            </p>
+
+            <div class="data-card" style="background:rgba(5,150,105,0.1);margin-bottom:2vh;">
+              <div class="value" style="color:var(--success);">60%</div>
+              <div class="label">人工操作占比（目标：20%）</div>
+            </div>
+
+            <div class="impact-box" style="border-left-color:var(--success);">
+              <div class="title" style="color:var(--success);">Impact · 影响分析</div>
+              <ul class="impact-list">
+                <li>人工作业错误率 <strong>2.3%</strong></li>
+                <li>流程周期是标准的 <strong>3倍</strong></li>
+                <li>人力成本浪费 <strong>800万/年</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div data-anim>
+            <div class="impact-box" style="padding:3vh;">
+              <div class="title">可自动化操作占比</div>
+              <div class="bar-chart">
+                <div class="bar-item">
+                  <div class="bar" style="height:90%;background:var(--success);"></div>
+                  <div class="label">数据录入</div>
+                  <div class="value-label">90%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:75%;background:var(--info);"></div>
+                  <div class="label">报表生成</div>
+                  <div class="value-label">75%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:60%;background:var(--accent);"></div>
+                  <div class="label">审批流程</div>
+                  <div class="value-label">60%</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:45%;background:var(--warning);"></div>
+                  <div class="label">客户沟通</div>
+                  <div class="value-label">45%</div>
+                </div>
+              </div>
+              <div class="source">数据来源：流程优化小组测算 2024.11</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">06 / 15</div>
+          <div class="center">问题诊断 · 问题三</div>
+          <div class="right">Problem 03</div>
+        </div>
+      </section>
+
+      <!-- ========== 第7页：解决方案概述 ========== -->
+      <section class="slide" style="background:var(--fg);color:white;">
+        <div class="chrome" style="background:rgba(255,255,255,0.1);border-bottom-color:rgba(255,255,255,0.2);">
+          <div class="left" style="color:var(--gray-4);">解决方案</div>
+          <div class="center"></div>
+          <div class="right" style="color:var(--gray-4);">07</div>
+        </div>
+        <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+          <div class="kicker" data-anim style="color:var(--gray-4);">OUR RECOMMENDATION</div>
+
+          <div class="one-sentence" data-anim>
+            <div class="main-text" style="color:white;">
+              构建统一数据中台<br>打通系统壁垒，实现数据贯通
+            </div>
+          </div>
+
+          <div class="three-metrics" data-anim>
+            <div class="metric-item">
+              <div class="metric-value">85%</div>
+              <div class="metric-label" style="color:var(--gray-4);">系统集成率</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value info">实时</div>
+              <div class="metric-label" style="color:var(--gray-4);">数据决策</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value success">320%</div>
+              <div class="metric-label" style="color:var(--gray-4);">预期ROI</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot" style="background:rgba(255,255,255,0.1);border-top-color:rgba(255,255,255,0.2);">
+          <div class="left" style="color:var(--gray-5);">07 / 15</div>
+          <div class="center" style="color:var(--gray-5);">解决方案</div>
+          <div class="right" style="color:var(--gray-5);">Solution</div>
+        </div>
+      </section>
+
+      <!-- ========== 第8页：实施路径 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">实施路径</div>
+          <div class="center"></div>
+          <div class="right">08</div>
+        </div>
+        <div class="content">
+          <div class="kicker" data-anim>IMPLEMENTATION ROADMAP</div>
+          <h2 class="h2-zh" data-anim style="margin:2vh 0 4vh;">三阶段实施计划</h2>
+
+          <div class="pipeline-steps">
+            <div class="step-card" data-anim>
+              <div class="step-num">01</div>
+              <div class="step-title">基础夯实期</div>
+              <div class="step-desc">
+                完成基础设施升级<br>
+                搭建统一数据中台<br>
+                实现核心系统集成
+              </div>
+              <div class="step-time">2025.Q1 - 2025.Q2</div>
+            </div>
+
+            <div class="step-card" data-anim style="border-top-color:var(--info);">
+              <div class="step-num" style="color:var(--info);">02</div>
+              <div class="step-title">能力提升期</div>
+              <div class="step-desc">
+                部署智能分析平台<br>
+                自动化流程落地<br>
+                数据治理体系完善
+              </div>
+              <div class="step-time" style="color:var(--info);">2025.Q3 - 2025.Q4</div>
+            </div>
+
+            <div class="step-card" data-anim style="border-top-color:var(--success);">
+              <div class="step-num" style="color:var(--success);">03</div>
+              <div class="step-title">优化迭代期</div>
+              <div class="step-desc">
+                全面智能化转型<br>
+                创新能力孵化<br>
+                持续优化迭代
+              </div>
+              <div class="step-time" style="color:var(--success);">2026.Q1+</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">08 / 15</div>
+          <div class="center">实施路径</div>
+          <div class="right">Roadmap</div>
+        </div>
+      </section>
+
+      <!-- ========== 第9页：关键里程碑 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">实施路径 · 里程碑</div>
+          <div class="center"></div>
+          <div class="right">09</div>
+        </div>
+        <div class="content">
+          <div class="kicker" data-anim>MILESTONE</div>
+          <h2 class="h2-zh" data-anim style="margin:2vh 0 4vh;">关键里程碑节点</h2>
+
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1vw;">
+            <div data-anim style="text-align:center;padding:2vh 1vw;background:var(--bg-secondary);border-radius:8px;">
+              <div style="font-size:2vw;font-weight:700;color:var(--accent);">Q1</div>
+              <div style="font-size:0.85vw;color:var(--gray-3);margin-top:1vh;">基础设施<br>升级完成</div>
+            </div>
+            <div data-anim style="text-align:center;padding:2vh 1vw;background:var(--bg-secondary);border-radius:8px;">
+              <div style="font-size:2vw;font-weight:700;color:var(--info);">Q2</div>
+              <div style="font-size:0.85vw;color:var(--gray-3);margin-top:1vh;">数据中台<br>上线</div>
+            </div>
+            <div data-anim style="text-align:center;padding:2vh 1vw;background:var(--accent-light);border-radius:8px;">
+              <div style="font-size:2vw;font-weight:700;color:var(--accent);">Q3</div>
+              <div style="font-size:0.85vw;color:var(--gray-3);margin-top:1vh;">核心系统<br>集成完成</div>
+            </div>
+            <div data-anim style="text-align:center;padding:2vh 1vw;background:var(--bg-secondary);border-radius:8px;">
+              <div style="font-size:2vw;font-weight:700;color:var(--success);">Q4</div>
+              <div style="font-size:0.85vw;color:var(--gray-3);margin-top:1vh;">智能分析<br>平台上线</div>
+            </div>
+            <div data-anim style="text-align:center;padding:2vh 1vw;background:var(--bg-secondary);border-radius:8px;">
+              <div style="font-size:2vw;font-weight:700;color:var(--warning);">Q1+</div>
+              <div style="font-size:0.85vw;color:var(--gray-3);margin-top:1vh;">全面智能<br>化转型</div>
+            </div>
+          </div>
+
+          <div data-anim style="margin-top:4vh;padding:3vh;background:var(--bg-secondary);border-radius:12px;">
+            <h3 class="h3-zh" style="margin-bottom:2vh;">阶段一重点任务</h3>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2vh;">
+              <div style="font-size:1vw;color:var(--gray-2);">
+                ✓ 服务器扩容至现有3倍性能<br>
+                ✓ 网络架构升级至万兆骨干<br>
+                ✓ 采购统一数据中台产品
+              </div>
+              <div style="font-size:1vw;color:var(--gray-2);">
+                ✓ 完成ERP与CRM系统对接<br>
+                ✓ 建立主数据管理标准<br>
+                ✓ 组建数据治理团队
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">09 / 15</div>
+          <div class="center">实施路径 · 里程碑</div>
+          <div class="right">Milestone</div>
+        </div>
+      </section>
+
+      <!-- ========== 第10页：投资回报分析 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">投资回报</div>
+          <div class="center"></div>
+          <div class="right">10</div>
+        </div>
+        <div class="content" style="display:grid;grid-template-columns:1fr 1.2fr;gap:4vw;align-items:center;">
+          <div data-anim>
+            <div class="kicker">RETURN ON INVESTMENT</div>
+            <h2 class="h2-zh" style="margin:2vh 0;">投资回报分析</h2>
+
+            <div class="data-card" style="margin-top:3vh;display:flex;justify-content:space-between;align-items:center;">
+              <div style="text-align:center;">
+                <div class="value">2800<span style="font-size:1.5vw;">万</span></div>
+                <div class="label">总投资额</div>
+              </div>
+              <div style="text-align:center;">
+                <div class="value" style="color:var(--success);">8960<span style="font-size:1.5vw;">万</span></div>
+                <div class="label">预期总收益</div>
+              </div>
+              <div style="text-align:center;">
+                <div class="value" style="color:var(--accent);">320<span style="font-size:1.5vw;">%</span></div>
+                <div class="label">ROI</div>
+              </div>
+            </div>
+
+            <div style="margin-top:2vh;padding:2vh;background:var(--bg-secondary);border-radius:8px;">
+              <p class="body-zh" style="margin-bottom:1vh;">
+                <strong>投资回收期：18个月</strong>
+              </p>
+              <p class="body-zh">
+                3年累计净收益：<strong style="color:var(--success);">6160万</strong>
+              </p>
+            </div>
+          </div>
+
+          <div data-anim>
+            <div class="impact-box" style="padding:3vh;">
+              <div class="title">年度收益预测（万元）</div>
+              <div class="bar-chart" style="height:20vh;">
+                <div class="bar-item">
+                  <div class="bar" style="height:35%;background:var(--accent);"></div>
+                  <div class="label">第一年</div>
+                  <div class="value-label">1,800</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:65%;background:var(--accent);"></div>
+                  <div class="label">第二年</div>
+                  <div class="value-label">3,280</div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar" style="height:100%;background:var(--accent);"></div>
+                  <div class="label">第三年</div>
+                  <div class="value-label">3,880</div>
+                </div>
+              </div>
+              <div class="source">数据来源：财务部测算 2024.12</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">10 / 15</div>
+          <div class="center">投资回报</div>
+          <div class="right">ROI</div>
+        </div>
+      </section>
+
+      <!-- ========== 第11页：风险与对策 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">风险与对策</div>
+          <div class="center"></div>
+          <div class="right">11</div>
+        </div>
+        <div class="content">
+          <div class="kicker" data-anim>RISK & MITIGATION</div>
+          <h2 class="h2-zh" data-anim style="margin:2vh 0 4vh;">主要风险与应对策略</h2>
+
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;">
+            <div data-anim class="impact-box" style="border-left-color:var(--error);">
+              <div class="title" style="color:var(--error);">风险一：实施延期</div>
+              <p class="body-zh" style="font-size:1vw;margin:1vh 0;">跨部门协调难度大，供应商交付能力不足</p>
+              <div style="padding:1.5vh;background:var(--bg);border-radius:6px;margin-top:1vh;">
+                <div style="font-size:0.75vw;color:var(--gray-4);margin-bottom:0.5vh;">应对策略</div>
+                <div style="font-size:0.9vw;color:var(--fg);">引入项目经理制，设置关键节点检查</div>
+              </div>
+            </div>
+
+            <div data-anim class="impact-box" style="border-left-color:var(--warning);">
+              <div class="title" style="color:var(--warning);">风险二：预算超支</div>
+              <p class="body-zh" style="font-size:1vw;margin:1vh 0;">技术方案调整导致额外支出</p>
+              <div style="padding:1.5vh;background:var(--bg);border-radius:6px;margin-top:1vh;">
+                <div style="font-size:0.75vw;color:var(--gray-4);margin-bottom:0.5vh;">应对策略</div>
+                <div style="font-size:0.9vw;color:var(--fg);">预留15%应急预算，采用敏捷开发</div>
+              </div>
+            </div>
+
+            <div data-anim class="impact-box" style="border-left-color:var(--info);">
+              <div class="title" style="color:var(--info);">风险三：用户抵制</div>
+              <p class="body-zh" style="font-size:1vw;margin:1vh 0;">员工对新系统接受度低</p>
+              <div style="padding:1.5vh;background:var(--bg);border-radius:6px;margin-top:1vh;">
+                <div style="font-size:0.75vw;color:var(--gray-4);margin-bottom:0.5vh;">应对策略</div>
+                <div style="font-size:0.9vw;color:var(--fg);">配套培训计划，奖励激励机制</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">11 / 15</div>
+          <div class="center">风险与对策</div>
+          <div class="right">Risk</div>
+        </div>
+      </section>
+
+      <!-- ========== 第12页：组织保障 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">组织保障</div>
+          <div class="center"></div>
+          <div class="right">12</div>
+        </div>
+        <div class="content">
+          <div class="kicker" data-anim>ORGANIZATION</div>
+          <h2 class="h2-zh" data-anim style="margin:2vh 0 4vh;">项目组织架构与分工</h2>
+
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;">
+            <div data-anim class="impact-box" style="text-align:center;border-left-color:var(--accent);">
+              <div style="font-size:3vw;font-weight:700;color:var(--accent);">①</div>
+              <div style="font-size:1.1vw;font-weight:600;margin:1vh 0;">项目管理委员会</div>
+              <div class="body-zh" style="font-size:0.9vw;">CEO挂帅<br>决策重大事项</div>
+            </div>
+
+            <div data-anim class="impact-box" style="text-align:center;border-left-color:var(--info);">
+              <div style="font-size:3vw;font-weight:700;color:var(--info);">②</div>
+              <div style="font-size:1.1vw;font-weight:600;margin:1vh 0;">项目执行办公室</div>
+              <div class="body-zh" style="font-size:0.9vw;">CIO主导<br>日常管理协调</div>
+            </div>
+
+            <div data-anim class="impact-box" style="text-align:center;border-left-color:var(--success);">
+              <div style="font-size:3vw;font-weight:700;color:var(--success);">③</div>
+              <div style="font-size:1.1vw;font-weight:600;margin:1vh 0;">技术实施团队</div>
+              <div class="body-zh" style="font-size:0.9vw;">IT部门+供应商<br>技术落地</div>
+            </div>
+
+            <div data-anim class="impact-box" style="text-align:center;border-left-color:var(--warning);">
+              <div style="font-size:3vw;font-weight:700;color:var(--warning);">④</div>
+              <div style="font-size:1.1vw;font-weight:600;margin:1vh 0;">业务支持团队</div>
+              <div class="body-zh" style="font-size:0.9vw;">各部门骨干<br>需求对接</div>
+            </div>
+          </div>
+
+          <div data-anim style="margin-top:4vh;padding:3vh;background:var(--accent-light);border-radius:12px;border-left:4px solid var(--accent);">
+            <h3 class="h3-zh" style="margin-bottom:2vh;color:var(--accent);">资源配置需求</h3>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3vw;">
+              <div>
+                <div style="font-size:0.8vw;color:var(--gray-4);">项目团队规模</div>
+                <div style="font-size:1.5vw;font-weight:600;">25人</div>
+              </div>
+              <div>
+                <div style="font-size:0.8vw;color:var(--gray-4);">培训投入</div>
+                <div style="font-size:1.5vw;font-weight:600;">200万</div>
+              </div>
+              <div>
+                <div style="font-size:0.8vw;color:var(--gray-4);">管理资源</div>
+                <div style="font-size:1.5vw;font-weight:600;">月度评审会</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">12 / 15</div>
+          <div class="center">组织保障</div>
+          <div class="right">Organization</div>
+        </div>
+      </section>
+
+      <!-- ========== 第13页：行动计划 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">行动计划</div>
+          <div class="center"></div>
+          <div class="right">13</div>
+        </div>
+        <div class="content">
+          <div class="kicker" data-anim>NEXT STEPS</div>
+          <h2 class="h2-zh" data-anim style="margin:2vh 0 3vh;">建议下一步行动</h2>
+
+          <div class="action-list">
+            <div class="action-item" data-anim>
+              <div class="action-num">1</div>
+              <div class="action-content">
+                <div class="action-title">组建项目筹备小组</div>
+                <div class="action-desc">明确负责人及核心成员，完成项目立项</div>
+              </div>
+              <div class="action-time">2025年1月</div>
+            </div>
+
+            <div class="action-item" data-anim style="border-left-color:var(--info);">
+              <div class="action-num" style="background:var(--info);">2</div>
+              <div class="action-content">
+                <div class="action-title">完成供应商入围评选</div>
+                <div class="action-desc">IT部门主导，完成技术方案评审</div>
+              </div>
+              <div class="action-time">2025年2月</div>
+            </div>
+
+            <div class="action-item" data-anim style="border-left-color:var(--success);">
+              <div class="action-num" style="background:var(--success);">3</div>
+              <div class="action-content">
+                <div class="action-title">签署项目合同</div>
+                <div class="action-desc">商务谈判完成，正式启动项目</div>
+              </div>
+              <div class="action-time">2025年3月</div>
+            </div>
+
+            <div class="action-item" data-anim style="border-left-color:var(--warning);">
+              <div class="action-num" style="background:var(--warning);">4</div>
+              <div class="action-content">
+                <div class="action-title">项目动员大会</div>
+                <div class="action-desc">全员宣贯，统一认识</div>
+              </div>
+              <div class="action-time">2025年4月</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">13 / 15</div>
+          <div class="center">行动计划</div>
+          <div class="right">Action</div>
+        </div>
+      </section>
+
+      <!-- ========== 第14页：核心金句 ========== -->
+      <section class="slide">
+        <div class="chrome">
+          <div class="left">核心结论</div>
+          <div class="center"></div>
+          <div class="right">14</div>
+        </div>
+        <div class="content" style="justify-content:center;align-items:center;">
+          <div class="big-quote" data-anim>
+            <blockquote>
+              数字化转型不是选择题，而是生存题。<br>
+              谁先完成转型，谁就赢得未来。
+            </blockquote>
+            <cite>— 基于行业研究及企业调研 2024</cite>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="left">14 / 15</div>
+          <div class="center"></div>
+          <div class="right">Quote</div>
+        </div>
+      </section>
+
+      <!-- ========== 第15页：结束页 ========== -->
+      <section class="slide" style="background:var(--fg);color:white;">
+        <div class="chrome" style="background:rgba(255,255,255,0.1);border-bottom-color:rgba(255,255,255,0.2);">
+          <div class="left" style="color:var(--gray-4);"></div>
+          <div class="center"></div>
+          <div class="right" style="color:var(--gray-4);">15</div>
+        </div>
+        <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+          <div class="kicker" data-anim style="color:var(--gray-4);">THANK YOU</div>
+          <h1 class="display-zh" data-anim style="color:white;margin:3vh 0;">感谢聆听</h1>
+          <p class="body-zh" data-anim style="color:var(--gray-4);max-width:50vw;margin-bottom:4vh;">
+            麦肯锡公司 · 企业管理咨询部<br>
+            期待与贵司携手推进数字化转型战略
+          </p>
+          <div class="meta" data-anim" style="color:var(--gray-4);">
+            汇报人：咨询顾问团队<br>
+            联系方式：consulting@example.com
+          </div>
+        </div>
+        <div class="foot" style="background:rgba(255,255,255,0.1);border-top-color:rgba(255,255,255,0.2);">
+          <div class="left" style="color:var(--gray-5);">15 / 15</div>
+          <div class="center" style="color:var(--gray-5);"></div>
+          <div class="right" style="color:var(--gray-5);">End</div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 导航圆点 -->
+    <div class="nav-dots"></div>
+
+    <!-- 操作提示 -->
+    <div class="nav-hint">← → 翻页 · Ctrl+F 搜索 · ESC 索引</div>
+  </div>
+
+  <script>
+    // 幻灯片核心逻辑
+    class SlideDeck {
+      constructor() {
+        this.slides = document.querySelectorAll('.slide');
+        this.dots = document.querySelector('.nav-dots');
+        this.current = 0;
+        this.total = this.slides.length;
+
+        this.init();
+      }
+
+      init() {
+        // 创建导航圆点
+        this.slides.forEach((_, i) => {
+          const dot = document.createElement('div');
+          dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+          dot.addEventListener('click', () => this.goTo(i));
+          dot.setAttribute('role', 'button');
+          dot.setAttribute('aria-label', `跳转到第 ${i + 1} 页`);
+          this.dots.appendChild(dot);
+        });
+
+        // 初始化第一页
+        this.activate(0);
+
+        // 绑定事件
+        document.addEventListener('keydown', (e) => this.handleKey(e));
+        document.addEventListener('wheel', (e) => this.handleWheel(e), { passive: false });
+        document.addEventListener('touchstart', (e) => this.handleTouch(e), { passive: false });
+
+        // 初始化动画
+        this.initAnimations();
+      }
+
+      handleKey(e) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          this.next();
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          this.prev();
+        } else if (e.key === 'Escape') {
+          this.toggleIndex();
+        }
+      }
+
+      handleWheel(e) {
+        if (e.deltaY > 0) {
+          this.next();
+        } else {
+          this.prev();
+        }
+      }
+
+      handleTouch(e) {
+        const startX = e.touches[0].clientX;
+        const handler = (endEvent) => {
+          const deltaX = endEvent.changedTouches[0].clientX - startX;
+          if (Math.abs(deltaX) > 50) {
+            if (deltaX > 0) {
+              this.prev();
+            } else {
+              this.next();
+            }
+          }
+          document.removeEventListener('touchend', handler);
+        };
+        document.addEventListener('touchend', handler, { passive: false });
+      }
+
+      next() {
+        if (this.current < this.total - 1) {
+          this.goTo(this.current + 1);
+        }
+      }
+
+      prev() {
+        if (this.current > 0) {
+          this.goTo(this.current - 1);
+        }
+      }
+
+      goTo(index) {
+        if (index < 0 || index >= this.total || index === this.current) return;
+
+        this.slides[this.current].classList.remove('active');
+        this.slides[index].classList.add('active');
+
+        this.dots.children[this.current].classList.remove('active');
+        this.dots.children[index].classList.add('active');
+
+        this.current = index;
+        this.animateSlide(index);
+      }
+
+      activate(index) {
+        this.slides[index].classList.add('active');
+        this.animateSlide(index);
+      }
+
+      animateSlide(index) {
+        const slide = this.slides[index];
+        const elements = slide.querySelectorAll('[data-anim]');
+
+        elements.forEach(el => el.classList.remove('anim-ready'));
+
+        setTimeout(() => {
+          elements.forEach((el, i) => {
+            setTimeout(() => {
+              el.classList.add('anim-ready');
+            }, 80 * i);
+          });
+        }, 100);
+      }
+
+      initAnimations() {
+        setTimeout(() => {
+          this.animateSlide(0);
+        }, 500);
+      }
+
+      toggleIndex() {
+        alert(`第 ${this.current + 1} / ${this.total} 页`);
+      }
+    }
+
+    // 初始化
+    document.addEventListener('DOMContentLoaded', () => {
+      new SlideDeck();
+    });
+  </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

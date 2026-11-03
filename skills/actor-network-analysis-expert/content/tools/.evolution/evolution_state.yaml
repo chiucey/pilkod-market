@@ -1,0 +1,55 @@
+benchmark:
+  benchmark_score: 4.0
+  eval_mode: tool_case
+  output: "{\n  \"status\": \"success\",\n  \"skill\": \"actor-network-analysis-expert\"\
+    ,\n  \"timestamp\": \"2026-05-03T11:50:29.477722\",\n  \"data\": {\n    \"test\"\
+    : \"data\"\n  },\n  \"analysis\": {\n    \"status\": \"completed\",\n    \"analysis_type\"\
+    : \"actor-network-analysis-expert_analysis\",\n    \"summary\": \"分析已完成\",\n \
+    \   \"timestamp\": \"2026-05-03T11:50:29.477722\"\n  }\n}"
+  passed: false
+  test_prompt: '[tool benchmark for actor-network-analysis-expert]'
+dimensions:
+  architecture:
+    score: 13.0
+    weight: 15
+  benchmark:
+    score: 4.0
+    weight: 25
+  boundary:
+    score: 8.0
+    weight: 10
+  checkpoint:
+    score: 9.0
+    weight: 7
+  frontmatter:
+    score: 9.0
+    weight: 8
+  resources:
+    score: 8.0
+    weight: 5
+  specificity:
+    score: 13.0
+    weight: 15
+  workflow:
+    score: 13.0
+    weight: 15
+improved: true
+previous_score: 68.64
+quality_score: 71.5
+refinement_history:
+- delta: 59.75
+  quality_score: 59.75
+  timestamp: '2026-04-26T11:12:15.830959+00:00'
+- delta: 17.61
+  quality_score: 66.78
+  timestamp: '2026-04-28T16:35:33.125471+00:00'
+- delta: 1.8599999999999994
+  quality_score: 68.64
+  timestamp: '2026-05-03T03:27:59.221412+00:00'
+- delta: 2.8599999999999994
+  quality_score: 71.5
+  timestamp: '2026-05-03T03:50:57.926114+00:00'
+skill: actor-network-analysis-expert
+structure_base: 94.0
+timestamp: '2026-05-03T03:50:57.926114+00:00'
+total_100: 104.0

@@ -1,0 +1,26 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-10",
+  "dependencies": [],
+  "description": "MaxClaw多实例互操作通信技能。实现多个MaxClaw代理之间的消息传递、状态共享和互操作协议。",
+  "files": [
+    "SKILL.md",
+    "comm/__init__.py",
+    "comm/demo.py",
+    "comm/example.py"
+  ],
+  "id": 385992273515167,
+  "license": "MIT",
+  "name": "maxclaw-interop",
+  "platform": "minimax",
+  "skill_id": 1744246631,
+  "tags": [
+    "interoperability",
+    "multi-agent",
+    "communication",
+    "messaging",
+    "coordination"
+  ],
+  "updated_at": 1775790089112,
+  "version": "1.0.0"
+}

@@ -1,0 +1,41 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "PRD产品需求文档生成",
+    "技术架构设计",
+    "数据库设计与优化",
+    "部署方案规划",
+    "运维方案制定",
+    "技术选型建议"
+  ],
+  "category": "engineering",
+  "createdAt": "2026-03-29T23:35:02Z",
+  "description": "专业技术架构设计技能，提供完整的技术方案设计能力",
+  "displayName": "技术架构设计师",
+  "files": [
+    "SKILL.md",
+    "_meta.json",
+    "docs/00-document-index.md",
+    "docs/01-prd-product-requirements.md",
+    "docs/02-technical-architecture.md",
+    "docs/03-database-design.md",
+    "docs/04-deployment-plan.md",
+    "docs/05-operations-plan.md"
+  ],
+  "id": 381935321735235,
+  "name": "tech-architecture-designer",
+  "platform": "minimax",
+  "tags": [
+    "技术架构",
+    "PRD",
+    "数据库设计",
+    "部署方案",
+    "运维方案",
+    "微服务",
+    "Kubernetes",
+    "技术选型"
+  ],
+  "updatedAt": "2026-03-29T23:35:02Z",
+  "updated_at": 1774798794031,
+  "version": "1.0.0"
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>万有引力定律 · 宇宙的纽带</title>
+<style>
+/* ===== Cobalt Theme (冰蓝冷色系) ===== */
+:root{
+  --bg:#1a1b26;--bg-soft:#16161e;--surface:#24283b;--surface-2:#2f334d;
+  --border:rgba(192,202,245,.12);--border-strong:rgba(192,202,245,.24);
+  --text-1:#c0caf5;--text-2:#a9b1d6;--text-3:#565f89;
+  --accent:#7aa2f7;--accent-2:#bb9af7;--accent-3:#7dcfff;
+  --good:#9ece6a;--warn:#e0af68;--bad:#f7768e;
+  --grad:linear-gradient(135deg,#7aa2f7,#bb9af7 55%,#f7768e);
+  --grad-soft:linear-gradient(135deg,#24283b,#2f334d);
+  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 24px 62px rgba(0,0,0,.6);
+  --font-sans:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono','Fira Code','Consolas',monospace;
+}
+
+/* ===== Reset & Base ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text-1)}
+a{color:var(--accent);text-decoration:none}
+
+/* ===== Section ===== */
+.scroll-section{padding:60px 64px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--border)}
+.scroll-section:last-child{border-bottom:none}
+.scroll-section.full{align-items:center;text-align:center}
+.scroll-section h2{margin-top:0}
+
+/* ===== Typography ===== */
+.kicker{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:5px 14px;border-radius:100px;background:var(--accent);color:var(--bg);margin-bottom:16px}
+.h1{font-size:clamp(32px,4.2vw,64px);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px}
+.h2{font-size:clamp(22px,2.8vw,40px);font-weight:700;line-height:1.3;letter-spacing:-.01em;margin-bottom:16px}
+.h3{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:10px}
+.h4{font-size:15px;font-weight:600;line-height:1.4;margin-bottom:6px}
+.lede{font-size:clamp(14px,1.2vw,18px);line-height:1.7;color:var(--text-2);max-width:620px}
+.dim{color:var(--text-2);font-size:14px;line-height:1.6}
+.dim2{color:var(--text-3);font-size:13px}
+.mt-s{margin-top:12px}.mt-m{margin-top:24px}.mt-l{margin-top:36px}.mt-xl{margin-top:48px}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ===== Cards ===== */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-soft{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card-accent{border-top:3px solid var(--accent);background:var(--surface);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+
+/* ===== Grid ===== */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:1fr 1fr}
+
+/* ===== Split ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.split-c{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+
+/* ===== Formula Box ===== */
+.formula-box{text-align:center;font-size:32px;font-weight:700;padding:28px;background:var(--surface-2);border-radius:var(--radius);margin:16px 0;font-family:var(--font-mono);letter-spacing:.02em;border:1px solid var(--border)}
+.formula-box .sub{font-size:14px;font-weight:400;color:var(--text-3);display:block;margin-top:8px}
+
+/* ===== Lists & Pills ===== */
+ul{list-style:none;padding:0}
+li{padding:5px 0;font-size:14px;line-height:1.6;color:var(--text-2)}
+li::before{content:"▸ ";color:var(--accent);font-weight:700}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--surface-2);color:var(--text-2);margin-right:6px;margin-bottom:6px;letter-spacing:.06em}
+.pill-accent{background:var(--accent);color:var(--bg)}
+
+/* ===== Insight ===== */
+.insight{background:linear-gradient(135deg,rgba(122,162,247,.1),rgba(187,154,247,.06));border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:16px 0;font-size:14px;line-height:1.7;color:var(--text-2)}
+.highlight{background:rgba(122,162,247,.15);padding:2px 6px;border-radius:4px;color:var(--accent-3);font-weight:500}
+
+/* ===== Table ===== */
+.compare-table{width:100%;border-collapse:collapse;font-size:13px}
+.compare-table th{background:var(--surface-2);padding:10px 14px;text-align:left;font-weight:600;color:var(--text-2);border-bottom:2px solid var(--border)}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)}
+.compare-table tr:last-child td{border-bottom:none}
+
+/* ===== Step Card ===== */
+.step-card{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px}
+.step-num{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;flex-shrink:0}
+.step-card .step-body h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.step-card .step-body p{font-size:13px;color:var(--text-2);line-height:1.5}
+
+/* ===== Knowledge Grid ===== */
+.arch{display:grid;gap:22px}
+.arch .tier{display:grid;grid-template-columns:110px 1fr;align-items:stretch;gap:16px}
+.arch .tname{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border-radius:var(--radius);padding:14px;font-weight:600;font-size:12px;color:var(--text-2);text-transform:uppercase;letter-spacing:.08em;text-align:center}
+.arch .cells{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.arch .cell{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;box-shadow:var(--shadow)}
+.arch .cell .ic{font-size:22px;margin-bottom:4px}
+.arch .cell h4{font-size:13px;font-weight:600;margin-bottom:2px}
+.arch .cell p{font-size:11px;color:var(--text-3);margin:0;line-height:1.4}
+.arch .tier.hl .cell{border-top:3px solid var(--accent)}
+
+/* ===== Timeline ===== */
+.timeline{position:relative;padding-left:32px;margin-top:20px}
+.timeline::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;padding:0 0 24px 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-24px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl-item .year{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.tl-item p{font-size:13px;color:var(--text-2);line-height:1.5;margin-top:2px}
+
+/* ===== Animations ===== */
+.anim-fade-up,.anim-fade-left,.anim-fade-right,.anim-scale-in{opacity:0;transition:opacity .5s ease,transform .5s ease}
+.anim-fade-up.is-visible{opacity:1;transform:translateY(0)}
+.anim-fade-left.is-visible{opacity:1;transform:translateX(0)}
+.anim-fade-right.is-visible{opacity:1;transform:translateX(0)}
+.anim-scale-in.is-visible{opacity:1;transform:scale(1)}
+.anim-fade-up{transform:translateY(24px)}
+.anim-fade-left{transform:translateX(-24px)}
+.anim-fade-right{transform:translateX(24px)}
+.anim-scale-in{transform:scale(.92)}
+
+.anim-fade-up.is-exiting{opacity:0;transform:translateY(-18px)}
+.anim-fade-left.is-exiting{opacity:0;transform:translateX(18px)}
+.anim-fade-right.is-exiting{opacity:0;transform:translateX(-18px)}
+.anim-scale-in.is-exiting{opacity:0;transform:scale(.95)}
+
+.anim-stagger-list.is-visible>*{opacity:0;animation:fadeUp .45s ease forwards}
+.anim-stagger-list.is-visible>*:nth-child(1){animation-delay:0s}
+.anim-stagger-list.is-visible>*:nth-child(2){animation-delay:.1s}
+.anim-stagger-list.is-visible>*:nth-child(3){animation-delay:.2s}
+.anim-stagger-list.is-visible>*:nth-child(4){animation-delay:.3s}
+.anim-stagger-list.is-visible>*:nth-child(5){animation-delay:.4s}
+.anim-stagger-list.is-visible>*:nth-child(6){animation-delay:.5s}
+.anim-stagger-list.is-visible>*:nth-child(7){animation-delay:.6s}
+.anim-stagger-list.is-visible>*:nth-child(8){animation-delay:.7s}
+
+.anim-stagger-list.is-exiting>*{opacity:1;animation:fadeDown .35s ease forwards}
+.anim-stagger-list.is-exiting>*:nth-child(1){animation-delay:.35s}
+.anim-stagger-list.is-exiting>*:nth-child(2){animation-delay:.3s}
+.anim-stagger-list.is-exiting>*:nth-child(3){animation-delay:.25s}
+.anim-stagger-list.is-exiting>*:nth-child(4){animation-delay:.2s}
+.anim-stagger-list.is-exiting>*:nth-child(5){animation-delay:.15s}
+.anim-stagger-list.is-exiting>*:nth-child(6){animation-delay:.1s}
+.anim-stagger-list.is-exiting>*:nth-child(7){animation-delay:.05s}
+.anim-stagger-list.is-exiting>*:nth-child(8){animation-delay:0s}
+
+.anim-stagger-list>*{opacity:0;transition:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(18px)}}
+
+/* ===== Data Table ===== */
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+.data-table th{background:var(--surface-2);padding:8px 12px;text-align:center;font-weight:600;color:var(--text-1);border-bottom:2px solid var(--border);font-size:12px}
+.data-table td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);color:var(--text-2)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table .hl{color:var(--accent);font-weight:600}
+
+/* ===== Contrast Cards ===== */
+.contrast-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.contrast-cards .ex-card{padding:18px;border-radius:var(--radius);font-size:14px;line-height:1.6}
+.contrast-cards .ex-card.good{background:rgba(158,206,106,.08);border:1px solid rgba(158,206,106,.2)}
+.contrast-cards .ex-card.bad{background:rgba(247,118,142,.08);border:1px solid rgba(247,118,142,.2)}
+.contrast-cards .ex-card h4{margin-bottom:6px;font-size:14px}
+.contrast-cards .ex-card.good h4{color:var(--good)}
+.contrast-cards .ex-card.bad h4{color:var(--bad)}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .scroll-section{padding:40px 28px}
+  .split,.split-c{grid-template-columns:1fr;gap:20px}
+  .g2{grid-template-columns:1fr}
+  .arch .tier{grid-template-columns:1fr;gap:10px}
+  .arch .tname{padding:10px;font-size:11px}
+  .arch .cells{grid-template-columns:repeat(2,1fr)}
+  .formula-box{font-size:24px;padding:18px}
+}
+@media(max-width:480px){
+  .arch .cells{grid-template-columns:1fr}
+}
+
+/* ===== 导航栏 ===== */
+.nav-bar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;gap:4px;padding:8px 24px;background:rgba(26,27,38,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-bar a{display:inline-block;padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-2);border-radius:100px;transition:background .2s,color .2s;text-decoration:none;flex-shrink:0}
+.nav-bar a:hover,.nav-bar a.active{background:var(--accent);color:var(--bg)}
+.scroll-section:first-of-type{padding-top:120px}
+@media(max-width:900px){
+  .nav-bar{padding:6px 12px;gap:2px}
+  .nav-bar a{padding:5px 10px;font-size:11px}
+  .scroll-section:first-of-type{padding-top:100px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav-bar">
+  <a href="#cover">封面</a>
+  <a href="#concept">概念</a>
+  <a href="#formula">公式</a>
+  <a href="#derivation">推导</a>
+  <a href="#applications">应用</a>
+  <a href="#data">数据</a>
+  <a href="#summary">总结</a>
+</nav>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: Cover                                              -->
+<!-- ============================================================ -->
+<section id="cover" class="scroll-section full">
+  <div class="anim-stagger-list">
+    <p class="kicker">Classical Mechanics · Universal Gravitation</p>
+    <h1 class="h1">
+      万有引力定律<br>
+      <span class="gradient-text" style="font-size:.65em">宇宙的纽带</span><br>
+      <span class="dim" style="font-size:.3em;font-weight:400;letter-spacing:0">Newton's Law of Universal Gravitation</span>
+    </h1>
+    <p class="lede" style="max-width:700px;margin:24px auto 0">从苹果落地到行星绕日，从潮汐涨落到卫星入轨——万有引力是宇宙中最普遍、最优雅的力。它用一条简洁的公式，统一了天上与地上的物理学。</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: What is Gravitation?                               -->
+<!-- ============================================================ -->
+<section id="concept" class="scroll-section">
+  <p class="kicker">What is Gravitation?</p>
+  <h2 class="h2">什么是万有引力？<br><span class="dim" style="font-size:.55em;font-weight:400">万物之间皆有引力</span></h2>
+  <div class="split mt-m">
+    <div class="card anim-fade-left">
+      <h3>日常感受</h3>
+      <p class="dim" style="margin-bottom:12px">万有引力是任何两个有质量的物体之间相互吸引的力。</p>
+      <ul>
+        <li><strong>苹果落地</strong>——地球吸引苹果，苹果也吸引地球</li>
+        <li><strong>我们站在地面上</strong>——地球引力使我们不会飘走</li>
+        <li><strong>物体有重量</strong>——重量就是地球对物体的引力</li>
+        <li><strong>潮汐现象</strong>——月球和太阳的引力引起海洋潮汐</li>
+      </ul>
+      <div class="insight" style="margin-top:12px">
+        <strong>关键认识</strong>：引力无处不在。你和这本书之间也存在引力——只是由于质量太小，几乎无法察觉。
+      </div>
+    </div>
+    <div class="card anim-fade-right">
+      <h3>历史背景</h3>
+      <p class="dim" style="margin-bottom:12px">万有引力定律的发现是人类思想史上最伟大的飞跃之一。</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="year">古代</div>
+          <p>亚里士多德认为"物体下落是因为趋向其自然位置"</p>
+        </div>
+        <div class="tl-item">
+          <div class="year">1609</div>
+          <p>开普勒发表行星运动三定律，描述了行星如何运动</p>
+        </div>
+        <div class="tl-item">
+          <div class="year">1665</div>
+          <p>牛顿在剑桥躲避瘟疫期间，开始思考引力问题</p>
+        </div>
+        <div class="tl-item">
+          <div class="year">1687</div>
+          <p>牛顿发表《自然哲学的数学原理》，正式提出万有引力定律</p>
+        </div>
+      </div>
+      <p class="dim mt-s" style="font-size:13px;font-style:italic">"如果说我看得比别人更远些，那是因为我站在巨人的肩膀上。"——牛顿</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: The Formula                                        -->
+<!-- ============================================================ -->
+<section id="formula" class="scroll-section">
+  <p class="kicker">Newton's Law · Formula</p>
+  <h2 class="h2">牛顿万有引力公式<br><span class="dim" style="font-size:.55em;font-weight:400">F = G · m₁m₂ / r²</span></h2>
+  <div class="split-c mt-m">
+    <div class="anim-fade-up">
+      <div class="formula-box" style="font-size:40px">
+        F = G · <span style="font-size:.7em">m₁m₂</span> / r²
+        <span class="sub" style="font-size:14px">引力 = 引力常数 × 两物体质量乘积 ÷ 距离的平方</span>
+      </div>
+      <table class="data-table" style="margin-top:20px">
+        <tr><th>符号</th><th>含义</th><th>单位</th></tr>
+        <tr><td class="hl">F</td><td>两物体间的引力</td><td>牛顿 (N)</td></tr>
+        <tr><td class="hl">G</td><td>万有引力常数</td><td>6.674×10⁻¹¹ N·m²/kg²</td></tr>
+        <tr><td class="hl">m₁, m₂</td><td>两物体的质量</td><td>千克 (kg)</td></tr>
+        <tr><td class="hl">r</td><td>两物体质心间的距离</td><td>米 (m)</td></tr>
+      </table>
+    </div>
+    <div class="card-accent anim-fade-right">
+      <h3>公式的特点</h3>
+      <ul>
+        <li><strong>平方反比</strong>——距离增大到2倍，引力减小到1/4</li>
+        <li><strong>正比于质量</strong>——质量越大，引力越大</li>
+        <li><strong>相互性</strong>——F₁₂ = F₂₁，作用力与反作用力</li>
+        <li><strong>普适性</strong>——适用于任何两个有质量的物体</li>
+        <li><strong>长程力</strong>——引力随距离衰减，但理论上影响无限远</li>
+      </ul>
+      <h3 class="mt-m">G 的测量</h3>
+      <p class="dim" style="font-size:13px">卡文迪许在 1798 年用扭秤实验首次测量了 G 值。这是物理学史上最精确的实验之一，被称为"称量地球"的实验。</p>
+      <div class="insight" style="margin-top:10px">
+        <strong>惊人事实</strong>：两个质量各为 1kg、相距 1m 的物体之间的引力约为 6.7×10⁻¹¹ N——相当于一颗细菌的重量。这就是为什么日常中感觉不到物体间的引力，只有地球这样巨大的质量才能产生可感知的引力。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: Historical Derivation Context                      -->
+<!-- ============================================================ -->
+<section id="derivation" class="scroll-section">
+  <p class="kicker">From Kepler to Newton</p>
+  <h2 class="h2">从开普勒到牛顿<br><span class="dim" style="font-size:.55em;font-weight:400">万有引力定律的推导思路</span></h2>
+  <div class="split mt-m">
+    <div class="anim-fade-left">
+      <h3>开普勒行星运动三定律</h3>
+      <table class="compare-table">
+        <tr><th style="width:50px">定律</th><th>内容</th><th>数学表达</th></tr>
+        <tr><td style="text-align:center;font-weight:700;color:var(--accent)">Ⅰ</td><td>行星轨道为椭圆，太阳在焦点</td><td>—</td></tr>
+        <tr><td style="text-align:center;font-weight:700;color:var(--accent)">Ⅱ</td><td>相等时间扫过相等面积</td><td>dA/dt = 常数</td></tr>
+        <tr><td style="text-align:center;font-weight:700;color:var(--accent)">Ⅲ</td><td>轨道周期平方 ∝ 半长轴立方</td><td>T² ∝ a³</td></tr>
+      </table>
+      <div class="card-soft mt-m">
+        <h3>牛顿的推理 (简化)</h3>
+        <div class="step-card" style="padding:12px;margin-bottom:8px">
+          <div class="step-num" style="width:28px;height:28px;font-size:11px">1</div>
+          <div class="step-body"><p style="font-size:12px">由开普勒Ⅲ  T² ∝ r³ 推导向心力 F ∝ 1/r²</p></div>
+        </div>
+        <div class="step-card" style="padding:12px;margin-bottom:8px">
+          <div class="step-num" style="width:28px;height:28px;font-size:11px">2</div>
+          <div class="step-body"><p style="font-size:12px">向心力公式 F = mv²/r，结合 v = 2πr/T</p></div>
+        </div>
+        <div class="step-card" style="padding:12px;margin-bottom:8px">
+          <div class="step-num" style="width:28px;height:28px;font-size:11px">3</div>
+          <div class="step-body"><p style="font-size:12px">代入得 F = 4π²mr/T²，再由 T² ∝ r³ 得 F ∝ m/r²</p></div>
+        </div>
+        <div class="step-card" style="padding:12px">
+          <div class="step-num" style="width:28px;height:28px;font-size:11px">4</div>
+          <div class="step-body"><p style="font-size:12px">由牛顿第三定律，力应正比于两个质量：F ∝ m₁m₂/r²</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="anim-fade-right">
+      <div class="card-accent">
+        <h3>牛顿的"月球检验"</h3>
+        <p class="dim" style="font-size:13px">牛顿用万有引力公式计算月球绕地球的向心加速度，并与观测值对比：</p>
+        <table class="data-table">
+          <tr><th>物理量</th><th>数值</th></tr>
+          <tr><td>地月距离</td><td>3.84×10⁸ m</td></tr>
+          <tr><td>月球周期</td><td>27.3 天</td></tr>
+          <tr><td>计算向心加速度</td><td>a = v²/r = 2.72×10⁻³ m/s²</td></tr>
+          <tr><td>地面重力加速度</td><td>g = 9.81 m/s²</td></tr>
+          <tr><td class="hl">比值 g/a</td><td class="hl">≈ 3600 = 60²</td></tr>
+        </table>
+        <p class="dim mt-s" style="font-size:13px">地球半径 R ≈ 6370km，地月距离 ≈ 60R。月球处的引力加速度正好是地面的 1/60²，完美验证了平方反比关系！</p>
+      </div>
+      <div class="insight mt-m">
+        <strong>历史的巧合</strong>：传说牛顿看到苹果落地而想到引力——苹果受到地球引力而下落，月球也受到同样的引力束缚。牛顿的伟大之处在于认识到：<em>天上和地下的物理规律是统一的</em>。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 5: Applications — Orbits, Tides, Space               -->
+<!-- ============================================================ -->
+<section id="applications" class="scroll-section">
+  <p class="kicker">Applications</p>
+  <h2 class="h2">万有引力的应用<br><span class="dim" style="font-size:.55em;font-weight:400">从行星轨道到卫星发射</span></h2>
+  <div class="split mt-m">
+    <div class="anim-fade-left">
+      <div class="card">
+        <h3>🌍 行星轨道与天体运动</h3>
+        <p class="dim" style="font-size:13px">万有引力是太阳系结构的根本原因：</p>
+        <ul>
+          <li>太阳的引力束缚八大行星绕其公转</li>
+          <li>行星的引力维持卫星（如月球）的轨道</li>
+          <li>引力平衡使银河系保持稳定结构</li>
+          <li>引力坍缩是恒星形成的基础</li>
+        </ul>
+      </div>
+      <div class="card mt-m">
+        <h3>🌊 潮汐现象</h3>
+        <p class="dim" style="font-size:13px">月球和太阳对地球不同部位的引力差异导致潮汐：</p>
+        <ul>
+          <li>面向月球一侧：海水被月球引力拉向月球</li>
+          <li>背向月球一侧：惯性离心力使海水远离月球</li>
+          <li>因此每天发生两次涨潮和两次落潮</li>
+          <li>太阳的潮汐力约为月球的 46%</li>
+        </ul>
+      </div>
+    </div>
+    <div class="anim-fade-right">
+      <div class="card-accent">
+        <h3>🚀 人造卫星与航天</h3>
+        <p class="dim" style="font-size:13px">万有引力定律是航天工程的物理基础：</p>
+        <ul>
+          <li><strong>第一宇宙速度</strong> (7.9 km/s)：绕地球做圆周运动的最小速度</li>
+          <li><strong>第二宇宙速度</strong> (11.2 km/s)：脱离地球引力束缚的最小速度</li>
+          <li><strong>第三宇宙速度</strong> (16.7 km/s)：脱离太阳引力束缚的最小速度</li>
+        </ul>
+        <h3 class="mt-m">三大宇宙速度</h3>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;margin-top:8px">
+          <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)">
+            <span style="font-size:13px;color:var(--text-2)">环绕</span>
+            <span style="font-family:var(--font-mono);font-size:14px;font-weight:600;color:var(--accent)">v₁ = √(gR) ≈ 7.9 km/s</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)">
+            <span style="font-size:13px;color:var(--text-2)">逃逸地球</span>
+            <span style="font-family:var(--font-mono);font-size:14px;font-weight:600;color:var(--accent-2)">v₂ = √(2gR) ≈ 11.2 km/s</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:4px 0">
+            <span style="font-size:13px;color:var(--text-2)">逃逸太阳系</span>
+            <span style="font-family:var(--font-mono);font-size:14px;font-weight:600;color:var(--accent-3)">v₃ ≈ 16.7 km/s</span>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-m">
+        <h3>⚖️ 引力与广义相对论</h3>
+        <p class="dim" style="font-size:13px">1915 年，爱因斯坦的广义相对论将引力重新诠释为质量弯曲时空的几何效应。牛顿的引力定律在弱场低速下是广义相对论的精确近似，但在强引力场（如黑洞附近）需要广义相对论来描述。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: Gravitational Phenomena — Data Table               -->
+<!-- ============================================================ -->
+<section id="data" class="scroll-section">
+  <p class="kicker">Gravitational Phenomena</p>
+  <h2 class="h2">太阳系天体数据<br><span class="dim" style="font-size:.55em;font-weight:400">引力的杰作</span></h2>
+  <div class="anim-fade-up">
+    <table class="data-table" style="font-size:12px">
+      <tr><th>天体</th><th>质量 (kg)</th><th>表面重力 (m/s²)</th><th>逃逸速度 (km/s)</th><th>轨道半径 (AU)</th></tr>
+      <tr><td class="hl">太阳</td><td>1.99×10³⁰</td><td>274</td><td>617.5</td><td>—</td></tr>
+      <tr><td class="hl">水星</td><td>3.30×10²³</td><td>3.70</td><td>4.43</td><td>0.387</td></tr>
+      <tr><td class="hl">金星</td><td>4.87×10²⁴</td><td>8.87</td><td>10.36</td><td>0.723</td></tr>
+      <tr><td class="hl">地球</td><td>5.97×10²⁴</td><td>9.81</td><td>11.19</td><td>1.000</td></tr>
+      <tr><td class="hl">火星</td><td>6.42×10²³</td><td>3.72</td><td>5.03</td><td>1.524</td></tr>
+      <tr><td class="hl">木星</td><td>1.90×10²⁷</td><td>24.79</td><td>59.54</td><td>5.203</td></tr>
+      <tr><td class="hl">土星</td><td>5.68×10²⁶</td><td>10.44</td><td>35.49</td><td>9.537</td></tr>
+      <tr><td class="hl">月球</td><td>7.35×10²²</td><td>1.62</td><td>2.38</td><td>—</td></tr>
+    </table>
+    <p class="dim mt-m" style="font-size:13px;text-align:center">质量越大的天体引力越强，逃逸速度越大。木星的质量是地球的 318 倍，表面重力是地球的 2.5 倍。</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 7: Summary                                            -->
+<!-- ============================================================ -->
+<section id="summary" class="scroll-section">
+  <p class="kicker">Summary · Key Takeaways</p>
+  <h2 class="h2">核心要点回顾<br><span class="dim" style="font-size:.55em;font-weight:400">万有引力：宇宙的粘合剂</span></h2>
+  <div class="grid g2 mt-m">
+    <div class="card-accent anim-fade-left" style="height:100%">
+      <h3>核心公式与常数</h3>
+      <div style="margin-top:12px">
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:10px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--accent)">F = G · m₁m₂ / r²</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">万有引力定律</div>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:16px;font-weight:700;color:var(--accent-2)">G = 6.674×10⁻¹¹ N·m²/kg²</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">万有引力常数</div>
+        </div>
+      </div>
+    </div>
+    <div class="anim-fade-right" style="height:100%">
+      <div class="card" style="height:100%">
+        <h3>五句话总结</h3>
+        <ul>
+          <li><strong>万物相吸</strong>——任何两个有质量的物体之间都存在引力</li>
+          <li><strong>平方反比</strong>——引力随距离平方衰减，这是开普勒定律的直接推论</li>
+          <li><strong>统一天地</strong>——牛顿证明了苹果和月球受同一种力的支配</li>
+          <li><strong>普适常数 G</strong>——卡文迪许用扭秤实验"称量"了地球</li>
+          <li><strong>从牛顿到爱因斯坦</strong>——广义相对论是万有引力定律的现代升华</li>
+        </ul>
+      </div>
+      <div class="insight mt-m">
+        <em>"万有引力定律是人类理性最伟大的成就之一。它用一条简洁的方程，揭示了从苹果到星系的整个宇宙的运行机制。"</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Scroll-Triggered Animation JS ===== -->
+<script>
+(function(){
+  const animateElements = document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-stagger-list');
+
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        entry.target.classList.remove('is-exiting');
+      } else {
+        entry.target.classList.add('is-exiting');
+        entry.target.classList.remove('is-visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  animateElements.forEach(el => observer.observe(el));
+})();
+
+/* 导航栏滚动高亮 */
+(function(){
+  var sections = document.querySelectorAll('.scroll-section[id]');
+  var links = document.querySelectorAll('.nav-bar a');
+  function update(){
+    var scrollY = window.scrollY + 100;
+    var activeId = '';
+    sections.forEach(function(s){
+      if(s.offsetTop <= scrollY) activeId = s.id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+    });
+  }
+  window.addEventListener('scroll', update);
+  update();
+})();
+</script>
+
+</body>
+</html>

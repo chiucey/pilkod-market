@@ -1,0 +1,14 @@
+# 音频字幕提取技能依赖
+# 安装命令: pip install -r requirements.txt
+
+# Whisper - OpenAI音频转文字模型
+# 可选但推荐，支持多种语言和更好的转录质量
+openai-whisper>=20231117
+
+# Mutagen - 音频元数据处理
+mutagen>=1.47.0
+
+# 如果使用 Whisper，建议也安装 ffmpeg
+# Ubuntu/Debian: sudo apt install ffmpeg
+# macOS: brew install ffmpeg
+# Windows: 下载 ffmpeg 并添加到 PATH

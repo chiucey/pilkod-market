@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "image-recognition",
+    "image-text-search",
+    "product-information",
+    "series-classification",
+    "spec-comparison"
+  ],
+  "created_at": "2026-04-14",
+  "description": "Bandai model image recognition and identification skill supporting Gundam, figures, and Saint Seiya Myth Cloth product search and recognition",
+  "id": 387505005753061,
+  "name": "bandai-model-recognition",
+  "platform": "minimax",
+  "tags": [
+    "bandai",
+    "gundam",
+    "gundam-model",
+    "plamodel",
+    "image-recognition",
+    "search"
+  ],
+  "updated_at": 1776159987730,
+  "version": "1.0.0"
+}

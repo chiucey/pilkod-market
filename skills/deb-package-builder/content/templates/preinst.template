@@ -1,0 +1,20 @@
+#!/bin/bash
+# Pre-installation script
+# Executed before files are extracted
+
+set -e
+
+case "$1" in
+    install)
+        # Actions to perform before installation
+        ;;
+    upgrade)
+        # Actions to perform before upgrade
+        ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+        # Rollback actions on failure
+        exit 0
+        ;;
+esac
+
+exit 0

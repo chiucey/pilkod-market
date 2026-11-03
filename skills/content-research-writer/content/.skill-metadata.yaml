@@ -1,0 +1,191 @@
+examples:
+  - id: blog-post
+    title:
+      zh: 博客文章写作助手
+      en: Blog Post Writing Assistant
+    description:
+      zh: 协助撰写技术博客文章，包括研究、大纲制定和内容优化
+      en: Assist in writing technical blog posts including research, outlining, and content optimization
+    prompt:
+      zh: |-
+        我想写一篇关于"如何在微服务架构中实施分布式事务"的技术博客文章。
+
+        目标读者：
+        - 中级后端开发工程师
+        - 对微服务架构有一定了解
+        - 希望学习分布式系统设计
+
+        文章要求：
+        - 3000字左右
+        - 包含实际案例和代码示例
+        - 通俗易懂，避免过于学术化
+        - 结构清晰，逻辑严谨
+
+        请帮我：
+        1. 制定详细的文章大纲
+        2. 研究相关技术和最佳实践
+        3. 收集权威资料和引用
+        4. 优化文章开头，制作吸引人的标题
+        5. 提供逐段写作反馈
+      en: |-
+        I want to write a technical blog post about "How to Implement Distributed Transactions in Microservices Architecture".
+
+        Target readers:
+        - Intermediate backend developers
+        - Have some understanding of microservice architecture
+        - Want to learn distributed system design
+
+        Article requirements:
+        - About 3000 words
+        - Include real cases and code examples
+        - Easy to understand, avoid overly academic
+        - Clear structure, rigorous logic
+
+        Please help me:
+        1. Create a detailed article outline
+        2. Research related technologies and best practices
+        3. Collect authoritative materials and citations
+        4. Optimize the article opening, create attractive headlines
+        5. Provide paragraph-by-paragraph writing feedback
+  - id: newsletter
+    title:
+      zh: Newsletter内容创作
+      en: Newsletter Content Creation
+    description:
+      zh: 为产品Newsletter撰写有价值的内容
+      en: Write valuable content for product newsletters
+    prompt:
+      zh: |-
+        我们的产品是一款项目管理工具，每月向用户发送Newsletter。
+
+        本月主题："远程团队协作的最佳实践"
+
+        内容方向：
+        - 分享用户成功案例
+        - 提供实用的协作技巧
+        - 介绍产品新功能
+        - 行业趋势分析
+
+        读者特征：
+        - 产品经理和团队负责人
+        - 远程办公的团队
+        - 关注工作效率提升
+
+        请帮我：
+        1. 设计Newsletter整体结构
+        2. 撰写吸引人的开场白
+        3. 整合用户案例和数据
+        4. 优化CTA（行动号召）
+        5. 确保内容既有价值又促进产品使用
+      en: |-
+        Our product is a project management tool that sends newsletters to users monthly.
+
+        This month's topic: "Best Practices for Remote Team Collaboration"
+
+        Content directions:
+        - Share user success stories
+        - Provide practical collaboration tips
+        - Introduce new product features
+        - Industry trend analysis
+
+        Reader characteristics:
+        - Product managers and team leaders
+        - Remote working teams
+        - People focused on productivity improvement
+
+        Please help me:
+        1. Design the overall newsletter structure
+        2. Write an attractive opening
+        3. Integrate user cases and data
+        4. Optimize CTAs (Call to Action)
+        5. Ensure content is both valuable and promotes product usage
+  - id: tutorial
+    title:
+      zh: 技术教程编写
+      en: Technical Tutorial Writing
+    description:
+      zh: 创建step-by-step的技术教程内容
+      en: Create step-by-step technical tutorial content
+    prompt:
+      zh: |-
+        我需要为初学者编写一份"使用React Hooks构建待办事项应用"的完整教程。
+
+        教程要求：
+        - 从零开始，假设读者没有React经验
+        - 包含详细的代码示例和解释
+        - 每个步骤都要有预期结果
+        - 提供常见问题解答
+        - 包含练习和挑战
+
+        具体需求：
+        1. 制定教程大纲和学习路径
+        2. 研究最佳教学方法
+        3. 编写清晰的指令和说明
+        4. 创建代码示例和演示
+        5. 添加交互式元素建议
+        6. 设计评估和反馈机制
+      en: |-
+        I need to write a complete tutorial "Building a Todo App with React Hooks" for beginners.
+
+        Tutorial requirements:
+        - Start from scratch, assuming readers have no React experience
+        - Include detailed code examples and explanations
+        - Each step should have expected results
+        - Provide FAQ section
+        - Include exercises and challenges
+
+        Specific needs:
+        1. Create tutorial outline and learning path
+        2. Research best teaching methods
+        3. Write clear instructions and explanations
+        4. Create code examples and demonstrations
+        5. Add interactive element suggestions
+        6. Design assessment and feedback mechanisms
+  - id: case-study
+    title:
+      zh: 商业案例研究报告
+      en: Business Case Study Report
+    description:
+      zh: 撰写深入的商业案例分析报告
+      en: Write in-depth business case study reports
+    prompt:
+      zh: |-
+        我们为某电商公司实施了库存管理系统升级项目，现在需要撰写案例研究报告。
+
+        项目概况：
+        - 客户：某知名服装电商
+        - 挑战：库存准确率低，缺货率高
+        - 解决方案：实施AI预测库存系统
+        - 结果：库存准确率提升35%，缺货率降低28%
+
+        报告目标：
+        - 展示我们的专业能力
+        - 吸引类似行业的潜在客户
+        - 在官网和销售材料中使用
+
+        请帮我：
+        1. 构建专业的案例研究结构
+        2. 突出关键成果和量化数据
+        3. 讲述引人入胜的故事线
+        4. 提供可复制的成功要素
+        5. 添加客户证言和引用
+      en: |-
+        We implemented an inventory management system upgrade project for an e-commerce company and now need to write a case study report.
+
+        Project overview:
+        - Client: A well-known clothing e-commerce
+        - Challenge: Low inventory accuracy, high stockout rate
+        - Solution: Implemented AI-powered inventory prediction system
+        - Results: Inventory accuracy improved by 35%, stockout rate reduced by 28%
+
+        Report goals:
+        - Showcase our professional capabilities
+        - Attract potential clients in similar industries
+        - Use on website and sales materials
+
+        Please help me:
+        1. Build professional case study structure
+        2. Highlight key results and quantified data
+        3. Tell an engaging storyline
+        4. Provide replicable success factors
+        5. Add customer testimonials and quotes

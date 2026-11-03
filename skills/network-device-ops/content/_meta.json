@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-04-16",
+  "description": "网络设备运维技能，支持配置管理、故障诊断、性能监控和安全审计",
+  "id": 388222911037914,
+  "name": "network-device-ops",
+  "platform": "minimax",
+  "requirements": {
+    "dependencies": [
+      "netmiko",
+      "paramiko",
+      "pysnmp"
+    ],
+    "python": "\u003e=3.8"
+  },
+  "tags": [
+    "network",
+    "operations",
+    "devops",
+    "cisco",
+    "huawei"
+  ],
+  "updated_at": 1776335221727,
+  "version": "1.0.0"
+}

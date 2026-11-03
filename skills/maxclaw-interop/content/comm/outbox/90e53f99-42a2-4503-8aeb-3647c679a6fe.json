@@ -1,0 +1,21 @@
+{
+  "msg_id": "90e53f99-42a2-4503-8aeb-3647c679a6fe",
+  "timestamp": "2026-04-10T03:00:43.542330",
+  "sender": "maxclaw-3",
+  "recipient": "maxclaw-2",
+  "msg_type": "request",
+  "action": "TASK_DELEGATE",
+  "payload": {
+    "task_id": "a96ca40b-a532-4bd9-b1f6-d012d7142b33",
+    "task_type": "analysis",
+    "description": "分析项目代码质量",
+    "instructions": "请检查代码中的潜在问题",
+    "context": {
+      "project": "demo"
+    },
+    "priority": "normal",
+    "delegated_by": "maxclaw-3",
+    "delegated_at": "2026-04-10T03:00:43.542316"
+  },
+  "correlation_id": null
+}

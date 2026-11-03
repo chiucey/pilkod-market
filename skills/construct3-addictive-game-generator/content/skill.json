@@ -1,0 +1,74 @@
+{
+  "id": "construct3-addictive-game-generator",
+  "name": "Construct3 Addictive Game Generator",
+  "version": "1.0.0",
+  "description": "Construct3高成瘾性游戏生成插件 - 全自动生成高质量休闲游戏",
+  "author": "MiniMax Agent",
+  "tags": [
+    "construct3",
+    "game-generator",
+    "addictive-game",
+    "casual-game",
+    "html5-game",
+    "游戏生成",
+    "成瘾性游戏"
+  ],
+  "platform": "Claw/LobsterAI/OpenClaw",
+  "capabilities": {
+    "game_planning": true,
+    "construct3_automation": true,
+    "event_logic_generation": true,
+    "quality_optimization": true,
+    "export_publishing": true
+  },
+  "triggers": [
+    "创建Construct3游戏",
+    "制作休闲游戏",
+    "生成成瘾性游戏",
+    "设计游戏机制",
+    "制作闯关游戏",
+    "制作合成游戏",
+    "制作跑酷游戏",
+    "制作消除游戏",
+    "Construct3教程",
+    "导出HTML5游戏"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "pyyaml": ">=5.4",
+    "jinja2": ">=3.0"
+  },
+  "files": {
+    "main": "scripts/game_generator.py",
+    "event_logic": "scripts/event_logic_generator.py",
+    "game_planner": "scripts/game_planner.py",
+    "export_config": "scripts/export_config.py",
+    "event_guide": "references/event_system_guide.md",
+    "addiction_manual": "references/addiction_design_manual.md",
+    "export_guide": "references/export_guide.md",
+    "quality_checklist": "references/quality_checklist.md"
+  },
+  "config": {
+    "language": "zh-CN",
+    "platform": "Construct3",
+    "target_export": "HTML5",
+    "performance_targets": {
+      "max_package_size_mb": 5,
+      "target_fps": 60,
+      "max_loading_time_sec": 3,
+      "max_memory_mb": 150
+    },
+    "game_templates": [
+      "flappy_bird",
+      "merge_2048",
+      "candy_crush",
+      "tetris",
+      "idle_clicker"
+    ]
+  },
+  "resources": {
+    "templates": "templates/",
+    "references": "references/",
+    "assets": "assets/"
+  }
+}

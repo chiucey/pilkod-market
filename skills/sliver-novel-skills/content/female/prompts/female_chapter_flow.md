@@ -1,0 +1,333 @@
+# 女频小说章节创作流程
+
+> 参考自: male/prompts/chapter_flow.md
+>
+> 本文档针对女频小说特点进行了适配调整，重点关注感情线推进与情感共鸣。
+
+---
+
+## 零、创作前准备（必须执行）
+
+### 【新写模式 - 必要表查询】
+
+首次创作新章节时，必须查询以下表：
+
+```sql
+-- 1. 查询小说基本信息
+SELECT * FROM novels WHERE id = ?;
+
+-- 2. 查询核心角色设定
+SELECT * FROM characters
+WHERE novel_id = ? AND role_type IN ('protagonist', 'female_lead', 'antagonist');
+
+-- 3. 查询世界观框架
+SELECT * FROM frameworks
+WHERE novel_id = ? AND type LIKE '%world%';
+
+-- 4. 查询已确定的情节节点
+SELECT * FROM frameworks
+WHERE novel_id = ? AND type LIKE '%plot%';
+```
+
+### 【续写模式 - 必须执行】
+
+从第2章开始续写时，必须查询以下表确保衔接：
+
+```sql
+-- 1. 查询最近10章概要
+SELECT chapter_number, title, summary, key_events, relationship_stage
+FROM chapters
+WHERE novel_id = ?
+ORDER BY chapter_number DESC
+LIMIT 10;
+
+-- 2. 查询角色当前状态
+SELECT name, status, current_location, relationships
+FROM characters WHERE novel_id = ?;
+
+-- 3. 查询待回收伏笔
+SELECT * FROM frameworks
+WHERE novel_id = ? AND category = 'foreshadow'
+AND status = 'pending';
+
+-- 4. 查询感情线状态
+SELECT * FROM romance_lines WHERE novel_id = ?;
+
+-- 5. 查询角色历史事件
+SELECT ce.*, c.name
+FROM character_events ce
+JOIN characters c ON ce.character_id = c.id
+WHERE c.novel_id = ?
+ORDER BY ce.created_at DESC
+LIMIT 20;
+```
+
+### 【数据库状态确认】
+
+查询完成后，必须确认：
+- [ ] 角色性格/背景/目标已明确
+- [ ] 感情线当前阶段已确认
+- [ ] 待回收伏笔已记录
+- [ ] 与前文衔接点已标记
+
+---
+
+## 一、女频章节结构原则
+
+### 1. 感情线优先 (ROMANCE LINE PRIORITY)
+
+- 每章应推进感情线或角色深度
+- 若章节无感情进展，需说明原因（剧情推进必要）
+- 即使在剧情密集的章节中，也应包含小浪漫时刻
+
+### 2. 情感共鸣 (EMOTIONAL RESONANCE)
+
+- 聚焦内心情感体验
+- 内心独白非常有价值
+- 展示事件如何影响情绪
+- 而非仅仅是外部动作
+
+### 3. 关系进展 (RELATIONSHIP PROGRESS)
+
+- 追踪关系阶段
+- 小进展也可以（一个眼神、一个触碰、一句话）
+- 退步也可以如果服务于故事（误会）
+- 整体保持向前推进
+
+### 4. 视角管理 (POV MANAGEMENT)
+
+- 双主角：使用混合模式（日常交替+重要节点轮换）
+- 单主角：深度内心独白
+- 群像：每章聚焦一个角色
+
+### 5. 甜点整合 (SWEET MOMENT INTEGRATION)
+
+- 即使在严肃章节：也包含小甜蜜时刻
+- 示例：他注意到她累了，给她带了咖啡
+- 示例：她记得他的偏好，做了件暖心事
+
+---
+
+## 二、章节模板
+
+### TEMPLATE 1: 感情推进型
+
+```
+Opening: 承接上章悬念 or 自然过渡
+Development: 事件发展
+核心: 感情线推进（暧昧/误会/确认/升温）
+Sweet moment: 小甜蜜时刻
+Ending: 钩子 or 自然结束
+字数: 2000-3000
+```
+
+### TEMPLATE 2: 剧情为主型
+
+```
+Opening: 事件/冲突引入
+Development: 主线剧情推进
+感情线: 副线，但有小进展
+核心: 重要剧情事件
+角色成长: 主角有内心变化
+Ending: 剧情钩子
+字数: 2500-3500
+```
+
+### TEMPLATE 3: 双视角型
+
+```
+A视角段: 主角A的视角（3-4段落）
+转换: 自然过渡
+B视角段: 主角B的视角（3-4段落）
+核心: 双线汇聚
+感情线: 双方各自有进展 or 汇聚
+Ending: 各自钩子 or 双线交汇
+字数: 3000-4000
+```
+
+---
+
+## 三、双主角章节技巧
+
+### 日常交替模式
+
+```
+Chapter X: A的日常
+- A的视角和事件
+- A的内心独白
+- 与B的简短互动
+- 结尾钩子（指向B）
+
+Chapter X+1: B的日常
+- B的视角和事件
+- B的内心独白
+- 与A的简短互动
+- 结尾钩子（指向A）
+```
+
+### 重要节点轮换模式
+
+```
+Chapter X: 关键事件
+- 多段落描写事件
+- A视角的关键决定
+- 切换到B视角的反应
+- B视角的关键决定
+- 汇聚：事件结果
+```
+
+---
+
+## 四、写作技巧
+
+### 1. 内心独白 (INTERNAL MONOLOGUE)
+
+- 不要只描述动作
+- 展示思考过程
+- 展示情绪反应
+- "她心里想..."
+
+### 2. 情感细节 (DETAILED EMOTIONS)
+
+- 不仅写"她很开心"
+- 写"她感觉心里像有小泡泡往上冒"（更生动）
+
+### 3. 关系追踪 (RELATIONSHIP TRACKING)
+
+- 记录小瞬间：眼神、语气、距离变化
+- 这些累积成关系进展
+
+### 4. 平衡动作与情感 (BALANCE ACTION AND EMOTION)
+
+- 纯粹内心独白枯燥
+- 纯粹动作冷淡
+- 混合：动作触发情感，情感驱动动作
+
+---
+
+## 五、章节创作检查表
+
+### 写作前
+
+- [ ] 确认本章关系阶段目标
+- [ ] 确认需要的关键情感节点
+- [ ] 若为双主角：决定视角结构
+- [ ] 计划甜蜜时刻
+
+### 写作中
+
+- [ ] 感情线是否推进？
+- [ ] 角色是否在性格上行动？
+- [ ] 是否有内心独白？
+- [ ] 是否包含甜蜜时刻？
+- [ ] **对话不超过40%**（女频易对话过多）
+- [ ] **每千字≥3处动作描写**
+- [ ] **情感场景≥2处微表情暗示**
+- [ ] **每场景有环境描写**
+
+### 写作后
+
+- [ ] 章节是否在正确时刻结束？
+- [ ] 是否有下章钩子？
+- [ ] 关系是否进展？
+- [ ] 角色是否成长？
+
+---
+
+## 六、章节输出格式
+
+### 章节标题规范
+
+女频章节标题必须反映本章核心看点：
+
+```
+✅ 合格标题（感情进展暗示型）：
+- "暧昧：不经意的触碰"
+- "误会：说出口的话"
+- "心动的瞬间"
+- "他眼中的温柔..."
+- "她的眼泪"
+- "靠近的一步"
+
+✅ 合格标题（情绪暗示型）：
+- "夜深人静时"
+- "沉默的午后"
+- "心跳的声音"
+- "说不出口的话"
+
+❌ 不合格标题（禁止）：
+- "第X章"
+- "继续"
+- "后续发展"
+- "发生了什么"
+```
+
+### 章节正文输出格式
+
+```markdown
+## 第X章 【标题必须反映核心看点】
+
+【正文内容...】
+
+---
+
+### 章节元数据
+- 字数：XXX
+- 场景类型：[感情推进型/误会冲突型/甜蜜互动型/日常缓冲型/...]
+- 关系阶段：[当前阶段]
+- 本章看点：[一句话描述]
+
+### 与前文衔接
+- 承接：[上章关键点]
+- 延续：[感情线/剧情线]
+
+### 质量自检
+- [ ] 标题反映核心看点 ✅/❌
+- [ ] 感情线有推进 ✅/❌
+- [ ] 角色一致 ✅/❌
+- [ ] 甜点到位 ✅/❌
+- [ ] 比例合理 ✅/❌
+- [ ] 与前文衔接 ✅/❌
+
+---
+
+## 七、SQL记录格式
+
+```sql
+INSERT INTO chapters (novel_id, title, chapter_number, word_count, protagonist_type, relationship_stage, sweet_level, conflict_level)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+```
+
+### 字段说明
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| novel_id | INT | 小说ID |
+| title | VARCHAR(200) | 章节标题 |
+| chapter_number | INT | 章节序号 |
+| word_count | INT | 字数 |
+| protagonist_type | ENUM | 'single', 'dual', 'ensemble' |
+| relationship_stage | VARCHAR(50) | 当前关系阶段 |
+| sweet_level | INT (1-5) | 甜度等级 |
+| conflict_level | INT (1-5) | 冲突等级 |
+
+---
+
+## 八、关系阶段参考
+
+| 阶段 | 英文 | 说明 |
+|------|------|------|
+| 陌生人 | Stranger | 尚未相识 |
+| 初识 | Acquaintance | 初次见面 |
+| 好感 | Liking | 产生好感 |
+| 暧昧 | Ambiguous | 暧昧期 |
+| 误会 | Misunderstanding | 产生误会/冲突 |
+| 澄清 | Clarification | 误会解除 |
+| 确认 | Confirmed | 确认关系 |
+| 升温 | Deepening | 感情升温 |
+| 稳定 | Stable | 关系稳定 |
+| 升华 | Transcending | 感情升华 |
+
+---
+
+*本文档为女频小说创作指南，针对感情线推进和情感共鸣进行了专门优化。*

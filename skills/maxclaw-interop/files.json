@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "ef5f53cc56b97e8dfa9cc5876fe9d90076d641e8",
+      "size": 12399
+    },
+    {
+      "path": "_meta.json",
+      "sha": "a00c36c9088d4cbcbde61cd46d891f8cd57d3e37",
+      "size": 621
+    },
+    {
+      "path": "comm/__init__.py",
+      "sha": "b451357f81a4ef44884cbb93a094a33d4c7b1eb7",
+      "size": 18280
+    },
+    {
+      "path": "comm/demo.py",
+      "sha": "812a8990c5fcf9c87ac89841ad268c63cad500dc",
+      "size": 5001
+    },
+    {
+      "path": "comm/example.py",
+      "sha": "c970974fbfa81ca8a8452c25f48fbeb7bd8157ac",
+      "size": 2623
+    },
+    {
+      "path": "comm/outbox/057fbe5f-e3fb-4933-a46b-99200cef3465.json",
+      "sha": "f5c4177592395e6d708d55c74c22195c39c9ef09",
+      "size": 314
+    },
+    {
+      "path": "comm/outbox/0e4cb2e1-2ec5-41f6-a680-e4fc00505da4.json",
+      "sha": "33a3e3b6c70a8a64ecef99257d53788d296b7382",
+      "size": 314
+    },
+    {
+      "path": "comm/outbox/531c8282-545c-4361-b957-490bcd6cecb4.json",
+      "sha": "d0d6d791808a957f3e544d8c5b47cfdded9cbc25",
+      "size": 240
+    },
+    {
+      "path": "comm/outbox/581dfa06-2b3b-4cf0-8369-83d4e797e162.json",
+      "sha": "2ab67801834f8fb9be7eb751c58b4f4683079913",
+      "size": 402
+    },
+    {
+      "path": "comm/outbox/70c3fa17-b20b-41f2-882b-36ee9b2207cb.json",
+      "sha": "2322e629be1fc4d21ecbabf2a4b93ce3fa8515e0",
+      "size": 402
+    },
+    {
+      "path": "comm/outbox/90e53f99-42a2-4503-8aeb-3647c679a6fe.json",
+      "sha": "adc76e0a4bae0078bc99069f2b3bdc87f5d9fce9",
+      "size": 596
+    },
+    {
+      "path": "comm/outbox/a235e9a0-eb82-4282-9fb9-90311855f36d.json",
+      "sha": "36b834aa161489937dcd000bcdab5523b4554425",
+      "size": 402
+    },
+    {
+      "path": "comm/outbox/b0d381c4-7dd2-4387-bdf5-d58cfb9961a2.json",
+      "sha": "1280f4cbfee42bc15a9517d8b2473025eb90bd7e",
+      "size": 596
+    },
+    {
+      "path": "comm/outbox/bf20e09d-38b5-4a5d-8090-cb5bc1d2f52a.json",
+      "sha": "1ed8f2ecab9648afdcc071297550623c4dd65180",
+      "size": 240
+    },
+    {
+      "path": "comm/outbox/c3ea057a-975b-4519-bdfe-0c10cf5a351e.json",
+      "sha": "44c023b5587a2c875f5ebd68c321d1e97ae84bde",
+      "size": 240
+    },
+    {
+      "path": "comm/outbox/da3d76eb-5c47-4e24-b4cd-4138f33bf849.json",
+      "sha": "89130caecc6344bc40a71ce0325897f8382260ab",
+      "size": 314
+    },
+    {
+      "path": "comm/registry/agents.json",
+      "sha": "6db0a7aabd63fd1d64342a2c8848b44fb20a650c",
+      "size": 584
+    },
+    {
+      "path": "comm/state/agent_maxclaw-1_status.json",
+      "sha": "76013f918a7a9d52eb8c3a06f98e28cb5062fd1d",
+      "size": 215
+    },
+    {
+      "path": "comm/state/agent_maxclaw-2_status.json",
+      "sha": "efb9b1bce288cc078287b36a8fa1503ee364fe6e",
+      "size": 215
+    },
+    {
+      "path": "comm/state/agent_maxclaw-3_status.json",
+      "sha": "65f853d01cc0e41c862478c35bddcc19056de340",
+      "size": 215
+    },
+    {
+      "path": "comm/state/global_counter.json",
+      "sha": "cdeaecbcbabefcca554714cb2fc7be7268459700",
+      "size": 198
+    }
+  ]
+}

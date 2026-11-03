@@ -1,0 +1,48 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "market-bull-bear-analysis",
+    "industry-dividend-identification",
+    "high-growth-company-screening",
+    "financial-statement-analysis",
+    "peg-valuation-calculation",
+    "competitive-landscape-analysis",
+    "fundamental-deterioration-assessment",
+    "position-building-timing",
+    "word-report-generation",
+    "ppt-presentation-generation"
+  ],
+  "created_at": "2026-03-26",
+  "description": "Super Investment Manager - Professional investment analysis skill based on the 7-step Danbin investment advisor method",
+  "id": 380686489522664,
+  "name": "super-investment-manager",
+  "platform": "minimax",
+  "tags": [
+    "investment-analysis",
+    "value-investing",
+    "peg-valuation",
+    "industry-analysis",
+    "investment-advisor"
+  ],
+  "tools_used": [
+    "mcp__matrix__batch_web_search",
+    "mcp__matrix__extract_content_from_websites",
+    "mcp__matrix__stocks_info",
+    "mcp__matrix__stocks_financial_data",
+    "mcp__matrix__stocks_price",
+    "expert-skills:minimax-docx",
+    "expert-skills:pptx-generator"
+  ],
+  "updated_at": 1774494263954,
+  "version": "1.0.0",
+  "workflow": [
+    "market-bull-bear-analysis",
+    "industry-dividend-period-analysis",
+    "high-growth-company-screening",
+    "peg-valuation-calculation",
+    "competitive-landscape-product-analysis",
+    "fundamental-deterioration-assessment",
+    "position-building-timing",
+    "comprehensive-investment-recommendation"
+  ]
+}

@@ -1,0 +1,180 @@
+# 保险知识采集配置文件
+# 请根据实际需求修改以下配置
+
+# ============================================
+# 数据源配置
+# ============================================
+
+# 微信公众号配置
+wechat_public_accounts:
+  - name: "深蓝保"
+    alias: "shenlanbao"
+    enabled: true
+
+  - name: "奶爸保"
+    alias: "naiba360"
+    enabled: true
+
+  - name: "保险八卦姐"
+    alias: "baogua_jj"
+    enabled: true
+
+  - name: "蜗牛保险"
+    alias: "woniu_insurance"
+    enabled: true
+
+  - name: "大童保险管家"
+    alias: "datong_bx"
+    enabled: true
+
+# 视频号配置
+video_accounts:
+  - name: "保险观察"
+    profile_url: ""
+    enabled: true
+
+  - name: "保险老油条"
+    profile_url: ""
+    enabled: true
+
+  - name: "精算盘说险"
+    profile_url: ""
+    enabled: true
+
+# ============================================
+# 关键词过滤配置
+# ============================================
+
+# 包含关键词（满足任一关键词即保留）
+include_keywords:
+  - "重疾险"
+  - "增额终身寿"
+  - "年金险"
+  - "医疗险"
+  - "寿险"
+  - "意外险"
+  - "保险攻略"
+  - "保险测评"
+  - "保险对比"
+  - "保险推荐"
+  - "产品分析"
+  - "保障方案"
+
+# 排除关键词（满足任一关键词则排除）
+exclude_keywords:
+  - "广告"
+  - "推广"
+  - "抽奖"
+  - "优惠券"
+  - "免费领"
+
+# ============================================
+# 飞书推送配置
+# ============================================
+
+feishu_webhook:
+  enabled: false
+  # 请替换为您的飞书机器人 Webhook 地址
+  webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook-id"
+
+  # 推送模式：daily(每日) / weekly(每周) / manual(手动)
+  schedule_mode: "manual"
+
+  # 每日推送时间 (HH:MM 格式)
+  daily_push_time: "09:00"
+
+  # 每周推送日 (0=周一, 1=周二, ..., 6=周日)
+  weekly_push_day: 1
+  weekly_push_time: "09:00"
+
+  # 推送格式：card(卡片) / summary(摘要) / text(文本)
+  push_format: "summary"
+
+# ============================================
+# 采集限制配置
+# ============================================
+
+limits:
+  # 每账号最多采集文章数
+  articles_per_account: 5
+
+  # 每视频号最多采集视频数
+  videos_per_account: 3
+
+  # 每日最大请求次数
+  daily_max_requests: 10
+
+  # 请求间隔(秒)
+  request_interval_seconds: 30
+
+  # 是否启用随机间隔(避免固定频率被识别)
+  random_interval: true
+  random_interval_range: [25, 45]
+
+# ============================================
+# 内容提取配置
+# ============================================
+
+extraction:
+  # 是否启用 AI 观点提炼
+  enable_ai_insights: true
+
+  # LLM API 配置
+  llm_api:
+    provider: "openai"  # openai / claude / custom
+    api_url: "https://api.openai.com/v1/chat/completions"
+    api_key: ""  # 请填入您的 API Key
+    model: "gpt-3.5-turbo"
+    timeout: 60
+
+  # 提炼的字段
+  insight_fields:
+    - "product_name"
+    - "coverage"
+    - "rate_comparison"
+    - "pros"
+    - "cons"
+    - "sales_talk"
+
+# ============================================
+# 输出配置
+# ============================================
+
+output:
+  # 默认输出格式
+  default_format: "markdown"  # markdown / text / json
+
+  # 输出目录
+  output_dir: "./output"
+
+  # 是否保存采集记录
+  save_history: true
+  history_dir: "./history"
+
+  # 是否保存链接列表
+  save_links_only: true
+
+  # 文件命名格式
+  filename_template: "insurance_knowledge_{date}_{time}.md"
+
+# ============================================
+# 合规配置
+# ============================================
+
+compliance:
+  # 仅用于个人学习
+  personal_use_only: true
+
+  # 不存储原文
+  store_original_content: false
+
+  # 请求头设置
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+  # 是否遵守 robots.txt
+  respect_robots_txt: true
+
+  # 高峰时段不采集
+  avoid_peak_hours:
+    enabled: true
+    peak_hours: [9, 12, 18, 21]  # 这些时段降低频率

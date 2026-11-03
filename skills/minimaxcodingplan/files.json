@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "8ad0607b9dee722a6588510b0f9fd3c0cc795c3a",
+      "size": 30652
+    },
+    {
+      "path": "references/image-api.md",
+      "sha": "34fafab96c2b62b6492ac5ef12277e23497c7c54",
+      "size": 3639
+    },
+    {
+      "path": "references/music-api.md",
+      "sha": "370f0390c8e99d0ca0968c09ade7626e0c5d9621",
+      "size": 1719
+    },
+    {
+      "path": "references/tts-guide.md",
+      "sha": "600ab1beb434d54b110bebcbf9404950d068c03e",
+      "size": 3164
+    },
+    {
+      "path": "references/tts-voice-catalog.md",
+      "sha": "b8650a2ab562dc2545acad03bf8a3d78d63ae447",
+      "size": 33087
+    },
+    {
+      "path": "references/video-api.md",
+      "sha": "7a51efc7302f038c14962e59a33e5c148ddfa6dd",
+      "size": 4873
+    },
+    {
+      "path": "references/video-prompt-guide.md",
+      "sha": "3145757331d6f7ce47b8da2a6ebed785cffb7070",
+      "size": 3678
+    },
+    {
+      "path": "scripts/check_environment.sh",
+      "sha": "28a977e80cbeca7e3c7d4ed986e6638d937ba543",
+      "size": 3579
+    },
+    {
+      "path": "scripts/image/generate_image.sh",
+      "sha": "04782b9c1a6d432c75756628043f29bcaaaeadc4",
+      "size": 12254
+    },
+    {
+      "path": "scripts/media_tools.sh",
+      "sha": "f82327e922843da8793a106c5a1ceddb46accc25",
+      "size": 18341
+    },
+    {
+      "path": "scripts/music/generate_music.sh",
+      "sha": "e6ba06850b96237191e2d6772c15f28064cf8dda",
+      "size": 9571
+    },
+    {
+      "path": "scripts/tts/generate_voice.sh",
+      "sha": "17108c9ef8babd0ae17f53493d1e2c0bac3854cc",
+      "size": 27857
+    },
+    {
+      "path": "scripts/video/add_bgm.sh",
+      "sha": "49e1d3cec697ca949d936a70cec189e44bc33a58",
+      "size": 7835
+    },
+    {
+      "path": "scripts/video/generate_long_video.sh",
+      "sha": "9bc253ef2cb083e6e7a3ea1ad591ba679a5dc98f",
+      "size": 17129
+    },
+    {
+      "path": "scripts/video/generate_template_video.sh",
+      "sha": "03dafa947d63284364a98fde880f3453ad1b74b1",
+      "size": 7014
+    },
+    {
+      "path": "scripts/video/generate_video.sh",
+      "sha": "51842d757c32f7185ef0d59559678d7d1078b37d",
+      "size": 11485
+    }
+  ]
+}

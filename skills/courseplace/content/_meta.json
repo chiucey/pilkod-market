@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "category": "sports-prediction",
+  "created_date": "2026-03-28",
+  "dependencies": [
+    "hk-horse-racing-predictor",
+    "race-quartet"
+  ],
+  "description": "香港赛马Place（位置）投注预测系统，使用Elo/Bradley-Terry/TrueSkill物理学模型预测前三名最优解",
+  "id": 381282991542466,
+  "language": "zh-CN",
+  "name": "courseplace",
+  "platform": "minimax",
+  "skill_id": 110,
+  "tags": [
+    "horse-racing",
+    "place-betting",
+    "prediction",
+    "elo",
+    "bradley-terry",
+    "hong-kong"
+  ],
+  "updated_at": 1774639550649,
+  "version": "1.0.0"
+}

@@ -1,0 +1,33 @@
+{
+  "author": "MiniMax Agent",
+  "category": "business_analysis",
+  "created_at": "2026-04-23",
+  "description": "市场调研分析助手。当用户要求进行IT硬件/半导体/AI产业链市场调研、分析电子行业市场格局、查询设备或元器件市场份额、评估供应商竞争力、生成采购策略建议，或需要输出Excel格式的市场分析报告时使用。",
+  "display_name": "市场调研助手",
+  "features": [
+    "IT整机设备市场分析（笔记本、服务器、算力设备）",
+    "IT设备核心元器件分析（内存、CPU、存储、显卡）",
+    "AI大模型市场分析",
+    "MaaS平台市场分析",
+    "Excel格式报告生成",
+    "采购策略建议"
+  ],
+  "id": 390614741091127,
+  "name": "market-research-assistant",
+  "platform": "minimax",
+  "platforms": [
+    "workbuddy",
+    "claudecode"
+  ],
+  "skill_id": 2025042301,
+  "tags": [
+    "市场调研",
+    "IT硬件",
+    "半导体",
+    "AI",
+    "采购分析",
+    "Excel报告"
+  ],
+  "updated_at": 1776923004807,
+  "version": "1.0.0"
+}

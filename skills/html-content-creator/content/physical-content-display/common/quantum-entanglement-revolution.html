@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>量子纠缠 · 超越经典的计算革命</title>
+<style>
+/* ===================================================================
+ * base.css — Physical Content Display 通用样式
+ * 用途：AI 代理制作成品 HTML 时，将本文件全部内容复制到 <style> 块中
+ * 说明：合并自两份参考成品（牛顿第二定律、万有引力定律）的全部 CSS 规则
+ *       值有差异处已标注范围，代理可根据内容做适当调整
+ * =================================================================== */
+
+/* ===== 0. CSS 变量（冰蓝冷色系）===== */
+/* 所有成品必须包含，不得修改色值 */
+:root{
+  --bg:#1a1b26;--bg-soft:#16161e;--surface:#24283b;--surface-2:#2f334d;
+  --border:rgba(192,202,245,.12);--border-strong:rgba(192,202,245,.24);
+  --text-1:#c0caf5;--text-2:#a9b1d6;--text-3:#565f89;
+  --accent:#7aa2f7;--accent-2:#bb9af7;--accent-3:#7dcfff;
+  --good:#9ece6a;--warn:#e0af68;--bad:#f7768e;
+  --grad:linear-gradient(135deg,#7aa2f7,#bb9af7 55%,#f7768e);
+  --grad-soft:linear-gradient(135deg,#24283b,#2f334d);
+  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 24px 62px rgba(0,0,0,.6);
+  --font-sans:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono','Fira Code','Consolas',monospace;
+}
+
+/* ===== 1. Reset & Base ===== */
+/* 所有成品必须包含 */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text-1)}
+a{color:var(--accent);text-decoration:none}
+
+/* ===== 2. Section 容器 ===== */
+/* 所有成品必须包含 */
+.scroll-section{padding:60px 64px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--border)}
+.scroll-section:last-child{border-bottom:none}
+.scroll-section.full{align-items:center;text-align:center}
+.scroll-section h2{margin-top:0}
+
+/* ===== 3. 排版 ===== */
+/* 所有成品必须包含，字号按需微调 */
+.kicker{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:5px 14px;border-radius:100px;background:var(--accent);color:var(--bg);margin-bottom:16px}
+.h1{font-size:clamp(32px,4.2vw,64px);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px}
+.h2{font-size:clamp(22px,2.8vw,40px);font-weight:700;line-height:1.3;letter-spacing:-.01em;margin-bottom:16px}
+.h3{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:10px}
+.h4{font-size:15px;font-weight:600;line-height:1.4;margin-bottom:6px}
+.lede{font-size:clamp(14px,1.2vw,18px);line-height:1.7;color:var(--text-2);max-width:620px}
+.dim{color:var(--text-2);font-size:14px;line-height:1.6}
+.dim2{color:var(--text-3);font-size:13px}
+.mt-s{margin-top:12px}.mt-m{margin-top:24px}.mt-l{margin-top:36px}.mt-xl{margin-top:48px}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ===== 4. 卡片 ===== */
+/* 所有成品必须包含至少一种卡片变体 */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-soft{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card-accent{border-top:3px solid var(--accent);background:var(--surface);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-outline{background:transparent;border:1px solid var(--border-strong);border-radius:var(--radius);padding:24px}
+
+/* ===== 5. 网格布局 ===== */
+/* 所有成品必须包含，网格列数按内容选择 */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1fr 1fr 1fr}
+.g4{grid-template-columns:1fr 1fr 1fr 1fr}
+
+/* ===== 6. 双栏分割 ===== */
+/* 所有成品必须包含 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.split-c{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+
+/* ===== 7. 公式框 ===== */
+/* 按需使用，font-size 可参考 32px-38px 按内容调整 */
+.formula-box{text-align:center;font-size:38px;font-weight:700;padding:28px;background:var(--surface-2);border-radius:var(--radius);margin:16px 0;font-family:var(--font-mono);letter-spacing:.02em;border:1px solid var(--border)}
+.formula-box .sub{font-size:14px;font-weight:400;color:var(--text-3);display:block;margin-top:8px}
+.formula-sm{text-align:center;font-size:20px;font-weight:600;padding:12px;background:var(--surface-2);border-radius:var(--radius-sm);margin:8px 0;font-family:var(--font-mono);border:1px solid var(--border)}
+
+/* ===== 8. 列表 & 标签 ===== */
+/* 所有成品必须包含 */
+ul{list-style:none;padding:0}
+li{padding:5px 0;font-size:14px;line-height:1.6;color:var(--text-2)}
+li::before{content:"\25B8 ";color:var(--accent);font-weight:700}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--surface-2);color:var(--text-2);margin-right:6px;margin-bottom:6px;letter-spacing:.06em}
+.pill-accent{background:var(--accent);color:var(--bg)}
+
+/* ===== 9. 提示 & 高亮 ===== */
+/* 按需使用 */
+.insight{background:linear-gradient(135deg,rgba(122,162,247,.1),rgba(187,154,247,.06));border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:16px 0;font-size:14px;line-height:1.7;color:var(--text-2)}
+.highlight{background:rgba(122,162,247,.15);padding:2px 6px;border-radius:4px;color:var(--accent-3);font-weight:500}
+
+/* ===== 10. 对比表格 ===== */
+/* 按需使用，两份参考 padding 取值 10px-14px，可按内容调整 */
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.compare-table th{background:var(--surface-2);padding:10px 14px;text-align:left;font-weight:600;color:var(--text-2);border-bottom:2px solid var(--border)}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)}
+.compare-table tr:last-child td{border-bottom:none}
+
+/* ===== 11. 数据表格 ===== */
+/* 按需使用 */
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+.data-table th{background:var(--surface-2);padding:8px 12px;text-align:center;font-weight:600;color:var(--text-1);border-bottom:2px solid var(--border);font-size:12px}
+.data-table td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);color:var(--text-2)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table .hl{color:var(--accent);font-weight:600}
+
+/* ===== 12. 步骤推导卡片 ===== */
+/* 按需使用，padding 参考 14px-16px */
+.step-card{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px}
+.step-num{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;flex-shrink:0}
+.step-card .step-body h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.step-card .step-body p{font-size:13px;color:var(--text-2);line-height:1.5}
+
+/* ===== 13. 知识体系（Arch 三层网格）===== */
+/* 按需使用，含有值差异的规则已标注范围，代理可适当调整 */
+.arch{display:grid;gap:20px}
+.arch .tier{display:grid;grid-template-columns:110px 1fr;align-items:stretch;gap:14px}
+.arch .tname{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border-radius:var(--radius);padding:12px;font-weight:600;font-size:12px;color:var(--text-2);text-transform:uppercase;letter-spacing:.08em;text-align:center}
+.arch .cells{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.arch .cell{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;box-shadow:var(--shadow)}
+.arch .cell .ic{font-size:20px;margin-bottom:4px}
+.arch .cell h4{font-size:13px;font-weight:600;margin-bottom:2px}
+.arch .cell p{font-size:11px;color:var(--text-3);margin:0;line-height:1.4}
+.arch .tier.hl .cell{border-top:3px solid var(--accent)}
+
+/* ===== 14. 时间线 ===== */
+/* 按需使用 */
+.timeline{position:relative;padding-left:32px;margin-top:20px}
+.timeline::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;padding:0 0 24px 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-24px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl-item .year{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.tl-item p{font-size:13px;color:var(--text-2);line-height:1.5;margin-top:2px}
+
+/* ===== 15. 对比卡片（正确 vs 误解）===== */
+/* 按需使用 */
+.contrast-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.contrast-cards .ex-card{padding:18px;border-radius:var(--radius);font-size:14px;line-height:1.6}
+.contrast-cards .ex-card.good{background:rgba(158,206,106,.08);border:1px solid rgba(158,206,106,.2)}
+.contrast-cards .ex-card.bad{background:rgba(247,118,142,.08);border:1px solid rgba(247,118,142,.2)}
+.contrast-cards .ex-card h4{margin-bottom:6px;font-size:14px}
+.contrast-cards .ex-card.good h4{color:var(--good)}
+.contrast-cards .ex-card.bad h4{color:var(--bad)}
+
+/* ===== 16. 滚动触发动画 ===== */
+/* 所有成品必须包含 */
+.anim-fade-up,.anim-fade-left,.anim-fade-right,.anim-scale-in{opacity:0;transition:opacity .5s ease,transform .5s ease}
+.anim-fade-up.is-visible{opacity:1;transform:translateY(0)}
+.anim-fade-left.is-visible{opacity:1;transform:translateX(0)}
+.anim-fade-right.is-visible{opacity:1;transform:translateX(0)}
+.anim-scale-in.is-visible{opacity:1;transform:scale(1)}
+.anim-fade-up{transform:translateY(24px)}
+.anim-fade-left{transform:translateX(-24px)}
+.anim-fade-right{transform:translateX(24px)}
+.anim-scale-in{transform:scale(.92)}
+.anim-fade-up.is-exiting{opacity:0;transform:translateY(-18px)}
+.anim-fade-left.is-exiting{opacity:0;transform:translateX(18px)}
+.anim-fade-right.is-exiting{opacity:0;transform:translateX(-18px)}
+.anim-scale-in.is-exiting{opacity:0;transform:scale(.95)}
+
+/* Stagger 列表（逐次动画） */
+.anim-stagger-list.is-visible>*{opacity:0;animation:fadeUp .45s ease forwards}
+.anim-stagger-list.is-visible>*:nth-child(1){animation-delay:0s}
+.anim-stagger-list.is-visible>*:nth-child(2){animation-delay:.1s}
+.anim-stagger-list.is-visible>*:nth-child(3){animation-delay:.2s}
+.anim-stagger-list.is-visible>*:nth-child(4){animation-delay:.3s}
+.anim-stagger-list.is-visible>*:nth-child(5){animation-delay:.4s}
+.anim-stagger-list.is-visible>*:nth-child(6){animation-delay:.5s}
+.anim-stagger-list.is-visible>*:nth-child(7){animation-delay:.6s}
+.anim-stagger-list.is-visible>*:nth-child(8){animation-delay:.7s}
+.anim-stagger-list.is-exiting>*{opacity:1;animation:fadeDown .35s ease forwards}
+.anim-stagger-list.is-exiting>*:nth-child(1){animation-delay:.35s}
+.anim-stagger-list.is-exiting>*:nth-child(2){animation-delay:.3s}
+.anim-stagger-list.is-exiting>*:nth-child(3){animation-delay:.25s}
+.anim-stagger-list.is-exiting>*:nth-child(4){animation-delay:.2s}
+.anim-stagger-list.is-exiting>*:nth-child(5){animation-delay:.15s}
+.anim-stagger-list.is-exiting>*:nth-child(6){animation-delay:.1s}
+.anim-stagger-list.is-exiting>*:nth-child(7){animation-delay:.05s}
+.anim-stagger-list.is-exiting>*:nth-child(8){animation-delay:0s}
+.anim-stagger-list>*{opacity:0;transition:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(18px)}}
+
+/* ===== 17. 响应式 ===== */
+/* 所有成品必须包含 */
+@media(max-width:900px){
+  .scroll-section{padding:40px 28px}
+  .split,.split-c{grid-template-columns:1fr;gap:20px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .arch .tier{grid-template-columns:1fr;gap:10px}
+  .arch .tname{padding:10px;font-size:11px}
+  .arch .cells{grid-template-columns:repeat(2,1fr)}
+  .formula-box{font-size:26px;padding:18px}
+}
+@media(max-width:480px){
+  .arch .cells{grid-template-columns:1fr}
+}
+
+/* ===== 导航栏 ===== */
+.nav-bar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;gap:4px;padding:8px 24px;background:rgba(26,27,38,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-bar a{display:inline-block;padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-2);border-radius:100px;transition:background .2s,color .2s;text-decoration:none;flex-shrink:0}
+.nav-bar a:hover,.nav-bar a.active{background:var(--accent);color:var(--bg)}
+.scroll-section:first-of-type{padding-top:120px}
+@media(max-width:900px){
+  .nav-bar{padding:6px 12px;gap:2px}
+  .nav-bar a{padding:5px 10px;font-size:11px}
+  .scroll-section:first-of-type{padding-top:100px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航栏 ===== -->
+<nav class="nav-bar">
+  <a href="#cover">封面</a>
+  <a href="#concept">概念</a>
+  <a href="#formula">公式</a>
+  <a href="#comparison">对比</a>
+  <a href="#derivation">推导</a>
+  <a href="#applications">应用</a>
+  <a href="#timeline">时间线</a>
+  <a href="#misconceptions">误区</a>
+  <a href="#summary">总结</a>
+</nav>
+
+<!-- ===== S1: 封面 ===== -->
+<section id="cover" class="scroll-section full">
+  <div class="anim-stagger-list">
+    <p class="kicker">Quantum Mechanics · 量子物理</p>
+    <h1 class="h1">
+      <span class="gradient-text">量子纠缠</span>
+    </h1>
+    <p class="lede" style="max-width:700px;margin:24px auto 0">两个粒子一旦发生纠缠，无论相隔多远，测量其中一个会瞬间影响另一个的状态。爱因斯坦称之为"鬼魅般的超距作用"，而它正是量子计算、量子通信和量子密钥分发的基础。</p>
+  </div>
+</section>
+
+<!-- ===== S2: 双栏概念 — 什么是量子纠缠 ===== -->
+<section id="concept" class="scroll-section">
+  <p class="kicker">Concept · 核心概念</p>
+  <h2 class="h2">什么是量子纠缠</h2>
+  <div class="split mt-m">
+    <div class="card anim-fade-left">
+      <h3>纠缠的本质</h3>
+      <p class="dim" style="margin-bottom:12px">当两个或多个粒子发生相互作用后，它们的量子态无法独立描述，只能作为一个整体来描述。</p>
+      <ul>
+        <li>测量其中一个粒子，立即确定另一个的状态</li>
+        <li>关联不受距离限制——远距离量子关联</li>
+        <li>无法通过经典局域隐变量解释</li>
+      </ul>
+      <div class="insight" style="margin-top:12px">
+        <strong>核心观点</strong>：纠缠不是"信息传递"，而是量子态的整体性——两个粒子共享同一个量子态。
+      </div>
+    </div>
+    <div class="card anim-fade-right">
+      <h3>EPR 佯谬</h3>
+      <p class="dim" style="margin-bottom:12px">1935 年，爱因斯坦、波多尔斯基和罗森提出 EPR 佯谬，质疑量子力学的完备性。</p>
+      <ul>
+        <li>认为量子力学无法同时描述所有物理实在</li>
+        <li>主张存在"局域隐变量"解释量子关联</li>
+        <li>隐含假设：定域性 + 实在性</li>
+      </ul>
+      <p class="dim mt-s" style="font-size:13px">爱因斯坦坚信"上帝不掷骰子"，但后来的实验证明——量子纠缠是真实的，局域隐变量理论被排除。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S3: 公式展示 — 贝尔态 ===== -->
+<section id="formula" class="scroll-section">
+  <p class="kicker">Formula · 数学描述</p>
+  <h2 class="h2">贝尔态（Bell States）</h2>
+  <div style="text-align:center" class="anim-fade-up">
+    <div class="formula-box" style="display:inline-block;min-width:320px">
+      |Φ⁺⟩ = (|00⟩ + |11⟩) / √2
+      <span class="sub">最大纠缠态之一——两个量子比特完全关联</span>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:16px;justify-content:center;flex-wrap:wrap">
+      <span class="pill">|Φ⁻⟩ = (|00⟩ − |11⟩)/√2</span>
+      <span class="pill pill-accent">|Ψ⁺⟩ = (|01⟩ + |10⟩)/√2</span>
+      <span class="pill">|Ψ⁻⟩ = (|01⟩ − |10⟩)/√2</span>
+    </div>
+    <p class="dim mt-m" style="max-width:600px;margin:24px auto 0">四个贝尔态构成正交完备基，是量子通信和量子计算中用于编码信息的核心资源。两粒子自旋测量结果完全关联或完全反关联。</p>
+  </div>
+</section>
+
+<!-- ===== S4: 对比+数据表 ===== -->
+<section id="comparison" class="scroll-section">
+  <p class="kicker">Comparison · 经典 vs 量子</p>
+  <h2 class="h2">经典关联与量子纠缠</h2>
+  <div class="split mt-m">
+    <div class="anim-fade-left">
+      <h3 style="margin-bottom:10px">本质区别</h3>
+      <table class="compare-table">
+        <tr><th>特性</th><th>经典关联</th><th>量子纠缠</th></tr>
+        <tr><td>状态描述</td><td>每个粒子独立描述</td><td>整体态，不可分解</td></tr>
+        <tr><td>关联来源</td><td>共同历史原因</td><td>量子叠加态</td></tr>
+        <tr><td>测量影响</td><td>不影响其他粒子</td><td>瞬间确定关联态</td></tr>
+        <tr><td>定域性</td><td>满足</td><td>贝尔不等式破坏</td></tr>
+        <tr><td>可复制性</td><td>可完美克隆</td><td>量子不可克隆定理</td></tr>
+      </table>
+    </div>
+    <div class="anim-fade-right">
+      <h3 style="margin-bottom:10px">CHSH 实验数据</h3>
+      <table class="data-table" style="font-size:12px">
+        <tr><th>实验年份</th><th>S 值</th><th>违反贝尔极限</th></tr>
+        <tr><td>1982 (Aspect)</td><td>2.70 ± 0.05</td><td class="hl">是 (＞2)</td></tr>
+        <tr><td>1998 (Innsbruck)</td><td>2.73 ± 0.02</td><td class="hl">是</td></tr>
+        <tr><td>2015 (Delft)</td><td>2.42 ± 0.20</td><td class="hl">是</td></tr>
+        <tr><td>2015 (NIST)</td><td class="hl">2.33 ± 0.09</td><td class="hl">是</td></tr>
+        <tr><td>理论最大</td><td>2√2 ≈ 2.828</td><td>—</td></tr>
+      </table>
+      <p class="dim mt-s" style="font-size:12px">S ＞ 2 即违反贝尔不等式，排除局域隐变量理论。2015 年首次实现无漏洞实验（同时关闭定域性漏洞和检测漏洞），2022 年荣获诺贝尔物理学奖。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S5: 步骤推导 — EPR→Bell→实验 ===== -->
+<section id="derivation" class="scroll-section">
+  <p class="kicker">Derivation · 逻辑链</p>
+  <h2 class="h2">从 EPR 佯谬到贝尔不等式</h2>
+  <div style="max-width:700px;margin:0 auto" class="anim-fade-up">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>EPR 佯谬（1935）</h4>
+        <p>爱因斯坦指出：若量子力学正确，则粒子间存在"鬼魅般的超距作用"，违背定域实在论。因此他认为量子力学不完备。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>贝尔定理（1964）</h4>
+        <p>约翰·贝尔推导出不等式：任何局域隐变量理论对两个粒子测量结果的关联度存在上限 S ≤ 2。量子力学预测 S 可达 2√2。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>Aspect 实验（1982）</h4>
+        <p>阿兰·阿斯佩首次在光学实验中实现贝尔不等式检验，测得 S ≈ 2.70，明确违反贝尔极限，支持量子力学。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>无漏洞实验（2015）</h4>
+        <p>三个独立团队同时关闭定域性漏洞和检测漏洞，以极高置信度证实量子纠缠的真实性。2022 年贝尔测试获诺贝尔奖。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S6: 知识体系 — 应用领域 ===== -->
+<section id="applications" class="scroll-section">
+  <p class="kicker">Applications · 应用体系</p>
+  <h2 class="h2">量子纠缠的应用领域</h2>
+  <div class="arch mt-m anim-stagger-list" data-anim-target>
+    <div class="tier hl">
+      <div class="tname">量子计算</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">⚛</div><h4>纠缠门操作</h4><p>CNOT 门等双量子比特门依赖纠缠</p></div>
+        <div class="cell"><div class="ic">📐</div><h4>Shor 算法</h4><p>利用纠缠实现大数质因数分解</p></div>
+        <div class="cell"><div class="ic">🔍</div><h4>Grover 搜索</h4><p>量子纠缠加速数据库搜索</p></div>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="tname">量子通信</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">🔑</div><h4>QKD</h4><p>量子密钥分发（BB84，E91）</p></div>
+        <div class="cell"><div class="ic">📡</div><h4>量子隐形传态</h4><p>利用纠缠传输量子态</p></div>
+        <div class="cell"><div class="ic">🌐</div><h4>量子网络</h4><p>纠缠分发构建量子互联网</p></div>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="tname">精密测量</div>
+      <div class="cells">
+        <div class="cell"><div class="ic">🎯</div><h4>量子传感</h4><p>纠缠增强测量灵敏度</p></div>
+        <div class="cell"><div class="ic">🕐</div><h4>量子钟</h4><p>纠缠原子钟超越标准量子极限</p></div>
+        <div class="cell"><div class="ic">🧲</div><h4>磁力计</h4><p>纠缠光子实现高精度磁场探测</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S7: 时间线 ===== -->
+<section id="timeline" class="scroll-section">
+  <p class="kicker">Timeline · 研究发展史</p>
+  <h2 class="h2">量子纠缠百年历程</h2>
+  <div style="max-width:600px;margin:0 auto" class="anim-fade-up">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="year">1935</div>
+        <p>爱因斯坦、波多尔斯基、罗森提出 EPR 佯谬，质疑量子力学的完备性。薛定谔在同一年引入"纠缠"（entanglement）一词。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">1964</div>
+        <p>约翰·贝尔推导出贝尔不等式，将 EPR 的哲学争论转化为可实验检验的数理形式。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">1982</div>
+        <p>阿兰·阿斯佩在巴黎完成首次明确的贝尔不等式检验实验，结果违反贝尔极限，支持量子力学。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">2015</div>
+        <p>三个独立团队（Delft、NIST、维也纳）同时实现无漏洞贝尔实验，彻底排除局域隐变量。</p>
+      </div>
+      <div class="tl-item">
+        <div class="year">2022</div>
+        <p>阿斯佩、克劳泽、塞林格因贝尔不等式相关实验获得诺贝尔物理学奖，量子纠缠研究达到巅峰。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S8: 对比卡片 — 常见误区 ===== -->
+<section id="misconceptions" class="scroll-section">
+  <p class="kicker">Misconceptions · 常见误区</p>
+  <h2 class="h2">关于量子纠缠的常见误解</h2>
+  <div class="contrast-cards mt-m anim-fade-up">
+    <div class="ex-card good">
+      <h4>✅ 正确理解</h4>
+      <p style="font-size:12px;color:var(--text-2)">纠缠是量子态的整体性 — 两个粒子共享同一个量子态，测量揭示的是预先存在的关联，而非瞬时信息传递。这并不违背狭义相对论，因为无法利用纠缠超光速传递信息。</p>
+    </div>
+    <div class="ex-card bad">
+      <h4>❌ 常见误解</h4>
+      <p style="font-size:12px;color:var(--text-2)">"纠缠允许超光速通信" — 测量一个粒子确实瞬间影响另一个的状态，但测量结果是随机的，无法携带可控信息。不能通过纠缠在两个地点之间传递任何有意义的消息。</p>
+    </div>
+  </div>
+  <div class="insight mt-m" style="max-width:700px;margin:24px auto 0">
+    量子纠缠不传递信息，而是提供关联资源。结合经典通信（量子隐形传态中的经典信道），才能实现量子态的远程传输。
+  </div>
+</section>
+
+<!-- ===== S9: 网格总结 ===== -->
+<section id="summary" class="scroll-section">
+  <p class="kicker">Summary · 核心要点</p>
+  <h2 class="h2">量子纠缠核心回顾</h2>
+  <div class="grid g2 mt-m">
+    <div class="card-accent anim-fade-left" style="height:100%">
+      <h3>核心公式</h3>
+      <div style="margin-top:12px">
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;text-align:center">
+          <div style="font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--accent)">|Φ⁺⟩ = (|00⟩ + |11⟩)/√2</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:4px">最大纠缠贝尔态</div>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 16px;text-align:center;margin-top:8px">
+          <div style="font-size:13px;color:var(--text-2)">贝尔不等式: S ≤ 2 (局域隐变量)</div>
+          <div style="font-size:13px;color:var(--accent)">量子力学预测: S = 2√2 ≈ 2.828</div>
+        </div>
+      </div>
+    </div>
+    <div class="anim-fade-right" style="height:100%">
+      <div class="card" style="height:100%">
+        <h3>五句话总结</h3>
+        <ul>
+          <li><strong>纠缠本质</strong>——两个粒子共享整体量子态，不可独立描述</li>
+          <li><strong>非定域关联</strong>——测量一个立即确定另一个，无视距离</li>
+          <li><strong>不超光速</strong>——无法利用纠缠传递信息，不违反相对论</li>
+          <li><strong>实验证实</strong>——贝尔不等式已被多次实验违反，2022 年获诺贝尔奖</li>
+          <li><strong>应用广泛</strong>——量子计算、量子密钥分发、量子隐形传态</li>
+        </ul>
+      </div>
+      <div class="insight mt-m">
+        <em>"量子纠缠不是魔术，而是自然界最根本的关联方式。它不传输信息，却创造了信息处理的无限可能。"</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JS: 复制自 base.js ===== -->
+<script>
+(function(){
+  const animateElements = document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-stagger-list');
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        entry.target.classList.remove('is-exiting');
+      } else {
+        entry.target.classList.add('is-exiting');
+        entry.target.classList.remove('is-visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  animateElements.forEach(el => observer.observe(el));
+})();
+
+/* 导航栏滚动高亮 */
+(function(){
+  var sections = document.querySelectorAll('.scroll-section[id]');
+  var links = document.querySelectorAll('.nav-bar a');
+  function updateNav(){
+    var scrollY = window.scrollY + 100;
+    var activeId = '';
+    sections.forEach(function(s){
+      if(s.offsetTop <= scrollY) activeId = s.id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+    });
+  }
+  window.addEventListener('scroll', updateNav);
+  updateNav();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+{
+  "files": [
+    {
+      "path": "INSTALL.md",
+      "sha": "08b36b2f193762e8ea857bc78d535083c55ff073",
+      "size": 4027
+    },
+    {
+      "path": "LICENSE",
+      "sha": "acf80faba115012ec308f8524e59a50019477214",
+      "size": 1070
+    },
+    {
+      "path": "README.md",
+      "sha": "b3c64c1d45e66c4789c3611a35214817217cf4f1",
+      "size": 7137
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "88a3fb576dfaa32dbb6d145f2e6994b327e3e45a",
+      "size": 9711
+    },
+    {
+      "path": "_meta.json",
+      "sha": "93362d40de0788b2e38a97efacc460010fac88cf",
+      "size": 241
+    },
+    {
+      "path": "docs/PRD.md",
+      "sha": "ed9ee61ea94c0cb25383544c5dacad732d5e19de",
+      "size": 3131
+    },
+    {
+      "path": "docs/example-initial-generation.jpg",
+      "sha": "fbb395a44edd60538b94b7e1119c84f5cc307aa6",
+      "size": 233396
+    },
+    {
+      "path": "docs/example-iteration-update.jpg",
+      "sha": "4d83ea969ff9519e5778b91827da68e1e80471b3",
+      "size": 55327
+    },
+    {
+      "path": "docs/skill-structure.md",
+      "sha": "c345e467358b4d3aed4a0f2e0ef91d1c9c21fe66",
+      "size": 2597
+    },
+    {
+      "path": "examples/README.md",
+      "sha": "49589cad232813d4564875c6a8695b589003a8db",
+      "size": 3026
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/README.md",
+      "sha": "e0d562a2a80d972afaed174b7a6e60219a4d7ea7",
+      "size": 577
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/docs/README.md",
+      "sha": "8d0b37529785deb9b7b58500a7e2e2b541013388",
+      "size": 1087
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/docs/architecture.md",
+      "sha": "deee9f6dcd005377bdf1f1f500d7c3a916553e24",
+      "size": 2159
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/docs/sample_architecture_review.docx",
+      "sha": "3caf86eed76ab6045a172e1d8d2f732cd39525d3",
+      "size": 38804
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/docs/sample_assets/sample_fig_modules.png",
+      "sha": "3a3d9f623b16df656bea143fdad7b655148c368d",
+      "size": 2540
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/docs/sample_assets/sample_fig_queue.png",
+      "sha": "61b2f14a2d4e954a5b23c1cdf03c661799e4edc1",
+      "size": 1741
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/docs/sample_scheduler_deck.pptx",
+      "sha": "3ceca0032c22772ebef2adc1f05696f9225a156b",
+      "size": 33772
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/meeting_notes_intake_example.md",
+      "sha": "b819afe2c80cca4f3e4de150241e12cfdee60e21",
+      "size": 731
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/heartbeat.go",
+      "sha": "a68a8870494c10ef84337b8120eae77fc5ff1060",
+      "size": 553
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/reorder.go",
+      "sha": "93342ecd46e709a31b541bfd3818b506378c4bcd",
+      "size": 1404
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/scorer.go",
+      "sha": "09cebfcf050079d8382717b5ba200e90dcaf1c51",
+      "size": 497
+    },
+    {
+      "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/types.go",
+      "sha": "7780fcfc58c9a00d4f0fe8e32c37c14c7f4ffe59",
+      "size": 866
+    },
+    {
+      "path": "prompts/correction_handler.md",
+      "sha": "427bb562eacbd91b297efb56cfff74ffd7ece6e0",
+      "size": 2174
+    },
+    {
+      "path": "prompts/disclosure_builder.md",
+      "sha": "cf1164129e9b7bf51ef6958e1f46920b98f36ed9",
+      "size": 7259
+    },
+    {
+      "path": "prompts/disclosure_preview.md",
+      "sha": "abed60aad54a7409f22ac0e16589fc7303f2381a",
+      "size": 917
+    },
+    {
+      "path": "prompts/disclosure_self_check.md",
+      "sha": "0c42fb04426d94e409b5071499d8673752546a60",
+      "size": 2820
+    },
+    {
+      "path": "prompts/intake.md",
+      "sha": "f0b5ddab747ee437504186000b56f13cda69ec03",
+      "size": 943
+    },
+    {
+      "path": "prompts/iteration_context.md",
+      "sha": "aa91187d9b96f2ab4f92bcadf56d7a7873afaca8",
+      "size": 4040
+    },
+    {
+      "path": "prompts/merger.md",
+      "sha": "d841b68e7f1306da500243ebc4d842bd7078eb48",
+      "size": 2725
+    },
+    {
+      "path": "prompts/patent_points_analyzer.md",
+      "sha": "ea012514bc97343da8ef9b92713ecb451c7fd861",
+      "size": 951
+    },
+    {
+      "path": "prompts/prior_art_search.md",
+      "sha": "a42a625e4bc28575fed97ffc3b7a8032dd5bb0d5",
+      "size": 9180
+    },
+    {
+      "path": "prompts/project_scan.md",
+      "sha": "99e4b59ecfca8403c1ee24a000d8d5c299dfc62f",
+      "size": 4264
+    },
+    {
+      "path": "prompts/template_reference.md",
+      "sha": "958dc176bf5bef3dda2f85dc5907bb56d4372c46",
+      "size": 6135
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "ca2824299b5d959636c201c76de8d7e09f7b87b7",
+      "size": 450
+    },
+    {
+      "path": "tests/test_cnipa_epub_chain.py",
+      "sha": "71b5031b90e5c50059a733cb165028261bd5f2b6",
+      "size": 1463
+    },
+    {
+      "path": "tools/README.md",
+      "sha": "83d2ee7ed13c2bb5652840a2b2d8fcc2bd563dee",
+      "size": 12960
+    },
+    {
+      "path": "tools/cnipa_epub_crawler.py",
+      "sha": "d5988e1c372765e15f4e8e5216b6ba9bc430db24",
+      "size": 10763
+    },
+    {
+      "path": "tools/cnipa_epub_parse.py",
+      "sha": "44b9ceb6a3fa3067a160a90dda57edbc775250d4",
+      "size": 8826
+    },
+    {
+      "path": "tools/cnipa_epub_search.py",
+      "sha": "37924d727a8e63156ec37db14fc9116f8252dca2",
+      "size": 5784
+    },
+    {
+      "path": "tools/docx_to_md.py",
+      "sha": "ab49e8bb5b0d6afcb690daadd131a095dca56c5f",
+      "size": 3835
+    },
+    {
+      "path": "tools/iteration_dialog_log.py",
+      "sha": "480767f66b741c15662dd2bff3b3b6111fa8cad4",
+      "size": 3231
+    },
+    {
+      "path": "tools/md_to_docx.py",
+      "sha": "3ef5f7f2837865ec53ec6baa2216240982b7d329",
+      "size": 14910
+    },
+    {
+      "path": "tools/mermaid_render.py",
+      "sha": "a99b683cf82f8caa2ea8df2052927a98e09b15fe",
+      "size": 13179
+    },
+    {
+      "path": "tools/package-lock.json",
+      "sha": "f758cdf8ad65b808c396f40aeda1b5dc30556649",
+      "size": 86410
+    },
+    {
+      "path": "tools/package.json",
+      "sha": "3da82a30a76ebdf91885511ecae39f5a9acb921c",
+      "size": 269
+    },
+    {
+      "path": "tools/pptx_to_md.py",
+      "sha": "068385192cb2a43335668af45bf019f01a1a7ca5",
+      "size": 5040
+    },
+    {
+      "path": "tools/requirements-cnipa.txt",
+      "sha": "7f685d892a3d2e7fb7ceaa3240a71ffb0c47b4b7",
+      "size": 159
+    }
+  ]
+}

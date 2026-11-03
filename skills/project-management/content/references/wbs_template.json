@@ -1,0 +1,17 @@
+{
+  "name": "WBS Template",
+  "fields": [
+    {"name": "wbs_code", "label": "WBS编码", "type": "text", "required": true},
+    {"name": "work_package", "label": "工作包名称", "type": "text", "required": true},
+    {"name": "level", "label": "层级", "type": "number"},
+    {"name": "parent", "label": "父节点", "type": "text"},
+    {"name": "deliverable", "label": "交付物", "type": "textarea"},
+    {"name": "owner", "label": "负责人", "type": "text"},
+    {"name": "start_date", "label": "开始日期", "type": "date"},
+    {"name": "end_date", "label": "结束日期", "type": "date"},
+    {"name": "duration", "label": "工期(天)", "type": "number"},
+    {"name": "resources", "label": "资源需求", "type": "textarea"},
+    {"name": "status", "label": "状态", "type": "select", "options": ["待开始", "进行中", "已完成", "已取消"]},
+    {"name": "dependencies", "label": "依赖关系", "type": "text"}
+  ]
+}

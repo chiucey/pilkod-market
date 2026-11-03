@@ -1,0 +1,12 @@
+interface:
+  display_name: Immune Literature Tagger
+  short_description: Tag immunology PDFs and split evidence cards into Excel.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

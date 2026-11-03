@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-22",
+  "description": "多维度股票分析技能",
+  "id": 379340506386587,
+  "name": "stock-analysis",
+  "platform": "minimax",
+  "security": {
+    "analysis_log_encryption": true,
+    "data_isolation": true,
+    "financial_data_compliance": true,
+    "no_external_call": true,
+    "no_trading_execution": true,
+    "only_public_data_access": true
+  },
+  "tags": [
+    "股票分析",
+    "基本面",
+    "技术面",
+    "估值",
+    "风险评估"
+  ],
+  "updated_at": 1774165730779,
+  "version": "3.2.1"
+}

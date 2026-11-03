@@ -1,0 +1,71 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "长篇小说生成（日更3000-10000字）",
+    "短剧剧本生成（红果SSS级标准）",
+    "文件解析（TXT/Word/PDF）",
+    "风格模仿（100%还原文风）",
+    "大纲/世界观/人物设定生成",
+    "续写/改写/扩写",
+    "33维度AI痕迹检测",
+    "去AI味反检测改写",
+    "多模型路由（写手/审计/雷达）",
+    "守护进程自动写章",
+    "EPUB/TXT导出"
+  ],
+  "created_at": "2026-03-27",
+  "id": 381027494900500,
+  "inkos_agents": [
+    "Radar（雷达）",
+    "Planner（规划师）",
+    "Composer（编排师）",
+    "Architect（建筑师）",
+    "Writer（写手）",
+    "Observer（观察者）",
+    "Reflector（反射器）",
+    "Normalizer（归一化器）",
+    "Auditor（审计员）",
+    "Reviser（修订者）"
+  ],
+  "name": "inkos-novel-agent",
+  "platform": "minimax",
+  "skill_id": "inkos-novel-agent",
+  "source": "https://github.com/narcooo/inkos",
+  "supported_genres": [
+    "穿越",
+    "民国",
+    "刑侦",
+    "悬疑",
+    "都市",
+    "玄幻",
+    "仙侠",
+    "科幻",
+    "男频",
+    "女频",
+    "言情",
+    "奇幻"
+  ],
+  "supported_platforms": [
+    "起点",
+    "晋江",
+    "飞卢",
+    "番茄",
+    "红果",
+    "抖音",
+    "快手"
+  ],
+  "tags": [
+    "小说创作",
+    "短剧剧本",
+    "网文",
+    "AI写作",
+    "InkOS",
+    "多智能体",
+    "文件解析",
+    "风格模仿",
+    "续写改写",
+    "去AI味"
+  ],
+  "updated_at": 1774577333651,
+  "version": "1.0.0"
+}

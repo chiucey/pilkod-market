@@ -1,0 +1,13 @@
+interface:
+  display_name: "宇宙真理·小说写作整合版"
+  short_description: "六技能合一，以宇宙真理规则为准，支持长篇规划、正文、爽感、去AI味、审稿与精修"
+  default_prompt: "使用 $write-yuzhou-novels，依据我的总纲、人物、前文和本章章纲完成写作、审稿或精修，有冲突以 yuzhou 规则为准。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  products:
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
+  allow_implicit_invocation: true

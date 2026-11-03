@@ -1,0 +1,47 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "投资标的筛选",
+    "管线分析",
+    "财务评估",
+    "竞争格局分析",
+    "风险评估",
+    "估值建模"
+  ],
+  "category": "金融投资",
+  "created_date": "2026-04-09",
+  "description": "医药投行投资标的筛选与分析技能，帮助寻找医药研发投资标的、筛选医药公司、分析药物研发项目",
+  "display_name": "医药投行投资标的筛选",
+  "id": 385812851515851,
+  "name": "pharma-investment-target-screener",
+  "platform": "minimax",
+  "tags": [
+    "医药投资",
+    "投行",
+    "biotech",
+    "投资标的筛选",
+    "药物研发",
+    "财务分析",
+    "尽调"
+  ],
+  "tool_requirements": [
+    "stocks_info",
+    "stocks_financial_data",
+    "batch_web_search",
+    "extract_content_from_websites",
+    "extract_pdfs_key_info"
+  ],
+  "trigger_keywords": [
+    "医药投资标的",
+    "医药公司筛选",
+    "biotech分析",
+    "药物研发评估",
+    "医药行业研究",
+    "创新药投资",
+    "医药企业分析",
+    "药品管线评估",
+    "医药公司尽调"
+  ],
+  "updated_at": 1775745680555,
+  "version": "1.0.0"
+}

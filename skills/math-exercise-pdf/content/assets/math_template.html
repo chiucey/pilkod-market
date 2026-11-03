@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Noto Serif SC", Georgia, serif;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+            string-set: doctitle "";
+        }
+        
+        @page {
+            size: A4;
+            margin: 2.5cm 2cm;
+            @top-center { content: string(doctitle); font-size: 10pt; color: #666; }
+            @bottom-center { content: counter(page); font-size: 10pt; }
+        }
+        
+        @page :first {
+            margin: 0;
+            @top-center { content: none; }
+            @bottom-center { content: none; }
+        }
+        
+        @page cover { @top-center { content: none; } @bottom-center { content: none; } }
+        
+        .cover {
+            page: cover;
+            width: 210mm;
+            height: 297mm;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 150%;
+            background: linear-gradient(45deg, rgba(66, 133, 244, 0.08) 0%, rgba(66, 133, 244, 0.02) 100%);
+            transform: rotate(-15deg);
+        }
+        
+        .cover::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -20%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(52, 168, 83, 0.06) 0%, rgba(52, 168, 83, 0.02) 100%);
+            transform: rotate(15deg);
+        }
+        
+        .cover-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 80%;
+            z-index: 1;
+        }
+        
+        .cover-title {
+            font-size: 32pt;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 0.8cm;
+            letter-spacing: 0.1em;
+        }
+        
+        .cover-subtitle {
+            font-size: 14pt;
+            color: #4a4a6a;
+            margin-bottom: 3cm;
+            font-weight: 400;
+        }
+        
+        .cover-decoration {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #4285f4, #34a853);
+            margin: 0 auto 2cm;
+            border-radius: 2px;
+        }
+        
+        .cover-meta {
+            font-size: 11pt;
+            color: #666;
+            line-height: 2;
+        }
+        
+        h1 {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 1.5em 0 0.8em;
+            padding-bottom: 0.3em;
+            border-bottom: 2px solid #e0e0e0;
+            string-set: doctitle content();
+            page-break-after: avoid;
+        }
+        
+        .problem {
+            margin: 1.5em 0;
+            padding: 1em 1.2em;
+            background: #fafafa;
+            border-left: 3px solid #4285f4;
+            page-break-inside: avoid;
+        }
+        
+        .problem-number {
+            font-weight: 700;
+            color: #4285f4;
+            margin-bottom: 0.5em;
+        }
+        
+        .problem-content {
+            margin-left: 0;
+        }
+
+        .problem-content p {
+            text-align: left;
+        }
+        
+        .katex-display {
+            margin: 1em 0;
+            overflow-x: auto;
+        }
+
+        pre, table, figure, img, svg, .mermaid, blockquote, .equation {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        a { word-break: break-all; }
+        code { word-break: break-word; }
+        
+        .section-intro {
+            margin: 1em 0;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="cover-content">
+            <h1 class="cover-title">{{TITLE}}</h1>
+            <div class="cover-decoration"></div>
+            <p class="cover-subtitle">{{SUBTITLE}}</p>
+            <div class="cover-meta">
+                <p>{{SERIES}}</p>
+                <p>{{YEAR}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 题目内容区域 -->
+    <!-- 使用以下格式添加章节和题目：
+    
+    <h1>第X部分 章节名称</h1>
+    
+    <div class="problem">
+        <div class="problem-number">题 N</div>
+        <div class="problem-content">
+            <p>题目内容，支持 $LaTeX公式$ 和 $$块级公式$$</p>
+        </div>
+    </div>
+    
+    -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>

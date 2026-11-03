@@ -1,0 +1,24 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-03-23",
+  "dependencies": [
+    "opencv-python",
+    "ffmpeg",
+    "mtcnn",
+    "pillow",
+    "numpy"
+  ],
+  "description": "视频人脸卡通形象替换技能，将视频中的人物替换为卡通形象以保护隐私",
+  "id": 379681158402286,
+  "name": "video-face-cartoon-replacer",
+  "platform": "minimax",
+  "tags": [
+    "video",
+    "face-replacement",
+    "cartoon",
+    "privacy",
+    "image-processing"
+  ],
+  "updated_at": 1774249107664,
+  "version": "1.0.0"
+}

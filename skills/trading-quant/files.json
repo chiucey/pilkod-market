@@ -1,0 +1,259 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "65bf7404b160b7f7b7dc923e86530b8bd3d73950",
+      "size": 1866
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "5ba8021989ab34d8e512e3572e74ac95b2da5523",
+      "size": 2590
+    },
+    {
+      "path": "_meta.json",
+      "sha": "1606a1873add0714323817c312465db3374685fc",
+      "size": 240
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "d88f5d4eaa9c05e5667e07dcbebaca7a8e5923e2",
+      "size": 97
+    },
+    {
+      "path": "scripts/batch_fetch.sh",
+      "sha": "3f4069f4392bfc2fc424e4b85d291bfbee8966b2",
+      "size": 1859
+    },
+    {
+      "path": "scripts/lib/analysis/capital_flow.py",
+      "sha": "1138b9868211e08fbafd8e3fd7e627d3897839f8",
+      "size": 8372
+    },
+    {
+      "path": "scripts/lib/analysis/industry_classifier.py",
+      "sha": "5ad0582799e9e0919f27ff45911175449a7491bb",
+      "size": 10548
+    },
+    {
+      "path": "scripts/lib/analysis/scoring.py",
+      "sha": "00be56914ab5fd311a936c1974c2a30664a2249a",
+      "size": 14013
+    },
+    {
+      "path": "scripts/lib/analysis/sentiment.py",
+      "sha": "44b35042c40b8f60841aa979679e952690973be6",
+      "size": 19433
+    },
+    {
+      "path": "scripts/lib/analysis/technical.py",
+      "sha": "7fc3914bbe91c6e02518c759de8cf5e1e812e8be",
+      "size": 25135
+    },
+    {
+      "path": "scripts/lib/config/__init__.py",
+      "sha": "bfc5cc6724b1a7e341fc738f6d8741f856d81362",
+      "size": 546
+    },
+    {
+      "path": "scripts/lib/config/settings.yaml",
+      "sha": "b503d982330557a043a7b8af9409fd04f4657f95",
+      "size": 1038
+    },
+    {
+      "path": "scripts/lib/data_sources/__init__.py",
+      "sha": "08388f2baffb8e125682fa5c2fff6b4585d8519a",
+      "size": 505
+    },
+    {
+      "path": "scripts/lib/data_sources/base.py",
+      "sha": "92e249ca64aea45880e38370ceb174659e5bb692",
+      "size": 4713
+    },
+    {
+      "path": "scripts/lib/data_sources/capital_flow_manager.py",
+      "sha": "96f4461eaed6a9ce17dcc71261283cffa009436d",
+      "size": 14877
+    },
+    {
+      "path": "scripts/lib/data_sources/eastmoney.py",
+      "sha": "91615149649c361e8851b914cc8c52fc54cb1a7b",
+      "size": 3162
+    },
+    {
+      "path": "scripts/lib/data_sources/eastmoney_market.py",
+      "sha": "e8c581c97a0ebe1665d225778d590c9b211f04f0",
+      "size": 15957
+    },
+    {
+      "path": "scripts/lib/data_sources/eastmoney_news.py",
+      "sha": "067c575b4ae8cc7b8361c2d747e8606472e9d57f",
+      "size": 10105
+    },
+    {
+      "path": "scripts/lib/data_sources/eastmoney_northbound.py",
+      "sha": "fa247ae622e86f07bf209cef8a32143610869419",
+      "size": 3316
+    },
+    {
+      "path": "scripts/lib/data_sources/manager.py",
+      "sha": "aeffd148690be0c5ee66b115005639fd019b616c",
+      "size": 6623
+    },
+    {
+      "path": "scripts/lib/data_sources/multi_news.py",
+      "sha": "f01f118d485e4fb8c20838c4bc4c071a2a0ef5db",
+      "size": 13596
+    },
+    {
+      "path": "scripts/lib/data_sources/sina.py",
+      "sha": "408315703af7202bb1859e4d293f766eac1019f5",
+      "size": 3131
+    },
+    {
+      "path": "scripts/lib/data_sources/sina_commodity.py",
+      "sha": "c8818fe373a7c752dd5dcf24759c2c03445c63cf",
+      "size": 4314
+    },
+    {
+      "path": "scripts/lib/data_sources/sina_market.py",
+      "sha": "e43bc662d65254a2075606a0b06630c2e1bf9d13",
+      "size": 3866
+    },
+    {
+      "path": "scripts/lib/data_sources/tencent.py",
+      "sha": "069ff29b3507e34b95e11a2152e309d4501cdee1",
+      "size": 4742
+    },
+    {
+      "path": "scripts/lib/data_sources/tencent_hk.py",
+      "sha": "4b671a54d9cc37e40f5d34a5b1fc0cbd6bec8692",
+      "size": 2720
+    },
+    {
+      "path": "scripts/lib/data_sources/tencent_us.py",
+      "sha": "b47e3e5951e21c81ae62c3124b61b0b28d2c5111",
+      "size": 2806
+    },
+    {
+      "path": "scripts/lib/data_sources/ths.py",
+      "sha": "18b351ed4d90bec44de65a50e684f9eacbd9a3d7",
+      "size": 3315
+    },
+    {
+      "path": "scripts/lib/data_sources/ths_market.py",
+      "sha": "6e1c4f8f8bdefa420392f896fd7d55704c91c5fe",
+      "size": 5814
+    },
+    {
+      "path": "scripts/lib/stock_data/__init__.py",
+      "sha": "9ae1227a8236264752068d66cb67486b3551499f",
+      "size": 116
+    },
+    {
+      "path": "scripts/lib/stock_data/cache.py",
+      "sha": "5704efd50763d09c1d1e34008dc5384ba154319b",
+      "size": 3752
+    },
+    {
+      "path": "scripts/lib/stock_data/chain.py",
+      "sha": "1177097da599ce5ca3cd2568cc5ac4fdda2c6452",
+      "size": 2823
+    },
+    {
+      "path": "scripts/lib/stock_data/manager.py",
+      "sha": "587cf128fd6365f5d2368e055ea1a509a7663a3b",
+      "size": 4022
+    },
+    {
+      "path": "scripts/lib/stock_data/sources/__init__.py",
+      "sha": "ba4615d84da3f7e7df31e71b5c3b8e383c02ab2e",
+      "size": 260
+    },
+    {
+      "path": "scripts/lib/stock_data/sources/baostock.py",
+      "sha": "ba8a9fd9fbff4e85804ff28876409f3400361c36",
+      "size": 1436
+    },
+    {
+      "path": "scripts/lib/stock_data/sources/base.py",
+      "sha": "787448cce969c617149615643c39c84c7dfb195f",
+      "size": 569
+    },
+    {
+      "path": "scripts/lib/stock_data/sources/eastmoney.py",
+      "sha": "09488558bae2160a9d4f6d5a32575890c51a7f03",
+      "size": 1368
+    },
+    {
+      "path": "scripts/lib/stock_data/sources/pytdx_source.py",
+      "sha": "732d7708747251c7335f9e0765179f26061b019d",
+      "size": 1669
+    },
+    {
+      "path": "scripts/lib/stock_data/sources/sina.py",
+      "sha": "dc1833ebfa6fb9ce10f47dd5b89e32df619c7f62",
+      "size": 1363
+    },
+    {
+      "path": "scripts/lib/stock_data/utils.py",
+      "sha": "6060a2e7a5a39392b45792ec548868d71ccfff74",
+      "size": 3443
+    },
+    {
+      "path": "scripts/lib/us_data/__init__.py",
+      "sha": "31acf7b537b77955f0d1b4f647421442894ad61c",
+      "size": 95
+    },
+    {
+      "path": "scripts/lib/us_data/cache.py",
+      "sha": "483375fc8a888f2393352ee4781e633a079e71c4",
+      "size": 3415
+    },
+    {
+      "path": "scripts/lib/us_data/chain.py",
+      "sha": "c312af06ac57f2405764d557b081433ec5e108bf",
+      "size": 2790
+    },
+    {
+      "path": "scripts/lib/us_data/manager.py",
+      "sha": "5df5b08037273f3e4b91208a70dbfb8e8dada985",
+      "size": 4933
+    },
+    {
+      "path": "scripts/lib/us_data/sources/__init__.py",
+      "sha": "3908ae34c1f12337359c522c96b0e580a7cb4fd8",
+      "size": 169
+    },
+    {
+      "path": "scripts/lib/us_data/sources/akshare_us.py",
+      "sha": "b2aed7afa762b3f5ba9250be0fac16ec2f805eac",
+      "size": 3354
+    },
+    {
+      "path": "scripts/lib/us_data/sources/base.py",
+      "sha": "74da7a33ce6543e0c131a6fd5bb61370a89b55c8",
+      "size": 383
+    },
+    {
+      "path": "scripts/lib/us_data/sources/yfinance_source.py",
+      "sha": "7fec96745939737636d901932cd804f11eaeccf6",
+      "size": 2443
+    },
+    {
+      "path": "scripts/lib/us_data/utils.py",
+      "sha": "769d7986b72963ad4fe6f4a9407eaf7c12b43bbc",
+      "size": 1414
+    },
+    {
+      "path": "scripts/lib/utils/cache.py",
+      "sha": "49ef45f33d3be95b09aa885475819101f3f0aab8",
+      "size": 5379
+    },
+    {
+      "path": "scripts/quant.py",
+      "sha": "af5be53e62987a2c0430ae51305d6d4d50c2d85c",
+      "size": 43641
+    }
+  ]
+}

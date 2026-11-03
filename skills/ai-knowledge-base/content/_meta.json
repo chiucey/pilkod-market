@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-03-22T16:48:13Z",
+  "dependencies": [
+    "knowledge_ingestion",
+    "semantic_retrieval",
+    "knowledge_management",
+    "relation_analysis",
+    "intelligent_qna"
+  ],
+  "id": 379355635749602,
+  "name": "ai-knowledge-base",
+  "platform": "minimax",
+  "skill_id": "1847924631",
+  "trigger_words": [
+    "AI知识库",
+    "知识入库",
+    "语义检索",
+    "知识图谱",
+    "智能问答",
+    "知识更新",
+    "私有化知识库"
+  ],
+  "type": "native",
+  "updated_at": 1774169572382,
+  "version": "2.4.3"
+}

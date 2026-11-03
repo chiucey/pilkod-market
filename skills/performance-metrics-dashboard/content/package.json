@@ -1,0 +1,11 @@
+{
+  "name": "performance-metrics-dashboard",
+  "version": "1.0.0",
+  "description": "Performance metrics and visualization dashboard for the evolver engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"const s = require('./index.js'); console.log('OK:', Object.keys(s))\""
+  },
+  "keywords": ["evolver", "metrics", "dashboard", "performance"],
+  "license": "MIT"
+}

@@ -1,0 +1,64 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-03-22",
+  "dependencies": [
+    "proactive_trigger",
+    "user_preference_analysis",
+    "task_scheduling",
+    "long_term_memory",
+    "context_persistence",
+    "feedback_optimization",
+    "buffer_management"
+  ],
+  "execution_logic": {
+    "main_execution": "Execute proactive operations following original skill core workflow: 1. Need prediction (analyze user behavior patterns, unfinished tasks, time features to identify potential unexpressed needs); 2. Proactive action execution (trigger proactive reminders/suggestions/task pre-execution/information preloading as needed); 3. Working buffer management (add/update/priority sort pending tasks, persist unfinished context); 4. Scheduled task scheduling (auto-execute preset actions based on user-defined time/conditions); 5. Multi-round context preservation (break single interaction limitations, persist cross-session core information); 6. Real-time optimization (adjust need prediction model and interaction strategy based on user feedback)",
+    "post_execution": "1. Record proactive interaction results and user feedback (satisfied/adjusted/rejected); 2. Update user preference model and need prediction rules; 3. Optimize working buffer task sorting and scheduled task configuration; 4. Persist latest context and unfinished tasks to MaxClaw local memory; 5. Generate proactive interaction logs, support subsequent strategy iteration and effect analysis",
+    "pre_execution": "Initialize proactive interaction environment: 1. Load user historical interaction context (including unfinished tasks, preferences, feedback); 2. Initialize working buffer (staging pending/executable tasks); 3. Start need perception model (predict potential needs based on historical behavior, time nodes, scenario features); 4. Load scheduled task queue and priority rules"
+  },
+  "id": 381167140758507,
+  "name": "proactive-agent",
+  "platform": "minimax",
+  "security_rules": {
+    "data_isolation": true,
+    "memory_encryption": true,
+    "no_external_call": true,
+    "no_unauthorized_proactive_action": true,
+    "task_execution_audit": true,
+    "user_consent_required": true
+  },
+  "skill_desc": "Proactive agent collaboration skill: Break through traditional passive execution mode, empower MaxClaw agents with proactive user need perception, continuous interaction strategy optimization, working buffer management, scheduled task execution, context preservation, and user preference learning capabilities. Support proactive reminders, need prediction, task priority sorting, and multi-round interaction memory, enabling the upgrade from 'Executor' to 'Proactive Partner'.",
+  "skill_name": "proactive-agent",
+  "skill_type": "native",
+  "tags": [
+    "proactive",
+    "autonomous",
+    "self-improvement",
+    "agent",
+    "workflow",
+    "collaboration"
+  ],
+  "trigger_words": [
+    "proactive collaboration",
+    "proactive agent",
+    "proactive agent collaboration",
+    "demand prediction",
+    "scheduled tasks",
+    "working buffer",
+    "context preservation",
+    "preference learning",
+    "continuous optimization",
+    "proactive reminder",
+    "task priority",
+    "主动协作",
+    "需求预判",
+    "定时任务",
+    "工作缓冲区",
+    "上下文保留",
+    "偏好学习",
+    "持续优化",
+    "主动提醒",
+    "任务优先级"
+  ],
+  "updated_at": 1774613047738,
+  "version": "1.0.0"
+}

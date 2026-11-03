@@ -1,0 +1,44 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "Search for relevant academic architecture diagrams in specific domains",
+    "Understand core principles of research papers",
+    "Generate professional academic illustrations",
+    "Model architecture visualization",
+    "Algorithm flowchart design",
+    "Experimental result charts"
+  ],
+  "categories": [
+    "academic-research",
+    "image-generation",
+    "visualization"
+  ],
+  "description": "Professional skill for generating academic figures for research papers, focusing on principle-level architecture diagrams, flowcharts, and model schematics",
+  "id": 381101919802226,
+  "name": "academic-figure-generator",
+  "outputFormats": [
+    "PNG",
+    "SVG"
+  ],
+  "platform": "minimax",
+  "qualityStandards": {
+    "colorScheme": "blue-gray",
+    "formats": [
+      "PNG",
+      "SVG"
+    ],
+    "minResolution": "300 DPI",
+    "style": "academic"
+  },
+  "tags": [
+    "academic",
+    "paper",
+    "figure",
+    "architecture",
+    "diagram",
+    "research",
+    "visualization"
+  ],
+  "updated_at": 1774596063150,
+  "version": "1.0.0"
+}

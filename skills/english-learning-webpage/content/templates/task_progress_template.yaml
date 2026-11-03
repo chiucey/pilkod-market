@@ -1,0 +1,28 @@
+# Task: english_learning_webpage
+# Status: pending  ░░░░░░░░░░░░ 0%
+
+task_id: uuid-xxxx
+skill: english-learning-webpage
+status: pending
+progress: 0/5
+
+steps:
+  - name: step01_inputs
+    status: pending
+  - name: step02_subtitle_alignment
+    status: pending
+  - name: step03_learning_data
+    status: pending
+  - name: step04_audio_slicing
+    status: pending
+  - name: step05_template_html
+    status: pending
+
+context:
+  input_media: ~
+  word_level_subtitle: ~
+  official_subtitle: ~
+  work_dir: work
+  current_output: ~
+
+error: ~

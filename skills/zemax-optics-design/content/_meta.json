@@ -1,0 +1,36 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "文件解析",
+    "光学分析",
+    "透镜设计",
+    "优化分析",
+    "公差分析",
+    "报告生成"
+  ],
+  "compatibility": {
+    "file_formats": [
+      ".zmx",
+      ".zpr",
+      ".ztd"
+    ],
+    "zemax_version": [
+      "2023",
+      "2024",
+      "2025"
+    ]
+  },
+  "created_date": "2026-04-09",
+  "description": "光学设计软件 ZEMAX 操作技能，支持透镜设计、光学分析、公差分析等功能",
+  "id": 385745725973463,
+  "name": "zemax-optics-design",
+  "platform": "minimax",
+  "tags": [
+    "ZEMAX",
+    "光学设计",
+    "透镜设计",
+    "光学分析"
+  ],
+  "updated_at": 1775729905120,
+  "version": "1.0.0"
+}

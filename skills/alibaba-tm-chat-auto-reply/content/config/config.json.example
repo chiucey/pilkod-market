@@ -1,0 +1,32 @@
+{
+  "tm_path": "C:\\Program Files\\TradeManager",
+  "monitor_interval": 5,
+  "auto_reply": true,
+  "reply_delay": 30,
+  "language": "en",
+  "review_mode": true,
+  "keywords": {
+    "price": ["price", "cost", "报价", "价格", "how much"],
+    "moq": ["moq", "minimum", "起订量", "MOQ", "minimum order"],
+    "sample": ["sample", "样品", "免费样品"],
+    "shipping": ["shipping", "delivery", "发货", "物流", "delivery time"],
+    "catalog": ["catalog", "目录", "产品册", "product list"],
+    "payment": ["payment", "付款", "payment terms", "paypal"],
+    "quality": ["quality", "质量", "certificate", "认证"]
+  },
+  "reply_templates": {
+    "price": "Thank you for your inquiry! Our best price will be sent to you soon. Could you please tell me your estimated quantity?",
+    "moq": "Our MOQ is 100 pieces per design. For smaller quantities, we also offer mixed container options.",
+    "sample": "Sample policy: Sample cost + shipping fee. Sample time: 3-5 days. Bulk order sample fee can be refunded.",
+    "shipping": "Shipping time: 7-15 days after order confirmation. We ship via DHL/FedEx/UPS or your forwarder.",
+    "catalog": "I'll send you our latest catalog and price list right away! What products are you interested in?",
+    "payment": "Payment terms: T/T 30% deposit, 70% balance before shipment. PayPal, Western Union also accepted.",
+    "quality": "We have ISO9001, CE, FDA certificates. Quality inspection report available upon request.",
+    "default": "Thank you for your message! I'm checking and will reply you shortly."
+  },
+  "ai_enhance": {
+    "enabled": false,
+    "api_key": "",
+    "model": "minimax"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "medication-safety",
+  "description": "用药安全检查技能 - 检查药物相互作用、禁忌食物和禁忌行为",
+  "version": "1.0.0",
+  "files": [
+    "SKILL.md",
+    "_meta.json",
+    "references/drug_interactions.json",
+    "scripts/check_interactions.py"
+  ],
+  "created": "2024-03-21"
+}

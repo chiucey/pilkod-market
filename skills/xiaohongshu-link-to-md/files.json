@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "f213bcf834491683803d37a0248ad9920b14a136",
+      "size": 8349
+    },
+    {
+      "path": "_meta.json",
+      "sha": "9f4883105c13cdcdd4f13b59187a18b062b23311",
+      "size": 141
+    },
+    {
+      "path": "scripts/download_media.py",
+      "sha": "d03081f552363de9bc8759816a9dcc84d4d2f3ee",
+      "size": 7227
+    },
+    {
+      "path": "scripts/fetch_note.py",
+      "sha": "0e327339e99c61b31a6d00b5746c1284b38f809e",
+      "size": 23750
+    },
+    {
+      "path": "scripts/fetch_note_pw.py",
+      "sha": "2220796d25dbaa5b6d512413c1997dc1ecf885e3",
+      "size": 19426
+    },
+    {
+      "path": "scripts/test_e2e.py",
+      "sha": "fcdc52741a19fcf9a6726d6f390d67c748edd8c9",
+      "size": 16588
+    },
+    {
+      "path": "scripts/validate_output.py",
+      "sha": "3d43e306ebe1e3ee3a235df1d079145b315db296",
+      "size": 6321
+    },
+    {
+      "path": "scripts/xiaohongshu_common.py",
+      "sha": "a616e396594d7da998dccb1b3c5e23bb4dd0abf5",
+      "size": 10472
+    },
+    {
+      "path": "scripts/xiaohongshu_to_md.py",
+      "sha": "9f117f93e4ac73ebdfbe1665a7fa17971c6ec810",
+      "size": 28071
+    },
+    {
+      "path": "templates/full.md",
+      "sha": "4568b1162cf4c785db4e2a8f5f8c02e54443c65c",
+      "size": 4143
+    },
+    {
+      "path": "templates/mini.md",
+      "sha": "84f0146ac57e70ffdd563558868d8023bf56229a",
+      "size": 1647
+    }
+  ]
+}

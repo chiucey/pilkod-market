@@ -1,0 +1,7 @@
+interface:
+  display_name: "douyin-kol-search"
+  short_description: "Douyin high commercial value KOL finder"
+  default_prompt: "Use $douyin-kol-search to help with Douyin high commercial value KOL finder"
+
+policy:
+  allow_implicit_invocation: true

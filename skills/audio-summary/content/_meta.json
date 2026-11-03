@@ -1,0 +1,41 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "音频转文字",
+    "智能摘要",
+    "结构化提取",
+    "思维导图生成",
+    "多格式输出"
+  ],
+  "created_at": "2026-03-27",
+  "description": "将录音文件识别并总结成录音纪要和脑图，支持 MP3/WAV/M4A 等格式自动转录为文字稿，生成 Markdown 纪要和 Mermaid 思维导图",
+  "id": 381100427551030,
+  "name": "audio-summary",
+  "platform": "minimax",
+  "supported_formats": {
+    "input": [
+      "mp3",
+      "wav",
+      "m4a",
+      "aac",
+      "ogg",
+      "flac"
+    ],
+    "output": [
+      "markdown",
+      "json",
+      "mermaid"
+    ]
+  },
+  "tags": [
+    "音频",
+    "转录",
+    "总结",
+    "脑图",
+    "会议纪要",
+    "MP3",
+    "Mermaid"
+  ],
+  "updated_at": 1774595731806,
+  "version": "1.0.0"
+}

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{STOCK_NAME}} ({{STOCK_SYMBOL}}) - 研究报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #161616;
+            --bg-hover: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --accent-green: #00d26a;
+            --accent-green-dim: rgba(0, 210, 106, 0.15);
+            --accent-red: #ff4757;
+            --accent-red-dim: rgba(255, 71, 87, 0.15);
+            --accent-blue: #3b82f6;
+            --accent-yellow: #f59e0b;
+            --border-color: #252525;
+            --border-light: #1f1f1f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .stock-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .stock-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .stock-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .header-right {
+            text-align: right;
+        }
+
+        .rating-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .rating-buy {
+            background: var(--accent-green);
+            color: #000000;
+        }
+
+        .rating-hold {
+            background: var(--accent-yellow);
+            color: #000000;
+        }
+
+        .rating-sell {
+            background: var(--accent-red);
+            color: #ffffff;
+        }
+
+        .target-info {
+            text-align: right;
+            font-size: 13px;
+        }
+
+        .target-price {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .upside {
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+
+        /* Summary */
+        .summary {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-light);
+        }
+
+        .summary p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 1024px) {
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .metric-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid var(--border-light);
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .metric-change {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .positive {
+            color: var(--accent-green);
+        }
+
+        .negative {
+            color: var(--accent-red);
+        }
+
+        .neutral {
+            color: var(--text-secondary);
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-light);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-badge {
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: var(--bg-secondary);
+            color: var(--text-muted);
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .data-table th {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: var(--bg-secondary);
+        }
+
+        .data-table td {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover td {
+            background: var(--bg-hover);
+        }
+
+        .data-table .positive {
+            color: var(--accent-green);
+        }
+
+        .data-table .negative {
+            color: var(--accent-red);
+        }
+
+        /* Charts */
+        .chart-container {
+            position: relative;
+            height: 320px;
+            margin-top: 16px;
+        }
+
+        /* Technical Signals */
+        .signals-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .signals-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .signal-item {
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .signal-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .signal-value {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .signal-status {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .status-bullish {
+            background: var(--accent-green-dim);
+            color: var(--accent-green);
+        }
+
+        .status-bearish {
+            background: var(--accent-red-dim);
+            color: var(--accent-red);
+        }
+
+        .status-neutral {
+            background: rgba(160, 160, 160, 0.15);
+            color: var(--text-secondary);
+        }
+
+        /* News */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-item {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .news-title {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .news-sentiment {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        /* Risks */
+        .risk-list {
+            list-style: none;
+        }
+
+        .risk-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .risk-item:last-child {
+            border-bottom: none;
+        }
+
+        .risk-level {
+            display: inline-block;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin-right: 12px;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .risk-high {
+            background: var(--accent-red-dim);
+            color: var(--accent-red);
+        }
+
+        .risk-medium {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-yellow);
+        }
+
+        .risk-low {
+            background: var(--accent-green-dim);
+            color: var(--accent-green);
+        }
+
+        .risk-text {
+            flex: 1;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Recommendation */
+        .recommendation-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .recommendation-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .rec-item {
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .rec-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .rec-value {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            margin-top: 40px;
+            padding: 20px 24px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .disclaimer strong {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-light);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Utilities */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 24px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <h1 class="stock-title">{{STOCK_NAME}} <span style="color: var(--text-muted);">({{STOCK_SYMBOL}})</span></h1>
+                <div class="stock-meta">
+                    <span>{{INDUSTRY}}</span>
+                    <span>|</span>
+                    <span>{{EXCHANGE}}</span>
+                    <span>|</span>
+                    <span>报告日期: {{REPORT_DATE}}</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="rating-badge rating-{{RATING}}">{{RATING_TEXT}}</div>
+                <div class="target-info">
+                    <div class="target-price">目标价 ¥{{TARGET_PRICE}}</div>
+                    <div class="upside">上升空间 +{{UPSIDE}}%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            <p>{{SUMMARY}}</p>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">当前价格</div>
+                <div class="metric-value">¥{{CURRENT_PRICE}}</div>
+                <div class="metric-change {{PRICE_CHANGE_CLASS}}">{{PRICE_CHANGE}}</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">总市值</div>
+                <div class="metric-value">{{MARKET_CAP}}</div>
+                <div class="metric-change neutral">{{MARKET_CAP_UNIT}}</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">市盈率 (TTM)</div>
+                <div class="metric-value">{{PE_RATIO}}</div>
+                <div class="metric-change neutral">{{PE_PERCENTILE}}%历史分位</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">市净率</div>
+                <div class="metric-value">{{PB_RATIO}}</div>
+                <div class="metric-change neutral">{{PB_PERCENTILE}}%历史分位</div>
+            </div>
+        </div>
+
+        <!-- Financial Analysis -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">财务分析</span>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>指标</th>
+                        <th>最新值</th>
+                        <th>同比变化</th>
+                        <th>行业对比</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{FINANCIAL_ROWS}}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Valuation -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">估值分析</span>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>估值指标</th>
+                        <th>当前值</th>
+                        <th>历史分位</th>
+                        <th>行业均值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{VALUATION_ROWS}}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Price Chart -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">价格走势</span>
+                <span class="card-badge">近一年日线</span>
+            </div>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Technical Analysis -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">技术分析</span>
+            </div>
+            <div class="signals-grid">
+                <div class="signal-item">
+                    <div class="signal-label">均线系统</div>
+                    <div class="signal-value">{{MA_TREND}}</div>
+                    <span class="signal-status status-{{MA_STATUS}}">{{MA_SIGNAL}}</span>
+                </div>
+                <div class="signal-item">
+                    <div class="signal-label">MACD</div>
+                    <div class="signal-value">{{MACD_VALUE}}</div>
+                    <span class="signal-status status-{{MACD_STATUS}}">{{MACD_SIGNAL}}</span>
+                </div>
+                <div class="signal-item">
+                    <div class="signal-label">RSI(14)</div>
+                    <div class="signal-value">{{RSI_VALUE}}</div>
+                    <span class="signal-status status-{{RSI_STATUS}}">{{RSI_SIGNAL}}</span>
+                </div>
+                <div class="signal-item">
+                    <div class="signal-label">布林带</div>
+                    <div class="signal-value">{{BB_POSITION}}</div>
+                    <span class="signal-status status-{{BB_STATUS}}">{{BB_SIGNAL}}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">消息面</span>
+            </div>
+            <ul class="news-list">
+                {{NEWS_ITEMS}}
+            </ul>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Recommendation -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">投资建议</span>
+            </div>
+            <div class="recommendation-grid">
+                <div class="rec-item">
+                    <div class="rec-label">目标价</div>
+                    <div class="rec-value">¥{{TARGET_PRICE}}</div>
+                </div>
+                <div class="rec-item">
+                    <div class="rec-label">上升空间</div>
+                    <div class="rec-value positive">+{{UPSIDE}}%</div>
+                </div>
+                <div class="rec-item">
+                    <div class="rec-label">止损价</div>
+                    <div class="rec-value negative">¥{{STOP_LOSS}}</div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.8;">
+                <strong style="color: var(--text-primary);">核心逻辑：</strong>{{CORE_LOGIC}}
+            </p>
+        </div>
+
+        <!-- Risks -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">风险因素</span>
+            </div>
+            <ul class="risk-list">
+                {{RISK_ITEMS}}
+            </ul>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <strong>免责声明</strong><br><br>
+            本报告由AI系统自动生成，仅供研究参考和学习交流使用。<br>
+            本报告不构成任何投资建议，投资者应自主做出投资决策，并承担投资风险。<br>
+            报告中的信息、数据和观点可能存在延迟或错误，不对准确性做任何保证。<br>
+            过往业绩不代表未来表现，投资有风险，入市需谨慎。
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            报告生成时间: {{GENERATE_TIME}} | 数据来源: 公开市场信息
+        </div>
+    </div>
+
+    <!-- Charts Script -->
+    <script>
+        // Price Chart Configuration
+        const priceData = {{PRICE_DATA_JSON}};
+
+        if (priceData && priceData.dates) {
+            const ctx = document.getElementById('priceChart').getContext('2d');
+
+            // Calculate moving averages
+            function calculateMA(data, period) {
+                const ma = [];
+                for (let i = 0; i < data.length; i++) {
+                    if (i < period - 1) {
+                        ma.push(null);
+                    } else {
+                        const slice = data.slice(i - period + 1, i + 1);
+                        const sum = slice.reduce((a, b) => a + b, 0);
+                        ma.push(sum / period);
+                    }
+                }
+                return ma;
+            }
+
+            const closePrices = priceData.close;
+            const ma20 = calculateMA(closePrices, 20);
+            const ma60 = calculateMA(closePrices, 60);
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: priceData.dates,
+                    datasets: [
+                        {
+                            label: '收盘价',
+                            data: closePrices,
+                            borderColor: '#00d26a',
+                            backgroundColor: 'rgba(0, 210, 106, 0.08)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 2,
+                            pointRadius: 0,
+                            pointHoverRadius: 4
+                        },
+                        {
+                            label: 'MA20',
+                            data: ma20,
+                            borderColor: 'rgba(59, 130, 246, 0.8)',
+                            backgroundColor: 'transparent',
+                            borderWidth: 1.5,
+                            tension: 0.3,
+                            pointRadius: 0,
+                            borderDash: [5, 5]
+                        },
+                        {
+                            label: 'MA60',
+                            data: ma60,
+                            borderColor: 'rgba(245, 158, 11, 0.8)',
+                            backgroundColor: 'transparent',
+                            borderWidth: 1.5,
+                            tension: 0.3,
+                            pointRadius: 0,
+                            borderDash: [5, 5]
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#666',
+                                usePointStyle: true,
+                                padding: 20,
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#fff',
+                            bodyColor: '#a0a0a0',
+                            borderColor: '#333',
+                            borderWidth: 1,
+                            padding: 12,
+                            displayColors: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'month',
+                                displayFormats: {
+                                    month: 'MMM'
+                                }
+                            },
+                            grid: {
+                                color: '#1f1f1f',
+                                drawBorder: false
+                            },
+                            ticks: {
+                                color: '#666',
+                                maxRotation: 0
+                            }
+                        },
+                        y: {
+                            position: 'right',
+                            grid: {
+                                color: '#1f1f1f',
+                                drawBorder: false
+                            },
+                            ticks: {
+                                color: '#666',
+                                callback: function(value) {
+                                    return '¥' + value.toFixed(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# academic-deep-research 自定义可配置参数
+# Minimax Agent 可视化配置直接修改此文件
+
+default_research_depth: 3
+max_support_depth: 3
+output_language: "zh-CN"
+request_timeout_seconds: 45
+save_research_file: true
+output_file_format: "json/markdown"
+academic_data_retries: 2

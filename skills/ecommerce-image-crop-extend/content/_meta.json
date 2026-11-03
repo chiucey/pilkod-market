@@ -1,0 +1,38 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "Subject-aware cropping",
+    "Smart background extension",
+    "Multi-platform size adaptation",
+    "Batch export",
+    "Aspect ratio conversion"
+  ],
+  "config": {
+    "max_batch_count": 20,
+    "max_extension_ratio": 2,
+    "max_input_size_mb": 50,
+    "max_output_resolution": 4096
+  },
+  "created_at": "2026-03-31",
+  "description": "Intelligent image cropping and AI-powered background extension for e-commerce materials with multi-platform size adaptation",
+  "display_name": "E-commerce Image Crop \u0026 Extend",
+  "id": 382511347769434,
+  "name": "ecommerce-image-crop-extend",
+  "platform": "minimax",
+  "platforms": [
+    "Tmall",
+    "JD",
+    "Douyin",
+    "VIPS"
+  ],
+  "tags": [
+    "e-commerce",
+    "image-processing",
+    "crop",
+    "extend",
+    "multi-platform",
+    "AI"
+  ],
+  "updated_at": 1774939752908,
+  "version": "1.0.0"
+}

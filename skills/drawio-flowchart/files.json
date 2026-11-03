@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "fe21f3252aa10331c0179d866539500eba5e12eb",
+      "size": 5154
+    },
+    {
+      "path": "_meta.json",
+      "sha": "43ab29771c0234cf28b3a7f03f26622ce354c7bc",
+      "size": 200
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "cc8c9ec7b3444c5e8a602be42bd6191c2f519a8e",
+      "size": 276
+    },
+    {
+      "path": "references/example-spec.json",
+      "sha": "a4f54adfe7cb1c55cf716a92d16863bbf6794590",
+      "size": 1341
+    },
+    {
+      "path": "references/example-text.txt",
+      "sha": "37570594763c18998381b5998a62be6cc863bb16",
+      "size": 280
+    },
+    {
+      "path": "references/natural-language-format.md",
+      "sha": "c083875e27340c33eaf7c7b4d8c13e45875a2a6f",
+      "size": 1788
+    },
+    {
+      "path": "references/spec-format.md",
+      "sha": "854161cc8122514f4f8bb590b3cab07099a86750",
+      "size": 2336
+    },
+    {
+      "path": "scripts/generate_drawio.py",
+      "sha": "6c7e1fc0ddfe6ef018d3961e87028eab627de42e",
+      "size": 25641
+    },
+    {
+      "path": "scripts/text_to_drawio.py",
+      "sha": "0ca0321a7e481463d6b55005e9c74d9f6c1b6802",
+      "size": 1488
+    },
+    {
+      "path": "scripts/text_to_spec.py",
+      "sha": "de9a075849ed374e5a8fb7afad4b67f2947e6384",
+      "size": 14017
+    }
+  ]
+}

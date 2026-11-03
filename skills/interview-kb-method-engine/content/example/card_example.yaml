@@ -1,0 +1,43 @@
+# 示例用虚构卡（非真实人物，仅演示字段结构）
+id: I001
+meta:
+  create_date: 2026-01-02
+  review_date: ""
+interview:
+  company: 示例传媒
+  position: 美食垂类内容运营
+  level: 中级
+  date: 2026-01-05
+  round: 一面
+  interviewer_role: 业务负责人
+  channel: 内推
+  base: 上海
+  nature: 正编
+context:
+  立场: 候选人做美食/内容运营，面试侧重问0到1垂类 + 作者运营
+questions:
+  - question: 自我介绍
+    theme: 自我介绍
+    how_answered: "按时间线讲经历，突出做过美食垂类0到1+作者社群，数据给到曝光渗透提升。"
+    score: 4
+  - question: 做一个垂类0到1你会怎么拆
+    theme: 方法论
+    how_answered: "拆三块：用户需求(场景/情绪)→供给策略(话题/UGC→作者)→分发&指标(渗透/消费/VV)；先小步验证再放大。"
+    score: 4
+  - question: 最骄傲的项目
+    theme: 项目复盘
+    how_answered: "某垂类从0到.X万作者：摸需求→社群进5000→活动促产→渗透涨；给出具体数值。"
+    score: 5
+result:
+  outcome: pass
+  reason: "一面通过：讲清0到1链路+有作者数据，面试官当场认可方法论。"
+  signal: 约二面是交叉面
+  round_result: pass
+  offer: ongoing
+  why_ended: ""
+  process: 示例流程A
+reflection:
+  strength: "有0到1完整打法+可量化结果；表达有结构。"
+  weakness: "语速快；对『商业变现/ROI』口径答得不牢。"
+  improvement: "放慢节奏；提前准备ROI/营收口径；自我介绍补一句最有含金量结果。"
+skills: [内容运营, 垂类运营, 创作者运营, 方法论, 冷启动]

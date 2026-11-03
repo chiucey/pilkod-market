@@ -1,0 +1,187 @@
+# Vocal 参数数据 v3.3
+
+# === 1. 音色描述（Tone Tags）===
+vocal_tone_tags:
+  # 清亮系
+  airy:
+    description: 空灵轻盈，气声感强，适合 ambient/梦幻
+    best_for: [shoegaze, dream-pop, ethereal]
+  breathy:
+    description: 气声，比 airy 更厚实，亲密感
+    best_for: [intimate ballad, melancholic, romantic]
+  crisp:
+    description: 清脆干净，咬字清晰
+    best_for: [pop, indie, clean production]
+  bright:
+    description: 明亮，有光泽感，高频丰富
+    best_for: [pop, teen pop, upbeat]
+  clear:
+    description: 干净透明，无杂质
+    best_for: [folk, acoustic, intimate]
+
+  # 厚实系
+  warm:
+    description: 温暖，有厚度，感情充沛
+    best_for: [ballad, soul, romantic, jazz]
+  smooth:
+    description: 流畅，无棱角，滑顺
+    best_for: [rnb, soul, soft pop, ballad]
+  rich:
+    description: 饱满，有共鸣腔，厚实
+    best_for: [soul, rnb, jazz, ballad]
+  full:
+    description: 丰满有力，音量感强
+    best_for: [rock, anthem, chorus]
+  chest:
+    description: 胸腔共鸣，低频厚实，真声
+    best_for: [rock, ballad, male vocal]
+
+  # 沙哑系
+  rough:
+    description: 粗粝，有纹理感，不完美中有力量
+    best_for: [rock, blues, folk, grunge]
+  raspy:
+    description: 嘶哑，比 rough 更偏向声带边缘
+    best_for: [blues, rock, blues-rock]
+  gritty:
+    description: 砂砾感，有颗粒感，沧桑
+    best_for: [rock, punk, grunge, blues]
+  gravelly:
+    description: 粗砺深沉，男性魅力，故事感
+    best_for: [folk, blues, outlaw country]
+  raw:
+    description: 未打磨感，原始直接
+    best_for: [folk, indie, acoustic, grunge]
+
+  # 空灵系
+  ethereal:
+    description: 超脱尘世，空灵飘渺，宗教感
+    best_for: [ambient, cinematic, chinese-traditional]
+  haunting:
+    description: 萦绕不散，挥之不去
+    best_for: [dark ballad, cinematic, melancholic]
+
+  # 低沉系
+  deep:
+    description: 深沉，低频主导，有分量
+    best_for: [rnb, soul, jazz, bass]
+  dark:
+    description: 暗黑，有阴影感，阴郁
+    best_for: [dark pop, gothic, minor-key]
+  somber:
+    description: 忧郁沉重，比 dark 更内敛
+    best_for: [sad ballad, folk, melancholic]
+
+  # 力量系
+  powerful:
+    description: 有力，有爆发力，坚定
+    best_for: [rock, anthem, epic, ballad]
+  belting:
+    description: 强声爆发，真声全力输出
+    best_for: [rock, musical theatre, ballad chorus]
+  soulful:
+    description: 灵魂乐感，情感从声带里涌出
+    best_for: [soul, rnb, gospel, ballad]
+  emotional:
+    description: 情感充沛，有感染力，但比 powerful 更细腻
+    best_for: [ballad, emotional pop, cinematic]
+
+  # 特殊系
+  melancholic:
+    description: 忧郁内敛，克制，不过度宣泄
+    best_for: [indie, folk, sad ballad]
+  yearning:
+    description: 渴望，向往，有拉力
+    best_for: [ballad, yearning, love song]
+  intimate:
+    description: 亲密近耳，像在身边说话
+    best_for: [intimate ballad, folk, whisper sections]
+  spoken:
+    description: 口语化，像说话而非唱歌
+    best_for: [folk, indie, bridge, bridge sections]
+
+# === 2. 音高技术（Technique Tags）===
+vocal_technique_tags:
+  whispered:       # 耳语，适合 Intro/Bridge/Outro 私密段落
+  belted:          # 强声爆发，适合 Chorus 高潮
+  spoken_word:      # 口语念白，适合 Rap/Bridge/Intro
+  harmonized:       # 和声，适合 Chorus/结尾加厚
+  rapped:           # 说唱，适合 Hip-hop Verse
+  auto_tuned:       # 电子音高修正，现代 Trap 感
+  screamed:         # 嘶吼，适合 Metal/Hardcore
+  falsetto:         # 假声，过渡，高音点缀
+  whispered_verse: # 诗化低语，叙事感强
+  chant:            # 吟诵，适合 Hook/副歌增强
+
+# === 3. 录音/制作效果（Production Tags）===
+vocal_production_tags:
+  close_miked:      # 近距离拾音，亲密感
+  distant:          # 远距离，有空间感
+  small_room:       # 小房间混响，亲密自然
+  hall_reverb:      # 大厅混响，宏大宽广
+  plate_reverb:     # 金属板混响，复古感
+  tape_saturation:   # 磁带饱和，温暖复古
+  compressed:       # 压缩，音量均匀
+  dynamic:          # 动态保留，不过度压缩
+  lofi:            # 低保真，噪音质感
+  clean:           # 干净干声，无太多效果
+  analog_warmth:   # 模拟温暖，磁带质感
+
+# === 4. 人声音量/能量（Energy Tags）===
+vocal_energy_tags:
+  quiet:      # 安静，极低音量，适合 Intro/Outro
+  intimate:   # 亲密低语，比 quiet 略强
+  moderate:   # 中等，自然说话音量
+  building:   # 渐强，从低到高积累
+  full:       # 全力，所有共鸣腔打开
+  maximum:    # 极限，在临界点
+  fading:     # 渐弱，Fade Out
+
+# === 5. 人声组合标签 ===
+vocal_combination_templates:
+  # Ballad 标准
+  ballad_male:
+    tone: warm
+    technique: belted
+    production: close_miked
+    energy: moderate
+    example: warm male vocal, emotional, natural
+  
+  ballad_female:
+    tone: breathy
+    technique: belted
+    production: close_miked
+    energy: moderate
+    example: breathy female vocal, emotional, intimate
+  
+  # Rock 标准
+  rock_male:
+    tone: rough
+    technique: belted
+    production: dynamic
+    energy: full
+    example: rough male vocal, powerful, belted
+  
+  # Folk 标准
+  folk_intimate:
+    tone: raw
+    technique: whispered
+    production: small_room
+    energy: intimate
+    example: raw acoustic vocal, intimate, natural
+
+  # 港风抒情
+  cantonese_classic:
+    tone: warm
+    technique: emotional
+    production: close_miked
+    energy: moderate
+    example: warm emotional vocal, natural, cantonese ballad style
+
+  # 力量抒情
+  power_ballad:
+    tone: powerful
+    technique: belted
+    production: dynamic
+    energy: building
+    example: powerful male vocal, belted chorus, emotional build

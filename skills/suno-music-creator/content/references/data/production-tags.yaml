@@ -1,0 +1,432 @@
+# 制作质感参数数据 v3.4
+# 来源：Suno Official Docs + Blake Crosley + SunoAI Community 验证
+# 用途：GMIVE+T 的 T 槽位选取
+
+production_tags:
+
+  # ═════════════════════════════════════════════════════
+  # 空间感 / 混响（Room & Reverb）
+  # 验证：Suno 官方确认词 + Blake Crosley
+  # ═════════════════════════════════════════════════════
+  spatial:
+    - id: hall-reverb
+      label: 大厅混响
+      description: 宽广深邃，大厅空间感，宏大
+      verified: true
+      source: [suno-official, blake-crosley]
+      best_for: [orchestral, cinematic, epic, ballad]
+
+    - id: room-reverb
+      label: 房间混响
+      description: 自然适中，小房间温暖感
+      verified: true
+      source: [suno-official]
+      best_for: [jazz, folk, acoustic, indie]
+
+    - id: natural-reverb
+      label: 自然混响
+      description: 不过度处理，保持乐器本色
+      verified: true
+      source: [suno-official]
+      best_for: [folk, acoustic, singer-songwriter]
+
+    - id: spacious-reverb
+      label: 宽广混响
+      description: 空间开阔，层次分明
+      verified: true
+      source: [blake-crosley]
+      best_for: [ambient, cinematic, synth-pop]
+
+    - id: plate-reverb
+      label: 金属板混响
+      description: 复古感，光滑匀称的混响尾音
+      verified: false
+      source: [community]
+      best_for: [retro, classic-pop, ballad]
+
+    - id: cathedral-reverb
+      label: 教堂混响
+      description: 极深远的空间，神圣感
+      verified: false
+      source: [community]
+      best_for: [classical, choral, ambient]
+
+    - id: spring-reverb
+      label: 弹簧混响
+      description: 复古/车库感，弹簧物理感
+      verified: false
+      source: [community]
+      best_for: [surf-rock, garage, lo-fi]
+
+    - id: convolution-reverb
+      label: 脉冲响应混响
+      description: 模拟真实空间，高保真
+      verified: false
+      source: [community]
+      best_for: [cinematic, soundtrack]
+
+  # ═════════════════════════════════════════════════════
+  # 温暖感 / 复古感（Warmth & Vintage）
+  # 验证：Suno 官方 Music Glossary 确认
+  # ═════════════════════════════════════════════════════
+  warmth:
+    - id: tape-saturation
+      label: 磁带饱和
+      description: 温暖的模拟磁带质感，轻微压缩
+      verified: true
+      source: [suno-official, blake-crosley]
+      best_for: [lo-fi, soul, jazz, retro-pop, blues]
+
+    - id: analog-warmth
+      label: 模拟温暖
+      description: 模拟设备温暖感，磁带/黑胶质感
+      verified: true
+      source: [suno-official]
+      best_for: [soul, rnb, jazz, classic-pop, blues]
+
+    - id: vinyl-crackle
+      label: 黑胶唱片底噪
+      description: 黑胶唱片质感，连续性噪音纹理
+      verified: true
+      source: [suno-official, blake-crosley]
+      best_for: [lo-fi, indie, nostalgic-pop, folk]
+
+    - id: tape-hiss
+      label: 磁带嘶声
+      description: 磁带背景嘶声，温暖怀旧
+      verified: true
+      source: [suno-official]
+      best_for: [lo-fi, indie, acoustic, folk]
+
+    - id: vintage
+      label: 复古制作
+      description: 70-80年代复古质感
+      verified: true
+      source: [suno-official]
+      best_for: [synthwave, classic-rock, soul, disco]
+
+    - id: retro
+      label: 复古
+      description: 老式风格，怀旧感
+      verified: true
+      source: [suno-official]
+      best_for: [synthwave, pop, disco, folk]
+
+    - id: vintage-analog
+      label: 复古模拟
+      description: 经典模拟设备，温暖厚实
+      verified: true
+      source: [suno-official]
+      best_for: [soul, blues, rnb, classic-pop]
+
+    - id: lofi
+      label: 低保真
+      description: 有意降低音质，温暖有质感
+      verified: true
+      source: [suno-official, blake-crosley]
+      best_for: [lo-fi, hip-hop, indie-pop, folk]
+
+    - id: cassette-warmth
+      label: 磁带温暖
+      description: 磁带录制质感，温暖怀旧
+      verified: false
+      source: [community]
+      best_for: [indie-folk, bedroom-pop, lo-fi]
+
+  # ═════════════════════════════════════════════════════
+  # 清晰度 / 现代感（Clarity & Modern）
+  # ═════════════════════════════════════════════════════
+  clarity:
+    - id: clean
+      label: 干净清晰
+      description: 无杂质，清晰，现代感
+      verified: true
+      source: [suno-official]
+      best_for: [pop, edm, mainstream]
+
+    - id: polished
+      label: 精致制作
+      description: 制作精良，专业水准
+      verified: true
+      source: [blake-crosley]
+      best_for: [pop, edm, mainstream, k-pop]
+
+    - id: modern-production
+      label: 现代制作
+      description: 现代制作标准，明亮干净
+      verified: true
+      source: [suno-official]
+      best_for: [pop, edm, hip-hop, rnb]
+
+    - id: radio-ready
+      label: 广播级
+      description: 广播标准，响度优化
+      verified: false
+      source: [community]
+      best_for: [pop, edm, mainstream]
+
+    - id: pristine
+      label: 完美无暇
+      description: 极高保真度，极度干净
+      verified: false
+      source: [community]
+      best_for: [pop, edm, mainstream]
+
+    - id: crystal-clear
+      label: 晶莹剔透
+      description: 极度清晰，高频明亮
+      verified: false
+      source: [community]
+      best_for: [synth-pop, edm, mainstream-pop]
+
+  # ═════════════════════════════════════════════════════
+  # 动态 / 质感（Dynamic & Texture）
+  # ═════════════════════════════════════════════════════
+  dynamics:
+    - id: dynamic
+      label: 动态丰富
+      description: 保留大动态范围，强弱对比明显
+      verified: true
+      source: [suno-official]
+      best_for: [rock, ballad, orchestral, folk]
+
+    - id: compressed
+      label: 均匀压缩
+      description: 音量均匀，减少动态范围
+      verified: true
+      source: [blake-crosley]
+      best_for: [pop, edm, mainstream, hip-hop]
+
+    - id: punchy
+      label: 强劲冲击
+      description: 低频有力，冲击力强
+      verified: true
+      source: [suno-official]
+      best_for: [rock, hip-hop, edm, pop]
+
+    - id: raw
+      label: 原始质感
+      description: 未过度处理，保留粗糙质感
+      verified: true
+      source: [blake-crosley]
+      best_for: [rock, punk, indie, folk, blues]
+
+    - id: overdriven
+      label: 过载质感
+      description: 略微过载，温暖失真
+      verified: true
+      source: [blake-crosley]
+      best_for: [blues-rock, classic-rock, soul]
+
+    - id: dirty
+      label: 粗砾质感
+      description: 有意的不完美，粗犷感
+      verified: false
+      source: [community]
+      best_for: [rock, punk, blues-rock, garage]
+
+  # ═════════════════════════════════════════════════════
+  # 声场宽度（Width & Stereo）
+  # ═════════════════════════════════════════════════════
+  width:
+    - id: wide-stereo
+      label: 宽广立体声
+      description: 乐器分布宽广，层次丰富
+      verified: false
+      source: [community]
+      best_for: [synthwave, cinematic, rock, ambient]
+
+    - id: mono
+      label: 单声道
+      description: 单一声道，复古/车库感
+      verified: false
+      source: [community]
+      best_for: [lo-fi, garage-rock, lo-fi]
+
+    - id: close-miked
+      label: 近距离拾音
+      description: 乐器/人声近距离收音，亲密感
+      verified: true
+      source: [suno-official]
+      best_for: [ballad, folk, singer-songwriter, jazz]
+
+    - id: distant-miked
+      label: 远距离拾音
+      description: 远距离拾音，空间感强
+      verified: false
+      source: [community]
+      best_for: [ambient, post-rock, cinematic]
+
+    - id: intimate
+      label: 亲密声场
+      description: 近距离收音，小空间感
+      verified: true
+      source: [suno-official]
+      best_for: [ballad, folk, indie, singer-songwriter]
+
+  # ═════════════════════════════════════════════════════
+  # 频率特性（Frequency Character）
+  # ═════════════════════════════════════════════════════
+  frequency:
+    - id: warm-flat
+      label: 温暖平坦
+      description: 低频厚实，整体平衡
+      verified: false
+      source: [community]
+      best_for: [jazz, blues, soul, ballad]
+
+    - id: bright
+      label: 明亮高频
+      description: 高频丰富，有光泽感
+      verified: true
+      source: [blake-crosley]
+      best_for: [pop, edm, mainstream, acoustic]
+
+    - id: dark
+      label: 暗低沉
+      description: 低频主导，暗沉有重量
+      verified: true
+      source: [blake-crosley]
+      best_for: [rnb, soul, jazz, dark-pop]
+
+    - id: rich
+      label: 饱满厚实
+      description: 全频段饱满，共鸣充分
+      verified: true
+      source: [blake-crosley]
+      best_for: [soul, rnb, rock, ballad]
+
+    - id: thin
+      label: 轻薄质感
+      description: 高频偏多，低频单薄
+      verified: false
+      source: [community]
+      best_for: [indie-pop, lo-fi]
+
+    - id: breathy-mix
+      label: 气声混音
+      description: 强调高频气声，透明感
+      verified: false
+      source: [community]
+      best_for: [dream-pop, ambient, folk]
+
+  # ═════════════════════════════════════════════════════
+  # 特殊制作风格（Special Styles）
+  # ═════════════════════════════════════════════════════
+  special:
+    - id: stadium-reverb
+      label: 体育场混响
+      description: 超大空间感，现场感
+      verified: true
+      source: [suno-official]
+      best_for: [rock, anthem, epic]
+
+    - id: live-performance
+      label: 现场演出感
+      description: 现场录制氛围，观众反应
+      verified: false
+      source: [community]
+      best_for: [rock, folk, blues]
+
+    - id: bedroom-recording
+      label: 卧室录制
+      description: 卧室/家庭录音质感，亲密
+      verified: false
+      source: [community]
+      best_for: [lo-fi, indie-folk, bedroom-pop]
+
+    - id: icarus-wings
+      label: 史诗感
+      description: 史诗般宏大，胜利感
+      verified: false
+      source: [community]
+      best_for: [epic, cinematic, rock]
+
+    - id: lo-fi-chill
+      label: Lo-Fi Chill
+      description: 低保真+放松感结合
+      verified: true
+      source: [suno-official]
+      best_for: [lo-fi, chillout, hip-hop]
+
+    - id: glossy-modern
+      label: 光滑现代混音
+      description: 现代感强，制作精良
+      verified: true
+      source: [suno-official]
+      best_for: [pop, edm, mainstream]
+
+# ═════════════════════════════════════════════════════
+# 制作质感组合模板（可直接使用）
+# ═════════════════════════════════════════════════════
+
+production_templates:
+  ballad_intimate:
+    - close-miked
+    - natural-reverb
+    - warm-flat
+    - intimate
+    description: 抒情 ballad 质感：亲密、近耳、温暖
+
+  epic_cinematic:
+    - hall-reverb
+    - wide-stereo
+    - rich
+    - dynamic
+    description: 史诗电影感：宽广、宏大、动态丰富
+
+  lofi_nostalgic:
+    - lofi
+    - vinyl-crackle
+    - warm-flat
+    - cassette-warmth
+    description: Lo-Fi 复古：温暖、怀旧、质感
+
+  modern_pop:
+    - polished
+    - modern-production
+    - bright
+    - crystal-clear
+    description: 现代流行：干净、明亮、专业
+
+  soul_warm:
+    - analog-warmth
+    - warm-flat
+    - rich
+    - close-miked
+    description: 灵魂乐温暖：模拟暖声、厚实、亲密
+
+  dark_atmospheric:
+    - dark
+    - hall-reverb
+    - wide-stereo
+    - spacious-reverb
+    description: 暗黑氛围：暗沉、空间宽广、阴沉
+
+  vintage_retro:
+    - vintage
+    - tape-saturation
+    - overdriven
+    - vinyl-crackle
+    description: 复古风格：磁带、温暖、怀旧
+
+  jazz_intimate:
+    - natural-reverb
+    - warm-flat
+    - close-miked
+    - dynamic
+    description: 爵士质感：自然、温暖、动态、亲密
+
+# ═════════════════════════════════════════════════════
+# 快速选取参考
+# ═════════════════════════════════════════════════════
+
+quick_reference:
+  "温暖怀旧":  [analog-warmth, vinyl-crackle, tape-saturation]
+  "干净现代":  [polished, modern-production, bright, clean]
+  "亲密近耳":  [close-miked, intimate, natural-reverb]
+  "宏大空间":  [hall-reverb, wide-stereo, epic]
+  "Lo-Fi质感": [lofi, vinyl-crackle, tape-hiss]
+  "动态丰富":  [dynamic, hall-reverb, rich]
+  "暗沉氛围":  [dark, ambient, spacious-reverb]
+  "强劲冲击":  [punchy, compressed, overdriven]

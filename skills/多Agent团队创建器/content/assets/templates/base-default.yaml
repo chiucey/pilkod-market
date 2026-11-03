@@ -1,0 +1,15 @@
+name: base-default
+description: 基础团队模板，包含产品、设计、开发三个核心角色。
+tags: [base, core]
+recommended_for: 通用项目初始化
+default_bind_feishu: false
+agents:
+  - name: pm
+    emoji: "📋"
+    role: 产品
+  - name: ui
+    emoji: "🎨"
+    role: 设计
+  - name: coding
+    emoji: "💻"
+    role: 开发

@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<!--
+  电子版可视化模板（通用骨架）
+  配色契约：白底 / 黑字正文 / 橙黄大标题 / 深色小标题。
+  改内容时先读 references/authoring.md；改样式先读 references/design-system.md。
+  朗读系统（段落标记、跟随滚动、双音源降级）见 references/reading-mode.md。
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>书名占位 · 副标题占位</title>
+<meta name="description" content="一句话说明这份文档是什么、为谁写的。">
+<!-- 脚本就位标记：插图的入场动效靠 JS 点亮（.is-inview），
+     这个标记必须在首次绘制之前打上，否则会先画出图、再变透明、再淡入。
+     禁用 JS 时不会出现，插图保持可见（正确的降级）。 -->
+<script>document.documentElement.classList.add('js');</script>
+<style>
+
+:root{
+  /* —— 纸面 —— */
+  --paper:      #FFFFFF;
+  --paper-sunk: #FBFAF8;
+  --rule:       #E8E6E1;
+  --rule-soft:  #F2F0EC;
+
+  /* —— 文字 —— */
+  --ink:        #17191E;   /* 正文近黑 */
+  --ink-70:     #4A4F58;
+  --ink-60:     #6B7078;   /* 次级文字：面板摘要、表格次要信息 */
+  --ink-45:     #8A8F98;
+
+  /* —— 橙黄：大标题、引文线、强调 —— */
+  --amber:      #F2A100;
+  --amber-deep: #C87C02;
+  --amber-soft: #FFF4DE;
+
+  /* —— 深色：小标题、强调块 —— */
+  --deep:       #0E1826;
+  --deep-60:    #33414F;
+
+  /* —— 字体（只用系统字体，保证离线可读） —— */
+  --serif: "Songti SC","STSong","Source Han Serif SC","Noto Serif SC","Times New Roman",serif;
+  --sans:  "PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans SC",-apple-system,"Helvetica Neue",sans-serif;
+  --mono:  "SF Mono",ui-monospace,Menlo,Consolas,monospace;
+
+  /* —— 版式 ——
+     字号拆成「基准 × 倍率」两层，这是修移动端字号失效的关键：
+     基准（--fs-base）由断点决定，手机上自动降档；
+     倍率（--fs-scale）是用户用 A−/A+ 调的偏好，存在本地。
+     以前 JS 把绝对值直接写进 --fs 的内联样式，内联优先级压过媒体查询，
+     手机上 --fs:17px 那条规则从来没生效过 —— 实测仍是 18px，每行只剩 15 个字。
+     现在两层分开写，谁也压不住谁。 */
+  --measure: 41rem;
+  --fs-base: 18px;
+  --fs-scale: 1;
+  --fs: calc(var(--fs-base) * var(--fs-scale));
+  --lh: 2.0;
+  --rail: 288px;
+  --gap: 4.5rem;
+  --radius: 3px;
+  /* 移动端外壳的高度：顶栏与底部朗读条。正文必须给它们让出位置，
+     否则固定层就会压在字上 —— 这是移动端最难读的一类问题。 */
+  --mbar-h: 3rem;
+  --bbar-h: 3.1rem;
+  /* 封面区最大宽度：封面图与它下方的书名信息一起收在这一档里。
+     改这一个值就能整体调封面大小，不用动布局。 */
+  --cover-w: 820px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:var(--fs);
+  line-height:var(--lh);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; }
+
+/* ── 阅读进度条 ───────────────────────────────── */
+.progress{ position:fixed; inset:0 0 auto 0; height:2px; z-index:60; background:transparent; pointer-events:none; }
+.progress i{
+  display:block; height:100%; width:0%;
+  background:linear-gradient(90deg,var(--amber-deep),var(--amber));
+  transition:width .12s linear;
+}
+
+/* ── 左侧目录 ─────────────────────────────────── */
+.rail{
+  position:fixed; top:0; left:0; bottom:0; width:var(--rail); z-index:50;
+  padding:2.6rem 1.9rem 1.6rem;
+  border-right:1px solid var(--rule); background:var(--paper);
+  display:flex; flex-direction:column; gap:1.6rem;
+  overflow-y:auto; overscroll-behavior:contain;
+}
+.rail__brand{ display:flex; flex-direction:column; gap:.5rem; }
+.rail__brand b{ font-family:var(--sans); font-size:.95rem; letter-spacing:.02em; color:var(--deep); font-weight:600; }
+.rail__brand span{ font-family:var(--sans); font-size:.72rem; letter-spacing:.24em; color:var(--ink-45); text-transform:uppercase; }
+.rail__rule{ height:1px; background:var(--rule); }
+.rail__nav{ display:flex; flex-direction:column; gap:.1rem; }
+.rail__nav a{
+  font-family:var(--sans); font-size:.875rem; line-height:1.5;
+  color:var(--ink-70); text-decoration:none;
+  padding:.5rem .7rem .5rem .8rem; border-left:2px solid transparent;
+  transition:color .18s, border-color .18s, background .18s;
+}
+.rail__nav a small{ display:block; font-size:.66rem; letter-spacing:.18em; color:var(--ink-45); text-transform:uppercase; }
+.rail__nav a:hover{ color:var(--deep); background:var(--paper-sunk); }
+.rail__nav a.is-active{ color:var(--amber-deep); border-left-color:var(--amber); background:var(--amber-soft); }
+.rail__nav a.is-active small{ color:var(--amber-deep); opacity:.7; }
+.rail__foot{ margin-top:auto; font-family:var(--sans); font-size:.7rem; color:var(--ink-45); line-height:1.7; }
+.rail__foot span{ display:block; }
+
+/* ── 阅读设置 ─────────────────────────────────── */
+.controls{
+  position:fixed; right:1.5rem; bottom:1.5rem; z-index:55;
+  display:flex; align-items:center; gap:.2rem; padding:.3rem;
+  border:1px solid var(--rule); border-radius:999px;
+  background:rgba(255,255,255,.92); backdrop-filter:blur(8px);
+  box-shadow:0 6px 24px rgba(14,24,38,.07);
+}
+.controls button{
+  font-family:var(--sans); font-size:.78rem; line-height:1;
+  color:var(--deep); background:transparent; border:0; cursor:pointer;
+  padding:.5rem .68rem; border-radius:999px; transition:background .16s;
+}
+.controls button:hover{ background:var(--amber-soft); color:var(--amber-deep); }
+.controls i{ width:1px; height:14px; background:var(--rule); }
+.controls button.is-on{ background:var(--amber); color:#fff; }
+/* 朗读入口图标：矢量播放三角；is-on（正在朗读）时切成暂停键。
+   用 currentColor 填色，按钮配色变了图标自动跟着变，也不受系统 emoji 字体影响。 */
+.controls button svg{ display:block; width:1.05em; height:1.05em; fill:currentColor; stroke:currentColor; stroke-width:1.1; stroke-linejoin:round; }
+.controls button .ico-pause{ display:none; }
+.controls button.is-on .ico-play{ display:none; }
+.controls button.is-on .ico-pause{ display:block; }
+
+/* ── 朗读面板 ───────────────────────────────────────
+   音源两条：离线预生成的 mp3（清单见 references/reading-mode.md）
+   或浏览器内置语音合成，页面只负责按段播放与跟随滚动。
+   面板固定在控件条上方，只有朗读时才出现，避免长期占屏。 */
+.tts{
+  position:fixed; right:4.2rem; bottom:4.4rem; z-index:56;
+  width:19rem; max-width:calc(100vw - 6rem);
+  padding:.9rem 1rem 1rem; display:none;
+  border:1px solid var(--rule); border-radius:var(--radius);
+  background:rgba(255,255,255,.96); backdrop-filter:blur(10px);
+  box-shadow:0 12px 40px -18px rgba(14,24,38,.42);
+  font-family:var(--sans);
+}
+.tts.is-open{ display:block; }
+.tts__head{
+  display:flex; align-items:baseline; gap:.5rem;
+  font-size:.74rem; letter-spacing:.16em; color:var(--amber-deep);
+  text-transform:uppercase;
+}
+.tts__head b{ font-size:.76rem; font-weight:700; letter-spacing:.04em; color:var(--deep); text-transform:none; }
+/* 章名可能很长，挤出一行时省略，别把最小化按钮顶出去 */
+.tts__head span{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+/* 面板头部右侧的图标键（最小化 / 最大化） */
+.tts__hactions{ margin-left:auto; align-self:center; flex:0 0 auto; display:flex; gap:.05rem; }
+.tts__hbtn{
+  position:relative;
+  width:1.65rem; height:1.65rem; padding:0; border:0; border-radius:999px;
+  display:flex; align-items:center; justify-content:center;
+  background:transparent; color:var(--ink-45); cursor:pointer;
+  transition:background .16s, color .16s;
+}
+.tts__hbtn:hover{ background:var(--amber-soft); color:var(--amber-deep); }
+.tts__hbtn svg{ width:.78rem; height:.78rem; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+.tts__hbtn .ico-restore,.tts__hbtn .ico-unmax{ display:none; }
+/* 悬停名称气泡：用 data-tip 自绘，不用原生 title —— title 要悬停一秒才出、样式压不住，
+   还会和新气泡同时出现。名称取自 data-tip，键盘聚焦同样能看到。
+   气泡一律挂在按钮下方：最大化时面板顶到视口上沿，上方会被裁掉。
+   z-index 是必须的，否则靠左那个键的气泡会被右边的按钮图标盖住（后出现的定位元素后画）。 */
+.tts__hbtn::after{
+  content:attr(data-tip); position:absolute; z-index:6;
+  top:calc(100% + .42rem); left:50%;
+  padding:.26rem .48rem; border-radius:5px;
+  background:var(--deep); color:#fff;
+  font-size:.68rem; line-height:1.4; letter-spacing:.02em; text-transform:none;
+  white-space:nowrap; pointer-events:none;
+  opacity:0; transform:translate(-50%,-4px);
+  box-shadow:0 8px 18px -12px rgba(14,24,38,.6);
+  transition:opacity .15s ease, transform .15s ease;
+}
+.tts__hbtn::before{
+  content:""; position:absolute; z-index:6;
+  top:calc(100% + .16rem); left:50%;
+  border:3px solid transparent; border-bottom-color:var(--deep);
+  opacity:0; transform:translate(-50%,-4px);
+  transition:opacity .15s ease, transform .15s ease;
+}
+.tts__hbtn:hover::after,.tts__hbtn:hover::before,
+.tts__hbtn:focus-visible::after,.tts__hbtn:focus-visible::before{
+  opacity:1; transform:translate(-50%,0); transition-delay:.18s;
+}
+/* 最小化：收成一条状态条，朗读照常继续 */
+.tts.is-min{ width:auto; min-width:10rem; max-width:calc(100vw - 6rem); padding:.5rem .55rem .5rem .9rem; }
+.tts.is-min .tts__now,.tts.is-min .tts__btns,.tts.is-min .tts__rows,.tts.is-min .tts__read{ display:none; }
+.tts.is-min .tts__min .ico-min{ display:none; }
+.tts.is-min .tts__min .ico-restore{ display:block; }
+/* 最大化：面板变宽，并把正在读的整段放大铺开 —— 听读时不用再抬头找正文 */
+/* 最大化：整页铺满做听读模式，但左边给导航栏让位（窄屏导航栏是抽屉，见下方媒体查询） */
+.tts.is-max{
+  left:var(--rail); right:0; top:0; bottom:0;
+  width:auto; max-width:none; height:auto;
+  border:0; border-radius:0;
+  padding:clamp(1.2rem,4vh,2.6rem) clamp(1.4rem,5vw,4.2rem);
+  display:flex; flex-direction:column;
+  background:rgba(255,255,255,.985);
+}
+.tts__read{
+  display:none; margin:.6rem 0 .2rem; padding:.75rem .9rem;
+  max-height:8rem; overflow:auto; overscroll-behavior:contain;
+  border-left:2px solid var(--amber); background:var(--amber-soft); border-radius:2px;
+  font-family:var(--serif); font-size:1.02rem; line-height:1.95; color:var(--deep);
+  text-align:justify;
+}
+/* 听读版式：正文占满版面并垂直居中，字号随窗口放大；控制键沉到底部。
+   注意 .tts__read 是 grid，但网格里只放一个 .saywrap —— 句子包在 wrap 里保持行内流。
+   早先把 span 直接当 grid 子元素，每个句子被拉成整行宽，琥珀底铺满一整行，
+   看起来就是「整段全变色」，而不是只有正在读的那一小段变色。 */
+.tts.is-max .tts__read{
+  display:grid; align-content:center; grid-template-columns:minmax(0,1fr); flex:1 1 auto; min-height:0;
+  max-height:none; margin:1.4rem 0; padding:0;
+  border-left:0; background:none; text-align:left;
+  font-size:clamp(1.06rem,.85vw + .82rem,1.55rem); line-height:2.05;
+}
+.tts.is-max .saywrap{ width:100%; max-width:40rem; margin:0 auto; }
+.tts.is-max .tts__btns{ margin-top:auto; }
+.tts.is-max .tts__rows{ margin-top:.9rem; }
+.tts.is-max .tts__row{ font-size:.78rem; }
+.tts.is-max .tts__row select{ font-size:.78rem; }
+.tts.is-max .tts__now{ display:none; }   /* 大模式下由 read 块承担「当前文字」，避免同一段显示两遍 */
+/* 读到哪一小段，哪一小段就变成橙黄。span 保持行内，琥珀底只包住这几个字，
+   不会盖住整行；padding 补一点左右呼吸感，transition 让它跟着朗读平滑地走。 */
+.tts__read .say{ transition:color .18s ease, background .18s ease; border-radius:3px; }
+.tts__read .say.is-say{ color:var(--amber-deep); background:var(--amber-soft); box-shadow:0 0 0 2px var(--amber-soft); }
+.tts.is-max .tts__max .ico-max{ display:none; }
+.tts.is-max .tts__max .ico-unmax{ display:block; }
+.tts.is-min .tts__min .ico-restore{ display:block; }
+.tts__now{
+  margin:.5rem 0 .7rem; padding-left:.6rem;
+  border-left:2px solid var(--amber);
+  font-family:var(--serif); font-size:.86rem; line-height:1.6; color:var(--ink-60);
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.tts__btns{ display:flex; align-items:center; gap:.2rem; }
+.tts__btns button{
+  font-family:var(--sans); font-size:.8rem; color:var(--deep);
+  background:transparent; border:0; cursor:pointer; padding:.42rem .5rem;
+  border-radius:999px; transition:background .16s;
+}
+.tts__btns button:hover{ background:var(--amber-soft); color:var(--amber-deep); }
+.tts__btns button:disabled{ opacity:.34; cursor:default; background:transparent; }
+.tts__btns .tts__main{
+  background:var(--amber); color:#fff; font-weight:700; padding:.42rem .8rem;
+}
+.tts__btns .tts__main:hover{ background:var(--amber-deep); color:#fff; }
+.tts__rows{ margin-top:.7rem; display:grid; gap:.42rem; }
+.tts__row{ display:flex; align-items:center; gap:.55rem; font-size:.72rem; color:var(--ink-45); }
+.tts__row label{ flex:0 0 2.4rem; }
+.tts__row input[type=range]{ flex:1; accent-color:var(--amber); min-width:0; }
+.tts__row select{
+  flex:1; min-width:0; font-family:var(--sans); font-size:.72rem; color:var(--deep);
+  background:#fff; border:1px solid var(--rule); border-radius:6px; padding:.22rem .3rem;
+}
+.tts__row output{ flex:0 0 2.1rem; text-align:right; font-variant-numeric:tabular-nums; }
+
+/* ── 朗读竖条（常驻右侧边缘） ───────────────────────
+   朗读控制不再藏进右下角那个小方块：常驻成右侧一条竖条，
+   播放/暂停、上一章、下一章、停止、音色全在竖条上，
+   不用展开任何面板就能直接操作。
+   详细面板（当前文字 + 逐句高亮 + 语速）降为第二层，由竖条底部的按钮唤起。 */
+.ttsbar{
+  position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:57;
+  /* 宽度写死：竖条就是一排按钮的宽度，不让内容把它撑开
+     （里面的音色菜单是绝对定位 + min-width，交给浏览器算宽度容易变宽）。 */
+  width:2.9rem;
+  display:flex; flex-direction:column; align-items:center; gap:.12rem;
+  padding:.46rem .3rem;
+  border:1px solid var(--rule); border-right:0;
+  border-radius:.95rem 0 0 .95rem;
+  background:rgba(255,255,255,.95); backdrop-filter:blur(10px);
+  box-shadow:0 12px 34px -22px rgba(14,24,38,.5);
+  font-family:var(--sans);
+}
+.ttsbar.is-hidden{ display:none; }
+.ttsbar__btn{
+  position:relative;
+  width:2.05rem; height:2.05rem; padding:0; border:0; border-radius:999px;
+  display:flex; align-items:center; justify-content:center;
+  background:transparent; color:var(--deep); cursor:pointer;
+  transition:background .16s, color .16s;
+}
+.ttsbar__btn:hover{ background:var(--amber-soft); color:var(--amber-deep); }
+.ttsbar__btn:disabled{ opacity:.3; cursor:default; background:transparent; }
+.ttsbar__btn svg{ display:block; width:1.02rem; height:1.02rem; fill:currentColor; }
+/* 播放键 / 暂停键：同一个键，状态变了换图标（不用展开就能暂停） */
+.ttsbar__btn .ico-pause{ display:none; }
+.ttsbar__btn.is-on .ico-play{ display:none; }
+.ttsbar__btn.is-on .ico-pause{ display:block; }
+/* 主键（播放/暂停）用琥珀实心，一眼能找到 */
+.ttsbar__main{ background:var(--amber); color:#fff; box-shadow:0 5px 14px -7px rgba(242,161,0,.95); }
+.ttsbar__main:hover{ background:var(--amber-deep); color:#fff; }
+/* 线稿图标（喇叭 / 面板）：不填色，只描边 */
+.ttsbar__btn--line svg{ fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.ttsbar__btn--line svg circle{ fill:currentColor; stroke:none; }
+.ttsbar__sep{ width:1.05rem; height:1px; background:var(--rule); margin:.22rem 0; }
+/* 章名标签：桌面端的竖条放不下（会撑成一条细窄竖排文字），
+   所以只在手机端的底部横条上出现。 */
+.ttsbar__label{ display:none; }
+/* 音色键：喇叭图标 + 音色简称（两字）。完整名字放不进去，点了弹出菜单看全名。
+   选择器用两个类，压得住窄屏媒体查询里的 .ttsbar__btn（否则高度被写死，
+   竖向 padding 一挤，喇叭图标就被压成一条线）。 */
+.ttsbar__btn.ttsbar__voice{
+  width:auto; height:auto; flex-direction:column; gap:.1rem;
+  padding:.3rem .22rem; border-radius:.6rem;
+}
+.ttsbar__btn.ttsbar__voice svg{ flex:0 0 auto; }
+.ttsbar__voice b{ font-size:.6rem; font-weight:600; line-height:1; color:var(--ink-60); letter-spacing:.02em; white-space:nowrap; flex:0 0 auto; }
+.ttsbar__voice.is-on b{ color:var(--amber-deep); }
+/* 竖条贴着右边缘，提示气泡一律挂在左侧 */
+.ttsbar__btn::after{
+  content:attr(data-tip); position:absolute; z-index:8;
+  right:calc(100% + .5rem); top:50%;
+  padding:.26rem .5rem; border-radius:5px;
+  background:var(--deep); color:#fff;
+  font-size:.68rem; line-height:1.4; letter-spacing:.02em;
+  white-space:nowrap; pointer-events:none;
+  opacity:0; transform:translate(5px,-50%);
+  box-shadow:0 8px 18px -12px rgba(14,24,38,.6);
+  transition:opacity .15s ease, transform .15s ease;
+}
+.ttsbar__btn::before{
+  content:""; position:absolute; z-index:8;
+  right:calc(100% + .16rem); top:50%;
+  border:3px solid transparent; border-left-color:var(--deep);
+  opacity:0; transform:translate(5px,-50%);
+  transition:opacity .15s ease, transform .15s ease;
+}
+.ttsbar__btn:hover::after,.ttsbar__btn:hover::before,
+.ttsbar__btn:focus-visible::after,.ttsbar__btn:focus-visible::before{
+  opacity:1; transform:translate(0,-50%); transition-delay:.18s;
+}
+/* 音色菜单：贴在竖条左侧，列出完整音色名 */
+.ttsbar__menu{
+  position:absolute; right:calc(100% + .55rem); top:50%; transform:translateY(-50%);
+  /* 同上：绝对定位元素不写宽度也会被拉伸，菜单要按内容宽度 */
+  width:max-content;
+  min-width:8.4rem; padding:.28rem;
+  display:none; flex-direction:column; gap:.06rem;
+  border:1px solid var(--rule); border-radius:10px;
+  background:rgba(255,255,255,.98); backdrop-filter:blur(10px);
+  box-shadow:0 16px 44px -22px rgba(14,24,38,.55);
+}
+.ttsbar__menu.is-open{ display:flex; }
+.ttsbar__menuhead{ padding:.3rem .5rem .34rem; font-size:.62rem; letter-spacing:.16em; color:var(--ink-45); text-transform:uppercase; }
+.ttsbar__vitem{
+  display:flex; align-items:center; gap:.5rem; width:100%;
+  padding:.4rem .55rem; border:0; border-radius:7px; background:transparent;
+  font-family:var(--sans); font-size:.76rem; line-height:1.4; color:var(--deep);
+  cursor:pointer; text-align:left; white-space:nowrap;
+}
+.ttsbar__vitem:hover{ background:var(--amber-soft); color:var(--amber-deep); }
+.ttsbar__vitem.is-on{ color:var(--amber-deep); font-weight:600; }
+.ttsbar__vitem .tick{ margin-left:auto; font-size:.7rem; }
+.ttsbar__vitem:not(.is-on) .tick{ visibility:hidden; }
+/* 正在朗读的段落：橙黄底 + 两侧延伸，读到哪里一眼可见 */
+.is-reading{
+  background:var(--amber-soft); border-radius:2px;
+  box-shadow:-.7rem 0 0 0 var(--amber-soft), .7rem 0 0 0 var(--amber-soft);
+}
+.h--3.is-reading,.h--4.is-reading{ box-shadow:-.7rem 0 0 0 var(--amber-soft), .7rem 0 0 0 var(--amber-soft); }
+@media print{
+  .tts,.ttsbar,.controls,.mbar{ display:none !important; } .is-reading{ background:none; box-shadow:none; }
+  /* 内联 SVG：打印时动效要冻结到完整状态，不能印出半途的淡出或高亮 */
+  .svgfig [data-fig]{ opacity:1 !important; filter:none !important; }
+  .svgfig [class*="fx-"]{ animation:none !important; }
+  /* 入场动效在纸上必须是「已经出现」的状态，不能印出半透明或位移中的图 */
+  .js .svgfig{ opacity:1 !important; transform:none !important; transition:none !important; }
+  .js .svgfig[data-motion="breathe"] .svgfig__svg{ animation:none !important; }
+  .h.is-fig-target{ background:none; }
+}
+
+/* ── 主舞台 ───────────────────────────────────── */
+.stage{ margin-left:var(--rail); padding:0 var(--gap) 8rem; max-width:calc(var(--rail) + 64rem); }
+.wrap{ max-width:var(--measure); margin:0 auto; }
+.wrap--wide{ max-width:56rem; }
+
+/* ── 封面 ───────────────────────────────────────
+   定位：一张完整的书封 —— 题目 + 副题 + 关键数字 + 两个明确入口。
+   不要退化成虚线占位框加重复标题：封面是读者打开页面后第一眼
+   看到的东西，也是结论该放的位置（正文里再出现一遍就埋没了）。
+   封面只做文字卡片：不要封面图，不引外部图片、不留图片占位框。 */
+.cover{ padding:4.2rem 0 0; }
+.cover__card{
+  max-width:var(--cover-w); margin:0 auto;
+  padding:clamp(1.8rem,4.5vw,3.2rem);
+  border:1px solid var(--rule); border-radius:var(--radius);
+  background:
+    radial-gradient(120% 82% at 100% 0%, var(--amber-soft) 0%, rgba(255,244,222,0) 62%),
+    var(--paper);
+  box-shadow:0 18px 50px -30px rgba(14,24,38,.4);
+}
+.cover__top{
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding-bottom:1.1rem; border-bottom:1px solid var(--rule);
+}
+.cover__kicker{ font-family:var(--sans); font-size:.7rem; letter-spacing:.26em; text-transform:uppercase; color:var(--ink-45); }
+.cover__badge{
+  font-family:var(--sans); font-size:.7rem; letter-spacing:.1em; color:var(--amber-deep);
+  padding:.24rem .7rem; border:1px solid rgba(242,161,0,.42); border-radius:999px; background:var(--amber-soft);
+}
+.cover__title{
+  margin:1.6rem 0 0; font-family:var(--sans); font-weight:800;
+  font-size:clamp(2.4rem,6.2vw,3.6rem); line-height:1.1;
+  letter-spacing:.04em; color:var(--amber);
+}
+.cover__sub{
+  margin:.5rem 0 0; font-family:var(--sans); font-weight:600;
+  font-size:clamp(1.02rem,1.9vw,1.24rem); line-height:1.6;
+  color:var(--deep); letter-spacing:.03em;
+}
+.cover__by{ margin:.7rem 0 0; font-family:var(--sans); font-size:.88rem; color:var(--ink-70); }
+.cover__by b{ color:var(--deep); font-weight:600; }
+
+/* 关键数字：读者扫一眼就要拿走的四件事。
+   放在封面而不是散在正文里 —— 结论前置，读者不用翻到中后段。 */
+.cover__nums{
+  margin:1.7rem 0 0; padding:1.1rem 0 0; border-top:1px solid var(--rule);
+  display:grid; gap:1rem 1.6rem; grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.cover__num{ min-width:0; }
+.cover__num dt{ font-family:var(--sans); font-size:.72rem; letter-spacing:.12em; color:var(--ink-45); }
+.cover__num dd{
+  margin:.28rem 0 0; font-family:var(--sans); font-weight:800;
+  font-size:clamp(1.3rem,2.6vw,1.7rem); line-height:1.15; color:var(--deep);
+  font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+.cover__num dd small{ font-size:.52em; font-weight:600; color:var(--ink-70); margin-left:.15em; letter-spacing:.04em; }
+
+.cover__cta{ margin:1.8rem 0 0; display:flex; flex-wrap:wrap; gap:.6rem; }
+.btn{
+  display:inline-flex; align-items:center; gap:.45rem;
+  font-family:var(--sans); font-size:.86rem; font-weight:600; letter-spacing:.04em;
+  padding:.68rem 1.3rem; border-radius:999px; text-decoration:none;
+  border:1px solid var(--rule); background:var(--paper); color:var(--deep);
+  transition:background .16s, color .16s, border-color .16s;
+}
+.btn:hover{ background:var(--paper-sunk); border-color:var(--ink-45); }
+.btn--primary{ background:var(--amber); border-color:var(--amber); color:#fff; }
+.btn--primary:hover{ background:var(--amber-deep); border-color:var(--amber-deep); color:#fff; }
+/* 首屏能力说明：把「能听、能打印」这两件事实直接讲出来，
+   不用读者自己发现右侧竖条和右下角那个「打印」。 */
+.cover__hint{
+  margin:1.15rem 0 0; padding:0; list-style:none;
+  font-family:var(--sans); font-size:.76rem; color:var(--ink-45);
+  display:flex; flex-wrap:wrap; gap:.4rem 1.2rem;
+}
+.cover__hint li{ display:inline-flex; align-items:center; gap:.4rem; }
+.cover__hint b{ color:var(--amber-deep); font-weight:700; }
+.cover__intro{ margin:3.4rem auto 0; max-width:38rem; font-size:1.02rem; color:var(--ink-70); }
+.cover__intro strong{ color:var(--deep); font-weight:600; }
+
+/* ── 章节 ─────────────────────────────────────── */
+/* 章节正文必须限宽到 --measure：.stage 自身可到 64rem 宽，
+   不加这行的话宽屏下每行会拉到 60+ 汉字，长文一行到底必然读不下去。 */
+.chapter{ padding:6rem 0 0; scroll-margin-top:3rem; max-width:var(--measure); margin-left:auto; margin-right:auto; }
+.chapter__head{ margin-bottom:2.6rem; }
+.chapter__no{
+  display:inline-flex; align-items:center; gap:.7rem;
+  font-family:var(--sans); font-size:.72rem; font-weight:600;
+  letter-spacing:.24em; color:var(--amber-deep);
+}
+.chapter__no::after{ content:""; width:2.6rem; height:1px; background:var(--amber); opacity:.6; }
+.chapter__title{
+  margin:.7rem 0 0; font-family:var(--sans); font-weight:800;
+  font-size:clamp(1.6rem,3.2vw,2.2rem); line-height:1.3;
+  letter-spacing:.02em; color:var(--amber);
+}
+.chapter__lead{
+  margin:1rem 0 0; font-size:1.06rem; color:var(--deep);
+  padding-left:1rem; border-left:2px solid var(--amber); line-height:1.85;
+}
+
+/* ── 正文 ─────────────────────────────────────── */
+.prose{ text-indent:2em; margin:0 0 1.1em; text-align:justify; text-justify:inter-ideograph; }
+.prose.no-indent{ text-indent:0; }
+.prose strong{ color:var(--deep); font-weight:600; }
+.prose em{ font-style:normal; border-bottom:1px solid var(--amber); padding-bottom:1px; }
+.prose:last-child{ margin-bottom:0; }
+
+/* ── 小标题（深色） ───────────────────────────── */
+.h{ font-family:var(--sans); font-weight:700; color:var(--deep); letter-spacing:.03em; margin:3.2rem 0 1.2rem; }
+.h--3{ font-size:1.22rem; line-height:1.5; }
+.h--4{ font-size:1.02rem; line-height:1.6; color:var(--deep-60); }
+.h--3::before{ content:""; display:inline-block; width:.42rem; height:.42rem; background:var(--amber); margin-right:.6rem; vertical-align:.18em; }
+.h--3 + .prose{ text-indent:0; }
+
+/* 带 id 的小标题是目录跳转的落点：顶部留出侧栏/吸顶余量，
+   跳转后标题不能被吸顶元素压住；:target 加一道短促底色提示「你在这」。 */
+.h[id]{ scroll-margin-top:4.5rem; border-radius:3px; transition:background .35s ease; }
+.h:target{ background:var(--amber-soft); box-shadow:-.6rem 0 0 0 var(--amber-soft), .6rem 0 0 0 var(--amber-soft); }
+@media print{ .h:target{ background:none; box-shadow:none; } }
+
+/* ── 引文 ─────────────────────────────────────── */
+.pull{ margin:2.6rem 0; padding:0 0 0 1.6rem; border-left:3px solid var(--amber); font-size:1.14rem; line-height:1.85; color:var(--deep); }
+.pull cite{ display:block; margin-top:.9rem; font-family:var(--sans); font-style:normal; font-size:.78rem; letter-spacing:.1em; color:var(--ink-45); }
+
+/* ── 要点卡片 ─────────────────────────────────── */
+.cards{
+  margin:2.4rem 0; display:grid; gap:1px;
+  grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));
+  background:var(--rule); border:1px solid var(--rule); border-radius:var(--radius); overflow:hidden;
+}
+.card{ background:var(--paper); padding:1.5rem 1.4rem; }
+.card__n{ font-family:var(--sans); font-size:.7rem; font-weight:700; letter-spacing:.2em; color:var(--amber); margin-bottom:.6rem; }
+.card__t{ font-family:var(--sans); font-weight:700; font-size:1rem; color:var(--deep); margin:0 0 .5rem; }
+.card__d{ margin:0; font-size:.92rem; line-height:1.85; color:var(--ink-70); text-indent:0; }
+
+/* ── 列表 ─────────────────────────────────────── */
+.list{ margin:1.4rem 0; padding:0; list-style:none; counter-reset:n; }
+.list li{ counter-increment:n; position:relative; padding:.5rem 0 .5rem 2.4rem; text-indent:0; text-align:justify; }
+.list li::before{
+  content:counter(n,decimal-leading-zero);
+  position:absolute; left:0; top:.85rem;
+  font-family:var(--sans); font-size:.72rem; font-weight:700; color:var(--amber); letter-spacing:.04em;
+}
+.list--dot li::before{ content:""; top:1.25rem; width:.34rem; height:.34rem; border-radius:50%; background:var(--amber); }
+.list--check li::before{ content:"✓"; font-size:.82rem; color:var(--amber-deep); }
+
+/* ── 列表内的页内跳转（目录页点条目跳正文） ───────
+   有 href 的条目渲染成 <a>，必须给出「这行可点」的视觉，
+   否则读者分不清哪条能跳、哪条还没收录。 */
+.list a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--amber); padding-bottom:.08em; transition:background .18s ease, color .18s ease; }
+.list a:hover{ color:var(--amber-deep); background:var(--amber-soft); }
+.list a::after{ content:" →"; font-size:.82em; color:var(--amber); }
+
+/* ── 提示框 ───────────────────────────────────── */
+.callout{
+  margin:2.4rem 0; padding:1.4rem 1.6rem;
+  background:var(--amber-soft); border-left:3px solid var(--amber);
+  border-radius:0 var(--radius) var(--radius) 0;
+}
+.callout b{ display:block; font-family:var(--sans); font-size:.74rem; font-weight:700; letter-spacing:.18em; color:var(--amber-deep); margin-bottom:.5rem; }
+.callout p{ margin:0; text-indent:0; font-size:.97rem; line-height:1.9; color:var(--deep-60); }
+.callout--note{ background:var(--paper-sunk); border-left-color:var(--deep); }
+.callout--note b{ color:var(--deep); }
+
+/* ── 图片位 ───────────────────────────────────── */
+.figure{ margin:2.8rem 0; }
+.figure img{ width:100%; border:1px solid var(--rule); border-radius:var(--radius); }
+.figure figcaption{
+  font-family:var(--sans); font-size:.78rem; color:var(--ink-45);
+  line-height:1.7; padding-top:.75rem; border-top:1px solid var(--rule-soft); margin-top:.75rem;
+}
+.figure figcaption b{ color:var(--deep); font-weight:600; }
+
+/* ── 矢量图全屏查看 ─────────────────────────────
+   矢量图在窄屏上必须横向拖才能看完，但正文窗口只有 350px，
+   拖到一半就忘了图长什么样。加一个「全屏看」把整张图摊开，
+   摊开后图里的部件照样可点、照样随朗读高亮 —— 复制的是同一个 SVG。
+   按钮挂在图注那一行而不是浮在图上：抽查过 6 张图，
+   架构图和路线图的右上角本来就有内容，浮一个按钮上去会盖住字。 */
+.figzoom__open{
+  float:right; margin:.1rem 0 .5rem .9rem;
+  font-family:var(--sans); font-size:.72rem; color:var(--deep);
+  background:var(--paper-sunk); border:1px solid var(--rule); border-radius:999px;
+  padding:.26rem .66rem; cursor:pointer;
+  transition:background .16s, color .16s, border-color .16s;
+}
+.figzoom__open:hover{ background:var(--amber-soft); color:var(--amber-deep); border-color:rgba(242,161,0,.5); }
+.figure--svg .svgfig{ cursor:zoom-in; }
+/* 窄屏上矢量图有 880px 宽，正文窗口只有 341px，必须横着拖才看得全。
+   在图上钉一条提示，读者一进来就知道「这张图能拖」，
+   而不是以为图本来就只有左边那一截。
+   position:sticky + left:0 让它随横向滚动一直停在可见区左边缘。 */
+@media (max-width:1199px){
+  .figure--svg::before{
+    content:"← 可横拖看全图 · 点图注里的「全屏看」可整张铺开";
+    display:block; position:sticky; left:0; width:max-content; max-width:100%;
+    margin:0 0 .45rem; padding:.24rem .55rem;
+    font-family:var(--sans); font-size:.7rem; line-height:1.5; color:var(--ink-45);
+    background:var(--paper-sunk); border:1px solid var(--rule); border-radius:5px;
+  }
+}
+.figzoom{ position:fixed; inset:0; z-index:80; display:none; background:rgba(14,24,38,.96); }
+.figzoom.is-open{ display:block; }
+.figzoom__scroll{ position:absolute; inset:0; overflow:auto; -webkit-overflow-scrolling:touch; }
+.figzoom__scroll svg{ display:block; margin:0 auto; background:#fff; }
+.figzoom__cap{
+  position:sticky; bottom:0; left:0;
+  font-family:var(--sans); font-size:.76rem; line-height:1.7; color:#C9CED6;
+  padding:.9rem 1rem; background:linear-gradient(180deg,rgba(14,24,38,0),rgba(14,24,38,.92) 45%);
+}
+.figzoom__cap b{ color:#fff; font-weight:600; }
+.figzoom__close{
+  position:fixed; top:.7rem; right:.7rem; z-index:81;
+  width:2.3rem; height:2.3rem; border:0; border-radius:999px;
+  background:rgba(255,255,255,.16); color:#fff; font-size:1.05rem; line-height:1; cursor:pointer;
+}
+.figzoom__close:hover{ background:rgba(255,255,255,.28); }
+
+/* ── 内联 SVG 图 ─────────────────────────────────────
+   svgfigure 类型的图是内联在页面里的（不是 <img>），所以图里的每个部件
+   都是可寻址的 DOM 节点：可以悬停、可以点击、可以随朗读高亮。
+
+   图里的部件用 data-fig="键" 标注，正文对应段落用 figKey="键" 标注，
+   两侧键名一致，朗读走到那段时图里对应部件就亮起来。 */
+.figure--svg{ margin:2.8rem 0; }
+.svgfig{ position:relative; }
+.svgfig__svg{ display:block; width:100%; height:auto; }
+.svgfig [data-fig]{ cursor:pointer; transition:opacity .28s ease, filter .28s ease; }
+.svgfig [data-fig]:focus{ outline:none; }
+.svgfig [data-fig]:focus-visible{ outline:2px solid var(--amber); outline-offset:2px; }
+/* 朗读联动中：命中的部件高亮，其余淡出 */
+.svgfig.has-on [data-fig]{ opacity:.38; }
+.svgfig.has-on [data-fig].is-fig-on{ opacity:1; filter:drop-shadow(0 2px 9px rgba(242,161,0,.6)); }
+/* 悬停：轻一点的聚焦 */
+.svgfig [data-fig].is-fig-hover{ filter:drop-shadow(0 1px 6px rgba(242,161,0,.42)); }
+/* 点图跳回正文后，给目标段落一小段高亮 */
+.h.is-fig-target{ background:var(--amber-soft); transition:background .3s ease; }
+/* ── 默认动效（data-motion 决定档位，由 build 判定）────────────
+   默认路线：图是二维矢量、带图内动效，进入视口时再淡入一次。
+   data-motion 是 build 判定的档位：
+     own    —— SVG 自带动效（@keyframes / SMIL / animation 属性）；
+     reveal —— 图里没有自带动画，用默认的入场动效兜底；
+     breathe—— 在入场之上再加极轻微的持续呼吸，几乎察觉不到但页面不呆；
+     none   —— 完全不动（块上写 motion:"none"）。
+
+   为什么入场动效对「自带动画」的图也加：
+   自带动效画的是图**内部**（曲线画出、脉冲、扫光），入场动效画的是图**整体**
+   （淡入 + 上移），两者作用在不同层级，叠起来不冲突——
+   反而让整页的图有统一的「浮现」节奏。
+   真正会打架的是两套动画改同一个属性，所以 build 判定 own 之后
+   **不再往图内部塞任何东西**。
+
+   .js 守卫：入场动效靠 JS 点亮（is-inview）。脚本没跑起来（禁用 JS）时，
+   图必须是可见的——否则整页插图全透明，而且没有任何报错。 */
+.js .svgfig:not([data-motion="none"]){ opacity:0; transform:translateY(12px); transition:opacity .62s ease, transform .62s ease; }
+.js .svgfig.is-inview{ opacity:1; transform:none; }
+.js .svgfig[data-motion="breathe"] .svgfig__svg{ animation:fig-breathe 7.5s ease-in-out 1.2s infinite; }
+@keyframes fig-breathe{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.006); } }
+/* 用户在系统里开了「减少动态效果」就别动（breathe 也停），但图必须看得见 */
+@media (prefers-reduced-motion:reduce){
+  .js .svgfig:not([data-motion="none"]){ opacity:1 !important; transform:none !important; transition:none !important; }
+  .js .svgfig[data-motion="breathe"] .svgfig__svg{ animation:none !important; }
+}
+/* 调试开关：地址栏加 ?fx=1 强制开启动效，用来无视系统的「减少动态效果」设置 */
+body.force-fx .svgfig [class*="fx-"]{ animation-play-state:running !important; }
+body.force-fx .svgfig[data-motion="breathe"] .svgfig__svg{ animation-play-state:running !important; }
+.slot{
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.5rem;
+  min-height:200px; padding:2rem; text-align:center;
+  border:1px dashed #D9D5CD; border-radius:var(--radius);
+  background:repeating-linear-gradient(-45deg,#FCFBF9 0 10px,#FFFFFF 10px 20px);
+  font-family:var(--sans); font-size:.82rem; color:var(--ink-45); letter-spacing:.06em;
+}
+.slot b{ color:var(--amber-deep); font-size:.92rem; letter-spacing:.14em; }
+
+/* ── 数据条 ───────────────────────────────────── */
+.bars{ margin:2.4rem 0; display:flex; flex-direction:column; gap:1.05rem; }
+.bar__row{ display:grid; grid-template-columns:7.5rem 1fr 3.4rem; gap:1rem; align-items:center; }
+.bar__label{ font-family:var(--sans); font-size:.84rem; color:var(--deep); text-align:right; }
+.bar__track{ height:9px; background:var(--rule-soft); border-radius:999px; overflow:hidden; }
+.bar__fill{ height:100%; width:calc(var(--w) * 1%); border-radius:999px; background:linear-gradient(90deg,var(--amber-deep),var(--amber)); }
+.bar__val{ font-family:var(--sans); font-size:.82rem; color:var(--ink-70); font-variant-numeric:tabular-nums; }
+
+/* ── 时间轴 ───────────────────────────────────── */
+.timeline{ margin:2.4rem 0; padding:0 0 0 1.6rem; list-style:none; border-left:1px solid var(--rule); }
+.timeline li{ position:relative; padding:0 0 1.8rem; text-indent:0; }
+.timeline li:last-child{ padding-bottom:0; }
+.timeline li::before{
+  content:""; position:absolute; left:-1.6rem; top:.62rem;
+  width:.55rem; height:.55rem; border-radius:50%; background:var(--paper); border:2px solid var(--amber);
+}
+.timeline time{ display:block; font-family:var(--mono); font-size:.76rem; letter-spacing:.06em; color:var(--amber-deep); margin-bottom:.25rem; }
+.timeline b{ font-family:var(--sans); color:var(--deep); font-weight:600; }
+
+/* ── 表格 ─────────────────────────────────────── */
+.tablewrap{ margin:2.4rem 0; overflow-x:auto; }
+table{ width:100%; border-collapse:collapse; font-family:var(--sans); font-size:.88rem; }
+th,td{ padding:.85rem 1rem; text-align:left; border-bottom:1px solid var(--rule); }
+thead th{ font-size:.74rem; font-weight:700; letter-spacing:.14em; color:var(--deep); background:var(--paper-sunk); border-bottom:1px solid var(--rule); }
+tbody tr:hover{ background:var(--paper-sunk); }
+td em{ font-style:normal; color:var(--amber-deep); font-weight:600; }
+
+/* ── 标签 ─────────────────────────────────────── */
+.tags{ margin:1.6rem 0; display:flex; flex-wrap:wrap; gap:.5rem; }
+.tag{ font-family:var(--sans); font-size:.76rem; letter-spacing:.06em; padding:.36rem .8rem; border:1px solid var(--rule); border-radius:999px; color:var(--ink-70); }
+.tag--amber{ border-color:rgba(242,161,0,.5); background:var(--amber-soft); color:var(--amber-deep); }
+
+/* ── 章节分隔 ─────────────────────────────────── */
+.divider{ margin:5rem auto; width:5rem; height:1rem; text-align:center; color:var(--amber); letter-spacing:.8em; font-size:.8rem; line-height:1; }
+
+/* ── 版权页 ───────────────────────────────────── */
+.colophon{
+  margin-top:8rem; padding-top:2.4rem; border-top:1px solid var(--rule);
+  font-family:var(--sans); font-size:.78rem; color:var(--ink-45); line-height:2;
+  display:flex; flex-wrap:wrap; gap:.6rem 2.4rem;
+}
+
+/* ── 移动端外壳 ───────────────────────────────────
+   以前手机上同时浮着三层：左上角「目录」按钮、右侧朗读竖条、
+   右下角字号/打印控件。实测 390px 下：
+     · 竖条贴着正文右边界（327 / 329），零间隙；
+     · 控件条横跨正文列（左 214 < 正文右 327），直接压住字；
+     · 正文列只剩 279px，每行 15 个汉字。
+   现在换成常见的外壳结构：
+     顶栏 = 目录 / 当前章 / 阅读设置
+     底部 = 朗读条（播放 / 上一章 / 下一章 / 章名 / 音色 / 面板）
+   两侧因此可以完整让给正文，行长从 15 字回到 22 字，
+   固定层也再也不会压到任何一个字。 */
+.mbar{
+  display:none;
+  position:fixed; top:0; left:0; right:0; z-index:58;
+  height:var(--mbar-h); padding:0 .55rem;
+  align-items:center; gap:.5rem;
+  background:rgba(255,255,255,.94); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+  font-family:var(--sans);
+}
+.mbar__btn{
+  flex:0 0 auto; display:flex; align-items:center; gap:.3rem;
+  height:2rem; padding:0 .7rem; border:0; border-radius:999px;
+  background:var(--paper-sunk); color:var(--deep);
+  font-size:.78rem; cursor:pointer; white-space:nowrap;
+}
+.mbar__btn:hover{ background:var(--amber-soft); color:var(--amber-deep); }
+.mbar__set{ font-weight:700; letter-spacing:.02em; }
+.mbar__now{
+  flex:1 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-size:.78rem; color:var(--ink-70); text-align:center;
+}
+
+/* ── 响应式阶梯 ─────────────────────────────────
+   1080  内容区收窄
+   860   目录收成抽屉 + 移动端外壳（顶栏 / 底部朗读条）
+   560   手机档：基准字号再降一档，间距再收，宽表摊成卡片
+   380   小屏兜底
+   ─────────────────────────────────────────────── */
+@media (max-width:1080px){
+  :root{ --gap:3rem; }
+}
+@media (max-width:860px){
+  :root{ --fs-base:16.5px; --lh:1.9; --gap:2.4rem; --mbar-h:3rem; }
+
+  /* 顶栏接管了原来「目录」浮动按钮的位置 */
+  .mbar{ display:flex; }
+
+  .rail{
+    transform:translateX(-100%); transition:transform .26s ease;
+    width:min(84vw,320px); box-shadow:0 0 60px rgba(14,24,38,.12);
+    padding-top:calc(var(--mbar-h) + 1rem);
+  }
+  body.nav-open .rail{ transform:none; }
+  body.nav-open::after{ content:""; position:fixed; inset:0; z-index:45; background:rgba(14,24,38,.28); }
+
+  /* 正文让出上下两端的高度：顶栏和底部朗读条都不再压字 */
+  .stage{
+    margin-left:0;
+    padding-top:calc(var(--mbar-h) + .7rem);
+    padding-bottom:calc(var(--bbar-h) + 2.4rem + env(safe-area-inset-bottom));
+  }
+  .cover{ padding-top:.5rem; }
+  .chapter{ padding-top:3rem; scroll-margin-top:calc(var(--mbar-h) + 10px); }
+  .h[id]{ scroll-margin-top:calc(var(--mbar-h) + 14px); }
+  .divider{ margin:2.6rem auto; }
+  .bar__row{ grid-template-columns:6rem 1fr 3rem; gap:.7rem; }
+
+  /* 阅读设置（字号 / 打印）改成从底栏上方弹出的胶囊，
+     不再固定占住右下角那一块正文。 */
+  .controls{
+    display:none; position:fixed; z-index:57;
+    left:.7rem; right:.7rem; bottom:calc(var(--bbar-h) + .5rem);
+    justify-content:center; gap:.2rem; padding:.3rem;
+    border-radius:999px;
+    box-shadow:0 10px 30px -14px rgba(14,24,38,.42);
+  }
+  body.set-open .controls{ display:flex; }
+  body.set-open::before{ content:""; position:fixed; inset:0; z-index:44; background:rgba(14,24,38,.2); }
+
+  /* 朗读竖条 → 底部横条：拇指够得着，也不吃正文右侧 */
+  .ttsbar{
+    right:0; left:0; top:auto; bottom:0; transform:none;
+    width:auto; flex-direction:row; align-items:center; gap:.16rem;
+    padding:.3rem .55rem calc(.3rem + env(safe-area-inset-bottom));
+    border:0; border-top:1px solid var(--rule); border-radius:0;
+    background:rgba(255,255,255,.97);
+    box-shadow:0 -8px 26px -20px rgba(14,24,38,.5);
+  }
+  .ttsbar__sep{ display:none; }
+  .ttsbar__btn{ width:2rem; height:2rem; }
+  .ttsbar__main{ order:1; }
+  .ttsbar__prev{ order:2; }
+  .ttsbar__next{ order:3; }
+  .ttsbar__stop{ display:none; }
+  .ttsbar__label{
+    display:block; order:4; flex:1 1 auto; min-width:0; overflow:hidden;
+    text-overflow:ellipsis; white-space:nowrap;
+    padding:0 .35rem; font-size:.74rem; color:var(--ink-70);
+  }
+  .ttsbar__voice{ order:5; }
+  .ttsbar__panel{ order:6; }
+  /* 竖条里音色是「图标在上、两字在下」，横条里改成并排 */
+  .ttsbar__btn.ttsbar__voice{ flex-direction:row; align-items:center; gap:.25rem; width:auto; height:2rem; padding:.3rem .4rem; }
+  .ttsbar__voice b{ font-size:.62rem; }
+
+  /* 朗读面板贴着底部横条上方 */
+  .tts{
+    right:.6rem; left:.6rem; bottom:calc(var(--bbar-h) + .5rem);
+    width:auto; max-width:none;
+  }
+  .tts.is-max{
+    left:0; right:0; top:var(--mbar-h); bottom:0;
+    width:auto; max-width:none; padding:1rem 1.1rem 1.4rem;
+  }
+}
+@media (max-width:560px){
+  :root{ --fs-base:16px; --gap:1.05rem; }
+  /* 无缩进时用段间距代替缩进，否则段落会糊成一片 */
+  .prose{ text-indent:0; margin-bottom:1.45em; }
+  .cards{ grid-template-columns:1fr; }
+  .cover__nums{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:.9rem 1rem; }
+  .cover__card{ padding:1.5rem 1.25rem; }
+  .cover__cta .btn{ flex:1 1 auto; justify-content:center; }
+}
+@media (max-width:380px){
+  :root{ --fs-base:15.5px; }
+}
+/* 小屏再收一档封面内部的间距。
+   实测 360×640 时封面卡片高 571px，卡片底端会探到底部朗读条下面 16px，
+   把封面内部节奏压紧约 46px，首屏就能完整放下、不用先滚一下。 */
+@media (max-width:400px){
+  .cover__card{ padding:1.2rem 1rem; }
+  .cover__title{ margin-top:1.1rem; }
+  .cover__nums{ margin-top:1.2rem; padding-top:.85rem; gap:.7rem .9rem; }
+  .cover__cta{ margin-top:1.25rem; }
+  .cover__hint{ margin-top:.85rem; }
+}
+
+/* ── 打印 / 导出 PDF ──────────────────────────── */
+@media print{
+  /* 打印基准字号走 --fs-base；--fs-scale 用 !important 强制回到 1，
+     因为它是 JS 写在元素内联样式里的，普通的打印规则压不住。 */
+  :root{ --fs-base:11.5pt; --fs-scale:1 !important; --lh:1.85; }
+  body{ background:#fff; }
+  .rail,.controls,.mbar,.progress,.ttsbar,.tts,.figzoom,.figzoom__open{ display:none !important; }
+  .stage{ margin:0; max-width:none; padding:0; }
+  .wrap,.wrap--wide{ max-width:none; }
+  .cover__card{ max-width:none; }   /* 打印时封面铺满纸面，不吃 --cover-w 的上限 */
+  .cover{ padding-top:0; page-break-after:always; }
+  .chapter{ page-break-before:always; padding-top:0; }
+  .card,.figure,.callout,.tablewrap,.bars,.timeline,.pull{ break-inside:avoid; }
+}
+
+/* ── 宽图 / 宽表破格 ─────────────────────────────
+   放在最后一条：同优先级下覆盖上面所有规则。
+   宽屏下图表从版心里破出去，但右侧要给固定朗读浮条留出空档。 */
+@media (min-width:1200px){
+  /* 宽图/宽表破格：以版心为中心放大，但右侧要给固定朗读浮条留出空档（27rem = 左侧目录 288 + 版心内边距 96 + 浮条余量 48）*/
+  .chapter .figure, .chapter .tablewrap{
+    width:min(56rem, calc(100vw - 27rem));
+    max-width:calc(100vw - 3rem);
+    margin-left:calc(50% - min(28rem, calc((100vw - 27rem)/2)));
+    margin-right:calc(50% - min(28rem, calc((100vw - 27rem)/2)));
+  }
+  .chapter .tablewrap table{ font-size:.86rem; }
+}
+@media (max-width:1199px){
+  .chapter .figure{ overflow-x:auto; overscroll-behavior-x:contain; }
+  .chapter .figure .svgfig__svg{ min-width:880px; }
+  .chapter .figure img{ min-width:880px; }
+  .chapter .tablewrap table{ min-width:760px; }
+}
+
+/* 宽表在手机上没法横读：五列竞品表挤进 350px，每列只剩两三个字。
+   这里把每一行摊成一张卡片，表头变成行内小标签，信息一条不丢。
+   ⚠ 这一段必须排在上面 max-width:1199px 那条之后 ——
+   两条选择器完全相同，靠书写顺序决定胜负。放在前面的话，
+   min-width:760px 会把卡片重新撑回 760px，文字直接被裁掉。 */
+@media (max-width:560px){
+  .chapter .tablewrap{ overflow-x:visible; }
+  .chapter .tablewrap table{ min-width:0; display:block; font-size:.86rem; }
+  .chapter .tablewrap thead{ display:none; }
+  .chapter .tablewrap tbody{ display:block; }
+  .chapter .tablewrap tr{
+    display:block; margin:0 0 .7rem; padding:.1rem 0;
+    border:1px solid var(--rule); border-radius:var(--radius); background:var(--paper);
+  }
+  .chapter .tablewrap tbody tr:hover{ background:var(--paper); }
+  .chapter .tablewrap td{
+    display:flex; gap:.7rem; align-items:flex-start;
+    padding:.38rem .75rem; border:0; text-align:left;
+  }
+  .chapter .tablewrap td::before{
+    content:attr(data-l); flex:0 0 4.1rem;
+    font-size:.7rem; font-weight:700; letter-spacing:.06em; color:var(--amber-deep);
+  }
+}
+@media print{
+  .chapter .figure, .chapter .tablewrap{ overflow:visible; width:auto; max-width:none; margin-left:auto; margin-right:auto; }
+  .chapter .figure .svgfig__svg{ min-width:0; width:100%; }
+  .chapter .figure img{ min-width:0; width:100%; }
+  .chapter .tablewrap table{ min-width:0; }
+  /* 宽表在屏幕上被摊成卡片，手机档的规则不能跟到纸面上：
+     打印仍然是规规矩矩的表格。 */
+  .chapter .tablewrap table{ display:table; }
+  .chapter .tablewrap thead{ display:table-header-group; position:static; width:auto; height:auto; overflow:visible; clip-path:none; white-space:normal; }
+  .chapter .tablewrap tbody{ display:table-row-group; }
+  .chapter .tablewrap tr{ display:table-row; margin:0; border:0; padding:0; background:transparent; }
+  .chapter .tablewrap td{ display:table-cell; padding:.85rem 1rem; }
+  .chapter .tablewrap td::before{ content:none; }
+}
+
+/* ── 托管平台注入的悬浮球 ───────────────────────
+   部署到 mcode 托管时，平台会在页面尾部追加一个带 Logo 的悬浮球
+   （#minimax-floating-ball）。它会压住正文、打印时每页重复出现。
+   平台没有关闭开关，注入块由部署管线追加在文件末尾，所以只能靠 CSS 压制。
+   必须用 !important：注入样式给同一个 id 写了 display:flex，
+   同为 id 选择器时后来者胜，普通声明压不住。 */
+#minimax-floating-ball{ display:none !important; }
+
+</style>
+</head>
+<body>
+
+<div class="progress"><i id="bar"></i></div>
+
+<!-- 移动端外壳的顶栏：目录 / 当前章 / 阅读设置。
+     桌面端整块不显示，那时左侧目录和右下角控件已经够用。 -->
+<header class="mbar" id="mbar">
+  <button class="mbar__btn" id="railToggle" type="button" aria-controls="rail" aria-expanded="false">目录</button>
+  <span class="mbar__now" id="mbarNow">封面</span>
+  <button class="mbar__btn mbar__set" id="setToggle" type="button" aria-controls="controls" aria-expanded="false" aria-label="阅读设置（字号 / 打印）">Aa</button>
+</header>
+
+<aside class="rail" id="rail">
+  <div class="rail__brand">
+    <b>书名</b>
+    <span>副标题</span>
+  </div>
+  <div class="rail__rule"></div>
+  <nav class="rail__nav" id="nav">
+    <a href="#cover"><small>Cover</small>封面</a>
+    <a href="#toc" data-ch="toc"><small>序</small>目录</a>
+    <a href="#ch1" data-ch="ch1"><small>第一章</small>章节标题</a>
+    <a href="#ch2" data-ch="ch2"><small>第二章</small>章节标题</a>
+    <a href="#ch3" data-ch="ch3"><small>第三章</small>章节标题</a>
+  </nav>
+  <div class="rail__foot">
+    <span>阅读进度 <b id="pct">0%</b></span>
+    <span>© 电子可视化版</span>
+  </div>
+</aside>
+
+<div class="controls" id="controls">
+  <button id="fsDown" type="button" title="缩小字号" aria-label="缩小字号">A−</button>
+  <button id="fsUp" type="button" title="放大字号" aria-label="放大字号">A+</button>
+  <i></i>
+  <button id="printBtn" type="button" title="打印 / 导出 PDF">打印</button>
+</div>
+
+<!-- 朗读控制条：桌面端是右侧竖条，手机端变成底部横条。 -->
+<div class="ttsbar" id="ttsBar" role="toolbar" aria-label="朗读控制条">
+  <button class="ttsbar__btn ttsbar__main" id="barToggle" type="button" data-tip="播放 / 暂停" aria-label="播放 / 暂停">
+    <svg class="ico-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.4 5.5v13L19 12 8.4 5.5Z"/></svg>
+    <svg class="ico-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.3 5.4h2.9v13.2H8.3zM12.8 5.4h2.9v13.2h-2.9z"/></svg>
+  </button>
+  <button class="ttsbar__btn ttsbar__prev" id="barPrev" type="button" data-tip="上一章" aria-label="上一章">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6h2.1v12.8H6.2zM20 5.6v12.8L9.3 12 20 5.6Z"/></svg>
+  </button>
+  <button class="ttsbar__btn ttsbar__next" id="barNext" type="button" data-tip="下一章" aria-label="下一章">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.7 5.6h2.1v12.8h-2.1zM4 5.6v12.8L14.7 12 4 5.6Z"/></svg>
+  </button>
+  <button class="ttsbar__btn ttsbar__stop" id="barStop" type="button" data-tip="停止" aria-label="停止">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 6.6h10.8v10.8H6.6z"/></svg>
+  </button>
+  <i class="ttsbar__sep"></i>
+  <span class="ttsbar__label" id="barNow"></span>
+  <button class="ttsbar__btn ttsbar__btn--line ttsbar__voice" id="barVoice" type="button" data-tip="选择音色" aria-label="选择音色" aria-haspopup="true" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.3h3.3L12 5.2v13.6L7.3 14.7H4z"/><path d="M15.4 9.4a3.6 3.6 0 0 1 0 5.2"/><path d="M18 6.9a7.2 7.2 0 0 1 0 10.2"/></svg>
+    <b id="barVoiceLabel">—</b>
+  </button>
+  <i class="ttsbar__sep"></i>
+  <button class="ttsbar__btn ttsbar__btn--line ttsbar__panel" id="barPanel" type="button" data-tip="展开朗读面板" aria-label="展开朗读面板" aria-controls="ttsPanel" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7.5h16M4 12h16M4 16.5h16"/><circle cx="9" cy="7.5" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="16.5" r="2"/></svg>
+  </button>
+  <div class="ttsbar__menu" id="voiceMenu" role="menu" aria-label="音色">
+    <div class="ttsbar__menuhead">音色</div>
+  </div>
+</div>
+
+<div class="tts" id="ttsPanel" role="region" aria-label="章节朗读">
+  <div class="tts__head"><b id="ttsState">待朗读</b><span id="ttsCh"></span>
+    <div class="tts__hactions">
+      <button id="ttsMin" class="tts__hbtn tts__min" type="button" data-tip="最小化" aria-label="最小化" aria-expanded="true">
+        <svg class="ico-min" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9.5 12 15.5 18 9.5"/></svg>
+        <svg class="ico-restore" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 14.5 12 8.5 18 14.5"/></svg>
+      </button>
+      <button id="ttsMax" class="tts__hbtn tts__max" type="button" data-tip="最大化 · 边听边看" aria-label="最大化 · 边听边看" aria-expanded="false">
+        <svg class="ico-max" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 9.5v-5h5"/><path d="M14.5 4.5h5v5"/><path d="M19.5 14.5v5h-5"/><path d="M9.5 19.5h-5v-5"/></svg>
+        <svg class="ico-unmax" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 4.5v4.5h4.5"/><path d="M16 19.5V15h-4.5"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="tts__now" id="ttsNow">按播放开始朗读当前章节。</div>
+  <div class="tts__read" id="ttsRead"></div>
+  <div class="tts__btns">
+    <button id="ttsPrev" type="button">上一章</button>
+    <button id="ttsMain" class="tts__main" type="button">播放</button>
+    <button id="ttsNext" type="button">下一章</button>
+    <button id="ttsStop" type="button">停止</button>
+  </div>
+  <div class="tts__rows">
+    <div class="tts__row">
+      <label for="ttsRate">语速</label>
+      <input id="ttsRate" type="range" min="0.6" max="1.8" step="0.1" value="1">
+      <output id="ttsRateOut">1.0×</output>
+    </div>
+    <div class="tts__row">
+      <label for="ttsVoice">音色</label>
+      <select id="ttsVoice"></select>
+    </div>
+  </div>
+</div>
+
+<main class="stage">
+
+  <section class="cover" id="cover">
+    <div class="cover__card">
+      <div class="cover__top">
+        <span class="cover__kicker">WHITEPAPER</span>
+        <span class="cover__badge">示例版本 · 待替换</span>
+      </div>
+
+      <h1 class="cover__title">书名占位</h1>
+      <p class="cover__sub">副标题占位</p>
+      <p class="cover__by">著 <b>作者姓名</b>　·　文档类型（完整版）</p>
+
+      <!-- 关键数字：读者扫一眼就要拿走的四件事。 -->
+      <dl class="cover__nums">
+        <div class="cover__num"><dt>章节</dt><dd>3<small>章</small></dd></div>
+        <div class="cover__num"><dt>正文</dt><dd>1.2<small>万字</small></dd></div>
+        <div class="cover__num"><dt>插图</dt><dd>2<small>张</small></dd></div>
+        <div class="cover__num"><dt>数据表</dt><dd>1<small>张</small></dd></div>
+      </dl>
+
+      <div class="cover__cta">
+        <!-- 点这个不只是跳转：JS 会同时开始朗读第一章。
+             href 保留原生锚点，禁用 JS 时它仍然是可用的目录入口。 -->
+        <a class="btn btn--primary" id="btnStartRead" href="#ch1">开始阅读</a>
+        <a class="btn" href="#toc">全书目录</a>
+      </div>
+
+      <!-- 把「能听、能打印」这两件事实直接讲出来。 -->
+      <ul class="cover__hint">
+        <li><b>▶</b> 点「开始阅读」即从第一章开始朗读</li>
+        <li><b>⇩</b> 可导出 PDF</li>
+        <li><b>3</b> 章 · 约 1.2 万字</li>
+      </ul>
+    </div>
+    <div class="wrap"><p class="cover__intro">这一段是导语：用两三句话讲清这份文档是什么、为谁写的、最值得读者记住的一句话是什么。导语不参与朗读，但它是读者打开页面后第一眼看到的内容——把结论放在这里，不要让读者读到第三章才知道整份文档的主张。</p></div>
+  </section>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <section class="chapter" id="toc">
+    <header class="chapter__head">
+      <span class="chapter__no">序</span>
+      <h2 class="chapter__title">目录</h2>
+    </header>
+
+    <div class="callout callout--note">
+      <b>怎么用这份电子版</b>
+      <p>带 → 的条目可直接点击，跳到对应章节；全文支持逐段朗读，右侧竖条可直接播放、暂停、上一章、下一章。文中插图均为可交互矢量图，滚动到图上时会出现淡入效果。</p>
+    </div>
+    <ul class="list list--dot">
+      <li data-tts-c="toc" data-tts-i="0"><a href="#ch1">第一章　章节标题</a></li>
+      <li data-tts-c="toc" data-tts-i="1"><a href="#ch2">第二章　章节标题</a></li>
+      <li data-tts-c="toc" data-tts-i="2"><a href="#ch3">章节标题</a></li>
+    </ul>
+  </section>
+
+  <section class="chapter" id="ch1">
+    <header class="chapter__head">
+      <span class="chapter__no">第一章</span>
+      <h2 class="chapter__title">章节标题</h2>
+      <p class="chapter__lead">一句话导语：这一章要替读者解决的问题。</p>
+    </header>
+
+    <h3 class="h h--3" data-tts-c="ch1" data-tts-i="0">小标题</h3>
+    <p class="prose" data-tts-c="ch1" data-tts-i="1">这一段是示例正文，替换成你自己的内容。段与段之间保留一次换行——电子版的呼吸感就靠段落切分撑着，把两段并成一段，整页会变成一堵密实的字墙。</p>
+    <p class="prose" data-tts-c="ch1" data-tts-i="2">小标题统一用深色，正文用近黑色，大标题用橙黄色。这三层的层级关系是这套版式的骨架，不要在正文段落里随意换色。</p>
+
+    <h3 class="h h--3" data-tts-c="ch1" data-tts-i="3">并列要点</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="card__n">01</div>
+        <div class="card__b" data-tts-c="ch1" data-tts-i="4">
+          <p class="card__t">要点标题</p>
+          <p class="card__d">一句话说清这条要点，不要写成一整段。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__n">02</div>
+        <div class="card__b" data-tts-c="ch1" data-tts-i="5">
+          <p class="card__t">要点标题</p>
+          <p class="card__d">一句话说清这条要点，不要写成一整段。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__n">03</div>
+        <div class="card__b" data-tts-c="ch1" data-tts-i="6">
+          <p class="card__t">要点标题</p>
+          <p class="card__d">一句话说清这条要点，不要写成一整段。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="h h--3" data-tts-c="ch1" data-tts-i="7">矢量插图</h3>
+    <figure class="figure figure--svg">
+      <div class="svgfig" data-svgfig="fig1" data-motion="reveal">
+        <svg id="fig1" viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" class="svgfig__svg" role="img" aria-label="四个节点依次相连的流程示意：内容、结构、版式、交付。"><g aria-hidden="true">
+<style>
+  #fig1 text{ font-family:"PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans SC",sans-serif; }
+  #fig1 .hd{ font-size:17px; font-weight:700; fill:#0E1826; }
+  #fig1 .sub{ font-size:14px; fill:#8A8F98; }
+  #fig1 .box{ fill:#FFFFFF; stroke:#E4E1DA; stroke-width:1; }
+  #fig1 .box2{ fill:#FFF4DE; stroke:#F2A100; stroke-width:1.4; }
+  #fig1 .link{ stroke:#F2A100; stroke-width:1.6; fill:none; opacity:.65; }
+  #fig1 .fx-row{ animation:fig1in .45s ease backwards; }
+  @keyframes fig1in{ from{ opacity:0; } to{ opacity:1; } }
+</style>
+<g class="fx-row">
+  <rect class="box" x="20" y="60" width="190" height="86" rx="6"/>
+  <text class="hd" x="115" y="98" text-anchor="middle">内容</text>
+  <text class="sub" x="115" y="122" text-anchor="middle">素材整理与断段</text>
+</g>
+<g class="fx-row">
+  <rect class="box" x="255" y="60" width="190" height="86" rx="6"/>
+  <text class="hd" x="350" y="98" text-anchor="middle">结构</text>
+  <text class="sub" x="350" y="122" text-anchor="middle">章节与小标题</text>
+</g>
+<g class="fx-row">
+  <rect class="box" x="490" y="60" width="190" height="86" rx="6"/>
+  <text class="hd" x="585" y="98" text-anchor="middle">版式</text>
+  <text class="sub" x="585" y="122" text-anchor="middle">图表与表格</text>
+</g>
+<g class="fx-row">
+  <rect class="box2" x="725" y="60" width="190" height="86" rx="6"/>
+  <text class="hd" x="820" y="98" text-anchor="middle">交付</text>
+  <text class="sub" x="820" y="122" text-anchor="middle">网页 / PDF / 朗读</text>
+</g>
+<path class="link" d="M212 103 L251 103"/><path class="link" d="M447 103 L486 103"/><path class="link" d="M682 103 L721 103"/>
+</g></svg>
+      </div>
+      <figcaption><b>图 1　示例流程图</b>　插图用内联 SVG 写在正文里：矢量、离线可用、打印不失真，而且每个部件都可以单独做动画或联动。图注要说明「这张图在讲什么」，不是重复图里的文字。</figcaption>
+    </figure>
+
+    <div class="callout">
+      <b>提示框标题</b>
+      <p>提示框放需要读者特别注意的补充说明。默认样式是琥珀色底，只有确实只是补充材料时才用 <code>callout--note</code> 换成中性色。</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="ch2">
+    <header class="chapter__head">
+      <span class="chapter__no">第二章</span>
+      <h2 class="chapter__title">章节标题</h2>
+      <p class="chapter__lead">一句话导语：这一章要替读者解决的问题。</p>
+    </header>
+
+    <h3 class="h h--3" data-tts-c="ch2" data-tts-i="0">结构占比</h3>
+    <div class="bars">
+      <div class="bar__row"><span class="bar__label">标签一</span><span class="bar__track"><span class="bar__fill" style="--w:50"></span></span><span class="bar__val">50%</span></div>
+      <div class="bar__row"><span class="bar__label">标签二</span><span class="bar__track"><span class="bar__fill" style="--w:25"></span></span><span class="bar__val">25%</span></div>
+      <div class="bar__row"><span class="bar__label">标签三</span><span class="bar__track"><span class="bar__fill" style="--w:15"></span></span><span class="bar__val">15%</span></div>
+      <div class="bar__row"><span class="bar__label">标签四</span><span class="bar__track"><span class="bar__fill" style="--w:10"></span></span><span class="bar__val">10%</span></div>
+    </div>
+
+    <h3 class="h h--3" data-tts-c="ch2" data-tts-i="1">对照表</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>维度</th><th>方案 A</th><th>方案 B</th><th>本方案</th></tr></thead>
+        <tbody>
+          <tr><td data-l="维度">上线周期</td><td data-l="方案 A">长</td><td data-l="方案 B">中</td><td data-l="本方案">短</td></tr>
+          <tr><td data-l="维度">维护成本</td><td data-l="方案 A">高</td><td data-l="方案 B">中</td><td data-l="本方案">低</td></tr>
+          <tr><td data-l="维度">可扩展性</td><td data-l="方案 A">受限</td><td data-l="方案 B">一般</td><td data-l="本方案">按模块扩展</td></tr>
+          <tr><td data-l="维度">离线可用</td><td data-l="方案 A">否</td><td data-l="方案 B">否</td><td data-l="本方案">是</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote class="pull" data-tts-c="ch2" data-tts-i="2">
+      引文是稀缺资源：一章最多一两条。引文用琥珀色竖线标出，是全页唯一允许出现长句不被拆散的地方。
+      <cite>—— 出处署名</cite>
+    </blockquote>
+  </section>
+
+  <section class="chapter" id="ch3">
+    <header class="chapter__head">
+      <span class="chapter__no">第三章</span>
+      <h2 class="chapter__title">章节标题</h2>
+      <p class="chapter__lead">一句话导语：这一章要替读者解决的问题。</p>
+    </header>
+
+    <p class="prose" data-tts-c="ch3" data-tts-i="0">结尾章不需要长。给一段收束的话，列出可延伸的材料，然后结束。</p>
+    <ol class="list">
+      <li data-tts-c="ch3" data-tts-i="1">可延伸的配套材料一</li>
+      <li data-tts-c="ch3" data-tts-i="2">可延伸的配套材料二</li>
+      <li data-tts-c="ch3" data-tts-i="3">可延伸的配套材料三</li>
+    </ol>
+  </section>
+
+  <div class="colophon">
+    <span>书名：书名占位</span>
+    <span>副题：副标题占位</span>
+    <span>作者：作者姓名</span>
+    <span>版本：电子可视化版</span>
+    <span>体例：白底黑字 · 橙黄标题 · 逐段朗读</span>
+  </div>
+
+</main>
+
+<script>
+/* ─────────────────────────────────────────────────────────────
+   电子版朗读引擎（通用版）
+   两级音源，自动降级：
+     1) AUDIO_MANIFEST —— 离线预生成的 mp3，一段一文件，音质与音色最稳；
+     2) speechSynthesis —— 浏览器内置语音合成，零依赖，音色取决于系统。
+   两者都没有时，朗读入口整体隐藏，不留一个点了没反应的按钮。
+
+   段落与音频的对应靠 data-tts-c（章 id）+ data-tts-i（章内序号），
+   不靠 querySelectorAll 的猜顺序 —— 猜错就是「念 A 段高亮 B 段」。
+   ───────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+  var root = document.documentElement, body = document.body;
+
+  /* 离线音频清单。没有就写 null。
+     结构：{ voices:[{id,name}], blocks:[{chapter, i, text, audio:{<voiceId>:'相对路径.mp3'}}] }
+     默认音色固定为「电台男主播」（voice_id: Chinese (Mandarin)_Radio_Host）。
+     生成方式见 references/reading-mode.md。 */
+  var AUDIO_MANIFEST = null;
+
+  /* 默认音色名。系统里存在同名音色时优先选它，否则退回列表第一个。 */
+  var DEFAULT_VOICE_NAME = '电台男主播';
+
+  /* ── 插图入场 ────────────────────────────────────────────
+     自己量 getBoundingClientRect，不用 IntersectionObserver：
+     IO 只在「相交比例跨过阈值」时回调，从视口下方直接跳到上方时
+     （目录跳转、拖滚动条）比例一直是 0，永远不回调 —— 图会一直停在
+     透明状态，回头往上滚是一片空白，而且页面上没有任何报错。
+     这里改成「进入视口」或「已经被滚过去」都算点亮。 */
+  var revealPending = null, revealTicking = false;
+  function revealCheck(){
+    if (!revealPending || !revealPending.length) return;
+    var vh = window.innerHeight;
+    revealPending = revealPending.filter(function(el){
+      var r = el.getBoundingClientRect();
+      var inView = (r.bottom > 0 && r.top < vh * 0.94);
+      var passed = (r.top <= 0);
+      if (inView || passed){ el.classList.add('is-inview'); return false; }
+      return true;
+    });
+    if (!revealPending.length){
+      window.removeEventListener('scroll', revealOnScroll);
+      window.removeEventListener('resize', revealOnScroll);
+    }
+  }
+  function revealOnScroll(){
+    if (revealTicking) return;
+    revealTicking = true;
+    requestAnimationFrame(function(){ revealTicking = false; revealCheck(); });
+  }
+  function revealFigures(){
+    revealPending = [].slice.call(document.querySelectorAll('.svgfig:not([data-motion="none"])'));
+    if (!revealPending.length) return;
+    window.addEventListener('scroll', revealOnScroll, { passive:true });
+    window.addEventListener('resize', revealOnScroll, { passive:true });
+    revealCheck();
+  }
+
+  /* ── 阅读进度 ── */
+  var bar = document.getElementById('bar');
+  var pctEl = document.getElementById('pct');
+  function progress(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = h > 0 ? Math.min(100, Math.max(0, window.pageYOffset / h * 100)) : 0;
+    if (bar) bar.style.width = pct + '%';
+    if (pctEl) pctEl.textContent = Math.round(pct) + '%';
+  }
+
+  /* ── 目录高亮 + 顶栏章名 ── */
+  var chapters = [].slice.call(document.querySelectorAll('section.chapter'));
+  var links = [].slice.call(document.querySelectorAll('#nav a[data-ch]'));
+  var mbarNow = document.getElementById('mbarNow');
+  function chapterTitle(el){
+    var t = el.querySelector('.chapter__title');
+    return t ? t.textContent : '';
+  }
+  function currentIndex(){
+    var y = window.pageYOffset + window.innerHeight * 0.3, idx = -1;
+    for (var i = 0; i < chapters.length; i++) if (chapters[i].offsetTop <= y) idx = i;
+    return idx;
+  }
+  function spy(){
+    var idx = currentIndex();
+    var id = idx >= 0 ? chapters[idx].id : '';
+    links.forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('data-ch') === id);
+    });
+    if (mbarNow) mbarNow.textContent = idx >= 0 ? chapterTitle(chapters[idx]) : '封面';
+  }
+
+  /* ── 字号：基准 × 倍率 两层 ──────────────────────────────
+     基准 --fs-base 由断点决定（手机上自动降档）；
+     倍率 --fs-scale 是读者的偏好，存本地。
+     不要把绝对像素直接写进 --fs 的内联样式 —— 内联优先级压过媒体查询，
+     手机上的降档规则会永远不生效（每行只剩十几个字）。 */
+  var steps = [0.88, 0.94, 1, 1.07, 1.15, 1.24];
+  var fsIdx = 2, FS_KEY = 'ebook.fs';
+  try {
+    var saved = localStorage.getItem(FS_KEY);
+    if (saved !== null){
+      var n = parseFloat(saved);
+      var i = steps.indexOf(n);
+      if (i >= 0) fsIdx = i;
+    }
+  } catch(e){}
+  function applyFS(){
+    root.style.setProperty('--fs-scale', steps[fsIdx]);
+    try { localStorage.setItem(FS_KEY, steps[fsIdx]); } catch(e){}
+    progress();
+  }
+  var fsDown = document.getElementById('fsDown'), fsUp = document.getElementById('fsUp');
+  if (fsDown) fsDown.addEventListener('click', function(){ if (fsIdx > 0){ fsIdx--; applyFS(); } });
+  if (fsUp) fsUp.addEventListener('click', function(){ if (fsIdx < steps.length - 1){ fsIdx++; applyFS(); } });
+  var printBtn = document.getElementById('printBtn');
+  if (printBtn) printBtn.addEventListener('click', function(){ window.print(); });
+
+  /* ── 移动端外壳：目录抽屉 + 阅读设置 ──
+     两个浮层互斥：开目录就关设置，否则两层一起盖在正文上。 */
+  var railToggle = document.getElementById('railToggle');
+  var setToggle = document.getElementById('setToggle');
+  function setNav(open){
+    body.classList.toggle('nav-open', open);
+    if (railToggle) railToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open){
+      body.classList.remove('set-open');
+      if (setToggle) setToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  function setOpts(open){
+    body.classList.toggle('set-open', open);
+    if (setToggle) setToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open){
+      body.classList.remove('nav-open');
+      if (railToggle) railToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  if (railToggle) railToggle.addEventListener('click', function(){ setNav(!body.classList.contains('nav-open')); });
+  if (setToggle) setToggle.addEventListener('click', function(){ setOpts(!body.classList.contains('set-open')); });
+  document.addEventListener('click', function(e){
+    if (body.classList.contains('nav-open')
+        && !e.target.closest('.rail') && !e.target.closest('#railToggle')) setNav(false);
+    if (body.classList.contains('set-open')
+        && !e.target.closest('.controls') && !e.target.closest('#setToggle')) setOpts(false);
+  });
+
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){ progress(); spy(); ticking = false; });
+  }, { passive:true });
+  window.addEventListener('resize', function(){ progress(); spy(); });
+
+  /* ── 矢量图全屏 ──────────────────────────────────────────
+     窄屏正文窗口只有 350px，图却有 880–1200px 宽，横着拖到一半就忘了
+     图长什么样。这里把同一个 SVG 复制进全屏层摊开。 */
+  (function(){
+    var figs = [].slice.call(document.querySelectorAll('.figure--svg'));
+    if (!figs.length) return;
+    var box = document.createElement('div');
+    box.className = 'figzoom';
+    box.innerHTML = '<button class="figzoom__close" type="button" aria-label="关闭全屏图">✕</button><div class="figzoom__scroll"></div>';
+    document.body.appendChild(box);
+    var scrollBox = box.querySelector('.figzoom__scroll');
+
+    function close(){
+      box.classList.remove('is-open');
+      scrollBox.innerHTML = '';
+      document.body.style.overflow = '';
+    }
+    function open(fig){
+      var svg = fig.querySelector('svg');
+      if (!svg) return;
+      var clone = svg.cloneNode(true);
+      var oldId = svg.getAttribute('id');
+      if (oldId){
+        /* SVG 内部样式是按 id 选的（#fig1 text{…}），复制一份必须把 id
+           和内部选择器一起改掉，否则文字掉回浏览器默认样式。 */
+        var newId = oldId + '-zoom';
+        clone.setAttribute('id', newId);
+        var sts = clone.querySelectorAll('style');
+        for (var i = 0; i < sts.length; i++){
+          sts[i].textContent = sts[i].textContent.split('#' + oldId).join('#' + newId);
+        }
+      }
+      var vb = (svg.getAttribute('viewBox') || '').split(/[\s,]+/);
+      if (vb.length === 4){
+        clone.setAttribute('width', vb[2]);
+        clone.setAttribute('height', vb[3]);
+      } else {
+        clone.style.width = '100%';
+      }
+      clone.removeAttribute('class');
+      var wrap = document.createElement('div');
+      wrap.className = 'svgfig';
+      wrap.setAttribute('data-motion', 'none');
+      wrap.appendChild(clone);
+      scrollBox.innerHTML = '';
+      scrollBox.appendChild(wrap);
+      var cap = fig.querySelector('figcaption');
+      if (cap){
+        var c = document.createElement('div');
+        c.className = 'figzoom__cap';
+        c.innerHTML = cap.innerHTML;
+        scrollBox.appendChild(c);
+      }
+      box.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      scrollBox.scrollLeft = 0;
+    }
+    figs.forEach(function(fig){
+      var cap = fig.querySelector('figcaption');
+      if (cap){
+        var btn = document.createElement('button');
+        btn.className = 'figzoom__open';
+        btn.type = 'button';
+        btn.textContent = '全屏看';
+        btn.setAttribute('aria-label', '全屏查看这张图');
+        btn.addEventListener('click', function(e){ e.stopPropagation(); open(fig); });
+        cap.insertBefore(btn, cap.firstChild);
+      }
+      var holder = fig.querySelector('.svgfig');
+      if (holder){
+        holder.addEventListener('click', function(e){
+          if (e.target.closest('[data-fig]')) return;
+          open(fig);
+        });
+      }
+    });
+    box.querySelector('.figzoom__close').addEventListener('click', close);
+    box.addEventListener('click', function(e){ if (e.target === box) close(); });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && box.classList.contains('is-open')) close();
+    });
+  })();
+
+  /* ══════════════════════════════════════════════════════
+     朗读引擎
+     ══════════════════════════════════════════════════════ */
+  var hasAudio = !!(AUDIO_MANIFEST && AUDIO_MANIFEST.voices && AUDIO_MANIFEST.voices.length
+                    && AUDIO_MANIFEST.blocks && AUDIO_MANIFEST.blocks.length);
+  var hasSynth = typeof window.speechSynthesis !== 'undefined'
+                 && typeof window.SpeechSynthesisUtterance !== 'undefined';
+
+  var ttsBar = document.getElementById('ttsBar');
+  var panel = document.getElementById('ttsPanel');
+  var ttsState = document.getElementById('ttsState');
+  var ttsCh = document.getElementById('ttsCh');
+  var ttsNow = document.getElementById('ttsNow');
+  var btnMax = document.getElementById('ttsMax');
+  var btnMin = document.getElementById('ttsMin');
+  var btnPrev = document.getElementById('ttsPrev');
+  var btnNext = document.getElementById('ttsNext');
+  var btnStop = document.getElementById('ttsStop');
+  var btnMain = document.getElementById('ttsMain');
+  var rateInput = document.getElementById('ttsRate');
+  var rateOut = document.getElementById('ttsRateOut');
+  var voiceSel = document.getElementById('ttsVoice');
+  var barToggle = document.getElementById('barToggle');
+  var barPrev = document.getElementById('barPrev');
+  var barNext = document.getElementById('barNext');
+  var barStop = document.getElementById('barStop');
+  var barVoice = document.getElementById('barVoice');
+  var barVoiceLabel = document.getElementById('barVoiceLabel');
+  var voiceMenu = document.getElementById('voiceMenu');
+  var barPanel = document.getElementById('barPanel');
+  var ttsRead = document.getElementById('ttsRead');
+
+  /* 没有音源就整体藏掉朗读入口 */
+  if (!hasAudio && !hasSynth){
+    if (ttsBar) ttsBar.style.display = 'none';
+    if (panel) panel.style.display = 'none';
+    var startBtn = document.getElementById('btnStartRead');
+    if (startBtn) startBtn.setAttribute('data-noaudio', '1');
+    return;
+  }
+
+  /* 段落队列：按 data-tts-c 分章，章内按 data-tts-i 排序 */
+  var blocksByChapter = {};
+  [].slice.call(document.querySelectorAll('[data-tts-c]')).forEach(function(el){
+    var c = el.getAttribute('data-tts-c');
+    var i = parseInt(el.getAttribute('data-tts-i') || '0', 10);
+    (blocksByChapter[c] = blocksByChapter[c] || []).push({ el:el, i:i, chapter:c });
+  });
+  Object.keys(blocksByChapter).forEach(function(c){
+    blocksByChapter[c].sort(function(a, b){ return a.i - b.i; });
+  });
+
+  /* 音频清单按 [chapter, i] 建索引 */
+  var audioIndex = {};
+  if (hasAudio){
+    AUDIO_MANIFEST.blocks.forEach(function(b){
+      audioIndex[b.chapter + '#' + b.i] = b;
+    });
+  }
+
+  var audio = new Audio();
+  audio.preload = 'auto';
+  var queue = [];        /* 当前章的 [{el, i}] */
+  var qi = 0;
+  var curChapter = -1;
+  var chosen = false;    /* 用户是否显式选过章 */
+  var playing = false;
+  var voiceId = null;   /* mp3 路径的默认音色：清单里优先取「电台男主播」 */
+  var synthVoice = null;
+
+  /* 跟随滚动：正在读的段落滚到视口垂直中间。
+     userScrolled 表示「读者自己翻过页，暂时别跟」——
+     只暂停几秒而不是永久停掉，一次误触滚轮就让跟随整个失效是最伤的 bug。 */
+  var userScrolled = false;
+  var manualTimer = null;
+  var lastAutoTarget = null;   /* 程序滚动的目标，用来区分「读者滚的」和「我们滚的」 */
+  var lastAutoDist = Infinity;
+  var holdScroll = false;       /* 下一次高亮先别跟随滚动（用完即清） */
+
+  function chapterBlocks(chId){ return blocksByChapter[chId] || []; }
+  function chapterIndexById(id){
+    for (var k = 0; k < chapters.length; k++) if (chapters[k].id === id) return k;
+    return -1;
+  }
+  /* 章间跳转：只认「有可朗读内容」的章。目录章这类没有朗读段的，
+     直接落进去会「点了播放没反应」。 */
+  function nextChapterIndex(i){
+    for (var k = i + 1; k < chapters.length; k++) if (chapterBlocks(chapters[k].id).length) return k;
+    return -1;
+  }
+  function prevChapterIndex(i){
+    for (var k = i - 1; k >= 0; k--) if (chapterBlocks(chapters[k].id).length) return k;
+    return -1;
+  }
+  function nearestChapter(idx){
+    if (idx < 0) idx = 0;
+    for (var k = idx; k < chapters.length; k++) if (chapterBlocks(chapters[k].id).length) return k;
+    for (var k = idx - 1; k >= 0; k--) if (chapterBlocks(chapters[k].id).length) return k;
+    return -1;
+  }
+
+  function setState(s){
+    if (ttsState) ttsState.textContent = s;
+    /* 朗读开关跟着状态换图标：停着是播放键 ▶，念着是暂停键 ⏸，
+       暂停之后恢复播放键。少写这段，按钮就永远长一个样——
+       播放中也看不出还能不能暂停，读者只能盲点。 */
+    if (barToggle){
+      barToggle.classList.toggle('is-on', playing);
+      barToggle.setAttribute('data-tip', playing ? '暂停' : '播放 / 暂停');
+      barToggle.setAttribute('aria-label', playing ? '暂停' : '播放 / 暂停');
+    }
+    if (btnMain) btnMain.textContent = playing ? '⏸ 暂停' : '▶ 播放';
+  }
+  function setNow(s){
+    if (ttsNow) ttsNow.textContent = s || '';
+    /* 最大化模式下，正文区显示当前这一段（琥珀底标出正在读的文字） */
+    if (ttsRead){
+      ttsRead.innerHTML = '';
+      if (s){
+        var wrap = document.createElement('div');
+        wrap.className = 'saywrap';
+        var say = document.createElement('span');
+        say.className = 'say is-say';
+        say.textContent = s;
+        wrap.appendChild(say);
+        ttsRead.appendChild(wrap);
+      }
+    }
+  }
+
+  function highlight(el){
+    [].slice.call(document.querySelectorAll('.is-reading')).forEach(function(n){ n.classList.remove('is-reading'); });
+    if (!el) return;
+    el.classList.add('is-reading');
+    if (holdScroll){ holdScroll = false; return; }
+    if (!userScrolled) scrollToReading(el);
+  }
+
+  /* 把正在读的段落滚到视口垂直中间。
+     段落比视口还高时改成贴近上方，别把开头推出屏外。
+     底部控制条占掉约 64px，居中时按「控制条以上」的可视区算。 */
+  function scrollToReading(el){
+    var rect = el.getBoundingClientRect();
+    var vh = window.innerHeight;
+    var usable = Math.max(120, vh - 64);
+    var top;
+    if (rect.height > usable * 0.72){
+      top = rect.top + window.pageYOffset - usable * 0.15;
+    } else {
+      top = rect.top + window.pageYOffset - (usable - rect.height) / 2;
+    }
+    var maxTop = document.documentElement.scrollHeight - vh;
+    top = Math.max(0, Math.min(top, maxTop > 0 ? maxTop : 0));
+    lastAutoTarget = top;
+    lastAutoDist = Infinity;
+    window.scrollTo({ top:top, behavior:'smooth' });
+  }
+
+  /* 跳到某一章的开头。
+     不用 scrollIntoView：它虽然尊重 scroll-margin-top（顶部固定栏不会压住
+     章节标题），但不会登记 lastAutoTarget —— 程序滚动会被滚动监听误判成
+     「读者自己翻页」，接下来 6 秒不再跟随朗读。 */
+  function scrollToChapterTop(el){
+    var margin = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+    /* 用元素在文档里的绝对位置算目标，不看当前滚到哪 ——
+       此刻可能还有上一次平滑滚动在飞行。 */
+    var top = el.getBoundingClientRect().top + window.pageYOffset - margin;
+    var maxTop = document.documentElement.scrollHeight - window.innerHeight;
+    top = Math.max(0, Math.min(top, maxTop > 0 ? maxTop : 0));
+    lastAutoTarget = top;
+    lastAutoDist = Infinity;
+    /* 瞬时定位而不是平滑滚动：两个滚动动画会互相抢 ——
+       在途的那个仍按自己的终点飞，最后把页面停在错误位置。 */
+    var html = document.documentElement;
+    var prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, top);
+    html.style.scrollBehavior = prev;
+  }
+
+  function markUserScrolled(){
+    userScrolled = true;
+    if (manualTimer) clearTimeout(manualTimer);
+    manualTimer = setTimeout(function(){ userScrolled = false; }, 6000);
+  }
+
+  /* ── 图随朗读联动 ──────────────────────────────────────
+     图里每个部件带 data-fig="键"，正文对应段落带 data-figkey="键"。
+     两侧键名一致：朗读走到那段时，图里对应部件点亮、其余淡出；
+     反过来点图上的部件，跳回正文那段。
+     没有 figkey 的段落一律不点亮（键为空 → 全部恢复常态）。 */
+  function setFigKey(key){
+    var keys = key ? String(key).split(/\s+/) : [];
+    [].slice.call(document.querySelectorAll('.svgfig')).forEach(function(r){
+      var parts = [].slice.call(r.querySelectorAll('[data-fig]'));
+      var hit = parts.filter(function(p){
+        return keys.indexOf(p.getAttribute('data-fig')) >= 0;
+      });
+      var on = keys.length > 0 && hit.length > 0;
+      /* 只有「图里真的有这个键」的图才进入聚焦态，
+         否则一页里没被提到的图会被整幅压暗，看起来像图坏了。 */
+      r.classList.toggle('has-on', on);
+      parts.forEach(function(p){ p.classList.toggle('is-fig-on', hit.indexOf(p) >= 0); });
+    });
+  }
+
+  function loadChapter(i){
+    curChapter = i;
+    queue = chapters[i] ? chapterBlocks(chapters[i].id).slice() : [];
+    qi = 0;
+    if (ttsCh) ttsCh.textContent = chapters[i] ? chapterTitle(chapters[i]) : '';
+    highlight(null);
+    setFigKey(null);
+    syncNavState();
+  }
+  function syncNavState(){
+    var noPrev = curChapter < 0 || prevChapterIndex(curChapter) < 0;
+    var noNext = curChapter < 0 || nextChapterIndex(curChapter) < 0;
+    if (btnPrev) btnPrev.disabled = noPrev;
+    if (btnNext) btnNext.disabled = noNext;
+    if (barPrev) barPrev.disabled = noPrev;
+    if (barNext) barNext.disabled = noNext;
+  }
+
+  /* ── 音源 A：离线 mp3 ── */
+  function playAudioBlock(item){
+    var b = audioIndex[item.chapter + '#' + item.i];
+    var src = null;
+    if (b && b.audio){
+      src = b.audio[voiceId] || b.audio[AUDIO_MANIFEST.voices[0].id];
+    }
+    if (!src){ return false; }   /* 缺音频 → 跳过这一段，别卡死 */
+    audio.src = src;
+    audio.playbackRate = parseFloat(rateInput && rateInput.value) || 1;
+    audio.onended = function(){ qi++; playCurrent(); };
+    audio.onerror = function(){ qi++; playCurrent(); };
+    var pr = audio.play();
+    if (pr && pr.catch) pr.catch(function(){});
+    return true;
+  }
+
+  /* ── 音源 B：浏览器语音合成 ── */
+  var synthFails = 0;
+  function synthDead(msg){
+    playing = false;
+    highlight(null);
+    setState('无法朗读');
+    setNow(msg || '这台设备没有可用的中文语音，无法朗读。改用离线 mp3 音频后可正常朗读。');
+  }
+  function playSynthBlock(item){
+    var text = (item.el.getAttribute('data-tts-text') || item.el.textContent || '').trim();
+    if (!text){ qi++; playCurrent(); return true; }
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'zh-CN';
+    u.rate = parseFloat(rateInput && rateInput.value) || 1;
+    if (synthVoice) u.voice = synthVoice;
+    var t0 = Date.now();
+    var started = false;
+    var timer = null;
+    function clearTimer(){ if (timer){ clearTimeout(timer); timer = null; } }
+    u.onstart = function(){ started = true; };
+    u.onend = function(){
+      clearTimer();
+      /* 有些环境（Electron、无语音后端的容器）speechSynthesis 存在、也列得出
+         音色，但 speak() 立刻结束 —— 一个字都没念。
+         段落越长越不可能这么快念完，所以用「实际时长 vs 文本量」判定它没真念。
+         不做这一步的后果：引擎会一段段「正常读完」，瞬间跑完整章，
+         读者只看到「已读完」，完全不知道出了什么事。 */
+      var dt = Date.now() - t0;
+      if (dt < 150 && text.length > 8){
+        synthFails++;
+        if (synthFails >= 2){ synthDead(); return; }
+        qi++; playCurrent();
+        return;
+      }
+      synthFails = 0;
+      qi++; playCurrent();
+    };
+    u.onerror = function(ev){
+      clearTimer();
+      var err = ev && ev.error ? ev.error : '';
+      /* interrupted / canceled 是我们自己 cancel 造成的，不是故障 */
+      if (err === 'interrupted' || err === 'canceled') return;
+      synthFails++;
+      /* 合成失败时**绝不能**一段段跳过：
+         那会瞬间跑完整章，读者只看到「已读完」，完全不知道出了什么事。
+         连续失败就是系统语音不可用，停在这里并说清楚。 */
+      if (synthFails >= 2){ synthDead(); return; }
+      qi++; playCurrent();
+    };
+    try { window.speechSynthesis.speak(u); }
+    catch(e){ clearTimer(); synthDead(); return true; }
+    /* 两道防线：
+       1) 2.5 秒内既没开始念、也没报错 —— 语音后端根本没响应；
+       2) 念 started 之后卡住不结束 —— 超过「文本量 × 0.3 秒 + 6 秒」就判为卡死
+          （中文 TTS 正常语速约每字 0.25 秒，这个上界给了两倍余量）。
+       不设防线的话，读者会看到「朗读中」却永远没有声音，也无从判断出了什么事。 */
+    timer = setTimeout(function(){
+      /* 用户已经暂停/停止时这个定时器不该再动作 */
+      if (!playing) return;
+      if (!started){
+        synthDead();
+        return;
+      }
+      var limit = text.length * 300 + 6000;
+      if (Date.now() - t0 > limit){
+        try { window.speechSynthesis.cancel(); } catch(e){}
+        synthDead('朗读卡住了，已停止。可以换一章重试，或改用离线 mp3 音频。');
+      }
+    }, 2500);
+    return true;
+  }
+
+  function playCurrent(){
+    if (!playing) return;
+    if (qi >= queue.length){
+      /* 这一章读完了 —— 接着读下一章，全书读完才停 */
+      var nx = nextChapterIndex(curChapter);
+      if (nx >= 0){ loadChapter(nx); playCurrent(); return; }
+      playing = false;
+      highlight(null);
+      setState('已读完');
+      setNow('已读到最后一章，可以换一章重听。');
+      return;
+    }
+    var item = queue[qi];
+    setNow((item.el.getAttribute('data-tts-text') || item.el.textContent || '').trim());
+    highlight(item.el);
+    setFigKey(item.el.getAttribute('data-figkey'));
+    if (hasAudio && audioIndex[item.chapter + '#' + item.i]) playAudioBlock(item);
+    else if (hasAudio){ qi++; playCurrent(); }   /* 这一段没生成音频：跳过 */
+    else playSynthBlock(item);
+  }
+
+  function play(){
+    /* 合成音源要先确认这台设备真的能念中文：
+       有些环境（无语音包的系统、精简版容器）speechSynthesis 存在但没有可用音色，
+       speak() 会立刻失败。这时候直接说清楚，别让读者点一下就「已读完」。 */
+    if (!hasAudio && !synthVoices().length){
+      setState('无法朗读');
+      setNow('这台设备没有可用的中文语音，无法朗读。改用离线 mp3 音频后可正常朗读。');
+      return;
+    }
+    if (!queue.length){
+      var idx = nearestChapter(currentIndex());
+      if (idx >= 0) loadChapter(idx);
+    }
+    if (!queue.length) return;
+    playing = true;
+    setState('朗读中');
+    playCurrent();
+  }
+  function pause(){
+    playing = false;
+    try { audio.pause(); } catch(e){}
+    try { if (hasSynth) window.speechSynthesis.cancel(); } catch(e){}
+    setState('已暂停');
+  }
+  function toggle(){ playing ? pause() : play(); }
+
+  function switchChapter(i, keepPlaying){
+    try { audio.pause(); audio.removeAttribute('src'); audio.load(); } catch(e){}
+    try { if (hasSynth) window.speechSynthesis.cancel(); } catch(e){}
+    highlight(null);
+    chosen = true;
+    loadChapter(i);
+    if (keepPlaying){
+      playing = true;
+      setState('朗读中');
+      playCurrent();
+    }
+  }
+
+  /* 语音列表：离线清单里的音色，或系统合成音色 */
+  /* 系统语音列表：只取中文音色。系统自带的英文音色念中文非常难听，
+     宁可判为「不可用」也不要让读者听一段怪腔。 */
+  function synthVoices(){
+    if (!hasSynth) return [];
+    var vs = [];
+    try { vs = window.speechSynthesis.getVoices() || []; } catch(e){}
+    return vs.filter(function(v){ return v && /^zh/i.test(v.lang || ''); });
+  }
+  function voiceList(){
+    if (hasAudio){
+      return AUDIO_MANIFEST.voices.map(function(v){ return { id:v.id, name:v.name, kind:'file' }; });
+    }
+    return synthVoices().map(function(v){ return { id:v.voiceURI, name:v.name, kind:'synth', ref:v }; });
+  }
+  /* 列表里挑默认音色：优先「电台男主播」，没有就取第一个。 */
+  function pickDefault(list){
+    if (!list.length) return null;
+    var hit = list.filter(function(v){ return (v.name || '') === DEFAULT_VOICE_NAME; })[0];
+    return hit || list[0];
+  }
+  /* 清单里的音色也要按「电台男主播」优先：清单顺序不保证。 */
+  function initVoice(){
+    if (!hasAudio) return;
+    var list = voiceList();
+    var d0 = pickDefault(list);
+    voiceId = d0 ? d0.id : (list[0] ? list[0].id : null);
+  }
+  function syncVoiceUI(){
+    var list = voiceList();
+    /* 系统音色是异步加载的：首次调用可能是空的，
+       voiceschanged 之后才有内容 —— 这时把默认音色补上。
+       默认音色是「电台男主播」；系统里没有同名音色就退回列表第一个。 */
+    if (!hasAudio && !synthVoice && list.length){
+      var d0 = pickDefault(list);
+      synthVoice = d0 ? d0.ref : null;
+    }
+    /* mp3 路径：默认音色取「电台男主播」 */
+    if (hasAudio && !voiceId) initVoice();
+    if (voiceSel){
+      voiceSel.innerHTML = '';
+      list.forEach(function(v){
+        var o = document.createElement('option');
+        o.value = v.id;
+        o.textContent = v.name;
+        voiceSel.appendChild(o);
+      });
+      var cur = hasAudio ? voiceId : (synthVoice ? synthVoice.voiceURI : '');
+      if (cur) voiceSel.value = cur;
+    }
+    if (barVoiceLabel){
+      var sel = list.filter(function(v){
+        return v.id === (hasAudio ? voiceId : (synthVoice ? synthVoice.voiceURI : ''));
+      })[0];
+      barVoiceLabel.textContent = sel ? sel.name.slice(0, 2) : '—';
+    }
+    if (voiceMenu){
+      var head = voiceMenu.querySelector('.ttsbar__menuhead');
+      voiceMenu.innerHTML = '';
+      if (head) voiceMenu.appendChild(head);
+      list.forEach(function(v){
+        var it = document.createElement('button');
+        it.className = 'ttsbar__vitem';
+        it.type = 'button';
+        it.setAttribute('role','menuitem');
+        var on = v.id === (hasAudio ? voiceId : (synthVoice ? synthVoice.voiceURI : ''));
+        if (on) it.classList.add('is-on');
+        it.innerHTML = '<span class="tick">✓</span>' + v.name;
+        it.addEventListener('click', function(){ setVoice(v); closeVoiceMenu(); });
+        voiceMenu.appendChild(it);
+      });
+    }
+  }
+  function setVoice(v){
+    if (hasAudio){
+      voiceId = v.id;
+    } else {
+      var list = voiceList();
+      var hit = list.filter(function(x){ return x.id === v.id; })[0];
+      synthVoice = hit ? hit.ref : null;
+    }
+    syncVoiceUI();
+  }
+  function openVoiceMenu(){
+    if (!voiceMenu) return;
+    voiceMenu.classList.add('is-open');
+    if (barVoice) barVoice.setAttribute('aria-expanded','true');
+  }
+  function closeVoiceMenu(){
+    if (!voiceMenu) return;
+    voiceMenu.classList.remove('is-open');
+    if (barVoice) barVoice.setAttribute('aria-expanded','false');
+  }
+  if (hasSynth && typeof window.speechSynthesis.onvoiceschanged !== 'undefined'){
+    window.speechSynthesis.onvoiceschanged = function(){ syncVoiceUI(); };
+  }
+  syncVoiceUI();
+
+  /* ── 控件绑定 ── */
+  if (barToggle) barToggle.addEventListener('click', toggle);
+  if (btnMain) btnMain.addEventListener('click', toggle);
+  if (btnPrev) btnPrev.addEventListener('click', function(){
+    var p = prevChapterIndex(curChapter); if (p >= 0) switchChapter(p, playing);
+  });
+  if (barPrev) barPrev.addEventListener('click', function(){
+    var p = prevChapterIndex(curChapter); if (p >= 0) switchChapter(p, playing);
+  });
+  if (btnNext) btnNext.addEventListener('click', function(){
+    var n = nextChapterIndex(curChapter); if (n >= 0) switchChapter(n, playing);
+  });
+  if (barNext) barNext.addEventListener('click', function(){
+    var n = nextChapterIndex(curChapter); if (n >= 0) switchChapter(n, playing);
+  });
+  function stopAll(){
+    pause();
+    highlight(null);
+    setState('待朗读');
+    setNow('按播放开始朗读当前章节。');
+    try { audio.pause(); audio.removeAttribute('src'); audio.load(); } catch(e){}
+    try { if (hasSynth) window.speechSynthesis.cancel(); } catch(e){}
+  }
+  if (btnStop) btnStop.addEventListener('click', stopAll);
+  if (barStop) barStop.addEventListener('click', stopAll);
+  if (rateInput) rateInput.addEventListener('input', function(){
+    var r = parseFloat(rateInput.value) || 1;
+    if (rateOut) rateOut.textContent = r.toFixed(1) + '×';
+    audio.playbackRate = r;
+  });
+  if (voiceSel) voiceSel.addEventListener('change', function(){
+    var list = voiceList();
+    var hit = list.filter(function(x){ return x.id === voiceSel.value; })[0];
+    if (hit) setVoice(hit);
+  });
+  if (barVoice) barVoice.addEventListener('click', function(e){
+    e.stopPropagation();
+    if (voiceMenu && voiceMenu.classList.contains('is-open')) closeVoiceMenu(); else openVoiceMenu();
+  });
+  document.addEventListener('click', function(e){
+    if (voiceMenu && voiceMenu.classList.contains('is-open')
+        && !e.target.closest('#voiceMenu') && !e.target.closest('#barVoice')) closeVoiceMenu();
+  });
+
+  function setMax(max){
+    if (panel) panel.classList.toggle('is-max', max);
+    if (ttsBar) ttsBar.classList.toggle('is-hidden', max);
+    if (btnMax) btnMax.setAttribute('aria-expanded', max ? 'true' : 'false');
+  }
+  function setMin(min){
+    if (panel) panel.classList.toggle('is-min', min);
+    if (btnMin) btnMin.setAttribute('aria-expanded', min ? 'false' : 'true');
+  }
+  function setPanel(open){
+    if (panel) panel.classList.toggle('is-open', open);
+    if (barPanel) barPanel.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  if (btnMax) btnMax.addEventListener('click', function(){
+    if (panel && panel.classList.contains('is-min')) setMin(false);
+    setMax(!panel.classList.contains('is-max'));
+  });
+  if (btnMin) btnMin.addEventListener('click', function(){
+    setMin(!panel.classList.contains('is-min'));
+  });
+  if (barPanel) barPanel.addEventListener('click', function(){ setPanel(!panel.classList.contains('is-open')); });
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape') return;
+    if (voiceMenu && voiceMenu.classList.contains('is-open')){ closeVoiceMenu(); return; }
+    if (!panel || !panel.classList.contains('is-open')) return;
+    if (panel.classList.contains('is-min')) setMin(false);
+    else if (panel.classList.contains('is-max')) setMax(false);
+    else setPanel(false);
+  });
+
+  /* ── 封面「开始阅读」= 跳到第一章 + 立刻开始朗读第一章 ──
+     起播必须在这次点击的同步调用栈里完成 —— 浏览器自动播放策略只认用户
+     手势，setTimeout 之后再调 audio.play() 会被静默拦掉（页面显示
+     「朗读中」却没有声音）。 */
+  var btnStart = document.getElementById('btnStartRead');
+  if (btnStart){
+    btnStart.addEventListener('click', function(e){
+      var ch1 = document.getElementById('ch1');
+      var idx = chapterIndexById('ch1');
+      if (!ch1 || idx < 0 || !chapterBlocks('ch1').length) return;  /* 没有可朗读内容 → 退回普通锚点跳转 */
+      e.preventDefault();
+      holdScroll = true;              /* 章首先滚到位，别一上来就把首段顶到屏幕中间 */
+      scrollToChapterTop(ch1);
+      switchChapter(idx, true);       /* 切到第一章并立刻起播 */
+      userScrolled = false;           /* 章首的滚动是程序滚动，别当成读者自己翻页 */
+      try { history.replaceState(null, '', '#ch1'); } catch(err){}
+    });
+  }
+
+  /* 目录点章节 = 切章（不自动开声，读者点目录通常是在找位置） */  links.forEach(function(a){
+    a.addEventListener('click', function(){
+      var id = a.getAttribute('data-ch');
+      var idx = chapterIndexById(id);
+      if (idx < 0) return;
+      chosen = true;
+      if (playing) switchChapter(idx, true);
+    });
+  });
+
+  /* ── 图里部件的交互：悬停轻聚焦、点部件跳回正文对应段落 ── */
+  document.addEventListener('mouseover', function(e){
+    var p = e.target && e.target.closest ? e.target.closest('.svgfig [data-fig]') : null;
+    if (p) p.classList.add('is-fig-hover');
+  });
+  document.addEventListener('mouseout', function(e){
+    var p = e.target && e.target.closest ? e.target.closest('.svgfig [data-fig]') : null;
+    if (p) p.classList.remove('is-fig-hover');
+  });
+  document.addEventListener('click', function(e){
+    /* 全屏层里是克隆的图，点它的部件不该把正文滚走 */
+    if (e.target && e.target.closest && e.target.closest('.figzoom')) return;
+    var p = e.target && e.target.closest ? e.target.closest('.svgfig [data-fig]') : null;
+    if (!p) return;
+    var key = p.getAttribute('data-fig');
+    var target = null;
+    [].slice.call(document.querySelectorAll('[data-figkey]')).forEach(function(el){
+      var keys = (el.getAttribute('data-figkey') || '').split(/\s+/);
+      if (keys.indexOf(key) >= 0 && !target) target = el;
+    });
+    if (!target) return;
+    e.preventDefault();
+    e.stopPropagation();
+    scrollToChapterTop(target);
+    target.classList.add('is-fig-target');
+    setTimeout(function(){ target.classList.remove('is-fig-target'); }, 1600);
+  });
+
+  /* 用户自己翻了页：只暂停跟随几秒，停一会儿后自动恢复。
+     wheel / touchstart 是「读者动了」的直接证据；scroll 事件靠
+     「离目标的距离在变小」判断是不是我们自己的动画 —— 时间锁常常在
+     动画还没走完时就失效，把自己的滚动误判成读者翻页。 */
+  window.addEventListener('wheel', function(){ markUserScrolled(); }, { passive:true });
+  window.addEventListener('touchstart', function(){ markUserScrolled(); }, { passive:true });
+  window.addEventListener('scroll', function(){
+    if (lastAutoTarget !== null){
+      var d = Math.abs(window.pageYOffset - lastAutoTarget);
+      if (d < 4){ lastAutoTarget = null; lastAutoDist = Infinity; return; }
+      if (d <= lastAutoDist){ lastAutoDist = d; return; }
+      lastAutoTarget = null; lastAutoDist = Infinity;
+    }
+    markUserScrolled();
+  }, { passive:true});
+  window.addEventListener('beforeunload', function(){
+    try { audio.pause(); } catch(e){}
+    try { if (hasSynth) window.speechSynthesis.cancel(); } catch(e){}
+  });
+
+  applyFS(); progress(); spy();
+  revealFigures();
+})();
+
+</script>
+</body>
+</html>

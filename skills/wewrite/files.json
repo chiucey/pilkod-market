@@ -1,0 +1,584 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha": "f06b860dd75f4d27392540f40562e8701692598a",
+      "size": 1065
+    },
+    {
+      "path": "README.md",
+      "sha": "389dba4758e0b85b5fd4980b9e2240be691f5491",
+      "size": 12241
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "27a2c3fdd72fdf726f70b08d9e4ca9f8afe5c3be",
+      "size": 24040
+    },
+    {
+      "path": "VERSION",
+      "sha": "80e78df6830f8bf4da6777e2ab28252afc8c7507",
+      "size": 6
+    },
+    {
+      "path": "_meta.json",
+      "sha": "7006a81d4abeb5e5f656b70ba2ab1e5e8a8deb61",
+      "size": 126
+    },
+    {
+      "path": "config.example.yaml",
+      "sha": "194c9797f1bb4895a3d09a3109fb32026ba1867e",
+      "size": 3743
+    },
+    {
+      "path": "dist/openclaw/SKILL.md",
+      "sha": "5a87ab69020902676ef736565a78be5cfe60f7a1",
+      "size": 23865
+    },
+    {
+      "path": "dist/openclaw/VERSION",
+      "sha": "80e78df6830f8bf4da6777e2ab28252afc8c7507",
+      "size": 6
+    },
+    {
+      "path": "dist/openclaw/config.example.yaml",
+      "sha": "194c9797f1bb4895a3d09a3109fb32026ba1867e",
+      "size": 3743
+    },
+    {
+      "path": "dist/openclaw/personas/cold-analyst.yaml",
+      "sha": "82f2b0702ba2afc166645e66691448456cd83889",
+      "size": 2351
+    },
+    {
+      "path": "dist/openclaw/personas/industry-observer.yaml",
+      "sha": "a1e07dafe2ad4a72a0f3737d36f5955fe93e70ae",
+      "size": 2079
+    },
+    {
+      "path": "dist/openclaw/personas/midnight-friend.yaml",
+      "sha": "678541d6258fc2ca9dc3e6a76886034eab688817",
+      "size": 2331
+    },
+    {
+      "path": "dist/openclaw/personas/sharp-journalist.yaml",
+      "sha": "c1ce32f5cba2c36921d9b8befb410ad8609c82db",
+      "size": 1894
+    },
+    {
+      "path": "dist/openclaw/personas/warm-editor.yaml",
+      "sha": "40246f41cbbf304793bbdb51ff6bd72f9603374b",
+      "size": 2142
+    },
+    {
+      "path": "dist/openclaw/references/content-enhance.md",
+      "sha": "0f99014d1f97916ae6d065546515f1bed6b31936",
+      "size": 6578
+    },
+    {
+      "path": "dist/openclaw/references/effect-review.md",
+      "sha": "dbf9caa5e70283b47dc658b6e20776508205f90b",
+      "size": 650
+    },
+    {
+      "path": "dist/openclaw/references/exemplar-seeds.yaml",
+      "sha": "c896755cc5558611121c6ef2e2285958167ebff5",
+      "size": 5316
+    },
+    {
+      "path": "dist/openclaw/references/frameworks.md",
+      "sha": "a1c45547144a4677e233577274a5906ccf15f237",
+      "size": 9172
+    },
+    {
+      "path": "dist/openclaw/references/learn-edits.md",
+      "sha": "ccf7d7600e063682c9cf85d21e386a76495cd74d",
+      "size": 3689
+    },
+    {
+      "path": "dist/openclaw/references/onboard.md",
+      "sha": "10d8c639bee543ed3f4720ec9c4d35f3e2eedc78",
+      "size": 4326
+    },
+    {
+      "path": "dist/openclaw/references/seo-rules.md",
+      "sha": "d1c41e36547111ebc3b0070a48dc3f57298ce7a5",
+      "size": 2410
+    },
+    {
+      "path": "dist/openclaw/references/style-template.md",
+      "sha": "a2316eb4f5cc01d1e080a8939df4b50dfb148d20",
+      "size": 2194
+    },
+    {
+      "path": "dist/openclaw/references/topic-selection.md",
+      "sha": "e17c9cf11e7b5e74e9a3fe1f9a883bbba7602320",
+      "size": 5188
+    },
+    {
+      "path": "dist/openclaw/references/visual-prompts.md",
+      "sha": "8431f11d5761decbee8033ade01da4d5347f1522",
+      "size": 10877
+    },
+    {
+      "path": "dist/openclaw/references/wechat-constraints.md",
+      "sha": "5796a6191d75d4c181974c6fadb80a4251e75b0f",
+      "size": 11443
+    },
+    {
+      "path": "dist/openclaw/references/writing-guide.md",
+      "sha": "3e4d75d3e215c0cab24bc44167851454784d94e7",
+      "size": 17842
+    },
+    {
+      "path": "dist/openclaw/requirements.txt",
+      "sha": "2fbddbdf8e3d9d226f4a0a82e1167cd71f079bd9",
+      "size": 125
+    },
+    {
+      "path": "dist/openclaw/scripts/build_openclaw.py",
+      "sha": "3a3e01982386d7288e7b3d104b8c3f36469e772e",
+      "size": 4188
+    },
+    {
+      "path": "dist/openclaw/scripts/build_playbook.py",
+      "sha": "561175e74ffe82c063617c5d992bf782faf70a49",
+      "size": 6243
+    },
+    {
+      "path": "dist/openclaw/scripts/diagnose.py",
+      "sha": "86b8dd800e65c25825e237831a18586db2df609f",
+      "size": 13014
+    },
+    {
+      "path": "dist/openclaw/scripts/extract_exemplar.py",
+      "sha": "710d1fa39b9ae93f562ed2483c764e2ec76ca0ed",
+      "size": 12967
+    },
+    {
+      "path": "dist/openclaw/scripts/fetch_article.py",
+      "sha": "4d647227aa6c8d8c19e253979d9416915849e268",
+      "size": 11112
+    },
+    {
+      "path": "dist/openclaw/scripts/fetch_hotspots.py",
+      "sha": "ec8847ae30b22783d3915b7354e5fccbf3c4d820",
+      "size": 5727
+    },
+    {
+      "path": "dist/openclaw/scripts/fetch_stats.py",
+      "sha": "2521a782e0f838c1719540582396eebba8c68d5d",
+      "size": 5556
+    },
+    {
+      "path": "dist/openclaw/scripts/humanness_score.py",
+      "sha": "3f3a079d24eeda03514dd359235eeb604177dec9",
+      "size": 21913
+    },
+    {
+      "path": "dist/openclaw/scripts/learn_edits.py",
+      "sha": "543c0b64f077d1be1b52d475b495da9075bec953",
+      "size": 18936
+    },
+    {
+      "path": "dist/openclaw/scripts/learn_theme.py",
+      "sha": "ce32978def45901f5ef5160ee78ae27ac403dd81",
+      "size": 22375
+    },
+    {
+      "path": "dist/openclaw/scripts/seo_keywords.py",
+      "sha": "57f3c0eedc5d0658590ef96185b587471dc073f7",
+      "size": 3883
+    },
+    {
+      "path": "dist/openclaw/style.example.yaml",
+      "sha": "480d605e146f8586955f6251e635242accfef6c8",
+      "size": 1308
+    },
+    {
+      "path": "dist/openclaw/toolkit/cli.py",
+      "sha": "ffbe80a4376062a636944e0821d0c1974513c13f",
+      "size": 15549
+    },
+    {
+      "path": "dist/openclaw/toolkit/converter.py",
+      "sha": "a3b07b2fc1410bdc5f139ed4893b4a38c306c2bf",
+      "size": 22519
+    },
+    {
+      "path": "dist/openclaw/toolkit/image_gen.py",
+      "sha": "7b3a69eba115ace18cc52f99e7ddc2729848d84c",
+      "size": 27328
+    },
+    {
+      "path": "dist/openclaw/toolkit/publisher.py",
+      "sha": "624895015ef1e752b5aa60a1a2bbc2df5903923d",
+      "size": 5722
+    },
+    {
+      "path": "dist/openclaw/toolkit/theme.py",
+      "sha": "6af81e94470f1aff7e49a1896895f51efac76783",
+      "size": 5589
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/bauhaus.yaml",
+      "sha": "209303451f1a3151a61d68f7a878000c72c72f4c",
+      "size": 3708
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/bold-green.yaml",
+      "sha": "e31004fea804fa165807bd18f75f81bbcd070847",
+      "size": 3542
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/bold-navy.yaml",
+      "sha": "d364437da83d403d87b64e272ff48e9947218d42",
+      "size": 3533
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/bytedance.yaml",
+      "sha": "48a9c9b02d8af70a83c75b489dd89c37e1178418",
+      "size": 3573
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/elegant-rose.yaml",
+      "sha": "8f592f661970a92ff7753bf721ad6336f4422a20",
+      "size": 3561
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/focus-red.yaml",
+      "sha": "fec675388ad42cf5bbd56126f7db3b55ee726a32",
+      "size": 3535
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/github.yaml",
+      "sha": "47b9e69191022bfc183484e0c9a3460a43ae5d27",
+      "size": 3579
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/ink.yaml",
+      "sha": "4c97cd6201965348b30a59fe58ecf67cfb09b6bb",
+      "size": 3584
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/midnight.yaml",
+      "sha": "9f260d5d67e36b808d59fd456c4e3ddaee822c55",
+      "size": 3525
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/minimal-gold.yaml",
+      "sha": "0e484bebb62272d4edb8ba2fa987e5043a9c8c31",
+      "size": 3657
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/minimal.yaml",
+      "sha": "8483b02d01fee7e87795d3376b269774ee919839",
+      "size": 3459
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/newspaper.yaml",
+      "sha": "353e176229ee1a938313c1448c99a43b77e5c0b0",
+      "size": 3668
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/professional-clean.yaml",
+      "sha": "ba451e4d809919b94463243e5743678fa87a2a38",
+      "size": 3530
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/sspai.yaml",
+      "sha": "c475fb1bc7598c8410d708bdd5e12a138f697887",
+      "size": 3543
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/tech-modern.yaml",
+      "sha": "646c17c7ff2b5bdc43284d6bab53c51633e0ebde",
+      "size": 3866
+    },
+    {
+      "path": "dist/openclaw/toolkit/themes/warm-editorial.yaml",
+      "sha": "418a135ad54390a83994577a8787bc526935d3bb",
+      "size": 3510
+    },
+    {
+      "path": "dist/openclaw/toolkit/wechat_api.py",
+      "sha": "728a768f7b4df9b27c0fb394967557552e38a676",
+      "size": 3372
+    },
+    {
+      "path": "dist/openclaw/writing-config.example.yaml",
+      "sha": "a2d7a6a102cfe816ce370d8c3056ac108111912b",
+      "size": 3850
+    },
+    {
+      "path": "evals/evals.json",
+      "sha": "5a256276872baac9344a776f43573ccbed5d579e",
+      "size": 4534
+    },
+    {
+      "path": "personas/cold-analyst.yaml",
+      "sha": "82f2b0702ba2afc166645e66691448456cd83889",
+      "size": 2351
+    },
+    {
+      "path": "personas/industry-observer.yaml",
+      "sha": "a1e07dafe2ad4a72a0f3737d36f5955fe93e70ae",
+      "size": 2079
+    },
+    {
+      "path": "personas/midnight-friend.yaml",
+      "sha": "678541d6258fc2ca9dc3e6a76886034eab688817",
+      "size": 2331
+    },
+    {
+      "path": "personas/sharp-journalist.yaml",
+      "sha": "c1ce32f5cba2c36921d9b8befb410ad8609c82db",
+      "size": 1894
+    },
+    {
+      "path": "personas/warm-editor.yaml",
+      "sha": "40246f41cbbf304793bbdb51ff6bd72f9603374b",
+      "size": 2142
+    },
+    {
+      "path": "references/content-enhance.md",
+      "sha": "0f99014d1f97916ae6d065546515f1bed6b31936",
+      "size": 6578
+    },
+    {
+      "path": "references/effect-review.md",
+      "sha": "dbf9caa5e70283b47dc658b6e20776508205f90b",
+      "size": 650
+    },
+    {
+      "path": "references/exemplar-seeds.yaml",
+      "sha": "c896755cc5558611121c6ef2e2285958167ebff5",
+      "size": 5316
+    },
+    {
+      "path": "references/frameworks.md",
+      "sha": "a1c45547144a4677e233577274a5906ccf15f237",
+      "size": 9172
+    },
+    {
+      "path": "references/learn-edits.md",
+      "sha": "ccf7d7600e063682c9cf85d21e386a76495cd74d",
+      "size": 3689
+    },
+    {
+      "path": "references/onboard.md",
+      "sha": "10d8c639bee543ed3f4720ec9c4d35f3e2eedc78",
+      "size": 4326
+    },
+    {
+      "path": "references/seo-rules.md",
+      "sha": "d1c41e36547111ebc3b0070a48dc3f57298ce7a5",
+      "size": 2410
+    },
+    {
+      "path": "references/style-template.md",
+      "sha": "a2316eb4f5cc01d1e080a8939df4b50dfb148d20",
+      "size": 2194
+    },
+    {
+      "path": "references/topic-selection.md",
+      "sha": "e17c9cf11e7b5e74e9a3fe1f9a883bbba7602320",
+      "size": 5188
+    },
+    {
+      "path": "references/visual-prompts.md",
+      "sha": "8431f11d5761decbee8033ade01da4d5347f1522",
+      "size": 10877
+    },
+    {
+      "path": "references/wechat-constraints.md",
+      "sha": "5796a6191d75d4c181974c6fadb80a4251e75b0f",
+      "size": 11443
+    },
+    {
+      "path": "references/writing-guide.md",
+      "sha": "3e4d75d3e215c0cab24bc44167851454784d94e7",
+      "size": 17842
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "2fbddbdf8e3d9d226f4a0a82e1167cd71f079bd9",
+      "size": 125
+    },
+    {
+      "path": "scripts/build_openclaw.py",
+      "sha": "3a3e01982386d7288e7b3d104b8c3f36469e772e",
+      "size": 4188
+    },
+    {
+      "path": "scripts/build_playbook.py",
+      "sha": "561175e74ffe82c063617c5d992bf782faf70a49",
+      "size": 6243
+    },
+    {
+      "path": "scripts/diagnose.py",
+      "sha": "86b8dd800e65c25825e237831a18586db2df609f",
+      "size": 13014
+    },
+    {
+      "path": "scripts/extract_exemplar.py",
+      "sha": "710d1fa39b9ae93f562ed2483c764e2ec76ca0ed",
+      "size": 12967
+    },
+    {
+      "path": "scripts/fetch_article.py",
+      "sha": "4d647227aa6c8d8c19e253979d9416915849e268",
+      "size": 11112
+    },
+    {
+      "path": "scripts/fetch_hotspots.py",
+      "sha": "ec8847ae30b22783d3915b7354e5fccbf3c4d820",
+      "size": 5727
+    },
+    {
+      "path": "scripts/fetch_stats.py",
+      "sha": "2521a782e0f838c1719540582396eebba8c68d5d",
+      "size": 5556
+    },
+    {
+      "path": "scripts/humanness_score.py",
+      "sha": "3f3a079d24eeda03514dd359235eeb604177dec9",
+      "size": 21913
+    },
+    {
+      "path": "scripts/learn_edits.py",
+      "sha": "543c0b64f077d1be1b52d475b495da9075bec953",
+      "size": 18936
+    },
+    {
+      "path": "scripts/learn_theme.py",
+      "sha": "ce32978def45901f5ef5160ee78ae27ac403dd81",
+      "size": 22375
+    },
+    {
+      "path": "scripts/seo_keywords.py",
+      "sha": "57f3c0eedc5d0658590ef96185b587471dc073f7",
+      "size": 3883
+    },
+    {
+      "path": "style.example.yaml",
+      "sha": "480d605e146f8586955f6251e635242accfef6c8",
+      "size": 1308
+    },
+    {
+      "path": "toolkit/cli.py",
+      "sha": "ffbe80a4376062a636944e0821d0c1974513c13f",
+      "size": 15549
+    },
+    {
+      "path": "toolkit/converter.py",
+      "sha": "a3b07b2fc1410bdc5f139ed4893b4a38c306c2bf",
+      "size": 22519
+    },
+    {
+      "path": "toolkit/image_gen.py",
+      "sha": "7b3a69eba115ace18cc52f99e7ddc2729848d84c",
+      "size": 27328
+    },
+    {
+      "path": "toolkit/publisher.py",
+      "sha": "624895015ef1e752b5aa60a1a2bbc2df5903923d",
+      "size": 5722
+    },
+    {
+      "path": "toolkit/theme.py",
+      "sha": "6af81e94470f1aff7e49a1896895f51efac76783",
+      "size": 5589
+    },
+    {
+      "path": "toolkit/themes/bauhaus.yaml",
+      "sha": "209303451f1a3151a61d68f7a878000c72c72f4c",
+      "size": 3708
+    },
+    {
+      "path": "toolkit/themes/bold-green.yaml",
+      "sha": "e31004fea804fa165807bd18f75f81bbcd070847",
+      "size": 3542
+    },
+    {
+      "path": "toolkit/themes/bold-navy.yaml",
+      "sha": "d364437da83d403d87b64e272ff48e9947218d42",
+      "size": 3533
+    },
+    {
+      "path": "toolkit/themes/bytedance.yaml",
+      "sha": "48a9c9b02d8af70a83c75b489dd89c37e1178418",
+      "size": 3573
+    },
+    {
+      "path": "toolkit/themes/elegant-rose.yaml",
+      "sha": "8f592f661970a92ff7753bf721ad6336f4422a20",
+      "size": 3561
+    },
+    {
+      "path": "toolkit/themes/focus-red.yaml",
+      "sha": "fec675388ad42cf5bbd56126f7db3b55ee726a32",
+      "size": 3535
+    },
+    {
+      "path": "toolkit/themes/github.yaml",
+      "sha": "47b9e69191022bfc183484e0c9a3460a43ae5d27",
+      "size": 3579
+    },
+    {
+      "path": "toolkit/themes/ink.yaml",
+      "sha": "4c97cd6201965348b30a59fe58ecf67cfb09b6bb",
+      "size": 3584
+    },
+    {
+      "path": "toolkit/themes/midnight.yaml",
+      "sha": "9f260d5d67e36b808d59fd456c4e3ddaee822c55",
+      "size": 3525
+    },
+    {
+      "path": "toolkit/themes/minimal-gold.yaml",
+      "sha": "0e484bebb62272d4edb8ba2fa987e5043a9c8c31",
+      "size": 3657
+    },
+    {
+      "path": "toolkit/themes/minimal.yaml",
+      "sha": "8483b02d01fee7e87795d3376b269774ee919839",
+      "size": 3459
+    },
+    {
+      "path": "toolkit/themes/newspaper.yaml",
+      "sha": "353e176229ee1a938313c1448c99a43b77e5c0b0",
+      "size": 3668
+    },
+    {
+      "path": "toolkit/themes/professional-clean.yaml",
+      "sha": "ba451e4d809919b94463243e5743678fa87a2a38",
+      "size": 3530
+    },
+    {
+      "path": "toolkit/themes/sspai.yaml",
+      "sha": "c475fb1bc7598c8410d708bdd5e12a138f697887",
+      "size": 3543
+    },
+    {
+      "path": "toolkit/themes/tech-modern.yaml",
+      "sha": "646c17c7ff2b5bdc43284d6bab53c51633e0ebde",
+      "size": 3866
+    },
+    {
+      "path": "toolkit/themes/warm-editorial.yaml",
+      "sha": "418a135ad54390a83994577a8787bc526935d3bb",
+      "size": 3510
+    },
+    {
+      "path": "toolkit/wechat_api.py",
+      "sha": "728a768f7b4df9b27c0fb394967557552e38a676",
+      "size": 3372
+    },
+    {
+      "path": "writing-config.example.yaml",
+      "sha": "a2d7a6a102cfe816ce370d8c3056ac108111912b",
+      "size": 3850
+    }
+  ]
+}

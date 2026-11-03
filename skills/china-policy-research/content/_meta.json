@@ -1,0 +1,71 @@
+{
+  "author": "MiniMax Agent",
+  "category": "research",
+  "created_date": "2026-03-25",
+  "created_from": "gresty0810/Regional-Policy-Analysis-China-in-Claude",
+  "description": "中国大陆区域政策检索与分析技能。当用户要求检索某地区政策、研究产业政策、分析城市规划、研究区域发展规划时使用。支持特定区域+特定主题的政策系统性检索和报告生成。",
+  "features": [
+    "分级网络检索",
+    "政策来源校审",
+    "相关度筛选",
+    "自动生成报告",
+    "政策汇编"
+  ],
+  "id": 380370018410992,
+  "language": "zh-CN",
+  "name": "china-policy-research",
+  "output_formats": [
+    "政策清单索引.xlsx",
+    "政策全文汇编.md",
+    "相关性政策索引.xlsx",
+    "相关性政策汇编.md",
+    "政策趋势报告.md"
+  ],
+  "platform": "minimax",
+  "references": [
+    "report-writing-guidelines.md",
+    "mandatory-search-checklist.md"
+  ],
+  "skill_id": 191028,
+  "supported_regions": [
+    "北京市",
+    "上海市",
+    "天津市",
+    "重庆市",
+    "广东省",
+    "江苏省",
+    "浙江省",
+    "四川省",
+    "湖北省",
+    "湖南省",
+    "河南省",
+    "山东省",
+    "其他省份和城市"
+  ],
+  "supported_topics": [
+    "产业发展",
+    "科技创新",
+    "城市规划",
+    "区域发展",
+    "乡村振兴",
+    "生态环境",
+    "财政金融",
+    "人才政策",
+    "社保公积金"
+  ],
+  "tags": [
+    "政策研究",
+    "中国区域",
+    "政策检索",
+    "产业分析",
+    "城市规划",
+    "政府政策"
+  ],
+  "time_ranges": [
+    "3年",
+    "5年",
+    "10年"
+  ],
+  "updated_at": 1774417540830,
+  "version": "2.0"
+}

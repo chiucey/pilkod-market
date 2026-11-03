@@ -1,0 +1,13 @@
+[
+  ["表名", "分片字段", "分片类型", "分片值", "目标库"],
+  ["orders", "order_id", "hash", "mod(id,4)", "ORDER_DB_01"],
+  ["order_items", "item_id", "hash", "mod(id,4)", "ORDER_DB_01"],
+  ["customers", "customer_id", "hash", "mod(id,4)", "CUSTOMER_DB_01"],
+  ["products", "product_id", "range", "0-10000", "PRODUCT_DB_01"],
+  ["products", "product_id", "range", "10001-50000", "PRODUCT_DB_02"],
+  ["products", "product_id", "range", "50001-999999", "PRODUCT_DB_03"],
+  ["inventory", "warehouse_id", "hash", "mod(id,4)", "INVENTORY_DB_01"],
+  ["payments", "payment_id", "hash", "mod(id,4)", "PAYMENT_DB_01"],
+  ["logs", "log_date", "range", "2024-01-01~2024-06-30", "LOG_DB_ARCHIVE"],
+  ["logs", "log_date", "range", "2024-07-01~2024-12-31", "LOG_DB_CURRENT"]
+]

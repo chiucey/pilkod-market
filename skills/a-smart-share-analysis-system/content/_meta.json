@@ -1,0 +1,96 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "realtime-analysis",
+    "model-training",
+    "backtesting",
+    "report-generation",
+    "data-management",
+    "system-optimization",
+    "hot-sector-tracking",
+    "multi-indicator-analysis",
+    "ensemble-model",
+    "risk-management",
+    "style-switch-analysis",
+    "multi-ai-factor-mining"
+  ],
+  "created_at": "2026-03-27",
+  "dependencies": [],
+  "description": "智能A股市场实时分析预测系统v2.1，支持大盘指数、热门行业ETF分析预测和模型优化，新增热点板块追踪、人形机器人、市场风格切换、多AI模型因子挖掘体系、风险管理策略",
+  "id": 382068284457254,
+  "last_optimization": "2026-03-29",
+  "name": "a-smart-share-analysis-system",
+  "optimization_history": [
+    {
+      "changes": [
+        "新增2026年3月市场热点板块追踪（AI算力、低空经济、新能源等）",
+        "增强技术面指标（新增CCI、ADX、WR指标）",
+        "新增多指标共振分析（三金共振信号）",
+        "新增成交量异常检测",
+        "新增主力资金分析",
+        "新增政策催化分析（两会预期）",
+        "优化模型集成策略（XGBoost+LightGBM+LSTM）",
+        "扩展Alpha因子至50+个",
+        "优化回测框架配置",
+        "升级分析报告模板至v2.0"
+      ],
+      "date": "2026-03-27",
+      "performance_improvement": "预计提升准确率5-8%",
+      "round": 1
+    },
+    {
+      "changes": [
+        "新增2026年市场热点：人形机器人板块追踪",
+        "新增市场风格切换与再均衡分析",
+        "新增机构仓位分析（泛科技、出海、资源）",
+        "新增多AI模型因子挖掘体系（Agentic AI量化研究）",
+        "新增深度学习因子（AGRU、DL_1、Transformer因子）",
+        "新增三分动态仓位法（底仓+趋势仓+现金储备）",
+        "新增双止盈止损规则",
+        "新增VaR风险指标体系",
+        "新增黑天鹅应对策略",
+        "新增风格切换风险和流动性风险管理",
+        "扩展Alpha因子至70+个",
+        "升级分析报告模板至v2.1"
+      ],
+      "date": "2026-03-28",
+      "performance_improvement": "预计提升准确率8-12%，风险管理能力显著提升",
+      "round": 2
+    },
+    {
+      "changes": [
+        "更新技能名称：a-share-analysis-system → a-smart-share-analysis-system",
+        "优化技能描述，突出'智能'定位"
+      ],
+      "date": "2026-03-29",
+      "performance_improvement": "品牌升级，提升识别度",
+      "round": 3
+    }
+  ],
+  "optimization_round": 3,
+  "permissions": [],
+  "platform": "minimax",
+  "settings": {
+    "alpha_factors_count": 70,
+    "data_update_frequency": "daily",
+    "max_analysis_targets": 50,
+    "model_retrain_frequency": "weekly",
+    "model_version": "v2.1",
+    "report_format": "markdown"
+  },
+  "tags": [
+    "a-share",
+    "stock-analysis",
+    "prediction",
+    "machine-learning",
+    "financial-analysis",
+    "xgboost",
+    "lstm",
+    "transformer",
+    "risk-management",
+    "multi-ai-agent",
+    "smart-analysis"
+  ],
+  "updated_at": 1774832022299,
+  "version": "2.1.0"
+}

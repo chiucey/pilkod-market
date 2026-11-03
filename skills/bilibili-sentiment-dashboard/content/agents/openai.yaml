@@ -1,0 +1,7 @@
+interface:
+  display_name: "bilibili-sentiment-dashboard"
+  short_description: "Bilibili short video operations growth assistant"
+  default_prompt: "Use $bilibili-sentiment-dashboard to help with Bilibili short video operations growth assistant"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,64 @@
+{
+  "_comment": "角色设定文件模板 - 复制此文件并根据需要修改，用于确保系列表情包风格统一",
+  "project_name": "项目名称",
+  "character": {
+    "name": "角色名称",
+    "base_prompt": "基础外观描述，用于AI生成时调用",
+    "detailed_appearance": {
+      "face_shape": "脸型，如：圆脸、心形脸",
+      "eyes": "眼睛描述，如：水汪汪的大眼睛、眯眼",
+      "mouth": "嘴巴描述，如：微笑、大笑、嘟嘴",
+      "hair": "发型发色，如：棕色短发、双马尾",
+      "accessories": "配饰，如：蝴蝶结、耳环",
+      "body": "身体比例，如：头大身小、Q版"
+    },
+    "color_palette": {
+      "_usage": "配色方案，用于保持系列一致",
+      "primary": "#主色，如：#FFB6C1",
+      "secondary": "#辅助色，如：#FFFFFF",
+      "accent": "#点缀色，如：#FF69B4",
+      "outline": "#描边色，如：#000000 或 #FFFFFF",
+      "cheeks": "#脸颊色，如：#FFB6C1"
+    },
+    "style_keywords": [
+      "_comment": "风格关键词列表，每次生成时使用",
+      "可爱卡通",
+      "圆滑线条",
+      "柔和阴影"
+    ],
+    "signature_moves": [
+      "_comment": "招牌动作列表",
+      "捂脸",
+      "挠头",
+      "比心"
+    ],
+    "expression_variants": {
+      "happy": "开心表情的具体描述，眼睛眯成月牙，嘴巴张大微笑",
+      "excited": "兴奋表情的具体描述，眼睛闪闪发光，双手举起",
+      "angry": "生气表情的具体描述，眉毛倒八字，嘴巴撅起",
+      "sad": "难过表情的具体描述，眉毛下垂，眼眶湿润",
+      "shy": "害羞表情的具体描述，脸红到耳朵，眼睛看向一边",
+      "surprised": "惊讶表情的具体描述，眼睛瞪大，嘴巴张开",
+      "confused": "困惑表情的具体描述，歪头，冒问号",
+      "proud": "得意表情的具体描述，仰头叉腰，眯眼笑",
+      "sleepy": "困倦表情的具体描述，眼睛半闭，打哈欠",
+      "crying": "大哭表情的具体描述，眼泪哗哗流，嘴巴大张"
+    }
+  },
+  "background_rules": {
+    "type": "纯色或简单渐变",
+    "allowed_colors": ["#FFFFFF", "#FFE4E1", "#E6E6FA", "#F0FFF0", "#FFF8DC"],
+    "forbidden": "复杂背景、照片、图片"
+  },
+  "stroke_rules": {
+    "enabled": true,
+    "color": "#FFFFFF",
+    "width": 2,
+    "forbidden_on_thumbnail": true
+  },
+  "generation_template": {
+    "_comment": "生成提示词模板，{character}和{expression}会被自动替换",
+    "template": "{character}, {expression}, {style_keywords_join}, 简单的白色背景, 微信表情包风格, 240x240像素, 高清细腻, 2像素白色描边",
+    "example": "一只圆滚滚的棕色小熊,眼睛眯成月牙嘴巴张大微笑,可爱卡通圆滑线条柔和阴影,简单白色背景,微信表情包风格,240x240像素,高清细腻,2像素白色描边"
+  }
+}

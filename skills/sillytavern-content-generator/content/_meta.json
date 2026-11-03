@@ -1,0 +1,27 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-03",
+  "description": "生成 SillyTavern/TavernAI/TavoAI 角色卡、世界书、预设和正则配置。当用户要求创建 AI 角色卡、生成角色设定、设计世界观、配置对话渲染规则时使用。触发词: 角色卡、角色创建、世界书、Lorebook、预设、Prompt、正则、渲染、SillyTavern、TavoAI",
+  "id": 383609174991190,
+  "name": "sillytavern-content-generator",
+  "platform": "minimax",
+  "tags": [
+    "sillytavern",
+    "tavernai",
+    "tavoai",
+    "tavo",
+    "character-card",
+    "worldbook",
+    "lorebook",
+    "preset",
+    "character",
+    "AI-tavern",
+    "chara_card_v3",
+    "v3-spec",
+    "macros",
+    "javascript",
+    "regex"
+  ],
+  "updated_at": 1775208160826,
+  "version": "3.0.0"
+}

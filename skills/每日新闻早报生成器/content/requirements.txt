@@ -1,0 +1,11 @@
+# 每日新闻早报生成器依赖列表
+
+# 核心依赖
+feedparser>=5.2.1
+requests>=2.25.1
+beautifulsoup4>=4.9.3
+PyYAML>=5.4.1
+
+# 可选依赖
+lxml>=4.6.3
+html5lib>=1.1

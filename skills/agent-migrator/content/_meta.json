@@ -1,0 +1,19 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-03-17",
+  "description": "智能体跨平台迁移分析器。帮助用户在不同平台间丝滑迁移智能体。当用户要求将 AI Agent 从 A 平台迁移到 B 平台时触发，例如「帮我迁移智能体」「从 OpenClaw 迁移到 Dify」「迁移到 Coze」「如何把机器人迁移到新服务器」。自动检测源平台配置、子代理、MCP Server 和外挂数据库，生成完整迁移方案和分步实施指南。",
+  "id": 379287385821561,
+  "name": "agent-migrator",
+  "platform": "minimax",
+  "tags": [
+    "migration",
+    "ai-agent",
+    "platform-transfer",
+    "openclaw",
+    "dify",
+    "coze"
+  ],
+  "updated": "2026-03-22",
+  "updated_at": 1774153900550,
+  "version": "1.0.0"
+}

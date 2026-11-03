@@ -1,0 +1,779 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "1db711bda3f0425b738e393cddbc4d31d29f82b8",
+      "size": 404
+    },
+    {
+      "path": "LICENSE",
+      "sha": "29d61d13c39a81c31016f6556a4867fc5ed8f1ce",
+      "size": 2005
+    },
+    {
+      "path": "README.en.md",
+      "sha": "eded5fd4fe39398043b8635a955293c45e1f4a55",
+      "size": 16312
+    },
+    {
+      "path": "README.md",
+      "sha": "de9b1515af0545e251c25a3d326298b4869a699c",
+      "size": 15208
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "f81452a808550ac2db168f88c95dccac00941ded",
+      "size": 57458
+    },
+    {
+      "path": "assets/android_frame.jsx",
+      "sha": "86071b3ccc8f19bf0d2e8683cd2fedea6b186955",
+      "size": 4506
+    },
+    {
+      "path": "assets/animations.jsx",
+      "sha": "8558918757cff8c12d58fd85f26a233df1a178c4",
+      "size": 10079
+    },
+    {
+      "path": "assets/banner.svg",
+      "sha": "65f68dee7f5326ab71ae3099352f063f97e9b4ad",
+      "size": 9502
+    },
+    {
+      "path": "assets/bgm-ad.mp3",
+      "sha": "8bb7a9b17aa468e294f5a9b6b91429278e24fbe8",
+      "size": 4950071
+    },
+    {
+      "path": "assets/bgm-educational-alt.mp3",
+      "sha": "86f51e73896b3fcf858d64b34244ab8f63770611",
+      "size": 4468765
+    },
+    {
+      "path": "assets/bgm-educational.mp3",
+      "sha": "1ec9434058121ecc3752d9a1a4302d159f77c71d",
+      "size": 4047162
+    },
+    {
+      "path": "assets/bgm-tech.mp3",
+      "sha": "3747c14099d4e1cb341015995b9e3da9ad4221d8",
+      "size": 4818429
+    },
+    {
+      "path": "assets/bgm-tutorial-alt.mp3",
+      "sha": "bfba196abc7339181c9cf99a47b7dba08d30c2dd",
+      "size": 3937926
+    },
+    {
+      "path": "assets/bgm-tutorial.mp3",
+      "sha": "d251dd24556e3052a90d627911db5b884fa81957",
+      "size": 5542744
+    },
+    {
+      "path": "assets/browser_window.jsx",
+      "sha": "19c1034666ef2a33e732ec1146b0e063a692d16b",
+      "size": 3975
+    },
+    {
+      "path": "assets/deck_index.html",
+      "sha": "fdbc4a4afb2fb6eae1d69c52c88e3a50c3f6fe35",
+      "size": 8145
+    },
+    {
+      "path": "assets/deck_stage.js",
+      "sha": "916790dc566eafb473791ac4f9facb42c2c00a20",
+      "size": 11678
+    },
+    {
+      "path": "assets/design_canvas.jsx",
+      "sha": "9b9140e304367eb52939b6ac420114698ffdc5d2",
+      "size": 5195
+    },
+    {
+      "path": "assets/ios_frame.jsx",
+      "sha": "eb0160e489e2a5112a35b716af710c11f9200485",
+      "size": 4753
+    },
+    {
+      "path": "assets/macos_window.jsx",
+      "sha": "7155b98254780b2336cb90ab0db9dd3fc6e10882",
+      "size": 2536
+    },
+    {
+      "path": "assets/personal-asset-index.example.json",
+      "sha": "dd4b0d6e64e1fdea2213e1f75804637e3885d4fc",
+      "size": 1826
+    },
+    {
+      "path": "assets/sfx/container/card-flip.mp3",
+      "sha": "ebfb492352f785852357ddf2794966bb9c3caa18",
+      "size": 12164
+    },
+    {
+      "path": "assets/sfx/container/card-snap.mp3",
+      "sha": "16b99d40d18ed5f4ab2703b022dd91505a608bd9",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/container/modal-open.mp3",
+      "sha": "a7f96f744cca08fe438e43516f3df1f8897a5511",
+      "size": 10493
+    },
+    {
+      "path": "assets/sfx/container/stack-collapse.mp3",
+      "sha": "3bac6f730492f021932493526bf37828dba1ffa9",
+      "size": 13836
+    },
+    {
+      "path": "assets/sfx/feedback/achievement.mp3",
+      "sha": "21536ea3226987fffcef0905f6323ca040ea9196",
+      "size": 24703
+    },
+    {
+      "path": "assets/sfx/feedback/error-tone.mp3",
+      "sha": "1e3079c92b972cb152aedb06c6d3392e6780e8a3",
+      "size": 12164
+    },
+    {
+      "path": "assets/sfx/feedback/notification-pop.mp3",
+      "sha": "3f181b87dec8498a7b9ba2b9a0769df59a246da4",
+      "size": 10493
+    },
+    {
+      "path": "assets/sfx/feedback/success-chime.mp3",
+      "sha": "ffebf28f206facf953cc9bead2d1d0400c1d3d02",
+      "size": 17180
+    },
+    {
+      "path": "assets/sfx/impact/brand-stamp.mp3",
+      "sha": "e5320c04f5cb2d51e51383a25838d877e50f47fe",
+      "size": 17180
+    },
+    {
+      "path": "assets/sfx/impact/drop-thud.mp3",
+      "sha": "7857e3744fd2ab7d01fb6c50356c32cccc9c08e9",
+      "size": 12164
+    },
+    {
+      "path": "assets/sfx/impact/logo-reveal-v2.mp3",
+      "sha": "bf596ee2ce1247e550e37bf10382140294144400",
+      "size": 24703
+    },
+    {
+      "path": "assets/sfx/impact/logo-reveal.mp3",
+      "sha": "bf596ee2ce1247e550e37bf10382140294144400",
+      "size": 24703
+    },
+    {
+      "path": "assets/sfx/keyboard/delete-key.mp3",
+      "sha": "b4f80589c4a378f5ab8d16bb73a84cad49ae3d04",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/keyboard/enter.mp3",
+      "sha": "3262addb0e159f0376cd3edd00f7ec1228f75be2",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/keyboard/space-tap.mp3",
+      "sha": "f3cce57f90009e5c021c8f0ef6216b1de6ba597f",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/keyboard/type-fast.mp3",
+      "sha": "a40d64dd5def3d0c38ed3598defd673f31517edb",
+      "size": 24703
+    },
+    {
+      "path": "assets/sfx/keyboard/type.mp3",
+      "sha": "94fb8fc4f6465d0c8b68883fb2390b3ecfd15c42",
+      "size": 13836
+    },
+    {
+      "path": "assets/sfx/magic/ai-process.mp3",
+      "sha": "1b28d7efbd8d16d20dad2ee75dfb1a4ef9e43ab1",
+      "size": 20106
+    },
+    {
+      "path": "assets/sfx/magic/sparkle.mp3",
+      "sha": "51400dc211a252238f1b8c64cb50d4d857ecf936",
+      "size": 13836
+    },
+    {
+      "path": "assets/sfx/magic/transform.mp3",
+      "sha": "c7094374e8e538dfb39e6414417723e896c1b254",
+      "size": 17180
+    },
+    {
+      "path": "assets/sfx/progress/complete-done.mp3",
+      "sha": "fb0a856b47bea510b637fcc1b42f95fcb37de133",
+      "size": 13836
+    },
+    {
+      "path": "assets/sfx/progress/generate-start.mp3",
+      "sha": "ff9bc7361ef65b6f03aed6817357d90223c654da",
+      "size": 13836
+    },
+    {
+      "path": "assets/sfx/progress/loading-tick.mp3",
+      "sha": "4bc31af565bf323f14ca376a9e9cd18aa4f13701",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/terminal/command-execute.mp3",
+      "sha": "17be9e304727545ee6dfbaddc13f6645e29e55af",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/terminal/cursor-blink.mp3",
+      "sha": "6685098e2e2c9dfcddf6144e14f71e1a19611178",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/terminal/output-appear.mp3",
+      "sha": "71be2b1c0071470d49bf1239b754be04ba7142dd",
+      "size": 10493
+    },
+    {
+      "path": "assets/sfx/transition/dissolve.mp3",
+      "sha": "a0abc5ab7aec25aece953b6e90cc21e8daa6873d",
+      "size": 13836
+    },
+    {
+      "path": "assets/sfx/transition/slide-in.mp3",
+      "sha": "c84811f4356ea60f92aaf80ae25ea6a0ca106cc3",
+      "size": 10493
+    },
+    {
+      "path": "assets/sfx/transition/swipe-horizontal.mp3",
+      "sha": "22beaf728832ad84d7fec4f7a01ff31c7c17c759",
+      "size": 12164
+    },
+    {
+      "path": "assets/sfx/transition/whoosh-fast.mp3",
+      "sha": "6b05a2362189684411d5d4a1b65e136d127cce3f",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/transition/whoosh.mp3",
+      "sha": "a85fd428a4642ef0ddfd18d82118e47b9de41e2f",
+      "size": 10493
+    },
+    {
+      "path": "assets/sfx/ui/click-soft.mp3",
+      "sha": "6729756298e7d6a0350cb37fffc0d8abe85f86a7",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/ui/click.mp3",
+      "sha": "b0770670ac20985b66a3cd1fff55e09e5c7e21c5",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/ui/focus.mp3",
+      "sha": "2b2ef15ff8d65dc204e81a8c5231d30ff60ed076",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/ui/hover-subtle.mp3",
+      "sha": "fb919e298dab89641056e72b1c6cff152f76f73b",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/ui/tap-finger.mp3",
+      "sha": "bb688e795c3d63e1a4304b0e24a248d33491a4e6",
+      "size": 8821
+    },
+    {
+      "path": "assets/sfx/ui/toggle-on.mp3",
+      "sha": "7b2203ec2d47cdb0128550ff71a984f8fa81f679",
+      "size": 8821
+    },
+    {
+      "path": "assets/showcases/INDEX.md",
+      "sha": "5a89e42ccf9379b1a98db40a0439eeadc8e6f192",
+      "size": 5538
+    },
+    {
+      "path": "assets/showcases/cover/cover-build.html",
+      "sha": "25380833bdcabc776aa1efc278f1bb606c7fdb13",
+      "size": 5664
+    },
+    {
+      "path": "assets/showcases/cover/cover-build.png",
+      "sha": "27a5667ea12674739cc423931a429e82c2d035ec",
+      "size": 116336
+    },
+    {
+      "path": "assets/showcases/cover/cover-pentagram.html",
+      "sha": "fb54bda2e777205c50a78beb875c597e99e70aed",
+      "size": 4914
+    },
+    {
+      "path": "assets/showcases/cover/cover-pentagram.png",
+      "sha": "251eaddf75f6b5288551e72dd8b375b766656b92",
+      "size": 36047
+    },
+    {
+      "path": "assets/showcases/cover/cover-takram.html",
+      "sha": "20b7a18992078b92baffc71b58dcdd1c140e392a",
+      "size": 11823
+    },
+    {
+      "path": "assets/showcases/cover/cover-takram.png",
+      "sha": "751973ffc4d11509135184f3a11c77af3fe6efb5",
+      "size": 155362
+    },
+    {
+      "path": "assets/showcases/infographic/infographic-build.html",
+      "sha": "325c2fa5edcfb841c2796980d28ef8904986ce90",
+      "size": 11696
+    },
+    {
+      "path": "assets/showcases/infographic/infographic-build.png",
+      "sha": "e947be8f6f6a21638cab5d6036a56b1d2a0d335a",
+      "size": 108710
+    },
+    {
+      "path": "assets/showcases/infographic/infographic-pentagram.html",
+      "sha": "8e9fdb889b48ffc92ad28a7bbaa4d4568924fc3d",
+      "size": 13911
+    },
+    {
+      "path": "assets/showcases/infographic/infographic-pentagram.png",
+      "sha": "994840c4c7ad0e5c04dc34e9cd7923260f0b6dd0",
+      "size": 159021
+    },
+    {
+      "path": "assets/showcases/infographic/infographic-takram.html",
+      "sha": "e55520204bdc95f48a2680f4696c4227beb161dd",
+      "size": 22396
+    },
+    {
+      "path": "assets/showcases/infographic/infographic-takram.png",
+      "sha": "1ea03e40bb064294dcf771eba5988bcdbc67cb09",
+      "size": 162976
+    },
+    {
+      "path": "assets/showcases/ppt/ppt-build.html",
+      "sha": "be2cbb711f897e767d344a557476c89909782a69",
+      "size": 9083
+    },
+    {
+      "path": "assets/showcases/ppt/ppt-build.png",
+      "sha": "fa414414976150edb6c129b7eba5efb8df8c4e20",
+      "size": 84423
+    },
+    {
+      "path": "assets/showcases/ppt/ppt-pentagram.html",
+      "sha": "cd10597135acdea9795e3e2e5efce439555a19fa",
+      "size": 11955
+    },
+    {
+      "path": "assets/showcases/ppt/ppt-pentagram.png",
+      "sha": "823fdac4d8bf375728616f2db848c18dcff9f10a",
+      "size": 101335
+    },
+    {
+      "path": "assets/showcases/ppt/ppt-takram.html",
+      "sha": "d859cbd5a9c3344ccabdc1cbf179b2f17366356a",
+      "size": 15656
+    },
+    {
+      "path": "assets/showcases/ppt/ppt-takram.png",
+      "sha": "7fc4ba632a554a65d75e44cdde16edd28712987d",
+      "size": 467187
+    },
+    {
+      "path": "assets/showcases/website-ai-nav/ainav-build.html",
+      "sha": "2d9060e6954ba4a0f081be39bb75b26c1f6d2555",
+      "size": 9621
+    },
+    {
+      "path": "assets/showcases/website-ai-nav/ainav-build.png",
+      "sha": "bd9cf08aff601df7dc3e6c205868a8daaeda2d03",
+      "size": 85064
+    },
+    {
+      "path": "assets/showcases/website-ai-nav/ainav-pentagram.html",
+      "sha": "1bec4d244d7ac71e4c96aa5a5cab408645197208",
+      "size": 10553
+    },
+    {
+      "path": "assets/showcases/website-ai-nav/ainav-pentagram.png",
+      "sha": "57a4bf6d7fca9cfadfaf0f4cfd1b303f9b9ca6f8",
+      "size": 105575
+    },
+    {
+      "path": "assets/showcases/website-ai-nav/ainav-takram.html",
+      "sha": "1f7581d4734b8f4ce84d068d41cb6f579d26267b",
+      "size": 12747
+    },
+    {
+      "path": "assets/showcases/website-ai-nav/ainav-takram.png",
+      "sha": "f19ef9e8d486c749164215050e7cfd359e48e845",
+      "size": 121675
+    },
+    {
+      "path": "assets/showcases/website-ai-writing/aiwriting-build.html",
+      "sha": "908967bdc56d60104058647bb58a0a36528c1a88",
+      "size": 14066
+    },
+    {
+      "path": "assets/showcases/website-ai-writing/aiwriting-build.png",
+      "sha": "5a04d55c854197c37cb6ee485bb661a480d1c7d8",
+      "size": 130604
+    },
+    {
+      "path": "assets/showcases/website-ai-writing/aiwriting-pentagram.html",
+      "sha": "38f702df3b70c9babfa652d7c3b68eaacb435f38",
+      "size": 14226
+    },
+    {
+      "path": "assets/showcases/website-ai-writing/aiwriting-pentagram.png",
+      "sha": "cda81e9c25b0c61240eb3102ed53a32e0442662c",
+      "size": 150195
+    },
+    {
+      "path": "assets/showcases/website-ai-writing/aiwriting-takram.html",
+      "sha": "c3fc6b3a687118ded5f918be8fd3aab4080f310f",
+      "size": 18003
+    },
+    {
+      "path": "assets/showcases/website-ai-writing/aiwriting-takram.png",
+      "sha": "31d740566e529057aadd929a6ed53b4e1e121628",
+      "size": 157158
+    },
+    {
+      "path": "assets/showcases/website-devdocs/devdocs-build.html",
+      "sha": "2c37afda67b91a269ed8bcec3eb914ff342bc2d1",
+      "size": 9928
+    },
+    {
+      "path": "assets/showcases/website-devdocs/devdocs-build.png",
+      "sha": "bbca28e8b3b005a1980dab0752866150c35aa1fb",
+      "size": 68230
+    },
+    {
+      "path": "assets/showcases/website-devdocs/devdocs-pentagram.html",
+      "sha": "f05ec3a7890fa64fe5d71e5ab8ff83c702d9268b",
+      "size": 12801
+    },
+    {
+      "path": "assets/showcases/website-devdocs/devdocs-pentagram.png",
+      "sha": "345c3169054364f80d70aaced43cec707975188b",
+      "size": 117051
+    },
+    {
+      "path": "assets/showcases/website-devdocs/devdocs-takram.html",
+      "sha": "206f3b754820ab0332248d8c411b0c8fcf0ef486",
+      "size": 13106
+    },
+    {
+      "path": "assets/showcases/website-devdocs/devdocs-takram.png",
+      "sha": "7f147267b5753e10d8c39c1d202b27aec86ab4a8",
+      "size": 111854
+    },
+    {
+      "path": "assets/showcases/website-homepage/homepage-build.html",
+      "sha": "2bfef3a43f33521201732ba71fc1f7ee1dc950fd",
+      "size": 8314
+    },
+    {
+      "path": "assets/showcases/website-homepage/homepage-build.png",
+      "sha": "ef37605b5581c9c748a5cfb18be6f256769b0e01",
+      "size": 61708
+    },
+    {
+      "path": "assets/showcases/website-homepage/homepage-pentagram.html",
+      "sha": "2f7580f12258b87101a463cd7006fae7650f5a3f",
+      "size": 8491
+    },
+    {
+      "path": "assets/showcases/website-homepage/homepage-pentagram.png",
+      "sha": "1af6f7936a2d2fd8081348b6e034fd23300a06e2",
+      "size": 57093
+    },
+    {
+      "path": "assets/showcases/website-homepage/homepage-takram.html",
+      "sha": "7ae174a50a1d7134c3aa4c03b7759e27d5e96c4c",
+      "size": 10543
+    },
+    {
+      "path": "assets/showcases/website-homepage/homepage-takram.png",
+      "sha": "3fb8de921a02ae6e8118a4317c0ec14673d2e898",
+      "size": 127610
+    },
+    {
+      "path": "assets/showcases/website-saas/saas-build.html",
+      "sha": "f5d56036587933b6d797a8781687d6012b14fad6",
+      "size": 12901
+    },
+    {
+      "path": "assets/showcases/website-saas/saas-build.png",
+      "sha": "f7510932718e1d9ef2217b2017bfdfb0223479ce",
+      "size": 99745
+    },
+    {
+      "path": "assets/showcases/website-saas/saas-pentagram.html",
+      "sha": "ccf397b9b4e0a1557ef4565c1b6d43e77370a543",
+      "size": 15050
+    },
+    {
+      "path": "assets/showcases/website-saas/saas-pentagram.png",
+      "sha": "07e2ca18f1dcc146fe83a6e4732793738aeb8caf",
+      "size": 96559
+    },
+    {
+      "path": "assets/showcases/website-saas/saas-takram.html",
+      "sha": "d35c6a622f7ac7fa6c740b528aeb856e961ca1a8",
+      "size": 18209
+    },
+    {
+      "path": "assets/showcases/website-saas/saas-takram.png",
+      "sha": "6122fda9fe5b2e1ece10f9ff82c5a0b63153858c",
+      "size": 123532
+    },
+    {
+      "path": "demos/c1-ios-prototype-en.html",
+      "sha": "df3a605ac96cf881f016e821e0f67b4fd07486f2",
+      "size": 35163
+    },
+    {
+      "path": "demos/c1-ios-prototype.html",
+      "sha": "fecc506f0039785b668dcf006534a722d99d1e89",
+      "size": 35149
+    },
+    {
+      "path": "demos/c2-slides-pptx-en.html",
+      "sha": "b4035749422fc01a7fe72969dc7239f29f45df8c",
+      "size": 32906
+    },
+    {
+      "path": "demos/c2-slides-pptx.html",
+      "sha": "05e7b4ffd416d2df2a9786eacaa8dff417290104",
+      "size": 32975
+    },
+    {
+      "path": "demos/c3-motion-design-en.html",
+      "sha": "ef44882fd45d0f737ec1afdf0c2f38b70424bca1",
+      "size": 37031
+    },
+    {
+      "path": "demos/c3-motion-design.html",
+      "sha": "79f106e448de4d358746d397932c05e735c9c03c",
+      "size": 37048
+    },
+    {
+      "path": "demos/c4-tweaks-en.html",
+      "sha": "284e47d3b86d53998326b93236b076438c873a4d",
+      "size": 31102
+    },
+    {
+      "path": "demos/c4-tweaks.html",
+      "sha": "640c41a623217cc35c6465fb89ea21dd050b1021",
+      "size": 31150
+    },
+    {
+      "path": "demos/c5-infographic-en.html",
+      "sha": "c01667909f031ae829e5df8d97617fded7a4da27",
+      "size": 24941
+    },
+    {
+      "path": "demos/c5-infographic.html",
+      "sha": "619e4198552aaa263515152b9d860409cd99f74e",
+      "size": 24823
+    },
+    {
+      "path": "demos/c6-expert-review-en.html",
+      "sha": "6471b2f5b6409c1813485ebb0475665eb951339e",
+      "size": 26382
+    },
+    {
+      "path": "demos/c6-expert-review.html",
+      "sha": "ab3489dc84266b2394ea2c7ea858ddeb005fdd51",
+      "size": 26822
+    },
+    {
+      "path": "demos/hero-animation-v10-en.html",
+      "sha": "be8b9254db51c8000448c5c38241a970fa14f2b2",
+      "size": 48712
+    },
+    {
+      "path": "demos/w1-brand-protocol-en.html",
+      "sha": "2eb967bbcddcf6be322a5cf4ecb9bc01a3da3873",
+      "size": 20572
+    },
+    {
+      "path": "demos/w1-brand-protocol.html",
+      "sha": "dc38e4d540a716cf0c73e870699de51d55c445f6",
+      "size": 20905
+    },
+    {
+      "path": "demos/w2-junior-designer-en.html",
+      "sha": "88438f8d50742b640696b216d5ba96c898f163ab",
+      "size": 31305
+    },
+    {
+      "path": "demos/w2-junior-designer.html",
+      "sha": "097bbb75cf68d40443adc684605f7316bf84af07",
+      "size": 31764
+    },
+    {
+      "path": "demos/w3-fallback-advisor-en.html",
+      "sha": "56fe0855b90c82e7291efe223af98de2be45bc1b",
+      "size": 23802
+    },
+    {
+      "path": "demos/w3-fallback-advisor.html",
+      "sha": "d73f84f2026ac274e74e445042fe12ffc0e386de",
+      "size": 26314
+    },
+    {
+      "path": "references/animation-best-practices.md",
+      "sha": "1aa0d3717cf5a927640c2aa7d424d62388c99a0f",
+      "size": 21012
+    },
+    {
+      "path": "references/animation-pitfalls.md",
+      "sha": "0ccbd258a7cc4b59a4f304f8070dc7b3a7ae85d8",
+      "size": 22314
+    },
+    {
+      "path": "references/animations.md",
+      "sha": "fd323c7fb19747fc0433005a4ce82bb3bd1fc637",
+      "size": 7427
+    },
+    {
+      "path": "references/apple-gallery-showcase.md",
+      "sha": "f9e92fa56f9f6ca6815ed870445db97914ed92ae",
+      "size": 11233
+    },
+    {
+      "path": "references/audio-design-rules.md",
+      "sha": "42f31e8dcc9ba1401fc2f1301919ff2f585ad8ed",
+      "size": 9719
+    },
+    {
+      "path": "references/cinematic-patterns.md",
+      "sha": "b8b1dc9e6a43a53545895385edf8876887eacf7b",
+      "size": 11086
+    },
+    {
+      "path": "references/content-guidelines.md",
+      "sha": "140cf818c8232492e530cd01b883d46980b8f43a",
+      "size": 8389
+    },
+    {
+      "path": "references/critique-guide.md",
+      "sha": "34209b87d4e77bd0ee8b50945c53b9ada3c0c91b",
+      "size": 7463
+    },
+    {
+      "path": "references/design-context.md",
+      "sha": "12adeb06d8834e0c9ba934a62b95330c39d33cd2",
+      "size": 6704
+    },
+    {
+      "path": "references/design-styles.md",
+      "sha": "702d53282a5a8e7c81f0a821d50b01dad7843d1b",
+      "size": 18484
+    },
+    {
+      "path": "references/editable-pptx.md",
+      "sha": "669c8bc47e6379cdf3cf6515abede59b8667d751",
+      "size": 13668
+    },
+    {
+      "path": "references/hero-animation-case-study.md",
+      "sha": "7fc9626f6773dee5f9d3bb7c1fc1daed394f3dc2",
+      "size": 11348
+    },
+    {
+      "path": "references/react-setup.md",
+      "sha": "00c1c7db88602882d932ae697e0b8bdf25a89be2",
+      "size": 9318
+    },
+    {
+      "path": "references/scene-templates.md",
+      "sha": "d6fe18d60989a839a9d1b9953a870017bc2e27a5",
+      "size": 7144
+    },
+    {
+      "path": "references/sfx-library.md",
+      "sha": "50b23696160b98bf051d5986e83a0cbb7a3e8a28",
+      "size": 9762
+    },
+    {
+      "path": "references/slide-decks.md",
+      "sha": "2849e013845101b5dd08720956eb71a5e34ccd91",
+      "size": 34169
+    },
+    {
+      "path": "references/tweaks-system.md",
+      "sha": "a1890b67c9b4098fd9a0de35805642d2bedd19c9",
+      "size": 9015
+    },
+    {
+      "path": "references/verification.md",
+      "sha": "949c97bd56869ed1d301a3e81d53b722f76131a2",
+      "size": 4291
+    },
+    {
+      "path": "references/video-export.md",
+      "sha": "0ca987c560e198cf61933b7569fdc5fbd2a91a59",
+      "size": 8356
+    },
+    {
+      "path": "references/workflow.md",
+      "sha": "be2fd32ef0879d05b5ed0314687b3b5cd4505e14",
+      "size": 7090
+    },
+    {
+      "path": "scripts/add-music.sh",
+      "sha": "1a267f125c0fdd210c2edcd5fef5f46e1fab6563",
+      "size": 4150
+    },
+    {
+      "path": "scripts/convert-formats.sh",
+      "sha": "7a8ed71a4741fab34518c5a7b17659a4d3b322c0",
+      "size": 3000
+    },
+    {
+      "path": "scripts/export_deck_pdf.mjs",
+      "sha": "af4fbb2e94b6727172f805e59ee09ad331ef65dc",
+      "size": 3209
+    },
+    {
+      "path": "scripts/export_deck_pptx.mjs",
+      "sha": "2754768d34187af590b2935156afde96b9f83a6b",
+      "size": 3800
+    },
+    {
+      "path": "scripts/export_deck_stage_pdf.mjs",
+      "sha": "a5526b8080e5634540bc5a9b99a171a0706dece6",
+      "size": 4781
+    },
+    {
+      "path": "scripts/html2pptx.js",
+      "sha": "437bf7c533ac155cba23c2ad8f60ebf2bdd3d76c",
+      "size": 37795
+    },
+    {
+      "path": "scripts/render-video.js",
+      "sha": "36ea3819a0bb882345dfb49811d440511450e72c",
+      "size": 12293
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha": "6becf2b8e1e121f4b14e1784aa6d9b8b8c8ff25a",
+      "size": 5451
+    },
+    {
+      "path": "test-prompts.json",
+      "sha": "b2daacd4454212745d09ccff21bc66ba36e0c446",
+      "size": 2760
+    }
+  ]
+}

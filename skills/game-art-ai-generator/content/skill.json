@@ -1,0 +1,113 @@
+{
+  "id": "game-art-ai-generator",
+  "name": "Game Art AI Generator",
+  "version": "1.0.0",
+  "description": "游戏美术AI生成器 - 全自动生成游戏美术素材包",
+  "author": "MiniMax Agent",
+  "tags": [
+    "game-art",
+    "pixel-art",
+    "ai-generator",
+    "midjourney",
+    "stable-diffusion",
+    "construct3",
+    "game-dev",
+    "art-assets",
+    "ui-design",
+    "game-sound"
+  ],
+  "platform": "Claw/LobsterAI/OpenClaw",
+  "capabilities": {
+    "ai_image_generation": true,
+    "pixel_art_generation": true,
+    "ui_component_generation": true,
+    "color_scheme_matching": true,
+    "sound_effect_matching": true,
+    "asset_packaging": true,
+    "c3p_integration": true,
+    "tiktok_integration": true
+  },
+  "triggers": [
+    "生成游戏美术素材",
+    "创建像素艺术",
+    "设计游戏UI",
+    "生成游戏图标",
+    "匹配游戏音效",
+    "游戏美术自动化",
+    "AI生成游戏素材",
+    "Construct3素材生成",
+    "TikTok游戏美术"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "requests": ">=2.28.0",
+    "Pillow": ">=9.0.0",
+    "numpy": ">=1.24.0",
+    "mutagen": ">=1.46.0"
+  },
+  "files": {
+    "main": "scripts/main.py",
+    "image_generator": "scripts/image_generator.py",
+    "pixel_art": "scripts/pixel_art.py",
+    "color_matcher": "scripts/color_matcher.py",
+    "ui_generator": "scripts/ui_generator.py",
+    "sound_generator": "scripts/sound_generator.py",
+    "asset_packer": "scripts/asset_packer.py",
+    "sync_manager": "scripts/sync_manager.py"
+  },
+  "config": {
+    "language": "zh-CN",
+    "supported_styles": ["pixel", "flat", "cartoon"],
+    "pixel_styles": ["retro", "cute", "minimal"],
+    "output_format": "png",
+    "icon_size": "512x512",
+    "audio_formats": ["mp3", "wav"],
+    "c3p_compatible": true,
+    "tiktok_compatible": true
+  },
+  "ai_apis": {
+    "midjourney": {
+      "enabled": true,
+      "endpoint": "https://api.midjourney.com/v1",
+      "models": ["v6", "v6-beta", "niji"]
+    },
+    "stable_diffusion": {
+      "enabled": true,
+      "endpoint": "https://api.stability.ai/v1",
+      "models": ["stable-diffusion-xl-1024-v1-0", "stable-diffusion-v1-6"]
+    }
+  },
+  "asset_requirements": {
+    "icon": {
+      "size": "512x512",
+      "format": "png",
+      "transparent": true,
+      "count": 3
+    },
+    "ui_components": {
+      "format": "png",
+      "transparent": true,
+      "scalable": true,
+      "types": ["button", "progress_bar", "popup", "coin", "navbar"]
+    },
+    "game_elements": {
+      "character_frames": 4,
+      "props_count": 5,
+      "backgrounds_count": 5,
+      "format": "png",
+      "transparent": true
+    },
+    "audio": {
+      "formats": ["mp3", "wav"],
+      "bgm_count": 2,
+      "sfx_count": 5,
+      "duration_bgm": "loop",
+      "duration_sfx": "1-2s"
+    }
+  },
+  "resources": {
+    "references": "references/",
+    "config": "config/",
+    "templates": "templates/"
+  }
+}

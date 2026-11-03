@@ -1,0 +1,89 @@
+{
+  "config": {
+    "wide_screen_mode": true
+  },
+  "header": {
+    "title": {
+      "tag": "plain_text",
+      "content": "📊 每日基金收益报表"
+    },
+    "template": "blue"
+  },
+  "elements": [
+    {
+      "tag": "div",
+      "text": {
+        "tag": "lark_md",
+        "content": "**📅 2024年12月20日**"
+      }
+    },
+    {
+      "tag": "hr"
+    },
+    {
+      "tag": "div",
+      "fields": [
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**💰 总资产**\n¥12,345.67"
+          }
+        },
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**📈 今日收益**\n+¥123.45 (+1.01%)"
+          }
+        },
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**💵 累计收益**\n+¥1,234.56 (+10.02%)"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hr"
+    },
+    {
+      "tag": "div",
+      "text": {
+        "tag": "lark_md",
+        "content": "**【持仓明细】**"
+      }
+    },
+    {
+      "tag": "div",
+      "text": {
+        "tag": "lark_md",
+        "content": "1. **平安先锋混合A** (000001)\n   • 持仓：1,000.00份 @ ¥1.5000\n   • 📈 今日：+¥12.34 (+0.82%)\n   • 📈 累计：+¥123.45 (+8.23%)\n   • 占比：30.0%"
+      }
+    },
+    {
+      "tag": "hr"
+    },
+    {
+      "tag": "div",
+      "text": {
+        "tag": "lark_md",
+        "content": "2. **广发稳健增长A** (270002)\n   • 持仓：2,000.00份 @ ¥1.2300\n   • 📈 今日：+¥24.60 (+1.00%)\n   • 📈 累计：+¥246.00 (+10.00%)\n   • 占比：25.0%"
+      }
+    },
+    {
+      "tag": "hr"
+    },
+    {
+      "tag": "note",
+      "elements": [
+        {
+          "tag": "plain_text",
+          "content": "数据仅供参考，投资有风险，决策需谨慎"
+        }
+      ]
+    }
+  ]
+}

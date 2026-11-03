@@ -1,0 +1,23 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "c3p_parsing": true,
+    "event_modification": true,
+    "project_packaging": true,
+    "resource_replacement": true,
+    "xml_editing": true
+  },
+  "created": "2026-04-09",
+  "description": "Construct3 C3P项目自动编辑器 - 程序化编辑.c3p项目文件",
+  "id": 385694523687620,
+  "name": "c3p-project-auto-editor",
+  "platform": "minimax",
+  "tags": [
+    "construct3",
+    "c3p",
+    "project-editor",
+    "game-modification"
+  ],
+  "updated_at": 1775716656903,
+  "version": "1.0.0"
+}

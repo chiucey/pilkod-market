@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Fyc_Software_Design · 随机配色生成器(4 色 · 浅底 · 协调)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #F8FAFC;
+    padding: 32px 20px 60px;
+  }
+  h1 { text-align: center; color: #0F172A; font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+  .subtitle { text-align: center; color: #64748B; font-size: 13px; margin-bottom: 28px; }
+  .header-wrap { text-align: center; margin-bottom: 24px; }
+
+  .tool {
+    max-width: 760px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+  }
+  .control-bar {
+    display: flex;
+    gap: 8px;
+    padding: 16px 20px;
+    background: #F8FAFC;
+    border-bottom: 1px solid #E2E8F0;
+    flex-wrap: wrap;
+  }
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #0EA5E9 0%, #06B6D4 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4); }
+  .btn-secondary {
+    background: white;
+    color: #475569;
+    border: 1px solid #E2E8F0;
+  }
+  .btn-secondary:hover { background: #F1F5F9; }
+  .theory-select {
+    padding: 10px 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    color: #475569;
+    cursor: pointer;
+  }
+
+  .result-area {
+    padding: 24px;
+  }
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .theory-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+  .theory-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0F172A;
+  }
+  .hex-list {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 11px;
+    color: #94A3B8;
+    text-align: right;
+  }
+  .hex-list span { color: #0F172A; font-weight: 600; }
+
+  .palette {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .swatch {
+    flex: 1;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s;
+    position: relative;
+  }
+  .swatch:hover { transform: translateY(-2px); }
+  .swatch .label { font-size: 10px; opacity: 0.7; margin-bottom: 2px; }
+  .swatch .hex { font-family: 'Consolas', monospace; font-size: 11px; }
+  .swatch.locked::after {
+    content: '🔒';
+    position: absolute;
+    top: 4px; right: 4px;
+    font-size: 10px;
+  }
+
+  .preview-card {
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .preview-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .preview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .preview-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid;
+  }
+  .preview-item .label { font-size: 10px; opacity: 0.7; margin-bottom: 2px; }
+  .preview-item .value { font-size: 18px; font-weight: 800; line-height: 1.2; }
+
+  .lock-row {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .lock-btn {
+    font-size: 11px;
+    padding: 4px 10px;
+    border: 1px solid;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .lock-btn:hover { background: #F1F5F9; }
+  .lock-btn.locked { background: #FEF3C7; border-color: #F59E0B; }
+
+  .history {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed #E2E8F0;
+  }
+  .history h3 { font-size: 12px; color: #64748B; margin-bottom: 8px; font-weight: 600; }
+  .history-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .history-item {
+    display: flex;
+    gap: 2px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #E2E8F0;
+  }
+  .history-item:hover { border-color: #0EA5E9; }
+  .history-item span {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 24px;
+    color: #94A3B8;
+    font-size: 12px;
+  }
+  .footer code { background: #E2E8F0; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>🎲 随机配色生成器</h1>
+  <p class="subtitle">每套严格 4 色 · 浅底色 · 不红粉 · 色彩理论协调</p>
+  <div class="header-wrap"></div>
+
+  <div class="tool">
+    <div class="control-bar">
+      <button class="btn btn-primary" onclick="generate()">🎲 随机生成</button>
+      <button class="btn btn-secondary" onclick="copyHex()">📋 复制色值</button>
+      <button class="btn btn-secondary" onclick="useThis()">✅ 用这个</button>
+      <select class="theory-select" id="theoryFilter" onchange="generate()">
+        <option value="all">全部理论</option>
+        <option value="monochromatic">单色</option>
+        <option value="analogous">类比</option>
+        <option value="complementary">互补</option>
+        <option value="mixed">混合</option>
+      </select>
+      <button class="btn btn-secondary" onclick="clearLocks()" title="清除所有锁">🔓 清锁</button>
+    </div>
+
+    <div class="result-area">
+      <div class="meta-row">
+        <div>
+          <span class="theory-name" id="theoryName">单色</span>
+          <span class="theory-tag" id="theoryTag" style="background: #0284C7; margin-left:8px">Monochromatic</span>
+        </div>
+        <div class="hex-list" id="hexList">
+          <span>背景</span> · <span>主色</span> · <span>辅色</span> · <span>文字</span>
+        </div>
+      </div>
+
+      <div class="palette" id="palette"></div>
+
+      <div class="lock-row" id="lockRow">
+        <span style="font-size:11px; color:#94A3B8; align-self:center">点击色块或下方按钮 锁/解:</span>
+        <button class="lock-btn" onclick="toggleLock(0)">背景</button>
+        <button class="lock-btn" onclick="toggleLock(1)">主色</button>
+        <button class="lock-btn" onclick="toggleLock(2)">辅色</button>
+        <button class="lock-btn" onclick="toggleLock(3)">文字</button>
+      </div>
+
+      <div class="preview-card" id="previewCard">
+        <div class="preview-title" id="previewTitle">预览效果</div>
+        <div class="preview-grid">
+          <div class="preview-item" id="pv1">
+            <div class="label">总指标</div>
+            <div class="value">2,431</div>
+          </div>
+          <div class="preview-item" id="pv2">
+            <div class="label">活跃</div>
+            <div class="value">86%</div>
+          </div>
+          <div class="preview-item" id="pv3">
+            <div class="label">增长</div>
+            <div class="value">↑ 12%</div>
+          </div>
+          <div class="preview-item" id="pv4">
+            <div class="label">告警</div>
+            <div class="value">3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <h3>📜 最近 5 次生成(点击回溯)</h3>
+        <div class="history-list" id="historyList"></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">
+    36 色色板 · 4 种色彩理论 · <code>理论名 + 4 色</code> 输出到控制台
+  </p>
+
+<script>
+// ========== 色彩工具 ==========
+function hslToHex(h, s, l) {
+    s /= 100; l /= 100;
+    const a = s * Math.min(l, 1 - l);
+    const f = n => {
+        const k = (n + h / 30) % 12;
+        const c = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+        return Math.round(255 * c).toString(16).padStart(2, '0');
+    };
+    return `#${f(0)}${f(8)}${f(4)}`;
+}
+function hexToHsl(hex) {
+    const r = parseInt(hex.slice(1,3),16)/255, g = parseInt(hex.slice(3,5),16)/255, b = parseInt(hex.slice(5,7),16)/255;
+    const max = Math.max(r,g,b), min = Math.min(r,g,b);
+    let h=0, s=0, l=(max+min)/2;
+    if (max !== min) {
+        const d = max - min;
+        s = l > 0.5 ? d/(2-max-min) : d/(max+min);
+        switch(max){
+            case r: h = (g-b)/d + (g<b?6:0); break;
+            case g: h = (b-r)/d + 2; break;
+            case b: h = (r-g)/d + 4; break;
+        }
+        h *= 60;
+    }
+    return {h, s: s*100, l: l*100};
+}
+function rand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function pickText(bgHex) {
+    const {l} = hexToHsl(bgHex);
+    return l > 60 ? '#0F172A' : '#E2E8F0';
+}
+function isLightBg(bgHex) {
+    const {l} = hexToHsl(bgHex);
+    return l > 60;
+}
+
+// ========== 状态 ==========
+let state = { palette: ['#F0F9FF','#0284C7','#BAE6FD','#0C4A6E'], theory: 'monochromatic', theoryName: '单色' };
+let locks = [false, false, false, false];  // 4 色锁定
+let history = [];
+
+// ========== 4 种理论生成器 ==========
+function genMonochromatic() {
+    // 单色: 同色相 4 个明度
+    // 选 1 个基础色 (饱和度 70%, 明度 50%)
+    const baseH = pick([200, 195, 190, 30, 40, 150]);  // 蓝/青/绿/橙/黄
+    const baseS = 70 + Math.random() * 15;
+    const main = hslToHex(baseH, baseS, 45);
+    const bg = hslToHex(baseH, 50, 96);
+    const side = hslToHex(baseH, 80, 75);
+    const text = hslToHex(baseH, 70, 25);
+    return { palette: [bg, main, side, text], theory: 'monochromatic', theoryName: '单色 Monochromatic' };
+}
+
+function genAnalogous() {
+    // 类比: 色环相邻 ±30°, 一个主一个辅
+    const baseH = pick([200, 195, 30, 150, 25]);
+    const adjH = baseH + pick([-30, 30]);
+    const bgH = (baseH + 180) % 360;
+    const bg = hslToHex(bgH, 30, 97);  // 浅底
+    const main = hslToHex(baseH, 70, 45);
+    const side = hslToHex(adjH, 65, 50);
+    const text = hslToHex(baseH, 70, 20);
+    return { palette: [bg, main, side, text], theory: 'analogous', theoryName: '类比 Analogous' };
+}
+
+function genComplementary() {
+    // 互补: 180°
+    const baseH = pick([200, 30, 150, 195, 40]);
+    const compH = (baseH + 180) % 360;
+    const main = hslToHex(baseH, 70, 45);
+    const side = hslToHex(compH, 65, 50);
+    const bg = hslToHex(baseH, 30, 97);
+    const text = hslToHex(baseH, 60, 15);
+    return { palette: [bg, main, side, text], theory: 'complementary', theoryName: '互补 Complementary' };
+}
+
+function genMixed() {
+    // 混合: 2 个独立色 (蓝青绿橙黄系, 避开红粉)
+    const combos = [
+        [200, 165],   // 蓝 + 青绿
+        [195, 150],   // 青 + 绿
+        [200, 30],    // 蓝 + 橙
+        [195, 25],    // 青 + 橙
+        [40, 150],    // 橙 + 绿
+        [200, 40],    // 蓝 + 黄
+        [195, 165],   // 青 + 青绿
+        [30, 200],    // 橙 + 蓝
+    ];
+    const [h1, h2] = pick(combos);
+    const main = hslToHex(h1, 70, 45);
+    const side = hslToHex(h2, 65, 50);
+    const bg = hslToHex(h1, 30, 97);
+    const text = hslToHex(h1, 60, 15);
+    return { palette: [bg, main, side, text], theory: 'mixed', theoryName: '混合 Mixed' };
+}
+
+// ========== 主生成函数 ==========
+function generate() {
+    const filter = document.getElementById('theoryFilter').value;
+    const theories = filter === 'all' 
+        ? ['monochromatic', 'analogous', 'complementary', 'mixed']
+        : [filter];
+    
+    const theory = pick(theories);
+    let result;
+    if (theory === 'monochromatic') result = genMonochromatic();
+    else if (theory === 'analogous') result = genAnalogous();
+    else if (theory === 'complementary') result = genComplementary();
+    else result = genMixed();
+    
+    // 应用锁: 锁定的色不替换
+    const newPalette = result.palette.map((c, i) => locks[i] ? state.palette[i] : c);
+    result.palette = newPalette;
+    
+    state = result;
+    render();
+    pushHistory();
+}
+
+function render() {
+    const [bg, main, side, text] = state.palette;
+    const textOnBg = isLightBg(bg) ? text : '#E2E8F0';
+    
+    // 主题标签
+    const theoryColors = {
+        monochromatic: '#0284C7',
+        analogous: '#10B981',
+        complementary: '#F97316',
+        mixed: '#7C3AED'
+    };
+    const theoryCn = { monochromatic: '单色', analogous: '类比', complementary: '互补', mixed: '混合' };
+    document.getElementById('theoryName').textContent = theoryCn[state.theory];
+    document.getElementById('theoryName').style.color = textOnBg;
+    document.getElementById('theoryTag').textContent = state.theoryName;
+    document.getElementById('theoryTag').style.background = main;
+    
+    // 4 色色板
+    const labels = ['背景', '主色', '辅色', '文字'];
+    const palette = document.getElementById('palette');
+    palette.innerHTML = '';
+    state.palette.forEach((c, i) => {
+        const div = document.createElement('div');
+        div.className = 'swatch' + (locks[i] ? ' locked' : '');
+        div.style.background = c;
+        div.style.color = isLightBg(c) ? text : '#FFFFFF';
+        div.innerHTML = `<span class="label">${labels[i]}${locks[i] ? ' 🔒' : ''}</span><span class="hex">${c.toUpperCase()}</span>`;
+        div.onclick = () => toggleLock(i);
+        palette.appendChild(div);
+    });
+    
+    // 16 进制列表
+    document.getElementById('hexList').innerHTML = 
+        state.palette.map((c, i) => `<span>${labels[i]}=${c.toUpperCase()}</span>`).join(' · ');
+    
+    // 预览卡
+    const previewCard = document.getElementById('previewCard');
+    previewCard.style.background = bg;
+    previewCard.style.color = text;
+    previewCard.style.border = `1px solid ${side}`;
+    
+    const previewTitle = document.getElementById('previewTitle');
+    previewTitle.style.color = text;
+    previewTitle.textContent = `预览效果 - ${state.theoryName}`;
+    
+    for (let i = 1; i <= 4; i++) {
+        const pv = document.getElementById('pv' + i);
+        pv.style.background = isLightBg(bg) ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.2)';
+        pv.style.borderColor = side;
+        pv.style.color = text;
+        pv.querySelector('.label').style.color = main;
+    }
+    
+    // 锁按钮状态
+    document.querySelectorAll('.lock-btn').forEach((b, i) => {
+        b.classList.toggle('locked', locks[i]);
+        b.style.borderColor = locks[i] ? main : '#E2E8F0';
+        b.style.color = locks[i] ? main : '#475569';
+    });
+    
+    // 调试输出
+    console.log(`[${state.theoryName}]`, state.palette);
+}
+
+function toggleLock(i) {
+    locks[i] = !locks[i];
+    render();
+}
+
+function clearLocks() {
+    locks = [false, false, false, false];
+    render();
+}
+
+function copyHex() {
+    const text = state.palette.join(', ');
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        const orig = btn.textContent;
+        btn.textContent = '✅ 已复制';
+        setTimeout(() => btn.textContent = orig, 1500);
+    });
+}
+
+function useThis() {
+    const text = `${state.theoryName}\n背景: ${state.palette[0]}\n主色: ${state.palette[1]}\n辅色: ${state.palette[2]}\n文字: ${state.palette[3]}`;
+    alert(text);
+}
+
+function pushHistory() {
+    history.unshift([...state.palette, state.theoryName]);
+    if (history.length > 5) history.pop();
+    
+    const list = document.getElementById('historyList');
+    list.innerHTML = '';
+    history.forEach((h, i) => {
+        const div = document.createElement('div');
+        div.className = 'history-item';
+        div.title = h[4] + ' · ' + h.slice(0,4).map(c => c.toUpperCase()).join(' ');
+        h.slice(0, 4).forEach(c => {
+            const s = document.createElement('span');
+            s.style.background = c;
+            div.appendChild(s);
+        });
+        div.onclick = () => {
+            state.palette = h.slice(0, 4);
+            state.theoryName = h[4];
+            const tn = { '单色 Monochromatic':'monochromatic', '类比 Analogous':'analogous', '互补 Complementary':'complementary', '混合 Mixed':'mixed' };
+            state.theory = tn[h[4]] || 'monochromatic';
+            render();
+        };
+        list.appendChild(div);
+    });
+}
+
+// 首次自动生成
+generate();
+</script>
+</body>
+</html>

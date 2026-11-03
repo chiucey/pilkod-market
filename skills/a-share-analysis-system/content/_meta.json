@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "config": {
+    "data_source": "free",
+    "default_targets": [
+      "CSI300",
+      "SSE-Index",
+      "ChiNext-Index"
+    ],
+    "free_data_sources": [
+      "AKShare",
+      "Tushare",
+      "PandasDatareader"
+    ],
+    "model_types": [
+      "ml",
+      "dl",
+      "ensemble"
+    ]
+  },
+  "created_at": "2026-03-26",
+  "description": "A-share market real-time analysis and prediction system with analysis reports, model optimization, and data management features",
+  "id": 380771906913055,
+  "name": "a-share-analysis-system",
+  "platform": "minimax",
+  "tags": [
+    "A-share",
+    "stock-analysis",
+    "machine-learning",
+    "deep-learning",
+    "quantitative-trading"
+  ],
+  "updated_at": 1774515031280,
+  "version": "1.0.0"
+}

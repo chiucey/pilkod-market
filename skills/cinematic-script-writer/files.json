@@ -1,0 +1,219 @@
+{
+  "files": [
+    {
+      "path": ".clawhub/origin.json",
+      "sha": "350be5c8ca38206a94dad64d625d624095c61ce4",
+      "size": 155
+    },
+    {
+      "path": ".eslintrc.json",
+      "sha": "1c41550699b80777a4d8664fe5fa7a90d2ce73b0",
+      "size": 596
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "da45a9ea788c77cc42f8b618c145bd6eaf82b76c",
+      "size": 2370
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "21dfbc392db2a4171479b4f8d9f45d56b5714d96",
+      "size": 1629
+    },
+    {
+      "path": "README.md",
+      "sha": "4acb9dc19579519946333713a9d54a423d74a0ec",
+      "size": 3866
+    },
+    {
+      "path": "SETUP-GUIDE.md",
+      "sha": "54e24f965b0df1089182832850008d6065f1ed10",
+      "size": 9653
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "8a2d948f66e4d42b5009e65048ad2ed10c9cc16a",
+      "size": 10531
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e9f19b8b00af6a89ea70bd68770959ca4ae2e6f1",
+      "size": 142
+    },
+    {
+      "path": "bin/cinematic-script.ts",
+      "sha": "2e64966800119e32373d9be870b2079b4b06a2a5",
+      "size": 10053
+    },
+    {
+      "path": "examples/file-manager-skill/index.ts",
+      "sha": "3bc5d86c36119ecbb689f9cb81aed04ac1954d2e",
+      "size": 3842
+    },
+    {
+      "path": "examples/file-manager-skill/skill.json",
+      "sha": "43f940cccf457e0edd0317572abaa87dcf01608d",
+      "size": 665
+    },
+    {
+      "path": "examples/todo-skill/index.ts",
+      "sha": "d3665fbd913a7926742fd60e8964325a377b0ffe",
+      "size": 3231
+    },
+    {
+      "path": "examples/todo-skill/skill.json",
+      "sha": "c7eaff3df7697810336d688b2536044686a24d2a",
+      "size": 668
+    },
+    {
+      "path": "examples/weather-skill/README.md",
+      "sha": "6783b8350e2db5b466caa32d0424879e421c311d",
+      "size": 678
+    },
+    {
+      "path": "examples/weather-skill/index.ts",
+      "sha": "36789596769f02df5a7f01cd64ec8200aebf6d2d",
+      "size": 3767
+    },
+    {
+      "path": "examples/weather-skill/schema.json",
+      "sha": "bf810332aff4c1028bebff72bb4c34fb6f7405de",
+      "size": 483
+    },
+    {
+      "path": "examples/weather-skill/skill.json",
+      "sha": "5914d5c78e50b193856fc465647ff8420f011f27",
+      "size": 628
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "3cafec34d941a7231ea30a322260d8ecd2d715ca",
+      "size": 186615
+    },
+    {
+      "path": "package.json",
+      "sha": "ef63028159720ab73f24a6763ed05102f1766805",
+      "size": 1548
+    },
+    {
+      "path": "report.md",
+      "sha": "d28c015d12debb87cbdd2af6212a329c85d5e4aa",
+      "size": 7415
+    },
+    {
+      "path": "skill-template/README.md",
+      "sha": "14611f40c27ed898aa2f53823f90945c831c81dd",
+      "size": 914
+    },
+    {
+      "path": "skill-template/index.ts",
+      "sha": "9fe1db8b1d8cdb4abc07a37d9be72d86b91f90ae",
+      "size": 2592
+    },
+    {
+      "path": "skill-template/schema.json",
+      "sha": "11f2fd45bc9837cde14f01736129fc72ccf032a2",
+      "size": 375
+    },
+    {
+      "path": "skill-template/skill.json",
+      "sha": "9b799df46d4a930b1bff8d92f68f28a434be8b9f",
+      "size": 640
+    },
+    {
+      "path": "skill-template/tests/index.test.ts",
+      "sha": "7eecb010b10ca9554bbd44dd93b599f81f194fe2",
+      "size": 1439
+    },
+    {
+      "path": "skills/cinematic-script-writer/EXAMPLE-CONSISTENCY.md",
+      "sha": "46c04cfccc41ef1f6ee3689a108f1dde952fcc79",
+      "size": 13934
+    },
+    {
+      "path": "skills/cinematic-script-writer/EXAMPLE-KUTIL.md",
+      "sha": "c4f29a53143db40442b580e930ea18d17ce0a9ef",
+      "size": 14112
+    },
+    {
+      "path": "skills/cinematic-script-writer/EXAMPLE-STORAGE.md",
+      "sha": "1e1f7c35c849c08403fc1b6163724925754b4263",
+      "size": 15644
+    },
+    {
+      "path": "skills/cinematic-script-writer/README.md",
+      "sha": "b2158e198da12767492dfefb271bb50788913277",
+      "size": 20319
+    },
+    {
+      "path": "skills/cinematic-script-writer/SKILL.md",
+      "sha": "50920a7167ba82d6ca2d15207e7cc3c7257dddd6",
+      "size": 5733
+    },
+    {
+      "path": "skills/cinematic-script-writer/cinematography-api.ts",
+      "sha": "84416430296789a7aedc032d7cafaa2c4e1bf829",
+      "size": 17580
+    },
+    {
+      "path": "skills/cinematic-script-writer/cinematography-db.ts",
+      "sha": "2ec7fab951407237d696c8134f9dbab56f3133e8",
+      "size": 24376
+    },
+    {
+      "path": "skills/cinematic-script-writer/consistency-system.ts",
+      "sha": "750a7ae9ccc5ef5ddfe0ed889db3405fc17e8975",
+      "size": 31514
+    },
+    {
+      "path": "skills/cinematic-script-writer/index.ts",
+      "sha": "fe5355d03da89bc538250b7bea2005767b4fd246",
+      "size": 58933
+    },
+    {
+      "path": "skills/cinematic-script-writer/lighting-db.ts",
+      "sha": "f83dce9108eb4960e286187728095a11babdec63",
+      "size": 22324
+    },
+    {
+      "path": "skills/cinematic-script-writer/package.json",
+      "sha": "d8cf4fbe75607bd6613f7d90344e95b07f1e420c",
+      "size": 486
+    },
+    {
+      "path": "skills/cinematic-script-writer/prompt-builder.ts",
+      "sha": "94216b56c6bc93b67efaba7ee0455e5009856eb8",
+      "size": 13718
+    },
+    {
+      "path": "skills/cinematic-script-writer/schema.json",
+      "sha": "d5a8171beacd4aa16f6a588bc3c63f3b5c0dda9b",
+      "size": 908
+    },
+    {
+      "path": "skills/cinematic-script-writer/skill.json",
+      "sha": "d8774c069c233ec0a6b5262f73474d8dbde7b816",
+      "size": 7508
+    },
+    {
+      "path": "skills/cinematic-script-writer/storage-adapter.ts",
+      "sha": "b74c6d7dbd2ab39af0da594cc43e8407ca18bfe9",
+      "size": 11587
+    },
+    {
+      "path": "skills/cinematic-script-writer/storage-manager.ts",
+      "sha": "570881b21258732fac0e2aa67951867f3a09201b",
+      "size": 28081
+    },
+    {
+      "path": "skills/cinematic-script-writer/visual-styles-db.ts",
+      "sha": "85575c8bc69db1b050adee274fcaf8ab210e8f3d",
+      "size": 26006
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "a724bba85092e047a769b307b13d4fc2a72330e2",
+      "size": 533
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "fa0b646c20431143d2892c3765f014b1e317d82e",
+      "size": 10031
+    },
+    {
+      "path": "_meta.json",
+      "sha": "d2bf669c09bd2cf654ae4eac9756e7fd8c4f049c",
+      "size": 136
+    },
+    {
+      "path": "assets/halftone-template.html",
+      "sha": "a58d564b88f15bb915c5a6e701fc4f2bf5ce0e18",
+      "size": 100324
+    },
+    {
+      "path": "assets/mock-data.json",
+      "sha": "fe9728bb87d2c9671c04982dd65a459a9f68425c",
+      "size": 8374
+    },
+    {
+      "path": "assets/template-images-data-1.json",
+      "sha": "fee8878a77faebd2606a5632eadb47ad06cb6e1f",
+      "size": 2641988
+    },
+    {
+      "path": "assets/template-images-data-2.json",
+      "sha": "dc296444d7fae6cfd5161f0df61641888c35b9c6",
+      "size": 2738544
+    },
+    {
+      "path": "assets/template-images-data-3.json",
+      "sha": "0f88a3986c301fcb995942e0320050af4f6d3f6b",
+      "size": 2728724
+    },
+    {
+      "path": "references/Codex_data-schema.md",
+      "sha": "61ab4072a829f6978b25020f2f123265b9b47fcb",
+      "size": 5917
+    },
+    {
+      "path": "references/Codex_key-setup.md",
+      "sha": "288fce951c2153149828befad55a8e0907bf0022",
+      "size": 4045
+    },
+    {
+      "path": "scripts/audit_output.py",
+      "sha": "2ad221d9aab16a19ce1003f45d128b4b3843607b",
+      "size": 1769
+    },
+    {
+      "path": "scripts/build_single_html.py",
+      "sha": "de4d18de5cf1dfc5c82fb32384e4d5ee77f2bc2d",
+      "size": 16990
+    },
+    {
+      "path": "scripts/check_minimax_runtime.py",
+      "sha": "96f223d712caf8ce6b7f1bc11e1174ef9c837575",
+      "size": 1010
+    },
+    {
+      "path": "scripts/prepare_exact_template.py",
+      "sha": "8cc50db66df1b3bc062a285b252ea130a53270e6",
+      "size": 19534
+    },
+    {
+      "path": "scripts/weread_gateway.py",
+      "sha": "34c6d03c28e5ccfd521794c35522d0f0fa56e715",
+      "size": 1909
+    },
+    {
+      "path": "scripts/weread_key.py",
+      "sha": "73a417ee68481a3dfca669068e6399f632b4df7a",
+      "size": 7475
+    }
+  ]
+}

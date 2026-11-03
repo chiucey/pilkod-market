@@ -1,0 +1,22 @@
+{
+  "author": "MiniMax Agent",
+  "category": "lifestyle",
+  "created_at": "2025-03-29",
+  "dependencies": [],
+  "description": "穿搭评价与建议技能，支持多维度综合评估穿搭效果",
+  "entry_point": "references/dress_evaluation.py",
+  "function_name": "minimax_dress_evaluation_enhanced",
+  "id": 381809287168735,
+  "language": "zh-CN",
+  "name": "dress-evaluation",
+  "platform": "minimax",
+  "tags": [
+    "穿搭",
+    "时尚",
+    "评价",
+    "搭配建议",
+    "形象管理"
+  ],
+  "updated_at": 1774768806051,
+  "version": "1.0.0"
+}

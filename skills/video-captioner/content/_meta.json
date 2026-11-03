@@ -1,0 +1,20 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-31",
+  "description": "VideoCaptioner (卡卡字幕助手) 技能，用于视频字幕处理。当用户需要处理视频字幕、语音识别、字幕翻译、视频下载或字幕烧录时使用。",
+  "id": 382625187869490,
+  "name": "video-captioner",
+  "platform": "minimax",
+  "skill_id": 1912345678,
+  "source": "https://github.com/WEIFENG2333/VideoCaptioner",
+  "tags": [
+    "video",
+    "caption",
+    "subtitle",
+    "whisper",
+    "translation",
+    "asr"
+  ],
+  "updated_at": 1774968782200,
+  "version": "1.0.0"
+}

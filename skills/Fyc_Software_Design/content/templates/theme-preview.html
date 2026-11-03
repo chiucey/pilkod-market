@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Fyc_Software_Design · 9 套配色方案(浅底色 · 4 色 · 参考 4 张图)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #F8FAFC;
+    padding: 32px 20px 60px;
+  }
+  h1 { text-align: center; color: #0F172A; font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+  .subtitle { text-align: center; color: #64748B; font-size: 13px; margin-bottom: 6px; }
+  .principle {
+    text-align: center; color: #0C4A6E; font-size: 12px;
+    margin-bottom: 28px; padding: 8px 16px; background: #DBEAFE;
+    border-radius: 8px; display: inline-block;
+  }
+  .header-wrap { text-align: center; margin-bottom: 24px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12); }
+  .preview {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+  }
+  .meta { padding: 12px 14px; }
+  .row1 { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+  .theme-name { font-size: 15px; font-weight: 800; }
+  .theme-theory {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 9999px;
+    font-size: 9px;
+    font-weight: 600;
+    color: white;
+  }
+  .theme-desc { color: #64748B; font-size: 11px; line-height: 1.5; margin: 4px 0 8px; }
+  .palette { display: flex; gap: 4px; margin-bottom: 8px; }
+  .swatch {
+    flex: 1; height: 22px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 8px; font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  }
+  .theme-suit { font-size: 10px; color: #94A3B8; padding-top: 6px; border-top: 1px dashed #E2E8F0; }
+  .theme-suit b { color: #475569; }
+  .footer { text-align: center; margin-top: 32px; color: #94A3B8; font-size: 12px; }
+  .footer code { background: #E2E8F0; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+</style>
+</head>
+<body>
+  <h1>🎨 9 套配色方案</h1>
+  <p class="subtitle">全部浅底色 · 每套严格 4 色 · 参考 4 张图设计风格</p>
+  <div class="header-wrap">
+    <span class="principle">📐 36 色 = 9 套 × (主色 + 辅色 + 背景 + 文字) · 协调规则: 单色 / 类比 / 互补</span>
+  </div>
+
+  <div class="grid">
+
+    <!-- ========== 1. mono-blue(蓝·浅) ========== -->
+    <div class="card" onclick="alert('已选 mono-blue, 请告诉我')">
+      <div class="preview" style="background: #F0F9FF">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#0C4A6E">业务监控</span>
+          <span style="margin-left:auto; font-size:8px; color:#0284C7">12:30</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:10px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #BAE6FD; border-radius:6px; padding:8px;">
+          <div style="font-size:8px; color:#0284C7; margin-bottom:2px">装机容量</div>
+          <div style="font-size:18px; font-weight:800; color:#0C4A6E; line-height:1">2,431<span style="font-size:9px; color:#0284C7; margin-left:3px">MW</span></div>
+          <svg style="margin-top:6px" width="100%" height="20" viewBox="0 0 200 20">
+            <polyline points="0,15 25,12 50,14 75,8 100,10 125,6 150,9 175,5 200,7" fill="none" stroke="#0284C7" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #0C4A6E">mono-blue</span>
+          <span class="theme-theory" style="background: #0284C7">单色</span>
+        </div>
+        <p class="theme-desc">同色相蓝 4 明度, 协调不冲突</p>
+        <div class="palette">
+          <div class="swatch" style="background: #F0F9FF; color:#0C4A6E; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #BAE6FD; color:#0C4A6E; text-shadow:none">描边</div>
+          <div class="swatch" style="background: #0284C7">主色</div>
+          <div class="swatch" style="background: #0C4A6E">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 业务监控 · 工业能源 · 严肃场景</div>
+      </div>
+    </div>
+
+    <!-- ========== 2. mono-sky(淡蓝·浅) ========== -->
+    <div class="card" onclick="alert('已选 mono-sky, 请告诉我')">
+      <div class="preview" style="background: #F0F9FF">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#0C4A6E">工业能耗</span>
+          <span style="margin-left:auto; font-size:8px; color:#0EA5E9">14:30</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:60px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #E0F2FE; border-radius:6px; padding:8px; display:flex; align-items:center; gap:6px;">
+          <svg width="40" height="40" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="14" fill="none" stroke="#E0F2FE" stroke-width="3"/>
+            <path d="M 20 6 A 14 14 0 0 1 32 26" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+            <text x="20" y="23" font-size="9" text-anchor="middle" fill="#0C4A6E" font-weight="700">75%</text>
+          </svg>
+          <div>
+            <div style="font-size:8px; color:#0EA5E9">能耗</div>
+            <div style="font-size:14px; font-weight:800; color:#0C4A6E">正常</div>
+          </div>
+        </div>
+        <div style="position:absolute; top:34px; right:10px; bottom:10px; width:46px; background: rgba(255,255,255,0.78); border:1px solid #E0F2FE; border-radius:6px; padding:4px;">
+          <svg width="100%" height="20" viewBox="0 0 50 20">
+            <rect x="0" y="14" width="4" height="6" fill="#0EA5E9" rx="1"/>
+            <rect x="6" y="10" width="4" height="10" fill="#0EA5E9" rx="1"/>
+            <rect x="12" y="6" width="4" height="14" fill="#0EA5E9" rx="1"/>
+            <rect x="18" y="12" width="4" height="8" fill="#0EA5E9" rx="1"/>
+            <rect x="24" y="4" width="4" height="16" fill="#0EA5E9" rx="1"/>
+            <rect x="30" y="8" width="4" height="12" fill="#0EA5E9" rx="1"/>
+            <rect x="36" y="2" width="4" height="18" fill="#0EA5E9" rx="1"/>
+            <rect x="42" y="6" width="4" height="14" fill="#0EA5E9" rx="1"/>
+          </svg>
+          <div style="font-size:6px; color:#0EA5E9; text-align:center; margin-top:2px">产量</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #0C4A6E">mono-sky</span>
+          <span class="theme-theory" style="background: #0EA5E9">单色</span>
+        </div>
+        <p class="theme-desc">淡蓝单色 4 明度, 比 mono-blue 更亮</p>
+        <div class="palette">
+          <div class="swatch" style="background: #F0F9FF; color:#0C4A6E; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #E0F2FE; color:#0C4A6E; text-shadow:none">描边</div>
+          <div class="swatch" style="background: #0EA5E9">主色</div>
+          <div class="swatch" style="background: #0C4A6E">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 政企管理 · 金融监控 · 工业能源</div>
+      </div>
+    </div>
+
+    <!-- ========== 3. blue-orange(蓝橙互补) ========== -->
+    <div class="card" onclick="alert('已选 blue-orange, 请告诉我')">
+      <div class="preview" style="background: #F0F9FF">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#0F172A">应用门户</span>
+          <span style="margin-left:auto; font-size:8px; color:#0284C7">v3.0</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:10px; display:flex; gap:4px;">
+          <div style="flex:1; background:#0284C7; color:white; border-radius:4px; padding:6px; text-align:center">
+            <div style="font-size:7px; opacity:0.85">订单</div>
+            <div style="font-size:13px; font-weight:800">39K</div>
+          </div>
+          <div style="flex:1; background:#F97316; color:white; border-radius:4px; padding:6px; text-align:center">
+            <div style="font-size:7px; opacity:0.85">告警</div>
+            <div style="font-size:13px; font-weight:800">3</div>
+          </div>
+          <div style="flex:1; background:#0284C7; color:white; border-radius:4px; padding:6px; text-align:center">
+            <div style="font-size:7px; opacity:0.85">用户</div>
+            <div style="font-size:13px; font-weight:800">1.2M</div>
+          </div>
+          <div style="flex:1; background:#F97316; color:white; border-radius:4px; padding:6px; text-align:center">
+            <div style="font-size:7px; opacity:0.85">收入</div>
+            <div style="font-size:13px; font-weight:800">¥8M</div>
+          </div>
+        </div>
+        <div style="position:absolute; top:80px; left:10px; right:10px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #BAE6FD; border-radius:6px; padding:6px;">
+          <svg width="100%" height="20" viewBox="0 0 200 20">
+            <polyline points="0,15 25,13 50,14 75,10 100,12 125,7 150,9 175,5 200,7" fill="none" stroke="#0284C7" stroke-width="2"/>
+            <circle cx="125" cy="7" r="3" fill="#F97316"/>
+            <circle cx="175" cy="5" r="3" fill="#F97316"/>
+          </svg>
+          <div style="font-size:8px; color:#0F172A; margin-top:2px">业务趋势</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #0F172A">blue-orange</span>
+          <span class="theme-theory" style="background: #F97316">互补</span>
+        </div>
+        <p class="theme-desc">色环 180° 对比, 强对比突出重点</p>
+        <div class="palette">
+          <div class="swatch" style="background: #F0F9FF; color:#0F172A; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #0284C7">主蓝</div>
+          <div class="swatch" style="background: #F97316">强调橙</div>
+          <div class="swatch" style="background: #0F172A">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 应用门户 · KPI 大屏 · 强对比场景</div>
+      </div>
+    </div>
+
+    <!-- ========== 4. cyan-blue(青蓝·参考图1 General statistics) ========== -->
+    <div class="card" onclick="alert('已选 cyan-blue, 请告诉我')">
+      <div class="preview" style="background: #ECFEFF">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#164E63">General</span>
+          <span style="margin-left:auto; font-size:8px; color:#06B6D4">statistics</span>
+        </div>
+        <!-- 蜂窝背景简化 -->
+        <div style="position:absolute; top:30px; left:0; right:0; bottom:0; background: radial-gradient(circle at 80% 30%, #CFFAFE 0%, transparent 60%), radial-gradient(circle at 20% 80%, #BAE6FD 0%, transparent 50%);"></div>
+        <div style="position:absolute; top:34px; left:10px; right:60px; bottom:10px; background: rgba(255,255,255,0.85); border:1px solid #CFFAFE; border-radius:6px; padding:6px;">
+          <div style="font-size:8px; color:#06B6D4">All users</div>
+          <div style="font-size:18px; font-weight:800; color:#164E63; line-height:1">2,431,340</div>
+          <div style="display:flex; gap:6px; margin-top:4px; align-items:center">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <circle cx="10" cy="10" r="7" fill="none" stroke="#CFFAFE" stroke-width="2"/>
+              <path d="M 10 3 A 7 7 0 0 1 16 13" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div style="font-size:7px; color:#164E63">92,980 <span style="color:#06B6D4">Active</span></div>
+          </div>
+        </div>
+        <div style="position:absolute; top:34px; right:10px; bottom:10px; width:46px;">
+          <div style="background:white; border:1px solid #CFFAFE; border-radius:6px; padding:4px; height:48%; margin-bottom:2px">
+            <div style="font-size:7px; color:#06B6D4">@</div>
+          </div>
+          <div style="background:white; border:1px solid #CFFAFE; border-radius:6px; padding:4px; height:48%">
+            <div style="font-size:7px; color:#0284C7">M</div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #164E63">cyan-blue</span>
+          <span class="theme-theory" style="background: #06B6D4">互补</span>
+          <span class="theme-theory" style="background: #94A3B8; font-size:8px">📷 图1</span>
+        </div>
+        <p class="theme-desc">青+蓝(色环 30°), 浅底偏科技(参考图1)</p>
+        <div class="palette">
+          <div class="swatch" style="background: #ECFEFF; color:#164E63; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #06B6D4">主青</div>
+          <div class="swatch" style="background: #0284C7">辅蓝</div>
+          <div class="swatch" style="background: #164E63">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 运营总览 · 多区域监控 · 浅蓝科技感</div>
+      </div>
+    </div>
+
+    <!-- ========== 5. green-cyan(绿青类比·保留) ========== -->
+    <div class="card" onclick="alert('已选 green-cyan, 请告诉我')">
+      <div class="preview" style="background: #F0FDF4">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#064E3B">健康监测</span>
+          <span style="margin-left:auto; font-size:8px; color:#10B981">08:00</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:10px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #BBF7D0; border-radius:6px; padding:8px;">
+          <div style="display:flex; align-items:baseline; gap:6px; margin-bottom:4px">
+            <div style="font-size:8px; color:#10B981">心率</div>
+            <div style="font-size:18px; font-weight:800; color:#064E3B">72<span style="font-size:9px; color:#10B981; margin-left:2px">bpm</span></div>
+            <div style="font-size:8px; color:#10B981; margin-left:auto">正常</div>
+          </div>
+          <svg width="100%" height="22" viewBox="0 0 200 22">
+            <polyline points="0,15 20,13 40,15 60,13 70,5 80,18 90,12 110,15 130,13 150,15 170,13 200,15" 
+                      fill="none" stroke="#10B981" stroke-width="1.5"/>
+            <circle cx="70" cy="5" r="2.5" fill="#0EA5E9"/>
+            <circle cx="150" cy="15" r="2" fill="#10B981" opacity="0.5"/>
+          </svg>
+          <div style="display:flex; gap:4px; margin-top:4px">
+            <div style="flex:1; background:#10B981; color:white; border-radius:3px; padding:3px 4px; text-align:center">
+              <div style="font-size:7px; opacity:0.85">健康</div>
+              <div style="font-size:9px; font-weight:700">1248</div>
+            </div>
+            <div style="flex:1; background:#0EA5E9; color:white; border-radius:3px; padding:3px 4px; text-align:center">
+              <div style="font-size:7px; opacity:0.85">关注</div>
+              <div style="font-size:9px; font-weight:700">36</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #064E3B">green-cyan</span>
+          <span class="theme-theory" style="background: #10B981">类比</span>
+        </div>
+        <p class="theme-desc">色环相邻(绿+青), 4 色温和自然</p>
+        <div class="palette">
+          <div class="swatch" style="background: #F0FDF4; color:#064E3B; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #10B981">主绿</div>
+          <div class="swatch" style="background: #0EA5E9">辅青</div>
+          <div class="swatch" style="background: #064E3B">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 医疗健康 · 环保 · 农业 · 食品安全</div>
+      </div>
+    </div>
+
+    <!-- ========== 6. warm-amber(橙琥珀·浅,保留) ========== -->
+    <div class="card" onclick="alert('已选 warm-amber, 请告诉我')">
+      <div class="preview" style="background: #FFFBEB">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#7C2D12">销售业绩</span>
+          <span style="margin-left:auto; font-size:8px; color:#F97316">Q3</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:60px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #FED7AA; border-radius:6px; padding:6px;">
+          <div style="font-size:8px; color:#9A3412">销售额</div>
+          <div style="font-size:18px; font-weight:800; color:#7C2D12; line-height:1">¥2.38M</div>
+          <div style="font-size:8px; color:#F97316; margin-top:2px">↑ 28%</div>
+        </div>
+        <div style="position:absolute; top:34px; right:10px; bottom:10px; width:46px; background: rgba(255,255,255,0.78); border:1px solid #FED7AA; border-radius:6px; padding:4px;">
+          <svg width="100%" height="20" viewBox="0 0 50 20">
+            <rect x="0" y="12" width="4" height="8" fill="#F97316" rx="1"/>
+            <rect x="6" y="8" width="4" height="12" fill="#F97316" rx="1"/>
+            <rect x="12" y="4" width="4" height="16" fill="#F97316" rx="1"/>
+            <rect x="18" y="10" width="4" height="10" fill="#F59E0B" rx="1"/>
+            <rect x="24" y="2" width="4" height="18" fill="#F97316" rx="1"/>
+            <rect x="30" y="6" width="4" height="14" fill="#F59E0B" rx="1"/>
+            <rect x="36" y="0" width="4" height="20" fill="#F97316" rx="1"/>
+            <rect x="42" y="4" width="4" height="16" fill="#F59E0B" rx="1"/>
+          </svg>
+          <div style="font-size:6px; color:#9A3412; text-align:center; margin-top:2px">月趋势</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #7C2D12">warm-amber</span>
+          <span class="theme-theory" style="background: #F97316">类比</span>
+        </div>
+        <p class="theme-desc">色环相邻(橙+琥珀), 4 色暖意活力</p>
+        <div class="palette">
+          <div class="swatch" style="background: #FFFBEB; color:#7C2D12; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #F97316">主橙</div>
+          <div class="swatch" style="background: #F59E0B">辅琥珀</div>
+          <div class="swatch" style="background: #7C2D12">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 销售业绩 · 电商 · 营销活动</div>
+      </div>
+    </div>
+
+    <!-- ========== 7. portal-mint(青绿·参考图2浅色系+图4智能体中心) ========== -->
+    <div class="card" onclick="alert('已选 portal-mint, 请告诉我')">
+      <div class="preview" style="background: linear-gradient(180deg, #E0F7FA 0%, #F0FDFA 100%)">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#134E4A">数据可视化</span>
+          <span style="margin-left:auto; font-size:8px; color:#14B8A6">分享</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:10px; bottom:10px; background: rgba(255,255,255,0.85); border:1px solid #99F6E4; border-radius:6px; padding:6px;">
+          <div style="display:flex; gap:4px; margin-bottom:6px">
+            <div style="flex:1; background:#14B8A6; color:white; border-radius:4px; padding:4px; text-align:center">
+              <div style="font-size:7px; opacity:0.85">访问</div>
+              <div style="font-size:11px; font-weight:800">1.2K</div>
+            </div>
+            <div style="flex:1; background:#0EA5E9; color:white; border-radius:4px; padding:4px; text-align:center">
+              <div style="font-size:7px; opacity:0.85">分享</div>
+              <div style="font-size:11px; font-weight:800">328</div>
+            </div>
+            <div style="flex:1; background:#14B8A6; color:white; border-radius:4px; padding:4px; text-align:center">
+              <div style="font-size:7px; opacity:0.85">下载</div>
+              <div style="font-size:11px; font-weight:800">86</div>
+            </div>
+          </div>
+          <svg width="100%" height="22" viewBox="0 0 200 22">
+            <polyline points="0,18 25,15 50,16 75,12 100,14 125,8 150,10 175,5 200,6" fill="none" stroke="#14B8A6" stroke-width="2"/>
+            <polyline points="0,20 25,18 50,19 75,15 100,17 125,12 150,14 175,9 200,11" fill="none" stroke="#0EA5E9" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #134E4A">portal-mint</span>
+          <span class="theme-theory" style="background: #14B8A6">类比</span>
+          <span class="theme-theory" style="background: #94A3B8; font-size:8px">📷 图2</span>
+        </div>
+        <p class="theme-desc">青+绿(色环 30°), 浅蓝绿渐变(参考图2)</p>
+        <div class="palette">
+          <div class="swatch" style="background: #F0FDFA; color:#134E4A; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #14B8A6">主青</div>
+          <div class="swatch" style="background: #0EA5E9">辅蓝</div>
+          <div class="swatch" style="background: #134E4A">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 数据分享 · 设计封面 · 清新门户</div>
+      </div>
+    </div>
+
+    <!-- ========== 8. portal-bright(青绿门户·参考图3采购大数据 4 大色卡) ========== -->
+    <div class="card" onclick="alert('已选 portal-bright, 请告诉我')">
+      <div class="preview" style="background: #F0F9FF">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#0F172A">采购监控</span>
+          <span style="margin-left:auto; font-size:8px; color:#0EA5E9">Q3</span>
+        </div>
+        <!-- 4 大色卡(图3风格) -->
+        <div style="position:absolute; top:34px; left:10px; right:10px; display:flex; gap:3px;">
+          <div style="flex:1; background: linear-gradient(135deg, #0EA5E9 0%, #67E8F9 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">订单</div>
+            <div style="font-size:11px; font-weight:800">39K</div>
+          </div>
+          <div style="flex:1; background: linear-gradient(135deg, #4A8BFF 0%, #7BA8FF 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">公告</div>
+            <div style="font-size:11px; font-weight:800">67K</div>
+          </div>
+          <div style="flex:1; background: linear-gradient(135deg, #06B6D4 0%, #67E8F9 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">评价</div>
+            <div style="font-size:11px; font-weight:800">78K</div>
+          </div>
+          <div style="flex:1; background: linear-gradient(135deg, #10B981 0%, #6EE7B7 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">已发</div>
+            <div style="font-size:11px; font-weight:800">20K</div>
+          </div>
+        </div>
+        <div style="position:absolute; top:80px; left:10px; right:10px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #BAE6FD; border-radius:6px; padding:6px;">
+          <svg width="100%" height="20" viewBox="0 0 200 20">
+            <polyline points="0,15 25,13 50,12 75,9 100,11 125,7 150,9 175,5 200,7" fill="none" stroke="#4A8BFF" stroke-width="2"/>
+            <polyline points="0,18 25,16 50,15 75,12 100,14 125,10 150,12 175,8 200,10" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+          <div style="font-size:8px; color:#0F172A; margin-top:2px">4 大业务分类</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #0F172A">portal-bright</span>
+          <span class="theme-theory" style="background: #4A8BFF">混合</span>
+          <span class="theme-theory" style="background: #94A3B8; font-size:8px">📷 图3</span>
+        </div>
+        <p class="theme-desc">蓝/青/绿混合, 4 大色卡(参考图3采购)</p>
+        <div class="palette">
+          <div class="swatch" style="background: #F0F9FF; color:#0F172A; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #4A8BFF">主蓝</div>
+          <div class="swatch" style="background: #10B981">辅绿</div>
+          <div class="swatch" style="background: #0F172A">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 采购监控 · 业务大屏 · 4 大分类</div>
+      </div>
+    </div>
+
+    <!-- ========== 9. gold-bright(黄绿·参考图1 5色brand选黄+绿) ========== -->
+    <div class="card" onclick="alert('已选 gold-bright, 请告诉我')">
+      <div class="preview" style="background: #FEFCE8">
+        <div style="position:absolute; top:0; left:0; right:0; height:24px; background: rgba(255,255,255,0.78); display:flex; align-items:center; padding:0 10px; box-sizing:border-box;">
+          <span style="font-size:10px; font-weight:700; color:#713F12">业务总览</span>
+          <span style="margin-left:auto; font-size:8px; color:#F59E0B">Q3</span>
+        </div>
+        <div style="position:absolute; top:34px; left:10px; right:10px; display:flex; gap:3px;">
+          <div style="flex:1; background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">订单</div>
+            <div style="font-size:11px; font-weight:800">39K</div>
+          </div>
+          <div style="flex:1; background: linear-gradient(135deg, #10B981 0%, #6EE7B7 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">支付</div>
+            <div style="font-size:11px; font-weight:800">¥2.3M</div>
+          </div>
+          <div style="flex:1; background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">用户</div>
+            <div style="font-size:11px; font-weight:800">1.2M</div>
+          </div>
+          <div style="flex:1; background: linear-gradient(135deg, #10B981 0%, #6EE7B7 100%); color:white; border-radius:5px; padding:6px 4px; text-align:center">
+            <div style="font-size:6px; opacity:0.9">增长</div>
+            <div style="font-size:11px; font-weight:800">+18%</div>
+          </div>
+        </div>
+        <div style="position:absolute; top:80px; left:10px; right:10px; bottom:10px; background: rgba(255,255,255,0.78); border:1px solid #FDE68A; border-radius:6px; padding:6px;">
+          <svg width="100%" height="20" viewBox="0 0 200 20">
+            <polyline points="0,15 25,13 50,12 75,9 100,11 125,7 150,9 175,5 200,7" fill="none" stroke="#F59E0B" stroke-width="2"/>
+            <polyline points="0,18 25,16 50,15 75,12 100,14 125,10 150,12 175,8 200,10" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+          <div style="font-size:8px; color:#713F12; margin-top:2px">双指标业务</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="row1">
+          <span class="theme-name" style="color: #713F12">gold-bright</span>
+          <span class="theme-theory" style="background: #F59E0B">类比</span>
+          <span class="theme-theory" style="background: #94A3B8; font-size:8px">📷 图1</span>
+        </div>
+        <p class="theme-desc">黄+绿(图1 brand 选 2 色), 温暖活力</p>
+        <div class="palette">
+          <div class="swatch" style="background: #FEFCE8; color:#713F12; text-shadow:none">背景</div>
+          <div class="swatch" style="background: #F59E0B">主黄</div>
+          <div class="swatch" style="background: #10B981">辅绿</div>
+          <div class="swatch" style="background: #0F172A">文字</div>
+        </div>
+        <div class="theme-suit"><b>适合:</b> 业务总览 · 支付监控 · 品牌展示</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">
+    36 色色板 · 点击任一卡片选择 · 不选则默认 mono-blue · 详见 <code>references/case-study-bright-mode.md</code>
+  </p>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "怼人回击话术生成",
+    "优雅拒绝技巧",
+    "高情商沟通模板",
+    "亲戚催婚应对",
+    "职场暗箭回击",
+    "朋友互怼金句",
+    "社交媒体回击",
+    "相亲奇葩应对"
+  ],
+  "category": "social",
+  "dependencies": {
+    "external_services": [],
+    "python_packages": []
+  },
+  "description": "怼人不带脏字的回击话术，优雅又不失锋芒的语言艺术。提供职场暗箭回击、亲戚催婚应对、朋友互怼金句、社交媒体高赞回击。适用场景：职场、亲戚、朋友、相亲、网友，让你在任何场合都能优雅怼人。",
+  "display_name": "怼人回击助手",
+  "display_name_en": "Snarky Response Assistant",
+  "features": {
+    "comeback_templates": "怼人话术模板",
+    "examples_provided": "附带案例",
+    "scenario_specific": "分场景定制",
+    "tone_options": "语气可调节"
+  },
+  "id": 384584692544220,
+  "language_support": [
+    "zh-CN"
+  ],
+  "name": "sassy-reply",
+  "platform": "minimax",
+  "quality_metrics": {
+    "effectiveness": "⭐⭐⭐⭐⭐",
+    "social_share_rate": "⭐⭐⭐⭐⭐",
+    "witty_level": "⭐⭐⭐⭐⭐"
+  },
+  "scenarios": {
+    "dating": {
+      "description": "相亲对象奇葩发言",
+      "difficulty": "hard",
+      "name": "相亲奇葩"
+    },
+    "family": {
+      "description": "过年回家、七大姑八大姨催婚",
+      "difficulty": "hard",
+      "name": "亲戚围剿"
+    },
+    "friends": {
+      "description": "损友日常互损、闺蜜互怼",
+      "difficulty": "easy",
+      "name": "朋友互怼"
+    },
+    "online": {
+      "description": "社交媒体杠精、键盘侠",
+      "difficulty": "medium",
+      "name": "网络杠精"
+    },
+    "workplace": {
+      "description": "同事阴阳怪气、领导变相批评",
+      "difficulty": "medium",
+      "name": "职场暗箭"
+    }
+  },
+  "tags": [
+    "怼人",
+    "回击",
+    "神回复",
+    "高情商",
+    "拒绝话术",
+    "阴阳怪气",
+    "怼人技巧",
+    "优雅回击"
+  ],
+  "target_users": [
+    "职场人士",
+    "被亲戚催婚的单身族",
+    "社交媒体活跃用户",
+    "和朋友互怼的损友",
+    "相亲被奇葩困扰的人",
+    "想提升情商的人"
+  ],
+  "trigger_keywords": {
+    "en": [
+      "comeback",
+      "snarky reply",
+      "roast",
+      "witty response",
+      "sassy comeback",
+      "clever retort",
+      "witty comeback"
+    ],
+    "zh": [
+      "怼人",
+      "回击",
+      "怎么怼",
+      "怎么回击",
+      "神回复",
+      "高情商",
+      "亲戚催婚",
+      "怎么拒绝",
+      "优雅拒绝",
+      "怼人不带脏字",
+      "阴阳怪气",
+      "互怼",
+      "怼亲戚",
+      "怼同事",
+      "相亲奇葩",
+      "杠精",
+      "怎么回怼",
+      "嘴替",
+      "语言艺术"
+    ]
+  },
+  "updated_at": 1775447009931,
+  "use_cases": {
+    "scenario_1": {
+      "description": "同事阴阳怪气说'某些人天天加班也没成果'，获得优雅反击话术",
+      "title": "职场暗箭"
+    },
+    "scenario_2": {
+      "description": "过年被七大姑八大姨围攻，获得满分应对话术",
+      "title": "亲戚催婚"
+    },
+    "scenario_3": {
+      "description": "和朋友日常互损，获得互怼金句",
+      "title": "朋友互怼"
+    },
+    "scenario_4": {
+      "description": "相亲对象问奇葩问题，获得优雅回击",
+      "title": "相亲回击"
+    },
+    "scenario_5": {
+      "description": "杠精留言攻击，获得高赞回击话术",
+      "title": "网络怼人"
+    }
+  },
+  "version": "1.0.0",
+  "version_history": [
+    {
+      "changes": "初始版本发布，包含8大场景的话术模板",
+      "date": "2026-04-06",
+      "version": "1.0.0"
+    }
+  ]
+}

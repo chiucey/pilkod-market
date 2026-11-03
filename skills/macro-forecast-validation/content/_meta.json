@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-04-12",
+  "description": "宏观经济指标预测结果校验技能。对机器学习、时间序列模型、因子模型、组合模型等生成的宏观经济指标预测结果进行系统校验，支持GDP增速、工业增加值、社零、固定资产投资、进出口、CPI/PPI等主要宏观指标。",
+  "id": 386816366109671,
+  "name": "macro-forecast-validation",
+  "platform": "minimax",
+  "skill_id": 1739867163,
+  "tags": [
+    "macro-economy",
+    "forecast-validation",
+    "statistical-analysis",
+    "economic-analysis",
+    "macro-indicators"
+  ],
+  "updated_at": 1775994122601,
+  "version": "1.0.0"
+}

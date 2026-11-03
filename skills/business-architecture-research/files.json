@@ -1,0 +1,149 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "add288dd42dd9d7eebe7991fb7db128f7b7de09c",
+      "size": 3716
+    },
+    {
+      "path": "_meta.json",
+      "sha": "b0a150a92334f16dafc922b012c9d0d97efe406a",
+      "size": 149
+    },
+    {
+      "path": "phase1-industry-scan/SKILL.md",
+      "sha": "33c77a4c188ce6f19626bf7bc7c1a369b11d1cc5",
+      "size": 1635
+    },
+    {
+      "path": "phase1-industry-scan/_meta.json",
+      "sha": "97c536d9543586f3fc85f7de91593c225165de23",
+      "size": 57
+    },
+    {
+      "path": "phase1-industry-scan/references/prompt1-1-industry-overview.md",
+      "sha": "c4196938b77177c305eb23db0a2ac89f20cb2df0",
+      "size": 2241
+    },
+    {
+      "path": "phase1-industry-scan/references/prompt1-2-standards-regulations.md",
+      "sha": "1306ae3f6f8b6ee9f93df13785c8f9e45f3ed21a",
+      "size": 1725
+    },
+    {
+      "path": "phase2-value-stream/SKILL.md",
+      "sha": "3726665ae440f203e95aebcb517c9741b6b5aa6d",
+      "size": 1709
+    },
+    {
+      "path": "phase2-value-stream/_meta.json",
+      "sha": "363f3fe25b23d318bd3ad4a555d43ffbf353fda8",
+      "size": 56
+    },
+    {
+      "path": "phase2-value-stream/references/prompt2-1-value-stream-identification.md",
+      "sha": "e370e39c1071409edda8d21fc0e29d3a88e3b94a",
+      "size": 2587
+    },
+    {
+      "path": "phase2-value-stream/references/prompt2-2-stage-decomposition.md",
+      "sha": "303bd25099312e19a3394f4c2ee8ae6234fad158",
+      "size": 1808
+    },
+    {
+      "path": "phase3-capability-map/SKILL.md",
+      "sha": "a3952c68e6798e82528a0bc2c41ca6af6569f281",
+      "size": 1470
+    },
+    {
+      "path": "phase3-capability-map/_meta.json",
+      "sha": "c2d96ee8d2c43fe85dc489973300b2a02747cead",
+      "size": 58
+    },
+    {
+      "path": "phase3-capability-map/references/prompt3-1-domain-modeling.md",
+      "sha": "b39ba118b2e073ea75de07aa77a2b32ab668e577",
+      "size": 2600
+    },
+    {
+      "path": "phase4-process-detail/SKILL.md",
+      "sha": "7288cfee0ed4f5c8c02cb9d6136d86d3a57dd5da",
+      "size": 1540
+    },
+    {
+      "path": "phase4-process-detail/_meta.json",
+      "sha": "e0a110f97897ba982c2bdd27cad11f8d652bbd36",
+      "size": 58
+    },
+    {
+      "path": "phase4-process-detail/references/prompt4-1-process-directory.md",
+      "sha": "62514ac12612755095553456e3dfe863e1440bd9",
+      "size": 1409
+    },
+    {
+      "path": "phase4-process-detail/references/prompt4-2-activity-decomposition.md",
+      "sha": "72e54633c70fec045315318f7c41faaebce75c4e",
+      "size": 2013
+    },
+    {
+      "path": "phase5-exception-management/SKILL.md",
+      "sha": "c39d16bfe456ab7b5c56117044972daed680dbe1",
+      "size": 1615
+    },
+    {
+      "path": "phase5-exception-management/_meta.json",
+      "sha": "e561680a5ddd2510da15640f66df5c62889b305f",
+      "size": 64
+    },
+    {
+      "path": "phase5-exception-management/references/prompt5-1-exception-framework.md",
+      "sha": "8e061daf9235c4942b753952cbcf39acfac35db9",
+      "size": 1904
+    },
+    {
+      "path": "phase5-exception-management/references/prompt5-2-exception-scenarios.md",
+      "sha": "940e2b8d8df19d5f6f3c3f077a827693eddfd1e0",
+      "size": 1791
+    },
+    {
+      "path": "phase6-support-system/SKILL.md",
+      "sha": "be78283937d46fa3c8995bc62f5d516d01a4fc37",
+      "size": 1620
+    },
+    {
+      "path": "phase6-support-system/_meta.json",
+      "sha": "3895f80663049847a8e9db1e52b46be65b66113b",
+      "size": 58
+    },
+    {
+      "path": "phase6-support-system/references/prompt6-1-support-coordination.md",
+      "sha": "5d8798b6af82ed9ec5a92defbe1a44ddc452ea37",
+      "size": 2090
+    },
+    {
+      "path": "phase7-quality-audit/SKILL.md",
+      "sha": "2bbd2035179536cdca04ee4084a247621c965137",
+      "size": 1694
+    },
+    {
+      "path": "phase7-quality-audit/_meta.json",
+      "sha": "0076a3f118bcc215950973e8a93fb492466e1def",
+      "size": 57
+    },
+    {
+      "path": "phase7-quality-audit/references/prompt7-1-mece-audit.md",
+      "sha": "b1e417142944b46dffa25e01f3973751adb765b2",
+      "size": 1909
+    },
+    {
+      "path": "phase7-quality-audit/references/prompt7-2-togaf-compliance.md",
+      "sha": "8f90a53cb9b79449c10764bd64236af324d17bb2",
+      "size": 1236
+    },
+    {
+      "path": "phase7-quality-audit/references/prompt7-3-multi-model-validation.md",
+      "sha": "c25b3f8e21082a0bf85420420efdcc892006b547",
+      "size": 1820
+    }
+  ]
+}

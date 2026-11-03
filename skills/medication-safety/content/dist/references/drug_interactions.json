@@ -1,0 +1,877 @@
+{
+  "version": "1.0.0",
+  "description": "常见药物相互作用、禁忌食物和禁忌行为数据库",
+  "last_updated": "2024-03-21",
+  "drugs": {
+    "华法林": {
+      "aliases": [" warfarin", "可密定", "苄丙酮香豆素钠"],
+      "interactions": {
+        "阿司匹林": {
+          "risk_level": "严重",
+          "description": "阿司匹林抑制血小板聚集，与华法林联用显著增加出血风险",
+          "recommendation": "禁止联用，如必须使用请在医生严密监测下调整剂量"
+        },
+        "布洛芬": {
+          "risk_level": "严重",
+          "description": "非甾体抗炎药增加胃肠道出血风险，干扰华法林代谢",
+          "recommendation": "禁止联用，可考虑使用对胃刺激较小的止痛药"
+        },
+        "维生素K": {
+          "risk_level": "高危",
+          "description": "维生素K会拮抗华法林抗凝作用，降低药效",
+          "recommendation": "保持稳定的维生素K摄入，不要突然增加或减少"
+        },
+        "银杏": {
+          "risk_level": "高危",
+          "description": "银杏具有抗凝作用，与华法林联用增加出血风险",
+          "recommendation": "禁止联用"
+        },
+        "人参": {
+          "risk_level": "中危",
+          "description": "人参可能降低华法林疗效",
+          "recommendation": "避免同时使用，或增加INR监测频率"
+        },
+        "圣约翰草": {
+          "risk_level": "高危",
+          "description": "显著降低华法林血药浓度，降低抗凝效果",
+          "recommendation": "禁止联用"
+        }
+      },
+      "forbidden_foods": {
+        "富含维生素K的食物": {
+          "examples": ["菠菜", "羽衣甘蓝", "西兰花", "抱子甘蓝", "猪肝", "绿茶"],
+          "reason": "维生素K促进凝血因子合成，拮抗华法林抗凝作用",
+          "note": "不是完全禁止，而是要保持稳定的每日摄入量，突然大量摄入或减少都会影响药效"
+        },
+        "葡萄柚": {
+          "examples": ["葡萄柚", "西柚", "柚子"],
+          "reason": "抑制肝脏代谢酶，增加华法林血药浓度，可能导致出血"
+        },
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精影响肝脏功能，改变华法林代谢，增加出血或血栓风险"
+        }
+      },
+      "forbidden_behaviors": {
+        "剧烈运动": {
+          "reason": "增加出血风险，尤其是撞伤可能导致严重内出血",
+          "recommendation": "选择温和的运动方式，如散步、瑜伽"
+        },
+        "拔牙或手术": {
+          "reason": "华法林影响凝血功能",
+          "recommendation": "任何手术前必须告知医生正在服用华法林"
+        }
+      }
+    },
+    "阿司匹林": {
+      "aliases": [" aspirin", "乙酰水杨酸", "拜阿司匹林"],
+      "interactions": {
+        "华法林": {
+          "risk_level": "严重",
+          "description": "两者联用显著增加出血风险",
+          "recommendation": "禁止自行联用，必须在医生指导下使用"
+        },
+        "布洛芬": {
+          "risk_level": "高危",
+          "description": "布洛芬会干扰阿司匹林的心血管保护作用，并增加胃肠道出血风险",
+          "recommendation": "如需联用，应在阿司匹林服用后30分钟再服用布洛芬"
+        },
+        "氯吡格雷": {
+          "risk_level": "严重",
+          "description": "两者均为抗血小板药物，联用显著增加出血风险",
+          "recommendation": "仅在医生明确指示下联用"
+        },
+        "甲氨蝶呤": {
+          "risk_level": "高危",
+          "description": "阿司匹林减少甲氨蝶呤排泄，增加毒性风险",
+          "recommendation": "禁止联用或调整剂量"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精加重胃肠道刺激，增加胃出血风险"
+        },
+        "高嘌呤食物": {
+          "examples": ["动物内脏", "海鲜", "浓汤"],
+          "reason": "可能影响药物对痛风患者的效果"
+        }
+      },
+      "forbidden_behaviors": {
+        "拔牙或手术": {
+          "reason": "阿司匹林抑制血小板聚集",
+          "recommendation": "一般需停药7-10天，具体请遵医嘱"
+        },
+        "剧烈运动": {
+          "reason": "增加出血风险"
+        }
+      }
+    },
+    "布洛芬": {
+      "aliases": [" ibuprofen", "芬必得", "美林", "异丁苯丙酸"],
+      "interactions": {
+        "华法林": {
+          "risk_level": "严重",
+          "description": "增加出血风险和胃肠道并发症",
+          "recommendation": "禁止联用"
+        },
+        "阿司匹林": {
+          "risk_level": "高危",
+          "description": "干扰阿司匹林的心血管保护作用",
+          "recommendation": "如需联用应在阿司匹林后30分钟服用"
+        },
+        "降压药": {
+          "risk_level": "中危",
+          "description": "布洛芬可能降低ACE抑制剂和利尿剂的降压效果",
+          "recommendation": "监测血压，必要时调整降压药剂量"
+        },
+        "地高辛": {
+          "risk_level": "中危",
+          "description": "可能增加地高辛血药浓度",
+          "recommendation": "监测地高辛血药浓度"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精加重胃肠道刺激，增加溃疡和出血风险"
+        },
+        "咖啡因": {
+          "examples": ["咖啡", "浓茶", "可乐"],
+          "reason": "咖啡因可能加重布洛芬对胃的刺激"
+        }
+      },
+      "forbidden_behaviors": {
+        "饮酒": {
+          "reason": "酒精与布洛芬联用显著增加胃肠道出血风险"
+        },
+        "空腹服用": {
+          "reason": "空腹服用布洛芬会增加胃肠道刺激和溃疡风险",
+          "recommendation": "建议饭后服用，或与牛奶同服"
+        }
+      }
+    },
+    "二甲双胍": {
+      "aliases": [" metformin", "格华止", "美福明"],
+      "interactions": {
+        "酒精": {
+          "risk_level": "严重",
+          "description": "酒精增强二甲双胍的降糖作用，可能导致严重低血糖；同时增加乳酸酸中毒风险",
+          "recommendation": "用药期间禁止饮酒"
+        },
+        "造影剂": {
+          "risk_level": "严重",
+          "description": "使用含碘造影剂的检查可能导致急性肾功能改变，增加乳酸酸中毒风险",
+          "recommendation": "造影检查前48小时应停用二甲双胍"
+        },
+        "ACE抑制剂": {
+          "risk_level": "低危",
+          "description": "ACE抑制剂可能增强二甲双胍的降糖效果",
+          "recommendation": "监测血糖，注意低血糖风险"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒", "含酒精饮料"],
+          "reason": "增加乳酸酸中毒和低血糖风险"
+        },
+        "高糖食物": {
+          "examples": ["糖果", "蛋糕", "甜饮料", "白米饭"],
+          "reason": "影响血糖控制，降低药物疗效",
+          "note": "不是完全禁止，而是应该控制摄入量，保持血糖稳定"
+        }
+      },
+      "forbidden_behaviors": {
+        "剧烈运动": {
+          "reason": "可能诱发低血糖，尤其在血糖控制不佳时",
+          "recommendation": "运动前后监测血糖，随身携带糖果"
+        },
+        "空腹运动": {
+          "reason": "增加低血糖风险",
+          "recommendation": "餐后1-2小时运动为宜"
+        },
+        "长期饥饿": {
+          "reason": "增加低血糖和乳酸酸中毒风险",
+          "recommendation": "保持规律饮食，不要刻意节食"
+        }
+      }
+    },
+    "氯雷他定": {
+      "aliases": [" loratadine", "开瑞坦", "氯羟他定"],
+      "interactions": {
+        "酮康唑": {
+          "risk_level": "中危",
+          "description": "酮康唑抑制氯雷他定代谢，增加心律失常风险",
+          "recommendation": "谨慎联用，监测心电图"
+        },
+        "红霉素": {
+          "risk_level": "中危",
+          "description": "红霉素可能增加氯雷他定血药浓度",
+          "recommendation": "监测不良反应"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精可能加重嗜睡副作用"
+        },
+        "西柚汁": {
+          "examples": ["西柚汁", "葡萄柚汁"],
+          "reason": "可能影响药物代谢"
+        }
+      },
+      "forbidden_behaviors": {
+        "驾驶或操作机械": {
+          "reason": "虽然氯雷他定嗜睡作用较弱，但仍可能引起困倦",
+          "recommendation": "初次服用后观察反应再决定"
+        }
+      }
+    },
+    "辛伐他汀": {
+      "aliases": [" simvastatin", "舒降之", "Zocor"],
+      "interactions": {
+        "红霉素": {
+          "risk_level": "严重",
+          "description": "红霉素抑制CYP3A4酶，显著增加辛伐他汀血药浓度，增加肌病风险",
+          "recommendation": "禁止联用"
+        },
+        "酮康唑": {
+          "risk_level": "严重",
+          "description": "强烈抑制CYP3A4酶，大幅增加辛伐他汀血药浓度",
+          "recommendation": "禁止联用"
+        },
+        "伊曲康唑": {
+          "risk_level": "严重",
+          "description": "强烈抑制CYP3A4酶",
+          "recommendation": "禁止联用"
+        },
+        "葡萄柚": {
+          "risk_level": "高危",
+          "description": "葡萄柚抑制肠道CYP3A4酶，增加辛伐他汀血药浓度和肌病风险",
+          "recommendation": "禁止食用葡萄柚或喝葡萄柚汁"
+        },
+        "钙通道阻滞剂": {
+          "risk_level": "中危",
+          "description": "如氨氯地平、非洛地平等，可能增加辛伐他汀血药浓度",
+          "recommendation": "辛伐他汀剂量不超过20mg/天"
+        },
+        "吉非罗齐": {
+          "risk_level": "严重",
+          "description": "显著增加肌病和横纹肌溶解症风险",
+          "recommendation": "禁止联用"
+        }
+      },
+      "forbidden_foods": {
+        "葡萄柚": {
+          "examples": ["葡萄柚", "西柚", "柚子", "葡萄柚汁"],
+          "reason": "抑制药物代谢酶，增加血药浓度和副作用风险"
+        },
+        "高脂肪食物": {
+          "examples": ["油炸食品", "肥肉", "奶油"],
+          "reason": "高脂肪饮食影响他汀类药物吸收和效果",
+          "note": "不是完全禁止，而是应该保持低脂饮食"
+        },
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精增加肝损伤风险，他汀类药物主要经肝脏代谢",
+          "recommendation": "限制饮酒，最好戒酒"
+        }
+      },
+      "forbidden_behaviors": {
+        "剧烈运动": {
+          "reason": "剧烈运动可能诱发肌病，尤其在药物血药浓度较高时",
+          "recommendation": "运动要循序渐进，如出现肌肉酸痛立即停药就医"
+        },
+        "自行调整剂量": {
+          "reason": "突然停药可能导致血脂反弹",
+          "recommendation": "如需停药或换药，请在医生指导下进行"
+        }
+      }
+    },
+    "阿托伐他汀": {
+      "aliases": [" atorvastatin", "立普妥", "Lipitor"],
+      "interactions": {
+        "红霉素": {
+          "risk_level": "高危",
+          "description": "增加阿托伐他汀血药浓度，增加肌病风险",
+          "recommendation": "限制阿托伐他汀剂量，密切监测"
+        },
+        "酮康唑": {
+          "risk_level": "严重",
+          "description": "强烈抑制CYP3A4酶",
+          "recommendation": "禁止联用"
+        },
+        "葡萄柚": {
+          "risk_level": "高危",
+          "description": "增加阿托伐他汀血药浓度",
+          "recommendation": "限制摄入，最好避免"
+        },
+        "吉非罗齐": {
+          "risk_level": "严重",
+          "description": "显著增加肌病风险",
+          "recommendation": "禁止联用"
+        },
+        "氨氯地平": {
+          "risk_level": "中危",
+          "description": "增加阿托伐他汀血药浓度",
+          "recommendation": "阿托伐他汀剂量不超过20mg/天"
+        }
+      },
+      "forbidden_foods": {
+        "葡萄柚": {
+          "examples": ["葡萄柚", "西柚", "柚子汁"],
+          "reason": "抑制药物代谢，增加副作用"
+        },
+        "高脂肪食物": {
+          "examples": ["油炸食品"],
+          "reason": "影响药物吸收"
+        }
+      },
+      "forbidden_behaviors": {
+        "剧烈运动": {
+          "reason": "增加肌病风险",
+          "recommendation": "如出现肌肉疼痛、乏力立即就医"
+        }
+      }
+    },
+    "奥美拉唑": {
+      "aliases": [" omeprazole", "洛赛克", "奥克"],
+      "interactions": {
+        "氯吡格雷": {
+          "risk_level": "高危",
+          "description": "奥美拉唑抑制CYP2C19酶，可能降低氯吡格雷的抗血小板效果",
+          "recommendation": "优先选择泮托拉唑或雷贝拉唑代替奥美拉唑"
+        },
+        "甲氨蝶呤": {
+          "risk_level": "高危",
+          "description": "质子泵抑制剂减少甲氨蝶呤排泄，增加毒性风险",
+          "recommendation": "高剂量甲氨蝶呤治疗期间避免使用"
+        },
+        "华法林": {
+          "risk_level": "中危",
+          "description": "可能影响华法林代谢",
+          "recommendation": "监测INR值"
+        },
+        "地高辛": {
+          "risk_level": "中危",
+          "description": "质子泵抑制剂可能增加地高辛吸收",
+          "recommendation": "监测地高辛血药浓度"
+        }
+      },
+      "forbidden_foods": {
+        "酸性食物": {
+          "examples": ["柑橘类", "番茄", "醋"],
+          "reason": "虽然奥美拉唑降低胃酸，但大量酸性食物可能刺激胃黏膜",
+          "note": "适量即可，不必完全禁止"
+        },
+        "咖啡因": {
+          "examples": ["咖啡", "浓茶", "可乐"],
+          "reason": "咖啡因刺激胃酸分泌，可能降低药效"
+        }
+      },
+      "forbidden_behaviors": {
+        "吸烟": {
+          "reason": "吸烟降低奥美拉唑的血药浓度和疗效",
+          "recommendation": "用药期间最好戒烟"
+        }
+      }
+    },
+    "左甲状腺素": {
+      "aliases": [" levothyroxine", "优甲乐", "雷替斯", "Synthroid"],
+      "interactions": {
+        "铁剂": {
+          "risk_level": "严重",
+          "description": "铁剂与左甲状腺素形成难溶性复合物，显著降低吸收",
+          "recommendation": "两者服用间隔至少4小时"
+        },
+        "钙剂": {
+          "risk_level": "严重",
+          "description": "钙剂降低左甲状腺素吸收",
+          "recommendation": "两者服用间隔至少4小时"
+        },
+        "氢氧化铝": {
+          "risk_level": "严重",
+          "description": "抗酸剂降低左甲状腺素吸收",
+          "recommendation": "服用间隔至少4小时"
+        },
+        "奥美拉唑": {
+          "risk_level": "中危",
+          "description": "质子泵抑制剂可能影响左甲状腺素吸收",
+          "recommendation": "监测甲状腺功能"
+        }
+      },
+      "forbidden_foods": {
+        "大豆食品": {
+          "examples": ["豆浆", "豆腐", "毛豆", "纳豆"],
+          "reason": "大豆可能干扰左甲状腺素吸收",
+          "recommendation": "用药后4小时内避免食用"
+        },
+        "高纤维食物": {
+          "examples": ["燕麦", "糙米", "豆类"],
+          "reason": "高纤维饮食可能影响药物吸收",
+          "recommendation": "保持稳定的膳食纤维摄入量，不要突然大量增加"
+        },
+        "咖啡": {
+          "examples": ["咖啡", "浓茶"],
+          "reason": "咖啡因可能影响药物吸收",
+          "recommendation": "用药后30分钟内避免喝咖啡"
+        }
+      },
+      "forbidden_behaviors": {
+        "自行停药": {
+          "reason": "突然停药可能导致甲状腺功能减退症状反弹",
+          "recommendation": "如需调整，请遵医嘱逐步进行"
+        },
+        "与食物同服": {
+          "reason": "食物干扰药物吸收",
+          "recommendation": "空腹服用，餐前30分钟或睡前1小时用水送服"
+        }
+      }
+    },
+    "泼尼松": {
+      "aliases": [" prednisone", "强的松", "去氢可的松"],
+      "interactions": {
+        "阿司匹林": {
+          "risk_level": "高危",
+          "description": "两者联用增加胃肠道溃疡和出血风险",
+          "recommendation": "如需联用，应使用胃黏膜保护剂"
+        },
+        "华法林": {
+          "risk_level": "高危",
+          "description": "皮质激素可能影响华法林代谢，增加出血风险",
+          "recommendation": "密切监测INR值"
+        },
+        "利尿剂": {
+          "risk_level": "中危",
+          "description": "皮质激素有保钠排钾作用，与利尿剂联用可能加重低钾血症",
+          "recommendation": "监测血钾水平"
+        },
+        " NSAIDs": {
+          "risk_level": "高危",
+          "description": "增加胃肠道出血和溃疡风险",
+          "recommendation": "避免联用或使用胃黏膜保护剂"
+        }
+      },
+      "forbidden_foods": {
+        "高盐食物": {
+          "examples": ["腌制品", "咸菜", "腊肉", "方便面"],
+          "reason": "泼尼松会导致水钠潴留，高盐饮食加重水肿和高血压"
+        },
+        "高糖食物": {
+          "examples": ["糖果", "甜饮料", "蛋糕"],
+          "reason": "泼尼松升高血糖，高糖饮食加重糖尿病风险"
+        },
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精加重胃肠道刺激，增加溃疡风险"
+        },
+        "葡萄柚": {
+          "examples": ["葡萄柚", "西柚"],
+          "reason": "可能影响皮质激素代谢"
+        }
+      },
+      "forbidden_behaviors": {
+        "突然停药": {
+          "reason": "长期使用后突然停药可能导致肾上腺功能不全",
+          "recommendation": "必须遵医嘱逐步减量"
+        },
+        "接种活疫苗": {
+          "reason": "泼尼松抑制免疫系统，接种活疫苗可能导致感染",
+          "recommendation": "用药期间禁止接种活疫苗"
+        },
+        "剧烈运动": {
+          "reason": "增加骨质疏松导致的骨折风险",
+          "recommendation": "进行温和运动，避免跌倒"
+        }
+      }
+    },
+    "硝苯地平": {
+      "aliases": [" nifedipine", "拜新同", "心痛定", "Adalat"],
+      "interactions": {
+        "葡萄柚": {
+          "risk_level": "高危",
+          "description": "葡萄柚抑制CYP3A4酶，显著增加硝苯地平血药浓度",
+          "recommendation": "禁止食用葡萄柚或喝葡萄柚汁"
+        },
+        "地尔硫卓": {
+          "risk_level": "高危",
+          "description": "两者联用显著增加心动过缓和心衰风险",
+          "recommendation": "禁止联用"
+        },
+        "维拉帕米": {
+          "risk_level": "高危",
+          "description": "联用增加心脏传导阻滞风险",
+          "recommendation": "禁止联用"
+        },
+        "辛伐他汀": {
+          "risk_level": "中危",
+          "description": "硝苯地平可能增加辛伐他汀血药浓度",
+          "recommendation": "辛伐他汀剂量不超过20mg/天"
+        }
+      },
+      "forbidden_foods": {
+        "葡萄柚": {
+          "examples": ["葡萄柚", "西柚", "柚子汁"],
+          "reason": "抑制药物代谢，导致血药浓度过高，低血压风险增加"
+        },
+        "高脂肪食物": {
+          "examples": ["油炸食品", "肥肉"],
+          "reason": "可能影响药物吸收速度"
+        },
+        "酒精": {
+          "examples": ["白酒", "红酒"],
+          "reason": "酒精扩张血管，联用可能加重低血压"
+        }
+      },
+      "forbidden_behaviors": {
+        "突然站立": {
+          "reason": "硝苯地平可能引起体位性低血压",
+          "recommendation": "从卧位或坐位起身时要缓慢"
+        },
+        "驾驶或高空作业": {
+          "reason": "可能引起头晕、眩晕等副作用",
+          "recommendation": "初次服用或剂量调整后观察反应"
+        }
+      }
+    },
+    "氨氯地平": {
+      "aliases": [" amlodipine", "络活喜", "Norvasc"],
+      "interactions": {
+        "葡萄柚": {
+          "risk_level": "中危",
+          "description": "葡萄柚可能轻度增加氨氯地平血药浓度",
+          "recommendation": "限制摄入，监测血压"
+        },
+        "辛伐他汀": {
+          "risk_level": "中危",
+          "description": "增加辛伐他汀血药浓度",
+          "recommendation": "辛伐他汀剂量不超过20mg/天"
+        },
+        "西地那非": {
+          "risk_level": "中危",
+          "description": "两者均有降压作用，联用可能引起严重低血压",
+          "recommendation": "避免联用或减少剂量"
+        }
+      },
+      "forbidden_foods": {
+        "葡萄柚": {
+          "examples": ["葡萄柚", "西柚"],
+          "reason": "可能增加药物血药浓度"
+        },
+        "高盐食物": {
+          "examples": ["腌制品", "咸菜"],
+          "reason": "高盐饮食降低降压药效果"
+        }
+      },
+      "forbidden_behaviors": {
+        "突然站立": {
+          "reason": "可能出现体位性低血压",
+          "recommendation": "起身要缓慢"
+        }
+      }
+    },
+    "美托洛尔": {
+      "aliases": [" metoprolol", "倍他乐克", "美托洛尔", "Betaloc"],
+      "interactions": {
+        "维拉帕米": {
+          "risk_level": "严重",
+          "description": "两者联用可能引起严重心动过缓、心衰和低血压",
+          "recommendation": "禁止联用"
+        },
+        "地尔硫卓": {
+          "risk_level": "严重",
+          "description": "联用增加心脏抑制风险",
+          "recommendation": "禁止联用"
+        },
+        "可乐定": {
+          "risk_level": "高危",
+          "description": "突然停用可乐定可能引起血压反跳，美托洛尔可能加重此效应",
+          "recommendation": "先停美托洛尔，再逐渐停可乐定"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒"],
+          "reason": "酒精可能增强美托洛尔的降压和减慢心率作用"
+        },
+        "咖啡因": {
+          "examples": ["咖啡", "浓茶"],
+          "reason": "咖啡因可能部分拮抗美托洛尔的β受体阻滞作用",
+          "note": "适量即可，不必完全避免"
+        }
+      },
+      "forbidden_behaviors": {
+        "突然停药": {
+          "reason": "突然停药可能引起血压反跳和心绞痛加重",
+          "recommendation": "必须遵医嘱逐渐减量"
+        },
+        "剧烈运动": {
+          "reason": "美托洛尔降低心脏对运动的应激反应",
+          "recommendation": "运动要适度，避免极限运动"
+        }
+      }
+    },
+    "氯吡格雷": {
+      "aliases": [" clopidogrel", "波立维", "泰嘉", "Plavix"],
+      "interactions": {
+        "奥美拉唑": {
+          "risk_level": "高危",
+          "description": "奥美拉唑抑制CYP2C19酶，降低氯吡格雷的抗血小板效果",
+          "recommendation": "使用泮托拉唑或雷贝拉唑代替奥美拉唑"
+        },
+        "阿司匹林": {
+          "risk_level": "严重",
+          "description": "两者均为抗血小板药物，联用增加出血风险",
+          "recommendation": "仅在医生明确指示下联用，如心脏支架术后"
+        },
+        "华法林": {
+          "risk_level": "严重",
+          "description": "显著增加出血风险",
+          "recommendation": "仅在专科医生指导下联用"
+        },
+        "NSAIDs": {
+          "risk_level": "高危",
+          "description": "增加胃肠道出血风险",
+          "recommendation": "避免联用"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精增加出血风险和胃肠道刺激"
+        },
+        "富含维生素K的食物": {
+          "examples": ["菠菜", "西兰花"],
+          "reason": "如同时服用华法林需要注意",
+          "note": "仅在使用华法林时需要限制"
+        }
+      },
+      "forbidden_behaviors": {
+        "拔牙或手术": {
+          "reason": "氯吡格雷抑制血小板聚集，增加出血风险",
+          "recommendation": "任何手术前必须告知医生"
+        },
+        "剧烈运动": {
+          "reason": "增加出血风险，尤其是跌倒时",
+          "recommendation": "避免容易受伤的运动"
+        }
+      }
+    },
+    "舍曲林": {
+      "aliases": [" sertraline", "左洛复", "Zoloft"],
+      "interactions": {
+        "MAO抑制剂": {
+          "risk_level": "严重",
+          "description": "可能导致致命的5-羟色胺综合征",
+          "recommendation": "禁止联用，换药需间隔14天"
+        },
+        "锂盐": {
+          "risk_level": "高危",
+          "description": "增加锂盐毒性和5-羟色胺综合征风险",
+          "recommendation": "监测血锂浓度"
+        },
+        "曲格酮": {
+          "risk_level": "高危",
+          "description": "可能引起心律失常",
+          "recommendation": "禁止联用"
+        },
+        "圣约翰草": {
+          "risk_level": "高危",
+          "description": "增加5-羟色胺综合征风险",
+          "recommendation": "禁止联用"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精加重舍曲林的中枢神经系统抑制作用"
+        },
+        "陈年奶酪": {
+          "examples": ["帕尔马干酪", "切达干酪", "蓝纹奶酪"],
+          "reason": "含有酪胺，与舍曲林联用可能引起高血压危象",
+          "note": "此反应主要见于MAO抑制剂，SSRIs风险较低但仍需注意"
+        }
+      },
+      "forbidden_behaviors": {
+        "驾驶或操作机械": {
+          "reason": "舍曲林可能引起嗜睡、头晕",
+          "recommendation": "初次服用后观察反应"
+        },
+        "自行停药": {
+          "reason": "突然停药可能出现撤药反应",
+          "recommendation": "如需停药请遵医嘱逐渐减量"
+        }
+      }
+    },
+    "氟哌噻吨美利曲辛": {
+      "aliases": [" flupentixol melitracen", "黛力新", "Deanxit"],
+      "interactions": {
+        "MAO抑制剂": {
+          "risk_level": "严重",
+          "description": "可能引起高血压危象或5-羟色胺综合征",
+          "recommendation": "禁止联用"
+        },
+        "可乐定": {
+          "risk_level": "高危",
+          "description": "可能降低可乐定降压效果",
+          "recommendation": "密切监测血压"
+        },
+        "胍乙啶": {
+          "risk_level": "高危",
+          "description": "三环类成分可能拮抗胍乙啶的降压作用",
+          "recommendation": "避免联用"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "酒精增强中枢抑制作用，加重嗜睡副作用"
+        }
+      },
+      "forbidden_behaviors": {
+        "驾驶或操作机械": {
+          "reason": "可能出现嗜睡、注意力下降",
+          "recommendation": "服药后避免驾驶"
+        }
+      }
+    },
+    "阿普唑仑": {
+      "aliases": [" alprazolam", "佳静安定", "佳乐定", "Xanax"],
+      "interactions": {
+        "酒精": {
+          "risk_level": "严重",
+          "description": "酒精增强苯二氮卓类药物的中枢抑制作用，可能导致呼吸抑制和死亡",
+          "recommendation": "禁止联用"
+        },
+        "阿片类药物": {
+          "risk_level": "严重",
+          "description": "联用显著增加呼吸抑制、昏迷和死亡风险",
+          "recommendation": "禁止联用，美国FDA发出黑框警告"
+        },
+        "酮康唑": {
+          "risk_level": "高危",
+          "description": "抑制CYP3A4酶，增加阿普唑仑血药浓度",
+          "recommendation": "禁止联用或减量"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒", "含酒精食物"],
+          "reason": "严重的中枢神经系统抑制风险"
+        }
+      },
+      "forbidden_behaviors": {
+        "驾驶或操作机械": {
+          "reason": "阿普唑仑引起嗜睡、注意力下降、记忆障碍",
+          "recommendation": "服药后禁止驾驶"
+        },
+        "突然停药": {
+          "reason": "可能出现严重的撤药反应，包括癫痫发作",
+          "recommendation": "必须遵医嘱逐渐减量"
+        },
+        "高空作业": {
+          "reason": "可能引起嗜睡和眩晕",
+          "recommendation": "避免"
+        }
+      }
+    },
+    "头孢克肟": {
+      "aliases": [" cefixime", "世福素", "Suprax"],
+      "interactions": {
+        "氨基糖苷类抗生素": {
+          "risk_level": "高危",
+          "description": "联用可能增加肾毒性和耳毒性风险",
+          "recommendation": "如必须联用，应监测肾功能和听力"
+        },
+        "呋塞米": {
+          "risk_level": "中危",
+          "description": "利尿剂可能增加头孢类抗生素的肾毒性",
+          "recommendation": "监测肾功能"
+        },
+        "华法林": {
+          "risk_level": "中危",
+          "description": "部分头孢类抗生素可能增强华法林抗凝作用",
+          "recommendation": "监测INR值"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒", "啤酒"],
+          "reason": "部分头孢类抗生素（如头孢哌酮）可引起双硫仑样反应",
+          "note": "头孢克肟引起双硫仑样反应风险较低，但仍建议避免饮酒"
+        }
+      },
+      "forbidden_behaviors": {
+        "与牛奶或抗酸剂同服": {
+          "reason": "降低头孢克肟吸收",
+          "recommendation": "服用头孢克肟后2小时内避免服用含钙、镁、铝的制剂"
+        }
+      }
+    },
+    "阿莫西林": {
+      "aliases": [" amoxicillin", "阿莫西林", "Amoxil", "奥格门汀"],
+      "interactions": {
+        "华法林": {
+          "risk_level": "高危",
+          "description": "阿莫西林可能增强华法林抗凝作用",
+          "recommendation": "监测INR值"
+        },
+        "甲氨蝶呤": {
+          "risk_level": "高危",
+          "description": "青霉素类减少甲氨蝶呤排泄，增加毒性",
+          "recommendation": "监测甲氨蝶呤血药浓度"
+        },
+        "口服避孕药": {
+          "risk_level": "中危",
+          "description": "抗生素可能降低口服避孕药效果",
+          "recommendation": "用药期间及停药后7天使用额外避孕措施"
+        }
+      },
+      "forbidden_foods": {
+        "酒精": {
+          "examples": ["白酒", "红酒"],
+          "reason": "一般抗生素服药期间建议避免饮酒",
+          "note": "阿莫西林不引起双硫仑样反应，但饮酒可能加重副作用"
+        }
+      },
+      "forbidden_behaviors": {
+        "与果汁或汽水同服": {
+          "reason": "酸性饮料可能影响药物稳定性",
+          "recommendation": "用温开水送服"
+        }
+      }
+    }
+  },
+  "common_food_interactions": {
+    "华法林-维生素K": {
+      "drug": "华法林",
+      "foods": ["菠菜", "羽衣甘蓝", "西兰花", "抱子甘蓝", "猪肝"],
+      "interaction": "拮抗抗凝作用",
+      "recommendation": "保持稳定的维生素K摄入，避免突然增减"
+    },
+    "他汀类-葡萄柚": {
+      "drugs": ["辛伐他汀", "阿托伐他汀", "洛伐他汀"],
+      "foods": ["葡萄柚", "西柚", "柚子"],
+      "interaction": "抑制药物代谢，增加血药浓度和肌病风险",
+      "recommendation": "避免食用"
+    },
+    "MAO抑制剂-酪胺": {
+      "drugs": ["苯乙肼", "司来吉兰", "异烟肼"],
+      "foods": ["陈年奶酪", "腌制品", "红酒", "豆类"],
+      "interaction": "引起高血压危象",
+      "recommendation": "严格避免"
+    }
+  },
+  "general_rules": {
+    "用药时间": {
+      "餐前30分钟": ["左甲状腺素", "某些降压药"],
+      "餐时": ["二甲双胍", "某些降糖药"],
+      "餐后": ["布洛芬", "阿司匹林", "大多数需要随餐服用的药物"]
+    },
+    "服药饮水": {
+      "一般建议": "至少200ml温开水",
+      "禁忌": "不要用茶、咖啡、果汁、牛奶送服药物",
+      "特殊": "某些药物可能需要特定饮品送服，请遵医嘱"
+    }
+  }
+}

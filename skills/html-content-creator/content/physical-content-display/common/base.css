@@ -1,0 +1,210 @@
+/* ===================================================================
+ * base.css — Physical Content Display 通用样式
+ * 用途：AI 代理制作成品 HTML 时，将本文件全部内容复制到 <style> 块中
+ * 说明：合并自两份参考成品（牛顿第二定律、万有引力定律）的全部 CSS 规则
+ *       值有差异处已标注范围，代理可根据内容做适当调整
+ * =================================================================== */
+
+/* ===== 0. CSS 变量（冰蓝冷色系）===== */
+/* 所有成品必须包含，不得修改色值 */
+:root{
+  --bg:#1a1b26;--bg-soft:#16161e;--surface:#24283b;--surface-2:#2f334d;
+  --border:rgba(192,202,245,.12);--border-strong:rgba(192,202,245,.24);
+  --text-1:#c0caf5;--text-2:#a9b1d6;--text-3:#565f89;
+  --accent:#7aa2f7;--accent-2:#bb9af7;--accent-3:#7dcfff;
+  --good:#9ece6a;--warn:#e0af68;--bad:#f7768e;
+  --grad:linear-gradient(135deg,#7aa2f7,#bb9af7 55%,#f7768e);
+  --grad-soft:linear-gradient(135deg,#24283b,#2f334d);
+  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 24px 62px rgba(0,0,0,.6);
+  --font-sans:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono','Fira Code','Consolas',monospace;
+}
+
+/* ===== 1. Reset & Base ===== */
+/* 所有成品必须包含 */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text-1)}
+a{color:var(--accent);text-decoration:none}
+
+/* ===== 2. Section 容器 ===== */
+/* 所有成品必须包含 */
+.scroll-section{padding:60px 64px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--border)}
+.scroll-section:last-child{border-bottom:none}
+.scroll-section.full{align-items:center;text-align:center}
+.scroll-section h2{margin-top:0}
+
+/* ===== 3. 排版 ===== */
+/* 所有成品必须包含，字号按需微调 */
+.kicker{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:5px 14px;border-radius:100px;background:var(--accent);color:var(--bg);margin-bottom:16px}
+.h1{font-size:clamp(32px,4.2vw,64px);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px}
+.h2{font-size:clamp(22px,2.8vw,40px);font-weight:700;line-height:1.3;letter-spacing:-.01em;margin-bottom:16px}
+.h3{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:10px}
+.h4{font-size:15px;font-weight:600;line-height:1.4;margin-bottom:6px}
+.lede{font-size:clamp(14px,1.2vw,18px);line-height:1.7;color:var(--text-2);max-width:620px}
+.dim{color:var(--text-2);font-size:14px;line-height:1.6}
+.dim2{color:var(--text-3);font-size:13px}
+.mt-s{margin-top:12px}.mt-m{margin-top:24px}.mt-l{margin-top:36px}.mt-xl{margin-top:48px}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ===== 4. 卡片 ===== */
+/* 所有成品必须包含至少一种卡片变体 */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-soft{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card-accent{border-top:3px solid var(--accent);background:var(--surface);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-outline{background:transparent;border:1px solid var(--border-strong);border-radius:var(--radius);padding:24px}
+
+/* ===== 5. 网格布局 ===== */
+/* 所有成品必须包含，网格列数按内容选择 */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1fr 1fr 1fr}
+.g4{grid-template-columns:1fr 1fr 1fr 1fr}
+
+/* ===== 6. 双栏分割 ===== */
+/* 所有成品必须包含 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.split-c{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+
+/* ===== 7. 公式框 ===== */
+/* 按需使用，font-size 可参考 32px-38px 按内容调整 */
+.formula-box{text-align:center;font-size:38px;font-weight:700;padding:28px;background:var(--surface-2);border-radius:var(--radius);margin:16px 0;font-family:var(--font-mono);letter-spacing:.02em;border:1px solid var(--border)}
+.formula-box .sub{font-size:14px;font-weight:400;color:var(--text-3);display:block;margin-top:8px}
+.formula-sm{text-align:center;font-size:20px;font-weight:600;padding:12px;background:var(--surface-2);border-radius:var(--radius-sm);margin:8px 0;font-family:var(--font-mono);border:1px solid var(--border)}
+
+/* ===== 8. 列表 & 标签 ===== */
+/* 所有成品必须包含 */
+ul{list-style:none;padding:0}
+li{padding:5px 0;font-size:14px;line-height:1.6;color:var(--text-2)}
+li::before{content:"▸ ";color:var(--accent);font-weight:700}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--surface-2);color:var(--text-2);margin-right:6px;margin-bottom:6px;letter-spacing:.06em}
+.pill-accent{background:var(--accent);color:var(--bg)}
+
+/* ===== 9. 提示 & 高亮 ===== */
+/* 按需使用 */
+.insight{background:linear-gradient(135deg,rgba(122,162,247,.1),rgba(187,154,247,.06));border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:16px 0;font-size:14px;line-height:1.7;color:var(--text-2)}
+.highlight{background:rgba(122,162,247,.15);padding:2px 6px;border-radius:4px;color:var(--accent-3);font-weight:500}
+
+/* ===== 10. 对比表格 ===== */
+/* 按需使用，两份参考 padding 取值 10px-14px，可按内容调整 */
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.compare-table th{background:var(--surface-2);padding:10px 14px;text-align:left;font-weight:600;color:var(--text-2);border-bottom:2px solid var(--border)}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)}
+.compare-table tr:last-child td{border-bottom:none}
+
+/* ===== 11. 数据表格 ===== */
+/* 按需使用 */
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+.data-table th{background:var(--surface-2);padding:8px 12px;text-align:center;font-weight:600;color:var(--text-1);border-bottom:2px solid var(--border);font-size:12px}
+.data-table td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);color:var(--text-2)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table .hl{color:var(--accent);font-weight:600}
+
+/* ===== 12. 步骤推导卡片 ===== */
+/* 按需使用，padding 参考 14px-16px */
+.step-card{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px}
+.step-num{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;flex-shrink:0}
+.step-card .step-body h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.step-card .step-body p{font-size:13px;color:var(--text-2);line-height:1.5}
+
+/* ===== 13. 知识体系（Arch 三层网格）===== */
+/* 按需使用，含有值差异的规则已标注范围，代理可适当调整 */
+.arch{display:grid;gap:20px}
+.arch .tier{display:grid;grid-template-columns:110px 1fr;align-items:stretch;gap:14px}
+.arch .tname{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border-radius:var(--radius);padding:12px;font-weight:600;font-size:12px;color:var(--text-2);text-transform:uppercase;letter-spacing:.08em;text-align:center}
+.arch .cells{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.arch .cell{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;box-shadow:var(--shadow)}
+.arch .cell .ic{font-size:20px;margin-bottom:4px}
+.arch .cell h4{font-size:13px;font-weight:600;margin-bottom:2px}
+.arch .cell p{font-size:11px;color:var(--text-3);margin:0;line-height:1.4}
+.arch .tier.hl .cell{border-top:3px solid var(--accent)}
+
+/* ===== 14. 时间线 ===== */
+/* 按需使用 */
+.timeline{position:relative;padding-left:32px;margin-top:20px}
+.timeline::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;padding:0 0 24px 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-24px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl-item .year{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.tl-item p{font-size:13px;color:var(--text-2);line-height:1.5;margin-top:2px}
+
+/* ===== 15. 对比卡片（正确 vs 误解）===== */
+/* 按需使用 */
+.contrast-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.contrast-cards .ex-card{padding:18px;border-radius:var(--radius);font-size:14px;line-height:1.6}
+.contrast-cards .ex-card.good{background:rgba(158,206,106,.08);border:1px solid rgba(158,206,106,.2)}
+.contrast-cards .ex-card.bad{background:rgba(247,118,142,.08);border:1px solid rgba(247,118,142,.2)}
+.contrast-cards .ex-card h4{margin-bottom:6px;font-size:14px}
+.contrast-cards .ex-card.good h4{color:var(--good)}
+.contrast-cards .ex-card.bad h4{color:var(--bad)}
+
+/* ===== 16. 滚动触发动画 ===== */
+/* 所有成品必须包含 */
+.anim-fade-up,.anim-fade-left,.anim-fade-right,.anim-scale-in{opacity:0;transition:opacity .5s ease,transform .5s ease}
+.anim-fade-up.is-visible{opacity:1;transform:translateY(0)}
+.anim-fade-left.is-visible{opacity:1;transform:translateX(0)}
+.anim-fade-right.is-visible{opacity:1;transform:translateX(0)}
+.anim-scale-in.is-visible{opacity:1;transform:scale(1)}
+.anim-fade-up{transform:translateY(24px)}
+.anim-fade-left{transform:translateX(-24px)}
+.anim-fade-right{transform:translateX(24px)}
+.anim-scale-in{transform:scale(.92)}
+.anim-fade-up.is-exiting{opacity:0;transform:translateY(-18px)}
+.anim-fade-left.is-exiting{opacity:0;transform:translateX(18px)}
+.anim-fade-right.is-exiting{opacity:0;transform:translateX(-18px)}
+.anim-scale-in.is-exiting{opacity:0;transform:scale(.95)}
+
+/* Stagger 列表（逐次动画） */
+.anim-stagger-list.is-visible>*{opacity:0;animation:fadeUp .45s ease forwards}
+.anim-stagger-list.is-visible>*:nth-child(1){animation-delay:0s}
+.anim-stagger-list.is-visible>*:nth-child(2){animation-delay:.1s}
+.anim-stagger-list.is-visible>*:nth-child(3){animation-delay:.2s}
+.anim-stagger-list.is-visible>*:nth-child(4){animation-delay:.3s}
+.anim-stagger-list.is-visible>*:nth-child(5){animation-delay:.4s}
+.anim-stagger-list.is-visible>*:nth-child(6){animation-delay:.5s}
+.anim-stagger-list.is-visible>*:nth-child(7){animation-delay:.6s}
+.anim-stagger-list.is-visible>*:nth-child(8){animation-delay:.7s}
+.anim-stagger-list.is-exiting>*{opacity:1;animation:fadeDown .35s ease forwards}
+.anim-stagger-list.is-exiting>*:nth-child(1){animation-delay:.35s}
+.anim-stagger-list.is-exiting>*:nth-child(2){animation-delay:.3s}
+.anim-stagger-list.is-exiting>*:nth-child(3){animation-delay:.25s}
+.anim-stagger-list.is-exiting>*:nth-child(4){animation-delay:.2s}
+.anim-stagger-list.is-exiting>*:nth-child(5){animation-delay:.15s}
+.anim-stagger-list.is-exiting>*:nth-child(6){animation-delay:.1s}
+.anim-stagger-list.is-exiting>*:nth-child(7){animation-delay:.05s}
+.anim-stagger-list.is-exiting>*:nth-child(8){animation-delay:0s}
+.anim-stagger-list>*{opacity:0;transition:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(18px)}}
+
+/* ===== 17. 响应式 ===== */
+/* 所有成品必须包含 */
+@media(max-width:900px){
+  .scroll-section{padding:40px 28px}
+  .split,.split-c{grid-template-columns:1fr;gap:20px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .arch .tier{grid-template-columns:1fr;gap:10px}
+  .arch .tname{padding:10px;font-size:11px}
+  .arch .cells{grid-template-columns:repeat(2,1fr)}
+  .formula-box{font-size:26px;padding:18px}
+}
+@media(max-width:480px){
+  .arch .cells{grid-template-columns:1fr}
+}
+
+/* ===== 18. 导航栏 ===== */
+/* 所有成品必须包含 */
+.nav-bar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;gap:4px;padding:8px 24px;background:rgba(26,27,38,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-bar a{display:inline-block;padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-2);border-radius:100px;transition:background .2s,color .2s;text-decoration:none;flex-shrink:0}
+.nav-bar a:hover,.nav-bar a.active{background:var(--accent);color:var(--bg)}
+.scroll-section:first-of-type{padding-top:120px}
+@media(max-width:900px){
+  .nav-bar{padding:6px 12px;gap:2px}
+  .nav-bar a{padding:5px 10px;font-size:11px}
+  .scroll-section:first-of-type{padding-top:100px}
+}

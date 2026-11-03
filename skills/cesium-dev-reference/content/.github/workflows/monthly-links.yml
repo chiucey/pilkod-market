@@ -1,0 +1,65 @@
+name: monthly-links
+
+# 每月一次,批量检查所有外部链接存活
+# 用途:发现失效链接,及时从文档移除或更新
+
+on:
+  schedule:
+    - cron: '0 5 1 * *'  # 每月 1 号 UTC 05:00(北京时间 13:00)
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 bash
+        run: chmod +x scripts/*.sh
+
+      - name: 跑链接检测
+        id: check
+        run: |
+          bash scripts/check-links.sh --timeout=10 --output=link-check.log
+          # 检查退出码非零 = 有失效
+          echo "exit=$?"
+
+      - name: 上传详细报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-links-report
+          path: link-check.log
+          if-no-files-found: ignore
+          retention-days: 60
+
+      - name: 检测到 404 → 创建 Issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const log = fs.readFileSync('link-check.log', 'utf8');
+            const notFoundMatches = log.match(/^404 .*$/gm) || [];
+            const serverErrMatches = log.match(/^5\d\d .*$/gm) || [];
+
+            if (notFoundMatches.length > 0 || serverErrMatches.length > 0) {
+              const summary = [
+                `404 失效链接: ${notFoundMatches.length} 条`,
+                `5xx 错误: ${serverErrMatches.length} 条`,
+                '',
+                '前 10 条失效:',
+                ...notFoundMatches.slice(0, 10)
+              ].join('\n');
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🔗 链接失效 ${new Date().toISOString().slice(0,10)}: ${notFoundMatches.length} 条 404`,
+                body: `月度链接检测发现 ${notFoundMatches.length} 个失效链接。\n\n${summary}\n\n详情见 artifact: monthly-links-report`,
+                labels: ['maintenance', 'broken-links', 'auto-created']
+              });
+            }

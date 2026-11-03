@@ -1,0 +1,38 @@
+{
+  "author": "MiniMax Agent",
+  "category": "Development Infrastructure",
+  "complexity": "expert",
+  "created_at": "2025-01-26",
+  "description": "Professional skill for building programming environments and designing software architecture",
+  "display_name": "Development Environment \u0026 Architecture Builder",
+  "id": 390596410577786,
+  "name": "dev-env-architect",
+  "platform": "minimax",
+  "reference_files": [
+    "references/nodejs.md",
+    "references/git.md",
+    "references/docker.md",
+    "references/vscode.md",
+    "references/cicd.md",
+    "references/testing.md",
+    "references/security.md",
+    "references/cloud-platforms.md",
+    "references/software-architecture.md",
+    "references/monorepo.md"
+  ],
+  "skill_id": 1001,
+  "tags": [
+    "nodejs",
+    "git",
+    "docker",
+    "cicd",
+    "architecture",
+    "testing",
+    "security",
+    "cloud",
+    "monorepo"
+  ],
+  "updated_at": 1776915239429,
+  "verified": true,
+  "version": "1.0.0"
+}

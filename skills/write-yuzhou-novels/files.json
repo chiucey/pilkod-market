@@ -1,0 +1,509 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "011699f37cf94a2f538d6b22d9e18b5b7d88da42",
+      "size": 11057
+    },
+    {
+      "path": "_meta.json",
+      "sha": "ea2d06957df334a12f6813e9cbde251212207bce",
+      "size": 138
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "f40e464c463bda88a58eb433bbe08755193d60c4",
+      "size": 542
+    },
+    {
+      "path": "assets/icon.svg",
+      "sha": "4c3163aa85e15ed80114f93a9a2b140a53012c44",
+      "size": 1210
+    },
+    {
+      "path": "references/conflicts.md",
+      "sha": "b5691ab9d6fa1ed618539f8e9b1a8e4a178f9674",
+      "size": 5029
+    },
+    {
+      "path": "references/handbook-trilingual.md",
+      "sha": "9c87f73445c6bddabdb38f54a0b190e656da7d5c",
+      "size": 125608
+    },
+    {
+      "path": "references/modules/commercial-pacing.md",
+      "sha": "532dcb6e52544702eb627ede46c760ac88d354d2",
+      "size": 2566
+    },
+    {
+      "path": "references/modules/long-form.md",
+      "sha": "49a8e26537fc708f26b48e6722bcfd0b663d6a06",
+      "size": 2877
+    },
+    {
+      "path": "references/modules/review-refine.md",
+      "sha": "082936072621afb54b2e1bef319973bd261e3d4e",
+      "size": 3093
+    },
+    {
+      "path": "references/modules/sepia-fiction.md",
+      "sha": "8833782aeef93fba52254c74a852277bd843cbe9",
+      "size": 3281
+    },
+    {
+      "path": "references/new-book.md",
+      "sha": "98a9a2f1928f781bd7317cf0a9b3c4aeb6233b15",
+      "size": 3461
+    },
+    {
+      "path": "references/original/index.md",
+      "sha": "712c0606c7fe78e953194ee219665a5915af377a",
+      "size": 2224
+    },
+    {
+      "path": "references/original/novel-improver/LICENSE",
+      "sha": "14fac913ccf80234b1848540089a3bbcb6e5283d",
+      "size": 1056
+    },
+    {
+      "path": "references/original/novel-improver/entry.md",
+      "sha": "e36f97290be1efea24fbc2066c79ca0b9a1d397f",
+      "size": 3063
+    },
+    {
+      "path": "references/original/novel-improver/references/index.md",
+      "sha": "e24393e291c7dc698485913db5f6adf198a795b0",
+      "size": 827
+    },
+    {
+      "path": "references/original/novel-improver/references/section-01.md",
+      "sha": "c47c206ce399ceaedd0438b5185b25a8f0a31630",
+      "size": 370
+    },
+    {
+      "path": "references/original/novel-improver/references/section-02.md",
+      "sha": "48897cf910087ee6c0dabc89228a953f075dcca0",
+      "size": 942
+    },
+    {
+      "path": "references/original/novel-improver/references/section-03.md",
+      "sha": "5c77f436ee9ea56eed36185cd95e7f4545f61fce",
+      "size": 1764
+    },
+    {
+      "path": "references/original/novel-improver/references/section-04.md",
+      "sha": "99e784cd4a97b3218d1d9d60439daebc7a794e97",
+      "size": 2913
+    },
+    {
+      "path": "references/original/novel-improver/references/section-05.md",
+      "sha": "e33532b405aba211337c8130db9d4eb8d3a3d9e5",
+      "size": 1992
+    },
+    {
+      "path": "references/original/novel-improver/references/section-06.md",
+      "sha": "b9a3527e40cdacfe42bcc1504556a4716724f24f",
+      "size": 6433
+    },
+    {
+      "path": "references/original/novel-improver/references/section-07.md",
+      "sha": "478b8b2dcf0691d91fa79cd830193e332e6ea3d5",
+      "size": 2385
+    },
+    {
+      "path": "references/original/novel-improver/references/section-08.md",
+      "sha": "e3bacbe98b95d12b7b9881505e73a85cdf48bf47",
+      "size": 2318
+    },
+    {
+      "path": "references/original/novel-improver/references/section-09.md",
+      "sha": "012f7bb29948a6de41ec855f93685dc6dd59a863",
+      "size": 1231
+    },
+    {
+      "path": "references/original/novel-improver/references/section-10.md",
+      "sha": "9c7483e2b0307307265637220a3f9dbdd1c18536",
+      "size": 660
+    },
+    {
+      "path": "references/original/piqie-writing/LICENSE",
+      "sha": "14fac913ccf80234b1848540089a3bbcb6e5283d",
+      "size": 1056
+    },
+    {
+      "path": "references/original/piqie-writing/entry.md",
+      "sha": "02e42e0536578435664ecf9c0c8d62ce1b2e5bc5",
+      "size": 2900
+    },
+    {
+      "path": "references/original/piqie-writing/references/index.md",
+      "sha": "4f54e6a4c9a34ef7805886140e09064ea143c1b6",
+      "size": 1289
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-01.md",
+      "sha": "17bd9ffb5f7d0c7fee423d575c8f0b7e534f6a85",
+      "size": 517
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-02.md",
+      "sha": "e0782c05fb67dee6c2c7d7cee6b253720ae85636",
+      "size": 818
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-03.md",
+      "sha": "2d06e1b0b172badb8e8b8c5e634ffe1b35f6c309",
+      "size": 1378
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-04.md",
+      "sha": "9bd5df6db6e450ce56a5c4bbef7a96b46b2187ca",
+      "size": 1611
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-05.md",
+      "sha": "df7164347c444c44458af82727975d549de864cb",
+      "size": 3038
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-06.md",
+      "sha": "550384644eaf1186cd8059ce8490c41fccf00169",
+      "size": 1692
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-07.md",
+      "sha": "f36764c304a378df24cb10287a409eb3d830dbb2",
+      "size": 1918
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-08.md",
+      "sha": "8a347134d3f5cf86d210133648d1a94dfe50ecfc",
+      "size": 1401
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-09.md",
+      "sha": "58cccc62aa7261a2ef95197da36a2f64f901eb21",
+      "size": 811
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-10.md",
+      "sha": "ac46f343aa8b5d72af8e88d319e8ad8e91b4d41f",
+      "size": 1460
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-11.md",
+      "sha": "f5c745498c8cea6726ac5d14d0c6d77047b0f984",
+      "size": 5940
+    },
+    {
+      "path": "references/original/piqie-writing/references/section-12.md",
+      "sha": "1f429b30ba2c5ecc79b75b04a32347761294de94",
+      "size": 2052
+    },
+    {
+      "path": "references/original/sepia/LICENSE",
+      "sha": "8168a989db907a10605f36aff7a70b6f45c75a0c",
+      "size": 1068
+    },
+    {
+      "path": "references/original/sepia/core.md",
+      "sha": "a561de0843c5bfb059d2b2a0289078d109632221",
+      "size": 13225
+    },
+    {
+      "path": "references/original/sepia/references/discourse-pass.md",
+      "sha": "216381a58e3b3ace6c71251bfb256fe6fbe03e6f",
+      "size": 5765
+    },
+    {
+      "path": "references/original/sepia/references/domains/dev-replies.md",
+      "sha": "e55abd5531f9ddce12b620f064bf001fec10e752",
+      "size": 2883
+    },
+    {
+      "path": "references/original/sepia/references/domains/journalism.md",
+      "sha": "c5b7cc21d7b431da20ef4d7ddafdf2304711ee30",
+      "size": 9338
+    },
+    {
+      "path": "references/original/sepia/references/domains/postmortems.md",
+      "sha": "1c251120f386a0ca6323920c4f0e5275f49680b3",
+      "size": 2909
+    },
+    {
+      "path": "references/original/sepia/references/domains/release-notes.md",
+      "sha": "e9e073a313b20bad4c90a080a19e4e13bd032798",
+      "size": 2348
+    },
+    {
+      "path": "references/original/sepia/references/domains/tech-articles.md",
+      "sha": "84067510881386afaae3bcb278a51cec6dc82f59",
+      "size": 3334
+    },
+    {
+      "path": "references/original/sepia/references/domains/tickets.md",
+      "sha": "c70a6107f96a4d708f6db5613c2133790756d7cb",
+      "size": 2068
+    },
+    {
+      "path": "references/original/sepia/references/languages/zh.md",
+      "sha": "5f853b4ef43b2f7079856889328cfb9c7569884b",
+      "size": 31055
+    },
+    {
+      "path": "references/original/sepia/references/model-fingerprints.md",
+      "sha": "0c53e069ccfa92c0814ecaf8e69adc1c5f7c4643",
+      "size": 19507
+    },
+    {
+      "path": "references/original/sepia/references/narrative-pass.md",
+      "sha": "d9a77923f457ed05507ed0c95632df86f63b1c33",
+      "size": 13443
+    },
+    {
+      "path": "references/original/sepia/references/professional-pass.md",
+      "sha": "6dc09a04cd6c411c206a801a8b6637695323373f",
+      "size": 8520
+    },
+    {
+      "path": "references/original/sepia/references/rubric.md",
+      "sha": "0d5bb0751c4f6f88bdfd79d60dc649a1214784ab",
+      "size": 9877
+    },
+    {
+      "path": "references/original/sepia/references/style-pass.md",
+      "sha": "4abf5f6a3d71118107d3d9284a1fc6491f85340d",
+      "size": 15777
+    },
+    {
+      "path": "references/original/sepia/references/voice-skills.md",
+      "sha": "00dc581f9ae3eed129d87043bc37c3f86acf9b90",
+      "size": 13296
+    },
+    {
+      "path": "references/original/sepia/references/voices/PERSONA-TEMPLATE.md",
+      "sha": "00bcba17c284b8aeacd8d55b99c45786203857d5",
+      "size": 7482
+    },
+    {
+      "path": "references/original/sepia/references/voices/hemingway.md",
+      "sha": "9b52a47dec8c1f14ef355f1c76512ec088d1f891",
+      "size": 13153
+    },
+    {
+      "path": "references/original/sepia/references/voices/personas/nyaneko.md",
+      "sha": "a7550a820afd8b36453d71d11ade5bd9ffbe52b2",
+      "size": 28189
+    },
+    {
+      "path": "references/original/sepia/references/voices/registry.md",
+      "sha": "f83e7d0ab38a7fee1399079c3270ba2d028d0126",
+      "size": 6759
+    },
+    {
+      "path": "references/original/sepia/references/voices/tw-journalism.md",
+      "sha": "b6d8d1d8c1baab9e602b94f05845e73848db23ef",
+      "size": 35358
+    },
+    {
+      "path": "references/original/sepia/research/citations-narrative.md",
+      "sha": "2657ca7225026c6a268c6652ad3629a3edc0a0ab",
+      "size": 6413
+    },
+    {
+      "path": "references/original/sepia/research/citations-style.md",
+      "sha": "8ac1280c3aa71ae6feef7f4c81e63e19f21bc328",
+      "size": 16269
+    },
+    {
+      "path": "references/original/sepia/research/detectors.md",
+      "sha": "41273732c99179739c9eefd77469994c9aa428aa",
+      "size": 8241
+    },
+    {
+      "path": "references/original/sepia/research/ecosystem.md",
+      "sha": "5e9429100d4014adb286cbcb1b73a3e3622c9181",
+      "size": 3821
+    },
+    {
+      "path": "references/original/sepia/research/hemingway.md",
+      "sha": "5a9d65527b90d68b059c420725f7337c5c64f6e4",
+      "size": 17349
+    },
+    {
+      "path": "references/original/sepia/research/newswriting-guides.md",
+      "sha": "b58fe201edb988bca36410bfb9475941d983c6af",
+      "size": 16929
+    },
+    {
+      "path": "references/original/sepia/research/platforms.md",
+      "sha": "e9e5530fbbf10d53a70e892fc223ddcfe2d61257",
+      "size": 2975
+    },
+    {
+      "path": "references/original/sepia/research/rhythm-syntax.md",
+      "sha": "1074f55ce8c41a78f16e68ef0d485cc2c9016f45",
+      "size": 13744
+    },
+    {
+      "path": "references/original/sepia/research/sources.md",
+      "sha": "cf70318ebac8b920d7957a2cf5ae9b52e4de1285",
+      "size": 61566
+    },
+    {
+      "path": "references/original/sepia/research/storyscope.md",
+      "sha": "9e517b1533b9064541fe9f3f2e3c22b6a111fc5c",
+      "size": 10967
+    },
+    {
+      "path": "references/original/sepia/research/zh-news-corpus.md",
+      "sha": "786aaba491ac447bf102c03a7d91e4bcc99c13a5",
+      "size": 16067
+    },
+    {
+      "path": "references/original/sepia/sepia-review-entry.md",
+      "sha": "68c170ca1608c439ee49c1df82e4f36a1f3fd2dd",
+      "size": 2252
+    },
+    {
+      "path": "references/original/sepia/sepia-write-entry.md",
+      "sha": "5f54a8fcd99978ab2ec2f16aca464351dfced530",
+      "size": 2239
+    },
+    {
+      "path": "references/original/writing-novel/LICENSE",
+      "sha": "14fac913ccf80234b1848540089a3bbcb6e5283d",
+      "size": 1056
+    },
+    {
+      "path": "references/original/writing-novel/entry.md",
+      "sha": "b68ced24479fc98503e1013dac7f86d7af1a1a14",
+      "size": 2939
+    },
+    {
+      "path": "references/original/writing-novel/references/index.md",
+      "sha": "5f7fa0e7939dbd412fe67ac92e2c464b6f6534ca",
+      "size": 1777
+    },
+    {
+      "path": "references/original/writing-novel/references/section-01.md",
+      "sha": "c84ab391e928ca52dc8033e8a426709d8cf5b664",
+      "size": 372
+    },
+    {
+      "path": "references/original/writing-novel/references/section-02.md",
+      "sha": "21f79c436a0289e32504dd68f848c66b9a10e186",
+      "size": 552
+    },
+    {
+      "path": "references/original/writing-novel/references/section-03.md",
+      "sha": "d7268dde26980265631a922c870fbd6943f35628",
+      "size": 4145
+    },
+    {
+      "path": "references/original/writing-novel/references/section-04.md",
+      "sha": "aa1ef12f451add3c77d8b77acc0758272ffb9e8d",
+      "size": 2584
+    },
+    {
+      "path": "references/original/writing-novel/references/section-05.md",
+      "sha": "fdf6583d25679efac16c420ff8d30adce1f45389",
+      "size": 4999
+    },
+    {
+      "path": "references/original/writing-novel/references/section-06.md",
+      "sha": "d05be4679ae57fe6aec5316b1ea6abc872d21073",
+      "size": 1698
+    },
+    {
+      "path": "references/original/writing-novel/references/section-07.md",
+      "sha": "9046ae14a8758fdfb868ef847c7c9ba1e6bb97bd",
+      "size": 5246
+    },
+    {
+      "path": "references/original/writing-novel/references/section-08.md",
+      "sha": "085c624a2042661a9cdd17fc32bc1944bb89a794",
+      "size": 1779
+    },
+    {
+      "path": "references/original/writing-novel/references/section-09.md",
+      "sha": "9a839f960039b57fde5c71a73f6f81c846ce874f",
+      "size": 2023
+    },
+    {
+      "path": "references/original/writing-novel/references/section-10.md",
+      "sha": "9aea7187b6c9174ef40cd50f5621edb91c6e2bae",
+      "size": 1534
+    },
+    {
+      "path": "references/original/writing-novel/references/section-11.md",
+      "sha": "9a430f9fa717e3c8c88a95c101721a240edb8064",
+      "size": 1523
+    },
+    {
+      "path": "references/original/writing-novel/references/section-12.md",
+      "sha": "9a2b0bd065f9cbe7cf981b91bc04f516af9958ea",
+      "size": 806
+    },
+    {
+      "path": "references/original/writing-novel/references/section-13.md",
+      "sha": "6e1fd3d5a0e69886e91efc71813d2dd84bb63c95",
+      "size": 1292
+    },
+    {
+      "path": "references/original/writing-novel/references/section-14.md",
+      "sha": "180492491011ca05b979d83d18a63f3777fa9119",
+      "size": 1909
+    },
+    {
+      "path": "references/original/writing-novel/references/section-15.md",
+      "sha": "b67835fe4380af5dadc0829b1514b6c904d12e95",
+      "size": 12457
+    },
+    {
+      "path": "references/original/writing-novel/references/section-16.md",
+      "sha": "beabf75ab212e67ac22868d48f5bd69963c7f643",
+      "size": 6188
+    },
+    {
+      "path": "references/original/writing-novel/references/section-17.md",
+      "sha": "d77f1ef07d4550af4322f99906d2f4ff86d8b3b8",
+      "size": 6485
+    },
+    {
+      "path": "references/original/writing-novel/references/section-18.md",
+      "sha": "3ef97c8b7f0ec9b3f9201332db6271c1b58497d1",
+      "size": 5722
+    },
+    {
+      "path": "references/original/writing-novel/references/section-19.md",
+      "sha": "f03845374bac34ec3218804be2550d23fe743429",
+      "size": 4993
+    },
+    {
+      "path": "references/original/writing-novel/references/section-20.md",
+      "sha": "d1c08e1f9a78dd340b57c73fe383fc4895b8cbae",
+      "size": 8328
+    },
+    {
+      "path": "references/original/writing-novel/references/section-21.md",
+      "sha": "8615e4be78d4ca29452196b7d031b7377ba0bd82",
+      "size": 4570
+    },
+    {
+      "path": "references/scene-rules.md",
+      "sha": "b77a9bce1d24f502dea46dfab0f667d33bc0c19c",
+      "size": 3878
+    },
+    {
+      "path": "references/source-manifest.json",
+      "sha": "16f5e64149b0f93c02f6d7f1448bc7e3f1567fa5",
+      "size": 2218
+    },
+    {
+      "path": "references/sources.md",
+      "sha": "b3ea2a77ec692e35fabf08a81471b92747e74b2c",
+      "size": 1700
+    }
+  ]
+}

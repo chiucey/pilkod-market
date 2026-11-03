@@ -1,0 +1,57 @@
+{
+  "author": "MiniMax Agent",
+  "category": "professional",
+  "created_at": "2026-04-17",
+  "dependency": {
+    "python": [
+      "pdfplumber==0.11.4",
+      "openpyxl==3.1.5"
+    ]
+  },
+  "description": "专利深度个案解读技能。逐件读取专利PDF并提供深度分析，涵盖核心技术方案拆解、研发方向启发、发明人分类、技术分支标记等维度，将分析结果实时追加到Excel报告。支持断点续接、批次暂停、质量熔断机制。当用户需要对专利进行技术架构梳理、发明人分析、技术分支评估、研发参考价值分析时使用。",
+  "features": [
+    "逐件深度个案解读",
+    "发明人分类标记",
+    "技术分支归类",
+    "Excel报告实时追加",
+    "断点续接机制",
+    "批次暂停确认",
+    "质量熔断机制"
+  ],
+  "id": 388515251520150,
+  "name": "patent-deep-analysis",
+  "platform": "minimax",
+  "resources": {
+    "references": [
+      {
+        "description": "专利深度个案解读框架，包含分析维度详解和输出格式规范",
+        "name": "patent-analysis-framework.md"
+      },
+      {
+        "description": "技术分支解释汇总，包含五大技术层级的详细定义和关键技术说明",
+        "name": "technical-branch-definitions.md"
+      }
+    ],
+    "scripts": [
+      {
+        "description": "从PDF文件中提取文本内容",
+        "name": "extract_pdf_text.py",
+        "usage": "python scripts/extract_pdf_text.py --file \u003cpdf_path\u003e --output \u003cjson_path\u003e"
+      },
+      {
+        "description": "生成或追加专利分析Excel报告",
+        "name": "generate_patent_excel.py",
+        "usage": "python scripts/generate_patent_excel.py --input \u003cjson_path\u003e --output \u003cxlsx_path\u003e --append"
+      }
+    ]
+  },
+  "tags": [
+    "专利分析",
+    "专利解读",
+    "技术分析",
+    "PDF处理",
+    "Excel报告"
+  ],
+  "updated_at": 1776406536906,
+  "version": "1.0.0"
+}

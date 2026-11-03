@@ -1,0 +1,46 @@
+benchmark:
+  benchmark_score: 3.0
+  eval_mode: tool_test(analyze.py)
+  output: "[TOOL: analyze.py]\n{\n  \"status\": \"success\",\n  \"skill\": \"digital-weber-expert\"\
+    ,\n  \"timestamp\": \"2026-04-27T23:08:29.948554\",\n  \"data\": {\n    \"test\"\
+    : \"data\"\n  },\n  \"analysis\": {\n    \"status\": \"completed\",\n    \"analysis_type\"\
+    : \"digital-weber-expert_analysis\",\n    \"summary\": \"分析已完成\",\n    \"timestamp\"\
+    : \"2026-04-27T23:08:29.948554\"\n  }\n}"
+  passed: false
+  test_prompt: 分析一家互联网大厂的科层制特征，对比传统制造业组织。
+dimensions:
+  architecture:
+    score: 9.0
+    weight: 15
+  benchmark:
+    score: 3.0
+    weight: 25
+  boundary:
+    score: 8.0
+    weight: 10
+  checkpoint:
+    score: 8.0
+    weight: 7
+  frontmatter:
+    score: 9.0
+    weight: 8
+  resources:
+    score: 10.0
+    weight: 5
+  specificity:
+    score: 9.0
+    weight: 15
+  workflow:
+    score: 9.0
+    weight: 15
+improved: true
+previous_score: 50.9
+quality_score: 56.1
+refinement_history:
+- delta: 5.200000000000003
+  quality_score: 56.1
+  timestamp: '2026-04-27T15:08:29.958083+00:00'
+skill: digital-weber-expert
+structure_base: 73.8
+timestamp: '2026-04-27T15:08:29.958083+00:00'
+total_100: 81.3

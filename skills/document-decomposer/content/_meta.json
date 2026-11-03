@@ -1,0 +1,22 @@
+{
+  "author": "MiniMax Agent",
+  "category": "productivity",
+  "changelog": "1.2.0: 新增未知场景引导机制，当无法猜测用户特定场景时，采用填空式引导让用户自述需求",
+  "created_at": "2026-04-10",
+  "description": "将复杂文档转化为通俗易懂、结构清晰、阅读愉悦的精品内容",
+  "display_name": "文档解构专家",
+  "id": 389694149395274,
+  "name": "document-decomposer",
+  "platform": "minimax",
+  "tags": [
+    "文档分析",
+    "内容提炼",
+    "结构优化",
+    "通俗改写",
+    "意图识别",
+    "智能澄清",
+    "未知场景引导"
+  ],
+  "updated_at": 1776693642189,
+  "version": "1.2.0"
+}

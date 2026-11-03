@@ -1,0 +1,21 @@
+{
+  "author": "MiniMax Agent",
+  "compatibility": {
+    "laudecode": true,
+    "workbuddy": true
+  },
+  "description": "Vendor risk assessment skill - Conduct comprehensive due diligence on potential suppliers by checking business risks, compliance issues, bankruptcy, credit violations, and military procurement restrictions through public data sources.",
+  "id": 386108497937367,
+  "name": "vendor-risk-assessment",
+  "platform": "minimax",
+  "tags": [
+    "vendor",
+    "supplier",
+    "risk",
+    "compliance",
+    "due-diligence",
+    "credit-check"
+  ],
+  "updated_at": 1775819375831,
+  "version": "1.0.0"
+}

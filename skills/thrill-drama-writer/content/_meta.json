@@ -1,0 +1,30 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-06-12",
+  "description": "专为爽剧/微短剧设计的模块化编剧系统，通过11个专业模块完成从创意定位到最终输出的完整流程",
+  "id": 408101028098214,
+  "modules": [
+    "ThemeAnchor",
+    "WorldForge",
+    "CharSmith",
+    "PlotFrame",
+    "EpBuilder",
+    "ClimaxLadder",
+    "ThrillEngine",
+    "DialogueForge",
+    "GenderTune",
+    "PacePay",
+    "ThemeLift"
+  ],
+  "name": "thrill-drama-writer",
+  "platform": "minimax",
+  "skill_id": "184285",
+  "updated_at": 1781234297900,
+  "version": "1.0.0",
+  "workflow_stages": [
+    "创意阶段",
+    "架构阶段",
+    "优化阶段",
+    "适配阶段"
+  ]
+}

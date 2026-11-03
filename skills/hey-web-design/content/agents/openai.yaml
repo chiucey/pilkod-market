@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hey Web Design"
+  short_description: "说 Hey 即可启动，通过中文确认页逐步完成多页面网站"
+  default_prompt: "使用 $hey-web-design，在我说 Hey 时用普通语言开始或继续网站设计，并在每一步更新确认页和实际网站。"
+
+policy:
+  allow_implicit_invocation: true

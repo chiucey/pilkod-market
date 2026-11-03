@@ -1,0 +1,14 @@
+interface:
+  display_name: english learning webpage
+  short_description: 制作英语精听学习网页。用于把用户提供的本地视频或音频、word-level 字幕，以及可选的同名官方字幕整理成单文件 HTML；有官方字幕时校准文本，没有官方字幕时使用
+    word-level 字幕文本。支持词级高亮、选中单词范围播放、中文翻译、连读弱读提示、固定搭配、学习进度持久化、移动端点选和 Daniel 风格模板。用户提到英语学习网页、精听网页、词级字幕、官方字幕校准、逐词高亮、选中目标播放、字幕学习页、听力学习
+    HTML 或 Daniel 风格页面时使用本技能。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

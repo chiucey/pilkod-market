@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>独立储能电站接入点与调度层级综合分析</title>
+<style>
+  :root{--p:#0b2d4a;--s:#1565c0;--gold:#c9a84c;--w:#fff;--l:#f4f7fb;--bd:#cfd8e3;--text:#1a2e3e;--b:#607d8b;--amber:#fff8e1;--green:#f0faf4;--red:#fff5f5}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--l);color:var(--text);line-height:1.85;font-size:14px}
+  .topbar{background:linear-gradient(135deg,#0b2d4a,#1a4a6e);color:#fff;padding:11px 40px;font-size:13px;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,0.2);display:flex;align-items:center;gap:10px}
+  .topbar::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
+  .hero{background:linear-gradient(160deg,#0b2d4a 0%,#1a3a6a 55%,#1e5f9e 100%);color:#fff;padding:48px 56px 44px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-70px;right:-50px;width:280px;height:280px;background:radial-gradient(circle,rgba(201,168,76,0.1) 0%,transparent 70%);border-radius:50%}
+  .hero-eyebrow{font-size:11px;letter-spacing:3px;color:rgba(255,255,255,0.45);margin-bottom:14px}
+  .hero h1{font-size:25px;font-weight:bold;letter-spacing:1px;line-height:1.6;margin-bottom:12px;max-width:700px}
+  .hero .lead{border-left:3px solid rgba(255,255,255,0.3);padding-left:14px;font-size:14px;color:rgba(255,255,255,0.78);line-height:2;max-width:660px}
+  .hero-meta{margin-top:20px;font-size:12px;color:rgba(255,255,255,0.35)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 32px}
+
+  .摘要{background:var(--w);border-radius:12px;padding:18px 26px;margin:22px auto;border-left:5px solid var(--gold);box-shadow:0 1px 6px rgba(0,0,0,0.06)}
+  .摘要-label{font-size:11px;font-weight:bold;letter-spacing:2px;color:var(--gold);margin-bottom:8px}
+  .摘要 p{font-size:13.5px;color:var(--text);line-height:2}
+
+  /* 五级调度体系 */
+  .调度体系{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:20px auto}
+  .调度级{background:var(--w);border-radius:8px;padding:12px 10px;text-align:center;border-top:3px solid;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+  .调度级:hover{box-shadow:0 3px 10px rgba(0,0,0,0.1);transform:translateY(-1px)}
+  .级别-国调{border-color:#c0392b}
+  .级别-网调{border-color:#8e44ad}
+  .级别-省调{border-color:#1565c0}
+  .级别-市调{border-color:#00897b}
+  .级别-县调{border-color:#43a047}
+  .调度级 .级名{font-size:15px;font-weight:bold;margin-bottom:3px}
+  .调度级 .级机构{font-size:10.5px;color:var(--b);margin-bottom:4px}
+  .调度级 .级电压{font-size:10px;color:var(--b);background:var(--l);border-radius:5px;padding:3px 6px;margin-bottom:4px}
+  .调度级 .级管辖{font-size:10.5px;color:var(--text);line-height:1.6}
+  .级别-国调 .级名{color:#c0392b}
+  .级别-网调 .级名{color:#8e44ad}
+  .级别-省调 .级名{color:#1565c0}
+  .级别-市调 .级名{color:#00897b}
+  .级别-县调 .级名{color:#43a047}
+
+  /* 矩阵表格 */
+  .矩阵{background:var(--w);border-radius:12px;padding:20px 24px;margin:24px auto;border:1px solid var(--bd);box-shadow:0 1px 6px rgba(0,0,0,0.05)}
+  .矩阵 h2{font-size:14px;font-weight:bold;color:var(--p);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--p);letter-spacing:0.5px}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{background:var(--p);color:#fff;padding:9px 12px;text-align:center;font-weight:500;font-size:12px}
+  th:first-child{text-align:left;border-radius:6px 0 0 0}
+  th:last-child{border-radius:0 6px 0 0}
+  td{padding:9px 12px;border-bottom:1px solid var(--bd);vertical-align:top;line-height:1.75}
+  tr:nth-child(even) td{background:#f8fafc}
+  tr:last-child td:first-child{border-radius:0 0 0 6px}
+  tr:last-child td:last-child{border-radius:0 0 6px 0}
+  .dispatch-tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:10.5px;font-weight:bold}
+  .dispatch-zong{background:#fce4ec;color:#c62828}
+  .dispatch-sheng{background:#e3f2fd;color:#1565c0}
+  .dispatch-shi{background:#e0f2f1;color:#00695c}
+  .dispatch-xian{background:#e8f5e9;color:#2e7d32}
+  .highlight{background:#fff9c4 !important}
+
+  /* 潮流侧 vs 网侧 */
+  .侧对比{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px auto}
+  .侧-card{background:var(--w);border-radius:12px;padding:18px 20px;border-top:4px solid;box-shadow:0 1px 5px rgba(0,0,0,0.05)}
+  .侧-card:hover{box-shadow:0 4px 14px rgba(0,0,0,0.09)}
+  .侧-潮流{border-color:#0284c7}
+  .侧-网侧{border-color:#7c4d50}
+  .侧-icon{font-size:28px;margin-bottom:8px}
+  .侧-title{font-size:15px;font-weight:bold;margin-bottom:5px}
+  .侧-潮流 .侧-title{color:#0284c7}
+  .侧-网侧 .侧-title{color:#7c4d50}
+  .侧-def{font-size:12px;color:var(--b);background:var(--l);border-radius:8px;padding:8px 12px;margin-bottom:10px;line-height:1.8}
+  .侧-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:3px;margin-right:3px;font-weight:bold}
+  .tag-dispatch{background:#e3f2fd;color:#1565c0}
+  .tag-scale{background:#fff8e1;color:#92700c}
+  .tag-cost{background:#f0faf4;color:#2e7d32}
+  .tag-loss{background:#fce4ec;color:#c62828}
+  .侧-list{list-style:none;padding:0;margin:0}
+  .侧-list li{font-size:12px;color:var(--text);padding:4px 0;border-bottom:1px solid var(--l);display:flex;gap:6px}
+  .侧-list li::before{content:"→";color:var(--gold);flex-shrink:0;font-weight:bold}
+  .侧-list li:last-child{border-bottom:none}
+
+  /* 核心洞察 */
+  .洞察{background:linear-gradient(135deg,#0b2d4a,#0f2d4a);color:#fff;border-radius:12px;padding:22px 26px;margin:28px auto}
+  .洞察 h2{font-size:12px;font-weight:bold;letter-spacing:1px;margin-bottom:12px;opacity:0.5}
+  .洞察矩阵{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+  .洞察item{background:rgba(255,255,255,0.07);border-radius:10px;padding:13px}
+  .洞察item h4{font-size:11.5px;font-weight:bold;margin-bottom:4px;color:var(--gold)}
+  .洞察item p{font-size:11px;color:rgba(255,255,255,0.6);line-height:1.7}
+  .洞察结论{background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.25);border-radius:10px;padding:14px 18px;font-size:13px;line-height:2;text-align:center}
+
+  /* 结论 */
+  .結論{background:linear-gradient(135deg,#0b2d4a,#0f2d4a);color:#fff;border-radius:12px;padding:26px 30px;margin:28px auto}
+  .結論grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+  .結論item{background:rgba(255,255,255,0.07);border-radius:10px;padding:13px}
+  .結論item h4{font-size:11.5px;font-weight:bold;margin-bottom:5px}
+  .結論item p{font-size:11px;color:rgba(255,255,255,0.6);line-height:1.7}
+  .結論final{background:rgba(255,255,255,0.07);border-radius:10px;padding:15px 20px;font-size:13px;line-height:2;text-align:center}
+  .結論final strong{color:var(--gold)}
+  .底部{text-align:center;padding:18px;color:#aaa;font-size:12px;border-top:1px solid var(--bd);margin-top:16px}
+
+  /* 图示说明 */
+  .图示{background:var(--amber);border-radius:10px;padding:12px 16px;margin:16px auto;font-size:12.5px;color:#78350f;line-height:1.8}
+  .图示 strong{color:#92400e}
+
+  @media(max-width:768px){
+    .调度体系{grid-template-columns:1fr}
+    .侧对比,.洞察矩阵,.結論grid{grid-template-columns:1fr}
+    .hero{padding:32px 24px 26px}
+    .hero h1{font-size:20px}
+    .topbar{padding:10px 20px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  🔋 储能电站接入点与调度层级综合分析
+  <span style="font-size:11px;font-weight:normal;opacity:0.4;margin-left:auto">电源侧·网侧·潮流侧 &nbsp;×&nbsp; 省调·市调 &nbsp;·&nbsp; 2026年4月</span>
+</div>
+
+<div class="hero">
+  <div class="hero-eyebrow">GRID INTEGRATION &amp; DISPATCH HIERARCHY ANALYSIS</div>
+  <h1>独立储能电站接入点<br>与调度层级综合分析</h1>
+  <div class="lead">储能电站的接入点（电源侧/潮流侧/网侧）决定了其<strong>物理位置</strong>，调度层级（省调/市调/县调）决定了其<strong>调度权限</strong>。两者共同决定了储能项目的<strong>调度关系、盈利模式和市场准入资格</strong>——这是独立储能项目最核心的系统设计决策。</div>
+  <div class="hero-meta">2026年4月21日 &nbsp;·&nbsp; 数据来源：南网总调调度规则、GB/T 36547-2024、CNESA、五级调度体系</div>
+</div>
+
+<div class="wrap">
+  <div class="摘要">
+    <div class="摘要-label">核心摘要</div>
+    <p>储能接入点与调度层级存在强关联但非绝对一一对应：<strong>接入点决定物理位置，调度层级决定管理归属</strong>。同一接入位置可能归属不同调度层级（取决于电压等级），同一调度层级可管辖不同接入点。<strong>潮流侧≈配电网侧（用户侧），网侧≈输电网侧（变电站侧）</strong>——两者与"电源侧"构成储能接入的三层空间模型，配合省调/市调/地调的五级调度体系，形成完整的调度关系网络。</p>
+  </div>
+</div>
+
+<!-- 五级调度体系 -->
+<div class="wrap">
+  <h2 style="font-size:13px;font-weight:bold;color:var(--p);margin:20px 0 10px">⚡ 中国电力五级调度体系（储能适用）</h2>
+  <div class="调度体系">
+
+    <div class="调度级 级别-国调">
+      <div class="级名">国调</div>
+      <div class="级机构">国家电力调度控制中心</div>
+      <div class="级电压">±800kV 特高压直流</div>
+      <div class="级管辖">跨省跨区输电<br>大型直流配套储能<br>主干网架</div>
+    </div>
+
+    <div class="调度级 级别-网调">
+      <div class="级名">网调</div>
+      <div class="级机构">六大区域网调<br>南网总调（直管五省）</div>
+      <div class="级电压">500kV 主干网架</div>
+      <div class="级管辖">区域省间交易<br>500kV并网储能<br>直流配套储能</div>
+    </div>
+
+    <div class="调度级 级别-省调">
+      <div class="级名">省调</div>
+      <div class="级机构">各省电力公司省调</div>
+      <div class="级电压">220kV / 330kV</div>
+      <div class="级管辖">220kV并网储能<br>省內主力电厂<br>新能源消纳</div>
+    </div>
+
+    <div class="调度级 级别-市调">
+      <div class="级名">市调（地调）</div>
+      <div class="级机构">各地市供电局地调</div>
+      <div class="级电压">110kV / 35kV</div>
+      <div class="级管辖">110kV储能（主流）<br>35kV储能<br>配电网运行</div>
+    </div>
+
+    <div class="调度级 级别-县调">
+      <div class="级名">县调</div>
+      <div class="级机构">县级供电公司</div>
+      <div class="级电压">10kV 及以下</div>
+      <div class="级管辖">10kV分布式储能<br>台区侧储能<br>农村微电网</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 储能调度权限表 -->
+<div class="wrap">
+  <div class="矩阵">
+    <h2>📊 储能电站调度权限划分（南方电网标准，全国基本一致）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:14%">电压等级</th>
+          <th style="width:18%">接入位置</th>
+          <th style="width:15%">调度层级</th>
+          <th style="width:18%">调度关系</th>
+          <th style="width:35%">储能适用类型与功能</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td><strong>≥500kV</strong></td>
+          <td>特高压直流送端/受端换流站侧</td>
+          <td><span class="dispatch-tag dispatch-zong">总调/网调</span></td>
+          <td>直接接受总调（国调/南网总调）指令，毫秒级响应</td>
+          <td>配套储能（调峰+平抑直流功率波动），规模≥200MW，参与跨区电力调节</td>
+        </tr>
+        <tr>
+          <td><strong>220kV</strong></td>
+          <td>220kV变电站高压侧</td>
+          <td><span class="dispatch-tag dispatch-sheng">省调（中调）</span></td>
+          <td>接受省调指令，响应时间&lt;1分钟，参与省调 AGC/AVC</td>
+          <td>独立储能主流规格之一（100~200MW），参与容量市场+调峰调频</td>
+        </tr>
+        <tr>
+          <td><strong>110kV</strong></td>
+          <td>110kV变电站高压/中压侧</td>
+          <td><span class="dispatch-tag dispatch-shi">市调（地调）</span></td>
+          <td>接受地调指令，响应时间&lt;5分钟，参与地调调度计划</td>
+          <td>独立共享储能最常见规格（50~100MW），参与省级容量电价+调峰辅助服务</td>
+        </tr>
+        <tr class="highlight">
+          <td><strong>35kV</strong></td>
+          <td>35kV汇集线路/变电站中压侧</td>
+          <td><span class="dispatch-tag dispatch-shi">市调（地调）</span></td>
+          <td>接受地调指令，受地调负荷预测和新能源消纳需求约束</td>
+          <td>共享储能主要接入形式，靠近新能源汇集站或工业园区，调度灵活</td>
+        </tr>
+        <tr>
+          <td><strong>10kV</strong></td>
+          <td>10kV配电室/工业用户侧</td>
+          <td><span class="dispatch-tag dispatch-xian">县调/市调</span></td>
+          <td>接受县调或市调指令，通常以"日前计划+实时调度"模式运行</td>
+          <td>工商业用户侧储能，峰谷套利+需求响应为主，规模1~50MW</td>
+        </tr>
+        <tr>
+          <td><strong>400V</strong></td>
+          <td>台区低压侧/建筑配电室</td>
+          <td><span class="dispatch-tag dispatch-xian">县调</span></td>
+          <td>主要接受县调管理，参与低压配电网运行，响应速度要求最高</td>
+          <td>台区侧/社区储能，分布式光储充一体化，单机≤0.5MW</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="图示">
+      <strong>注：</strong>上级调度机构可越级向下级储能电站下达指令（"统一调度、分级管理"原则）；地调管辖的储能，省调在紧急情况下可<strong>直接指挥</strong>，不受调度层级限制。
+    </div>
+  </div>
+</div>
+
+<!-- 潮流侧 vs 网侧 详细对比 -->
+<div class="wrap">
+  <h2 style="font-size:13px;font-weight:bold;color:var(--p);margin:20px 0 12px;border-bottom:2px solid var(--p);padding-bottom:6px">⚖️ 潮流侧接入 vs 网侧接入：空间位置与调度关系的本质差异</h2>
+  <div class="侧对比">
+
+    <div class="侧-card 侧-潮流">
+      <div class="侧-icon">🌊</div>
+      <div class="侧-title">潮流侧接入（配电网侧）</div>
+      <div class="侧-def">
+        <strong>定义：</strong>储能接入<strong>配电网</strong>的潮流分配节点，即电力"从高压向低压流动、从电网向用户流动"的路径上，通常位于<strong>10kV配电线路、工业园区配电室或台区低压侧</strong>。
+      </div>
+      <p style="font-size:12px;margin-bottom:8px">
+        <span class="侧-tag tag-dispatch">调度层级：市调/县调</span>
+        <span class="侧-tag tag-scale">规模：0.5~50MW</span>
+        <span class="侧-tag tag-cost">接入成本：★低</span>
+        <span class="侧-tag tag-loss">线损：＜0.5%</span>
+      </p>
+      <ul class="侧-list">
+        <li><strong>物理位置：</strong>配电网10kV线路、公用配电室、工业用户配电侧</li>
+        <li><strong>电力流向：</strong>储能放电→配电网→用户负载（本地消纳为主）</li>
+        <li><strong>调度特点：</strong>受本地负荷曲线强约束，充放电受市调/县调管控，不能反向送入主网</li>
+        <li><strong>调度层级：</strong>由地调（市调）或县调管辖</li>
+        <li><strong>盈利模式：</strong>峰谷套利+需量管理+需求响应（最直接）</li>
+        <li><strong>适用场景：</strong>工业园区、数据中心、商超楼宇、社区充电桩配套</li>
+        <li><strong>核心优势：</strong>接入成本低、收益最直接；减轻配网峰时压力</li>
+        <li><strong>核心劣势：</strong>规模受限、调度受制于用户负荷曲线、不具备独立参与容量市场资格</li>
+      </ul>
+    </div>
+
+    <div class="侧-card 侧-网侧">
+      <div class="侧-icon">🔌</div>
+      <div class="侧-title">网侧接入（输电网侧）</div>
+      <div class="侧-def">
+        <strong>定义：</strong>储能接入<strong>输电网</strong>的供电节点，即电力"从电源侧向全网分配"的主干通道上，通常位于<strong>35kV/110kV/220kV变电站的高中压母线</strong>，可向主网输出有功功率。
+      </div>
+      <p style="font-size:12px;margin-bottom:8px">
+        <span class="侧-tag tag-dispatch">调度层级：省调/市调</span>
+        <span class="侧-tag tag-scale">规模：50~500MW</span>
+        <span class="侧-tag tag-cost">接入成本：★★★★高</span>
+        <span class="侧-tag tag-loss">线损：1~2%</span>
+      </p>
+      <ul class="侧-list">
+        <li><strong>物理位置：</strong>35kV/110kV/220kV变电站高中压母线</li>
+        <li><strong>电力流向：</strong>储能放电→主网→全网分配（可参与全网调度）</li>
+        <li><strong>调度特点：</strong>直接受省调/市调（地调）调度，可执行"两充两放"调度计划</li>
+        <li><strong>调度层级：</strong>省调（中调）或市调（地调）管辖，取决于电压等级</li>
+        <li><strong>盈利模式：</strong>容量电价（114号文）+ 调峰辅助服务 + 容量租赁（最丰富）</li>
+        <li><strong>适用场景：</strong>城市周边变电站重载缓解、新能源汇集站侧、电网侧独立储能</li>
+        <li><strong>核心优势：</strong>调度灵活、优先级高、可参与多个市场、容量利用率高</li>
+        <li><strong>核心劣势：</strong>接入成本高（送出线路+间隔改造）、审批流程长</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- 综合矩阵：接入点 × 调度层级 -->
+<div class="wrap">
+  <div class="矩阵">
+    <h2>🔬 三维矩阵：接入位置 × 调度层级 × 盈利模式</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>接入类型</th>
+          <th>典型电压</th>
+          <th>调度层级</th>
+          <th>核心调度约束</th>
+          <th>最优盈利模式</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>电源侧</strong>（新能源场站侧）</td>
+          <td>35kV汇集线路</td>
+          <td><span class="dispatch-tag dispatch-sheng">省调</span> <span class="dispatch-tag dispatch-shi">市调</span></td>
+          <td>受风光出力约束，必须跟随新能源曲线运行，无法独立充放电</td>
+          <td>减少弃风弃光+辅助服务补贴（经济性受限）</td>
+        </tr>
+        <tr class="highlight">
+          <td><strong>网侧</strong>（变电站高压侧）</td>
+          <td>110kV / 220kV</td>
+          <td><span class="dispatch-tag dispatch-shi">市调</span> <span class="dispatch-tag dispatch-sheng">省调</span></td>
+          <td>由省调/地调直接调度，可执行"两充两放"，不受负荷曲线约束</td>
+          <td>容量电价+调峰+调频（收益最全，2026年主流）</td>
+        </tr>
+        <tr>
+          <td><strong>潮流侧</strong>（配电网/用户侧）</td>
+          <td>10kV / 35kV</td>
+          <td><span class="dispatch-tag dispatch-shi">市调</span> <span class="dispatch-tag dispatch-xian">县调</span></td>
+          <td>受本地负荷曲线强约束，充放电时段必须与用户负荷匹配，否则违约</td>
+          <td>峰谷套利+需量控制+需求响应（收益最直接）</td>
+        </tr>
+        <tr>
+          <td><strong>电源侧+共享模式</strong></td>
+          <td>35kV汇集线路</td>
+          <td><span class="dispatch-tag dispatch-shi">市调</span></td>
+          <td>受新能源消纳需求驱动，市调根据负荷和新能源出力协调调度</td>
+          <td>容量租赁给新能源场站+辅助服务（2026年新兴模式）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 核心洞察 -->
+<div class="wrap">
+  <div class="洞察">
+    <h2>KEY INSIGHTS · 关键洞察</h2>
+    <div class="洞察矩阵">
+      <div class="洞察item">
+        <h4>⚡ 洞察一：接入点 ≠ 调度层级</h4>
+        <p>接入点和调度层级是两组独立维度，但存在统计相关性：潮流侧通常对应市调/县调，网侧（35kV~220kV）对应省调/市调。但这并非绝对——35kV接入可以是电源侧（归省调），也可以是网侧（归地调），关键看接入点所在的网络拓扑位置。</p>
+      </div>
+      <div class="洞察item">
+        <h4>⚡ 洞察二："两充两放"的调度密码</h4>
+        <p>对于独立储能（不受电源约束），省调/市调通常要求"两充两放"：低谷（深夜+中午光伏高峰期）充电，高峰（早晚）放电。这是判断储能是否真正接入"网侧"（被调度机构有效管理）的核心标志。</p>
+      </div>
+      <div class="洞察item">
+        <h4>⚡ 洞察三：潮流侧≠用户侧</h4>
+        <p>"潮流侧"在配电网语境中指功率流向用户的方向侧，本质上是配电网侧，但它与狭义"用户侧"的区别在于：潮流侧储能可以并网运行、可以向邻近用户供电，而不仅服务于单一计量点。这是共享储能可以布局在"潮流侧"而不只是"用户侧"的原因。</p>
+      </div>
+      <div class="洞察item">
+        <h4>⚡ 洞察四：调度越权机制</h4>
+        <p>上级调度机构可越级调用下级储能：省调在电网紧急情况下，可越过地调直接给110kV储能下达调度指令。这对投资决策有重要影响——即使储能由市调管辖，只要接入网侧，省级紧急调度时仍可被调用。</p>
+      </div>
+    </div>
+    <div class="洞察结论">
+      <strong>三者关系的底层逻辑：</strong><br>
+      <strong>接入点</strong>决定储能"在哪里"（物理位置和电气接口）<br>
+      <strong>调度层级</strong>决定储能"听谁话"（调度归属和响应优先级）<br>
+      <strong>接入位置×调度层级</strong>共同决定储能"能干什么、赚什么钱"<br>
+      <strong>最优解（2026年）：</strong>网侧35kV接入 + 市调管辖 = 兼顾调度灵活性和接入成本，是独立共享储能的最优中间路线。
+    </div>
+  </div>
+</div>
+
+<!-- 最终结论 -->
+<div class="wrap">
+  <div class="結論">
+    <h2 style="font-size:12px;font-weight:bold;letter-spacing:1px;margin-bottom:12px;opacity:0.5">FINAL CONCLUSION · 综合结论</h2>
+    <div class="結論grid">
+      <div class="結論item">
+        <h4>🔴 电源侧接入</h4>
+        <p>调度层级：省调/市调<br>核心问题：受新能源出力约束，储能无法独立调度，"一充一放"为常态，容量利用率低。适合有明确消纳需求的基地型项目。</p>
+      </div>
+      <div class="結論item">
+        <h4>🟢 网侧接入（推荐）</h4>
+        <p>调度层级：省调/市调<br>最优选择：35kV/110kV接入网侧，由地调或省调调度，可独立参与容量电价+辅助服务，2026年最主流方案。</p>
+      </div>
+      <div class="結論item">
+        <h4>🔵 潮流侧接入</h4>
+        <p>调度层级：市调/县调<br>适合园区/工商业场景：接入成本低、峰谷套利最直接，但规模受限且调度受负荷曲线约束，适合"光储充"一体化。</p>
+      </div>
+    </div>
+    <div class="結論final">
+      <strong>选型决策树：</strong><br>
+      规模≥100MW + 需要参与容量市场 → <strong>220kV网侧接入 → 省调</strong><br>
+      规模50~100MW + 独立共享储能 → <strong>35kV/110kV网侧接入 → 市调（地调）</strong><br>
+      规模1~50MW + 园区/工业场景 → <strong>10kV潮流侧接入 → 市调/县调</strong><br>
+      规模≤0.5MW + 台区/社区 → <strong>400V台区侧 → 县调</strong>
+    </div>
+  </div>
+
+  <div class="底部">
+    独立储能接入点 × 调度层级综合分析报告<br>
+    <span style="font-size:11px;color:#ccc;margin-top:4px">数据来源：南网总调储能调度规则（2024）、GB/T 36547-2024、CNESA DataLink、五级调度体系、国家能源局调度协议示范文本 &nbsp;·&nbsp; 2026年4月21日</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Local RAG Skill - 依赖包
+
+# 文档处理
+PyMuPDF>=1.23.0          # PDF处理
+python-docx>=1.0.0      # Word文档处理
+beautifulsoup4>=4.12.0  # HTML解析
+
+# 向量数据库
+chromadb>=0.4.0         # ChromaDB向量存储
+# faiss-cpu>=1.7.0      # FAISS向量存储 (可选)
+
+# Embedding模型
+sentence-transformers>=2.2.0  # 本地Embedding
+
+# 可选: OpenAI API
+# openai>=1.0.0
+
+# 通用依赖
+numpy>=1.24.0

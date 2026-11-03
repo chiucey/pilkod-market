@@ -1,0 +1,56 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-08",
+  "description": "股票智能看盘与交易策略助手，支持布林线、CCI、MACD、EXPMA等技术指标分析",
+  "id": 385344272372075,
+  "name": "stock-market-watcher",
+  "parameters": {
+    "indicators": {
+      "default": [
+        "bollinger-bands",
+        "cci",
+        "macd",
+        "expma"
+      ],
+      "description": "要计算的技术指标",
+      "type": "array"
+    },
+    "stocks": {
+      "description": "要监控的股票代码列表",
+      "required": true,
+      "type": "array"
+    },
+    "update_interval": {
+      "default": 5,
+      "description": "更新间隔（分钟）",
+      "type": "integer"
+    }
+  },
+  "platform": "minimax",
+  "requirements": {
+    "indicators": [
+      "bollinger-bands",
+      "cci",
+      "macd",
+      "expma"
+    ],
+    "market": [
+      "A股",
+      "港股",
+      "美股"
+    ],
+    "trading_hours": {
+      "china": "9:15-15:00",
+      "hk": "9:30-16:00",
+      "us": "9:30-16:00"
+    }
+  },
+  "tags": [
+    "stock",
+    "trading",
+    "technical-analysis",
+    "investment"
+  ],
+  "updated_at": 1775632521547,
+  "version": "1.0.0"
+}

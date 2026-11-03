@@ -1,0 +1,29 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "从零散信息还原企业完整画像",
+    "多源交叉验证",
+    "5W2H结构化分析",
+    "风险信号识别"
+  ],
+  "created": "2026-04-09",
+  "description": "基于第一性原理对任意客户信息进行系统性商业背景调查，输出5W2H格式报告",
+  "id": 385814463255211,
+  "input_examples": [
+    "帮我调查一下这家公司：深圳市腾讯计算机系统有限公司",
+    "这个电话0755-86013388是哪家公司的",
+    "查询一下这个邮箱 domain@company.com 背后的企业",
+    "帮我做一下这个网站的背景调查 www.example.com"
+  ],
+  "name": "company-background-investigator",
+  "platform": "minimax",
+  "tags": [
+    "商业调查",
+    "企业分析",
+    "5W2H",
+    "尽职调查",
+    "客户画像"
+  ],
+  "updated_at": 1775748571328,
+  "version": "1.0.0"
+}

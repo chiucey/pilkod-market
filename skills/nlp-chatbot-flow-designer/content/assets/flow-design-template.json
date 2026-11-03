@@ -1,0 +1,143 @@
+{
+  "name": "flow-design-template",
+  "version": "1.0.0",
+  "description": "NLP智能客服机器人应答流程设计模板",
+  "sections": [
+    {
+      "id": "scene_analysis",
+      "title": "一、场景分析",
+      "fields": [
+        {
+          "name": "business_scenario",
+          "label": "业务场景",
+          "type": "select",
+          "required": true,
+          "options": ["售前咨询", "售后服务", "技术支持", "投诉处理", "综合服务"]
+        },
+        {
+          "name": "target_users",
+          "label": "目标用户画像",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "描述目标用户的基本特征，如年龄、技术熟练度等"
+        },
+        {
+          "name": "operation_goals",
+          "label": "运营目标",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "描述核心运营目标，如提升响应效率、降低成本等"
+        },
+        {
+          "name": "system_status",
+          "label": "系统现状",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "描述现有NLP引擎能力、API接口、知识库结构等"
+        },
+        {
+          "name": "constraints",
+          "label": "限制条件",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "描述对话轮次限制、敏感词限制等约束"
+        }
+      ]
+    },
+    {
+      "id": "flow_type",
+      "title": "二、流程类型设计",
+      "fields": [
+        {
+          "name": "flow_type",
+          "label": "流程类型",
+          "type": "radio",
+          "required": true,
+          "options": [
+            {"value": "single_turn", "label": "单轮问答", "desc": "适用于问题明确、答案固定的标准查询场景"},
+            {"value": "single_with_related", "label": "单轮+关联问", "desc": "适用于主问题解答后，自动推送相关问题引导"},
+            {"value": "multi_turn", "label": "多轮对话", "desc": "适用于需要收集用户信息或分步骤解决的问题"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intent_design",
+      "title": "三、意图体系设计",
+      "fields": [
+        {
+          "name": "intent_structure",
+          "label": "意图树结构",
+          "type": "tree",
+          "required": true,
+          "template": {
+            "L1_intent": {
+              "description": "一级意图（业务大类）",
+              "children": {
+                "L2_intent": {
+                  "description": "二级意图（具体业务）",
+                  "children": {
+                    "L3_intent": {
+                      "description": "三级意图（细分场景）"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "interaction_design",
+      "title": "四、交互方式设计",
+      "fields": [
+        {
+          "name": "interaction_types",
+          "label": "交互类型（可多选）",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            {"value": "text", "label": "文本交互", "desc": "单段文字、分点列表、格式化文本"},
+            {"value": "api", "label": "API交互", "desc": "实时数据查询、系统操作调用"},
+            {"value": "image", "label": "图片", "desc": "产品说明、操作指引"},
+            {"value": "video", "label": "视频", "desc": "教程演示、操作演示"},
+            {"value": "audio", "label": "音频", "desc": "语音播报"},
+            {"value": "card", "label": "卡片", "desc": "结构化信息展示"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategy_config",
+      "title": "五、策略配置",
+      "fields": [
+        {
+          "name": "small_talk",
+          "label": "寒暄处理",
+          "type": "radio",
+          "required": true,
+          "options": [
+            {"value": "quick", "label": "快速响应", "desc": "简短寒暄后转回业务"},
+            {"value": "embedded", "label": "嵌入处理", "desc": "在正式对话中嵌入寒暄节点"},
+            {"value": "personalized", "label": "个性化寒暄", "desc": "根据用户画像配置个性化寒暄"}
+          ]
+        },
+        {
+          "name": "escalation",
+          "label": "转人工策略",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "描述转人工的触发条件和处理流程"
+        },
+        {
+          "name": "sensitive",
+          "label": "敏感内容处理",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "描述敏感信息识别和合规检查规则"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-26",
+  "description": "Configure and manage long-term memory for OpenClaw using Alibaba Cloud Model Studio API. When users ask to set up OpenClaw memory, configure memory plugin, manage agent memory, search memory database, store memories, or implement cross-session context awareness.",
+  "id": 380732535563225,
+  "name": "openclaw-memory-skill",
+  "platform": "minimax",
+  "skill_id": "175123",
+  "tags": [
+    "openclaw",
+    "memory",
+    "bailian",
+    "long-term-memory",
+    "aliyun",
+    "model-studio"
+  ],
+  "updated_at": 1774505413617,
+  "version": "1.0.0"
+}

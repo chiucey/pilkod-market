@@ -1,0 +1,237 @@
+{
+  "version": "2.0.0",
+  "growth_stage": 22,
+  "unlocked_abilities": [
+    "voice_agents",
+    "agentic_rag",
+    "boat_orchestration",
+    "monitoring_observability",
+    "cost_optimization",
+    "multi_agent_team"
+  ],
+  "agents": {
+    "defaults": {
+      "maxConcurrent": 5,
+      "compaction": {
+        "reserveTokensFloor": 20000,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 8000
+        }
+      },
+      "model": {
+        "params": {
+          "cacheRetention": "long",
+          "contextPruning": {
+            "mode": "adaptive",
+            "keepLastAssistants": 3
+          }
+        }
+      }
+    },
+    "specialized_agents": {
+      "chief": {
+        "workspace": "~/.openclaw/agents/chief",
+        "role": "strategy_director",
+        "model": "gpt-4",
+        "tools": ["orchestrate", "decision", "report"]
+      },
+      "fundamental": {
+        "workspace": "~/.openclaw/agents/fundamental",
+        "role": "fundamental_analyst",
+        "model": "gpt-4",
+        "tools": ["financial_analysis", "industry_research", "valuation"]
+      },
+      "technical": {
+        "workspace": "~/.openclaw/agents/technical",
+        "role": "technical_analyst",
+        "model": "gpt-3.5-turbo",
+        "tools": ["chart_analysis", "technical_indicators", "pattern_recognition"]
+      },
+      "industry": {
+        "workspace": "~/.openclaw/agents/industry",
+        "role": "industry_researcher",
+        "model": "gpt-4",
+        "tools": ["policy_tracking", "chain_analysis", "cycle_analysis"]
+      },
+      "sentiment": {
+        "workspace": "~/.openclaw/agents/sentiment",
+        "role": "sentiment_monitor",
+        "model": "gpt-3.5-turbo",
+        "tools": ["news_monitoring", "social_analysis", "event_alert"]
+      },
+      "risk": {
+        "workspace": "~/.openclaw/agents/risk",
+        "role": "risk_manager",
+        "model": "gpt-4",
+        "tools": ["position_monitor", "portfolio_risk", "compliance_check"]
+      },
+      "quant": {
+        "workspace": "~/.openclaw/agents/quant",
+        "role": "quantitative_researcher",
+        "model": "gpt-4",
+        "tools": ["backtest", "factor_mining", "model_building"]
+      }
+    }
+  },
+  "channels": {},
+  "cron": {
+    "enabled": true,
+    "scheduled_tasks": [
+      {
+        "name": "morning_briefing",
+        "schedule": "0 9 * * 1-5",
+        "agent": "chief",
+        "task": "generate_morning_briefing"
+      },
+      {
+        "name": "sentiment_alert",
+        "schedule": "*/30 * * * *",
+        "agent": "sentiment",
+        "task": "check_sentiment_alerts"
+      },
+      {
+        "name": "risk_monitor",
+        "schedule": "0 */2 * * *",
+        "agent": "risk",
+        "task": "monitor_portfolio_risk"
+      }
+    ]
+  },
+  "diagnostics": {
+    "cacheTrace": {
+      "enabled": true,
+      "captureMessageBody": false
+    },
+    "logLevel": "info"
+  },
+  "tools": {},
+  "voice_agents": {
+    "enabled": true,
+    "asr": {
+      "provider": "whisper",
+      "model": "base",
+      "language": "zh-CN"
+    },
+    "tts": {
+      "provider": "elevenlabs",
+      "voice_id": "default"
+    },
+    "emotion_detection": true,
+    "multi_language": true
+  },
+  "agentic_rag": {
+    "enabled": true,
+    "retrieval_strategy": "hybrid",
+    "multi_hop_retrieval": true,
+    "context_aware": true,
+    "vector_db": {
+      "type": "qdrant",
+      "host": "localhost",
+      "port": 6333
+    }
+  },
+  "workflow_orchestration": {
+    "enabled": true,
+    "workflow_designer": {
+      "enabled": true,
+      "drag_drop": true
+    },
+    "task_engine": {
+      "max_tasks": 100,
+      "parallel_execution": true,
+      "agent_routing": {
+        "strategy": "role_based",
+        "fallback_agent": "chief"
+      }
+    },
+    "collaboration_protocols": {
+      "handoff_enabled": true,
+      "consensus_required": false,
+      "conflict_resolution": "chief_has_final_say"
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "metrics": {
+      "enabled": true,
+      "prometheus_port": 9090,
+      "agent_specific_metrics": true
+    },
+    "traces": {
+      "enabled": true,
+      "jaeger_host": "localhost"
+    },
+    "alerts": {
+      "enabled": true,
+      "alert_rules": {
+        "high_token_usage": "tokens_per_agent > 10000",
+        "slow_response": "response_time > 30s",
+        "analysis_failure": "error_count > 3"
+      }
+    }
+  },
+  "cost_optimization": {
+    "enabled": true,
+    "model_tiering": {
+      "enabled": true,
+      "lite_agent_models": ["technical", "sentiment"],
+      "pro_agent_models": ["fundamental", "industry", "risk", "quant"],
+      "chief_model": "gpt-4"
+    },
+    "prompt_caching": {
+      "enabled": true,
+      "ttl": 3600,
+      "shared_cache": true
+    },
+    "budget_control": {
+      "hourly_budget": 15.0,
+      "daily_budget": 300.0,
+      "agent_budgets": {
+        "chief": 100,
+        "fundamental": 80,
+        "technical": 40,
+        "industry": 80,
+        "sentiment": 30,
+        "risk": 50,
+        "quant": 70
+      }
+    }
+  },
+  "compliance": {
+    "enabled": true,
+    "data_privacy": {
+      "encryption": "AES-256",
+      "access_control": "RBAC",
+      "audit_trail": true
+    },
+    "audit_logging": {
+      "enabled": true,
+      "retention_days": 3650,
+      "agent_action_logging": true
+    },
+    "compliance_standards": [
+      "GDPR",
+      "ISO_27001",
+      "SEC_REGULATIONS"
+    ]
+  },
+  "team_management": {
+    "enabled": true,
+    "communication_channels": {
+      "broadcast": "chief_to_all",
+      "peer_to_peer": "enabled",
+      "escalation": "to_chief"
+    },
+    "decision_making": {
+      "voting_enabled": false,
+      "consensus_threshold": 0.7,
+      "chief_veto": true
+    },
+    "knowledge_sharing": {
+      "shared_memory": true,
+      "cross_agent_learning": true,
+      "best_practice_repository": true
+    }
+  }
+}

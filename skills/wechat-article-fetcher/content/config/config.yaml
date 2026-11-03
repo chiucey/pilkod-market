@@ -1,0 +1,80 @@
+# 微信公众号文章抓取工具 - 配置文件
+
+# 浏览器设置
+browser:
+  # 浏览器类型: edge | chrome
+  type: edge
+  
+  # 是否使用无头模式（不显示浏览器窗口）
+  headless: false
+  
+  # 页面加载超时时间（毫秒）
+  timeout: 30000
+  
+  # 窗口大小
+  window_size:
+    width: 1920
+    height: 1080
+
+# OCR设置
+ocr:
+  # 是否启用OCR
+  enabled: true
+  
+  # OCR引擎: easyocr | paddleocr | tesseract
+  engine: easyocr
+  
+  # 是否过滤水印
+  filter_watermark: true
+  
+  # 水印关键词列表
+  watermark_keywords:
+    - 九悦摄影教程
+    - 扫码关注
+    - 点击关注
+    - 公众号
+    - 长按识别
+    - 关注我们
+    - 更多精彩
+
+# 输出设置
+output:
+  # 输出目录
+  dir: ./output
+  
+  # Word文档格式
+  format: docx
+  
+  # 图片质量: high | medium | low
+  image_quality: high
+  
+  # 是否包含评论
+  include_comments: true
+  
+  # 最大评论数
+  max_comments: 10
+
+# 抓取设置
+fetch:
+  # 页面加载等待时间（秒）
+  wait_time: 5
+  
+  # 图片下载重试次数
+  retry_count: 3
+  
+  # 请求超时时间（秒）
+  timeout: 30
+  
+  # 两次请求间隔（秒），避免触发反爬
+  interval: 2
+
+# 日志设置
+logging:
+  # 日志级别: DEBUG | INFO | WARNING | ERROR
+  level: INFO
+  
+  # 日志文件目录
+  dir: ./logs
+  
+  # 是否输出到控制台
+  console: true

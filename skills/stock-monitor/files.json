@@ -1,0 +1,119 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "630263975291ef93ec335613033fdc7b54d6637b",
+      "size": 4449
+    },
+    {
+      "path": "_meta.json",
+      "sha": "96e5d358a5ee63bf73d4ad539bf5704212d1f494",
+      "size": 433
+    },
+    {
+      "path": "build_pool.py",
+      "sha": "fa1aa8565fe025bbbc48267b6c1a34a01a86abaa",
+      "size": 8835
+    },
+    {
+      "path": "config.env",
+      "sha": "250c31faa35781eeb214c4f73add19b019c6c4d8",
+      "size": 1699
+    },
+    {
+      "path": "config.py",
+      "sha": "5ce8c85e8d02823a9fe86fe77fc80b003ab5b82f",
+      "size": 1623
+    },
+    {
+      "path": "data/scout.db",
+      "sha": "fc07d8f11c7c56d5922117708ae33db19c894cab",
+      "size": 16384
+    },
+    {
+      "path": "data/stock_pool.json",
+      "sha": "030b66680c4fc932a47f2845e1da9ebb2952ea87",
+      "size": 100378
+    },
+    {
+      "path": "data/stock_pool_full.json",
+      "sha": "2cadae3844339cee6787173a1481398746d2569f",
+      "size": 309268
+    },
+    {
+      "path": "dist/stock-monitor-1.0.0.skill",
+      "sha": "67480fa2e90b31fe5b6e5e4963b61465957d22a1",
+      "size": 100883
+    },
+    {
+      "path": "dist/stock-scout-1.0.0.skill",
+      "sha": "b9f5083961018d3970011e3a13fd6d90ab9491fe",
+      "size": 100870
+    },
+    {
+      "path": "fetch.py",
+      "sha": "c9607c62428598485b01c6f1925aad9453f5b054",
+      "size": 10665
+    },
+    {
+      "path": "fetch_api.py",
+      "sha": "7735e746898081d4ca80ef9a6c7fd92a28ff11f6",
+      "size": 21021
+    },
+    {
+      "path": "providers/intelligence/tencent.py",
+      "sha": "3d5933f3d81c1e234cfe538cce9da6cdf0fd5473",
+      "size": 19785
+    },
+    {
+      "path": "providers/intelligence/tushare.py",
+      "sha": "fdd786ce5145964d04c0a0e18b756dd7ff588c2f",
+      "size": 15940
+    },
+    {
+      "path": "providers/intelligence_api.py",
+      "sha": "601691f3ebc95f35559b5eda83e655a24e689203",
+      "size": 5037
+    },
+    {
+      "path": "quick_test.py",
+      "sha": "4f1907ae0fe128352ed0d8182b2897d65d342768",
+      "size": 3650
+    },
+    {
+      "path": "rate_limiter.py",
+      "sha": "0a35d30d5b9b98c8d41ca74e1d58f985537d2617",
+      "size": 4438
+    },
+    {
+      "path": "references/scoring_system.md",
+      "sha": "27eb5ad6ee46a1a175e32cf8cb8e400319468c51",
+      "size": 2954
+    },
+    {
+      "path": "run_tencent.py",
+      "sha": "37d45e4304c517069e4da61c695ea9a37a9aee74",
+      "size": 7676
+    },
+    {
+      "path": "run_tencent_fast.py",
+      "sha": "b29bfe899a8cd88c4d7140cb7ddf6ec0d32deb8c",
+      "size": 8796
+    },
+    {
+      "path": "score.py",
+      "sha": "9faef5a5398a4cd5b38baee77ac2a7880ef3135b",
+      "size": 15697
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "88b5c4d9fc7db88331a4ab8237ccf2d42dbb318d",
+      "size": 6175
+    },
+    {
+      "path": "stock_pool.py",
+      "sha": "d39fd379709a4c0ee228312497ddfed1a7d3cf3d",
+      "size": 9208
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "公司发现与挖掘",
+    "公司信息验证",
+    "联系方式补全",
+    "关键人识别",
+    "开发话术生成",
+    "客户数据去重入库"
+  ],
+  "category": "business_development",
+  "created_at": "2026-03-21",
+  "dependencies": [],
+  "description": "外贸B2B线索开发全流程自动化技能",
+  "display_name": "B2B线索开发技能包",
+  "id": 380316405137717,
+  "input_schema": {
+    "customer_type": "enum[manufacturer, importer, wholesaler, distributor] (optional)",
+    "priority_criteria": "object (optional)",
+    "product_keywords": "string (required)",
+    "target_market": "string (required)"
+  },
+  "name": "b2b-lead-development",
+  "output_schema": {
+    "customer_package": {
+      "files": "array[string]",
+      "high_priority": "number",
+      "low_priority": "number",
+      "medium_priority": "number",
+      "total_companies": "number"
+    }
+  },
+  "platform": "minimax",
+  "requirements": {
+    "content_generation": true,
+    "data_processing": true,
+    "web_search": true
+  },
+  "tags": [
+    "外贸",
+    "B2B",
+    "客户开发",
+    "线索挖掘",
+    "CRM"
+  ],
+  "updated_at": 1774404050610,
+  "version": "1.0.0"
+}

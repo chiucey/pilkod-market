@@ -1,0 +1,114 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "b4cf547e56ac312faf4f588594a7e1a5758fe51d",
+      "size": 3699
+    },
+    {
+      "path": "_meta.json",
+      "sha": "49ba95e4e1661003a94fbc34aa58ec604cdb5185",
+      "size": 534
+    },
+    {
+      "path": "config/settings.yaml",
+      "sha": "fa5f52cb616a00f33b0c0c5d662cb2af6cff0da6",
+      "size": 1170
+    },
+    {
+      "path": "core/__init__.py",
+      "sha": "94b47d3438bd2021b390fbf4395ee8b6cf258fa7",
+      "size": 208
+    },
+    {
+      "path": "core/deduplicator.py",
+      "sha": "06895d50660e41c4d81b34e2a9efdf676dde6ddb",
+      "size": 6385
+    },
+    {
+      "path": "core/extractor.py",
+      "sha": "dee1d0940e1a959dd04303f59f42baff9e0b3436",
+      "size": 9919
+    },
+    {
+      "path": "core/scanner.py",
+      "sha": "66e4e0648c8e8075d8eabbde2aa924bcc28f2455",
+      "size": 3140
+    },
+    {
+      "path": "main.py",
+      "sha": "b47a0ca69b483c2c1e783e089da717070d11d668",
+      "size": 12427
+    },
+    {
+      "path": "parsers/__init__.py",
+      "sha": "4167bcd5cb5d1dff99f239bd497a939875d285fb",
+      "size": 191
+    },
+    {
+      "path": "parsers/image_parser.py",
+      "sha": "10ab85c9e1be9a1f031858d2c52e13a8eeb8006c",
+      "size": 8344
+    },
+    {
+      "path": "parsers/pdf_parser.py",
+      "sha": "43c6e4828af8ecb0f3fa155ef24560787f785f91",
+      "size": 11831
+    },
+    {
+      "path": "parsers/xml_parser.py",
+      "sha": "937de07ff7d59e0c10545ed1708aa782c8ee79b4",
+      "size": 8594
+    },
+    {
+      "path": "processors/__init__.py",
+      "sha": "bf55004801318c781d4cdef9e9ab3db168ea1e2a",
+      "size": 229
+    },
+    {
+      "path": "processors/rename_processor.py",
+      "sha": "ae91e8192637cd62e86bee53d45221350d75a6f1",
+      "size": 6697
+    },
+    {
+      "path": "processors/report_generator.py",
+      "sha": "4ed37e19c6e87e7886e3c24aa9d2f68da05e76ba",
+      "size": 11901
+    },
+    {
+      "path": "processors/travel_processor.py",
+      "sha": "1357b919a95785448ee7cf1c2a7acf7902a91071",
+      "size": 8326
+    },
+    {
+      "path": "prompts/invoice_extraction.txt",
+      "sha": "31dd8f1b4bc3585d317af4e17f0f9d95dabf7946",
+      "size": 1999
+    },
+    {
+      "path": "prompts/travel_analysis.txt",
+      "sha": "5205e806b790049cbbf187a5236eda9d4aef9335",
+      "size": 1337
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "6b614d255464faff9e521803212a8b951fcd8451",
+      "size": 207
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha": "cd854dffea774b340683c47d3191682e9f5a0650",
+      "size": 28
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "97139f1388e26bf4cb573b2cc691ae0a42f64ceb",
+      "size": 1822
+    },
+    {
+      "path": "scripts/validate_skill.py",
+      "sha": "0975116b7251a44dba99e869cc442f00ff7294c3",
+      "size": 2926
+    }
+  ]
+}

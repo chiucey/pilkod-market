@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-22",
+  "dependencies": [
+    "real_time_quote",
+    "threshold_alert",
+    "position_tracking",
+    "task_scheduling",
+    "volatility_recognition"
+  ],
+  "description": "实时股票监控技能。当用户要求监控股票行情、设置价格告警、跟踪持仓、接收涨停提醒、生成监控日报或周报、分析异动时使用。支持A股、港股、美股等多市场标的。",
+  "id": 379334446232190,
+  "name": "stock-watcher",
+  "platform": "minimax",
+  "skill_id": 1000041,
+  "tags": [
+    "股票",
+    "监控",
+    "告警",
+    "持仓",
+    "行情"
+  ],
+  "updated_at": 1774165666204,
+  "version": "2.5.0"
+}

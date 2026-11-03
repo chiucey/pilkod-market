@@ -1,0 +1,39 @@
+{
+  "author": "MiniMax Agent",
+  "category": "openclaw-plugin",
+  "commands": {
+    "alerts": "View anomaly alerts",
+    "cache": "View cache statistics",
+    "controls": "View control status",
+    "disable-skill": "Disable high-cost skill",
+    "report": "View today's cost report",
+    "set-cost": "Set skill cost limit",
+    "top-skills": "View top consuming skills"
+  },
+  "description": "OpenClaw Token Cost Controller - Smart caching, dynamic routing, real-time monitoring. Automatically optimizes at runtime, reducing costs by 70%. Use when users ask about cost optimization, token savings, caching strategies, model routing, or cost monitoring.",
+  "features": {
+    "Dynamic Routing": "Simple tasks route to cheap models, complex tasks use flagship models",
+    "One-click Control": "Disable skills, set budget limits, pause plans",
+    "Real-time Monitoring": "Detect abnormal consumption within 5 seconds, auto alert",
+    "Smart Cache": "Semantic similarity hits cache directly, saving 30-50% costs"
+  },
+  "id": 384431859422095,
+  "name": "token-cost-controller",
+  "performance": {
+    "Anomaly Detection Response": "within 5 seconds",
+    "Cache Hit Savings": "30-50%",
+    "Savings Ratio": "70%"
+  },
+  "platform": "minimax",
+  "skillId": 1916098,
+  "tags": [
+    "token",
+    "cost",
+    "optimization",
+    "cache",
+    "monitoring",
+    "openclaw"
+  ],
+  "updated_at": 1775409584337,
+  "version": "2.2.0"
+}

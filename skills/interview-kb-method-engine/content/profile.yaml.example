@@ -1,0 +1,39 @@
+# profile.yaml（候选人主档案示例）——复制为 profile.yaml 并填写你自己的；改一处全局生效
+# 目的：避免每张卡重复写你的 gap/每段经历/统一口径；一次填好，建卡引用即可。
+
+profile:
+  candidate:
+    name: 你的名字            # 或留空也行（不影响统计）
+    age: ~
+    base: 城市
+    edu: 学校·专业·本科（起止）
+
+  # 结构化经历（最新在前）。keywords 用于引擎/你快速联想该段的本事。
+  timeline:
+    - company: 公司A
+      range: 2025.01-至今
+      role: 岗位
+      nature: 正编          # 正编|外包|兼职|实习
+      keywords: 可复用亮点关键词(如 创作者运营/策略/…)
+    - company: 公司B
+      range: 2022-2024
+      role: 岗位
+      nature: 正编
+      keywords: …
+
+  # GAP / 空窗（常见稳定性卡点）——统一写为什么，面试别再讲得被动：
+  gaps:
+    - when: 何时到何时
+      length: 多久
+      why: 为什么(客观理由，如照顾家人/求学)
+      status: 现况(是否已解决)
+
+  # 可复用"叙模板"：自我介绍/求职动机/解释GAP——每卡引用，别逐场造长句子
+  ready_made:
+    self_intro_short: 一句话自我介绍(按时间线)
+    why_look_motive: 为什么看机会(求正编/求成长/换赛道)
+    gap_story: GAP 的正面化说法
+
+  notes:
+    - "口径备注：你的岗位某家到底是正式/外包，简历与面试请一致，别自曝降维信号"
+    - "保存你想提醒自己的：杀招案例 / 数据 / 需避免的话术"

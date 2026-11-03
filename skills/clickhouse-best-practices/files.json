@@ -1,0 +1,159 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha": "014a40a27fefbc7081e58dc8ed27b54287193936",
+      "size": 1030
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "ce198e493c569bd130f296209dda5c1f71cce4fb",
+      "size": 7785
+    },
+    {
+      "path": "_meta.json",
+      "sha": "fa1df32496feaf824dee2596299d2748a84a0506",
+      "size": 145
+    },
+    {
+      "path": "rules/insert-async-small-batches.md",
+      "sha": "526f39d2d4ed87dea996d16698091661a0aeb619",
+      "size": 2059
+    },
+    {
+      "path": "rules/insert-batch-size.md",
+      "sha": "75aba9d75f8bed31396f3740d07b144556f5e8fa",
+      "size": 1523
+    },
+    {
+      "path": "rules/insert-format-native.md",
+      "sha": "1f83e751669d31df5f7166d9dc983b36a4a08b61",
+      "size": 1760
+    },
+    {
+      "path": "rules/insert-mutation-avoid-delete.md",
+      "sha": "5a28ff2875eb349104dad60683cd2bfac4886daf",
+      "size": 1805
+    },
+    {
+      "path": "rules/insert-mutation-avoid-update.md",
+      "sha": "7c8c7b8d7a69e5ba67dff5795ecdc8681b9f0e69",
+      "size": 1770
+    },
+    {
+      "path": "rules/insert-optimize-avoid-final.md",
+      "sha": "ed6de1dd62431cb20c346050492e21a14e3b9118",
+      "size": 1733
+    },
+    {
+      "path": "rules/query-index-skipping-indices.md",
+      "sha": "67dfa654efb6bb407142552228365dc7387a3a7a",
+      "size": 2448
+    },
+    {
+      "path": "rules/query-join-choose-algorithm.md",
+      "sha": "74af0da4fda5a2ad6666e6e696dd6df78733a394",
+      "size": 1842
+    },
+    {
+      "path": "rules/query-join-consider-alternatives.md",
+      "sha": "cc4a9bd00cacf2d0c0314c1a007501085f68a992",
+      "size": 1653
+    },
+    {
+      "path": "rules/query-join-filter-before.md",
+      "sha": "0b996faee77be1d66ade18f425c09f1bc6e15cff",
+      "size": 1467
+    },
+    {
+      "path": "rules/query-join-null-handling.md",
+      "sha": "bb2765013fbd737422a5f68400f9f1b3863c387c",
+      "size": 1622
+    },
+    {
+      "path": "rules/query-join-use-any.md",
+      "sha": "bb092975f627a3e50dd1ff459d0859b007d91030",
+      "size": 1593
+    },
+    {
+      "path": "rules/query-mv-incremental.md",
+      "sha": "f406635ea32c4685ddad3567e47630ad7389e592",
+      "size": 1821
+    },
+    {
+      "path": "rules/query-mv-refreshable.md",
+      "sha": "47827a33802142122df95f4280e5639f1fb6e026",
+      "size": 1817
+    },
+    {
+      "path": "rules/schema-json-when-to-use.md",
+      "sha": "82fe794a10948530e6684bd4e82825101e7d44ea",
+      "size": 2206
+    },
+    {
+      "path": "rules/schema-partition-lifecycle.md",
+      "sha": "fc0d0267e915370fe7d30c67e9591244230b82d3",
+      "size": 1769
+    },
+    {
+      "path": "rules/schema-partition-low-cardinality.md",
+      "sha": "6e983bb8a9f8654574c025f213779e5d03c1154c",
+      "size": 1635
+    },
+    {
+      "path": "rules/schema-partition-query-tradeoffs.md",
+      "sha": "64e5d0d871fd7afc5f0be6ab0e4cf1aec867374a",
+      "size": 2003
+    },
+    {
+      "path": "rules/schema-partition-start-without.md",
+      "sha": "1a10ae7734b2afe3bcc5c6fa84d59dc07962bdc5",
+      "size": 1967
+    },
+    {
+      "path": "rules/schema-pk-cardinality-order.md",
+      "sha": "769b58208582d56b73d3c66bfde9f7d52d74c49d",
+      "size": 1633
+    },
+    {
+      "path": "rules/schema-pk-filter-on-orderby.md",
+      "sha": "45f2c61cb5d5cc6cbfc47802f0b0a1c9d6fed082",
+      "size": 1586
+    },
+    {
+      "path": "rules/schema-pk-plan-before-creation.md",
+      "sha": "04607d63b2ecda3a7f6071b7c1176726ba081b35",
+      "size": 1911
+    },
+    {
+      "path": "rules/schema-pk-prioritize-filters.md",
+      "sha": "b1e0909da335a0c66deeea7712a579a1ced6efec",
+      "size": 1612
+    },
+    {
+      "path": "rules/schema-types-avoid-nullable.md",
+      "sha": "f4974653e68ade780ae9a177a428dfda3350bef3",
+      "size": 1772
+    },
+    {
+      "path": "rules/schema-types-enum.md",
+      "sha": "3ccad71bfdb4bfeb0f61a17b8d41997867f3e052",
+      "size": 1512
+    },
+    {
+      "path": "rules/schema-types-lowcardinality.md",
+      "sha": "827fe7255cdea2b3e430d851aa2878e3d4073bce",
+      "size": 1772
+    },
+    {
+      "path": "rules/schema-types-minimize-bitwidth.md",
+      "sha": "42ca7691d7588aa156fd36ace9beb236abd1611d",
+      "size": 1652
+    },
+    {
+      "path": "rules/schema-types-native-types.md",
+      "sha": "d14f067e92eb6c4f7c58f6361e3fa09332371caf",
+      "size": 1709
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "_version": "1.0",
+  "_description": "用户自定义数据源配置",
+  "sources": [
+    {
+      "id": "user_jq_001",
+      "name": "聚宽数据源",
+      "type": "joinquant",
+      "enabled": false,
+      "priority": 1,
+      "config": {
+        "username": "${JQ_USERNAME}",
+        "password": "${JQ_PASSWORD}"
+      },
+      "note": "聚宽JoinQuant，需要注册获取账号"
+    },
+    {
+      "id": "user_tushare_001",
+      "name": "TuShare数据源",
+      "type": "tushare",
+      "enabled": false,
+      "priority": 2,
+      "config": {
+        "token": "${TUSHARE_TOKEN}"
+      },
+      "note": "TuShare Pro，需要注册获取token"
+    },
+    {
+      "id": "user_custom_001",
+      "name": "自定义REST API",
+      "type": "custom_rest",
+      "enabled": false,
+      "priority": 3,
+      "config": {
+        "url": "https://your-api.com/stock/price?code={codes}",
+        "headers": {
+          "Authorization": "Bearer ${API_KEY}",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "response_format": "tencent"
+      },
+      "note": "自定义API接口，支持腾讯/新浪/东财格式"
+    }
+  ],
+  "env_vars": {
+    "JQ_USERNAME": "",
+    "JQ_PASSWORD": "",
+    "TUSHARE_TOKEN": "",
+    "API_KEY": ""
+  }
+}

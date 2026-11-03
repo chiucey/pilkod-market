@@ -1,0 +1,28 @@
+name: local_rag_search
+description: 从本地知识库检索相关信息并回答用户问题
+
+# API配置
+api:
+  type: http
+  method: POST
+  url: http://localhost:8000/search
+  headers:
+    Content-Type: application/json
+
+# 请求模板
+request:
+  body:
+    query: "{{user_message}}"
+    top_k: 3
+    enhance_prompt: true
+
+# 响应解析
+response:
+  answer: "$.answer"
+  sources: "$.sources"
+
+# 错误处理
+error_handling:
+  timeout: 30
+  retry_count: 2
+  fallback_message: "抱歉，知识库服务暂时不可用，请稍后再试。"

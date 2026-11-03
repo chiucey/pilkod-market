@@ -1,0 +1,194 @@
+{
+  "files": [
+    {
+      "path": ".env.example",
+      "sha": "d66a1db7a0600635d69289f2cb555331fc34c365",
+      "size": 827
+    },
+    {
+      "path": ".gitignore",
+      "sha": "60a0a66c7faf3ee41a55d1cc3631afeb7879fc1e",
+      "size": 221
+    },
+    {
+      "path": "LICENSE",
+      "sha": "bdb763272e1cfeb06b1a11d139cf63ac2edd06c8",
+      "size": 1063
+    },
+    {
+      "path": "README-EN.md",
+      "sha": "84ed033c2f1119e05d852d7636d61611c4f3bb07",
+      "size": 8048
+    },
+    {
+      "path": "README.md",
+      "sha": "ec84e21271357e79b5236ce0528d3a9493fb50c2",
+      "size": 14982
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "00e7d86a79b473c46b83a52657bcb0c36edac7cd",
+      "size": 27144
+    },
+    {
+      "path": "evolve/evolution-log.md",
+      "sha": "4e62ce614140526ed1b1c9f77dbc7893b575698f",
+      "size": 1328
+    },
+    {
+      "path": "evolve/round-1/changes.md",
+      "sha": "2961cbc387cd85c02b5297e437ff38857217dab8",
+      "size": 1697
+    },
+    {
+      "path": "evolve/round-1/observations.md",
+      "sha": "e81e802f59a565a4d16b04a921c80a4ef3c08f06",
+      "size": 733
+    },
+    {
+      "path": "evolve/round-1/patterns.md",
+      "sha": "9789625b4b5b47fb07ca2cf6df531a8f5fa39ad6",
+      "size": 997
+    },
+    {
+      "path": "references/cover-template.md",
+      "sha": "0c3d263395970c29e430011199d941a6f7331b0c",
+      "size": 12109
+    },
+    {
+      "path": "references/cover-vertical-spec.md",
+      "sha": "98b894d1318c2723e5cf68ef4544afd1a7f9c75b",
+      "size": 3415
+    },
+    {
+      "path": "references/distribute-platforms.md",
+      "sha": "5384194b3c26b03dd79104da2dccd7416656241a",
+      "size": 4877
+    },
+    {
+      "path": "references/manual-framework.md",
+      "sha": "6681603103ac01b5da29d7bd46c82f10024c0d85",
+      "size": 12607
+    },
+    {
+      "path": "references/platform-copy.md",
+      "sha": "4d74292136ad682a9f743b89d593b652e63e331b",
+      "size": 7930
+    },
+    {
+      "path": "references/podcast-cover-template.md",
+      "sha": "c68932caa80595c9f1b0285299d7b23144153f1e",
+      "size": 8197
+    },
+    {
+      "path": "references/shiji-luoshengmen.md",
+      "sha": "9b8ffccebb431d3d67f3d40ec9eb3168dc5a9361",
+      "size": 8619
+    },
+    {
+      "path": "references/tts-config.md",
+      "sha": "cb6acfcd1869322388a348bfd3c2a2a27a7ade6b",
+      "size": 4091
+    },
+    {
+      "path": "references/tutorial-framework.md",
+      "sha": "cc69a6d2597f52ae3d565b73eed89aa4ca34e190",
+      "size": 7714
+    },
+    {
+      "path": "references/video-canvas-template.md",
+      "sha": "f3f7c9a61317a72fb86f966782ea7bf73b2c093b",
+      "size": 47103
+    },
+    {
+      "path": "references/writing-style.md",
+      "sha": "632ca43b788c69b5f1e50c3836afc1ed53b82107",
+      "size": 10905
+    },
+    {
+      "path": "references/xiaohongshu-examples/README.md",
+      "sha": "27055172f4d062884079707ff9cfdbfb2b6c6814",
+      "size": 2695
+    },
+    {
+      "path": "references/xiaohongshu-examples/观鸟图鉴-范例.html",
+      "sha": "8be373bf26edfaeab41a7d0b968313ca73431d23",
+      "size": 33285
+    },
+    {
+      "path": "references/xiaohongshu-format.md",
+      "sha": "b47f1166738cfd66abaf188a76e639931db215f0",
+      "size": 9150
+    },
+    {
+      "path": "references/xiaoyuzhou-podcast.md",
+      "sha": "f0940c5550ecc3ee7c12c6ce0a64b8fccfb2d813",
+      "size": 11843
+    },
+    {
+      "path": "scripts/distribute/cdp-utils.ts",
+      "sha": "7d09e3f2e680669cf1f439f2d5335dd484724105",
+      "size": 13908
+    },
+    {
+      "path": "scripts/distribute/distribute.ts",
+      "sha": "b79b44c3a4319e05aa527ff0ccaa8fc854c2f15f",
+      "size": 5067
+    },
+    {
+      "path": "scripts/distribute/platforms/douyin.ts",
+      "sha": "5c82206ab14af56bb3c37bddbbd130b8f752477f",
+      "size": 4838
+    },
+    {
+      "path": "scripts/distribute/platforms/jike.ts",
+      "sha": "7b2f438409398e60667c255d6df6eaa57f5908bc",
+      "size": 3692
+    },
+    {
+      "path": "scripts/distribute/platforms/shipinhao.ts",
+      "sha": "ff8cbc2e971085faa86f421c6ae4db572d4fce5b",
+      "size": 1007
+    },
+    {
+      "path": "scripts/distribute/platforms/wechat.ts",
+      "sha": "64cb60a976714c498b92050c04207c5548888d1d",
+      "size": 1810
+    },
+    {
+      "path": "scripts/distribute/platforms/xiaohongshu.ts",
+      "sha": "a78cf15e651f11a659eb3fab8726b2dc65152d94",
+      "size": 6559
+    },
+    {
+      "path": "scripts/distribute/platforms/xiaoyuzhou.ts",
+      "sha": "1a708f69d0548b4de4d175b1ba6c5cb6da5be181",
+      "size": 4725
+    },
+    {
+      "path": "scripts/distribute/test-results/.last-run.json",
+      "sha": "5fca3f84bc7b9240b2963858fe2f32f7c515a8d4",
+      "size": 45
+    },
+    {
+      "path": "scripts/distribute/wechat-api.ts",
+      "sha": "443ce2d930f899c681154729afd131d5200de584",
+      "size": 18456
+    },
+    {
+      "path": "scripts/fetch_wechat_article.py",
+      "sha": "52e757d46b2d26690779b5e9652ce31f6a6392f2",
+      "size": 10586
+    },
+    {
+      "path": "scripts/md2wechat_formatter.py",
+      "sha": "399041be138646881c0e9eb78b0877a94e2232db",
+      "size": 29105
+    },
+    {
+      "path": "static/image/content-pipeline-banner.png",
+      "sha": "a99447655941463219fbaff412b08021c23b9c5d",
+      "size": 20199
+    }
+  ]
+}

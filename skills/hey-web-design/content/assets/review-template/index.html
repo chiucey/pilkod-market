@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>网站设计确认页</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23176b4d'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./review.css">
+    <script src="./review.js" defer></script>
+  </head>
+  <body>
+    <!--
+      This is a presentation of project-state.yaml and docs/source summaries.
+      Do not store unique decisions here. Keep HEY:* markers when adapting it.
+    -->
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="review-header">
+      <div>
+        <p class="review-kicker">网站设计进度</p>
+        <h1 data-review-project>项目名称待确认</h1>
+      </div>
+      <div class="review-stage" aria-label="当前进度">
+        <span data-review-stage-count>第 1/8 步</span>
+        <strong data-review-stage-name>了解你要做什么网站</strong>
+      </div>
+    </header>
+
+    <nav class="review-nav" aria-label="预览入口">
+      <a data-review-home-link href="../index.html">打开网站首页</a>
+      <a href="#routes">查看全部页面</a>
+      <button type="button" data-copy-command>复制下一步命令</button>
+    </nav>
+
+    <main id="main">
+      <section class="review-intro" aria-labelledby="summary-title">
+        <div class="review-section-heading">
+          <p>本轮结果</p>
+          <h2 id="summary-title">现在可以看到什么</h2>
+        </div>
+        <!-- HEY:SUMMARY -->
+        <p data-review-summary>
+          已建立第一版页面结构。这里会用普通语言说明本轮网页发生了什么变化。
+        </p>
+      </section>
+
+      <section aria-labelledby="changes-title">
+        <div class="review-section-heading">
+          <p>网页变化</p>
+          <h2 id="changes-title">本轮已经更新</h2>
+        </div>
+        <!-- HEY:CHANGES -->
+        <ul class="review-list" data-review-changes>
+          <li>首页已出现可查看的临时结构。</li>
+          <li>电脑和手机入口已经准备好。</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="decisions-title">
+        <div class="review-section-heading">
+          <p>需要你的决定</p>
+          <h2 id="decisions-title">请重点确认这些内容</h2>
+        </div>
+        <!-- HEY:DECISIONS -->
+        <ol class="review-decisions" data-review-decisions>
+          <li>网站要服务哪一类访客。</li>
+          <li>首页最重要的信息和按钮。</li>
+        </ol>
+      </section>
+
+      <section id="evidence" aria-labelledby="evidence-title">
+        <div class="review-section-heading">
+          <p>参考与选择</p>
+          <h2 id="evidence-title">用画面比较，不只看文字</h2>
+        </div>
+        <!-- HEY:EVIDENCE
+          Insert reference captures, style comparisons, or approved media
+          candidates here. Hide this section only when it is not applicable.
+        -->
+        <div class="review-evidence" data-review-evidence>
+          <figure>
+            <div class="review-placeholder" role="img" aria-label="等待加入参考画面">
+              等待加入静态效果图或 HTML 方案
+            </div>
+            <figcaption>这里可以展示生成的静态效果图，也可以链接可操作的 HTML 配色与风格方案。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="routes" aria-labelledby="routes-title">
+        <div class="review-section-heading">
+          <p>页面入口</p>
+          <h2 id="routes-title">可以直接打开的页面</h2>
+        </div>
+        <!-- HEY:ROUTES -->
+        <div class="review-routes" data-review-routes>
+          <a href="../index.html">
+            <strong>首页</strong>
+            <span>查看当前版本</span>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="viewport-title">
+        <div class="review-section-heading">
+          <p>显示检查</p>
+          <h2 id="viewport-title">电脑和手机状态</h2>
+        </div>
+        <!-- HEY:VIEWPORTS -->
+        <dl class="review-status" data-review-viewports>
+          <div>
+            <dt>电脑</dt>
+            <dd data-status="pending">等待本轮检查</dd>
+          </div>
+          <div>
+            <dt>平板</dt>
+            <dd data-status="pending">等待本轮检查</dd>
+          </div>
+          <div>
+            <dt>手机</dt>
+            <dd data-status="pending">等待本轮检查</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="review-next" aria-labelledby="next-title">
+        <div>
+          <p>确认后怎么继续</p>
+          <h2 id="next-title">输入下面这条命令</h2>
+          <!-- HEY:NEXT-COMMAND -->
+          <code data-review-command>next:reference</code>
+          <p data-review-command-help>
+            这表示你确认当前网页展示的需求方向，可以开始研究参考网站。
+          </p>
+        </div>
+        <button type="button" data-copy-command>复制命令</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        这是内部确认页，不属于最终公开网站。最终交付时会从公开文件中排除。
+      </p>
+    </footer>
+
+    <div class="review-toast" data-review-toast role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "550eed5ed49f468fd0a20c24d02ac809eed14b39",
+      "size": 28376
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e5d24d1f52befb9e80412cdfa154e352beec0ad4",
+      "size": 132
+    },
+    {
+      "path": "references/image-extraction.md",
+      "sha": "601c9d5e9d6619b514f07aac019b6b79d56e3d2c",
+      "size": 6881
+    },
+    {
+      "path": "references/server-runtime.md",
+      "sha": "255d2514251be3582e6ffe584fc657da1cf9c931",
+      "size": 3902
+    },
+    {
+      "path": "references/source-checking.md",
+      "sha": "a7ed7e01aa08ca1c2fc90d30aa38241a14022fd0",
+      "size": 6338
+    },
+    {
+      "path": "references/sources.json",
+      "sha": "c2d0a9f3ca89cfae0223d1442194d16ad3587b77",
+      "size": 8724
+    },
+    {
+      "path": "scripts/asset_fetcher.py",
+      "sha": "e6f864fbbf9fa7f89c4c7b9cb031c99d679a2dcc",
+      "size": 9987
+    },
+    {
+      "path": "scripts/collect_ai_hotspots.py",
+      "sha": "fbd2ca7e6f08970bc067fec81e6cb48096856756",
+      "size": 36588
+    },
+    {
+      "path": "scripts/verify_hotspots.py",
+      "sha": "be20305ae284ba8a93e7bf153d00494b531f1cc6",
+      "size": 15229
+    }
+  ]
+}

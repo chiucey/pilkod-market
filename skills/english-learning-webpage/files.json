@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "bbd0b67f00091dd607abcd6fcc470adb6e9ab996",
+      "size": 8300
+    },
+    {
+      "path": "_meta.json",
+      "sha": "54a6c0a0b29053097a9564453e9e645a40b5366b",
+      "size": 616
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "f7aa9b539c3e45387c996be296772242944433c2",
+      "size": 847
+    },
+    {
+      "path": "assets/icon.svg",
+      "sha": "4c3163aa85e15ed80114f93a9a2b140a53012c44",
+      "size": 1210
+    },
+    {
+      "path": "references/01-inputs-and-workspace.md",
+      "sha": "cb8d0ae1809d4dde1500a10bbfb0ef1f7c7cb10a",
+      "size": 4251
+    },
+    {
+      "path": "references/02-subtitle-alignment.md",
+      "sha": "8532e951443dbbe59077a75dc41a0c548d8e2490",
+      "size": 7099
+    },
+    {
+      "path": "references/03-learning-data.md",
+      "sha": "b0e2ae8bab23bf486dbcc91551b89757836c671c",
+      "size": 4121
+    },
+    {
+      "path": "references/04-audio-slicing.md",
+      "sha": "97843ae851e16a2a5cf8ba2b1aadb1ce9b65c5a1",
+      "size": 2130
+    },
+    {
+      "path": "references/05-template-and-ui.md",
+      "sha": "b105e15449743bcd020346ce855bb6f0e5fa52e3",
+      "size": 3346
+    },
+    {
+      "path": "references/06-validation.md",
+      "sha": "9d9a47d3b444a2da9e6ad499ad1379c48026f086",
+      "size": 2017
+    },
+    {
+      "path": "references/07-stt-benchmark.md",
+      "sha": "82e45d0eff94474a8f91b9ba1270c1d0fe89d891",
+      "size": 1543
+    },
+    {
+      "path": "references/rh-subagent-prompt.md",
+      "sha": "511f3056e81341526c85ae798f66816ef424b7c9",
+      "size": 3920
+    },
+    {
+      "path": "scripts/01_align_with_official.py",
+      "sha": "17f9042e3fd0acd256647ac5d9e115611e3b02fb",
+      "size": 18367
+    },
+    {
+      "path": "scripts/02_build_from_wordlevel.py",
+      "sha": "e86b9642e23aa8d56e971e6bf240d37b85a38866",
+      "size": 4821
+    },
+    {
+      "path": "scripts/03_embed_sentence_audio.py",
+      "sha": "6e83eb413eaf36fd29f44005571b227fc2b8aaf1",
+      "size": 3268
+    },
+    {
+      "path": "scripts/04_inject_html_template.py",
+      "sha": "7683d133df129a535e4e5cbe4bf31ca7d43cd540",
+      "size": 2420
+    },
+    {
+      "path": "scripts/generate.ps1",
+      "sha": "d488cf689fa0465b398572b48221d5c2520d2d31",
+      "size": 1127
+    },
+    {
+      "path": "scripts/generate_test_html.py",
+      "sha": "70887de85690a532e4b685039b56c564f62d0fcf",
+      "size": 1306
+    },
+    {
+      "path": "templates/alignment_anomalies_template.xlsx",
+      "sha": "309fa8609763375a37089926a518f0b7d16bae1e",
+      "size": 1733
+    },
+    {
+      "path": "templates/chunk_cut_test.html",
+      "sha": "a5ef6762a70f87629ce01534a32a3d79dc110d08",
+      "size": 94466
+    },
+    {
+      "path": "templates/listening_page_template.html",
+      "sha": "66298cf285ecf3534d685f813300f01197b07ea2",
+      "size": 24087
+    },
+    {
+      "path": "templates/minified_data.md",
+      "sha": "531442bc7341fa89d5e187cd82253ba0ccc298f2",
+      "size": 806
+    },
+    {
+      "path": "templates/pronunciation_hint_test.html",
+      "sha": "5395650dba1b92cce05e1bac0d9f3c6e090357d6",
+      "size": 94410
+    },
+    {
+      "path": "templates/task_progress_template.yaml",
+      "sha": "77aab4e570f6bee38527fede91482a5072e6c0d9",
+      "size": 557
+    }
+  ]
+}

@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智慧城市建设成果汇报</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================================
+       CSS 变量系统 - 主题色定义
+       修改这里来切换不同主题
+       ======================================== */
+
+    /* 默认：政务庄重主题 */
+    :root {
+      /* 字体定义 */
+      --font-serif: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif;
+      --font-sans: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+      --font-mono: 'IBM Plex Mono', 'SF Mono', 'Consolas', monospace;
+      --font-display: 'Playfair Display', 'Noto Serif SC', serif;
+
+      /* 背景与前景 */
+      --bg: #FFFFFF;
+      --fg: #1F2937;
+      --bg-secondary: #F3F4F6;
+
+      /* 强调色 - 中国红 */
+      --accent: #C41E3A;
+      --accent-light: #FEE2E2;
+      --accent-dark: #9B1C1C;
+
+      /* 辅助强调色 - 金色 */
+      --accent-secondary: #FFD700;
+
+      /* 功能色 */
+      --success: #059669;
+      --warning: #D97706;
+      --error: #DC2626;
+      --info: #3B82F6;
+
+      /* 灰度阶梯 */
+      --gray-1: #111827;
+      --gray-2: #1F2937;
+      --gray-3: #374151;
+      --gray-4: #6B7280;
+      --gray-5: #9CA3AF;
+      --gray-6: #D1D5DB;
+      --gray-7: #E5E7EB;
+
+      /* 图表色板 */
+      --chart-1: #58A6FF;
+      --chart-2: #3FB950;
+      --chart-3: #F78166;
+      --chart-4: #D29922;
+      --chart-5: #8B5CF6;
+      --chart-6: #DB61A2;
+
+      /* 透明度变量 */
+      --overlay: rgba(255, 255, 255, 0.9);
+      --shadow: rgba(0, 0, 0, 0.1);
+      --glow: rgba(196, 30, 58, 0.2);
+
+      /* 间距系统 */
+      --page-padding: 4vw;
+      --element-gap: 2vh;
+      --grid-gap: 3vw;
+
+      /* 过渡动画 */
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.4s ease;
+      --transition-slow: 0.6s ease;
+    }
+
+    /* 深色主题 */
+    [data-theme="dark"] {
+      --bg: #1F2937;
+      --fg: #F9FAFB;
+      --bg-secondary: #111827;
+      --accent: #EF4444;
+      --accent-light: rgba(239, 68, 68, 0.2);
+      --accent-secondary: #FCD34D;
+      --overlay: rgba(31, 41, 55, 0.9);
+      --shadow: rgba(0, 0, 0, 0.4);
+      --glow: rgba(239, 68, 68, 0.3);
+      --gray-1: #F9FAFB;
+      --gray-2: #E5E7EB;
+      --gray-3: #D1D5DB;
+      --gray-4: #9CA3AF;
+      --gray-5: #6B7280;
+      --gray-6: #374151;
+      --gray-7: #1F2937;
+    }
+
+    /* ========================================
+       基础重置与全局样式
+       ======================================== */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* ========================================
+       幻灯片容器
+       ======================================== */
+
+    .deck {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: var(--page-padding);
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-normal), background-color var(--transition-normal);
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+    }
+
+    /* Hero 页面特殊样式 */
+    .slide.hero {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
+    }
+
+    .slide.hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse at 30% 20%, var(--accent-light) 0%, transparent 50%);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    /* ========================================
+       Chrome 页眉
+       ======================================== */
+
+    .chrome {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3vh;
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+
+    .chrome .left,
+    .chrome .center,
+    .chrome .right {
+      flex: 1;
+    }
+
+    .chrome .center {
+      text-align: center;
+    }
+
+    .chrome .right {
+      text-align: right;
+    }
+
+    /* ========================================
+       Foot 页脚
+       ======================================== */
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3vh;
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+      border-top: 1px solid var(--gray-7);
+      padding-top: 1vh;
+    }
+
+    .foot .left,
+    .foot .center,
+    .foot .right {
+      flex: 1;
+    }
+
+    .foot .center {
+      text-align: center;
+    }
+
+    .foot .right {
+      text-align: right;
+    }
+
+    /* ========================================
+       内容区域
+       ======================================== */
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ========================================
+       字体系统
+       ======================================== */
+
+    /* 超大标题 - 英文 */
+    .display {
+      font-family: var(--font-display);
+      font-size: 11vw;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      font-style: italic;
+    }
+
+    /* 超大标题 - 中文 */
+    .display-zh {
+      font-family: var(--font-serif);
+      font-size: 7.8vw;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    /* 一级标题 - 中文 */
+    .h1-zh {
+      font-family: var(--font-serif);
+      font-size: 4.6vw;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    /* 二级标题 - 中文 */
+    .h2-zh {
+      font-family: var(--font-serif);
+      font-size: 3.2vw;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    /* 三级标题 - 中文 */
+    .h3-zh {
+      font-family: var(--font-serif);
+      font-size: 2.2vw;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* 四级标题 - 中文 */
+    .h4-zh {
+      font-family: var(--font-sans);
+      font-size: 1.6vw;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* 引导段落 */
+    .lead {
+      font-family: var(--font-sans);
+      font-size: 1.9vw;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* 正文 - 中文 */
+    .body-zh {
+      font-family: var(--font-sans);
+      font-size: 1.22vw;
+      font-weight: 400;
+      line-height: 1.8;
+    }
+
+    /* 正文 - 衬线 */
+    .body-serif {
+      font-family: var(--font-serif);
+      font-size: 1.3vw;
+      font-weight: 400;
+      line-height: 1.8;
+    }
+
+    /* 小节提示 */
+    .kicker {
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1vh;
+    }
+
+    /* 元信息 */
+    .meta {
+      font-family: var(--font-mono);
+      font-size: 0.88vw;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gray-4);
+    }
+
+    /* 巨型数字 */
+    .big-num {
+      font-family: var(--font-display);
+      font-size: 10vw;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    /* 中号数字 */
+    .mid-num {
+      font-family: var(--font-display);
+      font-size: 5.5vw;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    /* ========================================
+       Stat 数字卡片
+       ======================================== */
+
+    .stat-card {
+      padding: 2vh 1.5vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .stat-card .m {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-4);
+      margin-bottom: 1vh;
+    }
+
+    .stat-card .n {
+      font-family: var(--font-display);
+      font-size: 4vw;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1vh;
+    }
+
+    .stat-card .n small {
+      font-size: 0.4em;
+      opacity: 0.7;
+    }
+
+    .stat-card .l {
+      font-family: var(--font-sans);
+      font-size: 0.9vw;
+      color: var(--gray-3);
+    }
+
+    /* ========================================
+       Grid 网格系统
+       ======================================== */
+
+    .grid {
+      display: grid;
+      gap: var(--grid-gap);
+    }
+
+    .grid-6 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .grid-2-7-5 {
+      display: grid;
+      grid-template-columns: 2fr 7fr 5fr;
+      gap: var(--grid-gap);
+    }
+
+    .grid-2-6-6 {
+      display: grid;
+      grid-template-columns: 2fr 6fr 6fr;
+      gap: var(--grid-gap);
+    }
+
+    .grid-2-8-4 {
+      display: grid;
+      grid-template-columns: 2fr 8fr 4fr;
+      gap: var(--grid-gap);
+    }
+
+    /* ========================================
+       Pillar 支柱卡
+       ======================================== */
+
+    .pillar {
+      padding: 2vh 1.5vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+    }
+
+    .pillar .ic {
+      font-family: var(--font-display);
+      font-size: 2vw;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.5vh;
+    }
+
+    .pillar .ti {
+      font-family: var(--font-serif);
+      font-size: 1.4vw;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 1vh;
+      line-height: 1.3;
+    }
+
+    .pillar .desc {
+      font-family: var(--font-sans);
+      font-size: 0.95vw;
+      color: var(--gray-3);
+      line-height: 1.6;
+    }
+
+    /* ========================================
+       Rowline 表格行
+       ======================================== */
+
+    .rowline {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: 1vw;
+      padding: 1.5vh 0;
+      border-bottom: 1px solid var(--gray-7);
+    }
+
+    .rowline:first-child {
+      border-top: 1px solid var(--gray-7);
+    }
+
+    .rowline .k {
+      font-family: var(--font-serif);
+      font-size: 1vw;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    .rowline .v {
+      font-family: var(--font-sans);
+      font-size: 0.95vw;
+      color: var(--gray-3);
+    }
+
+    .rowline .m {
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--gray-4);
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    /* ========================================
+       Figure 图片框
+       ======================================== */
+
+    .figure {
+      margin: 0;
+    }
+
+    .frame-img {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+      background: var(--bg-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .frame-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .frame-img.fit-contain img {
+      object-fit: contain;
+    }
+
+    /* 高度类 */
+    .h-16 { height: 16vh; }
+    .h-18 { height: 18vh; }
+    .h-22 { height: 22vh; }
+    .h-26 { height: 26vh; }
+    .h-28 { height: 28vh; }
+
+    figcaption {
+      margin-top: 1vh;
+    }
+
+    figcaption .title {
+      font-family: var(--font-serif);
+      font-size: 1vw;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    figcaption .stat {
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--gray-4);
+      margin-top: 0.5vh;
+    }
+
+    /* 图片占位符 */
+    .placeholder {
+      border: 2px dashed var(--gray-4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-4);
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+    }
+
+    /* ========================================
+       Pipeline 流程
+       ======================================== */
+
+    .pipeline {
+      display: flex;
+      gap: 2vw;
+      justify-content: space-between;
+    }
+
+    .step {
+      flex: 1;
+      padding: 2vh 1.5vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      border-top: 3px solid var(--gray-4);
+      transition: all var(--transition-fast);
+    }
+
+    .step.active {
+      border-top-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .step-nb {
+      font-family: var(--font-display);
+      font-size: 2vw;
+      font-weight: 700;
+      color: var(--gray-4);
+      margin-bottom: 1vh;
+    }
+
+    .step.active .step-nb {
+      color: var(--accent);
+    }
+
+    .step-title {
+      font-family: var(--font-serif);
+      font-size: 1.3vw;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 1vh;
+    }
+
+    .step-desc {
+      font-family: var(--font-sans);
+      font-size: 0.9vw;
+      color: var(--gray-3);
+      line-height: 1.5;
+      margin-bottom: 1vh;
+    }
+
+    .step-meta {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+    }
+
+    /* ========================================
+       Timeline 时间线
+       ======================================== */
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5vh;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ========================================
+       Tag 标签
+       ======================================== */
+
+    .tag {
+      display: inline-block;
+      padding: 0.5vh 1vw;
+      border: 1px solid var(--accent);
+      border-radius: 100px;
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ========================================
+       Callout 引用框
+       ======================================== */
+
+    .callout {
+      padding: 2vh 2vw;
+      border-left: 4px solid var(--accent);
+      background: var(--bg-secondary);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .callout p {
+      font-family: var(--font-serif);
+      font-size: 2vw;
+      line-height: 1.5;
+      color: var(--fg);
+      font-style: italic;
+    }
+
+    .callout cite {
+      display: block;
+      margin-top: 1.5vh;
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+      color: var(--gray-4);
+      font-style: normal;
+    }
+
+    /* ========================================
+       Ghost 巨型背景字
+       ======================================== */
+
+    .ghost {
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 20vw;
+      font-weight: 800;
+      color: var(--fg);
+      opacity: 0.04;
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
+    }
+
+    /* ========================================
+       Highlight 荧光标记
+       ======================================== */
+
+    .highlight,
+    mark {
+      background: linear-gradient(120deg, var(--accent-light) 0%, var(--accent-light) 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 40%;
+      background-position: 0 90%;
+      padding: 0 0.2em;
+    }
+
+    [data-theme="dark"] .highlight,
+    [data-theme="dark"] mark {
+      background: linear-gradient(120deg, var(--accent) 0%, var(--accent) 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 40%;
+      background-position: 0 90%;
+      color: white;
+    }
+
+    /* ========================================
+       Architecture 架构图样式
+       ======================================== */
+
+    /* 五横三纵总体架构 */
+    .arch-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8vh;
+      position: relative;
+      padding-right: 12vw;
+    }
+
+    .arch-layer {
+      display: flex;
+      align-items: center;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.2vh 1.5vw;
+      border-left: 4px solid var(--accent);
+    }
+
+    .arch-label {
+      width: 8vw;
+      font-family: var(--font-serif);
+      font-size: 0.9vw;
+      font-weight: 600;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .arch-modules {
+      display: flex;
+      gap: 1vw;
+      flex: 1;
+    }
+
+    .arch-module {
+      padding: 0.8vh 1.5vw;
+      background: white;
+      border-radius: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.85vw;
+      color: var(--fg);
+      border: 1px solid var(--gray-6);
+      text-align: center;
+      flex: 1;
+    }
+
+    /* 五横三纵层级配色 - 使用CSS变量保持主题一致性 */
+    .arch-layer.infrastructure { border-left-color: var(--gray-4); }
+    .arch-layer.infrastructure .arch-label { color: var(--gray-4); }
+    .arch-layer.datalayer { border-left-color: var(--info, #3B82F6); }
+    .arch-layer.datalayer .arch-label { color: var(--info, #3B82F6); }
+    .arch-layer.platform { border-left-color: var(--chart-5, #8B5CF6); }
+    .arch-layer.platform .arch-label { color: var(--chart-5, #8B5CF6); }
+    .arch-layer.application { border-left-color: var(--success); }
+    .arch-layer.application .arch-label { color: var(--success); }
+    .arch-layer.presentation { border-left-color: var(--warning); }
+    .arch-layer.presentation .arch-label { color: var(--warning); }
+
+    .arch-verticals {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 11vw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8vh;
+    }
+
+    .arch-vertical {
+      flex: 1;
+      background: linear-gradient(135deg, var(--accent-light) 0%, transparent 100%);
+      border-radius: 8px;
+      padding: 1vh;
+      border: 1px solid var(--accent);
+    }
+
+    .arch-v-label {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.5vh;
+    }
+
+    .arch-v-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3vh;
+    }
+
+    .arch-v-items span {
+      font-family: var(--font-sans);
+      font-size: 0.75vw;
+      color: var(--gray-2);
+      padding: 0.3vh 0.5vw;
+      background: white;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    /* 三纵配色 - 使用CSS变量保持主题一致性 */
+    .arch-vertical.security { border-color: var(--error); }
+    .arch-vertical.security .arch-v-label { color: var(--error); }
+    .arch-vertical.standard { border-color: var(--gray-4); }
+    .arch-vertical.standard .arch-v-label { color: var(--gray-4); }
+    .arch-vertical.operation { border-color: var(--warning); }
+    .arch-vertical.operation .arch-v-label { color: var(--warning); }
+
+    /* 业务架构 */
+    .biz-arch-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5vw;
+      margin-bottom: 2vh;
+    }
+
+    .biz-domain {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--gray-6);
+    }
+
+    .biz-domain-header {
+      padding: 1.2vh 1.5vw;
+      color: white;
+      font-family: var(--font-serif);
+      font-size: 1.1vw;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .biz-domain-body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5vw;
+      padding: 1vh;
+      background: var(--bg-secondary);
+    }
+
+    .biz-capability {
+      padding: 0.8vh 0.5vw;
+      background: white;
+      border-radius: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.8vw;
+      color: var(--gray-2);
+      text-align: center;
+      border: 1px solid var(--gray-7);
+    }
+
+    /* 业务域配色 - 使用CSS变量保持主题一致性 */
+    .biz-domain-header.accent-blue {
+      background: linear-gradient(135deg, var(--info, #3B82F6), var(--info, #2563EB));
+    }
+    .biz-domain-header.accent-green {
+      background: linear-gradient(135deg, var(--success, #10B981), var(--success, #059669));
+    }
+    .biz-domain-header.accent-orange {
+      background: linear-gradient(135deg, var(--warning, #F59E0B), var(--warning, #D97706));
+    }
+    .biz-domain-header.accent-purple {
+      background: linear-gradient(135deg, var(--chart-5, #8B5CF6), var(--chart-5, #7C3AED));
+    }
+
+    .biz-common {
+      display: flex;
+      align-items: center;
+      padding: 1.5vh 1.5vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      border: 2px dashed var(--gray-4);
+    }
+
+    .biz-common-label {
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-right: 2vw;
+      flex-shrink: 0;
+    }
+
+    .biz-common-items {
+      display: flex;
+      gap: 1vw;
+      flex: 1;
+    }
+
+    .biz-common-items span {
+      padding: 0.6vh 1vw;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 100px;
+      font-family: var(--font-sans);
+      font-size: 0.75vw;
+      font-weight: 500;
+    }
+
+    /* 数据架构 */
+    .data-arch-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      padding: 2vh 2vw;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      margin-bottom: 2vh;
+    }
+
+    .data-layer {
+      padding: 1.5vh 2vw;
+      background: white;
+      border-radius: 10px;
+      border: 1px solid var(--gray-6);
+    }
+
+    .data-layer-title {
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1vh;
+    }
+
+    .data-layer-content {
+      display: flex;
+      gap: 1.5vw;
+      justify-content: center;
+    }
+
+    .data-source-item {
+      padding: 0.8vh 1.2vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.85vw;
+      color: var(--fg);
+    }
+
+    .data-middle-platform {
+      padding: 1.5vh 2vw;
+      background: linear-gradient(135deg, var(--accent-light) 0%, white 100%);
+      border-radius: 10px;
+      border: 2px solid var(--accent);
+    }
+
+    .data-platform-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1vw;
+      margin-top: 1vh;
+    }
+
+    .data-platform-module {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5vh 1vw;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid var(--gray-6);
+      font-family: var(--font-sans);
+      font-size: 0.8vw;
+      color: var(--gray-2);
+      text-align: center;
+    }
+
+    .data-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1vw;
+    }
+
+    .data-stat-item {
+      text-align: center;
+      padding: 1.5vh;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid var(--gray-6);
+    }
+
+    .ds-value {
+      font-family: var(--font-display);
+      font-size: 2vw;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .ds-label {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+      margin-top: 0.5vh;
+    }
+
+    /* 应用架构 */
+    .app-arch-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2vh;
+      padding: 2vh 2vw;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+    }
+
+    .app-layer {
+      display: flex;
+      align-items: center;
+      padding: 1.2vh 1.5vw;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid var(--gray-6);
+    }
+
+    .app-layer-label {
+      width: 6vw;
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--accent);
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .app-user-items {
+      display: flex;
+      gap: 3vw;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .app-user-item {
+      padding: 1vh 2vw;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+      border-radius: 100px;
+      font-family: var(--font-sans);
+      font-size: 0.9vw;
+      font-weight: 500;
+    }
+
+    .app-channel-items {
+      display: flex;
+      gap: 2vw;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .app-channel-item {
+      padding: 0.8vh 1.5vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 0.85vw;
+    }
+
+    .main-app-layer {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1.5vh 1.5vw;
+    }
+
+    .app-group-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1vw;
+      margin-top: 1vh;
+    }
+
+    .app-group {
+      padding: 1.2vh 1vw;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      border-top: 3px solid var(--accent);
+    }
+
+    .app-group-title {
+      font-family: var(--font-serif);
+      font-size: 0.85vw;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 0.8vh;
+    }
+
+    .app-group-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5vh;
+    }
+
+    .app-group-items span {
+      font-family: var(--font-sans);
+      font-size: 0.75vw;
+      color: var(--gray-3);
+      padding: 0.4vh 0.8vw;
+      background: white;
+      border-radius: 4px;
+    }
+
+    .app-external {
+      display: flex;
+      align-items: center;
+      padding: 1vh 1.5vw;
+      background: var(--gray-7);
+      border-radius: 8px;
+      border: 2px dashed var(--gray-4);
+    }
+
+    .app-external-items {
+      display: flex;
+      gap: 2vw;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .app-external-item {
+      font-family: var(--font-sans);
+      font-size: 0.8vw;
+      color: var(--gray-4);
+    }
+
+    /* 技术架构 */
+    .tech-arch-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8vh;
+      padding: 2vh 2vw;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+    }
+
+    .tech-row {
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+    }
+
+    .tech-row-label {
+      width: 6vw;
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: white;
+      background: var(--gray-4);
+      padding: 0.8vh 0.5vw;
+      border-radius: 6px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tech-row:nth-child(1) .tech-row-label { background: var(--gray-4); }
+    .tech-row:nth-child(2) .tech-row-label { background: var(--info, #3B82F6); }
+    .tech-row:nth-child(3) .tech-row-label { background: #8B5CF6; }
+    .tech-row:nth-child(4) .tech-row-label { background: var(--success); }
+
+    .tech-row-content {
+      display: flex;
+      gap: 1vw;
+      flex: 1;
+    }
+
+    .tech-module {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8vh 1vw;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid var(--gray-6);
+      font-family: var(--font-sans);
+      font-size: 0.75vw;
+      color: var(--gray-2);
+    }
+
+    /* ========================================
+       Chart 图表组件样式
+       ======================================== */
+
+    /* 图表容器 */
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      padding: 2vh 2vw;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+    }
+
+    /* 图表标题 */
+    .chart-title {
+      font-family: var(--font-serif);
+      font-size: 1.2vw;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    /* 图表内容区 */
+    .chart-content {
+      display: flex;
+      gap: 2vw;
+      align-items: flex-end;
+      height: 20vh;
+      padding: 2vh 0;
+      border-bottom: 2px solid var(--gray-6);
+    }
+
+    /* 柱状图 */
+    .bar-chart {
+      display: flex;
+      gap: 1.5vw;
+      align-items: flex-end;
+      height: 100%;
+      flex: 1;
+    }
+
+    .bar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8vh;
+      flex: 1;
+    }
+
+    .bar {
+      width: 100%;
+      max-width: 4vw;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark, var(--accent)) 100%);
+      border-radius: 4px 4px 0 0;
+      transition: height 0.3s ease;
+    }
+
+    .bar-label {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-4);
+      text-align: center;
+    }
+
+    .bar-value {
+      font-family: var(--font-display);
+      font-size: 1vw;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    /* 横向条形图 */
+    .h-bar-chart {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2vh;
+      width: 100%;
+    }
+
+    .h-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+    }
+
+    .h-bar-label {
+      width: 6vw;
+      font-family: var(--font-sans);
+      font-size: 0.8vw;
+      color: var(--gray-3);
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .h-bar-track {
+      flex: 1;
+      height: 1.5vh;
+      background: var(--gray-7);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .h-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark, var(--accent)) 100%);
+      border-radius: 2px;
+      transition: width 0.5s ease;
+    }
+
+    .h-bar-value {
+      width: 3vw;
+      font-family: var(--font-mono);
+      font-size: 0.75vw;
+      color: var(--accent);
+      text-align: left;
+      flex-shrink: 0;
+    }
+
+    /* 环形图/饼图 */
+    .donut-chart {
+      position: relative;
+      width: 18vh;
+      height: 18vh;
+      flex-shrink: 0;
+    }
+
+    .donut-chart svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .donut-chart circle {
+      fill: none;
+      stroke-width: 8;
+    }
+
+    .donut-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .donut-value {
+      font-family: var(--font-display);
+      font-size: 2.5vw;
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    .donut-label {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+    }
+
+    /* 图表图例 */
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5vw;
+      justify-content: center;
+      margin-top: 1vh;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5vw;
+      font-family: var(--font-sans);
+      font-size: 0.75vw;
+      color: var(--gray-3);
+    }
+
+    .legend-color {
+      width: 0.8vw;
+      height: 0.8vw;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* 进度条 */
+    .progress-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vh;
+    }
+
+    .progress-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5vh;
+    }
+
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .progress-label {
+      font-family: var(--font-sans);
+      font-size: 0.9vw;
+      color: var(--fg);
+    }
+
+    .progress-value {
+      font-family: var(--font-mono);
+      font-size: 0.8vw;
+      color: var(--accent);
+    }
+
+    .progress-track {
+      height: 0.8vh;
+      background: var(--gray-7);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark, var(--accent)) 100%);
+      border-radius: 4px;
+      transition: width 0.5s ease;
+    }
+
+    /* 迷你图表网格 */
+    .mini-chart-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5vw;
+    }
+
+    .mini-chart-card {
+      padding: 2vh;
+      background: white;
+      border-radius: 10px;
+      border: 1px solid var(--gray-6);
+      text-align: center;
+    }
+
+    .mini-chart-label {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      color: var(--gray-4);
+      text-transform: uppercase;
+      margin-bottom: 1vh;
+    }
+
+    .mini-chart-value {
+      font-family: var(--font-display);
+      font-size: 2vw;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .mini-chart-trend {
+      font-family: var(--font-mono);
+      font-size: 0.7vw;
+      margin-top: 0.5vh;
+    }
+
+    .mini-chart-trend.up { color: var(--success); }
+    .mini-chart-trend.down { color: var(--error); }
+
+    /* ========================================
+       Icon 图标
+       ======================================== */
+
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ========================================
+       导航控件
+       ======================================== */
+
+    .nav-dots {
+      position: fixed;
+      bottom: 6vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5vw;
+      z-index: 100;
+    }
+
+    .nav-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gray-4);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .nav-dot.active {
+      background: var(--accent);
+      transform: scale(1.3);
+    }
+
+    .nav-dot:hover {
+      background: var(--accent);
+    }
+
+    .nav-hint {
+      position: fixed;
+      bottom: 2vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-mono);
+      font-size: 0.65vw;
+      color: var(--gray-5);
+      z-index: 100;
+    }
+
+    /* ========================================
+       动画系统
+       ======================================== */
+
+    [data-anim] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    [data-anim].anim-ready {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 不同动画配方 */
+    [data-animate="hero"] [data-anim] {
+      transition-delay: calc(var(--anim-index, 0) * 160ms);
+    }
+
+    [data-animate="cascade"] [data-anim],
+    .slide:not([data-animate]) [data-anim] {
+      transition-delay: calc(var(--anim-index, 0) * 75ms);
+    }
+
+    [data-animate="quote"] [data-anim="line"] {
+      transition-delay: calc(var(--anim-index, 0) * 550ms);
+    }
+
+    [data-animate="directional"] [data-anim="left"] {
+      transform: translateX(-30px);
+    }
+
+    [data-animate="directional"] [data-anim="right"] {
+      transform: translateX(30px);
+    }
+
+    [data-animate="directional"] [data-anim="left"].anim-ready,
+    [data-animate="directional"] [data-anim="right"].anim-ready {
+      transform: translateX(0);
+    }
+
+    /* Pipeline 特殊状态 */
+    [data-animate="pipeline"] .step {
+      opacity: 0.15;
+      filter: grayscale(1);
+      transition: opacity 0.4s ease, filter 0.4s ease, border-top-color 0.4s ease;
+    }
+
+    [data-animate="pipeline"] .step.active {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+
+    /* ========================================
+       响应式适配
+       ======================================== */
+
+    @media (max-width: 1024px) {
+      :root {
+        --page-padding: 5vw;
+        --grid-gap: 4vw;
+      }
+
+      .grid-6,
+      .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pipeline {
+        flex-direction: column;
+      }
+
+      .stat-card .n {
+        font-size: 5vw;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --page-padding: 6vw;
+        --grid-gap: 5vw;
+      }
+
+      .grid-6,
+      .grid-4,
+      .grid-3,
+      .grid-2-7-5,
+      .grid-2-6-6,
+      .grid-2-8-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .display-zh {
+        font-size: 10vw;
+      }
+
+      .h1-zh {
+        font-size: 6vw;
+      }
+
+      .h2-zh {
+        font-size: 4.5vw;
+      }
+
+      .nav-dots {
+        display: none;
+      }
+    }
+
+    /* ========================================
+       P0: 可点击目录导航
+       ======================================== */
+
+    .toc-link {
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .toc-link:hover {
+      color: var(--accent);
+      transform: translateX(8px);
+    }
+
+    .toc-link::before {
+      content: "→ ";
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .toc-link:hover::before {
+      opacity: 1;
+    }
+
+    /* ========================================
+       P0: 打印样式优化
+       ======================================== */
+
+    @media print {
+      :root {
+        --bg: #FFFFFF !important;
+        --fg: #000000 !important;
+        --bg-secondary: #F5F5F5 !important;
+      }
+
+      .slide {
+        page-break-after: always;
+        page-break-inside: avoid;
+        height: auto !important;
+        min-height: 100vh;
+        background: white !important;
+      }
+
+      .slide:last-child {
+        page-break-after: auto;
+      }
+
+      .nav-dots,
+      .nav-hint {
+        display: none !important;
+      }
+
+      .chrome,
+      .foot {
+        border: 1px solid #ddd;
+        background: #f9f9f9 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* 确保深色主题打印为浅色 */
+      [data-theme="dark"] .chrome,
+      [data-theme="dark"] .foot {
+        background: #eee !important;
+        color: #333 !important;
+      }
+
+      [data-theme="dark"] h1,
+      [data-theme="dark"] h2,
+      [data-theme="dark"] p {
+        color: #333 !important;
+      }
+
+      /* 打印时显示所有动画元素 */
+      [data-anim] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      /* 背景图形打印 */
+      .slide[style*="background"] {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+
+    /* ========================================
+       P1: 全文搜索功能
+       ======================================== */
+
+    .search-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 15vh;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .search-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .search-modal {
+      background: var(--bg);
+      border-radius: 12px;
+      width: 50vw;
+      max-width: 600px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 1.5vh 2vw;
+      font-size: 1.2vw;
+      font-family: var(--font-sans);
+      border: none;
+      border-bottom: 1px solid var(--gray-6);
+      outline: none;
+      background: transparent;
+    }
+
+    .search-results {
+      max-height: 50vh;
+      overflow-y: auto;
+    }
+
+    .search-result {
+      padding: 1.5vh 2vw;
+      border-bottom: 1px solid var(--gray-7);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-result:hover {
+      background: var(--bg-secondary);
+    }
+
+    .search-result-title {
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 0.5vh;
+    }
+
+    .search-result-context {
+      font-size: 0.85vw;
+      color: var(--gray-4);
+    }
+
+    .search-result-context mark {
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0 0.2em;
+      border-radius: 2px;
+    }
+
+    .search-empty {
+      padding: 4vh 2vw;
+      text-align: center;
+      color: var(--gray-4);
+    }
+
+    .search-hint {
+      padding: 1vh 2vw;
+      font-size: 0.75vw;
+      color: var(--gray-5);
+      background: var(--bg-secondary);
+    }
+
+    /* ========================================
+       P2: 代码复制按钮
+       ======================================== */
+
+    .code-block {
+      position: relative;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 1vh;
+      right: 1vw;
+      padding: 0.5vh 1vw;
+      font-size: 0.7vw;
+      font-family: var(--font-mono);
+      background: var(--bg-secondary);
+      border: 1px solid var(--gray-6);
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0;
+      transition: all var(--transition-fast);
+    }
+
+    .code-block:hover .copy-btn {
+      opacity: 1;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .copy-btn.copied {
+      background: var(--success);
+      color: white;
+      border-color: var(--success);
+    }
+
+    /* ========================================
+       P2: 大字模式
+       ======================================== */
+
+    .large-font-mode {
+      --body-size: 1.6vw;
+      --h1-size: 5.5vw;
+      --h2-size: 3.8vw;
+      --h3-size: 2.6vw;
+    }
+
+    .large-font-mode .body-zh {
+      font-size: var(--body-size);
+    }
+
+    .large-font-mode .h1-zh {
+      font-size: var(--h1-size);
+    }
+
+    .large-font-mode .h2-zh {
+      font-size: var(--h2-size);
+    }
+
+    .large-font-mode .h3-zh {
+      font-size: var(--h3-size);
+    }
+
+    .font-toggle {
+      position: fixed;
+      top: 2vh;
+      right: 2vw;
+      z-index: 100;
+      padding: 0.8vh 1.2vw;
+      font-size: 0.7vw;
+      font-family: var(--font-mono);
+      background: var(--bg-secondary);
+      border: 1px solid var(--gray-6);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .font-toggle:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    /* ========================================
+       P1: 无障碍增强
+       ======================================== */
+
+    /* 焦点样式 */
+    .slide:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* 跳过导航链接 */
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: white;
+      padding: 1vh 2vw;
+      z-index: 9999;
+      border-radius: 0 0 8px 8px;
+      transition: top 0.3s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* 高对比度模式 */
+    @media (prefers-contrast: high) {
+      :root {
+        --gray-4: #555555;
+        --gray-5: #666666;
+      }
+
+      .body-zh {
+        font-weight: 500;
+      }
+    }
+
+    /* 减少动画（无障碍） */
+    @media (prefers-reduced-motion: reduce) {
+      [data-anim] {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+
+    /* 焦点可见性 */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <div class="slides">
+
+      <!-- ========== 第1页：封面 ========== -->
+      <section class="slide hero" data-theme="dark" data-animate="hero">
+        <div class="chrome">
+          <div class="left">智慧城市建设项目组</div>
+          <div class="center"></div>
+          <div class="right">01</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center;">
+          <div class="kicker" data-anim style="--anim-index:0;">2024年度汇报</div>
+          <h1 class="display-zh" data-anim style="--anim-index:1;margin:2vh 0;">
+            智慧城市建设<br>成果汇报
+          </h1>
+          <p class="lead" data-anim style="--anim-index:2;color:var(--gray-3);max-width:60vw;">
+            数字化转型引领城市治理现代化
+          </p>
+          <div class="meta" data-anim style="--anim-index:3;margin-top:4vh;">
+            汇报人：XXX ｜ 汇报日期：2024年12月
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">01 / 15</div>
+          <div class="center">智慧城市建设项目组</div>
+          <div class="right">Cover</div>
+        </div>
+      </section>
+
+      <!-- ========== 第2页：目录 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">目录</div>
+          <div class="center"></div>
+          <div class="right">02</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;padding-left:10vw;">
+          <div class="kicker" data-anim>CONTENTS</div>
+          <h2 class="h1-zh" data-anim style="margin:2vh 0 4vh;">汇报内容</h2>
+
+          <div class="rowline" data-anim style="max-width:40vw;margin-bottom:1vh;">
+            <div class="k">01</div>
+            <div class="v">建设背景与目标</div>
+            <div class="m">背景</div>
+          </div>
+          <div class="rowline" data-anim style="max-width:40vw;margin-bottom:1vh;">
+            <div class="k">02</div>
+            <div class="v">建设内容与架构</div>
+            <div class="m">架构</div>
+          </div>
+          <div class="rowline" data-anim style="max-width:40vw;margin-bottom:1vh;">
+            <div class="k">03</div>
+            <div class="v">建设成果与亮点</div>
+            <div class="m">成果</div>
+          </div>
+          <div class="rowline" data-anim style="max-width:40vw;margin-bottom:1vh;">
+            <div class="k">04</div>
+            <div class="v">问题与建议</div>
+            <div class="m">建议</div>
+          </div>
+          <div class="rowline" data-anim style="max-width:40vw;">
+            <div class="k">05</div>
+            <div class="v">下一步计划</div>
+            <div class="m">计划</div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">02 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">Contents</div>
+        </div>
+      </section>
+
+      <!-- ========== 第3页：章节过渡 ========== -->
+      <section class="slide" data-theme="dark">
+        <div class="chrome">
+          <div class="left">第一章</div>
+          <div class="center"></div>
+          <div class="right">03</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="big-num" data-anim style="opacity:0.08;font-size:18vw;position:absolute;right:-3vw;top:-5vh;z-index:0;">
+            01
+          </div>
+          <div style="position:relative;z-index:1;">
+            <div class="kicker" data-anim>CHAPTER ONE</div>
+            <h1 class="h1-zh" data-anim>建设背景与目标</h1>
+            <p class="body-zh" data-anim style="max-width:45vw;color:var(--gray-3);margin-top:2vh;">
+              阐述项目政策背景、建设意义和总体目标
+            </p>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">03 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">Chapter 01</div>
+        </div>
+      </section>
+
+      <!-- ========== 第4页：政策背景 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第一章 · 建设背景</div>
+          <div class="center"></div>
+          <div class="right">04</div>
+        </div>
+
+        <div class="content" style="display:grid;grid-template-columns:1fr 1fr;gap:4vw;height:100%;align-items:center;">
+          <div>
+            <div class="kicker" data-anim>Policy Background</div>
+            <h2 class="h2-zh" data-anim style="margin:1vh 0;">
+              国家数字化战略部署
+            </h2>
+            <p class="body-zh" data-anim style="color:var(--gray-3);line-height:1.8;margin-bottom:2vh;">
+              根据《"十四五"数字经济发展规划》和《智慧城市建设指导意见》，推进城市数字化转型是提升治理效能的关键举措。
+            </p>
+            <ul data-anim style="padding-left:1.5vw;">
+              <li class="body-zh" style="margin-bottom:1vh;display:flex;align-items:center;gap:1vw;">
+                <span style="color:var(--success);">✓</span> 政策支持：多项国家政策明确支持
+              </li>
+              <li class="body-zh" style="margin-bottom:1vh;display:flex;align-items:center;gap:1vw;">
+                <span style="color:var(--success);">✓</span> 资金保障：专项财政资金支持
+              </li>
+              <li class="body-zh" style="display:flex;align-items:center;gap:1vw;">
+                <span style="color:var(--success);">✓</span> 技术成熟：5G、AI、物联网技术支撑
+              </li>
+            </ul>
+          </div>
+
+          <div class="pillar" data-anim style="background:var(--accent-light);border-left:4px solid var(--accent);padding:3vh;">
+            <div class="ic" style="font-size:3vw;color:var(--accent);">🎯</div>
+            <div class="ti" style="font-size:1.6vw;">总体目标</div>
+            <div class="desc" style="font-size:1.1vw;color:var(--gray-2);line-height:1.8;">
+              建成"一网通办、一网统管、一网协同"的智慧城市体系，实现城市治理能力和服务效能双提升。
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">04 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">01 · Background</div>
+        </div>
+      </section>
+
+      <!-- ========== 第5页：章节过渡 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第二章</div>
+          <div class="center"></div>
+          <div class="right">05</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="big-num" data-anim style="opacity:0.08;font-size:18vw;position:absolute;right:-3vw;top:-5vh;z-index:0;">
+            02
+          </div>
+          <div style="position:relative;z-index:1;">
+            <div class="kicker" data-anim>CHAPTER TWO</div>
+            <h1 class="h1-zh" data-anim>建设内容与架构</h1>
+            <p class="body-zh" data-anim style="max-width:45vw;color:var(--gray-3);margin-top:2vh;">
+              展示整体技术架构、系统模块组成和数据流向
+            </p>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">05 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">Chapter 02</div>
+        </div>
+      </section>
+
+      <!-- ========== 第6页：技术架构 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第二章 · 技术架构</div>
+          <div class="center"></div>
+          <div class="right">06</div>
+        </div>
+
+        <div class="content" style="padding-top:2vh;">
+          <div class="kicker" data-anim>CORE ARCHITECTURE</div>
+          <h2 class="h2-zh" data-anim style="margin:1vh 0 3vh;">整体技术架构</h2>
+
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;">
+            <div class="pillar" data-anim style="text-align:center;padding:2.5vh 1.5vw;border-top:4px solid var(--accent);">
+              <div class="ic" style="font-size:2.5vw;margin-bottom:1.5vh;">01</div>
+              <h4 class="h4-zh" style="margin-bottom:1vh;">基础设施层</h4>
+              <p class="body-zh" style="color:var(--gray-3);font-size:0.9vw;">
+                云计算中心<br>
+                5G网络覆盖<br>
+                物联网感知设备
+              </p>
+            </div>
+
+            <div class="pillar" data-anim style="text-align:center;padding:2.5vh 1.5vw;border-top:4px solid var(--accent);">
+              <div class="ic" style="font-size:2.5vw;margin-bottom:1.5vh;">02</div>
+              <h4 class="h4-zh" style="margin-bottom:1vh;">数据中台层</h4>
+              <p class="body-zh" style="color:var(--gray-3);font-size:0.9vw;">
+                数据归集治理<br>
+                数据共享交换<br>
+                数据分析服务
+              </p>
+            </div>
+
+            <div class="pillar" data-anim style="text-align:center;padding:2.5vh 1.5vw;border-top:4px solid var(--accent);">
+              <div class="ic" style="font-size:2.5vw;margin-bottom:1.5vh;">03</div>
+              <h4 class="h4-zh" style="margin-bottom:1vh;">应用支撑层</h4>
+              <p class="body-zh" style="color:var(--gray-3);font-size:0.9vw;">
+                统一身份认证<br>
+                统一支付平台<br>
+                统一消息中心
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">06 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">02 · Architecture</div>
+        </div>
+      </section>
+
+      <!-- ========== 第7页：章节过渡 ========== -->
+      <section class="slide" data-theme="dark">
+        <div class="chrome">
+          <div class="left">第三章</div>
+          <div class="center"></div>
+          <div class="right">07</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="big-num" data-anim style="opacity:0.08;font-size:18vw;position:absolute;right:-3vw;top:-5vh;z-index:0;">
+            03
+          </div>
+          <div style="position:relative;z-index:1;">
+            <div class="kicker" data-anim>CHAPTER THREE</div>
+            <h1 class="h1-zh" data-anim>建设成果与亮点</h1>
+            <p class="body-zh" data-anim style="max-width:45vw;color:var(--gray-3);margin-top:2vh;">
+              展示已完成功能、应用效果和创新特色
+            </p>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">07 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">Chapter 03</div>
+        </div>
+      </section>
+
+      <!-- ========== 第8页：核心数据 ========== -->
+      <section class="slide" data-theme="dark">
+        <div class="chrome">
+          <div class="left">第三章 · 建设成效</div>
+          <div class="center"></div>
+          <div class="right">08</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="kicker" data-anim>KEY METRICS</div>
+          <h2 class="h2-zh" data-anim style="margin:1vh 0 3vh;">核心建设成果</h2>
+
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2.5vw;">
+            <div class="stat-card" data-anim style="text-align:center;">
+              <div class="m">平台接入量</div>
+              <div class="n">2,847<small>万</small></div>
+              <div class="l">同比提升 156%</div>
+            </div>
+
+            <div class="stat-card" data-anim style="text-align:center;">
+              <div class="m">办件效率提升</div>
+              <div class="n">68<span style="font-size:0.4em;">%</span></div>
+              <div class="l">平均办理时限缩短</div>
+            </div>
+
+            <div class="stat-card" data-anim style="text-align:center;">
+              <div class="m">用户满意度</div>
+              <div class="n">96.8<span style="font-size:0.4em;">%</span></div>
+              <div class="l">服务好评率</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">08 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">03 · Results</div>
+        </div>
+      </section>
+
+      <!-- ========== 第9页：对比 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第三章 · 建设成效</div>
+          <div class="center"></div>
+          <div class="right">09</div>
+        </div>
+
+        <div class="content" style="display:grid;grid-template-columns:1fr 1fr;gap:4vw;height:100%;align-items:center;">
+          <div data-anim="left">
+            <div class="kicker" style="color:var(--gray-4);">BEFORE</div>
+            <h3 class="h3-zh" style="color:var(--gray-3);margin:1vh 0 2vh;">传统模式痛点</h3>
+            <div style="padding:2vh;background:var(--gray-7);border-radius:8px;margin-bottom:1.5vh;">
+              <div style="font-family:var(--font-mono);color:var(--gray-4);margin-bottom:0.5vh;">✗ 信息孤岛</div>
+              <p class="body-zh" style="color:var(--gray-4);">各部门系统独立，数据无法共享</p>
+            </div>
+            <div style="padding:2vh;background:var(--gray-7);border-radius:8px;margin-bottom:1.5vh;">
+              <div style="font-family:var(--font-mono);color:var(--gray-4);margin-bottom:0.5vh;">✗ 办事繁琐</div>
+              <p class="body-zh" style="color:var(--gray-4);">群众需要跑多个部门，耗时长</p>
+            </div>
+            <div style="padding:2vh;background:var(--gray-7);border-radius:8px;">
+              <div style="font-family:var(--font-mono);color:var(--gray-4);margin-bottom:0.5vh;">✗ 决策困难</div>
+              <p class="body-zh" style="color:var(--gray-4);">缺乏数据支撑，决策凭经验</p>
+            </div>
+          </div>
+
+          <div data-anim="right">
+            <div class="kicker" style="color:var(--accent);">AFTER</div>
+            <h3 class="h3-zh" style="color:var(--fg);margin:1vh 0 2vh;">数字化转型成效</h3>
+            <div style="padding:2vh;background:var(--accent-light);border-radius:8px;border-left:4px solid var(--accent);margin-bottom:1.5vh;">
+              <div style="font-family:var(--font-mono);color:var(--accent);margin-bottom:0.5vh;">✓ 数据贯通</div>
+              <p class="body-zh" style="color:var(--gray-2);">统一数据中台，全量数据共享</p>
+            </div>
+            <div style="padding:2vh;background:var(--accent-light);border-radius:8px;border-left:4px solid var(--accent);margin-bottom:1.5vh;">
+              <div style="font-family:var(--font-mono);color:var(--accent);margin-bottom:0.5vh;">✓ 一网通办</div>
+              <p class="body-zh" style="color:var(--gray-2);">线上全程办理，最多跑一次</p>
+            </div>
+            <div style="padding:2vh;background:var(--accent-light);border-radius:8px;border-left:4px solid var(--accent);">
+              <div style="font-family:var(--font-mono);color:var(--accent);margin-bottom:0.5vh;">✓ 智能决策</div>
+              <p class="body-zh" style="color:var(--gray-2);">大数据分析，精准决策支撑</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">09 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">03 · Comparison</div>
+        </div>
+      </section>
+
+      <!-- ========== 第10页：章节过渡 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第四章</div>
+          <div class="center"></div>
+          <div class="right">10</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="big-num" data-anim style="opacity:0.08;font-size:18vw;position:absolute;right:-3vw;top:-5vh;z-index:0;">
+            04
+          </div>
+          <div style="position:relative;z-index:1;">
+            <div class="kicker" data-anim>CHAPTER FOUR</div>
+            <h1 class="h1-zh" data-anim>问题与建议</h1>
+            <p class="body-zh" data-anim style="max-width:45vw;color:var(--gray-3);margin-top:2vh;">
+              反映建设过程中遇到的困难和建议对策
+            </p>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">10 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">Chapter 04</div>
+        </div>
+      </section>
+
+      <!-- ========== 第11页：问题与建议 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第四章 · 问题与建议</div>
+          <div class="center"></div>
+          <div class="right">11</div>
+        </div>
+
+        <div class="content" style="display:grid;grid-template-columns:1fr 1fr;gap:3vw;height:100%;align-items:start;padding-top:6vh;">
+          <div>
+            <div class="kicker" data-anim style="color:var(--error);">CHALLENGES</div>
+            <h3 class="h3-zh" data-anim style="margin:1vh 0 2vh;">面临的主要挑战</h3>
+
+            <div class="rowline" data-anim>
+              <div class="k" style="color:var(--fg);">数据安全</div>
+              <div class="v" style="color:var(--gray-3);">跨部门数据共享存在安全风险</div>
+              <div class="m" style="color:var(--error);">HIGH</div>
+            </div>
+
+            <div class="rowline" data-anim>
+              <div class="k" style="color:var(--fg);">人才短缺</div>
+              <div class="v" style="color:var(--gray-3);">复合型数字化人才不足</div>
+              <div class="m" style="color:var(--warning);">MEDIUM</div>
+            </div>
+
+            <div class="rowline" data-anim>
+              <div class="k" style="color:var(--fg);">资金压力</div>
+              <div class="v" style="color:var(--gray-3);">后续运维资金持续投入需求</div>
+              <div class="m" style="color:var(--warning);">MEDIUM</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="kicker" data-anim style="color:var(--success);">SOLUTIONS</div>
+            <h3 class="h3-zh" data-anim style="margin:1vh 0 2vh;">对策与建议</h3>
+
+            <div class="pillar" data-anim style="border-left:3px solid var(--accent);padding-left:1.5vw;margin-bottom:2vh;">
+              <div class="ti" style="font-size:1.2vw;">完善安全体系</div>
+              <div class="desc" style="color:var(--gray-3);">建立数据分级分类管理制度</div>
+            </div>
+
+            <div class="pillar" data-anim style="border-left:3px solid var(--accent);padding-left:1.5vw;margin-bottom:2vh;">
+              <div class="ti" style="font-size:1.2vw;">加强人才培养</div>
+              <div class="desc" style="color:var(--gray-3);">与高校合作，培养复合型人才</div>
+            </div>
+
+            <div class="pillar" data-anim style="border-left:3px solid var(--accent);padding-left:1.5vw;">
+              <div class="ti" style="font-size:1.2vw;">拓宽资金渠道</div>
+              <div class="desc" style="color:var(--gray-3);">争取上级资金和社会资本支持</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">11 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">04 · Challenges</div>
+        </div>
+      </section>
+
+      <!-- ========== 第12页：章节过渡 ========== -->
+      <section class="slide" data-theme="dark">
+        <div class="chrome">
+          <div class="left">第五章</div>
+          <div class="center"></div>
+          <div class="right">12</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="big-num" data-anim style="opacity:0.08;font-size:18vw;position:absolute;right:-3vw;top:-5vh;z-index:0;">
+            05
+          </div>
+          <div style="position:relative;z-index:1;">
+            <div class="kicker" data-anim>CHAPTER FIVE</div>
+            <h1 class="h1-zh" data-anim>下一步计划</h1>
+            <p class="body-zh" data-anim style="max-width:45vw;color:var(--gray-3);margin-top:2vh;">
+              后续建设思路和重点任务
+            </p>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">12 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">Chapter 05</div>
+        </div>
+      </section>
+
+      <!-- ========== 第13页：实施计划 ========== -->
+      <section class="slide" data-theme="light">
+        <div class="chrome">
+          <div class="left">第五章 · 实施计划</div>
+          <div class="center"></div>
+          <div class="right">13</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;height:100%;">
+          <div class="kicker" data-anim>IMPLEMENTATION ROADMAP</div>
+          <h2 class="h2-zh" data-anim style="margin:1vh 0 3vh;">四阶段实施计划</h2>
+
+          <div class="pipeline" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;">
+            <div class="step" data-anim style="border-top:4px solid var(--success);">
+              <div class="step-nb" style="color:var(--success);">01</div>
+              <div class="step-title">基础夯实</div>
+              <div class="step-desc">完成基础设施建设和数据归集</div>
+              <div class="step-meta">2025.Q1-Q2</div>
+            </div>
+
+            <div class="step" data-anim style="border-top:4px solid var(--accent);">
+              <div class="step-nb" style="color:var(--accent);">02</div>
+              <div class="step-title">平台搭建</div>
+              <div class="step-desc">构建统一数据中台和应用支撑</div>
+              <div class="step-meta">2025.Q2-Q3</div>
+            </div>
+
+            <div class="step" data-anim style="border-top:4px solid var(--accent);">
+              <div class="step-nb" style="color:var(--accent);">03</div>
+              <div class="step-title">应用推广</div>
+              <div class="step-desc">部署核心业务系统并推广应用</div>
+              <div class="step-meta">2025.Q3-Q4</div>
+            </div>
+
+            <div class="step" data-anim style="border-top:4px solid var(--gray-4);">
+              <div class="step-nb" style="color:var(--gray-4);">04</div>
+              <div class="step-title">优化迭代</div>
+              <div class="step-desc">持续优化提升和功能迭代</div>
+              <div class="step-meta">2026.Q1+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">13 / 15</div>
+          <div class="center">智慧城市建设成果汇报</div>
+          <div class="right">05 · Roadmap</div>
+        </div>
+      </section>
+
+      <!-- ========== 第14页：总结金句 ========== -->
+      <section class="slide hero" data-theme="dark">
+        <div class="chrome">
+          <div class="left"></div>
+          <div class="center"></div>
+          <div class="right">14</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center;position:relative;z-index:2;">
+          <div class="kicker" data-anim>KEY TAKEAWAY</div>
+          <blockquote class="callout" data-anim style="max-width:65vw;border-left:4px solid var(--accent);padding-left:3vw;text-align:left;">
+            <p style="font-family:var(--font-serif);font-size:2.5vw;line-height:1.5;color:var(--fg);">
+              "数字化转型不是选择题，而是生存题。<br>谁先完成转型，谁就赢得未来。"
+            </p>
+          </blockquote>
+          <cite class="meta" data-anim style="margin-top:3vh;color:var(--gray-4);">
+            — 某市数字化改革工作领导小组
+          </cite>
+        </div>
+
+        <div class="foot">
+          <div class="left">14 / 15</div>
+          <div class="center"></div>
+          <div class="right">Quote</div>
+        </div>
+      </section>
+
+      <!-- ========== 第15页：结束页 ========== -->
+      <section class="slide hero" data-theme="dark">
+        <div class="chrome">
+          <div class="left"></div>
+          <div class="center"></div>
+          <div class="right">15</div>
+        </div>
+
+        <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center;position:relative;z-index:2;">
+          <div class="kicker" data-anim>THANK YOU</div>
+          <h1 class="display-zh" data-anim style="margin:2vh 0;">
+            感谢聆听
+          </h1>
+          <p class="lead" data-anim style="color:var(--gray-3);max-width:50vw;margin-bottom:4vh;">
+            智慧城市建设是一项长期工程，我们将持续优化完善
+          </p>
+
+          <div class="meta" data-anim style="line-height:2.2;">
+            汇报人：XXX<br>
+            单　位：XXXXXX<br>
+            电　话：XXX-XXXX-XXXX<br>
+            邮　箱：example@domain.com
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="left">15 / 15</div>
+          <div class="center"></div>
+          <div class="right">End</div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 导航圆点 -->
+    <div class="nav-dots"></div>
+
+    <!-- 操作提示 -->
+    <div class="nav-hint">← → 翻页 · Ctrl+F 搜索 · ESC 索引 · 目录可点击跳转</div>
+  </div>
+
+  <script>
+    // ========================================
+    // 幻灯片核心逻辑
+    // ========================================
+
+    class SlideDeck {
+      constructor() {
+        this.slides = document.querySelectorAll('.slide');
+        this.dots = document.querySelector('.nav-dots');
+        this.current = 0;
+        this.total = this.slides.length;
+        this.isLargeFont = false;
+
+        this.init();
+      }
+
+      init() {
+        // 创建导航圆点
+        this.slides.forEach((_, i) => {
+          const dot = document.createElement('div');
+          dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+          dot.addEventListener('click', () => this.goTo(i));
+          dot.setAttribute('role', 'button');
+          dot.setAttribute('aria-label', `跳转到第 ${i + 1} 页`);
+          this.dots.appendChild(dot);
+        });
+
+        // 初始化第一页
+        this.activate(0);
+
+        // 绑定事件
+        document.addEventListener('keydown', (e) => this.handleKey(e));
+        document.addEventListener('wheel', (e) => this.handleWheel(e), { passive: false });
+        document.addEventListener('touchstart', (e) => this.handleTouch(e), { passive: false });
+
+        // 初始化动画
+        this.initAnimations();
+
+        // 初始化新功能
+        this.initSearch();
+        this.initTOC();
+        this.initCopyButtons();
+        this.initFontToggle();
+      }
+
+      handleKey(e) {
+        // P1: 全文搜索 Ctrl+F
+        if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+          e.preventDefault();
+          this.openSearch();
+          return;
+        }
+
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          this.next();
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          this.prev();
+        } else if (e.key === 'Escape') {
+          this.closeSearch();
+          this.toggleIndex();
+        }
+      }
+
+      handleWheel(e) {
+        if (e.deltaY > 0) {
+          this.next();
+        } else {
+          this.prev();
+        }
+      }
+
+      handleTouch(e) {
+        const startX = e.touches[0].clientX;
+        const startY = e.touches[0].clientY;
+
+        const handler = (endEvent) => {
+          const deltaX = endEvent.changedTouches[0].clientX - startX;
+          const deltaY = endEvent.changedTouches[0].clientY - startY;
+
+          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+            if (deltaX > 0) {
+              this.prev();
+            } else {
+              this.next();
+            }
+          }
+
+          document.removeEventListener('touchend', handler);
+        };
+
+        document.addEventListener('touchend', handler, { passive: false });
+      }
+
+      next() {
+        if (this.current < this.total - 1) {
+          this.goTo(this.current + 1);
+        }
+      }
+
+      prev() {
+        if (this.current > 0) {
+          this.goTo(this.current - 1);
+        }
+      }
+
+      goTo(index) {
+        if (index < 0 || index >= this.total || index === this.current) return;
+
+        // 更新幻灯片
+        this.slides[this.current].classList.remove('active');
+        this.slides[index].classList.add('active');
+
+        // 更新圆点
+        this.dots.children[this.current].classList.remove('active');
+        this.dots.children[index].classList.add('active');
+
+        // 更新索引
+        const oldIndex = this.current;
+        this.current = index;
+
+        // 触发动画
+        this.animateSlide(index);
+      }
+
+      activate(index) {
+        this.slides[index].classList.add('active');
+        this.animateSlide(index);
+      }
+
+      animateSlide(index) {
+        const slide = this.slides[index];
+        const elements = slide.querySelectorAll('[data-anim]');
+
+        // 重置所有元素
+        elements.forEach(el => el.classList.remove('anim-ready'));
+
+        // 延迟触发动画
+        setTimeout(() => {
+          elements.forEach((el, i) => {
+            el.style.setProperty('--anim-index', i);
+            setTimeout(() => {
+              el.classList.add('anim-ready');
+            }, 50 * i);
+          });
+        }, 100);
+      }
+
+      initAnimations() {
+        // 初始化第一页动画
+        setTimeout(() => {
+          this.animateSlide(0);
+        }, 500);
+      }
+
+      toggleIndex() {
+        // 显示当前页码
+        alert(`第 ${this.current + 1} / ${this.total} 页`);
+      }
+
+      // ========================================
+      // P1: 全文搜索功能
+      // ========================================
+
+      initSearch() {
+        // 创建搜索覆盖层
+        const searchHTML = `
+          <div class="search-overlay" id="searchOverlay">
+            <div class="search-modal">
+              <input type="text" class="search-input" id="searchInput" placeholder="输入关键词搜索..." autocomplete="off">
+              <div class="search-results" id="searchResults"></div>
+              <div class="search-hint">按 ESC 关闭搜索</div>
+            </div>
+          </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', searchHTML);
+
+        this.searchOverlay = document.getElementById('searchOverlay');
+        this.searchInput = document.getElementById('searchInput');
+        this.searchResults = document.getElementById('searchResults');
+
+        this.searchInput.addEventListener('input', (e) => this.performSearch(e.target.value));
+
+        this.searchOverlay.addEventListener('click', (e) => {
+          if (e.target === this.searchOverlay) {
+            this.closeSearch();
+          }
+        });
+      }
+
+      openSearch() {
+        this.searchOverlay.classList.add('active');
+        this.searchInput.focus();
+      }
+
+      closeSearch() {
+        this.searchOverlay.classList.remove('active');
+        this.searchInput.value = '';
+        this.searchResults.innerHTML = '';
+      }
+
+      performSearch(query) {
+        if (!query.trim()) {
+          this.searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = [];
+        const regex = new RegExp(query, 'gi');
+
+        this.slides.forEach((slide, slideIndex) => {
+          const text = slide.textContent;
+          const matches = text.match(regex);
+
+          if (matches) {
+            // 获取该页的标题
+            const title = slide.querySelector('h1, h2, h3')?.textContent || `第 ${slideIndex + 1} 页`;
+
+            // 获取上下文片段
+            const contextStart = Math.max(0, text.indexOf(query) - 30);
+            const contextEnd = Math.min(text.length, text.indexOf(query) + query.length + 30);
+            let context = text.substring(contextStart, contextEnd).replace(regex, '<mark>$&</mark>');
+
+            if (contextStart > 0) context = '...' + context;
+            if (contextEnd < text.length) context = context + '...';
+
+            results.push({
+              slideIndex,
+              title,
+              context,
+              matches: matches.length
+            });
+          }
+        });
+
+        // 显示结果
+        if (results.length === 0) {
+          this.searchResults.innerHTML = '<div class="search-empty">未找到匹配结果</div>';
+        } else {
+          this.searchResults.innerHTML = results.map(r => `
+            <div class="search-result" data-slide="${r.slideIndex}">
+              <div class="search-result-title">${r.title}</div>
+              <div class="search-result-context">${r.context}</div>
+            </div>
+          `).join('');
+
+          // 绑定点击事件
+          this.searchResults.querySelectorAll('.search-result').forEach(el => {
+            el.addEventListener('click', () => {
+              const idx = parseInt(el.dataset.slide);
+              this.goTo(idx);
+              this.closeSearch();
+            });
+          });
+        }
+      }
+
+      // ========================================
+      // P0: 可点击目录导航
+      // ========================================
+
+      initTOC() {
+        document.querySelectorAll('.rowline').forEach((row, index) => {
+          row.classList.add('toc-link');
+          row.setAttribute('role', 'button');
+          row.setAttribute('tabindex', '0');
+          row.setAttribute('aria-label', `跳转到目录项 ${index + 1}`);
+
+          row.addEventListener('click', () => this.goToTOC(index));
+          row.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              this.goToTOC(index);
+            }
+          });
+        });
+      }
+
+      goToTOC(index) {
+        // 假设目录页是第2页（索引1），内容从第3页开始
+        const contentStartIndex = 2;
+        this.goTo(contentStartIndex + index);
+      }
+
+      // ========================================
+      // P2: 代码复制按钮
+      // ========================================
+
+      initCopyButtons() {
+        document.querySelectorAll('pre code').forEach(code => {
+          const pre = code.parentElement;
+          const block = pre.parentElement;
+
+          // 如果已经在 code-block 中，跳过
+          if (block.classList.contains('code-block')) return;
+
+          // 添加 code-block 包装
+          const wrapper = document.createElement('div');
+          wrapper.className = 'code-block';
+          pre.parentNode.insertBefore(wrapper, pre);
+          wrapper.appendChild(pre);
+
+          // 添加复制按钮
+          const btn = document.createElement('button');
+          btn.className = 'copy-btn';
+          btn.textContent = '复制';
+          btn.setAttribute('aria-label', '复制代码');
+          wrapper.appendChild(btn);
+
+          btn.addEventListener('click', () => {
+            navigator.clipboard.writeText(code.textContent).then(() => {
+              btn.textContent = '已复制';
+              btn.classList.add('copied');
+              setTimeout(() => {
+                btn.textContent = '复制';
+                btn.classList.remove('copied');
+              }, 2000);
+            });
+          });
+        });
+      }
+
+      // ========================================
+      // P2: 大字模式切换
+      // ========================================
+
+      initFontToggle() {
+        const btn = document.createElement('button');
+        btn.className = 'font-toggle';
+        btn.textContent = 'Aa';
+        btn.setAttribute('aria-label', '切换大字模式');
+        btn.setAttribute('title', '点击切换大字模式');
+        document.body.appendChild(btn);
+
+        btn.addEventListener('click', () => {
+          this.isLargeFont = !this.isLargeFont;
+          document.body.classList.toggle('large-font-mode', this.isLargeFont);
+          btn.textContent = this.isLargeFont ? 'Aa+' : 'Aa';
+        });
+      }
+    }
+
+    // 初始化
+    document.addEventListener('DOMContentLoaded', () => {
+      new SlideDeck();
+    });
+  </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

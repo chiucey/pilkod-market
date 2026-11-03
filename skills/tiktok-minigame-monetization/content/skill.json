@@ -1,0 +1,59 @@
+{
+  "id": "tiktok-minigame-monetization",
+  "name": "TikTok Mini Game Monetization",
+  "version": "1.0.0",
+  "description": "TikTok海外小游戏广告变现全流程技能插件",
+  "author": "MiniMax Agent",
+  "tags": [
+    "tiktok",
+    "minigame",
+    "advertising",
+    "monetization",
+    "game-development",
+    "变现"
+  ],
+  "platform": "OpenClaw/LobsterAI",
+  "capabilities": {
+    "account_setup": true,
+    "game_development": true,
+    "ad_integration": true,
+    "review_submission": true,
+    "revenue_optimization": true,
+    "payout_management": true
+  },
+  "triggers": [
+    "创建TikTok小游戏",
+    "接入TikTok广告",
+    "TikTok小游戏变现",
+    "注册TikTok开发者",
+    "申请激励视频广告",
+    "TikTok游戏审核",
+    "游戏广告收益优化",
+    "TikTok提现"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "requests": ">=2.28.0"
+  },
+  "files": {
+    "main": "scripts/main.py",
+    "ad_integration": "scripts/ad_integration.py",
+    "game_generator": "scripts/game_generator.py",
+    "compliance": "references/compliance-guide.md",
+    "checklist": "references/monetization-checklist.md",
+    "sdk_guide": "references/ad-sdk-integration.md"
+  },
+  "config": {
+    "language": "zh-CN",
+    "region": "overseas",
+    "platform": "TikTok",
+    "ad_types": ["rewarded_video", "interstitial", "banner"],
+    "min_payout": 100,
+    "currency": "USD"
+  },
+  "resources": {
+    "documentation": "references/",
+    "examples": "examples/",
+    "assets": "assets/"
+  }
+}

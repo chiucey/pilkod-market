@@ -1,0 +1,22 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "文档解析",
+    "结构化总结",
+    "智能问答",
+    "多格式支持"
+  ],
+  "description": "文档学习与智能问答技能，支持 PDF、Word、TXT 等格式的文档解析、结构化总结和基于原文的问答服务",
+  "id": 384640615608442,
+  "name": "doc-learning",
+  "platform": "minimax",
+  "tags": [
+    "文档",
+    "学习",
+    "总结",
+    "问答",
+    "RAG"
+  ],
+  "updated_at": 1775461749552,
+  "version": "1.0.0"
+}

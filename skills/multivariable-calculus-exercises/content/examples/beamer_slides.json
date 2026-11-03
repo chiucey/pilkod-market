@@ -1,0 +1,85 @@
+{
+  "type": "beamer",
+  "title": "多元函数极限与连续",
+  "subtitle": "微积分习题课",
+  "author": "张明 教授",
+  "institution": "数学科学学院",
+  "date": "2026年春季",
+  "template": "flat",
+  "chapters": [
+    {
+      "title": "第一部分",
+      "sections": [
+        {
+          "title": "多元函数极限",
+          "content": [
+            {
+              "type": "columns",
+              "content": "\\begin{column}{0.45\\textwidth}\n\\textbf{定义}\\newline\n设函数 $f(x,y)$ 在点 $P_0(x_0,y_0)$ 的某去心邻域内有定义，如果对于任意 $\\varepsilon>0$，存在 $\\delta>0$，使得当 $0<\\sqrt{(x-x_0)^2+(y-y_0)^2}<\\delta$ 时，有 $|f(x,y)-A|<\\varepsilon$，则称 $A$ 为极限。\n\\end{column}\n\\begin{column}{0.45\\textwidth}\n\\textbf{记号}\\newline\n$$\\lim_{(x,y)\\to(x_0,y_0)}f(x,y)=A$$"
+            }
+          ]
+        },
+        {
+          "title": "极限的判定方法",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "直接代入法",
+                "夹逼准则",
+                "极坐标变换法",
+                "有界量乘以无穷小量"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "第二部分",
+      "sections": [
+        {
+          "title": "连续性",
+          "content": [
+            {
+              "type": "math",
+              "content": "\\lim_{(x,y)\\to(x_0,y_0)} f(x,y) = f(x_0,y_0)"
+            }
+          ]
+        },
+        {
+          "title": "偏导数存在 ≠ 连续",
+          "content": [
+            {
+              "type": "callout",
+              "title": "经典反例",
+              "content": "函数 $f(x,y) = \\begin{cases} \\frac{xy}{x^2+y^2}, & (x,y) \\neq (0,0) \\\\ 0, & (x,y) = (0,0) \\end{cases}$"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "第三部分",
+      "sections": [
+        {
+          "title": "考研真题解析",
+          "content": [
+            {
+              "type": "example",
+              "title": "2024年真题",
+              "content": "求 $\\lim_{(x,y) \\to (0,0)} \\frac{1 - \\cos(x^2+y^2)}{x^2+y^2}$"
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "解法：利用等价无穷小 $1 - \\cos t \\sim \\frac{t^2}{2}$",
+                "答案：0"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

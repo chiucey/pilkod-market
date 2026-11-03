@@ -1,0 +1,181 @@
+{
+  "format": "CAD-LIGHTWEIGHT-v1",
+  "version": "1.0",
+  "metadata": {
+    "productName": "T53-8402000-002-20170727",
+    "version": "20170727",
+    "units": "mm",
+    "author": "CAD System",
+    "created": "2017-07-27T00:00:00Z",
+    "revision": "A",
+    "description": "Mechanical Part Assembly - Main Housing"
+  },
+  "boundingBox": {
+    "min": { "x": -120.5, "y": -85.0, "z": 0 },
+    "max": { "x": 120.5, "y": 85.0, "z": 75.0 }
+  },
+  "centerOfMass": { "x": 0, "y": 0, "z": 37.5 },
+  "materials": [
+    {
+      "id": 0,
+      "name": "Steel_Matte",
+      "type": "PBR",
+      "color": { "r": 0.65, "g": 0.65, "b": 0.70, "a": 1.0 },
+      "metalness": 0.85,
+      "roughness": 0.45,
+      "emissive": { "r": 0, "g": 0, "b": 0 }
+    },
+    {
+      "id": 1,
+      "name": "Aluminum_Polished",
+      "type": "PBR",
+      "color": { "r": 0.85, "g": 0.85, "b": 0.90, "a": 1.0 },
+      "metalness": 0.75,
+      "roughness": 0.15,
+      "emissive": { "r": 0, "g": 0, "b": 0 }
+    },
+    {
+      "id": 2,
+      "name": "Plastic_Black",
+      "type": "PBR",
+      "color": { "r": 0.15, "g": 0.15, "b": 0.18, "a": 1.0 },
+      "metalness": 0.05,
+      "roughness": 0.70,
+      "emissive": { "r": 0, "g": 0, "b": 0 }
+    }
+  ],
+  "geometry": {
+    "vertices": [
+      { "x": -100, "y": -60, "z": 0, "nx": 0, "ny": 0, "nz": -1, "u": 0, "v": 0 },
+      { "x": 100, "y": -60, "z": 0, "nx": 0, "ny": 0, "nz": -1, "u": 1, "v": 0 },
+      { "x": 100, "y": 60, "z": 0, "nx": 0, "ny": 0, "nz": -1, "u": 1, "v": 1 },
+      { "x": -100, "y": 60, "z": 0, "nx": 0, "ny": 0, "nz": -1, "u": 0, "v": 1 },
+      { "x": -100, "y": -60, "z": 50, "nx": 0, "ny": 0, "nz": 1, "u": 0, "v": 0 },
+      { "x": 100, "y": -60, "z": 50, "nx": 0, "ny": 0, "nz": 1, "u": 1, "v": 0 },
+      { "x": 100, "y": 60, "z": 50, "nx": 0, "ny": 0, "nz": 1, "u": 1, "v": 1 },
+      { "x": -100, "y": 60, "z": 50, "nx": 0, "ny": 0, "nz": 1, "u": 0, "v": 1 },
+      { "x": 50, "y": 30, "z": 0, "nx": 1, "ny": 0, "nz": 0, "u": 0, "v": 0 },
+      { "x": 50, "y": 30, "z": 55, "nx": 1, "ny": 0, "nz": 0, "u": 0, "v": 1 },
+      { "x": -50, "y": 30, "z": 0, "nx": -1, "ny": 0, "nz": 0, "u": 0, "v": 0 },
+      { "x": -50, "y": 30, "z": 55, "nx": -1, "ny": 0, "nz": 0, "u": 0, "v": 1 },
+      { "x": 50, "y": -30, "z": 0, "nx": 1, "ny": 0, "nz": 0, "u": 0, "v": 0 },
+      { "x": 50, "y": -30, "z": 55, "nx": 1, "ny": 0, "nz": 0, "u": 0, "v": 1 },
+      { "x": -50, "y": -30, "z": 0, "nx": -1, "ny": 0, "nz": 0, "u": 0, "v": 0 },
+      { "x": -50, "y": -30, "z": 55, "nx": -1, "ny": 0, "nz": 0, "u": 0, "v": 1 }
+    ],
+    "triangles": [
+      { "v1": 0, "v2": 2, "v3": 1, "materialId": 0 },
+      { "v1": 0, "v2": 3, "v3": 2, "materialId": 0 },
+      { "v1": 4, "v2": 5, "v3": 6, "materialId": 0 },
+      { "v1": 4, "v2": 6, "v3": 7, "materialId": 0 },
+      { "v1": 0, "v2": 1, "v3": 5, "materialId": 0 },
+      { "v1": 0, "v2": 5, "v3": 4, "materialId": 0 },
+      { "v1": 2, "v2": 3, "v3": 7, "materialId": 0 },
+      { "v1": 2, "v2": 7, "v3": 6, "materialId": 0 },
+      { "v1": 3, "v2": 0, "v3": 4, "materialId": 0 },
+      { "v1": 3, "v2": 4, "v3": 7, "materialId": 0 },
+      { "v1": 1, "v2": 2, "v3": 6, "materialId": 0 },
+      { "v1": 1, "v2": 6, "v3": 5, "materialId": 0 }
+    ]
+  },
+  "parts": [
+    {
+      "id": 1,
+      "name": "MainBody",
+      "parentId": 0,
+      "triStart": 0,
+      "triCount": 12,
+      "materialId": 0,
+      "transform": {
+        "translation": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+        "scale": { "x": 1, "y": 1, "z": 1 }
+      },
+      "visible": true,
+      "selectable": true
+    },
+    {
+      "id": 2,
+      "name": "Bolt_Hole_1",
+      "parentId": 1,
+      "triStart": 12,
+      "triCount": 16,
+      "materialId": 1,
+      "transform": {
+        "translation": { "x": 50, "y": 30, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+        "scale": { "x": 1, "y": 1, "z": 1 }
+      },
+      "visible": true,
+      "selectable": true
+    },
+    {
+      "id": 3,
+      "name": "Bolt_Hole_2",
+      "parentId": 1,
+      "triStart": 28,
+      "triCount": 16,
+      "materialId": 1,
+      "transform": {
+        "translation": { "x": -50, "y": 30, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+        "scale": { "x": 1, "y": 1, "z": 1 }
+      },
+      "visible": true,
+      "selectable": true
+    },
+    {
+      "id": 4,
+      "name": "Bolt_Hole_3",
+      "parentId": 1,
+      "triStart": 44,
+      "triCount": 16,
+      "materialId": 1,
+      "transform": {
+        "translation": { "x": 50, "y": -30, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+        "scale": { "x": 1, "y": 1, "z": 1 }
+      },
+      "visible": true,
+      "selectable": true
+    },
+    {
+      "id": 5,
+      "name": "Bolt_Hole_4",
+      "parentId": 1,
+      "triStart": 60,
+      "triCount": 16,
+      "materialId": 1,
+      "transform": {
+        "translation": { "x": -50, "y": -30, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+        "scale": { "x": 1, "y": 1, "z": 1 }
+      },
+      "visible": true,
+      "selectable": true
+    }
+  ],
+  "additionalData": {
+    "mass": { "value": 12.5, "unit": "kg" },
+    "surfaceArea": { "value": 45000.2, "unit": "mm2" },
+    "volume": { "value": 1500000.0, "unit": "mm3" },
+    "momentOfInertia": {
+      "ixx": 12500.5,
+      "iyy": 15000.3,
+      "izz": 18000.7
+    }
+  },
+  "renderingHints": {
+    "defaultCamera": {
+      "position": { "x": 300, "y": 200, "z": 200 },
+      "target": { "x": 0, "y": 0, "z": 25 },
+      "fov": 45
+    },
+    "autoFit": { "enabled": true, "padding": 1.2 },
+    "lighting": {
+      "ambient": { "intensity": 0.4 },
+      "directional": { "intensity": 0.8, "direction": { "x": 1, "y": 1, "z": 1 } }
+    },
+    "background": { "color": { "r": 0.1, "g": 0.1, "b": 0.18 } }
+  }
+}

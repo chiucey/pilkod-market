@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "95d2da4ed7d76a07e55932a8deac4302c84f2654",
+      "size": 5738
+    },
+    {
+      "path": "_meta.json",
+      "sha": "b07765325af33e8822c0f4f29a4b0a393f9a0a11",
+      "size": 138
+    },
+    {
+      "path": "references/source-notes.md",
+      "sha": "0314b9722d7951bc463fcc3afcfbfa47799b64b7",
+      "size": 5701
+    },
+    {
+      "path": "scripts/lib/cache.mjs",
+      "sha": "297b6d63b934d0d8e1d7f0ffb36ab3717e5a66be",
+      "size": 2581
+    },
+    {
+      "path": "scripts/lib/extract.mjs",
+      "sha": "c6901addd00d93c8dd81b6146152f5d5af85fc9f",
+      "size": 4434
+    },
+    {
+      "path": "scripts/lib/html-report.mjs",
+      "sha": "89cbe6112504cfd28f64cc3536b5ca8569239c1c",
+      "size": 19208
+    },
+    {
+      "path": "scripts/lib/net.mjs",
+      "sha": "000ce519e2bd113b99f64a5d06cb4de85909bdc2",
+      "size": 2812
+    },
+    {
+      "path": "scripts/lib/sources.mjs",
+      "sha": "e44ebb56922c5d4f4dc0d6f01b752c7bde775dda",
+      "size": 4497
+    },
+    {
+      "path": "scripts/lib/stats.mjs",
+      "sha": "5bbd0c2b7efca2046be55fbd8c90946b44d2fa23",
+      "size": 1204
+    },
+    {
+      "path": "scripts/lib/xls-read.mjs",
+      "sha": "b1eea298d12ec657bce476ef1085aad2795a0654",
+      "size": 10147
+    },
+    {
+      "path": "scripts/lib/xlsx-read.mjs",
+      "sha": "f2a2c05b4347fb4d52d1d579f93b1395f3247e6c",
+      "size": 5728
+    },
+    {
+      "path": "scripts/lib/xlsx-write.mjs",
+      "sha": "bbca587cf9fe428deadc60e40eecd7eec2147d2f",
+      "size": 9247
+    },
+    {
+      "path": "scripts/lib/zip.mjs",
+      "sha": "128f87f73ac95497f445511855b241f0d2758e03",
+      "size": 3633
+    },
+    {
+      "path": "scripts/margin_report.mjs",
+      "sha": "a88c9b9910e9e3aeeb8caa1052125df48fc8ab56",
+      "size": 14870
+    }
+  ]
+}

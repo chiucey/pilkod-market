@@ -1,0 +1,37 @@
+{
+  "name": "flink-cdc-yaml-generator",
+  "version": "1.0.0",
+  "description": "Flink CDC Pipeline YAML 配置生成与验证专家。支持 MySQL、PostgreSQL、Oracle 等数据源到 Doris、StarRocks、Paimon、Kafka 等数据汇的同步任务。",
+  "author": "Thorne",
+  "license": "MIT",
+  "main": "SKILL.md",
+  "resources": [
+    "connectors/source/mysql.md",
+    "connectors/source/oracle.md",
+    "connectors/source/postgres.md",
+    "connectors/sink/doris.md",
+    "connectors/sink/starrocks.md",
+    "connectors/sink/paimon.md",
+    "connectors/sink/kafka.md",
+    "connectors/sink/elasticsearch.md",
+    "connectors/sink/iceberg.md",
+    "connectors/sink/hudi.md",
+    "connectors/sink/oceanbase.md",
+    "connectors/sink/maxcompute.md",
+    "connectors/sink/fluss.md",
+    "modules/transform.md",
+    "modules/route.md"
+  ],
+  "tags": [
+    "flink",
+    "cdc",
+    "yaml",
+    "data-sync",
+    "pipeline",
+    "etl"
+  ],
+  "requirements": {
+    "min_flink_cdc_version": "3.0.x",
+    "recommended_flink_cdc_version": "3.6.x"
+  }
+}

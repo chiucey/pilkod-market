@@ -1,0 +1,1033 @@
+{
+  "metadata": {
+    "source_files": [
+      "claude_opus",
+      "opus46",
+      "distilled_stage2",
+      "distilled_cot"
+    ],
+    "extraction_date": "2026-03-24",
+    "quality_weights": {
+      "claude_opus": 1.0,
+      "opus46": 0.8,
+      "distilled_stage2": 0.7,
+      "distilled_cot": 0.6
+    },
+    "fusion_formula": "Final Weight = Quality Weight x log(1 + Count)"
+  },
+  "system_prompt_patterns": [
+    {
+      "name": "empty_system_prompt",
+      "description": "System prompt is empty or not set; all 30 records have no valid system prompt",
+      "examples": [
+        "All records have empty system role content"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "default_claude_identity",
+      "description": "Relies on model's default identity setting, assumed to be a professional assistant role",
+      "examples": [
+        "No explicit system prompt definition, model uses built-in identity"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "role_adaptation_by_query",
+      "description": "Model adaptively assumes corresponding expert roles based on user query type",
+      "examples": [
+        "Automatic switching between technical implementation, academic explanation, business consulting scenarios"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "minimal_general_assistant_role",
+      "description": "System Prompt uses minimalist setup, defining AI identity with only 'You are a helpful AI assistant.', no specific domain limitations or special behavioral constraints",
+      "examples": [
+        "You are a helpful AI assistant."
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "no_boundary_constraints",
+      "description": "No behavioral boundaries, ethical constraints, or specific scenario rules defined; role setting is completely open",
+      "examples": [
+        "No constraint clauses",
+        "No special domain limitations"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "general_capability_implication",
+      "description": "'helpful' implies AI should have multi-domain problem-solving capabilities, applicable to various tasks",
+      "examples": [
+        "helpful AI assistant"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "no_conversation_history_preset",
+      "description": "System Prompt does not contain conversation history or context presets; each conversation is independent interaction",
+      "examples": [
+        "No historical context"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "no_style_guidance",
+      "description": "No specified response style, format preferences, or language tone; AI has full autonomy in style decisions",
+      "examples": [
+        "No format requirements",
+        "No tone guidance"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "no_valid_system_prompt_data",
+      "description": "All samples have messages array first element with role='unknown' and content empty; cannot identify valid system prompt role definition",
+      "examples": [
+        "Sample 1: messages[0] = {'role': 'unknown', 'content': ''}"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_stage2"
+      ]
+    },
+    {
+      "name": "no_explicit_system_prompt",
+      "description": "Dataset almost entirely lacks role=system messages; AI role behavior is entirely determined by conversation context and task type",
+      "examples": [
+        "Model self-infers need to answer as expert",
+        "Only user and assistant messages, no independent system prompt"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "professional_problem_solver_identity",
+      "description": "AI is set as a knowledge expert in professional domains, capable of handling various problem types: math, science, programming, translation",
+      "examples": [
+        "Answering chemistry questions (ammonia water effect on aluminum)",
+        "Solving physical chemistry problems (Weeks theorem)",
+        "Writing Python programs"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "explanatory_educator_role",
+      "description": "Not only provides answers but also explains reasoning process in detail; acts as educator to help users understand",
+      "examples": [
+        "Detailed Analysis",
+        "Step-by-Step Reasoning",
+        "Verification process"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "task_oriented_role",
+      "description": "AI is set as task-oriented role: math calculation, code writing, translation, logical reasoning, etc.",
+      "examples": [
+        "Generate Fibonacci sequence",
+        "Translate English to Persian",
+        "Apply division mathematical operator"
+      ],
+      "frequency": 0.95,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "verification_analysis_role",
+      "description": "Conducts multi-angle verification before giving conclusions to ensure answer accuracy and reliability",
+      "examples": [
+        "Physical reasoning check with table",
+        "Verification: 17 packages x 3 = 51",
+        "Multiple assumption verification"
+      ],
+      "frequency": 0.85,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "implicit_behavioral_constraints",
+      "description": "Behavioral rules are implicitly defined through user query; model self-infers boundaries",
+      "examples": [
+        "SEO/legal advice will note 'not legal advice'"
+      ],
+      "frequency": 0.27,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "disclaimer_inclusion",
+      "description": "Professional domains (legal, medical) responses automatically include disclaimers",
+      "examples": [
+        "not legal advice",
+        "not a substitute for professional medical advice"
+      ],
+      "frequency": 0.13,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "non_judgmental_attitude",
+      "description": "For sensitive or personal questions, maintain non-judgmental attitude, provide useful information rather than moralizing",
+      "examples": [
+        "No moral judgment, provide practical advice",
+        "About sexual fantasies: 'I'm not here to shame anyone's consensual adult activities'"
+      ],
+      "frequency": 0.1,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    }
+  ],
+  "dialogue_structure_patterns": [
+    {
+      "name": "single_turn_query_response",
+      "description": "Standard single-turn Q&A pattern: one user message, one complete assistant response",
+      "examples": [
+        "All 30 records have 3 messages structure (system+user+assistant)"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "chain_of_think_reasoning",
+      "description": "Use <think> tags to wrap reasoning process, display thinking chain",
+      "examples": [
+        "All 30 responses include <think> thinking process"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "variable_response_length",
+      "description": "Response length varies greatly, from 229 characters to 133,713 characters",
+      "examples": [
+        "Short responses(<2k): 5, Medium(2k-30k): 17, Long responses(>30k): 8"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "query_complexity_response_depth",
+      "description": "User query complexity positively correlates with response depth",
+      "examples": [
+        "Simple math problem (229 chars) vs comprehensive GTM plan (101k chars)"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "message_structure_missing",
+      "description": "All conversation records contain only 2 messages, both with role='unknown', content='' invalid state",
+      "examples": [
+        "Sample 1: messages = [{'role':'unknown','content':''}, {'role':'unknown','content':''}]"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_stage2"
+      ]
+    },
+    {
+      "name": "domain_field_distribution",
+      "description": "metadata.domain field shows samples cover instruction_following and code two domains",
+      "examples": [
+        "instruction_following: 14 records",
+        "code: 6 records"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_stage2"
+      ]
+    },
+    {
+      "name": "CoT_thinking_tag_pattern",
+      "description": "Assistant response contains <thinking> tag wrapped thinking chain process; analysis inside tag, conclusion outside tag",
+      "examples": [
+        "<thinking>Let me work through this problem step by step...</thinking>\n## Solution",
+        "<thinking>Analysis steps...My reasoning:...</thinking>\nFormal response content"
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "structured_step_expansion",
+      "description": "Use Step 1/2/3 or First/Then/Finally markers to organize response content, presenting clear logical progression",
+      "examples": [
+        "First... Then... Finally...",
+        "Step 1: Calculate..., Step 2: Determine..., Step 3: Calculate..."
+      ],
+      "frequency": 0.95,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "concise_two_turn_dialogue",
+      "description": "Most common dialogue pattern: user raises single question, AI gives complete answer, usually user-assistant two-turn dialogue",
+      "examples": [
+        "User asks question -> AI answers",
+        "No multi-turn follow-up or clarification"
+      ],
+      "frequency": 0.9,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "answer_first_then_explain",
+      "description": "First directly give answer (bold or boxed), then provide detailed reasoning and verification process",
+      "examples": [
+        "**Final Answer: $750** followed by derivation process",
+        "**Answer: 17** followed by detailed steps"
+      ],
+      "frequency": 0.75,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "simple_qa_pattern",
+      "description": "Most basic single-turn dialogue structure: user asks -> AI answers, no multi-turn interaction",
+      "examples": [
+        "User question directly answered",
+        "Math: 96 deliveries, Tona made 72, difference $2,400"
+      ],
+      "frequency": 0.72,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "example_verification_pattern",
+      "description": "After explaining concepts, provide specific numerical examples for verification, commonly using table comparisons",
+      "examples": [
+        "Example: \"Hello world\" -> ...| Example 2: ...-> ...",
+        "| n | Sequence | Result |...| Verification table"
+      ],
+      "frequency": 0.6,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "scaffolded_explanation_structure",
+      "description": "Complex topics use layered structure: overview -> details -> examples/practice",
+      "examples": [
+        "Diabetes overview divided into pathophysiology/diagnostics/management modules"
+      ],
+      "frequency": 0.53,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "multi_independent_subquestions",
+      "description": "Single assistant response handles multiple independent sub-questions or option analysis",
+      "examples": [
+        "Case 1... Case 2... Case 3...",
+        "Option A analysis... Option B analysis... Option C analysis... Final conclusion"
+      ],
+      "frequency": 0.5,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "code_response_length_correlation",
+      "description": "Responses containing code are usually longer; technical implementation responses have largest length",
+      "examples": [
+        "Code implementation responses average over 20k characters"
+      ],
+      "frequency": 0.47,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "chain_of_thought_expansion",
+      "description": "Decompose complex problems into multiple steps, display reasoning process sequentially, applicable to math and logic problems",
+      "examples": [
+        "Step 1: Calculate..., Step 2: Calculate..., Step 3: ..."
+      ],
+      "frequency": 0.36,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "verification_confirmation_pattern",
+      "description": "Add verification step before final answer; confirm result correctness through reverse calculation or multiple methods",
+      "examples": [
+        "Verification: Alternative Method",
+        "Let me verify by..."
+      ],
+      "frequency": 0.12,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "table_presentation",
+      "description": "Use table structure to organize information, enhancing answer readability and organization",
+      "examples": [
+        "| Category | Number | Details |",
+        "|-----------|--------|---------|"
+      ],
+      "frequency": 0.08,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "request_clarification_pattern",
+      "description": "When user input is incomplete or vague, AI proactively requests additional information",
+      "examples": [
+        "It appears that the system of equations you want me to solve was not included"
+      ],
+      "frequency": 0.02,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "refuse_then_redirect_pattern",
+      "description": "For inappropriate requests, first refuse then redirect, providing alternative positive help direction",
+      "examples": [
+        "I'm not going to engage with... If you have a legitimate question..."
+      ],
+      "frequency": 0.02,
+      "source_datasets": [
+        "opus46"
+      ]
+    }
+  ],
+  "language_style_atoms": [
+    {
+      "name": "no_available_language_data",
+      "description": "All content fields empty; cannot analyze tone, sentence structure, or vocabulary preferences",
+      "examples": [],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_stage2"
+      ]
+    },
+    {
+      "name": "formal_academic_tone",
+      "description": "Use formal, academic language style, avoid colloquial expressions",
+      "examples": [
+        "Based on this analysis...",
+        "This indicates that...",
+        "The correct answer is..."
+      ],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "guiding_opening",
+      "description": "Common openings: 'Let me analyze', 'Let me work through', 'Let me think' to indicate analysis start",
+      "examples": [
+        "Let me break down this problem",
+        "Let me analyze this problem step by step",
+        "Let me think through this carefully"
+      ],
+      "frequency": 0.95,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "markdown_formatting",
+      "description": "Extensive use of Markdown syntax: headers (##), tables (| | |), code blocks (```), bold (**)",
+      "examples": [
+        "**Step 1:** ... ```python ...```",
+        "## Solution\n| Header |...|..."
+      ],
+      "frequency": 0.95,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "let_me_introductory_phrase",
+      "description": "Use 'Let me' as action-oriented response opener, indicating specific help will be provided",
+      "examples": [
+        "Let me think through this",
+        "Let me create a complete solution"
+      ],
+      "frequency": 0.93,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "mathematical_expression_direct",
+      "description": "Embed mathematical operations directly as equations in sentences, rather than describing calculation process separately",
+      "examples": [
+        "45 / 300 x 100 = 15%",
+        "7 x 5100 = 35,700 pounds"
+      ],
+      "frequency": 0.88,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "heading_title_format",
+      "description": "Extensive use of Markdown headers to organize content, unified header style",
+      "examples": [
+        "## Core Components",
+        "# Comprehensive Technical SEO Audit Checklist"
+      ],
+      "frequency": 0.8,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "concise_direct_tone",
+      "description": "Neutral, concise response tone, no superfluous emotional coloring, direct to the point",
+      "examples": [
+        "Total: 35,700 + 16,000 = 51,700 pounds.",
+        "Tona made 3/4 x 96 = 72 deliveries."
+      ],
+      "frequency": 0.78,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "progressive_elaboration",
+      "description": "Use progressive expressions: concept -> principle -> implementation -> optimization",
+      "examples": [
+        "Basic -> Intermediate -> Advanced",
+        "First... Then... Finally..."
+      ],
+      "frequency": 0.73,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "verification_confirmation_mark",
+      "description": "Use check mark symbols, 'Verification:', 'Verify:' labels to emphasize verification step completion",
+      "examples": [
+        "Verification: ... ",
+        "All calculations check out!",
+        "Checks out!"
+      ],
+      "frequency": 0.7,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "formal_academic_tone_overall",
+      "description": "Overall tone is formal, professional, using academic expressions",
+      "examples": [
+        "I should note that",
+        "It is worth acknowledging",
+        "In summary"
+      ],
+      "frequency": 0.67,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "professional_formal_vocabulary",
+      "description": "Use professional terminology and precise mathematical vocabulary: 'calculate', 'total', 'percentage', 'dimension'",
+      "examples": [
+        "verification",
+        "dimension",
+        "percentage"
+      ],
+      "frequency": 0.65,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "technical_jargon_integration",
+      "description": "Embed domain-specific terminology: framework/algorithm/protocol",
+      "examples": [
+        "framework: 12 times, algorithm: 6 times, protocol: 4 times"
+      ],
+      "frequency": 0.63,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "mathematical_formula_embedding",
+      "description": "Use LaTeX format to embed mathematical formulas and symbols, such as $Q = mc\\Delta T$",
+      "examples": [
+        "$\\frac{2n!}{2^n \\cdot n!}$",
+        "$$Q_{milk} = m \\times c \\times \\Delta T$$"
+      ],
+      "frequency": 0.4,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "domain_specific_terminology",
+      "description": "Use corresponding professional terminology based on problem domain: amphoteric, delocalization, bipartite matching",
+      "examples": [
+        "Aluminum is amphoteric",
+        "extended resonance delocalization",
+        "Maximum Weight Bipartite Matching"
+      ],
+      "frequency": 0.35,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "markdown_formatting_wide",
+      "description": "Use Markdown syntax to enhance structural sense: bold, headers, lists",
+      "examples": [
+        "bullet points",
+        "**Answer:**",
+        "**Step 1:**"
+      ],
+      "frequency": 0.34,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "guiding_transition_words",
+      "description": "Use 'first', 'then', 'next', 'finally' to build step sequence feeling",
+      "examples": [
+        "Then, divide...",
+        "First, calculate...",
+        "Finally, subtract..."
+      ],
+      "frequency": 0.28,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "here_is_directive",
+      "description": "Use 'Here's' or similar structure to directly present content",
+      "examples": [
+        "Here's a comprehensive guide",
+        "Here's my plan"
+      ],
+      "frequency": 0.23,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "passive_voice_usage",
+      "description": "Use passive voice when describing objective facts, emphasizing results rather than agent",
+      "examples": [
+        "the line is reflected",
+        "the eggs hatched"
+      ],
+      "frequency": 0.22,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "numbered_point_statement",
+      "description": "Decompose complex information into independent numbered or bulleted list items, explain one by one",
+      "examples": [
+        "1. Analyze the structure...",
+        "2. Choose an appropriate..."
+      ],
+      "frequency": 0.18,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "collaborative_personal_pronouns",
+      "description": "Use first person to build rapport: 'I think'/'I believe' to express opinions",
+      "examples": [
+        "I think this is",
+        "I would recommend",
+        "In my view"
+      ],
+      "frequency": 0.1,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "uncertainty_expression",
+      "description": "Use conditional expressions like 'If text were provided', 'assuming' when conclusion is uncertain",
+      "examples": [
+        "If text were provided, I can give you...",
+        "Assuming standard refrigerator volumes..."
+      ],
+      "frequency": 0.1,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    }
+  ],
+  "content_organization_atoms": [
+    {
+      "name": "no_available_content_data",
+      "description": "All content fields empty; cannot analyze content organization methods",
+      "examples": [],
+      "frequency": 1.0,
+      "source_datasets": [
+        "distilled_stage2"
+      ]
+    },
+    {
+      "name": "step_by_step_progressive_expansion",
+      "description": "Decompose complex problems into multiple steps, solve sequentially in logical order",
+      "examples": [
+        "Step 1 -> Step 2 -> Step 3 -> Final Answer",
+        "First... Then... Finally..."
+      ],
+      "frequency": 0.95,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "bullet_point_enumeration",
+      "description": "Use bullet points to list multiple related items, wide coverage",
+      "examples": [
+        "- Crawlability Audit",
+        "- Core Web Vitals",
+        "- Indexation Analysis"
+      ],
+      "frequency": 0.87,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "problem_restructure_analysis",
+      "description": "At the beginning, restate/reformulate the problem to confirm correct understanding",
+      "examples": [
+        "Key information from the text: ...",
+        "The question asks: What is the main factor...?",
+        "Given parameters: ..."
+      ],
+      "frequency": 0.85,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "markdown_heading_structure",
+      "description": "Use Markdown headers as response opening, header is the central theme",
+      "examples": [
+        "# Quantum Mechanics Fundamentals",
+        "# Responsive Hide-on-Scroll Navbar"
+      ],
+      "frequency": 0.8,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "conclusion_emphasis_boxing",
+      "description": "At the end, use bold, box, or special markers to emphasize final answer",
+      "examples": [
+        " boxed{Answer is NO if and only if ...}",
+        "**Answer: 17**",
+        "**Final Answer: $750**"
+      ],
+      "frequency": 0.8,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "comparison_framework",
+      "description": "Use pros/cons or advantages/disadvantages comparison framework for analysis",
+      "examples": [
+        "Advantages vs Disadvantages, Pros and Cons analysis"
+      ],
+      "frequency": 0.77,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "numbered_step_sequence",
+      "description": "Use numbered lists for step-based content, clear structure",
+      "examples": [
+        "1. Analysis 2. Design 3. Implementation 4. Testing"
+      ],
+      "frequency": 0.63,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "example_case_illustration",
+      "description": "Explain concepts through specific cases or examples",
+      "examples": [
+        "Case Study: Company X",
+        "Example: For a 10k-URL site..."
+      ],
+      "frequency": 0.6,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "answer_first",
+      "description": "Directly give final answer or conclusion at response opening, then elaborate with explanation",
+      "examples": [
+        "$2,400.",
+        "28 pills.",
+        "Answer: Cyril Suk"
+      ],
+      "frequency": 0.58,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "table_data_presentation",
+      "description": "Use Markdown tables to organize and present comparative data or calculation results",
+      "examples": [
+        "| Family | Adults | Children | Total |\n|--------|--------|----------|-------|\n| ...",
+        "| Check | Line 1 | Line 2 | Result |"
+      ],
+      "frequency": 0.55,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "theoretical_practical_dual",
+      "description": "Combine theoretical explanation with practical application, equal emphasis on theory and practice",
+      "examples": [
+        "Theory: assumptions and principles -> Practice: implementation"
+      ],
+      "frequency": 0.53,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "table_data_presentation_wide",
+      "description": "Use tables to present comparative or structured data",
+      "examples": [
+        "| KPI | Target | Current |",
+        "| Channel | Budget | ROI |"
+      ],
+      "frequency": 0.5,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "kpi_metric_specification",
+      "description": "Response ending includes quantitative metrics and KPI definitions",
+      "examples": [
+        "CTR > 2%, Conversion Rate +15%, ROI > 3x"
+      ],
+      "frequency": 0.47,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "summary_closing",
+      "description": "At response ending, use summary statements to restate core conclusions",
+      "examples": [
+        "In total, they have 10 + 40 = 50 basketballs.",
+        "Therefore, Cyril Suk is the correct answer."
+      ],
+      "frequency": 0.44,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "code_block_with_explanation",
+      "description": "Code blocks alternate with explanatory text; show code first then explain",
+      "examples": [
+        "```python [code] ``` followed by explanatory paragraphs"
+      ],
+      "frequency": 0.43,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "template_checklist_provision",
+      "description": "Provide directly usable templates or checklists",
+      "examples": [
+        "Lean Canvas Template, SEO Audit Checklist"
+      ],
+      "frequency": 0.43,
+      "source_datasets": [
+        "claude_opus"
+      ]
+    },
+    {
+      "name": "formula_derivation_display",
+      "description": "Display complete process of mathematical or logical derivation, including formula transformation and substitution",
+      "examples": [
+        "Derivation: (2n)! / 2^n / n! = ...",
+        "Q = m x c x DeltaT = 1kg x 4000J/(kg.K) x 20K = 80000J"
+      ],
+      "frequency": 0.4,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "step_by_step_derivation",
+      "description": "Divide solution process into multiple clear steps, each step numbered sequentially",
+      "examples": [
+        "Step 1: Calculate initial savings",
+        "Step 2: Calculate additional earnings"
+      ],
+      "frequency": 0.36,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "multi_angle_verification",
+      "description": "Verify same conclusion multiple times using different methods or assumptions",
+      "examples": [
+        "Alternative calculation method: ...",
+        "Verification with different assumptions: using DeltaT=16K -> 222 openings"
+      ],
+      "frequency": 0.35,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "section_heading_structure",
+      "description": "Use Markdown headers (like ## Solution, ### Step 1) to divide response areas",
+      "examples": [
+        "## Solution",
+        "### Verification and Reasoning",
+        "## Final Answer"
+      ],
+      "frequency": 0.28,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "unit_conversion_embedding",
+      "description": "In math problems, first unify units (tons to pounds, hours to minutes) before core calculation",
+      "examples": [
+        "40/60 = 2/3 of an hour",
+        "1 ton = 2,000 pounds"
+      ],
+      "frequency": 0.26,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "code_implementation_supplement",
+      "description": "After explanation, provide Python or other code implementation as supplement",
+      "examples": [
+        "Here is a complete Python script implementing the solution:",
+        "```python\ndef solve(n, s):\n    ...\n```"
+      ],
+      "frequency": 0.25,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "complexity_analysis_ending",
+      "description": "For algorithm problems, provide time and space complexity analysis at the end",
+      "examples": [
+        "Complexity: O(N + L) where N=length, L=max value",
+        "Time: O(n), Space: O(n)"
+      ],
+      "frequency": 0.2,
+      "source_datasets": [
+        "distilled_cot"
+      ]
+    },
+    {
+      "name": "conditional_branch_explanation",
+      "description": "During reasoning process, explain conditional branch logic like 'if/otherwise'",
+      "examples": [
+        "if he qualifies for discount...",
+        "if 35% of women are in favor, then 65% are opposed"
+      ],
+      "frequency": 0.14,
+      "source_datasets": [
+        "opus46"
+      ]
+    },
+    {
+      "name": "reverse_verification",
+      "description": "At the end, verify answer correctness through reverse calculation or alternative methods",
+      "examples": [
+        "Let me double-check this calculation",
+        "Verification: Let me verify by finding the original x-intercept first"
+      ],
+      "frequency": 0.12,
+      "source_datasets": [
+        "opus46"
+      ]
+    }
+  ]
+}

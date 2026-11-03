@@ -1,0 +1,1449 @@
+{
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358
+    },
+    {
+      "path": "README.en.md",
+      "sha": "a228d9b817e3548c90806490a5f09a432844528c",
+      "size": 18839
+    },
+    {
+      "path": "README.md",
+      "sha": "e9f7e9c7addad8bbdd8f68710bf6de3b9cd3b574",
+      "size": 31893
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "4ece49831cff35210855bdaf41ea00624a7317db",
+      "size": 6481
+    },
+    {
+      "path": "VERSION.txt",
+      "sha": "ac14c3dfaa865ea332c62348d1bca867bdbbd1cf",
+      "size": 6
+    },
+    {
+      "path": "_meta.json",
+      "sha": "a4669d0fc397160d3d8a7b3e593df7663d05f6a9",
+      "size": 138
+    },
+    {
+      "path": "assets/samples/v5.0-latin-america-ai-zh-evidence.json",
+      "sha": "036f20dbeb1116ccc72085ecd6e31dbf6d7d12e2",
+      "size": 9548
+    },
+    {
+      "path": "assets/samples/v5.1-no-image-policy-evidence.json",
+      "sha": "7321ce0c88d0b65c8d3e7e757e8678290a42c254",
+      "size": 6662
+    },
+    {
+      "path": "builders/__init__.py",
+      "sha": "583677f0ac0aadffa72c48e165f29c6048a90bc4",
+      "size": 379
+    },
+    {
+      "path": "builders/base.py",
+      "sha": "fb7380a74dd1f17c5fe388bee9d4b858a5e17288",
+      "size": 2761
+    },
+    {
+      "path": "builders/custom_adapter.py",
+      "sha": "0f488f7d37dd2d435c9e9bbeed0695b2c618b230",
+      "size": 1506
+    },
+    {
+      "path": "builders/html_svg_adapter.py",
+      "sha": "bd06b4889a0f434eeb1107fb0c9061c2668c1449",
+      "size": 1692
+    },
+    {
+      "path": "builders/officecli_adapter.py",
+      "sha": "2ff72729a61ff3391861da03b3c12054f3a49e30",
+      "size": 1681
+    },
+    {
+      "path": "builders/pptxgenjs_adapter.py",
+      "sha": "1cf083859bf8026604d4e37c917c22cdea47d8e1",
+      "size": 10146
+    },
+    {
+      "path": "builders/python_pptx_adapter.py",
+      "sha": "ad6457fbbb4a79a6fb2cb10b9de3c1c35238fb6b",
+      "size": 58307
+    },
+    {
+      "path": "builders/registry.py",
+      "sha": "14513ad21bb3bfcf877b5de97b1b34bc2c089935",
+      "size": 904
+    },
+    {
+      "path": "builders/selector.py",
+      "sha": "483937dcce855c1c89a109864d7637d949bb0d87",
+      "size": 12226
+    },
+    {
+      "path": "engine/__init__.py",
+      "sha": "64c7c9afa280652e56d5e350516ddf883d92deb6",
+      "size": 413
+    },
+    {
+      "path": "engine/__main__.py",
+      "sha": "43bcf9db1956ae4f352816b4093ff40822617610",
+      "size": 23144
+    },
+    {
+      "path": "engine/authored_page.py",
+      "sha": "c60e64bf6c30cc31ff0da65b30ac02271c088c83",
+      "size": 17313
+    },
+    {
+      "path": "engine/autonomy.py",
+      "sha": "172cd145a603bcba6d746cc39f805894e712de8e",
+      "size": 8287
+    },
+    {
+      "path": "engine/bespoke.py",
+      "sha": "47a46a1a74364c2fd37b06042d0f4703376ee96e",
+      "size": 5549
+    },
+    {
+      "path": "engine/bespoke_quality.py",
+      "sha": "b3743fe45588b974080650a33cb304d3a8df3963",
+      "size": 8419
+    },
+    {
+      "path": "engine/bespoke_runtime.py",
+      "sha": "e98fec0ac539c246c60dfb50c08449734a9eff4b",
+      "size": 12966
+    },
+    {
+      "path": "engine/chart_inference.py",
+      "sha": "e6c9b1aeaa1ef93adee9e74245e713f5160f0ae4",
+      "size": 7550
+    },
+    {
+      "path": "engine/compile.py",
+      "sha": "92a389d048c62b5385047e17189eba6c47f01f79",
+      "size": 13064
+    },
+    {
+      "path": "engine/component_atlas.py",
+      "sha": "ae2ac9fbe60c87115cee91bddc9bca4991ba8b04",
+      "size": 52527
+    },
+    {
+      "path": "engine/component_atlas_report.py",
+      "sha": "ff66783f22eb3f20f6c1618948ab8624405e30fe",
+      "size": 5290
+    },
+    {
+      "path": "engine/component_composer.py",
+      "sha": "9ab4fe4f549280f1c3b0bb51bd7e5f2c559d540d",
+      "size": 19441
+    },
+    {
+      "path": "engine/component_intent.py",
+      "sha": "403c979f41e33581a5b8fb89ac1d6cdf8faa3bf5",
+      "size": 6695
+    },
+    {
+      "path": "engine/component_inventory.py",
+      "sha": "53c39afb59113281172027df8f6e86a74bf05218",
+      "size": 6115
+    },
+    {
+      "path": "engine/content_contract.py",
+      "sha": "36cae500b8f364f7c4372e5e9cb7648d7d7286ec",
+      "size": 4548
+    },
+    {
+      "path": "engine/content_integrity_gate.py",
+      "sha": "4541c4875f3a1e2e2084bdb5057c1705ee9db983",
+      "size": 2905
+    },
+    {
+      "path": "engine/coverage.py",
+      "sha": "a846b3c97d88d83b24543ce6469311fff7a76e09",
+      "size": 6642
+    },
+    {
+      "path": "engine/deck_diversity.py",
+      "sha": "bfcb3f2318a1d2595970f9bc559ca2ed5e86176d",
+      "size": 2180
+    },
+    {
+      "path": "engine/design_contract.py",
+      "sha": "f735b45b900493fc71b4268268630655a4ed684f",
+      "size": 6007
+    },
+    {
+      "path": "engine/design_scene/__init__.py",
+      "sha": "a2a94f80ca29fba34526f37a8b9eebb4a265464a",
+      "size": 99
+    },
+    {
+      "path": "engine/design_scene/authoring.py",
+      "sha": "22098cbc6aa4f9e2ba7649fba70994a9911c47b5",
+      "size": 10291
+    },
+    {
+      "path": "engine/design_scene/backend.py",
+      "sha": "25f6e857c8f64cdd242a20e58a968da88b5b7ecf",
+      "size": 17837
+    },
+    {
+      "path": "engine/design_scene/cli.py",
+      "sha": "ad556e5c4f575b53f9821aee64c26b8aaa127a87",
+      "size": 23712
+    },
+    {
+      "path": "engine/design_scene/contract.py",
+      "sha": "ffc6555b6a736afe98f410952a568b2cf7952bea",
+      "size": 18296
+    },
+    {
+      "path": "engine/design_scene/incremental.py",
+      "sha": "d9f6f7cfab7e9a0e9e67dab7dfdd1e256ca5d2b0",
+      "size": 6131
+    },
+    {
+      "path": "engine/design_scene/isolation_probe.py",
+      "sha": "84822ae93efbd94a5d2f2a1d6d86630ea50924f1",
+      "size": 3088
+    },
+    {
+      "path": "engine/design_scene/pipeline.py",
+      "sha": "72fe7f264cbf2a4bb29b84ae72af864615986118",
+      "size": 22413
+    },
+    {
+      "path": "engine/design_scene/preflight.py",
+      "sha": "013ab53cdbfcf67a8da5c6712babf87996312c92",
+      "size": 7924
+    },
+    {
+      "path": "engine/design_scene/runtime.py",
+      "sha": "9b266ce67b0fd99e06cd9479c73fe34a3beee7fc",
+      "size": 11783
+    },
+    {
+      "path": "engine/design_scene/store.py",
+      "sha": "2480064afcaa0325761d201f085004adff0798f9",
+      "size": 7748
+    },
+    {
+      "path": "engine/design_scene/targets.py",
+      "sha": "37e1c027d1561fbb455fef4d0f5d2fb47d1e084d",
+      "size": 2590
+    },
+    {
+      "path": "engine/design_scene/windows_io.py",
+      "sha": "b006163b010f30759b09b8c1b76c4a6db7b81680",
+      "size": 6523
+    },
+    {
+      "path": "engine/design_scene/worker.py",
+      "sha": "00e7dd6b1903f9f6d2d9261ab1ceda439c115353",
+      "size": 1504
+    },
+    {
+      "path": "engine/diagram.py",
+      "sha": "d0311cd9abeb07f1fb621ea4c096db9744771752",
+      "size": 16777
+    },
+    {
+      "path": "engine/evidence_ledger.py",
+      "sha": "0e0f8f68f2d5511e67bba568dbcd28422c685f8f",
+      "size": 5234
+    },
+    {
+      "path": "engine/evidence_outline.py",
+      "sha": "03e172d86ec6d752f4fa7d3f3403390867f42b71",
+      "size": 1997
+    },
+    {
+      "path": "engine/extractive_ir.py",
+      "sha": "d148181c4b13673423e33ad4155a4928543394b2",
+      "size": 6437
+    },
+    {
+      "path": "engine/font_metrics.py",
+      "sha": "fbc567685147d8c20d9e99967fa94352f172f388",
+      "size": 2676
+    },
+    {
+      "path": "engine/high_fidelity_guard.py",
+      "sha": "0bf7b2a448ce04347be15e102dfc4630cbc9cf7e",
+      "size": 1680
+    },
+    {
+      "path": "engine/layout.py",
+      "sha": "5fc54144103756bedffec2589e43efd04993f900",
+      "size": 35407
+    },
+    {
+      "path": "engine/manuscript_component_planner.py",
+      "sha": "d0e8c930fc5e549be9893f15d78aa2392a5a2eb8",
+      "size": 24298
+    },
+    {
+      "path": "engine/manuscript_strict_preview.py",
+      "sha": "d919052f6b5e862b1213c9b336125b650737016f",
+      "size": 18526
+    },
+    {
+      "path": "engine/metrics/arial-unicode-ms.json",
+      "sha": "7d5cface9610d8169b41a837c8611549fb90cd15",
+      "size": 1004
+    },
+    {
+      "path": "engine/metrics/helvetica.json",
+      "sha": "97706a9791a305cb68ee53a1b1972ba987ebdfd3",
+      "size": 1006
+    },
+    {
+      "path": "engine/metrics/songti-sc.json",
+      "sha": "0ecb49e3d71ae2c486391840183327b6d58d2d0b",
+      "size": 1013
+    },
+    {
+      "path": "engine/metrics/system-font.json",
+      "sha": "7e61f476bad10d7638f3c8cc3b678b745ed65bb2",
+      "size": 1004
+    },
+    {
+      "path": "engine/model_authored_quality.py",
+      "sha": "02d0355eb1dc2f54b28d6b69834beaaf6c6b6322",
+      "size": 7016
+    },
+    {
+      "path": "engine/model_template_component_runtime.py",
+      "sha": "892bb6b49561c653061a08011b7c06c5b112e1ef",
+      "size": 15891
+    },
+    {
+      "path": "engine/model_template_composer.py",
+      "sha": "cfb24d8c8f5c12662f2cfc2eb4e45d0fd8e6cecd",
+      "size": 11248
+    },
+    {
+      "path": "engine/narrative_contract.py",
+      "sha": "e08d98a8b74c9bf1b830c261c01bd5e5b4e1304d",
+      "size": 7354
+    },
+    {
+      "path": "engine/policy.py",
+      "sha": "0b398fc8aa5570722df475a4e6d136fbad345ed1",
+      "size": 9161
+    },
+    {
+      "path": "engine/pptx_builder.py",
+      "sha": "aa685cffd01dff3adee2c9df3c004fce01fdb36c",
+      "size": 10249
+    },
+    {
+      "path": "engine/pptxgenjs_builder.py",
+      "sha": "c5c839a0281b5fc25a8068250c5d27cc493ada12",
+      "size": 3271
+    },
+    {
+      "path": "engine/presentation_subset.py",
+      "sha": "30c7c46f3ce4798a640f9e21ed717a36ed265183",
+      "size": 1543
+    },
+    {
+      "path": "engine/production_request.py",
+      "sha": "97fded8900c5a7688ea5338b305b3bb37c067612",
+      "size": 8964
+    },
+    {
+      "path": "engine/proposal_apply.py",
+      "sha": "d381946adb8b955cef978c79523b94b85fdc062d",
+      "size": 5333
+    },
+    {
+      "path": "engine/provenance.py",
+      "sha": "5962dba7ea85b877855b888fbbc5367788a90801",
+      "size": 6984
+    },
+    {
+      "path": "engine/qa_plan.py",
+      "sha": "ce091625c8c1f213654e3a4da1d370cd48c6245c",
+      "size": 4370
+    },
+    {
+      "path": "engine/refine_renderers.py",
+      "sha": "2cc9f17045fee4f759fe16ca6eeeaf6ecf5e2b86",
+      "size": 10713
+    },
+    {
+      "path": "engine/refine_spec.py",
+      "sha": "463a3238dc567056babb07022d59f1ebfb519e99",
+      "size": 3930
+    },
+    {
+      "path": "engine/route_policy.py",
+      "sha": "55b3e7d34ec0b8eab4c1330cebd49186fb02ce44",
+      "size": 801
+    },
+    {
+      "path": "engine/source_doc.py",
+      "sha": "12fddf2467d6c292078e26a3f14f87369b2ecaae",
+      "size": 4625
+    },
+    {
+      "path": "engine/speaker_notes.py",
+      "sha": "aee483073423a406a90ee823fed040856b2358ad",
+      "size": 5675
+    },
+    {
+      "path": "engine/strict_template.py",
+      "sha": "8ceb810772ef100847e09a95fdd33965e949b0d8",
+      "size": 68046
+    },
+    {
+      "path": "engine/structural_parser.py",
+      "sha": "1f0a20c3b81e03960c9f52623cb52289120b45f9",
+      "size": 9664
+    },
+    {
+      "path": "engine/style_pack.py",
+      "sha": "0e2046b0fe3d8f6a289d1fc7b09fac733d4a55cb",
+      "size": 7547
+    },
+    {
+      "path": "engine/style_validator.py",
+      "sha": "d579b8c7afe5d5aad0f1e5087ce0f92216b74642",
+      "size": 5626
+    },
+    {
+      "path": "engine/template_component_adaptation.py",
+      "sha": "26851a6e6d0b0a65202f06b81454ec92bfcbf39e",
+      "size": 11989
+    },
+    {
+      "path": "engine/template_delivery_quality.py",
+      "sha": "75b1cdf241c8cb74962c6a7f7fb0077dd242f06e",
+      "size": 5038
+    },
+    {
+      "path": "engine/template_evidence.py",
+      "sha": "25ece4f4212e8c8de77e2e8ed7ce913531b4c492",
+      "size": 8490
+    },
+    {
+      "path": "engine/template_native.py",
+      "sha": "9f9f966f3b5d726d98cb2abcc7bfb5e74a74cae5",
+      "size": 80080
+    },
+    {
+      "path": "engine/template_page_composition.py",
+      "sha": "1b73e9fdb377629f01ae633b64cb02ee813a9a86",
+      "size": 16433
+    },
+    {
+      "path": "engine/template_page_recipes.py",
+      "sha": "962ae217484b6528a5da9ced468e1ad906068c3b",
+      "size": 5014
+    },
+    {
+      "path": "engine/template_readability.py",
+      "sha": "8d3c7a29991687bdcdb7fa4f5a95f852362c9c31",
+      "size": 1968
+    },
+    {
+      "path": "engine/template_series_planner.py",
+      "sha": "cd4116a4ac017b9deca2abf7bcf43bc2a542edb5",
+      "size": 4034
+    },
+    {
+      "path": "engine/template_visual_fingerprint.py",
+      "sha": "0b60fe5dcb77ad4837852a029029dfc16fdc91c5",
+      "size": 8156
+    },
+    {
+      "path": "engine/template_visual_quality.py",
+      "sha": "8c68cdf8afbafa3dcb9a6b6f5cce8cb7194a68e7",
+      "size": 8386
+    },
+    {
+      "path": "engine/textfit.py",
+      "sha": "79ebfa9603f2d83b5767d29de073335e76b7e24f",
+      "size": 3632
+    },
+    {
+      "path": "engine/topology.py",
+      "sha": "5d8ec215a6913c5738553dce57cfd15eeefa1ba1",
+      "size": 2499
+    },
+    {
+      "path": "engine/visual_review.py",
+      "sha": "b8be6c5bd47548c342fc84cf919a98c8479d3b1b",
+      "size": 7540
+    },
+    {
+      "path": "examples/contracts/v1/slide-manifest-v1.json",
+      "sha": "683b4770ef336c324536be0ebcefa2985795d10e",
+      "size": 462
+    },
+    {
+      "path": "examples/contracts/valid/asset-manifest.json",
+      "sha": "2a7cb33de7f0e9e4d13d416a3148b5515c8de23c",
+      "size": 409
+    },
+    {
+      "path": "examples/contracts/valid/build-manifest.json",
+      "sha": "7c966c35cfedaeba9ee34eeb0672e65b46dc011e",
+      "size": 700
+    },
+    {
+      "path": "examples/contracts/valid/diagram-ir.json",
+      "sha": "c85cbfa5cf9f521c7ca575b902841947711cf9b1",
+      "size": 2648
+    },
+    {
+      "path": "examples/contracts/valid/ppt-ir.json",
+      "sha": "1d232b9e20529548ce61e2291388baf5f7dbc78e",
+      "size": 2543
+    },
+    {
+      "path": "examples/contracts/valid/qa-report.json",
+      "sha": "520ed3838fd3697245fb58bfcb10d046b1c61813",
+      "size": 608
+    },
+    {
+      "path": "examples/contracts/valid/style-contract.json",
+      "sha": "51bcd6a22dc3a4cd587c2f8b372afd1ad7ea397b",
+      "size": 6799
+    },
+    {
+      "path": "packaging/audit-allowlist.json",
+      "sha": "f14ea136851c9f4c216e9bda1042bc28ec006487",
+      "size": 1823
+    },
+    {
+      "path": "packaging/bundle-exclude.txt",
+      "sha": "c363887d753106029255b73c9cd13d2866f08b7e",
+      "size": 904
+    },
+    {
+      "path": "packaging/identity.json",
+      "sha": "b47dc4ae81519d75fb697186288e719aecd3a98f",
+      "size": 810
+    },
+    {
+      "path": "ppt_qa/__init__.py",
+      "sha": "d6cdf11cfc4f306fc22643544a411d295efafb4e",
+      "size": 481
+    },
+    {
+      "path": "ppt_qa/auto_repair.py",
+      "sha": "b28541f63e3c443b7276db035a88146f9f499b27",
+      "size": 4590
+    },
+    {
+      "path": "ppt_qa/models.py",
+      "sha": "907e70a0398597c3ded867d449460e402d1cc9f3",
+      "size": 3382
+    },
+    {
+      "path": "ppt_qa/package_inspector.py",
+      "sha": "102ad289ef7af0c1f7a586c659bc6723a9752024",
+      "size": 9346
+    },
+    {
+      "path": "ppt_qa/render_report.py",
+      "sha": "0a890f82cd34bc1c0e889f3b29c3f36ae8382d3d",
+      "size": 5708
+    },
+    {
+      "path": "ppt_qa/renderers/__init__.py",
+      "sha": "0ac508e46f0c6016376a6961d8a39c1b78c529bb",
+      "size": 205
+    },
+    {
+      "path": "ppt_qa/renderers/analysis.py",
+      "sha": "45e55870ff27e00f0f7db6e7abda41f55230b8ca",
+      "size": 1646
+    },
+    {
+      "path": "ppt_qa/renderers/base.py",
+      "sha": "bbbc2b431c20c6996714828505803e8ebf70605b",
+      "size": 2380
+    },
+    {
+      "path": "ppt_qa/renderers/libreoffice.py",
+      "sha": "5081f263d5b005558730cdd3f0b41419e523b439",
+      "size": 3576
+    },
+    {
+      "path": "ppt_qa/renderers/pdf_tools.py",
+      "sha": "98599189ac09c3ebec54aa35ec4df48cc0d2244f",
+      "size": 1841
+    },
+    {
+      "path": "ppt_qa/renderers/powerpoint_macos.py",
+      "sha": "a40be7ad0c27bb033198cf0903dd6b1ee303a0a6",
+      "size": 3551
+    },
+    {
+      "path": "ppt_qa/renderers/powerpoint_windows.py",
+      "sha": "e9a646014c1275d294c5a592398ad29ae5465689",
+      "size": 2777
+    },
+    {
+      "path": "ppt_qa/report.py",
+      "sha": "3cb9196f087a1cf6116ed91805be652c4ed9a521",
+      "size": 2387
+    },
+    {
+      "path": "ppt_qa/slide_inspector.py",
+      "sha": "6669396820d55b70e3886f69dcdb7c8241369b22",
+      "size": 40930
+    },
+    {
+      "path": "ppt_qa/verifier.py",
+      "sha": "a03f41d7d533e1010efbc66760449d0f98c9f6ac",
+      "size": 15928
+    },
+    {
+      "path": "references/BUNDLE-MANIFEST.md",
+      "sha": "ce6b8ad828ff2b2738643e130b5a3e5f44ff1839",
+      "size": 2228
+    },
+    {
+      "path": "references/anti-regression-examples.md",
+      "sha": "66f383435acf7702ff3c0eaa64b7435597fb85bd",
+      "size": 3444
+    },
+    {
+      "path": "references/builder-adapters.md",
+      "sha": "d1500fd0a2d3d4a5ce14f5bf1f7a37d5438895cf",
+      "size": 3846
+    },
+    {
+      "path": "references/component-craft-checklist.md",
+      "sha": "9ce8fd860fb7e4d3384952a99ac661129ca5688e",
+      "size": 2892
+    },
+    {
+      "path": "references/component-raster-fallback.md",
+      "sha": "0f2c7a15d32870a2faba684a633e509c694c79b2",
+      "size": 4408
+    },
+    {
+      "path": "references/component-registry.json",
+      "sha": "dbbf38188eaa0c77adb518fc48310e6b3a1bae0a",
+      "size": 50250
+    },
+    {
+      "path": "references/component-registry.md",
+      "sha": "635f834192837996651a08997659246aea9ad0da",
+      "size": 2685
+    },
+    {
+      "path": "references/connector-routing-and-topology-gate.md",
+      "sha": "174a1d693886dcb311134ae93766e560c2c2d8c7",
+      "size": 1806
+    },
+    {
+      "path": "references/content-density-playbook.md",
+      "sha": "ed8d49c06496b42f17128b0964041b2bfd1b88c5",
+      "size": 5021
+    },
+    {
+      "path": "references/declarative-authoring.md",
+      "sha": "07d9e110e26178377f05574ec93fce53394ea1e3",
+      "size": 4717
+    },
+    {
+      "path": "references/declarative-design.md",
+      "sha": "488120e05c4464e11543ba899cd51aecf36c2b33",
+      "size": 15128
+    },
+    {
+      "path": "references/design-token-contract.md",
+      "sha": "b4b1fb5d612a1923ee84f08c47d24cc502bd52e4",
+      "size": 3720
+    },
+    {
+      "path": "references/diagram-auto-repair.md",
+      "sha": "ca29275eea68b843a038e43e9e015e9f6ebfd6a9",
+      "size": 1602
+    },
+    {
+      "path": "references/diagram-ir-and-layout.md",
+      "sha": "f809f0abda9136b7c83291fe5806b11fe5d9b527",
+      "size": 3755
+    },
+    {
+      "path": "references/export-pipelines.md",
+      "sha": "ab874b3f3416aff375569e560b0516d27870cc9e",
+      "size": 2306
+    },
+    {
+      "path": "references/expression-mode-gate.md",
+      "sha": "19317a5c6105fe825e88368d51f00f02eddc1f45",
+      "size": 8269
+    },
+    {
+      "path": "references/five-style-master-systems.md",
+      "sha": "014d081a89474116752ab0b1de6daed578edd5ce",
+      "size": 7631
+    },
+    {
+      "path": "references/master-ppt-design-rubric.md",
+      "sha": "6740d02a18687689461572d0cc478ced354e5583",
+      "size": 4833
+    },
+    {
+      "path": "references/master-presentation-design-language.md",
+      "sha": "e00dea06862bd86999d4a1a1e542fdef588b8984",
+      "size": 1926
+    },
+    {
+      "path": "references/migration-v1.1-to-v1.2.md",
+      "sha": "039ce1583eceef566fa30b9a4393fd811bd4ea89",
+      "size": 5150
+    },
+    {
+      "path": "references/native-connector-and-visual-quality-gate.md",
+      "sha": "2d395fb1cfd87de83ccf340bc5e03201be19d2e3",
+      "size": 1556
+    },
+    {
+      "path": "references/premium-page-archetypes.md",
+      "sha": "a1aeffd533d1584403db6902fdf0715979802277",
+      "size": 1566
+    },
+    {
+      "path": "references/production-profiles.md",
+      "sha": "0ac4de992cf2f375ff215b31ade683d582da21df",
+      "size": 5496
+    },
+    {
+      "path": "references/production-readiness-gates.md",
+      "sha": "8d3a1e05e17dec3269d59a3c651599992db375db",
+      "size": 10400
+    },
+    {
+      "path": "references/redskill-distribution.md",
+      "sha": "e60a736db440e1d1ee4b794d608661a3e9995a3c",
+      "size": 721
+    },
+    {
+      "path": "references/renderer-capabilities.json",
+      "sha": "871c7d2eb966217b0c8b0536bfab82bfaf095d55",
+      "size": 4693
+    },
+    {
+      "path": "references/routes/legacy-standard-style-pack.md",
+      "sha": "76760b468709896f3b7af72a0d03f174c3b85f0e",
+      "size": 4391
+    },
+    {
+      "path": "references/routes/v4-authoring-contract.md",
+      "sha": "e31af0e350b3bb77a734ec0696349cbd087f71c1",
+      "size": 6741
+    },
+    {
+      "path": "references/routes/v4-bespoke-route.md",
+      "sha": "70267041178e7095dd8b8b440824af5cd2995665",
+      "size": 2275
+    },
+    {
+      "path": "references/routes/v4-template-generalization.md",
+      "sha": "8ef91afc3589a1dd4c5fad5bb1a5eaa4b5d58a9c",
+      "size": 3602
+    },
+    {
+      "path": "references/routes/v4-template-route.md",
+      "sha": "d2c0c4a45cc2e33db44471dad20ac0088b32f9d1",
+      "size": 9149
+    },
+    {
+      "path": "references/routes/v4-three-route-architecture.md",
+      "sha": "52a664ef057a79902a16d9e2fef349aa6e7b52bf",
+      "size": 2622
+    },
+    {
+      "path": "references/spec-to-deck-visual-priority-gate.md",
+      "sha": "fb1c53adc936a2daca3f26a0e8eb7320d060878a",
+      "size": 1521
+    },
+    {
+      "path": "references/style-palette-options.md",
+      "sha": "95c7b3371b8e0e188ea3edf2a6dc83d5705dfa4a",
+      "size": 2575
+    },
+    {
+      "path": "references/template-packs/azure-insight-architecture.json",
+      "sha": "4e9f898c7118ea7e4d349824a4f3df41764e9b41",
+      "size": 2142
+    },
+    {
+      "path": "references/template-packs/editorial-knowledge.json",
+      "sha": "7473425946da7280f744e130cdc75ad1d40e0100",
+      "size": 7102
+    },
+    {
+      "path": "references/template-packs/technical-blueprint.json",
+      "sha": "6ae46cf3930e25785d074a5685e2c919f863b36c",
+      "size": 7445
+    },
+    {
+      "path": "references/template-visual-design.md",
+      "sha": "b4b7f3e59a2049fbfca0b2fd42452ab156e81f79",
+      "size": 5001
+    },
+    {
+      "path": "references/verification-harness.md",
+      "sha": "aa659f3d99082f83b9b22047a8d70b712a2190d3",
+      "size": 3621
+    },
+    {
+      "path": "references/visual-design-archetypes.md",
+      "sha": "0e04d594ef1005cf86e7e7132630dbe589c611de",
+      "size": 3275
+    },
+    {
+      "path": "references/visual-systems.md",
+      "sha": "ac3d80dc46f373f43ab3d934ad9c39be6cf07792",
+      "size": 2745
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "cc414695226065777e2cebb0e7aad66784ea28f6",
+      "size": 65
+    },
+    {
+      "path": "runtime/pptxgenjs/build-deck-v4.js",
+      "sha": "a19ecc6da2ab68d3a546733551b7ce932f978f33",
+      "size": 10600
+    },
+    {
+      "path": "runtime/pptxgenjs/build-deck.js",
+      "sha": "9bcfc46d0b01fecdd640d36bbfb4c1ee22badeed",
+      "size": 23217
+    },
+    {
+      "path": "runtime/pptxgenjs/package-lock.json",
+      "sha": "b53d3920dfd0edd837f90014fd43d477246877cd",
+      "size": 6832
+    },
+    {
+      "path": "runtime/pptxgenjs/package.json",
+      "sha": "9bda4727fde2bfb5290548a973f812bee80295c6",
+      "size": 246
+    },
+    {
+      "path": "schemas/asset-manifest.schema.json",
+      "sha": "96b829026364d18d4a987b7c8ab6280992bffbf5",
+      "size": 1412
+    },
+    {
+      "path": "schemas/audience-route.schema.json",
+      "sha": "68d00ce189c8b56d9536391c445b01b8a1d2d414",
+      "size": 3391
+    },
+    {
+      "path": "schemas/build-manifest.schema.json",
+      "sha": "442b130ef796eca6a4693928f1d641750a4d0418",
+      "size": 4077
+    },
+    {
+      "path": "schemas/builder-adapter.schema.json",
+      "sha": "3d4bedc4364cfe9f5d1ea5d6dad108632280c62d",
+      "size": 1678
+    },
+    {
+      "path": "schemas/capability-report.schema.json",
+      "sha": "d797920ed1507b28f37e7e378119bc639093d165",
+      "size": 3414
+    },
+    {
+      "path": "schemas/component-registry.schema.json",
+      "sha": "c20e39f5d40257b87b890244988f8b6b996ca826",
+      "size": 3996
+    },
+    {
+      "path": "schemas/delivery-manifest.schema.json",
+      "sha": "2b672abecbb174c51ac8bcc4171e80003e28a942",
+      "size": 4533
+    },
+    {
+      "path": "schemas/delivery-plan.schema.json",
+      "sha": "0b763b6600ea99784880d36979faab0a76482a01",
+      "size": 4956
+    },
+    {
+      "path": "schemas/design-review.schema.json",
+      "sha": "7aa6c8c4cb9eab2956cde918fe6503cce9776d37",
+      "size": 3802
+    },
+    {
+      "path": "schemas/design-task.schema.json",
+      "sha": "98b2987859167470bcfa2fcaa7c4278a4dbc0bdb",
+      "size": 51938
+    },
+    {
+      "path": "schemas/diagram-ir.schema.json",
+      "sha": "062a1d024ad50cfd0d3ef8d9895f0338dfa8b939",
+      "size": 10693
+    },
+    {
+      "path": "schemas/page-design-intent.schema.json",
+      "sha": "33cfbb1e1d7389b263fd4be0890b1d9f3d3ceac1",
+      "size": 2968
+    },
+    {
+      "path": "schemas/ppt-ir.schema.json",
+      "sha": "ae1b92f87b5315259a5ac2637563cf456bd83493",
+      "size": 7444
+    },
+    {
+      "path": "schemas/pptx-inspection.schema.json",
+      "sha": "965f2d0daa32caa2c6bfd99041bfb510232d58e9",
+      "size": 4135
+    },
+    {
+      "path": "schemas/qa-report.schema.json",
+      "sha": "29aea6c534c11a8f3b9c88120d6c8d1a8103b4b1",
+      "size": 2414
+    },
+    {
+      "path": "schemas/render-report.schema.json",
+      "sha": "370d84090021673cdd6711f12b9e640f44cfa11a",
+      "size": 2224
+    },
+    {
+      "path": "schemas/rubric-score.schema.json",
+      "sha": "486425037fba65881328bce6ec72351d27bf0273",
+      "size": 2528
+    },
+    {
+      "path": "schemas/source-context-brief.schema.json",
+      "sha": "3ca0b2c54777f6b5641e3ec6083287824d3f2de0",
+      "size": 1214
+    },
+    {
+      "path": "schemas/style-contract.schema.json",
+      "sha": "6c99c25c3bb854e20461879ff47ff71a9763171a",
+      "size": 7012
+    },
+    {
+      "path": "schemas/task-route.schema.json",
+      "sha": "b890c8a2b1b48c55c4724a634d4c5954fb199263",
+      "size": 2524
+    },
+    {
+      "path": "schemas/template-pack.schema.json",
+      "sha": "f5002476f5253ca723109d960aa8ceff0e20cb0f",
+      "size": 6002
+    },
+    {
+      "path": "schemas/v4/README.md",
+      "sha": "52f48766d4a1feaf38f57b2c10013e6a405f8217",
+      "size": 3787
+    },
+    {
+      "path": "schemas/v4/decision-trace.schema.json",
+      "sha": "b8803cd0ef5d75c1cf85252f33d55def4565318a",
+      "size": 7474
+    },
+    {
+      "path": "schemas/v4/design-contract.schema.json",
+      "sha": "569608e1915e2ac66c870e784e2974e2b3105f54",
+      "size": 3228
+    },
+    {
+      "path": "schemas/v4/examples/decision-trace-example.json",
+      "sha": "cd75ad0e115b3d2dfa2b78142472104fb9077da0",
+      "size": 2351
+    },
+    {
+      "path": "schemas/v4/examples/presentation-ir-enriched.json",
+      "sha": "84197d6372fe5e5e37bc31c3dbb4c8aa669d4f12",
+      "size": 2748
+    },
+    {
+      "path": "schemas/v4/examples/presentation-ir-minimal.json",
+      "sha": "a1c380707d3ee0c7a7f0378294c98426ce2f2d30",
+      "size": 1013
+    },
+    {
+      "path": "schemas/v4/examples/presentation-ir-model-directed.json",
+      "sha": "32fa31b933d262be715d6c935684529e2e1d495a",
+      "size": 3510
+    },
+    {
+      "path": "schemas/v4/examples/presentation-ir-v41-chart-diagram.json",
+      "sha": "75c5844728fc0b8f72422650def1d7d07e9884d5",
+      "size": 1844
+    },
+    {
+      "path": "schemas/v4/examples/render-plan-example.json",
+      "sha": "ab324b36e741f1e37cf0f9e96a2c9784ee2eb4ef",
+      "size": 3632
+    },
+    {
+      "path": "schemas/v4/examples/style-editorial-v4.json",
+      "sha": "b81034d47d6c968e0098dfa3f1cf9cb1d83c3cc0",
+      "size": 2953
+    },
+    {
+      "path": "schemas/v4/narrative-contract.schema.json",
+      "sha": "3d3eb6d42ed691d03f9df870bb8f072e42e03713",
+      "size": 4685
+    },
+    {
+      "path": "schemas/v4/presentation-ir.schema.json",
+      "sha": "1366007f4f018e1b8353261b4e889f0a09770218",
+      "size": 27860
+    },
+    {
+      "path": "schemas/v4/production-request.schema.json",
+      "sha": "ffc8fd16cf8d2130a991e0b7643c59d23a230d1c",
+      "size": 3571
+    },
+    {
+      "path": "schemas/v4/render-plan.schema.json",
+      "sha": "83e858ac923ac339335076b5984c861bca8278e2",
+      "size": 13590
+    },
+    {
+      "path": "schemas/v4/style-contract-v3.schema.json",
+      "sha": "6c99c25c3bb854e20461879ff47ff71a9763171a",
+      "size": 7012
+    },
+    {
+      "path": "schemas/v4/style-contract-v4.schema.json",
+      "sha": "766d1f8c48e63751c3cbc0874c82b51abf424c36",
+      "size": 13909
+    },
+    {
+      "path": "schemas/v4/template-evidence.schema.json",
+      "sha": "be2b6dbd4fed56f3572316b713c560a4229de626",
+      "size": 5039
+    },
+    {
+      "path": "schemas/visual-plan.schema.json",
+      "sha": "2fc374cf0e4df31ffda0b922599d34b61a35ce98",
+      "size": 4713
+    },
+    {
+      "path": "schemas/visual-revision-request.schema.json",
+      "sha": "69080163ee920b8b2472c4c9f8097ad2ff71314e",
+      "size": 2930
+    },
+    {
+      "path": "scripts/analyze_diagram_complexity.py",
+      "sha": "f8059b204033d27c296c8dedf18d574e1746ee52",
+      "size": 1047
+    },
+    {
+      "path": "scripts/audit_bundle.py",
+      "sha": "e5759ce2654bba0259cb806fe8a6e9f767241dc9",
+      "size": 20874
+    },
+    {
+      "path": "scripts/bind_golden_anchor.py",
+      "sha": "50dbb113056faf3d1bd2f8dc032220f6c408c345",
+      "size": 7132
+    },
+    {
+      "path": "scripts/bootstrap_pptxgenjs_runtime.py",
+      "sha": "ec9aa3cf133fcc25b858208964d36c02080df2db",
+      "size": 4792
+    },
+    {
+      "path": "scripts/build_deck.py",
+      "sha": "2f57412e02ca89a05d180882171faaefcb5b46d6",
+      "size": 6459
+    },
+    {
+      "path": "scripts/build_public_bundle.py",
+      "sha": "6e263fe77937a61a80088c1f197ec08bb6a22ffd",
+      "size": 4575
+    },
+    {
+      "path": "scripts/capability_probe.py",
+      "sha": "3fc57e4a50a458ce475395c1c66ae470e09d4b85",
+      "size": 21149
+    },
+    {
+      "path": "scripts/check_identity.py",
+      "sha": "915b39729234ee15eff06a64a4e3b34fad6a810c",
+      "size": 5089
+    },
+    {
+      "path": "scripts/compile_visual_plan.py",
+      "sha": "32da2d1f0b2cca6a0a2fc24e6f84453da38d4529",
+      "size": 14539
+    },
+    {
+      "path": "scripts/diagram_ir_tools.py",
+      "sha": "d63ff727bf31ce851d12204b643daa6d5518196f",
+      "size": 22629
+    },
+    {
+      "path": "scripts/extract_design_evidence.py",
+      "sha": "57416d6c54a67cf8fd1d84fbbd92e3c3ac6e8a88",
+      "size": 1293
+    },
+    {
+      "path": "scripts/generate_font_metrics.py",
+      "sha": "bda8b70258f7aedfb8b5dda3e4d8e12b6bd03392",
+      "size": 3283
+    },
+    {
+      "path": "scripts/inspect_pptx.py",
+      "sha": "87c953580b34ac8caf319046b269b5110ecf9cd9",
+      "size": 7595
+    },
+    {
+      "path": "scripts/ir_enrichment.py",
+      "sha": "1ce0004c5c8e2d8aecb6290f34d7a6d126fe595c",
+      "size": 9982
+    },
+    {
+      "path": "scripts/ir_quality_floor.py",
+      "sha": "1040639b738c0f98e9adeb63ee2121ccdd7f019f",
+      "size": 10598
+    },
+    {
+      "path": "scripts/migrate_manifest_v1_to_v2.py",
+      "sha": "f01d80e1d34f654b1fc7975d28a05c4d7bec7ea8",
+      "size": 7451
+    },
+    {
+      "path": "scripts/migrate_style_contract_v1_to_v2.py",
+      "sha": "bca6cce7cdc0472308e36930ef336fa988804903",
+      "size": 10522
+    },
+    {
+      "path": "scripts/migrate_style_v3_to_v4.py",
+      "sha": "af3a62e39cb6a6a432ec171147d760bd411f0841",
+      "size": 8208
+    },
+    {
+      "path": "scripts/normalize_bundle_paths.py",
+      "sha": "b6f10b5aee14e5f676cf1bf05f8a3f525065764f",
+      "size": 5666
+    },
+    {
+      "path": "scripts/normalize_diagram_ir.py",
+      "sha": "e166ed2f27d0ac18499101981dc34b1781e0455c",
+      "size": 937
+    },
+    {
+      "path": "scripts/package_delivery.py",
+      "sha": "def4dd051b78ad4d7c3bad9420c5444ec28d61c3",
+      "size": 23838
+    },
+    {
+      "path": "scripts/plan_visual_narrative.py",
+      "sha": "8048ee4cbb3b34270f9c6fbb364f598036e05d37",
+      "size": 2000
+    },
+    {
+      "path": "scripts/quick_validate_skill.py",
+      "sha": "e2f6a3e32f64c1325f401c5442c99113cf11639a",
+      "size": 1458
+    },
+    {
+      "path": "scripts/recommend_diagram_layout.py",
+      "sha": "68d25194d8e8bdacf3cacb7570076f31a7ccaee0",
+      "size": 971
+    },
+    {
+      "path": "scripts/refine_code.py",
+      "sha": "e1e5aeed5eedeb4f812c40074639eb327efb1b3c",
+      "size": 6799
+    },
+    {
+      "path": "scripts/render_pptx.py",
+      "sha": "e9fcf5353e64d73e223a1f13c096c5a30b41b67d",
+      "size": 5785
+    },
+    {
+      "path": "scripts/repair_deck.py",
+      "sha": "07397ed6d9eea1cad84cf251916386664377613f",
+      "size": 4716
+    },
+    {
+      "path": "scripts/resolve_component_delivery.py",
+      "sha": "6de70e6da464387a423cb4ee9afc974515a02115",
+      "size": 18028
+    },
+    {
+      "path": "scripts/resolve_production_profile.py",
+      "sha": "1aa6f4d1882bbd454e805ed25aa95d528fdf8eb4",
+      "size": 10122
+    },
+    {
+      "path": "scripts/route_audience.py",
+      "sha": "b2310a4dc2bba632939ab75818d55b9f40ec6757",
+      "size": 1603
+    },
+    {
+      "path": "scripts/route_task.py",
+      "sha": "12ce3cf7844ec0c2957566b822228cab18c9aa1e",
+      "size": 1719
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "sha": "5e7247ea7a433019c093ee0adceb03d3ca8e1e2f",
+      "size": 40301
+    },
+    {
+      "path": "scripts/score_deck.py",
+      "sha": "63e7ddf3b8e6d2a5fb082c983b77155b3ccd3e44",
+      "size": 25184
+    },
+    {
+      "path": "scripts/score_v4.py",
+      "sha": "cccaf62142fc45f38097bcaddba1c0dc4f031cc2",
+      "size": 9617
+    },
+    {
+      "path": "scripts/template_from_pptx.py",
+      "sha": "fa9ad0c067c205d9f5cbc26bd90f4c80145f50ae",
+      "size": 12355
+    },
+    {
+      "path": "scripts/validate_contracts.py",
+      "sha": "152c3dc028de8fcce7c26ddf8dd46c42b75095c5",
+      "size": 44335
+    },
+    {
+      "path": "scripts/validate_diagram_ir.py",
+      "sha": "5524f71a32c31cec8e9ba93b174c1ed865973e06",
+      "size": 1699
+    },
+    {
+      "path": "scripts/verify_deck.py",
+      "sha": "375e255f8e505ecdc98fa2f5289d7127a58e2331",
+      "size": 10383
+    },
+    {
+      "path": "scripts/visual_narrative/__init__.py",
+      "sha": "b80f4fc737983b557103627286241ac80933382b",
+      "size": 65
+    },
+    {
+      "path": "scripts/visual_narrative/audience_router.py",
+      "sha": "797f57d4ff23c8a3c4187831b4d9003594dd159f",
+      "size": 7357
+    },
+    {
+      "path": "scripts/visual_narrative/design_evidence.py",
+      "sha": "2fa6a7e03f94a54eb637162db93c8f70ef8f1393",
+      "size": 11853
+    },
+    {
+      "path": "scripts/visual_narrative/intent.py",
+      "sha": "de5ee6c6dc42f8b11445b2a5ae53981af5003ad1",
+      "size": 1151
+    },
+    {
+      "path": "scripts/visual_narrative/planner.py",
+      "sha": "3c50fdd64ebc7def30d0d84e082a00b9f48e9c94",
+      "size": 12008
+    },
+    {
+      "path": "scripts/visual_narrative/renderer_registry.py",
+      "sha": "0fede38337ed4eefc50bf99310aa0764de40e01a",
+      "size": 11068
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/__init__.py",
+      "sha": "2a888bb24ea84de8b034ba58634ec960a3633269",
+      "size": 847
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/causal_chain.py",
+      "sha": "3411cc3c66cd6c61c7fdbd5ca2f879eeb0d837b1",
+      "size": 1969
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/common.py",
+      "sha": "24dcbc8f05c61a450de1f3d17cd3b42896b09251",
+      "size": 7359
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/drill_down_stair.py",
+      "sha": "771d6b4c62a34253386b7c7abefa3ddac0eaed16",
+      "size": 2175
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/heat_matrix.py",
+      "sha": "8602583a365cd8894ef23df755c3fc3073300d3b",
+      "size": 4456
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/interaction_storyboard.py",
+      "sha": "da8ab2bba87d47669d1399245be8cde27e0b77ac",
+      "size": 7808
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/layered_architecture.py",
+      "sha": "a582c897e4fa55420e7c59804f8448f8ccf06f6c",
+      "size": 3061
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/phase_roadmap.py",
+      "sha": "5e216d810bb0d4215edbd1d4c3dff56c146d43e6",
+      "size": 3390
+    },
+    {
+      "path": "scripts/visual_narrative/renderers/product_ui_overview.py",
+      "sha": "3b18ab168cd7ccbbaf5551f55f74a274507de1f2",
+      "size": 7645
+    },
+    {
+      "path": "scripts/visual_narrative/revision.py",
+      "sha": "c87aae5b41cc827a880299753038003967bd2aee",
+      "size": 8241
+    },
+    {
+      "path": "scripts/visual_narrative/rhythm.py",
+      "sha": "3eae572daa897f677523dc887b5e7a707acdfa10",
+      "size": 3570
+    },
+    {
+      "path": "scripts/visual_narrative/task_router.py",
+      "sha": "76d8da791f27610cbf4aba8d04ef815c1f96d134",
+      "size": 2512
+    },
+    {
+      "path": "skill-card.md",
+      "sha": "19e84d192cc58a4cf6c492402f93fdb936c94d70",
+      "size": 6280
+    },
+    {
+      "path": "styles/consulting-blueprint-hybrid.json",
+      "sha": "51bcd6a22dc3a4cd587c2f8b372afd1ad7ea397b",
+      "size": 6799
+    },
+    {
+      "path": "styles/consulting-light.json",
+      "sha": "836493b26f510f54e3270ca0d5e160be12db06a2",
+      "size": 6738
+    },
+    {
+      "path": "styles/editorial-knowledge.json",
+      "sha": "bfd841eae2bbae10ab505563510f3e743dfe35f2",
+      "size": 6753
+    },
+    {
+      "path": "styles/product-report.json",
+      "sha": "4a4ed5a9cae3ffc57e8d5bee935ceadb53adab3a",
+      "size": 6742
+    },
+    {
+      "path": "styles/technical-blueprint.json",
+      "sha": "2163b2d35c4e1e8d0774a677b4dda5b3d7dfddf1",
+      "size": 6761
+    },
+    {
+      "path": "templates/README.md",
+      "sha": "0d6b53b515de41842767a82f3c9dee8b14f03d1b",
+      "size": 3081
+    },
+    {
+      "path": "templates/build-manifest-example.json",
+      "sha": "3964d569f1e29d7b36a986adf77616ba08784791",
+      "size": 1733
+    },
+    {
+      "path": "templates/capability-report-example.json",
+      "sha": "61393ef6bd11818e1027f5c00be2b1d978a0aeca",
+      "size": 2920
+    },
+    {
+      "path": "templates/component-registry-example.json",
+      "sha": "c3ce7405e108b4a7a249f0784822c03adaf16fa3",
+      "size": 1219
+    },
+    {
+      "path": "templates/content-lock-template.md",
+      "sha": "8eca9fe201cd5f1ab49c27bc38633cc74f0e231d",
+      "size": 3201
+    },
+    {
+      "path": "templates/delivery-manifest-example.json",
+      "sha": "11bbf52b10ff0efcd065dad1d2e6b1f188d5a0d2",
+      "size": 1627
+    },
+    {
+      "path": "templates/delivery-plan-example.json",
+      "sha": "99f210b30d216b62af313566700f582da10f37d3",
+      "size": 1694
+    },
+    {
+      "path": "templates/design-language-schema.json",
+      "sha": "c39976ac5fd267a36a00efc98daf50b09d513f02",
+      "size": 324
+    },
+    {
+      "path": "templates/diagram-ir-example.json",
+      "sha": "d495442cb2b0892cb903f66333dc0952c5c23cb5",
+      "size": 2681
+    },
+    {
+      "path": "templates/ppt-ir-example.json",
+      "sha": "6018f1ff43142863a14fc36da78ba7fe529438dc",
+      "size": 3135
+    },
+    {
+      "path": "templates/ppt-ir-source-bound-evidence-template.json",
+      "sha": "4e4464a0e3025382eb6bed12b7171dc939f1b8fc",
+      "size": 3673
+    },
+    {
+      "path": "templates/ppt-production-artifact-checklist.md",
+      "sha": "d660ce24125c4a54162a20dfb308308c8f3fe527",
+      "size": 2609
+    },
+    {
+      "path": "templates/qa-report-example.json",
+      "sha": "3ace2a3b5c04134f54464f93c8b088371de02b24",
+      "size": 1782
+    },
+    {
+      "path": "templates/rubric-score-example.json",
+      "sha": "5f71deb8d062a43d740a17e050863c0df364fb93",
+      "size": 2175
+    },
+    {
+      "path": "templates/slide-manifest-template.json",
+      "sha": "93b512c63d94d85ee8d128767fd5bd5eedb549e2",
+      "size": 3268
+    },
+    {
+      "path": "templates/spec-implementation-priority-schema.json",
+      "sha": "dd542c7484efb18539f8e8ce771bbbbb6f2ad750",
+      "size": 1185
+    },
+    {
+      "path": "templates/storyboard-template.md",
+      "sha": "514f5ebf38a6fbe191954433d8c545c01ba0d87b",
+      "size": 3939
+    },
+    {
+      "path": "templates/style-contract-example.json",
+      "sha": "d7ba2cd3d6488466c6493bb70393eb866949b5f4",
+      "size": 7087
+    },
+    {
+      "path": "templates/visual-qa-gate-template.json",
+      "sha": "21a90343bfe2c9f3ef18f20800cae8cc3487d6d0",
+      "size": 696
+    }
+  ]
+}

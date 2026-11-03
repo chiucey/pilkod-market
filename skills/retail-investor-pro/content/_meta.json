@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "created_date": "2026-04-02",
+  "description": "Retail investor assistance tool using probability thinking and strict risk control to help establish proper investment discipline. Suitable for retail investors who want to learn systematic investment methods, control losses, and build probabilistic advantages.",
+  "honest_disclosure": {
+    "can_do": [
+      "Provide high-probability signals based on historical data screening",
+      "Strictly enforce 3% stop-loss + 5% position control",
+      "Help establish investment discipline and probabilistic thinking",
+      "Identify partial characteristics of main player disguised behaviors"
+    ],
+    "cannot_do": [
+      "Precisely predict stocks that will rise on day 2 or 3",
+      "Eliminate all losses (62% win rate still means 38% probability of loss)",
+      "Guarantee profit or specific returns",
+      "Ignore A-share T+1 trading rules"
+    ]
+  },
+  "id": 383349391794346,
+  "name": "retail-investor-pro",
+  "platform": "minimax",
+  "socrates_validation": {
+    "core_insights": [
+      "Dragon Tiger List publishes at T+1 day 18:00, cannot be used for T+1 day 9:30 trading",
+      "Institutions can disguise signals, historical data cannot predict the future",
+      "No free Token can provide real-time main player behavior data",
+      "Positive expected value does not equal actual profit, need to deduct slippage and impact costs",
+      "Consecutive losses are inevitable, psychological preparation required"
+    ],
+    "framework_boundary": "Probabilistic advantage system, not prediction machine",
+    "total_questions": 15
+  },
+  "updated_at": 1775145858644,
+  "version": "1.0.0"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Find papers that cite a given Google Scholar paper. Tracks citation chains using data-cid (cluster ID). Use when user wants to see who cited a specific paper.",
+  "id": 382141580383147,
+  "name": "googlescholar-追踪引用",
+  "platform": "minimax",
+  "skill_id": 201003,
+  "source": "https://github.com/cookjohn/gs-skills",
+  "updated_at": 1774849931162,
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "ad_unit_management": true,
+    "app_management": true,
+    "multi_account": true,
+    "oauth_auth": true,
+    "package_upload": true,
+    "review_monitoring": true
+  },
+  "created": "2026-04-09",
+  "description": "TikTok开发者API自动集成器 - 全自动完成开发者后台操作",
+  "id": 385702333997894,
+  "name": "tiktok-dev-api-auto-integrator",
+  "platform": "minimax",
+  "tags": [
+    "tiktok",
+    "minigame",
+    "api-integration",
+    "developer",
+    "automation"
+  ],
+  "updated_at": 1775718586042,
+  "version": "1.0.0"
+}

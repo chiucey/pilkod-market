@@ -1,0 +1,43 @@
+{
+  "name": "motto-system",
+  "version": "2.0.0",
+  "description": "座右铭系统 - 选择一条座右铭，自动执行对应的实际任务",
+  "author": "openclaw-user",
+  "main": "dist/index.js",
+  "skills": ["./"],
+  "permissions": [
+    "memory:read",
+    "memory:write",
+    "conversation:read",
+    "conversation:write",
+    "tools:invoke",
+    "agent:control",
+    "system:status",
+    "notification:send"
+  ],
+  "triggers": [
+    "座右铭",
+    "今天的座右铭",
+    "座右铭第",
+    "设置今日座右铭",
+    "座右铭全部",
+    "座右铭列表"
+  ],
+  "config": {
+    "autoSelect": {
+      "type": "boolean",
+      "default": true,
+      "description": "是否启用自动选择今日主题"
+    },
+    "updateIntervalHours": {
+      "type": "number",
+      "default": 4,
+      "description": "自动更新间隔（小时）"
+    },
+    "autoExecuteOnQuery": {
+      "type": "boolean",
+      "default": true,
+      "description": "查询座右铭时是否自动执行动作"
+    }
+  }
+}

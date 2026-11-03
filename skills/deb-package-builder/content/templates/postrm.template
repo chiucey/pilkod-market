@@ -1,0 +1,30 @@
+#!/bin/bash
+# Post-removal script
+# Executed after files are removed
+
+set -e
+
+case "$1" in
+    remove|purge)
+        # Final cleanup actions
+        # Example: Remove data directories, logs, etc.
+
+        # Remove configuration files (if purge)
+        if [ "$1" = "purge" ] && [ -d "/etc/{{PACKAGE_NAME}}" ]; then
+            rm -rf /etc/{{PACKAGE_NAME}}
+        fi
+        ;;
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+        # Handle various scenarios
+        ;;
+    remove)
+        # Package was removed but not purged
+        ;;
+esac
+
+# Remove systemd daemon-reload reference
+if [ -d "/run/systemd/system" ]; then
+    systemctl daemon-reload 2>/dev/null || true
+fi
+
+exit 0

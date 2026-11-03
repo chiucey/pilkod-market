@@ -1,0 +1,40 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "annotation_conversion": true,
+    "batch_processing": true,
+    "config_migration": true,
+    "dependency_update": true,
+    "report_generation": true
+  },
+  "category": "migration",
+  "created_at": "2026-03-27",
+  "description": "Migrate Alibaba HSF framework to Apache Dubbo3 framework with automatic annotation, dependency and configuration conversion",
+  "display_name": "HSF to Dubbo3 Migrator",
+  "id": 381048473493851,
+  "input_types": [
+    "java",
+    "xml",
+    "properties",
+    "pom.xml"
+  ],
+  "name": "hsf-to-dubbo3-migrator",
+  "output_types": [
+    "java",
+    "xml",
+    "properties",
+    "json",
+    "md"
+  ],
+  "platform": "minimax",
+  "skill_id": 1892389472,
+  "tags": [
+    "HSF",
+    "Dubbo3",
+    "Alibaba",
+    "migration",
+    "microservice"
+  ],
+  "updated_at": 1774582544445,
+  "version": "1.0.0"
+}

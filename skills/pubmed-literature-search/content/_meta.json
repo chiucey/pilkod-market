@@ -1,0 +1,21 @@
+{
+  "author": "MiniMax Agent",
+  "category": "文献检索",
+  "created_at": "2026-04-05",
+  "description": "临床医学顶刊文献检索与分析。当用户要求检索医学文献、查找临床研究论文、搜索特定疾病或治疗方法相关文献、或者需要基于PubMed数据库进行系统文献综述时使用。",
+  "file_reference": "/workspace/user_input_files/JCR_2025_Full.xlsx",
+  "id": 384391100129875,
+  "name": "pubmed-literature-search",
+  "platform": "minimax",
+  "skill_id": 184,
+  "tags": [
+    "PubMed",
+    "医学文献",
+    "JCR",
+    "文献检索",
+    "临床医学",
+    "研究综述"
+  ],
+  "updated_at": 1775399488071,
+  "version": "1.0.0"
+}

@@ -1,0 +1,45 @@
+{
+  "author": "MiniMax Agent",
+  "deployedUrl": "https://hxcpevjxm8yx.space.minimaxi.com",
+  "description": "Intelligent analysis of group discussion content, recommend optimal information organization models, generate 16:9 hand-drawn style infographics",
+  "id": 383978127557428,
+  "inputs": {
+    "images": "Optional: Discussion screenshots or handwritten notes (OCR supported)",
+    "text": "Group discussion records or meeting minutes text"
+  },
+  "models": [
+    "SCQA Framework (Situation-Complication-Question-Answer)",
+    "SWOT Analysis (Strengths-Weaknesses-Opportunities-Threats)",
+    "Quadrant Analysis (dual dimension comparison)",
+    "MECE Classification (Mutually Exclusive, Collectively Exhaustive)",
+    "Golden Circle (Why-How-What)",
+    "Timeline (process/history display)",
+    "Funnel Chart (filtering/conversion process)",
+    "Comparison Chart (A/B option comparison)"
+  ],
+  "name": "infographic-generator",
+  "outputs": {
+    "infographic": "16:9 PNG format hand-drawn style infographic",
+    "modelRecommendation": "Recommended information organization model and confidence level",
+    "summary": "One-sentence core summary"
+  },
+  "platform": "minimax",
+  "tags": [
+    "infographic",
+    "data visualization",
+    "group discussion",
+    "SCQA",
+    "SWOT",
+    "MECE",
+    "quadrant"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "SVG",
+    "TailwindCSS",
+    "Tesseract.js OCR"
+  ],
+  "updated_at": 1775300976013,
+  "version": "1.0.0"
+}

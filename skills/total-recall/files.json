@@ -1,0 +1,144 @@
+{
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha": "606816d105247142bb043c34bf8f8d2a988b13b3",
+      "size": 6601
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha": "6c074995fcac1d2804729f634775fc7bc87c3255",
+      "size": 719
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "5fab6f869c73e1aca7be9bca889bac204ced09f1",
+      "size": 875
+    },
+    {
+      "path": "INSTALL-AGENT.md",
+      "sha": "7684aafe3f0ef7d7bdb8365a3da050359d625ad5",
+      "size": 1309
+    },
+    {
+      "path": "README.md",
+      "sha": "9bc4d61a87935c236ecf42998feef0922eb51c2f",
+      "size": 9775
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "728a29e40a67ce8eab08a24062412caf6af3c537",
+      "size": 13287
+    },
+    {
+      "path": "_meta.json",
+      "sha": "c1b77cc5a4c8ace5a5c4cc0a4df570450b4ff0f7",
+      "size": 238
+    },
+    {
+      "path": "config/cron-job.json",
+      "sha": "6d2d82e3bf4a56e35b059dc8e863ca002c971299",
+      "size": 505
+    },
+    {
+      "path": "config/memory-flush.json",
+      "sha": "e1c88f9f66dfd13bcd2ca8793d88c6429a59a51c",
+      "size": 751
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha": "5e528a8f98d6dcd91737eeb0564a507e4a490ddf",
+      "size": 5031
+    },
+    {
+      "path": "docs/edge-cases.md",
+      "sha": "f339948685d62aa941dc71df078ccc07067057cd",
+      "size": 793
+    },
+    {
+      "path": "docs/faq.md",
+      "sha": "1a622fd1e0660e1d850c4dc216e605e5863bcf7c",
+      "size": 3372
+    },
+    {
+      "path": "dream-cycle/README.md",
+      "sha": "8ee875e18eb0ce3c6c399f95cb01d6efea568ec9",
+      "size": 2911
+    },
+    {
+      "path": "prompts/dream-cycle-prompt.md",
+      "sha": "1bc1742446214f82f20dccb0534dc14766bd914e",
+      "size": 21652
+    },
+    {
+      "path": "prompts/observer-system.txt",
+      "sha": "5c5fdb2bb215d13fd392e3d7cb3b988e489967e7",
+      "size": 4597
+    },
+    {
+      "path": "prompts/reflector-system.txt",
+      "sha": "bc90f517f977aaa1847483fe0c7ba25ea509e6dc",
+      "size": 1529
+    },
+    {
+      "path": "schemas/observation-format.md",
+      "sha": "47be129046fe2a89cf4878baf8e459921d553786",
+      "size": 8557
+    },
+    {
+      "path": "scripts/_compat.sh",
+      "sha": "53ccaf7fa1a3845928781b10b0b29fea6e0f2602",
+      "size": 1122
+    },
+    {
+      "path": "scripts/backfill-importance.sh",
+      "sha": "8d8d52801d7902db27204fff5003d530092516c1",
+      "size": 5562
+    },
+    {
+      "path": "scripts/dream-cycle.sh",
+      "sha": "376c48803be5deace6bf4de24a2af357094e6eef",
+      "size": 25293
+    },
+    {
+      "path": "scripts/observer-agent.sh",
+      "sha": "4af5b1f77adacbfa743d33cc6b3b1a09dea0f81b",
+      "size": 12107
+    },
+    {
+      "path": "scripts/observer-watcher.sh",
+      "sha": "a901826a7068a3e40048f36ce5e38d36f6873167",
+      "size": 4178
+    },
+    {
+      "path": "scripts/reflector-agent.sh",
+      "sha": "86017da59c45900b5b61312975f208e4cedd58c1",
+      "size": 4780
+    },
+    {
+      "path": "scripts/session-recovery.sh",
+      "sha": "34814f24cdc83f45233d8d41dc05f2f4d219b9b9",
+      "size": 2880
+    },
+    {
+      "path": "scripts/setup.sh",
+      "sha": "8e6d8659dcc4cf03cb85fce98793b2987171fa15",
+      "size": 5238
+    },
+    {
+      "path": "scripts/staging-review.sh",
+      "sha": "8613838e432eb07de5dcf3d164a14d148f276c40",
+      "size": 7106
+    },
+    {
+      "path": "templates/AGENTS-snippet.md",
+      "sha": "560fff0d76436f136c5774e14f3760a3b3c891df",
+      "size": 1341
+    },
+    {
+      "path": "templates/HEARTBEAT-snippet.md",
+      "sha": "d4f9f710e9b23ced3a6864625d58e02ee68fa0b0",
+      "size": 411
+    }
+  ]
+}

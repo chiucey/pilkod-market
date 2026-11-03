@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "7f64da8db2563de6aa4bfd0928ed2f19a689bbe4",
+      "size": 7524
+    },
+    {
+      "path": "_meta.json",
+      "sha": "9236362c02b94e0bf1616ba4d824689251fe13a1",
+      "size": 636
+    },
+    {
+      "path": "examples/manifest_template.md",
+      "sha": "4057944d1145d67986f4025f45a8d35d1b09d043",
+      "size": 675
+    },
+    {
+      "path": "scripts/generate_manifest.py",
+      "sha": "1f36cf579bdbc86c31aec06ebc4d818838286120",
+      "size": 9325
+    },
+    {
+      "path": "scripts/scan_source.py",
+      "sha": "95fded9b1a3b63ef6a67f80dc22cb2bd42a54565",
+      "size": 6346
+    },
+    {
+      "path": "scripts/update_status.py",
+      "sha": "0bc8d852584b579ecf51a279991c966fc8809a4e",
+      "size": 9145
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "40ca094376b400a05c75b5ec31808d71537f4ca5",
+      "size": 6708
+    },
+    {
+      "path": "_meta.json",
+      "sha": "e6e4d337cc5411d2ee4de68e67b3e9424deee2f3",
+      "size": 559
+    },
+    {
+      "path": "references/config.yaml",
+      "sha": "9432821a0927a0cebd91a30aaa7db7c39c57d7b1",
+      "size": 3998
+    },
+    {
+      "path": "references/quickstart.md",
+      "sha": "8e32049ec7457b5fcc76055d803e0497133c49f9",
+      "size": 3591
+    },
+    {
+      "path": "references/schema.md",
+      "sha": "f9ed1897b6d42cb6fda43c4fab61228cc868a8bd",
+      "size": 9018
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "57effdeb68a597978f8972dead3901849654df40",
+      "size": 208
+    },
+    {
+      "path": "scripts/collect_content.py",
+      "sha": "7507ca6bf2cbe2fcc84ba08c3e384158d4544154",
+      "size": 9448
+    },
+    {
+      "path": "scripts/feishu_pusher.py",
+      "sha": "2fe99a07811759e8b4a43dbfbbe0e9a121f41d8e",
+      "size": 6962
+    },
+    {
+      "path": "scripts/video_scraper.py",
+      "sha": "8ee8c5013f6bb60347ef1c331ada0663a9f775d6",
+      "size": 5805
+    }
+  ]
+}

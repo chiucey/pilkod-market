@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "bd1983755ac0f143c8c8b842f305951f0f010cb2",
+      "size": 367
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "2c31e7ce06b1f5807c1ebbf7e1788d59c28218c4",
+      "size": 6178
+    },
+    {
+      "path": "_meta.json",
+      "sha": "fd8a4374f6a3d04b760e0aec869aa2816728d14f",
+      "size": 252
+    },
+    {
+      "path": "scripts/analyser.py",
+      "sha": "594063721db4c3937be58f65814d0124e5f3d202",
+      "size": 9399
+    },
+    {
+      "path": "scripts/control.sh",
+      "sha": "c628bf55f72a98bc236c1e5a06060718dde8fded",
+      "size": 1930
+    },
+    {
+      "path": "scripts/monitor.py",
+      "sha": "7eecb12b9b8180f392fd2c8dccf292c698b1eaf4",
+      "size": 28643
+    },
+    {
+      "path": "scripts/monitor_daemon.py",
+      "sha": "7a06ff29cff69d9562e6d798639e31d791d49568",
+      "size": 3566
+    },
+    {
+      "path": "scripts/test_suite.py",
+      "sha": "e5de4c8d09bccfbd73c1681f539f603614067ba3",
+      "size": 10021
+    }
+  ]
+}

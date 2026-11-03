@@ -1,0 +1,583 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "SkillPrj High-Security Demo API",
+    "version": "0.3.0",
+    "description": "用于 OpenClaw 在局域网内调用后端的演示 API（银行对公信贷尽调 + 高安全护栏示例）。每次调用都必须携带 `Authorization: Basic ...`。`GET /api/v1/customer-companies` 返回客户公司基础信息（法人相关字段脱敏）及模拟授信尽调摘要；`POST /api/v1/rag/query` 检索同批尽调向量片段。资料均为教学模拟，不构成真实授信意见。"
+  },
+  "servers": [
+    {
+      "url": "http://{host}:8000",
+      "description": "后端服务地址（局域网内可达）",
+      "variables": {
+        "host": {
+          "default": "fastapi_backend",
+          "description": "后端主机名或 IP"
+        }
+      }
+    }
+  ],
+  "security": [
+    {
+      "BasicAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BasicAuth": {
+        "type": "http",
+        "scheme": "basic",
+        "description": "OpenClaw 每次请求都需要 Basic Auth，其中 username=员工账号（user01~user50），password=该账号对应密码。后端会按账号加载员工信息并执行 RBAC/行级权限与审计归因。"
+      }
+    },
+    "schemas": {
+      "WeatherResponse": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string"
+          },
+          "temperature_c": {
+            "type": "number"
+          },
+          "condition": {
+            "type": "string"
+          },
+          "humidity": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "city",
+          "temperature_c",
+          "condition",
+          "humidity"
+        ]
+      },
+      "EmployeeInfoResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string",
+            "description": "已脱敏手机号，例如 138****5678"
+          },
+          "national_id": {
+            "type": "string",
+            "description": "已脱敏身份证号，例如 110105********1234"
+          },
+          "department_id": {
+            "type": "integer"
+          },
+          "department_name": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "is_active": {
+            "type": "boolean"
+          },
+          "allowed_company_scope": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "user_id",
+          "full_name",
+          "role",
+          "title",
+          "email",
+          "phone",
+          "national_id",
+          "department_id",
+          "is_active",
+          "allowed_company_scope",
+          "created_at",
+          "updated_at"
+        ]
+      },
+      "EmployeeSalaryResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "department_name": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "role": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string",
+            "description": "已脱敏手机号，例如 138****5678"
+          },
+          "national_id": {
+            "type": "string",
+            "description": "已脱敏身份证号，例如 110105********1234"
+          },
+          "salary_cents": {
+            "type": "integer"
+          },
+          "salary_yuan": {
+            "type": "number",
+            "description": "薪资金额（元）"
+          }
+        },
+        "required": [
+          "user_id",
+          "full_name",
+          "role",
+          "phone",
+          "national_id",
+          "salary_cents",
+          "salary_yuan"
+        ]
+      },
+      "RagQueryRequest": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000,
+            "description": "用户问题或尽调分析需求。命中高危触发词时会被后端安全拦截。"
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      },
+      "RagQueryResponse": {
+        "type": "object",
+        "properties": {
+          "answer": {
+            "type": "string",
+            "description": "模型基于授权范围内资料生成的回答。"
+          },
+          "companies_used": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "本次允许检索并参与回答的公司列表。"
+          },
+          "retrieved_count": {
+            "type": "integer",
+            "description": "检索到的资料片段数量。"
+          }
+        },
+        "required": [
+          "answer",
+          "companies_used",
+          "retrieved_count"
+        ]
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "detail": {
+            "type": "string",
+            "description": "错误说明"
+          }
+        },
+        "required": [
+          "detail"
+        ]
+      },
+      "CustomerCompanyResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "company_code": {
+            "type": "string"
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "tax_identification_no": {
+            "type": "string",
+            "description": "已脱敏纳税识别号，例如 9131**********01"
+          },
+          "department_id": {
+            "type": "integer"
+          },
+          "department_name": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          },
+          "法人姓名": {
+            "type": "string"
+          },
+          "法人电话": {
+            "type": "string",
+            "description": "已脱敏法人手机号，例如 138****5678"
+          },
+          "纳税人识别号": {
+            "type": "string",
+            "description": "已脱敏法人身份证号，例如 110105********1234"
+          },
+          "经营与行业概况": {
+            "type": "string",
+            "description": "银行对公视角的经营与行业模拟尽调描述"
+          },
+          "授信申请概要": {
+            "type": "string",
+            "description": "拟申请贷款/授信用途、期限与担保方式等（模拟）"
+          },
+          "风险关注点": {
+            "type": "string",
+            "description": "信用、担保、集中度等风险关注点（模拟）"
+          },
+          "尽调结论摘要": {
+            "type": "string",
+            "description": "尽调结论与续作建议摘要（模拟）"
+          }
+        },
+        "required": [
+          "id",
+          "company_code",
+          "company_name",
+          "法人姓名",
+          "法人电话",
+          "纳税人识别号",
+          "tax_identification_no",
+          "经营与行业概况",
+          "授信申请概要",
+          "风险关注点",
+          "尽调结论摘要",
+          "department_id",
+          "created_at",
+          "updated_at"
+        ]
+      }
+    }
+  },
+  "paths": {
+    "/api/v1/weather": {
+      "get": {
+        "operationId": "getWeather",
+        "summary": "获取天气（模拟数据）",
+        "description": "通过 `city` 查询天气（本演示返回模拟数据）。需要使用 Basic Auth（用户名/密码）。当 city 为中文时必须 URL 编码（建议调用端等价于 `--data-urlencode`）。",
+        "parameters": [
+          {
+            "name": "city",
+            "in": "query",
+            "required": true,
+            "description": "城市名，例如：Beijing。若为中文（如 上海），请求前必须 URL 编码。",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "天气结果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WeatherResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "身份凭证无效或缺少 Authorization",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/employee/info": {
+      "get": {
+        "operationId": "getEmployeeInfo",
+        "summary": "查询员工基本信息",
+        "description": "根据 `user_id` 查询员工基本信息。数据访问会基于当前用户角色执行行级权限隔离，越权返回 403。",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "required": true,
+            "description": "目标员工账号，例如 user02。",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "员工信息结果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmployeeInfoResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "身份凭证无效或缺少 Authorization",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "越权访问。OpenClaw 应优雅告知当前用户无权访问该数据，不应继续猜测或枚举其他 user_id。",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "目标员工不存在",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/employee/salary": {
+      "get": {
+        "operationId": "getEmployeeSalary",
+        "summary": "查询员工薪资信息",
+        "description": "根据 `user_id` 查询员工薪资信息。数据访问会基于当前用户角色执行行级权限隔离，越权返回 403。",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "required": true,
+            "description": "目标员工账号，例如 user02。",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "员工薪资结果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmployeeSalaryResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "身份凭证无效或缺少 Authorization",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "越权访问。OpenClaw 应优雅告知当前用户无权访问该数据，不应继续猜测或枚举其他 user_id。",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "目标员工不存在",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rag/query": {
+      "post": {
+        "operationId": "postRagQuery",
+        "summary": "银行尽调资料 RAG 问答",
+        "description": "基于向量库中模拟的银行授信尽调片段回答问题，仅覆盖当前用户被授权的客户公司。必须使用 Basic Auth。命中提示词注入等高危内容时返回 400。",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RagQueryRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "RAG 问答结果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RagQueryResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "输入非法或命中提示词注入拦截",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "身份凭证无效或缺少 Authorization",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "当前用户无可检索的授权公司范围",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "后端模型调用或配置异常",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/customer-companies": {
+      "get": {
+        "operationId": "getCustomerCompanies",
+        "summary": "查询可访问客户公司及模拟授信尽调摘要",
+        "description": "银行对公演示：返回公司名称、法人信息（脱敏）、纳税识别号（脱敏）及四类模拟尽调文字（经营、授信方案、风险、结论）。部门隔离；管理员可见全部客户。每条记录中的 `department_name` 表示**该客户归属哪个业务部门管户**，不是当前登录员工的部门。用户点名某公司时建议传 `company_name` 子串筛选。演示库固定 10 家客户；单部门用户通常最多 2 家。",
+        "parameters": [
+          {
+            "name": "company_name",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "公司名称子串筛选（可选），如 `甲骨文科技`。中文请 URL 编码后传递。"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "客户公司列表",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CustomerCompanyResponse"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "身份凭证无效或缺少 Authorization",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

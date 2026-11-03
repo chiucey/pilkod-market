@@ -1,0 +1,72 @@
+# 面试卡片 Schema 规范
+
+每场面试 = 一张 `cards/I###_公司岗位.yaml`，字段如下。
+生成卡片时严格遵循本规范，跨场分析脚本也按此解析。
+
+## 结果的"三级与优先级"（最重要，先读）
+统计与报告只吃【实际结果】。三样别混在同一个 result：
+1. **实际结果（真值）** → `result.outcome / result.offer / result.why_ended`
+   - 唯一决定统计与判断。必须以"真实发生"(是否过 & 最终拿没拿到 & 为什么)为准。
+2. **人的主观体感（可选参考）** → 提在 `meta.subjective`（如"我自感 fail"）。
+   - 可提示后续要核实的点，但**绝不进统计**。
+3. **AI 从全文的推断（可选参考）** → `meta.ai_guess`（如"AI 倾向 pass 但需实际确认"）。
+   - 仅供对照，**绝不进统计**；`result` 为空时千万别用它顶替实际。
+
+> 规则：结果里任何角色（包括 AI）都不该替"现实"做主。`result` 写的就是事实；体感/猜测单独留 meta，不进 total/总报。若某场只知体感/AI推断而无实际，卡标「待实际结果」，report 不计它为 final。
+
+## 顶层字段
+
+```yaml
+# 标题
+# 面试卡片 — <公司>·<岗位>
+id: I016            # 自增序号，如 I001
+
+meta:               # 元信息
+  create_date: 2026-09-01    # 卡片创建日期
+  review_date: ""            # 复盘/补结果日期
+
+interview:          # 面试基本信息
+  company: ""       # 公司（写真实名称，用户确认为准）
+  position: ""      # 目标岗位
+  level: ""         # 级别（如 中级 / 高级 / 负责人）
+  date: 2026-05-01  # 面试日期
+  round: ""         # 轮次（一面/二面/HR面/终面）
+  interviewer_role: ""  # 面试官角色（业务/产品/HR/COO/负责人）
+  channel: ""       # 渠道（内推/海投/猎头）
+  base: ""          # 可选，base 城市
+
+context:            # 可选，跨场才知的关键背景（当前状态/gap/空窗）
+  ...:
+
+questions:          # 问题清单（核心）
+  - question: ""    # 面试官问的问题
+    theme: ""       # 主题，如 项目复盘/方法论/指标/行为/反问
+    how_answered: ""# 你的回答要点
+    score: 4        # 自评 1-5
+    note: ""        # 备注/面试官反馈
+
+result:
+  outcome: 待确认    # pass / fail / no_offer / 待确认（用户补充）
+  reason: ""         # 你认为通过/未通过的真实原因
+  signal: ""         # 面试官给到的反馈信号或暗示
+
+  # ── 新增推荐字段（本卡所在"轮次/流程"的细化；可缺省，向后兼容）──
+  # 背景: 早期 outcome 只表达"该轮"结论，mixed pass/fail 含义。拆细后统计才可信。
+  round_result: ""   # 本张卡所记这一轮/pass|fail（代表该轮是否过）
+  offer: ""          # 该轮/流程最终：got(拿到offer) / no(没拿到) / ongoing(未定) / 空
+  why_ended: ""      # 若最终没进 offer，卡点/阻点(如:二面挂/老板简历pass/外包无转正/base/薪资/回流/gap稳定) — 单一主句
+  process: ""        # 轮次链 id(关联同流程不同轮次卡)，如 process: 某公司-内容运营；同流程各轮共用
+  # 岗位属性建议放 interview.nature: 正编 | 外包 | 兼职 | 实习（strategy 据此分开算通过率）
+
+reflection:
+  strength: ""       # 做得好的、可复制的点
+  weakness: ""       # 暴露的短板、踩坑点
+  improvement: ""    # 下次的改进动作
+
+skills: []           # 能力标签，如 项目复盘STAR/内容运营/推荐策略/面试语速
+```
+
+## 约定
+- `outcome` 的"真值"由用户补充（面试最终结果 + 真实原因），AI 只填"待确认"和推断。
+- `score` 为 AI 建议分，用户可改。
+- `skills` 标签尽量复用已有标签（见 build_card.py 的标签库），便于跨场聚合。

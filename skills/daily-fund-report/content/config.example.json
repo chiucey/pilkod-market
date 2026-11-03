@@ -1,0 +1,21 @@
+{
+  "feishu": {
+    "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/YOUR_WEBHOOK_ID",
+    "secret": "",
+    "sign_enable": false
+  },
+  "portfolio": {
+    "file": "assets/portfolio.json"
+  },
+  "schedule": {
+    "cron": "0 16 * * 1-5",
+    "timezone": "Asia/Shanghai",
+    "enabled": true
+  },
+  "notification": {
+    "on_success": true,
+    "on_failure": true,
+    "retry_times": 3,
+    "retry_delay": 300
+  }
+}

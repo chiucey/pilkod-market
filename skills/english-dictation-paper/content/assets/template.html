@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Times New Roman", "SimSun", serif;
+            font-size: 10.5pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 10mm;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 8mm;
+            border-bottom: 2px solid #000;
+            padding-bottom: 4mm;
+        }
+        
+        .header h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            letter-spacing: 2pt;
+            margin-bottom: 2mm;
+        }
+        
+        .header-info {
+            font-size: 9pt;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .header-info span {
+            display: inline-block;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8mm;
+            width: 100%;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .column-header {
+            display: grid;
+            grid-template-columns: 6mm 25mm 1fr 8mm;
+            font-weight: bold;
+            font-size: 9pt;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 2mm;
+            margin-bottom: 2mm;
+            text-align: center;
+        }
+        
+        .column-header.right {
+            grid-template-columns: 6mm 30mm 1fr;
+        }
+        
+        .word-row {
+            display: grid;
+            grid-template-columns: 6mm 25mm 1fr 8mm;
+            border-bottom: 0.5px solid #ccc;
+            min-height: 12mm;
+            align-items: center;
+            padding: 1mm 0;
+            page-break-inside: avoid;
+        }
+        
+        .word-row.right {
+            grid-template-columns: 6mm 30mm 1fr;
+        }
+        
+        .num {
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+        }
+        
+        .word-cell {
+            padding-left: 2mm;
+            font-weight: normal;
+            font-size: 10.5pt;
+        }
+        
+        .meaning-cell {
+            padding: 0 2mm;
+            position: relative;
+        }
+        
+        .blank-lines {
+            width: 100%;
+            height: 8mm;
+            border-bottom: 1px dotted #999;
+            display: block;
+        }
+        
+        .meaning-text {
+            font-size: 9pt;
+            line-height: 1.3;
+            padding-left: 1mm;
+        }
+        
+        .check-box {
+            text-align: center;
+            font-size: 12pt;
+            color: #333;
+        }
+        
+        .blank-word {
+            border-bottom: 1px solid #999;
+            height: 6mm;
+            width: 90%;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 10pt;
+            font-weight: bold;
+            text-align: center;
+            background: #f0f0f0;
+            padding: 1mm;
+            margin-bottom: 2mm;
+            border: 1px solid #ccc;
+        }
+        
+        @media print {
+            .container {
+                padding: 0;
+            }
+            
+            .word-row {
+                page-break-inside: avoid;
+            }
+            
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{HEADER_H1}}</h1>
+            <div class="header-info">
+                <span>姓名：_______________</span>
+                <span>日期：_______________</span>
+                <span>得分：_______________</span>
+            </div>
+        </div>
+        
+        <div class="main-grid">
+            <!-- 左栏：默写区 -->
+            <div class="column">
+                <div class="section-title">左栏 · 默写区（看英文写中文）</div>
+                <div class="column-header">
+                    <div>序号</div>
+                    <div>Word</div>
+                    <div>Meaning（默写）</div>
+                    <div>□</div>
+                </div>
+                
+                {{LEFT_ROWS}}
+            </div>
+            
+            <!-- 右栏：答案核对区 -->
+            <div class="column">
+                <div class="section-title">右栏 · 答案核对区（看中文忆英文）</div>
+                <div class="column-header right">
+                    <div>序号</div>
+                    <div>Word（回忆填写）</div>
+                    <div>Meaning（完整答案）</div>
+                </div>
+                
+                {{RIGHT_ROWS}}
+            </div>
+        </div>
+        
+        <div style="margin-top: 8mm; font-size: 8pt; text-align: center; color: #666; border-top: 1px solid #ccc; padding-top: 3mm;">
+            {{FOOTER_TEXT}}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "author": "MiniMax Agent",
+  "description": "Heuristic teaching skill combining literary elegance with technical depth, guiding learners through inductive reasoning and step-by-step derivation with open source code examples.",
+  "domains": [
+    "programming",
+    "computer science",
+    "software engineering",
+    "web development",
+    "data science",
+    "algorithms",
+    "databases",
+    "networks"
+  ],
+  "id": 388482759197113,
+  "name": "socratic-teacher",
+  "platform": "minimax",
+  "tags": [
+    "education",
+    "teaching",
+    "heuristic",
+    "socratic",
+    "literary",
+    "technical"
+  ],
+  "trigger_phrases": [
+    "explain",
+    "how does",
+    "why does",
+    "teach me",
+    "understand",
+    "learn about",
+    "what is",
+    "what are",
+    "help me understand",
+    "can you teach",
+    "show me how"
+  ],
+  "updated_at": 1776401968634,
+  "version": "1.0.0"
+}

@@ -1,0 +1,62 @@
+name: quarterly-baseline
+
+# 每季度一次,检查 CesiumJS / Unity / Unreal 最新版本
+# 用途:版本对齐,过期基线及时升级
+
+on:
+  schedule:
+    - cron: '0 6 1 */3 *'  # 每季度第一天 UTC 06:00(北京时间 14:00)
+  workflow_dispatch:
+
+jobs:
+  baseline-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 bash
+        run: chmod +x scripts/*.sh
+
+      - name: 抓 release notes 并 diff
+        id: diff
+        run: |
+          bash scripts/release-diff.sh --limit=10 > release-diff.log 2>&1
+          cat release-diff.log
+
+      - name: 抓 baseline 对比
+        id: baseline
+        run: |
+          bash scripts/check-baseline.sh > baseline-check.log 2>&1
+          cat baseline-check.log
+
+      - name: 上传报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quarterly-baseline-report
+          path: |
+            release-diff.log
+            baseline-check.log
+          if-no-files-found: ignore
+          retention-days: 90
+
+      - name: 检测到版本差异 → 创建 Issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const log = fs.readFileSync('baseline-check.log', 'utf8');
+            // 简单判断:含"⚠ 不对齐"则提醒
+            if (log.includes('⚠ 不对齐')) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🔔 Cesium 生态有新版本待对齐 ${new Date().toISOString().slice(0,10)}`,
+                body: `基线检测发现新版本。请按 [maintenance-playbook § 3](../../self-evolution/maintenance-playbook.md) 流程对齐。\n\n详情见 artifact: quarterly-baseline-report`,
+                labels: ['maintenance', 'baseline-align', 'auto-created']
+              });
+            }

@@ -1,0 +1,19 @@
+{
+  "author": "MiniMax Agent",
+  "description": "An intelligent co-pilot skill that observes AI agent workflows and provides real-time insights, quality checks, and optimization suggestions. Use when agents need to improve thinking quality, work efficiency, or delivery completeness.",
+  "entry_point": "ai_empower_mcp.py",
+  "function_name": "ai_empower_mcp",
+  "id": 382625000997537,
+  "name": "ai-empower-mcp",
+  "platform": "minimax",
+  "platform_version": "1.0",
+  "tags": [
+    "ai-empower",
+    "quality-assurance",
+    "co-pilot",
+    "workflow-optimization",
+    "thinking-enhancement"
+  ],
+  "updated_at": 1774968413915,
+  "version": "1.0.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "neargg",
+  "created_at": "2026-03-29",
+  "description": "小红书内容搜索技能。通过 MCP 协议调用 xiaohongshu-mcp 工具，搜索小红书笔记、用户主页、评论等。支持关键词搜索、热度排序、内容详情提取。当用户说搜一下小红书、分析小红书、查找小红书帖子时触发。",
+  "files": [
+    "SKILL.md",
+    "xhs_search.py"
+  ],
+  "id": 381872028516632,
+  "name": "xhs-search",
+  "platform": "minimax",
+  "skill-id": 17377303,
+  "updated_at": 1774784622202,
+  "version": "1.0.0"
+}

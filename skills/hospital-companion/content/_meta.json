@@ -1,0 +1,51 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "smart-triage",
+    "registration-guidance",
+    "queue-optimization",
+    "report-interpretation",
+    "medication-guidance",
+    "follow-up-management",
+    "health-archive"
+  ],
+  "created_at": "2024-01-01",
+  "description": "Hospital self-service companion service. Use when users need medical guidance, appointment registration, department recommendations, symptom analysis, queue tips, checkup report interpretation, medication guidance, follow-up reminders, medical history records, or health file management. Triggers include: companion, hospital visit, see doctor, registration, triage, symptom analysis, queue, payment, medicine pickup, follow-up, checkup report, lab results, blood test, imaging, prescription, medical history, health archive.",
+  "id": 383275815366869,
+  "name": "hospital-companion",
+  "platform": "minimax",
+  "settings": {
+    "language": "zh-CN",
+    "max_tokens": 2000,
+    "temperature": 0.7
+  },
+  "tags": [
+    "medical",
+    "health",
+    "companion",
+    "hospital",
+    "triage",
+    "registration"
+  ],
+  "triggers": [
+    "companion",
+    "hospital visit",
+    "see doctor",
+    "registration",
+    "triage",
+    "symptom analysis",
+    "queue",
+    "payment",
+    "medicine pickup",
+    "follow-up",
+    "checkup report",
+    "lab results",
+    "blood test",
+    "imaging",
+    "prescription",
+    "medical history",
+    "health archive"
+  ],
+  "updated_at": 1775127840940,
+  "version": "1.0.0"
+}

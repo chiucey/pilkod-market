@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Style Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #86868b;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 1rem;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: #0071e3;
+        }
+
+        .search-input::placeholder {
+            color: #86868b;
+        }
+
+        .search-btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: white;
+            background: #0071e3;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-btn:hover {
+            background: #0077ed;
+        }
+
+        .search-btn:active {
+            background: #005bb5;
+        }
+
+        .examples {
+            margin-top: 16px;
+        }
+
+        .examples-title {
+            color: #86868b;
+            font-size: 0.875rem;
+            margin-bottom: 10px;
+        }
+
+        .example-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .example-tag {
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .example-tag:hover {
+            background: #e8e8ed;
+        }
+
+        .results {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            display: none;
+        }
+
+        .results.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .results-header {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
+        .results-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+
+        .results-header p {
+            color: #86868b;
+            font-size: 0.875rem;
+        }
+
+        .style-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .style-item {
+            padding: 16px;
+            background: #f5f5f7;
+            border-radius: 8px;
+            border-left: 3px solid #0071e3;
+        }
+
+        .style-item.primary {
+            background: #f0f7ff;
+            border-left-color: #0071e3;
+        }
+
+        .style-item.secondary {
+            border-left-color: #5856d6;
+        }
+
+        .style-item.tertiary {
+            border-left-color: #af52de;
+        }
+
+        .style-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 6px;
+        }
+
+        .style-item p {
+            font-size: 0.875rem;
+            color: #86868b;
+            line-height: 1.5;
+        }
+
+        .style-item .match-score {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            color: #0071e3;
+            font-weight: 500;
+        }
+
+        .keywords-section {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #d2d2d7;
+        }
+
+        .keywords-section h4 {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+
+        .detected-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .keyword {
+            background: #e8e8ed;
+            color: #1d1d1f;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .no-results h3 {
+            font-size: 1rem;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+
+        .no-results p {
+            color: #86868b;
+            font-size: 0.875rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid #e8e8ed;
+            border-top: 3px solid #0071e3;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 12px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading p {
+            color: #86868b;
+            font-size: 0.875rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: #86868b;
+            font-size: 0.75rem;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Music Style Finder</h1>
+            <p>根据描述匹配音乐风格</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" placeholder="输入音乐需求，如：工作时听、晚上放松、运动健身">
+            <button class="search-btn" onclick="findMusicStyle()">查找</button>
+
+            <div class="examples">
+                <div class="examples-title">示例：</div>
+                <div class="example-tags">
+                    <span class="example-tag" onclick="useExample(this)">专注工作</span>
+                    <span class="example-tag" onclick="useExample(this)">早上起床</span>
+                    <span class="example-tag" onclick="useExample(this)">健身运动</span>
+                    <span class="example-tag" onclick="useExample(this)">睡前放松</span>
+                    <span class="example-tag" onclick="useExample(this)">浪漫约会</span>
+                    <span class="example-tag" onclick="useExample(this)">悲伤时听</span>
+                    <span class="example-tag" onclick="useExample(this)">派对聚会</span>
+                    <span class="example-tag" onclick="useExample(this)">冥想静心</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="results"></div>
+
+        <div class="footer">
+            <p>Music Style Finder</p>
+        </div>
+    </div>
+
+    <script>
+        const musicStyles = {
+            ambient: {
+                name: "氛围音乐 (Ambient)",
+                description: "空灵、沉浸式的音景，适合深度放松和冥想"
+            },
+            classical: {
+                name: "古典音乐 (Classical)",
+                description: "优雅、深沉的艺术表达，提升专注力和文化素养"
+            },
+            jazz: {
+                name: "爵士乐 (Jazz)",
+                description: "即兴、自由的节奏，带来愉悦和轻松的氛围"
+            },
+            electronic: {
+                name: "电子音乐 (Electronic)",
+                description: "节奏感强，充满能量，适合运动和派对"
+            },
+            pop: {
+                name: "流行音乐 (Pop)",
+                description: "朗朗上口，情感丰富，适合日常聆听"
+            },
+            lofi: {
+                name: "Lo-Fi 嘻哈 (Lo-Fi Hip-Hop)",
+                description: "温暖、复古的节拍，是学习和工作的理想背景音乐"
+            },
+            acoustic: {
+                name: "原声音乐 (Acoustic)",
+                description: "自然、温暖的音色，带来真诚的情感共鸣"
+            },
+            rock: {
+                name: "摇滚乐 (Rock)",
+                description: "充满力量和激情，释放压力和负面情绪"
+            },
+            romantic: {
+                name: "浪漫音乐 (Romantic)",
+                description: "温馨、甜蜜的旋律，营造浪漫氛围"
+            },
+            nature: {
+                name: "自然声音 (Nature Sounds)",
+                description: "雨声、海浪、鸟鸣等自然音效，帮助放松和入眠"
+            },
+            meditation: {
+                name: "冥想音乐 (Meditation)",
+                description: "平和、宁静的音景，引导进入深度冥想状态"
+            },
+            energizing: {
+                name: "活力音乐 (Energizing)",
+                description: "节奏明快，充满正能量，提升活力和动力"
+            },
+            melancholic: {
+                name: "忧郁音乐 (Melancholic)",
+                description: "深沉、内省的音乐，陪伴孤独和思考的时刻"
+            },
+            folk: {
+                name: "民谣 (Folk)",
+                description: "讲述故事的歌声，富有文化底蕴和情感深度"
+            },
+            cinematic: {
+                name: "电影配乐 (Cinematic)",
+                description: "宏大、戏剧性的音乐，营造史诗般的氛围"
+            }
+        };
+
+        const keywordWeights = {
+            "冥想": { styles: ["meditation", "ambient"], weight: 10 },
+            "瑜伽": { styles: ["meditation", "ambient", "classical"], weight: 10 },
+            "禅": { styles: ["meditation", "ambient"], weight: 10 },
+            "静心": { styles: ["meditation", "ambient"], weight: 10 },
+            "睡眠": { styles: ["ambient", "nature"], weight: 10 },
+            "睡前": { styles: ["ambient", "nature", "classical"], weight: 10 },
+            "睡觉": { styles: ["ambient", "nature"], weight: 10 },
+            "入睡": { styles: ["ambient", "nature"], weight: 10 },
+            "运动": { styles: ["electronic", "rock", "energizing"], weight: 9 },
+            "健身": { styles: ["electronic", "rock", "energizing"], weight: 9 },
+            "跑步": { styles: ["electronic", "energizing"], weight: 9 },
+            "锻炼": { styles: ["electronic", "rock"], weight: 9 },
+            "跳舞": { styles: ["electronic", "pop"], weight: 9 },
+            "悲伤": { styles: ["melancholic", "classical", "folk"], weight: 8 },
+            "忧郁": { styles: ["melancholic", "jazz", "classical"], weight: 8 },
+            "孤独": { styles: ["melancholic", "folk", "acoustic"], weight: 8 },
+            "难过": { styles: ["melancholic", "acoustic"], weight: 8 },
+            "开心": { styles: ["pop", "energizing", "acoustic"], weight: 8 },
+            "快乐": { styles: ["pop", "energizing", "acoustic"], weight: 8 },
+            "愉快": { styles: ["pop", "jazz", "energizing"], weight: 8 },
+            "高兴": { styles: ["pop", "energizing"], weight: 8 },
+            "浪漫": { styles: ["romantic", "jazz", "classical"], weight: 9 },
+            "约会": { styles: ["romantic", "jazz", "acoustic"], weight: 9 },
+            "爱情": { styles: ["romantic", "acoustic", "pop"], weight: 8 },
+            "甜蜜": { styles: ["romantic", "acoustic", "pop"], weight: 8 },
+            "烛光": { styles: ["romantic", "classical", "jazz"], weight: 9 },
+            "工作": { styles: ["classical", "lofi", "ambient", "electronic"], weight: 7 },
+            "学习": { styles: ["classical", "lofi", "ambient"], weight: 8 },
+            "专注": { styles: ["classical", "lofi", "ambient"], weight: 8 },
+            "写代码": { styles: ["lofi", "electronic", "ambient"], weight: 9 },
+            "办公": { styles: ["classical", "lofi", "jazz"], weight: 7 },
+            "派对": { styles: ["electronic", "pop", "rock"], weight: 9 },
+            "聚会": { styles: ["pop", "electronic", "rock"], weight: 8 },
+            "社交": { styles: ["pop", "electronic", "jazz"], weight: 7 },
+            "咖啡": { styles: ["jazz", "acoustic", "lofi"], weight: 8 },
+            "下午": { styles: ["jazz", "acoustic", "lofi"], weight: 7 },
+            "休闲": { styles: ["jazz", "acoustic", "lofi", "pop"], weight: 7 },
+            "早晨": { styles: ["energizing", "classical", "acoustic"], weight: 8 },
+            "早上": { styles: ["energizing", "acoustic"], weight: 8 },
+            "起床": { styles: ["energizing", "classical"], weight: 8 },
+            "开始一天": { styles: ["energizing", "classical"], weight: 9 },
+            "放松": { styles: ["ambient", "jazz", "acoustic", "nature"], weight: 7 },
+            "减压": { styles: ["ambient", "nature", "meditation"], weight: 8 },
+            "舒缓": { styles: ["ambient", "classical", "nature"], weight: 7 },
+            "雨": { styles: ["ambient", "nature", "lofi"], weight: 8 },
+            "海": { styles: ["ambient", "nature", "acoustic"], weight: 8 },
+            "自然": { styles: ["nature", "ambient", "folk"], weight: 8 },
+            "森林": { styles: ["nature", "ambient"], weight: 8 },
+            "怀旧": { styles: ["folk", "acoustic", "jazz"], weight: 8 },
+            "思念": { styles: ["melancholic", "folk", "acoustic"], weight: 8 },
+            "激情": { styles: ["rock", "electronic", "cinematic"], weight: 9 },
+            "力量": { styles: ["rock", "cinematic", "electronic"], weight: 9 },
+            "释放": { styles: ["rock", "electronic", "energizing"], weight: 8 },
+            "发泄": { styles: ["rock", "electronic"], weight: 8 },
+            "旅行": { styles: ["folk", "acoustic", "cinematic"], weight: 8 },
+            "公路": { styles: ["rock", "folk", "cinematic"], weight: 8 },
+            "电影": { styles: ["cinematic", "classical"], weight: 8 },
+            "史诗": { styles: ["cinematic", "classical"], weight: 9 },
+            "大气": { styles: ["cinematic", "classical", "ambient"], weight: 8 },
+            "夜晚": { styles: ["jazz", "ambient", "melancholic"], weight: 7 },
+            "夜": { styles: ["jazz", "ambient", "lofi"], weight: 7 },
+            "晚": { styles: ["jazz", "ambient", "romantic"], weight: 7 },
+            "正能量": { styles: ["energizing", "pop", "rock"], weight: 9 },
+            "激励": { styles: ["energizing", "rock", "cinematic"], weight: 9 },
+            "振奋": { styles: ["energizing", "rock", "pop"], weight: 9 },
+            "民谣": { styles: ["folk", "acoustic"], weight: 10 },
+            "乡村": { styles: ["folk", "acoustic"], weight: 10 },
+            "故事": { styles: ["folk", "acoustic", "cinematic"], weight: 7 },
+            "电子": { styles: ["electronic"], weight: 10 },
+            "科技": { styles: ["electronic", "ambient"], weight: 8 },
+            "未来": { styles: ["electronic", "ambient"], weight: 8 }
+        };
+
+        function findMusicStyle() {
+            const input = document.getElementById('searchInput').value.trim();
+            const resultsDiv = document.getElementById('results');
+
+            if (!input) {
+                alert('请输入音乐描述');
+                return;
+            }
+
+            resultsDiv.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>正在分析...</p>
+                </div>
+            `;
+            resultsDiv.classList.add('show');
+
+            setTimeout(() => {
+                const scores = {};
+                const detectedKeywords = [];
+                const inputLower = input.toLowerCase();
+
+                for (const [keyword, config] of Object.entries(keywordWeights)) {
+                    if (inputLower.includes(keyword)) {
+                        detectedKeywords.push(keyword);
+                        config.styles.forEach(style => {
+                            if (!scores[style]) scores[style] = 0;
+                            scores[style] += config.weight;
+                        });
+                    }
+                }
+
+                const sortedStyles = Object.entries(scores)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 6);
+
+                if (sortedStyles.length === 0) {
+                    resultsDiv.innerHTML = `
+                        <div class="no-results">
+                            <h3>未找到匹配的音乐风格</h3>
+                            <p>请尝试更具体的描述，如：运动时听、睡前放松、专注工作等</p>
+                        </div>
+                    `;
+                } else {
+                    const maxScore = sortedStyles[0][1];
+                    const styleItems = sortedStyles.map(([key, score], index) => {
+                        const style = musicStyles[key];
+                        const matchPercent = Math.round((score / maxScore) * 100);
+                        const cardClass = index === 0 ? 'primary' : (index === 1 ? 'secondary' : 'tertiary');
+                        return `
+                            <div class="style-item ${cardClass}">
+                                <h3>${style.name}</h3>
+                                <p>${style.description}</p>
+                                <div class="match-score">匹配度 ${matchPercent}%</div>
+                            </div>
+                        `;
+                    }).join('');
+
+                    const keywordsHtml = detectedKeywords.length > 0
+                        ? `<div class="keywords-section">
+                            <h4>检测到的关键词：</h4>
+                            <div class="detected-keywords">
+                                ${[...new Set(detectedKeywords)].map(k => `<span class="keyword">${k}</span>`).join('')}
+                            </div>
+                           </div>`
+                        : '';
+
+                    resultsDiv.innerHTML = `
+                        <div class="results-header">
+                            <h2>为您推荐的音乐风格</h2>
+                            <p>根据 "${input}" 找到以下最佳匹配</p>
+                        </div>
+                        <div class="style-list">
+                            ${styleItems}
+                        </div>
+                        ${keywordsHtml}
+                    `;
+                }
+
+                resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            }, 600);
+        }
+
+        function useExample(element) {
+            document.getElementById('searchInput').value = element.textContent;
+            findMusicStyle();
+        }
+
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                findMusicStyle();
+            }
+        });
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

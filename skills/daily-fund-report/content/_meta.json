@@ -1,0 +1,22 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2024-12-20",
+  "dependencies": [
+    "python\u003e=3.8",
+    "requests",
+    "pandas"
+  ],
+  "description": "自动化获取基金净值、分析持仓收益、生成飞书消息卡片并定时推送的完整解决方案",
+  "id": 385367459786991,
+  "name": "daily-fund-report",
+  "platform": "minimax",
+  "tags": [
+    "fund",
+    "report",
+    "feishu",
+    "automation",
+    "investment"
+  ],
+  "updated_at": 1775637821588,
+  "version": "1.0.0"
+}

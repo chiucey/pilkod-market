@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-05-26T13:54:25Z",
+  "description": "制作英语精听学习网页。用于把用户提供的本地视频或音频、word-level 字幕，以及可选的同名官方字幕整理成单文件 HTML；有官方字幕时校准文本，没有官方字幕时使用 word-level 字幕文本。支持词级高亮、选中单词范围播放、中文翻译、连读弱读提示、固定搭配、学习进度持久化、移动端点选和 Daniel 风格模板。",
+  "id": 402282506420660,
+  "name": "english-learning-webpage",
+  "platform": "minimax",
+  "updated_at": 1779774964819,
+  "version": "latest"
+}

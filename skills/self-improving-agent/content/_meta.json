@@ -1,0 +1,30 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "任务探索与多路径尝试",
+    "反馈收集与评估",
+    "经验萃取与模式识别",
+    "教训吸取与错误预防",
+    "知识库管理与更新",
+    "举一反三与跨领域迁移"
+  ],
+  "created": "2026-03-21",
+  "description": "自我提升代理，通过任务探索、反馈收集、经验萃取、教训吸取实现技能的持续优化和不断迭代",
+  "evolution_state": {
+    "experience_count": 0,
+    "iteration_count": 0,
+    "last_update": "2026-03-21",
+    "lesson_count": 0
+  },
+  "id": 378907737358927,
+  "name": "self-improving-agent",
+  "platform": "minimax",
+  "tags": [
+    "self-improvement",
+    "learning",
+    "evolution",
+    "iteration"
+  ],
+  "updated_at": 1774059881167,
+  "version": "1.0.0"
+}

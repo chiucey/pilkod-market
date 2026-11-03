@@ -1,0 +1,194 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha": "7be6caebde1be9a9f65bf7c3eaa20757707c471e",
+      "size": 9648
+    },
+    {
+      "path": "README.md",
+      "sha": "06d45bcb39f173d08af1df5b1e13d93308bd8065",
+      "size": 4544
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "ea2a0ccac838e3ea90db4bcd72ee2143eee09f7b",
+      "size": 11544
+    },
+    {
+      "path": "_meta.json",
+      "sha": "99ded6258d22fcf7a4da2842b7ffb7fab2ee7db4",
+      "size": 125
+    },
+    {
+      "path": "config.example",
+      "sha": "a1e9e7e7f107e7e200abb4757acfe4db5c76eba4",
+      "size": 306
+    },
+    {
+      "path": "references/auth-and-troubleshooting.md",
+      "sha": "be74cc85bc688a892e65fbb9aedec805e6dc1b8f",
+      "size": 5650
+    },
+    {
+      "path": "references/course-workflow.md",
+      "sha": "83d4ef5738b9b923506a975d9c41fc8babb2bb42",
+      "size": 10060
+    },
+    {
+      "path": "references/foundations/first-principles.md",
+      "sha": "7454b9e9bc249543e6fac2b4de68eeb95415efb9",
+      "size": 22984
+    },
+    {
+      "path": "references/foundations/second-curve-innovation.md",
+      "sha": "aaaf2e7285f8c72bf5acd33dde566b69a0e743e7",
+      "size": 31794
+    },
+    {
+      "path": "references/innovation-tools/asymmetric-entry-finder.md",
+      "sha": "b48213eef224f50ed7c8776a698a7cc771db0c98",
+      "size": 2548
+    },
+    {
+      "path": "references/innovation-tools/idea-exploder.md",
+      "sha": "e6621c1fe2ce9e14e82beb099352cc3bd67d81f5",
+      "size": 2497
+    },
+    {
+      "path": "references/innovation-tools/pricing-reframer.md",
+      "sha": "840ca8dd29fca235fa8c0e3f6e352991bd60e7bc",
+      "size": 2313
+    },
+    {
+      "path": "references/innovation-tools/selling-point-innovator.md",
+      "sha": "20f7989557809da616a73f4d1549e2f7f0e8b0d8",
+      "size": 2470
+    },
+    {
+      "path": "references/innovation-tools/value-proposition-one-liner.md",
+      "sha": "c7f37b8697bf3cc9a4bc69475ee8201df6ca6b6e",
+      "size": 2213
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "7383ea3648f0e42039b707fe71bb1e0d02336813",
+      "size": 39
+    },
+    {
+      "path": "scripts/_common.ps1",
+      "sha": "2b936b5e363fff66f297c00daea252e6d6ba1b0e",
+      "size": 8068
+    },
+    {
+      "path": "scripts/_common.sh",
+      "sha": "557adf651da2727b0ca494abcedd235744acd88e",
+      "size": 7902
+    },
+    {
+      "path": "scripts/_decompress.py",
+      "sha": "5dbcbffbf436201af57458203cc37d205887b3d4",
+      "size": 473
+    },
+    {
+      "path": "scripts/_decrypt_script_url.py",
+      "sha": "ff0ed252a8ed2b96caaf0df1e204ef6172788db1",
+      "size": 1368
+    },
+    {
+      "path": "scripts/get_courses_by_tree.ps1",
+      "sha": "3718da85d6fcbe71c5b2b86faeea9e2b9bd502ec",
+      "size": 550
+    },
+    {
+      "path": "scripts/get_courses_by_tree.sh",
+      "sha": "9eac7acb86342567284b84a56a72ac23b4087b3e",
+      "size": 513
+    },
+    {
+      "path": "scripts/get_script.ps1",
+      "sha": "27f3111d7e9fc0aae9ac5b77f2b457fa8a6b359b",
+      "size": 1982
+    },
+    {
+      "path": "scripts/get_script.sh",
+      "sha": "8a1539de06979ff6d1166dc5b52fe7b62a3bc524",
+      "size": 2010
+    },
+    {
+      "path": "scripts/get_script_version.ps1",
+      "sha": "7da6d4cae639d18399a90ec45448180a5d3a3948",
+      "size": 480
+    },
+    {
+      "path": "scripts/get_script_version.sh",
+      "sha": "47a587d7208f0d8b08bdc5cab4f133d9e964c1fa",
+      "size": 412
+    },
+    {
+      "path": "scripts/get_skill_patch.ps1",
+      "sha": "ffc0c25cf835912daa86400de1e29da20188ceb6",
+      "size": 955
+    },
+    {
+      "path": "scripts/get_skill_patch.sh",
+      "sha": "3dcca720f367efea9ba7a456b1f1d7cc606441f4",
+      "size": 3411
+    },
+    {
+      "path": "scripts/get_trees.ps1",
+      "sha": "0c546ed6a07689a8302883ded6ce69aaf19c6e58",
+      "size": 446
+    },
+    {
+      "path": "scripts/get_trees.sh",
+      "sha": "c7cf7618c670e53c8048eb090bc31558d409168b",
+      "size": 377
+    },
+    {
+      "path": "scripts/intent_collect.ps1",
+      "sha": "bc1df44dbcbe4c622d355e79bf15ed611b54d2a0",
+      "size": 775
+    },
+    {
+      "path": "scripts/intent_collect.sh",
+      "sha": "109e823ed550c0c2163fb8585019c5ad258c270b",
+      "size": 1914
+    },
+    {
+      "path": "scripts/run.ps1",
+      "sha": "592b506bd3fc3c03729d055c6c0fa4bfb409b519",
+      "size": 2934
+    },
+    {
+      "path": "scripts/search_courses.ps1",
+      "sha": "a8cddd1f1faf85b798ba4a84823e8b9a8e6dc3d7",
+      "size": 671
+    },
+    {
+      "path": "scripts/search_courses.sh",
+      "sha": "73f8dacad8522e94d73b52eb786a2aa4be873fc2",
+      "size": 564
+    },
+    {
+      "path": "scripts/set_api_key.ps1",
+      "sha": "5f24bc14bb9fbc6faaf1bb221b3c568e70c9ba47",
+      "size": 607
+    },
+    {
+      "path": "scripts/set_api_key.sh",
+      "sha": "5646af938e3bd5fe34c379dc622569a5ad89527c",
+      "size": 597
+    },
+    {
+      "path": "scripts/version_check.ps1",
+      "sha": "d69593409d67f56536e56ad72ecb74d50eaa5925",
+      "size": 386
+    },
+    {
+      "path": "scripts/version_check.sh",
+      "sha": "e6b45b34817a0a6045ff7702b8e4aaaec2847aa7",
+      "size": 315
+    }
+  ]
+}

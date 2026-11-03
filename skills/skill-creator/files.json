@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "09dd1e22708c2f830f2a9d758e4324c42b9c4829",
+      "size": 7154
+    },
+    {
+      "path": "_meta.json",
+      "sha": "fd556a42dc851c03a9d8738af67f0f26e56901fb",
+      "size": 132
+    },
+    {
+      "path": "scripts/init_skill.py",
+      "sha": "3cc8aaba916bbd4be9c9fcfeeb06c9162721127e",
+      "size": 3962
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "f43c5396f3afcc44f0fda71c6251a6e8c8d951a1",
+      "size": 2498
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "cf4f756e9dceb2782b32b8aa194110de9d0ae089",
+      "size": 6389
+    },
+    {
+      "path": "scripts/test_package_skill.py",
+      "sha": "80986ec095549db1046d163fc14ccffc751f208d",
+      "size": 2176
+    },
+    {
+      "path": "scripts/test_quick_validate.py",
+      "sha": "7b5c7f200c06e46da41da6e7394d864134dec799",
+      "size": 2309
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} — AI问题专家分析报告</title>
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #e94560;
+      --accent2: #16213e;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #2d2d2d;
+      --text-muted: #6c757d;
+      --border: #e9ecef;
+      --tag-bg: #e8f4fd;
+      --tag-text: #0d6efd;
+      --success: #198754;
+      --warning: #ffc107;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    /* Header */
+    .report-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+      color: white;
+      padding: 3rem 2rem 2.5rem;
+      margin-bottom: 2rem;
+      border-radius: 0 0 24px 24px;
+    }
+    .report-header .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .report-header h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+    .report-header .meta {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-top: 1rem;
+    }
+    .report-header .meta span { display: flex; align-items: center; gap: 0.3rem; }
+
+    /* Summary Card */
+    .summary-card {
+      background: linear-gradient(135deg, #fff8ed, #fff3cd);
+      border-left: 4px solid #ffc107;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .summary-card .label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #856404;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .summary-card p {
+      font-size: 1.05rem;
+      color: #533f03;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    /* Sections */
+    .section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+    .section-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    /* Question Anchor */
+    .question-box {
+      background: var(--tag-bg);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: #0d47a1;
+      line-height: 1.7;
+    }
+
+    /* Principle Tag */
+    .principle-tag {
+      display: inline-block;
+      background: #f3e8ff;
+      color: #7c3aed;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+      border: 1px solid #ddd6fe;
+    }
+
+    /* Analysis Step */
+    .analysis-step {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+    }
+    .analysis-step .step-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .step-num {
+      background: var(--accent);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 800;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-content { flex: 1; }
+    .step-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+    .step-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .assumption {
+      background: #fff3f3;
+      border-left: 3px solid #e94560;
+      padding: 0.75rem 1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 0.5rem 0;
+      font-size: 0.88rem;
+      color: #c0392b;
+    }
+    .assumption strong { display: block; margin-bottom: 0.2rem; font-size: 0.8rem; }
+    .conclusion-box {
+      background: linear-gradient(135deg, #e8f8f0, #d1fae5);
+      border-left: 3px solid var(--success);
+      padding: 0.75rem 1rem;
+      border-radius: 0 8px 8px 0;
+      margin-top: 0.75rem;
+      font-size: 0.88rem;
+      color: #065f46;
+    }
+    .conclusion-box strong { display: block; margin-bottom: 0.2rem; font-size: 0.8rem; }
+
+    /* Core Answer */
+    .core-answer {
+      background: linear-gradient(135deg, var(--primary), var(--accent2));
+      color: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .core-answer .label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+    .core-answer p {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    /* Facts */
+    .fact-list { list-style: none; }
+    .fact-list li {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .fact-list li:last-child { border-bottom: none; }
+    .fact-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+
+    /* Trend */
+    .trend-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 600px) { .trend-grid { grid-template-columns: 1fr; } }
+    .trend-item {
+      background: var(--tag-bg);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 0.88rem;
+    }
+    .trend-item .trend-year {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+    .trend-item .trend-text { color: var(--text); font-weight: 500; }
+
+    /* Action */
+    .action-list { list-style: none; }
+    .action-list li {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .action-list li:last-child { border-bottom: none; }
+    .action-num {
+      background: var(--success);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 800;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Variables */
+    .var-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .var-chip {
+      background: #fce4ec;
+      color: #c62828;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      border: 1px solid #f48fb1;
+    }
+
+    /* Footer */
+    .report-footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+    .report-footer .brand {
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    /* Print */
+    @media print {
+      body { background: white; }
+      .section { box-shadow: none; border: 1px solid #ddd; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="report-header">
+      <div class="badge">AI问题专家 · 深度分析报告</div>
+      <h1>{{TITLE}}</h1>
+      <div class="meta">
+        <span>📅 {{DATE}}</span>
+        <span>⚡ 精选原理：{{PRINCIPLES}}</span>
+        <span>🔍 问题领域：{{DOMAIN}}</span>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary-card">
+      <div class="label">追踪摘要</div>
+      <p>{{SUMMARY}}</p>
+    </div>
+
+    <!-- Question Anchor -->
+    <div class="section">
+      <div class="section-title">问题锚定</div>
+      <div class="question-box">{{QUESTION_ANCHOR}}</div>
+    </div>
+
+    <!-- Analysis Process -->
+    <div class="section">
+      <div class="section-title">分析过程</div>
+      <div class="principle-tag">⚙️ 核心原理：{{PRINCIPLES}} — 为什么选它：{{PRINCIPLE_REASON}}</div>
+
+      {{ANALYSIS_STEPS}}
+
+    </div>
+
+    <!-- Core Answer -->
+    <div class="core-answer">
+      <div class="label">核心答案</div>
+      <p>{{CORE_ANSWER}}</p>
+    </div>
+
+    <!-- Key Facts -->
+    <div class="section">
+      <div class="section-title">支撑事实</div>
+      <ul class="fact-list">
+        {{FACTS}}
+      </ul>
+    </div>
+
+    <!-- Trend -->
+    <div class="section">
+      <div class="section-title">趋势前瞻</div>
+      <div class="trend-grid">
+        {{TRENDS}}
+      </div>
+      <div class="var-chips">
+        {{VARIABLES}}
+      </div>
+    </div>
+
+    <!-- Action -->
+    <div class="section">
+      <div class="section-title">行动建议</div>
+      <ul class="action-list">
+        {{ACTIONS}}
+      </ul>
+    </div>
+
+    <!-- Sources -->
+    <div class="section">
+      <div class="section-title">数据来源</div>
+      <div style="font-size:0.82rem; color: var(--text-muted);">
+        {{SOURCES}}
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="report-footer">
+      <div class="brand">⚡ AI问题专家</div>
+      <div>由 MaxClaw AI分析引擎驱动 · {{TIMESTAMP}}</div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+{
+  "files": [
+    {
+      "path": "DEPLOYMENT_COMPLETE.md",
+      "sha": "141bb1542c2e51fb33e29f9be2dcaca3d8178f10",
+      "size": 5253
+    },
+    {
+      "path": "README.md",
+      "sha": "5e2784bcf4103acc520f3788d1f4d5d7dd05fde4",
+      "size": 603
+    },
+    {
+      "path": "REOPTIMIZATION_DEPLOYMENT_GUIDE.md",
+      "sha": "c0c4246a87ddcf5960716ab765041db13a3676f6",
+      "size": 10335
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "823ceb50d19b74abe9d0750a5f47bc40fc17b63a",
+      "size": 25723
+    },
+    {
+      "path": "SKILL_BACKUP.md",
+      "sha": "7e51f6649f88c6132a0518a3cf96d20fc7f6212c",
+      "size": 9543
+    },
+    {
+      "path": "SKILL_OPTIMIZED.md",
+      "sha": "2babdcab9c814c25da6b6dfefb3d7eeb05aa0176",
+      "size": 7677
+    },
+    {
+      "path": "SKILL_REOPTIMIZED.md",
+      "sha": "3676ab819d681de26f016e9e3a03c480b0885f28",
+      "size": 18055
+    },
+    {
+      "path": "SKILL_V5.1_BACKUP.md",
+      "sha": "2babdcab9c814c25da6b6dfefb3d7eeb05aa0176",
+      "size": 7677
+    },
+    {
+      "path": "SKILL_V5.1_TEMP.md",
+      "sha": "2babdcab9c814c25da6b6dfefb3d7eeb05aa0176",
+      "size": 7677
+    },
+    {
+      "path": "_meta.json",
+      "sha": "49bac94cf55d1ec422dd8effe2949b38bc720729",
+      "size": 142
+    },
+    {
+      "path": "cases/positive/case-001-durkheim-analysis.md",
+      "sha": "65eab449804fdc5f9a860e77d84cc75cdd7ff844",
+      "size": 11022
+    },
+    {
+      "path": "evals/evals.json",
+      "sha": "c6bf88b1383673abbd4feaec4c39400b00fe6b33",
+      "size": 2567
+    },
+    {
+      "path": "examples/with-subagents.md",
+      "sha": "9d66264b2db2f8af41d6688a203e7b226fc8bd11",
+      "size": 2579
+    },
+    {
+      "path": "experience/patterns.md",
+      "sha": "b7a549b2ab89c6904ddacb20de854d9fd776028e",
+      "size": 9839
+    },
+    {
+      "path": "index.html",
+      "sha": "3013748d54f92a14c613a6c01318d4aff273f272",
+      "size": 12535
+    },
+    {
+      "path": "lesson-memory.md",
+      "sha": "f20b379a6cd647b90703426b716e4faea2bc8fcf",
+      "size": 1560
+    },
+    {
+      "path": "prompts/anomie-assessment-prompt.md",
+      "sha": "94739330d39c8c66bd274d7d7af0f9fc32a9dbf3",
+      "size": 5094
+    },
+    {
+      "path": "prompts/comprehensive-analysis-prompt.md",
+      "sha": "5d2ca1c800bb34fddbff14c77403e4fd1c2ea2d2",
+      "size": 7736
+    },
+    {
+      "path": "prompts/social-facts-identification-prompt.md",
+      "sha": "cc7c147db55795d9a3988c9614c9b27b8fda5af7",
+      "size": 3568
+    },
+    {
+      "path": "prompts/solidarity-analysis-prompt.md",
+      "sha": "d780fff57353092ff902b70918a1ba691cea10bb",
+      "size": 5854
+    },
+    {
+      "path": "prompts/suicide-type-analysis-prompt.md",
+      "sha": "f920d283c2a49a9708b8a9fc393b86e96ae76a29",
+      "size": 4773
+    },
+    {
+      "path": "prompts/system-prompt-v5.1-backup.md",
+      "sha": "d14ca89860bf4e05c37d348fe5c3d3ad22b15f32",
+      "size": 9981
+    },
+    {
+      "path": "prompts/system-prompt.md",
+      "sha": "d14ca89860bf4e05c37d348fe5c3d3ad22b15f32",
+      "size": 9981
+    },
+    {
+      "path": "references/classic-literature.md",
+      "sha": "fad61f04e4d05bf08b0be71747a52f3afba4b60e",
+      "size": 1317
+    },
+    {
+      "path": "references/long-term-tasks.md",
+      "sha": "51f9e59151211fd8e543ca43ac0945bc85751f2b",
+      "size": 1995
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "94051e2d46b200fe80ec3ffdc2652df25a3115a1",
+      "size": 43
+    },
+    {
+      "path": "skill.yaml",
+      "sha": "0ecb5afa8ab6aa8ac7faedda1ee09c3aed9fca82",
+      "size": 4608
+    },
+    {
+      "path": "soul.md",
+      "sha": "33f2f6e25c12f4fc43918c33aead242569b9408c",
+      "size": 5847
+    },
+    {
+      "path": "subagents.yaml",
+      "sha": "9452a9c530fd8c065692345564e7bec891482f75",
+      "size": 4817
+    },
+    {
+      "path": "templates/task_plan.md.template",
+      "sha": "ad89dbf6944e3529562747d4debbc538ef681a7a",
+      "size": 1417
+    },
+    {
+      "path": "test-prompts.json",
+      "sha": "a55cff2d4d8ccec237ae2b7ad2a257595a712325",
+      "size": 829
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml",
+      "sha": "0ed20f6e4b5fe69193a131f452c2c102b79d8870",
+      "size": 1398
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml.bak",
+      "sha": "41d398aa7ca45c3fc6713e270b60cc392372e755",
+      "size": 1830
+    },
+    {
+      "path": "tools/analyze.py",
+      "sha": "4ac2b00d7e598a74e256720a656ddb8d2ba845c8",
+      "size": 2440
+    },
+    {
+      "path": "tools/analyze_observation.py",
+      "sha": "27e09f7365c65bca9b9a9fbdbbaeba4976c158ef",
+      "size": 2475
+    },
+    {
+      "path": "tools/anomie_calculator.py",
+      "sha": "b3da0f35e923f449aabae0d4eab66eb0b944a960",
+      "size": 7002
+    },
+    {
+      "path": "tools/collective_consciousness_analyzer.py",
+      "sha": "516e1b9ac83203c2777620f33178f995736f2440",
+      "size": 8565
+    },
+    {
+      "path": "tools/digital-durkheim-workspace/iteration-1/eval-1-with_skill/outputs/analysis.md",
+      "sha": "c418560eaec2c3cd6fb86da875cf738963512d99",
+      "size": 4548
+    },
+    {
+      "path": "tools/digital-durkheim-workspace/iteration-1/eval-1-with_skill/outputs/analysis_result.json",
+      "sha": "fb9f74aa707319933b02743ddffde265695fd174",
+      "size": 3706
+    },
+    {
+      "path": "tools/digital-durkheim-workspace/iteration-1/eval-1-with_skill/outputs/observation.txt",
+      "sha": "7d31699a920803230c65c99bdb72eb1eb7448529",
+      "size": 214
+    },
+    {
+      "path": "tools/evolution.py",
+      "sha": "8061f7efa9e433590e8631040506e0d0a0f4c96d",
+      "size": 5432
+    },
+    {
+      "path": "tools/planning-integration.py",
+      "sha": "15d76a7691581a29df2dd770c66427323b449b90",
+      "size": 1580
+    },
+    {
+      "path": "tools/social_facts_identifier.py",
+      "sha": "32d55e73ebc716d14ca6514a0ae9c213eaab0906",
+      "size": 8070
+    },
+    {
+      "path": "tools/social_integration_measurer.py",
+      "sha": "14125b5c59c1625774f14f138a14c56176686082",
+      "size": 8888
+    },
+    {
+      "path": "tools/solidarity_analyzer.py",
+      "sha": "97a8bd5ea9ad3f3d6225fa0fdad222be0ac7318a",
+      "size": 6193
+    },
+    {
+      "path": "tools/suicide_type_analyzer.py",
+      "sha": "98e98c9b453658743ddf30c105d8632064161580",
+      "size": 4046
+    }
+  ]
+}

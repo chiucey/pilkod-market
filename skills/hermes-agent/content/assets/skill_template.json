@@ -1,0 +1,385 @@
+{
+  "skill_templates": [
+    {
+      "template_id": "code-generator",
+      "name": "代码生成器",
+      "description": "根据用户需求生成高质量代码",
+      "category": "development",
+      "trigger_phrases": [
+        "写代码",
+        "生成代码",
+        "帮我写",
+        "code generation",
+        "写一个函数"
+      ],
+      "parameters": {
+        "input": {
+          "requirements": {
+            "type": "string",
+            "required": true,
+            "description": "代码需求描述",
+            "examples": [
+              "写一个计算斐波那契数列的Python函数",
+              "实现一个排序算法",
+              "创建一个用户登录验证函数"
+            ]
+          },
+          "language": {
+            "type": "string",
+            "required": false,
+            "default": "python",
+            "enum": ["python", "javascript", "typescript", "java", "go", "rust", "cpp", "csharp"]
+          },
+          "style": {
+            "type": "string",
+            "required": false,
+            "default": "standard",
+            "enum": ["standard", "functional", "oop", "concise", "detailed"]
+          },
+          "include_tests": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "是否包含单元测试"
+          }
+        },
+        "output": {
+          "code": {
+            "type": "string",
+            "description": "生成的代码"
+          },
+          "explanation": {
+            "type": "string",
+            "description": "代码解释说明"
+          },
+          "test_code": {
+            "type": "string",
+            "description": "单元测试代码（如果请求）"
+          }
+        }
+      },
+      "dependencies": [],
+      "metadata": {
+        "complexity": "medium",
+        "estimated_time": "30s",
+        "max_retries": 3,
+        "author": "HermesTeam",
+        "version": "1.0.0",
+        "tags": ["coding", "generation", "programming", "development"]
+      }
+    },
+    {
+      "template_id": "document-summarizer",
+      "name": "文档摘要生成器",
+      "description": "对长文档进行智能摘要",
+      "category": "productivity",
+      "trigger_phrases": [
+        "总结文档",
+        "生成摘要",
+        "提取要点",
+        "summarize",
+        "document summary"
+      ],
+      "parameters": {
+        "input": {
+          "content": {
+            "type": "string",
+            "required": true,
+            "description": "待摘要的文档内容"
+          },
+          "max_length": {
+            "type": "integer",
+            "required": false,
+            "default": 200,
+            "min": 50,
+            "max": 1000,
+            "description": "摘要最大长度（字符数）"
+          },
+          "summary_type": {
+            "type": "string",
+            "required": false,
+            "default": "general",
+            "enum": ["general", "technical", "business", "academic"]
+          },
+          "include_key_points": {
+            "type": "boolean",
+            "required": false,
+            "default": true,
+            "description": "是否包含关键要点列表"
+          }
+        },
+        "output": {
+          "summary": {
+            "type": "string",
+            "description": "生成的摘要"
+          },
+          "key_points": {
+            "type": "array",
+            "description": "关键要点列表"
+          },
+          "reading_time": {
+            "type": "integer",
+            "description": "预估阅读时间（分钟）"
+          }
+        }
+      },
+      "dependencies": [],
+      "metadata": {
+        "complexity": "low",
+        "estimated_time": "10s",
+        "max_retries": 2,
+        "author": "HermesTeam",
+        "version": "1.0.0",
+        "tags": ["summarization", "document", "productivity", "reading"]
+      }
+    },
+    {
+      "template_id": "data-analyzer",
+      "name": "数据分析助手",
+      "description": "对数据进行分析并生成报告",
+      "category": "analytics",
+      "trigger_phrases": [
+        "分析数据",
+        "数据报告",
+        "统计信息",
+        "analyze data",
+        "data analysis"
+      ],
+      "parameters": {
+        "input": {
+          "data": {
+            "type": "string",
+            "required": true,
+            "description": "待分析的数据（支持CSV格式）"
+          },
+          "analysis_type": {
+            "type": "string",
+            "required": false,
+            "default": "comprehensive",
+            "enum": ["comprehensive", "statistical", "trend", "comparison", "correlation"]
+          },
+          "visualizations": {
+            "type": "array",
+            "required": false,
+            "default": ["summary_table", "histogram"],
+            "description": "需要的可视化类型"
+          }
+        },
+        "output": {
+          "analysis_report": {
+            "type": "string",
+            "description": "分析报告"
+          },
+          "statistics": {
+            "type": "object",
+            "description": "统计指标"
+          },
+          "charts": {
+            "type": "array",
+            "description": "图表数据"
+          }
+        }
+      },
+      "dependencies": [],
+      "metadata": {
+        "complexity": "high",
+        "estimated_time": "60s",
+        "max_retries": 2,
+        "author": "HermesTeam",
+        "version": "1.0.0",
+        "tags": ["data", "analysis", "analytics", "statistics", "reporting"]
+      }
+    },
+    {
+      "template_id": "translation-assistant",
+      "name": "翻译助手",
+      "description": "提供高质量的多语言翻译",
+      "category": "language",
+      "trigger_phrases": [
+        "翻译",
+        "翻译成",
+        "translate",
+        "帮我翻译"
+      ],
+      "parameters": {
+        "input": {
+          "text": {
+            "type": "string",
+            "required": true,
+            "description": "待翻译的文本"
+          },
+          "target_language": {
+            "type": "string",
+            "required": true,
+            "enum": ["中文", "英文", "日语", "韩语", "法语", "德语", "西班牙语", "俄语", "其他"]
+          },
+          "source_language": {
+            "type": "string",
+            "required": false,
+            "default": "auto",
+            "description": "源语言，auto表示自动检测"
+          },
+          "tone": {
+            "type": "string",
+            "required": false,
+            "default": "formal",
+            "enum": ["formal", "casual", "technical", "literary"]
+          }
+        },
+        "output": {
+          "translation": {
+            "type": "string",
+            "description": "翻译结果"
+          },
+          "alternatives": {
+            "type": "array",
+            "description": "备选翻译"
+          },
+          "detected_language": {
+            "type": "string",
+            "description": "检测到的源语言"
+          }
+        }
+      },
+      "dependencies": [],
+      "metadata": {
+        "complexity": "low",
+        "estimated_time": "5s",
+        "max_retries": 3,
+        "author": "HermesTeam",
+        "version": "1.0.0",
+        "tags": ["translation", "language", "multilingual"]
+      }
+    },
+    {
+      "template_id": "debugging-assistant",
+      "name": "代码调试助手",
+      "description": "帮助诊断和修复代码问题",
+      "category": "development",
+      "trigger_phrases": [
+        "代码出错",
+        "调试",
+        "修复错误",
+        "debug",
+        "fix error",
+        "报错了"
+      ],
+      "parameters": {
+        "input": {
+          "code": {
+            "type": "string",
+            "required": true,
+            "description": "有问题的代码"
+          },
+          "error_message": {
+            "type": "string",
+            "required": false,
+            "description": "错误信息"
+          },
+          "language": {
+            "type": "string",
+            "required": true,
+            "description": "编程语言"
+          },
+          "context": {
+            "type": "string",
+            "required": false,
+            "description": "相关上下文信息"
+          }
+        },
+        "output": {
+          "diagnosis": {
+            "type": "string",
+            "description": "问题诊断"
+          },
+          "fixed_code": {
+            "type": "string",
+            "description": "修复后的代码"
+          },
+          "explanation": {
+            "type": "string",
+            "description": "修复说明"
+          },
+          "prevention_tips": {
+            "type": "array",
+            "description": "预防建议"
+          }
+        }
+      },
+      "dependencies": [],
+      "metadata": {
+        "complexity": "medium",
+        "estimated_time": "30s",
+        "max_retries": 3,
+        "author": "HermesTeam",
+        "version": "1.0.0",
+        "tags": ["debugging", "coding", "error", "fix", "development"]
+      }
+    }
+  ],
+  "skill_compositions": [
+    {
+      "composition_id": "full-stack-developer",
+      "name": "全栈开发助手",
+      "description": "组合多个开发相关技能的完整开发工作流",
+      "skills": ["code-generator", "debugging-assistant"],
+      "workflow": {
+        "steps": [
+          {
+            "step": 1,
+            "skill": "code-generator",
+            "input_mapping": {
+              "requirements": "${user_request}"
+            },
+            "output_var": "generated_code"
+          },
+          {
+            "step": 2,
+            "skill": "debugging-assistant",
+            "input_mapping": {
+              "code": "${generated_code}",
+              "language": "${user_specified_language}"
+            },
+            "output_var": "debug_result"
+          }
+        ],
+        "final_output": {
+          "code": "${generated_code}",
+          "debug_report": "${debug_result}"
+        }
+      }
+    },
+    {
+      "composition_id": "research-assistant",
+      "name": "研究助手",
+      "description": "辅助学术研究和文档处理",
+      "skills": ["document-summarizer", "translation-assistant"],
+      "workflow": {
+        "steps": [
+          {
+            "step": 1,
+            "skill": "translation-assistant",
+            "input_mapping": {
+              "text": "${user_document}",
+              "target_language": "中文"
+            },
+            "output_var": "translated_content"
+          },
+          {
+            "step": 2,
+            "skill": "document-summarizer",
+            "input_mapping": {
+              "content": "${translated_content}",
+              "summary_type": "academic"
+            },
+            "output_var": "summary"
+          }
+        ],
+        "final_output": {
+          "translation": "${translated_content}",
+          "summary": "${summary}"
+        }
+      }
+    }
+  ]
+}

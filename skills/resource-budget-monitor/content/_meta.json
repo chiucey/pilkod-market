@@ -1,0 +1,27 @@
+{
+  "author": "MiniMax Agent",
+  "config_schema": {
+    "thresholds": {
+      "api_rpm_hard": "number",
+      "token_daily_hard": "number",
+      "token_daily_soft": "number"
+    }
+  },
+  "created_at": "2024-01-15",
+  "dependencies": [],
+  "display_name": "Resource Budget Monitor",
+  "id": 381864746377749,
+  "name": "resource-budget-monitor",
+  "platform": "minimax",
+  "skill_id": 10001,
+  "tags": [
+    "resource-monitor",
+    "budget-management",
+    "token-tracking",
+    "rate-limiting",
+    "alert-system",
+    "self-growth"
+  ],
+  "updated_at": 1774782123469,
+  "version": "1.0.0"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "训前教练式对话"
+  short_description: "共同分析真实工作难题并提炼经验，生成可修改的训前报告草稿"
+  default_prompt: "使用 $pre-training-coach 和我梳理一个真实工作难题，并生成训前思考整理草稿。"

@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "0a9b99e0c6b55e0cdde4d0f349a4b7523d1aa874",
+      "size": 4477
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "0382a44125762c1ef79a3c60a71ce55429bc0062",
+      "size": 3443
+    },
+    {
+      "path": "_meta.json",
+      "sha": "86cb1ab508577c4a171cd17771750ec5ecafc047",
+      "size": 494
+    },
+    {
+      "path": "assets/feishu_card_template.json",
+      "sha": "914fc94c1d9a30780b7f81b6b0d7ec6552ea895b",
+      "size": 1938
+    },
+    {
+      "path": "assets/portfolio_template.json",
+      "sha": "33987c8463d7c4b65b4caf416ecf1989ac12ac87",
+      "size": 1010
+    },
+    {
+      "path": "config.example.json",
+      "sha": "027d1b7fdb68d9d3fcb9540f390b65f7234a8485",
+      "size": 426
+    },
+    {
+      "path": "references/fund_data_source.md",
+      "sha": "f2c6bc62fbb53f16be33fa6d2b80f60533e25401",
+      "size": 2142
+    },
+    {
+      "path": "scripts/analyze_returns.py",
+      "sha": "3b766743358fbac2f177d4638126db2e08fa10e3",
+      "size": 7688
+    },
+    {
+      "path": "scripts/fetch_fund_data.py",
+      "sha": "c36b52561e01704c173471c7013089f1a40fa765",
+      "size": 5435
+    },
+    {
+      "path": "scripts/generate_report.py",
+      "sha": "369ecfb4fa39b2c19acc9e8b75a6e5cf3efdfdc0",
+      "size": 5400
+    },
+    {
+      "path": "scripts/send_feishu.py",
+      "sha": "674cbdd7e245b6f8d6782c8b9e4189045184c6ca",
+      "size": 8717
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1234567891",
+  "version": "1.0.0",
+  "author": "MiniMax Agent",
+  "description": "产品分析师智能体：需求提取、用户故事生成、Gherkin验收标准编写",
+  "training_methods": ["Few-shot Learning", "RAG Retrieval"],
+  "core_skills": [
+    "自然语言需求提取",
+    "INVEST用户故事生成",
+    "Gherkin验收标准生成"
+  ],
+  "collaboration": ["architect-agent", "dev-agent-group", "test-engineer-agent"]
+}

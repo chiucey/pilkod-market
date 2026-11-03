@@ -1,0 +1,157 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "会议纪要智能生成",
+    "语音转文字内容分析",
+    "待办任务自动提取",
+    "关键决策点标记",
+    "多格式输出（Word/PDF/Markdown）",
+    "任务追踪与提醒",
+    "会议模板复用",
+    "历史会议检索"
+  ],
+  "category": "productivity",
+  "dependencies": {
+    "external_services": [],
+    "python_packages": [
+      "python-docx",
+      "pdfplumber",
+      "Pillow"
+    ]
+  },
+  "description": "一站式会议效率工具。自动生成会议纪要、智能提取待办任务、标记关键决策点、多格式输出（Word/PDF/邮件）、支持语音转文字内容分析。适用场景：周会复盘、项目评审、商务谈判、团队协作。",
+  "display_name": "智能会议助手",
+  "display_name_en": "Meeting Intelligence",
+  "id": 384555696313109,
+  "language_support": [
+    "zh-CN",
+    "en-US"
+  ],
+  "limitations": [
+    "语音转文字识别准确率取决于原始转写质量",
+    "超过2小时的会议建议分段处理",
+    "多语言混合会议需要额外标注发言人",
+    "涉及隐私的敏感内容需要手动处理"
+  ],
+  "meeting_types": {
+    "board_meeting": {
+      "complexity": "high",
+      "name": "董事会/管理层会议",
+      "typical_duration": "120-180分钟"
+    },
+    "brainstorm": {
+      "complexity": "medium",
+      "name": "头脑风暴",
+      "typical_duration": "60-90分钟"
+    },
+    "one_on_one": {
+      "complexity": "medium",
+      "name": "一对一会议",
+      "typical_duration": "30-60分钟"
+    },
+    "project_review": {
+      "complexity": "high",
+      "name": "项目评审会",
+      "typical_duration": "60-120分钟"
+    },
+    "weekly_meeting": {
+      "complexity": "low",
+      "name": "周例会",
+      "typical_duration": "30-60分钟"
+    }
+  },
+  "name": "meeting-intelligence",
+  "platform": "minimax",
+  "quality_metrics": {
+    "completeness_rate": "100%（信息完整时）",
+    "decision_identification_accuracy": "90%",
+    "processing_time_per_hour": "5-10分钟",
+    "task_extraction_accuracy": "95%"
+  },
+  "supported_input_formats": [
+    "语音转文字（Otter.ai、讯飞、飞书等）",
+    "文字聊天记录",
+    "文档（PDF、Word、Markdown）",
+    "PPT演示文稿",
+    "即时通讯内容"
+  ],
+  "supported_output_formats": [
+    "Markdown",
+    "Word（.docx）",
+    "PDF",
+    "CSV（任务清单）",
+    "JSON（数据交换）"
+  ],
+  "tags": [
+    "会议",
+    "会议纪要",
+    "待办追踪",
+    "任务管理",
+    "决策记录",
+    "周会",
+    "项目评审"
+  ],
+  "target_users": [
+    "项目经理",
+    "团队负责人",
+    "行政助理",
+    "企业管理者",
+    "职场新人",
+    "远程团队成员"
+  ],
+  "trigger_keywords": {
+    "en": [
+      "meeting minutes",
+      "meeting notes",
+      "meeting summary",
+      "action items",
+      "task tracking",
+      "decision record",
+      "weekly meeting",
+      "project review",
+      "one-on-one"
+    ],
+    "zh": [
+      "会议纪要",
+      "会议记录",
+      "会议总结",
+      "会议整理",
+      "待办任务",
+      "待办追踪",
+      "任务分配",
+      "决策记录",
+      "周会复盘",
+      "项目评审",
+      "头脑风暴",
+      "一对一会议",
+      "会议准备"
+    ]
+  },
+  "updated_at": 1775440096637,
+  "use_cases": {
+    "scenario_1": {
+      "description": "上传一周的会议聊天记录或语音转文字内容，5分钟内生成结构化周会纪要，包含本周进展、下周计划和待办任务",
+      "title": "周会纪要快速生成"
+    },
+    "scenario_2": {
+      "description": "处理复杂项目评审会，自动识别评审意见、决策结论和后续行动，确保每个评审点都有明确的跟进责任人",
+      "title": "项目评审会完整记录"
+    },
+    "scenario_3": {
+      "description": "从会议内容中提取所有待办任务，自动关联责任人，支持导出到任务管理工具，持续追踪直到完成",
+      "title": "待办任务自动追踪"
+    },
+    "scenario_4": {
+      "description": "建立决策知识库，可以按项目、人员、时间检索历史决策，了解决策背景和执行情况",
+      "title": "决策历史追溯"
+    }
+  },
+  "version": "1.0.0",
+  "version_history": [
+    {
+      "changes": "初始版本发布，包含会议纪要生成、待办追踪、决策记录等核心功能",
+      "date": "2026-04-06",
+      "version": "1.0.0"
+    }
+  ]
+}

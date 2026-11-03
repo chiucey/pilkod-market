@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "DESIGN.md",
+      "sha": "64264b6808059d05d707c01495d9c3f48d900680",
+      "size": 13619
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "134f908104ddeb2069446cf6fde9a2598d733810",
+      "size": 30922
+    },
+    {
+      "path": "_meta.json",
+      "sha": "01b9d88cefdb1b95b03620e4b2e10afc8e1fbdee",
+      "size": 236
+    },
+    {
+      "path": "references/examples.md",
+      "sha": "fd3d251487318cb39e10a42431ccb9d429250b43",
+      "size": 4469
+    },
+    {
+      "path": "references/schema.sql",
+      "sha": "8a4ef446b9e265205f6025a31ff8caee05a43166",
+      "size": 16120
+    },
+    {
+      "path": "references/workflow.md",
+      "sha": "711b871470b6ae48ab06e58b37805f5a459d58e5",
+      "size": 12710
+    },
+    {
+      "path": "scripts/auto_record.py",
+      "sha": "d02cbfe8a14587a863b47b1a2d98971afa35d18b",
+      "size": 8354
+    },
+    {
+      "path": "scripts/data_manager.py",
+      "sha": "ecd74902553a13389ee75660b03d54219481f1b6",
+      "size": 11281
+    },
+    {
+      "path": "scripts/ethics_engine.py",
+      "sha": "1c4399a77771c0e9147605e778384edb2d9675fd",
+      "size": 8464
+    },
+    {
+      "path": "scripts/init_db.py",
+      "sha": "fd55294fbafaf09d899bd5965b20523ed8764647",
+      "size": 2147
+    },
+    {
+      "path": "scripts/install.py",
+      "sha": "545a287db5e50e01b84b8f695dc02f7143b46771",
+      "size": 1843
+    },
+    {
+      "path": "scripts/vector_memory.py",
+      "sha": "a9b79c302dd0f40d4f33eb80a288f107ddc828a2",
+      "size": 7198
+    }
+  ]
+}

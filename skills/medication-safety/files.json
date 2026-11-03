@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "dbc026b442132a2a6016a912e5e4d7afe7e5e7e9",
+      "size": 2029
+    },
+    {
+      "path": "_meta.json",
+      "sha": "8560ce49aeb02203a2a98e53fb3941f5986a4a66",
+      "size": 136
+    },
+    {
+      "path": "dist/SKILL.md",
+      "sha": "dbc026b442132a2a6016a912e5e4d7afe7e5e7e9",
+      "size": 2029
+    },
+    {
+      "path": "dist/_meta.json",
+      "sha": "a398bd9d5baaf06791da07b1759f5a49472b7e03",
+      "size": 47
+    },
+    {
+      "path": "dist/package_info.json",
+      "sha": "7de61626818204b40e8ba154be5a5839f7b81e28",
+      "size": 313
+    },
+    {
+      "path": "dist/references/drug_interactions.json",
+      "sha": "fbd2422df06f4f83cc757e6afd9d7c368b4c3521",
+      "size": 33704
+    },
+    {
+      "path": "dist/scripts/check_interactions.py",
+      "sha": "26eb9256ac4f0d881c0179305783460ff9b7b3c4",
+      "size": 13709
+    },
+    {
+      "path": "references/drug_interactions.json",
+      "sha": "fbd2422df06f4f83cc757e6afd9d7c368b4c3521",
+      "size": 33704
+    },
+    {
+      "path": "scripts/check_interactions.py",
+      "sha": "26eb9256ac4f0d881c0179305783460ff9b7b3c4",
+      "size": 13709
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "60fbf62d1575527176ce5d4d079657922c7f15c9",
+      "size": 2901
+    }
+  ]
+}

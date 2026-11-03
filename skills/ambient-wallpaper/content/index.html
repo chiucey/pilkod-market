@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient Wallpaper - 10 Scenes for Sleep & Relaxation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Selector Page Styles */
+        .selector-page {
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+        }
+
+        .subtitle {
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: #a0a0c0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .scene-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .scene-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scene-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .scene-card:hover::before {
+            left: 100%;
+        }
+
+        .scene-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: #667eea;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+        }
+
+        .scene-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .scene-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .scene-desc {
+            font-size: 0.9rem;
+            color: #a0a0c0;
+            line-height: 1.6;
+        }
+
+        .scene-features {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .feature-tag {
+            background: rgba(102, 126, 234, 0.3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+
+        .start-btn {
+            margin-top: 50px;
+            padding: 18px 60px;
+            font-size: 1.3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.6);
+        }
+
+        .start-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .volume-control {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .volume-control label {
+            font-size: 0.9rem;
+        }
+
+        .volume-slider {
+            width: 120px;
+            accent-color: #667eea;
+        }
+
+        /* Fullscreen Wallpaper Page */
+        .wallpaper-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            overflow: hidden;
+        }
+
+        .wallpaper-page.active {
+            display: block;
+        }
+
+        .exit-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            z-index: 1001;
+            transition: all 0.3s;
+        }
+
+        .exit-btn:hover {
+            background: rgba(255, 0, 0, 0.6);
+            border-color: #ff4444;
+        }
+
+        .timer-display {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            z-index: 1001;
+            backdrop-filter: blur(10px);
+        }
+
+        /* 1. Fireworks */
+        .fireworks-bg {
+            background: linear-gradient(to bottom, #000011 0%, #000033 50%, #001144 100%);
+        }
+
+        .firework {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        .firework-particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            animation: firework-explode 1.5s ease-out forwards;
+        }
+
+        @keyframes firework-explode {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(var(--tx), var(--ty)) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* 2. Blue Ocean */
+        .ocean-bg {
+            background: linear-gradient(to bottom, #006994 0%, #003366 40%, #001a33 100%);
+            position: relative;
+        }
+
+        .ocean-bg::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to bottom, rgba(0, 105, 148, 0.8), #003366);
+        }
+
+        .wave {
+            position: absolute;
+            width: 200%;
+            height: 100px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="rgba(255,255,255,0.3)" d="M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z"/></svg>');
+            background-size: 600px 100px;
+            animation: wave 8s linear infinite;
+        }
+
+        .wave:nth-child(1) { bottom: 35%; opacity: 0.5; animation-duration: 7s; }
+        .wave:nth-child(2) { bottom: 38%; opacity: 0.3; animation-duration: 10s; animation-direction: reverse; }
+        .wave:nth-child(3) { bottom: 42%; opacity: 0.2; animation-duration: 13s; }
+
+        @keyframes wave {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .bubble {
+            position: absolute;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+            border-radius: 50%;
+            animation: bubble-rise linear infinite;
+        }
+
+        @keyframes bubble-rise {
+            0% {
+                transform: translateY(100vh) scale(1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-100px) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        /* 3. Night Sky */
+        .night-sky-bg {
+            background: linear-gradient(to bottom, #000010 0%, #000025 50%, #0a0a20 100%);
+        }
+
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .moon {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle at 40% 40%, #ffffcc, #ffff99);
+            border-radius: 50%;
+            box-shadow: 0 0 60px rgba(255, 255, 150, 0.5), 0 0 120px rgba(255, 255, 150, 0.3);
+        }
+
+        .meteor {
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background: linear-gradient(to bottom, transparent, #fff);
+            animation: meteor-fall 3s linear infinite;
+            transform: rotate(-45deg);
+        }
+
+        @keyframes meteor-fall {
+            0% {
+                transform: translateX(0) translateY(0) rotate(-45deg);
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(300px) translateY(300px) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+
+        /* 4. Volcano */
+        .volcano-bg {
+            background: linear-gradient(to bottom, #1a0a00 0%, #331100 30%, #4d1a00 50%, #661f00 70%, #cc3300 85%, #ff6600 100%);
+            position: relative;
+        }
+
+        .volcano-mountain {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 300px solid transparent;
+            border-right: 300px solid transparent;
+            border-bottom: 400px solid #2d1400;
+        }
+
+        .lava {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center bottom, #ff6600 0%, #cc3300 50%, transparent 70%);
+            animation: lava-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes lava-pulse {
+            0%, 100% { opacity: 0.8; transform: scaleY(1); }
+            50% { opacity: 1; transform: scaleY(1.1); }
+        }
+
+        .lava-stream {
+            position: absolute;
+            width: 20px;
+            background: linear-gradient(to bottom, #ffcc00, #ff6600, #cc3300);
+            border-radius: 10px 10px 5px 5px;
+            animation: lava-flow 3s linear infinite;
+        }
+
+        @keyframes lava-flow {
+            0% {
+                height: 0;
+                top: 30%;
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                height: 500px;
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        .ember {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #ffcc00, #ff6600);
+            border-radius: 50%;
+            animation: ember-rise 2s ease-out infinite;
+        }
+
+        @keyframes ember-rise {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-300px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* 5. Snow Forest */
+        .snow-forest-bg {
+            background: linear-gradient(to bottom, #1a2a3a 0%, #2a3a4a 50%, #3a4a5a 100%);
+            position: relative;
+        }
+
+        .tree {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .tree-trunk {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4a3728;
+        }
+
+        .tree-top {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: solid transparent;
+            border-right: solid transparent;
+            border-bottom: solid;
+        }
+
+        .snowflake {
+            position: absolute;
+            color: #fff;
+            font-size: 1rem;
+            animation: snowfall linear infinite;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-20px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0.5;
+            }
+        }
+
+        /* 6. Cabin Rain Scene */
+        .cabin-rain-bg {
+            background: linear-gradient(to bottom, #2a3a4a 0%, #3a4a5a 60%, #4a5a6a 100%);
+            position: relative;
+        }
+
+        .cabin {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cabin-body {
+            width: 200px;
+            height: 120px;
+            background: linear-gradient(135deg, #8b4513 0%, #654321 100%);
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .cabin-roof {
+            position: absolute;
+            top: -80px;
+            left: -20px;
+            width: 0;
+            height: 0;
+            border-left: 120px solid transparent;
+            border-right: 120px solid transparent;
+            border-bottom: 80px solid #4a3728;
+        }
+
+        .cabin-window {
+            position: absolute;
+            width: 40px;
+            height: 50px;
+            background: linear-gradient(to bottom, #ffff99, #ffcc66);
+            border: 3px solid #654321;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .cabin-window::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #654321;
+        }
+
+        .cabin-window::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 3px;
+            height: 100%;
+            background: #654321;
+            transform: translateX(-50%);
+        }
+
+        .rain-drop {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: linear-gradient(to bottom, transparent, rgba(174, 194, 224, 0.6));
+            animation: rain-fall 0.8s linear infinite;
+        }
+
+        @keyframes rain-fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0.3;
+            }
+        }
+
+        .puddle {
+            position: absolute;
+            bottom: 15%;
+            background: radial-gradient(ellipse, rgba(100, 130, 160, 0.4), transparent);
+            border-radius: 50%;
+            animation: puddle-ripple 2s ease-in-out infinite;
+        }
+
+        @keyframes puddle-ripple {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+        }
+
+        /* 7. Thunder Lightning */
+        .thunder-bg {
+            background: linear-gradient(to bottom, #0a0a15 0%, #1a1a2e 50%, #2a2a3e 100%);
+            position: relative;
+        }
+
+        .lightning {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            opacity: 0;
+            pointer-events: none;
+            animation: lightning-flash 5s infinite;
+        }
+
+        @keyframes lightning-flash {
+            0%, 100% { opacity: 0; }
+            5% { opacity: 0.9; }
+            8% { opacity: 0; }
+            12% { opacity: 0.5; }
+            15% { opacity: 0; }
+            50% { opacity: 0; }
+            52% { opacity: 0.8; }
+            55% { opacity: 0; }
+        }
+
+        .lightning-bolt {
+            position: absolute;
+            top: -50px;
+            width: 30px;
+            height: 300px;
+            background: linear-gradient(to bottom, #fff, #ffff00, #fff);
+            clip-path: polygon(50% 0%, 0% 30%, 40% 30%, 10% 60%, 50% 60%, 30% 100%, 100% 40%, 60% 40%, 80% 10%, 50% 10%);
+            animation: bolt-appear 5s infinite;
+            opacity: 0;
+        }
+
+        @keyframes bolt-appear {
+            0%, 100% { opacity: 0; }
+            5%, 8%, 52%, 55% { opacity: 1; }
+        }
+
+        .thunder-rain {
+            position: absolute;
+            width: 3px;
+            height: 25px;
+            background: linear-gradient(to bottom, transparent, rgba(150, 170, 200, 0.7));
+            animation: thunder-rain-fall 0.6s linear infinite;
+        }
+
+        @keyframes thunder-rain-fall {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0.2;
+            }
+        }
+
+        /* 8. Niagara Falls */
+        .waterfall-bg {
+            background: linear-gradient(to bottom, #87CEEB 0%, #4682B4 30%, #2F4F4F 60%, #1a3020 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .waterfall-cliff {
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(to bottom, #4a4a4a, #3a3a3a, #2a2a2a);
+        }
+
+        .waterfall-cliff-left {
+            left: 0;
+            width: 35%;
+            height: 70%;
+            clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .waterfall-cliff-right {
+            right: 0;
+            width: 35%;
+            height: 70%;
+            clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+        }
+
+        .waterfall-stream {
+            position: absolute;
+            width: 30%;
+            left: 35%;
+            height: 100%;
+            background: linear-gradient(to bottom,
+                rgba(135, 206, 235, 0.9) 0%,
+                rgba(70, 130, 180, 0.95) 30%,
+                rgba(100, 149, 237, 1) 100%);
+            animation: waterfall-flow 0.5s linear infinite;
+        }
+
+        @keyframes waterfall-flow {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 50px; }
+        }
+
+        .waterfall-stream::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.3) 10px,
+                rgba(255, 255, 255, 0.3) 20px
+            );
+            animation: waterfall-stripes 0.3s linear infinite;
+        }
+
+        @keyframes waterfall-stripes {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(20px); }
+        }
+
+        .mist {
+            position: absolute;
+            bottom: 25%;
+            left: 20%;
+            width: 60%;
+            height: 100px;
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.6), transparent);
+            animation: mist-rise 3s ease-in-out infinite;
+        }
+
+        @keyframes mist-rise {
+            0%, 100% { transform: translateY(0) scaleX(1); opacity: 0.6; }
+            50% { transform: translateY(-30px) scaleX(1.2); opacity: 0.8; }
+        }
+
+        .water-splash {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 50px;
+            background: radial-gradient(ellipse at center bottom, rgba(100, 149, 237, 0.8), transparent);
+            animation: splash 2s ease-out infinite;
+        }
+
+        @keyframes splash {
+            0% { transform: translateX(-50%) scaleY(1); opacity: 0.8; }
+            50% { transform: translateX(-50%) scaleY(1.5); opacity: 0.4; }
+            100% { transform: translateX(-50%) scaleY(1); opacity: 0.8; }
+        }
+
+        /* 9. Underwater World */
+        .underwater-bg {
+            background: linear-gradient(to bottom, #001a33 0%, #003366 30%, #004488 60%, #0055aa 100%);
+            position: relative;
+        }
+
+        .underwater-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 30% 20%, rgba(100, 200, 255, 0.1), transparent 50%),
+                        radial-gradient(ellipse at 70% 80%, rgba(0, 100, 200, 0.1), transparent 50%);
+            animation: caustics 8s ease-in-out infinite;
+        }
+
+        @keyframes caustics {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+
+        .coral {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .seaweed {
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            background: linear-gradient(to top, #228B22, #32CD32);
+            border-radius: 10px 10px 0 0;
+            transform-origin: bottom center;
+            animation: seaweed-sway 3s ease-in-out infinite;
+        }
+
+        @keyframes seaweed-sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+
+        .fish {
+            position: absolute;
+            font-size: 2rem;
+            animation: fish-swim linear infinite;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+        }
+
+        @keyframes fish-swim {
+            0% {
+                transform: translateX(-100px) scaleX(1);
+            }
+            49% {
+                transform: translateX(calc(100vw + 100px)) scaleX(1);
+            }
+            50% {
+                transform: translateX(calc(100vw + 100px)) scaleX(-1);
+            }
+            100% {
+                transform: translateX(-100px) scaleX(-1);
+            }
+        }
+
+        .fish:nth-child(odd) {
+            animation-name: fish-swim-reverse;
+        }
+
+        @keyframes fish-swim-reverse {
+            0% {
+                transform: translateX(calc(100vw + 100px)) scaleX(-1);
+            }
+            49% {
+                transform: translateX(-100px) scaleX(-1);
+            }
+            50% {
+                transform: translateX(-100px) scaleX(1);
+            }
+            100% {
+                transform: translateX(calc(100vw + 100px)) scaleX(1);
+            }
+        }
+
+        .bubbles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .u-bubble {
+            position: absolute;
+            bottom: -50px;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+            border-radius: 50%;
+            animation: u-bubble-rise linear infinite;
+        }
+
+        @keyframes u-bubble-rise {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-50vh) translateX(20px);
+            }
+            100% {
+                transform: translateY(-100vh) translateX(-10px);
+                opacity: 0;
+            }
+        }
+
+        /* 10. Pure Black Clock */
+        .clock-bg {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .digital-clock {
+            font-family: 'Courier New', monospace;
+            font-size: clamp(4rem, 15vw, 12rem);
+            color: #fff;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.1em;
+            position: relative;
+        }
+
+        .clock-date {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 150px);
+            font-size: clamp(1rem, 3vw, 2rem);
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.2em;
+        }
+
+        .second-tick {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #333;
+            animation: tick-fade 1s steps(1) infinite;
+        }
+
+        @keyframes tick-fade {
+            0% { background: #333; }
+            50% { background: #666; }
+            100% { background: #333; }
+        }
+
+        /* Canvas动画 */
+        .canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Mobile Adaptation */
+        @media (max-width: 768px) {
+            .scene-grid {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
+            }
+
+            .scene-card {
+                padding: 20px;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .start-btn {
+                padding: 15px 40px;
+                font-size: 1.1rem;
+            }
+
+            .volume-control {
+                bottom: 15px;
+                right: 15px;
+                padding: 10px 15px;
+            }
+
+            .volume-slider {
+                width: 80px;
+            }
+
+            .timer-display {
+                font-size: 0.8rem;
+                padding: 8px 20px;
+            }
+
+            .moon {
+                width: 50px;
+                height: 50px;
+                top: 5%;
+                right: 10%;
+            }
+
+            .cabin-body {
+                width: 120px;
+                height: 80px;
+            }
+
+            .cabin-roof {
+                top: -50px;
+                left: -10px;
+                border-left: 70px solid transparent;
+                border-right: 70px solid transparent;
+                border-bottom: 50px solid #4a3728;
+            }
+
+            .cabin-window {
+                width: 25px;
+                height: 30px;
+            }
+        }
+
+        /* Hide Selector Page */
+        .selector-page.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 选择页面 -->
+    <div class="selector-page" id="selectorPage">
+        <h1 class="main-title">沉浸式动态壁纸</h1>
+        <p class="subtitle">选择您心仪的场景，开启3小时的放松之旅</p>
+
+        <div class="scene-grid">
+            <div class="scene-card" data-scene="fireworks" onclick="selectScene(this)">
+                <span class="scene-icon">🎆</span>
+                <h3 class="scene-name">烟花秀</h3>
+                <p class="scene-desc">绚丽的烟花在夜空中绽放</p>
+                <div class="scene-features">
+                    <span class="feature-tag">带音效</span>
+                    <span class="feature-tag">节日氛围</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="ocean" onclick="selectScene(this)">
+                <span class="scene-icon">🌊</span>
+                <h3 class="scene-name">蓝色海洋</h3>
+                <p class="scene-desc">平静的海浪轻柔拍打岸边</p>
+                <div class="scene-features">
+                    <span class="feature-tag">海浪声</span>
+                    <span class="feature-tag">放松</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="nightSky" onclick="selectScene(this)">
+                <span class="scene-icon">🌙</span>
+                <h3 class="scene-name">暗夜星空</h3>
+                <p class="scene-desc">宁静的星空，流星划过</p>
+                <div class="scene-features">
+                    <span class="feature-tag">流星</span>
+                    <span class="feature-tag">月亮</span>
+                    <span class="feature-tag">助眠</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="volcano" onclick="selectScene(this)">
+                <span class="scene-icon">🌋</span>
+                <h3 class="scene-name">火山爆发</h3>
+                <p class="scene-desc">壮观的火山喷发场景</p>
+                <div class="scene-features">
+                    <span class="feature-tag">熔岩</span>
+                    <span class="feature-tag">震撼</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="snowForest" onclick="selectScene(this)">
+                <span class="scene-icon">❄️</span>
+                <h3 class="scene-name">森林大雪</h3>
+                <p class="scene-desc">静谧的森林，鹅毛大雪</p>
+                <div class="scene-features">
+                    <span class="feature-tag">雪花</span>
+                    <span class="feature-tag">宁静</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="cabinRain" onclick="selectScene(this)">
+                <span class="scene-icon">🏠</span>
+                <h3 class="scene-name">林中小屋</h3>
+                <p class="scene-desc">温馨的小屋，听雨声</p>
+                <div class="scene-features">
+                    <span class="feature-tag">雨声</span>
+                    <span class="feature-tag">温馨</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="thunder" onclick="selectScene(this)">
+                <span class="scene-icon">⛈️</span>
+                <h3 class="scene-name">雷雨闪电</h3>
+                <p class="scene-desc">暴风雨夜，闪电雷鸣</p>
+                <div class="scene-features">
+                    <span class="feature-tag">闪电</span>
+                    <span class="feature-tag">雷声</span>
+                    <span class="feature-tag">下雨声</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="waterfall" onclick="selectScene(this)">
+                <span class="scene-icon">💧</span>
+                <h3 class="scene-name">尼亚加拉瀑布</h3>
+                <p class="scene-desc">壮丽的瀑布，水声轰鸣</p>
+                <div class="scene-features">
+                    <span class="feature-tag">瀑布声</span>
+                    <span class="feature-tag">震撼</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="underwater" onclick="selectScene(this)">
+                <span class="scene-icon">🐠</span>
+                <h3 class="scene-name">海底世界</h3>
+                <p class="scene-desc">奇妙的海底，各种鱼类穿梭</p>
+                <div class="scene-features">
+                    <span class="feature-tag">10种鱼</span>
+                    <span class="feature-tag">珊瑚</span>
+                </div>
+            </div>
+
+            <div class="scene-card" data-scene="clock" onclick="selectScene(this)">
+                <span class="scene-icon">⏰</span>
+                <h3 class="scene-name">纯黑时钟</h3>
+                <p class="scene-desc">简约时钟，hh:mm:ss实时显示</p>
+                <div class="scene-features">
+                    <span class="feature-tag">北京时间</span>
+                    <span class="feature-tag">秒针声</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="start-btn" id="startBtn" onclick="startWallpaper()" disabled>请先选择场景</button>
+    </div>
+
+    <!-- 音量控制 -->
+    <div class="volume-control" id="volumeControl" style="display: none;">
+        <label>音量</label>
+        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50" onchange="setVolume(this.value)">
+        <span id="volumeValue">50%</span>
+    </div>
+
+    <!-- 全屏壁纸容器 -->
+    <div class="wallpaper-page" id="wallpaperPage">
+        <button class="exit-btn" onclick="exitWallpaper()">退出 (ESC)</button>
+        <div class="timer-display" id="timerDisplay">剩余时间: 3:00:00</div>
+        <div class="canvas-container" id="canvasContainer"></div>
+    </div>
+
+    <script>
+        // 全局变量
+        let selectedScene = null;
+        let audioContext = null;
+        let currentAudio = null;
+        let volume = 0.5;
+        let startTime = null;
+        let timerInterval = null;
+        const DURATION = 3 * 60 * 60 * 1000; // 3小时
+
+        // 场景选择
+        function selectScene(element) {
+            document.querySelectorAll('.scene-card').forEach(card => {
+                card.style.borderColor = 'transparent';
+                card.style.boxShadow = 'none';
+            });
+            element.style.borderColor = '#667eea';
+            element.style.boxShadow = '0 10px 40px rgba(102, 126, 234, 0.4)';
+            selectedScene = element.dataset.scene;
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('startBtn').textContent = '开始播放';
+        }
+
+        // 初始化音频上下文
+        function initAudio() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioContext.state === 'suspended') {
+                audioContext.resume();
+            }
+        }
+
+        // 生成音效
+        function playSound(type) {
+            initAudio();
+            stopSound();
+
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            gainNode.gain.value = volume * 0.3;
+
+            switch(type) {
+                case 'tick':
+                    oscillator.frequency.value = 800;
+                    oscillator.type = 'square';
+                    gainNode.gain.value = volume * 0.05;
+                    oscillator.start();
+                    oscillator.stop(audioContext.currentTime + 0.02);
+                    break;
+                case 'thunder':
+                    oscillator.frequency.value = 60;
+                    oscillator.type = 'sawtooth';
+                    gainNode.gain.setValueAtTime(volume * 0.5, audioContext.currentTime);
+                    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 2);
+                    oscillator.start();
+                    oscillator.stop(audioContext.currentTime + 2);
+                    break;
+            }
+        }
+
+        // 停止当前音效
+        function stopSound() {
+            if (currentAudio) {
+                currentAudio.stop();
+                currentAudio = null;
+            }
+        }
+
+        // 设置音量
+        function setVolume(value) {
+            volume = value / 100;
+            document.getElementById('volumeValue').textContent = value + '%';
+        }
+
+        // 开始播放
+        function startWallpaper() {
+            if (!selectedScene) return;
+
+            document.getElementById('selectorPage').classList.add('hidden');
+            document.getElementById('wallpaperPage').classList.add('active');
+            document.getElementById('volumeControl').style.display = 'flex';
+
+            const container = document.getElementById('canvasContainer');
+            container.innerHTML = '';
+
+            startTime = Date.now();
+            updateTimer();
+            timerInterval = setInterval(updateTimer, 1000);
+
+            // 根据场景初始化
+            switch(selectedScene) {
+                case 'fireworks':
+                    initFireworks(container);
+                    break;
+                case 'ocean':
+                    initOcean(container);
+                    break;
+                case 'nightSky':
+                    initNightSky(container);
+                    break;
+                case 'volcano':
+                    initVolcano(container);
+                    break;
+                case 'snowForest':
+                    initSnowForest(container);
+                    break;
+                case 'cabinRain':
+                    initCabinRain(container);
+                    break;
+                case 'thunder':
+                    initThunder(container);
+                    break;
+                case 'waterfall':
+                    initWaterfall(container);
+                    break;
+                case 'underwater':
+                    initUnderwater(container);
+                    break;
+                case 'clock':
+                    initClock(container);
+                    break;
+            }
+
+            // 尝试进入全屏
+            try {
+                document.documentElement.requestFullscreen();
+            } catch (e) {
+                console.log('全屏模式不可用');
+            }
+
+            // 键盘退出
+            document.addEventListener('keydown', handleKeydown);
+        }
+
+        // 退出壁纸
+        function exitWallpaper() {
+            document.getElementById('selectorPage').classList.remove('hidden');
+            document.getElementById('wallpaperPage').classList.remove('active');
+            document.getElementById('volumeControl').style.display = 'none';
+            document.getElementById('canvasContainer').innerHTML = '';
+
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+
+            stopSound();
+
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+
+            document.removeEventListener('keydown', handleKeydown);
+        }
+
+        // 键盘事件
+        function handleKeydown(e) {
+            if (e.key === 'Escape') {
+                exitWallpaper();
+            }
+        }
+
+        // 更新计时器
+        function updateTimer() {
+            const elapsed = Date.now() - startTime;
+            const remaining = Math.max(0, DURATION - elapsed);
+            const hours = Math.floor(remaining / (60 * 60 * 1000));
+            const minutes = Math.floor((remaining % (60 * 60 * 1000)) / (60 * 1000));
+            const seconds = Math.floor((remaining % (60 * 1000)) / 1000);
+
+            document.getElementById('timerDisplay').textContent =
+                `剩余时间: ${hours}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            if (remaining <= 0) {
+                exitWallpaper();
+            }
+        }
+
+        // 1. 烟花秀
+        function initFireworks(container) {
+            const bg = document.createElement('div');
+            bg.className = 'fireworks-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            // 创建画布用于粒子效果
+            const canvas = document.createElement('canvas');
+            canvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            bg.appendChild(canvas);
+            const ctx = canvas.getContext('2d');
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            class Firework {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = canvas.height;
+                    this.targetY = Math.random() * (canvas.height * 0.5) + 50;
+                    this.speed = 8 + Math.random() * 4;
+                    this.color = `hsl(${Math.random() * 360}, 100%, 60%)`;
+                    this.exploded = false;
+                    this.particles = [];
+                }
+
+                update() {
+                    if (!this.exploded) {
+                        this.y -= this.speed;
+                        if (this.y <= this.targetY) {
+                            this.explode();
+                        }
+                    } else {
+                        this.particles.forEach(p => {
+                            p.x += p.vx;
+                            p.y += p.vy;
+                            p.vy += 0.1;
+                            p.alpha -= 0.015;
+                        });
+                        this.particles = this.particles.filter(p => p.alpha > 0);
+                    }
+                }
+
+                explode() {
+                    this.exploded = true;
+                    for (let i = 0; i < 80; i++) {
+                        const angle = (Math.PI * 2 / 80) * i;
+                        const speed = 2 + Math.random() * 4;
+                        this.particles.push({
+                            x: this.x,
+                            y: this.y,
+                            vx: Math.cos(angle) * speed,
+                            vy: Math.sin(angle) * speed,
+                            alpha: 1,
+                            color: this.color
+                        });
+                    }
+                    // 音效
+                    playFireworkSound();
+                }
+
+                draw() {
+                    if (!this.exploded) {
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
+                        ctx.fillStyle = '#fff';
+                        ctx.fill();
+                    } else {
+                        this.particles.forEach(p => {
+                            ctx.beginPath();
+                            ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+                            ctx.fillStyle = p.color.replace(')', `,${p.alpha})`).replace('hsl', 'hsla');
+                            ctx.fill();
+                        });
+                    }
+                }
+            }
+
+            let fireworks = [];
+
+            function playFireworkSound() {
+                initAudio();
+                const osc = audioContext.createOscillator();
+                const gain = audioContext.createGain();
+                osc.connect(gain);
+                gain.connect(audioContext.destination);
+                osc.frequency.value = 400 + Math.random() * 200;
+                osc.type = 'sine';
+                gain.gain.setValueAtTime(volume * 0.1, audioContext.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.5);
+                osc.start();
+                osc.stop(audioContext.currentTime + 0.5);
+            }
+
+            function animate() {
+                ctx.fillStyle = 'rgba(0, 0, 17, 0.2)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                if (Math.random() < 0.05) {
+                    fireworks.push(new Firework());
+                }
+
+                fireworks = fireworks.filter(f => !f.exploded || f.particles.length > 0);
+                fireworks.forEach(f => {
+                    f.update();
+                    f.draw();
+                });
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        }
+
+        // 2. 蓝色海洋
+        function initOcean(container) {
+            const bg = document.createElement('div');
+            bg.className = 'ocean-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            for (let i = 0; i < 3; i++) {
+                const wave = document.createElement('div');
+                wave.className = 'wave';
+                bg.appendChild(wave);
+            }
+
+            // 气泡
+            for (let i = 0; i < 20; i++) {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                const size = 5 + Math.random() * 20;
+                bubble.style.cssText = `
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${Math.random() * 100}%;
+                    animation-duration: ${8 + Math.random() * 10}s;
+                    animation-delay: ${Math.random() * 10}s;
+                `;
+                bg.appendChild(bubble);
+            }
+
+            // 播放海浪声
+            initAudio();
+            playOceanSound();
+        }
+
+        function playOceanSound() {
+            initAudio();
+            const bufferSize = 2 * audioContext.sampleRate;
+            const noiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+
+            for (let i = 0; i < bufferSize; i++) {
+                output[i] = Math.random() * 2 - 1;
+            }
+
+            const whiteNoise = audioContext.createBufferSource();
+            whiteNoise.buffer = noiseBuffer;
+            whiteNoise.loop = true;
+
+            const filter = audioContext.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.value = 500;
+
+            const gain = audioContext.createGain();
+            gain.gain.value = volume * 0.3;
+
+            whiteNoise.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioContext.destination);
+
+            whiteNoise.start();
+            currentAudio = whiteNoise;
+        }
+
+        // 3. 暗夜星空
+        function initNightSky(container) {
+            const bg = document.createElement('div');
+            bg.className = 'night-sky-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            // 月亮
+            const moon = document.createElement('div');
+            moon.className = 'moon';
+            bg.appendChild(moon);
+
+            // 星星
+            for (let i = 0; i < 150; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                const size = 1 + Math.random() * 3;
+                star.style.cssText = `
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 70}%;
+                    animation-delay: ${Math.random() * 3}s;
+                    animation-duration: ${2 + Math.random() * 2}s;
+                `;
+                bg.appendChild(star);
+            }
+
+            // 流星
+            function createMeteor() {
+                const meteor = document.createElement('div');
+                meteor.className = 'meteor';
+                meteor.style.cssText = `
+                    left: ${Math.random() * 70}%;
+                    top: ${Math.random() * 30}%;
+                `;
+                bg.appendChild(meteor);
+                setTimeout(() => meteor.remove(), 3000);
+            }
+
+            setInterval(createMeteor, 3000);
+        }
+
+        // 4. 火山爆发
+        function initVolcano(container) {
+            const bg = document.createElement('div');
+            bg.className = 'volcano-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            const lava = document.createElement('div');
+            lava.className = 'lava';
+            bg.appendChild(lava);
+
+            const mountain = document.createElement('div');
+            mountain.className = 'volcano-mountain';
+            bg.appendChild(mountain);
+
+            // 岩浆流
+            function createLavaStream() {
+                const stream = document.createElement('div');
+                stream.className = 'lava-stream';
+                stream.style.cssText = `
+                    left: ${35 + Math.random() * 30}%;
+                    animation-duration: ${2 + Math.random() * 3}s;
+                `;
+                bg.appendChild(stream);
+                setTimeout(() => stream.remove(), 5000);
+            }
+
+            setInterval(createLavaStream, 1000);
+
+            // 火星
+            function createEmber() {
+                const ember = document.createElement('div');
+                ember.className = 'ember';
+                const size = 3 + Math.random() * 8;
+                ember.style.cssText = `
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${40 + Math.random() * 20}%;
+                    top: 30%;
+                    animation-duration: ${1 + Math.random() * 2}s;
+                `;
+                bg.appendChild(ember);
+                setTimeout(() => ember.remove(), 3000);
+            }
+
+            setInterval(createEmber, 200);
+        }
+
+        // 5. 森林大雪
+        function initSnowForest(container) {
+            const bg = document.createElement('div');
+            bg.className = 'snow-forest-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            // 树木
+            function createTree(x, scale) {
+                const tree = document.createElement('div');
+                tree.className = 'tree';
+                tree.style.cssText = `left: ${x}%;`;
+
+                const trunk = document.createElement('div');
+                trunk.className = 'tree-trunk';
+                trunk.style.cssText = `
+                    width: ${20 * scale}px;
+                    height: ${60 * scale}px;
+                `;
+                tree.appendChild(trunk);
+
+                for (let i = 0; i < 3; i++) {
+                    const top = document.createElement('div');
+                    top.className = 'tree-top';
+                    top.style.cssText = `
+                        border-left-width: ${40 * scale - i * 10}px;
+                        border-right-width: ${40 * scale - i * 10}px;
+                        border-bottom-width: ${60 * scale - i * 10}px;
+                        border-bottom-color: hsl(120, 30%, ${25 - i * 5}%);
+                        bottom: ${40 + i * 25 * scale}px;
+                    `;
+                    tree.appendChild(top);
+                }
+
+                return tree;
+            }
+
+            bg.appendChild(createTree(10, 1.2));
+            bg.appendChild(createTree(25, 0.8));
+            bg.appendChild(createTree(40, 1.0));
+            bg.appendChild(createTree(60, 0.9));
+            bg.appendChild(createTree(75, 1.1));
+            bg.appendChild(createTree(90, 0.7));
+
+            // 雪花
+            const snowflakes = ['❄', '❅', '❆', '✻', '✼'];
+            function createSnowflake() {
+                const flake = document.createElement('div');
+                flake.className = 'snowflake';
+                flake.textContent = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+                const size = 0.8 + Math.random() * 1.2;
+                flake.style.cssText = `
+                    left: ${Math.random() * 100}%;
+                    font-size: ${size}rem;
+                    animation-duration: ${5 + Math.random() * 5}s;
+                    animation-delay: ${Math.random() * 5}s;
+                `;
+                bg.appendChild(flake);
+                setTimeout(() => flake.remove(), 15000);
+            }
+
+            setInterval(createSnowflake, 100);
+        }
+
+        // 6. 林中小屋
+        function initCabinRain(container) {
+            const bg = document.createElement('div');
+            bg.className = 'cabin-rain-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            // 小屋
+            const cabin = document.createElement('div');
+            cabin.className = 'cabin';
+            cabin.innerHTML = `
+                <div class="cabin-roof"></div>
+                <div class="cabin-body">
+                    <div class="cabin-window" style="top: 30px; left: 30px;"></div>
+                    <div class="cabin-window" style="top: 30px; right: 30px;"></div>
+                    <div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:50px;height:70px;background:#654321;border-radius:5px 5px 0 0;"></div>
+                </div>
+            `;
+            bg.appendChild(cabin);
+
+            // 雨滴
+            function createRainDrop() {
+                const drop = document.createElement('div');
+                drop.className = 'rain-drop';
+                drop.style.cssText = `
+                    left: ${Math.random() * 100}%;
+                    animation-duration: ${0.5 + Math.random() * 0.3}s;
+                    height: ${15 + Math.random() * 15}px;
+                `;
+                bg.appendChild(drop);
+                setTimeout(() => drop.remove(), 1000);
+            }
+
+            setInterval(createRainDrop, 50);
+
+            // 水坑
+            for (let i = 0; i < 5; i++) {
+                const puddle = document.createElement('div');
+                puddle.className = 'puddle';
+                puddle.style.cssText = `
+                    left: ${20 + i * 15}%;
+                    width: ${30 + Math.random() * 40}px;
+                    height: ${10 + Math.random() * 15}px;
+                    animation-delay: ${Math.random() * 2}s;
+                `;
+                bg.appendChild(puddle);
+            }
+
+            // 雨声
+            playRainSound();
+        }
+
+        function playRainSound() {
+            initAudio();
+            const bufferSize = 2 * audioContext.sampleRate;
+            const noiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+
+            for (let i = 0; i < bufferSize; i++) {
+                output[i] = Math.random() * 2 - 1;
+            }
+
+            const whiteNoise = audioContext.createBufferSource();
+            whiteNoise.buffer = noiseBuffer;
+            whiteNoise.loop = true;
+
+            const filter = audioContext.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.value = 2000;
+            filter.Q.value = 0.5;
+
+            const gain = audioContext.createGain();
+            gain.gain.value = volume * 0.4;
+
+            whiteNoise.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioContext.destination);
+
+            whiteNoise.start();
+            currentAudio = whiteNoise;
+        }
+
+        // 7. 雷雨闪电
+        function initThunder(container) {
+            const bg = document.createElement('div');
+            bg.className = 'thunder-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            const lightning = document.createElement('div');
+            lightning.className = 'lightning';
+            bg.appendChild(lightning);
+
+            // 闪电
+            function createLightningBolt() {
+                const bolt = document.createElement('div');
+                bolt.className = 'lightning-bolt';
+                bolt.style.cssText = `
+                    left: ${20 + Math.random() * 60}%;
+                `;
+                bg.appendChild(bolt);
+                setTimeout(() => bolt.remove(), 500);
+            }
+
+            setInterval(() => {
+                if (Math.random() < 0.3) {
+                    createLightningBolt();
+                    setTimeout(() => playSound('thunder'), 100);
+                }
+            }, 2000);
+
+            // 雨
+            function createThunderRain() {
+                const rain = document.createElement('div');
+                rain.className = 'thunder-rain';
+                rain.style.cssText = `
+                    left: ${Math.random() * 100}%;
+                    animation-duration: ${0.4 + Math.random() * 0.3}s;
+                `;
+                bg.appendChild(rain);
+                setTimeout(() => rain.remove(), 1000);
+            }
+
+            setInterval(createThunderRain, 30);
+
+            // 雷雨声
+            playThunderRainSound();
+        }
+
+        function playThunderRainSound() {
+            initAudio();
+            const bufferSize = 2 * audioContext.sampleRate;
+            const noiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+
+            for (let i = 0; i < bufferSize; i++) {
+                output[i] = Math.random() * 2 - 1;
+            }
+
+            const whiteNoise = audioContext.createBufferSource();
+            whiteNoise.buffer = noiseBuffer;
+            whiteNoise.loop = true;
+
+            const filter = audioContext.createBiquadFilter();
+            filter.type = 'highpass';
+            filter.frequency.value = 1000;
+
+            const gain = audioContext.createGain();
+            gain.gain.value = volume * 0.5;
+
+            whiteNoise.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioContext.destination);
+
+            whiteNoise.start();
+            currentAudio = whiteNoise;
+        }
+
+        // 8. 瀑布
+        function initWaterfall(container) {
+            const bg = document.createElement('div');
+            bg.className = 'waterfall-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            const leftCliff = document.createElement('div');
+            leftCliff.className = 'waterfall-cliff waterfall-cliff-left';
+            bg.appendChild(leftCliff);
+
+            const rightCliff = document.createElement('div');
+            rightCliff.className = 'waterfall-cliff waterfall-cliff-right';
+            bg.appendChild(rightCliff);
+
+            const stream = document.createElement('div');
+            stream.className = 'waterfall-stream';
+            bg.appendChild(stream);
+
+            // 水雾
+            for (let i = 0; i < 5; i++) {
+                const mist = document.createElement('div');
+                mist.className = 'mist';
+                mist.style.cssText = `
+                    left: ${20 + i * 12}%;
+                    animation-delay: ${i * 0.5}s;
+                `;
+                bg.appendChild(mist);
+            }
+
+            const splash = document.createElement('div');
+            splash.className = 'water-splash';
+            bg.appendChild(splash);
+
+            // 瀑布声
+            playWaterfallSound();
+        }
+
+        function playWaterfallSound() {
+            initAudio();
+            const bufferSize = 2 * audioContext.sampleRate;
+            const noiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+
+            for (let i = 0; i < bufferSize; i++) {
+                output[i] = Math.random() * 2 - 1;
+            }
+
+            const whiteNoise = audioContext.createBufferSource();
+            whiteNoise.buffer = noiseBuffer;
+            whiteNoise.loop = true;
+
+            const filter = audioContext.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.value = 1500;
+
+            const gain = audioContext.createGain();
+            gain.gain.value = volume * 0.6;
+
+            whiteNoise.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioContext.destination);
+
+            whiteNoise.start();
+            currentAudio = whiteNoise;
+        }
+
+        // 9. 海底世界
+        function initUnderwater(container) {
+            const bg = document.createElement('div');
+            bg.className = 'underwater-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+            container.appendChild(bg);
+
+            // 气泡
+            const bubblesContainer = document.createElement('div');
+            bubblesContainer.className = 'bubbles';
+            bg.appendChild(bubblesContainer);
+
+            function createBubble() {
+                const bubble = document.createElement('div');
+                bubble.className = 'u-bubble';
+                const size = 5 + Math.random() * 15;
+                bubble.style.cssText = `
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${Math.random() * 100}%;
+                    animation-duration: ${5 + Math.random() * 8}s;
+                    animation-delay: ${Math.random() * 5}s;
+                `;
+                bubblesContainer.appendChild(bubble);
+                setTimeout(() => bubble.remove(), 15000);
+            }
+
+            setInterval(createBubble, 300);
+
+            // 海草
+            for (let i = 0; i < 8; i++) {
+                const seaweed = document.createElement('div');
+                seaweed.className = 'seaweed';
+                seaweed.style.cssText = `
+                    left: ${5 + i * 12}%;
+                    height: ${60 + Math.random() * 80}px;
+                    animation-delay: ${Math.random() * 2}s;
+                `;
+                bg.appendChild(seaweed);
+            }
+
+            // 鱼类
+            const fishEmojis = ['🐠', '🐟', '🐡', '🦈', '🐙', '🦑', '🦀', '🐳', '🦈', '🐠'];
+            const fishColors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#A8D8EA', '#FF9F43', '#6C5CE7'];
+
+            function createFish() {
+                const fish = document.createElement('div');
+                fish.className = 'fish';
+                const index = Math.floor(Math.random() * fishEmojis.length);
+                fish.textContent = fishEmojis[index];
+                fish.style.cssText = `
+                    top: ${10 + Math.random() * 70}%;
+                    font-size: ${1.5 + Math.random() * 2}rem;
+                    animation-duration: ${15 + Math.random() * 20}s;
+                    filter: hue-rotate(${Math.random() * 360}deg);
+                `;
+                bg.appendChild(fish);
+                setTimeout(() => fish.remove(), 40000);
+            }
+
+            // 初始创建10条鱼
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createFish, i * 2000);
+            }
+
+            // 持续创建新鱼
+            setInterval(createFish, 4000);
+        }
+
+        // 10. 时钟
+        function initClock(container) {
+            const bg = document.createElement('div');
+            bg.className = 'clock-bg';
+            bg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column;';
+            container.appendChild(bg);
+
+            const clock = document.createElement('div');
+            clock.className = 'digital-clock';
+            clock.id = 'digitalClock';
+            bg.appendChild(clock);
+
+            const date = document.createElement('div');
+            date.className = 'clock-date';
+            date.id = 'clockDate';
+            bg.appendChild(date);
+
+            function updateClock() {
+                const now = new Date();
+                // 北京时间
+                const beijingTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
+
+                const hours = String(beijingTime.getHours()).padStart(2, '0');
+                const minutes = String(beijingTime.getMinutes()).padStart(2, '0');
+                const seconds = String(beijingTime.getSeconds()).padStart(2, '0');
+
+                clock.textContent = `${hours}:${minutes}:${seconds}`;
+
+                const dateStr = beijingTime.toLocaleDateString('zh-CN', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    weekday: 'long'
+                });
+                date.textContent = dateStr;
+
+                // 秒针音效
+                playSound('tick');
+            }
+
+            updateClock();
+            setInterval(updateClock, 1000);
+        }
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

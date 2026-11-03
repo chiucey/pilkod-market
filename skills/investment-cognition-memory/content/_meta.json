@@ -1,0 +1,29 @@
+{
+  "author": "MiniMax Agent",
+  "created": "2026-03-31",
+  "description": "投资认知记忆系统，用于维护投资认知的量化文档。触发场景：输入投资观点/分析后进行量化校验、构建投资认知体系、避免情绪影响决策、整理投资关注点和分析框架时使用。",
+  "dimensions": [
+    "技术面",
+    "情绪面",
+    "基本面",
+    "政策面",
+    "散户心理",
+    "主力意图",
+    "关注票池",
+    "近期盘面"
+  ],
+  "id": 382488502485223,
+  "name": "investment-cognition-memory",
+  "platform": "minimax",
+  "storage_path": "/memories/investment_cognition/",
+  "tags": [
+    "投资",
+    "量化评估",
+    "记忆系统",
+    "认知框架",
+    "决策辅助"
+  ],
+  "updated": "2026-03-31",
+  "updated_at": 1774934919941,
+  "version": "1.0.0"
+}

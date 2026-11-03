@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><title>推导布局 · 结构参考</title>
+</head>
+<body>
+  <section class="scroll-section" data-title="公式推导">
+    <p class="kicker">展示 · 公式推导过程</p>
+    <h2 class="h2">匀变速直线运动：从加速度到位移</h2>
+    <div class="card">
+      <p class="highlight">已知：a = dv/dt（加速度定义）</p>
+      <p>由 a = dv/dt 得 dv = a·dt</p>
+      <p>∫dv = ∫a·dt → v = at + C</p>
+      <p>t=0 时 v=v₀，C=v₀ → v = v₀ + at</p>
+      <p>由 v = dx/dt（速度定义）得 dx = v·dt</p>
+      <p>∫dx = ∫(v₀+at)·dt → x = v₀t + ½at² + C'</p>
+      <p>t=0 时 x=0，C'=0 → x = v₀t + ½at²</p>
+      <p class="highlight">当 v₀=0 时：v = at, x = ½at²</p>
+    </div>
+    <p class="dim">从加速度到位移的完整公式推导链，展示每个步骤的物理含义与逻辑关系。</p>
+    <div class="notes">推导过程中强调微积分在物理学中的应用，展示已知量与待求量之间的逻辑链条。</div>
+  </section>
+</body>
+</html>

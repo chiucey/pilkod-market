@@ -1,0 +1,23 @@
+# 本地RAG技能依赖
+
+# 核心依赖
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+numpy>=1.21.0
+
+# 文档解析
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+python-docx>=0.8.11
+beautifulsoup4>=4.12.0
+
+# 可选：向量数据库
+chromadb>=0.4.0
+
+# 可选：LLM集成
+ollama>=0.1.0
+openai>=1.0.0
+anthropic>=0.8.0
+
+# 工具库
+tqdm>=4.65.0

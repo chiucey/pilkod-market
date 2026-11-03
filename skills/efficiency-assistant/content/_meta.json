@@ -1,0 +1,26 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "content_generation": true,
+    "information_organization": true,
+    "meeting_support": true,
+    "schedule_management": true,
+    "task_planning": true
+  },
+  "created_at": "2026-03-31",
+  "description": "通用效率工具助手，帮助用户自动化处理日常白领工作任务。当用户请求日程规划、邮件撰写、文案生成、会议纪要整理、待办事项规划、任务拆解、报告生成、信息整理、日程管理等工作效率相关帮助时使用。",
+  "id": 382455556436936,
+  "name": "efficiency-assistant",
+  "platform": "minimax",
+  "tags": [
+    "效率",
+    "日程",
+    "任务管理",
+    "文案",
+    "邮件",
+    "会议",
+    "办公自动化"
+  ],
+  "updated_at": 1774925918823,
+  "version": "1.0.0"
+}

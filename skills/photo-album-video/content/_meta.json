@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "category": "media",
+  "created_at": "2026-03-23",
+  "dependencies": [
+    "moviepy\u003e=1.0.3",
+    "Pillow\u003e=9.0.0",
+    "numpy\u003e=1.21.0"
+  ],
+  "description": "将多张图片连接成带过渡动画和背景音乐的相册视频",
+  "id": 379620295737486,
+  "name": "photo-album-video",
+  "platform": "minimax",
+  "skill_id": "999988765",
+  "tags": [
+    "video",
+    "photo",
+    "album",
+    "slideshow",
+    "transition",
+    "music"
+  ],
+  "updated_at": 1774233662173,
+  "version": "1.0.0"
+}

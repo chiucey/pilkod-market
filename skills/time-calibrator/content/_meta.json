@@ -1,0 +1,23 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-01",
+  "description": "Time calibration expert skill. Use when users need to sync system time, check time drift, calibrate Agent operation time, or ensure accurate real-world time.",
+  "files": [
+    "SKILL.md",
+    "time_calibrator.py"
+  ],
+  "id": 382832029933781,
+  "name": "time-calibrator",
+  "platform": "minimax",
+  "skill_id": 17099027,
+  "tags": [
+    "time",
+    "calibration",
+    "sync",
+    "drift",
+    "timestamp",
+    "real-time"
+  ],
+  "updated_at": 1775017845773,
+  "version": "1.0.0"
+}

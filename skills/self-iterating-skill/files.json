@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "6c8e9986f7b64a1ed5827f478a8c0c525b68a9a5",
+      "size": 3285
+    },
+    {
+      "path": "_meta.json",
+      "sha": "0eadb5f529996c2523c20e3dfbc7c071191aebb6",
+      "size": 139
+    },
+    {
+      "path": "data/execution_log.json",
+      "sha": "f4cd7a5b6be664a1371bbf21c80cb14f61f4a5e9",
+      "size": 91
+    },
+    {
+      "path": "references/iteration_patterns.md",
+      "sha": "f3c34e17ae39ddb953b07862780e81679b59eaaf",
+      "size": 1433
+    },
+    {
+      "path": "references/self_analysis_framework.md",
+      "sha": "4effd537da55f1660a79bb4ab48ec1f30db8460a",
+      "size": 1643
+    },
+    {
+      "path": "scripts/analyze_performance.py",
+      "sha": "5222eb0777ecc09c15138d4a6f3a3c52ec0c69c9",
+      "size": 6685
+    },
+    {
+      "path": "scripts/apply_upgrades.py",
+      "sha": "28dbde075e2ee3db4e4482a80b37da51e5ae9aad",
+      "size": 9438
+    },
+    {
+      "path": "scripts/generate_improvements.py",
+      "sha": "aeaf3ebc2d90d4a589a58b6c75811a65c4eb515a",
+      "size": 7851
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "9f956fad9b47f843c3fdef86dd21834acff245f1",
+      "size": 4566
+    },
+    {
+      "path": "scripts/record_execution.py",
+      "sha": "f8dbcf7cb80e5b7b0ca82353926a0705bce659a8",
+      "size": 3504
+    }
+  ]
+}

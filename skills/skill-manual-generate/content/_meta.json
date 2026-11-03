@@ -1,0 +1,24 @@
+{
+  "category": "开发工具",
+  "description": "读取任意 SKILL 目录，理解其能力与边界，并根据目标复杂度与用户意图自动选择标准或极简模板，生成以 slug 命名的中文使用手册。",
+  "homepage": "https://github.com/yumih1129/skills-repo/tree/main/skills/skill-manual-generate",
+  "icon": "FileText",
+  "iconLibrary": "lucide",
+  "iconType": "library",
+  "id": 402039738466675,
+  "language": "zh-CN",
+  "license": "MIT",
+  "name": "skill-manual-generate",
+  "ownerId": "Yumih",
+  "platform": "minimax",
+  "publishedAt": 1779379200000,
+  "slug": "skill-manual-generate",
+  "status": "active",
+  "tags": [
+    "文档",
+    "手册",
+    "模板"
+  ],
+  "updated_at": 1779719625841,
+  "version": "1.1.0"
+}

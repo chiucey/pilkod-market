@@ -1,0 +1,17 @@
+name: music-mv-generator
+version: 1.0.0
+description: 基于用户提供的音频(及可选图片)生成专业音乐MV视频的完整工作流技能。
+author: AI Assistant
+type: skill
+main: SKILL.md
+
+metadata:
+  tags:
+    - video
+    - music
+    - mv
+    - remotion
+    - visualization
+  categories:
+    - media
+    - video-generation

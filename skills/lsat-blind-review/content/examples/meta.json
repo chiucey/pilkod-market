@@ -1,0 +1,35 @@
+{
+  "wrong_qs": [3, 7, 10, 17, 26],
+  "user_answers": {
+    "3": "B",
+    "7": "E",
+    "10": "A",
+    "17": "C",
+    "26": "D"
+  },
+  "answer_key": {
+    "3": "C",
+    "7": "A",
+    "10": "E",
+    "17": "B",
+    "26": "B"
+  },
+  "anchors": {
+    "3": "How do the airlines expect to prevent",
+    "7": "Golden Lake Development",
+    "10": "privatization",
+    "17": "Danaxil",
+    "26": "Psychotherapy has been described"
+  },
+  "critical_phrases": [
+    "NB method of reasoning",
+    "cross-modal analogy"
+  ],
+  "forbidden_part1": [
+    "正确答案",
+    "可迁移 Takeaway",
+    "答案速览"
+  ],
+  "header_pattern": "Day {qid} · Q{n} ·",
+  "speed_table_header": ["题号", "题型", "正确答案", "你的答案"]
+}

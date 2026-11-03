@@ -1,0 +1,23 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "Replace content while preserving format",
+    "Placeholder mode replacement",
+    "Structured data mapping",
+    "Diff-based automatic replacement",
+    "Support for docx/xlsx/pptx/pdf formats"
+  ],
+  "description": "File format cloning and content replacement skill with placeholder, structured data, and diff-based replacement modes",
+  "id": 380049915060375,
+  "name": "format-cloner",
+  "platform": "minimax",
+  "tags": [
+    "file-processing",
+    "format-conversion",
+    "content-replacement",
+    "batch-generation",
+    "template"
+  ],
+  "updated_at": 1774338548946,
+  "version": "1.0.0"
+}

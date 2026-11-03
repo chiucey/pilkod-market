@@ -1,0 +1,32 @@
+{
+  "entries": {
+    "001": {
+      "comment": "【NPC-姓名】显性锚点-蓝灯",
+      "disable": false,
+      "constant": true,
+      "position": 1,
+      "role": 0,
+      "depth": 0,
+      "order": 9000,
+      "probability": 100,
+      "key": ["角色名", "角色名"],
+      "keysecondary": [],
+      "content": "角色名，性别，年龄，外貌，衣着，性格核心特质\n（AI永远不能在这些显性特质上产生矛盾）",
+      "uid": "001"
+    },
+    "002": {
+      "comment": "【NPC-姓名】隐性秘密-绿灯",
+      "disable": false,
+      "constant": true,
+      "position": 2,
+      "role": 0,
+      "depth": 5,
+      "order": 9000,
+      "probability": 100,
+      "key": ["角色名", "角色名", "触发词", "觸發詞"],
+      "keysecondary": ["触发动作"],
+      "content": "仅{{user}}主动[触发动作/检查/询问]时才能告知——\n角色名[隐藏信息内容]。\n此时角色名的反应：[符合性格的行为描写]。",
+      "uid": "002"
+    }
+  }
+}

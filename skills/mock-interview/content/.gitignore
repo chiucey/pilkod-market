@@ -1,0 +1,28 @@
+# Secrets — never commit these
+.env
+.env.local
+*.key
+credentials.json
+
+# Your own materials (keep your real resume out of the repo)
+my-resume.*
+resume.pdf
+resume.docx
+transcripts/
+sessions/
+*-report.html
+debrief*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "caedf5e0e00bd0b5d503f70d08eff451a4d5813f",
+      "size": 8107
+    },
+    {
+      "path": "_meta.json",
+      "sha": "656365a3b959761e9419c376b084ecee76d01ca3",
+      "size": 140
+    },
+    {
+      "path": "references/anti-detection.md",
+      "sha": "55215393766bd10521a01e84ba1a8985d3f1cf0d",
+      "size": 8125
+    },
+    {
+      "path": "references/hook-points.md",
+      "sha": "db0108fb945f51be3be595e786742edde7982c5d",
+      "size": 6420
+    },
+    {
+      "path": "references/packer-signatures.md",
+      "sha": "73a3365977aed4d51092f67df0409b3256a5c1d1",
+      "size": 5020
+    },
+    {
+      "path": "scripts/dex_splitter.py",
+      "sha": "6e993e7c782e6208fdcb3ba6090931c2fedc7c16",
+      "size": 5410
+    },
+    {
+      "path": "scripts/frida_anti_anti.js",
+      "sha": "09fbe300818d8e8e9e3ec0070c175db866283b0c",
+      "size": 3995
+    },
+    {
+      "path": "scripts/frida_dex_scanner.js",
+      "sha": "e5c79a4462aadb1ed4415a97878080abc495f07f",
+      "size": 3365
+    },
+    {
+      "path": "scripts/frida_hook_360.js",
+      "sha": "db487cb68b87babc2bb66d0dfbddf6d6baebb495",
+      "size": 7647
+    },
+    {
+      "path": "scripts/frida_hook_inmemory_dex.js",
+      "sha": "368cbcf6b15e29467675bc0081d93639c4f2de6d",
+      "size": 3206
+    },
+    {
+      "path": "scripts/identify_packer.py",
+      "sha": "11fa13fcccae65a9084a79f1efe0268d445b9528",
+      "size": 8678
+    }
+  ]
+}

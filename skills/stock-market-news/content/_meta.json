@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-05-05",
+  "cron_jobs": {
+    "evening": {
+      "expression": "0 20 * * *",
+      "status": "pending",
+      "title": "晚间资讯（20:00）"
+    },
+    "morning": {
+      "expression": "0 8 * * *",
+      "status": "active",
+      "title": "早间资讯（08:00）"
+    },
+    "noon": {
+      "expression": "0 12 * * *",
+      "status": "pending",
+      "title": "午间资讯（12:00）"
+    }
+  },
+  "data_path": "/workspace/data/stock-news/",
+  "description": "股票市场资讯实时追踪",
+  "id": 394893534351484,
+  "name": "stock-market-news",
+  "platform": "minimax",
+  "skill_id": 1002,
+  "updated_at": 1777972031857,
+  "version": "1.0.0"
+}

@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "55129338842c70ab18c6b7f564b29410df4f2c23",
+      "size": 6779
+    },
+    {
+      "path": "_meta.json",
+      "sha": "43c3f17b7b51657fd00ecc7e796b7848c99d6cad",
+      "size": 853
+    },
+    {
+      "path": "references/groovy_db.md",
+      "sha": "efac8463634108c325e849f70872888961011b83",
+      "size": 7439
+    },
+    {
+      "path": "references/plsql_syntax.md",
+      "sha": "27975d370828caec20409acd03f8fc74a12036ce",
+      "size": 5496
+    },
+    {
+      "path": "references/shard_config_examples.json",
+      "sha": "1ba09a3efd97231e34c46a389899622cb0e427cb",
+      "size": 776
+    },
+    {
+      "path": "scripts/analyze_tables.py",
+      "sha": "564b67b2aaebf348ed9ba9a7ca9fc93d69550066",
+      "size": 9740
+    },
+    {
+      "path": "scripts/generate_groovy.py",
+      "sha": "972b311fe43f8b889432a219680df3e9c8904db2",
+      "size": 15510
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "21a36325a027ae4f20c202d13da8dae01a687c8b",
+      "size": 4493
+    },
+    {
+      "path": "scripts/validate_groovy.py",
+      "sha": "6322187f257f6e90629ede006628a28405a8a6f3",
+      "size": 12590
+    },
+    {
+      "path": "scripts/validate_plsql.py",
+      "sha": "34ad2dbc9fc6e6c26e6f358dd3439875dd1f32f6",
+      "size": 9109
+    },
+    {
+      "path": "scripts/validate_split.py",
+      "sha": "88daa4dcf4a57b2ff58057beb2e98dcca68b30b4",
+      "size": 10525
+    }
+  ]
+}

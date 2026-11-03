@@ -1,0 +1,20 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-26",
+  "description": "投资标的深度分析技能，涵盖股票/基金/加密货币等投资品种的基本面、技术面和风险分析。当用户要求分析投资标的、进行财务评估、估值建模、技术指标分析、风险评估或生成投资研究报告时使用。",
+  "framework": "TradingAI (TauricResearch)",
+  "id": 380779554607175,
+  "name": "investment-analyst",
+  "platform": "minimax",
+  "skill_id": 1700000026,
+  "tags": [
+    "投资分析",
+    "基本面",
+    "技术面",
+    "风险评估",
+    "DCF估值",
+    "财务分析"
+  ],
+  "updated_at": 1774516670298,
+  "version": "1.0"
+}

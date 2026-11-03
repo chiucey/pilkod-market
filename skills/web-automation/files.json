@@ -1,0 +1,369 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "83be10db0e980b280fff4472789ac7a593a067fa",
+      "size": 35800
+    },
+    {
+      "path": "_meta.json",
+      "sha": "d7f4c206214c685288687545a28568f4bff904fd",
+      "size": 199
+    },
+    {
+      "path": "assets/templates/config.yaml",
+      "sha": "2aae90f88b26ec6c79dbf6e68da90c7a3d31379c",
+      "size": 3661
+    },
+    {
+      "path": "bin/web-automation",
+      "sha": "ba134461f5d1c807f5daae8ab69ba88ffd2deb0e",
+      "size": 2255
+    },
+    {
+      "path": "bin/web-automation.bat",
+      "sha": "d321bbc295ed30b7ab1743d56b1cec149b66383d",
+      "size": 2642
+    },
+    {
+      "path": "install.bat",
+      "sha": "8bddaf20bfe66c1c8bd1de85e40300b61c0127f3",
+      "size": 5062
+    },
+    {
+      "path": "install.sh",
+      "sha": "71e772a5c1f4a8545bbb254b048327734066cda6",
+      "size": 5005
+    },
+    {
+      "path": "references/anti-scraping-advanced.md",
+      "sha": "fc6b4d68ba182382e0af8c3253f8d5e4e7188d18",
+      "size": 11268
+    },
+    {
+      "path": "references/anti-scraping.md",
+      "sha": "12391c5097b9693cea396590a60acb9ef0404e39",
+      "size": 8035
+    },
+    {
+      "path": "references/async-page-handling.md",
+      "sha": "8fc952885bd7095ee8f0ae58de14e9826d14a6b6",
+      "size": 11208
+    },
+    {
+      "path": "references/browser-management.md",
+      "sha": "859cd0de11332722c79b7fdf9f09f9f7fe0cb35a",
+      "size": 6766
+    },
+    {
+      "path": "references/browser-use-guide.md",
+      "sha": "7b2f5d1ddfdc4649f9536df3983f5a15a10427a5",
+      "size": 5644
+    },
+    {
+      "path": "references/browser-use-integration.md",
+      "sha": "f4ab1756b0a8dba2b40b20882ba45916494793eb",
+      "size": 13196
+    },
+    {
+      "path": "references/complex-page-processing.md",
+      "sha": "b362ef172cc2871c1e6973615326af10021c69cb",
+      "size": 12661
+    },
+    {
+      "path": "references/conversion-guide.md",
+      "sha": "5dc9c0eb459bff03463f080257c5114a286148dc",
+      "size": 11205
+    },
+    {
+      "path": "references/document-classifier-guide.md",
+      "sha": "8650198e18d9be68d2b563f8fc7811d2725f81f1",
+      "size": 5871
+    },
+    {
+      "path": "references/document-conversion.md",
+      "sha": "4c1aa83810a92b888c0d6fc1d9c5208a86cac831",
+      "size": 7345
+    },
+    {
+      "path": "references/install-guide.md",
+      "sha": "bb8b886ab0fc9f2f113b0cbf07540fe2b341fcc4",
+      "size": 4709
+    },
+    {
+      "path": "references/mineru-guide.md",
+      "sha": "43ff4e623d4c839f384fed2a7116e790bea1a359",
+      "size": 9784
+    },
+    {
+      "path": "references/ocr-anti-scraping.md",
+      "sha": "bfc5ffbc45d26a3836c580d02c582d02b9b33042",
+      "size": 4292
+    },
+    {
+      "path": "references/ocr-service.md",
+      "sha": "93b81d0911e033ada4d69b5a49dd31f5e0d1a20c",
+      "size": 5843
+    },
+    {
+      "path": "references/optimization-guide.md",
+      "sha": "8781f33bdf16b2e69a88416b17aed1c0f8ced48f",
+      "size": 14121
+    },
+    {
+      "path": "references/paddleocr-3x-correct-usage.md",
+      "sha": "2e8732105c4914738a9b42e29300cf2911f30d2b",
+      "size": 6529
+    },
+    {
+      "path": "references/paddleocr-3x-guide.md",
+      "sha": "48eaae0ec0483c0c69148d829b8973b0e6e19ec5",
+      "size": 5532
+    },
+    {
+      "path": "references/paddleocr-3x-upgrade.md",
+      "sha": "20487848b0f1204fff6723bb52a69912d27aebb9",
+      "size": 5577
+    },
+    {
+      "path": "references/paddleocr-guide.md",
+      "sha": "7e9499c4217fe720cfe08fddb3b2a17bae925723",
+      "size": 6292
+    },
+    {
+      "path": "references/paddleocr-stamp-guide.md",
+      "sha": "08a615af0718f1fe0620ab51dba62d48800aa62a",
+      "size": 8206
+    },
+    {
+      "path": "references/paddleocr-vl-guide.md",
+      "sha": "13464be6184fbe19e0c58b74329eeba62b1e797e",
+      "size": 7445
+    },
+    {
+      "path": "references/paddlestructure-guide.md",
+      "sha": "6e11e72cb8cf35fb3d05177b7cf4646776ffc4a1",
+      "size": 7516
+    },
+    {
+      "path": "references/paddlex-migration.md",
+      "sha": "8c61dfff2e582afe9c51bd8afbfb7b9362801077",
+      "size": 6972
+    },
+    {
+      "path": "references/paddlex-to-paddleocr-migration.md",
+      "sha": "20e9670892f165df6aad3588dd7ae4fc5429131d",
+      "size": 8394
+    },
+    {
+      "path": "references/page-interaction.md",
+      "sha": "ac2d5173ca49b85268699fe0fa5c522f4bebd05a",
+      "size": 8048
+    },
+    {
+      "path": "references/pdf-processing.md",
+      "sha": "757f72085446cac68dd7752f406dd059d5684a4a",
+      "size": 6034
+    },
+    {
+      "path": "references/playwright-cli-guide.md",
+      "sha": "b75685bcf15a6e8bd274c2c7b81ea53f128ea5fb",
+      "size": 5625
+    },
+    {
+      "path": "references/playwright-guide.md",
+      "sha": "51c205600792e5540baf0f27d9e457d7903964a0",
+      "size": 6094
+    },
+    {
+      "path": "references/pp-chatocrv4-guide.md",
+      "sha": "615b0cd34f7293e486bdf7ee1cde20118921a148",
+      "size": 6556
+    },
+    {
+      "path": "references/quickstart.md",
+      "sha": "0a1fd0babdffad3a42425d84a65338340e40662e",
+      "size": 3184
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "sha": "cc005c97a8b7404fb1b8d354d6354009688b6c6b",
+      "size": 7719
+    },
+    {
+      "path": "references/workflow-guide.md",
+      "sha": "5b5b29451bb95a0390811ad25a982959d429d878",
+      "size": 7970
+    },
+    {
+      "path": "references/workflow-monitoring-guide.md",
+      "sha": "399b360da1fde59573090a00b8e3f49e59325728",
+      "size": 6192
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "c5024100810727fafb2e3c183b0cb00551c9e856",
+      "size": 2012
+    },
+    {
+      "path": "scripts/anti_scraping_manager.py",
+      "sha": "cb9e76c6d1785779fedaad390aa3ad4abdd7b768",
+      "size": 6438
+    },
+    {
+      "path": "scripts/browser_fingerprint.py",
+      "sha": "6f87009ffdf8b799c5eed183f6d04451a111a88a",
+      "size": 8351
+    },
+    {
+      "path": "scripts/browser_use_agent.py",
+      "sha": "5b51febd5b2be4b51d315a55d627dd1c5637fdf9",
+      "size": 10052
+    },
+    {
+      "path": "scripts/browser_wrapper.py",
+      "sha": "065d6fbf77ef167c29d72524e1675c998f30a3c2",
+      "size": 15098
+    },
+    {
+      "path": "scripts/captcha_recognition_service.py",
+      "sha": "929352b7aed7f30bb8040b6bbd45eb50efc94364",
+      "size": 10694
+    },
+    {
+      "path": "scripts/chat_ocr_service.py",
+      "sha": "e1e7704de3625bf35029b95bcbfa2d0a553bdda9",
+      "size": 14122
+    },
+    {
+      "path": "scripts/check_env.py",
+      "sha": "14f4b79ebfb0d6e8dbb6027532052f123807b0fb",
+      "size": 12040
+    },
+    {
+      "path": "scripts/complex_page_processor.py",
+      "sha": "76c6e0597786b528689533307ace62896c9d07a6",
+      "size": 13059
+    },
+    {
+      "path": "scripts/cookie_manager.py",
+      "sha": "8eaa777d598d1763e0f234188246ba30a1b0e115",
+      "size": 10163
+    },
+    {
+      "path": "scripts/document_classifier.py",
+      "sha": "946c7b79877ce5a02b0f076c5e096466b2fdbd84",
+      "size": 12410
+    },
+    {
+      "path": "scripts/document_converter.py",
+      "sha": "06a671c17b8fee38efacd51fdd3c153da64c5390",
+      "size": 28440
+    },
+    {
+      "path": "scripts/enhanced_fingerprint.py",
+      "sha": "9a36e5dec2af1666c942ab2e604cc0e10304cf02",
+      "size": 13143
+    },
+    {
+      "path": "scripts/enhanced_mineru_service.py",
+      "sha": "7bc6ba0b9d591d889f92a3b977dcdb079adf7adf",
+      "size": 20477
+    },
+    {
+      "path": "scripts/enhanced_playwright_cli.py",
+      "sha": "fa6024df04e6bf4e87701e82e98c0f48f7f36456",
+      "size": 21139
+    },
+    {
+      "path": "scripts/gpu_detector.py",
+      "sha": "604b04b165c2f152762cc8ff05698f2cb6def741",
+      "size": 11070
+    },
+    {
+      "path": "scripts/human_simulation.py",
+      "sha": "c5f15345c1d2f1ed0a5d55219bafa84e70040157",
+      "size": 9007
+    },
+    {
+      "path": "scripts/install_dependencies.py",
+      "sha": "acf3fab5022cd7f902966d862aaa7888ab617bc9",
+      "size": 4467
+    },
+    {
+      "path": "scripts/install_dependencies.sh",
+      "sha": "a57d023c19875459682186c68db635d12e9cb394",
+      "size": 2525
+    },
+    {
+      "path": "scripts/mineru_service.py",
+      "sha": "90435552f5bfe5b3437d3dc035880e14e49b9c3d",
+      "size": 14040
+    },
+    {
+      "path": "scripts/ocr_service.py",
+      "sha": "ef99d32876c5e0c10c8c630c15d468dfec8009dc",
+      "size": 10774
+    },
+    {
+      "path": "scripts/page_parser.py",
+      "sha": "9eb496f1bc29fcb0445a7a23a31a0ddd789ab611",
+      "size": 16746
+    },
+    {
+      "path": "scripts/playwright_cli.py",
+      "sha": "791427579946b9d018cd189cc23612b7d302123b",
+      "size": 13452
+    },
+    {
+      "path": "scripts/playwright_manager.py",
+      "sha": "569e265673949e1c14bad45bcb8933f92296447a",
+      "size": 11069
+    },
+    {
+      "path": "scripts/proxy_manager.py",
+      "sha": "d6b179cbdb189d6d858deadf685d25a4e2aa6a9a",
+      "size": 9303
+    },
+    {
+      "path": "scripts/retry_manager.py",
+      "sha": "39237250962cb1253f10fdb18b10ba217b8427db",
+      "size": 10419
+    },
+    {
+      "path": "scripts/stamp_recognition_service.py",
+      "sha": "a2098df1dd433c58ebc303876266d5abf811de48",
+      "size": 11038
+    },
+    {
+      "path": "scripts/test_captcha_with_ocr.py",
+      "sha": "5cee61575c9bb94144ff027cf1043001aacc3d03",
+      "size": 6057
+    },
+    {
+      "path": "scripts/user_agent_manager.py",
+      "sha": "4d333627958178de4d4f316647b03517b77f1991",
+      "size": 7927
+    },
+    {
+      "path": "scripts/vision_language_service.py",
+      "sha": "0f0a8ccee6d0f81a17bf72137b83d63c98977df1",
+      "size": 15485
+    },
+    {
+      "path": "scripts/workflow_engine.py",
+      "sha": "d622fae55b8fb928f63f571100690d2a85f0a1df",
+      "size": 24666
+    },
+    {
+      "path": "scripts/workflow_logger.py",
+      "sha": "ac3c4be6cc921b65ca5d390d59613a4426d0e815",
+      "size": 11081
+    },
+    {
+      "path": "scripts/workflow_monitor.py",
+      "sha": "7bcb03e4c6270d6fb12d32fd86e2878c8a502e35",
+      "size": 11683
+    }
+  ]
+}

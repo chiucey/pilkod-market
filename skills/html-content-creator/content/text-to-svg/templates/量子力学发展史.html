@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- Chart-Type: 时间线 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>文本核心内容可视化</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #eaedf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 28px;
+  }
+  .container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    padding: 28px;
+    display: inline-block;
+  }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+  <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.10"/>
+  </filter>
+</defs>
+
+<rect width="800" height="600" fill="#ffffff"/>
+
+<text x="400" y="28" fill="#1a1a1a" font-size="20" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle">量子力学发展史（1900-至今）</text>
+<text x="400" y="48" fill="#64748b" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle">从黑体辐射到量子计算 — 百年量子物理学全景回顾</text>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-size="12" fill="#475569" dominant-baseline="central">
+  <circle cx="185" cy="67" r="6" fill="#e65100"/>
+  <text x="197" y="67" fill="#1a1a1a">早期量子论 1900-1924</text>
+  <circle cx="400" cy="67" r="6" fill="#1565c0"/>
+  <text x="412" y="67" fill="#1a1a1a">量子力学建立 1925-1928</text>
+  <circle cx="615" cy="67" r="6" fill="#2e7d32"/>
+  <text x="627" y="67" fill="#1a1a1a">量子场论与应用 1930-至今</text>
+</g>
+
+<!-- Axis era bands -->
+<g stroke-width="5" stroke-linecap="round" fill="none">
+  <line x1="80" y1="290" x2="410" y2="290" stroke="#e65100" opacity="0.35"/>
+  <line x1="410" y1="290" x2="565" y2="290" stroke="#1565c0" opacity="0.35"/>
+  <line x1="565" y1="290" x2="720" y2="290" stroke="#2e7d32" opacity="0.35"/>
+</g>
+
+<line x1="80" y1="290" x2="720" y2="290" stroke="#90a4ae" stroke-width="2"/>
+<circle cx="80" cy="290" r="4" fill="#90a4ae"/>
+<circle cx="720" cy="290" r="4" fill="#90a4ae"/>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-size="11" text-anchor="middle" dominant-baseline="central">
+  <text x="245" y="314" fill="#e65100" font-weight="bold">│ 早期量子论</text>
+  <text x="488" y="314" fill="#1565c0" font-weight="bold">│ 量子力学诞生</text>
+  <text x="643" y="314" fill="#2e7d32" font-weight="bold">│ 量子场论与应用</text>
+</g>
+
+<!-- Connection lines -->
+<g fill="none" stroke="#b0bec5" stroke-width="1.5" stroke-dasharray="4,3">
+  <line x1="105" y1="290" x2="105" y2="256"/>
+  <line x1="189" y1="290" x2="189" y2="324"/>
+  <line x1="273" y1="290" x2="273" y2="256"/>
+  <line x1="357" y1="290" x2="357" y2="324"/>
+  <line x1="441" y1="290" x2="441" y2="256"/>
+  <line x1="525" y1="290" x2="525" y2="324"/>
+  <line x1="609" y1="290" x2="609" y2="256"/>
+  <line x1="693" y1="290" x2="693" y2="324"/>
+</g>
+
+<!-- Axis circle markers -->
+<g stroke="#fff" stroke-width="2">
+  <circle cx="105" cy="290" r="7" fill="#e65100"/>
+  <circle cx="189" cy="290" r="7" fill="#e65100"/>
+  <circle cx="273" cy="290" r="7" fill="#e65100"/>
+  <circle cx="357" cy="290" r="7" fill="#e65100"/>
+  <circle cx="441" cy="290" r="7" fill="#1565c0"/>
+  <circle cx="525" cy="290" r="7" fill="#1565c0"/>
+  <circle cx="609" cy="290" r="7" fill="#2e7d32"/>
+  <circle cx="693" cy="290" r="7" fill="#2e7d32"/>
+</g>
+
+<!-- Cards -->
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">
+  <!-- 1 above orange -->
+  <rect x="35" y="210" width="140" height="46" rx="6" fill="#fff" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="105" y="227" fill="#1a1a1a" font-size="13" font-weight="bold">1900 普朗克能量子假说</text>
+  <text x="105" y="246" fill="#666" font-size="11">E = hν 量子论诞生</text>
+
+  <!-- 2 below orange -->
+  <rect x="119" y="325" width="140" height="46" rx="6" fill="#fff" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="189" y="342" fill="#1a1a1a" font-size="13" font-weight="bold">1905 光量子假说</text>
+  <text x="189" y="361" fill="#666" font-size="11">爱因斯坦 完美解释光电效应</text>
+
+  <!-- 3 above orange -->
+  <rect x="203" y="210" width="140" height="46" rx="6" fill="#fff" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="273" y="227" fill="#1a1a1a" font-size="13" font-weight="bold">1913 玻尔原子模型</text>
+  <text x="273" y="246" fill="#666" font-size="11">定态假设 + 跃迁假设</text>
+
+  <!-- 4 below orange -->
+  <rect x="287" y="325" width="140" height="46" rx="6" fill="#fff" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="357" y="342" fill="#1a1a1a" font-size="13" font-weight="bold">1924 物质波假说</text>
+  <text x="357" y="361" fill="#666" font-size="11">德布罗意 λ = h/p 波粒二象性</text>
+
+  <!-- 5 above blue -->
+  <rect x="371" y="210" width="140" height="46" rx="6" fill="#fff" stroke="#1565c0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="441" y="227" fill="#1a1a1a" font-size="13" font-weight="bold">1925-27 量子力学建立</text>
+  <text x="441" y="246" fill="#666" font-size="11">矩阵力学·波动力学·哥本哈根</text>
+
+  <!-- 6 below blue -->
+  <rect x="455" y="325" width="140" height="46" rx="6" fill="#fff" stroke="#1565c0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="342" fill="#1a1a1a" font-size="13" font-weight="bold">1928 狄拉克方程</text>
+  <text x="525" y="361" fill="#666" font-size="11">相对论量子力学 预言反物质</text>
+
+  <!-- 7 above green -->
+  <rect x="539" y="210" width="140" height="46" rx="6" fill="#fff" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="609" y="227" fill="#1a1a1a" font-size="13" font-weight="bold">1930-60s 量子场论</text>
+  <text x="609" y="246" fill="#666" font-size="11">QED重整化·标准模型建立</text>
+
+  <!-- 8 below green -->
+  <rect x="623" y="325" width="140" height="46" rx="6" fill="#fff" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="693" y="342" fill="#1a1a1a" font-size="13" font-weight="bold">1970-至今 量子应用</text>
+  <text x="693" y="361" fill="#666" font-size="11">贝尔验证·量子计算·量子通信</text>
+</g>
+
+<!-- Separator -->
+<line x1="80" y1="398" x2="720" y2="398" stroke="#e0e0e0" stroke-width="1"/>
+
+<!-- Formula cards -->
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">
+  <rect x="60" y="412" width="200" height="44" rx="8" fill="#fff3e0" stroke="#ffcc80" stroke-width="1" filter="url(#shadow)"/>
+  <text x="160" y="428" fill="#e65100" font-size="15" font-weight="bold" font-style="italic">E = hν</text>
+  <text x="160" y="444" fill="#666" font-size="11">能量量子化</text>
+
+  <rect x="300" y="412" width="200" height="44" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadow)"/>
+  <text x="400" y="428" fill="#1565c0" font-size="15" font-weight="bold" font-style="italic">λ = h/p</text>
+  <text x="400" y="444" fill="#666" font-size="11">物质波 · 波粒二象性</text>
+
+  <rect x="540" y="412" width="200" height="44" rx="8" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="640" y="428" fill="#2e7d32" font-size="14" font-weight="bold" font-style="italic">Δx·Δp ≥ h/4π</text>
+  <text x="640" y="444" fill="#666" font-size="11">不确定性 · 概率性</text>
+</g>
+
+<!-- Conclusion -->
+<rect x="60" y="476" width="680" height="56" rx="10" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="400" y="494" fill="#1a1a1a" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">量子力学颠覆了经典决定论，揭示了波粒二象性、概率性与量子纠缠等微观本质</text>
+<text x="400" y="514" fill="#475569" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">与相对论并称现代物理学两大支柱，催生了半导体、核能、量子计算等核心科技</text>
+<text x="400" y="544" fill="#5c6bc0" font-size="14" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">科学进步始于对"完美理论"的质疑，认知边界需要不断拓展</text>
+</svg>
+</div>
+</body>
+</html>

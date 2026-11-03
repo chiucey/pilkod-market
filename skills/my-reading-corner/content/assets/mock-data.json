@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "我的阅读角",
+    "range": "2021—2026",
+    "totalBooks": 56,
+    "totalHours": 288.5,
+    "totalNotes": 426,
+    "readDays": 512,
+    "isMock": true
+  },
+  "modules": [
+    "years",
+    "trends",
+    "profile",
+    "themes",
+    "network",
+    "highlights"
+  ],
+  "categories": [
+    {"id": "lit", "name": "文学", "color": "#6b4c8f", "share": 31},
+    {"id": "soc", "name": "社会", "color": "#c84a3e", "share": 24},
+    {"id": "sci", "name": "科技", "color": "#2a8a7a", "share": 18},
+    {"id": "psy", "name": "心理", "color": "#f0c33c", "share": 15},
+    {"id": "art", "name": "艺术", "color": "#f4a8b8", "share": 12}
+  ],
+  "years": [
+    {
+      "year": 2026,
+      "color": "#6b4c8f",
+      "mood": "重新回到故事里",
+      "description": "虚构预览：这一年把注意力放回长篇叙事，也留下了更多细读笔记。",
+      "topCategory": "文学",
+      "stats": {"hours": 43.5, "books": 8, "notes": 71, "partial": true},
+      "books": [
+        {"title": "雾中来信", "author": "林岬", "cover": "", "category": "文学", "categoryCode": "LIT", "hours": 8.5, "summary": "虚构书籍"},
+        {"title": "漫长的午后", "author": "周原", "cover": "", "category": "文学", "categoryCode": "LIT", "hours": 6.5, "summary": "虚构书籍"},
+        {"title": "岛屿笔记", "author": "白屿", "cover": "", "category": "社会", "categoryCode": "SOC", "hours": 5, "summary": "虚构书籍"}
+      ]
+    },
+    {
+      "year": 2025,
+      "color": "#f0c33c",
+      "mood": "开始研究方法",
+      "description": "虚构预览：从工作方法一路读到城市与系统，阅读开始形成稳定主题。",
+      "topCategory": "社会",
+      "stats": {"hours": 61, "books": 12, "notes": 92, "partial": false},
+      "books": [
+        {"title": "系统的边缘", "author": "顾禾", "cover": "", "category": "社会", "categoryCode": "SOC", "hours": 9, "summary": "虚构书籍"},
+        {"title": "微小的秩序", "author": "陈又", "cover": "", "category": "社会", "categoryCode": "SOC", "hours": 7, "summary": "虚构书籍"},
+        {"title": "如何看见问题", "author": "宋桥", "cover": "", "category": "心理", "categoryCode": "PSY", "hours": 5.5, "summary": "虚构书籍"}
+      ]
+    },
+    {
+      "year": 2024,
+      "color": "#c84a3e",
+      "mood": "重新理解身体",
+      "description": "虚构预览：关于健康、习惯和边界的阅读占比明显上升。",
+      "topCategory": "心理",
+      "stats": {"hours": 57.5, "books": 11, "notes": 88, "partial": false},
+      "books": [
+        {"title": "身体的回声", "author": "陆潇", "cover": "", "category": "心理", "categoryCode": "PSY", "hours": 8, "summary": "虚构书籍"},
+        {"title": "休息的技术", "author": "叶程", "cover": "", "category": "心理", "categoryCode": "PSY", "hours": 6, "summary": "虚构书籍"},
+        {"title": "日常边界", "author": "方闻", "cover": "", "category": "社会", "categoryCode": "SOC", "hours": 5.5, "summary": "虚构书籍"}
+      ]
+    },
+    {
+      "year": 2023,
+      "color": "#2a8a7a",
+      "mood": "被新技术吸引",
+      "description": "虚构预览：技术、设计与人的关系成为这一年的主线。",
+      "topCategory": "科技",
+      "stats": {"hours": 52, "books": 10, "notes": 76, "partial": false},
+      "books": [
+        {"title": "屏幕之后", "author": "许简", "cover": "", "category": "科技", "categoryCode": "SCI", "hours": 7.5, "summary": "虚构书籍"},
+        {"title": "机器与我们", "author": "黎青", "cover": "", "category": "科技", "categoryCode": "SCI", "hours": 6.5, "summary": "虚构书籍"},
+        {"title": "设计的日常", "author": "沈宜", "cover": "", "category": "艺术", "categoryCode": "ART", "hours": 5, "summary": "虚构书籍"}
+      ]
+    },
+    {
+      "year": 2022,
+      "color": "#f4a8b8",
+      "mood": "寻找生活节奏",
+      "description": "虚构预览：大量阅读围绕习惯、时间与自我理解展开。",
+      "topCategory": "心理",
+      "stats": {"hours": 39, "books": 7, "notes": 55, "partial": false},
+      "books": [
+        {"title": "慢一点也可以", "author": "余澄", "cover": "", "category": "心理", "categoryCode": "PSY", "hours": 6, "summary": "虚构书籍"},
+        {"title": "时间的形状", "author": "唐野", "cover": "", "category": "心理", "categoryCode": "PSY", "hours": 5.5, "summary": "虚构书籍"},
+        {"title": "给生活留白", "author": "温言", "cover": "", "category": "文学", "categoryCode": "LIT", "hours": 4, "summary": "虚构书籍"}
+      ]
+    },
+    {
+      "year": 2021,
+      "color": "#b05a36",
+      "mood": "从好奇心出发",
+      "description": "虚构预览：类型分散，阅读像一张还在展开的地图。",
+      "topCategory": "文学",
+      "stats": {"hours": 35.5, "books": 8, "notes": 44, "partial": false},
+      "books": [
+        {"title": "远方的灯", "author": "闻舟", "cover": "", "category": "文学", "categoryCode": "LIT", "hours": 6.5, "summary": "虚构书籍"},
+        {"title": "风经过房间", "author": "乔木", "cover": "", "category": "文学", "categoryCode": "LIT", "hours": 5, "summary": "虚构书籍"},
+        {"title": "观看的方法", "author": "岑夏", "cover": "", "category": "艺术", "categoryCode": "ART", "hours": 4.5, "summary": "虚构书籍"}
+      ]
+    }
+  ],
+  "profile": {
+    "archetype": "主题漫游者",
+    "label": "READING PROFILE",
+    "mbti": "CURIOUS GENERALIST",
+    "summary": "这份虚构预览展示静态阅读侧写的版式。真实页面只会依据用户实际分类、作者、时长和划线生成。",
+    "traits": [
+      {"name": "题材跨度", "detail": "文学、社会与科技形成三个稳定支点。"},
+      {"name": "阅读变化", "detail": "从分散探索逐渐转向围绕年度问题集中阅读。"},
+      {"name": "记录习惯", "detail": "阅读笔记与时长同步增长，留下的线索越来越完整。"}
+    ]
+  },
+  "themes": [
+    {"name": "选择", "count": 8, "quote": "真正重要的选择，常常先改变一天的安排。", "book": "虚构书籍《微小的秩序》"},
+    {"name": "边界", "count": 6, "quote": "边界让注意力有地方停下来。", "book": "虚构书籍《日常边界》"},
+    {"name": "时间", "count": 5, "quote": "时间的形状，由重复做过的事慢慢显现。", "book": "虚构书籍《时间的形状》"},
+    {"name": "好奇", "count": 4, "quote": "好奇心会把互不相干的知识连成地图。", "book": "虚构书籍《屏幕之后》"},
+    {"name": "变化", "count": 3, "quote": "变化发生时，旧问题会获得新的解释。", "book": "虚构书籍《河岸手记》"}
+  ],
+  "notes": [
+    {"book": "微小的秩序", "date": "2025-05-18", "text": "真正重要的选择，常常先改变一天的安排。", "theme": "选择"},
+    {"book": "日常边界", "date": "2024-09-02", "text": "边界让注意力有地方停下来。", "theme": "边界"},
+    {"book": "时间的形状", "date": "2022-06-11", "text": "时间的形状，由重复做过的事慢慢显现。", "theme": "时间"},
+    {"book": "屏幕之后", "date": "2023-11-23", "text": "好奇心会把互不相干的知识连成地图。", "theme": "好奇"},
+    {"book": "河岸手记", "date": "2021-04-09", "text": "变化发生时，旧问题会获得新的解释。", "theme": "变化"}
+  ],
+  "network": {
+    "authors": [
+      {"id": "author-1", "name": "林岬", "read": 3},
+      {"id": "author-2", "name": "顾禾", "read": 2},
+      {"id": "author-3", "name": "许简", "read": 2},
+      {"id": "author-4", "name": "陆潇", "read": 2}
+    ],
+    "categories": [
+      {"id": "category-lit", "name": "文学", "color": "#6b4c8f", "share": 31},
+      {"id": "category-soc", "name": "社会", "color": "#c84a3e", "share": 24},
+      {"id": "category-sci", "name": "科技", "color": "#2a8a7a", "share": 18},
+      {"id": "category-psy", "name": "心理", "color": "#f0c33c", "share": 15}
+    ],
+    "edges": [
+      {"from": "author-1", "to": "category-lit", "weight": 3},
+      {"from": "author-2", "to": "category-soc", "weight": 2},
+      {"from": "author-3", "to": "category-sci", "weight": 2},
+      {"from": "author-4", "to": "category-psy", "weight": 2}
+    ]
+  }
+}

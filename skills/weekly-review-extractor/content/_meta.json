@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-05-11",
+  "description": "Extract content from weekly review PDFs to generate concise reports",
+  "id": 396950232339221,
+  "input_format": "YYYY-Wnn.pdf",
+  "name": "weekly-review-extractor",
+  "output_format": "markdown_with_highlight",
+  "platform": "minimax",
+  "skill_id": 1001,
+  "target_audience": "labmate communication",
+  "updated_at": 1778465503752,
+  "version": "1.0.0"
+}

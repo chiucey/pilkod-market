@@ -1,0 +1,26 @@
+{
+  "author": "MiniMax Agent",
+  "dependencies": {
+    "python": []
+  },
+  "environment_variables": [
+    "OBSIDIAN_VAULT_PATH"
+  ],
+  "id": 380858366431964,
+  "name": "obsidian",
+  "permissions": [
+    "read:file",
+    "write:file",
+    "network:false"
+  ],
+  "platform": "minimax",
+  "skill_id": 12001,
+  "triggers": [
+    ".md",
+    "obsidian",
+    "笔记",
+    "vault"
+  ],
+  "updated_at": 1774536384853,
+  "version": "1.0.0"
+}

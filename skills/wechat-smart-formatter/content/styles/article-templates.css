@@ -1,0 +1,666 @@
+/**
+ * 微信公众号高级排版样式库
+ * 提供6种高级配色方案，拒绝蓝紫配色
+ * Author: MiniMax Agent
+ * Version: 1.0.0
+ */
+
+/* ========================================
+   配色方案定义
+   ======================================== */
+
+:root {
+    /* 方案1：经典商务 - 专业稳重 */
+    --business-primary: #2D3436;
+    --business-secondary: #636E72;
+    --business-accent: #B85C38;
+    --business-bg: #FAFAFA;
+    --business-quote-bg: #F0F2F3;
+    --business-link: #B85C38;
+
+    /* 方案2：温暖人文 - 情感共鸣 */
+    --warm-primary: #3D3D3D;
+    --warm-secondary: #6D6D6D;
+    --warm-accent: #B85C38;
+    --warm-accent-secondary: #EAB543;
+    --warm-bg: #FDF8F3;
+    --warm-quote-bg: #FDF6EE;
+    --warm-link: #B85C38;
+
+    /* 方案3：清新自然 - 森系风格 */
+    --nature-primary: #2D3436;
+    --nature-secondary: #636E72;
+    --nature-accent: #2D6A4F;
+    --nature-accent-secondary: #95D5B2;
+    --nature-bg: #F8FAF9;
+    --nature-quote-bg: #EDF6F0;
+    --nature-link: #2D6A4F;
+
+    /* 方案4：极简黑白 - 纯粹专业 */
+    --minimal-primary: #1A1A1A;
+    --minimal-secondary: #666666;
+    --minimal-accent: #333333;
+    --minimal-bg: #FFFFFF;
+    --minimal-quote-bg: #F5F5F5;
+    --minimal-link: #333333;
+
+    /* 方案5：活力橙黄 - 温暖活力 */
+    --energetic-primary: #2D2D2D;
+    --energetic-secondary: #5D5D5D;
+    --energetic-accent: #E76F51;
+    --energetic-accent-secondary: #F4A261;
+    --energetic-bg: #FDFBF7;
+    --energetic-quote-bg: #FEF6EE;
+    --energetic-link: #E76F51;
+
+    /* 方案6：文艺复古 - 咖啡书香 */
+    --vintage-primary: #3E2723;
+    --vintage-secondary: #5D4037;
+    --vintage-accent: #6D4C41;
+    --vintage-accent-secondary: #D7CCC8;
+    --vintage-bg: #EFEBE9;
+    --vintage-quote-bg: #EFEBE9;
+    --vintage-link: #6D4C41;
+}
+
+/* ========================================
+   基础样式重置
+   ======================================== */
+
+.wechat-article {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--business-primary);
+    background: var(--business-bg);
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.wechat-article *,
+.wechat-article *::before,
+.wechat-article *::after {
+    box-sizing: border-box;
+}
+
+/* ========================================
+   配色方案切换类
+   ======================================== */
+
+/* 经典商务配色 */
+.wechat-article.scheme-business {
+    color: var(--business-primary);
+    background: var(--business-bg);
+}
+
+.wechat-article.scheme-business .article-title {
+    color: var(--business-primary);
+    border-bottom-color: var(--business-accent);
+}
+
+.wechat-article.scheme-business blockquote {
+    background: var(--business-quote-bg);
+    border-left-color: var(--business-accent);
+}
+
+.wechat-article.scheme-business a {
+    color: var(--business-link);
+}
+
+/* 温暖人文配色 */
+.wechat-article.scheme-warm {
+    color: var(--warm-primary);
+    background: var(--warm-bg);
+}
+
+.wechat-article.scheme-warm .article-title {
+    color: var(--warm-primary);
+    border-bottom-color: var(--warm-accent);
+}
+
+.wechat-article.scheme-warm blockquote {
+    background: var(--warm-quote-bg);
+    border-left-color: var(--warm-accent);
+}
+
+.wechat-article.scheme-warm a {
+    color: var(--warm-link);
+}
+
+/* 清新自然配色 */
+.wechat-article.scheme-nature {
+    color: var(--nature-primary);
+    background: var(--nature-bg);
+}
+
+.wechat-article.scheme-nature .article-title {
+    color: var(--nature-primary);
+    border-bottom-color: var(--nature-accent);
+}
+
+.wechat-article.scheme-nature blockquote {
+    background: var(--nature-quote-bg);
+    border-left-color: var(--nature-accent);
+}
+
+.wechat-article.scheme-nature a {
+    color: var(--nature-link);
+}
+
+/* 极简黑白配色 */
+.wechat-article.scheme-minimal {
+    color: var(--minimal-primary);
+    background: var(--minimal-bg);
+}
+
+.wechat-article.scheme-minimal .article-title {
+    color: var(--minimal-primary);
+    border-bottom-color: var(--minimal-accent);
+}
+
+.wechat-article.scheme-minimal blockquote {
+    background: var(--minimal-quote-bg);
+    border-left-color: var(--minimal-accent);
+}
+
+.wechat-article.scheme-minimal a {
+    color: var(--minimal-link);
+}
+
+/* 活力橙黄配色 */
+.wechat-article.scheme-energetic {
+    color: var(--energetic-primary);
+    background: var(--energetic-bg);
+}
+
+.wechat-article.scheme-energetic .article-title {
+    color: var(--energetic-primary);
+    border-bottom-color: var(--energetic-accent);
+}
+
+.wechat-article.scheme-energetic blockquote {
+    background: var(--energetic-quote-bg);
+    border-left-color: var(--energetic-accent);
+}
+
+.wechat-article.scheme-energetic a {
+    color: var(--energetic-link);
+}
+
+/* 文艺复古配色 */
+.wechat-article.scheme-vintage {
+    color: var(--vintage-primary);
+    background: var(--vintage-bg);
+}
+
+.wechat-article.scheme-vintage .article-title {
+    color: var(--vintage-primary);
+    border-bottom-color: var(--vintage-accent);
+}
+
+.wechat-article.scheme-vintage blockquote {
+    background: var(--vintage-quote-bg);
+    border-left-color: var(--vintage-accent);
+}
+
+.wechat-article.scheme-vintage a {
+    color: var(--vintage-link);
+}
+
+/* ========================================
+   封面图样式
+   ======================================== */
+
+.cover-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 2em;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.cover-image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em 1em 0.8em;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Logo嵌入位置 */
+.logo-overlay {
+    position: absolute;
+    max-width: 80px;
+    max-height: 40px;
+    opacity: 0.9;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo-overlay.position-bottom-right {
+    bottom: 12px;
+    right: 12px;
+}
+
+.logo-overlay.position-bottom-left {
+    bottom: 12px;
+    left: 12px;
+}
+
+.logo-overlay.position-top-right {
+    top: 12px;
+    right: 12px;
+}
+
+.logo-overlay.position-top-left {
+    top: 12px;
+    left: 12px;
+}
+
+/* ========================================
+   标题样式
+   ======================================== */
+
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.8em 0.5em;
+    margin: 0.5em auto 1em;
+    line-height: 1.4;
+    border-bottom: 2px solid var(--business-accent);
+    max-width: 90%;
+}
+
+.article-subtitle {
+    font-size: 16px;
+    color: #888888;
+    text-align: center;
+    margin: -0.5em 0 1.5em;
+    font-weight: normal;
+}
+
+/* 文章章节标题 */
+.article-body h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+    margin: 1.5em 0 0.8em;
+    padding-left: 0.8em;
+    border-left: 4px solid var(--business-accent);
+}
+
+.article-body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+    margin: 1.2em 0 0.6em;
+}
+
+.article-body h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: inherit;
+    margin: 1em 0 0.5em;
+}
+
+/* ========================================
+   正文段落样式
+   ======================================== */
+
+.article-body p {
+    font-size: 15px;
+    line-height: 1.9;
+    text-indent: 2em;
+    margin: 0.8em 0;
+    text-align: justify;
+    word-break: break-word;
+}
+
+/* 首段不缩进 */
+.article-body p:first-of-type {
+    text-indent: 0;
+}
+
+/* ========================================
+   强调文本样式
+   ======================================== */
+
+.article-body strong {
+    font-weight: bold;
+    color: var(--business-accent);
+}
+
+.article-body em {
+    font-style: italic;
+}
+
+.article-body u {
+    text-decoration: underline;
+    text-decoration-color: var(--business-accent);
+    text-underline-offset: 2px;
+}
+
+/* ========================================
+   引用块样式
+   ======================================== */
+
+.article-body blockquote {
+    margin: 1.2em 0;
+    padding: 1em 1.2em;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+}
+
+.article-body blockquote::before {
+    content: """;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 48px;
+    opacity: 0.15;
+    font-family: Georgia, serif;
+    color: var(--business-accent);
+}
+
+.article-body blockquote p {
+    text-indent: 0;
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   图片样式
+   ======================================== */
+
+.article-body figure {
+    margin: 1.5em auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.article-body figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-body figcaption {
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    margin-top: 0.6em;
+    text-indent: 0;
+    font-style: italic;
+}
+
+/* 图片布局变体 */
+.article-body figure.layout-left {
+    float: left;
+    max-width: 45%;
+    margin: 0.5em 1.5em 0.5em 0;
+}
+
+.article-body figure.layout-right {
+    float: right;
+    max-width: 45%;
+    margin: 0.5em 0 0.5em 1.5em;
+}
+
+.article-body figure.layout-center {
+    float: none;
+    clear: both;
+}
+
+/* ========================================
+   列表样式
+   ======================================== */
+
+.article-body ul,
+.article-body ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+.article-body li {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0.4em 0;
+    text-indent: 0;
+}
+
+.article-body ul li {
+    list-style-type: disc;
+}
+
+.article-body ul li::marker {
+    color: var(--business-accent);
+}
+
+.article-body ol li {
+    list-style-type: decimal;
+}
+
+.article-body ol li::marker {
+    color: var(--business-accent);
+    font-weight: bold;
+}
+
+/* 嵌套列表 */
+.article-body ul ul,
+.article-body ol ol,
+.article-body ul ol,
+.article-body ol ul {
+    margin: 0.3em 0;
+}
+
+/* ========================================
+   代码块样式
+   ======================================== */
+
+.article-body pre {
+    background: #2D3436;
+    color: #DFE6E9;
+    padding: 1.2em;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.2em 0;
+    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.article-body code {
+    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+    background: rgba(0, 0, 0, 0.06);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: var(--business-accent);
+}
+
+.article-body pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* ========================================
+   分割线样式
+   ======================================== */
+
+.article-divider {
+    text-align: center;
+    margin: 2em auto;
+    color: #CCCCCC;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.article-divider::before,
+.article-divider::after {
+    content: "";
+    flex: 1;
+    max-width: 100px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #DDDDDD, transparent);
+}
+
+.article-divider.icon-dot::before,
+.article-divider.icon-dot::after {
+    display: none;
+}
+
+.article-divider.icon-dot {
+    color: var(--business-accent);
+}
+
+/* ========================================
+   底部签名样式
+   ======================================== */
+
+.article-footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px dashed #DDDDDD;
+}
+
+.author-info {
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 1em;
+}
+
+.author-info .author-name {
+    font-weight: bold;
+    color: var(--business-primary);
+}
+
+.qr-code-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.qr-code-container img {
+    max-width: 120px;
+    border-radius: 4px;
+}
+
+.qr-code-container p {
+    font-size: 12px;
+    color: #999999;
+    text-indent: 0;
+    margin-top: 0.5em;
+}
+
+/* ========================================
+   响应式适配
+   ======================================== */
+
+@media screen and (max-width: 768px) {
+    .article-title {
+        font-size: 20px;
+    }
+
+    .article-body p {
+        font-size: 14px;
+        text-indent: 1.8em;
+    }
+
+    .article-body h2 {
+        font-size: 18px;
+    }
+
+    .article-body blockquote {
+        padding: 0.8em 1em;
+    }
+
+    .article-body figure.layout-left,
+    .article-body figure.layout-right {
+        float: none;
+        max-width: 100%;
+        margin: 1em auto;
+    }
+}
+
+/* ========================================
+   特殊效果
+   ======================================== */
+
+/* 首字下沉 */
+.article-body p.drop-cap::first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    padding-right: 0.1em;
+    font-weight: bold;
+    color: var(--business-accent);
+}
+
+/* 高亮标记 */
+.article-body mark {
+    background: rgba(255, 235, 59, 0.3);
+    padding: 0.1em 0.2em;
+    border-radius: 2px;
+}
+
+/* 链接样式 */
+.article-body a {
+    color: var(--business-link);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.article-body a:hover {
+    border-bottom-color: currentColor;
+}
+
+/* 脚注 */
+.article-body .footnote {
+    font-size: 12px;
+    color: #999999;
+    vertical-align: super;
+}
+
+/* ========================================
+   动画效果（可选）
+   ======================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.article-body figure {
+    animation: fadeIn 0.4s ease-out;
+}

@@ -1,0 +1,304 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "74fea38f23c564ece424e224a9860a67a3175168",
+      "size": 16833
+    },
+    {
+      "path": "_meta.json",
+      "sha": "4aa9383a4a78f6743140f49cf31360402e0c9f8a",
+      "size": 124
+    },
+    {
+      "path": "packages/asdoc.md",
+      "sha": "b30a646d6792b31ead31830cf5a59150bad709b6",
+      "size": 8681
+    },
+    {
+      "path": "packages/binsreg.md",
+      "sha": "05a7fc46d5cbcf90882d958329a4d5bca477f939",
+      "size": 10330
+    },
+    {
+      "path": "packages/coefplot.md",
+      "sha": "5868fb8b7d50a88e2d4954638abde1a4a22d7b64",
+      "size": 10393
+    },
+    {
+      "path": "packages/data-manipulation.md",
+      "sha": "ceec1ca1005c054b4fb63572400f8f8113f3d807",
+      "size": 10324
+    },
+    {
+      "path": "packages/diagnostics.md",
+      "sha": "747028da3eaf92cb014072ec23912cce843b2549",
+      "size": 15715
+    },
+    {
+      "path": "packages/did.md",
+      "sha": "2a2a51a170efb5344f15d6d62332765adb24aebe",
+      "size": 16350
+    },
+    {
+      "path": "packages/estout.md",
+      "sha": "8e06b39e3065c29487a454a9245093c5a31219d2",
+      "size": 18145
+    },
+    {
+      "path": "packages/event-study.md",
+      "sha": "3a3ea0fb1b22b34e311799b2ba58927fe63cb622",
+      "size": 30484
+    },
+    {
+      "path": "packages/graph-schemes.md",
+      "sha": "3d1a3ab11bbce2ea99162bf81d169ba82f403d52",
+      "size": 14398
+    },
+    {
+      "path": "packages/ivreg2.md",
+      "sha": "a4d42fab73554cad6668a5fded85405880c2ba76",
+      "size": 11401
+    },
+    {
+      "path": "packages/nprobust.md",
+      "sha": "07e0638e53bbc530fee90bcf08e8b7ae9b1f6abb",
+      "size": 12671
+    },
+    {
+      "path": "packages/outreg2.md",
+      "sha": "a22a52c6aebccda5075f45ad3ed0ea35a31214c5",
+      "size": 11514
+    },
+    {
+      "path": "packages/package-management.md",
+      "sha": "3deeac685eee9abbfe89bb7f8c298d8245549442",
+      "size": 10464
+    },
+    {
+      "path": "packages/psmatch2.md",
+      "sha": "f41744f90bfd74a7d5b881a352c22a49b5080ecb",
+      "size": 19038
+    },
+    {
+      "path": "packages/rdrobust.md",
+      "sha": "2a67a48efc4babbe63d4c97e2709bb09ed3a8b1e",
+      "size": 13712
+    },
+    {
+      "path": "packages/reghdfe.md",
+      "sha": "80fbf2d51f2783ce7f09287784f87dbd66d14523",
+      "size": 10652
+    },
+    {
+      "path": "packages/synth.md",
+      "sha": "6b5c8497a5982adb688d40dfd5d8aca75c4b6347",
+      "size": 23531
+    },
+    {
+      "path": "packages/tabout.md",
+      "sha": "8d29f17cb338240b4a0cc4aa900d9eeeec9375eb",
+      "size": 12439
+    },
+    {
+      "path": "packages/winsor.md",
+      "sha": "da2267187426d2060d427e4881ec5395dcbc60d1",
+      "size": 6847
+    },
+    {
+      "path": "packages/xtabond2.md",
+      "sha": "3545888032180ac40f035d07ec9bc90ee2adaf9a",
+      "size": 15220
+    },
+    {
+      "path": "references/advanced-programming.md",
+      "sha": "5bf3c745215703e015ceac2856d7a077b5dea5d3",
+      "size": 10386
+    },
+    {
+      "path": "references/basics-getting-started.md",
+      "sha": "4f3ee754e26e2f42a0b6d14b21e359d39073f053",
+      "size": 5931
+    },
+    {
+      "path": "references/bootstrap-simulation.md",
+      "sha": "024271d73439eb2fa613b23426f3a997db2ea4f9",
+      "size": 8611
+    },
+    {
+      "path": "references/data-import-export.md",
+      "sha": "7a5b21c4bdccea7ea74976b74f2dd5c6afbb0d5d",
+      "size": 7551
+    },
+    {
+      "path": "references/data-management.md",
+      "sha": "c99ded6eaf36d8e041290c760bb7ae5380f84284",
+      "size": 11270
+    },
+    {
+      "path": "references/date-time-functions.md",
+      "sha": "b6660cbd5d73d480177333b9d71d12530a68d4ac",
+      "size": 7009
+    },
+    {
+      "path": "references/descriptive-statistics.md",
+      "sha": "d88a37448d4d554f54c5d1ec8d52a9d13ea3bcc9",
+      "size": 6572
+    },
+    {
+      "path": "references/difference-in-differences.md",
+      "sha": "6a2ca4c142ce0eae11c94faf1de85c5babd0c549",
+      "size": 21368
+    },
+    {
+      "path": "references/external-tools-integration.md",
+      "sha": "f91596c1094a4f5da96dcf6c6f0886f060df0c04",
+      "size": 20599
+    },
+    {
+      "path": "references/filing-issues.md",
+      "sha": "033ce97e164efd59637b7e2022ad261f6ac0b034",
+      "size": 4857
+    },
+    {
+      "path": "references/gmm-estimation.md",
+      "sha": "abe02ce307118f92f74fdeedec9aedb150bfedb5",
+      "size": 9043
+    },
+    {
+      "path": "references/graphics.md",
+      "sha": "66a27b39a0c6b2272e5702f9c5b31efb034133b2",
+      "size": 8820
+    },
+    {
+      "path": "references/limited-dependent-variables.md",
+      "sha": "9ddd4523c33b7a6a68dbd01543c64b0483996f5f",
+      "size": 8386
+    },
+    {
+      "path": "references/linear-regression.md",
+      "sha": "3942d26fd5bc8d74f6393c97d1d1d56cf8dd175a",
+      "size": 12700
+    },
+    {
+      "path": "references/machine-learning.md",
+      "sha": "8c447489c52ff663fafa8bcfde1aade00144e6f5",
+      "size": 12707
+    },
+    {
+      "path": "references/mata-data-access.md",
+      "sha": "15acc36ec5e95ed8206adf217d5aef16a65d6a94",
+      "size": 8364
+    },
+    {
+      "path": "references/mata-introduction.md",
+      "sha": "a77346a593b7c34287c76380bdd00ba5746acdf6",
+      "size": 6531
+    },
+    {
+      "path": "references/mata-matrix-operations.md",
+      "sha": "893ba467f6f50826c0cb7bc456866d33508b137d",
+      "size": 6439
+    },
+    {
+      "path": "references/mata-programming.md",
+      "sha": "f19582397a9189bb100b13a112a5c2fd7677c02c",
+      "size": 8554
+    },
+    {
+      "path": "references/matching-methods.md",
+      "sha": "f5a0ebaf69b30d1a92e96f29a0e0d82f7684b238",
+      "size": 19628
+    },
+    {
+      "path": "references/mathematical-functions.md",
+      "sha": "8f85693d53717751b70a04def3e6aac774fd726a",
+      "size": 7616
+    },
+    {
+      "path": "references/maximum-likelihood.md",
+      "sha": "c86acbc829d1ec00723f2eb1f52ba8f87d65a3e0",
+      "size": 17043
+    },
+    {
+      "path": "references/missing-data-handling.md",
+      "sha": "bb97894ee64dd6acd3af2836171b5d38b6d11b9d",
+      "size": 18893
+    },
+    {
+      "path": "references/nonparametric-methods.md",
+      "sha": "422e015f9b86b807b2cbfc38617dab56ae627f53",
+      "size": 12017
+    },
+    {
+      "path": "references/panel-data.md",
+      "sha": "e68e2e58fdcb99c0bc37ae642ee8e92281ce4054",
+      "size": 8873
+    },
+    {
+      "path": "references/programming-basics.md",
+      "sha": "ab42b7abf95918f235a1ee4ef698841fdc109aad",
+      "size": 8327
+    },
+    {
+      "path": "references/regression-discontinuity.md",
+      "sha": "cc56e7d4f857a33292c76f759497c937e06b34a5",
+      "size": 13734
+    },
+    {
+      "path": "references/sample-selection.md",
+      "sha": "21b3c6a3ed31d183a41421c2366959a9223d5de0",
+      "size": 18145
+    },
+    {
+      "path": "references/sem-factor-analysis.md",
+      "sha": "ae2c4087ffa07849b1cf62e1f7ce142e5d9db017",
+      "size": 15538
+    },
+    {
+      "path": "references/spatial-analysis.md",
+      "sha": "2acf8602a548d2b9ac39615a348f3463182d379f",
+      "size": 19905
+    },
+    {
+      "path": "references/string-functions.md",
+      "sha": "eeb940e6bf428de8a9be77877c61205d64e531a0",
+      "size": 8937
+    },
+    {
+      "path": "references/survey-data-analysis.md",
+      "sha": "d8f2861595c4c48c96e385ff4e489af8b0e298f1",
+      "size": 14022
+    },
+    {
+      "path": "references/survival-analysis.md",
+      "sha": "59e3596a2d665d74cc9d767ea756d05671066cfd",
+      "size": 12635
+    },
+    {
+      "path": "references/tables-reporting.md",
+      "sha": "89dcaa88595b1849f4d9d5d2daae85c68092fa53",
+      "size": 24771
+    },
+    {
+      "path": "references/time-series.md",
+      "sha": "b0b5266d72f9caa73014438f47f05e8fb3067585",
+      "size": 10114
+    },
+    {
+      "path": "references/treatment-effects.md",
+      "sha": "ff7164d1b107639c0c42e20068a558c57aefdfac",
+      "size": 23661
+    },
+    {
+      "path": "references/variables-operators.md",
+      "sha": "0b5a7ba5891318ee351e4f49798bec5efbadbb0a",
+      "size": 5013
+    },
+    {
+      "path": "references/workflow-best-practices.md",
+      "sha": "d907951d2cf29696c229fde22fdc61ebaf95936c",
+      "size": 26464
+    }
+  ]
+}

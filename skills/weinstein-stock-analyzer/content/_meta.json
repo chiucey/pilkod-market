@@ -1,0 +1,52 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "analysis_types": [
+      "四阶段分析",
+      "相对强度",
+      "成交量分析",
+      "回抽分析",
+      "止损计算"
+    ],
+    "data_source": "akshare",
+    "output_formats": [
+      "excel",
+      "markdown"
+    ]
+  },
+  "created_at": "2026-04-04",
+  "description": "基于Stan Weinstein《笑傲牛熊》方法论的股票分析技能",
+  "id": 435275389235635,
+  "name": "weinstein-stock-analyzer",
+  "platform": "minimax",
+  "requirements": {
+    "environment": "Python 3.8+",
+    "python_packages": [
+      "akshare",
+      "pandas",
+      "openpyxl",
+      "numpy"
+    ]
+  },
+  "tags": [
+    "stock",
+    "analysis",
+    "weinstein",
+    "technical-analysis",
+    "A股"
+  ],
+  "trigger_phrases": [
+    "笑傲牛熊",
+    "温斯坦",
+    "股票分析",
+    "股票报告",
+    "四阶段",
+    "相对强度",
+    "股票筛选",
+    "技术信号",
+    "stock analyzer",
+    "weinstein"
+  ],
+  "updated_at": 1788435922767,
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-30",
+  "dependencies": [
+    "akshare"
+  ],
+  "description": "A股和港股实时行情查询技能，支持股票代码/名称查询、新闻资讯、缓存优化和重试机制",
+  "framework": "OpenClaw",
+  "id": 382133494276337,
+  "name": "stock-query",
+  "platform": "minimax",
+  "tags": [
+    "stock",
+    "quote",
+    "akshare",
+    "A股",
+    "港股",
+    "行情",
+    "新闻"
+  ],
+  "updated_at": 1774849026214,
+  "version": "1.0.0"
+}

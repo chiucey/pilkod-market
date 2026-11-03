@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "18fb43ff772c6bb19edddfc19ba1873db3da1700",
+      "size": 12297
+    },
+    {
+      "path": "_meta.json",
+      "sha": "1efb606502b87c3c649645057a03e83266bf54bf",
+      "size": 139
+    },
+    {
+      "path": "references/INSTALL.md",
+      "sha": "67edf50cb19e03653f0fc803f34cddafed31d3a4",
+      "size": 4396
+    },
+    {
+      "path": "scripts/build_report.py",
+      "sha": "862a778a79efa838ef4c1bde40a5c44702d9f128",
+      "size": 5214
+    },
+    {
+      "path": "scripts/check_delivery.py",
+      "sha": "3e79780118921defe6b6e8d2a6c637e768ab238d",
+      "size": 2613
+    },
+    {
+      "path": "scripts/extract_frames.py",
+      "sha": "75d35109b899b83cdd7897c93e12c0d5ff743357",
+      "size": 3711
+    },
+    {
+      "path": "scripts/fetch_bilibili.sh",
+      "sha": "f9f8de9223765fa1576a509634b65bfb0b20f625",
+      "size": 2613
+    },
+    {
+      "path": "scripts/install.sh",
+      "sha": "c6d3f73eeec56184a16d89073c53f0e16bb7c40f",
+      "size": 1788
+    },
+    {
+      "path": "scripts/selftest.py",
+      "sha": "e322f6853b16ac0300b754a2d107bb06e8e1f810",
+      "size": 3609
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "msg_id": "581dfa06-2b3b-4cf0-8369-83d4e797e162",
+  "timestamp": "2026-04-10T03:00:42.568047",
+  "sender": "maxclaw-1",
+  "recipient": "broadcast",
+  "msg_type": "event",
+  "action": "STATE_UPDATE",
+  "payload": {
+    "key": "agent_maxclaw-1_status",
+    "value": {
+      "status": "active",
+      "timestamp": 1775790042.5030415
+    },
+    "updated_by": "maxclaw-1"
+  },
+  "correlation_id": null
+}

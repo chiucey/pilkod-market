@@ -1,0 +1,309 @@
+{
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha": "c55ab42224874608473643de0a85736b7fec0730",
+      "size": 1467
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "fec3b3b653625aba9ee429f07e340439acd8e3ea",
+      "size": 20008
+    },
+    {
+      "path": "_meta.json",
+      "sha": "3618e160a522e82abc5eba2e10c18668bbc833e9",
+      "size": 1014
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1
+    },
+    {
+      "path": "scripts/accept_changes.py",
+      "sha": "8e363161915d3720409bb8b6ef9bc4ade33b64e4",
+      "size": 4051
+    },
+    {
+      "path": "scripts/comment.py",
+      "sha": "36e1c935f2aac390ed468d0637e83cea18decd64",
+      "size": 10694
+    },
+    {
+      "path": "scripts/office/helpers/merge_runs.py",
+      "sha": "ad7c25eec0d064fbd9f5624b17b60e5dd49b5903",
+      "size": 5567
+    },
+    {
+      "path": "scripts/office/helpers/simplify_redlines.py",
+      "sha": "db963bb998d7d5a8517d8252ce82ec9ab28665bc",
+      "size": 5754
+    },
+    {
+      "path": "scripts/office/pack.py",
+      "sha": "db29ed8b1c3676a4980b2d67e9dfe432556d2e58",
+      "size": 4991
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "sha": "6454ef9a94d52512e4905df61280a3fd1dafc0a4",
+      "size": 74984
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "sha": "afa4f463e3140a3f626c73f7966d689270d89b2c",
+      "size": 6956
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "sha": "64e66b8abd496d2e450c08110e40607e90b3fe13",
+      "size": 51302
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "sha": "687eea8297caa298581aa06c40ca40ef7b8a58bc",
+      "size": 624
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "sha": "6ac81b06b7a3ef916d677953084ae225504a77bc",
+      "size": 152039
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "sha": "1dbf05140d07fa014f18a5630acc0613d8058e52",
+      "size": 1231
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "sha": "f1af17db4e83b1c40152577eca4a575ab63a1ca7",
+      "size": 8862
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "sha": "0a185ab6ed0c2dd9b383a403c56c909bbab8b9a1",
+      "size": 14795
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "sha": "14ef488865f3ae6150776220ebbcf4788f89066a",
+      "size": 83612
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "sha": "c20f3bf14720d34247e8e1302dc3c40f7b832099",
+      "size": 1269
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "sha": "ac60252262534e7b87523fd04d252f085b38bec0",
+      "size": 7328
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "sha": "424b8ba8d1f9ebb22ba72cdd174c8a2ade0ecf89",
+      "size": 6382
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "sha": "2bddce29214882eb9fdf2be8a50ed5bdd0c69dfc",
+      "size": 1248
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "sha": "8a8c18ba2d5caa7e60a365e77ae0d1b872141bb0",
+      "size": 880
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "sha": "5c42706a0d53c5e8b96818d9c29a292d1504f720",
+      "size": 2608
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "sha": "853c341c87feb51e10d757aea28b4185ae4c2731",
+      "size": 3507
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "sha": "da835ee82d5cc31be9fa9792512930f7ae3fb5ce",
+      "size": 7507
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "sha": "87ad2658fa51cb4c172f82d0fdf33a492a750eca",
+      "size": 23313
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "sha": "9e86f1b2be0d431cd3c250ddeaf4efabdbcb088b",
+      "size": 1367
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "sha": "d0be42e757f3cce533c1c80770239f0097d3de6b",
+      "size": 242277
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "sha": "8821dd183caf9c8c3b809e0e2d9e0df56c4e9ed9",
+      "size": 26148
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "sha": "ca2575c753be78cdaa96de56b3ff8770173c324d",
+      "size": 25279
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+      "sha": "dd079e603f5770176212776a1d565b108875cf64",
+      "size": 535
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "sha": "3dd6cf625a740398c2a4dc8abbe18e25e0ac5e9f",
+      "size": 5712
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+      "sha": "f1041e34ef365926f5670b896f5bb23e553ac36d",
+      "size": 4010
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "sha": "9c5b7a633411c2313ce839f748e4623bb0a70efe",
+      "size": 171367
+    },
+    {
+      "path": "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+      "sha": "0f13678d80a762375223f060e23b56c7b2eac89e",
+      "size": 4646
+    },
+    {
+      "path": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "sha": "a6de9d2733d3f0eea12ae87b24122495df1f0928",
+      "size": 1963
+    },
+    {
+      "path": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "sha": "10e978b661fc291cbeea9ab0c248601cf216f96d",
+      "size": 2515
+    },
+    {
+      "path": "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "sha": "4248bf7a39c793c9f319bae7d09f92983efe5368",
+      "size": 2856
+    },
+    {
+      "path": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "sha": "56497467120b52b742756379959d4b2536be6df7",
+      "size": 1344
+    },
+    {
+      "path": "scripts/office/schemas/mce/mc.xsd",
+      "sha": "ef725457cf39116672e285d021be69b7ad022574",
+      "size": 3127
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-2010.xsd",
+      "sha": "f65f777730d82162f4248f03c703b1b85fda5fe2",
+      "size": 26549
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-2012.xsd",
+      "sha": "6b00755a9a8733f0fb171a47b25d0d7b4c70dee8",
+      "size": 3745
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-2018.xsd",
+      "sha": "f321d333a5e6ef98cbdfeeeaa334923e4cfc8a6c",
+      "size": 901
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "sha": "364c6a9b8df6e252bb5ae39e2ca031fcbfc4e8a5",
+      "size": 1778
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+      "sha": "fed9d15b7f504e14ac82793d79db2d7ad83d56ed",
+      "size": 1002
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "sha": "680cf15400cd57ce2bf17a58ecd29caa0d8a8422",
+      "size": 600
+    },
+    {
+      "path": "scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+      "sha": "89ada90837b2db3f3d453212ae426520acedbbea",
+      "size": 745
+    },
+    {
+      "path": "scripts/office/soffice.py",
+      "sha": "c7f7e3289fdff196399fd6f3d6668b9aa68eec87",
+      "size": 5301
+    },
+    {
+      "path": "scripts/office/unpack.py",
+      "sha": "00152533ac0fa95109f74253ac6a475401fa6afe",
+      "size": 4052
+    },
+    {
+      "path": "scripts/office/validate.py",
+      "sha": "03b01f6e3ba40e1408d0bd16d587154fa9798a87",
+      "size": 3668
+    },
+    {
+      "path": "scripts/office/validators/__init__.py",
+      "sha": "db092ece7e21de98f87bd81471578259a1bc642f",
+      "size": 336
+    },
+    {
+      "path": "scripts/office/validators/base.py",
+      "sha": "db4a06a2291abf80bd9b000b6ff3b7f012e6dd2f",
+      "size": 32651
+    },
+    {
+      "path": "scripts/office/validators/docx.py",
+      "sha": "fec405e694790259824feebb95061f56a705621c",
+      "size": 16376
+    },
+    {
+      "path": "scripts/office/validators/pptx.py",
+      "sha": "09842aa99866fe270ecfeec6f7993495e1865f2b",
+      "size": 9824
+    },
+    {
+      "path": "scripts/office/validators/redlining.py",
+      "sha": "71c81b6bf4cacda322db32c87df7b2301c469933",
+      "size": 8918
+    },
+    {
+      "path": "scripts/templates/comments.xml",
+      "sha": "cd01a7d7155f9a78cf3d11470e2ce2b5ccdac640",
+      "size": 2603
+    },
+    {
+      "path": "scripts/templates/commentsExtended.xml",
+      "sha": "411003cc485356c560e29687ca359d64cd89d4b4",
+      "size": 2611
+    },
+    {
+      "path": "scripts/templates/commentsExtensible.xml",
+      "sha": "f5572d710826dd7a1f455af7487e2157ef01ada0",
+      "size": 2707
+    },
+    {
+      "path": "scripts/templates/commentsIds.xml",
+      "sha": "32f1629f2a8bb9aafebb0699349d0d799edce9f3",
+      "size": 2619
+    },
+    {
+      "path": "scripts/templates/people.xml",
+      "sha": "3803d2de0faa635687a48947b52ab98b9655f631",
+      "size": 115
+    }
+  ]
+}

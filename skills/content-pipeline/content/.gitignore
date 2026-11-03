@@ -1,0 +1,16 @@
+# Private config (API keys, personal paths)
+local/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+token-cache.json
+node_modules/
+__pycache__/
+*.pyc
+
+# Generated files (keep banner, ignore temp)
+static/image/generate-banner.html

@@ -1,0 +1,33 @@
+package @PACKAGE_PATH@.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val Primary = Color(0xFF0061A4)
+val OnPrimary = Color(0xFFFFFFFF)
+val PrimaryContainer = Color(0xFFD1E4FF)
+val OnPrimaryContainer = Color(0xFF001D36)
+val Secondary = Color(0xFF535F70)
+val OnSecondary = Color(0xFFFFFFFF)
+val Surface = Color(0xFFFDFCFF)
+val OnSurface = Color(0xFF1A1C1E)
+val SurfaceVariant = Color(0xFFDFE2EB)
+val OnSurfaceVariant = Color(0xFF43474E)
+val Background = Color(0xFFFDFCFF)
+val OnBackground = Color(0xFF1A1C1E)
+val Error = Color(0xFFBA1A1A)
+val OnError = Color(0xFFFFFFFF)
+
+val PrimaryDark = Color(0xFF9ECAFF)
+val OnPrimaryDark = Color(0xFF003258)
+val PrimaryContainerDark = Color(0xFF00497D)
+val OnPrimaryContainerDark = Color(0xFFD1E4FF)
+val SecondaryDark = Color(0xFFBBC7DB)
+val OnSecondaryDark = Color(0xFF253140)
+val SurfaceDark = Color(0xFF1A1C1E)
+val OnSurfaceDark = Color(0xFFE2E2E5)
+val SurfaceVariantDark = Color(0xFF43474E)
+val OnSurfaceVariantDark = Color(0xFFC3C6CF)
+val BackgroundDark = Color(0xFF1A1C1E)
+val OnBackgroundDark = Color(0xFFE2E2E5)
+val ErrorDark = Color(0xFFFFB4AB)
+val OnErrorDark = Color(0xFF690005)

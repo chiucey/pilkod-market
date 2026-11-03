@@ -1,0 +1,43 @@
+[package]
+name = "your-app"
+version = "0.1.0"
+description = "你的应用描述"
+authors = ["Your Name"]
+edition = "2024"
+rust-version = "1.85"
+default-run = "your-app"
+
+[lib]
+name = "your_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+# `custom-protocol` 是 Tauri v2 区分 dev / release 构建的关键 feature。
+#
+# `tauri-macros` 中的判定为 `dev: cfg!(not(feature = "custom-protocol"))`：
+# 缺少该 feature 时，`generate_context!` 会注入 `build.devUrl`（http://localhost:1420），
+# 于是 release 版窗口会尝试连接 dev server —— dev server 未运行时，
+# WebView 显示 Chromium 的「连接被拒绝」错误页，表现为**白屏**。
+#
+# 官方 `tauri build` 会自动传入 `--features custom-protocol`；
+# 但裸跑 `cargo build --release` 不会带这个 feature。
+# 这里显式声明，使两种构建方式都能得到正确行为。
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+tauri-build = { version = "2.7", features = [] }
+
+[dependencies]
+tauri = { version = "2.12", features = ["image-png", "image-ico", "tray-icon"] }
+tauri-plugin-single-instance = "2.5"
+tauri-plugin-notification = "2.7"
+tauri-plugin-store = "2.5"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

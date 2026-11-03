@@ -1,0 +1,55 @@
+{
+  "author": "酱酱 (C# Career Guide Assistant)",
+  "auto_update": {
+    "data_refresh_script": "scripts/fetch_job_data.py",
+    "enabled": true,
+    "update_triggers": [
+      "技能被调用时",
+      "用户询问就业数据时",
+      "用户询问薪资行情时"
+    ]
+  },
+  "created_at": "2026-03-31",
+  "data_sources": [
+    "TIOBE Index 2025 Annual Report",
+    "BOSS直聘2026年数据",
+    "猎聘2026年数据",
+    "Microsoft Learn官方文档",
+    "CSDN/博客园技术社区"
+  ],
+  "description": "C#语言职业规划与学习路径专家助手，为小白和求职者提供就业指南、学习路径、职业规划服务。支持实时获取最新岗位数据！",
+  "features": [
+    "可爱看板娘风格回答",
+    "小白友好通俗语言",
+    "2026年最新就业数据",
+    "实时获取最新岗位数据",
+    "完整学习路径规划",
+    "简历优化建议",
+    "职业发展指导"
+  ],
+  "id": 382461971952312,
+  "name": "csharp-career-guide",
+  "platform": "minimax",
+  "skill_components": {
+    "main": "SKILL.md",
+    "references": [
+      "references/industry-analysis-2026.md",
+      "references/learning-path-detailed.md",
+      "references/resume-templates.md"
+    ],
+    "scripts": [
+      "scripts/fetch_job_data.py"
+    ]
+  },
+  "tags": [
+    "C#",
+    ".NET",
+    "职业规划",
+    "学习路线",
+    "就业指南",
+    "简历优化",
+    "实时数据"
+  ],
+  "updated_at": 1774928217547,
+  "version": "1.1.0"
+}

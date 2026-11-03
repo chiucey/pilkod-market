@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha": "55a18b0b3a75751c6d4e6d6c6e18ebdc535b9543",
+      "size": 1077
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "30034bae4f5aa6f9d31b7fb09a50ae97343f1e33",
+      "size": 2422
+    },
+    {
+      "path": "_meta.json",
+      "sha": "0e4f6da59d2e97852af945894085593ed9b77efc",
+      "size": 139
+    },
+    {
+      "path": "config.example.json",
+      "sha": "c9c0c72977ccad4359f65b0f878002f1cf1eafb4",
+      "size": 558
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "dea6f38ffd0c304bf19a92eaa93f8ed214af1a5b",
+      "size": 75
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha": "310effcc0f4e77724f39ec6e75629ad623c8dfd6",
+      "size": 4491
+    },
+    {
+      "path": "scripts/ai_analyzer.py",
+      "sha": "2e6a12cae1ea9814ad37e210bed0bf6cd127513c",
+      "size": 7614
+    },
+    {
+      "path": "scripts/data_fetcher.py",
+      "sha": "b59f4e2c8251fd96f175dcab2cabf8a5bb29a0b4",
+      "size": 11303
+    },
+    {
+      "path": "scripts/market_data_bridge.py",
+      "sha": "706541c09911cfc6b47f076d94a4bbedaa4cfcd6",
+      "size": 2846
+    },
+    {
+      "path": "scripts/notifier.py",
+      "sha": "fc8e08287938b51bee3697dd0caf5d2921b78297",
+      "size": 6667
+    },
+    {
+      "path": "scripts/trend_analyzer.py",
+      "sha": "9e540b8d1be986500343a6180d1adac6909c2c65",
+      "size": 22025
+    }
+  ]
+}

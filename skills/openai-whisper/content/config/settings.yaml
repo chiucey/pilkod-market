@@ -1,0 +1,14 @@
+# OpenAI Whisper 技能默认配置
+# 可在此处修改全局默认值，调用时传入的参数会覆盖此处配置
+
+default_config:
+  # 默认输出目录
+  output_directory: "./output"
+  # 默认使用的 Whisper 模型
+  default_model: "turbo"
+  # 默认任务类型：transcribe 转录 / translate 翻译
+  default_task: "transcribe"
+  # 默认输出格式
+  default_output_format: "txt"
+  # 命令执行超时时间（秒）
+  timeout_seconds: 3600

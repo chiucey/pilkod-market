@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <title>PPT配色参考图 - 科技公司红色系风格</title>
+
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#FAFAFA"/>
+
+  <!-- 标题 -->
+  <text x="400" y="35" text-anchor="middle" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#424242">科技公司PPT配色方案</text>
+
+  <!-- 主色调区域 -->
+  <text x="100" y="70" text-anchor="middle" font-family="Microsoft YaHei" font-size="12" font-weight="600" fill="#424242">主色调（红色系）</text>
+
+  <!-- 红色系色块 -->
+  <rect x="20" y="80" width="70" height="50" rx="4" fill="#E53935"/>
+  <text x="55" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#E53935</text>
+  <text x="55" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">主标题</text>
+
+  <rect x="100" y="80" width="70" height="50" rx="4" fill="#FF5252"/>
+  <text x="135" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#FF5252</text>
+  <text x="135" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">次级强调</text>
+
+  <rect x="180" y="80" width="70" height="50" rx="4" fill="#FF8A80"/>
+  <text x="215" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#FF8A80</text>
+  <text x="215" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">浅色标签</text>
+
+  <rect x="260" y="80" width="70" height="50" rx="4" fill="#C62828"/>
+  <text x="295" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#C62828</text>
+  <text x="295" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">深色标题</text>
+
+  <!-- 中性色区域 -->
+  <text x="500" y="70" text-anchor="middle" font-family="Microsoft YaHei" font-size="12" font-weight="600" fill="#424242">中性色（灰色系）</text>
+
+  <!-- 灰色系色块 -->
+  <rect x="420" y="80" width="70" height="50" rx="4" fill="#424242"/>
+  <text x="455" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#424242</text>
+  <text x="455" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">正文文字</text>
+
+  <rect x="500" y="80" width="70" height="50" rx="4" fill="#757575"/>
+  <text x="535" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#757575</text>
+  <text x="535" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">次级文字</text>
+
+  <rect x="580" y="80" width="70" height="50" rx="4" fill="#BDBDBD"/>
+  <text x="615" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#BDBDBD</text>
+  <text x="615" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">边框线</text>
+
+  <rect x="660" y="80" width="70" height="50" rx="4" fill="#E0E0E0"/>
+  <text x="695" y="145" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#E0E0E0</text>
+  <text x="695" y="157" text-anchor="middle" font-family="Microsoft YaHei" font-size="8" fill="#757575">卡片框色</text>
+
+  <!-- 背景色区域 -->
+  <text x="100" y="195" text-anchor="middle" font-family="Microsoft YaHei" font-size="12" font-weight="600" fill="#424242">背景色</text>
+
+  <rect x="20" y="205" width="150" height="50" rx="4" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="95" y="235" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#FAFAFA 页面背景</text>
+
+  <rect x="20" y="265" width="150" height="50" rx="4" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="95" y="295" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#FFFFFF 纯白背景</text>
+
+  <rect x="20" y="325" width="150" height="50" rx="4" fill="#EEEEEE" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="95" y="355" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">#EEEEEE 卡片背景</text>
+
+  <!-- 模板示例区域 -->
+  <text x="500" y="195" text-anchor="middle" font-family="Microsoft YaHei" font-size="12" font-weight="600" fill="#424242">模板示例（禁用大圆角）</text>
+
+  <!-- 正确示例 -->
+  <rect x="420" y="205" width="150" height="60" rx="4" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="495" y="235" text-anchor="middle" font-family="Microsoft YaHei" font-size="10" font-weight="600" fill="#E53935">✓ 推荐</text>
+  <text x="495" y="255" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">圆角 4px</text>
+
+  <!-- 正确示例2 -->
+  <rect x="580" y="205" width="150" height="60" rx="0" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="655" y="235" text-anchor="middle" font-family="Microsoft YaHei" font-size="10" font-weight="600" fill="#E53935">✓ 推荐</text>
+  <text x="655" y="255" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">直角 0px</text>
+
+  <!-- 错误示例 -->
+  <rect x="420" y="275" width="150" height="60" rx="16" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="495" y="305" text-anchor="middle" font-family="Microsoft YaHei" font-size="10" font-weight="600" fill="#C62828">✗ 禁止</text>
+  <text x="495" y="325" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">大圆角 16px+</text>
+
+  <!-- 边框粗细示例 -->
+  <text x="655" y="275" text-anchor="middle" font-family="Microsoft YaHei" font-size="12" font-weight="600" fill="#424242">边框粗细</text>
+  <rect x="580" y="285" width="150" height="40" rx="4" fill="none" stroke="#E0E0E0" stroke-width="0.75"/>
+  <text x="655" y="308" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">≤ 0.75pt ✓</text>
+
+  <!-- 字体示例 -->
+  <text x="655" y="345" text-anchor="middle" font-family="Microsoft YaHei" font-size="12" font-weight="600" fill="#424242">字体规范</text>
+  <text x="655" y="365" text-anchor="middle" font-family="Microsoft YaHei" font-size="10" font-weight="bold" fill="#E53935">微软雅黑 Bold</text>
+  <text x="655" y="385" text-anchor="middle" font-family="Microsoft YaHei" font-size="9" fill="#424242">行间距 1.3倍</text>
+
+</svg>

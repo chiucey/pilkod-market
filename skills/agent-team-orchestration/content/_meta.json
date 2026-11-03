@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-03-22T17:21:39Z",
+  "dependencies": [
+    "team_architecture",
+    "task_decomposition",
+    "ability_matching",
+    "collaboration_rules",
+    "execution_monitor",
+    "result_integration",
+    "monitoring_metrics",
+    "scenario_template"
+  ],
+  "features": [
+    "5-element standardized handoff protocol",
+    "Quality iron rules enforcement",
+    "Role-based model recommendations",
+    "Task lifecycle management",
+    "Configurable KPI monitoring",
+    "Scenario template library"
+  ],
+  "file_structure": [
+    "SKILL.md",
+    "_meta.json",
+    "src/main.py",
+    "config/settings.yaml",
+    "instructions/system_prompt.md",
+    "tests/test_main.py",
+    "assets/.gitkeep",
+    "README.md"
+  ],
+  "id": 381823758041189,
+  "name": "agent-team-orchestration",
+  "platform": "minimax",
+  "skill_id": 1903963541,
+  "trigger_words": [
+    "agent team",
+    "orchestration",
+    "multi-agent",
+    "task lifecycle",
+    "handoff",
+    "handoff protocol",
+    "team collaboration",
+    "task assignment",
+    "quality review",
+    "iron rules",
+    "agent handoff",
+    "multi-agent collaboration",
+    "team orchestration"
+  ],
+  "updated_at": 1774772476088,
+  "version": "4.0.0"
+}

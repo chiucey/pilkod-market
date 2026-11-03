@@ -1,0 +1,25 @@
+{
+  "category": "信息检索",
+  "description": "根据指定时间输入（时间点、时间段或相对时间）或按最新顺序检索特定主题新闻，并整理为结构化新闻简报，支持多语言新闻检索与摘要。",
+  "homepage": "https://github.com/yumih1129/skills-repo/tree/main/skills/news-briefing-search",
+  "icon": "Newspaper",
+  "iconLibrary": "lucide",
+  "iconType": "library",
+  "id": 402812526706829,
+  "language": "zh-CN",
+  "license": "Apache-2.0",
+  "name": "news-briefing-search",
+  "ownerId": "Yumih",
+  "platform": "minimax",
+  "publishedAt": 1747526400000,
+  "slug": "news-briefing-search",
+  "status": "active",
+  "tags": [
+    "新闻",
+    "搜索",
+    "多语言"
+  ],
+  "updatedAt": 1779742306000,
+  "updated_at": 1779900650551,
+  "version": "1.7.0"
+}

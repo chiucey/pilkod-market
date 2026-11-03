@@ -1,0 +1,42 @@
+{
+  "protocol": {
+    "instance_id": "default-instance",
+    "version": "1.0.0"
+  },
+  "sync": {
+    "enabled": false,
+    "sync_interval_seconds": 60,
+    "sync_endpoints": [],
+    "auto_sync_on_update": true
+  },
+  "cache": {
+    "ttl_seconds": 300,
+    "max_cache_size": 100
+  },
+  "privacy": {
+    "default_level": "public",
+    "allow_restricted": false,
+    "sensitive_patterns": [
+      "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b",
+      "\\b\\d{3}[-.]?\\d{3}[-.]?\\d{4}\\b",
+      "api[_-]?key[\"']?\\s*[:=]\\s*[\"']?[A-Za-z0-9_-]{20,}[\"']?"
+    ]
+  },
+  "validation": {
+    "require_title": true,
+    "require_description": true,
+    "require_content": true,
+    "min_content_length": 10,
+    "max_experience_size_kb": 100
+  },
+  "retrieval": {
+    "default_limit": 10,
+    "min_relevance_score": 0.1,
+    "enable_semantic_search": false
+  },
+  "integration": {
+    "auto_record": false,
+    "auto_publish_threshold": 3,
+    "share_with_instances": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "description": "Professional peer review skill for academic papers. Generates constructive English review comments based on provided review decisions (Major/Minor Revision, Accept, Reject).",
+  "id": 390027894596408,
+  "name": "peer-reviewer",
+  "platform": "minimax",
+  "trigger_phrases": [
+    "review",
+    "peer review",
+    "review comments",
+    "manuscript review",
+    "paper review"
+  ],
+  "updated_at": 1776777406178,
+  "version": "1.0.0"
+}

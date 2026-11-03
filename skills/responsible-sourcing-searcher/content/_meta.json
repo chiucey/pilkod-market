@@ -1,0 +1,28 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-27",
+  "description": "搜索OECD、LBMA、LME、中国五矿商会等网站中有关负责任采购或供应链尽责管理方面的内容，同时全网搜索CAHRA（受冲突影响和高风险地区）相关信息。",
+  "id": 381034828059000,
+  "name": "responsible-sourcing-searcher",
+  "platform": "minimax",
+  "skill_id": 3332,
+  "sources": [
+    "OECD (经济合作与发展组织)",
+    "LBMA (伦敦金银市场协会)",
+    "LME (伦敦金属交易所)",
+    "中国五矿商会 (CCCMC)",
+    "受冲突影响和高风险地区 (CAHRA)"
+  ],
+  "tags": [
+    "responsible-sourcing",
+    "supply-chain",
+    "due-diligence",
+    "OECD",
+    "LBMA",
+    "LME",
+    "CAHRA",
+    "conflict-minerals"
+  ],
+  "updated_at": 1774579688692,
+  "version": "1.0.0"
+}

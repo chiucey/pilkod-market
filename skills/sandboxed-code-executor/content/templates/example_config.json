@@ -1,0 +1,50 @@
+{
+  "sandbox_config": {
+    "limits": {
+      "max_execution_time": 300,
+      "max_memory_mb": 512,
+      "max_disk_mb": 100,
+      "max_cpu_percent": 80,
+      "max_processes": 10,
+      "network_access": false
+    },
+    "security": {
+      "allow_file_write": false,
+      "allow_network": false,
+      "allow_subprocess": false,
+      "allowed_dirs": ["/tmp/sandbox"],
+      "banned_patterns": [
+        "eval(",
+        "exec(",
+        "__import__",
+        "os.system",
+        "subprocess"
+      ],
+      "allowed_modules": {
+        "python": ["json", "re", "math", "datetime", "collections", "itertools"],
+        "javascript": ["fs", "path", "crypto"]
+      }
+    },
+    "test_config": {
+      "framework": "pytest",
+      "coverage_threshold": 80,
+      "timeout": 120,
+      "retry_count": 2
+    },
+    "rollback_config": {
+      "enabled": true,
+      "keep_checkpoints": 5,
+      "auto_rollback_on_failure": true
+    }
+  },
+  "example_usage": {
+    "python": {
+      "code": "print('Hello, World!')",
+      "expected_output": "Hello, World!"
+    },
+    "javascript": {
+      "code": "console.log('Hello, World!');",
+      "expected_output": "Hello, World!"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "category": "image-processing",
+  "created_at": "2026-03-22",
+  "description": "证件照生成器。当用户上传人像照片时，自动裁切头像、替换背景（蓝底/白底）、生成1寸和2寸证件照，支持轻度美颜，提供4张证件照供选择下载。",
+  "id": 379271120228583,
+  "name": "photo-id-generator",
+  "platform": "minimax",
+  "skill_id": "1711029427",
+  "updated_at": 1774149329977,
+  "version": "1.0.0"
+}

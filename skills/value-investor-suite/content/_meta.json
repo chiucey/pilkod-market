@@ -1,0 +1,60 @@
+{
+  "author": "MiniMax Agent",
+  "config_fields": [
+    {
+      "description": "Eastmoney official Skills API Key",
+      "name": "eastmoney_api_key",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "description": "PDF extraction service: parseur, google_docai, or azure",
+      "name": "pdf_extractor_service",
+      "required": false,
+      "type": "string"
+    },
+    {
+      "description": "PDF service API Key",
+      "name": "pdf_extractor_api_key",
+      "required": false,
+      "type": "string"
+    },
+    {
+      "description": "Enterprise WeChat/DingTalk Webhook URL",
+      "name": "webhook_url",
+      "required": false,
+      "type": "string"
+    }
+  ],
+  "created_at": "2026-03-21",
+  "dependencies": [
+    "requests",
+    "pandas",
+    "pyyaml",
+    "openpyxl",
+    "matplotlib",
+    "akshare"
+  ],
+  "description": "A-Share value investing skill based on 22 investment classics, 15 analysis skills, and 7-layer investment framework. Covers macro positioning, industry analysis, financial valuation, buy decisions, psychological control, and long-term holding.",
+  "display_name": "A-Share Value Investment Suite",
+  "id": 379024895538139,
+  "name": "value-investor-suite",
+  "platform": "minimax",
+  "tags": [
+    "investment",
+    "value-analysis",
+    "A-Share",
+    "valuation",
+    "fundamentals"
+  ],
+  "trigger_keywords": [
+    "value investing",
+    "valuation",
+    "fair value range",
+    "fundamentals",
+    "long-term holding",
+    "analyze"
+  ],
+  "updated_at": 1774089722521,
+  "version": "1.0.0"
+}

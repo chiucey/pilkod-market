@@ -1,0 +1,22 @@
+# 运行时状态文件
+node_state.json
+chain_state.json
+used-combos.json
+domain-history.json
+task_state.json
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 敏感信息（如果需要本地覆盖）
+nodes_info.local.json
+config.local.js

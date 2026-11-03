@@ -1,0 +1,65 @@
+#!/bin/bash
+# Web Automation 启动脚本 (Linux/macOS)
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR/.."
+
+# 激活虚拟环境（如果存在）
+if [ -d ".venv" ]; then
+    source .venv/bin/activate
+fi
+
+# 如果没有提供参数，显示帮助
+if [ $# -eq 0 ]; then
+    cat << 'EOF'
+Web Automation - 智能网页自动化工具
+
+可用命令:
+
+浏览器管理:
+  python scripts/playwright_manager.py create      # 创建浏览器
+  python scripts/playwright_manager.py close       # 关闭浏览器
+  python scripts/playwright_manager.py screenshot  # 截图
+
+页面交互:
+  python scripts/browser_wrapper.py navigate       # 导航
+  python scripts/browser_wrapper.py click          # 点击
+  python scripts/browser_wrapper.py fill           # 填充
+  python scripts/browser_wrapper.py scroll         # 滚动
+  python scripts/browser_wrapper.py extract        # 提取
+
+图像识别:
+  python scripts/ocr_service.py recognize          # OCR 识别
+  python scripts/ocr_service.py extract-table      # 表格提取
+  python scripts/ocr_service.py detect-elements    # 元素检测
+
+文档处理:
+  python scripts/mineru_service.py parse-pdf       # 解析 PDF
+  python scripts/mineru_service.py extract-tables   # 提取表格
+  python scripts/mineru_service.py analyze-layout   # 布局分析
+
+文档转换:
+  python scripts/document_converter.py convert      # 转换文档
+  python scripts/document_converter.py batch         # 批量转换
+  python scripts/document_converter.py check-env    # 检查环境
+
+查看完整文档:
+  cat SKILL.md
+
+参考文档:
+  - references/playwright-guide.md    # Playwright 指南
+  - references/browser-use-guide.md   # browser-use 指南
+  - references/paddleocr-guide.md     # PaddleOCR 指南
+  - references/mineru-guide.md        # MinerU 指南
+  - references/conversion-guide.md    # 文档转换指南
+  - references/anti-scraping.md       # 反爬策略
+
+快速开始:
+  python scripts/playwright_manager.py create --headless=False
+  python scripts/browser_wrapper.py navigate --url=https://example.com
+  python scripts/playwright_manager.py close
+EOF
+else
+    # 如果提供了参数，直接传递给 playwright_manager
+    python scripts/playwright_manager.py "$@"
+fi

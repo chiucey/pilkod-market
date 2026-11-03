@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ä¸­å½æ¿åºç½</title>
+    <link href="../../images/trs_public.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../images/trs_mobile_pub.css" media="screen and (max-width:767px) and (orientation:portrait)" />
+    <link rel="stylesheet" type="text/css" href="../../images/trs_base.css">
+
+    <!-- pc -->
+    <link href="../../images/trs_404_pc.css" rel="stylesheet" type="text/css" />
+    <!-- ç§»å¨ -->
+    <link rel="stylesheet" type="text/css" href="../../images/trs_404_mobi.css" media="screen and (max-width:767px) and (orientation:portrait)" />
+
+    <script src="../../images/trs_jquery.min.js"></script>
+    <script src="../../images/trs_h5.js"></script>
+    <script src="../../images/trs_sj_resize.js"></script>
+</head>
+
+<body>
+    <!--å¤´é¨åµå¥-->
+	<link rel="stylesheet" type="text/css" href="/images/trs_FZYouHK_512B.css">
+<link rel="stylesheet" type="text/css" href="/images/trs_FZZHUNYSK.css">
+<style>
+  /* 20231023æ·»å æ éç¢ä»£ç  */
+  .header_toolbar li {
+    font-size: 16px;
+  }
+
+  .header_toolbar li.split {
+    margin: 0 9px;
+  }
+</style>
+<div class="header">
+  <div class="container mhide">
+    <div class="padding pos_r">
+      <div class="header_logo"><a href="https://www.gov.cn/" target="_blank" aria-label="ä¸­å½æ¿åºç½"><img src="/images/gtrs_logo_lt.png" alt="" /><img src="/images/gtrs_logo_rt.png" alt="" class="wordlogo" /></a></div>
+      <div class="header_search">
+        <form>
+          <input type="hidden" name="t" value="govall" />
+          <input class="header_search_txt" name="headSearchword" type="text" autocomplete="off" value="" onkeydown="listenerKeyUpEventFn()" />
+          <button class="header_search_btn" type="button" value="&nbsp;" onClick="goSearch(this)" />
+        </form>
+      </div>
+      <ul class="header_toolbar">
+        <li><a href="https://www.gov.cn/" target="_blank">é¦é¡µ</a></li>
+        <li class="split">|</li>
+        <li><a href="../../" target="_blank">ç®</a></li>
+        <li class="split">|</li>
+        <li><a href="http://big5.www.gov.cn/gate/big5/www.gov.cn/" target="_blank">ç¹</a></li>
+        <li class="split">|</li>
+        <li><a href="http://english.www.gov.cn/" target="_blank">EN</a></li>
+        <li class="split">|</li>
+        <li class="nologin"><a id="userlogin" href="javascript:void(0);">ç»å½</a></li>
+        <li class="yeslogin hide">
+          <a id="showname" href="javascript:void(0);"></a>
+          <ul>
+            <li class="usercenter"><a id="usercenter" href="javascript:void(0);">ä¸ªäººä¸­å¿</a></li>
+            <li><a id="logout" href="javascript:void(0);">éåº</a></li>
+          </ul>
+        </li>
+        <li class="split">|</li>
+        <li><a target="_blank" href="https://mail.www.gov.cn/nsmail/index.html">é®ç®±</a></li>
+        <li class="split">|</li>
+        <li><a href="javascript:;" onclick="aria.start()" clickhide="false">æ éç¢</a></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="container pchide">
+    <a href="https://www.gov.cn/" class="logo" target="_blank"><img src="/images/newlogo19ysp_lt.png" /><img src="/images/newlogo19ysp_rt.png" class="wordlogo" /></a>
+    <a class="lang" href="https://english.www.gov.cn/">EN</a>
+    <a href="javascript:;" class="search" id="searchBtn">
+      <img class="s1" src="/images/gtrs_newsearch.png" alt="" />
+      <img class="s2" src="/images/gtrs_newshouqi.png" alt="" />
+    </a>
+
+    <div class="searchBox">
+      <div class="search">
+        <form style="font-size:32px;">
+          <input class="text search_mi" name="headSearchword" type="text" placeholder="è¯·è¾å¥å³é®å­â¦â¦" onkeydown="listenerKeyUpEventFn()" />
+          <input class="image search_fr" type="button" value="" onClick="goSearch(this)" />
+        </form>
+        <script>
+          function goSearch(event) {
+            var e = window.event || event;
+            if(e.preventDefault){
+              e.preventDefault();
+            }else{
+              e.returnValue=false;
+            }
+            var s = '', m = document.querySelector('.header .pchide [name=headSearchword]');
+            s = m.offsetHeight > 0 ? m.value : document.querySelector('.header .mhide [name=headSearchword]').value;
+            // å¸åºä¸»ä½ dataTypeId=14
+            if (s == 'å¸åºä¸»ä½') {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=14&searchWord=' + s;
+            } else {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=107&searchWord=' + encodeURIComponent(s);
+            }
+            window.open(url, '_blank');
+          }
+          function listenerKeyUpEventFn(){
+            if(event.keyCode==13){
+              goSearch();
+            };
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="siteurl hide">https://www.gov.cn/</div>
+
+<script src="/images/jquery.pagination.js"></script>
+<script src="https://user.www.gov.cn/static/js/yh-idm5.0.0.js"></script>
+<script src="https://user.www.gov.cn/static/js/md5.js"></script>
+<script type="text/javascript" src="/images/pub.js"></script>
+<script>
+			//ç¹ä½åç®ä½ç¸äºè½¬æ¢
+			var currUrl = window.location.href;
+			
+			var flag = currUrl.indexOf("big5.www.gov.cn/gate/big5/");
+			
+			var jtzw = 'ht'+'tps://www.gov.cn';
+			
+			//ç¹ä½
+			if (flag > 0) { 
+				
+				$('.header_logo a').attr('href',jtzw);
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			}//ç®ä½
+			else { 
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			};
+		</script>
+<!--  <a href="javascript:void(0)" onclick="aria.start()" style="position: absolute;top: 0px;" class='mhide'>ç½ç«æ éç¢å¼å³</a> -->
+
+</html>
+
+	<!-- å¤´é¨åµå¥ END -->
+    
+    <div class="w1100">
+        <div class="wrap">
+            <div class="content" style="border:none">
+                <div class="column1"><img src="../../images/trs_error_1.jpg" width="154" height="111" /></div>
+                <div class="column2">æ¨è®¿é®çé¡µé¢ä¸å­å¨æå·²å é¤</div>
+                <div class="column3 fst">å¦æ¨æ¯å¨å°åæ è¾å¥ç½åçï¼è¯·ç¡®è®¤å¶æ¼åæ­£ç¡®ï¼å¹¶æ³¨æç½åçå¤§å°åå­æ¯åºåã</div>
+                <div class="column4 fst">äºè§£ä¸­å½æ¿åºç½æ´å¤ä¿¡æ¯ï¼è¯·è®¿é®<a href="../../">ä¸­å½æ¿åºç½</a></div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+    </div>
+		<!-- åºé¨åµå¥ -->
+		<style type="text/css">
+  .footer{
+    padding-top: 0;
+  }
+  .footer_dzjg {
+      padding: 14px 22px 0 0;
+          width: 90px;
+  }
+  .footer_dzjg span{
+    display: block;
+  }
+  .footer_txt{
+    margin-top: 27px;
+  }
+  .footer_r {
+      margin-top: 25px;
+  }
+  .barrierFree20231007{
+    width: 80px;
+    height: 37px;
+  }
+  #_ideConac a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+</style>
+<div class="footer_wrap">
+  <div class="container mhide">
+    <div class="footer_links footer_links1">
+      <ul class="clearfix">
+        <li>é¾æ¥ï¼</li>
+        <li><a href="http://www.npc.gov.cn/" target="_blank">å¨å½äººå¤§</a></li>
+        <li>|</li>
+        <li><a href="http://www.cppcc.gov.cn/" target="_blank">å¨å½æ¿å</a></li>
+        <li>|</li>
+        <li><a href="http://www.ccdi.gov.cn/" target="_blank">å½å®¶çå¯å§åä¼</a></li>
+        <li>|</li>
+        <li><a href="http://www.court.gov.cn/" target="_blank">æé«äººæ°æ³é¢</a></li>
+        <li>|</li>
+        <li><a href="http://www.spp.gov.cn/" target="_blank">æé«äººæ°æ£å¯é¢</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_links footer_links2">
+      <ul class="clearfix">
+        <li><a href="https://www.gov.cn/home/2023-03/29/content_5748953.htm" target="_blank">å½å¡é¢é¨é¨ç½ç«</a></li>
+        <li>|</li>
+        <li><a href="https://www.gov.cn/home/2023-03/29/content_5748954.htm" target="_blank">å°æ¹æ¿åºç½ç«</a></li>
+        <li>|</li>
+        <li><a href="https://www.gov.cn/home/2023-03/29/content_5748955.htm" target="_blank">é©»æ¸¯æ¾³æºæç½ç«</a></li>
+        <li>|</li>
+        <li><a href="https://www.gov.cn/home/2023-03/29/content_5748956.htm" target="_blank">é©»å¤æºæ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer over_hide">
+
+      <div class="footer_l fl">
+        <div class="footer_dzjg fl">
+            <span id="_ideConac"><a
+                    href="https://bszs.conac.cn/sitename?method=show&amp;id=081D1D6883441A53E053012819AC0DAA"
+                    target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="/images/red.png" data-bd-imgshare-binded="1" /></a>
+            </span>
+      <!-- æ éç¢ -->
+      <span class="barrierFree20231007"><img src="https://www.gov.cn/images/20230928shilaohuaicon.jpg" /></span>
+        </div>
+
+
+        <div class="footer_txt fl">
+          <div class="footer_nav">
+            <span><a href="https://www.gov.cn/index.htm" target="_blank">ä¸­å½æ¿åºç½</a></span>
+            <span class="split">|</span>
+            <span><a href="https://www.gov.cn/home/2016-05/11/content_5046257.htm" target="_blank">å³äºæ¬ç½</a></span>
+            <span class="split">|</span>
+            <span><a href="https://www.gov.cn/home/2014-02/23/content_5046258.htm" target="_blank">ç½ç«å£°æ</a></span>
+            <span class="split">|</span>
+            <span><a href="https://www.gov.cn/home/2014-02/23/content_5046259.htm" target="_blank">èç³»æä»¬</a></span>
+            <span class="split">|</span>
+            <span><a href="https://www.gov.cn/fuwu/jiucuopage.html" target="_blank">ç½ç«çº é</a></span>
+          </div>
+
+          <div class="footer_copyright">
+            <p class="footer_bg_gray zbd">ä¸»ååä½ï¼å½å¡é¢åå¬åãè¿è¡ç»´æ¤åä½ï¼ä¸­å½æ¿åºç½è¿è¡ä¸­å¿ </p>
+            <p class="footer_bg_gray bqs">çæææï¼ä¸­å½æ¿åºç½ãä¸­æååï¼<fjtignoreurl>ä¸­å½æ¿åºç½.æ¿å¡</fjtignoreurl>
+            </p>
+            <p>ç½ç«æ è¯ç bm01000001ã<a class="banquan" href="https://beian.miit.gov.cn/#/Integrated/index"
+                                  target="_blank">äº¬ICPå¤05070218å·</a>ã<img style="padding-top:2px;" src="/images/2018guohui03.png" /><a class="banquan"
+                                                                                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202000001"
+                                                                                            target="_blank">äº¬å¬ç½å®å¤11010202000001å·</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_r fr">
+        <div class="fl footer_ewm footer_ewm_gkhd">
+          <a href="http://app.www.gov.cn/download/Chinese.html" target="_blank"><img src="/images/icon_1234.png" alt="" /><span>å½å¡é¢å®¢æ·ç«¯</span></a>
+        </div>
+        <div class="fl footer_ewm footer_ewm_xcx">
+          <a href="https://www.gov.cn/guowuyuan/gwykhdxcx/xiaochengxu.html" target="_blank"><img src="/images/icon_724.png" alt="" /><span>å½å¡é¢å®¢æ·ç«¯å°ç¨åº</span></a>
+        </div>
+        <div class="fl footer_wxwb">
+          <a href="https://www.gov.cn/home/2014-02/18/content_5046260.htm" target="_blank"><img src="/images/icon_1434.png" width="48" height="48" /></a>
+          <a href="https://www.gov.cn/home/2014-02/18/content_5046260.htm" target="_blank"><img src="/images/icon_1534.png" width="48" height="48" /></a>
+          <p><a href="https://www.gov.cn/home/2014-02/18/content_5046260.htm" target="_blank">ä¸­å½æ¿åºç½å¾®åãå¾®ä¿¡</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pchide">
+    <div class="newfooter">
+      <ul class="btnlist">
+        <li><a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="#">çµèç</a></li>
+        <li><a href="https://app.www.gov.cn/govdata/html/download.html?from=singlemessage">å®¢æ·ç«¯</a></li>
+        <li><a href="https://www.gov.cn/guowuyuan/gwykhdxcx/xiaochengxu.html">å°ç¨åº</a></li>
+        <li><a href="https://weibo.com/zhengfu">å¾®å</a></li>
+        <li><a href="https://www.gov.cn/home/2014-02/18/content_5046260.htm">å¾®ä¿¡</a></li>
+        <li><a href="https://mail.www.gov.cn/nsmail/index.html">é®ç®±</a></li>
+      </ul>
+      <ul class="loginList">
+        <li class="yeslogin hide">
+          <img class="userImg" src="/images/userImg.png" alt="" />
+          <a id="showname1" href="javascript:;"></a>
+        </li>
+        <li class="yeslogin hide"><a id="logOutBtn1" href="javascript:;">éåº</a></li>
+        <li class="nologin"><a id="userreg1" href="javascript:;">æ³¨å</a></li>
+        <li class="nologin"><a id="userlogin1" href="javascript:;">ç»å½</a></li>
+        <li class="nologin"><a id="userlogin2" href="https://www.gov.cn/fuwu/jiucuopage.html">ç½ç«çº é</a></li>
+      </ul>
+      <div class="box">
+        <a class="left" href="http://bszs.conac.cn/sitename?method=show&id=081D1D6883441A53E053012819AC0DAA" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="/images/gtrs_red.png" data-bd-imgshare-binded="1" /></a>
+        <div class="right">
+          <p>ä¸»ååä½ï¼å½å¡é¢åå¬åãè¿è¡ç»´æ¤åä½ï¼ä¸­å½æ¿åºç½è¿è¡ä¸­å¿</p>
+          <p>çæææï¼ä¸­å½æ¿åºç½ãä¸­æååï¼<fjtignoreurl>ä¸­å½æ¿åºç½.æ¿å¡</fjtignoreurl>
+          </p>
+          <p>ç½ç«æ è¯ç bm01000001</p>
+          <p>äº¬ICPå¤05070218å·ãäº¬å¬ç½å®å¤11010202000001å·</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    trs_bottom.init();
+    initShow();
+  });
+
+  var trs_bottom = (function () {
+    function init() {
+      if (typeof (trs) != 'undefined') {
+        // trs.PcBackTop()
+        trs.SearchFn()
+      }
+    }
+
+    return {
+      init: init
+    }
+  })();
+
+  function initShow() {
+    var isShowPc = localStorage.getItem('isShowPc')
+    if (isShowPc && isShowPc === 'true') {
+      $("meta[name='viewport']").attr("content", "width=1280, target-densitydpi=device-dpi")
+      $('body').append('<div id="showMobi" class="showMobi"><img src="/images/trs_mobiIcon.png" />è¿åææºç</div>')
+    } else {
+      $("meta[name='viewport']").attr("content", "width=750, user-scalable=no, target-densitydpi=device-dpi")
+      $('#showMobi').remove()
+    }
+  }
+</script>
+<script defer async type="text/javascript" src="//wza.www.gov.cn/dist/aria.js?appid=44fa773aaaee697bd3f5d0fbfc36bf83" charset="utf-8" wapForceOldFixed="false" loadData="false" id="ariascripts"></script><!--å¾®ä¿¡åäº«å¾åè½-->
+<div class="share-title" style="display:none">é¡µé¢ä¸å­å¨_ä¸­å½æ¿åºç½</div>
+<div class="share-substr" style="display:none">https://www.gov.cn</div>
+<img class="share-img" style="display:none" src="../../images/150.jpg" width="300" height="300" />
+<script src="../../images/jweixin-1.0.0.js"></script>
+<script src="../../images/20191226wxShare.js"></script>
+<!--å¾®ä¿¡åäº«å¾åè½-->
+		<!-- åºé¨åµå¥ END -->
+    <script type="text/javascript">
+        setTimeout(function () { location.href = '../../'; }, 5000);
+    </script>
+<div style="display:none"><script type="text/javascript">document.write(unescape("%3Cscript src='//stat.www.gov.cn/webdig.js?z=1' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script></div></body>
+
+</html>

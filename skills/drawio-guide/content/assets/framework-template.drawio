@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" version="21.0.0">
+  <diagram name="论文框架图模板" id="framework-1">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="研究框架图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1F497D;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 理论基础 -->
+        <mxCell id="theory" value="理论基础&#xa;(理论框架)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;fontColor=#ffffff;fontSize=14;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="400" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 连接线: 理论到假设 -->
+        <mxCell id="line1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="theory" target="h1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="theory" target="h2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="theory" target="h3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 假设 H1 -->
+        <mxCell id="h1" value="假设 H1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ED7D31;fontColor=#ffffff;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 假设 H2 -->
+        <mxCell id="h2" value="假设 H2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ED7D31;fontColor=#ffffff;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="430" y="220" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 假设 H3 -->
+        <mxCell id="h3" value="假设 H3" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ED7D31;fontColor=#ffffff;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="740" y="220" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 变量 X1 -->
+        <mxCell id="x1" value="变量 X1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 变量 X2 -->
+        <mxCell id="x2" value="变量 X2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="360" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 变量 X3 -->
+        <mxCell id="x3" value="变量 X3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="360" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 连接线: 假设到变量 -->
+        <mxCell id="line4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="h1" target="x1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="h2" target="x2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="h3" target="x3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 汇聚箭头 -->
+        <mxCell id="line7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="x1" target="y">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="500" />
+              <mxPoint x="190" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="x2" target="y">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="x3" target="y">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="500" />
+              <mxPoint x="810" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 因变量 Y -->
+        <mxCell id="y" value="因变量 Y&#xa;(研究结论)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#70AD47;fontColor=#ffffff;fontSize=14;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="450" y="470" width="300" height="80" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

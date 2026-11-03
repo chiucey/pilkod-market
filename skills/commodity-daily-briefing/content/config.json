@@ -1,0 +1,32 @@
+{
+    "email": {
+        "smtp_server": "smtp.qq.com",
+        "smtp_port": 465,
+        "sender": "",
+        "password": "",
+        "receivers": []
+    },
+    "proxy": {
+        "enabled": false,
+        "proxy_list": []
+    },
+    "scraping": {
+        "min_delay": 3,
+        "max_delay": 8,
+        "max_retries": 2,
+        "timeout": 15
+    },
+    "focus_commodities": [
+        "铜",
+        "铝",
+        "原油",
+        "黄金",
+        "螺纹钢",
+        "铁矿石",
+        "橡胶",
+        "天然气",
+        "镍",
+        "白糖"
+    ],
+    "output_dir": "output"
+}

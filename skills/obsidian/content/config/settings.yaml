@@ -1,0 +1,11 @@
+# Obsidian 技能配置示例
+# 实际使用时，推荐通过 Agent 环境变量 OBSIDIAN_VAULT_PATH 设置库路径
+
+# 默认库路径（仅当环境变量未设置时作为备用，建议使用环境变量）
+default_vault_path: "~/Documents/Obsidian"
+
+# 搜索时是否默认包含内容
+search_content_default: false
+
+# 移动时是否默认尝试更新链接
+update_links_on_move: true

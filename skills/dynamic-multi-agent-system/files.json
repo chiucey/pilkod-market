@@ -1,0 +1,1134 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "2dc5a8e7b3212109676648f4b60c3db765599ea8",
+      "size": 16845
+    },
+    {
+      "path": "_meta.json",
+      "sha": "8d1e8661491ecb2afa582aa1213c502ec7f7ced0",
+      "size": 1640
+    },
+    {
+      "path": "config/feedback-config.json",
+      "sha": "cf2d820e06a62701e4fabfa30f662234dd9ae4d6",
+      "size": 686
+    },
+    {
+      "path": "core/agency-hq-integration/INTEGRATION-PATCH.md",
+      "sha": "2b68accd89337c686cd135c57eadf7a30e24b6e5",
+      "size": 8898
+    },
+    {
+      "path": "core/agency-hq-integration/README.md",
+      "sha": "427d03d8efb67013a781e6c7221a763fa0470bb9",
+      "size": 9852
+    },
+    {
+      "path": "core/agency-hq-integration/agents-dmags.config.ts",
+      "sha": "77ef01c2b34ff650209615ceecedd31d09de50fd",
+      "size": 7703
+    },
+    {
+      "path": "core/api/api/API-MULTI-MODEL-GUIDE.md",
+      "sha": "5f43ca554f299441be524bcf9ef9c647e931eb48",
+      "size": 7822
+    },
+    {
+      "path": "core/batch-processor/batch-processor/SKILL.md",
+      "sha": "4d4f50b9b90e97183c6e85b3f7a3a5d16470425b",
+      "size": 10444
+    },
+    {
+      "path": "core/browser/browser/BROWSER-CONFIG-GUIDE.md",
+      "sha": "25fea4aa2196588776339006d587201b7853e6c6",
+      "size": 5799
+    },
+    {
+      "path": "core/budget-controller/budget-controller/SKILL.md",
+      "sha": "8ae584e423ec58c6556bc4176de2115690ecc0ad",
+      "size": 10601
+    },
+    {
+      "path": "core/error-handler/SKILL.md",
+      "sha": "98f5c472bc2f0a335826bfcb93ffd873b72d57ac",
+      "size": 26158
+    },
+    {
+      "path": "core/executor-coordinator/SKILL.md",
+      "sha": "65453d42271da95db1f14ac27ecd62cef72208e3",
+      "size": 8723
+    },
+    {
+      "path": "core/executor-coordinator/TIMEOUT-RETRY.md",
+      "sha": "869fd3c6e90ddb2b2b8233465e518fc3d34c9433",
+      "size": 8115
+    },
+    {
+      "path": "core/exporter/exporter/enhanced-result-exporter.ps1",
+      "sha": "1b72d6f382ebf218aa2ce3d3657485e8a239a561",
+      "size": 20006
+    },
+    {
+      "path": "core/exporter/exporter/result-exporter.ps1",
+      "sha": "941df1162421a1ed6e4a82c51dddc21a0fad93e8",
+      "size": 3019
+    },
+    {
+      "path": "core/model-selector/model-selector/SKILL.md",
+      "sha": "52abc24271a00a27c6967135702025ccbe66239d",
+      "size": 17130
+    },
+    {
+      "path": "core/monitoring/monitoring/daily-ops-monitor.ps1",
+      "sha": "5a8fa7834f321756310afb6872269332ce25df9e",
+      "size": 4588
+    },
+    {
+      "path": "core/monitoring/monitoring/enhanced-system-monitor.ps1",
+      "sha": "8df58f36000945e627c2f5053c084f72b47c812e",
+      "size": 21750
+    },
+    {
+      "path": "core/monitoring/monitoring/system-monitor.ps1",
+      "sha": "20c9bd93182572ff7d40915d9c88e41e9bdb2a82",
+      "size": 3967
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/SKILL.md",
+      "sha": "4420978762aa7ef6934b340f9dc703f3184f190f",
+      "size": 9961
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/VIEWING-GUIDE.md",
+      "sha": "2c70b7d41a80486c952290e708e9f8e9276ba186",
+      "size": 3614
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/dashboard-simple.html",
+      "sha": "9d3ab7f6e85cf8e8124186f620f828c57b1a8d38",
+      "size": 9356
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/monitor.py",
+      "sha": "d0f60c1cb4f7f19e0847ec29fa0882bb67b5fa07",
+      "size": 13028
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/queue-manager.ps1",
+      "sha": "9628b62a9ec60abf1b60f28590ce93050abde4b2",
+      "size": 39337
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/start-dashboard-simple.bat",
+      "sha": "0d05cb655af91ff6878cf53976e182bed872cfc6",
+      "size": 579
+    },
+    {
+      "path": "core/multi-task-queue/multi-task-queue/start-monitor.bat",
+      "sha": "72a10e447be2da1ae4dad5e5ba4ca765f4d1c087",
+      "size": 134
+    },
+    {
+      "path": "core/optimization/optimization/enhanced-performance-optimizer.ps1",
+      "sha": "f7b47e1a901cff64846cf15ddca3f9df94f1af24",
+      "size": 13206
+    },
+    {
+      "path": "core/optimization/optimization/performance-optimizer.ps1",
+      "sha": "a4b3f630137ab56e9f1d0837a39828a855be3dff",
+      "size": 3008
+    },
+    {
+      "path": "core/progressive-processor/progressive-processor/SKILL.md",
+      "sha": "f2d2115c3035c0f24a00afea4d10c9f4ae720785",
+      "size": 9044
+    },
+    {
+      "path": "core/quality-checker/SKILL.md",
+      "sha": "de5f2d2c5b185462b699b3834c452ff37eaf55de",
+      "size": 8919
+    },
+    {
+      "path": "core/quality-checker/checklists/academic-checklist.md",
+      "sha": "00f19efe5a220b4a43fa00b059dcff4f3148930e",
+      "size": 3448
+    },
+    {
+      "path": "core/quality-checker/checklists/business-checklist.md",
+      "sha": "4aa6eaa15cd0e52cbb0a53acdcfe15019dd48db6",
+      "size": 4232
+    },
+    {
+      "path": "core/quality-checker/checklists/code-checklist.md",
+      "sha": "64d685041806fdcbcc566198098b1e915ddc0151",
+      "size": 1563
+    },
+    {
+      "path": "core/quality-checker/checklists/code-review-checklist.md",
+      "sha": "ac84cb39f00d83549207cb0af7115249b74edd88",
+      "size": 4664
+    },
+    {
+      "path": "core/quality-checker/checklists/design-review-checklist.md",
+      "sha": "67763d3028af8307765d8dd0fbe2bab5bb1ad7da",
+      "size": 5518
+    },
+    {
+      "path": "core/quality-checker/checklists/writing-checklist.md",
+      "sha": "5de1b0b94109092e4ff2deae897a62466c44ee93",
+      "size": 1254
+    },
+    {
+      "path": "core/refinement-analyzer/refinement-analyzer/SKILL.md",
+      "sha": "58941a232b965c613cc97dbaefd6d191ec7139e0",
+      "size": 9350
+    },
+    {
+      "path": "core/resource-cleaner/SKILL.md",
+      "sha": "1d8cc836a9b3b7c70b3d7ba44c4c8a865d2cc4df",
+      "size": 6399
+    },
+    {
+      "path": "core/result-reuse/result-reuse/SKILL.md",
+      "sha": "111ac49b42075f7e171c9d9cabe9e10ee63a0d06",
+      "size": 11354
+    },
+    {
+      "path": "core/shared-memory/SKILL.md",
+      "sha": "60e3a3330aa88631fcdee9f4b2f8b20d9c8ca66c",
+      "size": 12072
+    },
+    {
+      "path": "core/shared-memory/memory-protocol.ps1",
+      "sha": "0443cd400759b4ae3d6656f3652fc3a7da545548",
+      "size": 37671
+    },
+    {
+      "path": "core/shared-memory/memory-store.ps1",
+      "sha": "8cb57651bbd88019b3caf0e75a5c5986d3cab75b",
+      "size": 8357
+    },
+    {
+      "path": "core/skill-evolution/SKILL.md",
+      "sha": "abe934f3c239aa18b9dbe28b132c30c6382c0006",
+      "size": 7530
+    },
+    {
+      "path": "core/skill-evolution/skill-evolution-enhancer.ps1",
+      "sha": "e204508046d6a4e46c4b8b14320b44006a51c280",
+      "size": 31991
+    },
+    {
+      "path": "core/smart-retry/SKILL.md",
+      "sha": "d9f72866a68538d04c70cc28358677b5dbad3dcc",
+      "size": 31390
+    },
+    {
+      "path": "core/subagent-manager/roles/architect.md",
+      "sha": "c4cd997baa8cf41c573880f482144ff4eeb0ef92",
+      "size": 744
+    },
+    {
+      "path": "core/subagent-manager/roles/bi-analyst.md",
+      "sha": "24810c2a3cd101529c104b4c2a44293813457dae",
+      "size": 847
+    },
+    {
+      "path": "core/subagent-manager/roles/brand-strategist.md",
+      "sha": "84a2fb46d0396403b617f9a82a89909dc3ca4911",
+      "size": 876
+    },
+    {
+      "path": "core/subagent-manager/roles/compliance-officer.md",
+      "sha": "77e4cac929cc86f3dbc53c0517393e3df5b0a97c",
+      "size": 764
+    },
+    {
+      "path": "core/subagent-manager/roles/content-strategist.md",
+      "sha": "2dff0c6b6e14606665fd3b0fffcf587e5b946ea2",
+      "size": 708
+    },
+    {
+      "path": "core/subagent-manager/roles/customer-success-manager.md",
+      "sha": "3a08c774815db07abd01bc3654deb0f3cead8ffb",
+      "size": 816
+    },
+    {
+      "path": "core/subagent-manager/roles/data-analyst.md",
+      "sha": "c5328f666309a24f3f5afb4c9aac9fe0b63e13d8",
+      "size": 685
+    },
+    {
+      "path": "core/subagent-manager/roles/data-engineer.md",
+      "sha": "63e5652379d7c7838d89b02c1524fa348e88333e",
+      "size": 819
+    },
+    {
+      "path": "core/subagent-manager/roles/data-scientist.md",
+      "sha": "4f0bd5d91d92148237003e5dd507a624253cd14a",
+      "size": 759
+    },
+    {
+      "path": "core/subagent-manager/roles/devops-engineer.md",
+      "sha": "7b427aeee413785c5a1490281268d758ad3a8111",
+      "size": 915
+    },
+    {
+      "path": "core/subagent-manager/roles/financial-analyst.md",
+      "sha": "568c650b54af695dc5de98ab585749491f393365",
+      "size": 887
+    },
+    {
+      "path": "core/subagent-manager/roles/growth-hacker.md",
+      "sha": "dddfab5d6f4e66db00b1eba6e5e644231e9beca3",
+      "size": 770
+    },
+    {
+      "path": "core/subagent-manager/roles/legal-advisor.md",
+      "sha": "89847ec3bb35fdef2ddadd6ef924cc7cb2a12daf",
+      "size": 872
+    },
+    {
+      "path": "core/subagent-manager/roles/market-researcher.md",
+      "sha": "11b673bb200728f1d51aa62ca1235ce7dc90827f",
+      "size": 686
+    },
+    {
+      "path": "core/subagent-manager/roles/operations-analyst.md",
+      "sha": "38a9dc9b303155edc054baef477da871c721c128",
+      "size": 751
+    },
+    {
+      "path": "core/subagent-manager/roles/product-manager.md",
+      "sha": "609b39544c199e375a44ff4305c9e7e71c232f52",
+      "size": 767
+    },
+    {
+      "path": "core/subagent-manager/roles/project-manager.md",
+      "sha": "b9e592a37d01ed359a52b8ae595c7eb590b2efc3",
+      "size": 1033
+    },
+    {
+      "path": "core/subagent-manager/roles/qa-engineer.md",
+      "sha": "ad5cb1c8158bc15ba0e92c94bfb7c7bf5684bf51",
+      "size": 730
+    },
+    {
+      "path": "core/subagent-manager/roles/security-engineer.md",
+      "sha": "a63349af27995f45c6027fc21c64ea6b5f66a1d3",
+      "size": 912
+    },
+    {
+      "path": "core/subagent-manager/roles/seo-specialist.md",
+      "sha": "b364a3de7084b5f31b34c4a494ee1d4688031e02",
+      "size": 803
+    },
+    {
+      "path": "core/subagent-manager/roles/social-media-specialist.md",
+      "sha": "db9df2c735e7da91e529298a4fe95e92114b68a4",
+      "size": 796
+    },
+    {
+      "path": "core/subagent-manager/roles/system-admin.md",
+      "sha": "f8793b519b8ef93d196e182ba5c0085587d9b0bb",
+      "size": 756
+    },
+    {
+      "path": "core/subagent-manager/roles/technical-writer.md",
+      "sha": "ff428befb6b029020bf78383a36f321b70339b89",
+      "size": 620
+    },
+    {
+      "path": "core/subagent-manager/roles/test-engineer.md",
+      "sha": "d67d671f54a64723876ac1571f0cb30c306f12a8",
+      "size": 685
+    },
+    {
+      "path": "core/subagent-manager/roles/translator.md",
+      "sha": "a2b7e817e1f09a786b394a918215091cc932a751",
+      "size": 597
+    },
+    {
+      "path": "core/subagent-manager/roles/ui-designer.md",
+      "sha": "373061d32b1cb4b51f928729c2e0b27247acdd3d",
+      "size": 903
+    },
+    {
+      "path": "core/subagent-manager/roles/ui-ux-designer.md",
+      "sha": "07624ade85e51bb488f16f00a09a86ecfd5a0de9",
+      "size": 711
+    },
+    {
+      "path": "core/subagent-manager/roles/ux-researcher.md",
+      "sha": "f297c9547cf9143eda5924736490f05d15138c32",
+      "size": 753
+    },
+    {
+      "path": "core/subagent-manager/roles/video-script-writer.md",
+      "sha": "a9444658709e2e503e4b79132d9e3b4119fd3e15",
+      "size": 791
+    },
+    {
+      "path": "core/subagent-manager/roles/video-scriptwriter.md",
+      "sha": "9925dbfb0bb77c4bf9eb08b579eb9ea10234558a",
+      "size": 888
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/SKILL.md",
+      "sha": "d5e1abce78df91dcc94dad9f594a6123347f3d3f",
+      "size": 7298
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/architect.md",
+      "sha": "c4cd997baa8cf41c573880f482144ff4eeb0ef92",
+      "size": 744
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/bi-analyst.md",
+      "sha": "24810c2a3cd101529c104b4c2a44293813457dae",
+      "size": 847
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/brand-strategist.md",
+      "sha": "84a2fb46d0396403b617f9a82a89909dc3ca4911",
+      "size": 876
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/compliance-officer.md",
+      "sha": "77e4cac929cc86f3dbc53c0517393e3df5b0a97c",
+      "size": 764
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/content-strategist.md",
+      "sha": "2dff0c6b6e14606665fd3b0fffcf587e5b946ea2",
+      "size": 708
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/customer-success-manager.md",
+      "sha": "3a08c774815db07abd01bc3654deb0f3cead8ffb",
+      "size": 816
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/data-analyst.md",
+      "sha": "c5328f666309a24f3f5afb4c9aac9fe0b63e13d8",
+      "size": 685
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/data-engineer.md",
+      "sha": "63e5652379d7c7838d89b02c1524fa348e88333e",
+      "size": 819
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/data-scientist.md",
+      "sha": "4f0bd5d91d92148237003e5dd507a624253cd14a",
+      "size": 759
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/devops-engineer.md",
+      "sha": "7b427aeee413785c5a1490281268d758ad3a8111",
+      "size": 915
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/financial-analyst.md",
+      "sha": "568c650b54af695dc5de98ab585749491f393365",
+      "size": 887
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/growth-hacker.md",
+      "sha": "dddfab5d6f4e66db00b1eba6e5e644231e9beca3",
+      "size": 770
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/legal-advisor.md",
+      "sha": "89847ec3bb35fdef2ddadd6ef924cc7cb2a12daf",
+      "size": 872
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/market-researcher.md",
+      "sha": "11b673bb200728f1d51aa62ca1235ce7dc90827f",
+      "size": 686
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/operations-analyst.md",
+      "sha": "38a9dc9b303155edc054baef477da871c721c128",
+      "size": 751
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/product-manager.md",
+      "sha": "609b39544c199e375a44ff4305c9e7e71c232f52",
+      "size": 767
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/project-manager.md",
+      "sha": "b9e592a37d01ed359a52b8ae595c7eb590b2efc3",
+      "size": 1033
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/qa-engineer.md",
+      "sha": "ad5cb1c8158bc15ba0e92c94bfb7c7bf5684bf51",
+      "size": 730
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/security-engineer.md",
+      "sha": "a63349af27995f45c6027fc21c64ea6b5f66a1d3",
+      "size": 912
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/seo-specialist.md",
+      "sha": "b364a3de7084b5f31b34c4a494ee1d4688031e02",
+      "size": 803
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/social-media-specialist.md",
+      "sha": "db9df2c735e7da91e529298a4fe95e92114b68a4",
+      "size": 796
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/system-admin.md",
+      "sha": "f8793b519b8ef93d196e182ba5c0085587d9b0bb",
+      "size": 756
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/technical-writer.md",
+      "sha": "ff428befb6b029020bf78383a36f321b70339b89",
+      "size": 620
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/test-engineer.md",
+      "sha": "d67d671f54a64723876ac1571f0cb30c306f12a8",
+      "size": 685
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/translator.md",
+      "sha": "a2b7e817e1f09a786b394a918215091cc932a751",
+      "size": 597
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/ui-designer.md",
+      "sha": "373061d32b1cb4b51f928729c2e0b27247acdd3d",
+      "size": 903
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/ui-ux-designer.md",
+      "sha": "07624ade85e51bb488f16f00a09a86ecfd5a0de9",
+      "size": 711
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/ux-researcher.md",
+      "sha": "f297c9547cf9143eda5924736490f05d15138c32",
+      "size": 753
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/video-script-writer.md",
+      "sha": "a9444658709e2e503e4b79132d9e3b4119fd3e15",
+      "size": 791
+    },
+    {
+      "path": "core/subagent-manager/subagent-manager/roles/video-scriptwriter.md",
+      "sha": "9925dbfb0bb77c4bf9eb08b579eb9ea10234558a",
+      "size": 888
+    },
+    {
+      "path": "core/task-classifier/task-classifier/SKILL.md",
+      "sha": "2b8a4b5a9ee500a455a1570e227bae1db82a258f",
+      "size": 6769
+    },
+    {
+      "path": "core/task-decomposer/task-decomposer/SKILL.md",
+      "sha": "512ac3cfa9975dd288f0d1ad6db7b39ee43e1e25",
+      "size": 7847
+    },
+    {
+      "path": "core/task-decomposer/task-decomposer/SPLIT-ADVISOR.md",
+      "sha": "4267a913770629c233ce3090af77e964889d04a5",
+      "size": 7732
+    },
+    {
+      "path": "core/task-decomposer/task-decomposer/split_advisor.py",
+      "sha": "8263911539179293e0bfa0ce71025938cf99d961",
+      "size": 9866
+    },
+    {
+      "path": "core/user-feedback/user-feedback/IMPLEMENTATION.md",
+      "sha": "23d6bc0bf2f72b55a882c81915a9378010278fa1",
+      "size": 4233
+    },
+    {
+      "path": "core/user-feedback/user-feedback/SKILL.md",
+      "sha": "1fa5d16d70e6506ed514a397c96b945a110027cd",
+      "size": 7137
+    },
+    {
+      "path": "core/user-feedback/user-feedback/auto-feedback-collector.ps1",
+      "sha": "650fa6e4e7c21044d41f0f77380a9da66f8720cd",
+      "size": 30354
+    },
+    {
+      "path": "core/visual-monitor/visual-monitor/SKILL.md",
+      "sha": "ad3f62821241f8955c1dc9f28189eb11b4f1e19c",
+      "size": 10940
+    },
+    {
+      "path": "core/visual-monitor/visual-monitor/visual-monitor-enhancer.ps1",
+      "sha": "e0837eafc26c5a346f0fd469a7f20854cb89dd1a",
+      "size": 7119
+    },
+    {
+      "path": "docs/COMPARISON-ANALYSIS-REPORT.md",
+      "sha": "7ca20a3ba4e35d028373a91bb5608df8af51c90a",
+      "size": 20301
+    },
+    {
+      "path": "docs/NOVEL-COMPLETE-FRAMEWORK.md",
+      "sha": "5799e8d9150f464e42508e13f3af1d00ffe20d57",
+      "size": 10319
+    },
+    {
+      "path": "docs/NOVEL-FRAMEWORK-SUMMARY.md",
+      "sha": "ed263bfd7bff155c4078c2682f3175a5c44c9ec4",
+      "size": 9678
+    },
+    {
+      "path": "docs/P0-SUMMARY-AND-P1-P2-PLAN.md",
+      "sha": "72c181f53a1066db7e57ef5ec6dc7f1780417f10",
+      "size": 6780
+    },
+    {
+      "path": "docs/P1-COMPLETION-SUMMARY.md",
+      "sha": "f4b89d6b973c735a4f31f4f7d2c1450a2a81e3ef",
+      "size": 8270
+    },
+    {
+      "path": "docs/P1-IMPLEMENTATION-TRACKER.md",
+      "sha": "6261f0bc083b3f360ad26829bb67855903292b08",
+      "size": 4631
+    },
+    {
+      "path": "docs/P2-COMPLETION-SUMMARY.md",
+      "sha": "c7fcb361b20b635fba8ffc544c64092007d97823",
+      "size": 9053
+    },
+    {
+      "path": "docs/P2-IMPLEMENTATION-TRACKER.md",
+      "sha": "64aff1849a7b1acc76635c441df004cadb330bd9",
+      "size": 3737
+    },
+    {
+      "path": "docs/P2-OPTIMIZATION-DETAILS.md",
+      "sha": "d6bc71c8cbb985ab0f6ad254ef2d615c36c2be26",
+      "size": 7532
+    },
+    {
+      "path": "docs/READY-FOR-SUBMISSION.md",
+      "sha": "1c3cb9478b3414504723e7aa3eea15567bf20b77",
+      "size": 8666
+    },
+    {
+      "path": "docs/STORY-OUTLINE-UPDATED.md",
+      "sha": "f1de34c88767d2826deea6ddf30dc9886e194adb",
+      "size": 29242
+    },
+    {
+      "path": "docs/SUBMISSION-GUIDE.md",
+      "sha": "6b662d9a340b34014fd908bbbd7416e7ed2afb16",
+      "size": 8941
+    },
+    {
+      "path": "docs/SUBMISSION-SKILLHUB.md",
+      "sha": "259dae42747bc905551f72b5e660d40d15bbdf06",
+      "size": 14901
+    },
+    {
+      "path": "docs/USER-GUIDE.md",
+      "sha": "562780a2f37e7786edb7a08666a5346a5721020e",
+      "size": 8746
+    },
+    {
+      "path": "docs/VISUAL-DIAGRAMS.md",
+      "sha": "ef3a60af8ec6084be9a919c75887e02bec901e83",
+      "size": 20151
+    },
+    {
+      "path": "docs/VISUAL-MONITOR-COMPLETION.md",
+      "sha": "896f4298e9d2ca028dd4d3755ad8439f060f6d13",
+      "size": 10288
+    },
+    {
+      "path": "docs/api-reference.md",
+      "sha": "92c4316ed05ceab7f75f27be82da6c1b62d66a10",
+      "size": 4707
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha": "853f69c550d5c68b79b85ac4a7e35fad3416e8fa",
+      "size": 3777
+    },
+    {
+      "path": "docs/contribution.md",
+      "sha": "04cf72c7d874a8df2c89468791ae3f0ae27ce890",
+      "size": 5672
+    },
+    {
+      "path": "docs/deployment.md",
+      "sha": "a3fb0b6ab276d0dc5561f3cd1bab7554ae49d5b1",
+      "size": 7643
+    },
+    {
+      "path": "docs/multi-task-queue-protocol.md",
+      "sha": "7831642dfa637e70bcf5009658fb4838e32d9987",
+      "size": 6737
+    },
+    {
+      "path": "docs/shared-memory-protocol.md",
+      "sha": "5b0c69d75eb7294340673c858133a5a884ad4c70",
+      "size": 10347
+    },
+    {
+      "path": "docs/skill-solidification-protocol.md",
+      "sha": "5910db35bf777e4617488994ee81eca20901b7c0",
+      "size": 17666
+    },
+    {
+      "path": "docs/skillhub-monitoring.md",
+      "sha": "85658d5bd1a617243e4ca04098d2bfa1c41a71a2",
+      "size": 2251
+    },
+    {
+      "path": "docs/state-management.md",
+      "sha": "b1937028b50b049aa823725fa2099b947a418414",
+      "size": 6190
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "sha": "c6f774ed0b07e3455a614eb922d4ceccd5914c8b",
+      "size": 6652
+    },
+    {
+      "path": "docs/user-feedback-protocol.md",
+      "sha": "4b1d3851ccc086289be6d5851b5c63ee100905ad",
+      "size": 15448
+    },
+    {
+      "path": "examples/EXAMPLES.md",
+      "sha": "d9a3170cd72f867804056d158cc1de1942572407",
+      "size": 9777
+    },
+    {
+      "path": "examples/example-academic-paper.md",
+      "sha": "3099b57aaa0aa85a0a6a720cc71f581e88397bf9",
+      "size": 4959
+    },
+    {
+      "path": "examples/example-analysis.md",
+      "sha": "43e7a5b5b2fb864500a4bd91db78d2423bb77615",
+      "size": 2951
+    },
+    {
+      "path": "examples/example-business-plan.md",
+      "sha": "a2952712c163d23e80f86884852f95c2b2fc7316",
+      "size": 5494
+    },
+    {
+      "path": "examples/example-code-refactoring.md",
+      "sha": "43c9229afdcf62053e28caaa3203d3d11752ca53",
+      "size": 4204
+    },
+    {
+      "path": "examples/example-mystery.md",
+      "sha": "3b6ed17e4b6b9bc989bda8c4920355d48191585e",
+      "size": 3861
+    },
+    {
+      "path": "examples/example-sci-fi.md",
+      "sha": "2c07b54d60d534f84b1ca88f720803dfa654b7c4",
+      "size": 2087
+    },
+    {
+      "path": "examples/example-technical-proposal.md",
+      "sha": "71ec6811fa6cfbdc0b75ee369650c1dddd0f066b",
+      "size": 5000
+    },
+    {
+      "path": "locales/en-US.json",
+      "sha": "e3970a82310207a2cdb2bd10abdb7ebcb349c1c4",
+      "size": 3029
+    },
+    {
+      "path": "locales/ja-JP.json",
+      "sha": "8be3fd633ff8eb5b59c3007220e9ddc985e1724b",
+      "size": 3534
+    },
+    {
+      "path": "locales/language-switcher.ps1",
+      "sha": "4ca297014a63f04a83921fb1c6b0e3a10643355a",
+      "size": 1514
+    },
+    {
+      "path": "locales/zh-CN.json",
+      "sha": "7dbcea711fa1b867164c8f8e5f69de4642dc9937",
+      "size": 3068
+    },
+    {
+      "path": "manifest.json",
+      "sha": "c087ae7dbaa753bba174dc98d831add4b4fe440d",
+      "size": 2105
+    },
+    {
+      "path": "novel-wuming/README.md",
+      "sha": "0f6a4d95b501f1308982cf0703556a8233b5c5cf",
+      "size": 5581
+    },
+    {
+      "path": "novel-wuming/anchor/FORBIDDEN.md",
+      "sha": "03f57f83ff1a6af502462fe525fa9c5224a05486",
+      "size": 1593
+    },
+    {
+      "path": "novel-wuming/characters/roster.md",
+      "sha": "414ea95384e2896f87b4790ddda7338b55a58138",
+      "size": 2499
+    },
+    {
+      "path": "novel-wuming/characters/status/ling-wuyue.md",
+      "sha": "7e5ca726fcdd2b62294252e8df70231943b8a1a8",
+      "size": 1599
+    },
+    {
+      "path": "novel-wuming/feedback/feedback-template.md",
+      "sha": "09d2d72a4e125505c425df58e662b5f15afd8211",
+      "size": 1265
+    },
+    {
+      "path": "novel-wuming/plot/foreshadowing.md",
+      "sha": "81c473591832b12b48aa01a915f8c02817d6fbd9",
+      "size": 2496
+    },
+    {
+      "path": "novel-wuming/roles/character-editor/LEARNING.md",
+      "sha": "04b86f4199d437d552dd2e1576934cef7f4b5bc9",
+      "size": 3255
+    },
+    {
+      "path": "novel-wuming/roles/consistency-checker/LEARNING.md",
+      "sha": "0f2d0a06f99f1218bf6056174f98c0106aa64cdb",
+      "size": 3895
+    },
+    {
+      "path": "novel-wuming/roles/content-writer/LEARNING.md",
+      "sha": "731345b6567f93a9776337b61d47cbc33996151f",
+      "size": 3097
+    },
+    {
+      "path": "novel-wuming/roles/plot-architect/LEARNING.md",
+      "sha": "3c8de8e45f218d6eb57ef4aadef4163bacc32bf8",
+      "size": 2852
+    },
+    {
+      "path": "novel-wuming/roles/tone-editor/LEARNING.md",
+      "sha": "ccd2eaad9c404e58138e9da285afec430e5057e7",
+      "size": 3481
+    },
+    {
+      "path": "novel-wuming/roles/world-builder/LEARNING.md",
+      "sha": "239d8ea94c35f1e5fdcc7e19f05994607cfe65c5",
+      "size": 3170
+    },
+    {
+      "path": "operations/DAILY-OPS-SOP.md",
+      "sha": "2f081c9e2ef94734f49c47454617d8ae97edbc19",
+      "size": 4162
+    },
+    {
+      "path": "operations/DAILY-REPORT-TEMPLATE.md",
+      "sha": "93b835e554dfbf396c0630fb8488d0e71790071f",
+      "size": 1589
+    },
+    {
+      "path": "operations/FAQ-TEMPLATES.md",
+      "sha": "d41d6b1b5531967eeb77e93bf40ab59fc085bfe0",
+      "size": 3678
+    },
+    {
+      "path": "operations/FEEDBACK-CHANNEL-PLAN.md",
+      "sha": "25187a0efda567ded9956a9b438e495cb52f3d3b",
+      "size": 4974
+    },
+    {
+      "path": "operations/FEEDBACK-MANAGEMENT-SOP.md",
+      "sha": "e735b3e2a9da13444004ea8b15ad86c119332dfe",
+      "size": 6731
+    },
+    {
+      "path": "operations/FEEDBACK-RECEIVE-PLAN.md",
+      "sha": "c1899ae6fb1ff62433c50dccfbf14cf62f43d73f",
+      "size": 7125
+    },
+    {
+      "path": "operations/OPERATIONS-CHECKLIST.md",
+      "sha": "a6231d433b49f17966d1bfb2af0b1c3096994b78",
+      "size": 1773
+    },
+    {
+      "path": "operations/P0-TRACKING.md",
+      "sha": "f581e54db36d2f159671c5ebd0dac50eebde813e",
+      "size": 3806
+    },
+    {
+      "path": "operations/README.md",
+      "sha": "97dab87725f3c48eae801cc3b7570f8aa1ffab38",
+      "size": 3179
+    },
+    {
+      "path": "operations/SKILLHUB-CHECKLIST.md",
+      "sha": "a11c4307ea955e68be16a24213f3f1ad7071fdbd",
+      "size": 1407
+    },
+    {
+      "path": "operations/SYSTEM-HEALTH-CHECK.md",
+      "sha": "7f919839bc29201ac46dd945e644c362957ccc81",
+      "size": 2722
+    },
+    {
+      "path": "operations/TASK-TRACKER.md",
+      "sha": "6326f3193504e0dcf21a8396d9aefb6a5d8ba3fc",
+      "size": 2577
+    },
+    {
+      "path": "operations/TOKEN-MONITOR.md",
+      "sha": "323ff718962616d442b079a31bc3a99df8d3a200",
+      "size": 1749
+    },
+    {
+      "path": "operations/USER-FEEDBACK.md",
+      "sha": "634a14295a864c7ecf7eb9a5adf70ee9377fa730",
+      "size": 2266
+    },
+    {
+      "path": "operations/WEEKLY-REPORT-TEMPLATE.md",
+      "sha": "22bc1ffed2024f2c62d88158c68b1bffb5fa30df",
+      "size": 2214
+    },
+    {
+      "path": "operations/auto-feedback-collector.ps1",
+      "sha": "1c774e92c2981e75fe35099f938357b7e5d984ec",
+      "size": 6672
+    },
+    {
+      "path": "operations/check-feedback-daily.ps1.md",
+      "sha": "3b0c47b71c34abe0d75d322940efb590e65ac22c",
+      "size": 6122
+    },
+    {
+      "path": "operations/collect-feedback.ps1.md",
+      "sha": "3fe7ed472a907b3b1e79252562779bc8e761ed65",
+      "size": 2232
+    },
+    {
+      "path": "operations/feedbacks/2026-04/email-20260406-105057.json",
+      "sha": "9d435693543e4afd5791e7955b747aaff114bfb3",
+      "size": 287
+    },
+    {
+      "path": "operations/feedbacks/2026-04/wechat-20260406-105057.json",
+      "sha": "ba8b5ceac93aa518695df794078cb3617fd90c6c",
+      "size": 284
+    },
+    {
+      "path": "operations/log-daily-data.ps1.md",
+      "sha": "7bed1f6d7d37346fecec97bb7d27bf0f5e8170de",
+      "size": 1801
+    },
+    {
+      "path": "operations/skillhub-analytics.md",
+      "sha": "fd59cc29eee759137c7577b3a20eeca5c6a442ba",
+      "size": 1920
+    },
+    {
+      "path": "operations/v1.2.0-REVIEW-STATUS.md",
+      "sha": "bf92af31518a73d95b01c29a5d5442373b0cfdaf",
+      "size": 4155
+    },
+    {
+      "path": "reports/daily-2026-04-06.md",
+      "sha": "0ee9c92a7aafc9ab818686bdb511859119057156",
+      "size": 2113
+    },
+    {
+      "path": "reports/ops-daily-template.md",
+      "sha": "56f616f9b202df1d4cffea29aa0845b9008dcdee",
+      "size": 2160
+    },
+    {
+      "path": "reports/ops-report-2026-04-06.json",
+      "sha": "c57d351d07d6596ddb85ec6003b671c73257be1e",
+      "size": 1784
+    },
+    {
+      "path": "reports/weekly/test-weekly.md",
+      "sha": "90e606bee453bbcce967899815f5d0057cd2328f",
+      "size": 176
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "b9b37a024102a8bb262a6da86afc95bd0eb6617b",
+      "size": 3563
+    },
+    {
+      "path": "state/REAL-TIME-MONITORING.md",
+      "sha": "9f8dc27168f308552446f4a8d1537001e66dd581",
+      "size": 3055
+    },
+    {
+      "path": "state/alerts.json",
+      "sha": "a52b95ed351ba56a52b88223228d011b4fa82ee0",
+      "size": 526
+    },
+    {
+      "path": "state/email-config.json",
+      "sha": "1de970d0f1f40d5ab5bbd6467e3adf92f32ced5c",
+      "size": 75
+    },
+    {
+      "path": "state/experience-db.json",
+      "sha": "befee87c3569bb77ed1b3840999ac136551ea66f",
+      "size": 1412
+    },
+    {
+      "path": "state/feedback-stats.json",
+      "sha": "6679571342ce54f9e9a2e90b71525305a825b1fa",
+      "size": 1332
+    },
+    {
+      "path": "state/multi-task-queue.json",
+      "sha": "561bc17405a64c5f0feb1dc68dac81194b1f23bc",
+      "size": 581
+    },
+    {
+      "path": "state/queue-manager.json",
+      "sha": "85d1813ec076936dd2843a73be65887a3e67788e",
+      "size": 550
+    },
+    {
+      "path": "state/skill-counters.json",
+      "sha": "d29c8a81167e4fffc07fb2efdebc193eba73873d",
+      "size": 549
+    },
+    {
+      "path": "state/skill-patterns.json",
+      "sha": "416f20bd1edd05e16750bfcbf9e0597cddcce40f",
+      "size": 1666
+    },
+    {
+      "path": "state/skill-usage-stats.json",
+      "sha": "77223778842303bd5e751ac31691a96fc2c3e4dc",
+      "size": 694
+    },
+    {
+      "path": "templates/NOVEL-REFERENCE.md",
+      "sha": "f3f355ed041c875771e0288319e07021dbd482ff",
+      "size": 11957
+    },
+    {
+      "path": "templates/README.md",
+      "sha": "aeeaaef3ddfb896b74668910f977260058154027",
+      "size": 7387
+    },
+    {
+      "path": "templates/academic-paper/template.json",
+      "sha": "8e9d02356af9f7b834ac0ca7f44feccf32976fb0",
+      "size": 3810
+    },
+    {
+      "path": "templates/analysis-competitor.md",
+      "sha": "3ece059da5da90654571e13acfae01795d45cb2d",
+      "size": 1007
+    },
+    {
+      "path": "templates/business-plan/template.json",
+      "sha": "088c616341f90eeb8f806cedbedfb5f1b0da5ea0",
+      "size": 4046
+    },
+    {
+      "path": "templates/code-bug-fix.md",
+      "sha": "4a19fa0f8422c06938b6c4e7495deb86c5a8ddb8",
+      "size": 931
+    },
+    {
+      "path": "templates/code-python-analysis.md",
+      "sha": "dd28c26edab12779eab1b9fe59efbfbf30b390db",
+      "size": 1006
+    },
+    {
+      "path": "templates/learning-note-summary.md",
+      "sha": "c78b05c8487b94577eb07e4f12252d0cd0721c7b",
+      "size": 1014
+    },
+    {
+      "path": "templates/mystery-creation/mystery-checklist.md",
+      "sha": "c656d637a3c418c4c9e890bd342ddfab6ed50cc0",
+      "size": 884
+    },
+    {
+      "path": "templates/mystery-creation/template.json",
+      "sha": "2426c643f9a8fc7686ee2aa4460e550f6224e5af",
+      "size": 2095
+    },
+    {
+      "path": "templates/sci-fi-creation/template.json",
+      "sha": "af4b37c7e2f14ae1aae04065755f3cf6d0c635c2",
+      "size": 1691
+    },
+    {
+      "path": "templates/sci-fi-creation/worldbuilding-checklist.md",
+      "sha": "92805cadbee5b6f17fbf1978e5411ad72bc3f4ef",
+      "size": 827
+    },
+    {
+      "path": "templates/social-media-calendar.md",
+      "sha": "f59966ca974be6accf9c9548c209f977e7d426bc",
+      "size": 1050
+    },
+    {
+      "path": "templates/task-template-data.json",
+      "sha": "d69cca7f6652b19dd72f9cb88587ea4d0e7d538b",
+      "size": 21851
+    },
+    {
+      "path": "templates/task-template-manager.ps1",
+      "sha": "dd71c1202731a48577dc5cfc89d83716af31fbe9",
+      "size": 13840
+    },
+    {
+      "path": "templates/technical-proposal/template.json",
+      "sha": "497d937df54f0d52a6de33129867470fe66bfb89",
+      "size": 4110
+    },
+    {
+      "path": "templates/translation-tech-doc.md",
+      "sha": "b9c1d5d285086cbe8d09ca2aa5ed9d9bb5b488eb",
+      "size": 978
+    },
+    {
+      "path": "templates/video-short-script.md",
+      "sha": "1fb99e1ac1dd6ef56d40aa3c86a49b14dd9a0c8e",
+      "size": 1063
+    },
+    {
+      "path": "templates/writing-market-report.md",
+      "sha": "301c56362509e5667130cde03eebc87f8a20d435",
+      "size": 1038
+    },
+    {
+      "path": "templates/writing-novel-wuming.md",
+      "sha": "680bddc3a6023fd20ae7cd9be73f3f1cbea9e21d",
+      "size": 4935
+    },
+    {
+      "path": "templates/writing-sci-fi-story.md",
+      "sha": "4fbd3ce14e6bb7b1aa241539041724bf16648e13",
+      "size": 987
+    }
+  ]
+}

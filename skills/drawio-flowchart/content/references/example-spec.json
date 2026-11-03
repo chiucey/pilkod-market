@@ -1,0 +1,24 @@
+{
+  "title": "采购审批流程",
+  "layout": "swimlane",
+  "lanes": [
+    { "id": "requester", "label": "申请人", "width": 200 },
+    { "id": "manager", "label": "主管", "width": 200 },
+    { "id": "finance", "label": "财务", "width": 200 },
+    { "id": "note_lane", "label": "备注", "width": 240 }
+  ],
+  "nodes": [
+    { "id": "submit", "text": "提交采购申请", "type": "user_task", "lane": "requester", "phase": 0 },
+    { "id": "manager_review", "text": "审批", "type": "gateway_exclusive", "lane": "manager", "phase": 1 },
+    { "id": "finance_pay", "text": "付款处理", "type": "service_task", "lane": "finance", "phase": 2 },
+    { "id": "reject", "text": "结束", "type": "end_event", "lane": "requester", "phase": 2 },
+    { "id": "archive", "text": "归档完成", "type": "end_event", "lane": "requester", "phase": 3 },
+    { "id": "note_1", "text": "主管未通过时，申请人需要补充材料后重新发起。", "type": "note", "lane": "note_lane", "phase": 1, "height": 120 }
+  ],
+  "edges": [
+    { "from": "submit", "to": "manager_review", "type": "sequence" },
+    { "from": "manager_review", "to": "finance_pay", "label": "通过", "type": "sequence" },
+    { "from": "manager_review", "to": "reject", "label": "驳回", "type": "message" },
+    { "from": "finance_pay", "to": "archive" }
+  ]
+}

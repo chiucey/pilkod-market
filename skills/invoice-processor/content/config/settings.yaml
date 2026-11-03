@@ -1,0 +1,70 @@
+# 发票处理智能体配置
+
+# 基础配置
+base:
+  base_city: "南京"  # 出差基准城市
+  output_format: "xlsx"  # 输出格式
+  rename_format: "{type}_{date}_{desc}_{amount}"  # 文件命名格式
+
+# 发票类型映射
+invoice_types:
+  flight:
+    - 行程单
+    - 电子客票
+    - 航空
+    - 机票
+    - 航班
+  train:
+    - 高铁
+    - 动车
+    - 火车
+    - 铁路
+  hotel:
+    - 住宿
+    - 酒店
+    - 房费
+  meal:
+    - 餐饮
+    - 餐费
+  insurance:
+    - 保险
+    - 航意险
+    - 意外险
+  taxi:
+    - 出租车
+    - 打车
+    - 滴滴
+
+# 支持的文件格式
+supported_formats:
+  - .pdf
+  - .ofd
+  - .xml
+  - .jpg
+  - .jpeg
+  - .png
+  - .bmp
+
+# 去重规则
+deduplication:
+  prefer_format: ".pdf"  # 优先保留的格式
+  match_field: "invoice_no"  # 匹配字段
+
+# 报表配置
+report:
+  sheets:
+    - name: "报销明细总表"
+      columns:
+        - 发票号码
+        - 类型
+        - 日期
+        - 内容描述
+        - 金额
+        - 备注
+    - name: "出差专项报表"
+      columns:
+        - 出差序号
+        - 出发日期
+        - 返回日期
+        - 合计金额
+        - 缺失票据

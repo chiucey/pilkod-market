@@ -1,0 +1,349 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "13f182ce5eb2db4e1ccc23c18cae74417e601e35",
+      "size": 14636
+    },
+    {
+      "path": "_meta.json",
+      "sha": "35eacb70e7c8fe81a0080145d7441ee5a4962f81",
+      "size": 138
+    },
+    {
+      "path": "female/agents/review/bl_relationship_judge.md",
+      "sha": "716c27de6770f3855d626af4bcacca288b59a2aa",
+      "size": 5698
+    },
+    {
+      "path": "female/agents/review/gl_relationship_judge.md",
+      "sha": "2605ca47b4f33b2fab53a3cdf8530acd9ab0b123",
+      "size": 5481
+    },
+    {
+      "path": "female/agents/review/male_roles_judge.md",
+      "sha": "c42ad064721314d8499c9de863cfb9d53c24d1fa",
+      "size": 6787
+    },
+    {
+      "path": "female/agents/review/romance_line_judge.md",
+      "sha": "f7dce9ab0006f16a9d334db0ccef835a81559c85",
+      "size": 4233
+    },
+    {
+      "path": "female/guide.md",
+      "sha": "3f06f7eff52bccbbb9a4dbebcb7558a1da4560da",
+      "size": 17037
+    },
+    {
+      "path": "female/prompts/female_chapter_flow.md",
+      "sha": "6e09bf67523bfdfd689fa037e12a739e4cf7569c",
+      "size": 7639
+    },
+    {
+      "path": "female/prompts/planning_flow.md",
+      "sha": "e544b5e7bbb8b75cece32bd00fb344c2d2b2e2b6",
+      "size": 10489
+    },
+    {
+      "path": "female/prompts/review_flow.md",
+      "sha": "253f1df62bd5822af1bfb948679d1625aad15003",
+      "size": 9135
+    },
+    {
+      "path": "female/templates/antagonist_face_slapping_female.md",
+      "sha": "8a651535971973360df4d53cc947cdfec0f7788d",
+      "size": 14001
+    },
+    {
+      "path": "female/templates/dual_protagonist.md",
+      "sha": "2256f2c893875c5b2e2be980f4dccd5af0b16d49",
+      "size": 8306
+    },
+    {
+      "path": "female/templates/female_goldfinger_design.md",
+      "sha": "a56fb88ccdda84999ffd76a4801a93243b670e23",
+      "size": 8653
+    },
+    {
+      "path": "female/templates/genres/ancient_romance.md",
+      "sha": "b46097f845cb3587588ee310ccd5a9a2aedd6978",
+      "size": 6939
+    },
+    {
+      "path": "female/templates/genres/boys_love.md",
+      "sha": "a233355031699f3fc023faea9541ae2b6218d897",
+      "size": 7994
+    },
+    {
+      "path": "female/templates/genres/female_dominance.md",
+      "sha": "0e961f44eb70d30a788ed96430389aa82c35e20e",
+      "size": 7981
+    },
+    {
+      "path": "female/templates/genres/female_xianxia.md",
+      "sha": "c0dd78d5feaa7ba1a7d0df1ce6a991fe13693e97",
+      "size": 7638
+    },
+    {
+      "path": "female/templates/genres/girls_love.md",
+      "sha": "aa58568c3e64454b9e78b97d82af03968d9dec52",
+      "size": 6875
+    },
+    {
+      "path": "female/templates/genres/mystery_romance.md",
+      "sha": "3f0b5f43ae5203fae1ac7fa7da93eeda95c9b527",
+      "size": 10601
+    },
+    {
+      "path": "female/templates/genres/quick_pass.md",
+      "sha": "542db12c126f70f94914d326913c16e9312ec7c3",
+      "size": 19494
+    },
+    {
+      "path": "female/templates/genres/romance_modern.md",
+      "sha": "d3b02bf467b8b7daae05bdf0605714e528d76431",
+      "size": 10666
+    },
+    {
+      "path": "female/templates/protagonist_female.md",
+      "sha": "ae8274807d9e15c688a0a12fac046f27499d6be3",
+      "size": 18627
+    },
+    {
+      "path": "female/templates/romance_line.md",
+      "sha": "4b5dd4eebdeb4914af02e48e451f9f8e3f187c42",
+      "size": 8321
+    },
+    {
+      "path": "male/guide.md",
+      "sha": "1c774b958501733ab6190096becc1f67ec8034da",
+      "size": 9276
+    },
+    {
+      "path": "male/prompts/chapter_flow.md",
+      "sha": "7128ea65d2a584cfb9eb483073819d4433d1db16",
+      "size": 6748
+    },
+    {
+      "path": "male/prompts/planning_flow.md",
+      "sha": "b78da062deafc8591095efd273f80bcbd31a8a14",
+      "size": 8281
+    },
+    {
+      "path": "male/prompts/review_flow.md",
+      "sha": "62191b59fa0238103597557ae25502d912b8e30c",
+      "size": 9118
+    },
+    {
+      "path": "male/templates/antagonist_design.md",
+      "sha": "c7fc28924ea86ddedd8f0c123ed146ddaaf5736f",
+      "size": 6093
+    },
+    {
+      "path": "male/templates/antagonist_face_slapping.md",
+      "sha": "76c6fd02838aae7d9ed97734602eea08329e8229",
+      "size": 8075
+    },
+    {
+      "path": "male/templates/climax_design.md",
+      "sha": "0b75eecf52c3763077493192a4d23ab8057c4500",
+      "size": 12407
+    },
+    {
+      "path": "male/templates/female_characters.md",
+      "sha": "8fe72d3ed59b6ea9a1f73dd9a23bbb0b93321fbf",
+      "size": 4369
+    },
+    {
+      "path": "male/templates/genres/dushi.md",
+      "sha": "c3a15dc238fabf0eaa528a3762702904a7c2ef07",
+      "size": 8645
+    },
+    {
+      "path": "male/templates/genres/entertainment.md",
+      "sha": "efe41f50ef014e8d5e639def2b6ce3971281b1b4",
+      "size": 7123
+    },
+    {
+      "path": "male/templates/genres/gaming.md",
+      "sha": "1cadde3f62c92c8df7280bf971665ac6ec7bf799",
+      "size": 6557
+    },
+    {
+      "path": "male/templates/genres/historical.md",
+      "sha": "22ffe2f9ffbbe79386abf4f20bc1a133192ee0e8",
+      "size": 6607
+    },
+    {
+      "path": "male/templates/genres/horror.md",
+      "sha": "72941608cec6ede50b173b65890cf7c17e015538",
+      "size": 7347
+    },
+    {
+      "path": "male/templates/genres/mystery.md",
+      "sha": "69683219cdfa6ddfe240604e570a09f757aa45ea",
+      "size": 10427
+    },
+    {
+      "path": "male/templates/genres/scifi.md",
+      "sha": "e51e71c04f482ceff87fa72a41c2e791c8742311",
+      "size": 6350
+    },
+    {
+      "path": "male/templates/genres/transmigration.md",
+      "sha": "b9f431cef833cdf69db647109af48488ed0acd24",
+      "size": 7060
+    },
+    {
+      "path": "male/templates/genres/urban_fantasy.md",
+      "sha": "1ff923323d087ea93ec03157f22185ab7d1d9b21",
+      "size": 6825
+    },
+    {
+      "path": "male/templates/genres/xianxia.md",
+      "sha": "d190d28e17d8a06e978d90c4fabb89d7062d8b63",
+      "size": 8237
+    },
+    {
+      "path": "male/templates/genres/xuanhuan.md",
+      "sha": "1a9d4915fa8575ff8f16c30b0aabd62a0441e092",
+      "size": 7766
+    },
+    {
+      "path": "male/templates/goldfinger_design.md",
+      "sha": "ede76c070dbab831f36140369d0c51b4cdca8191",
+      "size": 11425
+    },
+    {
+      "path": "male/templates/protagonist_design.md",
+      "sha": "327621af9cfd2d526da7d1874b27eb9597d6aba2",
+      "size": 8665
+    },
+    {
+      "path": "shared/agents/framework/charactercraft.md",
+      "sha": "5301875e8788a4c536a5be7d555f578f0429ce30",
+      "size": 11676
+    },
+    {
+      "path": "shared/agents/framework/plotarchitect.md",
+      "sha": "d5ad183d56cbe5de8e33f3636ce5e6fe18e3c1e2",
+      "size": 10273
+    },
+    {
+      "path": "shared/agents/framework/worldbuilder.md",
+      "sha": "0afd591af7c4a6204225504e95c12332a63b37bc",
+      "size": 5978
+    },
+    {
+      "path": "shared/agents/review/character_judge.md",
+      "sha": "73b0751d9d9315310b12d4151d0d590b7f5ec700",
+      "size": 4459
+    },
+    {
+      "path": "shared/agents/review/climax_checker.md",
+      "sha": "bca1bf9d4c2bb186516512fddcf53935d2e4529a",
+      "size": 6143
+    },
+    {
+      "path": "shared/agents/review/conflict_checker.md",
+      "sha": "5faec331ccbd63d997dd368c0374eb295c3661c1",
+      "size": 6825
+    },
+    {
+      "path": "shared/agents/review/description_quality_agent.md",
+      "sha": "260bf38eacb6ba4a7fefd1ccf22e515506c5100a",
+      "size": 6248
+    },
+    {
+      "path": "shared/agents/review/female_character_judge.md",
+      "sha": "dd85cc491c392908f5489d0ea59f76cc361533b0",
+      "size": 4580
+    },
+    {
+      "path": "shared/agents/review/foreshadow_hunter.md",
+      "sha": "198ad263a38dd1fac7aacfa9df510fc18bd5a59e",
+      "size": 5103
+    },
+    {
+      "path": "shared/agents/review/goldfinger_checker.md",
+      "sha": "adecb1d297080c4bb97999b9482b285078cd05c0",
+      "size": 2138
+    },
+    {
+      "path": "shared/agents/review/info_auditor.md",
+      "sha": "04f9139dbab1b157717421cbd62ec8c6947afa7d",
+      "size": 5810
+    },
+    {
+      "path": "shared/agents/review/logic_checker.md",
+      "sha": "db7b201a9892a53706ecaa59af40305ca5e24db3",
+      "size": 1745
+    },
+    {
+      "path": "shared/agents/review/pace_critic.md",
+      "sha": "1612cb3838b9b5dae61c4c6a76c5c257036d25a5",
+      "size": 4688
+    },
+    {
+      "path": "shared/agents/review/plot_structure_agent.md",
+      "sha": "b46809fd74fa07a1e644f75e6c61f63c7c290fe2",
+      "size": 6408
+    },
+    {
+      "path": "shared/agents/review/pov_checker.md",
+      "sha": "3ba2157f3dcbf740d59a090a4d0f1091832e2b0c",
+      "size": 6939
+    },
+    {
+      "path": "shared/agents/review/supporting_checker.md",
+      "sha": "ba6ff2819e6b18ec342ca2aa0ad5667194633fca",
+      "size": 2856
+    },
+    {
+      "path": "shared/database/schema.sql",
+      "sha": "19f7abfc9857854f26a3d3fe10a97514a38ed6cc",
+      "size": 12109
+    },
+    {
+      "path": "shared/templates/character_relationship_network.md",
+      "sha": "169bd7283a828e1db3140abe4606c6e50085e504",
+      "size": 7832
+    },
+    {
+      "path": "shared/templates/supporting_characters.md",
+      "sha": "7d326b4aa70051ef8df43fd89df210a7bbbd989a",
+      "size": 5825
+    },
+    {
+      "path": "shared/templates/writing_craft/depth_balance.md",
+      "sha": "5cb15dfa4572d1497b4004c9d491ccf9d66ba037",
+      "size": 9521
+    },
+    {
+      "path": "shared/templates/writing_craft/dialogue_craft.md",
+      "sha": "7080859e896412ee326f8f88fe0b46f613ef79af",
+      "size": 9276
+    },
+    {
+      "path": "shared/templates/writing_craft/emotional_craft.md",
+      "sha": "2357b5c3b76af18d2562a6b993d4d3c53a4ea8c6",
+      "size": 6605
+    },
+    {
+      "path": "shared/templates/writing_craft/narrative_pov.md",
+      "sha": "d0c41856250bc4a110e9eb8211fef74fddbbd035",
+      "size": 9051
+    },
+    {
+      "path": "shared/templates/writing_craft/scene_craft.md",
+      "sha": "7d5042ea94fde3a58d3f1ad866813d869a4d0269",
+      "size": 7186
+    },
+    {
+      "path": "shared/templates/writing_craft/world_craft.md",
+      "sha": "da93ca8ea40d73568fb10858ddfc6451204cbc70",
+      "size": 9348
+    }
+  ]
+}

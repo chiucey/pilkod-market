@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>法学学术动态面板</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --primary: #1a3a5c;
+      --accent: #c0392b;
+      --text: #2c3e50;
+      --muted: #7f8c8d;
+      --border: #dce1e8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--primary); color: #fff; padding: 24px 32px; }
+    header h1 { font-size: 1.5rem; font-weight: 600; }
+    header p { font-size: 0.875rem; opacity: 0.8; margin-top: 4px; }
+    .filters { padding: 16px 32px; background: var(--card); border-bottom: 1px solid var(--border); display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .filters label { font-size: 0.875rem; color: var(--muted); }
+    .filter-btn { padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); background: var(--card); font-size: 0.8rem; cursor: pointer; transition: all 0.2s; }
+    .filter-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .filter-btn:hover { border-color: var(--primary); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px 32px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    .card { background: var(--card); border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid var(--border); }
+    .card-title { font-size: 0.875rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; display: inline-block; }
+    .article-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .article-item:last-child { border-bottom: none; }
+    .article-meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 2px; }
+    .article-title { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .article-tags { margin-top: 4px; display: flex; gap: 4px; flex-wrap: wrap; }
+    .tag { font-size: 0.7rem; padding: 2px 8px; background: #eef2f7; color: var(--primary); border-radius: 10px; }
+    .tag.inter { background: #fef3e2; color: #b45309; }
+    .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; padding: 0 32px; }
+    .stat-card { background: var(--card); border-radius: 12px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid var(--border); text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+    canvas { max-height: 300px; }
+    .cross-list { display: flex; flex-direction: column; gap: 8px; }
+    .cross-item { display: flex; align-items: center; gap: 12px; padding: 8px 12px; background: #fffbf0; border-radius: 8px; border-left: 3px solid #f59e0b; }
+    .cross-domain { font-weight: 600; color: var(--primary); font-size: 0.875rem; min-width: 100px; }
+    .cross-example { font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>⚖️ 法学学术动态面板</h1>
+  <p id="period"></p>
+</header>
+
+<div class="filters">
+  <label>筛选公众号：</label>
+  <button class="filter-btn active" data-filter="all">全部</button>
+  <button class="filter-btn" data-filter="法学研究">法学研究</button>
+  <button class="filter-btn" data-filter="中国法学">中国法学</button>
+  <button class="filter-btn" data-filter="清华法学">清华法学</button>
+  <button class="filter-btn" data-filter="中国法律评论">中国法律评论</button>
+</div>
+
+<div class="stat-row">
+  <div class="stat-card"><div class="stat-num" id="total-count">--</div><div class="stat-label">文章总数</div></div>
+  <div class="stat-card"><div class="stat-num" id="theme-count">--</div><div class="stat-label">主题数量</div></div>
+  <div class="stat-card"><div class="stat-num" id="keyword-count">--</div><div class="stat-label">高频关键词</div></div>
+  <div class="stat-card"><div class="stat-num" id="cross-count">--</div><div class="stat-label">交叉学科方向</div></div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <div class="card-title">📖 文章列表</div>
+    <div id="article-list"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">🔑 关键词词频（Top 20）</div>
+    <canvas id="keywordChart"></canvas>
+  </div>
+  <div class="card">
+    <div class="card-title">🫧 主题聚类分布</div>
+    <canvas id="themeChart"></canvas>
+  </div>
+  <div class="card">
+    <div class="card-title">🔀 交叉学科方向</div>
+    <div class="cross-list" id="cross-list"></div>
+  </div>
+</div>
+
+<script>
+  // ---- 由 generate-dashboard.js 注入的数据 ----
+  const REPORT_DATA = __DATA__;
+
+  document.getElementById('period').textContent = REPORT_DATA.period;
+  document.getElementById('total-count').textContent = REPORT_DATA.articles.length;
+  document.getElementById('theme-count').textContent = REPORT_DATA.themes.length;
+  document.getElementById('keyword-count').textContent = REPORT_DATA.topKeywords.length;
+  document.getElementById('cross-count').textContent = REPORT_DATA.crossDisciplines.length;
+
+  // ---- 文章列表渲染 ----
+  const articleList = document.getElementById('article-list');
+  function renderArticles(filter) {
+    const filtered = filter === 'all' ? REPORT_DATA.articles : REPORT_DATA.articles.filter(a => a.account === filter);
+    articleList.innerHTML = filtered.map(a => `
+      <div class="article-item">
+        <div class="article-meta">${a.account} &middot; ${a.published_at}</div>
+        <div class="article-title"><a href="${a.url}" target="_blank" style="text-decoration:none;color:inherit">${a.title}</a></div>
+        <div class="article-tags">
+          ${a.keywords.map(k => `<span class="tag">${k}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ---- 筛选按钮 ----
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderArticles(btn.dataset.filter);
+    });
+  });
+
+  // ---- 关键词柱状图 ----
+  const kwChart = new Chart(document.getElementById('keywordChart'), {
+    type: 'bar',
+    data: {
+      labels: REPORT_DATA.topKeywords.map(k => k.word),
+      datasets: [{
+        label: '出现频次',
+        data: REPORT_DATA.topKeywords.map(k => k.count),
+        backgroundColor: 'rgba(26, 58, 92, 0.75)',
+        borderRadius: 4,
+      }]
+    },
+    options: { indexAxis: 'y', plugins: { legend: { display: false } }, responsive: true }
+  });
+
+  // ---- 主题饼图 ----
+  const themeColors = ['#1a3a5c','#c0392b','#27ae60','#8e44ad','#e67e22','#16a085','#2980b9','#c0392b','#7f8c8d','#d35400'];
+  const themeChart = new Chart(document.getElementById('themeChart'), {
+    type: 'doughnut',
+    data: {
+      labels: REPORT_DATA.themes.map(t => t.name),
+      datasets: [{
+        data: REPORT_DATA.themes.map(t => t.count),
+        backgroundColor: themeColors.slice(0, REPORT_DATA.themes.length),
+      }]
+    },
+    options: { responsive: true, plugins: { legend: { position: 'right' } } }
+  });
+
+  // ---- 交叉学科列表 ----
+  document.getElementById('cross-list').innerHTML = REPORT_DATA.crossDisciplines.map(c => `
+    <div class="cross-item">
+      <div class="cross-domain">${c.domain}</div>
+      <div class="cross-example">${c.examples.join('；')}</div>
+    </div>
+  `).join('');
+
+  // 初始渲染
+  renderArticles('all');
+</script>
+</body>
+</html>

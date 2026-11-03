@@ -1,0 +1,46 @@
+{
+  "author": "MiniMax Agent",
+  "category": "商业智能/品牌管理",
+  "compatibility": {
+    "dependencies": [],
+    "min_agent_version": "1.0.0"
+  },
+  "description": "品牌商务谈判全链路自动化系统，一键生成品牌能力包、GEO知识包、跨平台内容包、报价策略包、分发编排包与谈判总包",
+  "display_name": "品牌商务谈判中枢",
+  "id": 380010875884008,
+  "metadata": {
+    "created_at": "2026-03-23T17:26:00Z",
+    "language": "zh-CN",
+    "license": "Proprietary",
+    "updated_at": "2026-03-23T17:26:00Z"
+  },
+  "name": "brand-commercial-negotiation",
+  "platform": "minimax",
+  "security": {
+    "anti_tamper": true,
+    "closed_source": true,
+    "encryption": "base64",
+    "note": "核心逻辑已加密，用户无法查看或二次开发源码",
+    "obfuscation_level": "high",
+    "source_protection": true
+  },
+  "tags": [
+    "品牌谈判",
+    "GEO优化",
+    "内容生成",
+    "报价策略",
+    "分发编排",
+    "谈判总包"
+  ],
+  "trigger_phrases": [
+    "生成品牌商务谈判方案",
+    "创建品牌合作提案",
+    "制定报价策略",
+    "制作跨平台内容包",
+    "设计分发计划",
+    "一键生成六包",
+    "谈判总包"
+  ],
+  "updated_at": 1774329664674,
+  "version": "1.0.0"
+}

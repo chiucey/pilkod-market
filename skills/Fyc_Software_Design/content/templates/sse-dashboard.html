@@ -1,0 +1,217 @@
+<!-- SSE 实时数据大屏模板
+     展示:每 1s 推送一条数据,前端 sparkline + 大数字实时滚动 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>SSE 实时数据大屏</title>
+    <script src="../assets/echarts.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: radial-gradient(ellipse at top, #e8f1fa 0%, #f5f9fd 50%, #ffffff 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #1e3a6e;
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(143, 188, 255, 0.4);
+            border-radius: 6px;
+            padding: 16px;
+            box-shadow: 0 2px 12px rgba(143, 188, 255, 0.15);
+        }
+        
+        .card-title {
+            font-size: 14px;
+            color: #6b8fc4;
+            margin-bottom: 8px;
+        }
+        
+        .big-number {
+            font-size: 38px;
+            color: #1e3a6e;
+            font-weight: 700;
+            font-family: 'Consolas', monospace;
+        }
+        
+        .trend {
+            font-size: 12px;
+            color: #4ade80;
+            margin-top: 4px;
+        }
+        
+        .trend.down {
+            color: #f87171;
+        }
+        
+        .sparkline {
+            height: 60px;
+            margin-top: 12px;
+        }
+        
+        .status {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            background: #4ade80;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .status.disconnected {
+            background: #f87171;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 实时数据大屏(SSE 推送)</h1>
+    <div class="status" id="status">连接中...</div>
+    
+    <div class="grid" id="grid">
+        <!-- 动态生成卡片 -->
+    </div>
+    
+    <script>
+        // === 配置:要监控的指标 ===
+        const METRICS = [
+            { id: 'cpu',    label: 'CPU 使用率',     unit: '%',  max: 100 },
+            { id: 'memory', label: '内存使用',       unit: 'GB', max: 32 },
+            { id: 'qps',    label: '每秒请求数',     unit: 'rps', max: 5000 },
+            { id: 'latency',label: '平均延迟',       unit: 'ms', max: 500 },
+            { id: 'errors', label: '错误率',         unit: '%',  max: 5 },
+            { id: 'users',  label: '在线用户',       unit: '人', max: 10000 }
+        ];
+        
+        const HISTORY_LEN = 30;  // sparkline 30 个点
+        const dataStore = {};    // {id: {values: [], big: 0, prev: 0}}
+        const charts = {};
+        
+        // 初始化
+        METRICS.forEach(m => {
+            dataStore[m.id] = { values: [], big: 0, prev: 0 };
+            
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <div class="card-title">${m.label}</div>
+                <div class="big-number" id="big-${m.id}">--</div>
+                <div class="trend" id="trend-${m.id}">--</div>
+                <div class="sparkline" id="spark-${m.id}"></div>
+            `;
+            document.getElementById('grid').appendChild(card);
+            
+            // 初始化 ECharts sparkline
+            charts[m.id] = echarts.init(document.getElementById(`spark-${m.id}`));
+        });
+        
+        // === SSE 连接 ===
+        let es = null;
+        let retryDelay = 1000;
+        
+        function connect() {
+            // 注意:EventSource 只支持 GET,真实场景用 fetch + ReadableStream(POST 也支持)
+            // 这里用 EventSource 演示
+            es = new EventSource('/api/stream/metrics');
+            
+            es.onopen = () => {
+                document.getElementById('status').textContent = '已连接';
+                document.getElementById('status').classList.remove('disconnected');
+                retryDelay = 1000;  // 重置
+            };
+            
+            es.onmessage = (e) => {
+                try {
+                    const data = JSON.parse(e.data);  // {ts, cpu, memory, ...}
+                    updateUI(data);
+                } catch (err) {
+                    console.warn('解析 SSE 失败:', err);
+                }
+            };
+            
+            es.onerror = () => {
+                document.getElementById('status').textContent = '连接断开,重连中...';
+                document.getElementById('status').classList.add('disconnected');
+                es.close();
+                // 退避重连
+                setTimeout(connect, retryDelay);
+                retryDelay = Math.min(30000, retryDelay * 2);
+            };
+        }
+        
+        function updateUI(data) {
+            METRICS.forEach(m => {
+                const v = data[m.id];
+                if (typeof v !== 'number') return;
+                
+                const store = dataStore[m.id];
+                store.prev = store.big;
+                store.big = v;
+                store.values.push(v);
+                if (store.values.length > HISTORY_LEN) store.values.shift();
+                
+                // 大数字
+                document.getElementById(`big-${m.id}`).textContent = 
+                    v.toFixed(m.id === 'latency' ? 0 : 1) + ' ' + m.unit;
+                
+                // 趋势
+                const trendEl = document.getElementById(`trend-${m.id}`);
+                if (store.prev > 0) {
+                    const change = ((v - store.prev) / store.prev * 100).toFixed(1);
+                    const up = v >= store.prev;
+                    trendEl.textContent = (up ? '↑' : '↓') + ' ' + Math.abs(change) + '%';
+                    trendEl.className = 'trend' + (up ? '' : ' down');
+                }
+                
+                // sparkline
+                charts[m.id].setOption({
+                    animation: false,
+                    grid: { top: 0, bottom: 0, left: 0, right: 0 },
+                    xAxis: { type: 'category', show: false, data: store.values.map((_, i) => i) },
+                    yAxis: { type: 'value', show: false, min: 0, max: m.max },
+                    series: [{
+                        type: 'line',
+                        data: store.values,
+                        smooth: true,
+                        symbol: 'none',
+                        lineStyle: { color: '#4a7bb8', width: 2 },
+                        areaStyle: {
+                            color: {
+                                type: 'linear', y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: 'rgba(143,188,255,0.5)' },
+                                    { offset: 1, color: 'rgba(143,188,255,0)' }
+                                ]
+                            }
+                        }
+                    }]
+                });
+            });
+        }
+        
+        connect();
+        
+        // 自适应
+        window.addEventListener('resize', () => {
+            METRICS.forEach(m => charts[m.id].resize());
+        });
+    </script>
+</body>
+</html>

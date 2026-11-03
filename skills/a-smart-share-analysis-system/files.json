@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "591b9388c71bdb32ab53b23d918de234bfa4bc34",
+      "size": 30578
+    },
+    {
+      "path": "_meta.json",
+      "sha": "14e1d4443c6c14def8550342eba3b82e77bd5e2f",
+      "size": 3209
+    },
+    {
+      "path": "references/data-sources.md",
+      "sha": "714dfc0a3bd43c407c1cdcf8c084c8f98657fde4",
+      "size": 2342
+    },
+    {
+      "path": "references/model-config.md",
+      "sha": "decbea5d19022dcebf4885fb5144026c0555405c",
+      "size": 4171
+    },
+    {
+      "path": "references/report-templates.md",
+      "sha": "9f99c0d75dccd4ba551cd73a26e9b6a075603c87",
+      "size": 5667
+    },
+    {
+      "path": "scripts/data_manager.py",
+      "sha": "c058ffa6d7859b76da62ae46fd55cedc51a0a33e",
+      "size": 13849
+    },
+    {
+      "path": "scripts/model_trainer.py",
+      "sha": "1508c8a02baedc80f4abd5e285a0910cdcfb35a6",
+      "size": 19286
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "ec238b902ffbb84e70b22b19069c8c9fa22f2b79",
+      "size": 8346
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "45e1a568f6158aaeb599eaecc573bcfc4fe89dab",
+      "size": 8765
+    }
+  ]
+}

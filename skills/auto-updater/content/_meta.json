@@ -1,0 +1,25 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2024-01-15",
+  "dependencies": [
+    "task_scheduling",
+    "version_detection",
+    "skill_management",
+    "update_execution",
+    "notification_service",
+    "log_record",
+    "compatibility_check"
+  ],
+  "description": "MaxClaw智能体自动更新技能",
+  "id": 379274695537019,
+  "name": "auto-updater",
+  "platform": "minimax",
+  "tags": [
+    "auto-update",
+    "version-control",
+    "scheduling",
+    "maintenance"
+  ],
+  "updated_at": 1774151283517,
+  "version": "1.0.0"
+}

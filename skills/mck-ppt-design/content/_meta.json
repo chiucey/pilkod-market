@@ -1,0 +1,26 @@
+{
+  "author": "Kaku Li (likaku)",
+  "created": "2026-04-16",
+  "dependencies": [
+    "python-pptx",
+    "lxml"
+  ],
+  "description": "Professional McKinsey/BCG/Bain consulting-grade PowerPoint generator with 65+ layout patterns, BLOCK_ARC charts, and automated QA pipeline",
+  "id": 388231582847388,
+  "license": "Apache-2.0",
+  "name": "mck-ppt-design",
+  "platform": "minimax",
+  "python_version": "3.8+",
+  "tags": [
+    "ppt",
+    "powerpoint",
+    "presentation",
+    "consulting",
+    "business",
+    "charts",
+    "dashboard"
+  ],
+  "updated": "2026-04-16",
+  "updated_at": 1776337781132,
+  "version": "2.3.3"
+}

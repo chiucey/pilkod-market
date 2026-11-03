@@ -1,0 +1,53 @@
+{
+  "author": "MiniMax Agent",
+  "commands": [
+    "/remember",
+    "/recall",
+    "/memory_stats",
+    "/clear_memory",
+    "/compact_memory"
+  ],
+  "compatibility": {
+    "openclaw_version": "\u003e=1.0.0",
+    "python_version": "\u003e=3.8"
+  },
+  "constraints": {
+    "cleanup_interval": 10,
+    "cleanup_threshold": 180,
+    "inject_limit": 5,
+    "max_chars_per_entry": 200,
+    "max_entries": 200,
+    "timeout_ms": 1000
+  },
+  "created": "2026-04-28",
+  "description": "智能记忆管家，防止记忆膨胀同时保持长期记忆",
+  "id": 392697623797972,
+  "name": "smart-memory-hub",
+  "platform": "minimax",
+  "storage": {
+    "path": "~/.openclaw/smart_memory/memory.json",
+    "type": "json"
+  },
+  "tags": [
+    "记忆",
+    "防膨胀",
+    "持久化",
+    "自动清理",
+    "智能管家"
+  ],
+  "triggers": [
+    "记住",
+    "记得",
+    "回忆",
+    "我的名字",
+    "我的项目",
+    "防死机",
+    "记忆清理",
+    "/remember",
+    "/recall",
+    "/memory_stats"
+  ],
+  "updated": "2026-04-28",
+  "updated_at": 1777427444463,
+  "version": "1.0.0"
+}

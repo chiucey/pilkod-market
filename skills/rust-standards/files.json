@@ -1,0 +1,119 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "0c20583d1219b637c72d481abd6aa24da4ade6aa",
+      "size": 9241
+    },
+    {
+      "path": "_meta.json",
+      "sha": "fb24e05d3b0ccb4ca76bb24d87a71844ae35938e",
+      "size": 133
+    },
+    {
+      "path": "references/01-directory-structure.md",
+      "sha": "a769d6e27d291452359c85482f24bbea66531356",
+      "size": 2727
+    },
+    {
+      "path": "references/02-documentation.md",
+      "sha": "50718aa2d0ffcfdb2e6b8db5bfcc13e7cf0e25d1",
+      "size": 1983
+    },
+    {
+      "path": "references/03-architecture.md",
+      "sha": "dd936246387b0af9039dd34be5e96a48176a6636",
+      "size": 990
+    },
+    {
+      "path": "references/04-performance.md",
+      "sha": "7c4a13268e5c1a1c1b5aa1b608c0ca2a22d3dbf7",
+      "size": 943
+    },
+    {
+      "path": "references/05-type-annotation.md",
+      "sha": "3921de2694bf9f1162ef6760e0e5d7d826be6c2b",
+      "size": 2269
+    },
+    {
+      "path": "references/06-module-imports.md",
+      "sha": "85e5a791ce53e76fe00a2c60af641f37d92e2ba8",
+      "size": 1525
+    },
+    {
+      "path": "references/07-naming.md",
+      "sha": "4ebc889213d4196208604754409302e8321e2504",
+      "size": 561
+    },
+    {
+      "path": "references/08-no-temp-files.md",
+      "sha": "db6f6f017266bdae8566c2a128a1d9cb321cb9d8",
+      "size": 183
+    },
+    {
+      "path": "references/09-follow-existing.md",
+      "sha": "1631a359bf0d57fedcfe88fac0bc7ebb4544af27",
+      "size": 1207
+    },
+    {
+      "path": "references/10-no-unrelated-output.md",
+      "sha": "c1a39076c3b064f6fdd6e343af7206d2326bf653",
+      "size": 174
+    },
+    {
+      "path": "references/11-error-handling.md",
+      "sha": "b3f848ba0af024ebc28921dddfc92760392a12e1",
+      "size": 666
+    },
+    {
+      "path": "references/12-public-api-docs.md",
+      "sha": "d3c3f61ee8874b99f41ed50aa82834aac54ceb97",
+      "size": 386
+    },
+    {
+      "path": "references/13-dependency.md",
+      "sha": "bd9aeae97e7e71442e29ce97fb3fc0c1c2f55076",
+      "size": 1019
+    },
+    {
+      "path": "references/14-testing.md",
+      "sha": "5cbec9966167714171d2ccee720698758d8a7190",
+      "size": 1339
+    },
+    {
+      "path": "references/15-security.md",
+      "sha": "be33cb34c9040af6cd8b5f057d15203015d51428",
+      "size": 239
+    },
+    {
+      "path": "references/16-proc-macro.md",
+      "sha": "cfd621c3c9c514d67275e7c97c90f918f706b438",
+      "size": 1261
+    },
+    {
+      "path": "references/17-lombok-derives.md",
+      "sha": "85ff77a50cebaf48d7a8bc2d88adca0fb29a3126",
+      "size": 4077
+    },
+    {
+      "path": "templates/cargo-toml.md",
+      "sha": "69beb81fe2c0e42306ec125e0e26a39c7c8fb41f",
+      "size": 1579
+    },
+    {
+      "path": "templates/lib-rs.md",
+      "sha": "463a581da66aed05a30d37c6acba26ff629bd1ed",
+      "size": 878
+    },
+    {
+      "path": "templates/mod-rs.md",
+      "sha": "d39cfb80f31970d61afea01f94e84e8c222300b3",
+      "size": 742
+    },
+    {
+      "path": "templates/sub-file.md",
+      "sha": "6b2c070ce9b231ec9370866a87f7680f1d8ea452",
+      "size": 2018
+    }
+  ]
+}

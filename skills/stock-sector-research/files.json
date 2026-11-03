@@ -1,0 +1,149 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "d119bccc398ecaaea5b5d9856bc67d944788b4d4",
+      "size": 22495
+    },
+    {
+      "path": "_meta.json",
+      "sha": "4d74555e52b5ee915137d0b60ec21f112e848316",
+      "size": 140
+    },
+    {
+      "path": "assets/templates/industry-chain-template.md",
+      "sha": "13f022c50d96e7499ff40b1cd3f2916f8e061c48",
+      "size": 9390
+    },
+    {
+      "path": "assets/templates/sector-research-template.md",
+      "sha": "a072f42ea3dcaa3dc8dfb7765761ef99753ffa9a",
+      "size": 9929
+    },
+    {
+      "path": "dist/stock-sector-research_v2.0.0_20260405_175754.skill",
+      "sha": "009f902d53e80d032078823946c9ef589886c16e",
+      "size": 33817
+    },
+    {
+      "path": "dist/stock-sector-research_v2.0.0_20260405_181426.skill",
+      "sha": "30e30ed0e7b75f0e475cd3ceb22c6ddf6eec7d5e",
+      "size": 49517
+    },
+    {
+      "path": "dist/stock-sector-research_v2.0.0_20260405_182543.skill",
+      "sha": "89b5c40933bfc97ff054d5234225bd5628aac4b9",
+      "size": 52846
+    },
+    {
+      "path": "dist/stock-sector-research_v2.0.0_20260405_183127.skill",
+      "sha": "0e0f46fab8f879fd84a0cee3a701f3c51c7ae643",
+      "size": 56249
+    },
+    {
+      "path": "dist/stock-sector-research_v2.0.0_20260405_185055.skill",
+      "sha": "d49ddb88b1d18957217f3814956e0dd74ba9972c",
+      "size": 51862
+    },
+    {
+      "path": "prompts/a-share-template.md",
+      "sha": "bf4ff0243038b93c87d014728c40c9096fc01e4e",
+      "size": 4010
+    },
+    {
+      "path": "prompts/consumer-sector-template.md",
+      "sha": "a0851597cd7b0d1025203a31f28dc912399b3d1b",
+      "size": 3923
+    },
+    {
+      "path": "prompts/hk-stock-template.md",
+      "sha": "b4fe869fdec5ee9a27a632b5c0767f3c5cc1788b",
+      "size": 3934
+    },
+    {
+      "path": "prompts/master-template.md",
+      "sha": "64f6ec82f27d8f753c53785fb858668fb7775479",
+      "size": 4737
+    },
+    {
+      "path": "prompts/new-energy-template.md",
+      "sha": "18f21f9768a2cf8da95de7454c89919bc16be64d",
+      "size": 4462
+    },
+    {
+      "path": "prompts/quick-start-guide.md",
+      "sha": "fe89998e0e15447cf69e8c9b922199cfec65351f",
+      "size": 4752
+    },
+    {
+      "path": "prompts/sector-rotation-template.md",
+      "sha": "0c8a2a074b762e9564c2949dbbd28836c274f131",
+      "size": 7756
+    },
+    {
+      "path": "prompts/tech-sector-template.md",
+      "sha": "a336625ccdb2589860e6010ebd6f8c36b3ae35cc",
+      "size": 4275
+    },
+    {
+      "path": "prompts/us-stock-template.md",
+      "sha": "c889743e340ce082b4ae71280c9432440f368eee",
+      "size": 4016
+    },
+    {
+      "path": "references/analysis-frameworks.md",
+      "sha": "710e694fd80c2e0f6e5cb0d684a88776d568b11b",
+      "size": 6733
+    },
+    {
+      "path": "references/data-sources-api.md",
+      "sha": "91b800f688ffdf4fc178b893e1ca2f070d2516fa",
+      "size": 8424
+    },
+    {
+      "path": "references/industry-cases.md",
+      "sha": "bf9a2aff5a1dc3d9564377b3fc0deac114505fe0",
+      "size": 7861
+    },
+    {
+      "path": "references/market-codes.md",
+      "sha": "1946c690f82003dc0a630081c29dbee695ae274b",
+      "size": 3452
+    },
+    {
+      "path": "references/trading-signals.md",
+      "sha": "2afbd4b1f70978556fce090837ecb0c0e21560dd",
+      "size": 7776
+    },
+    {
+      "path": "scripts/analyze_sector.py",
+      "sha": "cce8269fd5d5334e7296ec141c50197aa49667e7",
+      "size": 8466
+    },
+    {
+      "path": "scripts/compare_markets.py",
+      "sha": "4734e39df082a024f6b35e18bb153dee06372c02",
+      "size": 7147
+    },
+    {
+      "path": "scripts/fetch_market_data.py",
+      "sha": "120561e1592509c995b6cf2e66fd53f58fce1ee6",
+      "size": 6487
+    },
+    {
+      "path": "scripts/generate_chart.py",
+      "sha": "089d5a556e6c2172e16ee75292e06073c725d19e",
+      "size": 16003
+    },
+    {
+      "path": "scripts/generate_report.py",
+      "sha": "722dfacb478b3d42b44f7d3006d15fb491fcacf4",
+      "size": 16737
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "b8b1c78e768cc0de553a5e2d12c9a92edb9d7c7e",
+      "size": 4726
+    }
+  ]
+}

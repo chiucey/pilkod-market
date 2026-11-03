@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Chart-Type: 层次对比 + 关系图混合 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>文本核心内容可视化</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #eaedf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 28px;
+  }
+  .container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    padding: 28px;
+    display: inline-block;
+  }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+  <filter id="shadowLight" x="-10%" y="-10%" width="130%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+  </filter>
+</defs>
+
+<rect width="800" height="600" fill="#ffffff"/>
+
+<text x="400" y="35" fill="#1a1a1a" font-size="20" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle">Agent 与 Skill 核心架构</text>
+
+<rect x="35" y="60" width="345" height="225" rx="12" fill="none" stroke="#0d47a1" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="50" y="80" fill="#0d47a1" font-size="14" font-weight="bold" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif">Agent（智能体）— 自主决策主体</text>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">
+  <rect x="55" y="105" width="130" height="38" rx="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="120" y="124" fill="#1a1a1a" font-size="13" font-weight="bold">自主感知思考</text>
+
+  <rect x="230" y="105" width="130" height="38" rx="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="295" y="124" fill="#1a1a1a" font-size="13" font-weight="bold">任务拆解规划</text>
+
+  <rect x="55" y="165" width="130" height="38" rx="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="120" y="184" fill="#1a1a1a" font-size="13" font-weight="bold">循环迭代执行</text>
+
+  <rect x="230" y="165" width="130" height="38" rx="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="295" y="184" fill="#1a1a1a" font-size="13" font-weight="bold">动态调整优化</text>
+
+  <rect x="125" y="235" width="160" height="38" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="205" y="254" fill="#0d47a1" font-size="13" font-weight="bold">大语言模型为核心大脑</text>
+</g>
+
+<rect x="420" y="60" width="345" height="225" rx="12" fill="none" stroke="#00695c" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="435" y="80" fill="#00695c" font-size="14" font-weight="bold" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif">Skill（技能）— 原子化能力单元</text>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">
+  <rect x="440" y="105" width="130" height="38" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="505" y="124" fill="#1a1a1a" font-size="13" font-weight="bold">单一职责专注</text>
+
+  <rect x="615" y="105" width="130" height="38" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="680" y="124" fill="#1a1a1a" font-size="13" font-weight="bold">被动调用触发</text>
+
+  <rect x="440" y="165" width="130" height="38" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="505" y="184" fill="#1a1a1a" font-size="13" font-weight="bold">即插即用集成</text>
+
+  <rect x="615" y="165" width="130" height="38" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1" filter="url(#shadowLight)"/>
+  <text x="680" y="184" fill="#1a1a1a" font-size="13" font-weight="bold">标准化可复用</text>
+
+  <rect x="510" y="235" width="160" height="38" rx="6" fill="#e0f2f1" stroke="#00695c" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="590" y="254" fill="#00695c" font-size="13" font-weight="bold">跨Agent自由组合</text>
+</g>
+
+<g fill="none" stroke-linecap="round">
+  <line x1="380" y1="125" x2="420" y2="125" stroke="#1565c0" stroke-width="2"/>
+  <line x1="380" y1="175" x2="420" y2="175" stroke="#00695c" stroke-width="2"/>
+  <path d="M 380,210 Q 400,225 420,210" stroke="#f57c00" stroke-width="2" stroke-dasharray="5,3"/>
+</g>
+
+<g font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="central">
+  <text x="400" y="120">调度</text>
+  <text x="400" y="170">支撑</text>
+  <text x="400" y="215">深度绑定</text>
+</g>
+
+<rect x="80" y="320" width="640" height="52" rx="10" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="1.5" filter="url(#shadowLight)"/>
+<text x="400" y="339" fill="#1a1a1a" font-size="14" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">Agent = 大模型大脑 + 自主规划 + 记忆能力 + 多组Skill</text>
+<text x="400" y="357" fill="#5c6bc0" font-size="12" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">Agent是调度整合主体 · Skill是被调用能力基石</text>
+
+<rect x="80" y="395" width="200" height="50" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" filter="url(#shadowLight)"/>
+<text x="180" y="412" fill="#0d47a1" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">Skill 是能力基石</text>
+<text x="180" y="431" fill="#475569" font-size="11" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">无Skill则Agent无法落地</text>
+
+<rect x="300" y="395" width="200" height="50" rx="8" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1" filter="url(#shadowLight)"/>
+<text x="400" y="412" fill="#00695c" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">Agent 是价值载体</text>
+<text x="400" y="431" fill="#475569" font-size="11" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">无Agent则Skill无法组合</text>
+
+<rect x="520" y="395" width="200" height="50" rx="8" fill="#fff3e0" stroke="#ffcc80" stroke-width="1" filter="url(#shadowLight)"/>
+<text x="620" y="412" fill="#e65100" font-size="13" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">深耦合协同</text>
+<text x="620" y="431" fill="#475569" font-size="11" font-family="Arial,'PingFang SC','Microsoft YaHei','SimHei',sans-serif" text-anchor="middle" dominant-baseline="central">模块化+智能化=智能体系统</text>
+</svg>
+</div>
+</body>
+</html>

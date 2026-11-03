@@ -1,0 +1,37 @@
+# 运行时产物
+*.log
+*.swp
+*.tmp
+
+# 缓存目录
+.cache/
+state/auto-report/
+
+# 报告产物(link-check.log 等)
+*-check.log
+*-diff.log
+health-check.log
+coverage-check.log
+baseline-check.log
+release-diff.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.bak
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*~
+
+# Node / 构建产物(本项目纯 markdown,不应有,但保险起见)
+node_modules/
+dist/
+build/
+*.zip
+!cesium-dev-reference.zip  # 保留发布的 zip
+
+# 测试
+test-output/

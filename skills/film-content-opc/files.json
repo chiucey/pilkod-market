@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "2ac9800319f4b241c82ce81829762c60e9e28a4a",
+      "size": 4052
+    },
+    {
+      "path": "_meta.json",
+      "sha": "35377621e2274246b4f69eee512ba49aabb9cebf",
+      "size": 135
+    },
+    {
+      "path": "dist/film-content-opc.skill",
+      "sha": "cf81b5e3fae4e97ed9007e63af2e904dca8f1a50",
+      "size": 44349
+    },
+    {
+      "path": "references/ai-image-prompts.md",
+      "sha": "c541658342027051eefe497c498fd9c5284f50e6",
+      "size": 3967
+    },
+    {
+      "path": "references/operations-patch.md",
+      "sha": "8982262110beae5f199b0d5baf977c421d0875b1",
+      "size": 4675
+    },
+    {
+      "path": "references/prompt-templates.md",
+      "sha": "a672efc9bd47f96a49eb45675fa40ef622957adb",
+      "size": 3962
+    },
+    {
+      "path": "references/viral-examples.md",
+      "sha": "409bc5e02f7bd33391d2a7fcdd5d6d1f7a12eafa",
+      "size": 3645
+    },
+    {
+      "path": "scripts/content_scraper.py",
+      "sha": "cf363136442cbbb31a39313f5ebb8c067f391028",
+      "size": 3100
+    },
+    {
+      "path": "scripts/main.py",
+      "sha": "9659b22813dfd61ef98888718f51de065ac18039",
+      "size": 6839
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "d7d3d37b3597dc84a02b8749d1398768ba7de6b3",
+      "size": 1320
+    },
+    {
+      "path": "scripts/ranker.py",
+      "sha": "a2f3c6e7c8b5eddfb9a153bcda67f92449cbb5e6",
+      "size": 6177
+    },
+    {
+      "path": "scripts/validate_skill.py",
+      "sha": "215267831e4e29b75b5a5046b0e21daa03d65bae",
+      "size": 5366
+    }
+  ]
+}

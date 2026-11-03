@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "48bbeea1fb07ac7343bf37e86a2e57bd769668a4",
+      "size": 5005
+    },
+    {
+      "path": "assets/image-prompt-template.txt",
+      "sha": "62ff644ed9befa28747bad1b782852dfe5dae5ab",
+      "size": 1013
+    },
+    {
+      "path": "assets/video-prompt-template.txt",
+      "sha": "2c5cfc580d5ed880bc74f5123e6187b078933b98",
+      "size": 586
+    },
+    {
+      "path": "references/captions.md",
+      "sha": "0396ad471d4a1bbe55877e288a9404f41cc90f79",
+      "size": 916
+    },
+    {
+      "path": "references/requirements.txt",
+      "sha": "26b28de647405c0e2b8512fdd900e5a8d9c4dfd0",
+      "size": 153
+    },
+    {
+      "path": "scripts/convert_mp4_to_gif.py",
+      "sha": "11fdbb51143e5dc8801073571067665e2ce4f1ad",
+      "size": 2906
+    },
+    {
+      "path": "scripts/minimax_image.py",
+      "sha": "1c3c64887711e80645b378719b10363e3af27452",
+      "size": 5657
+    },
+    {
+      "path": "scripts/minimax_video.py",
+      "sha": "35ecc2ee2e00d414b5112334f7f5ab5e26c59243",
+      "size": 7413
+    }
+  ]
+}

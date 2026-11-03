@@ -1,0 +1,709 @@
+#!/usr/bin/env python3
+"""
+FCPXML Subtitle Generator - Final Cut Pro X 10.4+ Compatible
+生成符合 FCPXML DTD 规范的字幕文件
+
+功能：
+- SRT 直接导入：使用 SRT 自带的断句和时间轴（核心功能）
+- 智能断句：根据顿号、空格、句号等自动拆分长字幕
+- 时间轴优化：延迟补偿，让字幕与语音更精准对齐
+- 双语字幕支持：中英文独立轨道，中文在上、英文在下
+- 默认字体：平方-简（PingFang SC）
+- 严格 DTD 合规
+
+重要原则：
+- 如果用户提供了 SRT 文件，直接使用 SRT 的断句和时间轴
+- 默认启用智能断句和时间延迟补偿，提升字幕可读性和同步精度
+- 默认字体为 PingFang SC（平方-简），可在 FCP 中批量修改
+
+版本: v1.6.0
+更新内容：
+- 新增智能断句功能（顿号/空格/句号自动拆分）
+- 新增时间延迟补偿（--delay 参数）
+- 新增最大字符限制（--max-chars 参数）
+- 优化时间轴对齐，字幕不再提前出现
+"""
+
+import json
+import sys
+import math
+import re
+import os
+from fractions import Fraction
+
+
+# ─── 帧率映射表 ─────────────────────────────────────────────
+FPS_MAP = {
+    23.976: (24000, "1001/24000s", "2398"),
+    23.98:  (24000, "1001/24000s", "2398"),
+    24:     (24,    "100/2400s",   "24"),
+    25:     (25,    "100/2500s",   "25"),
+    29.97:  (30000, "1001/30000s", "2997"),
+    30:     (30,    "100/3000s",   "30"),
+    50:     (50,    "100/5000s",   "50"),
+    59.94:  (60000, "1001/60000s", "5994"),
+    60:     (60,    "100/6000s",   "60"),
+}
+
+def get_fps_info(fps):
+    """根据帧率获取 timebase、frameDuration 字符串和 fps 名称"""
+    for key, val in FPS_MAP.items():
+        if abs(fps - key) < 0.01:
+            return val
+    tb = int(round(fps)) * 100
+    fd = f"100/{tb}s"
+    return (tb, fd, str(int(round(fps))))
+
+
+def sec_to_ticks(seconds, timebase):
+    """秒数转为 ticks"""
+    return int(round(seconds * timebase))
+
+
+def ticks_str(ticks, timebase):
+    """ticks 转为 FCPXML 时间字符串（最简分数形式）"""
+    if ticks == 0:
+        return "0s"
+    g = math.gcd(int(ticks), int(timebase))
+    n = ticks // g
+    d = timebase // g
+    if d == 1:
+        return f"{n}s"
+    return f"{n}/{d}s"
+
+
+def escape_xml(text):
+    """转义 XML 特殊字符"""
+    text = text.replace('&', '&amp;')
+    text = text.replace('<', '&lt;')
+    text = text.replace('>', '&gt;')
+    text = text.replace('"', '&quot;')
+    return text
+
+
+# ─── 智能断句 ─────────────────────────────────────────────
+
+# 断句优先级：数字越小优先级越高
+SPLIT_PRIORITIES = {
+    '。': 1,  '！': 1,  '？': 1,  # 句末标点（最强断点）
+    '；': 2,                         # 分句
+    '，': 3,                         # 逗号
+    '、': 4,                         # 顿号
+    ' ': 5,   '\t': 5,               # 空格
+    '：': 6,                         # 冒号
+}
+
+# 中文标点列表（用于判断）
+CN_PUNCTS = set('，。、；：！？""''（）【】《》「」…—·')
+
+
+def smart_split_text(text, max_chars=18):
+    """
+    智能断句：根据标点符号将长文本拆分为多条字幕。
+    
+    断句优先级：
+    1. 句末标点（。！？）— 最优先断点
+    2. 分号（；）
+    3. 逗号（，）
+    4. 顿号（、）— 重要！用户特别提到
+    5. 空格
+    6. 冒号（：）
+    
+    参数：
+        text: 原始文本
+        max_chars: 单条字幕最大字符数（默认18）
+    
+    返回：
+        [(拆分后的文本, 断点位置字符数), ...]
+        例如：[("巍巍贺兰山", 5), ("横亘西北", 4)]
+    """
+    if len(text) <= max_chars:
+        return [(text, len(text))]
+    
+    result = []
+    current_start = 0
+    
+    while current_start < len(text):
+        remaining = text[current_start:]
+        
+        if len(remaining) <= max_chars:
+            result.append((remaining, len(remaining)))
+            break
+        
+        # 在 max_chars 范围内寻找最佳断点
+        search_end = min(current_start + max_chars, len(text))
+        search_range = text[current_start:search_end]
+        
+        # 寻找最佳断点（优先级最低的断点，但必须在范围内）
+        best_split_pos = -1
+        best_priority = 999
+        
+        # 从后往前找断点，优先选择靠后的断点
+        for i in range(len(search_range) - 1, -1, -1):
+            char = search_range[i]
+            if char in SPLIT_PRIORITIES:
+                priority = SPLIT_PRIORITIES[char]
+                # 选择优先级最低（断句能力最弱）但存在的断点
+                # 这样可以避免在句号后断开，而是在逗号/顿号处断开
+                if priority < best_priority:
+                    best_priority = priority
+                    best_split_pos = i
+                    # 如果找到的是句末标点，可以直接断
+                    if priority == 1:
+                        break
+        
+        if best_split_pos >= 0:
+            # 在断点后截断（不包含断点符号本身，因为会被清理掉）
+            split_text = text[current_start:current_start + best_split_pos]
+            if split_text.strip():
+                result.append((split_text, best_split_pos))
+            current_start = current_start + best_split_pos + 1
+        else:
+            # 没有找到断点，强制截断
+            result.append((search_range, len(search_range)))
+            current_start = search_end
+    
+    return result
+
+
+def split_subtitle_by_punctuation(subtitle, max_chars=18):
+    """
+    将一条字幕按标点符号拆分为多条。
+    
+    参数：
+        subtitle: {"start": float, "end": float, "text": str, ...}
+        max_chars: 单条字幕最大字符数
+    
+    返回：
+        [{"start": float, "end": float, "text": str, ...}, ...]
+    """
+    text = subtitle['text']
+    
+    # 如果文本不长，直接返回
+    if len(text) <= max_chars:
+        return [subtitle]
+    
+    # 智能断句
+    splits = smart_split_text(text, max_chars)
+    
+    if len(splits) <= 1:
+        return [subtitle]
+    
+    # 按字符比例分配时间
+    total_chars = sum(s[1] for s in splits)
+    duration = subtitle['end'] - subtitle['start']
+    
+    result = []
+    current_time = subtitle['start']
+    
+    for i, (split_text, char_count) in enumerate(splits):
+        # 计算该段的持续时间（按字符比例）
+        if i == len(splits) - 1:
+            # 最后一段：直接用剩余时间
+            seg_duration = subtitle['end'] - current_time
+        else:
+            # 按字符比例分配
+            seg_duration = duration * (char_count / total_chars)
+        
+        seg_end = current_time + seg_duration
+        
+        # 复制其他字段（如 text_en）
+        new_sub = dict(subtitle)
+        new_sub['text'] = split_text
+        new_sub['start'] = current_time
+        new_sub['end'] = seg_end
+        
+        result.append(new_sub)
+        current_time = seg_end
+    
+    return result
+
+
+# ─── SRT 解析 ─────────────────────────────────────────────
+
+def parse_srt(srt_path):
+    """
+    解析 SRT 字幕文件，返回带精确时间戳的字幕列表。
+    
+    SRT 格式示例：
+    1
+    00:00:15,000 --> 00:00:19,760
+    巍巍贺兰山横亘西北大地
+    
+    返回: [{"start": 15.0, "end": 19.76, "text": "巍巍贺兰山横亘西北大地"}, ...]
+    """
+    subtitles = []
+    
+    with open(srt_path, 'r', encoding='utf-8-sig') as f:
+        content = f.read()
+    
+    # 按空行分割
+    blocks = re.split(r'\n\s*\n', content.strip())
+    
+    for block in blocks:
+        lines = block.strip().split('\n')
+        if len(lines) < 3:
+            continue
+        
+        # 跳过序号行，找时间行
+        time_line_idx = -1
+        for i, line in enumerate(lines):
+            if '-->' in line:
+                time_line_idx = i
+                break
+        
+        if time_line_idx < 0:
+            continue
+        
+        # 解析时间
+        time_line = lines[time_line_idx]
+        time_match = re.match(
+            r'(\d+):(\d+):(\d+)[,.](\d+)\s*-->\s*(\d+):(\d+):(\d+)[,.](\d+)',
+            time_line.strip()
+        )
+        if not time_match:
+            continue
+        
+        g = time_match.groups()
+        start = int(g[0]) * 3600 + int(g[1]) * 60 + int(g[2]) + int(g[3]) / 1000.0
+        end = int(g[4]) * 3600 + int(g[5]) * 60 + int(g[6]) + int(g[7]) / 1000.0
+        
+        # 字幕文本（可能有多行）
+        text_lines = lines[time_line_idx + 1:]
+        text = '\n'.join(text_lines).strip()
+        
+        if text and start < end:
+            subtitles.append({
+                'start': start,
+                'end': end,
+                'text': text
+            })
+    
+    return subtitles
+
+
+def parse_srt_dual(srt_cn_path, srt_en_path=None):
+    """
+    解析双 SRT 文件（中文和英文），返回双轨道字幕列表。
+    
+    如果只提供一个 SRT 文件，返回单语字幕（中文）。
+    如果提供两个 SRT 文件，按时间对齐合并为双语字幕。
+    
+    返回: [
+        {"start": float, "end": float, "text": "中文", "text_en": "English"},
+        ...
+    ]
+    """
+    cn_subs = parse_srt(srt_cn_path)
+    
+    if not srt_en_path or not os.path.exists(srt_en_path):
+        # 单语模式，返回中文
+        return [{"start": s['start'], "end": s['end'], "text": s['text'], "text_en": ""} for s in cn_subs]
+    
+    en_subs = parse_srt(srt_en_path)
+    
+    # 按时间对齐：以中文字幕为主，找时间最近的英文字幕
+    result = []
+    for cn in cn_subs:
+        en_text = ""
+        best_overlap = 0
+        
+        for en in en_subs:
+            # 计算时间重叠
+            overlap_start = max(cn['start'], en['start'])
+            overlap_end = min(cn['end'], en['end'])
+            overlap = overlap_end - overlap_start
+            
+            if overlap > best_overlap:
+                best_overlap = overlap
+                en_text = en['text']
+        
+        result.append({
+            'start': cn['start'],
+            'end': cn['end'],
+            'text': cn['text'],
+            'text_en': en_text
+        })
+    
+    return result
+
+
+# ─── 标点清理 ─────────────────────────────────────────────
+
+def clean_punctuation(text):
+    """
+    清理字幕标点符号：
+    - 去除：逗号、句号、顿号、分号、冒号、感叹号、问号、省略号、括号等
+    - 保留：「」引号、《》书名号、·间隔号、—连接号
+    - 保留：数字中间的小数点（如 14.09）
+    """
+    # 标准化引号
+    text = re.sub(r'\u201c', '「', text)   # " -> 「
+    text = re.sub(r'\u201d', '」', text)   # " -> 」
+    text = re.sub(r'\u2018', '「', text)   # ' -> 「
+    text = re.sub(r'\u2019', '」', text)   # ' -> 」
+    
+    # 需要移除的字符
+    remove_chars = set(
+        '，。、；：！？""''()（）【】…— \t\n\r'
+        '.,;:!?\'\"'
+    )
+    # 排除保留字符
+    for ch in '「」《》·—':
+        remove_chars.discard(ch)
+    
+    result = []
+    for i, ch in enumerate(text):
+        if ch == '.':
+            # 保留数字中间的小数点
+            if (i > 0 and text[i-1].isdigit()) and (i + 1 < len(text) and text[i+1].isdigit()):
+                result.append(ch)
+                continue
+            if ch in remove_chars:
+                continue
+        if ch in remove_chars:
+            continue
+        result.append(ch)
+    
+    return ''.join(result)
+
+
+# ─── FCPXML 生成 ──────────────────────────────────────────
+
+def _build_title(lane, offset_str, duration_str, display_name, text,
+                 ts_id, font, font_size, position):
+    """
+    生成单个 <title> 元素的 XML 字符串。
+    
+    严格合规：不使用 bold、fontFace、shadowColor、shadowOffset 属性。
+    字体和样式可在 FCP 中批量调整。
+    """
+    return (
+        f'            <title name="{display_name}" lane="{lane}" '
+        f'offset="{offset_str}" ref="r2" '
+        f'duration="{duration_str}" start="0s">\n'
+        f'              <param name="Position" key="9999/999166631/999166633/1/100/101" value="{position}"/>\n'
+        f'              <param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401" value="1 (Center)"/>\n'
+        f'              <param name="Flatten" key="9999/999166631/999166633/2/351" value="1"/>\n'
+        f'              <text>\n'
+        f'                <text-style ref="{ts_id}">{text}</text-style>\n'
+        f'              </text>\n'
+        f'              <text-style-def id="{ts_id}">\n'
+        f'                <text-style font="{font}" fontSize="{font_size}" '
+        f'fontColor="1 1 1 1" alignment="center"/>\n'
+        f'              </text-style-def>\n'
+        f'            </title>'
+    )
+
+
+def generate_fcpxml(subtitles, fps=25, output_path=None, source_filename="subtitles",
+                    bilingual=False, font_cn="PingFang SC", font_en="PingFang SC",
+                    clean_punct=True, delay=0.0, max_chars=18, smart_split=True):
+    """
+    生成符合 FCPXML 1.10 DTD 规范的双轨道字幕文件。
+    
+    ⚠️ 重要：字幕的断句和时间轴完全由 subtitles 参数决定。
+    如果 subtitles 来自 SRT 解析，则直接使用 SRT 的断句，不做二次切分。
+    
+    参数:
+        subtitles: 字幕列表
+            单语: [{"start": 0.0, "end": 2.5, "text": "字幕内容"}, ...]
+            双语: [{"start": 0.0, "end": 2.5, "text": "中文", "text_en": "English"}, ...]
+        fps: 帧率
+        output_path: 输出路径
+        source_filename: 源文件名（用于项目名称）
+        bilingual: 是否双语模式
+        font_cn: 中文字体（默认 PingFang SC / 平方-简）
+        font_en: 英文字体（默认 PingFang SC / 平方-简）
+        clean_punct: 是否清理标点（默认 True）
+        delay: 时间延迟补偿（秒），默认 0.0，正值让字幕延后出现
+        max_chars: 单条字幕最大字符数，用于智能断句（默认 18）
+        smart_split: 是否启用智能断句（默认 True）
+    """
+    if not subtitles:
+        raise ValueError("字幕列表为空")
+
+    fps_f = float(fps)
+    timebase, frame_duration_str, fps_name = get_fps_info(fps_f)
+
+    # 应用时间延迟补偿
+    if delay != 0:
+        subtitles = [
+            {
+                **s,
+                'start': s['start'] + delay,
+                'end': s['end'] + delay
+            }
+            for s in subtitles
+        ]
+
+    # 智能断句（如果启用）
+    if smart_split and max_chars > 0:
+        expanded_subs = []
+        for sub in subtitles:
+            expanded_subs.extend(split_subtitle_by_punctuation(sub, max_chars))
+        subtitles = expanded_subs
+
+    total_secs = max(s["end"] for s in subtitles)
+    one_frame_ticks = timebase // int(round(fps_f)) if int(round(fps_f)) > 0 else 1
+    total_ticks = sec_to_ticks(total_secs, timebase) + one_frame_ticks
+
+    title_lines = []
+    ts_id_counter = [1]
+    
+    # 双语模式的字体大小
+    CN_FONT_SIZE_DUAL = "44"   # 双语时中文
+    EN_FONT_SIZE_DUAL = "38"   # 双语时英文
+    # 单语模式的字体大小
+    CN_FONT_SIZE_SINGLE = "52"  # 单语中文
+    
+    # 位置
+    CN_POSITION = "0 -300"   # 中文在上
+    EN_POSITION = "0 -420"   # 英文在下
+    SINGLE_POSITION = "0 -450"  # 单语位置
+
+    for sub in subtitles:
+        text_raw = sub['text'].strip()
+        text_en_raw = sub.get('text_en', '').strip() if bilingual else ''
+        
+        if not text_raw and not text_en_raw:
+            continue
+
+        # 处理中文文本
+        if text_raw:
+            zh_clean = clean_punctuation(text_raw) if clean_punct else text_raw
+        else:
+            zh_clean = ""
+        
+        # 处理英文文本
+        if bilingual and text_en_raw:
+            en_clean = text_en_raw
+        else:
+            en_clean = ""
+
+        start_ticks = sec_to_ticks(sub['start'], timebase)
+        end_ticks = sec_to_ticks(sub['end'], timebase)
+        dur_ticks = end_ticks - start_ticks
+        if dur_ticks <= 0:
+            continue
+
+        offset_str = ticks_str(start_ticks, timebase)
+        duration_str = ticks_str(dur_ticks, timebase)
+
+        if bilingual:
+            # 双语模式：生成两个独立 title（中文 lane=1，英文 lane=2）
+            
+            # 中文字幕
+            if zh_clean:
+                ts_id = f"ts{ts_id_counter[0]}"
+                ts_id_counter[0] += 1
+                cn_name = escape_xml(zh_clean[:20])
+                cn_text = escape_xml(zh_clean)
+                title_lines.append(
+                    _build_title(
+                        lane=1, offset_str=offset_str, duration_str=duration_str,
+                        display_name=cn_name, text=cn_text, ts_id=ts_id,
+                        font=font_cn, font_size=CN_FONT_SIZE_DUAL, position=CN_POSITION
+                    )
+                )
+            
+            # 英文字幕
+            if en_clean:
+                ts_id = f"ts{ts_id_counter[0]}"
+                ts_id_counter[0] += 1
+                en_name = escape_xml(en_clean[:20])
+                en_text = escape_xml(en_clean)
+                title_lines.append(
+                    _build_title(
+                        lane=2, offset_str=offset_str, duration_str=duration_str,
+                        display_name=en_name, text=en_text, ts_id=ts_id,
+                        font=font_en, font_size=EN_FONT_SIZE_DUAL, position=EN_POSITION
+                    )
+                )
+        else:
+            # 单语模式
+            if zh_clean:
+                ts_id = f"ts{ts_id_counter[0]}"
+                ts_id_counter[0] += 1
+                cn_name = escape_xml(zh_clean[:30])
+                cn_text = escape_xml(zh_clean)
+                title_lines.append(
+                    _build_title(
+                        lane=1, offset_str=offset_str, duration_str=duration_str,
+                        display_name=cn_name, text=cn_text, ts_id=ts_id,
+                        font=font_cn, font_size=CN_FONT_SIZE_SINGLE, position=SINGLE_POSITION
+                    )
+                )
+
+    titles_xml = "\n".join(title_lines)
+    total_str = ticks_str(total_ticks, timebase)
+
+    fcpxml = f'''<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.10">
+  <resources>
+    <format id="r1"
+            name="FFVideoFormat1920x1080p{fps_name}"
+            frameDuration="{frame_duration_str}"
+            width="1920"
+            height="1080"
+            colorSpace="1-1-1 (Rec. 709)"/>
+    <effect id="r2"
+            name="Basic Title"
+            uid=".../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti"/>
+  </resources>
+  <library>
+    <event name="Subtitles">
+      <project name="{escape_xml(source_filename)}_Subtitles">
+        <sequence duration="{total_str}" format="r1" tcStart="0s" tcFormat="NDF">
+          <spine>
+            <gap name="Gap" offset="0s" duration="{total_str}" start="0s">
+{titles_xml}
+            </gap>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>'''
+
+    if output_path:
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(fcpxml)
+        print(f"FCPXML 文件已生成: {output_path}")
+        print(f"  字幕条数: {len(title_lines)}")
+        if bilingual:
+            cn_count = sum(1 for l in title_lines if 'lane="1"' in l)
+            en_count = sum(1 for l in title_lines if 'lane="2"' in l)
+            print(f"  中文: {cn_count} 条, 英文: {en_count} 条")
+        print(f"  帧率: {fps}fps")
+        print(f"  字体: 中文={font_cn}, 英文={font_en}")
+        if delay != 0:
+            print(f"  时间延迟补偿: {delay}s")
+        if smart_split:
+            print(f"  智能断句: 启用 (最大 {max_chars} 字符)")
+    else:
+        print(fcpxml)
+
+    return fcpxml
+
+
+# ─── 命令行入口 ──────────────────────────────────────────
+
+def main():
+    """
+    命令行入口
+    
+    用法:
+        # 从 JSON 生成
+        generate_fcpxml.py <subtitles_json> <fps> [output_path] [source_filename] [options]
+        
+        # 从 SRT 生成（单语）
+        generate_fcpxml.py --srt <srt_path> <fps> [output_path] [source_filename] [options]
+        
+        # 从 SRT 生成（双语，中文+英文 SRT）
+        generate_fcpxml.py --srt <cn_srt_path> --srt-en <en_srt_path> <fps> [output_path] [source_filename] [options]
+    
+    选项:
+        --bilingual     双语模式
+        --no-clean      不清理标点
+        --delay N       时间延迟补偿（秒），让字幕延后出现
+        --max-chars N   单条字幕最大字符数（默认18），用于智能断句
+        --no-split      禁用智能断句
+
+    subtitles_json 格式:
+        单语: [{"start": 0.0, "end": 2.5, "text": "字幕内容"}, ...]
+        双语: [{"start": 0.0, "end": 2.5, "text": "中文", "text_en": "English"}, ...]
+    """
+    args_list = sys.argv[1:]
+    
+    # 解析选项参数
+    bilingual = '--bilingual' in args_list
+    no_clean = '--no-clean' in args_list
+    no_split = '--no-split' in args_list
+    delay = 0.0
+    max_chars = 18
+    
+    # 解析 --delay 参数
+    if '--delay' in args_list:
+        idx = args_list.index('--delay')
+        if idx + 1 < len(args_list):
+            try:
+                delay = float(args_list[idx + 1])
+                args_list = args_list[:idx] + args_list[idx + 2:]
+            except ValueError:
+                args_list = args_list[:idx] + args_list[idx + 2:]
+    
+    # 解析 --max-chars 参数
+    if '--max-chars' in args_list:
+        idx = args_list.index('--max-chars')
+        if idx + 1 < len(args_list):
+            try:
+                max_chars = int(args_list[idx + 1])
+                args_list = args_list[:idx] + args_list[idx + 2:]
+            except ValueError:
+                args_list = args_list[:idx] + args_list[idx + 2:]
+    
+    # 移除布尔选项
+    args_list = [a for a in args_list if a not in ['--bilingual', '--no-clean', '--no-split']]
+    
+    # 检查是否使用 SRT 模式
+    srt_path = None
+    srt_en_path = None
+    
+    if '--srt' in args_list:
+        idx = args_list.index('--srt')
+        srt_path = args_list[idx + 1]
+        args_list = args_list[:idx] + args_list[idx + 2:]
+    
+    if '--srt-en' in args_list:
+        idx = args_list.index('--srt-en')
+        srt_en_path = args_list[idx + 1]
+        args_list = args_list[:idx] + args_list[idx + 2:]
+    
+    if srt_path:
+        # SRT 模式
+        subtitles = parse_srt_dual(srt_path, srt_en_path)
+        if srt_en_path:
+            bilingual = True
+        fps = float(args_list[0]) if args_list else 25.0
+        output_path = args_list[1] if len(args_list) > 1 else None
+        source_filename = args_list[2] if len(args_list) > 2 else os.path.splitext(os.path.basename(srt_path))[0]
+    else:
+        # JSON 模式
+        if len(args_list) < 2:
+            print("Usage:")
+            print("  generate_fcpxml.py <subtitles_json> <fps> [output_path] [source_filename] [options]")
+            print("  generate_fcpxml.py --srt <srt_path> <fps> [output_path] [source_filename] [options]")
+            print("  generate_fcpxml.py --srt <cn_srt> --srt-en <en_srt> <fps> [output_path] [source_filename] [options]")
+            print("")
+            print("Options:")
+            print("  --bilingual       双语模式")
+            print("  --no-clean        不清理标点")
+            print("  --delay N         时间延迟补偿（秒）")
+            print("  --max-chars N     单条字幕最大字符数（默认18）")
+            print("  --no-split        禁用智能断句")
+            sys.exit(1)
+        
+        subtitles_data = json.loads(args_list[0])
+        fps = float(args_list[1])
+        output_path = args_list[2] if len(args_list) > 2 else None
+        source_filename = args_list[3] if len(args_list) > 3 else "subtitles"
+        
+        if isinstance(subtitles_data, dict):
+            subtitles = subtitles_data.get('subtitles', [])
+        else:
+            subtitles = subtitles_data
+
+    generate_fcpxml(
+        subtitles, fps, output_path, source_filename,
+        bilingual=bilingual,
+        clean_punct=not no_clean,
+        delay=delay,
+        max_chars=max_chars,
+        smart_split=not no_split
+    )
+
+
+if __name__ == '__main__':
+    main()

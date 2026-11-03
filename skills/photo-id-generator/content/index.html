@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>证件照生成器 - 蓝底白底1寸2寸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1E40AF;
+            --accent: #10B981;
+            --background: #F8FAFC;
+            --surface: #FFFFFF;
+            --text-primary: #1E293B;
+            --text-secondary: #64748B;
+            --border: #E2E8F0;
+            --error: #EF4444;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        body {
+            font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        /* Card */
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-title svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary);
+        }
+
+        /* Upload Area */
+        .upload-area {
+            border: 2px dashed var(--border);
+            border-radius: var(--radius-md);
+            padding: 48px 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: var(--background);
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary);
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        .upload-area.dragging {
+            border-color: var(--primary);
+            background: rgba(37, 99, 235, 0.1);
+            border-style: solid;
+        }
+
+        .upload-area.has-image {
+            padding: 16px;
+            border-style: solid;
+            border-color: var(--accent);
+        }
+
+        .upload-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 16px;
+            fill: var(--text-secondary);
+        }
+
+        .upload-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .upload-hint {
+            font-size: 13px;
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+
+        .upload-preview {
+            display: none;
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: var(--radius-sm);
+            margin: 0 auto;
+        }
+
+        .upload-area.has-image .upload-content {
+            display: none;
+        }
+
+        .upload-area.has-image .upload-preview {
+            display: block;
+        }
+
+        .upload-input {
+            display: none;
+        }
+
+        /* Options */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .option-group {
+            margin-bottom: 20px;
+        }
+
+        .option-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .option-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        /* Radio Group */
+        .radio-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .radio-option {
+            flex: 1;
+            position: relative;
+        }
+
+        .radio-option input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .radio-option label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 16px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .radio-option label:hover {
+            border-color: var(--primary);
+        }
+
+        .radio-option input:checked + label {
+            border-color: var(--primary);
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+        }
+
+        .color-swatch {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .color-swatch.blue {
+            background: #438ADB;
+        }
+
+        .color-swatch.white {
+            background: #FFFFFF;
+        }
+
+        /* Slider */
+        .slider-container {
+            padding: 8px 0;
+        }
+
+        .slider {
+            width: 100%;
+            height: 6px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: var(--border);
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s ease;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .slider-value {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 8px;
+        }
+
+        /* Generate Button */
+        .generate-btn {
+            width: 100%;
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .generate-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .generate-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .generate-btn.loading {
+            pointer-events: none;
+        }
+
+        .generate-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .spinner {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Results */
+        .results-section {
+            display: none;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 600px) {
+            .results-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .photo-card {
+            position: relative;
+            background: var(--background);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 12px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .photo-card:hover .photo-card-overlay {
+            opacity: 1;
+        }
+
+        .photo-card-info {
+            font-size: 12px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .download-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .photo-card:hover .download-btn {
+            opacity: 1;
+        }
+
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        /* Download All */
+        .download-all-btn {
+            width: 100%;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary);
+            background: rgba(37, 99, 235, 0.1);
+            border: 2px solid var(--primary);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .download-all-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .download-all-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Tips */
+        .tips {
+            margin-top: 24px;
+        }
+
+        .tips-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .tips-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .tips-list li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tips-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow: auto;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.visible .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-image {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: var(--radius-sm);
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            justify-content: center;
+        }
+
+        .modal-btn {
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .modal-btn.primary {
+            background: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .modal-btn.secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        /* Hidden Canvas */
+        #processingCanvas, #outputCanvas {
+            display: none;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--text-primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 2000;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .toast.visible {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast.error {
+            background: var(--error);
+        }
+
+        .toast.success {
+            background: var(--accent);
+        }
+
+        /* Loading Overlay */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1500;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .loading-overlay.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .loading-spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 16px;
+        }
+
+        .loading-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Print Styles */
+        @media print {
+            .card:not(.results-section) {
+                display: none;
+            }
+            .photo-card {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+            </div>
+            <h1>证件照生成器</h1>
+            <p>上传人像照片，自动生成蓝底/白底1寸、2寸证件照</p>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="card">
+            <h2 class="card-title">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 7v2.99s-1.99.01-2 0V7h-3s.01-1.99 0-2h3V2h2v3h3v2h-3zm-3 4V8h-3V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8h-3zM5 19l3-4 2 3 3-4 4 5H5z"/>
+                </svg>
+                上传照片
+            </h2>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <svg class="upload-icon" viewBox="0 0 24 24">
+                        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
+                    </svg>
+                    <p class="upload-text">拖拽照片到此处，或点击选择</p>
+                    <p class="upload-hint">支持 JPG、PNG、WebP 格式，最大 10MB</p>
+                </div>
+                <img class="upload-preview" id="uploadPreview" alt="预览">
+                <input type="file" class="upload-input" id="fileInput" accept="image/jpeg,image/png,image/webp">
+            </div>
+        </section>
+
+        <!-- Options Section -->
+        <section class="card" id="optionsSection" style="display: none;">
+            <h2 class="card-title">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/>
+                </svg>
+                设置选项
+            </h2>
+
+            <div class="options-grid">
+                <!-- Background Color -->
+                <div class="option-group">
+                    <label class="option-label">背景颜色</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" name="bgColor" id="bgBlue" value="blue" checked>
+                            <label for="bgBlue">
+                                <span class="color-swatch blue"></span>
+                                蓝底
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="bgColor" id="bgWhite" value="white">
+                            <label for="bgWhite">
+                                <span class="color-swatch white"></span>
+                                白底
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Size -->
+                <div class="option-group">
+                    <label class="option-label">证件照尺寸</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" name="photoSize" id="size1" value="1" checked>
+                            <label for="size1">1寸</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="photoSize" id="size2" value="2">
+                            <label for="size2">2寸</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beauty Slider -->
+            <div class="option-group">
+                <label class="option-label">美颜程度</label>
+                <div class="slider-container">
+                    <input type="range" class="slider" id="beautySlider" min="0" max="3" value="1">
+                    <div class="slider-labels">
+                        <span>关闭</span>
+                        <span>轻度</span>
+                        <span>中度</span>
+                        <span>强效</span>
+                    </div>
+                    <div class="slider-value" id="beautyValue">轻度美颜</div>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button class="generate-btn" id="generateBtn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                </svg>
+                <span>生成证件照</span>
+            </button>
+        </section>
+
+        <!-- Results Section -->
+        <section class="card results-section" id="resultsSection">
+            <h2 class="card-title">
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                生成结果
+            </h2>
+
+            <div class="results-grid" id="resultsGrid">
+                <!-- Photos will be inserted here -->
+            </div>
+
+            <button class="download-all-btn" id="downloadAllBtn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                打包下载全部
+            </button>
+
+            <div class="tips">
+                <h3 class="tips-title">使用提示</h3>
+                <ul class="tips-list">
+                    <li>如对效果不满意，可返回修改背景颜色和美颜程度后重新生成</li>
+                    <li>生成的证件照符合标准尺寸，可直接用于打印</li>
+                    <li>建议使用清晰的正面照片以获得最佳效果</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>本工具仅供个人学习交流使用，请勿用于非法用途</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <button class="modal-close" id="modalClose">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </svg>
+        </button>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage" src="" alt="大图预览">
+            <div class="modal-actions">
+                <button class="modal-btn primary" id="modalDownload">
+                    下载此照片
+                </button>
+                <button class="modal-btn secondary" id="modalCloseBtn">
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">正在处理照片，请稍候...</p>
+    </div>
+
+    <!-- Hidden Canvases -->
+    <canvas id="processingCanvas"></canvas>
+    <canvas id="outputCanvas"></canvas>
+
+    <script>
+        // DOM Elements
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const uploadPreview = document.getElementById('uploadPreview');
+        const optionsSection = document.getElementById('optionsSection');
+        const generateBtn = document.getElementById('generateBtn');
+        const resultsSection = document.getElementById('resultsSection');
+        const resultsGrid = document.getElementById('resultsGrid');
+        const downloadAllBtn = document.getElementById('downloadAllBtn');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modalImage');
+        const modalClose = document.getElementById('modalClose');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+        const modalDownload = document.getElementById('modalDownload');
+        const toast = document.getElementById('toast');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const beautySlider = document.getElementById('beautySlider');
+        const beautyValue = document.getElementById('beautyValue');
+        const processingCanvas = document.getElementById('processingCanvas');
+        const outputCanvas = document.getElementById('outputCanvas');
+        const processingCtx = processingCanvas.getContext('2d', { willReadFrequently: true });
+        const outputCtx = outputCanvas.getContext('2d');
+
+        // State
+        let uploadedImage = null;
+        let generatedPhotos = [];
+        let currentDownloadIndex = 0;
+
+        // Photo sizes (in pixels at 300 DPI)
+        const SIZES = {
+            1: { width: 295, height: 413, label: '1寸' },
+            2: { width: 413, height: 626, label: '2寸' }
+        };
+
+        // Background colors
+        const BG_COLORS = {
+            blue: { r: 67, g: 142, b: 219, label: '蓝底' },
+            white: { r: 255, g: 255, b: 255, label: '白底' }
+        };
+
+        // Beauty labels
+        const BEAUTY_LABELS = ['关闭美颜', '轻度美颜', '中度美颜', '强效美颜'];
+
+        // Beauty slider event
+        beautySlider.addEventListener('input', () => {
+            beautyValue.textContent = BEAUTY_LABELS[beautySlider.value];
+        });
+
+        // Upload area events
+        uploadArea.addEventListener('click', () => fileInput.click());
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragging');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragging');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragging');
+            const file = e.dataTransfer.files[0];
+            if (file) handleFile(file);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) handleFile(file);
+        });
+
+        // Handle file upload
+        function handleFile(file) {
+            // Validate file type
+            const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
+            if (!validTypes.includes(file.type)) {
+                showToast('请上传 JPG、PNG 或 WebP 格式的图片', 'error');
+                return;
+            }
+
+            // Validate file size (10MB)
+            if (file.size > 10 * 1024 * 1024) {
+                showToast('图片大小不能超过 10MB', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    uploadedImage = img;
+                    uploadPreview.src = e.target.result;
+                    uploadArea.classList.add('has-image');
+                    optionsSection.style.display = 'block';
+                    resultsSection.classList.remove('visible');
+                    showToast('照片上传成功', 'success');
+                };
+                img.onerror = () => {
+                    showToast('图片加载失败，请尝试其他图片', 'error');
+                };
+                img.src = e.target.result;
+            };
+            reader.onerror = () => {
+                showToast('文件读取失败', 'error');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Generate button
+        generateBtn.addEventListener('click', generatePhotos);
+
+        // Generate photos
+        async function generatePhotos() {
+            if (!uploadedImage) {
+                showToast('请先上传照片', 'error');
+                return;
+            }
+
+            const selectedBg = document.querySelector('input[name="bgColor"]:checked').value;
+            const selectedSize = parseInt(document.querySelector('input[name="photoSize"]:checked').value);
+            const beautyLevel = parseInt(beautySlider.value);
+
+            showLoading(true);
+            generateBtn.classList.add('loading');
+            generateBtn.innerHTML = `
+                <svg class="spinner" viewBox="0 0 24 24">
+                    <path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/>
+                </svg>
+                <span>处理中...</span>
+            `;
+
+            try {
+                // Generate all 4 photos
+                generatedPhotos = [];
+
+                // Process in sequence to avoid memory issues
+                for (const bg of ['blue', 'white']) {
+                    for (const size of [1, 2]) {
+                        const photo = await processPhoto(bg, size, beautyLevel);
+                        generatedPhotos.push(photo);
+                    }
+                }
+
+                // Display results
+                displayResults();
+
+                showToast('证件照生成成功！', 'success');
+                resultsSection.classList.add('visible');
+                resultsSection.scrollIntoView({ behavior: 'smooth' });
+
+            } catch (error) {
+                console.error('Processing error:', error);
+                showToast('处理失败，请尝试其他照片', 'error');
+            } finally {
+                showLoading(false);
+                generateBtn.classList.remove('loading');
+                generateBtn.innerHTML = `
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                    </svg>
+                    <span>重新生成</span>
+                `;
+            }
+        }
+
+        // Process single photo
+        async function processPhoto(bgKey, sizeKey, beautyLevel) {
+            const size = SIZES[sizeKey];
+            const bgColor = BG_COLORS[bgKey];
+
+            // Set canvas size
+            processingCanvas.width = size.width;
+            processingCanvas.height = size.height;
+
+            // Draw background
+            processingCtx.fillStyle = `rgb(${bgColor.r}, ${bgColor.g}, ${bgColor.b})`;
+            processingCtx.fillRect(0, 0, size.width, size.height);
+
+            // Calculate face crop area
+            const cropResult = calculateFaceCrop(uploadedImage, size.width, size.height);
+
+            // Draw cropped image
+            processingCtx.drawImage(
+                uploadedImage,
+                cropResult.sx, cropResult.sy, cropResult.sw, cropResult.sh,
+                cropResult.dx, cropResult.dy, cropResult.dw, cropResult.dh
+            );
+
+            // Apply background replacement
+            await replaceBackground(size.width, size.height, bgColor, cropResult);
+
+            // Apply beauty enhancement
+            if (beautyLevel > 0) {
+                applyBeauty(beautyLevel);
+            }
+
+            // Convert to data URL
+            const dataUrl = processingCanvas.toDataURL('image/jpeg', 0.92);
+
+            return {
+                dataUrl,
+                size: size.label,
+                bg: bgColor.label,
+                filename: `证件照_${size.label}_${bgColor.label}.jpg`
+            };
+        }
+
+        // Calculate face crop
+        function calculateFaceCrop(img, targetWidth, targetHeight) {
+            const imgAspect = img.width / img.height;
+            const targetAspect = targetWidth / targetHeight;
+
+            let cropWidth, cropHeight, cropX, cropY;
+
+            if (imgAspect > targetAspect) {
+                // Image is wider - crop sides
+                cropHeight = img.height;
+                cropWidth = cropHeight * targetAspect;
+                cropY = 0;
+                cropX = (img.width - cropWidth) / 2;
+            } else {
+                // Image is taller - crop top/bottom
+                cropWidth = img.width;
+                cropHeight = cropWidth / targetAspect;
+                cropX = 0;
+                cropY = (img.height - cropHeight) / 2;
+            }
+
+            // Face detection simulation - center crop on middle of image
+            // In production, this would use a proper face detection API
+            const centerX = img.width / 2;
+            const centerY = img.height / 2;
+
+            // Adjust crop to center on face area (upper middle portion)
+            const faceCenterY = centerY - (img.height * 0.1);
+
+            const faceCropHeight = cropHeight * 0.8;
+            const faceCropWidth = faceCropHeight * targetAspect;
+
+            return {
+                sx: centerX - faceCropWidth / 2,
+                sy: Math.max(0, faceCenterY - faceCropHeight * 0.35),
+                sw: faceCropWidth,
+                sh: faceCropHeight,
+                dx: 0,
+                dy: 0,
+                dw: targetWidth,
+                dh: targetHeight
+            };
+        }
+
+        // Replace background
+        async function replaceBackground(width, height, targetColor, cropResult) {
+            const imageData = processingCtx.getImageData(0, 0, width, height);
+            const data = imageData.data;
+
+            // Simple background replacement based on edge detection
+            const edgeThreshold = 50;
+            const bgCenterX = width / 2;
+            const bgCenterY = height * 0.15;
+            const bgRadius = Math.min(width, height) * 0.4;
+
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    const idx = (y * width + x) * 4;
+                    const r = data[idx];
+                    const g = data[idx + 1];
+                    const b = data[idx + 2];
+
+                    // Calculate distance from image center (face is in center)
+                    const dx = x - width / 2;
+                    const dy = y - height / 2;
+                    const distFromCenter = Math.sqrt(dx * dx + dy * dy);
+
+                    // Check if pixel is likely background (lighter colors near edges)
+                    const brightness = (r + g + b) / 3;
+                    const isLikelyBg = brightness > 180 || distFromCenter > bgRadius;
+
+                    // Simple skin tone detection (rough approximation)
+                    const isSkin = r > 95 && g > 40 && b > 20 &&
+                                   r > g && r > b &&
+                                   Math.abs(r - g) > 15 &&
+                                   brightness > 60 && brightness < 230;
+
+                    // Replace background if not skin tone
+                    if (isLikelyBg && !isSkin) {
+                        // Smooth edge blending
+                        const blendFactor = Math.min(1, (distFromCenter - bgRadius * 0.8) / (bgRadius * 0.2));
+
+                        if (blendFactor > 0) {
+                            data[idx] = Math.round(r * (1 - blendFactor) + targetColor.r * blendFactor);
+                            data[idx + 1] = Math.round(g * (1 - blendFactor) + targetColor.g * blendFactor);
+                            data[idx + 2] = Math.round(b * (1 - blendFactor) + targetColor.b * blendFactor);
+                        } else {
+                            data[idx] = targetColor.r;
+                            data[idx + 1] = targetColor.g;
+                            data[idx + 2] = targetColor.b;
+                        }
+                    }
+                }
+            }
+
+            processingCtx.putImageData(imageData, 0, 0);
+        }
+
+        // Apply beauty enhancement
+        function applyBeauty(level) {
+            if (level === 0) return;
+
+            const blurRadius = level * 1.5;
+            const imageData = processingCtx.getImageData(0, 0, processingCanvas.width, processingCanvas.height);
+            const data = imageData.data;
+            const width = processingCanvas.width;
+            const height = processingCanvas.height;
+
+            // Simple box blur for smoothing
+            const iterations = level;
+
+            for (let iteration = 0; iteration < iterations; iteration++) {
+                const copy = new Uint8ClampedArray(data);
+
+                for (let y = 1; y < height - 1; y++) {
+                    for (let x = 1; x < width - 1; x++) {
+                        const idx = (y * width + x) * 4;
+
+                        // Only apply to skin-like areas
+                        const r = data[idx];
+                        const g = data[idx + 1];
+                        const b = data[idx + 2];
+                        const brightness = (r + g + b) / 3;
+
+                        const isSkin = r > 80 && g > 50 && b > 30 &&
+                                      r > g && r > b && brightness > 50 && brightness < 240;
+
+                        if (isSkin) {
+                            // Box blur
+                            let sumR = 0, sumG = 0, sumB = 0;
+                            let count = 0;
+
+                            for (let ky = -1; ky <= 1; ky++) {
+                                for (let kx = -1; kx <= 1; kx++) {
+                                    const kidx = ((y + ky) * width + (x + kx)) * 4;
+                                    sumR += copy[kidx];
+                                    sumG += copy[kidx + 1];
+                                    sumB += copy[kidx + 2];
+                                    count++;
+                                }
+                            }
+
+                            const blend = level * 0.15;
+                            data[idx] = Math.round(r * (1 - blend) + (sumR / count) * blend);
+                            data[idx + 1] = Math.round(g * (1 - blend) + (sumG / count) * blend);
+                            data[idx + 2] = Math.round(b * (1 - blend) + (sumB / count) * blend);
+                        }
+                    }
+                }
+            }
+
+            processingCtx.putImageData(imageData, 0, 0);
+        }
+
+        // Display results
+        function displayResults() {
+            resultsGrid.innerHTML = '';
+
+            generatedPhotos.forEach((photo, index) => {
+                const card = document.createElement('div');
+                card.className = 'photo-card';
+                card.innerHTML = `
+                    <img src="${photo.dataUrl}" alt="${photo.size} ${photo.bg}">
+                    <div class="photo-card-overlay">
+                        <span class="photo-card-info">${photo.size} ${photo.bg}</span>
+                    </div>
+                    <button class="download-btn" title="下载">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                        </svg>
+                    </button>
+                `;
+
+                card.addEventListener('click', () => openModal(index));
+                resultsGrid.appendChild(card);
+            });
+        }
+
+        // Modal functions
+        function openModal(index) {
+            currentDownloadIndex = index;
+            modalImage.src = generatedPhotos[index].dataUrl;
+            modal.classList.add('visible');
+        }
+
+        function closeModal() {
+            modal.classList.remove('visible');
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modalCloseBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        modalDownload.addEventListener('click', () => {
+            downloadPhoto(currentDownloadIndex);
+            closeModal();
+        });
+
+        // Download functions
+        function downloadPhoto(index) {
+            const photo = generatedPhotos[index];
+            const link = document.createElement('a');
+            link.href = photo.dataUrl;
+            link.download = photo.filename;
+            link.click();
+            showToast(`已下载: ${photo.filename}`, 'success');
+        }
+
+        downloadAllBtn.addEventListener('click', async () => {
+            if (generatedPhotos.length === 0) return;
+
+            showToast('正在打包下载...', 'success');
+
+            // Download each photo sequentially
+            for (let i = 0; i < generatedPhotos.length; i++) {
+                await new Promise(resolve => setTimeout(resolve, 500));
+                downloadPhoto(i);
+            }
+
+            showToast('全部下载完成！', 'success');
+        });
+
+        // Utility functions
+        function showToast(message, type = 'info') {
+            toast.textContent = message;
+            toast.className = `toast ${type} visible`;
+
+            setTimeout(() => {
+                toast.classList.remove('visible');
+            }, 3000);
+        }
+
+        function showLoading(show) {
+            if (show) {
+                loadingOverlay.classList.add('visible');
+            } else {
+                loadingOverlay.classList.remove('visible');
+            }
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Initialize
+        beautyValue.textContent = BEAUTY_LABELS[beautySlider.value];
+    </script>
+</body>
+</html>

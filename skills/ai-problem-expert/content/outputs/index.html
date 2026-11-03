@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张俊熙 · 小升初自荐简历</title>
+  <style>
+    :root{--p:#1a3a5c;--a:#1565c0;--g:#27ae60;--y:#e6a817;--bg:#f8f9fa;--c:#fff;--t:#1a1a2e;--tm:#5a6270;--bd:#d0dbe8;--lb:#f0f6ff;--gb:#eefaf3;--ob:#eef5ff;--qb:#e8f0fb}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--t);line-height:1.8}
+    .page{max-width:900px;margin:0 auto;background:var(--c)}
+    /* HEADER */
+    .header{background:linear-gradient(135deg,var(--p) 0%,#2d6a8a 60%,#4a90c2 100%);color:var(--c);padding:2.5rem 3rem 2rem;position:relative;overflow:hidden}
+    .header::after{content:'';position:absolute;right:-30px;top:-30px;width:220px;height:220px;background:rgba(255,255,255,.06);border-radius:50%}
+    .header::before{content:'';position:absolute;right:70px;bottom:-70px;width:180px;height:180px;background:rgba(255,255,255,.04);border-radius:50%}
+    .ht{display:flex;align-items:flex-start;gap:2rem;margin-bottom:1.5rem}
+    .avatar{border-radius:10px;width:95px;height:120px;object-fit:cover;border:2px solid rgba(255,255,255,.35);flex-shrink:0;display:block}
+    .hi{flex:1}
+    .name{font-size:2.1rem;font-weight:800;letter-spacing:.12em;color:#fff;margin-bottom:.3rem}
+    .sub{font-size:.84rem;opacity:.8;margin-bottom:.7rem;letter-spacing:.04em}
+    .tags{display:flex;flex-wrap:wrap;gap:.4rem}
+    .tag{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:.72rem;padding:.2rem .75rem;border-radius:100px;letter-spacing:.04em}
+    .hb{display:flex;gap:2rem;flex-wrap:wrap;font-size:.8rem;opacity:.85;border-top:1px solid rgba(255,255,255,.22);padding-top:1rem}
+    .hb-item{display:flex;align-items:center;gap:.4rem}
+    /* SECTION */
+    .section{padding:1.75rem 3rem;border-bottom:1px solid var(--bd)}
+    .section:last-child{border-bottom:none}
+    .st{font-size:.74rem;font-weight:700;color:var(--p);letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:.6rem}
+    .st::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--bd),transparent)}
+    /* INFO GRID */
+    .ig{display:grid;grid-template-columns:1fr 1fr;gap:.7rem 2rem;font-size:.88rem}
+    .ii{display:flex;gap:.5rem;align-items:flex-start}
+    .ii .lbl{color:var(--tm);min-width:72px;flex-shrink:0}
+    .ii .val{color:var(--t);font-weight:600}
+    /* STATEMENT */
+    .qbox{background:var(--lb);border-radius:10px;padding:1.25rem 1.5rem;font-size:.93rem;line-height:2;color:var(--a);border-left:3px solid var(--a);font-style:italic;margin-bottom:1.2rem}
+    .bpara{font-size:.9rem;color:var(--t);line-height:2;margin-bottom:.9rem;text-align:justify}
+    /* MATH BOX */
+    .mbox{background:var(--ob);border-radius:12px;padding:1.25rem 1.5rem;border:1px solid #b3d7f5}
+    .mbox h4{font-size:.95rem;font-weight:700;color:var(--a);margin-bottom:.5rem}
+    .mtags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.75rem}
+    .mt{background:var(--a);color:#fff;font-size:.73rem;font-weight:600;padding:.2rem .65rem;border-radius:4px}
+    .mbox .desc{font-size:.87rem;color:var(--t);line-height:1.75}
+    .mnote{font-size:.85rem;color:var(--a);line-height:1.75;margin-top:.6rem;font-style:italic;border-top:1px solid #b3d7f5;padding-top:.6rem}
+    /* GO BOX */
+    .gbox{background:var(--gb);border-radius:12px;padding:1.25rem 1.5rem;border:1px solid #a5d6a7}
+    .gbox h4{font-size:.95rem;font-weight:700;color:var(--g);margin-bottom:.5rem}
+    .gtags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.75rem}
+    .gt{background:var(--g);color:#fff;font-size:.73rem;font-weight:600;padding:.2rem .65rem;border-radius:4px}
+    .gbox .gdesc{font-size:.87rem;color:var(--t);line-height:1.85;margin-bottom:.6rem}
+    .gnote{font-size:.87rem;color:var(--g);line-height:1.85;font-style:italic;background:#d4edda;border-radius:8px;padding:.75rem 1rem;border-left:3px solid var(--g)}
+    /* PRACTICE SECTION */
+    .psection{margin-bottom:1.5rem}
+    .psection:last-child{margin-bottom:0}
+    .pcard{background:var(--bg);border-radius:10px;padding:.9rem 1.1rem;margin-bottom:.7rem;border:1px solid var(--bd);overflow:hidden}
+    .pcard.g{border-left:3px solid var(--g)}
+    .pcard.a{border-left:3px solid var(--a)}
+    .pcard h5{font-size:.88rem;font-weight:700;margin-bottom:.5rem;color:var(--t)}
+    .pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem}
+    .pg img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;border:1px solid var(--bd);display:block}
+    /* HONOR LIST */
+    .hl{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.2rem}
+    .hi2{display:flex;gap:1rem;padding:.85rem 1rem;background:var(--lb);border-radius:8px;align-items:flex-start}
+    .hi2 .yr{background:var(--p);color:#fff;font-size:.68rem;font-weight:700;padding:.2rem .6rem;border-radius:5px;min-width:75px;text-align:center;flex-shrink:0;margin-top:2px}
+    .hi2 .yr.y{background:var(--y);color:var(--t)}
+    .hi2 .yr.g2{background:var(--g)}
+    .hi2 .cnt{flex:1}
+    .hi2 .t{font-weight:700;font-size:.88rem;color:var(--t);margin-bottom:.15rem}
+    .hi2 .s{font-size:.8rem;color:var(--tm);line-height:1.6}
+    /* PRACTICE GRID */
+    .practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+    .pcard2{background:var(--lb);border-radius:10px;padding:1rem 1.25rem;border-top:3px solid var(--a);overflow:hidden}
+    .pcard2.g{border-top-color:var(--g)}
+    .pcard2 h5{font-size:.87rem;font-weight:700;margin-bottom:.4rem;color:var(--t)}
+    .pcard2 .pg2{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin-top:.5rem}
+    .pcard2 .pg2 img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:5px;border:1px solid var(--bd);display:block}
+    /* FAMILY */
+    .family-card{display:flex;gap:1.2rem;padding:.9rem 1.1rem;background:var(--lb);border-radius:8px;margin-bottom:.7rem;align-items:flex-start}
+    .family-card .fc{flex-shrink:0;width:80px;background:var(--p);color:#fff;font-size:.82rem;font-weight:700;padding:.35rem .5rem;border-radius:6px;text-align:center}
+    .family-card .fd{font-size:.87rem;color:var(--t);line-height:1.75}
+    .family-card .fd .fk{font-weight:700;color:var(--p)}
+    /* APPLY */
+    .ainfo-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem 2rem;font-size:.88rem;margin-bottom:1.2rem}
+    .aibox{background:var(--lb);border-radius:8px;padding:.7rem 1rem;font-size:.88rem;display:flex;gap:.5rem;align-items:flex-start}
+    .aibox .albl{font-weight:700;color:var(--tm);min-width:70px;flex-shrink:0}
+    .aibox .aval{color:var(--t)}
+    .qf{background:var(--qb);border-radius:10px;padding:1.1rem 1.5rem;font-size:.9rem;color:var(--p);font-style:italic;text-align:center;line-height:1.9;border:1px solid #b3cdf5}
+    /* PRINT */
+    @media print{body{background:#fff}.page{max-width:100%;box-shadow:none}}
+    @page{size:A4;margin:0}
+    .photo-hint{color:#aaa;font-size:.78rem;text-align:center;padding:2rem 0;border:2px dashed #ddd;border-radius:8px;margin:.5rem 0;display:block}
+    .pr{padding:.5rem 0 0;font-size:.78rem;color:var(--tm);text-align:center}
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="ht">
+      <img class="avatar" src="图1.jpg" alt="证件照" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hi" style="display:none;align-items:center;justify-content:center;width:95px;height:120px;background:rgba(45,106,138,.4);border-radius:10px;border:2px solid rgba(255,255,255,.3);flex-shrink:0">
+        <span style="font-size:2rem;color:rgba(255,255,255,.6)">ZX</span>
+      </div>
+      <div class="hi">
+        <div class="name">张 俊 熙</div>
+        <div class="sub">郑州市管城回族区创新街小学</div>
+        <div class="tags">
+          <span class="tag">🎯 奥数专长</span>
+          <span class="tag">♟ 围棋业余3段</span>
+          <span class="tag">✍️ 书法金奖</span>
+          <span class="tag">📚 写作</span>
+          <span class="tag">🌿 美德少年</span>
+        </div>
+      </div>
+    </div>
+    <div class="hb">
+      <div class="hb-item">🏠 郑州市管城回族区</div>
+      <div class="hb-item">📅 六年级在读</div>
+      <div class="hb-item">🎓 申请河南省实验中学</div>
+    </div>
+  </div>
+
+  <!-- 基本信息 -->
+  <div class="section">
+    <div class="st">📋 基本信息</div>
+    <div class="ig">
+      <div class="ii"><span class="lbl">姓名</span><span class="val">张俊熙</span></div>
+      <div class="ii"><span class="lbl">性别</span><span class="val">男</span></div>
+      <div class="ii"><span class="lbl">出生年月</span><span class="val">2013年8月5日</span></div>
+      <div class="ii"><span class="lbl">在读学校</span><span class="val">郑州市管城回族区创新街小学</span></div>
+      <div class="ii"><span class="lbl">申请学校</span><span class="val">河南省实验中学</span></div>
+      <div class="ii"><span class="lbl">家庭氛围</span><span class="val">父母均为全日制硕士学历、学习型家庭</span></div>
+    </div>
+  </div>
+
+  <!-- 自我陈述 -->
+  <div class="section">
+    <div class="st">💬 自我陈述</div>
+    <div class="qbox">我是一个喜欢安静地思考问题的男孩。我相信：真正的学习，不是跑得有多快，而是想得有多深。</div>
+    <div class="bpara">我非常喜欢数学，因为它让我着迷的是"想通了"的那一刻——比任何分数都更让我开心。我也喜欢围棋，五年下棋教会我：每一步都有后果，真正的实力来自长期稳定的思考，而不是某一次的输赢。</div>
+    <div class="bpara">我的父母均受过高等教育，他们教会我最重要的事情不是"正确答案是什么"，而是"问题本身值得被认真对待"。</div>
+    <div class="bpara">我想来省实验，是因为"实验"这两个字——探索本身是一种勇敢。我期待在这里遇到更多和我一样，喜欢安静地想、认真地做的同学。</div>
+  </div>
+
+  <!-- 数学特长 -->
+  <div class="section">
+    <div class="st">🧮 数学特长</div>
+    <div class="mbox">
+      <h4>🎯 数学思维与竞赛</h4>
+      <div class="mtags">
+        <span class="mt">系统学习奥数</span>
+        <span class="mt">逻辑推理</span>
+        <span class="mt">问题拆解</span>
+        <span class="mt">深度思考</span>
+      </div>
+      <div class="desc">从三年级开始系统学习奥数，在长期的学习过程中，我逐渐体会到：数学题就像一道道精心设计的谜题，每解开一道，就像完成了一次小小的探险。我享受那种反复尝试、终于想通的成就感——它教会我的不只是解题技巧，更是面对困难时的耐心和信心。</div>
+      <div class="mnote">学习心得：学数学不是为了赢过别人，而是训练自己思考的方式——清晰、有条理、不怕困难。</div>
+    </div>
+  </div>
+
+  <!-- 围棋特长 -->
+  <div class="section">
+    <div class="st">♟ 围棋特长</div>
+    <div class="gbox">
+      <h4>🏆 业余3段 · 中国围棋协会认证</h4>
+      <div class="gtags">
+        <span class="gt">业余3段</span>
+        <span class="gt">中国围棋协会认证</span>
+        <span class="gt">河南省围棋协会</span>
+        <span class="gt">十余次逐级考级</span>
+        <span class="gt">5年棋龄</span>
+      </div>
+      <div class="gdesc">学习围棋五年，历经河南省围棋协会组织的十余次逐级考级。很多人问我为什么喜欢下围棋。其实下棋教会我最重要的事情，不是"怎么赢"，而是"要学会从全局思考"。</div>
+      <div class="gdesc" style="margin-top:.5rem">有时候你走了一步好棋，但后面没能稳住节奏，还是会输；有时候你暂时处于下风，但只要不放弃，脚踏实地地前行，还是有机会翻盘。</div>
+      <div class="gnote">下棋让我学会了耐心，也让我明白：真正的实力，不是某一次赢，而是长久稳定的心态。</div>
+    </div>
+  </div>
+
+  <!-- 实践展示 -->
+  <div class="section">
+    <div class="st">📸 实践展示</div>
+
+    <!-- 科技创新实践 -->
+    <div class="psection">
+      <div class="pcard a">
+        <h5>🚀 科技创新实践</h5>
+        <div class="pg">
+          <div>
+            <img src="图2.jpg" alt="科技创新实践1" onerror="this.parentElement.innerHTML='<div class=photo-hint>图2 · 科技创新实践1<br><span style=font-size:.7rem>（图片缺失，请上传）</span></div>'">
+            <div class="pr">模拟考古化石发掘 · STEAM科学体验</div>
+          </div>
+          <div>
+            <img src="图3.jpg" alt="科技创新实践2" onerror="this.parentElement.innerHTML='<div class=photo-hint>图3 · 科技创新实践2<br><span style=font-size:.7rem>（图片缺失，请上传）</span></div>'">
+            <div class="pr">AI下棋机器人 · 人工智能体验</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 传统文化实践 -->
+    <div class="psection">
+      <div class="pcard g">
+        <h5>🎋 传统文化实践</h5>
+        <div class="pg">
+          <div>
+            <img src="图4.jpg" alt="传统文化实践1" onerror="this.parentElement.innerHTML='<div class=photo-hint>图4 · 传统文化实践1<br><span style=font-size:.7rem>（图片缺失，请上传）</span></div>'">
+            <div class="pr">2022年河南省围棋段位赛（郑州赛区）</div>
+          </div>
+          <div>
+            <img src="图5.jpg" alt="传统文化实践2" onerror="this.parentElement.innerHTML='<div class=photo-hint>图5 · 传统文化实践2<br><span style=font-size:.7rem>（图片缺失，请上传）</span></div>'">
+            <div class="pr">家务劳动 · 烹饪技能实践</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 爱好获奖展示 -->
+    <div class="psection">
+      <div class="pcard" style="border-left:3px solid var(--y)">
+        <h5>🏅 爱好获奖展示</h5>
+        <div class="pg" style="grid-template-columns:repeat(4,1fr)">
+          <div>
+            <img src="图6.jpg" alt="获奖1" onerror="this.parentElement.innerHTML='<div class=photo-hint>图6</div>'">
+            <div class="pr">围棋业余3段证书</div>
+          </div>
+          <div>
+            <img src="图7.jpg" alt="获奖2" onerror="this.parentElement.innerHTML='<div class=photo-hint>图7</div>'">
+            <div class="pr">创新美德少年荣誉</div>
+          </div>
+          <div>
+            <img src="图8.jpg" alt="获奖3" onerror="this.parentElement.innerHTML='<div class=photo-hint>图8</div>'">
+            <div class="pr">中普国学杯硬笔金奖</div>
+          </div>
+          <div>
+            <img src="图9.jpg" alt="获奖4" onerror="this.parentElement.innerHTML='<div class=photo-hint>图9</div>'">
+            <div class="pr">魏巍杯作文三等奖</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 荣誉列表（文字摘要） -->
+  <div class="section">
+    <div class="st">🏅 荣誉与社会实践</div>
+    <ul class="hl">
+      <li class="hi2">
+        <div class="yr">2023.08</div>
+        <div class="cnt">
+          <div class="t">中国围棋协会 · 业余3段</div>
+          <div class="s">发证机构：中国围棋协会 | 河南省围棋协会逐级考级 | 全国通用认证</div>
+        </div>
+      </li>
+      <li class="hi2">
+        <div class="yr y">2023.10</div>
+        <div class="cnt">
+          <div class="t">"中普国学杯"规范字书写大赛 · 硬笔金奖</div>
+          <div class="s">主办：河南中普国学文化教育学院 / 郑州市硬笔书法家协会</div>
+        </div>
+      </li>
+      <li class="hi2">
+        <div class="yr g2">2025.06</div>
+        <div class="cnt">
+          <div class="t">"魏巍杯"作文比赛 · 三等奖</div>
+          <div class="s">郑州市管城回族区创新街小学</div>
+        </div>
+      </li>
+      <li class="hi2">
+        <div class="yr">2022-2026</div>
+        <div class="cnt">
+          <div class="t">连续多年获评"创新美德少年"</div>
+          <div class="s">郑州市管城回族区创新街小学 | 涵盖2021-2022、2024-2025、2025-2026学年等多期</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 家庭背景 -->
+  <div class="section">
+    <div class="st">🏠 家庭背景</div>
+
+    <div class="family-card">
+      <div class="fc">父亲</div>
+      <div class="fd">
+        <div class="fk">全日制法学硕士</div>
+        上市公司高管，支持孩子多元化发展，尊重孩子兴趣选择
+      </div>
+    </div>
+
+    <div class="family-card">
+      <div class="fc">母亲</div>
+      <div class="fd">
+        <div class="fk">全日制法学硕士</div>
+        高校教师，积极参与孩子教育，营造良好的家庭学习氛围
+      </div>
+    </div>
+
+    <div class="family-card">
+      <div class="fc">家风</div>
+      <div class="fd">
+        学习型家庭、崇尚独立思考，理性对话与平等交流
+      </div>
+    </div>
+  </div>
+
+  <!-- 申请意向 -->
+  <div class="section">
+    <div class="st">🎓 申请意向</div>
+    <div class="ainfo-grid">
+      <div class="aibox"><span class="albl">申请学校</span><span class="aval">河南省实验中学</span></div>
+      <div class="aibox"><span class="albl">个人优势</span><span class="aval">数学思维 · 围棋策略 · 书法修养 · 品德端正</span></div>
+    </div>
+    <div class="ainfo-grid">
+      <div class="aibox"><span class="albl">申请理由</span><span class="aval">省实验"实验精神"——探索、勇气、创新</span></div>
+      <div class="aibox"><span class="albl">期待融入</span><span class="aval">安静地想、认真地做，与志同道合者同行</span></div>
+    </div>
+    <div class="qf">"我相信，探索本身是一种勇敢。来省实验，是因为我相信：在一个鼓励实验、允许犯错、崇尚思考的环境里，我能成为更好的自己。"</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "author": "Matrix Agent",
+  "config": {
+    "auth_url": "https://sso.garmin.cn/portal/sso/en-US/sign-in?clientId=GarminConnect",
+    "is_cn": true
+  },
+  "created_at": "2026-04-14",
+  "description": "结合 Garmin Connect 真实数据的专业跑步教练。自动读取运动员的跑步记录、心率、HRV、睡眠、训练负荷、VO2 Max 等指标，提供个性化训练计划、赛后分析、恢复建议、备赛指导和运动医学评估。",
+  "features": [
+    "Garmin Connect 数据拉取",
+    "训练状态分析",
+    "个性化训练计划",
+    "运动损伤评估",
+    "中国大陆 Garmin (garmin.cn) 支持"
+  ],
+  "id": 388184951124136,
+  "name": "running-coach-garmin",
+  "platform": "minimax",
+  "tags": [
+    "running",
+    "training",
+    "garmin",
+    "marathon",
+    "sports-medicine"
+  ],
+  "updated_at": 1776325862472,
+  "version": "1.0.0"
+}

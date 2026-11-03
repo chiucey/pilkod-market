@@ -1,0 +1,91 @@
+{
+  "skill_config": {
+    "name": "jarvis-assistant",
+    "version": "1.0.0",
+    "display_name": "贾维斯智能助手",
+    "description": "全能AI办公助手 - 文档处理、知识记忆、专业问答、创意创作"
+  },
+  "capabilities": {
+    "document_processing": {
+      "enabled": true,
+      "features": [
+        "word_document",
+        "ppt_presentation",
+        "excel_data",
+        "pdf_processing"
+      ]
+    },
+    "knowledge_memory": {
+      "enabled": true,
+      "features": [
+        "context_memory",
+        "user_profile",
+        "persistent_knowledge"
+      ]
+    },
+    "professional_qa": {
+      "enabled": true,
+      "domains": [
+        "technology",
+        "business",
+        "finance",
+        "lifestyle",
+        "academics"
+      ]
+    },
+    "content_creation": {
+      "enabled": true,
+      "types": [
+        "business_writing",
+        "marketing_copy",
+        "creative_writing",
+        "technical_docs"
+      ]
+    },
+    "code_assistant": {
+      "enabled": true,
+      "languages": [
+        "python",
+        "javascript",
+        "java",
+        "go",
+        "typescript"
+      ]
+    },
+    "learning_tutor": {
+      "enabled": true,
+      "features": [
+        "concept_explanation",
+        "study_planning",
+        "exam_preparation"
+      ]
+    },
+    "productivity_tools": {
+      "enabled": true,
+      "features": [
+        "task_management",
+        "schedule_planning",
+        "meeting_assistance"
+      ]
+    }
+  },
+  "personality": {
+    "name": "贾维斯",
+    "name_en": "J.A.R.V.I.S.",
+    "greeting": "您好，我是贾维斯。有什么可以帮您的吗？",
+    "tone": "friendly",
+    "proactive_suggestions": true
+  },
+  "memory_settings": {
+    "enabled": true,
+    "max_context_items": 100,
+    "max_persistent_items": 1000,
+    "auto_remember": true
+  },
+  "response_settings": {
+    "default_language": "zh-CN",
+    "detail_level": "balanced",
+    "include_sources": true,
+    "proactive_hints": true
+  }
+}

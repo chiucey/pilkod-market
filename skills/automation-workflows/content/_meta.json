@@ -1,0 +1,78 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": [
+    "opportunity_identification",
+    "tool_selection",
+    "workflow_design",
+    "building_testing",
+    "monitoring_maintenance",
+    "roi_calculation",
+    "scenario_templates"
+  ],
+  "category": "productivity",
+  "created_at": "2026-03-22",
+  "dependencies": {
+    "python": []
+  },
+  "description": "面向独立创业者的无代码自动化工作流全流程设计与实现指南，覆盖自动化机会识别、工作流设计、工具选型、搭建测试、运维优化全链路，帮助用户减少重复手工工作、节省时间、规模化业务运营。\nA comprehensive no-code automation workflow design and implementation guide for solopreneurs. Covers the full chain of automation opportunity identification, workflow design, tool selection, building/testing, and operations optimization. Helps users reduce repetitive manual work, save time, and scale business operations.",
+  "files": [
+    "SKILL.md",
+    "src/main.py",
+    "tests/test_main.py",
+    "config/settings.yaml",
+    "assets/.gitkeep"
+  ],
+  "id": 382074942088113,
+  "license": "MIT-0",
+  "name": "automation-workflows",
+  "permissions": [
+    "network:false"
+  ],
+  "platform": "minimax",
+  "security_rules": {
+    "data_isolation": true,
+    "no_credential_request": true,
+    "no_external_call": true,
+    "no_tool_install": true,
+    "only_guidance_output": true,
+    "user_data_protection": true
+  },
+  "skill_id": 881207527,
+  "supported_tools": [
+    "Zapier",
+    "Make",
+    "n8n"
+  ],
+  "tags": [
+    "automation",
+    "workflow",
+    "efficiency",
+    "productivity",
+    "zapier",
+    "make",
+    "n8n",
+    "no-code",
+    "solopreneur",
+    "business-automation"
+  ],
+  "trigger_words": {
+    "en": [
+      "automate",
+      "automation",
+      "workflow automation",
+      "save time",
+      "reduce manual work",
+      "automate my business",
+      "no-code automation"
+    ],
+    "zh": [
+      "自动化",
+      "工作流自动化",
+      "节省时间",
+      "减少手工工作",
+      "无代码自动化"
+    ]
+  },
+  "updated_at": 1774833776779,
+  "version": "0.2.0"
+}

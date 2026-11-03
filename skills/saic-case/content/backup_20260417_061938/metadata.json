@@ -1,0 +1,78 @@
+{
+  "name": "saic-case",
+  "version": "1.0.0",
+  "displayName": "市场监督管理投诉举报案件处理技能",
+  "displayNameEn": "SAIC Complaint & Report Case Handler",
+  "description": "基于《市场监督管理投诉举报处理办法》（2026年4月15日施行），辅助处理市场监管投诉举报案件，包括材料审查、文书起草、管辖判断、时限监控、程序合规检查、违法线索研判。",
+  "descriptionEn": "Professional skill for handling market supervision complaints and reports under China's SAIC regulations (Order No. 121, effective 2026-04-15). Covers case material review, document drafting, jurisdiction determination, deadline tracking, compliance checking, and violation analysis.",
+  "author": {
+    "name": "Figo Cheung & 混一 (Hunyi)",
+    "email": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "homepage": "",
+  "repository": "",
+  "tags": [
+    "市场监管",
+    "投诉举报",
+    "消费者权益",
+    "法律工具",
+    "市场监管局"
+  ],
+  "categories": [
+    "法律工具",
+    "政务辅助",
+    "文档生成"
+  ],
+  "keywords": [
+    "投诉",
+    "举报",
+    "市场监管",
+    "消费者权益",
+    "12315",
+    "调解",
+    "恶意索赔"
+  ],
+  "platform": "openclaw",
+  "minOpenClawVersion": "1.0.0",
+  "dependencies": {
+    "python3": ">=3.8"
+  },
+  "skillEntry": "SKILL.md",
+  "activationKeywords": [
+    "投诉",
+    "举报",
+    "市场监管",
+    "市场监督投诉",
+    "举报材料",
+    "投诉举报办理",
+    "市场监管投诉举报案件",
+    "消费者权益争议",
+    "12315"
+  ],
+  "filePatterns": [
+    "**/*.md",
+    "**/*.py"
+  ],
+  "excludePatterns": [
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/.git/**"
+  ],
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-04-14",
+      "changes": [
+        "初始版本发布",
+        "支持投诉材料审查（7项检查维度）",
+        "支持投诉书/举报书生成",
+        "支持管辖判断（5类被投诉人场景）",
+        "支持时限计算（4类关键节点）",
+        "支持程序合规检查",
+        "支持违法线索分析（6类典型违法行为）",
+        "包含4份参考文档和2份文书模板"
+      ]
+    }
+  }
+}

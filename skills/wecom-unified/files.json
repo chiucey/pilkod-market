@@ -1,0 +1,169 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "a0a70093e3e26f86fdb7fe3137a0642f290b64e4",
+      "size": 5146
+    },
+    {
+      "path": "_meta.json",
+      "sha": "06a338a95aa4f80babbe27f617acaa4e61bf68b2",
+      "size": 132
+    },
+    {
+      "path": "references/wecom-contact.md",
+      "sha": "ffd9432ce9f4f6c8767324a98e6cac67dd458d97",
+      "size": 4562
+    },
+    {
+      "path": "references/wecom-doc-create-doc.md",
+      "sha": "b6c850f49caf7d78960d859b93fa1b95709a8c3e",
+      "size": 1585
+    },
+    {
+      "path": "references/wecom-doc-edit-doc-content.md",
+      "sha": "be0e2341ab51ae8579657d99bcc89a2561e955ac",
+      "size": 1583
+    },
+    {
+      "path": "references/wecom-doc-get-doc-content.md",
+      "sha": "c326619bf29ea078d9c09f8401a05594b251006f",
+      "size": 2837
+    },
+    {
+      "path": "references/wecom-doc-smartpage-create.md",
+      "sha": "67c739c160887a25bebc431e78e0a6d58bce8d50",
+      "size": 4835
+    },
+    {
+      "path": "references/wecom-doc-smartpage-export.md",
+      "sha": "bbf82a5fd5316e305306d46a8b54d1e5dcf140c3",
+      "size": 4474
+    },
+    {
+      "path": "references/wecom-doc-smartsheet-cell-value-formats.md",
+      "sha": "096c5fdef23e1cfc9d6f81b36a0df71ee2f0c3cf",
+      "size": 3431
+    },
+    {
+      "path": "references/wecom-doc-smartsheet-field-types.md",
+      "sha": "84c00b1ff47f905df11021897a4a7c794e5d229a",
+      "size": 1951
+    },
+    {
+      "path": "references/wecom-doc-smartsheet-get-records.md",
+      "sha": "3c0f6589e6de2a920f742e2e4141a2e743faee67",
+      "size": 5293
+    },
+    {
+      "path": "references/wecom-doc-smartsheet-webhook-examples.md",
+      "sha": "7a28b1548107af7c4814886a6913703061849688",
+      "size": 5262
+    },
+    {
+      "path": "references/wecom-doc-smartsheet-webhook.md",
+      "sha": "cb0a24ff23ee00e5e5e0fb71b45a92b993e9eb4a",
+      "size": 7521
+    },
+    {
+      "path": "references/wecom-doc.md",
+      "sha": "c21b7da81a321e148e8aae9c919957dfc3249101",
+      "size": 17324
+    },
+    {
+      "path": "references/wecom-meeting-example-full.md",
+      "sha": "9ee4f9310b544617237d9f59d7a7720b2779c9bb",
+      "size": 953
+    },
+    {
+      "path": "references/wecom-meeting-example-reminder.md",
+      "sha": "b96b4f21eaa01b060d8aab0da453364a6d4c75d3",
+      "size": 891
+    },
+    {
+      "path": "references/wecom-meeting-example-security.md",
+      "sha": "6e7e8cef6a8d89e8f663c1543d6f8a93b6749090",
+      "size": 578
+    },
+    {
+      "path": "references/wecom-meeting-response-get-meeting-info.md",
+      "sha": "58789c95d0a0dc04d0a531291888bd1c1efd5602",
+      "size": 9851
+    },
+    {
+      "path": "references/wecom-meeting.md",
+      "sha": "55fe6129b028af60211de98e156cc2d7a8ece73c",
+      "size": 16160
+    },
+    {
+      "path": "references/wecom-msg-get-message.md",
+      "sha": "a93daee73eca306e72f4e050a17fb33fc8e50951",
+      "size": 4033
+    },
+    {
+      "path": "references/wecom-msg-get-msg-chat-list.md",
+      "sha": "476b53457e5029d178a6d2a2d08361870d77836e",
+      "size": 1835
+    },
+    {
+      "path": "references/wecom-msg-get-msg-media.md",
+      "sha": "d1647c274900c97ae82dd04d897f4a0a6b5ae73c",
+      "size": 1353
+    },
+    {
+      "path": "references/wecom-msg-send-message.md",
+      "sha": "88a8a9ddadb2dd8a94446ffc131befddb931ef3d",
+      "size": 1052
+    },
+    {
+      "path": "references/wecom-msg.md",
+      "sha": "eac7947a3dc12f636b54934cce92774805696a91",
+      "size": 7826
+    },
+    {
+      "path": "references/wecom-schedule-check-availability.md",
+      "sha": "770c79549ae7d478a691c74155579a21c64f4549",
+      "size": 1608
+    },
+    {
+      "path": "references/wecom-schedule-create-schedule.md",
+      "sha": "7668c333af2b011d981f0d190ba3374c49be1e66",
+      "size": 1425
+    },
+    {
+      "path": "references/wecom-schedule-get-schedule-detail.md",
+      "sha": "f23d3a2ededc32495d12aaa2038c266419e052f0",
+      "size": 2303
+    },
+    {
+      "path": "references/wecom-schedule-ref-reminders.md",
+      "sha": "3c14ee3bda54af1dec03c34f6cae642b49c56fef",
+      "size": 692
+    },
+    {
+      "path": "references/wecom-schedule-update-schedule.md",
+      "sha": "6fa7bf2a02ed0c917fc1bd9c3811a7840c8c4fa9",
+      "size": 1238
+    },
+    {
+      "path": "references/wecom-schedule.md",
+      "sha": "5a7bb9b95aed696d34a70b5c73f5301d2addc029",
+      "size": 6972
+    },
+    {
+      "path": "references/wecom-shared.md",
+      "sha": "543ffd784fd0a4f889fd5561bf6856317fd2e19a",
+      "size": 4492
+    },
+    {
+      "path": "references/wecom-todo-workflows.md",
+      "sha": "e52f82a842d07d202af3f9de50977314318a3afb",
+      "size": 6464
+    },
+    {
+      "path": "references/wecom-todo.md",
+      "sha": "ef2c6e68971287cb804b3c8409efcd8571f87124",
+      "size": 14243
+    }
+  ]
+}

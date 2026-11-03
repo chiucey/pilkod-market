@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; }
+
+    #header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    #header h1 { font-size: 20px; font-weight: 600; }
+    #header p { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+
+    #map { height: calc(100vh - 70px); width: 100%; }
+
+    .info-box {
+      position: absolute;
+      top: 80px; right: 10px;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      padding: 16px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      min-width: 280px;
+      max-width: 350px;
+      font-size: 13px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .info-box h3 { font-size: 16px; margin-bottom: 8px; color: #333; border-bottom: 2px solid #667eea; padding-bottom: 8px; }
+    .info-box .prop { margin: 6px 0; padding: 4px 0; border-bottom: 1px solid #eee; display: flex; }
+    .info-box .prop-label { font-weight: 600; color: #666; min-width: 100px; }
+    .info-box .prop-value { color: #333; flex: 1; }
+
+    .controls {
+      position: absolute;
+      top: 80px; left: 10px;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      padding: 14px 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      min-width: 180px;
+    }
+    .controls h4 { margin-bottom: 10px; font-size: 13px; color: #666; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    .controls label { display: block; margin: 8px 0; font-size: 12px; color: #555; }
+    .controls label span { display: inline-block; width: 70px; }
+    .controls input[type="color"] { width: 60px; height: 28px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; }
+    .controls input[type="range"] { width: 100px; vertical-align: middle; }
+
+    .legend {
+      position: absolute;
+      bottom: 20px; right: 10px;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      padding: 14px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      font-size: 12px;
+      max-width: 200px;
+    }
+    .legend h4 { margin-bottom: 10px; color: #333; }
+    .legend-item { display: flex; align-items: center; margin: 6px 0; }
+    .legend-color { width: 20px; height: 14px; border-radius: 3px; margin-right: 10px; border: 1px solid rgba(0,0,0,0.1); }
+
+    .stats {
+      position: absolute;
+      bottom: 20px; left: 10px;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      font-size: 12px;
+    }
+    .stats h4 { margin-bottom: 6px; color: #666; }
+    .stats div { margin: 3px 0; color: #555; }
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <div>
+    <h1>{{TITLE}}</h1>
+    <p>空间数据可视化 | 交互式地图</p>
+  </div>
+</div>
+
+<div id="map"></div>
+
+<div class="controls" id="controls">
+  <h4>样式控制</h4>
+  <label><span>填充颜色</span><input type="color" id="fillColor" value="#e74c3c" /></label>
+  <label><span>边界颜色</span><input type="color" id="strokeColor" value="#3388ff" /></label>
+  <label><span>透明度</span><input type="range" id="fillOpacity" min="0" max="1" step="0.1" value="0.5" /></label>
+  <label><span>边界宽度</span><input type="range" id="strokeWeight" min="1" max="5" step="0.5" value="2" /></label>
+</div>
+
+<div class="info-box" id="info-box">
+  <h3>要素信息</h3>
+  <p style="color:#888;">点击地图上的区域查看详细信息</p>
+  <p style="margin-top:10px;">共加载 {{FEATURE_COUNT}} 个要素</p>
+</div>
+
+<div class="legend" id="legend">
+  <h4>图例</h4>
+  <div class="legend-item"><div class="legend-color" style="background:#e74c3c"></div> 数据区域</div>
+</div>
+
+<div class="stats">
+  <h4>统计信息</h4>
+  <div>要素数量: {{FEATURE_COUNT}}</div>
+  <div>中心位置: {{CENTER}}</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // 空间数据（将由脚本填充）
+  const GEOJSON_DATA = {{GEOJSON_DATA}};
+
+  // 初始化地图
+  const map = L.map('map').setView([{{CENTER_LAT}}, {{CENTER_LNG}}], 11);
+
+  // 添加底图
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap, © CARTO'
+  }).addTo(map);
+
+  // 当前样式
+  let currentStyle = {
+    color: '#3388ff',
+    weight: 2,
+    fillColor: '#e74c3c',
+    fillOpacity: 0.5
+  };
+
+  // 创建 GeoJSON 图层
+  const geoLayer = L.geoJSON(GEOJSON_DATA, {
+    style: () => ({...currentStyle}),
+    onEachFeature: (feature, layer) => {
+      layer.on('click', () => showInfo(feature));
+      layer.on('mouseover', () => {
+        layer.setStyle({
+          weight: currentStyle.weight + 2,
+          fillOpacity: Math.min(currentStyle.fillOpacity + 0.2, 1)
+        });
+      });
+      layer.on('mouseout', () => {
+        geoLayer.resetStyle(layer);
+      });
+    }
+  }).addTo(map);
+
+  // 适应边界
+  map.fitBounds(geoLayer.getBounds(), { padding: [30, 30] });
+
+  // 显示信息
+  function showInfo(feature) {
+    const props = feature.properties || {};
+    let html = '<h3>要素信息</h3>';
+    for (const [key, value] of Object.entries(props)) {
+      if (value !==null && value !== undefined) {
+        html += `<div class="prop"><span class="prop-label">${key}:</span><span class="prop-value">${value}</span></div>`;
+      }
+    }
+    document.getElementById('info-box').innerHTML = html;
+  }
+
+  // 样式控制
+  document.getElementById('fillColor').addEventListener('input', (e) => {
+    currentStyle.fillColor = e.target.value;
+    geoLayer.setStyle(currentStyle);
+    document.querySelector('.legend-color').style.background = e.target.value;
+  });
+
+  document.getElementById('strokeColor').addEventListener('input', (e) => {
+    currentStyle.color = e.target.value;
+    geoLayer.setStyle(currentStyle);
+  });
+
+  document.getElementById('fillOpacity').addEventListener('input', (e) => {
+    currentStyle.fillOpacity = parseFloat(e.target.value);
+    geoLayer.setStyle(currentStyle);
+  });
+
+  document.getElementById('strokeWeight').addEventListener('input', (e) => {
+    currentStyle.weight = parseFloat(e.target.value);
+    geoLayer.setStyle(currentStyle);
+  });
+</script>
+</body>
+</html>

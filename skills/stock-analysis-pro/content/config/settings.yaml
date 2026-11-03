@@ -1,0 +1,113 @@
+# stock-analysis-pro 配置文件
+
+# ========== 基础配置 ==========
+default_stock_symbol: "AAPL"
+default_market: "us"
+default_analysis_period: "1y"
+timeout_seconds: 120
+
+# ========== 市场配置 ==========
+markets:
+  us:
+    name: "美股"
+    suffix: ""
+    timezone: "America/New_York"
+  hk:
+    name: "港股"
+    suffix: ".HK"
+    timezone: "Asia/Hong_Kong"
+  a_sh:
+    name: "A股-上海"
+    suffix: ".SS"
+    timezone: "Asia/Shanghai"
+  a_sz:
+    name: "A股-深圳"
+    suffix: ".SZ"
+    timezone: "Asia/Shanghai"
+
+# ========== 输出配置 ==========
+output:
+  directory: "./stock_output"
+  chart_path: "./stock_output/charts"
+  report_path: "./stock_output/reports"
+  save_format: "md"
+
+# ========== 技术指标配置 ==========
+technical_indicators:
+  enabled:
+    # 趋势指标
+    - MA5
+    - MA10
+    - MA20
+    - MA60
+    - MA120
+    - EMA12
+    - EMA26
+    - MACD
+    - DMA
+    - DMI
+
+    # 动量指标
+    - RSI6
+    - RSI12
+    - RSI24
+    - KDJ
+    - WR
+    - CCI
+    - ROC
+
+    # 成交量指标
+    - OBV
+    - VR
+
+    # 波动性指标
+    - BOLL
+    - ATR
+
+  periods:
+    MA: [5, 10, 20, 60, 120, 250]
+    EMA: [12, 26]
+    RSI: [6, 12, 24]
+    BOLL: [20, 2]  # window, std
+
+  signals:
+    RSI:
+      overbought: 70
+      oversold: 30
+    KDJ:
+      overbought: 80
+      oversold: 20
+
+# ========== 估值配置 ==========
+valuation:
+  pe_range:
+    low: 15
+    high: 30
+  pb_range:
+    low: 1
+    high: 5
+  peg_threshold: 1.0
+
+# ========== 风险配置 ==========
+risk:
+  volatility_thresholds:
+    low: 15
+    medium: 30
+    high: 50
+  drawdown_thresholds:
+    low: 10
+    medium: 25
+    high: 40
+  beta_range:
+    defensive: 0.8
+    neutral: 1.0
+    aggressive: 1.5
+
+# ========== 报告配置 ==========
+report:
+  include_charts: true
+  chart_format: "png"
+  language: "zh_CN"
+  decimal_places: 2
+  include_comparison: true
+  max_compare_symbols: 5

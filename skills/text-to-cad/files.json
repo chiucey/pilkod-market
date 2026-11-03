@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "0ae0bfe332e61cbf232795a5d2b3027a3eed53a5",
+      "size": 68638
+    },
+    {
+      "path": "_meta.json",
+      "sha": "8f81d0ec5d427756e5885f5369b781bab7b39c59",
+      "size": 130
+    },
+    {
+      "path": "plugins/capability_registry.json",
+      "sha": "2d59ba13422d0ad10dfea2ef2a8d6dadd531a0ff",
+      "size": 1403
+    },
+    {
+      "path": "references/cad_drawing_standards.md",
+      "sha": "b4c3f431fd7bcc462295e0bda8d13578146434ae",
+      "size": 29393
+    },
+    {
+      "path": "references/dxf_spec_schema.md",
+      "sha": "6c044f742eb3fbff0427f5be16cdb5193f529ba4",
+      "size": 33281
+    },
+    {
+      "path": "references/enterprise_drawing_standards.md",
+      "sha": "15e45e7e01e5beb5190c908f49fda05516bed3d4",
+      "size": 16902
+    },
+    {
+      "path": "references/gps_datum_system.md",
+      "sha": "dc03039d8a934e7caa3b22cdc9aea47c21f2250c",
+      "size": 11866
+    },
+    {
+      "path": "references/iso_drawing_standards.md",
+      "sha": "71206662e9d18bf172d8ac69cffc40cc65447c24",
+      "size": 18449
+    },
+    {
+      "path": "references/mechanical_drawing_textbook_rules.md",
+      "sha": "1fb3670f976a52196845d98ec3ed9d2565ffbbcd",
+      "size": 21891
+    },
+    {
+      "path": "references/view_layout_guide.md",
+      "sha": "60909fc55bfa795ca4e440911db17f2d70dd4885",
+      "size": 14009
+    },
+    {
+      "path": "scripts/cad_generator.py",
+      "sha": "87a885ee1ab443e23bbb66622370acecf556aee4",
+      "size": 106124
+    },
+    {
+      "path": "scripts/dxf_to_png.py",
+      "sha": "688b15ce40bc804a9ee320225ef5ab519357741a",
+      "size": 11007
+    },
+    {
+      "path": "scripts/evolution_engine.py",
+      "sha": "f92098a760c60cfc3be1494e790d37203cb8b184",
+      "size": 35576
+    },
+    {
+      "path": "scripts/image_to_spec.py",
+      "sha": "efaaf5a038da676194b2713560c1abce60518b73",
+      "size": 26654
+    },
+    {
+      "path": "scripts/nlp_to_spec.py",
+      "sha": "b323644f62218fd81d1fb288f0c269e3f7e80dda",
+      "size": 28402
+    },
+    {
+      "path": "scripts/spec_validation.py",
+      "sha": "066c79e0bb35fb58165819a3677a7a3bdaa6f6e4",
+      "size": 18563
+    }
+  ]
+}

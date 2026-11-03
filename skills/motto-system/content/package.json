@@ -1,0 +1,35 @@
+{
+  "name": "openclaw-motto-skill",
+  "version": "2.0.0",
+  "description": "座右铭系统 - 选择座右铭并自动执行任务",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "motto",
+    "productivity",
+    "agent"
+  ],
+  "author": "openclaw-user",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=1.0.0"
+  },
+  "files": [
+    "dist",
+    "SKILL.md",
+    "plugin.json",
+    "README.md"
+  ]
+}

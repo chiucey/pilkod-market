@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "730d61ec0d981fde2b456de7f8e28ef2c0324817",
+      "size": 8105
+    },
+    {
+      "path": "_meta.json",
+      "sha": "827bc0bed3570d6a214f35b036f249689a7b76a2",
+      "size": 138
+    },
+    {
+      "path": "evals/evals.json",
+      "sha": "b6d98ec32582ba09f479ddd000feeb6abeb2a48b",
+      "size": 1213
+    },
+    {
+      "path": "references/人物描写词汇参考手册.md",
+      "sha": "e0322adf5006341e14142f8a6a8d4e5503867a3f",
+      "size": 26390
+    },
+    {
+      "path": "references/提示词词母.md",
+      "sha": "6b879096c32082658d60d20652e4a3acf4a99043",
+      "size": 28654
+    },
+    {
+      "path": "references/母题数据库.json",
+      "sha": "0b1a20930c59e1886bf7c1ae390e4e77bf5f3868",
+      "size": 8231
+    },
+    {
+      "path": "references/词汇数据库.json",
+      "sha": "f63b06f74632e003a7b096ce6ce57bbd0b6a559e",
+      "size": 30915
+    },
+    {
+      "path": "scripts/convert_to_json.py",
+      "sha": "0f2d9be8676f2924a56530fb38f23793260340b3",
+      "size": 5730
+    },
+    {
+      "path": "scripts/vocab_lookup.py",
+      "sha": "23f969bfff9a1dd2d0e74c95a98d0cdd5f38cc5a",
+      "size": 6394
+    }
+  ]
+}

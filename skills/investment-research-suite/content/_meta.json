@@ -1,0 +1,31 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-03-28",
+  "id": 381456868938124,
+  "name": "investment-research-suite",
+  "platform": "minimax",
+  "source_skills": [
+    {
+      "description": "B2B商机挖掘助手",
+      "name": "b2b-lead-engine"
+    },
+    {
+      "description": "每日A股/港股/美股复盘",
+      "name": "daily-market-review"
+    },
+    {
+      "description": "热点追踪专家",
+      "name": "hot-topic-tracker"
+    },
+    {
+      "description": "HTML演示文稿生成器",
+      "name": "html-presentation-generator"
+    },
+    {
+      "description": "多智能体投资研究框架",
+      "name": "investment-research-analyst"
+    }
+  ],
+  "updated_at": 1774682274049,
+  "version": "1.0.0"
+}

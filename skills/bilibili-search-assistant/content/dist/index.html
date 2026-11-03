@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B站搜索小助手 - 视频数据统计分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans SC', sans-serif; }
+        .bili-gradient {
+            background: linear-gradient(135deg, #00A1D6 0%, #FB7299 50%, #FF9E9E 100%);
+        }
+        .bili-card {
+            background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid rgba(0, 161, 214, 0.3);
+        }
+        .bili-btn {
+            background: linear-gradient(135deg, #00A1D6 0%, #FB7299 100%);
+            transition: all 0.3s ease;
+        }
+        .bili-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 161, 214, 0.4);
+        }
+        .loading-spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #00A1D6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .stat-card {
+            background: rgba(0, 161, 214, 0.1);
+            border: 1px solid rgba(0, 161, 214, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bili-gradient py-8 shadow-2xl">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-2">B站（哔哩哔哩）搜索小助手</h1>
+            <p class="text-lg opacity-90">智能统计搜索结果，生成可视化分析报告</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Search Section -->
+        <section class="max-w-3xl mx-auto mb-12">
+            <div class="bili-card rounded-2xl p-8 shadow-2xl">
+                <h2 class="text-2xl font-bold mb-6 text-center" style="color: #00A1D6;">
+                    <svg class="inline-block w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    输入搜索关键词
+                </h2>
+
+                <div class="space-y-4">
+                    <input type="text" id="searchKeyword"
+                        class="w-full px-6 py-4 bg-gray-800 border-2 border-gray-700 rounded-xl text-lg focus:border-blue-400 focus:outline-none transition-colors"
+                        placeholder="例如：Python教程、摄影技巧、健身计划...">
+
+                    <button onclick="performSearch()"
+                        class="bili-btn w-full py-4 rounded-xl text-lg font-bold text-white">
+                        <span id="searchBtnText">开始搜索</span>
+                        <span id="searchBtnLoading" class="hidden">
+                            <span class="loading-spinner inline-block mr-2"></span>
+                            搜索中...
+                        </span>
+                    </button>
+                </div>
+
+                <div class="mt-6 text-center text-gray-400 text-sm">
+                    <p>支持的关键词类型：教程、学习、技巧、娱乐、生活等各类内容</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="hidden fade-in">
+            <!-- Summary Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+                <div class="stat-card rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold" style="color: #00A1D6;" id="totalVideos">0</div>
+                    <div class="text-gray-400 text-sm">视频总数</div>
+                </div>
+                <div class="stat-card rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold" style="color: #FB7299;" id="totalViews">0</div>
+                    <div class="text-gray-400 text-sm">总播放量</div>
+                </div>
+                <div class="stat-card rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold" style="color: #FF9E9E;" id="totalLikes">0</div>
+                    <div class="text-gray-400 text-sm">总点赞数</div>
+                </div>
+                <div class="stat-card rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold" style="color: #00A1D6;" id="totalCoins">0</div>
+                    <div class="text-gray-400 text-sm">总投币数</div>
+                </div>
+                <div class="stat-card rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold" style="color: #FB7299;" id="totalFavorites">0</div>
+                    <div class="text-gray-400 text-sm">总收藏数</div>
+                </div>
+            </div>
+
+            <!-- Download Button -->
+            <div class="text-center mb-8">
+                <a id="downloadLink" href="#" download
+                    class="inline-flex items-center gap-2 bili-btn px-8 py-4 rounded-xl text-lg font-bold text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    下载Excel报表
+                </a>
+            </div>
+
+            <!-- Data Preview Table -->
+            <div class="bili-card rounded-2xl p-6 shadow-2xl">
+                <h3 class="text-xl font-bold mb-4" style="color: #00A1D6;">数据预览（前10条）</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b border-gray-700">
+                                <th class="py-3 px-2 text-left text-gray-400">排名</th>
+                                <th class="py-3 px-2 text-left text-gray-400">视频标题</th>
+                                <th class="py-3 px-2 text-left text-gray-400">UP主</th>
+                                <th class="py-3 px-2 text-right text-gray-400">播放量</th>
+                                <th class="py-3 px-2 text-right text-gray-400">点赞</th>
+                                <th class="py-3 px-2 text-right text-gray-400">收藏</th>
+                                <th class="py-3 px-2 text-right text-gray-400">评论</th>
+                            </tr>
+                        </thead>
+                        <tbody id="previewTableBody">
+                            <!-- Data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Rank Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <!-- Top Views -->
+                <div class="bili-card rounded-xl p-5 shadow-xl">
+                    <h4 class="font-bold mb-3 flex items-center gap-2" style="color: #00A1D6;">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                        播放排行
+                    </h4>
+                    <ol id="topViewsList" class="text-sm space-y-2">
+                        <!-- Will be populated by JS -->
+                    </ol>
+                </div>
+
+                <!-- Top Favorites -->
+                <div class="bili-card rounded-xl p-5 shadow-xl">
+                    <h4 class="font-bold mb-3 flex items-center gap-2" style="color: #FB7299;">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        收藏排行
+                    </h4>
+                    <ol id="topFavoritesList" class="text-sm space-y-2">
+                        <!-- Will be populated by JS -->
+                    </ol>
+                </div>
+
+                <!-- Top Comments -->
+                <div class="bili-card rounded-xl p-5 shadow-xl">
+                    <h4 class="font-bold mb-3 flex items-center gap-2" style="color: #FF9E9E;">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
+                        </svg>
+                        评论排行
+                    </h4>
+                    <ol id="topCommentsList" class="text-sm space-y-2">
+                        <!-- Will be populated by JS -->
+                    </ol>
+                </div>
+
+                <!-- Top Likes -->
+                <div class="bili-card rounded-xl p-5 shadow-xl">
+                    <h4 class="font-bold mb-3 flex items-center gap-2" style="color: #00A1D6;">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
+                        </svg>
+                        点赞排行
+                    </h4>
+                    <ol id="topLikesList" class="text-sm space-y-2">
+                        <!-- Will be populated by JS -->
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Error Section -->
+        <section id="errorSection" class="hidden max-w-2xl mx-auto">
+            <div class="bg-red-900/50 border border-red-500 rounded-xl p-6 text-center">
+                <svg class="w-12 h-12 mx-auto mb-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <h3 class="text-xl font-bold mb-2 text-red-400">搜索失败</h3>
+                <p id="errorMessage" class="text-gray-300">请稍后重试</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500 text-sm">
+        <p>B站搜索小助手 - 智能统计分析工具</p>
+    </footer>
+
+    <script>
+        let currentKeyword = '';
+        let searchResults = null;
+
+        async function performSearch() {
+            const keyword = document.getElementById('searchKeyword').value.trim();
+
+            if (!keyword) {
+                alert('请输入搜索关键词');
+                return;
+            }
+
+            currentKeyword = keyword;
+
+            // Show loading state
+            document.getElementById('searchBtnText').classList.add('hidden');
+            document.getElementById('searchBtnLoading').classList.remove('hidden');
+            document.getElementById('resultsSection').classList.add('hidden');
+            document.getElementById('errorSection').classList.add('hidden');
+
+            try {
+                const response = await fetch('/api/bilibili/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ keyword: keyword })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    searchResults = data.data;
+                    displayResults(data.data);
+                } else {
+                    showError(data.message || '搜索失败，请稍后重试');
+                }
+            } catch (error) {
+                console.error('Search error:', error);
+                showError('网络错误，请检查网络连接后重试');
+            } finally {
+                document.getElementById('searchBtnText').classList.remove('hidden');
+                document.getElementById('searchBtnLoading').classList.add('hidden');
+            }
+        }
+
+        function displayResults(data) {
+            // Update summary stats
+            document.getElementById('totalVideos').textContent = data.videos.length;
+            document.getElementById('totalViews').textContent = formatNumber(data.totalViews);
+            document.getElementById('totalLikes').textContent = formatNumber(data.totalLikes);
+            document.getElementById('totalCoins').textContent = formatNumber(data.totalCoins);
+            document.getElementById('totalFavorites').textContent = formatNumber(data.totalFavorites);
+
+            // Update download link
+            document.getElementById('downloadLink').href = data.excelUrl;
+
+            // Update preview table
+            const previewBody = document.getElementById('previewTableBody');
+            previewBody.innerHTML = '';
+
+            data.videos.slice(0, 10).forEach((video, index) => {
+                const row = document.createElement('tr');
+                row.className = 'border-b border-gray-800 hover:bg-gray-800/50';
+                row.innerHTML = `
+                    <td class="py-3 px-2">${index + 1}</td>
+                    <td class="py-3 px-2">
+                        <a href="${video.url}" target="_blank" class="text-blue-400 hover:text-blue-300 hover:underline">
+                            ${escapeHtml(video.title)}
+                        </a>
+                    </td>
+                    <td class="py-3 px-2">
+                        <a href="${video.authorUrl}" target="_blank" class="text-pink-400 hover:text-pink-300">
+                            ${escapeHtml(video.author)}
+                        </a>
+                    </td>
+                    <td class="py-3 px-2 text-right">${video.views}</td>
+                    <td class="py-3 px-2 text-right">${video.likes}</td>
+                    <td class="py-3 px-2 text-right">${video.favorites}</td>
+                    <td class="py-3 px-2 text-right">${video.comments}</td>
+                `;
+                previewBody.appendChild(row);
+            });
+
+            // Update rank lists
+            updateRankList('topViewsList', data.sortedByViews.slice(0, 5), 'views');
+            updateRankList('topFavoritesList', data.sortedByFavorites.slice(0, 5), 'favorites');
+            updateRankList('topCommentsList', data.sortedByComments.slice(0, 5), 'comments');
+            updateRankList('topLikesList', data.sortedByLikes.slice(0, 5), 'likes');
+
+            // Show results section
+            document.getElementById('resultsSection').classList.remove('hidden');
+        }
+
+        function updateRankList(elementId, videos, field) {
+            const list = document.getElementById(elementId);
+            list.innerHTML = '';
+
+            videos.forEach((video, index) => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start gap-2';
+                const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
+                li.innerHTML = `
+                    <span class="flex-shrink-0 w-6 text-center">${medal}</span>
+                    <a href="${video.url}" target="_blank" class="text-gray-300 hover:text-white truncate flex-1">
+                        ${escapeHtml(video.title)}
+                    </a>
+                    <span class="flex-shrink-0 text-gray-500">${video[field]}</span>
+                `;
+                list.appendChild(li);
+            });
+        }
+
+        function showError(message) {
+            document.getElementById('errorMessage').textContent = message;
+            document.getElementById('errorSection').classList.remove('hidden');
+        }
+
+        function formatNumber(num) {
+            if (num >= 100000000) {
+                return (num / 100000000).toFixed(1) + '亿';
+            } else if (num >= 10000) {
+                return (num / 10000).toFixed(1) + '万';
+            }
+            return num.toString();
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Handle Enter key
+        document.getElementById('searchKeyword').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

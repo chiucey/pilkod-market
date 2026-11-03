@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "1d6627f5a4326d344fd0c5d39687b13d2a5351af",
+      "size": 7600
+    },
+    {
+      "path": "_meta.json",
+      "sha": "f6b6f6e4e505b337c8a7b67e3d1e5bbc14fcfd9f",
+      "size": 132
+    },
+    {
+      "path": "references/config.json",
+      "sha": "d2597407ae429ab10b4f88671c2aadb3a47a7b3e",
+      "size": 3782
+    },
+    {
+      "path": "scripts/close_summary_prompt.txt",
+      "sha": "39bbcf8fe36676d98ff385f3d4c4623b9ffb683b",
+      "size": 3366
+    },
+    {
+      "path": "scripts/common.py",
+      "sha": "2ddde5fc96bb484150b75839d520e11bd1c41cbb",
+      "size": 3201
+    },
+    {
+      "path": "scripts/keys_loader.py",
+      "sha": "c108f3e11b85bbbebb13ee8004d274ac529ec08b",
+      "size": 3337
+    },
+    {
+      "path": "scripts/s5_fix.py",
+      "sha": "aa9b48c13165c073252140115e60426265dcb0e7",
+      "size": 527
+    },
+    {
+      "path": "scripts/send_close_summary.py",
+      "sha": "4e3d482c553f4f08fe02d342eeedb9c510f88f36",
+      "size": 30268
+    },
+    {
+      "path": "scripts/send_evening_report.py",
+      "sha": "4d44978f590d654a17d77f75da90bf0e462f38de",
+      "size": 23055
+    },
+    {
+      "path": "scripts/send_intraday_alert.py",
+      "sha": "191c42e010a0def80ac54cca329079e7c9a8f5bd",
+      "size": 5141
+    },
+    {
+      "path": "scripts/send_ipo_report.py",
+      "sha": "d09f1857c7a88f748d8da25f85988aac3e8d1916",
+      "size": 9467
+    }
+  ]
+}

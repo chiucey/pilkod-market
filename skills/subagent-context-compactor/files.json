@@ -1,0 +1,134 @@
+{
+  "files": [
+    {
+      "path": "DEPLOYMENT.md",
+      "sha": "8a6109d18267fde37d4002dc2b41f7a31e70e99d",
+      "size": 7446
+    },
+    {
+      "path": "INSTALL.md",
+      "sha": "b72b66e428274b90203453d4ecf0015a829d7095",
+      "size": 4583
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha": "6004128c08bfcd30cfe15f00844d637fd64c5858",
+      "size": 1064
+    },
+    {
+      "path": "OPENCLAW_INTEGRATION.md",
+      "sha": "b7c686d5af1b841fd4132da3cbb5c1f9144dbb4e",
+      "size": 8415
+    },
+    {
+      "path": "README.md",
+      "sha": "6bb643b01b20b2bde210d64d3f364df1ae2316b1",
+      "size": 6085
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "7a88e2a75304ea613ab8389569331a074d0c0239",
+      "size": 7157
+    },
+    {
+      "path": "SUMMARY.md",
+      "sha": "694a825457ebcb33fad88a8569a1a7c8f504d62c",
+      "size": 6077
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "sha": "8091bcf90ae30888c74ff09440e87b3a1def6041",
+      "size": 6940
+    },
+    {
+      "path": "_meta.json",
+      "sha": "5653fed000a0be088020d6e503bffcefdac83969",
+      "size": 266
+    },
+    {
+      "path": "api_server.py",
+      "sha": "bdd0917211b839c819f321fc96f9eba4eae518be",
+      "size": 1248
+    },
+    {
+      "path": "check_status.sh",
+      "sha": "7841ec5c4a6795a0d6ed1e01bf8030369e7db701",
+      "size": 3756
+    },
+    {
+      "path": "compactor.py",
+      "sha": "b42b10a3fbde6208ddc63b27bbad9c0ca6c1422d",
+      "size": 14139
+    },
+    {
+      "path": "config.json",
+      "sha": "8a7f94372bb718d2fdce38440bf584e2994daff1",
+      "size": 2503
+    },
+    {
+      "path": "hierarchical_compactor.py",
+      "sha": "cc71af7d02b823b7f3e4e68fcbe841b14d1c0df3",
+      "size": 19073
+    },
+    {
+      "path": "integration.py",
+      "sha": "ba1991adcd623ec190fece7649fdbc6b42edc978",
+      "size": 20290
+    },
+    {
+      "path": "monitor.py",
+      "sha": "e539d522d5ce1f42412ac34725f3302657e64fc2",
+      "size": 12274
+    },
+    {
+      "path": "monitor.sh",
+      "sha": "a8af430bae165a0a314b3ac90dfe55a67d1518c9",
+      "size": 561
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "ae212ec45cb0dee8480cf9f5f0933173a60aa874",
+      "size": 12
+    },
+    {
+      "path": "skill.json",
+      "sha": "7cee8f32807f991ddf3a0dffc052c7f84617245c",
+      "size": 2323
+    },
+    {
+      "path": "start.sh",
+      "sha": "110e1f7f711683fb0e5c5b77149a11bea7f1c7be",
+      "size": 2812
+    },
+    {
+      "path": "start_monitor.sh",
+      "sha": "848adfb9848a39815cb822b54dc0d2ef59bbe7ed",
+      "size": 1269
+    },
+    {
+      "path": "start_system.sh",
+      "sha": "b559d540cb7f138a4b355a91f41a1520d89f40af",
+      "size": 4928
+    },
+    {
+      "path": "stop_monitor.sh",
+      "sha": "5dce86d353af572e3c13ceb0b5c30cb15a627765",
+      "size": 1018
+    },
+    {
+      "path": "stop_system.sh",
+      "sha": "2446aae8f4b5335b26d23f6b205ac5e803a73a2f",
+      "size": 5769
+    },
+    {
+      "path": "test_compaction.py",
+      "sha": "a565152b2de95ff96090bf3d5815450551aebad4",
+      "size": 9510
+    },
+    {
+      "path": "test_skill.sh",
+      "sha": "9f3b83fc7428ea370772a8a3c9e0133d34aab205",
+      "size": 4584
+    }
+  ]
+}

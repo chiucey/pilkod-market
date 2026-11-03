@@ -1,0 +1,9 @@
+# 发票处理智能体依赖
+pdfplumber>=0.10.0
+openpyxl>=3.1.0
+pandas>=2.0.0
+Pillow>=10.0.0
+
+# 可选依赖（用于增强功能）
+# paddleocr>=2.7.0  # 图片OCR识别
+# easyocr>=1.7.0    # 备选OCR库

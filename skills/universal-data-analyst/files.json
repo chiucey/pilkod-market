@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "605bc95e89deeb45fd2048f52c919007de5df662",
+      "size": 4406
+    },
+    {
+      "path": "_meta.json",
+      "sha": "3818751932309dae1d29385d235de75469bd407f",
+      "size": 461
+    },
+    {
+      "path": "layers/__init__.py",
+      "sha": "d7e2f96503384b2dd748982a97e913519b6f6a1a",
+      "size": 222
+    },
+    {
+      "path": "layers/data_loader.py",
+      "sha": "2efce32cf796797a9fc602cf6fa5d854f913cf1b",
+      "size": 11876
+    },
+    {
+      "path": "layers/data_validator.py",
+      "sha": "b830e229e45328685d649f1033f48a01e571dcb3",
+      "size": 17277
+    },
+    {
+      "path": "layers/orchestrator.py",
+      "sha": "b23286736d513361fbcbf4a8f1f7d15e521a6961",
+      "size": 19960
+    },
+    {
+      "path": "references/analysis_frameworks.md",
+      "sha": "f526286a56702997a68ce4075c9bc88ac2db4128",
+      "size": 5052
+    },
+    {
+      "path": "references/report_style.md",
+      "sha": "d1424b804093a8df5e9eb75f8e6924904938b1ce",
+      "size": 4765
+    },
+    {
+      "path": "references/supported_formats.md",
+      "sha": "f209da7e5dc91e461533576c9b0e882e4dc433bf",
+      "size": 3275
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "f5eef7e2f865f175168cff656e1ce4a93357c0a6",
+      "size": 5497
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "c051dc0a788d2102312452a72644856b1497f939",
+      "size": 6820
+    }
+  ]
+}

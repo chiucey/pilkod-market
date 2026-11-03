@@ -1,0 +1,201 @@
+# BPM 参数速查 v3.4
+# 来源：Suno Official Music Glossary + SunoAI 社区验证
+# 用途：GMIVE G槽位 Tempo-Term 融合，不使用 BPM 数字
+
+# ═════════════════════════════════════════════════════
+# 一、核心：Tempo-Term 融合（官方推荐格式）
+# Suno Official: "Combine tempo terms with genres (e.g., 'upbeat allegro pop')"
+# ═════════════════════════════════════════════════════
+
+tempo_terms:
+  # Adagio = 慢速，40-60 BPM，延展感
+  adagio:
+    bpm_range: [40, 60]
+    feel: 缓慢庄严，延展拉伸
+    energy: very-low
+    character: "如流水般缓慢，每一个音符都被拉长"
+    best_genres: [ambient, classical, cinematic, doom-metal, sad-ballad]
+    chinese_equivalent: 缓慢 / 拖曳 / 延展
+    lyrical_rhythm: 3-4字/行，极慢吐字
+
+  # Andante = 步行速度，80-100 BPM，舒适
+  andante:
+    bpm_range: [80, 100]
+    feel: 步行节奏，舒适稳定
+    energy: low-mid
+    character: "像走路一样自然，不急不缓"
+    best_genres: [folk, indie, ballad, singer-songwriter, rnb]
+    chinese_equivalent: 舒缓 / 流畅 / 步行
+    lyrical_rhythm: 7-9字/行，自然吐字
+
+  # Allegro = 快乐快速，120-140 BPM，明亮
+  allegro:
+    bpm_range: [120, 140]
+    feel: 明亮快速，轻快活泼
+    energy: high
+    character: "跳跃感，音符紧凑排列"
+    best_genres: [pop, rock, electronic, disco, dance]
+    chinese_equivalent: 轻快 / 明快 / 跳跃
+    lyrical_rhythm: 10-13字/行，紧凑节奏
+
+  # Presto = 极速，140-200 BPM，爆发
+  presto:
+    bpm_range: [140, 200]
+    feel: 极速紧张，爆发力
+    energy: very-high
+    character: "音符密集如雨点倾泻"
+    best_genres: [metal, punk, hardcore, drum-and-bass, trap]
+    chinese_equivalent: 极速 / 爆发 / 狂飙
+    lyrical_rhythm: 14-20字/行，快节奏
+
+  # 融合词（Tempo + Feel 组合，Suno 官方格式）
+  tempo_fusion:
+    "slow andante":    { desc: "慢速步行，抒情", bpm_approx: 70-90 }
+    "upbeat andante":  { desc: "轻快步行，温暖", bpm_approx: 90-105 }
+    "upbeat allegro":  { desc: "明快跳跃，流行", bpm_approx: 125-145 }
+    "slow allegro":    { desc: "快速但有控制", bpm_approx: 115-130 }
+    "slow adagio":     { desc: "极度缓慢，深沉", bpm_approx: 40-60 }
+    "mid-tempo":       { desc: "中等速度，通用", bpm_approx: 85-110 }
+    "half-time":       { desc: "半速，Hypnotic", bpm_approx: 65-75 }
+    "double-time":     { desc: "倍速，密集", bpm_approx: 150-180 }
+
+# ═════════════════════════════════════════════════════
+# 二、BPM × 字数对照表（中文可唱性）
+# 基于 Suno Architect ±2 规则
+# ═════════════════════════════════════════════════════
+
+bpm_syllable_chart:
+  description: "BPM / 10 = 基准中文字数，±1 容错"
+
+  rows:
+    - bpm_range: [40, 60]
+      term: adagio
+      chars_per_line: [3, 4, 5]
+      example: "深沉的夜 / 慢慢流淌"
+      energy: very-low
+
+    - bpm_range: [60, 80]
+      term: slow
+      chars_per_line: [5, 6, 7]
+      example: "窗外的光 / 慢慢暗下来"
+      energy: low
+
+    - bpm_range: [80, 100]
+      term: andante
+      chars_per_line: [7, 8, 9]
+      example: "寄出一封信 / 你不会收到"
+      energy: low-mid
+
+    - bpm_range: [100, 120]
+      term: moderate
+      chars_per_line: [9, 10, 11]
+      example: "窗外的风 / 还在吹不停"
+      energy: mid
+
+    - bpm_range: [120, 140]
+      term: allegro
+      chars_per_line: [10, 12, 14]
+      example: "我在梦里 / 跑过了整条街"
+      energy: high
+
+    - bpm_range: [140, 160]
+      term: fast
+      chars_per_line: [12, 14, 16]
+      example: "心跳声 / 越来越快"
+      energy: very-high
+
+    - bpm_range: [160, 200]
+      term: presto
+      chars_per_line: [14, 16, 20]
+      example: "说唱快嘴 / 如暴雨倾泻"
+      energy: extreme
+
+# ═════════════════════════════════════════════════════
+# 三、BPM × 情绪速查
+# ═════════════════════════════════════════════════════
+
+bpm_emotion_map:
+  slow_range:
+    bpm: [40, 80]
+    emotions: [melancholic, sad, calm, peaceful, nostalgic, intimate]
+    genres: [ambient, classical, sad-ballad, folk, indie]
+    description: "慢速 = 情绪内敛、回忆、沉思"
+
+  mid_range:
+    bpm: [80, 110]
+    emotions: [romantic, warm, dreamy, bittersweet, uplifting]
+    genres: [ballad, pop, indie, folk, rnb]
+    description: "中速 = 叙事、抒情、情感流畅"
+
+  fast_range:
+    bpm: [110, 140]
+    emotions: [energetic, joyful, excited, triumphant, epic]
+    genres: [pop, rock, edm, disco, synth-pop]
+    description: "快速 = 情绪释放、能量爆发"
+
+  extreme_range:
+    bpm: [140, 200]
+    emotions: [aggressive, intense, frantic, euphoric]
+    genres: [metal, punk, drum-and-bass, trap, hardcore]
+    description: "极速 = 极端情绪、压力释放"
+
+# ═════════════════════════════════════════════════════
+# 四、BPM × 乐器推荐（节奏感）
+# ═════════════════════════════════════════════════════
+
+bpm_instrument_guide:
+  slow:
+    kick: light kick
+    snare: soft/snare ghost notes
+    hi_hat: closed or sparse
+    bass: walking or sustained
+    description: 鼓点稀疏，给歌词留气口
+
+  moderate:
+    kick: standard 4/4
+    snare: backbeat on 2 and 4
+    hi_hat: 8th notes
+    bass: walking line
+    description: 标准节拍，稳定推进
+
+  fast:
+    kick: double-time feel
+    snare: backbeat
+    hi_hat: 16th notes or open
+    bass: fast walking or synth bass
+    description: 鼓点密集，能量充沛
+
+  extreme:
+    kick: pounding 8th notes
+    snare: aggressive
+    hi_hat: fast 16th or blast beats
+    bass: sub-bass or 808
+    description: 极限冲击，压迫感
+
+# ═════════════════════════════════════════════════════
+# 五、Suno BPM 使用注意事项
+# ═════════════════════════════════════════════════════
+
+suno_bpm_notes:
+  - note: "Suno 使用 AI 生成，BPM 值为近似指导，±5 浮动正常"
+  - note: "BPM 精确控制在 Suno 中不稳定，建议用 Tempo-Term 融合词"
+  - note: "Suno 不接受精确 BPM 值作为风格参数，只接受描述词"
+  - note: "Half-time / Double-time feel 属于风格描述，Suno 可识别"
+  - tip: "需要精确 BPM 时请在 DAW 中后期调整，不要在 Prompt 里写精确值"
+  - tip: "中文 ballad 推荐 Andante（80-100 BPM）区间，歌词呼吸感最好"
+
+# ═════════════════════════════════════════════════════
+# 六、快速选取
+# ═════════════════════════════════════════════════════
+
+quick_select:
+  "非常慢（内敛）":    "slow adagio / andante"
+  "慢（抒情）":        "slow andante"
+  "中等（叙事）":      "andante / mid-tempo"
+  "中快（流行）":      "upbeat allegro"
+  "快（能量）":        "allegro"
+  "极速（极限）":      "presto / double-time"
+  "半速（Hipnotic）": "half-time"
+  "中文 ballad":       "slow andante"
+  "中文古风":         "slow adagio"
+  "港风抒情":          "slow andante / andante"

@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "d9477cda9830ed8f7cd9adc462e38e63d3a0aec1",
+      "size": 7144
+    },
+    {
+      "path": "_meta.json",
+      "sha": "7319766733297f7fc5adec8e365ee659901275cf",
+      "size": 141
+    },
+    {
+      "path": "assets/agent-templates/chief.md",
+      "sha": "a169cefd5ccff8c4ce904c81a3049943e1d44240",
+      "size": 5418
+    },
+    {
+      "path": "assets/agent-templates/fundamental.md",
+      "sha": "fff65d590463c777a276287ea96ccc32148a64ee",
+      "size": 4841
+    },
+    {
+      "path": "assets/agent-templates/industry.md",
+      "sha": "39e770af8f0d90a022187c1545e8e66481b5a2bf",
+      "size": 3369
+    },
+    {
+      "path": "assets/agent-templates/quant.md",
+      "sha": "4f3843862e86d185e0860ffc550c4f441ff80849",
+      "size": 10951
+    },
+    {
+      "path": "assets/agent-templates/risk.md",
+      "sha": "fbe8ad01eaaa6ffb535ceb7c03ed2c6f6ff720a7",
+      "size": 3854
+    },
+    {
+      "path": "assets/agent-templates/sentiment.md",
+      "sha": "47458f97d06ca3f029bd033c166d285bcd2719cc",
+      "size": 4751
+    },
+    {
+      "path": "assets/agent-templates/technical.md",
+      "sha": "7305eb1f4a65112787c390f60a8968f9dae8009f",
+      "size": 5676
+    },
+    {
+      "path": "assets/config-templates/openclaw-config.json",
+      "sha": "c748c6a076e8e831509e3701a1bef4114865ea19",
+      "size": 5835
+    },
+    {
+      "path": "references/advisor-invitation.md",
+      "sha": "fa28da5cd6039d11ad9c9fc2d0e05c0f3e4496b7",
+      "size": 11544
+    },
+    {
+      "path": "references/ai-quant-guide.md",
+      "sha": "6dcf08dcf24bb49f0ae3f4886a1029ec04cd8d20",
+      "size": 12672
+    },
+    {
+      "path": "references/behavior-finance.md",
+      "sha": "93b4e778aecd995423314b55df9c8f657e9cbff3",
+      "size": 7512
+    },
+    {
+      "path": "references/cost-control.md",
+      "sha": "d92af132d65edf2f4635425b708c08a19536c420",
+      "size": 2767
+    },
+    {
+      "path": "references/investment-analysis-guide.md",
+      "sha": "6d746eefb4097a3505591e20625291a804d15b8f",
+      "size": 7175
+    },
+    {
+      "path": "references/monitoring-system.md",
+      "sha": "c00aec00caf22c64541bc29a2dabcaece90ac0cf",
+      "size": 2852
+    },
+    {
+      "path": "references/stock-data-usage.md",
+      "sha": "55d84e809d7e7a22a63f3ae54be081b3d1ca5449",
+      "size": 5441
+    },
+    {
+      "path": "references/trend-analysis.md",
+      "sha": "49c47098c22bdef95bce6a63454e354572119b07",
+      "size": 6104
+    },
+    {
+      "path": "references/workflow-orchestration.md",
+      "sha": "e67a5f72b940d76d9af85fe96b8065aa5fe77832",
+      "size": 4889
+    },
+    {
+      "path": "scripts/advanced_quant.py",
+      "sha": "747d70d8b7ce39288a85a7eb771f4fac8ba415bc",
+      "size": 27491
+    },
+    {
+      "path": "scripts/behavior_analyzer.py",
+      "sha": "94702e63ec4f004dc45b0cb882268fa702cc6359",
+      "size": 20280
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "93b7405646d8cd3c621bfc8be7d17ee58a1e7681",
+      "size": 2546
+    },
+    {
+      "path": "scripts/stock_data_fetcher.py",
+      "sha": "3aefc61cea0206977821ad7354ed8cbb7d1be54e",
+      "size": 12036
+    },
+    {
+      "path": "scripts/trend_analyzer.py",
+      "sha": "52f0029124725b990a915e3e4e1d9c36ff0a7140",
+      "size": 20241
+    }
+  ]
+}

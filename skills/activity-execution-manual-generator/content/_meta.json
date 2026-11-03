@@ -1,0 +1,32 @@
+{
+  "capabilities": [
+    "活动执行手册生成",
+    "Checklist模板生成",
+    "PPTX编译输出",
+    "多项目参数化配置"
+  ],
+  "created": "2026-05-23",
+  "description": "活动执行手册生成器 - 通用版",
+  "generic": true,
+  "id": 401354169393871,
+  "migration_ready": true,
+  "name": "activity-execution-manual-generator",
+  "parameters": {
+    "compliance": "特殊合规需求",
+    "key_dates": "关键时间节点",
+    "mechanisms": "机制设计",
+    "project_name": "项目名称",
+    "scale": "参与规模"
+  },
+  "platform": "minimax",
+  "templates": {
+    "checklist_format": "references/checklist-format.md",
+    "notification_templates": "references/notification-templates.md",
+    "page_templates": "references/page-templates.md",
+    "technical_spec": "references/technical-spec.md"
+  },
+  "type": "generator",
+  "updated": "2026-05-23",
+  "updated_at": 1779544595479,
+  "version": "2.0.0"
+}

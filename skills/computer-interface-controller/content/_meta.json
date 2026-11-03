@@ -1,0 +1,35 @@
+{
+  "author": "MiniMax Agent",
+  "capabilities": {
+    "environment": [
+      "local",
+      "remote"
+    ],
+    "input": [
+      "mouse",
+      "keyboard",
+      "screenshot",
+      "ocr"
+    ],
+    "output": [
+      "browser",
+      "desktop",
+      "file",
+      "form"
+    ]
+  },
+  "created": "2026-04-09",
+  "description": "电脑界面自主操控技能，支持鼠标键盘控制、截图分析和OCR识别",
+  "id": 385512087057232,
+  "name": "computer-interface-controller",
+  "platform": "minimax",
+  "tags": [
+    "automation",
+    "gui",
+    "desktop",
+    "interface",
+    "control"
+  ],
+  "updated_at": 1775680021151,
+  "version": "1.0.0"
+}

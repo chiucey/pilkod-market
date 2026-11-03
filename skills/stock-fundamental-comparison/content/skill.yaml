@@ -1,0 +1,20 @@
+name: stock-fundamental-comparison
+version: 1.0.0
+department: 礼部
+description: 股票基本面横向对比（同行业头部标的）与纵向对比（连续三年+三季度），生成Markdown文档+可视化HTML报告
+author: dilireba
+created_at: 2026-04-23
+tags:
+  - 股票分析
+  - 基本面
+  - 对比分析
+  - 可视化报告
+  - 投资研究
+dependencies:
+  - neodata-financial-search
+  - MX_FinData
+  - Tushare Pro
+output_format:
+  type: Markdown + HTML
+  path: "{workspace}/reports/"
+  naming: "{股票代码}-fundamental-comparison-{日期}.md/html"

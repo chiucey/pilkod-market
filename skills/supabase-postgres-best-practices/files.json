@@ -1,0 +1,199 @@
+{
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha": "a7baf44507943d14a20052b4aaeca423fb67df5c",
+      "size": 2200
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha": "a7baf44507943d14a20052b4aaeca423fb67df5c",
+      "size": 2200
+    },
+    {
+      "path": "README.md",
+      "sha": "f1a374e11e329c5d7f32218341a1b1c13c5949c3",
+      "size": 3175
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "f80be15621dac2b817368817128f505ceb55162d",
+      "size": 2577
+    },
+    {
+      "path": "_meta.json",
+      "sha": "7712c762ced833627f0b2c4ad4d2bcfc14cbfc40",
+      "size": 239
+    },
+    {
+      "path": "references/_contributing.md",
+      "sha": "10de8ecb9ab51ef95e7fcd0fe4731b3309e58dbe",
+      "size": 4167
+    },
+    {
+      "path": "references/_sections.md",
+      "sha": "8ba57c23e8119e411fcc8a230cda08e695792cac",
+      "size": 1682
+    },
+    {
+      "path": "references/_template.md",
+      "sha": "91ace90e10a4d8ef354a82bb1994842e6979ebed",
+      "size": 1040
+    },
+    {
+      "path": "references/advanced-full-text-search.md",
+      "sha": "582cbeaada9378a280ad61f57e06c10d258e3c43",
+      "size": 1468
+    },
+    {
+      "path": "references/advanced-jsonb-indexing.md",
+      "sha": "e3d261ea117fd7b1ad9c4f0d45308407b898ed5a",
+      "size": 1444
+    },
+    {
+      "path": "references/conn-idle-timeout.md",
+      "sha": "40b9cc50dd12cf347ed189fac965673b533f3f99",
+      "size": 1282
+    },
+    {
+      "path": "references/conn-limits.md",
+      "sha": "cb3e400c0234e7e9196c1650423faad66375b70b",
+      "size": 1325
+    },
+    {
+      "path": "references/conn-pooling.md",
+      "sha": "e2ebd581d3c85bff0a077e8d9a2cb562d2513d03",
+      "size": 1382
+    },
+    {
+      "path": "references/conn-prepared-statements.md",
+      "sha": "555547d834e35b5059152dfb2288eca5e9838ea0",
+      "size": 1529
+    },
+    {
+      "path": "references/data-batch-inserts.md",
+      "sha": "997947cb17bfed67f29eaa8da2a58de2306cc2c1",
+      "size": 1287
+    },
+    {
+      "path": "references/data-n-plus-one.md",
+      "sha": "2109186ff88b3ba1cc32789f81e2a00d345c6e3f",
+      "size": 1361
+    },
+    {
+      "path": "references/data-pagination.md",
+      "sha": "633d839323612e212a833dd96828cb31fdfb39f8",
+      "size": 1358
+    },
+    {
+      "path": "references/data-upsert.md",
+      "sha": "bc95e2305d955679446c70854cb2b56b183aa56d",
+      "size": 1390
+    },
+    {
+      "path": "references/lock-advisory.md",
+      "sha": "572eaf0dcf518ac925c4cde41beb60b62852b79c",
+      "size": 1531
+    },
+    {
+      "path": "references/lock-deadlock-prevention.md",
+      "sha": "974da5edec32f79de0fcdc771d4ef759dc3e049d",
+      "size": 1855
+    },
+    {
+      "path": "references/lock-short-transactions.md",
+      "sha": "e6b8ef2633248a4aa4394628e48d8cb693e7e6ab",
+      "size": 1350
+    },
+    {
+      "path": "references/lock-skip-locked.md",
+      "sha": "77bdbb97045010ce2fdbd90733e8f764be82881a",
+      "size": 1353
+    },
+    {
+      "path": "references/monitor-explain-analyze.md",
+      "sha": "542978c3bafc510fa8d7a8864cff994ad40be4d7",
+      "size": 1441
+    },
+    {
+      "path": "references/monitor-pg-stat-statements.md",
+      "sha": "d7e82f1aacd105d53789eb6188d11e8ea39e7310",
+      "size": 1418
+    },
+    {
+      "path": "references/monitor-vacuum-analyze.md",
+      "sha": "e0e8ea0b7db8c1513a0d1605be477192bc21d91d",
+      "size": 1506
+    },
+    {
+      "path": "references/query-composite-indexes.md",
+      "sha": "fea64523fd5bb3696f943d486ccaf2aea75d27b8",
+      "size": 1454
+    },
+    {
+      "path": "references/query-covering-indexes.md",
+      "sha": "9d2a4947b94516dd975e1044d132bb007280f478",
+      "size": 1287
+    },
+    {
+      "path": "references/query-index-types.md",
+      "sha": "93b32590f4bfe377869274f45414ae6e43d168fa",
+      "size": 1521
+    },
+    {
+      "path": "references/query-missing-indexes.md",
+      "sha": "e6daace7dd368c75cdf87dc61be4afd6ff66cbbe",
+      "size": 1218
+    },
+    {
+      "path": "references/query-partial-indexes.md",
+      "sha": "3e61a3417b9cce3c8cee99b39b78b7ebf495dd1f",
+      "size": 1347
+    },
+    {
+      "path": "references/schema-constraints.md",
+      "sha": "1d2ef8f9a968cd6fa882c7299134c30ace06373c",
+      "size": 1880
+    },
+    {
+      "path": "references/schema-data-types.md",
+      "sha": "f253a5819d05531371e04485ab84f552fbb32fbe",
+      "size": 1453
+    },
+    {
+      "path": "references/schema-foreign-key-indexes.md",
+      "sha": "6c3d6ff622b8a9df358f6673f323292e682ce87c",
+      "size": 1679
+    },
+    {
+      "path": "references/schema-lowercase-identifiers.md",
+      "sha": "f0072940b159ff64e0c2d4fbb499133cb8f49a66",
+      "size": 1728
+    },
+    {
+      "path": "references/schema-partitioning.md",
+      "sha": "13137a03275fa45001c870a40b0069204d44e005",
+      "size": 1548
+    },
+    {
+      "path": "references/schema-primary-keys.md",
+      "sha": "fb0fbb166fac9ea38c127d807a263282acc2dc93",
+      "size": 1821
+    },
+    {
+      "path": "references/security-privileges.md",
+      "sha": "448ec345fab6c5a0116c584d65638b86d758c558",
+      "size": 1566
+    },
+    {
+      "path": "references/security-rls-basics.md",
+      "sha": "c61e1a8503de113be0981759b82f5e37090f344c",
+      "size": 1372
+    },
+    {
+      "path": "references/security-rls-performance.md",
+      "sha": "b32d92f7ef9dba17e90d88884ca373587b3f39e6",
+      "size": 1493
+    }
+  ]
+}

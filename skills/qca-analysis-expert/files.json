@@ -1,0 +1,204 @@
+{
+  "files": [
+    {
+      "path": "OPTIMIZATION_COMPLETE.md",
+      "sha": "023b0ea6287ade3bf26c7288a16d46b882aa7cc0",
+      "size": 8850
+    },
+    {
+      "path": "QCA_functional_test.md",
+      "sha": "7fdbb7bf5bb6bcba0f89e5a2312a3a20592ccaf3",
+      "size": 5239
+    },
+    {
+      "path": "README.md",
+      "sha": "bf8ae6b1adf00ffe2bad8879622db2d089b35af9",
+      "size": 504
+    },
+    {
+      "path": "SKILL.md",
+      "sha": "e0d7ca7caff25997d3c14b359eff295f5034d7f9",
+      "size": 13099
+    },
+    {
+      "path": "TEST_EXECUTION_SUMMARY.md",
+      "sha": "b94142e9a201ffeb73c7c6a08fcc52dca70b50df",
+      "size": 6083
+    },
+    {
+      "path": "_meta.json",
+      "sha": "acd96a98d30c168be9f249fa6043e448b69489a4",
+      "size": 138
+    },
+    {
+      "path": "cases/demo-democratization.csv",
+      "sha": "1c0b404de085ca3ef49c36a0ae904acedad3d07f",
+      "size": 417
+    },
+    {
+      "path": "cases/negative/case-001-mechanical-calibration.md",
+      "sha": "c595371add7bb9ba14a9da8b4207f1c1a511aa96",
+      "size": 3158
+    },
+    {
+      "path": "cases/positive/case-001-qca-policy.md",
+      "sha": "e18f851a3025929489236470bd6add366a6f139f",
+      "size": 2270
+    },
+    {
+      "path": "cases/positive/case-001-social-movements.md",
+      "sha": "2fb649746cdc3d6aab6da5a151265d7a081b7cf0",
+      "size": 5689
+    },
+    {
+      "path": "cases/positive/case-002-education-pisa-qca.md",
+      "sha": "2d98daf0cc3620da09d66129b633dcf605db392a",
+      "size": 6933
+    },
+    {
+      "path": "cases/positive/case-003-digital-transformation.md",
+      "sha": "76d7157b7b721b1004e9635047930dc687b99947",
+      "size": 7808
+    },
+    {
+      "path": "cases/positive/case-004-democratization-qca.md",
+      "sha": "a62d8acc06396bd30dd9fc8ec5afbc23e763b3bf",
+      "size": 4554
+    },
+    {
+      "path": "cases/positive/case-005-gender-equality-qca.md",
+      "sha": "8300f9ca6755c74a26d1cc52e1a136e10fe86f10",
+      "size": 3596
+    },
+    {
+      "path": "examples/with-subagents.md",
+      "sha": "3f5efc8f3ac5dc8a740667c02cbf7646bbb56113",
+      "size": 7191
+    },
+    {
+      "path": "experience/patterns.md",
+      "sha": "47433db817f6bd683a47b270677d1373138f6148",
+      "size": 8840
+    },
+    {
+      "path": "index.html",
+      "sha": "ebf581d62202e0f9b22ea90f7549454e99ce0022",
+      "size": 27219
+    },
+    {
+      "path": "lesson-memory.md",
+      "sha": "9ba93f4a6bb0de5294742889bb84dd933876e42a",
+      "size": 1573
+    },
+    {
+      "path": "prompts/system-prompt.md",
+      "sha": "b5a7b13f89bd0fa430dd73fb46b2bb7b3c792514",
+      "size": 7807
+    },
+    {
+      "path": "references/classic-literature.md",
+      "sha": "2c4e2e3e98545ce9d05db8c220ac92c154ddf760",
+      "size": 9624
+    },
+    {
+      "path": "references/detailed-guide.md",
+      "sha": "f15b0e22e2ead5cac9ae0bc1a5d0f63b7446ee04",
+      "size": 14361
+    },
+    {
+      "path": "references/long-term-tasks.md",
+      "sha": "30705198f14baa9d3edd1c000222368c9943a80d",
+      "size": 5027
+    },
+    {
+      "path": "references/msqca-concepts.md",
+      "sha": "55f10226ca975fb150d5a11b04b3f6f27dc19f4b",
+      "size": 4776
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "8609c011db3affa72b0b7ee60be3d22613685051",
+      "size": 30
+    },
+    {
+      "path": "skill.yaml",
+      "sha": "966f900c51f80ffee472fdbcd6bdbe7bddac0373",
+      "size": 4088
+    },
+    {
+      "path": "soul.md",
+      "sha": "1be27a8c6b2bf6c737551b2bb2e78721a460a024",
+      "size": 6411
+    },
+    {
+      "path": "subagents.yaml",
+      "sha": "c96c8f6f73b166104a705f73e9e388aa61784a59",
+      "size": 7722
+    },
+    {
+      "path": "templates/task_plan.md.template",
+      "sha": "01bdee238538e89a68f5e1cf1d06d5654f3689d3",
+      "size": 1415
+    },
+    {
+      "path": "test-prompts.json",
+      "sha": "f49de4ef1008e2b885aa6df834d90385f9437089",
+      "size": 940
+    },
+    {
+      "path": "test_qca_functional.py",
+      "sha": "2225067637c7ef1b253db2924959921600a476a0",
+      "size": 13817
+    },
+    {
+      "path": "tools/.evolution/evolution_state.yaml",
+      "sha": "4f048b91866a0ed1f06315104df35a924689a6ed",
+      "size": 1260
+    },
+    {
+      "path": "tools/analyze.py",
+      "sha": "ee7689851e575ae16a900482df0c39f406e826a9",
+      "size": 16084
+    },
+    {
+      "path": "tools/consistency_analyzer.py",
+      "sha": "e8818ba1b186d0be640b96b45602876338abf9ff",
+      "size": 8689
+    },
+    {
+      "path": "tools/data_calibrator.py",
+      "sha": "6313728fc0bb50e84cd1c0e81533a16a5a331b53",
+      "size": 3012
+    },
+    {
+      "path": "tools/evolution.py",
+      "sha": "852b9637f0a22af3c182c7e5056eb5406a77e74b",
+      "size": 5217
+    },
+    {
+      "path": "tools/planning_integration.py",
+      "sha": "7162e614f72b2a6ee4824acd7b893d54782cba8b",
+      "size": 2534
+    },
+    {
+      "path": "tools/set_relation_analyzer.py",
+      "sha": "2e41f755ac4f50def1ecae4a129ad9e01cfcd1aa",
+      "size": 1053
+    },
+    {
+      "path": "tools/solution_calculator.py",
+      "sha": "3b5c7fa49b72783fa7021e429ec2dc39d27f343d",
+      "size": 5936
+    },
+    {
+      "path": "tools/test/task_plan.md",
+      "sha": "8a90e40bc7b76db84846c22745189f8f01f27e35",
+      "size": 204
+    },
+    {
+      "path": "tools/truth_table_builder.py",
+      "sha": "48203b425a855adc45481c98673b105c7e7b6fe6",
+      "size": 2277
+    }
+  ]
+}

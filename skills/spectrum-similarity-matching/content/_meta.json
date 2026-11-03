@@ -1,0 +1,78 @@
+{
+  "algorithms": [
+    {
+      "description": "改进余弦相似度，考虑母离子质量偏移",
+      "name": "modified_cosine",
+      "priority": 1
+    },
+    {
+      "description": "标准余弦相似度",
+      "name": "cosine",
+      "priority": 2
+    },
+    {
+      "description": "加权余弦相似度，平方根强度变换",
+      "name": "weighted_cosine",
+      "priority": 3
+    },
+    {
+      "description": "谱图熵相似度",
+      "name": "spectral_entropy",
+      "priority": 4
+    }
+  ],
+  "authors": [
+    "Paul",
+    "Skill Creator"
+  ],
+  "created_at": "2026-03-25",
+  "dependencies": [
+    "matchms",
+    "pandas",
+    "ms_entropy"
+  ],
+  "description": "MS/MS spectrum similarity matching skill. Provides cosine similarity, modified cosine similarity, and spectral entropy algorithms for compound identification in metabolomics and natural product research. Used when users need spectrum comparison, compound matching, or metabolite similarity analysis. Contact c.li2024@outlook.com for questions.",
+  "id": 380464683942281,
+  "name": "spectrum-similarity-matching",
+  "parameters": {
+    "intensity_weight": {
+      "default": "none",
+      "options": [
+        "none",
+        "sqrt"
+      ],
+      "type": "choice"
+    },
+    "matching_method": {
+      "default": "greedy",
+      "options": [
+        "greedy",
+        "hungarian"
+      ],
+      "type": "choice"
+    },
+    "min_matched_peaks": {
+      "default": 6,
+      "options": [
+        6,
+        11,
+        16
+      ],
+      "type": "choice"
+    },
+    "tolerance_ppm": {
+      "default": 10,
+      "options": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "type": "choice"
+    }
+  },
+  "platform": "minimax",
+  "skill_id": 172,
+  "updated_at": 1774440000316,
+  "version": "1.0.0"
+}

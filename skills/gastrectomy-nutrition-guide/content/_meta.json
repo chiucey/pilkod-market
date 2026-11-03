@@ -1,0 +1,29 @@
+{
+  "author": "MiniMax Agent",
+  "created_at": "2026-04-05",
+  "description": "针对胃癌全胃切除术后患者，在自然对话中提供分阶段、个性化的日常营养养护建议与情感支持。",
+  "files": [
+    "SKILL.md",
+    "knowledge/00_patient-background.md",
+    "knowledge/01_postop-diet-guide.md",
+    "knowledge/02_dumping-syndrome.md",
+    "knowledge/03_micronutrient-supplementation.md",
+    "knowledge/04_chemotherapy-diet.md",
+    "knowledge/05_daily-recipes.md",
+    "knowledge/06_warning-signs.md",
+    "knowledge/07_faq.md"
+  ],
+  "id": 384373254566140,
+  "name": "gastrectomy-nutrition-guide",
+  "platform": "minimax",
+  "skill_id": "12345",
+  "tags": [
+    "gastrectomy-aftercare",
+    "nutrition-management",
+    "total-gastrectomy",
+    "postop-recovery",
+    "adjuvant-chemo"
+  ],
+  "updated_at": 1775396649321,
+  "version": "1.0.0"
+}

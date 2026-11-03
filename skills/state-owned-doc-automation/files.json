@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "39522f8c68e3a024497c4dc19cb3f57826fb5a19",
+      "size": 4577
+    },
+    {
+      "path": "_meta.json",
+      "sha": "9e071a2b638a1c76570cf48014a7f1991aa246ff",
+      "size": 145
+    },
+    {
+      "path": "app.py",
+      "sha": "20e28cd8b495b1d3adf7d8b9e03ff570a294ac9f",
+      "size": 8504
+    },
+    {
+      "path": "auto_archiver.py",
+      "sha": "99d337fbb77c0c84d7aebec24a52c9b4ff282ddd",
+      "size": 15078
+    },
+    {
+      "path": "backend/.gitkeep",
+      "sha": "d3f5a12faa99758192ecc4ed3fc22c9249232e86",
+      "size": 2
+    },
+    {
+      "path": "backend/README.md",
+      "sha": "5ec0eacbbdb4ebd583d93cfc220287b586a93088",
+      "size": 1058
+    },
+    {
+      "path": "backend/app.py",
+      "sha": "be85f781ad0653e91b6f92abb9429321cf8aeafa",
+      "size": 5372
+    },
+    {
+      "path": "backend/config.py",
+      "sha": "4866cc58e5c434bc1717a50e2006fcb56f2059f0",
+      "size": 655
+    },
+    {
+      "path": "backend/requirements.txt",
+      "sha": "c638f48f784568df854f0a8056f58c6fa3e4fa41",
+      "size": 134
+    },
+    {
+      "path": "backend/watchdog_service.py",
+      "sha": "b0c70b38f8374a099d5c91f54dcfecc460ee7366",
+      "size": 2870
+    },
+    {
+      "path": "category_paths.py",
+      "sha": "6080f1c6f8df4bd1e6c00b7f30460adfebe10487",
+      "size": 4028
+    },
+    {
+      "path": "config.py",
+      "sha": "3a64c53ac0eaa330a70ed088b47d7a2b932851fe",
+      "size": 1343
+    },
+    {
+      "path": "db_manager.py",
+      "sha": "66a57714b651413b809be911ae1a621d89913670",
+      "size": 2161
+    },
+    {
+      "path": "file_parser.py",
+      "sha": "aadb228f6b2e336298c63fbea561f5b8626f11fc",
+      "size": 4304
+    },
+    {
+      "path": "index_manager.py",
+      "sha": "9145bbb14118f10477684b35404a217c2da195c1",
+      "size": 2580
+    },
+    {
+      "path": "references/classification-tree.md",
+      "sha": "84685f30f455407c15941c19e9656a7b53dd30c9",
+      "size": 2301
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "5173dc290e9ea5f93904869b590651699f61b124",
+      "size": 98
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "sha": "eccb85824162976d3850b43b9836b6fae546020c",
+      "size": 1199
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "sha": "4d446613eb52f2b1a2719b1889b9e7c3b5218b9a",
+      "size": 2864
+    },
+    {
+      "path": "searcher.py",
+      "sha": "a9c4095d2713990b144849231f9153aa9e77aafe",
+      "size": 5879
+    },
+    {
+      "path": "setup_wizard.py",
+      "sha": "bdc5c27e9899386613c528d6c6fda8abb7d45214",
+      "size": 4491
+    },
+    {
+      "path": "tag_generator.py",
+      "sha": "cc446f8bbe922c5f32671bf9142f3522c4fe1aaa",
+      "size": 2677
+    },
+    {
+      "path": "templates/index.html",
+      "sha": "f3a617552402243f45fff1309c6468e2c7e2e6ef",
+      "size": 14196
+    },
+    {
+      "path": "watchdog_listener.py",
+      "sha": "218d0ad4545ed57cd539761cb06ac5d5b335008f",
+      "size": 7207
+    }
+  ]
+}

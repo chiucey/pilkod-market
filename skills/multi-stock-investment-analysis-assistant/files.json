@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha": "b8236f8f19bee05d65c063d0d0c4aed1a3af5038",
+      "size": 23795
+    },
+    {
+      "path": "_meta.json",
+      "sha": "aeb53d1c78765cd4fac1d5001e944eaca3857c45",
+      "size": 160
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha": "cc64d8eb2c47d804dbc436fa219063c2c6e8fa5e",
+      "size": 539
+    },
+    {
+      "path": "assets/icon.svg",
+      "sha": "2468028d1ed0fc8009b1fc45e7bb027adaf0d079",
+      "size": 420
+    },
+    {
+      "path": "references/analysis-playbook.md",
+      "sha": "17be0a769e64a698c15133008f78bdae0effca4d",
+      "size": 13387
+    },
+    {
+      "path": "references/charting.md",
+      "sha": "d8c0612553890244628164025125484815d596c8",
+      "size": 8339
+    },
+    {
+      "path": "references/data-sources.md",
+      "sha": "52a335f342e7912a2f0a4d7286c1cdfb016d49ae",
+      "size": 9258
+    },
+    {
+      "path": "references/hong-kong-market.md",
+      "sha": "cfad0faaeda527abca47e69e9a61c3db872c3a35",
+      "size": 19604
+    },
+    {
+      "path": "references/market-depth.md",
+      "sha": "c504ed97699c10bcdc02cedbcec94a24fa521936",
+      "size": 11310
+    },
+    {
+      "path": "references/prompt-templates.md",
+      "sha": "6f4a99ed459e1fc456b8fb499e62fd1f441f0985",
+      "size": 7114
+    },
+    {
+      "path": "references/question-intake.md",
+      "sha": "b370f109134c8f67bd0d17b48828ffcae157e0a2",
+      "size": 13661
+    },
+    {
+      "path": "references/report-template.md",
+      "sha": "3439e303bf10f09cfd978ef4476131c9f326c8fc",
+      "size": 13464
+    },
+    {
+      "path": "references/trading-strategy.md",
+      "sha": "aff9dd391947065416d00058ac86b01bc75007fc",
+      "size": 18796
+    },
+    {
+      "path": "references/value-investing.md",
+      "sha": "2243320098c8bdff35a76dee445792d726122cc6",
+      "size": 9200
+    },
+    {
+      "path": "scripts/analyze_ohlcv.py",
+      "sha": "e800bc5e9419f656c7790c9c0d1c5810efb1636c",
+      "size": 25683
+    },
+    {
+      "path": "scripts/analyze_order_book.py",
+      "sha": "3b1195c4e902174b77741b991224cb5626756eef",
+      "size": 33206
+    },
+    {
+      "path": "scripts/dcf_scenarios.py",
+      "sha": "9b0e27cc23956d1a47f2fda2aca04aceca8bf3f9",
+      "size": 12829
+    },
+    {
+      "path": "scripts/five_dimension_score.py",
+      "sha": "30f105663dca6183547e396a4d8a40dfb4f4ae5c",
+      "size": 8094
+    },
+    {
+      "path": "scripts/position_size.py",
+      "sha": "e2a8c6469769d33e19c52113b99c76c3de9f41c0",
+      "size": 12343
+    },
+    {
+      "path": "scripts/render_technical_chart.py",
+      "sha": "81f5efbb4ccbd914d96c755f18d260fcd0354c77",
+      "size": 27237
+    },
+    {
+      "path": "scripts/validate_trade_plan.py",
+      "sha": "1193d3a2c7335235a45de3a42d1ccd341dc872cc",
+      "size": 41134
+    }
+  ]
+}
