@@ -1,0 +1,70 @@
+{
+  "version": "1.0.5",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "d5d93cc62c873a08bcf3993485261e31d08fe27d",
+      "size": 1033
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha": "0b8f95e2492d6c2fa99d2a1571cc8d9c3e8199a4",
+      "size": 2890
+    },
+    {
+      "path": "licenses/AIPOCH-MIT.txt",
+      "sha": "dbcbbd640d3637095334d70d04c9e4b191a4671a",
+      "size": 1063
+    },
+    {
+      "path": "licenses/BYTEDANCE-DEERFLOW-MIT.txt",
+      "sha": "9dc98a4a6b9b549447a4fc314e4cf50529c184c7",
+      "size": 1134
+    },
+    {
+      "path": "licenses/WENTOR-AI-MIT.txt",
+      "sha": "5d4f4ea047467f3ad769901f052734bbbd14a843",
+      "size": 1066
+    },
+    {
+      "path": "skills/academic-abstract-refiner/SKILL.md",
+      "sha": "a6c449d5e148e26e9db122f53aca10deeddf3c2d",
+      "size": 7023
+    },
+    {
+      "path": "skills/academic-abstract-refiner/scripts/refine_abstract.py",
+      "sha": "b72fc9e520558acec72f41b395f709593acd48bb",
+      "size": 1248
+    },
+    {
+      "path": "skills/academic-paper-polish/SKILL.md",
+      "sha": "7ea43931a85fa52b6350e4a40b108d9a7187656a",
+      "size": 7095
+    },
+    {
+      "path": "skills/academic-paper-polish/references/ai-polish.md",
+      "sha": "98705f5388eacce03194e5f8a4fb3f79363dcacd",
+      "size": 4551
+    },
+    {
+      "path": "skills/academic-paper-polish/references/section-phrases.md",
+      "sha": "30ae4883c86fb3599a368fb7eb5cbfdde92530d4",
+      "size": 8655
+    },
+    {
+      "path": "skills/academic-paper-polish/references/vocabulary.md",
+      "sha": "53217ec38305ab4d392ef7d033885c627cb71d8e",
+      "size": 7005
+    },
+    {
+      "path": "skills/academic-paper-review/SKILL.md",
+      "sha": "73307c3e134e0b0711d7414d2cd87c85e4c2e6e1",
+      "size": 13855
+    },
+    {
+      "path": "skills/academic-writing-latex/SKILL.md",
+      "sha": "10164b3924defc82d6073ccaa612dbe31827b50d",
+      "size": 8736
+    }
+  ]
+}

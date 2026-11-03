@@ -1,0 +1,165 @@
+{
+  "version": "0.8.3",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "1cd47340c7d02cebb6a189f1cebcefbff0506147",
+      "size": 731
+    },
+    {
+      "path": "branding/icon-128.png",
+      "sha": "74ee44fbd1e7043cd1d03549beef95db84054b88",
+      "size": 14475
+    },
+    {
+      "path": "branding/icon-512.png",
+      "sha": "2eca2cddc786052ebfe2c8afa719f1b0aca29ebf",
+      "size": 133525
+    },
+    {
+      "path": "branding/icon.svg",
+      "sha": "ef23eaf3a1faca3b24250dafbe020008ac09c7f5",
+      "size": 2137
+    },
+    {
+      "path": "branding/logo-white-bg.png",
+      "sha": "3ef6bd13fe146389a782b9b1b7958fc7131ebb47",
+      "size": 64158
+    },
+    {
+      "path": "branding/logo.png",
+      "sha": "55614603744b5512261ea1b047257fb192fe38a0",
+      "size": 84109
+    },
+    {
+      "path": "branding/logo.svg",
+      "sha": "130a804459f30b91e14b4c5d86882202f76af17b",
+      "size": 2654
+    },
+    {
+      "path": "icon.png",
+      "sha": "99d0dfa175d0cfb7f6de09fefb4ba3087454bc63",
+      "size": 81731
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "5ea3c72489defce42ca0d65133a7973b66444a75",
+      "size": 50245
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "39bf15c0a650c84938a0dc7ff3015442e9ea5fa6",
+      "size": 12954
+    },
+    {
+      "path": "miniapp/client/pdf-export.js",
+      "sha": "887de166de103714e0281f470d5db315fd133bab",
+      "size": 35431
+    },
+    {
+      "path": "miniapp/client/styles.css",
+      "sha": "d4f6ac26e30b461ba26546eee83ce4c654ebd1de",
+      "size": 31386
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "b9d220bc40af893766b0f2da66b8f6a7bc27e41b",
+      "size": 393
+    },
+    {
+      "path": "miniapp/node/adapters/amap-map-provider.js",
+      "sha": "c1e30f68a9aa0c78cdd9cda8d2b604ec3749ed46",
+      "size": 10069
+    },
+    {
+      "path": "miniapp/node/adapters/demo-map-provider.js",
+      "sha": "c7686b913b61adf6c298c1b59b55ebc1c3bf7436",
+      "size": 5489
+    },
+    {
+      "path": "miniapp/node/adapters/sqlite-store.js",
+      "sha": "96e2fcb16787b2be21ed1131c9c22c14f26fb46e",
+      "size": 2990
+    },
+    {
+      "path": "miniapp/node/adapters/switchable-map-provider.js",
+      "sha": "16cc9130de6f739fc48237706354dbcbd15429fa",
+      "size": 1108
+    },
+    {
+      "path": "miniapp/node/adapters/unconfigured-map-provider.js",
+      "sha": "5127be7161853911a94a3ef87c8dff4bfcde1679",
+      "size": 648
+    },
+    {
+      "path": "miniapp/node/app.js",
+      "sha": "4a1e707e736363dacf1e313bb6fd23e2551f1885",
+      "size": 13854
+    },
+    {
+      "path": "miniapp/node/config-store.js",
+      "sha": "076cd062cf94d7b7d0a1c5d62ea0389561abb77a",
+      "size": 2135
+    },
+    {
+      "path": "miniapp/node/domain/trip-application.js",
+      "sha": "1454c8139d7215a8599dc47feade85eb3a7b7432",
+      "size": 18049
+    },
+    {
+      "path": "miniapp/node/http/event-hub.js",
+      "sha": "c6c536ee6b759aa93f6dce061a18f77ddda09e97",
+      "size": 1106
+    },
+    {
+      "path": "miniapp/node/mcp/route-planner-http.js",
+      "sha": "556eb82cb6d77cd1ba78b1647decd5fc11db0fd0",
+      "size": 27604
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "0105667775597f43271d35cb652656d3a42557e0",
+      "size": 1730
+    },
+    {
+      "path": "package.json",
+      "sha": "af88b684a71d0fadfc6764999f6ca728d403471a",
+      "size": 184
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "24902b4d23c9e660b4a69fb019a045a37a565710",
+      "size": 333
+    },
+    {
+      "path": "skills/amap-apikey/SKILL.md",
+      "sha": "0acec0950d80c77ab862c073b3bdd3f1ef6c0180",
+      "size": 12857
+    },
+    {
+      "path": "skills/route-planning/SKILL.md",
+      "sha": "bf6c44caf5f7e9ca99f61fdffef43bfe6a70c684",
+      "size": 11892
+    },
+    {
+      "path": "skills/route-planning/scripts/start-xhs-mcp.sh",
+      "sha": "6cd0b688e40ce1be173841dc09d702435dd63e3c",
+      "size": 2307
+    },
+    {
+      "path": "skills/xhs-route-cards/SKILL.md",
+      "sha": "5418840d76d49a9fd0d840a0a802b1a543c19676",
+      "size": 9865
+    },
+    {
+      "path": "skills/xhs-route-cards/assets/minimax-logo.png",
+      "sha": "2f1f958a5fef72c5cfab1fb7dad3ed79c1940b06",
+      "size": 12264
+    },
+    {
+      "path": "skills/xhs-route-cards/scripts/add_ai_badge.py",
+      "sha": "2bcac7a2502f7e0bc793b9d7a858defeba87c320",
+      "size": 3643
+    }
+  ]
+}

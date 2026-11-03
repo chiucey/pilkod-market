@@ -1,0 +1,175 @@
+{
+  "version": "0.5.8",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "21ce33409c4a67325c09fbbc580631dd6f0c3327",
+      "size": 544
+    },
+    {
+      "path": "ARTWORK.md",
+      "sha": "258cc8901a4866c92230872ee0d90f44d681eca5",
+      "size": 2214
+    },
+    {
+      "path": "LICENSE",
+      "sha": "132dd20ee3294d09a1c613a6bd4c8094c496fbf9",
+      "size": 1064
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha": "7a5767b5763af26098b91e5e6d241493d6c2c0a2",
+      "size": 2397
+    },
+    {
+      "path": "README.md",
+      "sha": "25be968191b3a8eafe81b07c55b4378018485f5d",
+      "size": 8199
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "427cb2007f295a9f521f7dabc337e0d99c313a72",
+      "size": 5406
+    },
+    {
+      "path": "icon.png",
+      "sha": "48e83141f8eca0e59f82b97a546b121ad2af825d",
+      "size": 274417
+    },
+    {
+      "path": "miniapp/client/activity-reminders.mjs",
+      "sha": "cfdb71983b6a7b23a357db744266cb12353614be",
+      "size": 5114
+    },
+    {
+      "path": "miniapp/client/activity.mjs",
+      "sha": "53c91ef6c8089e8e5ced771f7b390e071fbf8def",
+      "size": 16688
+    },
+    {
+      "path": "miniapp/client/ask-observer.mjs",
+      "sha": "a4e774704c5e6a299df17a39be6d8829231b901d",
+      "size": 7162
+    },
+    {
+      "path": "miniapp/client/chat-draft.mjs",
+      "sha": "29c93edae661a5be944b6715f305ee6d55c83507",
+      "size": 3304
+    },
+    {
+      "path": "miniapp/client/compact-pet-view.mjs",
+      "sha": "b0eeceeb3296470e4511aaa64d9335f5a03699cf",
+      "size": 9105
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "d11981f26f4f04359897f43c68954186802e6485",
+      "size": 13672
+    },
+    {
+      "path": "miniapp/client/notification-previews.mjs",
+      "sha": "adf4424c73af054b321ddb8ab71a3339c11fff9b",
+      "size": 3037
+    },
+    {
+      "path": "miniapp/client/panel-navigation.mjs",
+      "sha": "14b87257dc3ad5515d8433513d6cd70df48094c3",
+      "size": 6265
+    },
+    {
+      "path": "miniapp/client/pet-app.js",
+      "sha": "d296de6315d39deca6c618e1f72f1ac4997b8a21",
+      "size": 89436
+    },
+    {
+      "path": "miniapp/client/pet-player.js",
+      "sha": "cfaa102b3079d2b390b2d4498ab7fa3b88b515cb",
+      "size": 12898
+    },
+    {
+      "path": "miniapp/client/pet-presentation.mjs",
+      "sha": "015d63cfe4d513f09c41c9a630f56e5e678f7a34",
+      "size": 1276
+    },
+    {
+      "path": "miniapp/client/pet.css",
+      "sha": "b98ad68329060a2472ade35bc25b91f8fc4fba01",
+      "size": 33845
+    },
+    {
+      "path": "miniapp/client/pets/minimax-original/pet.json",
+      "sha": "561dafa08dc10560be603e250478a2adfdf12282",
+      "size": 286
+    },
+    {
+      "path": "miniapp/client/pets/minimax-original/spritesheet.png",
+      "sha": "1207168804dac8c5b4c0e3891fea126ced24cc3f",
+      "size": 55289
+    },
+    {
+      "path": "miniapp/client/preferences.mjs",
+      "sha": "7c64eda442873e830b474c91aa0cff3fb8daf4b3",
+      "size": 3842
+    },
+    {
+      "path": "miniapp/client/speech-input.mjs",
+      "sha": "dbf5cc0a618320555fa1439a4a370f22525f97dc",
+      "size": 11535
+    },
+    {
+      "path": "miniapp/client/window-position.mjs",
+      "sha": "c259e09cf63b111d77928052c22bdd880fbeb41b",
+      "size": 2620
+    },
+    {
+      "path": "miniapp/client/workbench-window.mjs",
+      "sha": "1f7f72806183b7286ad65a68206cec8336d5497f",
+      "size": 5101
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "f823575548f22f90934874c346d2e5ae710bf9c9",
+      "size": 664
+    },
+    {
+      "path": "miniapp/node/image-header.mjs",
+      "sha": "1f936dcae97e91301c23ef84d40cd8f6551f97ac",
+      "size": 3165
+    },
+    {
+      "path": "miniapp/node/pet-store.mjs",
+      "sha": "0a3e927abc8d0d5e95ae92d1c593354f706b9ce9",
+      "size": 18017
+    },
+    {
+      "path": "miniapp/node/preferences-store.mjs",
+      "sha": "64918179bef796b87567b6a62e83975e6c15b8ad",
+      "size": 2400
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "0331e994b0af6de91e508ee16da841cbfa98f028",
+      "size": 13371
+    },
+    {
+      "path": "package.json",
+      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
+      "size": 85
+    },
+    {
+      "path": "skills/minimax-pet/SKILL.md",
+      "sha": "f66f4f4ac926f66dee71d16cb21a21fba94b686a",
+      "size": 4183
+    },
+    {
+      "path": "skills/minimax-pet/references/spritesheet-format.md",
+      "sha": "e3feda703d83edea86e371bc081b535ff6ea30da",
+      "size": 7000
+    },
+    {
+      "path": "skills/minimax-pet/scripts/validate-art.mjs",
+      "sha": "e0d09380af7a18fd5416b40e9e2a512a39191f3c",
+      "size": 12784
+    }
+  ]
+}

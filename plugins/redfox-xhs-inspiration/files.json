@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "1cd982f77eb73749f214ec5e45a23916c5601e57",
+      "size": 951
+    },
+    {
+      "path": "icon.png",
+      "sha": "17fb9d23ef7ffde9bddf93cd497647661bf3ecd1",
+      "size": 898874
+    },
+    {
+      "path": "skills/xiaohongshu-crawler/SKILL.md",
+      "sha": "568ec6e4bdabb634d46dc17628a1fd660380ee79",
+      "size": 10418
+    },
+    {
+      "path": "skills/xiaohongshu-crawler/assets/report_template.html",
+      "sha": "08b8a0e2c0111f4915ca68fef6a0f68f06bf3d5b",
+      "size": 8478
+    },
+    {
+      "path": "skills/xiaohongshu-crawler/scripts/crawl_xhs.py",
+      "sha": "b0fa3564a272cd31bfb4426d28814b0801f11b34",
+      "size": 4945
+    },
+    {
+      "path": "skills/xiaohongshu-crawler/scripts/generate_report.py",
+      "sha": "90da9f23da3a45696608b42d03b51010e5688a17",
+      "size": 5720
+    },
+    {
+      "path": "skills/xiaohongshu-dailytop/SKILL.md",
+      "sha": "32cddd9ab7dd325a9ab8a83c881f9725e4a9d20f",
+      "size": 10887
+    },
+    {
+      "path": "skills/xiaohongshu-dailytop/references/core_workflow.md",
+      "sha": "2abf9f2b3cf560989212e91a8a9c2183b7a423c0",
+      "size": 28234
+    },
+    {
+      "path": "skills/xiaohongshu-dailytop/scripts/gen_xhs_html.py",
+      "sha": "f321809e815877c32572ff5d2435e30661ec2de2",
+      "size": 35123
+    },
+    {
+      "path": "skills/xiaohongshu-dailytop/scripts/xhs_daily_fetcher.py",
+      "sha": "7663d8def041e76761c32426597c9c5afdf493d3",
+      "size": 28984
+    },
+    {
+      "path": "skills/xiaohongshu-dailytop/scripts/xhs_weekly.html",
+      "sha": "92f39130f9309e843a7f7fe392327eb6a4fc2acc",
+      "size": 36816
+    },
+    {
+      "path": "skills/xiaohongshu-lowtop/SKILL.md",
+      "sha": "3f6ab17e8b071dad13852a4f54b0a64bd8147de2",
+      "size": 10355
+    },
+    {
+      "path": "skills/xiaohongshu-lowtop/assets/preview-template.html",
+      "sha": "e00eb997c6526efbd0eb8f2bbe9f487afde6d161",
+      "size": 11037
+    },
+    {
+      "path": "skills/xiaohongshu-lowtop/references/api-spec.md",
+      "sha": "348c784c3792586b4f1310a9516faedb9607c328",
+      "size": 9823
+    },
+    {
+      "path": "skills/xiaohongshu-lowtop/scripts/fetch_explosive_articles.py",
+      "sha": "264d2d914ab79106cc9f9e5e8c3b1a354b8d72cb",
+      "size": 50397
+    },
+    {
+      "path": "skills/xiaohongshu-lowtop/scripts/generate_html_on_demand.py",
+      "sha": "fb8842683d237aafbd43faa9de0c6f75f80cc987",
+      "size": 5095
+    },
+    {
+      "path": "skills/xiaohongshu-search/SKILL.md",
+      "sha": "11451f8e9093b2f39ebb107059a5d397e14887c2",
+      "size": 17478
+    },
+    {
+      "path": "skills/xiaohongshu-search/references/xhs_hot_article_format.md",
+      "sha": "14f3fe9df73933214b14695d2ea68cb23628fb46",
+      "size": 4771
+    },
+    {
+      "path": "skills/xiaohongshu-search/scripts/fetch_xhs_hot_articles.py",
+      "sha": "d6e83fde16585ed55478e7e21f10da7e0595f01f",
+      "size": 23632
+    },
+    {
+      "path": "skills/xiaohongshu-similar-account/SKILL.md",
+      "sha": "3b8a127ca7ca8bb8efacd859ee933f99e3ed88c9",
+      "size": 10113
+    },
+    {
+      "path": "skills/xiaohongshu-similar-account/references/account_template.html",
+      "sha": "6bafdc69f0e62cea37c7dac3a5a2c8541105cfa9",
+      "size": 4389
+    },
+    {
+      "path": "skills/xiaohongshu-similar-account/scripts/xiaohongshu-similar-account.py",
+      "sha": "3309803dd685ae668c5e0c30637fd8044f6a8a60",
+      "size": 37727
+    },
+    {
+      "path": "skills/xiaohongshu-top-account/SKILL.md",
+      "sha": "2910a738c3f4d57f275e3146d56a1d9c189e46f6",
+      "size": 10984
+    },
+    {
+      "path": "skills/xiaohongshu-top-account/references/api_docs.md",
+      "sha": "bad1643ade968821a1daa049c2bc50f1dbae1ee3",
+      "size": 6371
+    },
+    {
+      "path": "skills/xiaohongshu-top-account/references/score_rules.md",
+      "sha": "9f9f62dda5afc485a6b9f2adb710e2e15e0f051d",
+      "size": 989
+    },
+    {
+      "path": "skills/xiaohongshu-top-account/scripts/fetch_rank.py",
+      "sha": "e8a3cecd763e6ac63be64e2417354a07603ae1dc",
+      "size": 40344
+    },
+    {
+      "path": "skills/xiaohongshu-top-account/scripts/generate_report.py",
+      "sha": "947ebe6f72e7637fd44ef465ed46d5a21011762a",
+      "size": 20262
+    }
+  ]
+}

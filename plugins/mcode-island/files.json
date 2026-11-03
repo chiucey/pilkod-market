@@ -1,0 +1,160 @@
+{
+  "version": "0.10.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "1c8c022084b7b0fea25c2924d6dbe87bc05bc599",
+      "size": 1313
+    },
+    {
+      "path": "LICENSE",
+      "sha": "5bb4c0245e57c4af3d569e7c0a4b3c11b2a5e65f",
+      "size": 10882
+    },
+    {
+      "path": "README.md",
+      "sha": "eb1dce0a11dabb3b9dd63d010adb1bc0e0a9ee4a",
+      "size": 10249
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "7ad0bbe2388f467a06d71d7c961f2c3ebd3a4619",
+      "size": 8097
+    },
+    {
+      "path": "assets/state-done.png",
+      "sha": "b49a138283c1291566c9820e3218008b1c97765c",
+      "size": 6894
+    },
+    {
+      "path": "assets/state-error.png",
+      "sha": "a3da040bdc662269303d19121725b56c6a082368",
+      "size": 6758
+    },
+    {
+      "path": "assets/state-idle.png",
+      "sha": "5252bb29364cdb5e2034c9115e9c08a6df7bbd10",
+      "size": 6010
+    },
+    {
+      "path": "assets/state-thinking.png",
+      "sha": "909ae363b5a1cafea41469ee4fdf3a6450824eec",
+      "size": 6691
+    },
+    {
+      "path": "assets/state-waiting.png",
+      "sha": "23a9a16393d8172775713c7bbf6dc69c48ba3834",
+      "size": 15746
+    },
+    {
+      "path": "assets/state-working.png",
+      "sha": "2c51aab37a1cb1c37c3e70fe49bffb004ffe060b",
+      "size": 7314
+    },
+    {
+      "path": "assets/wrap-demo.png",
+      "sha": "d6087d9a7b2e707ba13a6c07452b21b52a3606bc",
+      "size": 4372
+    },
+    {
+      "path": "autostart.ps1",
+      "sha": "6786ca4de640b9132577b9fb859a0d953416b138",
+      "size": 3246
+    },
+    {
+      "path": "icon.png",
+      "sha": "18fda897c6e169b13239d568b358a4285022daa3",
+      "size": 12314
+    },
+    {
+      "path": "mcode-island.cmd",
+      "sha": "ee31942edf8c055abd7d00e435d7083e16436665",
+      "size": 1999
+    },
+    {
+      "path": "mcode-island.ps1",
+      "sha": "c91633474d577131890ba552e1adf91ab858c9e2",
+      "size": 77395
+    },
+    {
+      "path": "mcode-status-detect.ps1",
+      "sha": "847eedefaa7f85d8c49de2f3ef931a12c6196ca7",
+      "size": 39851
+    },
+    {
+      "path": "notify-island.ps1",
+      "sha": "ef2b441cbfa4462539654b8e48c15d47e52ac798",
+      "size": 5892
+    },
+    {
+      "path": "pin-island.ps1",
+      "sha": "c9efc018baa473ab3a140172b533e82ebb1071b7",
+      "size": 2449
+    },
+    {
+      "path": "scripts/lib/Plan-Usage.ps1",
+      "sha": "08c30ec7c51217aed96165cded2c6e0195ef3d2b",
+      "size": 4565
+    },
+    {
+      "path": "scripts/lib/Protect-Text.ps1",
+      "sha": "fad1ed0513b704fd98780ef749af6bce6dff340a",
+      "size": 4992
+    },
+    {
+      "path": "scripts/lib/Session-Tracker.ps1",
+      "sha": "a876101895392fd984c55cd8816cfcddeaeb1a5c",
+      "size": 18092
+    },
+    {
+      "path": "scripts/lib/Status-Store.ps1",
+      "sha": "99de6102f3673c03ef944d08288adf470b2f38c4",
+      "size": 6561
+    },
+    {
+      "path": "show-island.ps1",
+      "sha": "a3153756d308cb341e184355800415fdc1570839",
+      "size": 1444
+    },
+    {
+      "path": "skills/mcode-island/SKILL.md",
+      "sha": "94b680cb669c5c3f6681b106962a29b37effeacb",
+      "size": 9399
+    },
+    {
+      "path": "start-detect-island.ps1",
+      "sha": "3e01ef880eef0de7d26e6f9304c4f1de88bfa94e",
+      "size": 1955
+    },
+    {
+      "path": "start-island.ps1",
+      "sha": "cffacfb43252e7cfb5e83f5ec9b8d2fb2bba58c1",
+      "size": 4010
+    },
+    {
+      "path": "status-detect-island.ps1",
+      "sha": "bf62ae990cd6f600b561ba51ceba968fcd8f4b7d",
+      "size": 1071
+    },
+    {
+      "path": "status-island.ps1",
+      "sha": "569a96c1fb2610b9811149dc54240f0312fd3704",
+      "size": 1252
+    },
+    {
+      "path": "stop-detect-island.ps1",
+      "sha": "f44b8e4ecc8359ad933ab03b43945b191b0e9975",
+      "size": 1452
+    },
+    {
+      "path": "stop-island.ps1",
+      "sha": "8c7ad33962eb256cc1ca0f37f645cc9fb20c9dfc",
+      "size": 1552
+    },
+    {
+      "path": "wrap-tool.ps1",
+      "sha": "7a4e17d45e09019a75538bf82a2a51e1c6527c76",
+      "size": 2927
+    }
+  ]
+}

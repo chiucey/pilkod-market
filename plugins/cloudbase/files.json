@@ -1,0 +1,780 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "f98b9bd40dd3d1acffcb89594ed0c9c8f2951586",
+      "size": 2120
+    },
+    {
+      "path": "CREDITS.md",
+      "sha": "76e387e621c949ff2dbac999acdf8dcdb1a513e1",
+      "size": 1571
+    },
+    {
+      "path": "LICENSE",
+      "sha": "ec6c46c7a4fccebe3906daeadd546e8e0a79f43a",
+      "size": 1074
+    },
+    {
+      "path": "README.md",
+      "sha": "1e7e071cbf6ac84948de334396daa572a7bfb641",
+      "size": 2096
+    },
+    {
+      "path": "cloudbase.mcp.json",
+      "sha": "0c35113b35a61b5c1a9d7d0e379f97a9c566aca9",
+      "size": 412
+    },
+    {
+      "path": "icon.png",
+      "sha": "91b0baaf513d5a60f4804e89da06debadd7938cc",
+      "size": 20118
+    },
+    {
+      "path": "skills/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "skills/ai-model-nodejs/SKILL.md",
+      "sha": "cba35c722f7ff2850c869a6cfd09b4ae1b62be75",
+      "size": 20129
+    },
+    {
+      "path": "skills/ai-model-nodejs/references/api-reference.md",
+      "sha": "8547006d30d570d04cfab115e12398160840e47f",
+      "size": 4689
+    },
+    {
+      "path": "skills/ai-model-nodejs/references/custom-onboarding.md",
+      "sha": "d7d7d43d09cb8577f471cb1eff960525fbb70d3b",
+      "size": 1470
+    },
+    {
+      "path": "skills/ai-model-web/SKILL.md",
+      "sha": "0ec41d511fc7a7893f40487b2ab844eac7079384",
+      "size": 24545
+    },
+    {
+      "path": "skills/ai-model-wechat/SKILL.md",
+      "sha": "bb6d3535dfc4669eb1977df32ed170337e1a10e6",
+      "size": 26030
+    },
+    {
+      "path": "skills/auth-nodejs-cloudbase/SKILL.md",
+      "sha": "9401df92b9183b0ae775adab69866bbb17b633d5",
+      "size": 16766
+    },
+    {
+      "path": "skills/auth-tool-cloudbase/SKILL.md",
+      "sha": "7d4b9dd212fb4b0f40aac9d61df9b1d9d73d927b",
+      "size": 4750
+    },
+    {
+      "path": "skills/auth-tool-cloudbase/checklist.md",
+      "sha": "2f3be7cdb747d9b66421d52ed88f4c6c04eed282",
+      "size": 1351
+    },
+    {
+      "path": "skills/auth-tool-cloudbase/references/extended-guide.md",
+      "sha": "87a2c8ff8c63cea36fbf40f054d484687ac7f773",
+      "size": 14642
+    },
+    {
+      "path": "skills/auth-web-cloudbase/SKILL.md",
+      "sha": "c066c081c1117a2161ab1639bd06e476b1758c89",
+      "size": 17719
+    },
+    {
+      "path": "skills/auth-web-cloudbase/references/extended-guide.md",
+      "sha": "727cdc4fad88cc9828bb5efab4505c484fc73e3e",
+      "size": 14005
+    },
+    {
+      "path": "skills/auth-wechat-miniprogram/SKILL.md",
+      "sha": "0675bf4dbc13038a2e66ed2ed11a816c03904b0f",
+      "size": 5459
+    },
+    {
+      "path": "skills/auth-wechat-miniprogram/references/extended-guide.md",
+      "sha": "73a98e2273d118edf2d84810568e22f7b7c881ed",
+      "size": 10365
+    },
+    {
+      "path": "skills/cloud-api-operations/SKILL.md",
+      "sha": "d1a476b51cf077d033339038142547b15f21da63",
+      "size": 5808
+    },
+    {
+      "path": "skills/cloud-api-operations/references/calling-methods.md",
+      "sha": "c34804e28b6b3be00e5cbfbcdd9488e3a05dc0f9",
+      "size": 11555
+    },
+    {
+      "path": "skills/cloud-api-operations/references/recipes/README.md",
+      "sha": "3a5fffcd41a1b8fb23541c79cf5764f4c406e31d",
+      "size": 1700
+    },
+    {
+      "path": "skills/cloud-api-operations/references/recipes/pg-storage-alarm.md",
+      "sha": "faf106f751c6430f5760dfd816fc89e5100b8d1a",
+      "size": 6464
+    },
+    {
+      "path": "skills/cloud-api-operations/references/service-versions.md",
+      "sha": "adb0604b793f271b1f6981b44566e7d16acff491",
+      "size": 4867
+    },
+    {
+      "path": "skills/cloud-functions/SKILL.md",
+      "sha": "6d57cd596a9c44adbc97b2da17e25a74d1a941b8",
+      "size": 31537
+    },
+    {
+      "path": "skills/cloud-functions/checklist.md",
+      "sha": "0f5345d8b8a70f0dec5e4299f7acd44dc8865910",
+      "size": 4729
+    },
+    {
+      "path": "skills/cloud-functions/references.md",
+      "sha": "a043efa086d6331d1814969e11a54c440700aa1e",
+      "size": 3510
+    },
+    {
+      "path": "skills/cloud-functions/references/event-functions.md",
+      "sha": "7372e32ad106e31a051ccf0fa118835b6886c056",
+      "size": 3533
+    },
+    {
+      "path": "skills/cloud-functions/references/http-function-credentials.md",
+      "sha": "6f89190b1a4bb19e0f721388a1f7600124376e8c",
+      "size": 5674
+    },
+    {
+      "path": "skills/cloud-functions/references/http-functions-custom-image.md",
+      "sha": "88c4c2d5095a209c6f98994d117232184bac0871",
+      "size": 10784
+    },
+    {
+      "path": "skills/cloud-functions/references/http-functions.md",
+      "sha": "1a098dd36d6e2408fa6f2018ea17724ee217c97d",
+      "size": 16073
+    },
+    {
+      "path": "skills/cloud-functions/references/operations-and-config.md",
+      "sha": "cf8d062bb933d4c163d99b0b37a611231730a2d0",
+      "size": 9919
+    },
+    {
+      "path": "skills/cloud-functions/references/vpc-and-tcp-database.md",
+      "sha": "7c446accd354db43f49a4c08029d42de59ef750b",
+      "size": 3734
+    },
+    {
+      "path": "skills/cloud-storage-web/SKILL.md",
+      "sha": "de184a6f33c832120434142a94d4c6e7e494e257",
+      "size": 17990
+    },
+    {
+      "path": "skills/cloudbase-agent/SKILL.md",
+      "sha": "f5c383cca04048cdaee5faf42b0fcd100ced4e2c",
+      "size": 1916
+    },
+    {
+      "path": "skills/cloudbase-agent/py/adapter-coze.md",
+      "sha": "c2709348b4c833b40180807e105a0353b91ea5e7",
+      "size": 9666
+    },
+    {
+      "path": "skills/cloudbase-agent/py/adapter-development.md",
+      "sha": "1f4be7021e74296508b5e681e2a130e53f2c5b39",
+      "size": 17170
+    },
+    {
+      "path": "skills/cloudbase-agent/py/adapter-langgraph.md",
+      "sha": "ebd9d1c45afd392943b22739866d67d2af2306c5",
+      "size": 14678
+    },
+    {
+      "path": "skills/cloudbase-agent/py/agent-deployment.md",
+      "sha": "971f9778975c2d0aa3c53f3e440fb8afe545fe7e",
+      "size": 14285
+    },
+    {
+      "path": "skills/cloudbase-agent/py/authentication.md",
+      "sha": "a15a86be0e3e19617a2134106858a91e5438ad25",
+      "size": 14607
+    },
+    {
+      "path": "skills/cloudbase-agent/py/references/observability.md",
+      "sha": "73561b3da56f4691bc039b96f1e32433a8b4c5df",
+      "size": 8796
+    },
+    {
+      "path": "skills/cloudbase-agent/py/references/recipes.md",
+      "sha": "ee46c74b0fa4696e0bdd0770b0a35090fb98ffe8",
+      "size": 9126
+    },
+    {
+      "path": "skills/cloudbase-agent/py/references/server.md",
+      "sha": "eae9103e36803dbccc9d258c318c897287afa718",
+      "size": 4858
+    },
+    {
+      "path": "skills/cloudbase-agent/py/references/storage.md",
+      "sha": "53a4e37fb3c3f0e295d9abd16774895491d31b9f",
+      "size": 6843
+    },
+    {
+      "path": "skills/cloudbase-agent/py/references/tools.md",
+      "sha": "93fbb8132743caa31ca958192d6e4ed722b096cd",
+      "size": 4832
+    },
+    {
+      "path": "skills/cloudbase-agent/py/server-quickstart.md",
+      "sha": "f099ed3bc7528aee19ba100cd1f9582a931cc5e1",
+      "size": 11359
+    },
+    {
+      "path": "skills/cloudbase-agent/py/skill.md",
+      "sha": "5bc7624ea6ff9edc5500da804c01e6989ccb7753",
+      "size": 12104
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/adapter-development.md",
+      "sha": "5c9615939916a5c1fadcc50af173ef7ba0b6f95d",
+      "size": 1913
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/adapter-langchain.md",
+      "sha": "a4f236c22e7940f1ec7ad8e5b3ee9bc2cf5e8d11",
+      "size": 2662
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/adapter-langgraph.md",
+      "sha": "64fd14acacbf305a9018b1cf6667204220efbf3c",
+      "size": 5380
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/agent-deployment.md",
+      "sha": "405a04f789ae6ec1d9114b8f1648a793b66d2fb3",
+      "size": 5156
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/agui-protocol.md",
+      "sha": "4829270445fd3174f15dcb9ab313a9702198c552",
+      "size": 2333
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/server-quickstart.md",
+      "sha": "400173708fef331f95225a91911a516848a4baf0",
+      "size": 3640
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/skill.md",
+      "sha": "e23615c794691eda3251256bdde3bf2565be717a",
+      "size": 3786
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/ui-clients.md",
+      "sha": "dd0ef0cb6d3fd04505f41c62f8532fb7a37d5c3c",
+      "size": 1281
+    },
+    {
+      "path": "skills/cloudbase-agent/ts/ui-miniprogram.md",
+      "sha": "7760bfef3f8666462bfe840a35b0c1b0483b5590",
+      "size": 4206
+    },
+    {
+      "path": "skills/cloudbase-cli/SKILL.md",
+      "sha": "041098a63e9d6129318a710476c6fbd049c37167",
+      "size": 6953
+    },
+    {
+      "path": "skills/cloudbase-cli/references/access.md",
+      "sha": "047ba1c7f48ecf712af0bb6ace19d0d2472c61be",
+      "size": 9126
+    },
+    {
+      "path": "skills/cloudbase-cli/references/app.md",
+      "sha": "84aadcf6925cafad4cd7e42394430d2606f21c52",
+      "size": 9279
+    },
+    {
+      "path": "skills/cloudbase-cli/references/cloudrun.md",
+      "sha": "db7471318a4488d2ca29e14c1b547e790b3777c9",
+      "size": 9825
+    },
+    {
+      "path": "skills/cloudbase-cli/references/core.md",
+      "sha": "1799103454e1e040aab9d6dfbbfcbe32f161f88e",
+      "size": 18438
+    },
+    {
+      "path": "skills/cloudbase-cli/references/functions.md",
+      "sha": "85a7e1a966260c54e9161f9b06ed3f18a99e58f4",
+      "size": 13304
+    },
+    {
+      "path": "skills/cloudbase-cli/references/hosting.md",
+      "sha": "d7e7cbe340cceb50d387a5f99397899189659c47",
+      "size": 4953
+    },
+    {
+      "path": "skills/cloudbase-cli/references/mysql.md",
+      "sha": "f3687808cb060bcea6e16a92dbb4fd67fe458db3",
+      "size": 9284
+    },
+    {
+      "path": "skills/cloudbase-cli/references/nosql.md",
+      "sha": "be36150693a574580711fa97ee77fa03116d0add",
+      "size": 9590
+    },
+    {
+      "path": "skills/cloudbase-cli/references/permission.md",
+      "sha": "065fd14a2e8c5ec59989d956cac8a81eda28786e",
+      "size": 11247
+    },
+    {
+      "path": "skills/cloudbase-cli/references/storage.md",
+      "sha": "0fee4bcdc844fbc5c6dcc3505a5bda1cb9a55faa",
+      "size": 9493
+    },
+    {
+      "path": "skills/cloudbase-code-review/SKILL.md",
+      "sha": "2e9589e0226a00b1d9af276b83188714c0e84e04",
+      "size": 4497
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/RULES_INDEX.md",
+      "sha": "0314c3520319c2983b6dd158ab6a4b978e9c3138",
+      "size": 13171
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/lint-rules/README.md",
+      "sha": "4377389e266f25d006b84360fc2d738bf5759c53",
+      "size": 17763
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/cross-cutting/AUTH001.md",
+      "sha": "420eb82ca537953c5f918a4297ab759c8ef786ee",
+      "size": 2481
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/cross-cutting/SEC001.md",
+      "sha": "4fb42c53cfe23faaa0698ece198792771826460d",
+      "size": 2323
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/cross-cutting/SKILL001.md",
+      "sha": "8f1ef1d79d6fc725cee1d73a0c8ccb252bccd472",
+      "size": 1581
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/postgresql/PG-CR001.md",
+      "sha": "9bf0b040bb54fae8fee7542cf9569be0360605fd",
+      "size": 2751
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/postgresql/PG-CR002.md",
+      "sha": "b2be1fbfe1306a6abbd272b5336575d81ad55893",
+      "size": 2903
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/postgresql/PG-CR003.md",
+      "sha": "c15f79e0e81a034c3e2bf27c3fdd73cf0a6553c0",
+      "size": 1915
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/postgresql/PG-CR004.md",
+      "sha": "4acb03471a8182210ef66257e9a78b21e0968d24",
+      "size": 2942
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/postgresql/PG-CR005.md",
+      "sha": "108c27872bace9330f04f290748580f17d1c96e6",
+      "size": 2360
+    },
+    {
+      "path": "skills/cloudbase-code-review/references/rules/storage/STORAGE001.md",
+      "sha": "ae6cd85ef3c984b15cb56f03543ca28fef51a2ac",
+      "size": 1991
+    },
+    {
+      "path": "skills/cloudbase-declarative-deploy/SKILL.md",
+      "sha": "1f67a737b21bfe3ac3eca8a36d3a854b3cc15671",
+      "size": 10567
+    },
+    {
+      "path": "skills/cloudbase-declarative-deploy/references/config-schema.md",
+      "sha": "40833bf1ff88d620ec0d84899ec4549f2baaecf0",
+      "size": 5510
+    },
+    {
+      "path": "skills/cloudbase-declarative-deploy/references/multi-env.md",
+      "sha": "e3ce66a78f3fb2a2a27ff45234e7f7e263e77001",
+      "size": 2065
+    },
+    {
+      "path": "skills/cloudbase-declarative-deploy/references/plan-and-apply.md",
+      "sha": "909a1eaf2e494a58a054d94d20570f730cf140b1",
+      "size": 7554
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/SKILL.md",
+      "sha": "a9438f9f43720adf20beca3c00b2f4c1748adf27",
+      "size": 4801
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/aggregation.md",
+      "sha": "76eeaac70bdfcc783ed46614bc7be0982492a315",
+      "size": 8738
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/complex-queries.md",
+      "sha": "2f394ddc378ce05a68460d7d3c86c993d6071fbc",
+      "size": 5135
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/crud-operations.md",
+      "sha": "2ef490ba51b43553f26039e23390771d3c87aed1",
+      "size": 12815
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/geolocation.md",
+      "sha": "3e113784cfa8cffb284a0d10a6e2f3d7abbeaf07",
+      "size": 11866
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/pagination.md",
+      "sha": "00877adf7d50c4fc496e25f181e58750cd0130af",
+      "size": 8894
+    },
+    {
+      "path": "skills/cloudbase-document-database-in-wechat-miniprogram/security-rules.md",
+      "sha": "718c63d60fad29899efc708947cbdff7eaa53ace",
+      "size": 1833
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/SKILL.md",
+      "sha": "dc90694960d8c050b68e41b43b493c8899045b2d",
+      "size": 9241
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/aggregation.md",
+      "sha": "76eeaac70bdfcc783ed46614bc7be0982492a315",
+      "size": 8738
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/complex-queries.md",
+      "sha": "2f394ddc378ce05a68460d7d3c86c993d6071fbc",
+      "size": 5135
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/crud-operations.md",
+      "sha": "5f15d65a8d38558eb5232ba62893b61883c69b4c",
+      "size": 17818
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/geolocation.md",
+      "sha": "3e113784cfa8cffb284a0d10a6e2f3d7abbeaf07",
+      "size": 11866
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/pagination.md",
+      "sha": "00877adf7d50c4fc496e25f181e58750cd0130af",
+      "size": 8894
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/realtime.md",
+      "sha": "2a3abc4db2645c50c0b631414492e085bc48663d",
+      "size": 3858
+    },
+    {
+      "path": "skills/cloudbase-document-database-web-sdk/security-rules.md",
+      "sha": "ddca2815f45fd063d7c5ba07cd9c1c0ff47e3959",
+      "size": 38513
+    },
+    {
+      "path": "skills/cloudbase-platform/SKILL.md",
+      "sha": "ff2044d91de419d64cabb73835e38a27baaefd56",
+      "size": 28103
+    },
+    {
+      "path": "skills/cloudbase-platform/references/protocols/change-safety-protocol.md",
+      "sha": "8deed4542407dcb7a4f236576b91f359dc70ecda",
+      "size": 2214
+    },
+    {
+      "path": "skills/cloudbase-platform/references/protocols/deployment-gate.md",
+      "sha": "04c34f203889067796b3f3fe0aff3051913ab5cc",
+      "size": 7098
+    },
+    {
+      "path": "skills/cloudbase-platform/references/protocols/deployment-share.md",
+      "sha": "fa9f668024f8e4460f07242cdde965565d58cb54",
+      "size": 2274
+    },
+    {
+      "path": "skills/cloudbase-platform/references/protocols/sensitive-runtime-data-protection.md",
+      "sha": "35cf9a3d11e9156c4ce7227a7950bd28d4a87f05",
+      "size": 4355
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/SKILL.md",
+      "sha": "1fb5c13ee79a6e2bcbd3335972490fda09a70a5f",
+      "size": 7636
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/mini-program-pay.md",
+      "sha": "020689631cd624cb5710af952e163628b2db3559",
+      "size": 3300
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/native-qr-pay.md",
+      "sha": "78b88c5a835cea4120a020b53b3d0e7a6c982190",
+      "size": 2349
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/official-account-jsapi-pay.md",
+      "sha": "9104ebcb2f9dd1e6ce5c0c3ca403968cb655c516",
+      "size": 2572
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/official-account-oauth.md",
+      "sha": "c002e5a9e73f364fc9fd7cc52dd405235dd37afb",
+      "size": 2436
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/overview.md",
+      "sha": "74d82a615094e2ca47177dcbdb449a5c19c0ba6c",
+      "size": 2636
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/troubleshooting.md",
+      "sha": "2e22e7115d530e868f1d66d1322480ab295c78c5",
+      "size": 3670
+    },
+    {
+      "path": "skills/cloudbase-wechat-integration/references/virtual-payment.md",
+      "sha": "ab2c883437b1d5c0a154fc31a2c505a0bbedcb85",
+      "size": 8237
+    },
+    {
+      "path": "skills/cloudbase/SKILL.md",
+      "sha": "2876e8dd3f344057346bf467f5ee5295c17ce3a0",
+      "size": 13274
+    },
+    {
+      "path": "skills/cloudbase/references/activation-map.yaml",
+      "sha": "66e726e70451a556ba290eb44cb7d9f72a4bca6b",
+      "size": 13011
+    },
+    {
+      "path": "skills/cloudbase/references/console-links.md",
+      "sha": "c3e4c0f80f9dd246e24c99af53b673f3266169f0",
+      "size": 1355
+    },
+    {
+      "path": "skills/cloudbase/references/deployment-workflow.md",
+      "sha": "5bd063c04739c44b2195fca50b3b65d1c3aa68e0",
+      "size": 5069
+    },
+    {
+      "path": "skills/cloudbase/references/mcp-setup.md",
+      "sha": "0ef331b1b7a019263bde90d0c58147b09df80558",
+      "size": 3816
+    },
+    {
+      "path": "skills/cloudbase/references/scenarios.md",
+      "sha": "26b6d0dd2ecac671c89e55de781c5daabe45fa4b",
+      "size": 1437
+    },
+    {
+      "path": "skills/cloudbase/references/tooling-fallback.md",
+      "sha": "9d9f820c28b3ca0250ddfab27bd2f913d2cf4017",
+      "size": 1919
+    },
+    {
+      "path": "skills/cloudrun-development/SKILL.md",
+      "sha": "eb0c8533259a9635b96ecbd0fd1b13733bae99e8",
+      "size": 32535
+    },
+    {
+      "path": "skills/cloudrun-development/references/image-deploy-troubleshooting.md",
+      "sha": "cbd884c50465891b7fc9dd1274a05aba72551d3d",
+      "size": 9561
+    },
+    {
+      "path": "skills/cloudrun-development/references/vpc-and-database.md",
+      "sha": "02d2c551dc54e99167785f69ce4abfcc020f508d",
+      "size": 9226
+    },
+    {
+      "path": "skills/data-model-creation/SKILL.md",
+      "sha": "5d6cba7a132edac71d3a7e2f07f8533f5f219b07",
+      "size": 7014
+    },
+    {
+      "path": "skills/http-api-cloudbase/SKILL.md",
+      "sha": "25653b4d9a8bad8f93816b13f70441d363480e1b",
+      "size": 8464
+    },
+    {
+      "path": "skills/http-api-cloudbase/checklist.md",
+      "sha": "1051fb96b1ede772eeb98d2a13d2e910af0ea083",
+      "size": 1974
+    },
+    {
+      "path": "skills/http-api-cloudbase/references/extended-guide.md",
+      "sha": "5c752325d0eb6a258126c252e94c3b1031bb47b4",
+      "size": 15844
+    },
+    {
+      "path": "skills/minimal-web-baas-demo/SKILL.md",
+      "sha": "d9d3c278311d055b7f5108d2ef18c7fc121fc65d",
+      "size": 9102
+    },
+    {
+      "path": "skills/miniprogram-development/SKILL.md",
+      "sha": "0a0d23dfd33d9d3f043c86d08d1f384637ccd36a",
+      "size": 13521
+    },
+    {
+      "path": "skills/miniprogram-development/references/cloudbase-integration.md",
+      "sha": "0a119c0e22c37c00564238cf4bedd322c552660a",
+      "size": 5830
+    },
+    {
+      "path": "skills/miniprogram-development/references/devtools-debug-preview.md",
+      "sha": "a4c75fc1aba31daebc9392d64f6bc2e71cefb127",
+      "size": 7204
+    },
+    {
+      "path": "skills/miniprogram-development/references/message-push-customer-service.md",
+      "sha": "f173182f56e882c7f103c81d3cd169035c9386a6",
+      "size": 9323
+    },
+    {
+      "path": "skills/miniprogram-development/references/pitfalls.md",
+      "sha": "44909c221ca04b700528757150ef83828914d044",
+      "size": 3056
+    },
+    {
+      "path": "skills/miniprogram-development/references/seo-search-optimization.md",
+      "sha": "ced70e459576cef0d1d108aa90ef44172bddf320",
+      "size": 3759
+    },
+    {
+      "path": "skills/miniprogram-development/references/wxide-vs-cloudbase-mcp.md",
+      "sha": "259ee605a5d894d911d22bde16dfb450ed87ad44",
+      "size": 3073
+    },
+    {
+      "path": "skills/ops-inspector/SKILL.md",
+      "sha": "e2b91efdc838d8c55bd1ad728a3d8e26ad48dce8",
+      "size": 14225
+    },
+    {
+      "path": "skills/ops-inspector/references/alarm-interpretation.md",
+      "sha": "c46bb4081f0c576646a6c9192c5aa2b46890de62",
+      "size": 5097
+    },
+    {
+      "path": "skills/ops-inspector/references/fault-playbooks.md",
+      "sha": "c68dc657b4b796dfad24b49bf76c7d7fe4d33013",
+      "size": 7343
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/SKILL.md",
+      "sha": "98c6c3b8750b47e470909c2b52fd689026ab174d",
+      "size": 33331
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/app-workflow.md",
+      "sha": "1c2fcd0c47487c688de366a37a6c513696ca8c6e",
+      "size": 7950
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/auth-and-rls.md",
+      "sha": "433eb52a77aae8d1d5f1df2d290b54d2398f564e",
+      "size": 7646
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/http-api.md",
+      "sha": "616560196052be89c028a47b354f453b026911d6",
+      "size": 1660
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/index.md",
+      "sha": "9ad174285e912e0250f4df17f7c6d4920c16b04a",
+      "size": 1355
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/pg-mode-overview.md",
+      "sha": "3abfd5ed86743f091482badb97c50766719ec974",
+      "size": 1818
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/rls-patterns.md",
+      "sha": "1ff341ae3b9ae1634d41e02c668091eba4f4fa3a",
+      "size": 6018
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/storage-pg.md",
+      "sha": "e214be8b2cab3c2aac6cb81d56d9f2b92acb6d29",
+      "size": 15048
+    },
+    {
+      "path": "skills/postgresql-development-cloudbase/references/troubleshooting.md",
+      "sha": "346b4cd007c4599db93cdac87577b5f9b60b6b30",
+      "size": 6154
+    },
+    {
+      "path": "skills/relational-database-mcp-cloudbase/SKILL.md",
+      "sha": "e41690854d13a9aff0509dbb672f712df35f47ef",
+      "size": 9990
+    },
+    {
+      "path": "skills/relational-database-web-cloudbase/SKILL.md",
+      "sha": "b518201c8f1dd56ca725d2206796a5825279755f",
+      "size": 4696
+    },
+    {
+      "path": "skills/spec-workflow/SKILL.md",
+      "sha": "5bef2c5493bb3cfe48b1638f3f0a8c9a244c7f30",
+      "size": 5139
+    },
+    {
+      "path": "skills/ui-design/SKILL.md",
+      "sha": "2245da1ab1123c208f749a0c0c584ebdeb77a0a9",
+      "size": 15996
+    },
+    {
+      "path": "skills/ui-design/checklist.md",
+      "sha": "a5a39371307e4872b4b3ce0408e05a38bee2876e",
+      "size": 838
+    },
+    {
+      "path": "skills/web-development/SKILL.md",
+      "sha": "aabe4fb6831166556c60c9bf4933db1fbe104072",
+      "size": 13296
+    },
+    {
+      "path": "skills/web-development/browser-testing.md",
+      "sha": "5a6a964f456af254dbdffedca13e0584efd0fa7a",
+      "size": 5232
+    },
+    {
+      "path": "skills/web-development/frameworks.md",
+      "sha": "67b60c5e668ded2780d02081f212f9fb5e95ab1d",
+      "size": 6201
+    },
+    {
+      "path": "upstream-source.json",
+      "sha": "c2c7ef7281311cfd7fb232ebc0fc1fb0341dba1e",
+      "size": 19539
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "version": "0.1.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "75f5979b9034c07904d876793418cf4fbeb42ebe",
+      "size": 1119
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha": "66f447a799d58e485c1a397c4f0fc66819933f0e",
+      "size": 1032
+    },
+    {
+      "path": "LICENSE",
+      "sha": "4243cb4a9aaa50f954498e54c850773e9ba13eea",
+      "size": 1063
+    },
+    {
+      "path": "references/alternative-3d-engines.md",
+      "sha": "14c4192d2bc2bf65443499246cd003f4e8461f64",
+      "size": 2043
+    },
+    {
+      "path": "references/engine-selection.md",
+      "sha": "d5d7bc10850c4aa1ad8c64bf415ed7919d281a5e",
+      "size": 2503
+    },
+    {
+      "path": "references/frontend-prompts.md",
+      "sha": "86d46e2de9fcbb5d85cbc7a59d09429072002449",
+      "size": 3712
+    },
+    {
+      "path": "references/gltf-loading-starter.md",
+      "sha": "2eb1324ca55d17fa08ac7a9cb19a41bfcd22f513",
+      "size": 980
+    },
+    {
+      "path": "references/phaser-architecture.md",
+      "sha": "53fb903dc4b8fa1f74c3320c5103774879561594",
+      "size": 1200
+    },
+    {
+      "path": "references/playtest-checklist.md",
+      "sha": "3a2e81d4aad7897759e1c492a93d41ddc959b39c",
+      "size": 1599
+    },
+    {
+      "path": "references/rapier-integration-starter.md",
+      "sha": "f78a5be3d7d8c1cd1d89b33dff45f9375a81d4fe",
+      "size": 1055
+    },
+    {
+      "path": "references/react-three-fiber-stack.md",
+      "sha": "947a3e0ddc51df70250d4ac95ef43f136997e97e",
+      "size": 1764
+    },
+    {
+      "path": "references/react-three-fiber-starter.md",
+      "sha": "c14a92e8b326eda857053445dd2df9b370f8c106",
+      "size": 1424
+    },
+    {
+      "path": "references/sprite-pipeline.md",
+      "sha": "d3804a623b7c98f43051f0d1015f33364ac8c9be",
+      "size": 1706
+    },
+    {
+      "path": "references/three-hud-layout-patterns.md",
+      "sha": "af9a1345da0f97e880fdfc6e7820d3177b77c779",
+      "size": 2192
+    },
+    {
+      "path": "references/three-webgl-architecture.md",
+      "sha": "f6558b77d7bb3c9842ca330b6d47a67f9ee7bd0c",
+      "size": 1447
+    },
+    {
+      "path": "references/threejs-stack.md",
+      "sha": "aee34d4d9e91676727e43f9737e823c75071bcc0",
+      "size": 1630
+    },
+    {
+      "path": "references/threejs-vanilla-starter.md",
+      "sha": "9f7830f6c905478495642f703eca60ea7a57ec97",
+      "size": 1768
+    },
+    {
+      "path": "references/web-3d-asset-pipeline.md",
+      "sha": "ce5bc3da7613285e207a50065aed8055bca2dcb1",
+      "size": 1780
+    },
+    {
+      "path": "references/webgl-debugging-and-performance.md",
+      "sha": "5d9853f79067d0cb32ddb46ebfe4136819b00050",
+      "size": 1299
+    },
+    {
+      "path": "scripts/build_sprite_edit_canvas.py",
+      "sha": "fc1b2a2ef3bbb529d818fd58d722e3a180847c43",
+      "size": 2833
+    },
+    {
+      "path": "scripts/normalize_sprite_strip.py",
+      "sha": "9bb3e0485550b3a27942fe2eb634495529982254",
+      "size": 5129
+    },
+    {
+      "path": "scripts/render_sprite_preview_sheet.py",
+      "sha": "8937ed83873e8766982bd52f2ca261db5527f47d",
+      "size": 3217
+    },
+    {
+      "path": "skills/game-playtest/SKILL.md",
+      "sha": "d74823c9231966b8bc49924932f4b1c7d3a19e0a",
+      "size": 2912
+    },
+    {
+      "path": "skills/game-studio/SKILL.md",
+      "sha": "ba409990d8ff8fa0e04350c18a2c1581c39bd30c",
+      "size": 5396
+    },
+    {
+      "path": "skills/game-ui-frontend/SKILL.md",
+      "sha": "f2681fb955143f96cb04bfa4f1cb09d6839b162a",
+      "size": 5060
+    },
+    {
+      "path": "skills/phaser-2d-game/SKILL.md",
+      "sha": "8bd4ed6afcb502a0c78cd8b32cbb3163b7187fff",
+      "size": 3182
+    },
+    {
+      "path": "skills/react-three-fiber-game/SKILL.md",
+      "sha": "90fb0657bce2c96ab8aa3ae52534aaf51bbe67b8",
+      "size": 4023
+    },
+    {
+      "path": "skills/sprite-pipeline/SKILL.md",
+      "sha": "9aa1f32c524267e375a5d73dee718c71bef71e77",
+      "size": 4314
+    },
+    {
+      "path": "skills/three-webgl-game/SKILL.md",
+      "sha": "647cbcaddd28d3c3092d28e1b9de6ce56aa39999",
+      "size": 5833
+    },
+    {
+      "path": "skills/web-3d-asset-pipeline/SKILL.md",
+      "sha": "d0fde630c0cbae52b52aa22f43c8df9eb7989212",
+      "size": 3453
+    },
+    {
+      "path": "skills/web-game-foundations/SKILL.md",
+      "sha": "1fe88e9c7c63c4f0ef9fda4ebd24fa61ae9a44a1",
+      "size": 4592
+    }
+  ]
+}

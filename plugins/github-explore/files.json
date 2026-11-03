@@ -1,0 +1,190 @@
+{
+  "version": "2.1.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "1b7fa2669267e638ff7e8f1d93e0a8cf2564e08a",
+      "size": 1301
+    },
+    {
+      "path": "LICENSE",
+      "sha": "3837a91df292822b7c935703d69f03b2fbf159b1",
+      "size": 1072
+    },
+    {
+      "path": "README.md",
+      "sha": "422a1dd64770bc83da0f4067775d3ffe5792d640",
+      "size": 5947
+    },
+    {
+      "path": "icon.png",
+      "sha": "3e79f5dd7f7c4661a10e0fc3b8c7f96d2806174e",
+      "size": 6993
+    },
+    {
+      "path": "skills/github-explore/.gitignore",
+      "sha": "d3964b03c6cc307cbf083bcd6c5fddd55b6a74a1",
+      "size": 241
+    },
+    {
+      "path": "skills/github-explore/README.md",
+      "sha": "4f0a52becd3bf1ee7c52216c663fff61a38ce174",
+      "size": 14633
+    },
+    {
+      "path": "skills/github-explore/README_zh.md",
+      "sha": "4b5e06fdf00a3709e14aaeb5629e77a7c8f24960",
+      "size": 14061
+    },
+    {
+      "path": "skills/github-explore/SKILL.md",
+      "sha": "e0f9e1297c3665b6398e1168a7330b51c9a19664",
+      "size": 18776
+    },
+    {
+      "path": "skills/github-explore/references/SECURITY-NOTES.md",
+      "sha": "ae4a1547455fe7a38a132c762b3951931e4ef06c",
+      "size": 5584
+    },
+    {
+      "path": "skills/github-explore/references/commands-auth-config.md",
+      "sha": "c7ff2fc3981202a7617c56ecceb3b58e8e1c86d2",
+      "size": 4183
+    },
+    {
+      "path": "skills/github-explore/references/commands-cicd.md",
+      "sha": "341089017ced86330b0a718c02fccfb141408310",
+      "size": 1474
+    },
+    {
+      "path": "skills/github-explore/references/commands-misc.md",
+      "sha": "8ebf2cb00909bd9e4687588823282bd06158b2c6",
+      "size": 2065
+    },
+    {
+      "path": "skills/github-explore/references/commands-repo-issue-pr.md",
+      "sha": "89205fe0dde432fd55dd4d0a4f6689e6ff2c51a5",
+      "size": 3388
+    },
+    {
+      "path": "skills/github-explore/references/commands-search-format.md",
+      "sha": "516d3c8894714fdd74ec49a5149b591c084492a3",
+      "size": 2471
+    },
+    {
+      "path": "skills/github-explore/scripts/__init__.py",
+      "sha": "7a9f8af05793e8e13d27dbed3a3ca49cb8dca0d5",
+      "size": 531
+    },
+    {
+      "path": "skills/github-explore/scripts/_lib.py",
+      "sha": "de10496b7b00665545a0b52af0603142cab4ddd9",
+      "size": 9774
+    },
+    {
+      "path": "skills/github-explore/scripts/code_search.py",
+      "sha": "453773b5ad43a73040384594d4329c4f5fd62a5a",
+      "size": 4647
+    },
+    {
+      "path": "skills/github-explore/scripts/discover.py",
+      "sha": "0b3f8d13b5df51aab976ddf15bad49d1d045642d",
+      "size": 7533
+    },
+    {
+      "path": "skills/github-explore/scripts/explore.py",
+      "sha": "7762ee667d3f98fabd84d195fdb9fb732bc691ed",
+      "size": 41793
+    },
+    {
+      "path": "skills/github-explore/scripts/find_repos.py",
+      "sha": "afaab7f038b65019d1b5ad5efa529de293db4798",
+      "size": 12087
+    },
+    {
+      "path": "skills/github-explore/scripts/find_similar.py",
+      "sha": "45392e10b6de397adf3e3aa47eb2b8b42051515e",
+      "size": 8111
+    },
+    {
+      "path": "skills/github-explore/scripts/org_landscape.py",
+      "sha": "efc208a68ee4f92a6f7f3473155530bf7c3c49a6",
+      "size": 8948
+    },
+    {
+      "path": "skills/github-explore/scripts/redact_stderr.py",
+      "sha": "d3d9d7de0020e6748a3f75050b410a80e6f3d864",
+      "size": 1728
+    },
+    {
+      "path": "skills/github-explore/scripts/repo_summary.py",
+      "sha": "9c7e0b53631a9940000f91279e432e1289ae2bb9",
+      "size": 9987
+    },
+    {
+      "path": "skills/github-explore/scripts/run_tests.py",
+      "sha": "0ef246f4181f08b762aae00e64624a045eb2239f",
+      "size": 670
+    },
+    {
+      "path": "skills/github-explore/scripts/schemas/explore.schema.json",
+      "sha": "75c9b56d2e23480cda2c8557f4a9cb5210a126e4",
+      "size": 2726
+    },
+    {
+      "path": "skills/github-explore/scripts/schemas/repo.schema.json",
+      "sha": "14e0d0b5e4eacff1b7ca90da9773027a324f4878",
+      "size": 2076
+    },
+    {
+      "path": "skills/github-explore/scripts/schemas/repo_summary.schema.json",
+      "sha": "80be7d7cd1e129f5910285f293e8f1ede14eaf66",
+      "size": 1854
+    },
+    {
+      "path": "skills/github-explore/scripts/search_issues.py",
+      "sha": "22bfba32cb46ef033900327da3e0227a7eec4884",
+      "size": 5590
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/_fixtures.py",
+      "sha": "9ba01fc0b7e08c917cd79b8d9b018ce3e4abce0a",
+      "size": 805
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/test_argv_safety.py",
+      "sha": "c529ea3aa91945cf70b095f79fc2a41e5e4c7973",
+      "size": 3298
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/test_output_schema.py",
+      "sha": "2faefe01af1ba9de89d22958ac64a2bbdb284ec9",
+      "size": 4899
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/test_rate_limit_pagination.py",
+      "sha": "f9500a142bf1ae58e370ce5e89d80189d75a725a",
+      "size": 3433
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/test_redact_stderr.py",
+      "sha": "3cea72f83ee099b213cdf5333126d6bd1bacd905",
+      "size": 4328
+    },
+    {
+      "path": "skills/github-explore/scripts/tests/test_secret_redaction.py",
+      "sha": "bfd719b3f4587de967198be7c494a487d67f9fe3",
+      "size": 2177
+    },
+    {
+      "path": "skills/github-explore/scripts/trending.py",
+      "sha": "8fe3e154ea044bcb57e395d64a5990b7340b55bb",
+      "size": 4522
+    }
+  ]
+}

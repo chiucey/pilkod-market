@@ -1,0 +1,105 @@
+{
+  "version": "1.2.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "8bad1f56adb1d2b69cc9f4793e186eedaee7f942",
+      "size": 1004
+    },
+    {
+      "path": ".gitignore",
+      "sha": "a0090b46d76d38eb81ad66d6fd2af66977a287ce",
+      "size": 18
+    },
+    {
+      "path": "AGENTS.md",
+      "sha": "95042d9f5f12cc85463080f6a015bba2c60e3c74",
+      "size": 3395
+    },
+    {
+      "path": "LICENSE",
+      "sha": "715d483338cea4365f0d91a27799cf61226d6bcf",
+      "size": 1071
+    },
+    {
+      "path": "NOTICE",
+      "sha": "3f063ecccfb4de80f59c48492b43d185d01ec717",
+      "size": 2875
+    },
+    {
+      "path": "README.md",
+      "sha": "b10f62b69f81bd67a5a21628cbb47f5817f7661f",
+      "size": 8455
+    },
+    {
+      "path": "hooks/hooks.json",
+      "sha": "b0e83674bbdfea33928b9991068cb0eabd67264b",
+      "size": 987
+    },
+    {
+      "path": "hooks/ponytail-activate.js",
+      "sha": "e102b2d792588b3193423181ee63ad1c85444988",
+      "size": 3063
+    },
+    {
+      "path": "hooks/ponytail-config.js",
+      "sha": "2e581c9bf9baa822d8581c933dc54f188a441909",
+      "size": 4685
+    },
+    {
+      "path": "hooks/ponytail-instructions.js",
+      "sha": "2f18d8b94cda1219949204f1258d84f152d6ca12",
+      "size": 6169
+    },
+    {
+      "path": "hooks/ponytail-mode-tracker.js",
+      "sha": "bd960ca60a60a268e8bc7108024165b282c9fc88",
+      "size": 10452
+    },
+    {
+      "path": "hooks/ponytail-runtime.js",
+      "sha": "eb5c3772cd9e6a1c456205f9986a2b0ff04cf2ea",
+      "size": 3149
+    },
+    {
+      "path": "hooks/ponytail-subagent.js",
+      "sha": "1d30c460a5816749577b847009c66132928c15be",
+      "size": 1050
+    },
+    {
+      "path": "icon.png",
+      "sha": "19698e1b60069fd5155834cfd2a7f1abcbdfe25b",
+      "size": 47063
+    },
+    {
+      "path": "skills/ponytail-audit/SKILL.md",
+      "sha": "697418f42f0ce4b585b6b90d116afdd14ad62016",
+      "size": 5604
+    },
+    {
+      "path": "skills/ponytail-debt/SKILL.md",
+      "sha": "cd768a9865edcbf0133b09b77b77b6d675aede44",
+      "size": 2281
+    },
+    {
+      "path": "skills/ponytail-gain/SKILL.md",
+      "sha": "46c7d01914788334a711c4b719978a789aff56f6",
+      "size": 2599
+    },
+    {
+      "path": "skills/ponytail-help/SKILL.md",
+      "sha": "fcb6624bda859bedff1af421a9df89c40f5e51d8",
+      "size": 3867
+    },
+    {
+      "path": "skills/ponytail-review/SKILL.md",
+      "sha": "4a44a7eb75c1d804eaefb8ddbf86a01a95c2fa2b",
+      "size": 5535
+    },
+    {
+      "path": "skills/ponytail/SKILL.md",
+      "sha": "a5ebaf97ebd9b24c6029add4459cc17995d4289c",
+      "size": 4990
+    }
+  ]
+}

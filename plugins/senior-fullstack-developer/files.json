@@ -1,0 +1,515 @@
+{
+  "version": "1.0.10",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "52a1ddae9e96f26d3aa1b271284d6c3c83fcea55",
+      "size": 790
+    },
+    {
+      "path": "CREDITS.md",
+      "sha": "8821a06f661c5e55bb504c05fa8defac1d7a6404",
+      "size": 1013
+    },
+    {
+      "path": "LICENSE",
+      "sha": "132dd20ee3294d09a1c613a6bd4c8094c496fbf9",
+      "size": 1064
+    },
+    {
+      "path": "licenses/JetBrainsMono-OFL.LICENSE",
+      "sha": "5ceee0025da23d2cd5fd14b28569708a8db4db2b",
+      "size": 4399
+    },
+    {
+      "path": "skills/engineering-workflow/SKILL.md",
+      "sha": "3491d249652c74c7d6abc01061d21c8e9f2595a2",
+      "size": 7630
+    },
+    {
+      "path": "skills/frontend-dev/SKILL.md",
+      "sha": "f7d57a1b2e21415a22cf3a867d162c9cb9898a58",
+      "size": 7175
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/ArsenalSC-OFL.txt",
+      "sha": "1dad6ca6de2b041ef35c0f5009239ede4567e1f4",
+      "size": 4373
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/ArsenalSC-Regular.ttf",
+      "sha": "fe5409b22e6b22a0ce80c65bdbb333d7d96e7a6a",
+      "size": 165848
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BigShoulders-Bold.ttf",
+      "sha": "fc5f8fddee4c9e5810b1ab0e518a69acee3d2c50",
+      "size": 94528
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BigShoulders-OFL.txt",
+      "sha": "b220280e780d0b52a1efb259f44f332cfa9dcab4",
+      "size": 4397
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BigShoulders-Regular.ttf",
+      "sha": "de8308ce32f3d6759e491dcdce37f65f538d6ac7",
+      "size": 94396
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Boldonse-OFL.txt",
+      "sha": "1890cb1c226f32e581a9ca30cb06e01f2d251168",
+      "size": 4390
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Boldonse-Regular.ttf",
+      "sha": "43fa30affce39b3649e6e94122fbe17cc5536dd2",
+      "size": 77168
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BricolageGrotesque-Bold.ttf",
+      "sha": "f3b1deda1c594859a1f5197644142f73e2a85868",
+      "size": 90952
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BricolageGrotesque-OFL.txt",
+      "sha": "fc2b2167c3ccc6fa6f41ab38cb5bde9b3b808769",
+      "size": 4403
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BricolageGrotesque-Regular.ttf",
+      "sha": "0674ae3e4fc8c3f7baa53dbb582dd420ea73f224",
+      "size": 90920
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-Bold.ttf",
+      "sha": "58730fb4c7b999b46537d613ab629b8e465251ad",
+      "size": 107352
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-Italic.ttf",
+      "sha": "786a1bd66d38006d94a7cb96db1f93a2f439b08e",
+      "size": 108828
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-OFL.txt",
+      "sha": "f976fdc910257e3de8f4b24475963edb81b6ba46",
+      "size": 4394
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-Regular.ttf",
+      "sha": "f5666b9beb8fb808ee56e78726a5b754e67d1ae7",
+      "size": 106696
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/DMMono-OFL.txt",
+      "sha": "5b17f0c628c0a76ceb057e1b44d0112ab9a63ad2",
+      "size": 4392
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/DMMono-Regular.ttf",
+      "sha": "7efe813da72c7b1c0294cae782e88f262ecb75be",
+      "size": 48852
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/EricaOne-OFL.txt",
+      "sha": "490d012017f42bee136a3d3cb0d79ef9c3ba4561",
+      "size": 4410
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/EricaOne-Regular.ttf",
+      "sha": "8bd91d11773f5b035a9e6b6d1bab2e59b08051e3",
+      "size": 24872
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/GeistMono-Bold.ttf",
+      "sha": "736ff7c3b1483081322cacc7c64e0995b52d8af6",
+      "size": 78304
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/GeistMono-OFL.txt",
+      "sha": "679a685a2343079632b0dd836fecb7cefbea6f0d",
+      "size": 4388
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/GeistMono-Regular.ttf",
+      "sha": "1a30262ab749ea7a56aedd91410d8be3787db548",
+      "size": 78232
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Gloock-OFL.txt",
+      "sha": "363acd33d9e37e60b9941229448244b6a2d22461",
+      "size": 4381
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Gloock-Regular.ttf",
+      "sha": "3e58c4e455cc143e9b02d05fdcb054fac62ed7ab",
+      "size": 95156
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexMono-Bold.ttf",
+      "sha": "247979caeb26c286a33cfd33234188d370c1c0ff",
+      "size": 136008
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexMono-OFL.txt",
+      "sha": "e423b74780b16934a073769bd147d46479ceb8b2",
+      "size": 4363
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexMono-Regular.ttf",
+      "sha": "601ae945ebe1a717ac3ab7ed393288975da83b32",
+      "size": 133796
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-Bold.ttf",
+      "sha": "78f6e500de7faaec05bbbc60ccfc81083440b1c8",
+      "size": 161000
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+      "sha": "369b89d261b2d6d186e46b49a5b1959d9e95b5d4",
+      "size": 169840
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-Italic.ttf",
+      "sha": "a4d859a77f0e52e36bf699cf55469c31a4664c18",
+      "size": 170004
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-Regular.ttf",
+      "sha": "35f454ceac6b101ea3f9bed9f57a68a61519b401",
+      "size": 160380
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-Bold.ttf",
+      "sha": "f602dcef23bb96d8d2f5c74c595ecf400c5ec722",
+      "size": 68084
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-BoldItalic.ttf",
+      "sha": "122b27305b6de88f6946bb171c055bd428124fc3",
+      "size": 70004
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-Italic.ttf",
+      "sha": "4b98fb8dd753453f6e355a6dd1d4f483961c4017",
+      "size": 69900
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-OFL.txt",
+      "sha": "4bb99142f612dfaa0053377934b47e466800b20e",
+      "size": 4403
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-Regular.ttf",
+      "sha": "14c6113cdd3abcfa360f8d27bb42034aa91accc0",
+      "size": 68028
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSerif-Italic.ttf",
+      "sha": "8fa958d9baf94bdf86c45d5340dc2ba171e2eb2c",
+      "size": 70868
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSerif-Regular.ttf",
+      "sha": "976303184a522174d92bc8d1a82d7960850a94b0",
+      "size": 69312
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Italiana-OFL.txt",
+      "sha": "ba8af215bb486cc7f3f9acfa5df895d5ba2d89ae",
+      "size": 4394
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Italiana-Regular.ttf",
+      "sha": "a9b828c0f308eaf07a172cbf2aae823e0f762210",
+      "size": 27184
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/JetBrainsMono-Bold.ttf",
+      "sha": "1926c804b95bcd44835689b0ddf1ac10d0b7a805",
+      "size": 114828
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/JetBrainsMono-OFL.txt",
+      "sha": "5ceee0025da23d2cd5fd14b28569708a8db4db2b",
+      "size": 4399
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/JetBrainsMono-Regular.ttf",
+      "sha": "436c982ff3209357305892181e61565d1e01d439",
+      "size": 114904
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Jura-Light.ttf",
+      "sha": "dffbb3397409ebc91d53f4c4b29b7988c26a49f6",
+      "size": 154308
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Jura-Medium.ttf",
+      "sha": "4bf91a33951b960e4d579eb2e57cce624e4aec0a",
+      "size": 154488
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Jura-OFL.txt",
+      "sha": "64ad4c67d29fb44d037a400881c3c7a3d227cacf",
+      "size": 4380
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/LibreBaskerville-OFL.txt",
+      "sha": "8c531fa56848a48577f9aa3b3e8051f3682e87f4",
+      "size": 4449
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/LibreBaskerville-Regular.ttf",
+      "sha": "c1abc2645f623b8ab8d71724df32746b1aa627aa",
+      "size": 147584
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-Bold.ttf",
+      "sha": "edae21eb689cda1c1a7b7b1a69277b3c01112a4c",
+      "size": 133828
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-BoldItalic.ttf",
+      "sha": "12dea8c6f5f3af6c7e066b9c6ae5c8b33741e45e",
+      "size": 140332
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-Italic.ttf",
+      "sha": "e24b69b26b0e14a48fdbb65fd29db51ce1e95aad",
+      "size": 139328
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-OFL.txt",
+      "sha": "4cf1b950d308edaee72401989e45410ea99e76a4",
+      "size": 4423
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-Regular.ttf",
+      "sha": "dc751db00dc171fc19737d9da800d7a583bb2c6d",
+      "size": 133888
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NationalPark-Bold.ttf",
+      "sha": "f4d7c021b6e0edd88bb152d8cee73154efa086c1",
+      "size": 79208
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NationalPark-OFL.txt",
+      "sha": "f4ec3fba915df6e072b72fed691f1032d440544d",
+      "size": 4399
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NationalPark-Regular.ttf",
+      "sha": "e4cbfbf5eb9569b2f0bcfe2f55ea1625123fc14c",
+      "size": 76424
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NothingYouCouldDo-OFL.txt",
+      "sha": "c81eccdee9a75cebdd400cc39ff5a0bb7bd1eaa3",
+      "size": 4363
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NothingYouCouldDo-Regular.ttf",
+      "sha": "b086bced91e7b587e8cbe5d7e13e3363e18bc812",
+      "size": 32020
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Outfit-Bold.ttf",
+      "sha": "f9f2f72afdee8011d61048072576ceee2f95ea60",
+      "size": 55392
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Outfit-OFL.txt",
+      "sha": "fd0cb995c0cadfa28394e7f9b88b7e43c783b453",
+      "size": 4389
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Outfit-Regular.ttf",
+      "sha": "3939ab246e0736f7283a571a458db274088ed7b6",
+      "size": 54912
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PixelifySans-Medium.ttf",
+      "sha": "95cd372534b533c9cb7ce35b782f0623ecb4de00",
+      "size": 51072
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PixelifySans-OFL.txt",
+      "sha": "b02d1b6767c0cd44a3a3afeddef03778f10e6ad2",
+      "size": 4395
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PoiretOne-OFL.txt",
+      "sha": "607bdad3fd41bf7915b74271cd4c67f3319c00e6",
+      "size": 4366
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PoiretOne-Regular.ttf",
+      "sha": "b339511b02ea2c25722c8c975e7018e8efcaa217",
+      "size": 45244
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/RedHatMono-Bold.ttf",
+      "sha": "a6e3cf157ad71c0620620c9da48a8c8d0ca26cdf",
+      "size": 34420
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/RedHatMono-OFL.txt",
+      "sha": "16cf394bb1bd5100686703ebc4a3772a568e0e6a",
+      "size": 4394
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/RedHatMono-Regular.ttf",
+      "sha": "3bf6a698bbb3ab2caefdd2cd0456fc08b35ecf1d",
+      "size": 34488
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Silkscreen-OFL.txt",
+      "sha": "a1fe7d5fbe4182d1071a23f8a8c46b9766eec81c",
+      "size": 4394
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Silkscreen-Regular.ttf",
+      "sha": "8abaa7c500d4555073f9e303ec2e5e343d3b8f3f",
+      "size": 31960
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/SmoochSans-Medium.ttf",
+      "sha": "0af9ead07bc2b95a691a63c72d328595b93183a0",
+      "size": 59704
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/SmoochSans-OFL.txt",
+      "sha": "4c2f033ac0e041f61d88d255c4bb02ee28b6f3cb",
+      "size": 4396
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Tektur-Medium.ttf",
+      "sha": "34fc797195169923bad8e76181d60ae02019fef0",
+      "size": 76248
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Tektur-OFL.txt",
+      "sha": "2cad55f1b2d239571560773c92801166cb2be635",
+      "size": 4385
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Tektur-Regular.ttf",
+      "sha": "f280fba407441453779b16f7021a286219421486",
+      "size": 75604
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-Bold.ttf",
+      "sha": "5c97989292020632435b96e6622c74b1f1c6e5cd",
+      "size": 191304
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-BoldItalic.ttf",
+      "sha": "54418b8a6303d1b0cd6b6a206ca3014eba71bc3a",
+      "size": 175772
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-Italic.ttf",
+      "sha": "40529b68f7784c96872fa7ed9bfb46d72bf699e2",
+      "size": 174280
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-OFL.txt",
+      "sha": "070f3416c4767c3396120b5942627f6d3d5bab10",
+      "size": 4397
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-Regular.ttf",
+      "sha": "d24586cc0336949d49a1c2bf3fb3b306c47b431e",
+      "size": 188916
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/YoungSerif-OFL.txt",
+      "sha": "f09443cbe4dfca41153edf6f9dd8fd63138a24b3",
+      "size": 4398
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/YoungSerif-Regular.ttf",
+      "sha": "f454fbedd4c8b00833d17fffa1f89acb5149b02c",
+      "size": 105136
+    },
+    {
+      "path": "skills/frontend-dev/references/design-rules.md",
+      "sha": "e777a59f49fb4f1f2ae4068840ef6835aa4a99ce",
+      "size": 4267
+    },
+    {
+      "path": "skills/frontend-dev/references/host-media-tools.md",
+      "sha": "9be537776f9585b0db688ac7ccbdefc707d83256",
+      "size": 2081
+    },
+    {
+      "path": "skills/frontend-dev/references/motion-recipes.md",
+      "sha": "589ae9b4e3be3c7ed3f450cb4178f21171a52338",
+      "size": 10302
+    },
+    {
+      "path": "skills/frontend-dev/templates/generator_template.js",
+      "sha": "7f3963920618861b671c2b7a10d6a2c8674a3bfa",
+      "size": 7822
+    },
+    {
+      "path": "skills/frontend-dev/templates/viewer.html",
+      "sha": "719c6cc1c7620f351565a368fca1aa44666c2894",
+      "size": 20714
+    },
+    {
+      "path": "skills/fullstack-dev/SKILL.md",
+      "sha": "89dd0dcb20da0879bbed7c782b1ef52281e4cd29",
+      "size": 5296
+    },
+    {
+      "path": "skills/fullstack-dev/references/api-design.md",
+      "sha": "bf73a25c57039134d20c03e9d20bdf69ee166104",
+      "size": 13910
+    },
+    {
+      "path": "skills/fullstack-dev/references/architecture-patterns.md",
+      "sha": "a7e56e4d60ab873b8ddeee588103459f979ebddf",
+      "size": 6712
+    },
+    {
+      "path": "skills/fullstack-dev/references/auth-flow.md",
+      "sha": "8c713519b139f8fd63c7a8d50dbed71b062031f1",
+      "size": 4566
+    },
+    {
+      "path": "skills/fullstack-dev/references/db-schema.md",
+      "sha": "c3442af32d1a89f2439b87030f38be5cdf0fadec",
+      "size": 23400
+    },
+    {
+      "path": "skills/fullstack-dev/references/django-best-practices.md",
+      "sha": "6c1ce6b997b684abc4d5a567b75bec18eae6edda",
+      "size": 13052
+    },
+    {
+      "path": "skills/fullstack-dev/references/environment-management.md",
+      "sha": "87099928aef60037460f32d5a9edd152736b39b2",
+      "size": 2309
+    },
+    {
+      "path": "skills/fullstack-dev/references/release-checklist.md",
+      "sha": "e34d3290c5318492ff01a19f0e04851368989c0d",
+      "size": 7841
+    },
+    {
+      "path": "skills/fullstack-dev/references/technology-selection.md",
+      "sha": "038c5c71503341b6176b29078451d4626f1061a0",
+      "size": 9223
+    },
+    {
+      "path": "skills/fullstack-dev/references/testing-strategy.md",
+      "sha": "1552a135948dfff0f49971c1ac54fc5757259fbc",
+      "size": 11818
+    }
+  ]
+}

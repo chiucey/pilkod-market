@@ -1,0 +1,335 @@
+{
+  "version": "1.3.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "a1363b1df4f852f2a11eb2e8a8f3a1ae89354a71",
+      "size": 854
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "ab41bcd49954d4c74040661a726f72f308b1116d",
+      "size": 4268
+    },
+    {
+      "path": "LICENSE",
+      "sha": "524b0c7423a5961991165b1d531a608ce2b63845",
+      "size": 1081
+    },
+    {
+      "path": "README.md",
+      "sha": "d8cb03f853ceeae6c6fc48671e32cfd1ce4c064d",
+      "size": 23
+    },
+    {
+      "path": "bin/docs-mcp-proxy.mjs",
+      "sha": "5c0818591bece296a8b901f5ece14ad5bb3f5bc4",
+      "size": 6988
+    },
+    {
+      "path": "docs.mcp.json",
+      "sha": "55441aa14279ebdd7ff985f5fd3f2e0c0eb3c4b3",
+      "size": 272
+    },
+    {
+      "path": "icon.png",
+      "sha": "cd26df244428b0447ae30505bddc6d8e8ac6c6d5",
+      "size": 194273
+    },
+    {
+      "path": "skills/baidu-ai-map/SKILL.md",
+      "sha": "914f868067dd6841ee8f321ef4949ff1325fd2ab",
+      "size": 6081
+    },
+    {
+      "path": "skills/baidu-ai-map/references/agent-plan-api.md",
+      "sha": "c8251ca85711dd8e31eb15bbac1468127c51fcea",
+      "size": 3733
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/SKILL.md",
+      "sha": "1f0514ce3f6ea8d8f5f2dbbda6e0196e385de5d6",
+      "size": 5377
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/base-classes.md",
+      "sha": "5c0df86e3559ca5299124afcca23a5a1b5cf2f66",
+      "size": 4598
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/circle.md",
+      "sha": "2af11748771a78dd2c60d6bd03ecb111946976bf",
+      "size": 3484
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/constants.md",
+      "sha": "05a11736ffbfc107c5fa0783a93347e9f71508a9",
+      "size": 859
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/convertor.md",
+      "sha": "c4d0e24e3e35345eff7541d89023e989a4713c9c",
+      "size": 2514
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/custom-overlay.md",
+      "sha": "8263db51907173e1baf85542bb7b54212b051ea3",
+      "size": 4401
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/driving-route.md",
+      "sha": "d395d50230e744331c9a1e817ee2341f3bf1803d",
+      "size": 3255
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/geocoder.md",
+      "sha": "f1ae22d4f4256124a9fc1c9ef34a7fc549ef0d86",
+      "size": 3733
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/get-ak.md",
+      "sha": "9f1181093175abf43379b944d55a9e3ef2262853",
+      "size": 1671
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/info-window.md",
+      "sha": "3315ebe058daff7a2f61d66777071357dc5e02d0",
+      "size": 4375
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/local-search.md",
+      "sha": "c2d72fbc99ab51c4c19af990294226309f36f9b5",
+      "size": 4884
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/map-events.md",
+      "sha": "f7450bf2fe26af20d3070e710f1aff9d13179930",
+      "size": 6932
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/map-init.md",
+      "sha": "1b6b573203feef0493c396bcee43c9a3ad2e30c6",
+      "size": 6713
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/map-style.md",
+      "sha": "4d23e61e0d816dacba7dba73fac9a21e736c7d2d",
+      "size": 7331
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/marker.md",
+      "sha": "656b099fe3f4a14d8deb54e29d56b59006a9e58d",
+      "size": 3600
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/mvt-layer.md",
+      "sha": "d37d3de3d1124b5c4cf4daf2589ec7ca4e807009",
+      "size": 3379
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/overlay-common.md",
+      "sha": "de4ef7ea59e8916e76a9252ad39bb6f0a21601a1",
+      "size": 1539
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/overlay-events.md",
+      "sha": "c2296d9023f5100b6918ff9f1249e401dfd651b4",
+      "size": 2843
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/polygon.md",
+      "sha": "bbd7e9cba023e0d539720d9813d244a7127e7588",
+      "size": 5428
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/polyline.md",
+      "sha": "8219944fa0f5a67202afc766a899557bfe9129df",
+      "size": 4439
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/riding-route.md",
+      "sha": "aa9cfa2c6f4ae8057d8021e823c154864e312d9f",
+      "size": 586
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/route-common.md",
+      "sha": "4c93662784f5af01d5842456142f5679b4de0cbd",
+      "size": 6715
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/transit-route.md",
+      "sha": "7da4158f48c8cadd43390a2e26e0091c118b8929",
+      "size": 5527
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/walking-route.md",
+      "sha": "e31b0a1a251aff994cae2099c86b86903739fa71",
+      "size": 858
+    },
+    {
+      "path": "skills/baidu-map-jsapi-gl/references/xyz-layer.md",
+      "sha": "6a6c7acc64bb087483cc0281bed90d33efbb09cd",
+      "size": 3253
+    },
+    {
+      "path": "skills/baidu-map-webapi/SKILL.md",
+      "sha": "544141bf5567ae0b4e8003d4318a44967b15ad6d",
+      "size": 6379
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/admin_division_query.md",
+      "sha": "7e4c82c077f615db8666e06f2c9f9734c2062880",
+      "size": 5257
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/administrative_region_search.md",
+      "sha": "b13b41a079fa5d1ac487c6773e7cf7371903a9f0",
+      "size": 11699
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/capabilities/driving_route_duration.md",
+      "sha": "8896bbc87e8a62450b6173bcfeb3f66a2910c52c",
+      "size": 2169
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/capabilities/future_driving_route.md",
+      "sha": "47d3c7c2b208c4b097cb7628fe897dc5425065f6",
+      "size": 2040
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/capabilities/suggested_departure_time.md",
+      "sha": "4b26a70ef241ec3fb08af4144c5f1c1974a4feb8",
+      "size": 1875
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/capabilities/waypoint_route_planning.md",
+      "sha": "440e911a708a58ff4ed077dca3d735c8ef920ee1",
+      "size": 1870
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/circular_region_search.md",
+      "sha": "949ccbdc68c4a301e09fb34f5b49add022d70138",
+      "size": 11139
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/constants.md",
+      "sha": "afdfb2b39a0806037e91f4a1001fefb43e3bdb5d",
+      "size": 2745
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/cycling_route_planning.md",
+      "sha": "982a11088030d6aef7b8d884c0972790621c109e",
+      "size": 8538
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/domestic_weather_query.md",
+      "sha": "3ba6145076aa4f958eac36725f08e920be66ebd1",
+      "size": 9230
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/driving_route_planning.md",
+      "sha": "decbf8ed00da0b6961bbfeb550cd7057aa144df3",
+      "size": 15150
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/geocoding.md",
+      "sha": "d5592bde0082a9c81a75554cf294c72e11590421",
+      "size": 7917
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/global_reverse_geocoding.md",
+      "sha": "b7c183aa1c750af02d3fd0bfcd549b04bc888de5",
+      "size": 12529
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/motorcycle_route_planning.md",
+      "sha": "460bd5375d674780e24ed260fc65394da2689d6b",
+      "size": 11016
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/multi_dimensional_search.md",
+      "sha": "804428926b0d2aea650264ae908a366fba6b7fd3",
+      "size": 11468
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/overseas_weather_query.md",
+      "sha": "03a0c2252998977d72fa398047a0bfb0495229c7",
+      "size": 6416
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/place_detail_search.md",
+      "sha": "b7f84f3abd927656c6919a1b481387caf0c70264",
+      "size": 10185
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/place_input_suggestion.md",
+      "sha": "9b15b03a8d4e829ffcbdd99975c8910ea5270cb5",
+      "size": 7801
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/address_to_full_location.md",
+      "sha": "37a056267d02f59fc8e4ed0620c2cf4149997938",
+      "size": 2765
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/address_to_poi.md",
+      "sha": "b916ffdcd41f3cadd6c4c6bf04ea5925933cb7ed",
+      "size": 3209
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/coordinate_to_structured_address.md",
+      "sha": "f0f9b32c7b8ca6288b9c979e661498326e35dbf9",
+      "size": 2649
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/nearby_poi_search.md",
+      "sha": "80428a9459c8cec81977b7b2f25e4c0f496601a3",
+      "size": 3227
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/poi_search_to_detail.md",
+      "sha": "fb4c39d622c87f8cae2ca61e9110588cbb12248f",
+      "size": 2876
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/route_to_named_place.md",
+      "sha": "eddd5efe4d529c4311b9fd0b485b9f9551e9bd81",
+      "size": 3395
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/smart_departure_time.md",
+      "sha": "5d184040b211c7f2aeb3eae59982bed2dcc0d5e6",
+      "size": 3076
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/traffic_aware_route.md",
+      "sha": "2b2d5ca869bda86636a98a023398e8ebce96fb01",
+      "size": 2861
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/recipes/weather_query.md",
+      "sha": "aa7f00cd51c141649db4381f4444581947eff57a",
+      "size": 8471
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/reverse_geocoding_agent.md",
+      "sha": "6bda957f6312cd1c90f24a4bd9e08ce75865a37a",
+      "size": 11084
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/transit_route_planning.md",
+      "sha": "8127839d4af2e6ebdceccaf54052b9831225b96e",
+      "size": 6249
+    },
+    {
+      "path": "skills/baidu-map-webapi/references/walking_route_planning.md",
+      "sha": "50a50fdb0274d8ea126fac31ac6413c8adde17a8",
+      "size": 7277
+    },
+    {
+      "path": "skills/bmap-cli/SKILL.md",
+      "sha": "94c66832923a788f67e6abfc9141bb5bc4479397",
+      "size": 6093
+    }
+  ]
+}

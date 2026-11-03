@@ -1,0 +1,325 @@
+{
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "c08862cb9e3a64badac5b09dfe358c676b3b2244",
+      "size": 942
+    },
+    {
+      "path": "README.md",
+      "sha": "aafa7f0c53b69ea9890b440c1195078a22ee59d9",
+      "size": 1696
+    },
+    {
+      "path": "icon.png",
+      "sha": "2ed9af819601ad278ae6a486af52425951e918cf",
+      "size": 915588
+    },
+    {
+      "path": "icon.svg",
+      "sha": "ec7da7c70d5014073e2c70875e01a43c6731719a",
+      "size": 1317
+    },
+    {
+      "path": "requirements.txt",
+      "sha": "f4ed58236c85e6cdec628986bed1a15223944965",
+      "size": 742
+    },
+    {
+      "path": "setup.ps1",
+      "sha": "2bbb54e5a586ee321030e610843bc29d78d3671e",
+      "size": 3046
+    },
+    {
+      "path": "setup.sh",
+      "sha": "8750d129622a7b1fae6afac6b0495fd9661b7ab0",
+      "size": 2058
+    },
+    {
+      "path": "skills/wechat-10w-hot/README.en.md",
+      "sha": "812776a87cd0cbed5e84552d38b45755e3e32a8a",
+      "size": 6505
+    },
+    {
+      "path": "skills/wechat-10w-hot/README.md",
+      "sha": "9d529d3ddbb2cecaf61eb92efa5c759d2bd90692",
+      "size": 5877
+    },
+    {
+      "path": "skills/wechat-10w-hot/SKILL.md",
+      "sha": "4082eae81ff59ad3505156b695f93d025b93a4fe",
+      "size": 16237
+    },
+    {
+      "path": "skills/wechat-10w-hot/icon.svg",
+      "sha": "57f180904961b46d317192932d29843172590a81",
+      "size": 450
+    },
+    {
+      "path": "skills/wechat-10w-hot/references/api-spec.md",
+      "sha": "254a81d80a74e409e129b3e50c736c02b6d2eb72",
+      "size": 4033
+    },
+    {
+      "path": "skills/wechat-10w-hot/references/category-mapping.md",
+      "sha": "3098acc21015fbf89911a6406a63f630c9be9d0a",
+      "size": 4619
+    },
+    {
+      "path": "skills/wechat-10w-hot/scripts/fetch_hot_articles.py",
+      "sha": "4d8ca2aeb2e54dd7e1c4696f2732c240d2a08133",
+      "size": 18613
+    },
+    {
+      "path": "skills/wechat-10w-hot/scripts/generate_hot_html.py",
+      "sha": "5bc667bfab58ed9adf279b1fdf9a009780a55f88",
+      "size": 19105
+    },
+    {
+      "path": "skills/wechat-account-analyzer/README.en.md",
+      "sha": "d8eac003699864a33fad9255bfe5e894c952bc8c",
+      "size": 3491
+    },
+    {
+      "path": "skills/wechat-account-analyzer/README.md",
+      "sha": "e90e772f7e7479aa6b1effe0b2d946355d073487",
+      "size": 3185
+    },
+    {
+      "path": "skills/wechat-account-analyzer/SKILL.md",
+      "sha": "4915618aa6fbaa3b94d6586124add1494a0ce6bf",
+      "size": 10840
+    },
+    {
+      "path": "skills/wechat-account-analyzer/assets/report_template.html",
+      "sha": "2373e4fd75f059fe0d3cef5ed75c7321f9c6be26",
+      "size": 12306
+    },
+    {
+      "path": "skills/wechat-account-analyzer/references/api_guide.md",
+      "sha": "ab2c2340537d87985c51c74b0fbcf3fdd8b9f2e4",
+      "size": 17882
+    },
+    {
+      "path": "skills/wechat-account-analyzer/references/core_workflow.md",
+      "sha": "1a2ba0d5d052a43a6870f7d9c3fd11269a7ae627",
+      "size": 18478
+    },
+    {
+      "path": "skills/wechat-account-analyzer/references/workflow_guide.md",
+      "sha": "401630c1433679a939acdb3d53bb6b646c688f28",
+      "size": 22788
+    },
+    {
+      "path": "skills/wechat-account-analyzer/scripts/analyzer.py",
+      "sha": "0ae651b3d0ad60eb0e459be5dc863dc4788fe472",
+      "size": 25456
+    },
+    {
+      "path": "skills/wechat-account-analyzer/scripts/api_client.py",
+      "sha": "85f561ecb8c81d625b5acb74d4104ee4414ef58a",
+      "size": 2616
+    },
+    {
+      "path": "skills/wechat-account-analyzer/scripts/report.py",
+      "sha": "e168e1a39286ae913f94fd84fa5cd2a2cf851cf3",
+      "size": 27052
+    },
+    {
+      "path": "skills/wechat-account-analyzer/scripts/scoring.py",
+      "sha": "34e76f296fd50a33e0e4275d337473b186fab7ab",
+      "size": 40594
+    },
+    {
+      "path": "skills/wechat-account-analyzer/scripts/wechat_analyzer.py",
+      "sha": "14cd2f9db436f23882aa244069b4cc58332503e7",
+      "size": 3740
+    },
+    {
+      "path": "skills/wechat-cover/README.en.md",
+      "sha": "9f65a965b81f62ffe37e377334764eb98a54d72c",
+      "size": 4827
+    },
+    {
+      "path": "skills/wechat-cover/README.md",
+      "sha": "dca848f88bb13692a7b498e985a6a9090c4d6cb1",
+      "size": 4076
+    },
+    {
+      "path": "skills/wechat-cover/SKILL.md",
+      "sha": "006394e99ef5e67454668b4a70908b544ce43d18",
+      "size": 8055
+    },
+    {
+      "path": "skills/wechat-cover/icon.svg",
+      "sha": "aef3dc7c9879a2ed9185579f9485b19383110f30",
+      "size": 654
+    },
+    {
+      "path": "skills/wechat-cover/references/gzh_trend_data_format.md",
+      "sha": "0cfba53fbadecc0647117ad7f8628d1ca9de99ce",
+      "size": 4232
+    },
+    {
+      "path": "skills/wechat-cover/references/report_template.html",
+      "sha": "26abda8a8ba5a79c6503a8c64c79bbd9b9eb58a2",
+      "size": 8219
+    },
+    {
+      "path": "skills/wechat-cover/references/report_template.md",
+      "sha": "ee7653fabf5cfe241b00c016a4c5b8429990cc1d",
+      "size": 4181
+    },
+    {
+      "path": "skills/wechat-cover/scripts/fetch_explosive_covers.py",
+      "sha": "aa31d0f930d1f7fccd654b96c6a3bbfe347e6518",
+      "size": 12786
+    },
+    {
+      "path": "skills/wechat-prohibited-word/README.en.md",
+      "sha": "ac546f9addd3f2635f03e24103a83dfb29978bb8",
+      "size": 6919
+    },
+    {
+      "path": "skills/wechat-prohibited-word/README.md",
+      "sha": "f6c806a148c4d983f9dd29dc1c33bfeeb5a464df",
+      "size": 6175
+    },
+    {
+      "path": "skills/wechat-prohibited-word/SKILL.md",
+      "sha": "0b6df03b2b3ae219cbdeeb046620aa91e7923be3",
+      "size": 10062
+    },
+    {
+      "path": "skills/wechat-prohibited-word/icon.svg",
+      "sha": "1de1b54571d7b1f990e885881150f5e526b5e26f",
+      "size": 546
+    },
+    {
+      "path": "skills/wechat-prohibited-word/references/core_workflow.md",
+      "sha": "06dbe597dee0d6b5074842513267a09dea7234a7",
+      "size": 15326
+    },
+    {
+      "path": "skills/wechat-prohibited-word/scripts/check_sensitive_words.py",
+      "sha": "a6c14708f97385b53820774884fbe29ee4913dd6",
+      "size": 13086
+    },
+    {
+      "path": "skills/wechat-rewrite/README.en.md",
+      "sha": "c46ae72f547805bef824c798ca6dbacccb43d9de",
+      "size": 4351
+    },
+    {
+      "path": "skills/wechat-rewrite/README.md",
+      "sha": "015e62e866c67f2c84b3700311f09ff82b0528da",
+      "size": 4025
+    },
+    {
+      "path": "skills/wechat-rewrite/SKILL.md",
+      "sha": "cec7a1b1a3f0eb02e729b1d862ce1adb57339c3f",
+      "size": 12017
+    },
+    {
+      "path": "skills/wechat-rewrite/assets/platform-rules.md",
+      "sha": "a6998df22cff8389876006ef60316423897bda06",
+      "size": 3937
+    },
+    {
+      "path": "skills/wechat-rewrite/icon.svg",
+      "sha": "0350ec86da446a8c54ac6685538832c05a681836",
+      "size": 592
+    },
+    {
+      "path": "skills/wechat-rewrite/scripts/rewrite.py",
+      "sha": "17d9f56066cc5d4fafc1bb8f9b48b4dc4ec671e7",
+      "size": 8338
+    },
+    {
+      "path": "skills/wechat-title/README.en.md",
+      "sha": "3c79e77a6a28bfc5bdd87760b0a4f36cf64ec94f",
+      "size": 6335
+    },
+    {
+      "path": "skills/wechat-title/README.md",
+      "sha": "70dddddff315eeb6b0bce4ccb211d4e6fd3b48d2",
+      "size": 5103
+    },
+    {
+      "path": "skills/wechat-title/SKILL.md",
+      "sha": "5e6908122a9db927b06c4455d039875ac84844b6",
+      "size": 11148
+    },
+    {
+      "path": "skills/wechat-title/a-stock-data.md",
+      "sha": "ad72aa45bb473c81452925352cdfdb5c66173799",
+      "size": 26250
+    },
+    {
+      "path": "skills/wechat-title/ai-agent-data.md",
+      "sha": "7a5de0ecce8bd466e93bfd09558db00a3220004d",
+      "size": 25853
+    },
+    {
+      "path": "skills/wechat-title/ai-data.md",
+      "sha": "9f9440c9851766bc778e1a6811f88fdf4d8cb992",
+      "size": 25242
+    },
+    {
+      "path": "skills/wechat-title/cat-data.md",
+      "sha": "eb4b6cefc76980012be18c39598e453e475b2416",
+      "size": 13091
+    },
+    {
+      "path": "skills/wechat-title/icon.svg",
+      "sha": "b4bf0953eb086eb39b2362c78904788e48fbb413",
+      "size": 705
+    },
+    {
+      "path": "skills/wechat-title/pet-data-main.md",
+      "sha": "f3901f416de1acb99fe4e0368cfff87cabfa9c56",
+      "size": 4228
+    },
+    {
+      "path": "skills/wechat-title/pet-data.md",
+      "sha": "70b0baf4315e655602d7b2cea03bb715e830079d",
+      "size": 26505
+    },
+    {
+      "path": "skills/wechat-title/scripts/fetch_official_account_trends.py",
+      "sha": "df88a730a86cbb07a222d1f72eebd0dbb15ac910",
+      "size": 13150
+    },
+    {
+      "path": "skills/wechat-write/README.en.md",
+      "sha": "e9516a5acfcf2ec28bbd8d35e5c2e359f5f7f0f3",
+      "size": 6428
+    },
+    {
+      "path": "skills/wechat-write/README.md",
+      "sha": "6e91b1f430390d4db438c62e5d1f435c11c1a563",
+      "size": 5234
+    },
+    {
+      "path": "skills/wechat-write/SKILL.md",
+      "sha": "a6fb2f53b34777bbfa783cb5556c209c2c05a493",
+      "size": 10784
+    },
+    {
+      "path": "skills/wechat-write/icon.svg",
+      "sha": "d137b53122cda9e5337b4a799fddfb48cbff6907",
+      "size": 618
+    },
+    {
+      "path": "skills/wechat-write/references/gzh_trend_data_format.md",
+      "sha": "d836811f6b7ee2b325f6e28cec28cad1082120fc",
+      "size": 5042
+    },
+    {
+      "path": "skills/wechat-write/scripts/fetch_gzh_trends.py",
+      "sha": "6750248a6d99e3e08ca1b2c305218c837418df1e",
+      "size": 11985
+    }
+  ]
+}

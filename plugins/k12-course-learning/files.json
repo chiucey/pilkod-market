@@ -1,0 +1,105 @@
+{
+  "version": "1.0.5",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "2dcf875e7ddb9fc3a4e17937b5ca5615f44da3b7",
+      "size": 976
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha": "db5135419d549a7701608e085188a7babd7639cb",
+      "size": 3159
+    },
+    {
+      "path": "data/SOURCE.json",
+      "sha": "f5c2a048b43b6f8ea0e0f8d9714dee08569184ea",
+      "size": 742
+    },
+    {
+      "path": "data/os-taxonomy/CITATION.cff",
+      "sha": "805e1e22817f4cf49e05c14a65c76caae7417769",
+      "size": 701
+    },
+    {
+      "path": "data/os-taxonomy/LICENSE",
+      "sha": "8ca51c358d59596c271ee7c928e5feb0d4d9b817",
+      "size": 25289
+    },
+    {
+      "path": "data/os-taxonomy/LICENSE-CONTENT",
+      "sha": "835a6836b385fa068fdd625685548845cda60c2f",
+      "size": 18375
+    },
+    {
+      "path": "data/os-taxonomy/PROVENANCE.md",
+      "sha": "e915c2c267a90d898b8413634773118c56ee82d8",
+      "size": 4404
+    },
+    {
+      "path": "data/os-taxonomy/data/dependencies.json",
+      "sha": "255e93d203c5557f04f1c08cc642e9d8775e2de3",
+      "size": 696944
+    },
+    {
+      "path": "data/os-taxonomy/data/topics.json",
+      "sha": "3988c71f577812373f7bca256360be1b1294e733",
+      "size": 1667462
+    },
+    {
+      "path": "data/query-aliases.zh-CN.json",
+      "sha": "f38e8e52bb6b191eb162a762c09a3cb5755a4011",
+      "size": 1437
+    },
+    {
+      "path": "scripts/taxonomy_recall.py",
+      "sha": "3ef5eba48f6297fce6f545b69b66634281f4aa0e",
+      "size": 12418
+    },
+    {
+      "path": "skills/recall-k12-taxonomy/SKILL.md",
+      "sha": "966f2f9a42ea36e59577696ce013e630793e795e",
+      "size": 3565
+    },
+    {
+      "path": "skills/study-tutor/SKILL.md",
+      "sha": "edad0a680b07075f8b70d73db662a3714fa831f7",
+      "size": 6055
+    },
+    {
+      "path": "skills/visualize-k12-concepts/SKILL.md",
+      "sha": "5ecb854df49fde22a9dd944829bd6b348c558ee1",
+      "size": 5818
+    },
+    {
+      "path": "skills/visualize-k12-concepts/assets/example-light-reflection.json",
+      "sha": "5e1b1225d58fcba5039bfd37533f96dd6da6eec3",
+      "size": 4817
+    },
+    {
+      "path": "skills/visualize-k12-concepts/assets/lesson-template.html",
+      "sha": "bfcf214ebc16db607ecfbc6d586912f831a17501",
+      "size": 47687
+    },
+    {
+      "path": "skills/visualize-k12-concepts/references/lesson-spec.md",
+      "sha": "6c822e2280df0693f76aed33b00945dfa61ef1c7",
+      "size": 4395
+    },
+    {
+      "path": "skills/visualize-k12-concepts/references/quality-checklist.md",
+      "sha": "46fbfebe025e6311733dd9139825c959a9c1550b",
+      "size": 2249
+    },
+    {
+      "path": "skills/visualize-k12-concepts/references/visual-patterns.md",
+      "sha": "4e2379bd6e4bdb82290e88a8273e3506ef31226b",
+      "size": 2413
+    },
+    {
+      "path": "skills/visualize-k12-concepts/scripts/generate_visual_lesson.py",
+      "sha": "aa55cb812b41d984418a11df1c6b6ff14f32f76f",
+      "size": 12721
+    }
+  ]
+}

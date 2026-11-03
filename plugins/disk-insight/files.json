@@ -1,0 +1,305 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "9ca13b492bf4a1929af3ddf5f45e7862c6151b29",
+      "size": 531
+    },
+    {
+      "path": "LICENSE",
+      "sha": "beba0c8098027ab2e0c68c9f4edbed6ab2bb9bb2",
+      "size": 1064
+    },
+    {
+      "path": "README.md",
+      "sha": "e30cc0bf80ce97adcced76e362ae483c2a75833c",
+      "size": 19276
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "6f23a2d0c2bdbbfef103858879b620b23d87c411",
+      "size": 18251
+    },
+    {
+      "path": "docs/preview-junk.png",
+      "sha": "d841c697f38a60460978cd3d8d0d59c61dfbead1",
+      "size": 160847
+    },
+    {
+      "path": "docs/preview-map.png",
+      "sha": "ecd4a4d97a7f3ddd2569652404096c766b44975e",
+      "size": 144958
+    },
+    {
+      "path": "icon.png",
+      "sha": "b29ceaae1378805a555bd1149bec084bc63b0edd",
+      "size": 13945
+    },
+    {
+      "path": "miniapp/client/assets/app.css",
+      "sha": "9b26ce103150ed0b6e43668bbacdb2a3b4aeb756",
+      "size": 48929
+    },
+    {
+      "path": "miniapp/client/assets/app.js",
+      "sha": "cf30abcae63b6d8c69e461977c469a83dd2db10f",
+      "size": 177251
+    },
+    {
+      "path": "miniapp/client/client-api.ts",
+      "sha": "c0904f63965101c3a09211cee91caf6fcd42d54f",
+      "size": 16357
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "9324f5a1908a174df346d27c4108f3cdf6f9d4c9",
+      "size": 6917
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "266620efc00d37c3cf4e3c0da6ebcd9ab6462e97",
+      "size": 497
+    },
+    {
+      "path": "miniapp/node/app-actions.mjs",
+      "sha": "54df820ec6ac6f1410a1295c0c4abb05d2555d9c",
+      "size": 2310
+    },
+    {
+      "path": "miniapp/node/app-clean.mjs",
+      "sha": "75b70bdcb9fe8aea9e6c19ce8286a5bf6b0d6a17",
+      "size": 5910
+    },
+    {
+      "path": "miniapp/node/app-extras.mjs",
+      "sha": "de9038682d988e7debb7f892d4b8a93f47949197",
+      "size": 8300
+    },
+    {
+      "path": "miniapp/node/app-repos.mjs",
+      "sha": "843a759922754a19ddee3b7d5a7ecd7c9e3bcd24",
+      "size": 16798
+    },
+    {
+      "path": "miniapp/node/app-scan.mjs",
+      "sha": "fd983725cbed011f72c10c157a0d7433dd69aa6e",
+      "size": 10127
+    },
+    {
+      "path": "miniapp/node/app-selection.mjs",
+      "sha": "5c1126aab056beb0f3b4e2149d3d9f1bedee7785",
+      "size": 6354
+    },
+    {
+      "path": "miniapp/node/app.mjs",
+      "sha": "db32f5008de72f0b4dfe531c1d6053228181b873",
+      "size": 17122
+    },
+    {
+      "path": "miniapp/node/cleaner.mjs",
+      "sha": "9664f13eac95d55e3ec8015e449eb918b6534837",
+      "size": 7261
+    },
+    {
+      "path": "miniapp/node/clones.mjs",
+      "sha": "da6e477eb93aa4274ec3fb2441f6bd37170db142",
+      "size": 2981
+    },
+    {
+      "path": "miniapp/node/duplicates.mjs",
+      "sha": "730be7fc0e4ccb77f055bef364c34282558dd2d7",
+      "size": 3915
+    },
+    {
+      "path": "miniapp/node/exec.mjs",
+      "sha": "bdd5f7e8b907bc8e8e73bc476dbfe7d14716a7f4",
+      "size": 6952
+    },
+    {
+      "path": "miniapp/node/hooks.mjs",
+      "sha": "cc172696c1433b3e79bb799e6fc3c2e09c4abfd5",
+      "size": 11241
+    },
+    {
+      "path": "miniapp/node/http.mjs",
+      "sha": "6d823304ff40a2cb430dd163fa0d97c913a20cca",
+      "size": 4878
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
+      "size": 15554
+    },
+    {
+      "path": "miniapp/node/model.mjs",
+      "sha": "f57b8e620c8b3702d3b640b1959ba40b87a18c10",
+      "size": 17104
+    },
+    {
+      "path": "miniapp/node/platform.mjs",
+      "sha": "017d52a57818bfc2091c9543c993683c1d6b06a8",
+      "size": 13853
+    },
+    {
+      "path": "miniapp/node/prompt.mjs",
+      "sha": "82697ef42e587cbb4be4e596c5055d307ed1598e",
+      "size": 3403
+    },
+    {
+      "path": "miniapp/node/protect.mjs",
+      "sha": "f925f4c6595e50a2ee6109693769f58b07e88df1",
+      "size": 6584
+    },
+    {
+      "path": "miniapp/node/repos.mjs",
+      "sha": "a4ca670190ee3bedccd01a1e59efe7d38098b8cf",
+      "size": 23651
+    },
+    {
+      "path": "miniapp/node/routes.mjs",
+      "sha": "b7d0294f9237e0829f522aae91753e6957e5d9d7",
+      "size": 5940
+    },
+    {
+      "path": "miniapp/node/rules-win.mjs",
+      "sha": "4dfb001092a0d1bfea05389c4eae86943f2969ad",
+      "size": 8201
+    },
+    {
+      "path": "miniapp/node/rules.mjs",
+      "sha": "475412f0d42707ace16ef013f0c6a11b875cd150",
+      "size": 26946
+    },
+    {
+      "path": "miniapp/node/scan-engine.mjs",
+      "sha": "53af65aaaa0cb746864a409e479f2a37809b3e4c",
+      "size": 19315
+    },
+    {
+      "path": "miniapp/node/scanner.mjs",
+      "sha": "9237f3138fe1ee0a6c48a35729fbca9ce52dd63c",
+      "size": 12674
+    },
+    {
+      "path": "miniapp/node/scope.mjs",
+      "sha": "4e23331961b7488c6452478c83a66e09049c5c4e",
+      "size": 6326
+    },
+    {
+      "path": "miniapp/node/selection.mjs",
+      "sha": "3ea3a2e96a9b6fea48a42b1c403c4f16a3f1b9ed",
+      "size": 1376
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "aca320e957daaf331ede271f0072a9199b07dcb0",
+      "size": 2714
+    },
+    {
+      "path": "miniapp/node/store.mjs",
+      "sha": "6744e1ac409df03521efb979230d7efd70692640",
+      "size": 3978
+    },
+    {
+      "path": "miniapp/node/tree.mjs",
+      "sha": "9d11607d36ed0e3fccfd755e8c03a46d37886ec7",
+      "size": 5576
+    },
+    {
+      "path": "miniapp/node/util.mjs",
+      "sha": "de893bdf45c46e1055ac1570696f001b3a4106ab",
+      "size": 4362
+    },
+    {
+      "path": "miniapp/node/views.mjs",
+      "sha": "cd709b2cf11de7303b97b9913d33f1c10de9027a",
+      "size": 19303
+    },
+    {
+      "path": "package.json",
+      "sha": "1553f86ec70fe6946822d85143548df446a72520",
+      "size": 152
+    },
+    {
+      "path": "tests/app.test.mjs",
+      "sha": "a1dad1d5900ed9bbf1bd1d4b29e7636e50bc8085",
+      "size": 14222
+    },
+    {
+      "path": "tests/artifacts-scope.test.mjs",
+      "sha": "0e11d6aa4c436ab3bee3c4662038fa7de3b05010",
+      "size": 9061
+    },
+    {
+      "path": "tests/clean.test.mjs",
+      "sha": "ddf4d897c7a10376b8b61f159b620117fa268264",
+      "size": 7779
+    },
+    {
+      "path": "tests/contract-v2.test.mjs",
+      "sha": "d34751d48a3c66fe5305d1d58ca4570b2c74920a",
+      "size": 10637
+    },
+    {
+      "path": "tests/helpers.mjs",
+      "sha": "37e6eaf7884ff25add383ac303b853d3d89330c2",
+      "size": 4385
+    },
+    {
+      "path": "tests/protect.test.mjs",
+      "sha": "93c539e20b2c46c1c2a6127718c6ec38aa084e4a",
+      "size": 4661
+    },
+    {
+      "path": "tests/rules.test.mjs",
+      "sha": "7f5c52399504c1c3936cef508fc6eff91b33130f",
+      "size": 11347
+    },
+    {
+      "path": "tests/scanner.test.mjs",
+      "sha": "740e9f497e69590c2da8f90fca68ad0565cb355c",
+      "size": 13797
+    },
+    {
+      "path": "tests/selection-prompt.test.mjs",
+      "sha": "04894d75ec84294d998b40da7025603037f3b380",
+      "size": 7572
+    },
+    {
+      "path": "tests/v3.test.mjs",
+      "sha": "f3d85044f387fabb7f3e7292113ed43733f88659",
+      "size": 23490
+    },
+    {
+      "path": "tests/v4-dups.test.mjs",
+      "sha": "b43072a96ee1a041eaf73042a8c6869416bce53a",
+      "size": 3391
+    },
+    {
+      "path": "tests/v4-quick.test.mjs",
+      "sha": "9f401dcf70338fd8f2deb09c6947e59af0f9f1c0",
+      "size": 8381
+    },
+    {
+      "path": "tests/v4-repos.test.mjs",
+      "sha": "1e42576c180eb93e70afc3f57b9309c4316b0fd9",
+      "size": 32508
+    },
+    {
+      "path": "tests/v5-delete.test.mjs",
+      "sha": "aadb02ecbb191c08847692ec950ffcbdabd44134",
+      "size": 10426
+    },
+    {
+      "path": "tests/v5-repo-occupancy.test.mjs",
+      "sha": "0f78c1b5ab082619bb36857bb767802eac3a030c",
+      "size": 5933
+    },
+    {
+      "path": "tests/v5-worktree-backref.test.mjs",
+      "sha": "a46265af254aa6ad221254992af4f0f2a9401456",
+      "size": 12614
+    }
+  ]
+}

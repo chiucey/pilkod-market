@@ -1,0 +1,720 @@
+{
+  "version": "0.5.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "1c86e368ff9d4d8b5c6b848ae10e4f5f6c742f49",
+      "size": 987
+    },
+    {
+      "path": "ANALYTICS.md",
+      "sha": "3bde695664116082f9988a319183daa752df7d65",
+      "size": 7062
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "376db57d74af6da3012f6f637e4c0b0e42cd34e4",
+      "size": 27020
+    },
+    {
+      "path": "LICENSE",
+      "sha": "ba32dab7f863cba3fc1a36e764341dce75d6fb18",
+      "size": 1066
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha": "fc0cd9d64c62d67318352e96724274ccfe586e71",
+      "size": 5841
+    },
+    {
+      "path": "README.md",
+      "sha": "be7d3f45c21f119e7760ab3f3ecd4ba228b73628",
+      "size": 14190
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha": "119c71bb4aefd02091a4cd398607605785e4c2d1",
+      "size": 25922
+    },
+    {
+      "path": "assets/phone-screen.html",
+      "sha": "ac7afec5e79516638af63d03e5fb116983f77bef",
+      "size": 554069
+    },
+    {
+      "path": "icon.png",
+      "sha": "143719237a24469900a46a9145e3724b24a34dbc",
+      "size": 78327
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "064a55e833f4272aaf9168197719a5dc170975df",
+      "size": 19338
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "5cff2953bb3d1a297dd54604e899a4c9896492fb",
+      "size": 4123
+    },
+    {
+      "path": "miniapp/client/style.css",
+      "sha": "abdcb2ff7997c034c96b45090825bcb573db2b64",
+      "size": 11302
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "b5f8e0604f039aac663397d1e7f33d864f567e1d",
+      "size": 292
+    },
+    {
+      "path": "miniapp/node/android-frame.mjs",
+      "sha": "62909de40ba2cf60c33b554e9dabfd9d8d013dd0",
+      "size": 4190
+    },
+    {
+      "path": "miniapp/node/licenses/dependencies.json",
+      "sha": "5045199a89d516fb44b8169557c7566c02031147",
+      "size": 14564
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-4061707069756d2f6c6f67676572__LICENSE",
+      "sha": "845be76f64e7899eb1ab0e4d932a9f389276347a",
+      "size": 717
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-4061707069756d2f737570706f7274__LICENSE",
+      "sha": "d4db1bf81f68e3953040af20a02b494dac9f1a29",
+      "size": 11387
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-40786d6c646f6d2f786d6c646f6d__LICENSE",
+      "sha": "b95f5698c645e44ecf09ee09a0a44ee6437e23a1",
+      "size": 1298
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-61626f72742d636f6e74726f6c6c6572__LICENSE",
+      "sha": "c914149a6f845cc9614f303b651db4289b511e73",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-61707069756d2d696f732d646576696365__LICENSE",
+      "sha": "f882c9c590095e577226913b3d32d4ad9903d11b",
+      "size": 10282
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6172636869766572__LICENSE",
+      "sha": "88caf8710bef80b7fcd3801e0ff0fdaaa1d75c86",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6173796e63626f78__LICENSE",
+      "sha": "b1c04a28e59744f1ffcca439985b977908240994",
+      "size": 11391
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6173796e636b6974__LICENSE",
+      "sha": "c9eca5dd999d7cead12f32f6089b577e8e78c23e",
+      "size": 1078
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6173796e63__LICENSE",
+      "sha": "b18aed69219562718858d972467ba0a68b1ce178",
+      "size": 1063
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6178696f73__LICENSE",
+      "sha": "05006a51eb888282323883df740cd90ad72d0700",
+      "size": 1084
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-623461__LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-62616c616e6365642d6d61746368__LICENSE.md",
+      "sha": "61ece8cc92afb41fdb1552ec1f72ac147b9eaceb",
+      "size": 1155
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-626c756562697264__LICENSE",
+      "sha": "b24e6350cafa3bc6f5731153aa5672a1ab477aa4",
+      "size": 1086
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-62706c6973742d63726561746f72__LICENSE",
+      "sha": "f612fedb661c3d0c7c653224d4eeecbec2cf64a3",
+      "size": 1090
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-62726163652d657870616e73696f6e__LICENSE",
+      "sha": "46e7b75c91ced041ae473299398af2b0472dc352",
+      "size": 1144
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6275666665722d6372633332__LICENSE",
+      "sha": "9d2e5162a2d4bb1a26e51a07b14b9fd35f167c57",
+      "size": 1082
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-63616c6c2d62696e642d6170706c792d68656c70657273__LICENSE",
+      "sha": "f82f38963b0d282b529f64def2bcd40be3a9a947",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-636f6d62696e65642d73747265616d__License",
+      "sha": "4804b7ab411f5f72ff74343a88bc503ecc309033",
+      "size": 1085
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-636f6d70726573732d636f6d6d6f6e73__LICENSE",
+      "sha": "56420a6a06bd156003ce69970b50c67176f2afe5",
+      "size": 1074
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-636f72652d7574696c2d6973__LICENSE",
+      "sha": "d8d7f9437dbf5ad54701a187f05988bcf0006fd8",
+      "size": 1077
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6372632d3332__LICENSE",
+      "sha": "5723c45b65c813a87ed38272f5a3e6b7b6890a96",
+      "size": 11355
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-63726333322d73747265616d__LICENSE",
+      "sha": "56420a6a06bd156003ce69970b50c67176f2afe5",
+      "size": 1074
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6465627567__LICENSE",
+      "sha": "1a9820e262b26b60fe71a4dcd9bc9cfd0a01f26e",
+      "size": 1139
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-64656c617965642d73747265616d__License",
+      "sha": "4804b7ab411f5f72ff74343a88bc503ecc309033",
+      "size": 1085
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-64756e6465722d70726f746f__LICENSE",
+      "sha": "34995e79d1528aaceca7d38f323df52514ba7d0f",
+      "size": 1073
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6475706c65786572__LICENCE",
+      "sha": "a23e08a85aeef86fac0df29c571feffbafb494b5",
+      "size": 1050
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-65732d646566696e652d70726f7065727479__LICENSE",
+      "sha": "f82f38963b0d282b529f64def2bcd40be3a9a947",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-65732d6572726f7273__LICENSE",
+      "sha": "f82f38963b0d282b529f64def2bcd40be3a9a947",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-65732d6f626a6563742d61746f6d73__LICENSE",
+      "sha": "f82f38963b0d282b529f64def2bcd40be3a9a947",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-65732d7365742d746f737472696e67746167__LICENSE",
+      "sha": "c2a8460a3c4c3b8de391983485f26f4bce0ba5a6",
+      "size": 1073
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6576656e742d7461726765742d7368696d__LICENSE",
+      "sha": "c39e6949ed2dc6c05fce7ed3c7bfa12c38ef0ce2",
+      "size": 1082
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6576656e74732d756e6976657273616c__LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-666173742d6669666f__LICENSE",
+      "sha": "c728dc70b96897b4f56c18d41e2965a547f67cfc",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-666f6c6c6f772d726564697265637473__LICENSE",
+      "sha": "742cbada545ef218c598a58dabd7014e1701cb60",
+      "size": 1136
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-666f726d2d64617461__License",
+      "sha": "c7ff12a2f8af2e2c57f39da1754409c25b35f46a",
+      "size": 1118
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6674702d726573706f6e73652d706172736572__LICENSE",
+      "sha": "39465391a596e82d82be7174f1ece0893fcc455a",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-66756e6374696f6e2d62696e64__LICENSE",
+      "sha": "62d6d237ff179b118746a64a34967f7ff4b5dff8",
+      "size": 1052
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6765742d696e7472696e736963__LICENSE",
+      "sha": "48f05d01d0acae75acada5bd42a3442d0699d067",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6765742d70726f746f__LICENSE",
+      "sha": "eeabd1c37ce03aeba427120b80997db32513f35f",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-676c6f62__LICENSE.md",
+      "sha": "881248b6d7f0ca2c4f65c41c0af5e02bb0680601",
+      "size": 1764
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-676f7064__LICENSE",
+      "sha": "6abfe1434ebd5c15c245b9f0a7c25e36b581df19",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6861732d73796d626f6c73__LICENSE",
+      "sha": "df31cbf3c064d00ba5f15a3bb13c957b598b96a1",
+      "size": 1071
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6861732d746f737472696e67746167__LICENSE",
+      "sha": "7948bc02a7937478ae009ff3796e76b25bdfbb08",
+      "size": 1067
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6861736f776e__LICENSE",
+      "sha": "0314929078de8a733a0af9c8ba5bc00aca094cc9",
+      "size": 1083
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-686f737465642d6769742d696e666f__LICENSE",
+      "sha": "45055763dc838d98e35b6f3bd9a94bf15218a16d",
+      "size": 733
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-696e686572697473__LICENSE",
+      "sha": "dea3013d6710ee273f49ac606a65d5211d480c88",
+      "size": 749
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-69732d73747265616d__license",
+      "sha": "fa7ceba3eb4a9657a9db7f3ffca4e4e97a9019de",
+      "size": 1117
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6973657865__LICENSE.md",
+      "sha": "c5402b9577a8cdd966c0974e5b74cc7b85f536c5",
+      "size": 1552
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6a73667470__LICENSE",
+      "sha": "8a34f6dc3df50e9d927e885bc13ab22d5a3e9b7a",
+      "size": 1097
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6b6c6177__LICENSE",
+      "sha": "ddb217c971120c792da7151298ad818274d0f86f",
+      "size": 1084
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6c617a7973747265616d__LICENSE",
+      "sha": "982db1392010656384c7c3a37dae2749ebbd25e0",
+      "size": 1074
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6c6f636b66696c65__LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6c72752d6361636865__LICENSE.md",
+      "sha": "c5402b9577a8cdd966c0974e5b74cc7b85f536c5",
+      "size": 1552
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6d6174682d696e7472696e73696373__LICENSE",
+      "sha": "34995e79d1528aaceca7d38f323df52514ba7d0f",
+      "size": 1073
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6d696d652d6462__LICENSE",
+      "sha": "0751cb10e94972be9a07b44cc261447bac726a7f",
+      "size": 1172
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6d696d652d7479706573__LICENSE",
+      "sha": "06166077be4d1f620d89b9eb33c76d89e75857da",
+      "size": 1167
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6d696e696d61746368__LICENSE.md",
+      "sha": "8cb5cc6e616c0d9259b4965f9d2ce8528e4d2828",
+      "size": 1550
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6d73__license.md",
+      "sha": "fa5d39b6213f8a5e142b643575f99d9149cc71c6",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6e6f726d616c697a652d7061636b6167652d64617461__LICENSE",
+      "sha": "19d1364a8ac08fa7139cd7885d16351ec4aa6266",
+      "size": 1403
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6e6f726d616c697a652d70617468__LICENSE",
+      "sha": "d32ab4426a5f6bd7986ed80df4073bbf997903d1",
+      "size": 1088
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-6f6e6365__LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-70656e64__LICENSE",
+      "sha": "0bbb53ed41a5e18df6957e4220f76b92accfeba2",
+      "size": 1082
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-706c697374__LICENSE",
+      "sha": "92e3423af3dee7ef30a1c0e8a33c52e35a3cde53",
+      "size": 1107
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-706c7572616c697a65__LICENSE",
+      "sha": "309c2e3b83cef509ffab70ae2eed3cebaacfc61f",
+      "size": 1103
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-70726f636573732d6e65787469636b2d61726773__license.md",
+      "sha": "c67e3532b542455fad8c4004ef297534d7f480b2",
+      "size": 1064
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-70726f63657373__LICENSE",
+      "sha": "b8c1246cf49cbdc3084c7b33f69ec64cb019a42a",
+      "size": 1098
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7265616461626c652d73747265616d__LICENSE",
+      "sha": "2873b3b2e595072e66330369d83e8af46655970c",
+      "size": 2337
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-726561646469722d676c6f62__LICENSE",
+      "sha": "7ba928d30f2a8823b8ff7cc6c5a501883ef7d539",
+      "size": 11341
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-736166652d627566666572__LICENSE",
+      "sha": "0c068ceecbd48fc4e8279e6451793fec2bf12178",
+      "size": 1081
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-73616e6974697a652d66696c656e616d65__LICENSE.md",
+      "sha": "f9c323a08f0f83cae35ed0f7255f772f68534a35",
+      "size": 1304
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-73656d766572__LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7368656c6c2d71756f7465__LICENSE",
+      "sha": "3d59c73309d3312d7acbce16b11b1664f8118712",
+      "size": 1109
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7369676e616c2d65786974__LICENSE.txt",
+      "sha": "eead04a12162dc336a2d5029bc5101c9e430aa21",
+      "size": 748
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-737064782d636f7272656374__LICENSE",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-737064782d65787072657373696f6e2d7061727365__LICENSE",
+      "sha": "831618eaba6c89dff91b5acc6e7327c3fcf33af5",
+      "size": 1111
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-73747265616d2d636f6d62696e6572__LICENSE",
+      "sha": "6d03581f36143cf608bcd542200f908de3039592",
+      "size": 1073
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-73747265616d78__LICENSE",
+      "sha": "c728dc70b96897b4f56c18d41e2965a547f67cfc",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-737472696e675f6465636f646572__LICENSE",
+      "sha": "778edb20730ef48c01002248f4d51e7752c13487",
+      "size": 2338
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7461722d73747265616d__LICENSE",
+      "sha": "757562ec59276bff35792501d88fe83b34acca9a",
+      "size": 1078
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7465656e5f70726f63657373__LICENSE",
+      "sha": "f882c9c590095e577226913b3d32d4ad9903d11b",
+      "size": 10282
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-746578742d6465636f646572__LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7468726f756768__LICENSE.APACHE2",
+      "sha": "6366c04716fb9e88262da7cf0b5cdfa69dbd2c65",
+      "size": 586
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7468726f756768__LICENSE.MIT",
+      "sha": "6eafbd734a6e062459ba4b3b4a99f8aeb7178664",
+      "size": 1088
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-756e6f726d__LICENSE.md",
+      "sha": "ed1d4f304c508036f118584e7719ac40b4f2e431",
+      "size": 2198
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7574696c2d646570726563617465__LICENSE",
+      "sha": "6a60e8c225c9baca25907f87c74b428e5d85de0c",
+      "size": 1102
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-75756964__LICENSE.md",
+      "sha": "3934168364063216aa8805f06e3a1a8605133d68",
+      "size": 1109
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-76616c69646174652d6e706d2d7061636b6167652d6c6963656e7365__LICENSE",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7768696368__LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-777261707079__LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-786d6c6275696c646572__LICENSE",
+      "sha": "9fb97002a2928586a33381cf889caca4fa69c50a",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7961757a6c__LICENSE",
+      "sha": "37538d4d091ec7bf8310b10b107ffd35efef1efc",
+      "size": 1077
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-7a69702d73747265616d__LICENSE",
+      "sha": "56420a6a06bd156003ce69970b50c67176f2afe5",
+      "size": 1074
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "7a0e0fd3a66dc99c350df90486f179eefe67810a",
+      "size": 3568
+    },
+    {
+      "path": "miniapp/node/screen-hub.mjs",
+      "sha": "44310834e638930cd94eba407557414212f1a1fe",
+      "size": 19505
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "d0f72a3abfe97c3f9018c6bcbf7dccd1f8a325d1",
+      "size": 7471
+    },
+    {
+      "path": "miniapp/node/usb.bundle.cjs",
+      "sha": "f9a6b2c8944caa111f6bd58921264eaaa9eba119",
+      "size": 2777559
+    },
+    {
+      "path": "package.json",
+      "sha": "252726645acc47a7b45ade708e2554bf03feef4a",
+      "size": 285
+    },
+    {
+      "path": "phone-use.mcp.json",
+      "sha": "f66c1ee643478319051782261c1f16e0587b2a0d",
+      "size": 944
+    },
+    {
+      "path": "scripts/phone.py",
+      "sha": "14b8814ada49f4307c311d86946760fb982a814a",
+      "size": 1548
+    },
+    {
+      "path": "scripts/update_app_catalog.py",
+      "sha": "556cd87a014676d54b29de59a845873988a44063",
+      "size": 3336
+    },
+    {
+      "path": "server/analytics.py",
+      "sha": "331e7f9ef3bbdd5efa02b4c9121aa6837df2b724",
+      "size": 10191
+    },
+    {
+      "path": "server/android_adb.py",
+      "sha": "2f00a779194eee63ed13b2006fb7516245590225",
+      "size": 21053
+    },
+    {
+      "path": "server/android_use.py",
+      "sha": "c3188263f26d23d46cf0a17fbe494e55ea8524db",
+      "size": 59932
+    },
+    {
+      "path": "server/iphone_use.py",
+      "sha": "0c733c7df6061711c9e30822c6f01e8324e30522",
+      "size": 65298
+    },
+    {
+      "path": "server/wda_apps.py",
+      "sha": "5180b11456e65c774b2a663b9f7b40cfadf4eb42",
+      "size": 15467
+    },
+    {
+      "path": "server/wda_client.py",
+      "sha": "856a2ce63463af82469a301682caae15649c556e",
+      "size": 15277
+    },
+    {
+      "path": "server/wda_controller.py",
+      "sha": "41e67e004d2fe6cafeef9ff1ce9976be3dde8487",
+      "size": 64641
+    },
+    {
+      "path": "server/wda_image.py",
+      "sha": "4c666ccbd21ad89f1c8f28ce559f84a0d9de695b",
+      "size": 3312
+    },
+    {
+      "path": "server/wda_screen.py",
+      "sha": "f85ddfd208673f0af59a6e22098a7c680fc12bcc",
+      "size": 20916
+    },
+    {
+      "path": "server/wda_setup.py",
+      "sha": "c4062caa1045c2fe20686879e625e7f15b4b301b",
+      "size": 54441
+    },
+    {
+      "path": "server/wda_text.py",
+      "sha": "e84e5db0f1461ed4f8e19bbe49b42b220a86bbba",
+      "size": 2764
+    },
+    {
+      "path": "skills/android-use-setup/SKILL.md",
+      "sha": "b5a9d6f2f09f3b4aa019e2c0bbb25397e5561084",
+      "size": 8440
+    },
+    {
+      "path": "skills/android-use/SKILL.md",
+      "sha": "3c0b1d38f760e4c7ef537b065c61041398771b76",
+      "size": 8782
+    },
+    {
+      "path": "skills/iphone-use-setup/SKILL.md",
+      "sha": "ba0406632a8f9c0f563c076dedf2e9fd980e46f8",
+      "size": 13812
+    },
+    {
+      "path": "skills/iphone-use-setup/references/recovery.md",
+      "sha": "afbbefc9f200a11fd1734bf4ef265a221029ea31",
+      "size": 2718
+    },
+    {
+      "path": "skills/iphone-use-setup/references/troubleshooting.md",
+      "sha": "4d8c5350fd2a589cb04fba32849bab7d8a7b78ef",
+      "size": 7578
+    },
+    {
+      "path": "skills/iphone-use/SKILL.md",
+      "sha": "12e3ab6150d777be039a9c09de275d51a602230a",
+      "size": 20932
+    },
+    {
+      "path": "skills/iphone-use/references/airdrop.md",
+      "sha": "126f9110547b5c7d7ff0a51909f72ad596214ff3",
+      "size": 518
+    },
+    {
+      "path": "skills/iphone-use/references/app-snapshots.md",
+      "sha": "1a229474cd398eb70863577d2d2cab5668ea6232",
+      "size": 3457
+    },
+    {
+      "path": "skills/iphone-use/references/apps.json",
+      "sha": "18a4fce0f08198a43710afba7083daff519f72e8",
+      "size": 33155
+    },
+    {
+      "path": "skills/iphone-use/references/apps.md",
+      "sha": "5c0f1365eaf7e6bd80c3714565c28a59c8133563",
+      "size": 8124
+    },
+    {
+      "path": "skills/iphone-use/references/authentication.md",
+      "sha": "23f840ea8f73da93d377ea6ae671e40a228a4544",
+      "size": 5625
+    },
+    {
+      "path": "skills/iphone-use/references/screen.md",
+      "sha": "d2f39e72c714a0084d3f1602ef3c2f75595daa53",
+      "size": 2983
+    },
+    {
+      "path": "skills/iphone-use/references/startup.md",
+      "sha": "870545a88c214b1ef7e5679642e01e56c7be9d9e",
+      "size": 6460
+    },
+    {
+      "path": "skills/iphone-use/references/tool-fallback.md",
+      "sha": "3e894550f70938d476465b0ed67c177ac8e28ef6",
+      "size": 11019
+    },
+    {
+      "path": "skills/iphone-use/references/verification.md",
+      "sha": "0c52ebaf02290cf7a578577f079199cbfa0fbaea",
+      "size": 4727
+    },
+    {
+      "path": "skills/iphone-use/references/wechat.md",
+      "sha": "3895920e0545f3f1291f3b5836c41ba5fabfe5bb",
+      "size": 2602
+    },
+    {
+      "path": "skills/iphone-use/references/weibo.md",
+      "sha": "00abb0201cfeeba29711eafe9d02ec75c67905e2",
+      "size": 2571
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "version": "6.2.8",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "db1ef2551037f8280d34931112c5d83a392ca92a",
+      "size": 1394
+    },
+    {
+      "path": "LICENSE",
+      "sha": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+      "size": 1070
+    },
+    {
+      "path": "app-icon.webp",
+      "sha": "4a579bfa4dd7f3035846fe2e7328867dff7e224e",
+      "size": 19204
+    },
+    {
+      "path": "hooks/hooks.json",
+      "sha": "067f8d0a587b74772045588dab2b423113d14795",
+      "size": 449
+    },
+    {
+      "path": "scripts/session-start.ps1",
+      "sha": "cd206cf4383288ade29785a7ed677d62cb493079",
+      "size": 1336
+    },
+    {
+      "path": "scripts/session-start.sh",
+      "sha": "c70f4902a4906ca1c380157dc7a761744af884f9",
+      "size": 1711
+    },
+    {
+      "path": "skills/brainstorming/SKILL.md",
+      "sha": "789c3a1990b9ab3896c4d8b0b708525ac83fe5ce",
+      "size": 10047
+    },
+    {
+      "path": "skills/brainstorming/scripts/frame-template.html",
+      "sha": "f540bb8a4f88107e2b37b2871a4c1a55a3b6f720",
+      "size": 8094
+    },
+    {
+      "path": "skills/brainstorming/scripts/helper.js",
+      "sha": "e11d26489ce248f37af3e4dd01ddec6a4e88287f",
+      "size": 5615
+    },
+    {
+      "path": "skills/brainstorming/scripts/server.cjs",
+      "sha": "a828b35af64d5c64ca68b9ec78473999ce698874",
+      "size": 25693
+    },
+    {
+      "path": "skills/brainstorming/scripts/start-server.sh",
+      "sha": "016a8e4870142ce2adbe81a021d8b6b9073e7618",
+      "size": 6908
+    },
+    {
+      "path": "skills/brainstorming/scripts/stop-server.sh",
+      "sha": "7cacfe9440043f7a46eac555cd835fad0769c425",
+      "size": 3263
+    },
+    {
+      "path": "skills/brainstorming/spec-document-reviewer-prompt.md",
+      "sha": "60993129de3c445efeff53987b5297dc1acf3eb1",
+      "size": 1747
+    },
+    {
+      "path": "skills/brainstorming/visual-companion.md",
+      "sha": "f1ef244ac0023466b5c1b6216897fdd7c82d2b6a",
+      "size": 13333
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "sha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
+      "size": 6078
+    },
+    {
+      "path": "skills/executing-plans/SKILL.md",
+      "sha": "b51d97d2cc4c2ecc5eabecf27e499aa8c933efac",
+      "size": 2305
+    },
+    {
+      "path": "skills/finishing-a-development-branch/SKILL.md",
+      "sha": "21a439ac3fd4eb696f3af2ce149312d33b002dc1",
+      "size": 7022
+    },
+    {
+      "path": "skills/receiving-code-review/SKILL.md",
+      "sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
+      "size": 6203
+    },
+    {
+      "path": "skills/requesting-code-review/SKILL.md",
+      "sha": "fa4f2f9965591d6d8a7ef4ad47e6ba4d5ac344d0",
+      "size": 2956
+    },
+    {
+      "path": "skills/requesting-code-review/code-reviewer.md",
+      "sha": "db84ae2a0f91834f93de9cf9f9cf8602bbd78a11",
+      "size": 5213
+    },
+    {
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "sha": "00d6edd44aabab8521c6c85e62e80378c116204e",
+      "size": 28117
+    },
+    {
+      "path": "skills/subagent-driven-development/implementer-prompt.md",
+      "sha": "fbe441e209d73997714366e90a919cd3caea0d09",
+      "size": 5717
+    },
+    {
+      "path": "skills/subagent-driven-development/re-review-prompt.md",
+      "sha": "396932694d2697a0d5272ec64cccb8e9d382edd0",
+      "size": 4305
+    },
+    {
+      "path": "skills/subagent-driven-development/scripts/review-package",
+      "sha": "31852e2abbeb9a41084f67a9f2ef3cfc3378bce9",
+      "size": 1469
+    },
+    {
+      "path": "skills/subagent-driven-development/scripts/sdd-workspace",
+      "sha": "4e2d16802ecaa23eb9a682663e4c356c4aa5a656",
+      "size": 1586
+    },
+    {
+      "path": "skills/subagent-driven-development/scripts/task-brief",
+      "sha": "612e14a1ee7ca9c0078d896325935759a1827c24",
+      "size": 1158
+    },
+    {
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "sha": "436328697a778156d8828c9e964da02efac2616e",
+      "size": 7826
+    },
+    {
+      "path": "skills/systematic-debugging/CREATION-LOG.md",
+      "sha": "9aa03092809feaf93c9bfa985252f6f1c9624692",
+      "size": 4257
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "sha": "095d194ac041502905f15b01d22d294fb94db8b2",
+      "size": 9465
+    },
+    {
+      "path": "skills/systematic-debugging/condition-based-waiting-example.ts",
+      "sha": "703a06b653160d060bbf46ab5c6e0cd7446bd592",
+      "size": 5054
+    },
+    {
+      "path": "skills/systematic-debugging/condition-based-waiting.md",
+      "sha": "70994f777c586f7d4c43033aac34c7cf0da6688b",
+      "size": 3516
+    },
+    {
+      "path": "skills/systematic-debugging/defense-in-depth.md",
+      "sha": "e2483354dc2b62478a2624e34ca18bc0efe887b2",
+      "size": 3650
+    },
+    {
+      "path": "skills/systematic-debugging/find-polluter.sh",
+      "sha": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb",
+      "size": 1986
+    },
+    {
+      "path": "skills/systematic-debugging/root-cause-tracing.md",
+      "sha": "0e72e8f9566b7ef85e814633d1feacad9d0c5868",
+      "size": 5321
+    },
+    {
+      "path": "skills/systematic-debugging/test-academic.md",
+      "sha": "23a6ed7a2044e0c44d74c3101406140f4851aa41",
+      "size": 653
+    },
+    {
+      "path": "skills/systematic-debugging/test-pressure-1.md",
+      "sha": "8d13b467e4a98abfffd12161cbc3c418021d6023",
+      "size": 1900
+    },
+    {
+      "path": "skills/systematic-debugging/test-pressure-2.md",
+      "sha": "2d2315ec8a24ca872bc80d2f4056468ba051462a",
+      "size": 2283
+    },
+    {
+      "path": "skills/systematic-debugging/test-pressure-3.md",
+      "sha": "89734b86fdc756488df315d53e5c3ac2d3752cd8",
+      "size": 2692
+    },
+    {
+      "path": "skills/test-driven-development/SKILL.md",
+      "sha": "4320d8879a639d0536c2239bb80c9d7257ad8947",
+      "size": 9015
+    },
+    {
+      "path": "skills/test-driven-development/writing-good-tests.md",
+      "sha": "d3c4482fd30b4f9084bb61545fe73939a7502c28",
+      "size": 8268
+    },
+    {
+      "path": "skills/using-git-worktrees/SKILL.md",
+      "sha": "1381dacb3516b94382dd6ec736ede21ee8ede2b3",
+      "size": 6813
+    },
+    {
+      "path": "skills/using-superpowers/SKILL.md",
+      "sha": "8a08873ba07c1437f4f3cfd0d06c333eaf2e2715",
+      "size": 3063
+    },
+    {
+      "path": "skills/using-superpowers/references/antigravity-tools.md",
+      "sha": "2e1eac90534af6e1f27df4e18410be8a7b442448",
+      "size": 1495
+    },
+    {
+      "path": "skills/using-superpowers/references/codex-tools.md",
+      "sha": "b14b58582155ec9e0335a786636adeaca25a77d5",
+      "size": 1774
+    },
+    {
+      "path": "skills/using-superpowers/references/gemini-tools.md",
+      "sha": "b01b65238a50981aeed22ae52ee20f8b55d16b42",
+      "size": 4598
+    },
+    {
+      "path": "skills/using-superpowers/references/pi-tools.md",
+      "sha": "0c1f21713a45255ece4144fd2fee353e4ed4f90e",
+      "size": 1242
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "sha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+      "size": 3646
+    },
+    {
+      "path": "skills/writing-plans/SKILL.md",
+      "sha": "dd2702b8bab0dbe6b6824d8d00669be44fbb8be7",
+      "size": 6907
+    },
+    {
+      "path": "skills/writing-plans/plan-document-reviewer-prompt.md",
+      "sha": "1c12c1d6180395262d7150bdb12a9a90efc9cfa0",
+      "size": 1713
+    },
+    {
+      "path": "skills/writing-skills/SKILL.md",
+      "sha": "dc3de1e039daa2d61b5472bd96dcb7ec0032f1fa",
+      "size": 26370
+    },
+    {
+      "path": "skills/writing-skills/anthropic-best-practices.md",
+      "sha": "15ea9eae223d9081b602618849791c07a7758f3d",
+      "size": 46197
+    },
+    {
+      "path": "skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
+      "sha": "47881fc85bd6c01b32b84d52ed9a0c73c8d6a089",
+      "size": 5423
+    },
+    {
+      "path": "skills/writing-skills/graphviz-conventions.dot",
+      "sha": "3509e2f028cacaa8118cbc8c80025efb089ec28e",
+      "size": 5970
+    },
+    {
+      "path": "skills/writing-skills/persuasion-principles.md",
+      "sha": "9756416a59600b70ecca4044e0919ee7d4a37b21",
+      "size": 5901
+    },
+    {
+      "path": "skills/writing-skills/render-graphs.js",
+      "sha": "1d670fbb356553f898b9f8273f8b314f35ef1a59",
+      "size": 4857
+    },
+    {
+      "path": "skills/writing-skills/testing-skills-with-subagents.md",
+      "sha": "a5acfeac86f34c7bc625d064e10c8a2f8180b696",
+      "size": 12558
+    }
+  ]
+}

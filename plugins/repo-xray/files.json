@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "745ac83e073bc9d788198911131c59ee644e75be",
+      "size": 645
+    },
+    {
+      "path": "LICENSE",
+      "sha": "0ad976141510c1f1f83a478e7fa4d82abfae62b4",
+      "size": 1068
+    },
+    {
+      "path": "README.md",
+      "sha": "f27f701a5fcf9424dff65fba02b4a7edff62c291",
+      "size": 10652
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "8573ca6875769f51a6efcb3e102b240e4560297d",
+      "size": 8950
+    },
+    {
+      "path": "docs/preview.jpg",
+      "sha": "5308a97c41a10ce8be4f389e0d9dfd01803b9e8f",
+      "size": 226615
+    },
+    {
+      "path": "icon.png",
+      "sha": "0fcaffa230cc77478bcf3de8292ea41e613ef0f3",
+      "size": 148070
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "d85ddc439c5b0821595ff9bec2ef11fd551ecbd5",
+      "size": 171781
+    },
+    {
+      "path": "miniapp/client/charts.js",
+      "sha": "c30a45d09353d9231d922327ac4d66a4e9b03709",
+      "size": 30326
+    },
+    {
+      "path": "miniapp/client/icon.svg",
+      "sha": "5650934aab23c21e8577308a4e73414f922c0428",
+      "size": 4183
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "c2360d3be959ecc2bd23f8038a3ab1342f38f26d",
+      "size": 3788
+    },
+    {
+      "path": "miniapp/client/styles.css",
+      "sha": "7f1df5e4b7693036a6158a601fb7bcdb76cc2e99",
+      "size": 82373
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "4fe89b819330b3f9828a123f200981a91a7217d6",
+      "size": 363
+    },
+    {
+      "path": "miniapp/node/analyze.mjs",
+      "sha": "7ab4b631a768f1dc3bcd430d4ea19f9833e39127",
+      "size": 27824
+    },
+    {
+      "path": "miniapp/node/codemap.mjs",
+      "sha": "0e83c63e60111ea574882380a9c851a798c3ba55",
+      "size": 30899
+    },
+    {
+      "path": "miniapp/node/git.mjs",
+      "sha": "bf480173cf84f8d6ee38a0da8ce78625c18132f3",
+      "size": 15207
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
+      "size": 15554
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "30586432d1716f0e17ffb0feedf827fff803db9f",
+      "size": 29840
+    },
+    {
+      "path": "miniapp/node/techstack.mjs",
+      "sha": "d5dc712089c21a3e35761a1f6b42a25bda0b863e",
+      "size": 23194
+    },
+    {
+      "path": "miniapp/node/util.mjs",
+      "sha": "0d7cc8fd8ac6665ea241e1af9d29aac293c0f5ac",
+      "size": 2592
+    },
+    {
+      "path": "package.json",
+      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
+      "size": 85
+    }
+  ]
+}

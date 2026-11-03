@@ -1,0 +1,165 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "cc27f22aefa6a8bcdab420621c139f69b833b603",
+      "size": 1426
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha": "1b5184b03985c0e5dc275fa142996a76101dcc89",
+      "size": 3346
+    },
+    {
+      "path": "README.md",
+      "sha": "ea80a4c6cc91db32e69c0229e89f096e7a0cf78a",
+      "size": 2664
+    },
+    {
+      "path": "assets/icon.png",
+      "sha": "7555efe9903d6bca911e8044d8f9b4da8adcf36e",
+      "size": 990310
+    },
+    {
+      "path": "references/backend-workflow.md",
+      "sha": "088affda3fd0cffe6d5634a5b0faac290fd57397",
+      "size": 2651
+    },
+    {
+      "path": "references/delivery-contract.md",
+      "sha": "8f8bb9a8c5eb5fad849e7c83d71b464f3783f292",
+      "size": 2244
+    },
+    {
+      "path": "references/design-system.md",
+      "sha": "e424f8eb337e42286d9f298d2005e0cd009681e6",
+      "size": 2018
+    },
+    {
+      "path": "references/icon-generation.md",
+      "sha": "3016676dbaa5fa2a8cefa022d8546eae285ab592",
+      "size": 1371
+    },
+    {
+      "path": "references/memory.md",
+      "sha": "ec7f36881c728b451bebc4cef48a27f3999a18ce",
+      "size": 1771
+    },
+    {
+      "path": "references/performance.md",
+      "sha": "eeb422a156a87619cea162127d733404d6001583",
+      "size": 2810
+    },
+    {
+      "path": "references/project-rules.md",
+      "sha": "72cbf8afaf907b61ff8ddf6f3f405a842b232492",
+      "size": 2469
+    },
+    {
+      "path": "references/prototype-workflow.md",
+      "sha": "c3f5f31284d0efb94ca530e97234ded61a971340",
+      "size": 2354
+    },
+    {
+      "path": "references/release-checklist.md",
+      "sha": "e93d8a2967e19edd8417c1c91290babb7ac70dd2",
+      "size": 1986
+    },
+    {
+      "path": "references/swiftui-implementation.md",
+      "sha": "3c38df90f21355789a6f027093c878e17df1a6bc",
+      "size": 2227
+    },
+    {
+      "path": "references/system-integration.md",
+      "sha": "02e7eb644ae9eab159c30ae25ba1d7e5fe572338",
+      "size": 1666
+    },
+    {
+      "path": "references/tool-runtime.md",
+      "sha": "4f6b463b5f031977bc05535ef8ac8762ea269a9c",
+      "size": 2416
+    },
+    {
+      "path": "scripts/init_workspace.py",
+      "sha": "7e6629d3fb00b1068cd9ef0d29e581852c2556fa",
+      "size": 2326
+    },
+    {
+      "path": "scripts/project_audit.py",
+      "sha": "43930e5f5e72022be93f847a8a5e5416d2e12e04",
+      "size": 2903
+    },
+    {
+      "path": "skills/app-integration-delivery/SKILL.md",
+      "sha": "4efa3533573d0feb860537622f0bc08be693a684",
+      "size": 2402
+    },
+    {
+      "path": "skills/app-project-guide/SKILL.md",
+      "sha": "6d6b3decd9ee944be863f8a6c59fdd6f7df337d4",
+      "size": 3250
+    },
+    {
+      "path": "skills/backend-service-build/SKILL.md",
+      "sha": "74285516d421621cc0ea53ade5d7cd102ab64ef8",
+      "size": 2780
+    },
+    {
+      "path": "skills/ios-component-refactor/SKILL.md",
+      "sha": "6d2e1f474b672aa8f364c7d9bacf3572923fd9fb",
+      "size": 2399
+    },
+    {
+      "path": "skills/ios-feature-build/SKILL.md",
+      "sha": "b5fecd1053fd4413dba47d988808ab139ac4aa19",
+      "size": 2413
+    },
+    {
+      "path": "skills/ios-memory-investigate/SKILL.md",
+      "sha": "aa00b15d257710006cd9e88da6b6d740faf0a18e",
+      "size": 1818
+    },
+    {
+      "path": "skills/ios-performance-investigate/SKILL.md",
+      "sha": "d14a753d5298910138f6c9559d2e4851703e7e2b",
+      "size": 1954
+    },
+    {
+      "path": "skills/ios-simulator-debug/SKILL.md",
+      "sha": "ed48de4329d42dee0388957aa6f9747de9807fbb",
+      "size": 2550
+    },
+    {
+      "path": "skills/ios-system-integration/SKILL.md",
+      "sha": "aae8d035ef003416188a893c47ce4e5c9a52030c",
+      "size": 2028
+    },
+    {
+      "path": "skills/prototype-explore/SKILL.md",
+      "sha": "2c2ac6de151bfd5b328e05bf81c750e88f2e7e94",
+      "size": 2853
+    },
+    {
+      "path": "skills/prototype-handoff/SKILL.md",
+      "sha": "3e494ae4d7e2e2cf23fb1a5cc6cc3bfab2d7ee61",
+      "size": 2296
+    },
+    {
+      "path": "skills/prototype-refine/SKILL.md",
+      "sha": "1f2a959d9eae9c20a4b19ad14ab05c964b677e5d",
+      "size": 2422
+    },
+    {
+      "path": "templates/project-rules.md",
+      "sha": "e97e997ba68fe504d88b38bcfe8f2e48f349dbcf",
+      "size": 1873
+    },
+    {
+      "path": "xcodebuild.mcp.json",
+      "sha": "6d554c832d3df5d4469f96fcf85842213481c9ea",
+      "size": 367
+    }
+  ]
+}

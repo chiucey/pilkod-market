@@ -1,0 +1,170 @@
+{
+  "version": "0.8.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "a98a55d885cc6f6bd5a5fb831d39ca5e7a46d4e5",
+      "size": 862
+    },
+    {
+      "path": "ASSET-RIGHTS.md",
+      "sha": "4a3d7f6ded4558a9b3614df17cfd8ec32f46d397",
+      "size": 607
+    },
+    {
+      "path": "LICENSE",
+      "sha": "1edcc99d425985a8726ef52ecb85d7c37461d441",
+      "size": 1082
+    },
+    {
+      "path": "README.md",
+      "sha": "efb1e32d70b81b1af36ef4ff8cf9b21e991eb3cc",
+      "size": 6061
+    },
+    {
+      "path": "asr/qwen_worker.py",
+      "sha": "bf4c60b0d19156caaab75d04762ef1305fcda6be",
+      "size": 3336
+    },
+    {
+      "path": "asr/requirements.lock",
+      "sha": "0bdcc23bf92f7cae7fd8ffcbb0ff49d5006aa317",
+      "size": 610
+    },
+    {
+      "path": "docs/agent-setup.md",
+      "sha": "601f03c6516e67bca83787e24d4f3be1b099c402",
+      "size": 5310
+    },
+    {
+      "path": "docs/data-and-permissions.md",
+      "sha": "f56aed6afee3db21118922217533c7211eaa72ed",
+      "size": 1453
+    },
+    {
+      "path": "docs/installation.md",
+      "sha": "58534155fc4fa213d808ddca26f3227a2de82930",
+      "size": 2470
+    },
+    {
+      "path": "icon.png",
+      "sha": "70cbd0780784de3c9fee5536835d5b0c91a48932",
+      "size": 1427
+    },
+    {
+      "path": "lib/beta-client.mjs",
+      "sha": "0f805b4d8ca8a8d30d6044c56895a8ba5a28436b",
+      "size": 2746
+    },
+    {
+      "path": "lib/client.mjs",
+      "sha": "9e317604b2a35a8efc0662bfeea5ce795ffd2019",
+      "size": 697
+    },
+    {
+      "path": "lib/config.mjs",
+      "sha": "0dc10b9198facb2546e851a7de4917e33905728a",
+      "size": 3618
+    },
+    {
+      "path": "lib/direct-capture.mjs",
+      "sha": "82767a8e3456951a3a03ffa4b8d4668d18b2fca3",
+      "size": 3136
+    },
+    {
+      "path": "lib/mcp.mjs",
+      "sha": "c31dbf2841766a630afee8808b34b5fa0be01045",
+      "size": 6243
+    },
+    {
+      "path": "lib/prepare.mjs",
+      "sha": "de16aba0b391a3d1240ad2d678be7a5b7cdd85de",
+      "size": 5378
+    },
+    {
+      "path": "lib/process.mjs",
+      "sha": "4d2351f04d6d9d44d059deba802fab827f2d7385",
+      "size": 1732
+    },
+    {
+      "path": "lib/provider-key.mjs",
+      "sha": "e3386da075db7754c9e3c4ad2eef0eaf860f9de7",
+      "size": 892
+    },
+    {
+      "path": "lib/qwen-worker.mjs",
+      "sha": "374d0913453f428dc9377bae872e11827b1b2eea",
+      "size": 4481
+    },
+    {
+      "path": "lib/service.mjs",
+      "sha": "7efbdfffa75f18e81abb5d24e151c5f32cbdbc02",
+      "size": 11647
+    },
+    {
+      "path": "lib/setup-status.mjs",
+      "sha": "c5ef01c7803e7daac8e62678cc2cd41ed5031784",
+      "size": 3845
+    },
+    {
+      "path": "lib/speech.mjs",
+      "sha": "6f3cbe364d21323569b2aa4cdda80734524779c8",
+      "size": 6797
+    },
+    {
+      "path": "lib/voice-policy.mjs",
+      "sha": "3ff599197d272d133ea87ecc5f8df32d34a52849",
+      "size": 3436
+    },
+    {
+      "path": "lib/worker-voice.mjs",
+      "sha": "312aaeabcb726f08ca7fdbb61a084cf1793828c8",
+      "size": 2458
+    },
+    {
+      "path": "mcp-launch.sh",
+      "sha": "4b7d381984ce95f85005a77256eb573e8b3e28a0",
+      "size": 815
+    },
+    {
+      "path": "package.json",
+      "sha": "e9e4148517656cfcbfe405933eb3e1660e92f5db",
+      "size": 215
+    },
+    {
+      "path": "server.mjs",
+      "sha": "c4abc0f989e6a6b7a6b52bb14f7b8df7ee16fa5c",
+      "size": 1904
+    },
+    {
+      "path": "skills/voice-prompt/SKILL.md",
+      "sha": "b36db2b4b94b8baf87dbb357a7e17846647f0ed4",
+      "size": 13166
+    },
+    {
+      "path": "skills/voice-prompt/references/setup.md",
+      "sha": "73761d9d4809add1f66c3fcc1dc8f27c24dc40f3",
+      "size": 7854
+    },
+    {
+      "path": "voice-prompt.mcp.json",
+      "sha": "e7b84fe854211af2df756cdef088ea528cb0fa17",
+      "size": 335
+    },
+    {
+      "path": "web/app.js",
+      "sha": "59944cc00c3bcc47ccce1b40369d5e3ceffd5e8b",
+      "size": 4380
+    },
+    {
+      "path": "web/index.html",
+      "sha": "8e7132a6ee969133c1012c12d6bf5c50c5915cc2",
+      "size": 3403
+    },
+    {
+      "path": "web/style.css",
+      "sha": "9bb9d59164478f46a25dda2d0328ccb469ecf294",
+      "size": 2815
+    }
+  ]
+}

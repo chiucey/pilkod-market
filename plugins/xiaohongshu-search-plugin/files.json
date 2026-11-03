@@ -1,0 +1,30 @@
+{
+  "version": "1.0.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "c9eee689d965a9d6095ea363951718778c5f0d6e",
+      "size": 827
+    },
+    {
+      "path": "icon.png",
+      "sha": "247daa918c893bb4d6510f677b7b310fc2dbf938",
+      "size": 61850
+    },
+    {
+      "path": "skills/xiaohongshu-search/SKILL.md",
+      "sha": "45fe9abd8b7df84b15e7c99546ce515de7139c67",
+      "size": 28364
+    },
+    {
+      "path": "skills/xiaohongshu-search/references/xhs_hot_article_format.md",
+      "sha": "eedd4711517105a1f8123ac98a3a2ecc85dbda84",
+      "size": 4601
+    },
+    {
+      "path": "skills/xiaohongshu-search/scripts/fetch_xhs_hot_articles.py",
+      "sha": "7112fa89c9269f19ad9307e6d1ccb553e9a5d386",
+      "size": 22996
+    }
+  ]
+}

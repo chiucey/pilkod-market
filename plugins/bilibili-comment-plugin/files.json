@@ -1,0 +1,40 @@
+{
+  "version": "1.0.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "9005e413c6d8279ed9da76c08c955abcef9bd3ab",
+      "size": 787
+    },
+    {
+      "path": "icon.png",
+      "sha": "1c347db6a05aec8ca9d568ee0afde6b040debffb",
+      "size": 30956
+    },
+    {
+      "path": "skills/bilibili-comment/SKILL.md",
+      "sha": "ca858b6066feeeef371bd04fa04d24fd805eb346",
+      "size": 9832
+    },
+    {
+      "path": "skills/bilibili-comment/assets/report_template.html",
+      "sha": "12647b6db1b7a593e463987bbc06ef6a61ba9685",
+      "size": 14825
+    },
+    {
+      "path": "skills/bilibili-comment/references/core_workflow.md",
+      "sha": "6c077fd957ada0e29f0c55d31c8f159265ecd17b",
+      "size": 4393
+    },
+    {
+      "path": "skills/bilibili-comment/scripts/backfill_html.py",
+      "sha": "9e4cab7083660fe3e7ec0531170cf1d833274e29",
+      "size": 3754
+    },
+    {
+      "path": "skills/bilibili-comment/scripts/bili_comment_search.py",
+      "sha": "fcb6d60823de5b54d0bacb5e76591ba5b3c1117a",
+      "size": 16588
+    }
+  ]
+}

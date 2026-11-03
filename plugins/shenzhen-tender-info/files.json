@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "5901bf2e6af56b9a536721c265f532a7dd1c74a7",
+      "size": 1017
+    },
+    {
+      "path": "README.md",
+      "sha": "061e58c2e525592fa097455198ca604900288a1f",
+      "size": 5185
+    },
+    {
+      "path": "icon.png",
+      "sha": "a79c6befe9eb6bc1f767f4c88e753c75ea320248",
+      "size": 67148
+    },
+    {
+      "path": "server.mjs",
+      "sha": "202a03b1913781855c51ff0c561c2a4d94e89170",
+      "size": 27507
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "63706b8d68a3cc843c3253f25e13652265141d6f",
+      "size": 454
+    },
+    {
+      "path": "skills/tender-search-visualizer/SKILL.md",
+      "sha": "f0d82325abccd0214846d61cc1106092cbedb14f",
+      "size": 4653
+    },
+    {
+      "path": "skills/tender-search-visualizer/genui.json",
+      "sha": "48fb543c18fe4efc9d9ebf1353a560c021758f96",
+      "size": 489
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/components.md",
+      "sha": "c96435a34734bc85535b4bba4258801e05205a6a",
+      "size": 6507
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/data-schema.json",
+      "sha": "344c83871ac5d21ff07444fb3d71d08324e48b1c",
+      "size": 6393
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/examples.md",
+      "sha": "a4e335cf259a5aee69c78064499b5dcb165f2785",
+      "size": 32311
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/genui-widget/genui-widget-foundation.md",
+      "sha": "13713ff0905090839712f2d2acb48ff4b17d4c95",
+      "size": 21605
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/genui-widget/references/color-system.md",
+      "sha": "af460c46aa75b45871a650e329180331a54b8172",
+      "size": 8023
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/genui-widget/references/visual-rules.md",
+      "sha": "bdb1a7fa936988e7b4d982108ab45652f0d21ce0",
+      "size": 4989
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/genui-widget/references/widget-patterns.md",
+      "sha": "335279f5154ac0e8b9dcd48156268930a704a355",
+      "size": 7498
+    },
+    {
+      "path": "skills/tender-search-visualizer/references/genui-widget/references/widget-recipes.md",
+      "sha": "b1a0f7ced95a076b5fdae309669075036a57841f",
+      "size": 9456
+    },
+    {
+      "path": "skills/tender-search/SKILL.md",
+      "sha": "5ef9f52158306508befd94145c4aa5fe697aa3f9",
+      "size": 5622
+    }
+  ]
+}

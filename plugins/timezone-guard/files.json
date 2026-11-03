@@ -1,0 +1,90 @@
+{
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "130b94422a6a07809a134c284b10ef24c2daf5fa",
+      "size": 533
+    },
+    {
+      "path": "LICENSE",
+      "sha": "7defdd897c915226adca607abe853283fda55a50",
+      "size": 1064
+    },
+    {
+      "path": "README.md",
+      "sha": "27bda3e5669c33acbe595082a2a26503c5220fb1",
+      "size": 8021
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "faca230f06424f0326a22c4f540773ca5ce65ab9",
+      "size": 6859
+    },
+    {
+      "path": "docs/preview-dark.png",
+      "sha": "25dfec80e102947d2e8e815b5a37e73edcd211e0",
+      "size": 95826
+    },
+    {
+      "path": "docs/preview.png",
+      "sha": "c5ee22c216b21464ca6fb228375bad47d0f1a6dc",
+      "size": 96420
+    },
+    {
+      "path": "icon.png",
+      "sha": "fa611fe821ab0b1f0c2153ecbd61676fb3066c35",
+      "size": 4780
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "8554285b3248f03f26d03aa5de6c9ef19097a098",
+      "size": 40306
+    },
+    {
+      "path": "miniapp/client/cities.js",
+      "sha": "30118095638c88026a3d07a06d90156d6a1bc088",
+      "size": 34021
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "cdad958e7909fbcbf821249f0231987795bde360",
+      "size": 10380
+    },
+    {
+      "path": "miniapp/client/styles.css",
+      "sha": "e48b938dd581dc35e1be7a28fb9b7871e6c57776",
+      "size": 16428
+    },
+    {
+      "path": "miniapp/client/time.js",
+      "sha": "35e3d69bc74224bca08d1f58f2682f7a1c6fccee",
+      "size": 4924
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "f9415e525badd70f971ad041b67d12070da4e798",
+      "size": 454
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
+      "size": 15554
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "d05b175c75881d297335d165b7ce3e04f8db19a5",
+      "size": 3242
+    },
+    {
+      "path": "package.json",
+      "sha": "c9ed5a639b64774d5339107e7adc6438ee34ddc5",
+      "size": 131
+    },
+    {
+      "path": "test/time.test.mjs",
+      "sha": "e9ef30f95822b2aebb7c32862c077b6c3bf2a3ec",
+      "size": 5444
+    }
+  ]
+}

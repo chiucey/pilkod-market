@@ -1,0 +1,555 @@
+{
+  "version": "0.5.0-rc.4",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "c0a3a3cc4d2d7bcbe7dfcdde31d76e77f21d3d07",
+      "size": 742
+    },
+    {
+      "path": ".gitignore",
+      "sha": "3531bfa2d391a1e0a55b461bbb0ffc77bf9100e2",
+      "size": 46
+    },
+    {
+      "path": "LICENSE",
+      "sha": "077f492de30f9e61b976980a17d1f37f1d361862",
+      "size": 1250
+    },
+    {
+      "path": "README.md",
+      "sha": "af297595cba4840d4a4e2d2214acd5cdc5038dfa",
+      "size": 10267
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "c2c65ead01a7317d5e76db2d8f0b81bc8f35feae",
+      "size": 7045
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha": "ad9c8cb7dfbe000fdc1c403facf140a96e1b56ea",
+      "size": 4889
+    },
+    {
+      "path": "docs/assets.md",
+      "sha": "e03bfecda14cec6739c63803d459e7b0239d2ebf",
+      "size": 1526
+    },
+    {
+      "path": "docs/demo-game-2d.md",
+      "sha": "bf1ab37ad417363288992c06b7c6fe537b6fddb2",
+      "size": 838
+    },
+    {
+      "path": "docs/demo-game-webgl.md",
+      "sha": "58630e36d1e66c301d7334a6fd65a16d28bd629a",
+      "size": 902
+    },
+    {
+      "path": "icon-wechat-devtools-6dae8e16.png",
+      "sha": "0d3d709014229da2530b5e685a47d75422ba45eb",
+      "size": 16481
+    },
+    {
+      "path": "miniapp/client/css-urls.mjs",
+      "sha": "18b92eef1bf28ed2dcb4fd2d37668351f902e845",
+      "size": 2776
+    },
+    {
+      "path": "miniapp/client/device-config.js",
+      "sha": "63a2db6cb971821aa4237441949571f9e4a05eb0",
+      "size": 4616
+    },
+    {
+      "path": "miniapp/client/game-runtime.css",
+      "sha": "3a7fcfd160235f3ff1ae03ae0e830fa0e4343dbd",
+      "size": 1089
+    },
+    {
+      "path": "miniapp/client/game-runtime.js",
+      "sha": "8847ca38c9096d8ee2740c82420d8dbf2088055d",
+      "size": 39266
+    },
+    {
+      "path": "miniapp/client/icons.js",
+      "sha": "bd2dcef8045103749caa5c7ba058ac93d72dfc90",
+      "size": 5045
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "9038d80f7f4097708079a85e7d06cbd8515be19f",
+      "size": 2165
+    },
+    {
+      "path": "miniapp/client/preview-chrome.css",
+      "sha": "2d19d32663e2123080f867bada56484c5a771df2",
+      "size": 2155
+    },
+    {
+      "path": "miniapp/client/shell.css",
+      "sha": "fe3cd2c61e5ee3608cf4c1971947341dceed6eb2",
+      "size": 7715
+    },
+    {
+      "path": "miniapp/client/shell.js",
+      "sha": "f9ecf4bf4a92580b5d3bc590603b21d78b8ce74b",
+      "size": 55343
+    },
+    {
+      "path": "miniapp/client/sim-base.css",
+      "sha": "c4d3331f9dff433c99e70e261215feb271f480c0",
+      "size": 12449
+    },
+    {
+      "path": "miniapp/client/sim-runtime.js",
+      "sha": "d4baf77f03422717d3efec0afc6f44de9f8a864e",
+      "size": 128042
+    },
+    {
+      "path": "miniapp/client/style-values.mjs",
+      "sha": "6e6824f13e6bc4b9f7a81dad3344bbf06a932358",
+      "size": 2631
+    },
+    {
+      "path": "miniapp/client/vendor/THIRD-PARTY-NOTICES.txt",
+      "sha": "a8db214015e5b6c42fd5a8c64a51b2f9c6423bd1",
+      "size": 2179
+    },
+    {
+      "path": "miniapp/client/vendor/component-runtime.js",
+      "sha": "18abb1f3196c36ea1dfcb192ecf07f80b92bb750",
+      "size": 306306
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "162749c24abc5f761e1cfff85e4f2440a917b671",
+      "size": 371
+    },
+    {
+      "path": "miniapp/node/build-cache.mjs",
+      "sha": "b920cac753dcdd31029a6d976bbb67e20d18a207",
+      "size": 12764
+    },
+    {
+      "path": "miniapp/node/compiler.mjs",
+      "sha": "3d9e266e5b80f3ed272899672266feb6a85b12b9",
+      "size": 30902
+    },
+    {
+      "path": "miniapp/node/demo-game-2d/assets/quad.png",
+      "sha": "d6d6ce3e9675cd1904f971c4f1aec28b0e484251",
+      "size": 75
+    },
+    {
+      "path": "miniapp/node/demo-game-2d/game.js",
+      "sha": "12d6e69a2d5d2e486f93b0a8960cf8eecb4d0268",
+      "size": 4028
+    },
+    {
+      "path": "miniapp/node/demo-game-2d/game.json",
+      "sha": "f776b696bb959c14d0bcae51c3381b7c87eead6c",
+      "size": 38
+    },
+    {
+      "path": "miniapp/node/demo-game-2d/palette.js",
+      "sha": "c486dcdbdf0e9eeb9cbd65727e19cfad2ad4e974",
+      "size": 140
+    },
+    {
+      "path": "miniapp/node/demo-game-2d/project.config.json",
+      "sha": "3a9054f9507afaec2c2235a8845adfe7a6dd947d",
+      "size": 223
+    },
+    {
+      "path": "miniapp/node/demo-game-webgl/assets/atlas.png",
+      "sha": "eeef0c21b717faec0eb39b2714c79a1e915d6ac9",
+      "size": 127
+    },
+    {
+      "path": "miniapp/node/demo-game-webgl/game.js",
+      "sha": "fcf3b9d9642758769c5194fb752f2602778ec234",
+      "size": 4206
+    },
+    {
+      "path": "miniapp/node/demo-game-webgl/game.json",
+      "sha": "58bcd4d2c3fe91db578ba89ab24b3618f7a41bcd",
+      "size": 39
+    },
+    {
+      "path": "miniapp/node/demo-game-webgl/project.config.json",
+      "sha": "2bd6fa25091ec33702ea3f2bda1e834b4a747b7a",
+      "size": 227
+    },
+    {
+      "path": "miniapp/node/demo-game-webgl/shaders.js",
+      "sha": "c7bcaf5dc27802712363ee9c69d460189439d902",
+      "size": 618
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/app.js",
+      "sha": "696946b5855912e63ffd91494d0418ded20142ff",
+      "size": 146
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/app.json",
+      "sha": "52db040b87d7768d40cb33a059722a2ef53c7cd3",
+      "size": 467
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/app.wxss",
+      "sha": "002ceaaa2a5f3efdda119709d18d9604ae93b4e8",
+      "size": 839
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/components/counter/counter.js",
+      "sha": "e4411103edd6f4f5144dc2032682ebbd8d716966",
+      "size": 232
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/components/counter/counter.json",
+      "sha": "d80dd20a6bff3a1e4094d2712d37b3f370dfc189",
+      "size": 19
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/components/counter/counter.wxml",
+      "sha": "5b43bff68658bf90715d1a7321a4721213b01b6c",
+      "size": 167
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/components/counter/counter.wxss",
+      "sha": "1b5922219d3cc1d5c6fe526a13aacbd500eea04b",
+      "size": 295
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/detail/detail.js",
+      "sha": "a80f178106c60a36675b7e00675263dd43c2fe62",
+      "size": 174
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/detail/detail.wxml",
+      "sha": "0378d268709b9c8c20edf85ebb2e0d33697220ea",
+      "size": 273
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/index/index.js",
+      "sha": "b58c61429314b823a9237fe4c21f1a80e4d00800",
+      "size": 842
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/index/index.json",
+      "sha": "d0081cd18a3554ee11ae31096c190bceaa17ae9d",
+      "size": 67
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/index/index.wxml",
+      "sha": "d23e22325941eebd7c184a62e00fb53103323a56",
+      "size": 1033
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/settings/settings.js",
+      "sha": "3c7bf786980709a01ac31183be8beeec5fec95be",
+      "size": 491
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/settings/settings.wxml",
+      "sha": "b04b83df702eb347ac03cb55918c6b6af8ef4e5c",
+      "size": 657
+    },
+    {
+      "path": "miniapp/node/demo/project.config.json",
+      "sha": "9934ff9e59edd6e8c687bce16876c07ac2d05742",
+      "size": 121
+    },
+    {
+      "path": "miniapp/node/esm.mjs",
+      "sha": "d7194957f093e5ca13098584cef0115f5a21ce0f",
+      "size": 168
+    },
+    {
+      "path": "miniapp/node/game-compiler.mjs",
+      "sha": "fd5a7d19d8c45779e157a29211a29c07b6e7609e",
+      "size": 4914
+    },
+    {
+      "path": "miniapp/node/mcp.mjs",
+      "sha": "beb9db8bdc2bdf8cb942a4314b2ef8820753d20d",
+      "size": 8181
+    },
+    {
+      "path": "miniapp/node/module-graph.mjs",
+      "sha": "76364706a7571920ac5722708ad9b927fd2c8373",
+      "size": 4767
+    },
+    {
+      "path": "miniapp/node/preview-assets.mjs",
+      "sha": "a3c9c8bc111ea4a920cae0cbb47d07c670aa98d3",
+      "size": 797
+    },
+    {
+      "path": "miniapp/node/preview-chrome.mjs",
+      "sha": "aeb937f1be3312be97bf6f93c9ef914f7a485903",
+      "size": 346
+    },
+    {
+      "path": "miniapp/node/preview-contexts.mjs",
+      "sha": "2f48f5e42d49d67bae0f9dcdaaa58dcf7516d7df",
+      "size": 20875
+    },
+    {
+      "path": "miniapp/node/preview-service.mjs",
+      "sha": "21f4b73166d136166ba9b1898962d2fa1892d12d",
+      "size": 44962
+    },
+    {
+      "path": "miniapp/node/preview-shells.mjs",
+      "sha": "b6f43a8ae14caf07096ec854acb4306928d5b083",
+      "size": 12422
+    },
+    {
+      "path": "miniapp/node/project-access.mjs",
+      "sha": "bf785b03f14426a38a60e8f4823abaa1eda87c31",
+      "size": 7748
+    },
+    {
+      "path": "miniapp/node/project-builds.mjs",
+      "sha": "60f67ca9cf4eb5da5b0a7cef53a6ceb7ea7cd6cc",
+      "size": 22303
+    },
+    {
+      "path": "miniapp/node/project-json.mjs",
+      "sha": "a82324e7516baf75a627a654e2e91b96fa1b2f78",
+      "size": 4348
+    },
+    {
+      "path": "miniapp/node/project-roots.json",
+      "sha": "fd9bbc66ba64ea9997b313f8e222dd3631c2d073",
+      "size": 32
+    },
+    {
+      "path": "miniapp/node/project-storage.mjs",
+      "sha": "b17db516589214bfafa24e7a545dd2c7417330b9",
+      "size": 24894
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "8fd31ac82a8e35391b7ea29fa1ca3ec7b479abf3",
+      "size": 39214
+    },
+    {
+      "path": "miniapp/node/vendor/THIRD-PARTY-NOTICES.txt",
+      "sha": "b4e2a4ff119d66ef838f06555266f290e6a3efe1",
+      "size": 18099
+    },
+    {
+      "path": "miniapp/node/vendor/js-transform.mjs",
+      "sha": "db9f60c52d0109a14421bbbc324dd0b6b617ad71",
+      "size": 688697
+    },
+    {
+      "path": "miniapp/node/wxml.mjs",
+      "sha": "bc9c619b4de0e3e15156ba80d090527b4e352ff9",
+      "size": 6610
+    },
+    {
+      "path": "miniapp/node/wxss.mjs",
+      "sha": "eb693f949a40ec04dfc91fdf4b81ec8d227333b1",
+      "size": 16383
+    },
+    {
+      "path": "package.json",
+      "sha": "f81afe79628e6ef9b83319c445adb6d1fa18e7d3",
+      "size": 482
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha": "e254d6975b930ec357a9ed0e1a0f4bb531e4dfd1",
+      "size": 30968
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha": "6f4d5b9c3e177f90e6f30f19061f79cb37b7cfc2",
+      "size": 2886
+    },
+    {
+      "path": "scripts/package.mjs",
+      "sha": "86d13a396c617f293f7038c5863423541d00b8b3",
+      "size": 6409
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "b450b1d94f8aaab4445180447198ec33b9771150",
+      "size": 362
+    },
+    {
+      "path": "skills/wechat-project-preview/SKILL.md",
+      "sha": "1989eb70878202272132c2cb49a4523473e81265",
+      "size": 5565
+    },
+    {
+      "path": "src/component-runtime.mjs",
+      "sha": "62c5d3756ebe0530599088f3d03bc135cd3140b1",
+      "size": 20212
+    },
+    {
+      "path": "src/js-transform.mjs",
+      "sha": "1dde3165c0e66ee6a6af2667ccc6adeb16a3f584",
+      "size": 5119
+    },
+    {
+      "path": "tests/build-cache.test.mjs",
+      "sha": "b05f202644b562b0c00cfa13b1654625a8a89e16",
+      "size": 17429
+    },
+    {
+      "path": "tests/client.test.mjs",
+      "sha": "2c13e37c8670e0036aa3048bfe37db5c77980f0b",
+      "size": 14161
+    },
+    {
+      "path": "tests/compiler-modules.test.mjs",
+      "sha": "790166169ec2c5b3b5acb9c086b9f9196781502c",
+      "size": 12711
+    },
+    {
+      "path": "tests/component-bridge.test.mjs",
+      "sha": "2d505dd80f85d1daca32cd0d71d869f823c3502a",
+      "size": 25336
+    },
+    {
+      "path": "tests/component-parity.test.mjs",
+      "sha": "c04f772e9b3fa93dce0a74240568fffdd429fbd8",
+      "size": 21167
+    },
+    {
+      "path": "tests/dependency-graph.test.mjs",
+      "sha": "335fbf657828d75e1eeb0033b6c64710ce08075c",
+      "size": 12290
+    },
+    {
+      "path": "tests/game-compiler.test.mjs",
+      "sha": "88de16cb2bff123ddaefe381756cffa3f8e6d54f",
+      "size": 13833
+    },
+    {
+      "path": "tests/game-http.test.mjs",
+      "sha": "c3b54c280b7386c0f15387498441feb6d73ee4ef",
+      "size": 12149
+    },
+    {
+      "path": "tests/game-runtime.test.mjs",
+      "sha": "5a8d25756f3bc9b19c0d092accf45c7538b71cee",
+      "size": 24371
+    },
+    {
+      "path": "tests/game-service.test.mjs",
+      "sha": "6880b02143e7ced48b9a5584f4ee1c9ca3f5356e",
+      "size": 13084
+    },
+    {
+      "path": "tests/helpers/game-dom.mjs",
+      "sha": "afa1ed2050ca967c3b93721b22b752b1f0e4ddfa",
+      "size": 3546
+    },
+    {
+      "path": "tests/helpers/runtime-dom.mjs",
+      "sha": "8b7bf49e2990708309fe3c166e9e9dd40083af5f",
+      "size": 3508
+    },
+    {
+      "path": "tests/mcp-protocol.test.mjs",
+      "sha": "7c598328485c4daf9c911b7a30ce3d189fa1addf",
+      "size": 5084
+    },
+    {
+      "path": "tests/page-stack.test.mjs",
+      "sha": "054a2bb5865a10fa2a1e84d685afbb30104cbff8",
+      "size": 9179
+    },
+    {
+      "path": "tests/preview-contexts.test.mjs",
+      "sha": "e40ec7b216942f01390cda712d031a8c9e6a19e9",
+      "size": 9261
+    },
+    {
+      "path": "tests/preview-http.test.mjs",
+      "sha": "23d2c8bc9dfd6223c7b2c3b2d8a012ae577f3d35",
+      "size": 21308
+    },
+    {
+      "path": "tests/preview-service.test.mjs",
+      "sha": "15d8e3e80cfe7d63766c37c992273180a7f71408",
+      "size": 50296
+    },
+    {
+      "path": "tests/preview-shells.test.mjs",
+      "sha": "f398cf821d74b837c8960eaa274f8887be67e085",
+      "size": 11178
+    },
+    {
+      "path": "tests/preview.test.mjs",
+      "sha": "1c021c2c4a4cec5ae4cb108c4e1875a3e282e815",
+      "size": 5270
+    },
+    {
+      "path": "tests/project-access.test.mjs",
+      "sha": "d6a50d5722fd28c5dda26551b2379e54108c7070",
+      "size": 8106
+    },
+    {
+      "path": "tests/project-builds.test.mjs",
+      "sha": "eeff1cb7754621e407db7887ce29a4b208aea5fa",
+      "size": 15961
+    },
+    {
+      "path": "tests/project-discovery.test.mjs",
+      "sha": "adbe896798de53193071dfb34570f94131802ca5",
+      "size": 8688
+    },
+    {
+      "path": "tests/project-storage.test.mjs",
+      "sha": "0fd490e81bf60d021fa94801d0792b4942abab93",
+      "size": 27953
+    },
+    {
+      "path": "tests/recovery-http.test.mjs",
+      "sha": "4f587cfe2626e06235afb30a6c19f06528962880",
+      "size": 6010
+    },
+    {
+      "path": "tests/runtime-behavior.test.mjs",
+      "sha": "6a07adef469a4a8742a9914067e126a5d47fc506",
+      "size": 17388
+    },
+    {
+      "path": "tests/shell-protocol.test.mjs",
+      "sha": "00caec6f3d68995a9c9843a20cfd4177a2f70cf4",
+      "size": 59330
+    },
+    {
+      "path": "tests/shell-ui.test.mjs",
+      "sha": "6714a48bfdb2a9e2b875df574219c7104f9440ca",
+      "size": 2858
+    },
+    {
+      "path": "tests/state-migration.test.mjs",
+      "sha": "cd881fd42361b8b5697d49b661938f4a45446cc8",
+      "size": 9041
+    },
+    {
+      "path": "tests/viewport-controls.test.mjs",
+      "sha": "4fc0cb1989020212f12c4379185017a1fc0c4809",
+      "size": 5545
+    },
+    {
+      "path": "tests/viewport-styles.test.mjs",
+      "sha": "a0d2990c8487b23686edf1473625900314914be5",
+      "size": 10586
+    },
+    {
+      "path": "tests/wxss-diagnostics.test.mjs",
+      "sha": "e080b935fb900db5df318847aa84b4aa7ca79b88",
+      "size": 7585
+    }
+  ]
+}

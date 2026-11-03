@@ -1,0 +1,205 @@
+{
+  "version": "1.0.3",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "1835eaaa74b73306bb89d0026c0ed47e59b776d8",
+      "size": 1305
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha": "21ed33bad1a8be912ba3b453db23d405a098d3fd",
+      "size": 1686
+    },
+    {
+      "path": "LICENSE",
+      "sha": "c389b45855337ccec8ddeb389f4fe902abcd0b19",
+      "size": 17604
+    },
+    {
+      "path": "NOTICE",
+      "sha": "65d507740b0ae63baacdcc501b35ee1ffa5d1226",
+      "size": 121
+    },
+    {
+      "path": "README.md",
+      "sha": "a76605c1b3cb85c1c6ee455b9ce8dbdcf52f4bc5",
+      "size": 2023
+    },
+    {
+      "path": "skills/3d-animation-short-generator/SKILL.cn.md",
+      "sha": "201d0c93e7445d2a973fe2c51e2bc12c5c66f378",
+      "size": 39545
+    },
+    {
+      "path": "skills/3d-animation-short-generator/SKILL.md",
+      "sha": "6ddc1102a8c353b4be4c939444b24f62e5552cde",
+      "size": 14961
+    },
+    {
+      "path": "skills/3d-animation-short-generator/meta.yaml",
+      "sha": "2a8791778b974de0bf8725cab5f4c71ea56e962b",
+      "size": 2197
+    },
+    {
+      "path": "skills/3d-animation-short-generator/references/fallback-policy.md",
+      "sha": "ec8753c963f1b9c305549512c8a30f1ee03d868b",
+      "size": 3930
+    },
+    {
+      "path": "skills/3d-animation-short-generator/references/model-selection.md",
+      "sha": "48730351c215e0e591ce9f2ae68838fcbf52eb94",
+      "size": 4686
+    },
+    {
+      "path": "skills/3d-animation-short-generator/references/qc-checklist.md",
+      "sha": "72bbee119d00dac548e06a34e301c386935d33a5",
+      "size": 7308
+    },
+    {
+      "path": "skills/3d-animation-short-generator/references/shot-table-spec.md",
+      "sha": "417405085fd3739c105482108f655c3eee2fde75",
+      "size": 7803
+    },
+    {
+      "path": "skills/3d-animation-short-generator/references/storyboard-guidelines.md",
+      "sha": "a8639b854041cfb5fc95cd8e020ad5b4c0ffebc1",
+      "size": 14959
+    },
+    {
+      "path": "skills/brand-promo-video-generator/SKILL.cn.md",
+      "sha": "43d0a75f940c21444e7e8e652fd0c14a4ca046c9",
+      "size": 11474
+    },
+    {
+      "path": "skills/brand-promo-video-generator/SKILL.md",
+      "sha": "264eb80b6b02712e5db5fe0b3506b14d437c06c6",
+      "size": 13561
+    },
+    {
+      "path": "skills/brand-promo-video-generator/meta.yaml",
+      "sha": "4d0d27eb15ea7314b4336a8011a1b9e2d4e24830",
+      "size": 2156
+    },
+    {
+      "path": "skills/co-op-game-intro-generator/SKILL.cn.md",
+      "sha": "94af6b863f4c22a033829f07610d9d5cd5bbfd29",
+      "size": 7673
+    },
+    {
+      "path": "skills/co-op-game-intro-generator/SKILL.md",
+      "sha": "4979611e4d02d44454cd12248beba28841f9e714",
+      "size": 8216
+    },
+    {
+      "path": "skills/co-op-game-intro-generator/meta.yaml",
+      "sha": "c7b53a48f50e5f1cf9a8d557dfa8e26bb8b6a144",
+      "size": 2005
+    },
+    {
+      "path": "skills/co-op-game-intro-generator/references/h3-confirmation-image-template.md",
+      "sha": "9f12841baab1e6de990c753e9659d41efe8fb0b5",
+      "size": 14001
+    },
+    {
+      "path": "skills/co-op-game-intro-generator/references/h3-video-prompt-template.md",
+      "sha": "9eaaa0dcd5d63be0f388434343f6c76b8bb56523",
+      "size": 10331
+    },
+    {
+      "path": "skills/h3-prompt-writing/SKILL.md",
+      "sha": "b6d9b2839384a588763a9c24315225dd8ce19d56",
+      "size": 2623
+    },
+    {
+      "path": "skills/h3-prompt-writing/agents/openai.yaml",
+      "sha": "8151bd25e3dc29bdb67c8049e39c34c60c3f08f8",
+      "size": 240
+    },
+    {
+      "path": "skills/h3-prompt-writing/references/base-en.txt",
+      "sha": "40cf586a634d677d6b7107b367cf0ec9621be728",
+      "size": 15773
+    },
+    {
+      "path": "skills/h3-prompt-writing/references/ref-en.txt",
+      "sha": "7ae1b2d07d743fd2392258a96449be9e9e322d35",
+      "size": 23553
+    },
+    {
+      "path": "skills/handdrawn-live-video-generator/SKILL.cn.md",
+      "sha": "a1490750c04ee14ff8b67c7dc9c6ac7c5ad2b9ae",
+      "size": 6978
+    },
+    {
+      "path": "skills/handdrawn-live-video-generator/SKILL.md",
+      "sha": "53fd20efaef4f7347c529d2260a96b41cc214125",
+      "size": 7911
+    },
+    {
+      "path": "skills/handdrawn-live-video-generator/meta.yaml",
+      "sha": "68e39cc84f744c6addfaf1855d4d3e4591df9826",
+      "size": 1773
+    },
+    {
+      "path": "skills/minimalist-product-ad-generator/SKILL.cn.md",
+      "sha": "190b597b2392c91a57dc7c25260121332d9f63cd",
+      "size": 27711
+    },
+    {
+      "path": "skills/minimalist-product-ad-generator/SKILL.md",
+      "sha": "7c950cb9374eed4b70e8c984ab89e4888dccfc6f",
+      "size": 32495
+    },
+    {
+      "path": "skills/minimalist-product-ad-generator/meta.yaml",
+      "sha": "878e8d5ac9ca7434c49665bf75da6b810e5c7158",
+      "size": 1649
+    },
+    {
+      "path": "skills/music-video-subtitle-generator/SKILL.cn.md",
+      "sha": "c315ed46972f46a18e5adb251c335e69f4114c57",
+      "size": 14930
+    },
+    {
+      "path": "skills/music-video-subtitle-generator/SKILL.md",
+      "sha": "522b2045675c86b04e10056fa2c690121f0ef093",
+      "size": 14423
+    },
+    {
+      "path": "skills/music-video-subtitle-generator/meta.yaml",
+      "sha": "00b0e78446c886c0f0ae93e54b3d0a7d511e9d93",
+      "size": 2001
+    },
+    {
+      "path": "skills/paper-collage-explainer-generator/SKILL.cn.md",
+      "sha": "6e0fefed199b35e2ae8d91f77d0f3f7cf991efcc",
+      "size": 17427
+    },
+    {
+      "path": "skills/paper-collage-explainer-generator/SKILL.md",
+      "sha": "473b6aee252735fae1f20f096064a6edbbad6708",
+      "size": 20952
+    },
+    {
+      "path": "skills/paper-collage-explainer-generator/meta.yaml",
+      "sha": "c8271f5bbbcb4eea41c884f6f89e04760611a7eb",
+      "size": 1992
+    },
+    {
+      "path": "skills/papercraft-stop-motion-explainer/SKILL.cn.md",
+      "sha": "4e8ee278784f318d4c55f2de352d180bbbad0a2d",
+      "size": 19958
+    },
+    {
+      "path": "skills/papercraft-stop-motion-explainer/SKILL.md",
+      "sha": "536ee4f2ffa3593cf744f85566492ddf270062d9",
+      "size": 22882
+    },
+    {
+      "path": "skills/papercraft-stop-motion-explainer/meta.yaml",
+      "sha": "4d2c2f0aded6c1609671f5aa2164a2a9bb63897e",
+      "size": 2341
+    }
+  ]
+}

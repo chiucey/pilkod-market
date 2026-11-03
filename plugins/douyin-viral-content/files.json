@@ -1,0 +1,245 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "5d03f14d202c32c0d4c2faf8de6472e628e0123d",
+      "size": 971
+    },
+    {
+      "path": "icon.png",
+      "sha": "33fbb0801a6087ce9d71720c271e3ac6951b62f9",
+      "size": 941930
+    },
+    {
+      "path": "skills/douyin-ai-feed/README.en.md",
+      "sha": "467f18f444ccf68aece41decd31ff9c2d69811c3",
+      "size": 3687
+    },
+    {
+      "path": "skills/douyin-ai-feed/README.md",
+      "sha": "2cc6193a1047628bd897933d1b093e12455c8720",
+      "size": 3431
+    },
+    {
+      "path": "skills/douyin-ai-feed/SKILL.md",
+      "sha": "a0eeecc04b766ee85abdb603cf8343122a642310",
+      "size": 3942
+    },
+    {
+      "path": "skills/douyin-ai-feed/assets/report_template.html",
+      "sha": "d2a37596a7e721cb93db2dc4505d91071f507eea",
+      "size": 10520
+    },
+    {
+      "path": "skills/douyin-ai-feed/scripts/fetch_douyin_ai.py",
+      "sha": "c76df816c2c67d9d01bfebf87b803e120f3727e4",
+      "size": 26856
+    },
+    {
+      "path": "skills/douyin-content-surge/README.en.md",
+      "sha": "af9322ecef65f1a3951edeadf49c5274f2996cc1",
+      "size": 5340
+    },
+    {
+      "path": "skills/douyin-content-surge/README.md",
+      "sha": "b3ecafc0ca3a888ce871def13a53db7def64afae",
+      "size": 4936
+    },
+    {
+      "path": "skills/douyin-content-surge/SKILL.md",
+      "sha": "26b32c5dacde3f52231bc5fc44a8ab3d651a8301",
+      "size": 6293
+    },
+    {
+      "path": "skills/douyin-content-surge/references/api-config.md",
+      "sha": "725c31008de6b0cf85cf70050729d0bdd636e163",
+      "size": 2626
+    },
+    {
+      "path": "skills/douyin-content-surge/references/interaction-guide.md",
+      "sha": "8366de94f5bae369bf617972438d42836bb43d51",
+      "size": 3901
+    },
+    {
+      "path": "skills/douyin-content-surge/scripts/douyin_daily_increment.py",
+      "sha": "c2aab438ece9df9be8a9951fdf38c96d58c80128",
+      "size": 10423
+    },
+    {
+      "path": "skills/douyin-daily-hot/README.en.md",
+      "sha": "1861512afe78ecbc6f289b44c2bae5c372e26618",
+      "size": 4861
+    },
+    {
+      "path": "skills/douyin-daily-hot/README.md",
+      "sha": "7f6cd03b55dd7e31e48fbe446e9e5fa7f5d229c9",
+      "size": 4589
+    },
+    {
+      "path": "skills/douyin-daily-hot/SKILL.md",
+      "sha": "c50e074b54d62db912b433894833e3e2a92fdf0c",
+      "size": 7332
+    },
+    {
+      "path": "skills/douyin-daily-hot/references/api-config.md",
+      "sha": "579824f6e77effdd996f7d3a61e2187cdb5a8bb5",
+      "size": 2708
+    },
+    {
+      "path": "skills/douyin-daily-hot/references/interaction-guide.md",
+      "sha": "5d523fc183ee4a944973e6593970ac7666c63104",
+      "size": 4017
+    },
+    {
+      "path": "skills/douyin-daily-hot/scripts/douyin_daily_hot.py",
+      "sha": "e46dfc86703638bd3bb5a5a1687a44e04b84d0b3",
+      "size": 10992
+    },
+    {
+      "path": "skills/douyin-hot-trend/README.en.md",
+      "sha": "8d75152a59bf2ece55237b69cc9d5645e146f11c",
+      "size": 6311
+    },
+    {
+      "path": "skills/douyin-hot-trend/README.md",
+      "sha": "0bdfff5fd8c7af8199ca48970d1cc8a9d2185562",
+      "size": 5037
+    },
+    {
+      "path": "skills/douyin-hot-trend/SKILL.md",
+      "sha": "3cbc0cfb4a9375fc45ae365247a3288b37922694",
+      "size": 12842
+    },
+    {
+      "path": "skills/douyin-hot-trend/references/core_workflow.md",
+      "sha": "6a169fd550583bdfa1f80d06b69b5b57202fa034",
+      "size": 11498
+    },
+    {
+      "path": "skills/douyin-hot-trend/scripts/gen_douyin_hot_html.py",
+      "sha": "2c97bec285b47e9b97c105de6230fbd54ab31259",
+      "size": 32936
+    },
+    {
+      "path": "skills/douyin-hot-trend/scripts/hotspot_fetcher.py",
+      "sha": "b6aa987e37f3935f01527476b7be47a5621eaf32",
+      "size": 6537
+    },
+    {
+      "path": "skills/douyin-hot-trend/scripts/temp_hot_data.json",
+      "sha": "01a7eb47ddb455516fedc978671ef3bcfb1821c8",
+      "size": 9971
+    },
+    {
+      "path": "skills/douyin-prohibited-word/README.en.md",
+      "sha": "16b365549ea568beb540d6b821417c703ee65842",
+      "size": 5636
+    },
+    {
+      "path": "skills/douyin-prohibited-word/README.md",
+      "sha": "4f8715a4164b6211ee931d5d64427848f26bdeb3",
+      "size": 5111
+    },
+    {
+      "path": "skills/douyin-prohibited-word/SKILL.md",
+      "sha": "f283f0029c78d30e097ff512120918c1c25165d4",
+      "size": 15096
+    },
+    {
+      "path": "skills/douyin-prohibited-word/references/core_workflow.md",
+      "sha": "4cbf3cccdaa0b41f3c7fd70821172848955e4427",
+      "size": 12681
+    },
+    {
+      "path": "skills/douyin-prohibited-word/scripts/check_sensitive_words.py",
+      "sha": "8d54a079a66e213a1b76d286d226c61766b5ff17",
+      "size": 13266
+    },
+    {
+      "path": "skills/douyin-search/README.en.md",
+      "sha": "7c8445089ab444a53a2e941d92a2ed886cbe3c0b",
+      "size": 6289
+    },
+    {
+      "path": "skills/douyin-search/README.md",
+      "sha": "d7869f3b44a8864dd3f4def2d2d5a042fa400494",
+      "size": 5026
+    },
+    {
+      "path": "skills/douyin-search/SKILL.md",
+      "sha": "be9c1d08c9a35515ad1963b6352e9cd8e1f998c7",
+      "size": 7357
+    },
+    {
+      "path": "skills/douyin-search/scripts/search_douyin.py",
+      "sha": "f68e3d93c9dad59d7e59954bb7787bd4c759850d",
+      "size": 4459
+    },
+    {
+      "path": "skills/douyin-weekly-surge/README.en.md",
+      "sha": "c5766f61609afdf7ff3cd3304fd213528a575d38",
+      "size": 5461
+    },
+    {
+      "path": "skills/douyin-weekly-surge/README.md",
+      "sha": "f01de5cbc836ea16a11ed8a0c742c70c6bc9f655",
+      "size": 5083
+    },
+    {
+      "path": "skills/douyin-weekly-surge/SKILL.md",
+      "sha": "de71b82131efbca1a9d2a7806909c92eb5e571cb",
+      "size": 6482
+    },
+    {
+      "path": "skills/douyin-weekly-surge/references/api-config.md",
+      "sha": "06d887b3177a2d3f2eaf88707a31e27f6c7b09f8",
+      "size": 2686
+    },
+    {
+      "path": "skills/douyin-weekly-surge/references/interaction-guide.md",
+      "sha": "a82750a7ed4a5dce2129a50dabb288b2fed8be37",
+      "size": 4042
+    },
+    {
+      "path": "skills/douyin-weekly-surge/scripts/douyin_weekly_surge.py",
+      "sha": "ab46964b13136c617808b0c917c2ed71c1cefc63",
+      "size": 10521
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/README.en.md",
+      "sha": "f963a24d1832a6f276e3e4971607437e4012dd42",
+      "size": 4613
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/README.md",
+      "sha": "e2e84c1d80ce4414197b1a133de2c40c2a62dba7",
+      "size": 4081
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/SKILL.md",
+      "sha": "612e3cedde957ea0531fc6ee54c58fe679eeb4ca",
+      "size": 5990
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/references/7-dimensions-framework.md",
+      "sha": "887bb2088e7f47938e385399e84c06f46ce3b781",
+      "size": 20269
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/references/core_workflow.md",
+      "sha": "a1c443d5e8d6bd9c70ca95d477ed6f9352088a9d",
+      "size": 29475
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/references/persona-template.md",
+      "sha": "8201fa58b238a718bf9bf86c9ca3db645837f974",
+      "size": 15426
+    },
+    {
+      "path": "skills/multi-copywrite-alchemy/references/writing-formulas.md",
+      "sha": "21e3288855738e4851feec2ac39c24648e50a718",
+      "size": 8376
+    }
+  ]
+}

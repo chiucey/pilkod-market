@@ -1,0 +1,60 @@
+{
+  "version": "0.2.8",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "3712be735cffba08157dc1a18eee926076e9a470",
+      "size": 882
+    },
+    {
+      "path": "codex-app-server.mjs",
+      "sha": "320decd08328ada995ad8677cd101f928a363e06",
+      "size": 22350
+    },
+    {
+      "path": "codex-mcp-proxy.mjs",
+      "sha": "ffc12a11cc2be2b3b7b6c7a0468002b706d8fdf6",
+      "size": 2066
+    },
+    {
+      "path": "codex.mcp.json",
+      "sha": "85288082261ce01509e3ac2135866ffcf1f4eb80",
+      "size": 365
+    },
+    {
+      "path": "skills/codex-cli-runtime/SKILL.md",
+      "sha": "adc014aa55d5328b94166b862034bbf27211b121",
+      "size": 3205
+    },
+    {
+      "path": "skills/codex-prompt-engineering/SKILL.md",
+      "sha": "da5bc0423adaa5cdc999b72675711ed7e49fae18",
+      "size": 1815
+    },
+    {
+      "path": "skills/codex-prompt-engineering/references/codex-prompt-antipatterns.md",
+      "sha": "c23e36c8187be7ddca5afb2ea30b5387b7844b01",
+      "size": 966
+    },
+    {
+      "path": "skills/codex-prompt-engineering/references/codex-prompt-recipes.md",
+      "sha": "97549d14bfdf4669410231257b038a047258cd47",
+      "size": 2221
+    },
+    {
+      "path": "skills/codex-prompt-engineering/references/prompt-blocks.md",
+      "sha": "2596a8426b2f3e30e634db3fead532454367288e",
+      "size": 1858
+    },
+    {
+      "path": "skills/codex-result-handling/SKILL.md",
+      "sha": "c4a4f607d495ebde04e79dd697f482cd4e8e2a9c",
+      "size": 1458
+    },
+    {
+      "path": "skills/codex-workflow/SKILL.md",
+      "sha": "50e994496c440b990f863be6fc626bfdcc1cef24",
+      "size": 3118
+    }
+  ]
+}

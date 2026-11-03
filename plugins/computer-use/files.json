@@ -1,0 +1,35 @@
+{
+  "version": "1.1.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "830555ec09f8c7a265d13c233de482d389332c0a",
+      "size": 747
+    },
+    {
+      "path": "bindings/computer.binding.json",
+      "sha": "da5aa3107f038c9d661670578ad4547e158a5efb",
+      "size": 324
+    },
+    {
+      "path": "icon.png",
+      "sha": "772364c688f99400b75d18c66ca932b79d61044c",
+      "size": 16533
+    },
+    {
+      "path": "skills/computer-use/SKILL.md",
+      "sha": "332b706bd46907cf1cb421d917230ea88c4a2f9e",
+      "size": 13311
+    },
+    {
+      "path": "skills/computer-use/references/macos.md",
+      "sha": "959cc76d80dc5b3146b1aba0fe1067c6ed7f08ff",
+      "size": 3167
+    },
+    {
+      "path": "skills/computer-use/references/windows.md",
+      "sha": "08651b2c00abeba5e12ba2521ae54081197fbf75",
+      "size": 1702
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "version": "1.0.3",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "3e790d9923abf768ac10a49bb086507229278bfd",
+      "size": 561
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/SKILL.md",
+      "sha": "c59ef62cdc1b1713a3a959e738be69b40e7cceba",
+      "size": 33475
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/references/DOCTOR.md",
+      "sha": "a2a6e752664c14458ad8ef0bdd9c53bc5f4a22f3",
+      "size": 4364
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/auth.py",
+      "sha": "c4ffd9dce8104bf26360d9bdca17b6bd42775e0b",
+      "size": 5198
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/config.json",
+      "sha": "eadcbee0a434aa746646fe241209ab8194391b19",
+      "size": 52
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/diag_issue_log.py",
+      "sha": "ed537ce6a4b553ea64ca6153c7d0f4042cdbea30",
+      "size": 2525
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/run.js",
+      "sha": "dad13206d42727138ba915b549b7047425dd9659",
+      "size": 37460
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/__init__.py",
+      "sha": "e816461816e38b9006df042b335cf7eafe3af190",
+      "size": 17236
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/js/cliguard-wrapper.js",
+      "sha": "516080aedb687c9d2ee1e27ff2055cb126ab8e63",
+      "size": 31916
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/js/cliguard.js",
+      "sha": "08104d8b6d32e2d0f7b61c4b86c118416b9734d8",
+      "size": 55899
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/js/package.json",
+      "sha": "2ccd0733ffda9d474a61bd9b1988120b0b826c36",
+      "size": 43
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/README.md",
+      "sha": "cb26e20fe9943c8299439601e2683bca22d84a9b",
+      "size": 322
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/core/cliguard-wrapper.js",
+      "sha": "7b56e9eae98bf4f735d4e0292fce866b26a35ee4",
+      "size": 31979
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/core/cliguard.js",
+      "sha": "ab8c3ebef50db87e2f3416babe8ea7fa1d2ea1ad",
+      "size": 55895
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/index.js",
+      "sha": "c87e0680506ec8c6dd5200f9acef7623b4f44b8f",
+      "size": 22500
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/package.json",
+      "sha": "b988a1b5d12a3db0aa4b0f74bfbae17a8dcceff4",
+      "size": 592
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/loader.js",
+      "sha": "2563998cc17e606f42ad308b0a5ef50c4515d9d3",
+      "size": 427
+    },
+    {
+      "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/runtime/index.js",
+      "sha": "a83000986afdb7f6b88ec9151a40f2b1a33c5b8b",
+      "size": 101510
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "8292e27f1a1decc50084a7576b8d6443cb5abd07",
+      "size": 1245
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha": "463bd60fb76458b42567fcaad4994b3b0caa5397",
+      "size": 1438
+    },
+    {
+      "path": "LICENSE",
+      "sha": "7ed50c7cdebe6610f62212f59bc9751067e360a7",
+      "size": 1069
+    },
+    {
+      "path": "skills/experimental-design/SKILL.md",
+      "sha": "44c17b75391bc27e4fe575e61d175bb49c8485e4",
+      "size": 13044
+    },
+    {
+      "path": "skills/experimental-design/references/design_types.md",
+      "sha": "f52ebc832b1a87e9bcbebfe5e06ab3ac0f3e4eef",
+      "size": 7323
+    },
+    {
+      "path": "skills/experimental-design/references/factorial_and_doe.md",
+      "sha": "5f0574bb11385c349eee77395904754246cd5265",
+      "size": 7073
+    },
+    {
+      "path": "skills/experimental-design/references/randomization_and_blocking.md",
+      "sha": "9c9e15e06fe30b9a7f1e9c7c761df6eb86d54d23",
+      "size": 6360
+    },
+    {
+      "path": "skills/experimental-design/references/sequential_and_adaptive.md",
+      "sha": "7574996c69bbd761fa8fe27148a84eea8cff76ba",
+      "size": 5488
+    },
+    {
+      "path": "skills/experimental-design/scripts/doe_designs.py",
+      "sha": "036fa4315dc2ce740ededd0df110ed8763ca5a33",
+      "size": 7812
+    },
+    {
+      "path": "skills/experimental-design/scripts/randomization.py",
+      "sha": "8f340eeb2080eeef94af85d2fe0265df3303f3f3",
+      "size": 7046
+    },
+    {
+      "path": "skills/hypothesis-generation/SKILL.md",
+      "sha": "01045c85e70e48d33011edee27435b12124af4f6",
+      "size": 14767
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/evidence_ledger_template.csv",
+      "sha": "e91799a4e12a8941ddf452a6fba869eb1a05cd41",
+      "size": 581
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/falsification_controls_template.json",
+      "sha": "258c493dc8c25378bab7a93d64642c39b5aedd0f",
+      "size": 5880
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/hypothesis_record_template.json",
+      "sha": "78ab50f224116cf2bec46aa8f35bff77056a9c6f",
+      "size": 13768
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/operationalization_template.json",
+      "sha": "6343b5507c3f1b1c87855202b14c52d8281ddbab",
+      "size": 2208
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/prediction_rival_matrix_template.csv",
+      "sha": "d9d0b2307d11604a876d52272d41577a8908655b",
+      "size": 1638
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/preregistration_scaffold_template.md",
+      "sha": "b40aacdb84ab2f9e5add44b1fc9174d0327f7d7a",
+      "size": 5005
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/search_boundary_template.json",
+      "sha": "0e6194a27e07b111461c8c0b30248803be860b56",
+      "size": 1114
+    },
+    {
+      "path": "skills/hypothesis-generation/assets/source_ledger.csv",
+      "sha": "a891f6a01119d714be23f7fe16944a59c8fa8445",
+      "size": 12750
+    },
+    {
+      "path": "skills/hypothesis-generation/references/causal_inference_and_claims.md",
+      "sha": "518c0db011f102a0bca0c6754f89c5f4b056096c",
+      "size": 7777
+    },
+    {
+      "path": "skills/hypothesis-generation/references/concepts_and_workflow.md",
+      "sha": "af467819cd718758d9fc1f7026dc621c4f175844",
+      "size": 7341
+    },
+    {
+      "path": "skills/hypothesis-generation/references/ethics_safety_and_ai.md",
+      "sha": "46252aae8e8d1ddc7e22e0a3fdb90e327c68bf18",
+      "size": 9891
+    },
+    {
+      "path": "skills/hypothesis-generation/references/experimental_design_patterns.md",
+      "sha": "0367eca3f1b5cc02d96f1f046369e4879cd3fffe",
+      "size": 9765
+    },
+    {
+      "path": "skills/hypothesis-generation/references/hypothesis_quality_criteria.md",
+      "sha": "528014c80d4061886f25e8ce154720278cf35a05",
+      "size": 8035
+    },
+    {
+      "path": "skills/hypothesis-generation/references/literature_search_strategies.md",
+      "sha": "c3853bb66444e177123908981de418a4fca57b2a",
+      "size": 8046
+    },
+    {
+      "path": "skills/hypothesis-generation/references/preregistration_and_open_science.md",
+      "sha": "6dab0a73b1cf5fc9ba20826966e7e6592c90086d",
+      "size": 6721
+    },
+    {
+      "path": "skills/hypothesis-generation/references/security_validation.md",
+      "sha": "9624806c9762fec990d2504d0e28b7a07af86cff",
+      "size": 3650
+    },
+    {
+      "path": "skills/hypothesis-generation/references/source_ledger.md",
+      "sha": "2a4baa9d29ef52f5ac6bae6cc9de6c463e17a2e8",
+      "size": 7410
+    },
+    {
+      "path": "skills/hypothesis-generation/references/tool_reference.md",
+      "sha": "28cba6234da1e4b6a712849aa718ebf79be3176c",
+      "size": 8070
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/_common.py",
+      "sha": "cf68f33159b4970966fdf840c23961daf5065865",
+      "size": 14234
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/audit_evidence_ledger.py",
+      "sha": "5f673348aa88f2edf5fa1104a0e41cb5e9fbbe18",
+      "size": 12069
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/check_falsification_controls.py",
+      "sha": "7b3bd8d50eace01da68ce51e01e3b137533b04b2",
+      "size": 16477
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/check_operationalization.py",
+      "sha": "1ece30af5bed0caac2d3b1d9d32f8ba0d25b100f",
+      "size": 8086
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/generate_preregistration_scaffold.py",
+      "sha": "04d172e41d221060c1ce8ecbf9d2c0ba650617de",
+      "size": 14349
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/lint_causal_claims.py",
+      "sha": "4c0bfc3d4a93e145bd23e282f966d802bfe3a40e",
+      "size": 6809
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/validate_hypothesis_schema.py",
+      "sha": "036c39da7c145eb1672634052d1b69268822881a",
+      "size": 38955
+    },
+    {
+      "path": "skills/hypothesis-generation/scripts/validate_prediction_matrix.py",
+      "sha": "7b0dd7aa6ec737a5d637d6bab7b33e880546edd2",
+      "size": 9815
+    },
+    {
+      "path": "skills/peer-review/SKILL.md",
+      "sha": "2826f8521dbcae7deea4bcee63b0e9a416a2dd87",
+      "size": 11639
+    },
+    {
+      "path": "skills/peer-review/assets/citation_references_template.csv",
+      "sha": "ccefdaa806184717cd79e2dd06888bda58984253",
+      "size": 196
+    },
+    {
+      "path": "skills/peer-review/assets/claim_evidence_matrix_template.csv",
+      "sha": "df23fb265562c2ffe5fce0d817fc603aaeee4c7b",
+      "size": 745
+    },
+    {
+      "path": "skills/peer-review/assets/reporting_checklist_template.csv",
+      "sha": "76505756718804dc5fdef6d70c4fae39752e4069",
+      "size": 968
+    },
+    {
+      "path": "skills/peer-review/assets/reporting_guidelines.json",
+      "sha": "1d45f29d333630ecf5489a25daeedcc7054d9fb3",
+      "size": 13446
+    },
+    {
+      "path": "skills/peer-review/assets/review_intake_template.json",
+      "sha": "a10888476849895bc335677ad987e14738b20cfe",
+      "size": 1290
+    },
+    {
+      "path": "skills/peer-review/assets/review_scaffold_template.md",
+      "sha": "dfbae11925ae96be6d6106987435f9774a43eba2",
+      "size": 3025
+    },
+    {
+      "path": "skills/peer-review/assets/source_ledger.csv",
+      "sha": "f27ba6f6f1009ea7a90aa639a67a494441a48ba2",
+      "size": 9147
+    },
+    {
+      "path": "skills/peer-review/assets/statistical_reproducibility_template.json",
+      "sha": "943a30fef1fefad979e9828573d6d76771001399",
+      "size": 7281
+    },
+    {
+      "path": "skills/peer-review/assets/study_profile_template.json",
+      "sha": "cce8e5f4e0a67795862ea17e4f30c80c8a44c82c",
+      "size": 197
+    },
+    {
+      "path": "skills/peer-review/references/common_issues.md",
+      "sha": "f04f8b849f179b2f69e3f247526d0ba8cfc5bfb2",
+      "size": 13999
+    },
+    {
+      "path": "skills/peer-review/references/ethical_review_practice.md",
+      "sha": "c0211caab2d98e7a699354c46961a14734df8ce3",
+      "size": 11131
+    },
+    {
+      "path": "skills/peer-review/references/reporting_standards.md",
+      "sha": "f155b2d20243c5aecd6e4de3aa73e20d679d12e6",
+      "size": 14032
+    },
+    {
+      "path": "skills/peer-review/references/security_validation.md",
+      "sha": "928c04f56a021aba104226546cd5eb2f58142cd9",
+      "size": 3547
+    },
+    {
+      "path": "skills/peer-review/references/statistical_reproducibility.md",
+      "sha": "17f73cf259395b005d705beec2c6a8631dc8de7e",
+      "size": 11712
+    },
+    {
+      "path": "skills/peer-review/references/tool_reference.md",
+      "sha": "d9b156b11a892703cbb53b1a7e02b463ee1f43f8",
+      "size": 7781
+    },
+    {
+      "path": "skills/peer-review/scripts/_common.py",
+      "sha": "3f8aa2152ea785ea34933c4c6555e0e4ec85fee0",
+      "size": 13896
+    },
+    {
+      "path": "skills/peer-review/scripts/audit_citations.py",
+      "sha": "1a7d3ec1ed8eccd075793f16d9f7c35504b2751e",
+      "size": 7097
+    },
+    {
+      "path": "skills/peer-review/scripts/audit_statistics_reproducibility.py",
+      "sha": "931d2145d64d1ffd1393c78492076ea23281240c",
+      "size": 10455
+    },
+    {
+      "path": "skills/peer-review/scripts/generate_review_scaffold.py",
+      "sha": "0951a39062a3cbc92bf43bb21d8ccaae74ab81c4",
+      "size": 2634
+    },
+    {
+      "path": "skills/peer-review/scripts/lint_review.py",
+      "sha": "ff2fe89818097e88eec15316f7808ef1056b4607",
+      "size": 9085
+    },
+    {
+      "path": "skills/peer-review/scripts/select_reporting_guidelines.py",
+      "sha": "af1e99d369e60de14cd35c7c4a652272888f6ccd",
+      "size": 13594
+    },
+    {
+      "path": "skills/peer-review/scripts/validate_claim_evidence.py",
+      "sha": "f506aaf5074f278eed5257db3ac5f3649258de16",
+      "size": 7083
+    },
+    {
+      "path": "skills/peer-review/scripts/validate_review_intake.py",
+      "sha": "c0c229fa0b13079f68b858887904bd4a4061f9f5",
+      "size": 14466
+    },
+    {
+      "path": "skills/scholar-evaluation/SKILL.md",
+      "sha": "eb9695e75652dd60acb13fa2154992aaa6593948",
+      "size": 10622
+    },
+    {
+      "path": "skills/scholar-evaluation/assets/evaluation_template.json",
+      "sha": "e5371ee2b3219683f9590fbc99d09113206c92bc",
+      "size": 1344
+    },
+    {
+      "path": "skills/scholar-evaluation/assets/evidence_manifest_template.json",
+      "sha": "4c49e153ae35934d4433015c90407ce3c8941231",
+      "size": 1841
+    },
+    {
+      "path": "skills/scholar-evaluation/assets/process_checklist_template.json",
+      "sha": "2e2559bf24b0623ee399193830ea9965f8e028e3",
+      "size": 2130
+    },
+    {
+      "path": "skills/scholar-evaluation/assets/ratings_template.csv",
+      "sha": "c97c1c8e0adcf70dd030ed9664c42b0139f40dcb",
+      "size": 1762
+    },
+    {
+      "path": "skills/scholar-evaluation/assets/rubric_template.json",
+      "sha": "38b281ab8aac37ed10e74552bb89dac23af8b790",
+      "size": 12111
+    },
+    {
+      "path": "skills/scholar-evaluation/references/evaluation_framework.md",
+      "sha": "1fbbd82f5b2d3c3244b69ca271b1cbeac7c597d6",
+      "size": 9735
+    },
+    {
+      "path": "skills/scholar-evaluation/references/local_tooling.md",
+      "sha": "9ced3895049fd24b5f8fad151680bcffd645252f",
+      "size": 7908
+    },
+    {
+      "path": "skills/scholar-evaluation/references/responsible_assessment.md",
+      "sha": "a725c1d68a8dc80c41a2ff22caad4c96ba0ef057",
+      "size": 9134
+    },
+    {
+      "path": "skills/scholar-evaluation/references/security_validation.md",
+      "sha": "65be38cccfbd07be244a92b0667999c8eae21436",
+      "size": 3897
+    },
+    {
+      "path": "skills/scholar-evaluation/references/source_ledger.md",
+      "sha": "0a536f457cc560e21e758696c0b0bb4fb563133d",
+      "size": 12567
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/_common.py",
+      "sha": "eb0d80344f4cd42d17a0cbc4d0245d2b027a8925",
+      "size": 35590
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/calculate_scores.py",
+      "sha": "d6eb5d6ed100fc148c999459e4ee0b47a8b1172f",
+      "size": 1885
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/check_process.py",
+      "sha": "b9c2819ef13bcadf52236a53dff9e11b152c4665",
+      "size": 8289
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/check_traceability.py",
+      "sha": "3bc4c3e4ff309d93423102ea80c9b14b58a1e62f",
+      "size": 9071
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/generate_report_scaffold.py",
+      "sha": "4f5db9f178830b491251e410d8815a16f088278b",
+      "size": 8986
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/summarize_agreement.py",
+      "sha": "e5242e4cd995ace65b56e61096fca9399c4db5bd",
+      "size": 8916
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/validate_rubric.py",
+      "sha": "51b03bd4f704624e8de1d20fe8037fd4355eba32",
+      "size": 1729
+    },
+    {
+      "path": "skills/scholar-evaluation/scripts/weight_sensitivity.py",
+      "sha": "428681847bbd601f63f7e9eddee11ca7c6e7c893",
+      "size": 9231
+    },
+    {
+      "path": "skills/scientific-brainstorming/SKILL.md",
+      "sha": "9a13c029412784af9231d9bcd3416ea3f55ad2a2",
+      "size": 12937
+    },
+    {
+      "path": "skills/scientific-brainstorming/references/brainstorming_methods.md",
+      "sha": "172b5b050bca1c0af8ef205e975bf1cfe6a76a21",
+      "size": 12128
+    },
+    {
+      "path": "skills/scientific-brainstorming/references/facilitation_workflows.md",
+      "sha": "a36945c809b2a1a4fe3646da9078e8f6c54e232d",
+      "size": 10016
+    },
+    {
+      "path": "skills/scientific-brainstorming/references/idea_evaluation.md",
+      "sha": "ea655224ddc0d38ba0c98eaae4d9b19d63e6cf79",
+      "size": 9995
+    },
+    {
+      "path": "skills/scientific-brainstorming/references/responsible_ai.md",
+      "sha": "7513757bcad2315a4c1dcdae6bfdaa4a49e3c2ea",
+      "size": 9721
+    },
+    {
+      "path": "skills/scientific-brainstorming/references/sources.md",
+      "sha": "464e7b2fb48c89b2d1d934e8d71775976ee22534",
+      "size": 16783
+    },
+    {
+      "path": "skills/scientific-brainstorming/scripts/_common.py",
+      "sha": "5d318bf5671ddd6aca45609fff688d61c9aa4bfd",
+      "size": 9560
+    },
+    {
+      "path": "skills/scientific-brainstorming/scripts/evaluate_matrix.py",
+      "sha": "5e8d5b444c3b2ea2f62a9f7b0b7c7fcb2805ef59",
+      "size": 18463
+    },
+    {
+      "path": "skills/scientific-brainstorming/scripts/session_scaffold.py",
+      "sha": "6da33f5b291bcf39de0c95cd7d6e67b74fc2cd9a",
+      "size": 7930
+    },
+    {
+      "path": "skills/scientific-brainstorming/scripts/validate_register.py",
+      "sha": "b166d47543e85fc23227dbb76b448001d1632818",
+      "size": 21169
+    },
+    {
+      "path": "skills/scientific-writing/SKILL.md",
+      "sha": "b52503652c12fd161e2e4cfe7aac6829af37863e",
+      "size": 13047
+    },
+    {
+      "path": "skills/scientific-writing/assets/REPORT_FORMATTING_GUIDE.md",
+      "sha": "c8e67f3539929acd5c95e9926e9b730090322ef9",
+      "size": 2713
+    },
+    {
+      "path": "skills/scientific-writing/assets/authorship_template.json",
+      "sha": "6ade8af02c1bb0951c582f65422621ba873778cd",
+      "size": 1240
+    },
+    {
+      "path": "skills/scientific-writing/assets/claim_evidence_template.csv",
+      "sha": "f22477166d9d20904da6819434716cfe63c55c90",
+      "size": 220
+    },
+    {
+      "path": "skills/scientific-writing/assets/consistency_manifest_template.json",
+      "sha": "bda1a1f5d5f038587ba66166f9eea521dee1ae04",
+      "size": 896
+    },
+    {
+      "path": "skills/scientific-writing/assets/manuscript_manifest_template.json",
+      "sha": "8f7a96f9aaa628014656614dff73f6d8c4541650",
+      "size": 1013
+    },
+    {
+      "path": "skills/scientific-writing/assets/manuscript_scaffold.md",
+      "sha": "ca8d06f39bfb88e073bc1414993a83527b3b69ef",
+      "size": 1992
+    },
+    {
+      "path": "skills/scientific-writing/assets/reporting_coverage_template.json",
+      "sha": "4f9f0a4275433e37c2c11f9e85a177eae063a3b5",
+      "size": 190
+    },
+    {
+      "path": "skills/scientific-writing/assets/reporting_guidelines.json",
+      "sha": "1336f7cd9f63702db41e0e7ea7ebae2e4896d1bf",
+      "size": 16009
+    },
+    {
+      "path": "skills/scientific-writing/assets/source_manifest_template.json",
+      "sha": "022a5554af92445fab5b31f322bc960d80572341",
+      "size": 601
+    },
+    {
+      "path": "skills/scientific-writing/references/authorship_ai_confidentiality.md",
+      "sha": "f310349ac8f429d13ef60fe25acaa803cbe12943",
+      "size": 4496
+    },
+    {
+      "path": "skills/scientific-writing/references/citation_styles.md",
+      "sha": "ce4bdd7b3b895207d315ccae35138c9796b3b3ed",
+      "size": 3777
+    },
+    {
+      "path": "skills/scientific-writing/references/cli_reference.md",
+      "sha": "4eaa6f371ca4618974e93bb31cabd1196df65204",
+      "size": 3558
+    },
+    {
+      "path": "skills/scientific-writing/references/evidence_workflow.md",
+      "sha": "abc6e36eb0bb447e157691ea7c5f749c34866c2b",
+      "size": 3929
+    },
+    {
+      "path": "skills/scientific-writing/references/figures_tables.md",
+      "sha": "7022338d438e439aa475b4ecacf6ba7314b26aed",
+      "size": 3915
+    },
+    {
+      "path": "skills/scientific-writing/references/imrad_structure.md",
+      "sha": "c53506c127ee6f5feb9f6a262398dc85243e73bb",
+      "size": 4512
+    },
+    {
+      "path": "skills/scientific-writing/references/journal_policies.md",
+      "sha": "d68d4d8fb4c5a41d0e3fa0611e08f5159b5a923c",
+      "size": 2608
+    },
+    {
+      "path": "skills/scientific-writing/references/professional_report_formatting.md",
+      "sha": "59af37f4d831c517aa23958fe6259a31f56c95db",
+      "size": 3231
+    },
+    {
+      "path": "skills/scientific-writing/references/reporting_guidelines.md",
+      "sha": "fe55f07c153bd1e939f612247fc53ff836d34e35",
+      "size": 4785
+    },
+    {
+      "path": "skills/scientific-writing/references/research_integrity_open_science.md",
+      "sha": "63eb73027c03d25170649a2d10a67c1eef365585",
+      "size": 4149
+    },
+    {
+      "path": "skills/scientific-writing/references/source_ledger.md",
+      "sha": "5831ab511d27200552c5af2361daa056a3ee5970",
+      "size": 10175
+    },
+    {
+      "path": "skills/scientific-writing/references/writing_principles.md",
+      "sha": "5fcd5012957fe6670e1e31e103c51d8cfbefa048",
+      "size": 3904
+    },
+    {
+      "path": "skills/scientific-writing/scripts/_common.py",
+      "sha": "f57d5f106ee5f504179b413744456208d264eaa8",
+      "size": 7670
+    },
+    {
+      "path": "skills/scientific-writing/scripts/audit_claims.py",
+      "sha": "ed14ff88e1115753342e8d743dc2dc4ce36d160e",
+      "size": 8834
+    },
+    {
+      "path": "skills/scientific-writing/scripts/check_consistency.py",
+      "sha": "415be5ce6dae79965f00a3c7cada62a9f012e547",
+      "size": 14209
+    },
+    {
+      "path": "skills/scientific-writing/scripts/check_references.py",
+      "sha": "dbc3830643883f785ddc41a9b7a18bef1f4a7c5a",
+      "size": 7075
+    },
+    {
+      "path": "skills/scientific-writing/scripts/lint_manuscript.py",
+      "sha": "34d5aec061d69709070d121dacfa9f6d0fdec911",
+      "size": 5883
+    },
+    {
+      "path": "skills/scientific-writing/scripts/scaffold_manuscript.py",
+      "sha": "8c84e589980157c2972a9808a122d403ed2c2edc",
+      "size": 4329
+    },
+    {
+      "path": "skills/scientific-writing/scripts/select_reporting_guidelines.py",
+      "sha": "7d23b877cef342ba21074fcfaec7dd47c00a7607",
+      "size": 7580
+    },
+    {
+      "path": "skills/scientific-writing/scripts/validate_authorship.py",
+      "sha": "ffa9f4961bc9a61c2796c4595d6c3f7a9f03cc42",
+      "size": 11498
+    },
+    {
+      "path": "skills/scientific-writing/scripts/validate_manifest.py",
+      "sha": "088ea5f1a41b3f78fd87bbe5aa355a3d9455e8bc",
+      "size": 14514
+    },
+    {
+      "path": "skills/statistical-analysis/SKILL.md",
+      "sha": "ac1caa3fb0a6c94ae572a58ae7589bcb5af21b97",
+      "size": 19957
+    },
+    {
+      "path": "skills/statistical-analysis/references/assumptions_and_diagnostics.md",
+      "sha": "62bf447ac3214f262e10b220cd232c8956a3c121",
+      "size": 12350
+    },
+    {
+      "path": "skills/statistical-analysis/references/bayesian_statistics.md",
+      "sha": "2a1a84b3cfd55e570858eb99075f63ed3a8a3d5b",
+      "size": 20655
+    },
+    {
+      "path": "skills/statistical-analysis/references/effect_sizes_and_power.md",
+      "sha": "ad9381138becdcf6b22508ac8f657e1421a5ca39",
+      "size": 18413
+    },
+    {
+      "path": "skills/statistical-analysis/references/reporting_standards.md",
+      "sha": "59b685ad88985c40ff3abba1cbd52514e7a66551",
+      "size": 20239
+    },
+    {
+      "path": "skills/statistical-analysis/references/test_selection_guide.md",
+      "sha": "25e7ccb1e203134c2074de8bb2fca2a5c340a47d",
+      "size": 5077
+    },
+    {
+      "path": "skills/statistical-analysis/scripts/assumption_checks.py",
+      "sha": "6c477f392b375fb795846cd0254214abf6800be4",
+      "size": 20282
+    },
+    {
+      "path": "skills/statistical-power/SKILL.md",
+      "sha": "2657bc2b4cd0a6fc38ff6705588e9985198b5284",
+      "size": 14387
+    },
+    {
+      "path": "skills/statistical-power/references/closed_form_recipes.md",
+      "sha": "2289457d87657f6e36d391d5b5684604508aaac8",
+      "size": 6809
+    },
+    {
+      "path": "skills/statistical-power/references/effect_sizes.md",
+      "sha": "f82a54d69b9fbf09db3146cc3209de4cd79b3226",
+      "size": 4919
+    },
+    {
+      "path": "skills/statistical-power/references/simulation_based_power.md",
+      "sha": "05f3be3fed80562dd08aca7f6c4c578eab4bbe5c",
+      "size": 5684
+    },
+    {
+      "path": "skills/statistical-power/scripts/power.py",
+      "sha": "27949e444b4654837da5b4cb55f2234eae4c18a9",
+      "size": 12490
+    },
+    {
+      "path": "skills/statistical-power/scripts/simulate_power.py",
+      "sha": "8b55b3763cf8ce4c891fd049d5b947ea2087567e",
+      "size": 8009
+    },
+    {
+      "path": "skills/uncertainty-and-units/SKILL.md",
+      "sha": "d4ec3eff9abee576400c75dc55e4ad44f9871795",
+      "size": 18906
+    },
+    {
+      "path": "skills/uncertainty-and-units/references/domain-conversions.md",
+      "sha": "209e32ade49601acde03c037ef7b955504103e8f",
+      "size": 8566
+    },
+    {
+      "path": "skills/uncertainty-and-units/references/gum-methodology.md",
+      "sha": "043293bf65998179712664f537fc874ffa140b38",
+      "size": 10048
+    },
+    {
+      "path": "skills/uncertainty-and-units/references/pint-recipes.md",
+      "sha": "821f3ed78f9e45cb978768a4f536dd041561ad41",
+      "size": 8133
+    },
+    {
+      "path": "skills/uncertainty-and-units/references/plausibility-scales.md",
+      "sha": "1512cd1d1dd78d3fb8334f1a2b66ec2caf4af7cf",
+      "size": 9487
+    },
+    {
+      "path": "skills/uncertainty-and-units/references/reporting-rules.md",
+      "sha": "24d939f18b52ff6ef7a2b262e6a0b8db3b9d19d9",
+      "size": 6513
+    },
+    {
+      "path": "skills/uncertainty-and-units/references/uncertainties-recipes.md",
+      "sha": "a160b55f86e3ebd0c1ba1eda8cc21f3ec1373ec9",
+      "size": 6622
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/_common.py",
+      "sha": "af8f72dad83e638968f8d053fc9f201e73e908d5",
+      "size": 21872
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/audit_units.py",
+      "sha": "ae05e699c9f1533fe5fe0394074e1e0be4c1d29d",
+      "size": 21214
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/check_plausibility.py",
+      "sha": "1f7359223131fd57362fbf4906a0da797a3e3680",
+      "size": 34751
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/convert_units.py",
+      "sha": "7fb2b94e22f32465ae3f72fed48411006d57cc61",
+      "size": 10353
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/format_result.py",
+      "sha": "5da923f330d41103c1412b73cbf479456bb1f609",
+      "size": 11707
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/propagate_uncertainty.py",
+      "sha": "53e0920490ddb141952e28d2c0cc6272a8f3ae0e",
+      "size": 26346
+    },
+    {
+      "path": "skills/uncertainty-and-units/scripts/uncertainty_budget.py",
+      "sha": "3882fa4eef087dc0792e5551611a7db013508ae0",
+      "size": 13396
+    }
+  ]
+}

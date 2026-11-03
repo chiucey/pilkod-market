@@ -1,0 +1,85 @@
+{
+  "version": "1.1.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "e8e570f2f2ef1204656f401ead88c879287b3dd1",
+      "size": 619
+    },
+    {
+      "path": "LICENSE",
+      "sha": "0ad976141510c1f1f83a478e7fa4d82abfae62b4",
+      "size": 1068
+    },
+    {
+      "path": "README.md",
+      "sha": "0464b0195960e5532f1ccc4d28ecca2d59b2a0ad",
+      "size": 9882
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "89c553395d30db101a7bf49eef705db28476ec8d",
+      "size": 8403
+    },
+    {
+      "path": "docs/preview.jpg",
+      "sha": "f94dbc95a1839d17f2c0454bcba2c3a82e43f08e",
+      "size": 120904
+    },
+    {
+      "path": "icon.png",
+      "sha": "d2732ca2be3cd072a3f539651cdde7dfe6331c32",
+      "size": 52277
+    },
+    {
+      "path": "miniapp/client/app.css",
+      "sha": "c8644a38098819c917384af166f7b76de9e80259",
+      "size": 101853
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "465e832a0f028fb384f2456ae8d1580470975b53",
+      "size": 173342
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "0f12b5a93c065a3a60e55afa449d39fcec41bc5d",
+      "size": 14943
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "064a68cc61bad36d13c2bd306c5b72d45f03ae6f",
+      "size": 386
+    },
+    {
+      "path": "miniapp/node/companion.mjs",
+      "sha": "325386c93338aa5758e8748fa9695b7a15da5652",
+      "size": 16654
+    },
+    {
+      "path": "miniapp/node/content.mjs",
+      "sha": "2aeb20a48dd7b3c37e3b092a7c4f20d11313a1eb",
+      "size": 18887
+    },
+    {
+      "path": "miniapp/node/domain.mjs",
+      "sha": "fd756b2a238c1c5bef9d00fe582561f3ef54fa71",
+      "size": 27960
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
+      "size": 15554
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "cdc45eac0432762f836e282724aa8e16b094ad0a",
+      "size": 21336
+    },
+    {
+      "path": "package.json",
+      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
+      "size": 85
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "version": "1.0.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "3e2c6d2cc4aa0b5aef6460256afac99e08492aa1",
+      "size": 931
+    },
+    {
+      "path": "README.md",
+      "sha": "9ce092292e1a866bcf2068bceb475036a6cca617",
+      "size": 1644
+    },
+    {
+      "path": "icon.png",
+      "sha": "76f022d699135dc7fab9bf2cb93e7be5c3896d5d",
+      "size": 877950
+    },
+    {
+      "path": "icon.svg",
+      "sha": "a0f1cd09cf5b217d3cc958b15dd46a88f4d3b3fb",
+      "size": 1571
+    },
+    {
+      "path": "skills/xiaohongshu-cover/README.en.md",
+      "sha": "05f0815e023043aaf408e4d58dd2e6c436b33109",
+      "size": 6043
+    },
+    {
+      "path": "skills/xiaohongshu-cover/README.md",
+      "sha": "5c6f48f4d795a2913c3df22c5f21eea57b230e24",
+      "size": 5338
+    },
+    {
+      "path": "skills/xiaohongshu-cover/SKILL.md",
+      "sha": "c317504d6026a4df4050092173765fb74f4eba1d",
+      "size": 11581
+    },
+    {
+      "path": "skills/xiaohongshu-cover/references/core_workflow.md",
+      "sha": "ac8215ea338939ae6b3c84486b670c5b65bc0c61",
+      "size": 12038
+    },
+    {
+      "path": "skills/xiaohongshu-cover/references/xhs_trend_data_format.md",
+      "sha": "99a0159cef1c74e399c6355d29b94efb1cf084e5",
+      "size": 8500
+    },
+    {
+      "path": "skills/xiaohongshu-cover/scripts/fetch_explosive_covers.py",
+      "sha": "309e0daf8dc3368880b6b267d038599945ff3e18",
+      "size": 23279
+    },
+    {
+      "path": "skills/xiaohongshu-prohibited-word/README.en.md",
+      "sha": "796b9d73a95ae36f72ce26c8f6c9641c8cf7e713",
+      "size": 5395
+    },
+    {
+      "path": "skills/xiaohongshu-prohibited-word/README.md",
+      "sha": "db2eeb51f55b64e6bcaef8768565ed18ba0a0edb",
+      "size": 5083
+    },
+    {
+      "path": "skills/xiaohongshu-prohibited-word/SKILL.md",
+      "sha": "d1c942ffe95a24f3aca502691b3b7d5e365c9728",
+      "size": 10893
+    },
+    {
+      "path": "skills/xiaohongshu-prohibited-word/references/core_workflow.md",
+      "sha": "bdec4a9406cbe56868814e0423f62d0406f5f8c9",
+      "size": 16739
+    },
+    {
+      "path": "skills/xiaohongshu-prohibited-word/scripts/check_sensitive_words.py",
+      "sha": "ad376c724d7a240697163001ad83dc579ea65b33",
+      "size": 14117
+    },
+    {
+      "path": "skills/xiaohongshu-prohibited-word/skill-card.md",
+      "sha": "1161f33a4385daef643e473886ef11587d9bfc8f",
+      "size": 2411
+    },
+    {
+      "path": "skills/xiaohongshu-rewrite/README.en.md",
+      "sha": "4eb09ccd9f215e808eaeb0f071d08546d14fb604",
+      "size": 3442
+    },
+    {
+      "path": "skills/xiaohongshu-rewrite/README.md",
+      "sha": "a571d6e72f4ff56c6924f87595e31dbc257bee17",
+      "size": 3478
+    },
+    {
+      "path": "skills/xiaohongshu-rewrite/SKILL.md",
+      "sha": "d96e666adf6e5ac1988b45c924404d3c8808f4b9",
+      "size": 7046
+    },
+    {
+      "path": "skills/xiaohongshu-rewrite/assets/platform-rules.md",
+      "sha": "d21935130f1d8bfb894e91f4c0431efdf5f6de89",
+      "size": 2886
+    },
+    {
+      "path": "skills/xiaohongshu-rewrite/scripts/rewrite.py",
+      "sha": "b3dcea115d7968438574cec765eb43b3af71550c",
+      "size": 7263
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/README.en.md",
+      "sha": "f743ae9588e130b5ee6e034084576b2476e840f0",
+      "size": 6413
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/README.md",
+      "sha": "3647f7c4a1f8861f5aca945c0451be17615267ed",
+      "size": 5804
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/SKILL.md",
+      "sha": "1ce2c227415132af041df6910ff0827cfe24b396",
+      "size": 9724
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/ai_tools_hot_data.md",
+      "sha": "642f0b5d0cb911ef66fcc739c13dbb37d5de9919",
+      "size": 12099
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/references/guide.md",
+      "sha": "f473d10c5cf53d7a437f101bf4002dffed51aed0",
+      "size": 8890
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/scripts/fetch_xhs_trends.py",
+      "sha": "56bde4434f94faf47aae26e005d0af000bd55535",
+      "size": 16475
+    },
+    {
+      "path": "skills/xiaohongshu-title-score/xhs_operation_hot_data.md",
+      "sha": "4aaa92ea72c4733aa4fa3674b73acee4032f1458",
+      "size": 6377
+    },
+    {
+      "path": "skills/xiaohongshu-write/README.en.md",
+      "sha": "b4a5cb67a92696410b739ef95704cb9e425aa81a",
+      "size": 6337
+    },
+    {
+      "path": "skills/xiaohongshu-write/README.md",
+      "sha": "07e5cd6cbca24a7deb9be5ad67aef7931b00710f",
+      "size": 5235
+    },
+    {
+      "path": "skills/xiaohongshu-write/SKILL.md",
+      "sha": "fb8e535cf14e92e74717508bcf6d5201e981155d",
+      "size": 12034
+    },
+    {
+      "path": "skills/xiaohongshu-write/references/xhs_hot_article_format.md",
+      "sha": "eec543f051b77806230d9a06bb36b4b48a1a5dc4",
+      "size": 4573
+    },
+    {
+      "path": "skills/xiaohongshu-write/scripts/fetch_xhs_hot_articles.py",
+      "sha": "4bfda2125015f6631319fc0bb2adf91cb23dba53",
+      "size": 23522
+    }
+  ]
+}

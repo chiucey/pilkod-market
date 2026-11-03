@@ -1,0 +1,220 @@
+{
+  "version": "1.4.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "f026e2dae8de49ce97175b3d77e6bc3ab1dec8ab",
+      "size": 1249
+    },
+    {
+      "path": "README.md",
+      "sha": "dc9b5da30ec4170ccc84bb3530720e1ae87b436e",
+      "size": 29548
+    },
+    {
+      "path": "hengsheng-market.app.json",
+      "sha": "44c7cd558d42746546c16d0b372ae7417f29a8c1",
+      "size": 59
+    },
+    {
+      "path": "icon.png",
+      "sha": "bc1c3a628afbb646ab6656a81f5f9df1f4b466ea",
+      "size": 151139
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "0ebf47ab7803841ce44c7d61185eea46dcefed18",
+      "size": 70807
+    },
+    {
+      "path": "miniapp/client/sources.js",
+      "sha": "8d1522a1e7f162bf04ae0e657e624691fa12b3bc",
+      "size": 12031
+    },
+    {
+      "path": "miniapp/client/wiki.css",
+      "sha": "59b5f74444a7ee7282a744ff6494567910b8e99d",
+      "size": 44042
+    },
+    {
+      "path": "miniapp/client/wiki.js",
+      "sha": "761d608255a5b87755ab19a7bb25d7856c5d7775",
+      "size": 131297
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "65e09875445aa32af480be8454bf641e9adfa0c2",
+      "size": 610
+    },
+    {
+      "path": "miniapp/node/alphapai-client.mjs",
+      "sha": "5a6e71484870ab95bd4b5cf2793bf15f430f77e6",
+      "size": 26384
+    },
+    {
+      "path": "miniapp/node/asset-folders.mjs",
+      "sha": "ca300b3a0510c43cafd46385f60eae1c04e74e3f",
+      "size": 7090
+    },
+    {
+      "path": "miniapp/node/bars-store.mjs",
+      "sha": "25f99fc952b85165d86c588f9468948f40a56813",
+      "size": 7123
+    },
+    {
+      "path": "miniapp/node/folder-picker.mjs",
+      "sha": "6d57503ae98413233246f5994b63090586522f7c",
+      "size": 5305
+    },
+    {
+      "path": "miniapp/node/history-policy.mjs",
+      "sha": "c7fb6641b9ef8b108ae563d245e302e9f4a19a0f",
+      "size": 1980
+    },
+    {
+      "path": "miniapp/node/host-connector-value.mjs",
+      "sha": "6e1c9efba9d80b10372996958921354281394242",
+      "size": 1740
+    },
+    {
+      "path": "miniapp/node/market-connector.mjs",
+      "sha": "98c18de21f3e8b26e1f962b79b5e8cd11a9aeeb5",
+      "size": 15833
+    },
+    {
+      "path": "miniapp/node/market-schedule.mjs",
+      "sha": "80461dbeedb3559141d11733b75df22db492206c",
+      "size": 6693
+    },
+    {
+      "path": "miniapp/node/material-search.mjs",
+      "sha": "b829a5836dfff6d52488c3d5c00e96579da207a4",
+      "size": 5533
+    },
+    {
+      "path": "miniapp/node/mcp-server.mjs",
+      "sha": "6f8aca8281f0467dec24e0c50ed40f08299def07",
+      "size": 3234
+    },
+    {
+      "path": "miniapp/node/miniapp-api.d.ts",
+      "sha": "9fc5ca043761baa58fcb71f8c10060388635e4d0",
+      "size": 505
+    },
+    {
+      "path": "miniapp/node/office-text.mjs",
+      "sha": "8da413e6e3e81b119d16a5c3adc2c65f0aca133b",
+      "size": 3074
+    },
+    {
+      "path": "miniapp/node/open-external.mjs",
+      "sha": "4d6833a27b26181ae3477742bf8da5847a443bcc",
+      "size": 1839
+    },
+    {
+      "path": "miniapp/node/research-search.mjs",
+      "sha": "9171a073a15c9fc97657870b71ab8c655731bdab",
+      "size": 24217
+    },
+    {
+      "path": "miniapp/node/search-terms.mjs",
+      "sha": "fc5f2537f92aaea0d6807b59fb3701ec033b9108",
+      "size": 4906
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "abc6ac7585af523be27235eb8494feba3e04299f",
+      "size": 108320
+    },
+    {
+      "path": "miniapp/node/wiki-format.mjs",
+      "sha": "ef474838e3c63bf1a3a914f35ea1d419155d7d6c",
+      "size": 26303
+    },
+    {
+      "path": "miniapp/node/wiki-lenses.mjs",
+      "sha": "2a6b2f5e3bcafde7d2a83b458d3ef63ab1dd1387",
+      "size": 7799
+    },
+    {
+      "path": "miniapp/node/wiki-records.mjs",
+      "sha": "1d3a75f56a3555c280bf708df866737b8d58e659",
+      "size": 13321
+    },
+    {
+      "path": "miniapp/node/wiki-service.mjs",
+      "sha": "df43e7b06ffc849770b552ee021f60ceea0afdb9",
+      "size": 164954
+    },
+    {
+      "path": "miniapp/node/zsxq-cli.mjs",
+      "sha": "84c17677223e25d6b8feb0be70c113d8d5fb4b8d",
+      "size": 4654
+    },
+    {
+      "path": "package.json",
+      "sha": "97719263855485be1a0ee35c3ae11510681ebe96",
+      "size": 154
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "b80e86450da6aa3767e18a78b0cc16a0bd7bff16",
+      "size": 552
+    },
+    {
+      "path": "skills/llm-wiki/SKILL.md",
+      "sha": "ec9fe8cfcf1fe8e4509d3abe4a23525483a4e68f",
+      "size": 15641
+    },
+    {
+      "path": "skills/sentiment-search/SKILL.md",
+      "sha": "1eee1ddb3c63987ab9b9ae96b82fe130db64a0d2",
+      "size": 11488
+    },
+    {
+      "path": "skills/stock-dossier/SKILL.md",
+      "sha": "7cbb4c1281227549021576264f148d5793db3329",
+      "size": 5765
+    },
+    {
+      "path": "test/alphapai-client.test.mjs",
+      "sha": "02dc298533d511d8d65141c6df9ac17764995929",
+      "size": 15757
+    },
+    {
+      "path": "test/history-policy.test.mjs",
+      "sha": "c4482323119d0ebe40ff1bcd9df0ea1a405fb973",
+      "size": 2310
+    },
+    {
+      "path": "test/market-schedule.test.mjs",
+      "sha": "4a149efb75f11dba643a4869eb235897c75f41d3",
+      "size": 4281
+    },
+    {
+      "path": "test/research-search.test.mjs",
+      "sha": "f95e4640fa2187c68cc672bb2acfa829515d4ede",
+      "size": 14713
+    },
+    {
+      "path": "test/server-smoke.test.mjs",
+      "sha": "8cf8e10e11861e4330a573d019a63641052178ca",
+      "size": 10118
+    },
+    {
+      "path": "test/wiki-v2.test.mjs",
+      "sha": "0781a71bc6e90170c5c470f89ce88ba61b3a8ea8",
+      "size": 16725
+    },
+    {
+      "path": "test/wiki-v3.test.mjs",
+      "sha": "af4ef9a4f6dc70eff5b8d8f4d596372ac7332f42",
+      "size": 42703
+    },
+    {
+      "path": "test/wiki.test.mjs",
+      "sha": "8088f203c550ac2f189e37df5e20c42da92ed0e9",
+      "size": 20354
+    }
+  ]
+}

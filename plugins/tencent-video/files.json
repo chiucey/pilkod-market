@@ -1,0 +1,60 @@
+{
+  "version": "1.0.24",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "a0bce5565bc63797446d4816b44a31d1d4539cb1",
+      "size": 565
+    },
+    {
+      "path": "icon.png",
+      "sha": "568a39fdb3c64d97a3177895981a1c5463f9b81f",
+      "size": 25468
+    },
+    {
+      "path": "skills/tencent-video/README.md",
+      "sha": "ad8770409866ca34b98f6b38db0a44d8567c07f4",
+      "size": 2401
+    },
+    {
+      "path": "skills/tencent-video/SKILL.md",
+      "sha": "71264e25b6ebe40c72fe7353d8ab935a3be775d5",
+      "size": 11366
+    },
+    {
+      "path": "skills/tencent-video/references/schedule.md",
+      "sha": "981b899d7c075fc7a5ac34de782bdc933d76ff74",
+      "size": 6204
+    },
+    {
+      "path": "skills/tencent-video/references/search.md",
+      "sha": "3e48cc057d76966a16c1e2f29d24bc1e51926d89",
+      "size": 7986
+    },
+    {
+      "path": "skills/tencent-video/scripts/_common.ts",
+      "sha": "a0d2a229e4ba9bfc9cf0512c71267ebd14bda43f",
+      "size": 4923
+    },
+    {
+      "path": "skills/tencent-video/scripts/cli-state.ts",
+      "sha": "e70b6d8206761b6a8e1c810e40010e3aa4cc0e52",
+      "size": 1305
+    },
+    {
+      "path": "skills/tencent-video/scripts/install-cli.ts",
+      "sha": "169ddc0c417859ea0c4ac65c2ce6d3565146787c",
+      "size": 3393
+    },
+    {
+      "path": "skills/tencent-video/scripts/schedule.ts",
+      "sha": "91ac912f96a5d08dfdf1cd4ef99c8c899b23a254",
+      "size": 7628
+    },
+    {
+      "path": "skills/tencent-video/scripts/show-qrcode.ts",
+      "sha": "7513849cda5d6d03579cf653031458529ef7196f",
+      "size": 2135
+    }
+  ]
+}

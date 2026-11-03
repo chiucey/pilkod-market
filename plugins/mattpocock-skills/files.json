@@ -1,0 +1,260 @@
+{
+  "version": "1.2.5",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "09c9932415882844d8c77fa17b6a30bedf1159a2",
+      "size": 1604
+    },
+    {
+      "path": "LICENSE",
+      "sha": "f1dd2c09108dde1a5f56097cee8461b3ea834499",
+      "size": 1068
+    },
+    {
+      "path": "skills/ask-matt/PHASE-BOUNDARIES.md",
+      "sha": "fb58ef9febcfd558cdb4517e370f19034869ba26",
+      "size": 4249
+    },
+    {
+      "path": "skills/ask-matt/SKILL.md",
+      "sha": "ae8eb9b211972d9ae584b41d0f1439c644494fc7",
+      "size": 11417
+    },
+    {
+      "path": "skills/code-review/SKILL.md",
+      "sha": "e28d7acbf7b3bb4d7817b7eb5d9c105af03f6ec4",
+      "size": 6589
+    },
+    {
+      "path": "skills/codebase-design/DEEPENING.md",
+      "sha": "cd94075cfd754d147555c5d747a16431ed4c7dd8",
+      "size": 2553
+    },
+    {
+      "path": "skills/codebase-design/DESIGN-IT-TWICE.md",
+      "sha": "7edc861a31b1b219b933af18079f66b564c5de67",
+      "size": 2664
+    },
+    {
+      "path": "skills/codebase-design/SKILL.md",
+      "sha": "3f63c8146dd2604b419c929e9876b90c30d410e9",
+      "size": 6446
+    },
+    {
+      "path": "skills/diagnosing-bugs/SKILL.md",
+      "sha": "061c25a524acaa93d4534e9e08a793c0a5fe45fd",
+      "size": 8529
+    },
+    {
+      "path": "skills/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "sha": "243198464a8401a7ba1d63b3708fa43c3d067665",
+      "size": 1316
+    },
+    {
+      "path": "skills/domain-modeling/ADR-FORMAT.md",
+      "sha": "d7e61f30a9fd8ca70d9ee68f019c2a9ebf2d13f7",
+      "size": 2733
+    },
+    {
+      "path": "skills/domain-modeling/CONTEXT-FORMAT.md",
+      "sha": "79bbb32f6fda55758b377c980f72a6cb2b8c670e",
+      "size": 2290
+    },
+    {
+      "path": "skills/domain-modeling/SKILL.md",
+      "sha": "9b97707e19ef1f590aada356f2b3f6bb881f91be",
+      "size": 3331
+    },
+    {
+      "path": "skills/grill-me/SKILL.md",
+      "sha": "3947ff9c4ad980d14fc07fccbf659d47c114e81d",
+      "size": 157
+    },
+    {
+      "path": "skills/grill-with-docs/SKILL.md",
+      "sha": "62b9efb6f991d1b229adee7506962f13ced0c499",
+      "size": 247
+    },
+    {
+      "path": "skills/grilling/SKILL.md",
+      "sha": "8ca78c6d8f901aab0c5a1f896034b70e666ff2a3",
+      "size": 1987
+    },
+    {
+      "path": "skills/handoff/SKILL.md",
+      "sha": "2eb98a51b97bb5bac461a26ad14828eeac827909",
+      "size": 894
+    },
+    {
+      "path": "skills/implement/SKILL.md",
+      "sha": "7a0b11f5f4fe9505ea5c7983c3083ba1bf754f69",
+      "size": 433
+    },
+    {
+      "path": "skills/improve-codebase-architecture/HTML-REPORT.md",
+      "sha": "e39e8255b8797cf8257d014fb6658fb533f3a399",
+      "size": 6641
+    },
+    {
+      "path": "skills/improve-codebase-architecture/SKILL.md",
+      "sha": "a578dd0a34ad0a8886abe7e7642b100106ba86d6",
+      "size": 5993
+    },
+    {
+      "path": "skills/prototype/LOGIC.md",
+      "sha": "32be86a0a5d9928db84b3988e55f9debe476ab40",
+      "size": 6036
+    },
+    {
+      "path": "skills/prototype/SKILL.md",
+      "sha": "a0044501fe0d385b4d8575b610188ede9b236ccf",
+      "size": 2931
+    },
+    {
+      "path": "skills/prototype/UI.md",
+      "sha": "3977951663490882c2632b40695d9f59a2fe2408",
+      "size": 6913
+    },
+    {
+      "path": "skills/research/SKILL.md",
+      "sha": "fecee97e9457ba039678d2fcf1b1bc9fca78307d",
+      "size": 794
+    },
+    {
+      "path": "skills/resolving-merge-conflicts/SKILL.md",
+      "sha": "bfb7e5606e231e6808979f623fce76a9aad4b71c",
+      "size": 918
+    },
+    {
+      "path": "skills/setup-matt-pocock-skills/SKILL.md",
+      "sha": "7f6f576e2e54e0d287cbb9731ebe0343f54e50cf",
+      "size": 6841
+    },
+    {
+      "path": "skills/setup-matt-pocock-skills/domain.md",
+      "sha": "35249041162b1eed5b873d97fc430fb3e4adb18f",
+      "size": 2033
+    },
+    {
+      "path": "skills/setup-matt-pocock-skills/issue-tracker-github.md",
+      "sha": "b258aeb3c44420a2464b72ba228b77b4b3abbaea",
+      "size": 3731
+    },
+    {
+      "path": "skills/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "sha": "251035a6d74b4af8d68f066b8d7f1cef90904570",
+      "size": 3809
+    },
+    {
+      "path": "skills/setup-matt-pocock-skills/issue-tracker-local.md",
+      "sha": "0209a19af92c9c485cf3acc3d9e253171517ea17",
+      "size": 1810
+    },
+    {
+      "path": "skills/setup-matt-pocock-skills/triage-labels.md",
+      "sha": "b716855d485f3865f9dfde2a82141721f065b2e7",
+      "size": 1045
+    },
+    {
+      "path": "skills/tdd/SKILL.md",
+      "sha": "8fc086710806190ee7c4baa32089cb877a75736a",
+      "size": 3549
+    },
+    {
+      "path": "skills/tdd/mocking.md",
+      "sha": "71cbfee674d93244ce81d1830b930ca9a69200bd",
+      "size": 1481
+    },
+    {
+      "path": "skills/tdd/tests.md",
+      "sha": "7ab86479f925a1f9e8ba680af33cb3b12e015381",
+      "size": 2214
+    },
+    {
+      "path": "skills/teach/GLOSSARY-FORMAT.md",
+      "sha": "fdd7e366ad9760588b28981e42b3d3b561e56aca",
+      "size": 2122
+    },
+    {
+      "path": "skills/teach/LEARNING-RECORD-FORMAT.md",
+      "sha": "953c61422776b47612c3c945920358ad7b5daee7",
+      "size": 2747
+    },
+    {
+      "path": "skills/teach/MISSION-FORMAT.md",
+      "sha": "45250bb1bad70988bf381625931df64645e10246",
+      "size": 1540
+    },
+    {
+      "path": "skills/teach/RESOURCES-FORMAT.md",
+      "sha": "18b588c8b6f96a50ae2352f264928c643d2782e4",
+      "size": 1924
+    },
+    {
+      "path": "skills/teach/SKILL.md",
+      "sha": "c679eeccd48ca720c8196e5d9a9e58223abf213b",
+      "size": 9506
+    },
+    {
+      "path": "skills/to-questionnaire/SKILL.md",
+      "sha": "dadd0c00d6a350acaa15bb9ca1b96b20ead684ca",
+      "size": 2904
+    },
+    {
+      "path": "skills/to-spec/SKILL.md",
+      "sha": "3f52599ae2a4347aee5a07432c2707518e691a7f",
+      "size": 3043
+    },
+    {
+      "path": "skills/to-tickets/SKILL.md",
+      "sha": "e868c831fcfb1e124e010bcdf84a429ec879160f",
+      "size": 5671
+    },
+    {
+      "path": "skills/triage/AGENT-BRIEF.md",
+      "sha": "1462fcd9e8cc21921158c296149dc05d9be39d20",
+      "size": 7942
+    },
+    {
+      "path": "skills/triage/OUT-OF-SCOPE.md",
+      "sha": "c9fba2f77ee0619975ec8488c0d4861a0c7e3151",
+      "size": 4667
+    },
+    {
+      "path": "skills/triage/SKILL.md",
+      "sha": "37ddea1e3dcf8fb5be5b92e4e45f2c34b8e61d3e",
+      "size": 6557
+    },
+    {
+      "path": "skills/wait-what/SKILL.md",
+      "sha": "f8854f1b4527bca90378baf5430557172136a1bf",
+      "size": 394
+    },
+    {
+      "path": "skills/wayfinder/SKILL.md",
+      "sha": "812805b760baf328db0ebdef6f3807e381f97016",
+      "size": 11908
+    },
+    {
+      "path": "skills/wizard/SKILL.md",
+      "sha": "c4294ad8298b9b95fc727496b1b802b1f7363fba",
+      "size": 4123
+    },
+    {
+      "path": "skills/wizard/template.sh",
+      "sha": "1b3cdf40ad4923a9845fd682653d8cc4510f516e",
+      "size": 8567
+    },
+    {
+      "path": "skills/writing-for-agents/SKILL-MECHANICS.md",
+      "sha": "9cdbdb22aadc438755392216e75ad9a14cc9832e",
+      "size": 2629
+    },
+    {
+      "path": "skills/writing-for-agents/SKILL.md",
+      "sha": "a37608daf6e835e767deecfb498facecaaba82ba",
+      "size": 10886
+    }
+  ]
+}

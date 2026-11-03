@@ -1,0 +1,295 @@
+{
+  "version": "1.0.6",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "9a3ea92978dd761efeb4f2dc8fab477932d1e273",
+      "size": 899
+    },
+    {
+      "path": "notion.app.json",
+      "sha": "456d5aac55d63579e03a3e3802b9d78bdab4a91c",
+      "size": 49
+    },
+    {
+      "path": "notion.webp",
+      "sha": "c4bc6a25d965f97be2f31fd6d5c00b034328f11f",
+      "size": 21566
+    },
+    {
+      "path": "skills/notion-knowledge-capture/LICENSE.txt",
+      "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04",
+      "size": 1057
+    },
+    {
+      "path": "skills/notion-knowledge-capture/SKILL.md",
+      "sha": "aea36018623cbecabc5fc146267442db3fc9e505",
+      "size": 4708
+    },
+    {
+      "path": "skills/notion-knowledge-capture/examples/conversation-to-faq.md",
+      "sha": "345ef04831a50184393afad6ad855c22762cfc28",
+      "size": 16388
+    },
+    {
+      "path": "skills/notion-knowledge-capture/examples/decision-capture.md",
+      "sha": "ac24bb5483d3e3c86d05c5e400143ab84a4916b4",
+      "size": 3678
+    },
+    {
+      "path": "skills/notion-knowledge-capture/examples/how-to-guide.md",
+      "sha": "0bb72799c5f53c8957dbceb3627c007d77b3948f",
+      "size": 3263
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/database-best-practices.md",
+      "sha": "1d373b763951088c7da9d302b173041d8fe7223e",
+      "size": 2450
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/decision-log-database.md",
+      "sha": "3304eba38da2906cf9f5a79954e619ab175fdc02",
+      "size": 2032
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/documentation-database.md",
+      "sha": "8daded1d7e05a666db16d1ff8594921db5519c43",
+      "size": 2355
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/faq-database.md",
+      "sha": "4c9eaf4f2c45702882c7e098a0b7f2332d06d041",
+      "size": 2036
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/how-to-guide-database.md",
+      "sha": "444e166df023633f87581afe48e441e5f42ccd79",
+      "size": 1236
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/learning-database.md",
+      "sha": "6571b39511b81f92d598227f29c102008669c211",
+      "size": 1321
+    },
+    {
+      "path": "skills/notion-knowledge-capture/reference/team-wiki-database.md",
+      "sha": "c8ff191d66740f781cf11bfa8bd3f45783cf0a65",
+      "size": 926
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/LICENSE.txt",
+      "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04",
+      "size": 1057
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/SKILL.md",
+      "sha": "b0e8b0dbea279a7d4b7fd490d39c23699e5b2721",
+      "size": 4596
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/examples/customer-meeting.md",
+      "sha": "091a3d447eac1a7a4a4adcca0e0bb03eb4a53943",
+      "size": 3376
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/examples/executive-review.md",
+      "sha": "d072a58854bab5cb71a522b96bddc12b7cd7ed30",
+      "size": 2536
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/examples/project-decision.md",
+      "sha": "745aab3c4fe9fe73b9ef5f5f992d6a8ed685fee2",
+      "size": 12902
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/examples/sprint-planning.md",
+      "sha": "e11eab7e482124dfea53e347f8f8c5944f86316f",
+      "size": 2624
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/brainstorming-template.md",
+      "sha": "0e1821a46e5a12980ea3e14eed67125c1d12723e",
+      "size": 1479
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/decision-meeting-template.md",
+      "sha": "a8ff079b9f27bcfc64be21f900fc0fa4a15bb2e4",
+      "size": 1824
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/one-on-one-template.md",
+      "sha": "e530206303cc3dafbadb811e05867affc450a4fb",
+      "size": 931
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/retrospective-template.md",
+      "sha": "8fecf83f9699192c3d93124ed5855ce737b399a4",
+      "size": 939
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/sprint-planning-template.md",
+      "sha": "39d66302275352c1d8efc4b633c6fb5cdde353c2",
+      "size": 1300
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/status-update-template.md",
+      "sha": "772330f5da6b37062ca0f9fa1369256a316e5d0e",
+      "size": 1355
+    },
+    {
+      "path": "skills/notion-meeting-intelligence/reference/template-selection-guide.md",
+      "sha": "628aeb5de1bdb2928042f05ed2e5241acbf88830",
+      "size": 1948
+    },
+    {
+      "path": "skills/notion-research-documentation/LICENSE.txt",
+      "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04",
+      "size": 1057
+    },
+    {
+      "path": "skills/notion-research-documentation/SKILL.md",
+      "sha": "c8d0ad2caae04be67182a6ce04e0e87afd3a14fb",
+      "size": 4461
+    },
+    {
+      "path": "skills/notion-research-documentation/examples/competitor-analysis.md",
+      "sha": "530dd75c84cd183c23a589c4282463a0750e2c41",
+      "size": 8321
+    },
+    {
+      "path": "skills/notion-research-documentation/examples/market-research.md",
+      "sha": "ff8bbc37fba09a1e471f57e08b3a20824041f8a9",
+      "size": 2231
+    },
+    {
+      "path": "skills/notion-research-documentation/examples/technical-investigation.md",
+      "sha": "abe1f9477de3623562b254c3fdb1815c9d6efa7d",
+      "size": 6592
+    },
+    {
+      "path": "skills/notion-research-documentation/examples/trip-planning.md",
+      "sha": "de807dcd1002d119bdd1c7a8713e7844cde24b54",
+      "size": 3922
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/advanced-search.md",
+      "sha": "f201dc85111a8970d314cc4291dc23233525fe16",
+      "size": 4592
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/citations.md",
+      "sha": "f0fcb17ec48e2fcd0acba7904110991538dab5aa",
+      "size": 5149
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/comparison-format.md",
+      "sha": "7d9a8180d493048e80923d4b5f24707fe03e3b26",
+      "size": 869
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/comparison-template.md",
+      "sha": "489490281fbb446e74f95394288d355240c397b0",
+      "size": 910
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/comprehensive-report-format.md",
+      "sha": "6883ad32c51708232b1173e1ef57d0a7afadace5",
+      "size": 1075
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/comprehensive-report-template.md",
+      "sha": "cacd496a2858b10da6c4ce47da8f0b7de1dbda2c",
+      "size": 1269
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/format-selection-guide.md",
+      "sha": "dceac34e912589b493d637a2a87c886f9c6afc24",
+      "size": 2797
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/quick-brief-format.md",
+      "sha": "18db0e990a0fd9b39db922e9ce1ae63e1e2594bf",
+      "size": 766
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/quick-brief-template.md",
+      "sha": "53811be8288eb89e761814602b1a5fc9eac101c9",
+      "size": 472
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/research-summary-format.md",
+      "sha": "1333cb4063b95314cab1575b3ae68104241a28bd",
+      "size": 840
+    },
+    {
+      "path": "skills/notion-research-documentation/reference/research-summary-template.md",
+      "sha": "cef6fb7795d165fd423c99f7ac86c18ca63a2b01",
+      "size": 1151
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/LICENSE.txt",
+      "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04",
+      "size": 1057
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/SKILL.md",
+      "sha": "f3d2e9f209d35391854b15982fdb0f2d5e2185f4",
+      "size": 4827
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/examples/api-feature.md",
+      "sha": "0c5f7cd766bd0a77a11301c05f763104ac540f06",
+      "size": 14185
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/examples/database-migration.md",
+      "sha": "81e2e5e2c72af6723962ee550220ea550e9f38ac",
+      "size": 2739
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/examples/ui-component.md",
+      "sha": "403734327254ed5749790c457b0b9fede4da38b5",
+      "size": 2212
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/milestone-summary-template.md",
+      "sha": "225f80988d1c4a44f81b2cee78bcde90c11eaa4a",
+      "size": 455
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/progress-tracking.md",
+      "sha": "16046cd64af704d1c1148eb7a41ebddb2adbb980",
+      "size": 9018
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/progress-update-template.md",
+      "sha": "76ac8fe385b7dee3f013006757fdb1e93f4423c3",
+      "size": 419
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/quick-implementation-plan.md",
+      "sha": "acab757caffdb8ca52ddaea723e1e149634f130e",
+      "size": 479
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/spec-parsing.md",
+      "sha": "6b98ead37ef52d0ae33977bfc58e99d3bd2ab6bf",
+      "size": 7133
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/standard-implementation-plan.md",
+      "sha": "84044041d6201b83aba63672cfeacb97e186e37a",
+      "size": 3285
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/task-creation-template.md",
+      "sha": "90b16d00eb73cf81d46467e919acd4aeaa52f035",
+      "size": 596
+    },
+    {
+      "path": "skills/notion-spec-to-implementation/reference/task-creation.md",
+      "sha": "a78f7ee4a9ebe9bfcf1131c6edfb806a6f36ed06",
+      "size": 8113
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "version": "0.6.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "c056e600a5ec30f78a53aadf001e8af350175cec",
+      "size": 741
+    },
+    {
+      "path": "ASSETS.md",
+      "sha": "8441d166e444b64b13562707b5acf9bd418a3538",
+      "size": 486
+    },
+    {
+      "path": "README.md",
+      "sha": "f47a76783b5d1e18297f2be3d6cc5c0d35a70fc0",
+      "size": 26894
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha": "00cd19d87caa4b070188e5cc001a6cc788734403",
+      "size": 39117
+    },
+    {
+      "path": "icon.png",
+      "sha": "cd875e40df53c370205593969c453e5b4863d81f",
+      "size": 967691
+    },
+    {
+      "path": "scripts/archive_subagents.py",
+      "sha": "4a57434ae9532c246307b3dd08bf3753755ed0a9",
+      "size": 6535
+    },
+    {
+      "path": "scripts/claude_source.py",
+      "sha": "841da796502f2302d11894aa0af44c2b5ffdece1",
+      "size": 22288
+    },
+    {
+      "path": "scripts/codex_context.py",
+      "sha": "7072ad733fd42620b176c1a4c8e9ae8598384fc0",
+      "size": 10294
+    },
+    {
+      "path": "scripts/codex_source.py",
+      "sha": "9e176721a60f0fdd03bc221e779ff1d1c5b36af4",
+      "size": 32170
+    },
+    {
+      "path": "scripts/migrate.py",
+      "sha": "44bea089e1755e7e5895a65aa076c676d134bf66",
+      "size": 67624
+    },
+    {
+      "path": "scripts/migration_job.py",
+      "sha": "dc54c423eb065b7e15ed1137f1cc30868c2aea20",
+      "size": 16917
+    },
+    {
+      "path": "scripts/omp_source.py",
+      "sha": "e389e539b05199d54a880bc6b76f3b828eb0fe59",
+      "size": 25604
+    },
+    {
+      "path": "scripts/opencode_legacy.py",
+      "sha": "29227cd77055731ee52944c338c3369baa30643a",
+      "size": 11383
+    },
+    {
+      "path": "scripts/opencode_source.py",
+      "sha": "8efd497ab61433002e91ab017031083b3fc47fb9",
+      "size": 16875
+    },
+    {
+      "path": "scripts/pi_source.py",
+      "sha": "3e00c8c7178c9625a737e18c2325b21f4d9a6b39",
+      "size": 17078
+    },
+    {
+      "path": "scripts/zcode_source.py",
+      "sha": "277090f6789c3da4e106d106008cd95f0dc7183a",
+      "size": 14524
+    },
+    {
+      "path": "skills/migrate-agent-session/SKILL.md",
+      "sha": "806b11faad3c14b87de9f9a35f0f264f149f6c46",
+      "size": 20201
+    },
+    {
+      "path": "tests/test_claude_migration.py",
+      "sha": "8b0f6ef89fe653822d0342896403132038bd6ea6",
+      "size": 12541
+    },
+    {
+      "path": "tests/test_codex_migration.py",
+      "sha": "98b7ea23c446181097c714ef20013e9942e54cc4",
+      "size": 46969
+    },
+    {
+      "path": "tests/test_migration.py",
+      "sha": "f1b58f18d538872519bc156818528df252ce86d6",
+      "size": 51091
+    },
+    {
+      "path": "tests/test_migration_job.py",
+      "sha": "e98d8e0ecce006b592a79b3f570e33ed71e9ff57",
+      "size": 17476
+    },
+    {
+      "path": "tests/test_omp_migration.py",
+      "sha": "141cf5113a43d5d858eac7d7440e9578d009ee14",
+      "size": 19020
+    },
+    {
+      "path": "tests/test_opencode_legacy.py",
+      "sha": "4ea6d688295ccbf01f427a6b29172f63028e5e9e",
+      "size": 9679
+    },
+    {
+      "path": "tests/test_opencode_migration.py",
+      "sha": "08856ca202fa77c0657b9c40b5c34df6d95e48f1",
+      "size": 12322
+    },
+    {
+      "path": "tests/test_pi_migration.py",
+      "sha": "7f7dc9aa4b252018a9f4fdf475dc6f5484415210",
+      "size": 10558
+    },
+    {
+      "path": "tests/verify_codex_native.mts",
+      "sha": "898432748290e809c65f7244bc56d9c8edc89543",
+      "size": 7469
+    },
+    {
+      "path": "tests/verify_native.mts",
+      "sha": "69eda2cb73f7c9367d53a653cfd8615b8c54bd54",
+      "size": 10920
+    }
+  ]
+}

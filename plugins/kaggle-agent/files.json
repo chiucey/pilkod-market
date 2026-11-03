@@ -1,0 +1,550 @@
+{
+  "version": "1.31.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "daab9d2ebdb49434dd37e45dd3477c0f45392396",
+      "size": 1805
+    },
+    {
+      "path": ".gitattributes",
+      "sha": "b4b9374fb8d60c101fdcd281fc6a900fdecf0fe2",
+      "size": 478
+    },
+    {
+      "path": ".gitignore",
+      "sha": "a678e13bb5a1d2781d0c6105d8ba95814a203c5c",
+      "size": 1922
+    },
+    {
+      "path": "README.md",
+      "sha": "45353167f06b4fe2a933b16eecc228395f689c3d",
+      "size": 11461
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "734522e7e08310e3b72701a873d456e18ca4073a",
+      "size": 10730
+    },
+    {
+      "path": "bin/kaggle-cli.cmd",
+      "sha": "0c8e86dae5948261ed3c290b703a01adda1cbc33",
+      "size": 2434
+    },
+    {
+      "path": "bin/kaggle-cli.sh",
+      "sha": "0ceeaac586937c69ab9d62ecc8d77112fdb4c64c",
+      "size": 1306
+    },
+    {
+      "path": "bin/run-mcp.cmd",
+      "sha": "27c038ffff184b0b2495b2298db2b16fcde211e5",
+      "size": 2426
+    },
+    {
+      "path": "bin/run-mcp.sh",
+      "sha": "f473d5a8eeb5f83e70bdbedae9bbec6ea24df873",
+      "size": 1095
+    },
+    {
+      "path": "docs/architecture-launch-path.svg",
+      "sha": "88e67897b88daecda1ddb4328c1e28fb821f638c",
+      "size": 12066
+    },
+    {
+      "path": "docs/architecture-rsi-tree.svg",
+      "sha": "32c2f9c535b3e365cfd500d552dd0baeb1146b97",
+      "size": 15601
+    },
+    {
+      "path": "docs/architecture-skill-layers.svg",
+      "sha": "5fd9d1d321895ed692fb9f24f83900ac5530f74a",
+      "size": 14606
+    },
+    {
+      "path": "icon.png",
+      "sha": "d622f28ae6dc15452e6140d09fb8bd519a09fd2c",
+      "size": 937064
+    },
+    {
+      "path": "mcp/agent_server.py",
+      "sha": "7bd2edb89ca801c71059f55a680d9b912a2eb508",
+      "size": 6141
+    },
+    {
+      "path": "mcp/credentials.py",
+      "sha": "ac76e41144f18e8308fdd201a03db3395f95eba4",
+      "size": 18805
+    },
+    {
+      "path": "mcp/deps.py",
+      "sha": "50e41adfdc761013a316e771a8938ae0bc1956cb",
+      "size": 13768
+    },
+    {
+      "path": "mcp/experiment_tree.py",
+      "sha": "4953b3e1a25db3c1162dc35d2179d7c4fc3e274f",
+      "size": 238425
+    },
+    {
+      "path": "mcp/github_sync.py",
+      "sha": "8f36fb4904947cfef1da1cb4c7f4ccda299c49c5",
+      "size": 20957
+    },
+    {
+      "path": "mcp/graphstate.py",
+      "sha": "aed16df6e99447bc5b30e7cd9300d580ee8da49a",
+      "size": 9802
+    },
+    {
+      "path": "mcp/handoff.py",
+      "sha": "dfe61070882dd3938861a2a3bdf0888424e43be4",
+      "size": 14701
+    },
+    {
+      "path": "mcp/kaggle_cli.py",
+      "sha": "6a8f8aa7b09340e476c22cb17f66cd711730cf05",
+      "size": 6797
+    },
+    {
+      "path": "mcp/kaggle_server.py",
+      "sha": "a8ee0b69aedd7753a7e6fd051bca1fdf9f47c322",
+      "size": 215134
+    },
+    {
+      "path": "mcp/logmonitor.py",
+      "sha": "1fe653c2ea06280dbe43368ac6b7eb7c82e2a8ad",
+      "size": 25081
+    },
+    {
+      "path": "mcp/plots.py",
+      "sha": "dbb7c11fb18620a08051dbedeae52b0af821dcbc",
+      "size": 22712
+    },
+    {
+      "path": "mcp/presence.py",
+      "sha": "0067438e0b8c362ecd63521938b2001575ae7328",
+      "size": 11882
+    },
+    {
+      "path": "mcp/searchengine.py",
+      "sha": "2ebe9934ae5e8c479406f2a88cdc6eed47abf969",
+      "size": 8914
+    },
+    {
+      "path": "mcp/sources.py",
+      "sha": "78d7fdc89ff33ee73fc571a1d0ed3443cf87d8f9",
+      "size": 15996
+    },
+    {
+      "path": "mcp/structured.py",
+      "sha": "8e33419e7fc0be198f1a35f0eef18d125c08be4d",
+      "size": 8880
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "532986be5cb4b92ac739fa9143987903fd839b5d",
+      "size": 1315
+    },
+    {
+      "path": "skills/README.md",
+      "sha": "bdd89d76513633846de7207b2aecd4b3fd7641a2",
+      "size": 11451
+    },
+    {
+      "path": "skills/_shared/README.md",
+      "sha": "a4410779efc33940dda47ee763a9288e77e16f56",
+      "size": 2487
+    },
+    {
+      "path": "skills/_shared/genui-widget/COMPONENTS.md",
+      "sha": "457c968538c74c4624813b4438d280aeea968dac",
+      "size": 6394
+    },
+    {
+      "path": "skills/_shared/genui-widget/FOUNDATION.md",
+      "sha": "cde963826a0bff3c1feb7844002547b22ebb2e98",
+      "size": 22319
+    },
+    {
+      "path": "skills/_shared/genui-widget/references/color-system.md",
+      "sha": "af460c46aa75b45871a650e329180331a54b8172",
+      "size": 8023
+    },
+    {
+      "path": "skills/_shared/genui-widget/references/visual-rules.md",
+      "sha": "bdb1a7fa936988e7b4d982108ab45652f0d21ce0",
+      "size": 4989
+    },
+    {
+      "path": "skills/_shared/genui-widget/references/widget-patterns.md",
+      "sha": "335279f5154ac0e8b9dcd48156268930a704a355",
+      "size": 7498
+    },
+    {
+      "path": "skills/_shared/genui-widget/references/widget-recipes.md",
+      "sha": "b1a0f7ced95a076b5fdae309669075036a57841f",
+      "size": 9456
+    },
+    {
+      "path": "skills/ablation-design/SKILL.md",
+      "sha": "021d9079d18a50480e1c73c1a18eed58016f301e",
+      "size": 10183
+    },
+    {
+      "path": "skills/account-rename-visualizer/SKILL.md",
+      "sha": "88aa8ab53a8e7652f1021838b3f895aec457a3b4",
+      "size": 6552
+    },
+    {
+      "path": "skills/account-rename-visualizer/genui.json",
+      "sha": "bc1dd0e0a11dff446af31ff1069e802f34241352",
+      "size": 274
+    },
+    {
+      "path": "skills/account-rename-visualizer/references/components.md",
+      "sha": "965bd315b2a9f64ecb87ec7963b6351eaba2ed70",
+      "size": 6388
+    },
+    {
+      "path": "skills/account-rename-visualizer/references/data-schema.json",
+      "sha": "da59fad1872a70f9191a477986bb95366ef8b65a",
+      "size": 3113
+    },
+    {
+      "path": "skills/account-rename-visualizer/references/examples.md",
+      "sha": "c476f7ed862cda8d3d930cd47cbc59088bdae92f",
+      "size": 10378
+    },
+    {
+      "path": "skills/approach-decision/SKILL.md",
+      "sha": "be8b51ba339a3b5c556dba68f3113c11016b261e",
+      "size": 9030
+    },
+    {
+      "path": "skills/categories/collab.md",
+      "sha": "86a7284048744a7c6cb761a4d1a0a68cfc924f18",
+      "size": 9416
+    },
+    {
+      "path": "skills/categories/experiment.md",
+      "sha": "3baf7df3ec142b01e91182a67fe5a7e7f368e903",
+      "size": 18087
+    },
+    {
+      "path": "skills/categories/identity.md",
+      "sha": "62bb913eef94096f77f8de6ab479bc6c4ebde558",
+      "size": 4609
+    },
+    {
+      "path": "skills/categories/research.md",
+      "sha": "32615a2d96656b9411959d2f2d2158128b238ea8",
+      "size": 8615
+    },
+    {
+      "path": "skills/evidence-sources/SKILL.md",
+      "sha": "8e87da8c4201a0a14c52496566bfc7658ff31517",
+      "size": 6601
+    },
+    {
+      "path": "skills/experiment-launch/SKILL.md",
+      "sha": "34cbaef1d4f2a21fc58e48fb0b9b91c444adb1e1",
+      "size": 12465
+    },
+    {
+      "path": "skills/genui-scenarios/SKILL.md",
+      "sha": "7338a70e42b37f11ae5f760e302fe6975684bf6e",
+      "size": 11754
+    },
+    {
+      "path": "skills/github-auth/SKILL.md",
+      "sha": "2f52ec7b549b928b05f7cf07a0357f10d31f6bd1",
+      "size": 7306
+    },
+    {
+      "path": "skills/handoff/SKILL.md",
+      "sha": "8d34b8b41093e8cd06f6fe2ea77995c5a8fe5fa4",
+      "size": 8009
+    },
+    {
+      "path": "skills/kaggle-account-switch/SKILL.md",
+      "sha": "900c7f79802808905a62370028b6dcd4e2cf2e68",
+      "size": 8951
+    },
+    {
+      "path": "skills/kaggle-cli/SKILL.md",
+      "sha": "48633a7b1eef8dc821d0c7e743be9c13aeabe8fc",
+      "size": 8611
+    },
+    {
+      "path": "skills/kaggle-competition-research/SKILL.md",
+      "sha": "f167602ff28f2d4dc7a29dc21ba4d66a03486992",
+      "size": 69414
+    },
+    {
+      "path": "skills/log-monitor-visualizer/SKILL.md",
+      "sha": "68347d91345f66a53489831c5d7e08f12a519665",
+      "size": 5720
+    },
+    {
+      "path": "skills/log-monitor-visualizer/genui.json",
+      "sha": "ce9cb6cef6e25c696b2b48de36b9caa7a5ae90bb",
+      "size": 264
+    },
+    {
+      "path": "skills/log-monitor-visualizer/references/components.md",
+      "sha": "8693f6f636df64e2dac187e967118670f6ffca32",
+      "size": 6745
+    },
+    {
+      "path": "skills/log-monitor-visualizer/references/data-schema.json",
+      "sha": "04a2d509cc1e7295a9ed6005182f98864c6e0a47",
+      "size": 2690
+    },
+    {
+      "path": "skills/log-monitor-visualizer/references/examples.md",
+      "sha": "491a923bc8484601c6715548b68548664982fee2",
+      "size": 11049
+    },
+    {
+      "path": "skills/log-monitor/SKILL.md",
+      "sha": "d926fd0c4d5dd985a8f87d582263d48f0c652646",
+      "size": 19384
+    },
+    {
+      "path": "skills/presence-mode/SKILL.md",
+      "sha": "9c397bb9565f750310ff18ae696854579d81d891",
+      "size": 9199
+    },
+    {
+      "path": "skills/relationships.json",
+      "sha": "8d4557a115fbcaf5ff0e3a2e515ef53583e5dd1a",
+      "size": 37179
+    },
+    {
+      "path": "skills/rsi-experiment-tree/SKILL.md",
+      "sha": "21eaf999f62f8f796ad56abf501cd9be2f5daec3",
+      "size": 35289
+    },
+    {
+      "path": "skills/ruler-audit/NOTICE.md",
+      "sha": "1be194fa55ffdb78b89b764ad58cd9e66ff480b4",
+      "size": 6413
+    },
+    {
+      "path": "skills/ruler-audit/SKILL.md",
+      "sha": "145e1ced6839725a9e1e6469148ab0d6c6e19f41",
+      "size": 15415
+    },
+    {
+      "path": "skills/ruler-audit/references/adoption.md",
+      "sha": "44c149f9980224d8c0cef079e1506c92e0021f22",
+      "size": 7417
+    },
+    {
+      "path": "skills/ruler-audit/references/checklist.md",
+      "sha": "1c749bd4e74f9dd360e9f1fe752684032b87a934",
+      "size": 20534
+    },
+    {
+      "path": "skills/ruler-audit/references/resolution.md",
+      "sha": "ef6847ab2a07ce55b93aec3005f6f72da168ecc8",
+      "size": 9010
+    },
+    {
+      "path": "skills/ruler-audit/references/triage.md",
+      "sha": "59c69805d22a23626d20e61e8776e756b24e7dbe",
+      "size": 11703
+    },
+    {
+      "path": "skills/ruler-audit/references/upstream/README.md",
+      "sha": "6388cd869f00af96ffaac670abd42eef7415f69d",
+      "size": 4151
+    },
+    {
+      "path": "skills/ruler-audit/references/upstream/blog-automating-eval-design-and-hillclimbing.md",
+      "sha": "d4ffd3b14c6cb34557325c6b7c81a40dd3cbb18a",
+      "size": 10866
+    },
+    {
+      "path": "skills/ruler-audit/references/upstream/build-eval.md",
+      "sha": "3704145ecaac7788f61cc6987431a3fff5bb40d0",
+      "size": 54819
+    },
+    {
+      "path": "skills/ruler-audit/references/upstream/cost-hillclimb.md",
+      "sha": "9cbcd8475285e32bddf959aa27d27e00f2505fed",
+      "size": 31574
+    },
+    {
+      "path": "skills/ruler-audit/references/upstream/eval-audit.md",
+      "sha": "bc277162f32f11c98639621d94c4a3b90ce6d33d",
+      "size": 27892
+    },
+    {
+      "path": "skills/ruler-audit/references/upstream/eval-hillclimb.md",
+      "sha": "7ff41e01bd409597eed2d6fe2b9eb16f6385c387",
+      "size": 68773
+    },
+    {
+      "path": "skills/ruler-audit/references/where-hard.md",
+      "sha": "c3997005badbeb4fec0f49e3767917150bac1cc8",
+      "size": 9708
+    },
+    {
+      "path": "skills/scientific-plotting/SKILL.md",
+      "sha": "1fc9637c16a178fc413a577d9babe6d4a7e72d96",
+      "size": 10472
+    },
+    {
+      "path": "skills/scientific-plotting/assets/color_palettes.py",
+      "sha": "137ef9d7aae053fb7a6dc421da6e8c5039f5a94e",
+      "size": 6756
+    },
+    {
+      "path": "skills/scientific-plotting/assets/nature.mplstyle",
+      "sha": "b10d1249a9e6701ac0fb3e9270a40c8bf828b48e",
+      "size": 1619
+    },
+    {
+      "path": "skills/scientific-plotting/assets/presentation.mplstyle",
+      "sha": "e4930f52548afed348d35f71c751dd04781ed4bd",
+      "size": 1460
+    },
+    {
+      "path": "skills/scientific-plotting/assets/publication.mplstyle",
+      "sha": "106936e07ed94b9bb68d0743aee542f91877e14f",
+      "size": 1817
+    },
+    {
+      "path": "skills/scientific-plotting/assets/publisher_profiles.json",
+      "sha": "7d99e7ebb860d31bc85f6cecdbfc1497e1b9edfd",
+      "size": 9863
+    },
+    {
+      "path": "skills/scientific-plotting/references/color_palettes.md",
+      "sha": "6b1a6c6e0a177e20d3c30e8c11acb80b90e684b5",
+      "size": 9094
+    },
+    {
+      "path": "skills/scientific-plotting/references/journal_requirements.md",
+      "sha": "cf7438c59195f5897248fcabcf9e2a1b8e9f9d61",
+      "size": 10412
+    },
+    {
+      "path": "skills/scientific-plotting/references/matplotlib_examples.md",
+      "sha": "a752a880079d558c200bdf49d5e0e9313a493bbf",
+      "size": 11054
+    },
+    {
+      "path": "skills/scientific-plotting/references/publication_guidelines.md",
+      "sha": "dea3863b9d851a42c7f7fa06779d6edc15b6a495",
+      "size": 12709
+    },
+    {
+      "path": "skills/scientific-plotting/references/sources.md",
+      "sha": "2025cc8e70ee66551510b6a19fe2141907f50e65",
+      "size": 8837
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/_common.py",
+      "sha": "6c8355a4ad1e6de09e045e277fd8360fa6b181ac",
+      "size": 4351
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/export_plan.py",
+      "sha": "24a6f18c795dbe7171a121365392e6a0aa3be5a5",
+      "size": 16700
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/figure_export.py",
+      "sha": "8035a2c2964faa53448a4aef1ffb330cedca4626",
+      "size": 22256
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/image_metadata.py",
+      "sha": "5541e51891af8e0072fb5ce53281ebdb424307a7",
+      "size": 25029
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/palette_audit.py",
+      "sha": "e12e158db2098b3e3c7c976bf6889de81069bf52",
+      "size": 11654
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/style_presets.py",
+      "sha": "d5b50fa37e92f20bc2ada900ed82e8795ad5ab86",
+      "size": 16123
+    },
+    {
+      "path": "skills/scientific-plotting/scripts/style_preview.py",
+      "sha": "7b68a529de02a4c7bda9a295a60872ad86a5789b",
+      "size": 7762
+    },
+    {
+      "path": "skills/technical-report/SKILL.md",
+      "sha": "506762ff51b828e8461200521159901e9ec6ac31",
+      "size": 8013
+    },
+    {
+      "path": "tools/check_plugin.py",
+      "sha": "6c35af491853c9335cc6765d9b08fa8b93384119",
+      "size": 301382
+    },
+    {
+      "path": "tools/check_tree_seeding.py",
+      "sha": "6fdd0705b789e611e44a3c079742212c87827d92",
+      "size": 6785
+    },
+    {
+      "path": "tools/draw_architecture.py",
+      "sha": "01848ccf87cb4a2b1a667918418f8d0623fbbbba",
+      "size": 19625
+    },
+    {
+      "path": "tools/probe_ablation_cycle.py",
+      "sha": "5838afb6ad0f4a55fbc4cc6fbb6ddfd02458ef6a",
+      "size": 10169
+    },
+    {
+      "path": "tools/probe_account_scope.py",
+      "sha": "0033c6b22cbe863a613e0dbe88b1329b2f58fc9c",
+      "size": 8521
+    },
+    {
+      "path": "tools/probe_claim_audit.py",
+      "sha": "0cfdcbc5df372449bf49c32ed2d1ce65724f6436",
+      "size": 8671
+    },
+    {
+      "path": "tools/probe_marketplace_layout.py",
+      "sha": "f863e674bfb6c1fcd5bcf3c77d845a32515af044",
+      "size": 18757
+    },
+    {
+      "path": "tools/probe_monitor_cycle.py",
+      "sha": "dc65c6dfdb1d994a2c49856e0b9b2614a61b00c0",
+      "size": 6142
+    },
+    {
+      "path": "tools/probe_plot_cycle.py",
+      "sha": "6a2559a42e215753feffe60a6d1e4b8676ecbf48",
+      "size": 10332
+    },
+    {
+      "path": "tools/probe_transport.py",
+      "sha": "ab0d44e6de10999519b3b57d340852cbff04c706",
+      "size": 6853
+    },
+    {
+      "path": "tools/prove_counter_examples.py",
+      "sha": "7d56658266aa28f952e27b3dd20143592579e9b4",
+      "size": 89129
+    },
+    {
+      "path": "tools/verify_upstream_quotes.py",
+      "sha": "47d9a30a424750175e8812b0602bdeaefac515cf",
+      "size": 7310
+    }
+  ]
+}

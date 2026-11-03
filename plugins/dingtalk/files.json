@@ -1,0 +1,1995 @@
+{
+  "version": "0.1.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "2736371d3f58a990b06d0dc5c12e8dde3bfd906d",
+      "size": 1160
+    },
+    {
+      "path": "LICENSE",
+      "sha": "3ccf5cacea97a55a314d7b0c8b9333875bc4b7e0",
+      "size": 10098
+    },
+    {
+      "path": "NOTICE",
+      "sha": "9254f3f2f07d8c984ad27b8431f27b77cf29ab83",
+      "size": 666
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha": "372eb015cc9030782cd44da7f634fc9ed71962f0",
+      "size": 1731
+    },
+    {
+      "path": "README.md",
+      "sha": "fc24b7e6aae1e29b659d0da337b28136737672ed",
+      "size": 944
+    },
+    {
+      "path": "icon.png",
+      "sha": "09e8c6e34d074494f09c2bb0c76c89443486abe0",
+      "size": 11431
+    },
+    {
+      "path": "scripts/install-dws.py",
+      "sha": "5a71c4d8663f6027ef654b9a89852c8b2f8513c7",
+      "size": 3266
+    },
+    {
+      "path": "skills/dingtalk-aicard/LICENSE",
+      "sha": "e60ddbe6dacae153b92434c44acb920f199cd4b5",
+      "size": 11392
+    },
+    {
+      "path": "skills/dingtalk-aicard/NOTICE",
+      "sha": "26e8a8c401d3cd1ed2f31a7540259cacc5c137a2",
+      "size": 635
+    },
+    {
+      "path": "skills/dingtalk-aicard/SKILL.md",
+      "sha": "d4722371b13f6d802ec79698566c417db5c514b2",
+      "size": 10378
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/design.md",
+      "sha": "15cbc6abc57da854a7c2b315dfe1881e375425de",
+      "size": 22803
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/index/components.md",
+      "sha": "281385ba8a08be81170139295198ab2b3dfbc582",
+      "size": 5421
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/index/functions.md",
+      "sha": "339592b910b46bd0ea8b4444515fd89baa447bf8",
+      "size": 4280
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/index/tokens.md",
+      "sha": "468a8c6fe242e0e751ea43adc0651b037ca6db8a",
+      "size": 10169
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/patterns/content.md",
+      "sha": "10cfc8ea2b28aa04ef420512ddcc890ec282d29e",
+      "size": 2571
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/patterns/detail.md",
+      "sha": "53204a159aa7b6be9763787d67ebf6a81bf4d02c",
+      "size": 1839
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/patterns/form.md",
+      "sha": "7cd5709e68dd0dce2250b017f37d7af189637c86",
+      "size": 4331
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/patterns/notification.md",
+      "sha": "3c4103bb03d67a6e87ad6ea5ab3992552ac45667",
+      "size": 2653
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/patterns/progress.md",
+      "sha": "a4a1098df6695dba5eeca6372da21b666eaa25c8",
+      "size": 5377
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/patterns/report.md",
+      "sha": "0126805c89fd54f710ecb479d903e28836f43c32",
+      "size": 2423
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/LICENSE",
+      "sha": "62589edd12a37dd28b6b6fed1e2d728ac9f05c8d",
+      "size": 11360
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/NOTICE",
+      "sha": "e78fa916fc535b28f96902ba2a2c0d20e646aa57",
+      "size": 6550
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/agent-to-renderer.json",
+      "sha": "bef520ee984cb0c18dc022d29c8464582ff27bb1",
+      "size": 8102
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-components-common.json",
+      "sha": "7b5b5b0ef2605dfaf747c842795982d68e82e3ae",
+      "size": 47806
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-components-composition.json",
+      "sha": "439c589e3d2de837ec8b8870519a5c1fe097f726",
+      "size": 38118
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-components-inputs.json",
+      "sha": "7d8e5497a7bc3f413d00e07ee253d9f949fbe734",
+      "size": 43286
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-components-specialized.json",
+      "sha": "69c033c273e29bfcd1f7c53595a296eb577520cf",
+      "size": 39503
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-functions-core.json",
+      "sha": "b4ed73bd8713c38ea0ba7f4f0e027451cb767a6a",
+      "size": 16559
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-functions-expressions.json",
+      "sha": "97fd8ef13d82fc3358e4b8ccb36bfc82a1703038",
+      "size": 18810
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/catalog-functions-host-actions.json",
+      "sha": "79d4f506c34c54b52a5827af7fd449c3258ade9b",
+      "size": 26620
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/common-types-basic.json",
+      "sha": "05bc5192ca3091fe1fd0b891d0eade94aea8897e",
+      "size": 18740
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/common-types-extended.json",
+      "sha": "904241082e49f615c27ef829639b6527184daedd",
+      "size": 14522
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/common-types-visual.json",
+      "sha": "a298f7cbb79136a602a0ed102ceb98a339aee5b8",
+      "size": 20444
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/examples/README.md",
+      "sha": "887983db51f06e3355470c24f96f4eb444e2a705",
+      "size": 1260
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/examples/agent-run-progress.json.example",
+      "sha": "1519d850a55914bd419c3665ce2d2bd7cb0880a1",
+      "size": 5015
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/examples/agent-run.json.example",
+      "sha": "be6f14264cb2f5204ea5472b4b18baaeb8f579f4",
+      "size": 6624
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/examples/data-report.json.example",
+      "sha": "82bf6bebef2f53aa972b300911506181d778ee65",
+      "size": 3142
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/examples/form-interaction.json.example",
+      "sha": "a64d8b61cfc4d5d72767e4dade45572db6e28928",
+      "size": 4731
+    },
+    {
+      "path": "skills/dingtalk-aicard/references/protocol/examples/host-action.json.example",
+      "sha": "cf61607983427fcfe8a8c5d2a1da9bfa9b039417",
+      "size": 4064
+    },
+    {
+      "path": "skills/dingtalk-aisearch/SKILL.md",
+      "sha": "467e0408b562864cff2845461d91a5526f8ec89f",
+      "size": 9138
+    },
+    {
+      "path": "skills/dingtalk-aisearch/references/aisearch.md",
+      "sha": "fc60e03cfdbad4827854a6b671fa3d20b6f53346",
+      "size": 3941
+    },
+    {
+      "path": "skills/dingtalk-aisearch/references/intent-guide.md",
+      "sha": "7c9f52a0e992749b5e5934119ed77b355b63ac0c",
+      "size": 1939
+    },
+    {
+      "path": "skills/dingtalk-aisearch/references/lite-recipes.md",
+      "sha": "c0cc8cb3caedc114043095a21bce4ee483d803cd",
+      "size": 2606
+    },
+    {
+      "path": "skills/dingtalk-aitable/SKILL.md",
+      "sha": "b633bd989972a8f064ceff6a8df6fa4b50873e63",
+      "size": 37055
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/06-data-analytics.md",
+      "sha": "ef8c3bc87a420f30b41ceaeb0f0f83b2b650efa7",
+      "size": 3208
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable-record-ops.md",
+      "sha": "27b259da30fa075d759754063009e6df4c9252d4",
+      "size": 6640
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable-section.md",
+      "sha": "63891117857cb42407098db1335ac5a1afebd442",
+      "size": 1650
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable.md",
+      "sha": "ccff42ef44f2fa2d57c9eeeb614c1a3b14e28470",
+      "size": 32708
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-advperm.md",
+      "sha": "84d9dfe6d4a15f58cb379f4a40f7954a3dcef6e6",
+      "size": 10431
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-api-key.md",
+      "sha": "8bdeed6287718b58fcf7e93159a10682d027e5b0",
+      "size": 1746
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-attachment.md",
+      "sha": "4f87a40bc8dc2520009b04d2ab30987c2445691f",
+      "size": 3387
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-best-practices.md",
+      "sha": "1d7f7e3e1b2030ffed8e4c673f49ba522cd1964c",
+      "size": 4321
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-cell-value.md",
+      "sha": "b20e69b0e9b74e5385483a281abf05d23d4f277b",
+      "size": 9205
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-comment.md",
+      "sha": "44f148856128d0b99dfdb24561b3c98247df06cc",
+      "size": 2891
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-dashboard-chart.md",
+      "sha": "6c973170d8919c7e6d98316ba7a766251dc98a09",
+      "size": 3773
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-data-analysis-sop.md",
+      "sha": "a5c061fc1034241b478b335ec1e128758c64714e",
+      "size": 5642
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-datasource.md",
+      "sha": "9ec94fe14b3dd0e0c62427122d32c01716b39482",
+      "size": 13757
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-error-recovery.md",
+      "sha": "2aaddbc7230b86e55af53af917faad142e0d2b62",
+      "size": 7084
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-export-import.md",
+      "sha": "6075a957abe70647a149c20bd899fcb036948251",
+      "size": 7264
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-field-properties.md",
+      "sha": "2e39d69ff38383eaec8d7f90a7bd4456a32e71e8",
+      "size": 8401
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-field.md",
+      "sha": "da4f7901960bcc1e3ce776590bb56910513587f3",
+      "size": 8538
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-filter-sort.md",
+      "sha": "3c2468315b888875c467f9b07ffa2009b8dd79c3",
+      "size": 11526
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-form.md",
+      "sha": "fe078c494d1968cc0e09173cb07503218a7f7f1a",
+      "size": 15679
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-formula-guide.md",
+      "sha": "b350e44fb58ebc603ba3384df8a41dbb492b325c",
+      "size": 8346
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-primary-doc.md",
+      "sha": "a239180f36b5bc94fae850a724936b117c27f946",
+      "size": 2581
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-psql.md",
+      "sha": "bfcbf921ada26b3196faf662bad5337beccd1bc6",
+      "size": 15021
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-create.md",
+      "sha": "ec597412149429f658be49420c9a16f1d6305543",
+      "size": 2239
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-delete.md",
+      "sha": "34a0e7a2985ea25764a85732789db4a6fbe8d06e",
+      "size": 582
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-history.md",
+      "sha": "f02d3d87b8fb1f004e020b7a7a17e4d83967eabe",
+      "size": 3619
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-name-key.md",
+      "sha": "65a7fe89cffca27fb216c33ca75b149e7b2dd501",
+      "size": 2457
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-query.md",
+      "sha": "f7a2fbdb02703094aaf3bcf6dd70fca0dc391125",
+      "size": 15325
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-share.md",
+      "sha": "6e5eea5196d4afd88ccaa586c13ae70e7a981582",
+      "size": 1658
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-stats.md",
+      "sha": "df34d206066211bb49d0b51585f42bb03cd6135f",
+      "size": 3913
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-update.md",
+      "sha": "d39408ae35e14cc3570f4ced87b638b2ae2dd6a4",
+      "size": 3281
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-record-upsert.md",
+      "sha": "1642282bf0133a0ba3a89dd50f045435cad96a9e",
+      "size": 3423
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-view-config.md",
+      "sha": "b0fd2ae6386f7bead5968f558a2bad2a12297f59",
+      "size": 10558
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-view-extras.md",
+      "sha": "f0cd62720508acbc4b132f709e3493d36e4d839d",
+      "size": 8594
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-view-types.md",
+      "sha": "a5aa4c4d522858b5aa7899e7f652a19fcb2976ce",
+      "size": 4622
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/aitable/aitable-workflow.md",
+      "sha": "f93879bc66150a480b760493185f73b64a62ac33",
+      "size": 16832
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/field-rules.md",
+      "sha": "4dca6108f2fe75dedcd3d9c87e22863b8da21bc2",
+      "size": 1675
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/intent-guide.md",
+      "sha": "92e712cae649166d92114096cd9714aadd080763",
+      "size": 2197
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/recipes/conventions.md",
+      "sha": "803212b81c73e418d99773df2c14aaef47b94a80",
+      "size": 3438
+    },
+    {
+      "path": "skills/dingtalk-aitable/references/url-patterns.md",
+      "sha": "d7724ecd2ec0f3cafe7d2ad61dfded9474906ff3",
+      "size": 10965
+    },
+    {
+      "path": "skills/dingtalk-aitable/scripts/aitable_export_via_task.py",
+      "sha": "caa66f80645e8da8fbe5f08dda5c9f7db10e2a32",
+      "size": 7743
+    },
+    {
+      "path": "skills/dingtalk-aitable/scripts/aitable_import_via_task.py",
+      "sha": "e0946362add5de3e1eddb0a231ffb425c3db5aff",
+      "size": 3247
+    },
+    {
+      "path": "skills/dingtalk-aitable/scripts/bulk_add_fields.py",
+      "sha": "3ba8831308b9432ff389527d3af463e3e114b37a",
+      "size": 9337
+    },
+    {
+      "path": "skills/dingtalk-aitable/scripts/import_records.py",
+      "sha": "a275806e041bfb8a8f477eccd6a4717df3706b5a",
+      "size": 9971
+    },
+    {
+      "path": "skills/dingtalk-aitable/scripts/upload_attachment.py",
+      "sha": "5b816a7eae2c084c64212ba63234e09a89891ff1",
+      "size": 6411
+    },
+    {
+      "path": "skills/dingtalk-calendar/SKILL.md",
+      "sha": "072a1486b07296b76299665ba44ff4d93bc82738",
+      "size": 13458
+    },
+    {
+      "path": "skills/dingtalk-calendar/references/03-meeting.md",
+      "sha": "af542c42849bca0713d65b07b459d76e5e4e35ef",
+      "size": 9732
+    },
+    {
+      "path": "skills/dingtalk-calendar/references/calendar.md",
+      "sha": "3e07907999e1d57aae0105b3d5fa2d65cdc1bf2b",
+      "size": 52066
+    },
+    {
+      "path": "skills/dingtalk-calendar/references/intent-guide.md",
+      "sha": "ea73a546fc0c828ed80d969062aa2a5f14945ef7",
+      "size": 778
+    },
+    {
+      "path": "skills/dingtalk-calendar/references/lite-recipes.md",
+      "sha": "ada6310b24e4d7ac8b5a0dd4bc9f1624a6986e6c",
+      "size": 1367
+    },
+    {
+      "path": "skills/dingtalk-calendar/scripts/calendar_free_slot_finder.py",
+      "sha": "01c9f637988225cfc43374627144418794f53bd5",
+      "size": 5929
+    },
+    {
+      "path": "skills/dingtalk-calendar/scripts/calendar_schedule_meeting.py",
+      "sha": "f5ce05b06e2c6834f5e248fc7f5479fbb3cce5ad",
+      "size": 8199
+    },
+    {
+      "path": "skills/dingtalk-calendar/scripts/calendar_today_agenda.py",
+      "sha": "7e9bd04990168566169c66e540f92a51ba5a550d",
+      "size": 4057
+    },
+    {
+      "path": "skills/dingtalk-chat/SKILL.md",
+      "sha": "d13f49747a253c690da3c117747578dabec6f921",
+      "size": 9685
+    },
+    {
+      "path": "skills/dingtalk-chat/references/01-messaging.md",
+      "sha": "24622691c6d54762cc33eddea5e830e297d59b6f",
+      "size": 6699
+    },
+    {
+      "path": "skills/dingtalk-chat/references/card/a2ui.md",
+      "sha": "19d976d251d080c8627b29900605d102715abc54",
+      "size": 4266
+    },
+    {
+      "path": "skills/dingtalk-chat/references/card/callback.md",
+      "sha": "b6ea454fca0746ce14627308ce99cec773491e39",
+      "size": 857
+    },
+    {
+      "path": "skills/dingtalk-chat/references/card/create.md",
+      "sha": "4125717081914061838c6b90759b942eec0493d2",
+      "size": 1772
+    },
+    {
+      "path": "skills/dingtalk-chat/references/card/schema.md",
+      "sha": "a373202b6c9a17013387414650e07dc64b05bc70",
+      "size": 3090
+    },
+    {
+      "path": "skills/dingtalk-chat/references/card/update.md",
+      "sha": "69c4d15c8fe10018de1703312538518cc3017123",
+      "size": 830
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat-emoji-list.md",
+      "sha": "4557ceac3fd5062f8e3a77019df8ce114b48ae9e",
+      "size": 9240
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat.md",
+      "sha": "c611931fd8fc9a124f5ee79a9ff35de962225476",
+      "size": 11074
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/chat-bot.md",
+      "sha": "5c329f4a9c92ea813810f3c209fc5baf0a25c94d",
+      "size": 10241
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/chat-conversation.md",
+      "sha": "1a38993c23c2c4430a4d63d8e3e4eb4d029dc768",
+      "size": 10300
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/group-admin.md",
+      "sha": "d0b7f4116bbc13e3b7c2e4d62373c24ccc7a1218",
+      "size": 8800
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/group-discovery.md",
+      "sha": "503b463ad280c025750778242cd300952f992d9a",
+      "size": 6006
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/message-actions.md",
+      "sha": "6ac8d69f3d58280ac2ab289c9b6fec828ac65b0f",
+      "size": 6309
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/message-media.md",
+      "sha": "9ef208fa4c9f65e01b9c1be933913f75a07eddd4",
+      "size": 3938
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/message-query.md",
+      "sha": "29bf837265b19d0ddb663e88677b3edcaec96c48",
+      "size": 11553
+    },
+    {
+      "path": "skills/dingtalk-chat/references/chat/thread.md",
+      "sha": "98dfa51cdda5ed56f66e3b4d1d4a513c77df4658",
+      "size": 3582
+    },
+    {
+      "path": "skills/dingtalk-chat/references/contracts.md",
+      "sha": "a89ac9338f7e606a18d00c9f741affc07a91c804",
+      "size": 5661
+    },
+    {
+      "path": "skills/dingtalk-chat/references/intent-guide.md",
+      "sha": "b36a191d145cd62dd473d36793ad9997815a44ac",
+      "size": 3431
+    },
+    {
+      "path": "skills/dingtalk-contact/SKILL.md",
+      "sha": "7668d6c7b5d39871a4d1b1c77599c01dd7d7f5d6",
+      "size": 13634
+    },
+    {
+      "path": "skills/dingtalk-contact/references/08-directory.md",
+      "sha": "093636751c575754c1a15a9a11e0ce3106b4fd64",
+      "size": 7256
+    },
+    {
+      "path": "skills/dingtalk-contact/references/contact.md",
+      "sha": "730923dcaa8aea5cbb1daf799812f94839fd00cb",
+      "size": 40657
+    },
+    {
+      "path": "skills/dingtalk-contact/references/intent-guide.md",
+      "sha": "9f036d674f7e6605416aceea85639d3433cde4bc",
+      "size": 1777
+    },
+    {
+      "path": "skills/dingtalk-contact/references/lite-recipes.md",
+      "sha": "5bfb3ec96c37cb3014dcad542d5f29252ddc7aca",
+      "size": 1715
+    },
+    {
+      "path": "skills/dingtalk-contact/references/recipes/conventions.md",
+      "sha": "803212b81c73e418d99773df2c14aaef47b94a80",
+      "size": 3438
+    },
+    {
+      "path": "skills/dingtalk-contact/scripts/contact_dept_members.py",
+      "sha": "519afacf3db83527d80a1ae5c8fc4af09acca8a8",
+      "size": 3740
+    },
+    {
+      "path": "skills/dingtalk-doc/SKILL.md",
+      "sha": "2bc3c0c0d88fbdc7c4106366c952f7c6fa00c848",
+      "size": 12193
+    },
+    {
+      "path": "skills/dingtalk-doc/references/04-document.md",
+      "sha": "c502b79443a30692a7d048d399f0fe0930924f94",
+      "size": 2317
+    },
+    {
+      "path": "skills/dingtalk-doc/references/contracts.md",
+      "sha": "042353076bfeab66c87a0819980e283bb1528906",
+      "size": 4292
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc.md",
+      "sha": "ed243d9e9590cf3aa4f19b6828ede4f72cb4abac",
+      "size": 6197
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-block.md",
+      "sha": "ea4ad2a5ed59b414705da3fb04765ca4dae761b8",
+      "size": 2600
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-comment.md",
+      "sha": "2fc83d2c2492b5eafe05ffe4f0666bfcc5cf595f",
+      "size": 1833
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-create.md",
+      "sha": "c688e533138e7513769ab6686ec7dcbcac6e3806",
+      "size": 4469
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-export.md",
+      "sha": "fcb06f534276db5d8c225e738ce17d05076a0d4c",
+      "size": 1899
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-import.md",
+      "sha": "b1e02c6d10590c3aa5ad2540c8b8292bb0f9ca02",
+      "size": 2665
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-info.md",
+      "sha": "6b2d6c6bdd8ad050f02ae225d7fd5b256ea8225c",
+      "size": 783
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-media.md",
+      "sha": "87a5e694d211e1aaf4e98ac9b44f0f2f3e9534f9",
+      "size": 2407
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-read.md",
+      "sha": "8a05aef077a5d39a11dc12bda0cfa54a0d63677e",
+      "size": 4533
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/doc-update.md",
+      "sha": "71a933c42a6baab2e8a8581793d653fcf2d0a02e",
+      "size": 7967
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/format/doc-jsonml-cookbook.md",
+      "sha": "0cf6f925a8057f3794b3ecc116841015dd8961d0",
+      "size": 25382
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/format/doc-jsonml-schema.json",
+      "sha": "86e6a5b2256541665365ee5fdcec9b1c895bee29",
+      "size": 16835
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/format/doc-jsonml-schema.md",
+      "sha": "b632c1d46e3bef817e36202112e1a3ae02233de2",
+      "size": 29731
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/style/doc-create-workflow.md",
+      "sha": "72ab63cffe2dbd4fce9e6987a5a8d44e1ccc0478",
+      "size": 23614
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/style/doc-style-guideline.md",
+      "sha": "cc3d0939e3d7e4d0f14b399f6102ca72d3cd3d71",
+      "size": 21563
+    },
+    {
+      "path": "skills/dingtalk-doc/references/doc/style/doc-update-workflow.md",
+      "sha": "8d9edbd06971063223b2206d2c6560d11a5c81b9",
+      "size": 16735
+    },
+    {
+      "path": "skills/dingtalk-doc/references/intent-guide.md",
+      "sha": "568fd340330d283171416ecb15106d825e893c61",
+      "size": 3674
+    },
+    {
+      "path": "skills/dingtalk-drive/SKILL.md",
+      "sha": "037f48d797742d840a7183ccf865e208bab5876d",
+      "size": 15976
+    },
+    {
+      "path": "skills/dingtalk-drive/references/drive.md",
+      "sha": "290e30856917e56843b033422ee23765c381ab18",
+      "size": 12784
+    },
+    {
+      "path": "skills/dingtalk-drive/references/folder-sync.md",
+      "sha": "8f763dc27322152136cd640680b43aa5fa20f8ee",
+      "size": 3008
+    },
+    {
+      "path": "skills/dingtalk-drive/references/intent-guide.md",
+      "sha": "2869cfd7ecf18de45dc6615fe4249a3a08d7c1a0",
+      "size": 2994
+    },
+    {
+      "path": "skills/dingtalk-drive/references/lite-recipes.md",
+      "sha": "148152079ee2441971554099924bb9cca94bc590",
+      "size": 2165
+    },
+    {
+      "path": "skills/dingtalk-event/SKILL.md",
+      "sha": "bedb4f3fca8350103f758e69c38102920c331af1",
+      "size": 10157
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-card.md",
+      "sha": "741c2b2fa5e493c43a867a4c2355a75d292fe145",
+      "size": 4846
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-contact.md",
+      "sha": "fbba6b0c81eb59e2ab81d96f45e55c4fcf62e2bb",
+      "size": 4448
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-im-keys.md",
+      "sha": "d82a0de12ea43ca5e85f5a6e1d82a85be3e45066",
+      "size": 2609
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-im-lifecycle.md",
+      "sha": "b4676106bf19e7f4b34c62f4fccfc37aaad4ea98",
+      "size": 1406
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-im-operations.md",
+      "sha": "36da899b99432b1d6023607421c779f1d4c206a2",
+      "size": 3216
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-im-output.md",
+      "sha": "06d6014d49fec343760c9e3908f192648f2efe19",
+      "size": 2116
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-im.md",
+      "sha": "fc074dd311839e98469bfe5c1476b1afd6d7b392",
+      "size": 3844
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-oa.md",
+      "sha": "c8333e16fb3ceb8d702cd915411f098662d56f54",
+      "size": 8474
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-todo.md",
+      "sha": "7444ad6419eecf1adca8b6a6a86b3630b8f2200d",
+      "size": 3232
+    },
+    {
+      "path": "skills/dingtalk-event/references/event-voip.md",
+      "sha": "85202f1ece03f5f647f8f07d6c8ef83e9e2b62cc",
+      "size": 3446
+    },
+    {
+      "path": "skills/dingtalk-mail/SKILL.md",
+      "sha": "496a2eddd5870a5d8a5130cd0c4b771420dd580b",
+      "size": 9536
+    },
+    {
+      "path": "skills/dingtalk-mail/references/09-mail.md",
+      "sha": "0f3656507cf59ac3d5bcb6f72ac15b0eb3465046",
+      "size": 5669
+    },
+    {
+      "path": "skills/dingtalk-mail/references/intent-guide.md",
+      "sha": "9a01270162ace055e802e77ad786a20be7f476c3",
+      "size": 825
+    },
+    {
+      "path": "skills/dingtalk-mail/references/lite-recipes.md",
+      "sha": "a3065e88fd38e5f87ae09d7e2417a6556450e3dc",
+      "size": 2511
+    },
+    {
+      "path": "skills/dingtalk-mail/references/mail.md",
+      "sha": "5a37418fc96fcb7ec2c1c1891455b96786e5d056",
+      "size": 91282
+    },
+    {
+      "path": "skills/dingtalk-mail/references/recipes/conventions.md",
+      "sha": "803212b81c73e418d99773df2c14aaef47b94a80",
+      "size": 3438
+    },
+    {
+      "path": "skills/dingtalk-mail/scripts/mail_send_with_cc.py",
+      "sha": "207f64f68bd6a23cab80a368ecd61817486b53a8",
+      "size": 3500
+    },
+    {
+      "path": "skills/dingtalk-mail/scripts/mail_unread_summary.py",
+      "sha": "7005d787d8510be1770a4381e983badf08f81b51",
+      "size": 3212
+    },
+    {
+      "path": "skills/dingtalk-minutes/SKILL.md",
+      "sha": "77ba8176e07bc74489de2b18fd835032fbb242dc",
+      "size": 16694
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/07-minutes.md",
+      "sha": "808429097c0221390f5c5dbe2c7f67a67dc3adfa",
+      "size": 12816
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/10-minutes-speaker-match.md",
+      "sha": "4a57301083bfb24b0e7c1eb1c9435c73aecb4389",
+      "size": 3027
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/11-minutes-speaker-correct.md",
+      "sha": "44d8fb0ba6b9c7f5fd863db05b1f24aaefe4a3ce",
+      "size": 2823
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/intent-guide.md",
+      "sha": "c2d553422ea84b3a2b1927073960a46793c44250",
+      "size": 8250
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/lite-recipes.md",
+      "sha": "b62c936a9c25893dd1272910c0856e7255b0f765",
+      "size": 2348
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/minutes.md",
+      "sha": "91f68a07a106f0cc44258f483a2e4666800440cf",
+      "size": 19052
+    },
+    {
+      "path": "skills/dingtalk-minutes/references/recipes/conventions.md",
+      "sha": "81a27eb31e239b0f9631c67414779fc27da712e5",
+      "size": 2163
+    },
+    {
+      "path": "skills/dingtalk-minutes/scripts/format_timestamp.py",
+      "sha": "0567ee06bcec64777358474fdd8737d86f5670c7",
+      "size": 2613
+    },
+    {
+      "path": "skills/dingtalk-minutes/scripts/minutes_recent_summary.py",
+      "sha": "b0ba74087f211580fe5ceae55bc2b7a546cb970e",
+      "size": 6097
+    },
+    {
+      "path": "skills/dingtalk-minutes/scripts/test_format_timestamp.py",
+      "sha": "ba3ca14a7de7a277ea1050c2eac51d43f5e24629",
+      "size": 3016
+    },
+    {
+      "path": "skills/dingtalk-minutes/scripts/test_minutes_scripts.py",
+      "sha": "d1a2e6a272cce11cab39cff88706c88abdec4843",
+      "size": 8506
+    },
+    {
+      "path": "skills/dingtalk-misc/SKILL.md",
+      "sha": "ccf860dbf1ef5a94b5b1d8137d1c7fad560d2c58",
+      "size": 18795
+    },
+    {
+      "path": "skills/dingtalk-misc/references/05-reporting.md",
+      "sha": "747c53bfdda5af5e70ab56cc541a83f697930618",
+      "size": 7496
+    },
+    {
+      "path": "skills/dingtalk-misc/references/agoal.md",
+      "sha": "e7f63345247b2063ff046bb3a0265e97cf7892b6",
+      "size": 9256
+    },
+    {
+      "path": "skills/dingtalk-misc/references/attendance-intent-guide.md",
+      "sha": "7a6bc6b8f252a5d00bdd8b5951ab66aa0de21fdb",
+      "size": 462
+    },
+    {
+      "path": "skills/dingtalk-misc/references/attendance-report.md",
+      "sha": "5c36e4c3c71b294ec32e1f51cd0e7682e3b4d34d",
+      "size": 6396
+    },
+    {
+      "path": "skills/dingtalk-misc/references/attendance-schedule.md",
+      "sha": "e949725798f8ff431e19e0576561865a82e7d3e5",
+      "size": 6333
+    },
+    {
+      "path": "skills/dingtalk-misc/references/attendance-vacation.md",
+      "sha": "ddf19f5372f0c7fb0befdf66a301fe011b5e0e9f",
+      "size": 7450
+    },
+    {
+      "path": "skills/dingtalk-misc/references/attendance.md",
+      "sha": "13e599895cc02a66e9f9b93fc30a8b406e1ad3ff",
+      "size": 17836
+    },
+    {
+      "path": "skills/dingtalk-misc/references/contract.md",
+      "sha": "5025edb1c1d797b45c76a88407212e21ac94329a",
+      "size": 15521
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/app.md",
+      "sha": "17bcd96e4a3294012e03d0f4790a9df543a87664",
+      "size": 4703
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/connect.md",
+      "sha": "f75f271c77c8b4bc3d28762642b59b93f9e899e9",
+      "size": 2774
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/credentials.md",
+      "sha": "37aa77c3a8a1b17b632dafc9ce61f977622a36ae",
+      "size": 1212
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/dev-index.md",
+      "sha": "adf17c3cc84de37ffc1dab75a94835d5b2d1bb45",
+      "size": 2782
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/event.md",
+      "sha": "15de553a262f3416ad929d88e81ec55cacb9529e",
+      "size": 2677
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/mcp.md",
+      "sha": "d13a8f11e002f40550b58db89ffc5e814a475b1f",
+      "size": 10665
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/mcp/api-to-tool.md",
+      "sha": "b98bcb015b3b6f34ffb1db8bab52ab9fc117fb6e",
+      "size": 5084
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/mcp/auth-and-credentials.md",
+      "sha": "30fe5eea16f41dcfdb392acbfbdbe487ea3927fd",
+      "size": 4122
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/mcp/expression-functions.md",
+      "sha": "6445f72c28b25fa3458843c62f21c5643d949407",
+      "size": 6865
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/mcp/mapping-rules.md",
+      "sha": "4a9bdfda8949e75abe462b020d735f0d6886c602",
+      "size": 4985
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/mcp/troubleshooting.md",
+      "sha": "b25a4e9e7fe9694be3cd00282320123e8712d2ba",
+      "size": 5277
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/member.md",
+      "sha": "9aef25f011aec20e73c2679582922b1eb6a272a6",
+      "size": 1781
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/permission.md",
+      "sha": "a2fcdbd020d0065c9eb091f26165718eeeba8f30",
+      "size": 2611
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/recipes.md",
+      "sha": "6afda119bfa3ec01b4222f42caa4a4b1d201075d",
+      "size": 9574
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/robot.md",
+      "sha": "b82cffbad160611637d2e2840f132c75c3178c47",
+      "size": 3776
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/security.md",
+      "sha": "8bda2cce8a10e10154e53d3afdb69930d4dd5fa3",
+      "size": 1210
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/version.md",
+      "sha": "18c0a6428af5396caa547d07b0513426f13a830f",
+      "size": 3563
+    },
+    {
+      "path": "skills/dingtalk-misc/references/dev/webapp.md",
+      "sha": "9d6e5d5aa949dd0ffddf040c323a06d6494f4dc5",
+      "size": 1278
+    },
+    {
+      "path": "skills/dingtalk-misc/references/devapp.md",
+      "sha": "5348415ee4c9d815896f7231444a5be89784f3c4",
+      "size": 14382
+    },
+    {
+      "path": "skills/dingtalk-misc/references/devdoc-intent-guide.md",
+      "sha": "36b1d57bedb673af970dffedb2434485a0322a3c",
+      "size": 370
+    },
+    {
+      "path": "skills/dingtalk-misc/references/devdoc.md",
+      "sha": "23ec9a3071d2cd20e4fe1c281b0da6c5f9337903",
+      "size": 2901
+    },
+    {
+      "path": "skills/dingtalk-misc/references/ding.md",
+      "sha": "d752123f3ff8da19aa58c4107e4dadac21a51ed6",
+      "size": 11205
+    },
+    {
+      "path": "skills/dingtalk-misc/references/hrbrain.md",
+      "sha": "7fb36636fc7bf7ea2b00c46f2a8277564e091817",
+      "size": 4510
+    },
+    {
+      "path": "skills/dingtalk-misc/references/html.md",
+      "sha": "ad53026da73d73af9c88f6ffe9635397b7d3de1a",
+      "size": 6928
+    },
+    {
+      "path": "skills/dingtalk-misc/references/live.md",
+      "sha": "91e91c6bf3cada85dcc9848887a3d0affdcdbd55",
+      "size": 391
+    },
+    {
+      "path": "skills/dingtalk-misc/references/markdown.md",
+      "sha": "2d40834e3b12419bbedcf241fb3e6be6724daf5b",
+      "size": 11070
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa-attachments.md",
+      "sha": "727aa26acbbe1665700f7ee3df3db237bc705207",
+      "size": 4213
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa-create.md",
+      "sha": "34cc1d0d5a77ac0eabd23fd95d272f0dca0a91ac",
+      "size": 25789
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa-template-write.md",
+      "sha": "0ece1263d82f907cdbf7782f5a6b9f3a99a870fc",
+      "size": 8314
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa.md",
+      "sha": "8edd64b44b63793d66ddf7e94df0f1cdfb1a8594",
+      "size": 14171
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/oa-form-components.md",
+      "sha": "5cc55ad7f0ef71da90ffad257d20a5f962fa5b39",
+      "size": 35755
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/oa-goout.md",
+      "sha": "01a0cca28a48a76b575e77ad6c58a5434e2d1657",
+      "size": 7807
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/oa-leave.md",
+      "sha": "cd5b4b723044c835fe6b44587a80fae71c770c42",
+      "size": 7475
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/oa-overtime.md",
+      "sha": "fdef21f9572caca81fd93e9833ded5b8b9aa6534",
+      "size": 10440
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/oa-process-nodes.md",
+      "sha": "fc456f75f590018776b53ef69a15bfef7f013e1f",
+      "size": 11576
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/oa-supply.md",
+      "sha": "ccfd819b5a6506209a587c9ad2c40fbc40697152",
+      "size": 6458
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/AddressField.md",
+      "sha": "b49a5c5e2892768cf4f18590a5cefec7ac8de41c",
+      "size": 718
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/CalculateField.md",
+      "sha": "946b2701df279b23207ad7c45315e1b1c590d67c",
+      "size": 2026
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/CascadeField.md",
+      "sha": "e47f3c5262dfaba7395c4c791f566d7c655f731e",
+      "size": 1134
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/ColumnLayout.md",
+      "sha": "7c9299efc9f68ef632f2c74b068f481402d845c7",
+      "size": 746
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DDAttachment.md",
+      "sha": "3e033d3ce871da5c33d8d8110ecc53a39239933a",
+      "size": 586
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DDDateField.md",
+      "sha": "27a97d758d40058845062f794f2f40e6292b9e65",
+      "size": 857
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DDDateRangeField.md",
+      "sha": "888b15beb9507ef854e702bb5bc71fa50ce43b53",
+      "size": 1598
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DDMultiSelectField.md",
+      "sha": "a2cf366c5efba8d0139257546796785d8a9201a1",
+      "size": 1292
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DDPhotoField.md",
+      "sha": "7d3234b21bc29d619d675ca4f406ede961c29d43",
+      "size": 699
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DDSelectField.md",
+      "sha": "49f4d0db4f2b2d5a0f459f2e9c18b42b2bd5dc9e",
+      "size": 1267
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/DepartmentField.md",
+      "sha": "68b06f4173c23a15c3772088c66999b018646b91",
+      "size": 789
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/ExternalContactField.md",
+      "sha": "3fe7ffd59866de506da944dd782bf42d4d208973",
+      "size": 751
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/FormRelateField.md",
+      "sha": "5324c239e2a15b8f2708197cee6884485388316e",
+      "size": 2198
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/IdCardField.md",
+      "sha": "bcffb8034d5e1cda6b524464225b3ac9d714eec7",
+      "size": 709
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/InnerContactField.md",
+      "sha": "929214a667abe63fc0e3087ba571a47bf73b1dc8",
+      "size": 819
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/InvoiceField.md",
+      "sha": "2094cf3cc9912e66969eec44f110cc636310c352",
+      "size": 1140
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/MoneyField.md",
+      "sha": "6e536ee666fdea7dd4e5490acf691b4264076f61",
+      "size": 811
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/NumberField.md",
+      "sha": "df95fc14abc4ffe647e1963751499c7834395238",
+      "size": 807
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/OcrIdCardField.md",
+      "sha": "104ee6a255b08090568cc193d2ba96e22db8f802",
+      "size": 1738
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/OcrTextField.md",
+      "sha": "80ac7642f35516f62639cb0664634299554bdd41",
+      "size": 900
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/PhoneField.md",
+      "sha": "20d5a4634e8c681a8b062adf453360dee6fe33b9",
+      "size": 760
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/RecipientAccountField.md",
+      "sha": "c20f350ffbfef88a0e22e08b12dc60de7ba77f70",
+      "size": 746
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/RelateField.md",
+      "sha": "5c43866fc86de6a9e7ba80c7c4580831be1f82ee",
+      "size": 804
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/SeqNumberField.md",
+      "sha": "c6ec7ea20d5a763be78f9b5e65919b98b2e3ae90",
+      "size": 1155
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/SignatureField.md",
+      "sha": "5cb9dadf1921c3a5b3ee3326cbec442d0323156c",
+      "size": 722
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/StarRatingField.md",
+      "sha": "5ea01ae5a6fe8847a5cbfb269c21509d5b0348f7",
+      "size": 774
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/TableField.md",
+      "sha": "9fc696e753bdf5f8bafb99c79b5a1f58df2d54f6",
+      "size": 1193
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/TextField.md",
+      "sha": "1d56c68311213ab1a699dd612efe8ba5a2c45810",
+      "size": 775
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/TextNote.md",
+      "sha": "569d6b7ba94775d7ae076ce04bf95073e290d307",
+      "size": 675
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/TextareaField.md",
+      "sha": "5dcf04960d70da5f5b82ffa7376e804b1bc36345",
+      "size": 754
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/components/TimeAndLocationField.md",
+      "sha": "78547eaffc2b138b334bcd8d7b9a3d67b3079253",
+      "size": 719
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/example/form_components.json",
+      "sha": "c504c74a91842fce7c59deac91d51265a7c77f9a",
+      "size": 7473
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/example/process_config.json",
+      "sha": "dc0c8ce77c351af5ae01dc585425785ff7fa4dd1",
+      "size": 23242
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/form-components.md",
+      "sha": "db6810b7e1d7548f995891294b453704c4dfb914",
+      "size": 11737
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/approver.md",
+      "sha": "76f5c115365d4cbdff122dd1197f19e22b7fc654",
+      "size": 3587
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/cc.md",
+      "sha": "83fa2ca2557ff6a203bcd15eb239a67790d248d3",
+      "size": 2656
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/condition.md",
+      "sha": "fb33dcd44199f26f0f9c88ad5e566622e78c6fec",
+      "size": 11069
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/handler.md",
+      "sha": "8f2dc081ef1a66879dd4e534af4bc87ff091bab0",
+      "size": 2365
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/originator.md",
+      "sha": "d480b78c27325332cca74d9b3e8892ce9deeca55",
+      "size": 941
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/parallel.md",
+      "sha": "5665fab28daff81112890403f7a624de88e55a58",
+      "size": 2749
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/nodes/payer.md",
+      "sha": "a0dbd5d1f5078735ecfb31f211b5db1cf2136855",
+      "size": 1675
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/process-nodes.md",
+      "sha": "db5e4e3bbffc2639c22e927551b1dc525b4c4091",
+      "size": 9039
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_approval.md",
+      "sha": "ff26bdf00f28da03647bbc785d7504867fd9e293",
+      "size": 3342
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_connect_approval.md",
+      "sha": "8fa3904196fa19bf914b2e92282a9b48bb8bf716",
+      "size": 3275
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_formcomponent_approval.md",
+      "sha": "f5d197c63650f5b154de77193efeceff0e74b64d",
+      "size": 1233
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_formula_managerOfDept.md",
+      "sha": "94fe237a27ceabb365ed7838da636d80d25c520a",
+      "size": 1493
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_formula_reportLineManager.md",
+      "sha": "c45866a1450c4c384e2fa1f8e1b2733cfc09e722",
+      "size": 1523
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_label.md",
+      "sha": "5def3572cd5c2ebbea907815d03e04597a550a3b",
+      "size": 3987
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_management.md",
+      "sha": "6d64ee98ec82419553a51dbdec01b85c5610e857",
+      "size": 1313
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_managers_labels.md",
+      "sha": "ba9947d369b8ddaffcb716564cacd44f1658bd72",
+      "size": 1317
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_matrix_approval.md",
+      "sha": "83341780e44cd9eadf86afaf45b0a8a7ffc147a9",
+      "size": 2408
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_originator.md",
+      "sha": "a62dd469904f310d996a91c953fa03aaf5b3caa8",
+      "size": 698
+    },
+    {
+      "path": "skills/dingtalk-misc/references/oa/template/rules/target_select.md",
+      "sha": "1952d41a89f17a4384e841a17f33586fe3d87d23",
+      "size": 1645
+    },
+    {
+      "path": "skills/dingtalk-misc/references/openapi-explorer.md",
+      "sha": "e96c39b94fa55b73d25f1590b3da28bdff9db091",
+      "size": 3946
+    },
+    {
+      "path": "skills/dingtalk-misc/references/pat.md",
+      "sha": "d66437d5a31e60767aaa60cdaed3de46c9f638fe",
+      "size": 3217
+    },
+    {
+      "path": "skills/dingtalk-misc/references/profile.md",
+      "sha": "e9a1cc977b4aaafaef666ce4fbc946bee02855a5",
+      "size": 3947
+    },
+    {
+      "path": "skills/dingtalk-misc/references/report-conventions.md",
+      "sha": "48ddde96fe2ffbd47ccda6a8515d2a32a2ec4135",
+      "size": 3774
+    },
+    {
+      "path": "skills/dingtalk-misc/references/report-intent-guide.md",
+      "sha": "4f19e0c66424f3afa375034be7572e95b45fb347",
+      "size": 1139
+    },
+    {
+      "path": "skills/dingtalk-misc/references/report-lite-recipes.md",
+      "sha": "ff0cb8649de4878c7a4fcd188317eb08561b30f6",
+      "size": 2551
+    },
+    {
+      "path": "skills/dingtalk-misc/references/report.md",
+      "sha": "bbb369eaef00a3ecbe141a23a3a2aeec66d6d07e",
+      "size": 11669
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet-conventions.md",
+      "sha": "803212b81c73e418d99773df2c14aaef47b94a80",
+      "size": 3438
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet-intent-guide.md",
+      "sha": "01c65be7579a4eccb0595b1eed4bd044f93553f4",
+      "size": 1585
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet.md",
+      "sha": "8a6ce310290aecba03071dfd424f6bd2166e249f",
+      "size": 16402
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-batch-operations.md",
+      "sha": "dd0467e43517d715cb0bae3d9b6a363e1769ed56",
+      "size": 7875
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-chart.md",
+      "sha": "6b2e055b2ee787dab859312da880c5b82ef46a1b",
+      "size": 4027
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-comment.md",
+      "sha": "b8d5828079a90e08a47f648a548dcf3d2fe1108e",
+      "size": 8090
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-conditional-format.md",
+      "sha": "af9130bb50eb8e2b4fa654365cabdec9a7175042",
+      "size": 4625
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-dimension-operations.md",
+      "sha": "73c2403e214bfb10891c9b67c645c308ddb60d02",
+      "size": 3766
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-dropdown.md",
+      "sha": "07c32d659bbfe48599453140cda4b64b306b7ba6",
+      "size": 6875
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-export.md",
+      "sha": "8c067affcc6b2a12f9c4690930ec345c5ee0941a",
+      "size": 8798
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-filter-view.md",
+      "sha": "9f35e67a6012c4484ab9bfd1f318797dada18d4f",
+      "size": 3813
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-filter.md",
+      "sha": "90bfe695cbe6f3737aef4073239c65082bb0ad62",
+      "size": 10262
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-formula.md",
+      "sha": "81f1c74d1cc506e0ddb143885efae647a66cfcae",
+      "size": 10260
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-import.md",
+      "sha": "b301e4bfb2034dfcd917afc6320beb350cfea74c",
+      "size": 2620
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-media-image.md",
+      "sha": "aeee5e65ac9c6aca19c7b6e582057ef7207baf50",
+      "size": 14116
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-pivot-table.md",
+      "sha": "2e451972850526dbac84b9236952d24b48cb8584",
+      "size": 12933
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-range-operations.md",
+      "sha": "54bc630e3e51b5928d077c9394d64e7165b99a94",
+      "size": 8877
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-read-data.md",
+      "sha": "5f2739121aea3e51c1e33615cd2606a2c08e4897",
+      "size": 4050
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-revision-changeset.md",
+      "sha": "3458f6f75df4781c4a0679f7422fb50ef572898a",
+      "size": 3247
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-search-replace.md",
+      "sha": "9e04f3f457bba0a30dab4c8db6a1c582c0057e0d",
+      "size": 6400
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-style-format.md",
+      "sha": "5c7db579075e607317da364aaf8c5f8aadf656a5",
+      "size": 4559
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-version.md",
+      "sha": "928e9ad4a1d8bc6417520b93c10d5354acece41d",
+      "size": 5117
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-workbook.md",
+      "sha": "904a83cf06296ca7dd091ce15888f4cfa1bee93f",
+      "size": 4429
+    },
+    {
+      "path": "skills/dingtalk-misc/references/sheet/sheet-write-data.md",
+      "sha": "f8dbaa0ef4c2bc838151593c7cdc67487f1f4e02",
+      "size": 7955
+    },
+    {
+      "path": "skills/dingtalk-misc/references/skill.md",
+      "sha": "e60c1cb54f7baf73e0c6da19a25f8a6e6088b8e3",
+      "size": 3729
+    },
+    {
+      "path": "skills/dingtalk-misc/references/unsupported-scripts.md",
+      "sha": "acf7e66d9e509674cf9a1a8b942bf4bafdc56737",
+      "size": 2279
+    },
+    {
+      "path": "skills/dingtalk-misc/references/url-patterns.md",
+      "sha": "13ae1e7037e699dedd0f4d056d96568c2a99e978",
+      "size": 10951
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard.md",
+      "sha": "82bda159a00d4c4f35313e4effc8934037bf3f38",
+      "size": 20175
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/compose.md",
+      "sha": "86de290177126a72e14d5dd56369121f385624ca",
+      "size": 5787
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/diff.md",
+      "sha": "c7a84fa252b2ddd2ea4cbdd72f79412a0d39449a",
+      "size": 3838
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1.md",
+      "sha": "30a6d993bd62b8554b69277df3ba3e32bea3c323",
+      "size": 4087
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/01-overview.md",
+      "sha": "2762dfd57dd42bd3b48461d36c8889f1335c5d6c",
+      "size": 3369
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/02-query.md",
+      "sha": "796645afda80ff6c320e261d4f4b9120472348dc",
+      "size": 7512
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/03-update.md",
+      "sha": "787a17007b58875c9747934a5e64e15857834ba8",
+      "size": 8774
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/04-text-style.md",
+      "sha": "5937e61b441d3e286a99afc1f4285de9a5fe7013",
+      "size": 12096
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/05-shape-frame-group-connector.md",
+      "sha": "5f584c0e0afe40337c58a0a8f19e3896a64536d0",
+      "size": 5024
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/06-vector-icon-path.md",
+      "sha": "0f7b40942dc7eadc37997827c5a7d54c99f80016",
+      "size": 9682
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/07-examples-errors-write-support.md",
+      "sha": "1212068dc99d0da8e8054b5f3b02484cae3bc6f2",
+      "size": 9049
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/open-nodes-v1/08-catalogs.md",
+      "sha": "cd8b20637c57530edddcbb3894b7dffa0d2662f7",
+      "size": 3850
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/render.md",
+      "sha": "948f73848b286f4d3dd4204e81981058a0bfc5dd",
+      "size": 3381
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/replace.md",
+      "sha": "aa67f11e703bea569f7d244573903350b65cb30a",
+      "size": 3352
+    },
+    {
+      "path": "skills/dingtalk-misc/references/whiteboard/vector.md",
+      "sha": "6b72950d05e73c48ef6196643e11513f97d6ac55",
+      "size": 1517
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/aiapp_create_and_poll.py",
+      "sha": "663184a6a436e4d034df151d4e1a43cbb1669e11",
+      "size": 3891
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_my_record.py",
+      "sha": "89898507da1329cef9d61dc00aade0f59b3732c2",
+      "size": 2537
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_report_checkin.py",
+      "sha": "7140c57fd8e3065aef98e89126c62a7214d0766a",
+      "size": 17127
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_report_common.py",
+      "sha": "1daeaf34f711b8a1795d806c5c4cadbf6b40da7f",
+      "size": 69345
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_report_daily.py",
+      "sha": "fc07e49e5df117d773d109022a435f2a5bd464a7",
+      "size": 22380
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_report_detail.py",
+      "sha": "e6a94cfbcc7ec5e16c5ee2a88ef1482399f2936f",
+      "size": 33832
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_report_monthly.py",
+      "sha": "61fdb68428083549a580dba312ae4a5a63f535eb",
+      "size": 31877
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_report_record.py",
+      "sha": "84c576472605b70c2f0f72b69014f44604fbf4e1",
+      "size": 37983
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_schedule_export.py",
+      "sha": "098bc92bb86f756abd8186d2947541ff3aadf6e8",
+      "size": 13205
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_schedule_import.py",
+      "sha": "4153ab8bfb8e01d4023dea0d1f50a7c0e3a9462b",
+      "size": 20501
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_team_shift.py",
+      "sha": "bf91ad3de61ed931f74b7534f86c9989b1754c8e",
+      "size": 2507
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/attendance_vacation_balance.py",
+      "sha": "dcb1f1c0919a5839437616066a791a6d51545355",
+      "size": 22725
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/finance_daily_cashflow.py",
+      "sha": "1628982bc6dbf0d0af674ce98e422fb7adaa0849",
+      "size": 1773
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/finance_expense_flow.py",
+      "sha": "eff505f3757fa86076537ab3ace7bb07cde9d984",
+      "size": 4256
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/generate_form_component_id.py",
+      "sha": "8fcdcf3d59f65c6e64376670ca3a154b1ee1002c",
+      "size": 3314
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/generate_node_id.py",
+      "sha": "464bda540abad1683e2dc8917a0984cfba5f4395",
+      "size": 980
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/oa_batch_approve.py",
+      "sha": "88b5eef7e22bc0367310bffcbffd876e89a459fd",
+      "size": 5165
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/oa_create_preflight.py",
+      "sha": "95abb4a2acc9974997f62066a777deb3689d1107",
+      "size": 15096
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/oa_pending_review.py",
+      "sha": "aaf745c3f3bcddbd7aafd35d09e95a7f7a308eba",
+      "size": 4349
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/report_received_today.py",
+      "sha": "ead48492285e7f062643998867140b471e9ee7f2",
+      "size": 11301
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_custom_page_update.py",
+      "sha": "1113a0805126806928536a300a4c987fbf51fcc6",
+      "size": 17284
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_form_builder.py",
+      "sha": "4641f5990ba3421bcf74ec4aca7ce811e5aa060f",
+      "size": 20451
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_form_fields.py",
+      "sha": "bffa306357902b5f4ac100a0e3c53983cb11969f",
+      "size": 9874
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_form_inspector.py",
+      "sha": "4ab65be4f28719d2439cde216d3a2e4e4a8907f2",
+      "size": 10830
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_form_update.py",
+      "sha": "879c0ce8abac82dd91641648b8f5839d9b23a84f",
+      "size": 8196
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_jsx_pipeline.py",
+      "sha": "da620a8da6b32106b4690857eca334f0970ec186",
+      "size": 62172
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_page_compiler.py",
+      "sha": "e8698c4a618093500311165c30f8200b6f89a336",
+      "size": 47638
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_page_generate.py",
+      "sha": "dd80335423a3e732219c7edaee3f7049e7b29992",
+      "size": 19755
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_page_schema.py",
+      "sha": "f5b0e144608dcf9b7c892d606635c1b4988812b2",
+      "size": 20317
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_page_self_check.py",
+      "sha": "30781cb5d02e50a9224600468fcc70fd25b6c445",
+      "size": 15790
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_process_flow.py",
+      "sha": "04f83ae2cac2441836a39a0d82affaddf171b7a5",
+      "size": 60662
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_process_update.py",
+      "sha": "60f19f08b4a53556bd008d3d70898c4353ab58e4",
+      "size": 21961
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_report_builder.py",
+      "sha": "1c696da50c4d26967353b12b47ad68e3ffc92d27",
+      "size": 17943
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_report_charts.py",
+      "sha": "749ceecf6a11685ee54d4985e403cb4cfe0bde2b",
+      "size": 54880
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_report_update.py",
+      "sha": "8065e76ac30c9f79f4c4d8602dfa87013943efcc",
+      "size": 9788
+    },
+    {
+      "path": "skills/dingtalk-misc/scripts/yida_schema_common.py",
+      "sha": "3be35eae571f79ff2a4d7a20a59d464db20e7355",
+      "size": 11296
+    },
+    {
+      "path": "skills/dingtalk-shared/SKILL.md",
+      "sha": "a6620f8d788b39e59eaf2d3fae48e790d11843e6",
+      "size": 7090
+    },
+    {
+      "path": "skills/dingtalk-shared/references/capability-limits.md",
+      "sha": "ee9d3a72da64e57c473a762dbff1675af4043c7e",
+      "size": 1114
+    },
+    {
+      "path": "skills/dingtalk-shared/references/channel-login.md",
+      "sha": "4d6df253f3ddd5379a1c270a8b8cc29e4ead5067",
+      "size": 1695
+    },
+    {
+      "path": "skills/dingtalk-shared/references/confirmation.md",
+      "sha": "d81d199b36c063e4713fead2e562d8ce4a426ce1",
+      "size": 2956
+    },
+    {
+      "path": "skills/dingtalk-shared/references/error-codes.md",
+      "sha": "f5040feba35f35866d5c51fea23e0c2359e7ce40",
+      "size": 10620
+    },
+    {
+      "path": "skills/dingtalk-shared/references/global-reference.md",
+      "sha": "0a7a792965fabae6d99509f7b8e364061cffcac0",
+      "size": 6002
+    },
+    {
+      "path": "skills/dingtalk-shared/references/intent-guide.md",
+      "sha": "c2c335eeb0acf630783435d24e54ea5ea7e86529",
+      "size": 53032
+    },
+    {
+      "path": "skills/dingtalk-shared/references/minimax-code-setup.md",
+      "sha": "efadf9c120361bed47332a0eb13fe45912fa0b6d",
+      "size": 3074
+    },
+    {
+      "path": "skills/dingtalk-shared/references/recipes/conventions.md",
+      "sha": "f7193330973bd420fdad22cbc68aee28de3e393b",
+      "size": 3490
+    },
+    {
+      "path": "skills/dingtalk-shared/references/recipes/lite-catalog.md",
+      "sha": "2e130adf80d0f2093b3860e09756e386df78a1af",
+      "size": 18055
+    },
+    {
+      "path": "skills/dingtalk-shared/references/recipes/meta.md",
+      "sha": "3b0db88bb6ee2c8d5130a4ce2f5d6188cd3b7bd2",
+      "size": 1856
+    },
+    {
+      "path": "skills/dingtalk-shared/references/routing.md",
+      "sha": "258d36647c72df770efb6c5551ded28cc2d557b3",
+      "size": 6888
+    },
+    {
+      "path": "skills/dingtalk-shared/references/runtime-contract.md",
+      "sha": "9d5d95684880e4ebbacec1920ba22d8a2418421b",
+      "size": 1504
+    },
+    {
+      "path": "skills/dingtalk-shared/references/schema-usage.md",
+      "sha": "914532f25146bf8514b9b014f0364231af251bcf",
+      "size": 6769
+    },
+    {
+      "path": "skills/dingtalk-shared/references/url-patterns.md",
+      "sha": "ff284b59cae8c8a5a08d142d25f1aa8b8dc60bb5",
+      "size": 10916
+    },
+    {
+      "path": "skills/dingtalk-shared/references/workflow-routing.md",
+      "sha": "ddbaac44392774b88c9035ab4880a1a92750f311",
+      "size": 2963
+    },
+    {
+      "path": "skills/dingtalk-tag/SKILL.md",
+      "sha": "8f6c0cd2b9bd3f84fdb1b37b3986159051869083",
+      "size": 7316
+    },
+    {
+      "path": "skills/dingtalk-tag/references/capability.md",
+      "sha": "02c40eafcb46faed76230676506613514a307e3e",
+      "size": 5812
+    },
+    {
+      "path": "skills/dingtalk-tag/references/dingtalk-tag-index.md",
+      "sha": "2bc4253277906e865c54df5c97b97be61cf2bf28",
+      "size": 3979
+    },
+    {
+      "path": "skills/dingtalk-tag/references/manage-and-connect.md",
+      "sha": "8ff625fc13d775f44735cd61311c0954d7c74c9a",
+      "size": 8421
+    },
+    {
+      "path": "skills/dingtalk-tag/references/manage.md",
+      "sha": "5a44e7dc39461d7ac8fdf8da3d2d96d2533cfbe6",
+      "size": 9962
+    },
+    {
+      "path": "skills/dingtalk-tag/references/run.md",
+      "sha": "5c0314bdf819cdac385af722dfd0334712ee82dd",
+      "size": 5551
+    },
+    {
+      "path": "skills/dingtalk-todo/SKILL.md",
+      "sha": "997fb986363a9febe2bf32bb07d920b990d5b5e4",
+      "size": 11856
+    },
+    {
+      "path": "skills/dingtalk-todo/references/02-task.md",
+      "sha": "9fac475b7a6556ff360a4cc7f01e75bc0b885657",
+      "size": 6563
+    },
+    {
+      "path": "skills/dingtalk-todo/references/intent-guide.md",
+      "sha": "c2a19fba3329457dd28c3ce2746c3f0511197b1d",
+      "size": 1585
+    },
+    {
+      "path": "skills/dingtalk-todo/references/lite-recipes.md",
+      "sha": "0030fca73c9becf6bc9e9ab5ac5c14ce40b268d5",
+      "size": 3246
+    },
+    {
+      "path": "skills/dingtalk-todo/references/recipes/conventions.md",
+      "sha": "803212b81c73e418d99773df2c14aaef47b94a80",
+      "size": 3438
+    },
+    {
+      "path": "skills/dingtalk-todo/references/todo.md",
+      "sha": "e41857a3c19cafdf9d7bfc3fbdc48b362dc52697",
+      "size": 22992
+    },
+    {
+      "path": "skills/dingtalk-todo/scripts/todo_batch_create.py",
+      "sha": "a7beed7feff7ddb7412c5c69bbca8b88ef8b48b0",
+      "size": 13444
+    },
+    {
+      "path": "skills/dingtalk-todo/scripts/todo_daily_summary.py",
+      "sha": "d113bdcede75b784d2255cb8dab12e6ca9882c47",
+      "size": 5283
+    },
+    {
+      "path": "skills/dingtalk-todo/scripts/todo_overdue_check.py",
+      "sha": "8e40604ac4e90917e80d69e8943787deed7277d4",
+      "size": 3701
+    },
+    {
+      "path": "skills/dingtalk-wiki/SKILL.md",
+      "sha": "ea5f6c643359ef6508b835820ab32be701093b5d",
+      "size": 14045
+    },
+    {
+      "path": "skills/dingtalk-wiki/references/intent-guide.md",
+      "sha": "1c0ab13352fc1387ab56dc16bf6511659c5ec8c9",
+      "size": 2289
+    },
+    {
+      "path": "skills/dingtalk-wiki/references/lite-recipes.md",
+      "sha": "c1eee26d2f90be1d658b044887d28be78d478d70",
+      "size": 2506
+    },
+    {
+      "path": "skills/dingtalk-wiki/references/wiki-members.md",
+      "sha": "dd094df286b0b07e46093ff6226a4a66c91a5f17",
+      "size": 3488
+    },
+    {
+      "path": "skills/dingtalk-wiki/references/wiki-node-ops.md",
+      "sha": "c265cd16870303c22e1e2efd3cf33ade9a8f3b33",
+      "size": 4903
+    },
+    {
+      "path": "skills/dingtalk-wiki/references/wiki.md",
+      "sha": "a8185ae2b747b62574920f4c7dbdfde4fba19d2a",
+      "size": 7842
+    }
+  ]
+}

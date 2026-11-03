@@ -1,0 +1,115 @@
+{
+  "version": "0.8.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "ab6937b1b381dbb30a092dd7ff9cda4c98bc86dd",
+      "size": 1054
+    },
+    {
+      "path": "LICENSE",
+      "sha": "125be1b8e1012ef2d9839626f9c045a352bcfa9d",
+      "size": 10860
+    },
+    {
+      "path": "README.md",
+      "sha": "c42e9ee235a9ede17839fdd8762b52a5ffebe449",
+      "size": 13286
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "sha": "f5596281fcbca4557152058e06e65a8f17d1c0a7",
+      "size": 23974
+    },
+    {
+      "path": "dist/main.mjs",
+      "sha": "4c6f561dd5dc6b02a2ea914683f9a77fa494b4b6",
+      "size": 1080601
+    },
+    {
+      "path": "dist/quickjs.wasm",
+      "sha": "1815757b9a01a3e9a2eac80fc6e6ef3a6db566b9",
+      "size": 503134
+    },
+    {
+      "path": "dist/sandbox.mjs",
+      "sha": "c8dc9a99fd63657d215703d44fa13cc3612794c0",
+      "size": 93030
+    },
+    {
+      "path": "examples/audit-en.js",
+      "sha": "071ea5162a14213bb31d51636108a1b95995aeaa",
+      "size": 2729
+    },
+    {
+      "path": "examples/audit.js",
+      "sha": "928a48032e797fe382f9c6793c84537dacc4b87b",
+      "size": 2695
+    },
+    {
+      "path": "examples/smoke.js",
+      "sha": "424b53708bceba136c1a0b5c52f4455ddcdb1d1c",
+      "size": 1200
+    },
+    {
+      "path": "icon.png",
+      "sha": "c1f50791b6fb30b108ad3a734ad968ca443c08b7",
+      "size": 1378377
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "a67db22ad8ee1e04c83db9c3908fe9cf8d067587",
+      "size": 295
+    },
+    {
+      "path": "skills/dynamic-workflow/SKILL.md",
+      "sha": "65361287493455028285906633ccc90e5c5c297a",
+      "size": 28631
+    },
+    {
+      "path": "skills/dynamic-workflow/scripts/setup-mcode.mjs",
+      "sha": "ab8b3b43510470bc0e688c77a491dffa4ddb5025",
+      "size": 217686
+    },
+    {
+      "path": "web/app.js",
+      "sha": "b4cbbfb3c19a009f1bdfca143dcd4a96d4631aeb",
+      "size": 151890
+    },
+    {
+      "path": "web/app.source.mjs",
+      "sha": "3abf2af0f25d4c5265d2fc1e7b44916b812e26f9",
+      "size": 38593
+    },
+    {
+      "path": "web/graph-model.mjs",
+      "sha": "c8f152d399cf652995740f6f2cd1433df77968d6",
+      "size": 2029
+    },
+    {
+      "path": "web/i18n.mjs",
+      "sha": "8d56ed9a47ac8f9b7d70d471fc16ce12da9920c8",
+      "size": 31330
+    },
+    {
+      "path": "web/index.html",
+      "sha": "165723a3af9258ff19f770a1e93efee808c6cdd0",
+      "size": 16488
+    },
+    {
+      "path": "web/readable.css",
+      "sha": "853cd399443cc7467c1d65307abc67719d08d5bd",
+      "size": 2062
+    },
+    {
+      "path": "web/readable.mjs",
+      "sha": "868cb3d4f0646ea226f2905bde9857a2fa5c889e",
+      "size": 8293
+    },
+    {
+      "path": "web/style.css",
+      "sha": "450af5398fba6179dbdd25c7e5788e23237a262f",
+      "size": 34581
+    }
+  ]
+}

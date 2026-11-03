@@ -1,0 +1,1230 @@
+{
+  "version": "0.1.1",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "4ab526b87382d629a970377b7378d5ac3d5f7eb7",
+      "size": 599
+    },
+    {
+      "path": ".gitignore",
+      "sha": "d829fd5791335eb22911d05bc7489ca024a77a73",
+      "size": 164
+    },
+    {
+      "path": "LICENSE",
+      "sha": "3f0ff373a80a18ecba1053e637b49a5c5d2787ed",
+      "size": 2405
+    },
+    {
+      "path": "PATCHES.md",
+      "sha": "7ad42f4b50c9dd61fd4f98e62a8aa061951ade59",
+      "size": 31368
+    },
+    {
+      "path": "README.md",
+      "sha": "6e344d8b9bfc7fcf40d199b126163ce72a2e2843",
+      "size": 5593
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "1f5d7aa09fe2b26e777c50e763ab1a397ab9caab",
+      "size": 4974
+    },
+    {
+      "path": "docs/editor-en.png",
+      "sha": "62fa0c7a7ed9e971c2266f28489aea78751a22b5",
+      "size": 137092
+    },
+    {
+      "path": "docs/editor-zh-CN.png",
+      "sha": "cee6e10850c542d09f925b935a79e1a47b132dfc",
+      "size": 142541
+    },
+    {
+      "path": "docs/export-en.png",
+      "sha": "1336925947789c511d171b0199c57ad2b80fbc8e",
+      "size": 195644
+    },
+    {
+      "path": "docs/export-zh-CN.png",
+      "sha": "61230d67e901631218685ac9cd5172f5ce3f7aee",
+      "size": 202669
+    },
+    {
+      "path": "icon.png",
+      "sha": "6716514f0b4f4b82e5f09519aef9c7ca98d0dce5",
+      "size": 24170
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "d3590b5fadc9e738e455b6b0f3a9b0f70ec15fba",
+      "size": 985571
+    },
+    {
+      "path": "miniapp/client/audio-fx.js",
+      "sha": "9cdcd22928d6bb86e84041148a965eaf946c399d",
+      "size": 11591
+    },
+    {
+      "path": "miniapp/client/client-api.ts",
+      "sha": "2ce7ab6925ff0f16d1c3018f755c0d7c1dfd1c42",
+      "size": 16358
+    },
+    {
+      "path": "miniapp/client/color.js",
+      "sha": "88dc514ca86fcf098c36b3043a8c36de57a20459",
+      "size": 52532
+    },
+    {
+      "path": "miniapp/client/comp.js",
+      "sha": "0cb702bf600a556fe021b9f641078d320999f373",
+      "size": 11829
+    },
+    {
+      "path": "miniapp/client/delivery.js",
+      "sha": "4b551e3d2475d10d03622684fd53c1c7d6c0e7b9",
+      "size": 50145
+    },
+    {
+      "path": "miniapp/client/ducking.js",
+      "sha": "7ef71394d657863994007739aeb9e3fe1ff54d0d",
+      "size": 5612
+    },
+    {
+      "path": "miniapp/client/edit-ops.js",
+      "sha": "1faa0a55b886befc490f72abaa2181788f62d945",
+      "size": 48352
+    },
+    {
+      "path": "miniapp/client/favicon.svg",
+      "sha": "b3a8efac3a8225f966423f43d8fb7f8744915899",
+      "size": 532
+    },
+    {
+      "path": "miniapp/client/fx-worklet.js",
+      "sha": "e247e4d2812ec0e2650695234fb96eca7654b7e5",
+      "size": 6938
+    },
+    {
+      "path": "miniapp/client/i18n-en.js",
+      "sha": "bdb31b647e8aa7f4da500883e2d12490cfe3b43d",
+      "size": 120062
+    },
+    {
+      "path": "miniapp/client/i18n-zh-CN.js",
+      "sha": "395133845f5af0397b24b1973727572993e8803e",
+      "size": 129422
+    },
+    {
+      "path": "miniapp/client/i18n.js",
+      "sha": "88d27ecf7bc0b183d6cea29aac3798fcadfa2508",
+      "size": 11632
+    },
+    {
+      "path": "miniapp/client/icons/favicon-32.png",
+      "sha": "68d190f483fc282087a6836bfa0d2175614ffd4e",
+      "size": 551
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "c05ff6b5ebf4fb68378a5190053ab3e22d4610c5",
+      "size": 88884
+    },
+    {
+      "path": "miniapp/client/loudness.js",
+      "sha": "2426b34dc5abeec086adf02cba8bc364e5ee734f",
+      "size": 6075
+    },
+    {
+      "path": "miniapp/client/mask.js",
+      "sha": "21b51ee7502a84bbf72d77dd7d9866dab36499ff",
+      "size": 24662
+    },
+    {
+      "path": "miniapp/client/media-lib.js",
+      "sha": "ac772534e379dc46b6b85b1cf14db9c1173831d9",
+      "size": 15118
+    },
+    {
+      "path": "miniapp/client/meter-worklet.js",
+      "sha": "31a984ee3692aed79e2bbc5e68b315d37b154d69",
+      "size": 7950
+    },
+    {
+      "path": "miniapp/client/motion.js",
+      "sha": "8399a3d3b53d90305e87102b0636d53d45c3d130",
+      "size": 42413
+    },
+    {
+      "path": "miniapp/client/mp4-demux.js",
+      "sha": "e086465d4eef8cb45cf2b5e6106672d60bbf54ce",
+      "size": 12859
+    },
+    {
+      "path": "miniapp/client/ruler-worker.js",
+      "sha": "ff7d3deb403e97a8960ae935d6ee2c2e695ecdd5",
+      "size": 4571
+    },
+    {
+      "path": "miniapp/client/sequences.js",
+      "sha": "7ce66f8db6a792fed2a1cb50f5467a25978e1ab8",
+      "size": 11216
+    },
+    {
+      "path": "miniapp/client/silence.js",
+      "sha": "37d6c0c1087cfcdbd41acb1b1134332e6fdf18eb",
+      "size": 4500
+    },
+    {
+      "path": "miniapp/client/style.css",
+      "sha": "f03ab4e98797a941a91c01d8c00a7ad136df8ac3",
+      "size": 96915
+    },
+    {
+      "path": "miniapp/client/templates.js",
+      "sha": "e70504d1fcebd2b09cc810bdcbac91bcdd42323b",
+      "size": 42052
+    },
+    {
+      "path": "miniapp/client/tracker.js",
+      "sha": "65aebc45aafe6b84b7e5d0dccb4ddd05c78b99dd",
+      "size": 13200
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "77f6c609d83c8c82a6348956c537c3da6641045b",
+      "size": 498
+    },
+    {
+      "path": "miniapp/node/adapters/export-tool.mjs",
+      "sha": "e141c467d59be884b855cc1c7ef4454db21493dc",
+      "size": 2254
+    },
+    {
+      "path": "miniapp/node/adapters/local-api.mjs",
+      "sha": "81d3d4731013ba96510fd2701fcbb0c3382f49df",
+      "size": 6029
+    },
+    {
+      "path": "miniapp/node/adapters/mcp-http.mjs",
+      "sha": "6c94a13166b242f850067c8903610e5386299d06",
+      "size": 7750
+    },
+    {
+      "path": "miniapp/node/export/export-mcp.mjs",
+      "sha": "c781e91d9fd64773ef944b44d6606a36a7edc99f",
+      "size": 9401
+    },
+    {
+      "path": "miniapp/node/export/job-state.mjs",
+      "sha": "c784615865cc993e59bb8965cc26dc57f40d7fa3",
+      "size": 7049
+    },
+    {
+      "path": "miniapp/node/export/prepare.mjs",
+      "sha": "c021a50dc7da64bb31997e53ee6a2c961b58fcf8",
+      "size": 25556
+    },
+    {
+      "path": "miniapp/node/export/runner.mjs",
+      "sha": "f37761f02cce5a20ba3bb151cd72e0a433292023",
+      "size": 52174
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
+      "size": 15554
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "7822e9d2186c4f75a739a298f1cccb519077765a",
+      "size": 8356
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/CLAUDE.md",
+      "sha": "6e7b7fa6c66d95b8c64a06ae6e0be4e045adb2a2",
+      "size": 164599
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/analyze.js",
+      "sha": "f8d0664244f1ca4630d5a4600db6bdaf47753942",
+      "size": 19789
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/audio-fx.js",
+      "sha": "9cdcd22928d6bb86e84041148a965eaf946c399d",
+      "size": 11591
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/color.js",
+      "sha": "88dc514ca86fcf098c36b3043a8c36de57a20459",
+      "size": 52532
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/comp.js",
+      "sha": "0cb702bf600a556fe021b9f641078d320999f373",
+      "size": 11829
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/delivery.js",
+      "sha": "4b551e3d2475d10d03622684fd53c1c7d6c0e7b9",
+      "size": 50145
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/denoise.js",
+      "sha": "0cfd40af03374f9a7175a77be0f4fcdc5faf99d4",
+      "size": 6106
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/ducking.js",
+      "sha": "7ef71394d657863994007739aeb9e3fe1ff54d0d",
+      "size": 5612
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/edit-ops.js",
+      "sha": "1faa0a55b886befc490f72abaa2181788f62d945",
+      "size": 48352
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/encode-profiles.js",
+      "sha": "6452c97a42f45a53dce52b8043960dc1df8b0fe4",
+      "size": 12380
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/encoding-profiles.json",
+      "sha": "7f485dc6a87411dd68d84beee0c339c1371946cb",
+      "size": 5370
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/export-jobs.js",
+      "sha": "8d561a7f2c0e935270e89f820f0aa393cb66d8a3",
+      "size": 11362
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/frame-cache.js",
+      "sha": "5bdb924374564225a35d7a7ee8cc8b5e375e9132",
+      "size": 2630
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/frame-stats.js",
+      "sha": "c9453c969e1d4afa4bf8de7a05f4eb442f434b9f",
+      "size": 12274
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/history.js",
+      "sha": "a1f63615ba06cf57dc65504135436cfd392e4626",
+      "size": 18937
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/import-url.js",
+      "sha": "39914c14f22e8ca43b2ef1e08f6e73fd7bf0b57e",
+      "size": 16357
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/README.md",
+      "sha": "4bcc579e47fdea8365341da052a64bf2e6351581",
+      "size": 1144
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/elements/bokeh-drift.svg",
+      "sha": "3427a99eda9fc2ab0c04f1ee0570142aed457838",
+      "size": 995
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/elements/light-leak-cool.svg",
+      "sha": "da703697a80dca6568570ac657cb68fbf72ca354",
+      "size": 805
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/elements/light-leak-warm.svg",
+      "sha": "9cbaa2ebeb48d574f2a604aa0db1d67ebe32ade2",
+      "size": 1133
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/elements/logo-placeholder.svg",
+      "sha": "7ac89d412223743104305e7c3000ba9090d740d0",
+      "size": 638
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/elements/vhs-scanlines.svg",
+      "sha": "7e81a3e5c77ca8870def24ad8b9be5a552ce09ea",
+      "size": 974
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/elements/vignette-frame.svg",
+      "sha": "553be4992773f5a8161ddaf060396c7bd3bd4468",
+      "size": 693
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Abril-Fatface.LICENSE.txt",
+      "sha": "3d956f554237ce51dc55e42cf45130e1960263df",
+      "size": 5174
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Abril-Fatface.woff2",
+      "sha": "c84b11fe14f95316a09d7dfc5b3733f27d011f63",
+      "size": 13156
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Anton.LICENSE.txt",
+      "sha": "8f1b029efedb9d5070975865ba7cb76dd51e9aa4",
+      "size": 5092
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Anton.woff2",
+      "sha": "69d48b9af8be985ae9ac4808be7c70a2c833405a",
+      "size": 18612
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Archivo-Black.LICENSE.txt",
+      "sha": "9d523316ea5253f4a8e7a82c13981e8a395526a1",
+      "size": 5123
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Archivo-Black.woff2",
+      "sha": "a88b0b5352960c400c46ee17180d0d8f5c0d0db9",
+      "size": 18604
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Bangers.LICENSE.txt",
+      "sha": "a5c729b0ae46b49bd16946eb1290685ba1946986",
+      "size": 5118
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Bangers.woff2",
+      "sha": "76d707cad23f019ed661f88250805c529a5846b7",
+      "size": 23528
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Barlow.LICENSE.txt",
+      "sha": "69861f857014641262b3c1ccc05968141faa76f9",
+      "size": 5046
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Barlow.woff2",
+      "sha": "3914af46036a03369558f46123f337ce0e8c5ce6",
+      "size": 22196
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Bebas-Neue.LICENSE.txt",
+      "sha": "6968ec6325ae70c8c8672415dcd51aa46e6b6332",
+      "size": 5265
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Bebas-Neue.woff2",
+      "sha": "92d6a0f7297276c67ade85119be8996eae8b3d57",
+      "size": 13768
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Bungee.LICENSE.txt",
+      "sha": "0d4e3257b1de0614affac298cc83e14f43f88651",
+      "size": 5052
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Bungee.woff2",
+      "sha": "68da6f36b81ab361054af167ae22bc78747ad3a2",
+      "size": 14344
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Caveat.LICENSE.txt",
+      "sha": "bddc411ec7630785ad7b0ca8fe633ee4d1d3ea27",
+      "size": 5062
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Caveat.woff2",
+      "sha": "5a3423426fccb5d10e0a1cb1ba523e33b95c51bf",
+      "size": 74932
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/DM-Sans.LICENSE.txt",
+      "sha": "9014f9365222851b419a78bedd5db119a6d89006",
+      "size": 5089
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/DM-Sans.woff2",
+      "sha": "01383d7e5c4340847b8fe4570ad0458e6582989d",
+      "size": 36932
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Inter.LICENSE.txt",
+      "sha": "6fca50696b96d5a923d484602b4fa42806a5640d",
+      "size": 5238
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Inter.woff2",
+      "sha": "d15208de03cd1ad7c5199f0a0ce915fe841e4722",
+      "size": 48256
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/LICENSES.md",
+      "sha": "be07dc92d6613f54232637bdfa4667985daa6c67",
+      "size": 17948
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Lato.LICENSE.txt",
+      "sha": "77008c82d500430a60950953326d3d3af3f6bd7e",
+      "size": 5321
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Lato.woff2",
+      "sha": "ff60934dd0ea9cdd93f961d2dfd1e158357f2a77",
+      "size": 23580
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Montserrat.LICENSE.txt",
+      "sha": "2a743671728316974ce1b6be25c0c02fef34db62",
+      "size": 5298
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Montserrat.woff2",
+      "sha": "3b2eaa95e30d5f6c73336d32576b705d4cc6c118",
+      "size": 37956
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Oswald.LICENSE.txt",
+      "sha": "6b7458c04abf3edd87ea585da2000b10b66f5476",
+      "size": 5102
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Oswald.woff2",
+      "sha": "7b2a5509842e9d98138139553b4080adc1ab5b0d",
+      "size": 28488
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Pacifico.LICENSE.txt",
+      "sha": "94275f54f67415ed071770ff2c8ae56ed3d0cf2f",
+      "size": 5080
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Pacifico.woff2",
+      "sha": "4bffc9ce89d95d5094a01cf026ecdb5bc707034a",
+      "size": 32280
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Playfair-Display.LICENSE.txt",
+      "sha": "0c01e52f3750ab6b192ff88b7629e0c4dfa2fe0d",
+      "size": 5239
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Playfair-Display.woff2",
+      "sha": "5a3fbbdae8f66414a2754017de622f3c74c536b0",
+      "size": 38404
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Poppins.LICENSE.txt",
+      "sha": "9e9f80b47c6668a991fb11005f17b88f66aad89c",
+      "size": 5060
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Poppins.woff2",
+      "sha": "b69e0091c26c46151996a7feec95515567f95ac2",
+      "size": 7884
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Righteous.LICENSE.txt",
+      "sha": "e835461e18884c0235ebd06982542412f7005622",
+      "size": 5263
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Righteous.woff2",
+      "sha": "a92082f829baffb3093579f0e5df130ab6e15bf1",
+      "size": 12756
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Roboto.LICENSE.txt",
+      "sha": "1e331ae6b88b9f0f89f8edee493b8f27e3a1e42a",
+      "size": 5086
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Roboto.woff2",
+      "sha": "9b0f14165e44ad80256062baf0e55c163dfbe96b",
+      "size": 43136
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Rubik.LICENSE.txt",
+      "sha": "c3deb198db4c81829cfb73cc66be53846b9f0720",
+      "size": 5071
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Rubik.woff2",
+      "sha": "42fc52af04fdce1a7c9072ca2a5510295990fbc1",
+      "size": 35348
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Teko.LICENSE.txt",
+      "sha": "5a52ad74d3aff3cc991fcf6c05c72db0791fc0f7",
+      "size": 5092
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/fonts/Teko.woff2",
+      "sha": "275fa72623d1130b9bb956d265bb8c8ef591c2af",
+      "size": 15420
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/sfx/README.md",
+      "sha": "c1dfa19baff063278666f9261b575ee855ee1976",
+      "size": 841
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/ai-star.svg",
+      "sha": "c11158a79f8aee8c9fb08776ef67a198a25c4b2f",
+      "size": 895
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/arrow-bounce.svg",
+      "sha": "ece45f3bdb7c947c573f9769d696a438df538625",
+      "size": 874
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/arrow-scribble.svg",
+      "sha": "844cef2407c3ad4be25658e53d7a3bdc19460b9e",
+      "size": 846
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/burst-lines.svg",
+      "sha": "38fd75479f865feb59f7dc02c488c66f5c4b2524",
+      "size": 1915
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/checkmark-success.svg",
+      "sha": "fbf2149d2d9f625d60f76809780afebcdc63d539",
+      "size": 1195
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/confetti-burst.svg",
+      "sha": "ce3db6d5f12cf6b0068bb133c93b2c21788c0839",
+      "size": 1732
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/countdown-ring.svg",
+      "sha": "003fd0d30ef7e3e87bd0aa139f9df9e55c80e0e8",
+      "size": 2996
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/equalizer.svg",
+      "sha": "cd6d50376e9836f56ac6063891df98310cc6e32a",
+      "size": 971
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/glow-orbs.svg",
+      "sha": "cac2690b8ea11ab58cc8a8d8596f5594afb3f6d0",
+      "size": 1450
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/heart-pop.svg",
+      "sha": "178329230e135b8e36acfeedf342e152cf1ba4d5",
+      "size": 1704
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/loading-dots.svg",
+      "sha": "f2b8e8e1cc3cb9002d7c3bf83c999a94110ad30e",
+      "size": 732
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/location-pin.svg",
+      "sha": "e533468c6499b22545b6d94a6b56cb785a15e0e2",
+      "size": 1263
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/lower-third.svg",
+      "sha": "cce8182bc0b4558c1cd50130c2504bfb9bf4a488",
+      "size": 1152
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/new-badge.svg",
+      "sha": "40102ca199a6b9f7355c5bc40903215d3da9d098",
+      "size": 1107
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/progress-bar.svg",
+      "sha": "d8b42131314b2fd819a441d4cb473fb3ee4e2ed8",
+      "size": 1005
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/radial-pulse.svg",
+      "sha": "d1526f259f006950dd9e21a2ead58f12674466d0",
+      "size": 876
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/rating-stars.svg",
+      "sha": "59abcad00d849fc47f4bd6080e7cbf0ec553f18c",
+      "size": 1511
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/rec-indicator.svg",
+      "sha": "51ff723445c6aa714c3cca19e7f9608c21a69a54",
+      "size": 1249
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/sparkles.svg",
+      "sha": "dd8e80a01e1338f6d9b3f7ff63fbf86d49c345ab",
+      "size": 989
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/spawning-hearts.svg",
+      "sha": "136dd2047686f2c43385e074185430959d714a30",
+      "size": 3135
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/speech-bubble.svg",
+      "sha": "c65ea2368686c3a4471507c140b7c92a996e60cd",
+      "size": 1135
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/subscribe-bell.svg",
+      "sha": "38a37427a118cec2e11a34c64887ccfa23b47c32",
+      "size": 1656
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/subscribe-pill.svg",
+      "sha": "884991273f31fa1725ec399467510d9e4bd30d43",
+      "size": 1350
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/swipe-up.svg",
+      "sha": "1ff54ddb352d66a98a343f02cd3f345b414b4f3b",
+      "size": 1568
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/library/svg/underline-swoosh.svg",
+      "sha": "fa3a1bf788f2e40952d60615145aff23ebf306af",
+      "size": 779
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/loudness.js",
+      "sha": "2426b34dc5abeec086adf02cba8bc364e5ee734f",
+      "size": 6075
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/mask.js",
+      "sha": "21b51ee7502a84bbf72d77dd7d9866dab36499ff",
+      "size": 24662
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/mcp-server.js",
+      "sha": "f4359cceb531daa92f3748523fd0b26a2c193ba2",
+      "size": 107125
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/media-lib.js",
+      "sha": "ac772534e379dc46b6b85b1cf14db9c1173831d9",
+      "size": 15118
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/media-probe.js",
+      "sha": "5fb11332719211ec8c0e1940a5760e35de442529",
+      "size": 3448
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/media-types.js",
+      "sha": "7b4a24c5a7a7068c2c46678a1b6e7d6d758b6807",
+      "size": 3732
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/motion.js",
+      "sha": "8399a3d3b53d90305e87102b0636d53d45c3d130",
+      "size": 42413
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/paths.js",
+      "sha": "39113662208a77a9c5c49f32797d12c505953caa",
+      "size": 6418
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/processes.js",
+      "sha": "37ed5bbe392869d8015e3b21476d3a6e342fe717",
+      "size": 1559
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/project-ops.js",
+      "sha": "3c85b81490d7e9d890eb11505da9cc07efa91ab6",
+      "size": 92952
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/projects.js",
+      "sha": "6d10308bafbc5f83e19c2b40f27038efc933b519",
+      "size": 16371
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/proxy.js",
+      "sha": "25f1cec6657805c34ee0d75c187787a97eef6e80",
+      "size": 8471
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/sequences.js",
+      "sha": "7ce66f8db6a792fed2a1cb50f5467a25978e1ab8",
+      "size": 11216
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/server.js",
+      "sha": "81e3df3cffba1aded25c85763b3ec2c6ca309b93",
+      "size": 77199
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/silence.js",
+      "sha": "37d6c0c1087cfcdbd41acb1b1134332e6fdf18eb",
+      "size": 4500
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/templates.js",
+      "sha": "e70504d1fcebd2b09cc810bdcbac91bcdd42323b",
+      "size": 42052
+    },
+    {
+      "path": "miniapp/node/vendor/fablecut/tracker.js",
+      "sha": "65aebc45aafe6b84b7e5d0dccb4ddd05c78b99dd",
+      "size": 13200
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/PROVENANCE.md",
+      "sha": "8ea7c05262d8a4429fe60079ecf7497bf56d2900",
+      "size": 4534
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/bundle-meta.json",
+      "sha": "a22bc8df263a52c51ebef5d4b62b6a7cecd869d4",
+      "size": 466574
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/0BSD-tslib-2.8.1-LICENSE.txt",
+      "sha": "fa7d1bdf94d541b1754132c52ec3868d1fe4cdaf",
+      "size": 644
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/Apache-2.0-b4a-1.9.0-LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/Apache-2.0-chromium-bidi-5.1.0-LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/Apache-2.0-events-universal-1.0.1-LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/Apache-2.0-puppeteer-browsers-2.10.5-LICENSE",
+      "sha": "d2c171df74e931892e20f9395041bf8529e45330",
+      "size": 11344
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/Apache-2.0-puppeteer-core-24.10.2-LICENSE",
+      "sha": "d2c171df74e931892e20f9395041bf8529e45330",
+      "size": 11344
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/Apache-2.0-text-decoder-1.2.7-LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/BSD-2-Clause-escodegen-2.1.0-LICENSE.BSD",
+      "sha": "426019dc7365a2ded63b948cb2ed995f1332ebc1",
+      "size": 1315
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/BSD-2-Clause-esprima-4.0.1-LICENSE.BSD",
+      "sha": "7a55160f562ddb581344b26bf879be8c7ac73eef",
+      "size": 1303
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/BSD-2-Clause-estraverse-5.3.0-LICENSE.BSD",
+      "sha": "3e580c355a96e5ab8c4fb2ea4ada2d62287de41f",
+      "size": 1231
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/BSD-2-Clause-esutils-2.0.3-LICENSE.BSD",
+      "sha": "3e580c355a96e5ab8c4fb2ea4ada2d62287de41f",
+      "size": 1231
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/BSD-2-Clause-extract-zip-2.0.1-LICENSE",
+      "sha": "2921069135009020343c22e629ed0ce68e0cf78b",
+      "size": 1314
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/BSD-3-Clause-source-map-0.6.1-LICENSE",
+      "sha": "ed1b7cf27e97e136918e87ad7bb33baf169f0171",
+      "size": 1526
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/INVENTORY.md",
+      "sha": "8f6867375cd4db88599fa2a8b25f624197060641",
+      "size": 15738
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-cliui-8.0.1-LICENSE.txt",
+      "sha": "c7e27478a3eff8862ca150f10d1b93a5ac866af2",
+      "size": 731
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-lru-cache-7.18.3-LICENSE",
+      "sha": "f785757cd63f863c42f19d4f5a417141d6c4a890",
+      "size": 775
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-once-1.4.0-LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-semver-7.8.5-LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-wrappy-1.0.2-LICENSE",
+      "sha": "19129e315fe593965a2fdd50ec0d1253bcbd2ece",
+      "size": 765
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-y18n-5.0.8-LICENSE",
+      "sha": "3c157f0b9d9bed83163710392914df506bcb15b1",
+      "size": 731
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/ISC-yargs-parser-21.1.1-LICENSE.txt",
+      "sha": "836440bef7cf14841c05b0f8635e580c91327fc4",
+      "size": 731
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-agent-base-7.1.4-LICENSE",
+      "sha": "008728cb51847dcff9c68cf1d9c30d76b9323457",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-ast-types-0.13.4-LICENSE",
+      "sha": "3f9d40b55b464705c6f5c620f2861a1d0b64c480",
+      "size": 1075
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-basic-ftp-5.3.1-LICENSE.txt",
+      "sha": "804e800dc0e37058fc2db08599950d5c6e809072",
+      "size": 1057
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-buffer-crc32-0.2.13-LICENSE",
+      "sha": "4cef10eb7b161e48e39d2cc4def3fd81db6cf884",
+      "size": 1085
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-data-uri-to-buffer-6.0.2-LICENSE",
+      "sha": "a577778a07bc9f3dc2135cac9470470cdbc4476a",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-debug-4.4.3-LICENSE",
+      "sha": "1a9820e262b26b60fe71a4dcd9bc9cfd0a01f26e",
+      "size": 1139
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-degenerator-5.0.1-LICENSE",
+      "sha": "008728cb51847dcff9c68cf1d9c30d76b9323457",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-end-of-stream-1.4.5-LICENSE",
+      "sha": "757562ec59276bff35792501d88fe83b34acca9a",
+      "size": 1078
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-escalade-3.2.0-license",
+      "sha": "fa6089faba3cf381229744c9f21ed3ae9ed5014a",
+      "size": 1104
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-fast-fifo-1.3.2-LICENSE",
+      "sha": "c728dc70b96897b4f56c18d41e2965a547f67cfc",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-fd-slicer-1.1.0-LICENSE",
+      "sha": "e57596d245344aea1baabe1f760b145ae36ac008",
+      "size": 1057
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-get-stream-5.2.0-license",
+      "sha": "fa7ceba3eb4a9657a9db7f3ffca4e4e97a9019de",
+      "size": 1117
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-get-uri-6.0.5-LICENSE",
+      "sha": "a577778a07bc9f3dc2135cac9470470cdbc4476a",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-http-proxy-agent-7.0.2-LICENSE",
+      "sha": "7ddd1e9bdb4507ae6499ae0d872305fd436dc97a",
+      "size": 1102
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-https-proxy-agent-7.0.6-LICENSE",
+      "sha": "008728cb51847dcff9c68cf1d9c30d76b9323457",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-ip-address-10.7.5-LICENSE",
+      "sha": "ec79adb0c4020387142e3e82b9bdbb212af6a557",
+      "size": 1061
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-mitt-3.0.1-LICENSE",
+      "sha": "84c52fe2cf2c2b2bd658d4cbde20aade62584cf2",
+      "size": 1069
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-ms-2.1.3-license.md",
+      "sha": "fa5d39b6213f8a5e142b643575f99d9149cc71c6",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-netmask-2.1.1-LICENSE.md",
+      "sha": "e2a68d56fddef43a102dbb4114032b82c5f48dc6",
+      "size": 1089
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-pac-proxy-agent-7.2.0-LICENSE",
+      "sha": "0dc3bc01d963aa3682c4afdd241ca16aff2d2c4d",
+      "size": 1102
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-pac-resolver-7.0.1-LICENSE",
+      "sha": "008728cb51847dcff9c68cf1d9c30d76b9323457",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-pend-1.2.0-LICENSE",
+      "sha": "0bbb53ed41a5e18df6957e4220f76b92accfeba2",
+      "size": 1082
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-progress-2.0.3-LICENSE",
+      "sha": "4608b3947f0a70bee0587e1d100b2fb4e0b30ce4",
+      "size": 1098
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-proxy-agent-6.5.0-LICENSE",
+      "sha": "008728cb51847dcff9c68cf1d9c30d76b9323457",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-proxy-from-env-1.1.0-LICENSE",
+      "sha": "8f25097d09bd0a3dbb721a264d41c3234b9ae368",
+      "size": 1087
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-pump-3.0.4-LICENSE",
+      "sha": "757562ec59276bff35792501d88fe83b34acca9a",
+      "size": 1078
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-smart-buffer-4.2.0-LICENSE",
+      "sha": "aab5771a97c788ec0b95b12f1126023324343482",
+      "size": 1087
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-socks-2.8.10-LICENSE",
+      "sha": "b2442a9e7132627a6299d6cf35ff406d4181b30e",
+      "size": 1082
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-socks-proxy-agent-8.0.5-LICENSE",
+      "sha": "008728cb51847dcff9c68cf1d9c30d76b9323457",
+      "size": 1101
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-streamx-2.28.1-LICENSE",
+      "sha": "c728dc70b96897b4f56c18d41e2965a547f67cfc",
+      "size": 1079
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-tar-fs-3.1.3-LICENSE",
+      "sha": "757562ec59276bff35792501d88fe83b34acca9a",
+      "size": 1078
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-tar-stream-3.2.2-LICENSE",
+      "sha": "757562ec59276bff35792501d88fe83b34acca9a",
+      "size": 1078
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-tootallnate-quickjs-emscripten-0.23.0-LICENSE",
+      "sha": "07499f66027c19b5f6f0deb0041f4dda8fbbd813",
+      "size": 1093
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-ws-8.22.0-LICENSE",
+      "sha": "1da5b96a11ac2c83160e3085188f04eba7e3dd7d",
+      "size": 1183
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-yargs-17.7.3-LICENSE",
+      "sha": "b0145ca0b03bdc922de70dbaf5ae87c3a244c413",
+      "size": 1146
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/licenses/MIT-yauzl-2.10.0-LICENSE",
+      "sha": "37538d4d091ec7bf8310b10b107ffd35efef1efc",
+      "size": 1077
+    },
+    {
+      "path": "miniapp/node/vendor/puppeteer/puppeteer-core.cjs",
+      "sha": "392ce651f20251ca4a2379b46bedefd0d527f052",
+      "size": 2970650
+    },
+    {
+      "path": "package.json",
+      "sha": "b548cca834eb2fbde2f226a4ff6d59ea0aa6dc07",
+      "size": 490
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "e26d27a10e2b6da0ee83ef5327d8f711bdeae415",
+      "size": 546
+    },
+    {
+      "path": "skills/cutline/SKILL.md",
+      "sha": "de06eec02d205221bdfdad336776f80289f23218",
+      "size": 6241
+    },
+    {
+      "path": "skills/cutline/references/audio-and-subtitles.md",
+      "sha": "c8b8e7ea2a9933a74b1a960a0c0f5058b6e6cf2b",
+      "size": 3308
+    },
+    {
+      "path": "skills/cutline/references/editing.md",
+      "sha": "d0ed87083a161911beae809216e32d65c80c18f7",
+      "size": 3680
+    },
+    {
+      "path": "skills/cutline/references/export.md",
+      "sha": "3a4f76edd9836df594618e4e7ad8f96c7f5df290",
+      "size": 3610
+    },
+    {
+      "path": "skills/cutline/references/motion-graphics.md",
+      "sha": "6068155f1e38af48248857ed633f15bb5eafaef0",
+      "size": 3942
+    },
+    {
+      "path": "tests/abort.test.mjs",
+      "sha": "7ce9616e13d0517f8b1d400f7b793d2df396c9e1",
+      "size": 1114
+    },
+    {
+      "path": "tests/editing.test.mjs",
+      "sha": "fe79c3596f6e23864cfcba85629a57c8a5bb5b2c",
+      "size": 13747
+    },
+    {
+      "path": "tests/editor.test.mjs",
+      "sha": "069cbb430436cdbd305c3db1f2aedea63a89ef2c",
+      "size": 6484
+    },
+    {
+      "path": "tests/export-jobs.test.mjs",
+      "sha": "21b9950012e88f2ced03de14817bf95e3a7acb5a",
+      "size": 34218
+    },
+    {
+      "path": "tests/export-runner.test.mjs",
+      "sha": "0f835993f813f7c209ba40f01f4b7320bd21e970",
+      "size": 19560
+    },
+    {
+      "path": "tests/helpers.mjs",
+      "sha": "22b979ddf2f444a92d85bdc3e3fe42163b0b284d",
+      "size": 7290
+    },
+    {
+      "path": "tests/i18n-browser.test.mjs",
+      "sha": "1e55d27126b088160e00a6a2b528545e80943fcb",
+      "size": 25186
+    },
+    {
+      "path": "tests/i18n.test.mjs",
+      "sha": "bf5dc0ce6071c7c81834958e6fb02b8bee2cf3e3",
+      "size": 34427
+    },
+    {
+      "path": "tests/import-safety.test.mjs",
+      "sha": "52049819d6341dcd98fb72055ae36f631aff496f",
+      "size": 21946
+    },
+    {
+      "path": "tests/import-url-security.test.mjs",
+      "sha": "11d1f7d6294900b3c42b7f34896184851ab9d3f0",
+      "size": 15475
+    },
+    {
+      "path": "tests/import.test.mjs",
+      "sha": "1dbe40419d26254994c4bae394c81bad3dfc8eb8",
+      "size": 7554
+    },
+    {
+      "path": "tests/lifecycle.test.mjs",
+      "sha": "8b03d5f76aefc08aa0f806df110c7660bf508384",
+      "size": 1895
+    },
+    {
+      "path": "tests/mcp-session-bound.test.mjs",
+      "sha": "3311e1880c684e3e17f47eb8867bbfdd0f25020e",
+      "size": 1628
+    },
+    {
+      "path": "tests/mcp-tool-payload.test.mjs",
+      "sha": "7874c29850d15fd172b50068107002fba4e690ec",
+      "size": 5747
+    },
+    {
+      "path": "tests/mcp.test.mjs",
+      "sha": "dc82580ac733476a0efe119420f47bd13189e4f1",
+      "size": 7478
+    },
+    {
+      "path": "tests/monitor-header.test.mjs",
+      "sha": "0f684eaf1815db6fdf58e0e3e8f7318e8d45e6b5",
+      "size": 23951
+    },
+    {
+      "path": "tests/paths.test.mjs",
+      "sha": "d8b66c8832482a8d7d6f786b8ab94a460c4d3436",
+      "size": 798
+    },
+    {
+      "path": "tests/preview-seek.test.mjs",
+      "sha": "b6d10b73cdf22005fe1fc0137ba28f2f4e1ea4b6",
+      "size": 2772
+    },
+    {
+      "path": "tests/processes.test.mjs",
+      "sha": "15f1ce5ea0dfcbfcc86e35b2fcb1067cf124f3a3",
+      "size": 770
+    },
+    {
+      "path": "tests/reference-path.test.mjs",
+      "sha": "158389cf643ff58ab7fa5c07d41b5f9e728093cf",
+      "size": 2972
+    },
+    {
+      "path": "tests/ui-icons.test.mjs",
+      "sha": "afb0e301f6b98f2bc23f446e9aa8b610665389e9",
+      "size": 21789
+    },
+    {
+      "path": "tests/ui-layout.test.mjs",
+      "sha": "3db78c4d142d4267ca9206b64175aacfa7a5e834",
+      "size": 20165
+    },
+    {
+      "path": "upstream.json",
+      "sha": "0f9ec05f66f5b120aa58bd684b4b9e9357c78cad",
+      "size": 2950
+    }
+  ]
+}

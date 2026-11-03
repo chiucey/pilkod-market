@@ -1,0 +1,730 @@
+{
+  "version": "0.2.38",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "557622fe0dce0991c68cfdb9457aca32366d740a",
+      "size": 646
+    },
+    {
+      "path": ".gitattributes",
+      "sha": "1ac2886f62c04e58fd0360ae3ac4ce11eb1dec09",
+      "size": 126
+    },
+    {
+      "path": ".gitignore",
+      "sha": "6cb98d9625703922ccf85def6b314c6a4e46eff7",
+      "size": 53
+    },
+    {
+      "path": "LICENSE",
+      "sha": "cf0a2a0e5acc96ddbb254598700c73d12f0f8318",
+      "size": 1096
+    },
+    {
+      "path": "README.en.md",
+      "sha": "76d01a8395ff244f716e421bc57fa87607095057",
+      "size": 11223
+    },
+    {
+      "path": "README.md",
+      "sha": "1e859ba9a457b8633a2661e836d71d4fa5e04f0e",
+      "size": 7240
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "1e859ba9a457b8633a2661e836d71d4fa5e04f0e",
+      "size": 7240
+    },
+    {
+      "path": "docs/agent-tools.zh-CN.md",
+      "sha": "8d4878082a305c663f6b106947cf49005d0517fa",
+      "size": 7136
+    },
+    {
+      "path": "docs/build.md",
+      "sha": "ec856ec74d041aa30c84712c95864e013db84e2a",
+      "size": 5373
+    },
+    {
+      "path": "docs/editor.png",
+      "sha": "844ed36600661e7d64fe62ad874ec1d56734176a",
+      "size": 123254
+    },
+    {
+      "path": "docs/photocraft/miniapp.patch",
+      "sha": "826e9cfa672e75bddc124fd3dd63375d4f0dcb26",
+      "size": 18531
+    },
+    {
+      "path": "docs/preview.png",
+      "sha": "6aefadec723cdd28f4dd848c1ddcf368bcaa0bd8",
+      "size": 116534
+    },
+    {
+      "path": "docs/regional-release.md",
+      "sha": "134252db4bf1b565cc4b65a58c915652fda3a694",
+      "size": 1022
+    },
+    {
+      "path": "docs/user-guide.zh-CN.md",
+      "sha": "58ebc97a8675ab243223ab230c08a502ed418670",
+      "size": 4504
+    },
+    {
+      "path": "docs/validation.md",
+      "sha": "d3691ed42d08b1f0f9dfa5368690c1039064e7b5",
+      "size": 24922
+    },
+    {
+      "path": "examples/compose-edit.mjs",
+      "sha": "30ef281ad5bbe4cef44fd263646d461034c1ae07",
+      "size": 1467
+    },
+    {
+      "path": "examples/ptc-script.js",
+      "sha": "837653ab63d02406353cf3a0382ab21f7a14a524",
+      "size": 1648
+    },
+    {
+      "path": "icon.png",
+      "sha": "aa38b60b608d18df5b25ea124e56a3ffab73db4f",
+      "size": 295187
+    },
+    {
+      "path": "licenses/FONT-LICENSE.txt",
+      "sha": "d952d62c065f3f35fb83a173496e90b21525aef3",
+      "size": 4301
+    },
+    {
+      "path": "licenses/LICENSE-APACHE",
+      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "size": 10174
+    },
+    {
+      "path": "licenses/LICENSE-MIT",
+      "sha": "68facca4cf24f653b6656bccd8a31609deea88c8",
+      "size": 1102
+    },
+    {
+      "path": "licenses/LICENSE-SCOWL.txt",
+      "sha": "44efb0fbb7f3f5ffeb8415dbade6e6d87f3a078f",
+      "size": 12561
+    },
+    {
+      "path": "licenses/LICENSE-libfacedetection.txt",
+      "sha": "33abd64f061d58b8a25d60c7567b0769d47afb17",
+      "size": 1803
+    },
+    {
+      "path": "licenses/LICENSE-lucide.txt",
+      "sha": "718bb3f0e44153809972abed31839375804bf652",
+      "size": 3208
+    },
+    {
+      "path": "licenses/LICENSE-photocraft-icon.txt",
+      "sha": "b28ccee01c4214cddf002f371b854bf309405aed",
+      "size": 586
+    },
+    {
+      "path": "licenses/LICENSE-translations.txt",
+      "sha": "93a609f9463c9c718814fc942c3ec56ead5ec2e3",
+      "size": 2097
+    },
+    {
+      "path": "licenses/OFL-Inter.txt",
+      "sha": "9b2ca37b3ffc77391d8b2ebef4a974ef32bf46ea",
+      "size": 4380
+    },
+    {
+      "path": "licenses/OFL-JetBrainsMono.txt",
+      "sha": "675d198b74b6f10b5ca149e6a21cf06dcc46b676",
+      "size": 4398
+    },
+    {
+      "path": "licenses/markdown-dependencies.txt",
+      "sha": "66597ab9ffd084542a7cbac55e6861dfb84657c5",
+      "size": 117444
+    },
+    {
+      "path": "licenses/photocraft-ATTRIBUTION.md",
+      "sha": "1ae19efa6621ced81f8db17e8b0834ddcb5d6b66",
+      "size": 23379
+    },
+    {
+      "path": "licenses/photocraft-NOTICE",
+      "sha": "a7302a940c97bf5954ca9412e39e2e0879143784",
+      "size": 1646
+    },
+    {
+      "path": "licenses/third-party-licenses.txt",
+      "sha": "ffca94b56ed405a0cdf8b570048fd86be87b4f48",
+      "size": 167663
+    },
+    {
+      "path": "miniapp/client/adjustment-layers.js",
+      "sha": "544034eb250a0b9108a8744f4e04f838b3b3b885",
+      "size": 2984
+    },
+    {
+      "path": "miniapp/client/agent-dialog.js",
+      "sha": "a0911a28e8a27bbcc88f0e615641644769288924",
+      "size": 2937
+    },
+    {
+      "path": "miniapp/client/agent-results.js",
+      "sha": "c2b7c92a3a89294507c367800f36a76cfe427f8d",
+      "size": 1622
+    },
+    {
+      "path": "miniapp/client/app.js",
+      "sha": "8639a7885310e1505c183dc23aac6cd3e5ed0528",
+      "size": 39126
+    },
+    {
+      "path": "miniapp/client/artistic-filters.js",
+      "sha": "a951c0fbd853719a326b8d03fbe0551c248254ed",
+      "size": 3560
+    },
+    {
+      "path": "miniapp/client/background-eraser.js",
+      "sha": "c610cd5911c767690b4750e2f07c01e60a917bb1",
+      "size": 1062
+    },
+    {
+      "path": "miniapp/client/blending.js",
+      "sha": "b9f86311fedb800cf2fd28011f7603550cdb211a",
+      "size": 5187
+    },
+    {
+      "path": "miniapp/client/canvas-tools.js",
+      "sha": "f27b72f3cd209d1583d3190255598451cac9dbc7",
+      "size": 18404
+    },
+    {
+      "path": "miniapp/client/catalog.js",
+      "sha": "02170090e52641856669e716bd8d0cee7bbded72",
+      "size": 4068
+    },
+    {
+      "path": "miniapp/client/client-api.ts",
+      "sha": "e261a6bedee78a00467ba36837a1f88d223aed66",
+      "size": 11955
+    },
+    {
+      "path": "miniapp/client/codecs.js",
+      "sha": "b2fd1fd7b26e53d805029a3b513b0b0ce73bb40e",
+      "size": 11450
+    },
+    {
+      "path": "miniapp/client/color-replace.js",
+      "sha": "a43c9d0e3acc008313f4dad63768ab45c21a6a40",
+      "size": 594
+    },
+    {
+      "path": "miniapp/client/components.css",
+      "sha": "798cfd4c5d45a5230b25df35a114254d4118e670",
+      "size": 11496
+    },
+    {
+      "path": "miniapp/client/curves-dialog.js",
+      "sha": "99ff7e91846f658b6b0c14e503f983e58365495b",
+      "size": 4302
+    },
+    {
+      "path": "miniapp/client/dialogs.js",
+      "sha": "73523760e425a2a7c99b7a6030f709e1dd984429",
+      "size": 2326
+    },
+    {
+      "path": "miniapp/client/editor-bridge.js",
+      "sha": "142a5ec48f92c4abebbd1806475012218ee17c43",
+      "size": 5035
+    },
+    {
+      "path": "miniapp/client/editor-commands.js",
+      "sha": "8403a5ce91dfd1f00d4810972b7cc69134e64f2b",
+      "size": 20729
+    },
+    {
+      "path": "miniapp/client/editor-read.js",
+      "sha": "99c587e5be756c5fe40d9342e5d5f826db981978",
+      "size": 2231
+    },
+    {
+      "path": "miniapp/client/files.js",
+      "sha": "4117b889f03a1270039d1e206513f53aa450e1e6",
+      "size": 6214
+    },
+    {
+      "path": "miniapp/client/filter-dialog.js",
+      "sha": "53743457e99400ec565b819eb1a02421e5896f42",
+      "size": 2946
+    },
+    {
+      "path": "miniapp/client/filter-worker.js",
+      "sha": "4740548c514b1a1e917a0cb5467f7010fc373065",
+      "size": 354
+    },
+    {
+      "path": "miniapp/client/filters.js",
+      "sha": "1b7979a50182330a784c73a60cd753602ad9a0e7",
+      "size": 9269
+    },
+    {
+      "path": "miniapp/client/flood-region.js",
+      "sha": "9f987e32f234285151f8e96ac61696b15b9e7e10",
+      "size": 1525
+    },
+    {
+      "path": "miniapp/client/gaussian.js",
+      "sha": "d11b8747fa84d47f69bf0b9bcd485f77ac709187",
+      "size": 1788
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "6b16d9ef47477cd905399040ba83605987319ba5",
+      "size": 4598
+    },
+    {
+      "path": "miniapp/client/layer-styles.js",
+      "sha": "7a2e5b872e580bb2fa68ebafa9f8fb0a6a575652",
+      "size": 8442
+    },
+    {
+      "path": "miniapp/client/model.js",
+      "sha": "17805e656b39f2764b64bff07e6bb2b7cfc81047",
+      "size": 11216
+    },
+    {
+      "path": "miniapp/client/oil-paint.js",
+      "sha": "052a1517e3aa7e25d63bdbb1bdb8960d267b35ef",
+      "size": 1666
+    },
+    {
+      "path": "miniapp/client/photo-activity.js",
+      "sha": "dda7ff651b7a1d06c10caaf5f06ce4f9c2e714be",
+      "size": 8084
+    },
+    {
+      "path": "miniapp/client/photo-help.css",
+      "sha": "e66ef0e864f837204fdf096f5ba0702ec8da0679",
+      "size": 331
+    },
+    {
+      "path": "miniapp/client/photo-help.html",
+      "sha": "c0e2404f0852b4b2eda372b945c58722858feeef",
+      "size": 484
+    },
+    {
+      "path": "miniapp/client/photo-help.js",
+      "sha": "5cdf5786f41b0b9d07939d38706e9cc5e04919b5",
+      "size": 12851
+    },
+    {
+      "path": "miniapp/client/photo-i18n.js",
+      "sha": "54b09073af6d40c9269d07e8578a5cb4ba003edf",
+      "size": 37836
+    },
+    {
+      "path": "miniapp/client/photo-recording.js",
+      "sha": "969b27c7155eb54fabe5d6ddb98591319d00c2b8",
+      "size": 2675
+    },
+    {
+      "path": "miniapp/client/photo-recovery.js",
+      "sha": "7b396b6a2703eae41b228915d484a7860de9ad88",
+      "size": 3031
+    },
+    {
+      "path": "miniapp/client/photo.css",
+      "sha": "3bc7910d8127ad50abd1e2a0ec8bc54b12832c41",
+      "size": 13395
+    },
+    {
+      "path": "miniapp/client/photo.html",
+      "sha": "cb54d856feb3797c0a701e48c818846e45e1d21f",
+      "size": 2348
+    },
+    {
+      "path": "miniapp/client/photo.js",
+      "sha": "6f8ea351f7b67e7cb9701dc95274e3b1be92418a",
+      "size": 20660
+    },
+    {
+      "path": "miniapp/client/photocraft/cjk-ui.otf",
+      "sha": "4f4d34eeac8b2e0cc109d63c1e3e745b7e6b7d97",
+      "size": 937680
+    },
+    {
+      "path": "miniapp/client/photocraft/draw-path.js",
+      "sha": "6cae7b023ce7adfac02e1a9d623d277233cda5ff",
+      "size": 2957
+    },
+    {
+      "path": "miniapp/client/photocraft/draw.js",
+      "sha": "900f395726f29d3c34e0566399c4a07e6ce693bd",
+      "size": 1399
+    },
+    {
+      "path": "miniapp/client/photocraft/frame.css",
+      "sha": "98b7d0f54cb76e2c68e0e7c3576cfc7d63b02f18",
+      "size": 140
+    },
+    {
+      "path": "miniapp/client/photocraft/frame.js",
+      "sha": "7308c65c373eff56e6f172b371f8947106a8b6c8",
+      "size": 2076
+    },
+    {
+      "path": "miniapp/client/photocraft/index.html",
+      "sha": "0ba24e6916602a7a2214f19f788d2d73bd876008",
+      "size": 298
+    },
+    {
+      "path": "miniapp/client/photocraft/photocraft.d.ts",
+      "sha": "4812be11cacf576cf3e9bf54c0d5f15ab9ed7a06",
+      "size": 5040
+    },
+    {
+      "path": "miniapp/client/photocraft/photocraft.js",
+      "sha": "5944401c97ada87410b12df4562b623ef3eac9dd",
+      "size": 172387
+    },
+    {
+      "path": "miniapp/client/photocraft/photocraft_bg.wasm.d.ts",
+      "sha": "7cbac8c50b2c8decc7a70bc5238e8af1bb5ebb5f",
+      "size": 3995
+    },
+    {
+      "path": "miniapp/client/photocraft/photocraft_bg.wasm.gz",
+      "sha": "7526e64145161c31e02e5e780ff16aa21fc3c9e9",
+      "size": 12318396
+    },
+    {
+      "path": "miniapp/client/psd-blends.js",
+      "sha": "1de2982c747d71bff25ae5b1cc11d6a8212874de",
+      "size": 1201
+    },
+    {
+      "path": "miniapp/client/recording.js",
+      "sha": "e4fdf616d8d2a6e932844e032f36566feed34ed8",
+      "size": 2649
+    },
+    {
+      "path": "miniapp/client/render-cache.js",
+      "sha": "6eb6601c3f2b462ed71accd5149b5e76e89eed2a",
+      "size": 1415
+    },
+    {
+      "path": "miniapp/client/selection-outline.js",
+      "sha": "f05ae51beb98e8d99f17333ad352faf683739f53",
+      "size": 1505
+    },
+    {
+      "path": "miniapp/client/showcase/portrait.webp",
+      "sha": "9009d89968aa306d5597ed94cdbdf1b7c2e97f6d",
+      "size": 201500
+    },
+    {
+      "path": "miniapp/client/showcase/poster.webp",
+      "sha": "6fb6b1206b6a4cf7a5a36f85d868ceb6c312d715",
+      "size": 149458
+    },
+    {
+      "path": "miniapp/client/showcase/product.webp",
+      "sha": "1032d2fc3d5fca0c717b85567842e6f9c1fad1d5",
+      "size": 184362
+    },
+    {
+      "path": "miniapp/client/style-pixels.js",
+      "sha": "ca3791c2842272014050d7fa743b9a296c4689b7",
+      "size": 3740
+    },
+    {
+      "path": "miniapp/client/style.css",
+      "sha": "a1aab57a429daf5dcd361a2bf14915140f91336f",
+      "size": 16571
+    },
+    {
+      "path": "miniapp/client/styles-dialog.js",
+      "sha": "932b7dc8f31770aa6fa0f4813982b22fae60a571",
+      "size": 5280
+    },
+    {
+      "path": "miniapp/client/tiff-lzw.js",
+      "sha": "862bfa1d70a298be28fa93efae3995181d04942f",
+      "size": 1764
+    },
+    {
+      "path": "miniapp/client/tiff-reader.js",
+      "sha": "0896d82945540d941620956a5ac40d918a190738",
+      "size": 6758
+    },
+    {
+      "path": "miniapp/client/tiff.js",
+      "sha": "6299be3469c12c5c87cca8d728c5131bc3aa2b9c",
+      "size": 2003
+    },
+    {
+      "path": "miniapp/client/tone.js",
+      "sha": "df4763803feebcfa108a771a4021d00b5cd30ce2",
+      "size": 2114
+    },
+    {
+      "path": "miniapp/client/workbench-ui.js",
+      "sha": "1dc1aeeb84083af08cc1f8b9efb9f6df15226b36",
+      "size": 463317
+    },
+    {
+      "path": "miniapp/client/workbench-ui.js.LEGAL.txt",
+      "sha": "a046cadce791a0365a2ea39d66228b87f362b5ca",
+      "size": 3893
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "76cfb9d5fc417a8b9c93646c0c5513d469d9c573",
+      "size": 437
+    },
+    {
+      "path": "miniapp/node/agent-mcp.mjs",
+      "sha": "bf4c77195303b8f7364f787f8545d9e9817a66ee",
+      "size": 4625
+    },
+    {
+      "path": "miniapp/node/agent-service.mjs",
+      "sha": "8a3430b648854d5441341ec2a6393b9098a38474",
+      "size": 5315
+    },
+    {
+      "path": "miniapp/node/editor-code.mjs",
+      "sha": "378c687504554ac0e1b15fe749dfbfada046300d",
+      "size": 9501
+    },
+    {
+      "path": "miniapp/node/editor-file.mjs",
+      "sha": "ff57cef84d6d7a7d6cba0c77c5b5c42baad832f8",
+      "size": 2044
+    },
+    {
+      "path": "miniapp/node/editor-mcp.mjs",
+      "sha": "ff0d335b931bbe1887cd3f60e21d730f06f1431d",
+      "size": 11194
+    },
+    {
+      "path": "miniapp/node/editor-service.mjs",
+      "sha": "558e2f8d422955b95656766206f82c301bee6144",
+      "size": 14440
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "7a0e0fd3a66dc99c350df90486f179eefe67810a",
+      "size": 3568
+    },
+    {
+      "path": "miniapp/node/png-validation.mjs",
+      "sha": "023c6d27ffd0fbe626dd288d742683df6e3bf6d2",
+      "size": 3209
+    },
+    {
+      "path": "miniapp/node/ptc-worker.mjs",
+      "sha": "d8666ab521394030578c543cae2c8b8008617109",
+      "size": 57161
+    },
+    {
+      "path": "miniapp/node/quickjs.wasm",
+      "sha": "1815757b9a01a3e9a2eac80fc6e6ef3a6db566b9",
+      "size": 503134
+    },
+    {
+      "path": "miniapp/node/recovery-store.mjs",
+      "sha": "75246251fafe550ce9265af9f2c1d9031b480520",
+      "size": 2500
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "eba3dfe55e20ec39ce534d0e962cf01f857a2bf0",
+      "size": 13539
+    },
+    {
+      "path": "package.json",
+      "sha": "e38aba656b09c7b3f8bc23fd5486b0d7d376291e",
+      "size": 394
+    },
+    {
+      "path": "ptc-src/.gitignore",
+      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+      "size": 14
+    },
+    {
+      "path": "ptc-src/build.mjs",
+      "sha": "e86cd00fa7e2dacc730c95bcab1a2afebeebf552",
+      "size": 535
+    },
+    {
+      "path": "ptc-src/package-lock.json",
+      "sha": "841d685a54776387fd25f757276a9e5eb6b1f059",
+      "size": 15221
+    },
+    {
+      "path": "ptc-src/package.json",
+      "sha": "a90304a9d94f91a070f29283e72a700478155fae",
+      "size": 147
+    },
+    {
+      "path": "ptc-src/worker.mjs",
+      "sha": "57bab359eecffe597cd82c242687e296263d1f64",
+      "size": 3961
+    },
+    {
+      "path": "scripts/browser-checks/blend-check.html",
+      "sha": "fe6da3b202e402aba52860a3a874f841e6c88876",
+      "size": 584
+    },
+    {
+      "path": "scripts/browser-checks/blend-check.js",
+      "sha": "912ac35fda880978823739b477ebf6463be2aeb0",
+      "size": 1640
+    },
+    {
+      "path": "scripts/browser-checks/cache-check.html",
+      "sha": "94459e614db0167a120f2d82b592d3d9e51ce69f",
+      "size": 623
+    },
+    {
+      "path": "scripts/browser-checks/cache-check.js",
+      "sha": "90dabf72e3f05a891174d752b29ab0f3456a6f84",
+      "size": 2862
+    },
+    {
+      "path": "scripts/browser-checks/psd-check.html",
+      "sha": "98b1736262d32ebcae9905493c5d68440001cca3",
+      "size": 383
+    },
+    {
+      "path": "scripts/browser-checks/psd-check.js",
+      "sha": "3400fc7dbb06d38b11691ae3ca2d5350e281099f",
+      "size": 1671
+    },
+    {
+      "path": "scripts/check-activity.mjs",
+      "sha": "275c1089380ad67bbcac400d18a089e69361c309",
+      "size": 1311
+    },
+    {
+      "path": "scripts/check-draw.mjs",
+      "sha": "9acd6dfdd37850e1541f192736d422a81688b1d2",
+      "size": 2696
+    },
+    {
+      "path": "scripts/check-ptc.mjs",
+      "sha": "8677b141896def065b7ed0ca9d1f83d467a8e76e",
+      "size": 2080
+    },
+    {
+      "path": "scripts/check-recovery.mjs",
+      "sha": "d6db07a449f444eacc72c5d16f8eccda2946deee",
+      "size": 1278
+    },
+    {
+      "path": "scripts/check.mjs",
+      "sha": "0c14570469cc397e34fd7d5f4cfc7b7eeecc7ced",
+      "size": 31720
+    },
+    {
+      "path": "scripts/package-preview.py",
+      "sha": "c762b7e17c15f26758bbdf1e39132f80be3806af",
+      "size": 5609
+    },
+    {
+      "path": "scripts/preview-render-check.mjs",
+      "sha": "81e7716f77c36820bee037849b566fb65185bbd2",
+      "size": 1549
+    },
+    {
+      "path": "scripts/preview.mjs",
+      "sha": "f4188c201fdb3d18eb21da18018a14ed05b259e9",
+      "size": 831
+    },
+    {
+      "path": "sdk/editor.mjs",
+      "sha": "03636f823b188c9205c0ee1e648767413cb26199",
+      "size": 2508
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "4dc2a3434ca12ff7bbfa0cf4b4cc765dbaddd7c5",
+      "size": 303
+    },
+    {
+      "path": "skills/minimax-photo/SKILL.md",
+      "sha": "7c660aec65bf9fc5b5910eb8762b622f11547112",
+      "size": 16588
+    },
+    {
+      "path": "skills/minimax-photo/references/reference-tracing.md",
+      "sha": "af67aacbf32a4b6b80a9d0a63856b652494a3b3e",
+      "size": 4048
+    },
+    {
+      "path": "skills/minimax-photo/scripts/trace_reference.py",
+      "sha": "658595bd6ab32fc56766910f7992934ec69007a5",
+      "size": 8027
+    },
+    {
+      "path": "ui-src/.gitignore",
+      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+      "size": 14
+    },
+    {
+      "path": "ui-src/assistant-reply.tsx",
+      "sha": "3a3d6ccf1a00052bd28b7af8c8b4bd7e00b709df",
+      "size": 858
+    },
+    {
+      "path": "ui-src/build.mjs",
+      "sha": "ee3f080742464ab09d73c3b486c2f27513ba3ba5",
+      "size": 729
+    },
+    {
+      "path": "ui-src/components/button.tsx",
+      "sha": "ee4ecb6e2ed0e8f62b901cc89db1eb34fe75b915",
+      "size": 2388
+    },
+    {
+      "path": "ui-src/components/tooltip.tsx",
+      "sha": "804e4f66c1305658214a68f037cd39f0f85177ba",
+      "size": 1826
+    },
+    {
+      "path": "ui-src/package-lock.json",
+      "sha": "203c25f199c3622760ae7d8a5f80b1f0a0e0295f",
+      "size": 179219
+    },
+    {
+      "path": "ui-src/package.json",
+      "sha": "099c0d36b4cfdbe37b9ab878ebad611373892b13",
+      "size": 520
+    },
+    {
+      "path": "ui-src/photo-assistant.tsx",
+      "sha": "e055e102c9b8a2c419745adc4556e1fcd9d5040a",
+      "size": 16562
+    },
+    {
+      "path": "ui-src/theme.css",
+      "sha": "1d0db776f96bc3eeb47ab326e15d3146f192310c",
+      "size": 628
+    },
+    {
+      "path": "ui-src/utils.ts",
+      "sha": "de2ee10ff94dcf1580a75ca06f5e2369fdc81d84",
+      "size": 155
+    },
+    {
+      "path": "ui-src/workbench.tsx",
+      "sha": "7a4e8859c81e5de86a363d19797f53ad42325756",
+      "size": 21399
+    }
+  ]
+}

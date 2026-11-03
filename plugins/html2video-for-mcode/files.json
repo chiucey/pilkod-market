@@ -1,0 +1,310 @@
+{
+  "version": "1.9.20",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "dcc3d475088ed9068511072c08869d331293267e",
+      "size": 1128
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "sha": "c7118a08a327991f0b0ae73510299b589fdd6b50",
+      "size": 297
+    },
+    {
+      "path": ".gitattributes",
+      "sha": "b4611f50e9e7d63d0e93b45c0f6788c8fd23d308",
+      "size": 485
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha": "d85cfe9c226d09366db0c0d81db4fc0a54f92d67",
+      "size": 3572
+    },
+    {
+      "path": ".gitignore",
+      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+      "size": 14
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "15417d647adaa2be173da7a049e327e7ceffe735",
+      "size": 142926
+    },
+    {
+      "path": "LICENSE",
+      "sha": "73c5531e6f29f85a9f0b69a6ca31d3724f8f8e6e",
+      "size": 1064
+    },
+    {
+      "path": "README.md",
+      "sha": "023b1a1595ccfcab1f60e80d2008c5ccbf514cb8",
+      "size": 22114
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "886eed68f0bd045d87461dc2756e9b919634b4bc",
+      "size": 18264
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha": "34f1deaef02d6bc3f6087050939ab50577cf3b08",
+      "size": 4334
+    },
+    {
+      "path": "icon.png",
+      "sha": "706293b8da3f3b0efe66b1b2b3156668c1ed0b55",
+      "size": 6345
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "d160dc0699edf89b3d743fbca704f8e4b028fe24",
+      "size": 1258
+    },
+    {
+      "path": "package.json",
+      "sha": "87d66fd72390067509a29a0492887a711437010e",
+      "size": 239
+    },
+    {
+      "path": "plugin.json",
+      "sha": "4f312a83d38d4bbee40ff0c86b9dadf304a02716",
+      "size": 687
+    },
+    {
+      "path": "skills/html2video-for-mcode/SKILL.md",
+      "sha": "363aeab5b342ef9cccf95c9ee2c7acd070b8e382",
+      "size": 63089
+    },
+    {
+      "path": "skills/html2video-for-mcode/THIRD-PARTY-NOTICES.md",
+      "sha": "34f1deaef02d6bc3f6087050939ab50577cf3b08",
+      "size": 4334
+    },
+    {
+      "path": "skills/html2video-for-mcode/evals/evals.json",
+      "sha": "9523284bbddbca71f3b6c52d9e26e3f684a622d0",
+      "size": 23973
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/authoring.md",
+      "sha": "2f4273616b180e3c49a81ce27ea933f5fdad7401",
+      "size": 55652
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/compliance.md",
+      "sha": "a544abc35ef872562cb4d42a1efc6bbd2dd3a618",
+      "size": 9556
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/image-sources.md",
+      "sha": "40e1dbb2a595245a27d78045e58ae10a77739af6",
+      "size": 13420
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/render.md",
+      "sha": "2765e73dd660bb5e20b1d7d34ece839df64a3517",
+      "size": 24434
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/research.md",
+      "sha": "9abb3cda8c863b3f5d19456c8672fdf3d88f63b7",
+      "size": 11522
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/symptoms.md",
+      "sha": "8dd7f1f8a9f4641b1c80f7b0f16221ceee398cb7",
+      "size": 4508
+    },
+    {
+      "path": "skills/html2video-for-mcode/references/tts-and-timing.md",
+      "sha": "5a2a2d15276e22b9d25e77693587353a5fec36d8",
+      "size": 18354
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/asr.mjs",
+      "sha": "5b1293747e659d33ea963ce09b4c24a1d1f869fe",
+      "size": 22203
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/build-video.mjs",
+      "sha": "1e378e78ea304c3104e6478ee4064631075f0c08",
+      "size": 27163
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/capture.mjs",
+      "sha": "9be317fd0b48dc64c21db89303d997a31f264860",
+      "size": 22781
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/chart-css.mjs",
+      "sha": "9b4ec73b820b1454d8862056b326d81c73a80d07",
+      "size": 8692
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/check-slides.mjs",
+      "sha": "766f6f5fe600625208a6e9dc13f4eb4bc542c917",
+      "size": 25612
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/check-theme.mjs",
+      "sha": "107a5fee637376def2e3368fdab55409ac26a57b",
+      "size": 4702
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/check-timing.mjs",
+      "sha": "54b637176f2066a9c3b4db5b0bc95e7ac6bfec29",
+      "size": 6398
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/css-kit.mjs",
+      "sha": "cfcfddd50b79f12b8c65d89b006e65a029442c51",
+      "size": 30951
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/fetch-official-images.mjs",
+      "sha": "1ea42550553122bb0325d312d0698b08acf1760a",
+      "size": 19537
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/grab-frames.mjs",
+      "sha": "016629bc996d7755b068148822521a7a4a06ff83",
+      "size": 4639
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/init-project.mjs",
+      "sha": "a78d06f2ac160b363d666ad792a1871454859fdd",
+      "size": 13489
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/limits.mjs",
+      "sha": "e4275788d00b49aea0ef312cb14dcabcbbaaf06f",
+      "size": 861
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/nofx-css.mjs",
+      "sha": "b6808a47fb993a60707c2e5729d9f90c565aa856",
+      "size": 1344
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/plan-timings.mjs",
+      "sha": "7de1b88dc9fdc8bf0a1edec17df6fd57c2c9ecab",
+      "size": 9545
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/prep-image.mjs",
+      "sha": "467f60d6ecab0d05d4aa6e045367bd40437d41d1",
+      "size": 5801
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/preview-page.mjs",
+      "sha": "4928c96bda4f9158eba1745e07c6de3a855524d4",
+      "size": 45958
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/table-css.mjs",
+      "sha": "0dfb16891d4ef5bf7e948353f336593fa0fa255d",
+      "size": 3982
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/tokens-template.mjs",
+      "sha": "ac38689002895058397e8531bc72c36354f977e8",
+      "size": 26193
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/tools.mjs",
+      "sha": "3e546a49f8648ec2c8ec9fbea2bb4138de5cb105",
+      "size": 37707
+    },
+    {
+      "path": "skills/html2video-for-mcode/scripts/url-policy.mjs",
+      "sha": "e02254407a5ca97597edb1427fe0c66f982e59ec",
+      "size": 20856
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/chart-kit.test.mjs",
+      "sha": "30eb76f852138f8a81665c09a8a6be95964ee0e2",
+      "size": 4419
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/connect-binding.test.mjs",
+      "sha": "0f9b9e41e730ebe42062cc91c16b5c10c3f99e07",
+      "size": 23963
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/cover-transition.test.mjs",
+      "sha": "fd5571f28a0ed1f30af532b38b5b20986d8fc601",
+      "size": 7215
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/css-kit.test.mjs",
+      "sha": "056efa1c9c3d747edd4143125bf2a8bd698647ab",
+      "size": 30824
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/endpoint-allowlist.test.mjs",
+      "sha": "917be24d429c0ac2a63766ae3d32473a40f44827",
+      "size": 11367
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/fetch-policy.test.mjs",
+      "sha": "da7058388f3abf65553263783dd596a6a28a61d9",
+      "size": 8352
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/helpers.mjs",
+      "sha": "a486f6e8c50e9df6d9f83ab83dcc817ecba71bd4",
+      "size": 3650
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/no-clobber.test.mjs",
+      "sha": "c62d3bfc9bafbb168c10fbca60b991ea00869724",
+      "size": 6587
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/preview-page.test.mjs",
+      "sha": "0c391f5cb21b04cd7a893942dbb0b91bdce2063f",
+      "size": 32582
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/render-smoke.test.mjs",
+      "sha": "3802be82e15cc5dcb8ff767538f861e3e75cae5d",
+      "size": 36250
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/review-round2.test.mjs",
+      "sha": "83f743e2849023981e7f31d0fb6ae8a4fff7a2d6",
+      "size": 20464
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/review-round3.test.mjs",
+      "sha": "a54ff152980ae5fbd2a0ae5d47285ad1048af84a",
+      "size": 34183
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/safe-paths.test.mjs",
+      "sha": "82d91be9eb2bde27c2017bb0f14b44a192c3b8a6",
+      "size": 21019
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/sec-audit-2026-10-10.test.mjs",
+      "sha": "adf5a5e8d2bd9badcb8ee11dffb7f2d9a6ebd157",
+      "size": 16382
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/subtitles-invalidate.test.mjs",
+      "sha": "02ddee5199c2168b669a9ea3cc9cc0ff38903456",
+      "size": 17197
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/table-kit.test.mjs",
+      "sha": "d84a494710e21136fb56451fed708c6e3f606764",
+      "size": 3735
+    },
+    {
+      "path": "skills/html2video-for-mcode/tests/tokens-fx.test.mjs",
+      "sha": "7a5388147ac4ec94dce605b3305bf6f8a6f670c2",
+      "size": 6564
+    }
+  ]
+}

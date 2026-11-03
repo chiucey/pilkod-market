@@ -1,0 +1,190 @@
+{
+  "version": "0.1.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "5bef923dfce43c82c7fbac7ffaf5fca052e53b8c",
+      "size": 633
+    },
+    {
+      "path": "LICENSE",
+      "sha": "2b8bbb5e9c46b1abc3a5ac68ee190baf046ba968",
+      "size": 1084
+    },
+    {
+      "path": "README.md",
+      "sha": "032984ae245da1165a53c5b7d2c6858d57f84aff",
+      "size": 2899
+    },
+    {
+      "path": "hooks/hooks.json",
+      "sha": "8d87d8c7bdd4eeb624cccd026f26626e369069f7",
+      "size": 411
+    },
+    {
+      "path": "icon.png",
+      "sha": "743c222cfe130d93b26ce65b104dd846feddfe19",
+      "size": 51993
+    },
+    {
+      "path": "plugin/showcases.json",
+      "sha": "04288cb059cc4a3fe1b766664315c3784a33b09e",
+      "size": 437
+    },
+    {
+      "path": "scripts/check-meegle-cli.ps1",
+      "sha": "8f54f658aaf9451216e6a70175816ba25c6a8a77",
+      "size": 2866
+    },
+    {
+      "path": "scripts/check-meegle-cli.sh",
+      "sha": "a8fc0a7dc46d58acc63af4c258010b7643f20af2",
+      "size": 2619
+    },
+    {
+      "path": "skills/meegle/SKILL.md",
+      "sha": "a976ecf7ca6bc7b339a7040d07f7d21b49146e53",
+      "size": 31201
+    },
+    {
+      "path": "skills/meegle/references/ai-handoff.md",
+      "sha": "2e7803d47d3920e794b4ae6e0407a3dab05ffb6f",
+      "size": 6308
+    },
+    {
+      "path": "skills/meegle/references/api-examples.md",
+      "sha": "796ed71af92a6e5669ab7759f7bf22e90166106a",
+      "size": 10143
+    },
+    {
+      "path": "skills/meegle/references/attachment.md",
+      "sha": "95d6f6aeb2559aa8834d9e62689fc29d51a752e1",
+      "size": 9447
+    },
+    {
+      "path": "skills/meegle/references/auth-guard.md",
+      "sha": "1285df6f8f294a0481f1aabbde5f03bab838b66b",
+      "size": 4592
+    },
+    {
+      "path": "skills/meegle/references/cli-guide.md",
+      "sha": "fdb96bef34fa039a88f46f1a7803f0e2a31a4ca3",
+      "size": 2858
+    },
+    {
+      "path": "skills/meegle/references/error-handling.md",
+      "sha": "1be3ca6af04967d45503280791c54bff5ade8d13",
+      "size": 10707
+    },
+    {
+      "path": "skills/meegle/references/field-value-extras.md",
+      "sha": "999d8b16ac23fd7f95aa976dc714e1e569921ff4",
+      "size": 1526
+    },
+    {
+      "path": "skills/meegle/references/minimax-code-cli-setup.md",
+      "sha": "21549bbd9b784725792e47676e034568cfb86e7f",
+      "size": 7350
+    },
+    {
+      "path": "skills/meegle/references/misc.md",
+      "sha": "08a77aad6a5202beb1e08e712bcf31dd9c3c67cf",
+      "size": 6662
+    },
+    {
+      "path": "skills/meegle/references/mql-basics.md",
+      "sha": "991f07e797f993f0503ca20da9c9b452e941ac75",
+      "size": 5403
+    },
+    {
+      "path": "skills/meegle/references/mql-examples.md",
+      "sha": "ae37f839a464a1803826b5357332089c24df985e",
+      "size": 4823
+    },
+    {
+      "path": "skills/meegle/references/mql-nodes-relations.md",
+      "sha": "8832522c044eadef3a494a4e6ffaeda639689513",
+      "size": 5629
+    },
+    {
+      "path": "skills/meegle/references/mql-operators.md",
+      "sha": "c4e17d2fcb8c60f2249fe1703e3dc1b13787092e",
+      "size": 7040
+    },
+    {
+      "path": "skills/meegle/references/mql-people-roles.md",
+      "sha": "41f6e86c84c5baca731584d952bf3487c8ca10d8",
+      "size": 3802
+    },
+    {
+      "path": "skills/meegle/references/mql-time-status.md",
+      "sha": "2c601544caa6d11f98526675322c4c78017f7bbb",
+      "size": 3635
+    },
+    {
+      "path": "skills/meegle/references/performance.md",
+      "sha": "05a04e8e52fd83b2284d72226bddb481392be933",
+      "size": 1076
+    },
+    {
+      "path": "skills/meegle/references/rich-text-editor-markdown-syntax.md",
+      "sha": "69a1e3e7e517f63d260b898d3831b3cb518015e0",
+      "size": 11525
+    },
+    {
+      "path": "skills/meegle/references/sop-create-workitem.md",
+      "sha": "e84c477db735537e4050d319447d72b0f5d28729",
+      "size": 10222
+    },
+    {
+      "path": "skills/meegle/references/sop-transition-node.md",
+      "sha": "357bbd8ed3a506607d13be1c5b8af2d4fcf891e7",
+      "size": 14033
+    },
+    {
+      "path": "skills/meegle/references/sop-transition-state.md",
+      "sha": "bf121e4c5653a5a6bb30e534eae5b206949e9972",
+      "size": 8562
+    },
+    {
+      "path": "skills/meegle/references/sop-update-workitem.md",
+      "sha": "8cf4ac43261d60b81ea20247dab0106682c94d03",
+      "size": 12263
+    },
+    {
+      "path": "skills/meegle/references/url-kinds.md",
+      "sha": "b079644c36697b1c05407b8acfd6fd0ced4e4daa",
+      "size": 6478
+    },
+    {
+      "path": "skills/meegle/references/url-links.md",
+      "sha": "79bb9afe4ac19a1f61fb5d0778adee3576fe8cf8",
+      "size": 8532
+    },
+    {
+      "path": "skills/meegle/references/view.md",
+      "sha": "32103d55f64a2c7a0b7976566403a6f8659e397e",
+      "size": 1450
+    },
+    {
+      "path": "skills/meegle/references/wbs.md",
+      "sha": "82a536d167d99cabcf7b80ffc952d6a6db6c21d2",
+      "size": 11990
+    },
+    {
+      "path": "skills/meegle/references/workflow.md",
+      "sha": "142dc2e9c10262b30f223bddf60736f6121712f8",
+      "size": 1863
+    },
+    {
+      "path": "skills/meegle/references/workitem.md",
+      "sha": "23a59bcb62d0a858f3a301db9552b537dc1b7b3e",
+      "size": 1793
+    },
+    {
+      "path": "upstream.json",
+      "sha": "04fca4871c6f76af5b76687bb43590405057ff62",
+      "size": 2865
+    }
+  ]
+}

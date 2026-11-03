@@ -1,0 +1,4600 @@
+{
+  "version": "1.1.6",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "9aa66718669f80bed36eb9f8f973f4c3432c665f",
+      "size": 647
+    },
+    {
+      "path": "INSTALL.md",
+      "sha": "7b20f7aff1fda7aad8b02beed1fb5449eab413a7",
+      "size": 4883
+    },
+    {
+      "path": "LICENSE",
+      "sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "size": 34523
+    },
+    {
+      "path": "README.en.md",
+      "sha": "e705b91eb49455c346fbb82f1ea980fcb44c1b87",
+      "size": 7927
+    },
+    {
+      "path": "README.md",
+      "sha": "6fc49b4926fd311591e353e609493839f85905d8",
+      "size": 3861
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "6fc49b4926fd311591e353e609493839f85905d8",
+      "size": 3861
+    },
+    {
+      "path": "SHADCN-LICENSE.md",
+      "sha": "fad4d887a681dd49233e5ed01ee2c7a1513089a0",
+      "size": 1063
+    },
+    {
+      "path": "icon.png",
+      "sha": "14b12e22bd53b6f8e40b6afb3d61f60f708ec208",
+      "size": 1008124
+    },
+    {
+      "path": "miniapp/client/agent/openchatcut-tool-schemas.json",
+      "sha": "44ce116ef98554c45c346cddbbab8685b6d63e13",
+      "size": 271625
+    },
+    {
+      "path": "miniapp/client/assets/Anton-CmfMngoi.js",
+      "sha": "38b3b6fe581ec41fa91a160c08697f536233be22",
+      "size": 3636
+    },
+    {
+      "path": "miniapp/client/assets/ArchivoBlack-D3qMfd6X.js",
+      "sha": "3479c2f4ca07d5067e8825e320c1f75453012317",
+      "size": 3435
+    },
+    {
+      "path": "miniapp/client/assets/Bangers-DVmOyxhM.js",
+      "sha": "6c5b550cb6398805affe82739ffe9ecac6fcad01",
+      "size": 3655
+    },
+    {
+      "path": "miniapp/client/assets/BarlowCondensed-BvQA1zSo.js",
+      "sha": "0671bf1e00465b68a85247934256c40f5f5d7592",
+      "size": 9413
+    },
+    {
+      "path": "miniapp/client/assets/BowlbyOne-BYNo4jli.js",
+      "sha": "d1fa8d6f6da308541430dafc5bb31e0efaa3beb1",
+      "size": 3100
+    },
+    {
+      "path": "miniapp/client/assets/Caveat-B2zIQllV.js",
+      "sha": "0d146ba9e1049b5dcaf9f5de9cecced8ae0a6319",
+      "size": 4735
+    },
+    {
+      "path": "miniapp/client/assets/CormorantGaramond-Bv9lZ_kS.js",
+      "sha": "f8caebd5121e910ed071177c6e76c42c5cd8eb85",
+      "size": 9213
+    },
+    {
+      "path": "miniapp/client/assets/DMSans-DhaWI143.js",
+      "sha": "05f120b9ebe5dfd5d467be3600a7d8b2d7e781c6",
+      "size": 6997
+    },
+    {
+      "path": "miniapp/client/assets/DancingScript-CbqxjEsb.js",
+      "sha": "6c19879af136a626be281ffe34aba7d4a2a11acd",
+      "size": 4637
+    },
+    {
+      "path": "miniapp/client/assets/DesignStylePanel-Dun_63RJ.js",
+      "sha": "f13c6e14c653fc7cb191bb7f5fdb862c6c7fb170",
+      "size": 28058
+    },
+    {
+      "path": "miniapp/client/assets/Editor-BWT8Fjxs.js",
+      "sha": "56d9be8b830f57d204a5c44e26d1810a11beb4fd",
+      "size": 5870975
+    },
+    {
+      "path": "miniapp/client/assets/Editor-CNYnoDus.css",
+      "sha": "7bc919b70a4d360f051558424efd3c55eb734edc",
+      "size": 41702
+    },
+    {
+      "path": "miniapp/client/assets/ExportDialog-CvgYyv1c.js",
+      "sha": "caf95df37d4147b4e38cabe9128f8b67bea38e36",
+      "size": 44091
+    },
+    {
+      "path": "miniapp/client/assets/Fraunces-CCLIVI0r.js",
+      "sha": "af27d5b612ae711cf816833d4f95b03c85a6de90",
+      "size": 11068
+    },
+    {
+      "path": "miniapp/client/assets/Fredoka-D1Y_ZDAm.js",
+      "sha": "0a557d89fe7af8809853adf69a27f757c8706636",
+      "size": 4838
+    },
+    {
+      "path": "miniapp/client/assets/Inter-CLVTcau3.js",
+      "sha": "9bbbbb6b24ef6a090c2f5bb03d5339bb7767d764",
+      "size": 16171
+    },
+    {
+      "path": "miniapp/client/assets/InterTight-lPx89uyt.js",
+      "sha": "a6a85a188182257030717f5aeb34b0749d8f9a7e",
+      "size": 15503
+    },
+    {
+      "path": "miniapp/client/assets/LXGWWenKaiTC-DtFy9vR-.js",
+      "sha": "2d9af85e9f67af53ea705d93f72f22315397cae2",
+      "size": 147185
+    },
+    {
+      "path": "miniapp/client/assets/LibreBaskerville-BcDYQhRQ.js",
+      "sha": "9cb178773cba078159fe6158688ea437b9e73d69",
+      "size": 5028
+    },
+    {
+      "path": "miniapp/client/assets/McpGuide-CvLGVQDL.js",
+      "sha": "390d851f2c762814f788e2474127900337427147",
+      "size": 14075
+    },
+    {
+      "path": "miniapp/client/assets/MediaCleanupDialog-lgMgqlqu.js",
+      "sha": "90b35d5bf0d6e992431b6f688589bcef07ca329c",
+      "size": 4245
+    },
+    {
+      "path": "miniapp/client/assets/MiniAppSettingsDialog-BjEaeZar.js",
+      "sha": "59a788e009fa116c969ecc5ad9a0ccc5acf05ebf",
+      "size": 43870
+    },
+    {
+      "path": "miniapp/client/assets/Montserrat-BS_OXsE9.js",
+      "sha": "83feef7979b955b0a41b10c941ebd59c24ca4a35",
+      "size": 12055
+    },
+    {
+      "path": "miniapp/client/assets/Mulish-D3-9didl.js",
+      "sha": "fb844e5c5947152f0511f2ea11c0e5424b646cd7",
+      "size": 10375
+    },
+    {
+      "path": "miniapp/client/assets/Newsreader-BacSQMP0.js",
+      "sha": "2ada1bf418fc7364181196a988a813d64f6fda6f",
+      "size": 8112
+    },
+    {
+      "path": "miniapp/client/assets/NotoSerifSC-KmSbW0Z5.js",
+      "sha": "f7c1fd7c3d616bfc293623972c5374f0d7da1344",
+      "size": 194744
+    },
+    {
+      "path": "miniapp/client/assets/NotoSerifTC-C3PW7aHq.js",
+      "sha": "8b75fdb9dcc34faf27e792c388c0222a4235e83f",
+      "size": 213008
+    },
+    {
+      "path": "miniapp/client/assets/Nunito-QO7J6VQ7.js",
+      "sha": "98444979d958d424668ecc2b1fcc8582adc2a1f2",
+      "size": 10375
+    },
+    {
+      "path": "miniapp/client/assets/Oswald-CdhKtORM.js",
+      "sha": "c910f66747ebf6bc732ee736d80911f02bd46632",
+      "size": 6076
+    },
+    {
+      "path": "miniapp/client/assets/PinyonScript-BPNhGupW.js",
+      "sha": "516575874cea6f39b5d6b573306ce2d764ffb531",
+      "size": 3711
+    },
+    {
+      "path": "miniapp/client/assets/PlayfairDisplay-DFIlY0XR.js",
+      "sha": "d349a5c6f76eae08b64c0ff5cc9830ca818db437",
+      "size": 8614
+    },
+    {
+      "path": "miniapp/client/assets/Roboto-q64br9rG.js",
+      "sha": "fd1c025fdb8c313a5ecd67282223e67ada6ea04e",
+      "size": 22320
+    },
+    {
+      "path": "miniapp/client/assets/ShortcutsDialog-CKCYM1wK.js",
+      "sha": "e48b0046f92bf040d6d377a62b33dfcc6e8142bc",
+      "size": 4772
+    },
+    {
+      "path": "miniapp/client/assets/Sora-CUkPVAwR.js",
+      "sha": "7b9a458bd451e21093a82700e772aba169b61fd9",
+      "size": 4489
+    },
+    {
+      "path": "miniapp/client/assets/SpaceMono-BkJcccih.js",
+      "sha": "444a64dc389a2a61b61139d20ed7a71ecd7b1b5c",
+      "size": 4558
+    },
+    {
+      "path": "miniapp/client/assets/SpecialElite-B0FkdS8K.js",
+      "sha": "faa4f100c2243b9fc15b0ada4fd9a7f87302e313",
+      "size": 3435
+    },
+    {
+      "path": "miniapp/client/assets/TimelineComposition-D0YQKaSv.js",
+      "sha": "4d623f4390ac44f6790a570501d262efedd9b0c3",
+      "size": 172624
+    },
+    {
+      "path": "miniapp/client/assets/Unbounded-CfpkN84W.js",
+      "sha": "aee5802f89b89924aa20c52971aecf4072966244",
+      "size": 7199
+    },
+    {
+      "path": "miniapp/client/assets/VT323--YQ07Qez.js",
+      "sha": "fa314d12a2f66a4419e3feded87bbc5b76cf309a",
+      "size": 3646
+    },
+    {
+      "path": "miniapp/client/assets/VersionHistory-oA4Qmkkx.js",
+      "sha": "45e0fd1d999cb63e97f4a24f82f92f3664eb6150",
+      "size": 4082
+    },
+    {
+      "path": "miniapp/client/assets/ZCOOLQingKeHuangYou-DbNe4rK4.js",
+      "sha": "31a00956ba824c560ff66be61b053a740e01d2e5",
+      "size": 98912
+    },
+    {
+      "path": "miniapp/client/assets/__vite-browser-external-BTYuaygK.js",
+      "sha": "d3b1b40c5655eba02e3360880ed03a15aa2ce532",
+      "size": 94
+    },
+    {
+      "path": "miniapp/client/assets/agent-path-import-tools-C2exqEjM.js",
+      "sha": "c106519cdd54675e688ccb178571f08d21196412",
+      "size": 6737
+    },
+    {
+      "path": "miniapp/client/assets/agent-runtime-tools-CpQsMnkS.js",
+      "sha": "eb14efac4327eefc03a151b501fa4aaa90225411",
+      "size": 2384
+    },
+    {
+      "path": "miniapp/client/assets/agentExportTracking-yiGiEj3F.js",
+      "sha": "84d9fdd70b3e158083a63b9a74810c04a6e5b072",
+      "size": 8341
+    },
+    {
+      "path": "miniapp/client/assets/agentSessionGeneration-C1trfYpg.js",
+      "sha": "eb9fb5c0f9c989c967d7eab2fdf9e4ee66b9c018",
+      "size": 1775
+    },
+    {
+      "path": "miniapp/client/assets/analysis-CF_qa1K6.js",
+      "sha": "4436ec0b4fbfa4744cdf1202359d077b9c9513b7",
+      "size": 193028
+    },
+    {
+      "path": "miniapp/client/assets/antigravity-color-B_C4qj6g.png",
+      "sha": "2fedbc946f99e52c5847b4909a64e4b4eda9bcf9",
+      "size": 62689
+    },
+    {
+      "path": "miniapp/client/assets/apply-C4ICRunc.js",
+      "sha": "c03abe719633b586f8b45fc9512e8b3801f25da0",
+      "size": 2109
+    },
+    {
+      "path": "miniapp/client/assets/aspectTypes-WN3dCRq1.js",
+      "sha": "1480d8e45a0a019a8ead9350b456041fdd396501",
+      "size": 293
+    },
+    {
+      "path": "miniapp/client/assets/audio-asset-tools-9n2HwdYL.js",
+      "sha": "8588fe6005edf7d99a5f14a24beca0206aaaaba2",
+      "size": 1669
+    },
+    {
+      "path": "miniapp/client/assets/auto-grade-tools-DEtyzVTr.js",
+      "sha": "070b6eb68c72e1b736860d694cfb4e8357e8800b",
+      "size": 2454
+    },
+    {
+      "path": "miniapp/client/assets/autoGrade-C45qotKK.js",
+      "sha": "117fe6132b38c26db3fa3c1e5639ffcfed203787",
+      "size": 1225
+    },
+    {
+      "path": "miniapp/client/assets/babel-Cq3OseUv.js",
+      "sha": "f1d163ead846da9de2e931b97cb04e6c31a9db32",
+      "size": 2302143
+    },
+    {
+      "path": "miniapp/client/assets/backgroundFill-0BWykgoV.js",
+      "sha": "a010f7d2395f8e8a9477b99a91a8aec81d16684a",
+      "size": 2214
+    },
+    {
+      "path": "miniapp/client/assets/beat-tools-CWilq6IM.js",
+      "sha": "271e898fbed5ffeaf7aa759a58a47e5c3546afdd",
+      "size": 5278
+    },
+    {
+      "path": "miniapp/client/assets/beat-tools-ClDvNG4I.js",
+      "sha": "e4d13080537c2ddd95fac913dbccb8d6a018d2a6",
+      "size": 1548
+    },
+    {
+      "path": "miniapp/client/assets/beatThis.worker-C5o-Ddao.js",
+      "sha": "3549600b3dd49851aeca11e4daeb7d0b3645db23",
+      "size": 119719
+    },
+    {
+      "path": "miniapp/client/assets/caption-avoidance-tools-C8_zisle.js",
+      "sha": "e0ddd2a24ab3348ba6e53b6a21f96d103b1dfd38",
+      "size": 4162
+    },
+    {
+      "path": "miniapp/client/assets/caption-qa-BfnaM27a.js",
+      "sha": "b2077bf1ec81ffa8f28b1aa7dc0ab474b9c5693b",
+      "size": 6657
+    },
+    {
+      "path": "miniapp/client/assets/captionMotion-CrsWeQoN.js",
+      "sha": "6c3b0b471e5cbf12569ce868a7e80169c069cb07",
+      "size": 1381
+    },
+    {
+      "path": "miniapp/client/assets/captionPages-D_cZ95IN.js",
+      "sha": "1b1bf2ae0b77f3e20cd11cfb5b36e30a2e9c73f0",
+      "size": 5421
+    },
+    {
+      "path": "miniapp/client/assets/captions-tools-ClL4vaA1.js",
+      "sha": "dc00887b24912a23e6578b2203fa6d6aee49880d",
+      "size": 29207
+    },
+    {
+      "path": "miniapp/client/assets/clap.worker-Dbjz6ANh.js",
+      "sha": "505a1b14bf2c1b953aaab6d594f6a9b949dfee5d",
+      "size": 521840
+    },
+    {
+      "path": "miniapp/client/assets/client-B_cP-Bj_.js",
+      "sha": "4cf4231c4f60c0ec2a851b3c4956844292f43e83",
+      "size": 645
+    },
+    {
+      "path": "miniapp/client/assets/client-CkPScjoH.js",
+      "sha": "be3c9d33f52af1a2316a8b460e5e1a710b5b7a10",
+      "size": 178347
+    },
+    {
+      "path": "miniapp/client/assets/clipExport-C9F9BrVH.js",
+      "sha": "e7b2ceebf03daee75dc431ddb1ef4505c384e5f2",
+      "size": 1812
+    },
+    {
+      "path": "miniapp/client/assets/clipFit-CvqGtaZd.js",
+      "sha": "7c20852176506235608a247e315487a6a8f07d3b",
+      "size": 745
+    },
+    {
+      "path": "miniapp/client/assets/clipTransformScale-ild_i3yk.js",
+      "sha": "61565309bc4dc1fcb62e53cad63491e9eff5ecb6",
+      "size": 196
+    },
+    {
+      "path": "miniapp/client/assets/codex-color-CCKjoGuJ.png",
+      "sha": "b40e14a14a999928c17a634a68debe1ac09708d3",
+      "size": 630021
+    },
+    {
+      "path": "miniapp/client/assets/color-scope-tools-B3xj9kIr.js",
+      "sha": "ad0f15641ac8df16433d7eb9a7b4a063c0d5459d",
+      "size": 8216
+    },
+    {
+      "path": "miniapp/client/assets/color-scope-tools-C-CLn4CL.js",
+      "sha": "8c26455168bba85ee9e1181fc06b59d017f2c1b9",
+      "size": 2151
+    },
+    {
+      "path": "miniapp/client/assets/core-tools-Dfh5HIUQ.js",
+      "sha": "f88b09704ac2dd94f5bd80d91ff17203e34fd898",
+      "size": 16413
+    },
+    {
+      "path": "miniapp/client/assets/cube-B1EadsXn.js",
+      "sha": "560f38d4106c44438007314c6b34cb519815a4da",
+      "size": 1922
+    },
+    {
+      "path": "miniapp/client/assets/cursor-color-zvTO0fW6.png",
+      "sha": "12e162a50ee08cfaa980c1c9714ebc4576143b74",
+      "size": 28171
+    },
+    {
+      "path": "miniapp/client/assets/custom-coder-BssrCoel.js",
+      "sha": "b0b7f59c687d4714c7654d483975d13ee6b4558c",
+      "size": 89477
+    },
+    {
+      "path": "miniapp/client/assets/customTransitions-CyZpkcNh.js",
+      "sha": "6f01e2a85dadc267e2d6fd18b542938d22404f79",
+      "size": 532
+    },
+    {
+      "path": "miniapp/client/assets/customZooms-Fu-FHEZO.js",
+      "sha": "0e69b4ccae5f12ffa944ec9c28eb90f62bf8fe7a",
+      "size": 574
+    },
+    {
+      "path": "miniapp/client/assets/design-tools-D00NYuPh.js",
+      "sha": "41a6efeb970d9d24693eefe784a144c595097747",
+      "size": 2736
+    },
+    {
+      "path": "miniapp/client/assets/design-tools-DzmbC-VW.js",
+      "sha": "f5b8d5f1c499fce6910d8f6d57a27a040c34d4d4",
+      "size": 5572
+    },
+    {
+      "path": "miniapp/client/assets/desktop-inference-CbGODFgj.js",
+      "sha": "c789d6d0a80b8baa8171e2ff3b1e018f0c0f05b1",
+      "size": 1735
+    },
+    {
+      "path": "miniapp/client/assets/desktop-inference-preference-BnTPlW-N.js",
+      "sha": "616550a744e576682da2e46bfaf77d9aa4f6b3e2",
+      "size": 471
+    },
+    {
+      "path": "miniapp/client/assets/edit-CIfZdEp_.js",
+      "sha": "bf5c4f138d4d08c6ab41a2a4e8f5f62c4e5ad16e",
+      "size": 5352
+    },
+    {
+      "path": "miniapp/client/assets/edit-asset-tools-BRxh55EV.js",
+      "sha": "64311a182719d608bae0eb47c5515f3d96953247",
+      "size": 2217
+    },
+    {
+      "path": "miniapp/client/assets/edit-asset-tools-D0n7Dupk.js",
+      "sha": "6ad7158fd9482ff1a679857eadc1b17df71b5388",
+      "size": 2053
+    },
+    {
+      "path": "miniapp/client/assets/edit-item-tools-Bgbeobgu.js",
+      "sha": "4a328c8e7851966788e25d3f08560f3c2228c435",
+      "size": 46712
+    },
+    {
+      "path": "miniapp/client/assets/edit-item-tools-D0Ii6fCL.js",
+      "sha": "7c0d9202a6f08f84de871e64317727419529662e",
+      "size": 6489
+    },
+    {
+      "path": "miniapp/client/assets/effect-tools-BtXSaQQx.js",
+      "sha": "8a0ff0e258901c6881df94736c8c8c51894932da",
+      "size": 1068
+    },
+    {
+      "path": "miniapp/client/assets/effect-tools-CCo9Wvq9.js",
+      "sha": "b1af5e806b8789c1906f52f591da47ef5650d111",
+      "size": 2436
+    },
+    {
+      "path": "miniapp/client/assets/effects-c377Awor.js",
+      "sha": "18cdd41d0c372008e2486e1eb5e5c43a86ad773a",
+      "size": 70783
+    },
+    {
+      "path": "miniapp/client/assets/en-BBSOaLeA.js",
+      "sha": "5c8046fee378b9aeaebbc498e31c175127345628",
+      "size": 190540
+    },
+    {
+      "path": "miniapp/client/assets/esm-CT0z08yS.js",
+      "sha": "6b33da9534df3b8df632d5fcbfdda81fbfaa4071",
+      "size": 229390
+    },
+    {
+      "path": "miniapp/client/assets/esm-DFkn3VjL.js",
+      "sha": "e36ede0a0187e7a540c08af46e5596d0434faa37",
+      "size": 197374
+    },
+    {
+      "path": "miniapp/client/assets/export-qa-tools-CAkUyIUg.js",
+      "sha": "7a3e243e76fc8516a5238ff9f9dfe0e6fa43eeab",
+      "size": 927
+    },
+    {
+      "path": "miniapp/client/assets/export-qa-tools-QnHP59x6.js",
+      "sha": "91c5a66368cf8e067305dc41dbdcece919a03bcd",
+      "size": 2462
+    },
+    {
+      "path": "miniapp/client/assets/export-tools-D_FHSULB.js",
+      "sha": "35d0aaf898143d03d6f1b9448ff2aefc049bc74a",
+      "size": 7161
+    },
+    {
+      "path": "miniapp/client/assets/exportFailure-DEghLp4Z.js",
+      "sha": "55393415bf89cda52ffe9fe755b7ebe8911a8ec1",
+      "size": 2649
+    },
+    {
+      "path": "miniapp/client/assets/exportMediaSources-CEjntbMP.js",
+      "sha": "e3c78150d752632208650125872c7670d892de46",
+      "size": 1595
+    },
+    {
+      "path": "miniapp/client/assets/fal-models-fMxm0IjQ.js",
+      "sha": "859c788e316236962690ec3eea39365b88d234db",
+      "size": 11739
+    },
+    {
+      "path": "miniapp/client/assets/fcpxml-ukYtbPz1.js",
+      "sha": "ec53afeb8464d4f1ff47e85d799e35d03429187d",
+      "size": 9628
+    },
+    {
+      "path": "miniapp/client/assets/flexCrop-Co-sOcxG.js",
+      "sha": "b7ecc470564b70e1f447614e0300b03e77d44e62",
+      "size": 1580
+    },
+    {
+      "path": "miniapp/client/assets/followup-tools-BhxA9njD.js",
+      "sha": "3a3c75b7678287b7fe325163e23b3f145283ee0f",
+      "size": 1096
+    },
+    {
+      "path": "miniapp/client/assets/followup-tools-I12Hm32M.js",
+      "sha": "2a26fcb14333cfee57b562a8778d3ea4693ffbca",
+      "size": 3123
+    },
+    {
+      "path": "miniapp/client/assets/font-tools-CoRLe3Ot.js",
+      "sha": "f510989ee6b6e9e619a3c89444566edc5992e729",
+      "size": 1299
+    },
+    {
+      "path": "miniapp/client/assets/font-tools-D1heBF72.js",
+      "sha": "9a0dcd593791837698ab4a3d303e0a65e915b733",
+      "size": 931
+    },
+    {
+      "path": "miniapp/client/assets/frames-tool-Nj-x_O8y.js",
+      "sha": "ed4c9d6cbdee992098a2c79413a828f34bc81598",
+      "size": 13338
+    },
+    {
+      "path": "miniapp/client/assets/frames-tool-XP2H22DZ.js",
+      "sha": "6d643c145d8b5ddca59d3cdfacda6a4ed83b545e",
+      "size": 3096
+    },
+    {
+      "path": "miniapp/client/assets/friction-tools-ZRHZOgWe.js",
+      "sha": "b67db26faca9313de77d995c451dd9a248775298",
+      "size": 859
+    },
+    {
+      "path": "miniapp/client/assets/friction-tools-y_TiUJHG.js",
+      "sha": "8359b4fd69eec515108fec6e7b3521d1694c8aa5",
+      "size": 1189
+    },
+    {
+      "path": "miniapp/client/assets/generate-schemas-D7TeTqvV.js",
+      "sha": "b7bab22a489dc036d96dd270c0cc8932f32696e8",
+      "size": 24852
+    },
+    {
+      "path": "miniapp/client/assets/generate-tools-DE6Wfr_3.js",
+      "sha": "68c8bbf55705f7f7804339022024e64833a5dca9",
+      "size": 35881
+    },
+    {
+      "path": "miniapp/client/assets/googleFontCatalog-CgoK_900.js",
+      "sha": "7fbe5d3da247ab88b9e5da35ca5e0e0155d73d3a",
+      "size": 8485
+    },
+    {
+      "path": "miniapp/client/assets/highlight-tool-BYUQBQy5.js",
+      "sha": "5a01ed9b9c131880f0c9fe7398661df5e5c178fd",
+      "size": 1308
+    },
+    {
+      "path": "miniapp/client/assets/highlight-tool-ZmTieovF.js",
+      "sha": "6e5ea181cd6e76a48b93da0f6acba0d3aaa94872",
+      "size": 6865
+    },
+    {
+      "path": "miniapp/client/assets/icons-S_FlvjqC.js",
+      "sha": "847d91c4bf07f041a4c72bbd2fd3527842bdef7e",
+      "size": 8083
+    },
+    {
+      "path": "miniapp/client/assets/id3-C6bzcgAm.js",
+      "sha": "13f48bb2c55540d64685998e91c7b2af10ae48b4",
+      "size": 316099
+    },
+    {
+      "path": "miniapp/client/assets/identity-B5uKbIFB.js",
+      "sha": "0e826e6f2ea1afa3032389d5ba03b81588f32528",
+      "size": 1394
+    },
+    {
+      "path": "miniapp/client/assets/install-skill-tools-B-3UCU80.js",
+      "sha": "3daa18519768a9dddc9af6615295b3e91f69fa49",
+      "size": 996
+    },
+    {
+      "path": "miniapp/client/assets/install-skill-tools-B74r0odT.js",
+      "sha": "bc4845e24d0b8053671b7266471cace45953bfa8",
+      "size": 793
+    },
+    {
+      "path": "miniapp/client/assets/isolate-voice-tools-Cvn822gx.js",
+      "sha": "6358d0574d06ca4b496a4cdf019f6236e513d511",
+      "size": 1509
+    },
+    {
+      "path": "miniapp/client/assets/isolate-voice-tools-bpgV5dG2.js",
+      "sha": "057a3248d15f69843a698b17271825dc72469e74",
+      "size": 3984
+    },
+    {
+      "path": "miniapp/client/assets/isolateVoice-FTmAhFKf.js",
+      "sha": "68d54cf151fcf292cb7ef8513d97ca4da7dc7af8",
+      "size": 977
+    },
+    {
+      "path": "miniapp/client/assets/it-y6mAk3cA.js",
+      "sha": "6fda56aee9e89c13136f86df59dffad7f2eabe7a",
+      "size": 60283
+    },
+    {
+      "path": "miniapp/client/assets/jianying-export-tool-BwlfTqmF.js",
+      "sha": "33299f6d9eb534627df9371d51c423d6b0bd3177",
+      "size": 1807
+    },
+    {
+      "path": "miniapp/client/assets/jianyingDraftRequest-CK0a8Td7.js",
+      "sha": "e3981873849177e54465ce62a0eeed82798e5fd6",
+      "size": 2900
+    },
+    {
+      "path": "miniapp/client/assets/job-model-C55Ew6GR.js",
+      "sha": "9d7bfcd7a3c2ae9a56e0ca5d7443093abf918a31",
+      "size": 495
+    },
+    {
+      "path": "miniapp/client/assets/jobs-aBOugXg_.js",
+      "sha": "a064acf6184bc769fd4f6e44a66ce1b4cd3bf0a4",
+      "size": 16405
+    },
+    {
+      "path": "miniapp/client/assets/jsx-runtime-CFwixLRt.js",
+      "sha": "5c3653504d91a198e070c747992121fa5748d96d",
+      "size": 435
+    },
+    {
+      "path": "miniapp/client/assets/keyframes-DEJTOnAx.js",
+      "sha": "475339b69c166781c641e88fa70a87ec096a9c7e",
+      "size": 2937
+    },
+    {
+      "path": "miniapp/client/assets/keymap-MSdThT5q.js",
+      "sha": "3405bb26b30d58feecd9ed6fc9f12e8fe6295093",
+      "size": 9857
+    },
+    {
+      "path": "miniapp/client/assets/lanes-DCbZ4gdC.js",
+      "sha": "438c2ef98b43aeff7d5c38eaf1360023054a1a92",
+      "size": 2023
+    },
+    {
+      "path": "miniapp/client/assets/layout-tools-DPdHkpNM.js",
+      "sha": "5b2e490006667aaa8498f9c9a3355454cc31c5d1",
+      "size": 2509
+    },
+    {
+      "path": "miniapp/client/assets/layout-tools-DvFpnxPe.js",
+      "sha": "19156c51d36e968f1a2e19af5f2629fc144ab8c5",
+      "size": 4115
+    },
+    {
+      "path": "miniapp/client/assets/lib-BULmnXSb.js",
+      "sha": "e3af5b91bd5f04ae4cc9e512b31db4158612bbad",
+      "size": 84867
+    },
+    {
+      "path": "miniapp/client/assets/lib-IknsAzE7.js",
+      "sha": "b5053d9d79ca4d067da8a22e38fa20412472dcc2",
+      "size": 498804
+    },
+    {
+      "path": "miniapp/client/assets/library-catalog-veFo2dvL.js",
+      "sha": "1da45a5b398d4cb50ac8917d5c851ffc4d8ca5fd",
+      "size": 4549
+    },
+    {
+      "path": "miniapp/client/assets/library-tools-Cdjknxh2.js",
+      "sha": "7e68043b84ec043ec04efe23cd6557f395056ec8",
+      "size": 1739
+    },
+    {
+      "path": "miniapp/client/assets/library-tools-HrmCN85B.js",
+      "sha": "04faac57ef15a4d9f5bbf92c1b3fadb4161d7666",
+      "size": 1105
+    },
+    {
+      "path": "miniapp/client/assets/local-asr.worker-XIlhQav9.js",
+      "sha": "0addd652f13811f8fa0a267c11be983de074a20a",
+      "size": 523266
+    },
+    {
+      "path": "miniapp/client/assets/locale-CWMC7eYe.js",
+      "sha": "ebdc630d4828fb1c2e0aed4db907ac592d5e180a",
+      "size": 2661
+    },
+    {
+      "path": "miniapp/client/assets/loudness-C--ofP3o.js",
+      "sha": "5eca04d4374076dca7c17207012edd7b3ed094ca",
+      "size": 1998
+    },
+    {
+      "path": "miniapp/client/assets/loudness-tools-DTGMGKag.js",
+      "sha": "fc37c55d1c9acac74481866c73cb3014a8b41da8",
+      "size": 1361
+    },
+    {
+      "path": "miniapp/client/assets/main-BSXMqT6i.js",
+      "sha": "341c62f94c6596b743c7103f697a58551c2f08aa",
+      "size": 336742
+    },
+    {
+      "path": "miniapp/client/assets/main-C4XK8cyP.css",
+      "sha": "d1c09dbd6eeb595d92708c0b82e5c6e5b13e164d",
+      "size": 1013
+    },
+    {
+      "path": "miniapp/client/assets/markers-tools-Dy5Eg4Hw.js",
+      "sha": "5aefe31da2a41fded48f761677beb89174ea5f9b",
+      "size": 2678
+    },
+    {
+      "path": "miniapp/client/assets/markers-tools-aNE5Qgxd.js",
+      "sha": "bf0ac5a8e1f4b9822ed0dd49b8704f057105b922",
+      "size": 4435
+    },
+    {
+      "path": "miniapp/client/assets/materializeBlobMedia-D3edvGJS.js",
+      "sha": "0154a6a7c4cbfe1f05b71bf09f46bed9ee103a7d",
+      "size": 9295
+    },
+    {
+      "path": "miniapp/client/assets/media-pool-tools-BZDTNzOZ.js",
+      "sha": "53c86e263f14cd063563b871225741b017d901c1",
+      "size": 2300
+    },
+    {
+      "path": "miniapp/client/assets/media-pool-tools-Yu3pxUXK.js",
+      "sha": "0664fddab40959c502f1bcbcf182a44f08b3e57c",
+      "size": 6178
+    },
+    {
+      "path": "miniapp/client/assets/mediaAssetUsage-JZCbQ7DQ.js",
+      "sha": "18935554197967e4d4b1f1d62ce4a814f713e73b",
+      "size": 9169
+    },
+    {
+      "path": "miniapp/client/assets/mediaBlobStore-BpSdeg53.js",
+      "sha": "ad1184bed299ce57d9e3b84f0e3ff25480ba23a1",
+      "size": 11777
+    },
+    {
+      "path": "miniapp/client/assets/mediaSettings-DjFG66wg.js",
+      "sha": "b1e259f709fadd11cdfb46e930296f1006a5300c",
+      "size": 1924
+    },
+    {
+      "path": "miniapp/client/assets/mediaSourceRevision-BMFYf7DN.js",
+      "sha": "092794e8d79a089159e67f03c62b6b3ba94d2ed7",
+      "size": 2786
+    },
+    {
+      "path": "miniapp/client/assets/mediabunny-aac-encoder-D7dlyAL-.js",
+      "sha": "acd669943ff4d76120f16ce1573200e11388bd0f",
+      "size": 991546
+    },
+    {
+      "path": "miniapp/client/assets/mediabunny-flac-encoder-oL6jGrwg.js",
+      "sha": "aa5a06ff9a32d616a306ad3b4fba9342ee90896c",
+      "size": 322654
+    },
+    {
+      "path": "miniapp/client/assets/mediabunny-mp3-encoder-DYGe7Vp3.js",
+      "sha": "8af981bf2465fb40ab0ffc10e76754a62b65c63a",
+      "size": 311185
+    },
+    {
+      "path": "miniapp/client/assets/mg-code-tools-CQaQ53RG.js",
+      "sha": "bd03e9caea530a039dcf3046b00a0448b3e9e2b3",
+      "size": 1533
+    },
+    {
+      "path": "miniapp/client/assets/mg-code-tools-DAGkn_pZ.js",
+      "sha": "ff6abf1bfa27ea047551db11d128e24812bb8a2a",
+      "size": 1417
+    },
+    {
+      "path": "miniapp/client/assets/mg-video-tools-BBPjOWi-.js",
+      "sha": "0cc22bd9b01c91ecdac4f52a28a6a1077133306c",
+      "size": 3986
+    },
+    {
+      "path": "miniapp/client/assets/mg-video-tools-BWlD22xR.js",
+      "sha": "eada22271513226c220dc0ba3119e122724d7c9b",
+      "size": 7525
+    },
+    {
+      "path": "miniapp/client/assets/miniAppSample-oedLb4Pb.js",
+      "sha": "cac40eb96b9f00a10bca4ac9d34dfd3322b0f871",
+      "size": 3655
+    },
+    {
+      "path": "miniapp/client/assets/miniapp-client-CJYO1wyB.js",
+      "sha": "da2a957956cb666d1775a32107a56fe2017de838",
+      "size": 171
+    },
+    {
+      "path": "miniapp/client/assets/miniapp-stills-BQsJhULA.js",
+      "sha": "c58c03f69e3ebf450d919079b8956f1dd156de7b",
+      "size": 4281
+    },
+    {
+      "path": "miniapp/client/assets/miniapp-vision-BL0tSCI4.js",
+      "sha": "49f8e85af7efdc1a2888026870cb13dc4ddc5ddd",
+      "size": 44
+    },
+    {
+      "path": "miniapp/client/assets/miniappTypography-A241pGRd.css",
+      "sha": "281db14efa35663531bcd3b3b781ce95f146eb5f",
+      "size": 127766
+    },
+    {
+      "path": "miniapp/client/assets/miniappTypography-BltQo0mM.js",
+      "sha": "4ec366922c50aa8f8ffa811a0d28eabd22a70c79",
+      "size": 698
+    },
+    {
+      "path": "miniapp/client/assets/motionGraphicRefs-BTFNrZzU.js",
+      "sha": "bf62521379ae5a69e65cae58462636d2bf448a96",
+      "size": 519
+    },
+    {
+      "path": "miniapp/client/assets/multicam-tools-CuDcFkWs.js",
+      "sha": "be27b8d82a49fab9927db1b07dd7eae94248290b",
+      "size": 12627
+    },
+    {
+      "path": "miniapp/client/assets/music-intelligence-tools-CCeJ-j-o.js",
+      "sha": "54b00b8f74f3a4c4c8ce1e745fb105b510b7cc30",
+      "size": 12946
+    },
+    {
+      "path": "miniapp/client/assets/nativeBeatThisWorkerAdapter-BMGLXqif.js",
+      "sha": "8628241e63c7b1af813142cb8622da9647d0dd9c",
+      "size": 3183
+    },
+    {
+      "path": "miniapp/client/assets/nativeClapWorkerAdapter-DhmOffxv.js",
+      "sha": "03b94401f23c6c72c77d6c3bb69ff5fe4542de80",
+      "size": 3942
+    },
+    {
+      "path": "miniapp/client/assets/nativeSemanticWorkerAdapter-CTQXD8aT.js",
+      "sha": "37aa7eacee786b8797c3caf6f56e6a98ff3b4600",
+      "size": 6813
+    },
+    {
+      "path": "miniapp/client/assets/no-react-B69bAfHq.js",
+      "sha": "fc2e22739f4dd519fc82313e9cb863cdb329c23f",
+      "size": 33002
+    },
+    {
+      "path": "miniapp/client/assets/normalize-COt0brQF.js",
+      "sha": "f5c39f55d77731b0653dd04a22ca6a2a1598ff73",
+      "size": 8120
+    },
+    {
+      "path": "miniapp/client/assets/ownedStyleStore-D10P8O8F.js",
+      "sha": "e0be96ea8b3b0aaa4eb69c88eac49d56f218e765",
+      "size": 23272
+    },
+    {
+      "path": "miniapp/client/assets/pdf-EQHMWEbX.js",
+      "sha": "0f98d779892e9252689235421b697d7f94b18707",
+      "size": 427548
+    },
+    {
+      "path": "miniapp/client/assets/pdf.worker.min-C8Ts8bNu.js",
+      "sha": "80e44b9969bb3775a8425354967af41a5ae54ce3",
+      "size": 65
+    },
+    {
+      "path": "miniapp/client/assets/pdf.worker.min-CHFwMXne.mjs",
+      "sha": "66a5d815c7b7801a767d8b467e5ae40274852012",
+      "size": 1262398
+    },
+    {
+      "path": "miniapp/client/assets/placement-BkknCNzO.js",
+      "sha": "5c69e96f7854b66f1b3d9c29572b06e34217edab",
+      "size": 2858
+    },
+    {
+      "path": "miniapp/client/assets/placement-tools-BaVYr3ss.js",
+      "sha": "0300d33be1a308590dd638cfb71f2d172abbe3fc",
+      "size": 3757
+    },
+    {
+      "path": "miniapp/client/assets/plugin-skill-tools-BnDbTHzX.js",
+      "sha": "45efe5558085d7f90d4b461d954633a996f98cbd",
+      "size": 6809
+    },
+    {
+      "path": "miniapp/client/assets/plugin-skill-tools-D03VSZT8.js",
+      "sha": "be755f3f122d84b8c2ff2d973a4350432af31111",
+      "size": 2268
+    },
+    {
+      "path": "miniapp/client/assets/preload-helper-Czpn1I53.js",
+      "sha": "a55bcbaadb158d85bd3cf2798cc2b61ad8a7c5fc",
+      "size": 1196
+    },
+    {
+      "path": "miniapp/client/assets/presetStore-DE_KExC9.js",
+      "sha": "1494ef14bc7a8f8bb1bc8166d572ac07ef79eb9d",
+      "size": 6922
+    },
+    {
+      "path": "miniapp/client/assets/probe-tools-BhNYoTVH.js",
+      "sha": "baf324390885f8fd011298f8b0ff476f13f2e832",
+      "size": 904
+    },
+    {
+      "path": "miniapp/client/assets/probe-tools-CmH699Fp.js",
+      "sha": "3a8e964c1c60015429ee870805f10a99c03a761b",
+      "size": 2838
+    },
+    {
+      "path": "miniapp/client/assets/progress-tools-BIUYw4TZ.js",
+      "sha": "047cc7641e00325ac91ed34a8f8c91775646a352",
+      "size": 3662
+    },
+    {
+      "path": "miniapp/client/assets/project-tools-BvmYrpmb.js",
+      "sha": "8305dbdc750c0c6058a015fd574fbe1c4ba45338",
+      "size": 4328
+    },
+    {
+      "path": "miniapp/client/assets/project-tools-DyoU3-Rs.js",
+      "sha": "347ab48730c494856ec251f08f16fbe8eecf21ed",
+      "size": 7663
+    },
+    {
+      "path": "miniapp/client/assets/projectFonts-BrheSHlw.js",
+      "sha": "77c3b36aa715d20052dcd2c7623fdbf394b94917",
+      "size": 1787
+    },
+    {
+      "path": "miniapp/client/assets/projectStore-CxfDHOs9.js",
+      "sha": "9937b3fbb9be3082db73674e52fc98eb60bbf7c7",
+      "size": 16198
+    },
+    {
+      "path": "miniapp/client/assets/projectStoreTransport-CG8qUu61.js",
+      "sha": "2bd33e25b7b5e0cd134d8a6ee97ab86c636aa281",
+      "size": 2657
+    },
+    {
+      "path": "miniapp/client/assets/projectThumbStore-Cl_Eg0HJ.js",
+      "sha": "a5aa146a195fdc526bbdcece35af70c2973834e3",
+      "size": 252
+    },
+    {
+      "path": "miniapp/client/assets/projectTypes-CDJdefdq.js",
+      "sha": "2de014368ee14a13f9a186cde9985921c8cad6a6",
+      "size": 147
+    },
+    {
+      "path": "miniapp/client/assets/proposalStore-DkELNfHh.js",
+      "sha": "c1f8b35c7f85110a2b1fcfaa9a2ecfd5317f7079",
+      "size": 25810
+    },
+    {
+      "path": "miniapp/client/assets/publish-tools-CxKdUA1t.js",
+      "sha": "f581bad94fe5cc2824da2f986f493b7095e36586",
+      "size": 3613
+    },
+    {
+      "path": "miniapp/client/assets/publish-tools-DatU3mI6.js",
+      "sha": "cfbdff4b2b2fb959db4af0b19231298f488b25e5",
+      "size": 3663
+    },
+    {
+      "path": "miniapp/client/assets/quality-BPdJWsba.js",
+      "sha": "db1fca2a5d267be5591ed9d646e0822fac0bf6bf",
+      "size": 2812
+    },
+    {
+      "path": "miniapp/client/assets/react-BUD3sqOU.js",
+      "sha": "60a8967ccbb77bdabb1996b9ca5469cfdae9a861",
+      "size": 7532
+    },
+    {
+      "path": "miniapp/client/assets/react-dom-DmHqBZ9-.js",
+      "sha": "5402f444c0c1d0dfac870513191bebb470866dea",
+      "size": 3579
+    },
+    {
+      "path": "miniapp/client/assets/read-project-tools-BdMWul7s.js",
+      "sha": "beb182777bd6b7546e9b69691b22ea5f94ff0760",
+      "size": 4764
+    },
+    {
+      "path": "miniapp/client/assets/read-project-tools-DkpD-PqH.js",
+      "sha": "ff8b37473f453b91a2d985b8f45bb1e31b61d833",
+      "size": 2187
+    },
+    {
+      "path": "miniapp/client/assets/recordPartition-Bkt5cGrj.js",
+      "sha": "5b498cd1c2bf961a0470f11b5f4b790df35de6a6",
+      "size": 232
+    },
+    {
+      "path": "miniapp/client/assets/reduce-6IuXPFpI.js",
+      "sha": "68223ba0f72ec5cae53ad1bfc57d09214dfe0a54",
+      "size": 38585
+    },
+    {
+      "path": "miniapp/client/assets/reframe-tools-Cwaed7O8.js",
+      "sha": "3a6b70c40e8ab20f20055ed7b85cd8e3ee263718",
+      "size": 7501
+    },
+    {
+      "path": "miniapp/client/assets/reframe-tools-DGfcWsFZ.js",
+      "sha": "a3adbf0336621885e08b3775c1423559e0bf5408",
+      "size": 1172
+    },
+    {
+      "path": "miniapp/client/assets/renderStyles-CDxiIOpQ.js",
+      "sha": "efe95c9912e1dfef401853af859a438994f77308",
+      "size": 4931
+    },
+    {
+      "path": "miniapp/client/assets/resolve-BFd4N-f_.js",
+      "sha": "f30c6d89fb76852a12e36cf3eb96a0e544ae6ad6",
+      "size": 15139
+    },
+    {
+      "path": "miniapp/client/assets/rolldown-runtime-DAXXjFlN.js",
+      "sha": "b860d424058fe6c56beae6a946e6eaee7885d6d1",
+      "size": 1269
+    },
+    {
+      "path": "miniapp/client/assets/ru-CR5lvQZu.js",
+      "sha": "8af31dce81807abdbc5f92ee2b97827b7d8209fe",
+      "size": 230341
+    },
+    {
+      "path": "miniapp/client/assets/run-code-tools-BubMzf6n.js",
+      "sha": "559b6cf9ad0369ee800f5681a9e7e2509ecd16e3",
+      "size": 1568
+    },
+    {
+      "path": "miniapp/client/assets/run-code-tools-DDiJ6Bl0.js",
+      "sha": "d3907f6f8b3358dbd03ed56e9b77f713ad8021a5",
+      "size": 395
+    },
+    {
+      "path": "miniapp/client/assets/samplingConfig-Cp66xZ81.js",
+      "sha": "11329c136c8b2a5efccb803c8785ec086068ef84",
+      "size": 1165
+    },
+    {
+      "path": "miniapp/client/assets/scene-detection-tools-DKfk7EAI.js",
+      "sha": "e6bffdb90bbd0cac8906a95208ee6eea7efd65a5",
+      "size": 2600
+    },
+    {
+      "path": "miniapp/client/assets/scene-quality-tools-B-LB_2AH.js",
+      "sha": "e4ed3cc1da09c6a86c86ae967d4497dfd6130a0e",
+      "size": 1026
+    },
+    {
+      "path": "miniapp/client/assets/scene-quality-tools-WjvUUQDv.js",
+      "sha": "d978bcc15a1af83687c01d61f349eb02ff61456d",
+      "size": 3340
+    },
+    {
+      "path": "miniapp/client/assets/script-tools-C6fN0ZZ1.js",
+      "sha": "e0a9c210d49fe37f78450fc56e102516098b7ca3",
+      "size": 8403
+    },
+    {
+      "path": "miniapp/client/assets/script-tools-CNnEEKvu.js",
+      "sha": "807c12bab089bee3c58a1da4d83aa36eaa49c504",
+      "size": 1606
+    },
+    {
+      "path": "miniapp/client/assets/search-tools-Bph5Fj6n.js",
+      "sha": "1e7cb266cc3b95397c331860809327836ccd70c5",
+      "size": 1231
+    },
+    {
+      "path": "miniapp/client/assets/segment-BlJK3LRg.js",
+      "sha": "9edeb10db4d36838c293b9879745a1577f717546",
+      "size": 1960
+    },
+    {
+      "path": "miniapp/client/assets/semantic.worker-C8HFYeTT.js",
+      "sha": "84760e8a074ca0f5410807b98a2c4bf67188eafa",
+      "size": 524735
+    },
+    {
+      "path": "miniapp/client/assets/semanticClient-PaZF60vE.js",
+      "sha": "001f09442e39e056de13332c56a035a04b1ca324",
+      "size": 18003
+    },
+    {
+      "path": "miniapp/client/assets/sequenceGraph-CcGH3Igr.js",
+      "sha": "376f6797f88c51f1d2f9c6e002d68ee3bc9c0df2",
+      "size": 5079
+    },
+    {
+      "path": "miniapp/client/assets/serialize-7kBHPKHd.js",
+      "sha": "77c99414f776d29e0c75b7396cb59ff545c7e321",
+      "size": 2522
+    },
+    {
+      "path": "miniapp/client/assets/serverExportOperation-DiafpyFx.js",
+      "sha": "26a8892cf025485456be5d29c746f66a0d932f46",
+      "size": 29335
+    },
+    {
+      "path": "miniapp/client/assets/serverExportRenderOperation-1E3VgDKn.js",
+      "sha": "c21665384bc4505e70f8510d8834050d6fe1b52a",
+      "size": 14055
+    },
+    {
+      "path": "miniapp/client/assets/setup-CKFgQDmc.css",
+      "sha": "a63ff0eb905e04c4bff475bf83be67d9e191732b",
+      "size": 726
+    },
+    {
+      "path": "miniapp/client/assets/setup-DLITXife.js",
+      "sha": "c3fa426d6bde44ca3aaa4f557671a55d0b857724",
+      "size": 3093
+    },
+    {
+      "path": "miniapp/client/assets/shader-tools-B1bC8nql.js",
+      "sha": "4f1307a4453d703facc8d639e900ce32bd4f14b6",
+      "size": 11695
+    },
+    {
+      "path": "miniapp/client/assets/shader-tools-a4Xzz0Me.js",
+      "sha": "0c7c0e6f31b629760d2dd387c1f22c3f9ae3cfde",
+      "size": 2578
+    },
+    {
+      "path": "miniapp/client/assets/sharedKv-CvWPOULA.js",
+      "sha": "51b237e25d53d5cecb253b88deb6053b9650e0fa",
+      "size": 12153
+    },
+    {
+      "path": "miniapp/client/assets/silence-tools-CPHu_Y_9.js",
+      "sha": "d4d45a2ee4b64184e1ec2bc219b80fda3bfd78e6",
+      "size": 6429
+    },
+    {
+      "path": "miniapp/client/assets/silence-tools-DnPyUyGU.js",
+      "sha": "1d2958598409e64b4806525604ec1c40fd9a8425",
+      "size": 1784
+    },
+    {
+      "path": "miniapp/client/assets/silero-vad-B_dC0Jdo.js",
+      "sha": "887cac72e590953cde502088c701a216b60d65e8",
+      "size": 72215
+    },
+    {
+      "path": "miniapp/client/assets/skill-deps-zpbK1XuL.js",
+      "sha": "3989e93bf1734ea4881529bf6a8277d81e09ba22",
+      "size": 2133
+    },
+    {
+      "path": "miniapp/client/assets/skill-exec-tools-C41lM2z0.js",
+      "sha": "b0af7365776830c78fa7584ec85ebfa97c935c2f",
+      "size": 894
+    },
+    {
+      "path": "miniapp/client/assets/skill-tools-BNwBg2t7.js",
+      "sha": "921f24eebfa0d0f4b36cd5e06d784971e806ebfc",
+      "size": 3315
+    },
+    {
+      "path": "miniapp/client/assets/skillStore-CNz0G9Ou.js",
+      "sha": "a1cb39d83dfd3cec4fd348c06df5b31d34d358a5",
+      "size": 3839
+    },
+    {
+      "path": "miniapp/client/assets/skills-catalog-Ca0obDWe.js",
+      "sha": "3365053ead0dba07fbbfaa354625dc83cbb1cd19",
+      "size": 521462
+    },
+    {
+      "path": "miniapp/client/assets/skins-ohBI-8xQ.js",
+      "sha": "f9fa78c913db1cc170c1a553a67e3cb0f7d744d7",
+      "size": 3564
+    },
+    {
+      "path": "miniapp/client/assets/soundLibrary-CBLbixAX.js",
+      "sha": "3536ef2ddb512ae027c1f76d8467865901c2d1a3",
+      "size": 42165
+    },
+    {
+      "path": "miniapp/client/assets/sourceFilename-C1H4YtSF.js",
+      "sha": "bc5cba45a03815a13055f3187122224f60bb71d8",
+      "size": 418
+    },
+    {
+      "path": "miniapp/client/assets/sourceLimit-kmG0lWZ1.js",
+      "sha": "d1ee7f7f44ca2812fed3e7a7e89480ff7ccf288c",
+      "size": 901
+    },
+    {
+      "path": "miniapp/client/assets/stock-tools-C9EW9akY.js",
+      "sha": "a2db8378b4a533a21a3adc2d04d825dca330053d",
+      "size": 7663
+    },
+    {
+      "path": "miniapp/client/assets/stock-tools-rN2rJeM4.js",
+      "sha": "f626a52ab3619fedf0450014b0912fd52c20de64",
+      "size": 4848
+    },
+    {
+      "path": "miniapp/client/assets/store-DrjsAsfF.js",
+      "sha": "01c5a3b49719459f7b6f4b71557adc99099d3267",
+      "size": 14058
+    },
+    {
+      "path": "miniapp/client/assets/styles-lqWgHtVQ.js",
+      "sha": "1fbb7678262d334a65a2a893914e24bd7f73fb0a",
+      "size": 5982
+    },
+    {
+      "path": "miniapp/client/assets/sync-Ccd7fwyK.js",
+      "sha": "6999bb632da5217b01800dcb7f448a294bc51fbc",
+      "size": 13141
+    },
+    {
+      "path": "miniapp/client/assets/template-host-BxkOM6IK.js",
+      "sha": "c68c9995e8cb8258c65c21aba1eeb1ed7cd596d6",
+      "size": 3440
+    },
+    {
+      "path": "miniapp/client/assets/template-tools-BHtAeRnn.js",
+      "sha": "9b53514e29f29fc4e5bddd8a19ec8a93759bafb5",
+      "size": 1949
+    },
+    {
+      "path": "miniapp/client/assets/template-tools-CmxW1s9-.js",
+      "sha": "655444c9700fe19dd51ccf727c28f8a439baeff0",
+      "size": 8848
+    },
+    {
+      "path": "miniapp/client/assets/templates-data-Br2P6Hko.js",
+      "sha": "e0fade1f9aaf8b78dbf485eb7e9c12efd5c6a9ba",
+      "size": 1391
+    },
+    {
+      "path": "miniapp/client/assets/templates-data-D3eYf4nw.js",
+      "sha": "92eaeb04522dca88e95f40789c0f6929162df478",
+      "size": 1506
+    },
+    {
+      "path": "miniapp/client/assets/theme-BKDpdv0R.css",
+      "sha": "e5a067b5373bb8d9d8897eae34ad139b1f079313",
+      "size": 11693
+    },
+    {
+      "path": "miniapp/client/assets/theme-DxlnfwEf.js",
+      "sha": "1f453438e4af5eb59f5cd772092ea92ab5003dd2",
+      "size": 979
+    },
+    {
+      "path": "miniapp/client/assets/theme-w_4BdOdk.js",
+      "sha": "1b56089d4401a82cf7e6ed18373dbf49ce42d769",
+      "size": 32632
+    },
+    {
+      "path": "miniapp/client/assets/timecode-gf4t8rEt.js",
+      "sha": "ab7533cf285e78c3a99f9ece8f570fa52822a074",
+      "size": 916
+    },
+    {
+      "path": "miniapp/client/assets/timeline-import-tools-BixuKHgF.js",
+      "sha": "02dece047692aa7b3857aabac124c093c536018e",
+      "size": 31276
+    },
+    {
+      "path": "miniapp/client/assets/timeline-item-projection-CDTL_A-X.js",
+      "sha": "667503787b0f21f1baecd10156c9927bdc2f23e0",
+      "size": 1001
+    },
+    {
+      "path": "miniapp/client/assets/timeline-target-CLJpQ-r6.js",
+      "sha": "a496fc77a85a522d66acddd5b8ef7acd54bc77ef",
+      "size": 292
+    },
+    {
+      "path": "miniapp/client/assets/timeline-tools-C8Su3EUS.js",
+      "sha": "861b51ac9f4860176eddd8bc4b6489868d759748",
+      "size": 2460
+    },
+    {
+      "path": "miniapp/client/assets/timeline-tools-CGEsKkIV.js",
+      "sha": "43cb05b2d4e286639fc9c227dc9c105c0d1450ea",
+      "size": 4424
+    },
+    {
+      "path": "miniapp/client/assets/timelineFrameRate-B1MG6Oiq.js",
+      "sha": "269ad7dde948397a58775ef7b96d334731ec6013",
+      "size": 1087
+    },
+    {
+      "path": "miniapp/client/assets/timelineTypes-ByqYDMU3.js",
+      "sha": "d7e91911dc31d079abd2c5e054909a1ce445f9c1",
+      "size": 1646
+    },
+    {
+      "path": "miniapp/client/assets/track-progress-targets-DJ0beeIH.js",
+      "sha": "0006483341e1e18d80b7a3c799f75bb272cd3272",
+      "size": 3378
+    },
+    {
+      "path": "miniapp/client/assets/track-tools-BG0R6iUW.js",
+      "sha": "1bef5ab80ef322e9c72ce010a5a97f23ad4a8853",
+      "size": 1240
+    },
+    {
+      "path": "miniapp/client/assets/track-tools-DJ6R4gb0.js",
+      "sha": "904f41860fb42b05df25c9462c9183a42d872389",
+      "size": 4746
+    },
+    {
+      "path": "miniapp/client/assets/transcribe-jobs-CTZu9n8s.js",
+      "sha": "a3b14c055648b91c240953fca79397ae829bb475",
+      "size": 5909
+    },
+    {
+      "path": "miniapp/client/assets/transcript-find-4VlbtfUR.js",
+      "sha": "4024182f6deac9ad79625ac5f82be82f7ba0d2ca",
+      "size": 4958
+    },
+    {
+      "path": "miniapp/client/assets/transcript-tools-BOXsmiNZ.js",
+      "sha": "68fd9ef486b04b883f55a3c937848075bd6a8652",
+      "size": 21503
+    },
+    {
+      "path": "miniapp/client/assets/transcription-progress-Df9mGure.js",
+      "sha": "35ffdd5818198891d83663b3a8824602212273bd",
+      "size": 1820
+    },
+    {
+      "path": "miniapp/client/assets/transitionTypes-Ddocyu6d.js",
+      "sha": "cda269f004ea185f67912d16c942327b20d18fc2",
+      "size": 1303
+    },
+    {
+      "path": "miniapp/client/assets/translate-CB7IYYqy.js",
+      "sha": "7059bf213feba416bc9ba52063a4a01bf1d2d58f",
+      "size": 1647
+    },
+    {
+      "path": "miniapp/client/assets/types-5kb8gT_Q.js",
+      "sha": "90c548f7a845646db60e2a710c0b00a1999eb3d6",
+      "size": 3538
+    },
+    {
+      "path": "miniapp/client/assets/undo-tools-BPXMorLB.js",
+      "sha": "1914680fb92467cc4216554ad04c05c601ca48bf",
+      "size": 1131
+    },
+    {
+      "path": "miniapp/client/assets/undo-tools-DeDEZC8U.js",
+      "sha": "3f7fea6f778f6cda795000c6bf6ffec82ca67895",
+      "size": 893
+    },
+    {
+      "path": "miniapp/client/assets/upload-tools-B3vQ-tYX.js",
+      "sha": "58343bb6a428cbe44b2b11d98fb1cc0d1b17941b",
+      "size": 3055
+    },
+    {
+      "path": "miniapp/client/assets/upload-tools-DtrA6MkC.js",
+      "sha": "39ad70b820b0b5b074f18bb8cec6bfc2cea91334",
+      "size": 21989
+    },
+    {
+      "path": "miniapp/client/assets/uploadTransport-YxgLWvDR.js",
+      "sha": "b7811ccb0733f76d1a233567d1cd2d23b9a2c865",
+      "size": 5743
+    },
+    {
+      "path": "miniapp/client/assets/vad-CLcauHuz.js",
+      "sha": "7157834679e49cc56767faaf1766e77e8ea22143",
+      "size": 2182
+    },
+    {
+      "path": "miniapp/client/assets/vector-inference-contract-BkvMrLnH.js",
+      "sha": "c12a09b481c4b0e5daa24f1cff035fd2375dc2d5",
+      "size": 1003
+    },
+    {
+      "path": "miniapp/client/assets/vectorStore-D30xhjyY.js",
+      "sha": "870f963eed33e404e442840f62b39e4c2b15c9b0",
+      "size": 1918
+    },
+    {
+      "path": "miniapp/client/assets/version-tools-BEbcfjhw.js",
+      "sha": "0bc25f649579dca819232df3e71b5d3be6129259",
+      "size": 2021
+    },
+    {
+      "path": "miniapp/client/assets/version-tools-CoRIfQnB.js",
+      "sha": "b759dacd199c34a59e5d904431c44847058f6e21",
+      "size": 1012
+    },
+    {
+      "path": "miniapp/client/assets/versionStore-CKXeVn0c.js",
+      "sha": "c649a938266c4b12f444ba07c9fc1a07a7e0932f",
+      "size": 1691
+    },
+    {
+      "path": "miniapp/client/assets/vision_bundle-BqUAdda_.js",
+      "sha": "ad8bdc431a7afdce106581df6520651307a61035",
+      "size": 153234
+    },
+    {
+      "path": "miniapp/client/assets/visual-analysis-jobs-CNM23bKU.js",
+      "sha": "158b6ccc821b9a7fdbb3548e83cd4886825d243a",
+      "size": 3555
+    },
+    {
+      "path": "miniapp/client/assets/visual-geometry-7rs1QfJx.js",
+      "sha": "15926933438921d0150a89082dc9903bf0ba9b6d",
+      "size": 11611
+    },
+    {
+      "path": "miniapp/client/assets/watermark-tools-DU-jpkKg.js",
+      "sha": "31330a689332201f1f205e661b537669c770e401",
+      "size": 873
+    },
+    {
+      "path": "miniapp/client/assets/watermark-tools-_zGRBd19.js",
+      "sha": "2178006f71c6d6c961782a3d4b40d90544d04c26",
+      "size": 797
+    },
+    {
+      "path": "miniapp/client/assets/web-tools-CF7hCyEL.js",
+      "sha": "e4df378849e5e4bb8a670f1412fe3524880a39af",
+      "size": 5750
+    },
+    {
+      "path": "miniapp/client/assets/web-tools-DHzxNCFt.js",
+      "sha": "aafddfe74c083f832424fcaac68c40a121735112",
+      "size": 5033
+    },
+    {
+      "path": "miniapp/client/assets/zh-D8hHwhoF.js",
+      "sha": "a9f63918c52f0e972821aa2a0cf59923af4cf969",
+      "size": 15257
+    },
+    {
+      "path": "miniapp/client/assets/zoom-EtwaISdW.js",
+      "sha": "fd85f2f15cca076c062f38895fab3ca2cd2c44de",
+      "size": 2938
+    },
+    {
+      "path": "miniapp/client/branding/jianying-export-dialog.png",
+      "sha": "2ce2f025c0201c83239674314919302841d1ca36",
+      "size": 240267
+    },
+    {
+      "path": "miniapp/client/branding/mcp-guide-dialog.png",
+      "sha": "27b11eadf229cfb1b0f7606819b0c6c7b0fa399d",
+      "size": 248319
+    },
+    {
+      "path": "miniapp/client/branding/mcp-guide-left-corner.png",
+      "sha": "d787a4e3e33a1541b93f6d32b5a1d32006d79676",
+      "size": 192489
+    },
+    {
+      "path": "miniapp/client/branding/openchatcut-icon.icns",
+      "sha": "d7aa0ee9680affb13ac0da6941c96bb6371fb983",
+      "size": 1139489
+    },
+    {
+      "path": "miniapp/client/favicon.svg",
+      "sha": "56dff3fc9a6f736735e7896c8b20480645ecaa24",
+      "size": 309
+    },
+    {
+      "path": "miniapp/client/fonts/LICENSES.md",
+      "sha": "a306e8716ccd37564c65b26734af8fc56f9120c7",
+      "size": 1539
+    },
+    {
+      "path": "miniapp/client/fonts/OFL-1.1.txt",
+      "sha": "de1d8c9b940eea89a7f82e9b0b1e050624e209b7",
+      "size": 4008
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/Noto-Sans-SC-License.txt",
+      "sha": "046fc66490024a7a8b928e2485f12349e522c936",
+      "size": 4314
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/SHA256SUMS",
+      "sha": "09e6ee7895c89e45c8388c1aadfbfffd8603fb51",
+      "size": 10921
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-100-wght-normal.woff2",
+      "sha": "d4ce8e911c841e9f82ef0b5deb4709d7d9f68cb2",
+      "size": 64548
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-101-wght-normal.woff2",
+      "sha": "9c4ffaa1028464edae4095ee7ccc0db595996b9e",
+      "size": 58204
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-102-wght-normal.woff2",
+      "sha": "352b0a299cb172431b08768cf244f6ae6882093e",
+      "size": 60708
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-103-wght-normal.woff2",
+      "sha": "03f233f9502020b411758f5c7c0c57d414304e71",
+      "size": 63864
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-104-wght-normal.woff2",
+      "sha": "3958f85eec3f221cda31d0c1bd8bcdb52d51e489",
+      "size": 61588
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-105-wght-normal.woff2",
+      "sha": "813657e000961b1df7ce118e037768bccf772665",
+      "size": 61828
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-106-wght-normal.woff2",
+      "sha": "3c96cd2d51e9e88c37efb419e34a1cd1c9fa923b",
+      "size": 62636
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-107-wght-normal.woff2",
+      "sha": "79655a393f20d93457b466b742c68134b667c2f0",
+      "size": 61076
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-108-wght-normal.woff2",
+      "sha": "8f0f43881054860024930c99b2ae7d6a38c6874f",
+      "size": 64552
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-109-wght-normal.woff2",
+      "sha": "f1269860e95ca503c9db81da61c1525539d3978c",
+      "size": 60372
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-110-wght-normal.woff2",
+      "sha": "832f5b4dab01f561a11a91f0405bf207a6f5c406",
+      "size": 61472
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-111-wght-normal.woff2",
+      "sha": "0fea47c43340cb4b2b5abb64aff6a19b5492d449",
+      "size": 62664
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-112-wght-normal.woff2",
+      "sha": "d9fc8cb874ce062589d8426b52f3cf807ca83905",
+      "size": 57648
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-113-wght-normal.woff2",
+      "sha": "e4b3cf588644c8f1212da7fe9bf923db20bd3b55",
+      "size": 58648
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-114-wght-normal.woff2",
+      "sha": "35f469fb2ed2f489582d84aa337f1aab752651b6",
+      "size": 57964
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-115-wght-normal.woff2",
+      "sha": "a31f56b9eefed0be4234026672dbb325280d8225",
+      "size": 56508
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-116-wght-normal.woff2",
+      "sha": "3446114a87dcab786c66fc012e692ef5e7256265",
+      "size": 52984
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-117-wght-normal.woff2",
+      "sha": "b4f4e4ed827880ff9e828cea7e23d621dcb77a56",
+      "size": 52464
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-118-wght-normal.woff2",
+      "sha": "addf0ae5f333aecc8d3474f5a08ca13971967b30",
+      "size": 46192
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-119-wght-normal.woff2",
+      "sha": "1a7c02cca8f9fe0092645c5bbb252f5e1799c89e",
+      "size": 76800
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-21-wght-normal.woff2",
+      "sha": "a7801008766a56f2d53b3a0cb41ff6ca1152bb80",
+      "size": 11356
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-22-wght-normal.woff2",
+      "sha": "5cf3105302707842b244629c0faff1590cc50f17",
+      "size": 65384
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-23-wght-normal.woff2",
+      "sha": "90595ac0f6b23465ce1977a6cb0defe56f0fb9cd",
+      "size": 56792
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-24-wght-normal.woff2",
+      "sha": "353d74b014422259cb4acdfeb8d4ab1bbf77306d",
+      "size": 62580
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-25-wght-normal.woff2",
+      "sha": "c33bbceef39f55176940fac30179ad168a167a7b",
+      "size": 58320
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-26-wght-normal.woff2",
+      "sha": "1c19f2a49f5f9468b135482beaa2d8731522c554",
+      "size": 50888
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-27-wght-normal.woff2",
+      "sha": "aa5297a3df8968c18acd3feda8df6b2e9d3cd2cc",
+      "size": 47488
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-28-wght-normal.woff2",
+      "sha": "82aaacc01954b24772b8f4d5bfee5a8495e9b1d4",
+      "size": 50200
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-29-wght-normal.woff2",
+      "sha": "fd66a754e19e2c761a6d44d708a29d62e2cdab90",
+      "size": 54008
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-30-wght-normal.woff2",
+      "sha": "8c295bdcae189376d72c203290bd330f17d47e75",
+      "size": 54656
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-31-wght-normal.woff2",
+      "sha": "dfdd147d3f9e558b171ab75db534d3f5fec095fc",
+      "size": 47220
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-32-wght-normal.woff2",
+      "sha": "d3e8a9a89745eb46fcc7c82410f76d5b7c09de8b",
+      "size": 52548
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-33-wght-normal.woff2",
+      "sha": "6d72ef906b57f5e9ca200cfa841597d2c6aa19c2",
+      "size": 47452
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-34-wght-normal.woff2",
+      "sha": "882b38062a28ae599e9028b38797b548122dd216",
+      "size": 46888
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-35-wght-normal.woff2",
+      "sha": "f8d78e4e61c92b1e978b2bfda8d1d33c4609d62b",
+      "size": 50688
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-36-wght-normal.woff2",
+      "sha": "f0f609a49a770649098ba8c3daadb1487fdad851",
+      "size": 41832
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-37-wght-normal.woff2",
+      "sha": "28c17fefd0bcf4d8e20f59457749e80f84516599",
+      "size": 53528
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-38-wght-normal.woff2",
+      "sha": "6c54ed574f3d3e8f1d27211f8b6338bd8b2d4e36",
+      "size": 54592
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-39-wght-normal.woff2",
+      "sha": "e6bea8a103a81a288cc33d41b85cbcfc451c1719",
+      "size": 51784
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-4-wght-normal.woff2",
+      "sha": "a137c3652808a1fd2410f2cf25b304bdad1907f8",
+      "size": 3796
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-40-wght-normal.woff2",
+      "sha": "6b3407679628406a392d7bad6f57c3b5b8e58cd7",
+      "size": 46628
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-41-wght-normal.woff2",
+      "sha": "cb6e85089d3671ead5943dab1e3a1bd9dac61ed5",
+      "size": 36416
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-42-wght-normal.woff2",
+      "sha": "0f926e472a84210e8cc50ea3562811f93d55f940",
+      "size": 45540
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-43-wght-normal.woff2",
+      "sha": "797f8f3616976129edd5b42867a198a6f010953e",
+      "size": 46624
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-44-wght-normal.woff2",
+      "sha": "00be4ffc78498006e3858320f680020fa4a6603e",
+      "size": 54244
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-45-wght-normal.woff2",
+      "sha": "7493892cbe66f63a1a05d3e981a6ba0c1663a51c",
+      "size": 67620
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-46-wght-normal.woff2",
+      "sha": "6bee2f076c66002015b2531100ef50bd3b69d8ae",
+      "size": 57668
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-47-wght-normal.woff2",
+      "sha": "32ede843d4506869e27687251e215c9155fea1d0",
+      "size": 56156
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-48-wght-normal.woff2",
+      "sha": "5a9b074c1a55171e5a455a8d6668cc94e2006acd",
+      "size": 50764
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-49-wght-normal.woff2",
+      "sha": "357e10ff6f33f722dea21968668ebc62eebfd9bc",
+      "size": 52844
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-5-wght-normal.woff2",
+      "sha": "b96b1b617a84af4b8b193ae45822aa8395b888d1",
+      "size": 20176
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-50-wght-normal.woff2",
+      "sha": "0b0d773f9c6fe0f8c89e665d8a63649ed3098e89",
+      "size": 45876
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-51-wght-normal.woff2",
+      "sha": "2df33952fbc4173f83205117d28fccd26a2a56b0",
+      "size": 41616
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-52-wght-normal.woff2",
+      "sha": "164020bda6ed7bd0078f0e65e647a4e1ded20b13",
+      "size": 51840
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-53-wght-normal.woff2",
+      "sha": "a3b8e70e20ba87896c09af181165910c3008b0b6",
+      "size": 43528
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-54-wght-normal.woff2",
+      "sha": "ffd5b19969d7a3b9a39b88540e573c817b4b3047",
+      "size": 52000
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-55-wght-normal.woff2",
+      "sha": "78e18053fd8b833f65b10bf0737e34827bd701c1",
+      "size": 48132
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-56-wght-normal.woff2",
+      "sha": "22a0a667ef91e32a9051eafed32a1c7efab27072",
+      "size": 53500
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-57-wght-normal.woff2",
+      "sha": "c04387c60c57a224c3bab96fb5a0402f704b38da",
+      "size": 55496
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-58-wght-normal.woff2",
+      "sha": "28029704f75a9c6ff848bfb2816847557d4187cf",
+      "size": 57648
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-59-wght-normal.woff2",
+      "sha": "0220ad77da7aebd9bbd4f708fa498a5e36d8060a",
+      "size": 47676
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-6-wght-normal.woff2",
+      "sha": "5b261f8d838aae2082b26a4214e3ea5233ed5a33",
+      "size": 11464
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-60-wght-normal.woff2",
+      "sha": "a3dec4a5d3e8a0e537e584401702fdf109c24075",
+      "size": 41432
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-61-wght-normal.woff2",
+      "sha": "7c6b2876e3063681e1a31c594b5f36e080e03162",
+      "size": 45276
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-62-wght-normal.woff2",
+      "sha": "9171d569518d103b09ce142d25c6f295cbb15426",
+      "size": 59112
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-63-wght-normal.woff2",
+      "sha": "54dbcba8c4fff53d36b02117c921702103c2245c",
+      "size": 49180
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-64-wght-normal.woff2",
+      "sha": "4dd37219c7c3fff44fcd7c452399c34c61a2c7a6",
+      "size": 41540
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-65-wght-normal.woff2",
+      "sha": "21c31a61cc88de845cfe9b0a81ac313c4f49e07b",
+      "size": 41608
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-66-wght-normal.woff2",
+      "sha": "0d9c98555b89f0c351e6e8abb37be6bb4373f2e5",
+      "size": 52868
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-67-wght-normal.woff2",
+      "sha": "63d116773785076f7bf6435d0c9ddb5a11f971b5",
+      "size": 52584
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-68-wght-normal.woff2",
+      "sha": "68779216fefeaa4c49ed3965ddeb0f56b8ea49cb",
+      "size": 41568
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-69-wght-normal.woff2",
+      "sha": "7cc854e9f9ed8e0ffaa0b83718c6ee2f339f8d39",
+      "size": 55604
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-70-wght-normal.woff2",
+      "sha": "5401749fe11bd63bb4e91128f86ce084e23af484",
+      "size": 42236
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-71-wght-normal.woff2",
+      "sha": "22cedcba704b99234e3b747173ecfd989be10037",
+      "size": 47904
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-72-wght-normal.woff2",
+      "sha": "07f1c20c1233586c8b0164c699c98ede47e3aa17",
+      "size": 47032
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-73-wght-normal.woff2",
+      "sha": "480bc9d763b923b45fafc9ef0de34c6eef7b87ad",
+      "size": 39312
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-74-wght-normal.woff2",
+      "sha": "fdb7fd746cf652d366b64c0789bf068288375e1e",
+      "size": 56424
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-75-wght-normal.woff2",
+      "sha": "1c17be3e596f726e06b77f07655a23a4bed047d3",
+      "size": 43940
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-76-wght-normal.woff2",
+      "sha": "d83346f38bca47d7f84dc98b45c58de3ed7194ca",
+      "size": 48420
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-77-wght-normal.woff2",
+      "sha": "8664883e734ad04a0397f54f3a72c90f76a9b06a",
+      "size": 36788
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-78-wght-normal.woff2",
+      "sha": "ae10c2a35a3fb84e6edc8475e6a8b3a9e4530920",
+      "size": 49156
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-79-wght-normal.woff2",
+      "sha": "55b7c664b7923b71e295c75a385a28de0f6545b6",
+      "size": 41232
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-80-wght-normal.woff2",
+      "sha": "998013a3e36eb4344e904333b72adbcd8ba786b2",
+      "size": 32632
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-81-wght-normal.woff2",
+      "sha": "09587fcd40d36e3efd70fa9d05e9b37fadabb60e",
+      "size": 47548
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-82-wght-normal.woff2",
+      "sha": "4f8cd7a7b6047c0ed592c6f6ebb1b01603662c88",
+      "size": 46176
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-83-wght-normal.woff2",
+      "sha": "24b03c8be5d22060454d684faa2538c541666578",
+      "size": 43504
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-84-wght-normal.woff2",
+      "sha": "3cff8e8eb6c442d01a84f47289812e5903a51456",
+      "size": 32612
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-85-wght-normal.woff2",
+      "sha": "9dd172db14e9aaa4a77e42c925d1dd50959ef60f",
+      "size": 26900
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-86-wght-normal.woff2",
+      "sha": "4519e44754f5e3e0ac5254f6da6a30e714d65075",
+      "size": 33576
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-87-wght-normal.woff2",
+      "sha": "76182302667bee0467be2569d84fb8bb403fa985",
+      "size": 8012
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-88-wght-normal.woff2",
+      "sha": "072261021f7b56362964ad8b80365e507e082af3",
+      "size": 7336
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-89-wght-normal.woff2",
+      "sha": "6301c24aea7ed3b4e5e4856efb9ffe53beea5526",
+      "size": 10984
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-90-wght-normal.woff2",
+      "sha": "5de2501d4dcd986a96ebf73a313eccb0854d221d",
+      "size": 9344
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-91-wght-normal.woff2",
+      "sha": "b0bd6b68aae6e41709033280ea9c5723df611284",
+      "size": 8704
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-97-wght-normal.woff2",
+      "sha": "751c6e17e337d348ef1f6ede8b00dfa8d7be14ee",
+      "size": 2080
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-98-wght-normal.woff2",
+      "sha": "728a7ad802504b994c176f0a9ed688531b0d653a",
+      "size": 3416
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-99-wght-normal.woff2",
+      "sha": "e8c72bd7445f27bd3dafd47aa249700d05c4edf7",
+      "size": 9704
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-cyrillic-wght-normal.woff2",
+      "sha": "95581b5837b8c83711fbc1b4faa6734af6550e94",
+      "size": 10008
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-latin-ext-wght-normal.woff2",
+      "sha": "8069eca0e502cb3709254b4c9cd4b1e8c3b1b2e3",
+      "size": 8244
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-latin-wght-normal.woff2",
+      "sha": "275058dda4ce0ed0c7ae5b00605db691d882b98a",
+      "size": 25240
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/files/noto-sans-sc-vietnamese-wght-normal.woff2",
+      "sha": "2a42d1ba02d3878b4ef3b506e244e70e41564ba2",
+      "size": 9096
+    },
+    {
+      "path": "miniapp/client/fonts/noto-sans-sc/noto-sans-sc.css",
+      "sha": "9172edf588b5ace1e91acfebedd1f9c0ae17a631",
+      "size": 100789
+    },
+    {
+      "path": "miniapp/client/icons.svg",
+      "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9",
+      "size": 5031
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "f13953b4e21d648b6443e4013edd1f3359369036",
+      "size": 4739
+    },
+    {
+      "path": "miniapp/client/library-previews/audio-crossfade.jpg",
+      "sha": "a6162865d644cc2b3a3f88ad1a745eb618dfddfb",
+      "size": 19307
+    },
+    {
+      "path": "miniapp/client/library-previews/isolate-voice-light.jpg",
+      "sha": "21f6fc44aa19719226e92592a28e1a1ff332ebf2",
+      "size": 17911
+    },
+    {
+      "path": "miniapp/client/library-previews/isolate-voice-strong.jpg",
+      "sha": "e14726a1f4305e26d288beb4482a7b0c1190c03e",
+      "size": 73880
+    },
+    {
+      "path": "miniapp/client/library-previews/isolate-voice.jpg",
+      "sha": "14b175d3db12cfdbb8755d4adfc15c55c3ce0d1b",
+      "size": 25834
+    },
+    {
+      "path": "miniapp/client/library-previews/sample-fx.jpg",
+      "sha": "9688e7c3516c21e08a005c47c6b1b7d6e7ca21f2",
+      "size": 79751
+    },
+    {
+      "path": "miniapp/client/library-previews/sample-in.jpg",
+      "sha": "68ea3cb53d3357596bb61677fe6b931044d44a41",
+      "size": 57891
+    },
+    {
+      "path": "miniapp/client/library-previews/sample-out.jpg",
+      "sha": "36bc30f3e2186ecd58ff05bf19f830dc5162d0c5",
+      "size": 89693
+    },
+    {
+      "path": "miniapp/client/luts/CinemaGamut_CanonLog3-to-Canon709_33_Ver.1.0.cube",
+      "sha": "3d3c308d0d77ec2d314664300b8f0135ea60489b",
+      "size": 1186159
+    },
+    {
+      "path": "miniapp/client/luts/Sony_Slog3_s709.cube",
+      "sha": "e76a1db7e0aac5da656b4b44d447298228db8244",
+      "size": 970360
+    },
+    {
+      "path": "miniapp/client/media/speech-sample.mp3",
+      "sha": "2cb274275c6b0f9c0e64d23898c7b42c0b8bc5a0",
+      "size": 540779
+    },
+    {
+      "path": "miniapp/client/minimax-wordmark.svg",
+      "sha": "f1715184a2b3a3f086699821e90da95d2f788477",
+      "size": 4335
+    },
+    {
+      "path": "miniapp/client/model-capabilities/models-dev.json",
+      "sha": "a724263362bca92d76185b50e6c763fb94d74ba7",
+      "size": 256387
+    },
+    {
+      "path": "miniapp/client/openchatcut-icon.png",
+      "sha": "dfef9a41d00941a2340fa4f400a896bb1616b633",
+      "size": 191822
+    },
+    {
+      "path": "miniapp/client/setup.html",
+      "sha": "4089415ef351513985305a600971379318f761e6",
+      "size": 1301
+    },
+    {
+      "path": "miniapp/client/thumbnails/0273f371-8c99-4d7f-b51e-096edd9d2188.jpg",
+      "sha": "737caaeb8f56883d7c6b8c749e56fde4ec927ce4",
+      "size": 9818
+    },
+    {
+      "path": "miniapp/client/thumbnails/0280ff3f-b1af-498b-9069-b849929f8df9.jpg",
+      "sha": "304722830fb75ef14b94d4439914675a3474b8f9",
+      "size": 17760
+    },
+    {
+      "path": "miniapp/client/thumbnails/033ce93d-219c-4100-9b53-83adf2e19d39.jpg",
+      "sha": "2491b527ab5078afd1f4337efd1aa1377b9541e5",
+      "size": 11355
+    },
+    {
+      "path": "miniapp/client/thumbnails/0371e3ac-0449-4e8d-a5df-c758ccdbba44.jpg",
+      "sha": "2a1102f6ebbbb753751efb60a984f59219c851cc",
+      "size": 8572
+    },
+    {
+      "path": "miniapp/client/thumbnails/03decebd-7066-4257-b21c-250151c5c8d2.jpg",
+      "sha": "c7d6d6426625f2be97b60cdb28e29cf8241070dc",
+      "size": 21823
+    },
+    {
+      "path": "miniapp/client/thumbnails/05ae4e10-0bf7-4611-bd7e-135b9e2c8ee9.jpg",
+      "sha": "4efb6c8988afa1fcfdc82633ffc94755d1c9a9f2",
+      "size": 21968
+    },
+    {
+      "path": "miniapp/client/thumbnails/081855a7-161d-47fe-af5a-cd450e1cd8b5.jpg",
+      "sha": "4d89a58433250798d054db5c4da95e28cb694c6f",
+      "size": 13237
+    },
+    {
+      "path": "miniapp/client/thumbnails/08aeec62-dffe-4973-b1da-b9bddd492d63.jpg",
+      "sha": "bdf0c7dec13195b26ed28693893cf4637be3092d",
+      "size": 18361
+    },
+    {
+      "path": "miniapp/client/thumbnails/0d0b9a79-bcc9-4c55-82f3-5a12a2a2a6ce.jpg",
+      "sha": "af755a17f69f91bce9f343983fe1f553e0910d03",
+      "size": 6154
+    },
+    {
+      "path": "miniapp/client/thumbnails/0d6f793e-8501-479e-bd78-f75dc32fb0aa.jpg",
+      "sha": "e671b1fc02c74ad5b6b08e1ef6d7a2efc32ccd9d",
+      "size": 18874
+    },
+    {
+      "path": "miniapp/client/thumbnails/0f42b597-2b83-4e6c-9a7b-19f9b0b0ef98.jpg",
+      "sha": "53c8d0f6d773ba66294ba36ecef36a73431a35ec",
+      "size": 10629
+    },
+    {
+      "path": "miniapp/client/thumbnails/10d5638b-dc0f-4362-8cf8-f6bb14340331.jpg",
+      "sha": "909f3ff5f282a52fa70b990808a891e26148ca72",
+      "size": 18125
+    },
+    {
+      "path": "miniapp/client/thumbnails/14209866-efb6-4b54-bead-d8927d9bdf75.jpg",
+      "sha": "045f23c54430c0da095fd928c154502eed4c8227",
+      "size": 24079
+    },
+    {
+      "path": "miniapp/client/thumbnails/145263b5-d513-4612-80fd-db56effa77f8.jpg",
+      "sha": "a80190ad49b0a714910c0361a9dc0213a5746e3c",
+      "size": 10059
+    },
+    {
+      "path": "miniapp/client/thumbnails/17a91a44-4a0d-42c3-a0fa-f9a7d0613fe5.jpg",
+      "sha": "2cbcdbd450b3305d13a985dba5364e0ed288fe24",
+      "size": 28259
+    },
+    {
+      "path": "miniapp/client/thumbnails/19f4b9ff-8768-4c87-8e94-a5e5a9569cd7.jpg",
+      "sha": "100e62fe79901a14446f1cc2cf27dc10c2c3b19d",
+      "size": 14201
+    },
+    {
+      "path": "miniapp/client/thumbnails/1a4cd0c3-ba36-4457-8428-49e57c61292f.jpg",
+      "sha": "50af21d9599d1c809bd75a9882a3d21884a18d11",
+      "size": 14935
+    },
+    {
+      "path": "miniapp/client/thumbnails/1afea496-4002-4a6e-9a22-2e8da948f086.jpg",
+      "sha": "fcec16a8360241271fa5733e876031dd3d2392c0",
+      "size": 9003
+    },
+    {
+      "path": "miniapp/client/thumbnails/1b06459e-b43f-4a46-9e0f-dd3f67202373.jpg",
+      "sha": "79e2bce6567cb4fbd9fba924a2b8bb8595504cad",
+      "size": 16937
+    },
+    {
+      "path": "miniapp/client/thumbnails/1b401c0b-0bd3-47e0-a64f-93f470e2fb6c.jpg",
+      "sha": "18f52a71431205f6fb74e0068583ce985c8eb055",
+      "size": 9166
+    },
+    {
+      "path": "miniapp/client/thumbnails/1bdbddfd-60bc-4fb3-ab57-c8a6427777ae.jpg",
+      "sha": "32f2c927e643ef59aaa32573863c0dad80a76e4c",
+      "size": 19091
+    },
+    {
+      "path": "miniapp/client/thumbnails/1c49b2f1-3dce-4953-afd1-674ae0a285e8.jpg",
+      "sha": "7d23d99779ed84777849ffd7df4fbb686aee7c27",
+      "size": 11374
+    },
+    {
+      "path": "miniapp/client/thumbnails/1d52fd05-95dc-4cee-b7ea-4ffff59b6f2d.jpg",
+      "sha": "cd953ba0709445cec1eb93cb0dc88474e3aa62f2",
+      "size": 4535
+    },
+    {
+      "path": "miniapp/client/thumbnails/1ed40a68-6303-427a-94f9-5197a0af7869.jpg",
+      "sha": "9594e30ce0cc93134d122b9f2d080926fe809a25",
+      "size": 20720
+    },
+    {
+      "path": "miniapp/client/thumbnails/200c97a4-3958-4074-ba27-1080eb91a5ce.jpg",
+      "sha": "d69d664c84daa75aad077e797ea6578da287b139",
+      "size": 16762
+    },
+    {
+      "path": "miniapp/client/thumbnails/2063446e-f68f-4284-ae99-aefd13bd4824.jpg",
+      "sha": "d6af08c060b1d20fbe78c142f29378dcf45c4e0e",
+      "size": 9652
+    },
+    {
+      "path": "miniapp/client/thumbnails/207da43b-d3e8-4f05-81b9-25fbe97c50f4.jpg",
+      "sha": "ed823074242147d6d55f5e4ea48ee577b3a4ae0b",
+      "size": 12509
+    },
+    {
+      "path": "miniapp/client/thumbnails/23f4a551-32fa-4cf7-ae35-abaa9c3d093c.jpg",
+      "sha": "b135369c50a99c940aee71fc4ad719e444c96622",
+      "size": 17715
+    },
+    {
+      "path": "miniapp/client/thumbnails/243aa8dd-9cd9-41ac-8972-05d2e505f036.jpg",
+      "sha": "d65c23cde8ee8e35fa1c297e7c51943291d024ca",
+      "size": 8204
+    },
+    {
+      "path": "miniapp/client/thumbnails/264faf42-2010-4812-94c6-b3c389204815.jpg",
+      "sha": "4aec317d82284cd4111822c89421a6d7bd65e40c",
+      "size": 10144
+    },
+    {
+      "path": "miniapp/client/thumbnails/26c175c6-f05d-4370-913a-c63b15b05314.jpg",
+      "sha": "f7637a959e30d9e409a9023e620efafd6544d477",
+      "size": 13222
+    },
+    {
+      "path": "miniapp/client/thumbnails/2995a5a5-7240-4c9a-8528-c167b8dce239.jpg",
+      "sha": "e86638b5376c8d493e9bb637a11845e29f6ceb83",
+      "size": 26591
+    },
+    {
+      "path": "miniapp/client/thumbnails/29c9bddc-0e29-4665-bc2a-bf966aeaac6b.jpg",
+      "sha": "cc91165c4182d676a83dc1870222e3ba39529821",
+      "size": 7848
+    },
+    {
+      "path": "miniapp/client/thumbnails/2b8c54b0-3429-481b-8dcd-dbbe3acd8f03.jpg",
+      "sha": "5df0d5d9367a0db0bfc20b4991487898b2d3445d",
+      "size": 19877
+    },
+    {
+      "path": "miniapp/client/thumbnails/2c38ab81-0d44-485f-9981-a3e36ef785b6.jpg",
+      "sha": "86950d564905268522fb6aad35515edd7377138f",
+      "size": 12359
+    },
+    {
+      "path": "miniapp/client/thumbnails/2e4c55aa-3c66-49b9-9b24-bd85d03e58a4.jpg",
+      "sha": "a32ec00bc444a640bb4bc4dc5d9099efa45640e4",
+      "size": 9814
+    },
+    {
+      "path": "miniapp/client/thumbnails/30ff329c-f4cc-49cf-afae-8c98299039f5.jpg",
+      "sha": "226a3154cab2c8c6f247a04b91dcee9062a0b520",
+      "size": 17400
+    },
+    {
+      "path": "miniapp/client/thumbnails/323a20f6-e2d2-4efb-8053-ec3e315fc6ec.jpg",
+      "sha": "d632b76db0b229220bf67744714163ace6b015a8",
+      "size": 13895
+    },
+    {
+      "path": "miniapp/client/thumbnails/32da30ba-83e3-43df-94f6-0f62e996a815.jpg",
+      "sha": "0ca8b4e6fc12e63f39cfa3e72250b9153cc809b3",
+      "size": 5812
+    },
+    {
+      "path": "miniapp/client/thumbnails/33e13fa9-76d1-4483-94dc-e3f1217c0f1f.jpg",
+      "sha": "d8e87988cb8cf8cd16407807ef535fa395fb6f75",
+      "size": 13357
+    },
+    {
+      "path": "miniapp/client/thumbnails/34151422-9674-4a31-a2a7-ade3932e0aef.jpg",
+      "sha": "cdfecc9b8d9d2f27e1e61d41e9da335436a57a75",
+      "size": 18644
+    },
+    {
+      "path": "miniapp/client/thumbnails/347681ff-bc76-452c-814b-4e82d4e5d255.jpg",
+      "sha": "aff9a108fe2e9cb3d44fc325e3750e6e9a1ef842",
+      "size": 8173
+    },
+    {
+      "path": "miniapp/client/thumbnails/3515f6e1-019d-408d-9396-59cdea42abb1.jpg",
+      "sha": "52cb98d6e8ef982754e34bdfc61786544e652a79",
+      "size": 9119
+    },
+    {
+      "path": "miniapp/client/thumbnails/3554d937-05c5-4ffb-835d-aa8db1a48ace.jpg",
+      "sha": "67806a19913508b32264b45eb735354fc1d070c6",
+      "size": 10215
+    },
+    {
+      "path": "miniapp/client/thumbnails/364c0562-4e3a-4ca6-8f1a-7be3f582d73c.jpg",
+      "sha": "ed0738fc8509835a5627b5618933e07624935552",
+      "size": 16465
+    },
+    {
+      "path": "miniapp/client/thumbnails/366dffd3-b6f4-4e47-a05c-37921e5b2852.jpg",
+      "sha": "6e7e128195d9b412bd8ea2f8f38f3c232d0a5399",
+      "size": 14992
+    },
+    {
+      "path": "miniapp/client/thumbnails/388494bf-f1c7-4031-add5-0bb27c2f0b4a.jpg",
+      "sha": "a570eb7582db44500c0caba79110f86a42e9e362",
+      "size": 20493
+    },
+    {
+      "path": "miniapp/client/thumbnails/38bd86e5-2f30-46f7-ade8-1a9711220f0d.jpg",
+      "sha": "e0472e6bb3e26caee7c1e1590c79b9af8e623aba",
+      "size": 16778
+    },
+    {
+      "path": "miniapp/client/thumbnails/3cc81aaa-2429-4be0-acc1-5e39dd946836.jpg",
+      "sha": "449569d462fa9713ac42300810314d011161db01",
+      "size": 4285
+    },
+    {
+      "path": "miniapp/client/thumbnails/3ce620cb-4199-45cc-984a-6cefe31727c2.jpg",
+      "sha": "cbd75e34e23e0d7b216fc171e51e9e331c3d7371",
+      "size": 14332
+    },
+    {
+      "path": "miniapp/client/thumbnails/3dde3474-65a5-4e46-b8f4-9717bc3fbf21.jpg",
+      "sha": "2f40410632c412cd0567275fb9201f174a663026",
+      "size": 19281
+    },
+    {
+      "path": "miniapp/client/thumbnails/3e399f3e-d0f3-4bfd-a4e7-304f32d0dfd9.jpg",
+      "sha": "33e59cb9d4b3751dadf0dcdd42f71780c1a35a15",
+      "size": 13331
+    },
+    {
+      "path": "miniapp/client/thumbnails/3f1510e3-5908-46ac-87f4-1714a57671f0.jpg",
+      "sha": "d5a273b17baca512edd4414ae463de64e8e5985c",
+      "size": 15558
+    },
+    {
+      "path": "miniapp/client/thumbnails/408fe497-5d7c-4301-b0dc-008fa2a0fcf2.jpg",
+      "sha": "0d5c0da7aab3e626e73065e7fc3a6f608a049463",
+      "size": 12838
+    },
+    {
+      "path": "miniapp/client/thumbnails/4103210c-e3ee-4589-8626-307036bc61a3.jpg",
+      "sha": "caeff28e950bc750787676354e1a23b57d24f14c",
+      "size": 12077
+    },
+    {
+      "path": "miniapp/client/thumbnails/4109203d-775b-4a3c-8f35-7f5a53e1a7b6.jpg",
+      "sha": "ed2d3fa210eb7039c602e121850a05801aa17a5e",
+      "size": 26224
+    },
+    {
+      "path": "miniapp/client/thumbnails/435ca688-a7aa-4b5a-ac7b-d6994b2cbe36.jpg",
+      "sha": "b9f4aff11b0013e6a01fdfc454f3af5c8bb53d8e",
+      "size": 27271
+    },
+    {
+      "path": "miniapp/client/thumbnails/442ab610-d550-44e7-901a-aa5d23fef8a9.jpg",
+      "sha": "990ed13243cb25d98b6867b286738841c93c2eaa",
+      "size": 13791
+    },
+    {
+      "path": "miniapp/client/thumbnails/4444d0ce-ac02-4831-ad25-dd90b6aea350.jpg",
+      "sha": "bfbab4a7ed6ff5cf27fbb485ffada487ecf339f9",
+      "size": 6765
+    },
+    {
+      "path": "miniapp/client/thumbnails/452d340f-f4f4-4747-bec6-018cf639d10e.jpg",
+      "sha": "5a1fddfc747b4dd562e509130393f5878424ba15",
+      "size": 12474
+    },
+    {
+      "path": "miniapp/client/thumbnails/476fed54-d5de-4a5d-85ce-b9c12dc15abb.jpg",
+      "sha": "8b43982c510d6e8f97984a1d7696dd961e73dfbf",
+      "size": 17965
+    },
+    {
+      "path": "miniapp/client/thumbnails/4792b7a4-126f-48ac-9a0c-7dfcd9a2891b.jpg",
+      "sha": "4b6958b698a6d861194d88c33559193d01d901d7",
+      "size": 7235
+    },
+    {
+      "path": "miniapp/client/thumbnails/47caa17c-0e24-4447-b549-766163e8efe0.jpg",
+      "sha": "aa1f1c42f1c5491917dc72ccdf39a62812361319",
+      "size": 20037
+    },
+    {
+      "path": "miniapp/client/thumbnails/49756343-72e4-48aa-8a3d-cc66975d3435.jpg",
+      "sha": "1ae1849e24b70df661251c7c28472d5a97cb755f",
+      "size": 22538
+    },
+    {
+      "path": "miniapp/client/thumbnails/49e0b581-862b-42fc-bb6b-a17d0c3d1668.jpg",
+      "sha": "7ad75aab13f9e5f3dd6dd9e8483430298343d2d8",
+      "size": 7230
+    },
+    {
+      "path": "miniapp/client/thumbnails/4a1c2bc0-9798-4ef4-bbf9-0517cc5ca787.jpg",
+      "sha": "a1fbb43f3f88a08260d8469848d2c107ef607e22",
+      "size": 8966
+    },
+    {
+      "path": "miniapp/client/thumbnails/4de08f53-df3a-47ed-bd45-e541386b27fa.jpg",
+      "sha": "dfeb7b9f698133439ed077619031bc9696c9706a",
+      "size": 19554
+    },
+    {
+      "path": "miniapp/client/thumbnails/4dfa6822-7089-4908-a4e5-3e4d5720f2df.jpg",
+      "sha": "c822635b8e3fea4011cc65439a4e1488b1674d17",
+      "size": 38626
+    },
+    {
+      "path": "miniapp/client/thumbnails/5293af51-b9e1-4dab-88b9-d9a49b1dbf3a.jpg",
+      "sha": "04a88c5d940efe4a70415fa654dc044ffdd3a72c",
+      "size": 9673
+    },
+    {
+      "path": "miniapp/client/thumbnails/53dd0f34-fa25-4999-b317-5122f11d258c.jpg",
+      "sha": "deaf151e81b37c365e9f867f648c969d8d1305de",
+      "size": 19665
+    },
+    {
+      "path": "miniapp/client/thumbnails/588b4fb1-6178-4e49-a8f9-42e947c0e4fc.jpg",
+      "sha": "260b7f567a6c80676e4e6a3a7f2280bcf84c97a1",
+      "size": 8213
+    },
+    {
+      "path": "miniapp/client/thumbnails/58b32a8f-8d9e-4521-85d6-277dfb37fd68.jpg",
+      "sha": "246378986c5a1b64c48884eb9b8dc65f420e6872",
+      "size": 16859
+    },
+    {
+      "path": "miniapp/client/thumbnails/5957f338-1913-4571-8f5d-07304f691bec.jpg",
+      "sha": "20b881f4515afe13b60faee62b5587fc51cf18b7",
+      "size": 5736
+    },
+    {
+      "path": "miniapp/client/thumbnails/597bbdd4-06bf-4a2e-a064-76a72e303382.jpg",
+      "sha": "48f3aa6460b6f4dcfe2a4440ab4259e41f54ca81",
+      "size": 12606
+    },
+    {
+      "path": "miniapp/client/thumbnails/5a14be9d-3155-4519-b2c3-0974ee1e7006.jpg",
+      "sha": "d01d262becffde21e0fe058e21a03356ec84053b",
+      "size": 16627
+    },
+    {
+      "path": "miniapp/client/thumbnails/5a3d3074-e947-454c-be17-61763d195186.jpg",
+      "sha": "d189b58810b8999064fefb5c2939790ee846298e",
+      "size": 6520
+    },
+    {
+      "path": "miniapp/client/thumbnails/5e015143-44fa-4cc4-bb04-f692e011a1ee.jpg",
+      "sha": "6c6fd719ec1d49ee3ceb6e1f25c528ba4c7e2863",
+      "size": 10937
+    },
+    {
+      "path": "miniapp/client/thumbnails/5e58a6dd-e2f0-49bd-8377-9dd352bd2aac.jpg",
+      "sha": "413302828f1659f794de306d07093975a695961a",
+      "size": 9787
+    },
+    {
+      "path": "miniapp/client/thumbnails/614fbd3c-90b1-4e2b-b52d-e78876757b4b.jpg",
+      "sha": "11d726b9a76a1e9af6c3dd8ae4eb2bf3c7535da1",
+      "size": 16663
+    },
+    {
+      "path": "miniapp/client/thumbnails/61b838f2-a46c-4118-91e4-1c2d61e5b184.jpg",
+      "sha": "4577291ab1a9a000f57acecfe46b1911cdaecf26",
+      "size": 17589
+    },
+    {
+      "path": "miniapp/client/thumbnails/62cceb8b-a33f-45b0-a5ff-2a2be3fe2107.jpg",
+      "sha": "7899500296608ef00b2a8c8ee6a86075a40e4925",
+      "size": 21068
+    },
+    {
+      "path": "miniapp/client/thumbnails/630caca9-93c5-459c-bae6-6c0bd0338124.jpg",
+      "sha": "56cc52296e8f0850f46fbcb78688e6c2efd1eb7d",
+      "size": 16416
+    },
+    {
+      "path": "miniapp/client/thumbnails/63ea06e3-3c00-4a22-920d-5b7e8df2b21b.jpg",
+      "sha": "9f42f68f1b1ba03129e882acac749d39ea66a534",
+      "size": 18773
+    },
+    {
+      "path": "miniapp/client/thumbnails/6439d0c9-4297-4d3c-9b07-3132668de166.jpg",
+      "sha": "b088745494308a8821a64226d38499ffb1a51eee",
+      "size": 5644
+    },
+    {
+      "path": "miniapp/client/thumbnails/64a9ecbd-cf02-434f-8a36-f2567d061b18.jpg",
+      "sha": "10e542f6baae917586a120b3d5e2612375517f68",
+      "size": 17585
+    },
+    {
+      "path": "miniapp/client/thumbnails/659cd252-7419-45d5-bbf1-3f6253f12811.jpg",
+      "sha": "fc1aa4f0d02baf43cbae9b31f29c4d0688462b3d",
+      "size": 17852
+    },
+    {
+      "path": "miniapp/client/thumbnails/6cb35207-77ab-4538-8b60-9fe32f493460.jpg",
+      "sha": "f2a397e65778a03185721fbc52e0b6b5ec70c2dd",
+      "size": 9499
+    },
+    {
+      "path": "miniapp/client/thumbnails/6cdf1268-c279-4c5d-a540-3f59501fbe0d.jpg",
+      "sha": "42cc9c6686806eabd642c4b4642a98d24305d84d",
+      "size": 10704
+    },
+    {
+      "path": "miniapp/client/thumbnails/6ce4db2a-66d0-4c28-b869-6227800d8fa9.jpg",
+      "sha": "525325022ed4e85fdd0cfd92667aafca0bf52201",
+      "size": 7327
+    },
+    {
+      "path": "miniapp/client/thumbnails/6d14754c-1e8a-4920-85ff-953203b42afe.jpg",
+      "sha": "6b1799eaf6819cd8c4f50eb642e4c8e461f34822",
+      "size": 10936
+    },
+    {
+      "path": "miniapp/client/thumbnails/6d5ae7e6-e458-40ef-8633-383bfc0e8279.jpg",
+      "sha": "05ba6cf07992466a8f1a8e0ba1529264e0109c74",
+      "size": 10353
+    },
+    {
+      "path": "miniapp/client/thumbnails/6d784a29-b0d8-4228-8489-b0f75bf34c0e.jpg",
+      "sha": "a324782386fd52b3966f11eca1734f6f554badd6",
+      "size": 10404
+    },
+    {
+      "path": "miniapp/client/thumbnails/6e2cda87-034d-4a76-8fd5-1f0bea0d6b00.jpg",
+      "sha": "03b5389559566cecfb466f7b53432e923a3ddcb4",
+      "size": 8645
+    },
+    {
+      "path": "miniapp/client/thumbnails/6f06cbe0-4bd3-4382-91cd-e8d6c01a155a.jpg",
+      "sha": "83d28124e3f8b6376466c8a5ac82135b7a8f4c9d",
+      "size": 15224
+    },
+    {
+      "path": "miniapp/client/thumbnails/6fba5c4c-4003-41c3-b1ea-3482b1214293.jpg",
+      "sha": "a746db09e8872abc04867692d23b6aae1b24c808",
+      "size": 9095
+    },
+    {
+      "path": "miniapp/client/thumbnails/73711b77-044d-46c6-944b-007e145e9f81.jpg",
+      "sha": "3787492912956e0f6c1f80ec103cce6df1551f78",
+      "size": 18077
+    },
+    {
+      "path": "miniapp/client/thumbnails/74444c9b-b846-496e-a5d9-e8e1c5887b95.jpg",
+      "sha": "14615810dee863ae98852ffce84d6abb1c563f82",
+      "size": 10563
+    },
+    {
+      "path": "miniapp/client/thumbnails/751adbfe-0a1d-4d9d-97d5-21d050c75442.jpg",
+      "sha": "0ddc2212b825aa0c516484d025087c12ab2cf98f",
+      "size": 19129
+    },
+    {
+      "path": "miniapp/client/thumbnails/75dae426-6c04-4ffd-9de5-9a4c5959d87c.jpg",
+      "sha": "e8fb83900c8db8c1eb8edf26bf661d79528cb89c",
+      "size": 4890
+    },
+    {
+      "path": "miniapp/client/thumbnails/76002b44-e277-4db9-80ca-a5c9e0cb15f3.jpg",
+      "sha": "8de8ffacbc080f752bca78eb3bf34fb74d1f45ca",
+      "size": 6251
+    },
+    {
+      "path": "miniapp/client/thumbnails/77c25412-0768-4c6f-a56d-3d78b5481ff0.jpg",
+      "sha": "9c579523362feee1136a4ebb8ee7bb9ebcc98119",
+      "size": 18845
+    },
+    {
+      "path": "miniapp/client/thumbnails/798fa1a8-771d-4c97-b900-8a9004266304.jpg",
+      "sha": "409ac387e2a3a2adf2d07b970b66eaa3178cb968",
+      "size": 11411
+    },
+    {
+      "path": "miniapp/client/thumbnails/79b030e8-cd48-4065-8beb-4cd3644ab9fe.jpg",
+      "sha": "b868f9b09a7a6f50f766b2cf9a1871eb02815b0a",
+      "size": 9795
+    },
+    {
+      "path": "miniapp/client/thumbnails/7c576ae9-ee31-4727-ad3b-b71891bc3e21.jpg",
+      "sha": "6b55377e50562b5778b4798cdbb4e551afcaa2ed",
+      "size": 13863
+    },
+    {
+      "path": "miniapp/client/thumbnails/7c8eb54a-f237-4334-b6ba-c55421c3d35a.jpg",
+      "sha": "15ecab4d6d60eb0fdcda9a7748dc622654857ec7",
+      "size": 23388
+    },
+    {
+      "path": "miniapp/client/thumbnails/7d205758-dac2-4df5-9735-7ad781d792af.jpg",
+      "sha": "75a6fba1ff652ece19b5dc76998eef96fda2fc0b",
+      "size": 15435
+    },
+    {
+      "path": "miniapp/client/thumbnails/7e255237-89e4-40c7-b7f2-bc9c6acfb934.jpg",
+      "sha": "755bc71a6535d1290a10f584d73fee7313df031d",
+      "size": 8122
+    },
+    {
+      "path": "miniapp/client/thumbnails/7e87da3a-f175-4c83-bf8b-e59e4ba24269.jpg",
+      "sha": "382f0028ae0193af89420be83d6c6ece6c694dd0",
+      "size": 12731
+    },
+    {
+      "path": "miniapp/client/thumbnails/7e9f53fa-3036-47a6-a27f-48acf2e49e48.jpg",
+      "sha": "a58f205e50a61a66e735f0c8c66a3db22125a3d9",
+      "size": 7049
+    },
+    {
+      "path": "miniapp/client/thumbnails/7ec411f4-9c96-49b5-86b1-1685a81b7d82.jpg",
+      "sha": "914fa460ca6faf100c42bc8058c1a68e850d8496",
+      "size": 9113
+    },
+    {
+      "path": "miniapp/client/thumbnails/7ef378f4-bbee-4529-8e79-30d5591e3017.jpg",
+      "sha": "6f976bdf6a00e78116c2d40867913422c9e2cc5e",
+      "size": 10050
+    },
+    {
+      "path": "miniapp/client/thumbnails/7f1570f1-c211-4143-b15d-76849729d786.jpg",
+      "sha": "f3fff6e627e24ab0d7e7857cf3d90754c4a4a3e6",
+      "size": 4778
+    },
+    {
+      "path": "miniapp/client/thumbnails/7fa3108f-346f-42ba-b707-b15e8282fe6e.jpg",
+      "sha": "1e05cdbe3ed09d519d133a8a6a5ca43c8ed211d4",
+      "size": 25255
+    },
+    {
+      "path": "miniapp/client/thumbnails/82876903-b57c-44dd-95cf-e5482749b399.jpg",
+      "sha": "de01d94749d0666fb6567a8b0431a09aef716726",
+      "size": 5913
+    },
+    {
+      "path": "miniapp/client/thumbnails/82a91144-3342-4599-8fc0-a0b02f5d3933.jpg",
+      "sha": "cd4862d04b4a2f4060fb0635a2d07c5e8479b37c",
+      "size": 9041
+    },
+    {
+      "path": "miniapp/client/thumbnails/82cf935e-d02a-496b-bad3-12a3876328a9.jpg",
+      "sha": "a542aadad390c59bd4e760c32d5c59271c85aff3",
+      "size": 14655
+    },
+    {
+      "path": "miniapp/client/thumbnails/8303fddb-dba0-474b-a1cc-58f40728482b.jpg",
+      "sha": "9d1461182b2b7b33feb245933f7d3f599b3e1df0",
+      "size": 7714
+    },
+    {
+      "path": "miniapp/client/thumbnails/83a77388-8670-4df0-bd5e-b4e3b59c92ce.jpg",
+      "sha": "9d06f60afeee298f4353aad809ef12f5163eb0a2",
+      "size": 7864
+    },
+    {
+      "path": "miniapp/client/thumbnails/847102e7-ec7f-4c4c-ad8a-f015f5b31fc7.jpg",
+      "sha": "85da35d7b4f4e729a813b644c391266fc53420d9",
+      "size": 11108
+    },
+    {
+      "path": "miniapp/client/thumbnails/847b9656-7989-42c6-ab6a-87a8efe0a20a.jpg",
+      "sha": "deba711d9904555a1af1ebd91ae3d785c2322ae2",
+      "size": 3719
+    },
+    {
+      "path": "miniapp/client/thumbnails/85d7e708-1806-4f49-9bf2-f6e078f54129.jpg",
+      "sha": "6989961350eb9b6c94492ce32a7ae71db717b534",
+      "size": 10616
+    },
+    {
+      "path": "miniapp/client/thumbnails/86b95e5b-18d1-4074-9dbc-22229237a8ee.jpg",
+      "sha": "8c2a13fb2d332b8811879368b517b2b13924b123",
+      "size": 8221
+    },
+    {
+      "path": "miniapp/client/thumbnails/8744f05e-4976-4430-a14e-85a167301c14.jpg",
+      "sha": "c24722de3b3a05caec5e8b232746839e3fe2e3e7",
+      "size": 16999
+    },
+    {
+      "path": "miniapp/client/thumbnails/874f586e-280e-4ea1-b224-a2213ca3c25e.jpg",
+      "sha": "d36c0e44c376d211d24d8dd66e279a2c28762f7e",
+      "size": 19373
+    },
+    {
+      "path": "miniapp/client/thumbnails/8833541d-1d2a-4281-bec2-9139e3d9c6aa.jpg",
+      "sha": "f7d0c5371a47b66c17b81511b95d2a9d3a693035",
+      "size": 17741
+    },
+    {
+      "path": "miniapp/client/thumbnails/893c85e4-940f-4cbc-b0fc-2db3a2f48392.jpg",
+      "sha": "890460ce6927fe60ea873cc2273622c6f403afb1",
+      "size": 14836
+    },
+    {
+      "path": "miniapp/client/thumbnails/8963b40a-b5b0-4076-8831-e1e227a9a777.jpg",
+      "sha": "37f0b5939cc2f7815931175362cc506495b6af6a",
+      "size": 16940
+    },
+    {
+      "path": "miniapp/client/thumbnails/8a36f4ee-a5b8-435e-bfad-bd8e91820c9e.jpg",
+      "sha": "8f6c1529b2bf957a6349d5d6ede81c2033b2101b",
+      "size": 13353
+    },
+    {
+      "path": "miniapp/client/thumbnails/8aedc1d6-c5c8-44f0-9f3d-9ed78fd55f69.jpg",
+      "sha": "687ef6797cffa3edd51c9dab84bc2f0eb0c7571d",
+      "size": 6937
+    },
+    {
+      "path": "miniapp/client/thumbnails/8aedc1d6-c5c8-44f0-9f3d-9ed78fd55f69.png",
+      "sha": "459c25a7cc83319178abfb1584e8cb85955993e1",
+      "size": 431471
+    },
+    {
+      "path": "miniapp/client/thumbnails/8f195239-642e-44fa-aa03-7de513e56ab4.jpg",
+      "sha": "2a41540822f6a735293b07466fb4a66f5f66487b",
+      "size": 17959
+    },
+    {
+      "path": "miniapp/client/thumbnails/924424d1-3f6d-4693-819c-c0cfae1aaf11.jpg",
+      "sha": "f176fb6cb18249578d883bd3a117ab9ec965c4c1",
+      "size": 9191
+    },
+    {
+      "path": "miniapp/client/thumbnails/924f80bf-9391-405e-8307-7a9bd628e208.jpg",
+      "sha": "90e88d34e53635813f307dad76d6fd48c081f5c1",
+      "size": 15852
+    },
+    {
+      "path": "miniapp/client/thumbnails/935cd0e3-39a1-4b7d-bc0e-90145cc98cd2.jpg",
+      "sha": "eb602e42d39d78aea53b38e9acc95f8a10e2f4bc",
+      "size": 7368
+    },
+    {
+      "path": "miniapp/client/thumbnails/97d3b441-1916-48bc-a11c-9af4ff6fb0be.jpg",
+      "sha": "fdbeb2965d0b4856569d4658d41d9987ae0ff4c8",
+      "size": 15176
+    },
+    {
+      "path": "miniapp/client/thumbnails/988db173-b9f1-484e-bbed-9e33c238ff4a.jpg",
+      "sha": "939aded6308c5f0abcad385f3280b43572653ffa",
+      "size": 27131
+    },
+    {
+      "path": "miniapp/client/thumbnails/99e8292a-f939-469e-82c8-3ff5334ae41b.jpg",
+      "sha": "470b155150a097a05459c0e259c4a482766dc1e4",
+      "size": 19996
+    },
+    {
+      "path": "miniapp/client/thumbnails/9b186c75-5a70-429d-bcfb-a09805172ef9.jpg",
+      "sha": "d0f32274ee360ca1d56a7b4a8a9023141c628f3c",
+      "size": 10634
+    },
+    {
+      "path": "miniapp/client/thumbnails/9be0ad20-a161-485b-854f-2695a8710123.jpg",
+      "sha": "fa85b1551cc45b255e788880f81e3d4805657dd9",
+      "size": 16757
+    },
+    {
+      "path": "miniapp/client/thumbnails/9c22e1ef-0735-46a9-9e63-c4f276aa6592.jpg",
+      "sha": "f515a3c03b63532ceae40b5cfae72a4a3cf08803",
+      "size": 13381
+    },
+    {
+      "path": "miniapp/client/thumbnails/9c9d88f8-9123-4a5a-8236-cbeca6925318.jpg",
+      "sha": "9ec2f6c1671ef5f8b7bbafd79b03643080da7410",
+      "size": 9952
+    },
+    {
+      "path": "miniapp/client/thumbnails/9d11fc67-dc78-4d78-b797-f0d76c816858.jpg",
+      "sha": "3cc43bc2835955b2751c6a972a20404a0488f4a5",
+      "size": 9922
+    },
+    {
+      "path": "miniapp/client/thumbnails/9d2bedfe-7840-4bfa-80d4-7e27074071bc.jpg",
+      "sha": "771dc5f9013a832d56cd4e1f8016b1c61ab4e947",
+      "size": 7317
+    },
+    {
+      "path": "miniapp/client/thumbnails/9e4ffbcc-ec05-4a3b-b54f-0ffe7f571efd.jpg",
+      "sha": "5a1232515016198cb72aadbed1fc95423556e607",
+      "size": 8024
+    },
+    {
+      "path": "miniapp/client/thumbnails/9e649199-8bda-434b-a208-862e88829668.jpg",
+      "sha": "e11f79282c6096ac7459ef14734fda507fc880dc",
+      "size": 9524
+    },
+    {
+      "path": "miniapp/client/thumbnails/9f4d7811-0ee5-4b92-b8cb-35e980edf8ac.jpg",
+      "sha": "c0e0bd2e72d53dd4a4576bb6825efebfe727e5d5",
+      "size": 7753
+    },
+    {
+      "path": "miniapp/client/thumbnails/a2abdfc4-c794-4224-b89a-07c0f4009129.jpg",
+      "sha": "e7b9b4ddf210e54da68201d527e9ba960120b984",
+      "size": 12615
+    },
+    {
+      "path": "miniapp/client/thumbnails/a456f6df-9683-4ff9-b4be-d80208b92d16.jpg",
+      "sha": "cc5439120481b301c2047507d170ece397beadba",
+      "size": 11476
+    },
+    {
+      "path": "miniapp/client/thumbnails/a6e86e59-c544-4ee5-8c49-e8bfed68712b.jpg",
+      "sha": "e4f453b15ab15d8280b184ddd48bf444a57d06af",
+      "size": 11027
+    },
+    {
+      "path": "miniapp/client/thumbnails/a73aa354-9e8c-459a-a94a-78b0547d9a67.jpg",
+      "sha": "328bd75d3893e18fa2f6a5901c68b43d23477532",
+      "size": 8392
+    },
+    {
+      "path": "miniapp/client/thumbnails/a75ac7ba-db04-4266-93b9-9ebd0614dc06.jpg",
+      "sha": "3df363d8a72f9520b0a8c8f237d340d49b04a60b",
+      "size": 22227
+    },
+    {
+      "path": "miniapp/client/thumbnails/a7b5e885-25ae-4970-9d5e-d451e9d8da7a.jpg",
+      "sha": "c238e3c5e9b8cba461b0efd69bcd7500c318279e",
+      "size": 10149
+    },
+    {
+      "path": "miniapp/client/thumbnails/a8881761-23dc-4cb7-ac6e-11aa29aa6df7.jpg",
+      "sha": "81adf9dee10288bd0dcdb7b1820a957bbf53a7be",
+      "size": 16447
+    },
+    {
+      "path": "miniapp/client/thumbnails/a9f9348f-eb15-4064-b5d8-f164dd82cb9b.jpg",
+      "sha": "6c1dbddeb5929df4756afde76fed90876900af10",
+      "size": 7817
+    },
+    {
+      "path": "miniapp/client/thumbnails/aa69b6e7-ef97-4baf-8594-c614d4d12117.jpg",
+      "sha": "ee37a52e4912a5c4252089e69e748297a3a0d46b",
+      "size": 25363
+    },
+    {
+      "path": "miniapp/client/thumbnails/ab423e37-dbc8-4e05-944a-8f0a1895332e.jpg",
+      "sha": "4248d00a57dfa0b011c9bc1f56336737302eb987",
+      "size": 17772
+    },
+    {
+      "path": "miniapp/client/thumbnails/afe39099-fba4-4b59-ad48-31a2bf55bc61.jpg",
+      "sha": "7ade6d60186f0b742b69377de44406e7f707a9cc",
+      "size": 19834
+    },
+    {
+      "path": "miniapp/client/thumbnails/b0e7ccf7-d84c-4baf-aca4-678d3ad4b11e.jpg",
+      "sha": "b5905ff42ec0641e1d9d30de8f66e6ab0f2f7551",
+      "size": 14967
+    },
+    {
+      "path": "miniapp/client/thumbnails/b18138db-db81-4e97-8eec-30e69ca071b3.jpg",
+      "sha": "9535bb8c5a2fe1f66a05bea9b7354a8f68d4f7e0",
+      "size": 11827
+    },
+    {
+      "path": "miniapp/client/thumbnails/b30d07d4-30ba-4db6-8970-093b1cfcecf7.jpg",
+      "sha": "cb4fca7562fab798639400de02f8961ff79cf3f3",
+      "size": 16767
+    },
+    {
+      "path": "miniapp/client/thumbnails/b5cb1e75-4e94-4f37-b5c6-4c309320b2bd.jpg",
+      "sha": "144c0140f64768a67b86351e84111800dbe80bda",
+      "size": 5370
+    },
+    {
+      "path": "miniapp/client/thumbnails/b6ed6fcb-f11c-4209-8f45-9217ccb9d03c.jpg",
+      "sha": "b0a1813fb859d39fd790f9a5d3d3b8f587b52b78",
+      "size": 17144
+    },
+    {
+      "path": "miniapp/client/thumbnails/b820ad1e-f2e5-4a49-93de-28add26db506.jpg",
+      "sha": "8066e2096a29d2075cd4fe93ccf43ac9dffc1cbc",
+      "size": 17035
+    },
+    {
+      "path": "miniapp/client/thumbnails/b90365b4-68f6-4de6-9d79-96f6bb9f90e4.jpg",
+      "sha": "8a222ea404d80c347ef1d29b3426a6c48cd5ef52",
+      "size": 7710
+    },
+    {
+      "path": "miniapp/client/thumbnails/bbab918f-c597-4b24-a39e-db2641ae84d3.jpg",
+      "sha": "d9bc3efc077f62da0ebb1fbaad1b2b0659c3ac5e",
+      "size": 8873
+    },
+    {
+      "path": "miniapp/client/thumbnails/bf565cad-9797-470c-909a-e91e5f5ba0a8.jpg",
+      "sha": "57f77264bb8df7a6ff98932c0f583d201bb48164",
+      "size": 17495
+    },
+    {
+      "path": "miniapp/client/thumbnails/c1d4287a-a6b4-4710-a1dd-bc6420554923.jpg",
+      "sha": "1053f3da91a3807cde0eb0a0403b45d046e805f0",
+      "size": 6424
+    },
+    {
+      "path": "miniapp/client/thumbnails/c206d9e8-7cc6-428f-a030-65f5758641a5.jpg",
+      "sha": "bf4ab63f53b3d18141a2b96a04cc3939557e002d",
+      "size": 11958
+    },
+    {
+      "path": "miniapp/client/thumbnails/c430c730-8ff2-4a4b-86af-230563431c49.jpg",
+      "sha": "676c2d4f3ac9ed102bf6921e44a56cebc1ece0dd",
+      "size": 10774
+    },
+    {
+      "path": "miniapp/client/thumbnails/c480c5c8-9812-49ab-a04b-1dfef0405aa8.jpg",
+      "sha": "813a0ec9f85b2f67388b122e350caa1fa9c34ba1",
+      "size": 19921
+    },
+    {
+      "path": "miniapp/client/thumbnails/c63df7ef-fc63-491b-ae4b-30a34d88d8ae.jpg",
+      "sha": "bf5f7eb6073e92c0c1a1c9e177d671dac4a489af",
+      "size": 12445
+    },
+    {
+      "path": "miniapp/client/thumbnails/c6508fa2-0507-45af-b0a4-9859f49fec0d.jpg",
+      "sha": "6f703c126dbf5a9c43ed4e8ad049352c03f2e591",
+      "size": 14404
+    },
+    {
+      "path": "miniapp/client/thumbnails/c70deeb4-4dbd-4b99-b755-ef391932da88.jpg",
+      "sha": "2fa37a65cc14c03cbcb6595393d506b1f0bf0dd9",
+      "size": 9692
+    },
+    {
+      "path": "miniapp/client/thumbnails/c77f1306-07a0-400c-aa05-303538c87ea0.jpg",
+      "sha": "7564dfa4242118b2698657c3d56abd8041d343d3",
+      "size": 17301
+    },
+    {
+      "path": "miniapp/client/thumbnails/c8675840-2115-4060-be44-0d6be2fc8827.jpg",
+      "sha": "17a64c850ab0a4b1735b062e63bee92933c698ad",
+      "size": 4969
+    },
+    {
+      "path": "miniapp/client/thumbnails/c987c3d3-e85b-40cf-adca-44ca22b6215a.jpg",
+      "sha": "c02676e1e8d6385dd588552f7038ecea1444791d",
+      "size": 23479
+    },
+    {
+      "path": "miniapp/client/thumbnails/ca1b1b60-d036-4dfb-a02c-1b511a45a27f.jpg",
+      "sha": "e4115194b9f16fb74ce21d54b69832834b3f3ea4",
+      "size": 9952
+    },
+    {
+      "path": "miniapp/client/thumbnails/ca391141-ac35-4672-a2ab-90980ddae765.jpg",
+      "sha": "53c0c143e48c24db380f75369e2a5c65feab4114",
+      "size": 13136
+    },
+    {
+      "path": "miniapp/client/thumbnails/cc793049-2b5e-4e06-b952-9834524bb169.jpg",
+      "sha": "44be7113d70ce56b4eb0a9be57500abd7defc83b",
+      "size": 16963
+    },
+    {
+      "path": "miniapp/client/thumbnails/ccbf5be2-d5a7-45f5-835a-016ad845cc33.jpg",
+      "sha": "741c1a2819f14b1d52c6aaa04fc4656edbc8eae4",
+      "size": 20382
+    },
+    {
+      "path": "miniapp/client/thumbnails/ce7beafd-29bf-45cd-aa55-4e51346bfef6.jpg",
+      "sha": "423c0e900ee7d7560e05581f5523889ec4720ca7",
+      "size": 14499
+    },
+    {
+      "path": "miniapp/client/thumbnails/d03ead86-a81b-4638-98d3-2fae21c1715b.jpg",
+      "sha": "ed72956045e6fe7eeef291ad7c88c4acbb2e6608",
+      "size": 10474
+    },
+    {
+      "path": "miniapp/client/thumbnails/d2154a1c-35fa-4685-bbe6-e577adab14bb.jpg",
+      "sha": "9905bf31777e1f08a69d3eca289b0b13d69f3e24",
+      "size": 10533
+    },
+    {
+      "path": "miniapp/client/thumbnails/d466a3cb-a87f-4bf1-9da2-a074d9c4ef6f.jpg",
+      "sha": "538894621a81b8b345db9a7b0e5994f994fcfe97",
+      "size": 17377
+    },
+    {
+      "path": "miniapp/client/thumbnails/d490ac7f-2e06-469d-ab59-0584094ac5da.jpg",
+      "sha": "85fd5a2bceb408bfa7ab1def983678e76fe9893a",
+      "size": 18122
+    },
+    {
+      "path": "miniapp/client/thumbnails/d82c1bd4-4654-4f92-809d-32eba00a88f0.jpg",
+      "sha": "af1834ee0cc22af7d06823ba8a5fdc309b5d65e5",
+      "size": 6553
+    },
+    {
+      "path": "miniapp/client/thumbnails/d8ed2e4b-8b7e-4b4d-8942-7ac0c4b7800a.jpg",
+      "sha": "356e4c3758bc1235a0759784f1ca6fed386950fe",
+      "size": 8735
+    },
+    {
+      "path": "miniapp/client/thumbnails/d9970c80-3703-4aa6-a4b1-882d7ce0e906.jpg",
+      "sha": "ce89106021f40a8ed3eca485286435c1f07b8247",
+      "size": 5122
+    },
+    {
+      "path": "miniapp/client/thumbnails/dbbdb754-7b3f-49c9-afd6-c4fea2afeec3.jpg",
+      "sha": "b614d23c5c5271c6893c98e737ef4873441e2ef4",
+      "size": 16067
+    },
+    {
+      "path": "miniapp/client/thumbnails/dcdf9f3a-2878-4788-af40-69007b040f8c.jpg",
+      "sha": "76798e3bf4c1603a55b34da3d9a8434d84571274",
+      "size": 4280
+    },
+    {
+      "path": "miniapp/client/thumbnails/dd96bb2f-ec3c-466b-84b6-23c5735339b7.jpg",
+      "sha": "aa5e57f8535fb2a90d80d96111ec2a62e263e4d6",
+      "size": 9635
+    },
+    {
+      "path": "miniapp/client/thumbnails/dde936b2-bdc0-411d-800e-9fbfc34e3827.jpg",
+      "sha": "c7c2aeed990e0e912de0f4a992aac91a0d12b193",
+      "size": 17672
+    },
+    {
+      "path": "miniapp/client/thumbnails/dfda4ffe-ab11-4da3-94e7-963a41d79fb4.jpg",
+      "sha": "edc574e993b1ffadb2fc6105595e9caf259c8493",
+      "size": 6775
+    },
+    {
+      "path": "miniapp/client/thumbnails/e0d468df-601e-4ac6-befe-9870696b4f2c.jpg",
+      "sha": "5bc4e8d6d51c9c05a7f61291ace2f891c7b3ba68",
+      "size": 14699
+    },
+    {
+      "path": "miniapp/client/thumbnails/e7d1fceb-4526-42bc-b8a7-fec4407e5a51.jpg",
+      "sha": "c2ef97eab81859d84d2e14bc49130daa9e1ea29f",
+      "size": 19740
+    },
+    {
+      "path": "miniapp/client/thumbnails/e816057d-bd49-4a82-880c-d4555a9c1dce.jpg",
+      "sha": "b30974c829c16ccbc442cdd653fe1bb0e14bb9f4",
+      "size": 19859
+    },
+    {
+      "path": "miniapp/client/thumbnails/ea1d0a33-02a9-4d9e-ae44-99a4e133561c.jpg",
+      "sha": "1cf0ab0860dba3e97a251b847d5713ad152ebdaf",
+      "size": 7917
+    },
+    {
+      "path": "miniapp/client/thumbnails/ec40c650-4d7d-476f-a891-fe4d722fdcca.jpg",
+      "sha": "aaa8b7e7dd90138b8c1f64a94b5d61d123bc96d7",
+      "size": 18004
+    },
+    {
+      "path": "miniapp/client/thumbnails/ec5bfc1f-7826-40ad-9657-46b33ab730e6.jpg",
+      "sha": "fd9837d85cb5f1288df5b2b3c858f28e43e17531",
+      "size": 20678
+    },
+    {
+      "path": "miniapp/client/thumbnails/ec6ac23d-85e8-4b16-9135-7665f5a03aa8.jpg",
+      "sha": "26ff2516a2cc8177e62ac35f8259e46d80e6fc86",
+      "size": 6262
+    },
+    {
+      "path": "miniapp/client/thumbnails/ef4231df-8e0a-43b8-9dfc-76bac9c1eeb9.jpg",
+      "sha": "321895494e9b5ed73d2466d85fcdedf08f6aa5d6",
+      "size": 19118
+    },
+    {
+      "path": "miniapp/client/thumbnails/f00fd95b-31ae-4fda-ae41-cb1bbcb4df02.jpg",
+      "sha": "f249b2517df0118142322a7457718c95dca7c632",
+      "size": 7374
+    },
+    {
+      "path": "miniapp/client/thumbnails/f11ec59a-6c28-4b03-8dae-e9e98516547d.jpg",
+      "sha": "29bfc8e56a40c81392da43389155e44783f397e0",
+      "size": 20479
+    },
+    {
+      "path": "miniapp/client/thumbnails/f3fb5e13-4727-45d2-8c1d-fb963b354a1e.jpg",
+      "sha": "3b196b995f9aacc14fffe079fdb1a33aa116767f",
+      "size": 5897
+    },
+    {
+      "path": "miniapp/client/thumbnails/f4ed16bb-209c-4f61-89ea-4eb6a6909163.jpg",
+      "sha": "f289e19bc9dddf04c3f26e71bea30250b844e5fd",
+      "size": 18862
+    },
+    {
+      "path": "miniapp/client/thumbnails/f52a0891-8de8-4fdd-a383-3e62a8793a0f.jpg",
+      "sha": "aee7389e5e1bbb9841d23f988d7d86fcb8df69c9",
+      "size": 9117
+    },
+    {
+      "path": "miniapp/client/thumbnails/f59761bb-89af-47ae-a79a-bbe0bf1a365c.jpg",
+      "sha": "9d31b88b9d07699b158fcfa2e9411704f71528b2",
+      "size": 17149
+    },
+    {
+      "path": "miniapp/client/thumbnails/f7361a72-e5c6-4ed7-aebf-95fd541676d5.jpg",
+      "sha": "30cb4be4cf1f06fe7b4c488fb19f4ad4c85b3728",
+      "size": 6293
+    },
+    {
+      "path": "miniapp/client/thumbnails/f767f837-0255-49c4-8f17-01a168f1f7a3.jpg",
+      "sha": "349913a864adeb7c6d30fc7c209e73133e0b8e3f",
+      "size": 12455
+    },
+    {
+      "path": "miniapp/client/thumbnails/f9b5adcd-fc88-4f3b-b4f2-c74befe1317e.jpg",
+      "sha": "45f82ad26865701ca4e8e529b081655ed92111c3",
+      "size": 14460
+    },
+    {
+      "path": "miniapp/client/thumbnails/fb80f5e4-170e-4cd0-a9da-e59829d9e8d5.jpg",
+      "sha": "00783106c85b91046eb34cf74503b31abe14fd2f",
+      "size": 10745
+    },
+    {
+      "path": "miniapp/client/thumbnails/fc1c2614-8907-4dd4-b0ea-0ef7f272a3e0.jpg",
+      "sha": "2f99043d7e0e311fd59c04917d6db906563892f9",
+      "size": 5810
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-beige-grid.jpg",
+      "sha": "ce3f1cb38b37376ef4f8b7b3e8c485da299f9c81",
+      "size": 23827
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-chalkboard.jpg",
+      "sha": "1e37f382807b90be7f6dc4f199e67de899756ed6",
+      "size": 14529
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-collage-split.jpg",
+      "sha": "398d4e1f5df849bd029e95c8836e3b0ad2ce78b7",
+      "size": 20079
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-cream-window.jpg",
+      "sha": "619944a4bcbc7708129789faff911408c2e020fc",
+      "size": 40225
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-kraft-corner.jpg",
+      "sha": "ffa1faa0d2abe8fe6305accf8ace4f71bbe142d0",
+      "size": 52874
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-latte-lines.jpg",
+      "sha": "9d55b8cc5905b18ae790808036d033da8264c5ac",
+      "size": 13062
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-parchment.jpg",
+      "sha": "33236bb22071a08ba9246245c7e64f710b04f405",
+      "size": 14248
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-split-dots.jpg",
+      "sha": "7dbcfcf1eedc3701c13248e0be859ebe2952cfe6",
+      "size": 46359
+    },
+    {
+      "path": "miniapp/client/thumbnails/kb-split-note.jpg",
+      "sha": "dd547fe3570f4ce3bd5317392b2a796df843e546",
+      "size": 39708
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-before-after.jpg",
+      "sha": "28df8ff0eb139541f3b23783c58e4dae945ac1ff",
+      "size": 43584
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-big-caption.jpg",
+      "sha": "a50207f876f0ada57d71a76c4cadd44f14020625",
+      "size": 42649
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-big-number.jpg",
+      "sha": "f2a9920e991f026fa9d3047cff4ab6a71b4a0e65",
+      "size": 44934
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-chapter.jpg",
+      "sha": "bbb42c33545dd3960705f082538788825145e631",
+      "size": 42279
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-checklist.jpg",
+      "sha": "be5f3f70996d47f93343ab5e22e9bb59238c66cc",
+      "size": 47876
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-cover-title.jpg",
+      "sha": "4e04de1694747ca6ccd6dc4ac9c032259e975687",
+      "size": 45796
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-cta-follow.jpg",
+      "sha": "b717b13b97d15781deb82f23f37f2bdfbcefce59",
+      "size": 44399
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-episode-badge.jpg",
+      "sha": "3c6c3482b059dc656cf19992d2f0ae58ef6a8a96",
+      "size": 40547
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-keyword-pop.jpg",
+      "sha": "85a6b4d229595d96c1ca33bab4f44e35c70a4cb8",
+      "size": 46946
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-name-bar.jpg",
+      "sha": "c990907077231db7d3b4d8090dbc22c57a9946aa",
+      "size": 41784
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-note-sticker.jpg",
+      "sha": "ef28f845e3085324785aede92aeb1eeea8033e73",
+      "size": 42673
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-price-tag.jpg",
+      "sha": "966ce0f0526d64a0c3581f451167f720d6da4c5a",
+      "size": 41719
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-quote-card.jpg",
+      "sha": "34a54b1b45850511bdc7f3398884e16df62cefb0",
+      "size": 42951
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-social-actions.jpg",
+      "sha": "62cd3ffef6e202aabea3a465cbb1f99909070e8b",
+      "size": 41787
+    },
+    {
+      "path": "miniapp/client/thumbnails/ss-step-list.jpg",
+      "sha": "589e357ca120d4e07a9660c218cca24e8b729827",
+      "size": 45888
+    },
+    {
+      "path": "miniapp/client/vendor-icons/antigravity-color.png",
+      "sha": "2fedbc946f99e52c5847b4909a64e4b4eda9bcf9",
+      "size": 62689
+    },
+    {
+      "path": "miniapp/client/vendor-icons/assemblyai-color.svg",
+      "sha": "251deeec99920d97237a6630c5a8b8228b912f57",
+      "size": 492
+    },
+    {
+      "path": "miniapp/client/vendor-icons/cartesia-color.svg",
+      "sha": "8a818f3bc30c6424af2ead730f9b0653c527ee8c",
+      "size": 968
+    },
+    {
+      "path": "miniapp/client/vendor-icons/claude-color.svg",
+      "sha": "62dc0db12dafd49c6232d9275c671237dea6a10a",
+      "size": 1696
+    },
+    {
+      "path": "miniapp/client/vendor-icons/cloudflare.svg",
+      "sha": "79f934259084cc24a3e15926ed2ad0f0ee3cf49d",
+      "size": 1198
+    },
+    {
+      "path": "miniapp/client/vendor-icons/codex-color.png",
+      "sha": "b40e14a14a999928c17a634a68debe1ac09708d3",
+      "size": 630021
+    },
+    {
+      "path": "miniapp/client/vendor-icons/copilot.svg",
+      "sha": "015799ecb1bcb36f5bbc1fe173ffbc74176d9850",
+      "size": 1793
+    },
+    {
+      "path": "miniapp/client/vendor-icons/cursor-color.png",
+      "sha": "12e162a50ee08cfaa980c1c9714ebc4576143b74",
+      "size": 28171
+    },
+    {
+      "path": "miniapp/client/vendor-icons/deepgram.svg",
+      "sha": "9517286722fa879ebedfabf1a967696798c1f3ed",
+      "size": 640
+    },
+    {
+      "path": "miniapp/client/vendor-icons/deepseek-color.svg",
+      "sha": "52eec25cd3157698cc31f4a32f36db79f9a2d960",
+      "size": 2165
+    },
+    {
+      "path": "miniapp/client/vendor-icons/doubao-color.svg",
+      "sha": "e2511454cfd1fb336b9421123f30cbb8fb401eb3",
+      "size": 1153
+    },
+    {
+      "path": "miniapp/client/vendor-icons/elevenlabs.svg",
+      "sha": "3c2128bfb4ee16e9fd6965d52681fefcd68a811a",
+      "size": 236
+    },
+    {
+      "path": "miniapp/client/vendor-icons/firecrawl-color.svg",
+      "sha": "25e63a0371f2c7a69342066ceea68e8f22c64680",
+      "size": 897
+    },
+    {
+      "path": "miniapp/client/vendor-icons/fishaudio.svg",
+      "sha": "16fff14dee67156e5fd43c414e000d838e74dc61",
+      "size": 2575
+    },
+    {
+      "path": "miniapp/client/vendor-icons/freesound.svg",
+      "sha": "24eef231a073c8643bf5f8e83e946b675fa15659",
+      "size": 5762
+    },
+    {
+      "path": "miniapp/client/vendor-icons/gemini-color.svg",
+      "sha": "62681dfa7cf3db2940b527ed3cbcee7bacbb1b9b",
+      "size": 2836
+    },
+    {
+      "path": "miniapp/client/vendor-icons/groq.svg",
+      "sha": "d2953eedb55e5d393f0927e3bccefcd77d936af6",
+      "size": 569
+    },
+    {
+      "path": "miniapp/client/vendor-icons/hailuo-color.svg",
+      "sha": "29701f3e969a89fb5c051d055e3582b9e9c5551c",
+      "size": 1481
+    },
+    {
+      "path": "miniapp/client/vendor-icons/kimi-color.svg",
+      "sha": "286f35e76db60a786d18cb2eb494574cc5677d37",
+      "size": 774
+    },
+    {
+      "path": "miniapp/client/vendor-icons/kling-color.svg",
+      "sha": "199e2804d1bcc06629ea78af1d1406fcf9213cb4",
+      "size": 2245
+    },
+    {
+      "path": "miniapp/client/vendor-icons/lmstudio-color.svg",
+      "sha": "16df236d9db09c2db05b972a5d689b9cfba701e8",
+      "size": 2405
+    },
+    {
+      "path": "miniapp/client/vendor-icons/minimax-color.svg",
+      "sha": "beb7adb86ec70eb994e17e95fbae1a08ef70c31d",
+      "size": 1570
+    },
+    {
+      "path": "miniapp/client/vendor-icons/mistral-color.svg",
+      "sha": "7c5e604294eb4440be19503909999bed23c71228",
+      "size": 656
+    },
+    {
+      "path": "miniapp/client/vendor-icons/mureka-color.svg",
+      "sha": "e7b8dfb1b2a60bd50538bec9f876511b9cac21e3",
+      "size": 1497
+    },
+    {
+      "path": "miniapp/client/vendor-icons/ollama.svg",
+      "sha": "3c2fcb362dd6a149979050ebed5a194e0120cf7e",
+      "size": 6922
+    },
+    {
+      "path": "miniapp/client/vendor-icons/openai.svg",
+      "sha": "78caf4fa20ffb0ae8ebefd74408871c11c1c7fd2",
+      "size": 1687
+    },
+    {
+      "path": "miniapp/client/vendor-icons/openrouter.svg",
+      "sha": "54f1e0d3662cd3e099d21fdca4612e4a960327ca",
+      "size": 383
+    },
+    {
+      "path": "miniapp/client/vendor-icons/pexels.svg",
+      "sha": "4c0dff1b10fbfaaa04976f8ec48ae0b3c5ba9ec3",
+      "size": 332
+    },
+    {
+      "path": "miniapp/client/vendor-icons/pixabay.svg",
+      "sha": "a2f422cb9dbad24db92821895ad29a09ae31e4e7",
+      "size": 704
+    },
+    {
+      "path": "miniapp/client/vendor-icons/qwen-color.svg",
+      "sha": "ac004b1d9a63f6b64d3f04a68639f64bdd73e267",
+      "size": 2045
+    },
+    {
+      "path": "miniapp/client/vendor-icons/stepfun-color.svg",
+      "sha": "920e8a607a09ea8d9e2b10efcefb5fbaf923d388",
+      "size": 676
+    },
+    {
+      "path": "miniapp/client/vendor-icons/unsplash.svg",
+      "sha": "468549e6d618113fae3e3b9187e11f686fcd6efb",
+      "size": 191
+    },
+    {
+      "path": "miniapp/client/vendor-icons/vision.svg",
+      "sha": "1bef3bc6f0a88c9ab2a9f2f3bfa31dfe8d2a9c43",
+      "size": 497
+    },
+    {
+      "path": "miniapp/client/vendor-icons/volcengine-color.svg",
+      "sha": "ecf6d75e0aa699495818ac70f12249325a7d2785",
+      "size": 858
+    },
+    {
+      "path": "miniapp/client/vendor-icons/xiaomimimo.svg",
+      "sha": "b8ba03b8719ea16c8062ac5df7980bac1aa4b40c",
+      "size": 2544
+    },
+    {
+      "path": "miniapp/client/vendor-icons/zhipu-color.svg",
+      "sha": "40e5bea2091638598748b7250adb1038bac8e87f",
+      "size": 3598
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "d9bf48eb3329c93dd088ab32ec1da968f6e59502",
+      "size": 535
+    },
+    {
+      "path": "miniapp/node/LICENSE-OpenChatCut",
+      "sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "size": 34523
+    },
+    {
+      "path": "miniapp/node/THIRD-PARTY-NOTICES.txt",
+      "sha": "568daa5c10e78449072e10ae165db1eac19988d3",
+      "size": 288883
+    },
+    {
+      "path": "miniapp/node/extract-package.mjs",
+      "sha": "f70b93977fe97b84c7413f2c9970668cdd8068f5",
+      "size": 115884
+    },
+    {
+      "path": "miniapp/node/install-dependencies.mjs",
+      "sha": "771b0a2d5b226517e134bf5eaeaefbab0dfbf7a5",
+      "size": 6990
+    },
+    {
+      "path": "miniapp/node/lazy-resources.mjs",
+      "sha": "82d8e0fb64f3b8a1b0d3eaf26ccb6c79a2eaccd3",
+      "size": 4257
+    },
+    {
+      "path": "miniapp/node/native-dependencies.json",
+      "sha": "346b5742b609bf14d87337fc76b3d4cea26974c2",
+      "size": 10348
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/103.bundle.js",
+      "sha": "ab23d01c9879adf28e15f4c51d5c2e10df77a905",
+      "size": 27955
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/13.bundle.js",
+      "sha": "e6e8e626b3635deb6666c48f368ddbbc977ad6b2",
+      "size": 8389
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/161.bundle.js",
+      "sha": "aa23401a370d0a30ec16bbb1f24a9e1a5293823d",
+      "size": 156838
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/208.bundle.js",
+      "sha": "c5651e0289e223977c61be6dc4885180bb024323",
+      "size": 997968
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/270.bundle.js",
+      "sha": "455bc6b2588a185a260bb48b5fe6806d22188915",
+      "size": 8456
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/289.bundle.js",
+      "sha": "f975b7e1266aacb33cc611163724699ed4f0ae4a",
+      "size": 3906212
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/304.bundle.js",
+      "sha": "a15e422e70b007d2e04226f5df8f91d699243cd7",
+      "size": 148
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/317.bundle.js",
+      "sha": "c7ffd265f749fc07b3e91968c7ec1ad924a21ef3",
+      "size": 7094
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/352.bundle.js",
+      "sha": "13e4533c95e46b597200565613ce66f53f806946",
+      "size": 4438303
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/390.bundle.js",
+      "sha": "5d53480bc81481981724cd46b08d8d61e6f471cd",
+      "size": 10108
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/462.bundle.js",
+      "sha": "a065ed2a6d743069cfd871a96428316853070a7d",
+      "size": 226068
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/466.bundle.js",
+      "sha": "43f776e21888a49f747ff64d0c430b1baff728e3",
+      "size": 155034
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/474.bundle.js",
+      "sha": "9bf4b31c499b0cb4e6f16e064e56d515503a00c4",
+      "size": 20765
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/516.bundle.js",
+      "sha": "d824a594e2d43b17ba7817a52f7eb83a1e6ba455",
+      "size": 12405
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/524.bundle.js",
+      "sha": "13cf59201c81fa895398850bc08ee9b81552bddf",
+      "size": 7297
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/6.bundle.js",
+      "sha": "4f8574294827f1f72bb2115a4d6311f9f16ac335",
+      "size": 7092
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/600.bundle.js",
+      "sha": "4ca65c8ba2ba4e47385f7636b86245a6538a7498",
+      "size": 11284
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/614.bundle.js",
+      "sha": "7544d9a8f546bf18a1e017552535e3c8b5859e0d",
+      "size": 8965
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/620.bundle.js",
+      "sha": "458bd2a933b722203d8ce7fafd3da9b5b387a81a",
+      "size": 13547
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/624.bundle.js",
+      "sha": "d808e062abc79439543a5dcbc995d01d0e3d54fe",
+      "size": 327441
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/626.bundle.js",
+      "sha": "8984773658c315ec2845cec45dec8db500923f23",
+      "size": 15088
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/63.bundle.js",
+      "sha": "e3f40572dc45d7feddf6b093f94fbe578f87e4a5",
+      "size": 148
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/678.bundle.js",
+      "sha": "4934e161eafb42ddba6e4470dcefd4e2ab258619",
+      "size": 12951
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/693.bundle.js",
+      "sha": "f2b440506c5fec7550d94da55e429f2c55f05465",
+      "size": 16910
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/703.bundle.js",
+      "sha": "20bf967088389737af8d6a598fe46a5f4ca30b1b",
+      "size": 207202
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/713.bundle.js",
+      "sha": "fdd117db1572edf7ea93df4d5519dff69798c5bf",
+      "size": 21422
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/722.bundle.js",
+      "sha": "3be5a13c7d7c2dad7fd4dd81c1f495dc0a80f906",
+      "size": 104025
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/735.bundle.js",
+      "sha": "17b62b002aebfe29144322d5459f167081ebebc7",
+      "size": 8380
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/74.bundle.js",
+      "sha": "44f06d52d99f0a900b74ce23742580095f65ce6f",
+      "size": 8690
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/750.bundle.js",
+      "sha": "3a09bd402b4e8b03b8ba4845f525ac5571f0f0d9",
+      "size": 13905
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/761.bundle.js",
+      "sha": "ca2f8cca183e4824c3058a6d302d937b1add42f3",
+      "size": 2233
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/820.bundle.js",
+      "sha": "81381d75357d16346a8e6a86b2cf5946e2e9a18f",
+      "size": 7387
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/825.bundle.js",
+      "sha": "ed25f262a06c41902f787bbb5529b7b6138ed418",
+      "size": 325710
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/827.bundle.js",
+      "sha": "841885f41f569fe805978e91813286d212910883",
+      "size": 15545
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/834.bundle.js",
+      "sha": "a3616c81b91a98668143f631b3926351688833c2",
+      "size": 7319
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/845.bundle.js",
+      "sha": "92e2cc205d491c65e0be5addec62c53dc0b5b018",
+      "size": 9978
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/859.bundle.js",
+      "sha": "d503bf55285ba1883f265bf8d5a428f15dc7af81",
+      "size": 15088
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/864.bundle.js",
+      "sha": "4d5c95857ab3fd7dd36c6be182b16df7cbc7f0c1",
+      "size": 351142
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/872.bundle.js",
+      "sha": "16dc1ebed42aee90cf90f456d4079bdacfe24ceb",
+      "size": 317446
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/889.bundle.js",
+      "sha": "b15083100e2dd1ee9f97f9be92ad29779a83ae2d",
+      "size": 6736
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/892.bundle.js",
+      "sha": "b52bd893fe34057bc2fadab4447adefead9a786b",
+      "size": 149
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/900.bundle.js",
+      "sha": "cbe9d4add9e822c8ecda93523c1ba89e3ccab82c",
+      "size": 11370
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/94.bundle.js",
+      "sha": "5ca7933e2974bbb6eccb7876cebbe18a40bc32bf",
+      "size": 1231036
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/952.bundle.js",
+      "sha": "e0331b167778c2e3c019bbcdbe911b6d448d9a87",
+      "size": 8586
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/996.bundle.js",
+      "sha": "6b29ed12d5af71b0fd9b3064384d851647d35a68",
+      "size": 7317
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/bundle.js",
+      "sha": "550ce87764936a38d2cf8820712eeeba09414f26",
+      "size": 3113140
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/favicon.ico",
+      "sha": "76cef1e1032cacf78898c07d406646dd097b11de",
+      "size": 104640
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/favicon.svg",
+      "sha": "56dff3fc9a6f736735e7896c8b20480645ecaa24",
+      "size": 309
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/index.html",
+      "sha": "5f561dc3d4269e8e2427902f5ee1e0257e3eac5a",
+      "size": 88666
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/favicon.svg",
+      "sha": "56dff3fc9a6f736735e7896c8b20480645ecaa24",
+      "size": 309
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/assemblyai-color.svg",
+      "sha": "251deeec99920d97237a6630c5a8b8228b912f57",
+      "size": 492
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/cartesia-color.svg",
+      "sha": "8a818f3bc30c6424af2ead730f9b0653c527ee8c",
+      "size": 968
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/deepgram.svg",
+      "sha": "9517286722fa879ebedfabf1a967696798c1f3ed",
+      "size": 640
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/elevenlabs.svg",
+      "sha": "3c2128bfb4ee16e9fd6965d52681fefcd68a811a",
+      "size": 236
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/firecrawl-color.svg",
+      "sha": "25e63a0371f2c7a69342066ceea68e8f22c64680",
+      "size": 897
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/groq.svg",
+      "sha": "d2953eedb55e5d393f0927e3bccefcd77d936af6",
+      "size": 569
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/kimi-color.svg",
+      "sha": "286f35e76db60a786d18cb2eb494574cc5677d37",
+      "size": 774
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/mistral-color.svg",
+      "sha": "7c5e604294eb4440be19503909999bed23c71228",
+      "size": 656
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/openrouter.svg",
+      "sha": "54f1e0d3662cd3e099d21fdca4612e4a960327ca",
+      "size": 383
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/pexels.svg",
+      "sha": "4c0dff1b10fbfaaa04976f8ec48ae0b3c5ba9ec3",
+      "size": 332
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/pixabay.svg",
+      "sha": "a2f422cb9dbad24db92821895ad29a09ae31e4e7",
+      "size": 704
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/stepfun-color.svg",
+      "sha": "920e8a607a09ea8d9e2b10efcefb5fbaf923d388",
+      "size": 676
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/unsplash.svg",
+      "sha": "468549e6d618113fae3e3b9187e11f686fcd6efb",
+      "size": 191
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/vision.svg",
+      "sha": "1bef3bc6f0a88c9ab2a9f2f3bfa31dfe8d2a9c43",
+      "size": 497
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/public/vendor-icons/volcengine-color.svg",
+      "sha": "ecf6d75e0aa699495818ac70f12249325a7d2785",
+      "size": 858
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/assemblyai-color.svg",
+      "sha": "251deeec99920d97237a6630c5a8b8228b912f57",
+      "size": 492
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/cartesia-color.svg",
+      "sha": "8a818f3bc30c6424af2ead730f9b0653c527ee8c",
+      "size": 968
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/deepgram.svg",
+      "sha": "9517286722fa879ebedfabf1a967696798c1f3ed",
+      "size": 640
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/elevenlabs.svg",
+      "sha": "3c2128bfb4ee16e9fd6965d52681fefcd68a811a",
+      "size": 236
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/firecrawl-color.svg",
+      "sha": "25e63a0371f2c7a69342066ceea68e8f22c64680",
+      "size": 897
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/groq.svg",
+      "sha": "d2953eedb55e5d393f0927e3bccefcd77d936af6",
+      "size": 569
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/kimi-color.svg",
+      "sha": "286f35e76db60a786d18cb2eb494574cc5677d37",
+      "size": 774
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/mistral-color.svg",
+      "sha": "7c5e604294eb4440be19503909999bed23c71228",
+      "size": 656
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/openrouter.svg",
+      "sha": "54f1e0d3662cd3e099d21fdca4612e4a960327ca",
+      "size": 383
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/pexels.svg",
+      "sha": "4c0dff1b10fbfaaa04976f8ec48ae0b3c5ba9ec3",
+      "size": 332
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/pixabay.svg",
+      "sha": "a2f422cb9dbad24db92821895ad29a09ae31e4e7",
+      "size": 704
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/stepfun-color.svg",
+      "sha": "920e8a607a09ea8d9e2b10efcefb5fbaf923d388",
+      "size": 676
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/unsplash.svg",
+      "sha": "468549e6d618113fae3e3b9187e11f686fcd6efb",
+      "size": 191
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/vision.svg",
+      "sha": "1bef3bc6f0a88c9ab2a9f2f3bfa31dfe8d2a9c43",
+      "size": 497
+    },
+    {
+      "path": "miniapp/node/remotion-bundle/vendor-icons/volcengine-color.svg",
+      "sha": "ecf6d75e0aa699495818ac70f12249325a7d2785",
+      "size": 858
+    },
+    {
+      "path": "miniapp/node/resource-manifest.json",
+      "sha": "eda096b2c78017eba347b217323ac71851af247e",
+      "size": 73255
+    },
+    {
+      "path": "miniapp/node/restore-files.json",
+      "sha": "71222cdf1b5be6c7a5feb6e53609cfeb6530f35e",
+      "size": 228470
+    },
+    {
+      "path": "miniapp/node/runtime/editor.mjs",
+      "sha": "150cfe4b8dc9b03dc3c378680b08a59905f7297d",
+      "size": 7978666
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "fcf461ff44f3ac656c22f17057e12728c2df88ee",
+      "size": 6475
+    },
+    {
+      "path": "miniapp/node/setup-server.mjs",
+      "sha": "f697efc1eae6315270d94a2ac5c134b427551966",
+      "size": 4813
+    },
+    {
+      "path": "miniapp/node/upstream.json",
+      "sha": "3cdde4c112d09d6516e7ba697334a69b8353a818",
+      "size": 266
+    },
+    {
+      "path": "miniapp/node/vendor/jieba-wasm/LICENSE",
+      "sha": "5a792c477253349e3b6ed6c7b7f4fef5f08ca4ed",
+      "size": 1074
+    },
+    {
+      "path": "miniapp/node/vendor/jieba-wasm/README.md",
+      "sha": "a438327556ea9f0d3f96699bb21d71a81ba04964",
+      "size": 3185
+    },
+    {
+      "path": "miniapp/node/vendor/jieba-wasm/package.json",
+      "sha": "cea989b2aef69eea6328eefba12fc5ee19904148",
+      "size": 3374
+    },
+    {
+      "path": "miniapp/node/vendor/jieba-wasm/pkg/nodejs/jieba_rs_wasm.js",
+      "sha": "77cbc6ea6dba8bdd0bc6dc35e3ede771cd861513",
+      "size": 10260
+    },
+    {
+      "path": "miniapp/node/vendor/jieba-wasm/pkg/nodejs/jieba_rs_wasm_bg.wasm",
+      "sha": "9477a465f8bf47042570deb76623d612c5246b5a",
+      "size": 4015308
+    },
+    {
+      "path": "miniapp/node/vendor/sqlite-vec/README.md",
+      "sha": "30404ce4c54634bf430d2d154c10c45b8b1eebc1",
+      "size": 4
+    },
+    {
+      "path": "miniapp/node/vendor/sqlite-vec/index.cjs",
+      "sha": "6465464c78beb8934a8298fd20db82a25c7217d8",
+      "size": 1562
+    },
+    {
+      "path": "miniapp/node/vendor/sqlite-vec/index.mjs",
+      "sha": "23226a0ebe9b9d91381a7e59c2ba6ac829f98d04",
+      "size": 1608
+    },
+    {
+      "path": "miniapp/node/vendor/sqlite-vec/package.json",
+      "sha": "041385bd52fa375539f8f28c9acf3ff95d87b316",
+      "size": 596
+    },
+    {
+      "path": "package.json",
+      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
+      "size": 85
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "d939a5cb9f6aebc1091950119109eed3b6ba97b6",
+      "size": 303
+    },
+    {
+      "path": "skills/code-video/SKILL.md",
+      "sha": "d2b6b3ea4b7dc9bc59cdbfb6abfd97cc0c98044f",
+      "size": 2107
+    },
+    {
+      "path": "skills/lucid/PROVENANCE.md",
+      "sha": "4561d067a778c3261cc2ec02d32c3c7fa202dffd",
+      "size": 533
+    },
+    {
+      "path": "skills/lucid/SKILL.md",
+      "sha": "5cafe231f788ce93fd1df6f08e8cf31ae914e365",
+      "size": 2957
+    },
+    {
+      "path": "skills/lucid/capabilities/README.md",
+      "sha": "eda02d1a9b557d414800879333b16cc952849523",
+      "size": 4567
+    },
+    {
+      "path": "skills/lucid/capabilities/mcode/long-commands.md",
+      "sha": "4b0aa656e05b0cc7baa0065b0789c4f92a4ecaee",
+      "size": 1911
+    },
+    {
+      "path": "skills/lucid/capabilities/mcode/voice.md",
+      "sha": "88cd69b9049f4e1a82d07224d6bc6bc1feadcb7a",
+      "size": 4266
+    },
+    {
+      "path": "skills/lucid/references/assets.md",
+      "sha": "e7ef22b1fe4dc33e42f3d4156287a7a4de79661d",
+      "size": 12011
+    },
+    {
+      "path": "skills/lucid/references/audio.md",
+      "sha": "ea9869a36b75a4a3ed2c8f7b584e4edf8449edad",
+      "size": 12174
+    },
+    {
+      "path": "skills/lucid/references/craft.md",
+      "sha": "b4bba62e9f17b0a44fa78a39264230a2b0588992",
+      "size": 13182
+    },
+    {
+      "path": "skills/lucid/references/engine.md",
+      "sha": "6b3035a7cb5606a732bc56fe3310d70fe187a035",
+      "size": 15574
+    },
+    {
+      "path": "skills/lucid/references/explainer.md",
+      "sha": "2585c79eee72862acf3f6b26ae58ff96e9613b48",
+      "size": 32025
+    },
+    {
+      "path": "skills/lucid/references/pitfalls.md",
+      "sha": "35cc6df315f833b4c4e9a7af25280813f25a32d2",
+      "size": 9539
+    },
+    {
+      "path": "skills/lucid/references/promo.md",
+      "sha": "e30368bc7f10f531761fdb76b84fd439c317be0e",
+      "size": 21113
+    },
+    {
+      "path": "skills/lucid/references/review.md",
+      "sha": "106c860d9d2721fe893b3fda03dda13e0eb79a14",
+      "size": 23539
+    },
+    {
+      "path": "skills/lucid/references/shader-background.md",
+      "sha": "44b92def97646134251ca4ee4939556967792edf",
+      "size": 5287
+    },
+    {
+      "path": "skills/lucid/references/upstream-guide.md",
+      "sha": "670abd3aee451c555923cbc5a31a8e8193f51907",
+      "size": 10095
+    },
+    {
+      "path": "skills/lucid/references/workflow.md",
+      "sha": "b72afe23473df613ba19a7481e10c74cf3c85099",
+      "size": 9888
+    },
+    {
+      "path": "skills/lucid/template/.gitignore",
+      "sha": "2febbff57a4d9019935715b4143adb76918f8648",
+      "size": 129
+    },
+    {
+      "path": "skills/lucid/template/audio/beat_detect.py",
+      "sha": "5f1882d77cacc6b9050371317fc7b10616ade25b",
+      "size": 6782
+    },
+    {
+      "path": "skills/lucid/template/audio/checks.py",
+      "sha": "cb9c309686d2c71d8036d5c910ca47612cd15702",
+      "size": 5256
+    },
+    {
+      "path": "skills/lucid/template/audio/harmony.py",
+      "sha": "e705e9c1476a4ada1425c35597cb61c8b4e01999",
+      "size": 2739
+    },
+    {
+      "path": "skills/lucid/template/audio/instruments.py",
+      "sha": "aa4c30be975db4228938abdaa5b0d4b48a6097d3",
+      "size": 31073
+    },
+    {
+      "path": "skills/lucid/template/audio/score_electronic.py",
+      "sha": "fa1c080081b9d50547f19c26f6068742000e1867",
+      "size": 15279
+    },
+    {
+      "path": "skills/lucid/template/audio/score_piano.py",
+      "sha": "a5274957c0aea91136a9cca308d6fcfdbb60bbc2",
+      "size": 10096
+    },
+    {
+      "path": "skills/lucid/template/audio/synth.py",
+      "sha": "84d4c7fbc318ae08829f1347a9e63cddd1cb08b4",
+      "size": 15446
+    },
+    {
+      "path": "skills/lucid/template/examples/explainer_voice/project.json",
+      "sha": "fbecb64e5118aa91ef5e688e9516cfbda30ecfe3",
+      "size": 1912
+    },
+    {
+      "path": "skills/lucid/template/examples/explainer_voice/shots_demo.js",
+      "sha": "1d1df5814a7163a36033bc61b120bab31b1e6363",
+      "size": 20940
+    },
+    {
+      "path": "skills/lucid/template/examples/explainer_voice/vo.json",
+      "sha": "68384362614db6f113c32c44ea6ca99bf3d6cd77",
+      "size": 1287
+    },
+    {
+      "path": "skills/lucid/template/examples/promo_beats/project.json",
+      "sha": "062a662a59201741207b192b08ff436e02040651",
+      "size": 2139
+    },
+    {
+      "path": "skills/lucid/template/examples/promo_beats/shots_demo.js",
+      "sha": "77948d8b1bd65ef0926a78d2d8faca2c129ef7f7",
+      "size": 11362
+    },
+    {
+      "path": "skills/lucid/template/project.json",
+      "sha": "cfe7d26854ec59d97e0097c54a6e7c1de7da0dc2",
+      "size": 1916
+    },
+    {
+      "path": "skills/lucid/template/requirements.txt",
+      "sha": "5859303bf0f55d8faee028bb3c4d6e5d95f85f2a",
+      "size": 105
+    },
+    {
+      "path": "skills/lucid/template/script/vo.json",
+      "sha": "418d52cae0a2113a29812c527c6608be731638fe",
+      "size": 622
+    },
+    {
+      "path": "skills/lucid/template/tools/assets.py",
+      "sha": "375023c39bc3762f74521dcca998bc26cfe8691d",
+      "size": 82677
+    },
+    {
+      "path": "skills/lucid/template/tools/build_timeline.py",
+      "sha": "3705cbdd7b4e42e332ff76174b8d02a43ff44a10",
+      "size": 16100
+    },
+    {
+      "path": "skills/lucid/template/tools/checkup.py",
+      "sha": "7831622150f3b3a743dc8d30c4a2b41cbbc8a40b",
+      "size": 49085
+    },
+    {
+      "path": "skills/lucid/template/tools/common.py",
+      "sha": "b8ed71143479f060f302b3bb8054eca011610610",
+      "size": 23210
+    },
+    {
+      "path": "skills/lucid/template/tools/deliver.py",
+      "sha": "82f7ee17437b16f8fe634372c97f202bfdc135fb",
+      "size": 16303
+    },
+    {
+      "path": "skills/lucid/template/tools/dump_events.py",
+      "sha": "0ca3997906aab0e98f502d88f76f401a8a2f62f6",
+      "size": 1602
+    },
+    {
+      "path": "skills/lucid/template/tools/ghostcheck.py",
+      "sha": "2f9d85f30fd246243b5664dcd266e58677b9d941",
+      "size": 11448
+    },
+    {
+      "path": "skills/lucid/template/tools/layout.py",
+      "sha": "b80ce159b3b8858af9cbaf259ad57da913c0b3fa",
+      "size": 58787
+    },
+    {
+      "path": "skills/lucid/template/tools/lint.py",
+      "sha": "c328f352cc75782a8bb2e95be34bfb2b9af9c991",
+      "size": 6580
+    },
+    {
+      "path": "skills/lucid/template/tools/loopcheck.py",
+      "sha": "f59b27c9ea70869304520423667fe1cfe5e17168",
+      "size": 4378
+    },
+    {
+      "path": "skills/lucid/template/tools/motioncheck.py",
+      "sha": "9374ee886d3baef1dcaee5d1aca9230ee4ada69e",
+      "size": 19292
+    },
+    {
+      "path": "skills/lucid/template/tools/refsheet.py",
+      "sha": "1e1a5d824644e4f34c4a14c7440d6531d48c441e",
+      "size": 14852
+    },
+    {
+      "path": "skills/lucid/template/tools/render.py",
+      "sha": "a5bf27129e93e7668a64fb3184998f7435c7182c",
+      "size": 32320
+    },
+    {
+      "path": "skills/lucid/template/tools/review.py",
+      "sha": "89fec9f5e39f6d86741dc1f20e4f100ee278d11f",
+      "size": 23074
+    },
+    {
+      "path": "skills/lucid/template/tools/srt.py",
+      "sha": "7d65b2766940c8dcfeb26298d197bc89de2c0b5b",
+      "size": 2720
+    },
+    {
+      "path": "skills/lucid/template/tools/stills.py",
+      "sha": "8ae2e73ca5017870c61621fca4bd050a2b887e97",
+      "size": 22638
+    },
+    {
+      "path": "skills/lucid/template/tools/syl.py",
+      "sha": "e8a71856ee0eca7de2f5e2bc176f00152873c8cf",
+      "size": 1832
+    },
+    {
+      "path": "skills/lucid/template/tools/timeline.py",
+      "sha": "f6a7c368577dcbf33eed49057cabc17291863f61",
+      "size": 4897
+    },
+    {
+      "path": "skills/lucid/template/tools/tl_io.py",
+      "sha": "72ca3f8eb1c0d9d41773ab4647f64a5180f35088",
+      "size": 4652
+    },
+    {
+      "path": "skills/lucid/template/tools/tts.py",
+      "sha": "d7c4bf8ea06f67ec8a3bce1c90a99cd805311d7f",
+      "size": 37335
+    },
+    {
+      "path": "skills/lucid/template/tools/vendor_shaders.py",
+      "sha": "30459165740586bb2cd15c9b27279a45d3117566",
+      "size": 1186
+    },
+    {
+      "path": "skills/lucid/template/web/bg.js",
+      "sha": "72e0173ab57b09ff6121e938247bff2132ee4d9e",
+      "size": 2899
+    },
+    {
+      "path": "skills/lucid/template/web/core.js",
+      "sha": "0713a5a383b73fd20ceb5ae9c7c6dc4c252092de",
+      "size": 102820
+    },
+    {
+      "path": "skills/lucid/template/web/fonts/instrument-serif-latin-400-italic.woff2",
+      "sha": "197abca2553c84829217223cdbc6efbe2493d645",
+      "size": 22128
+    },
+    {
+      "path": "skills/lucid/template/web/fonts/instrument-serif-latin-400-normal.woff2",
+      "sha": "0ad69719cac6f45ed3057825095b0cdffa7d3c99",
+      "size": 21032
+    },
+    {
+      "path": "skills/lucid/template/web/fonts/jetbrains-mono-latin-400-normal.woff2",
+      "sha": "585887339efd032b6b715466ae72d86e306bec79",
+      "size": 21168
+    },
+    {
+      "path": "skills/lucid/template/web/fonts/jetbrains-mono-latin-600-normal.woff2",
+      "sha": "59c24e7cb8bdff26638068aac0afff3dcbe9b2c1",
+      "size": 21860
+    },
+    {
+      "path": "skills/lucid/template/web/gl3d.js",
+      "sha": "4af6de31faaecb7afdba38159d9f2a833e94a7ab",
+      "size": 9071
+    },
+    {
+      "path": "skills/lucid/template/web/index.html",
+      "sha": "54a9f0a4532fca441afdfe3c48051ee9faea356c",
+      "size": 1387
+    },
+    {
+      "path": "skills/lucid/template/web/main.js",
+      "sha": "4fdfeacbd39856e4679c4ccf7200602c29f80e3b",
+      "size": 20480
+    },
+    {
+      "path": "skills/lucid/template/web/modules/editorial.js",
+      "sha": "ca252292c6fb031a79dcbd115393b38cb3797a29",
+      "size": 10950
+    },
+    {
+      "path": "source/README.md",
+      "sha": "142417958036e0cebe707c3bba20c7f3abdc8895",
+      "size": 3044
+    },
+    {
+      "path": "source/adapter/scripts/prepare-resources.mjs",
+      "sha": "ea2cddef3624bf19ed70f80fbd6d3427604d18c5",
+      "size": 1705
+    },
+    {
+      "path": "source/adapter/scripts/strip-resources.mjs",
+      "sha": "0a60554513e86974f5247b0b8b97ac7fb622a950",
+      "size": 1736
+    },
+    {
+      "path": "source/adapter/scripts/verify-installer.mjs",
+      "sha": "138baa12a82d954119e7fbbde635784f24939c34",
+      "size": 1484
+    },
+    {
+      "path": "source/adapter/verify-runtime.mjs",
+      "sha": "bdb0c888337f868e7cf0474cfd45f28b2072528e",
+      "size": 10324
+    },
+    {
+      "path": "source/backend-en.json",
+      "sha": "8b9e0a0c0047d9bba067e0c813a07cc8d34d2638",
+      "size": 2523
+    },
+    {
+      "path": "source/overlay/SHADCN-LICENSE.md",
+      "sha": "fad4d887a681dd49233e5ed01ee2c7a1513089a0",
+      "size": 1063
+    },
+    {
+      "path": "source/overlay/assets/minimax-wordmark.svg",
+      "sha": "f1715184a2b3a3f086699821e90da95d2f788477",
+      "size": 4335
+    },
+    {
+      "path": "source/overlay/config/vite.miniapp.config.ts",
+      "sha": "98e61faab138c79bfe43cd7f86fe049bf9b56e89",
+      "size": 1315
+    },
+    {
+      "path": "source/overlay/desktop/miniapp-server.ts",
+      "sha": "8f94947a2a25e1cb0abd831ccc55189d70374c46",
+      "size": 6180
+    },
+    {
+      "path": "source/overlay/index.html",
+      "sha": "9d61e2654c8b1f84bec45e0f447f5e6b8fd1765b",
+      "size": 421
+    },
+    {
+      "path": "source/overlay/scripts/build-miniapp.mjs",
+      "sha": "986b98ec485f83fc022e4522f63137731017ab20",
+      "size": 14360
+    },
+    {
+      "path": "source/overlay/scripts/extract-miniapp-package.mjs",
+      "sha": "4a28038f59d68623255061447195eedaf4b2243f",
+      "size": 470
+    },
+    {
+      "path": "source/overlay/server/external-agent/miniapp-recovery.verify.ts",
+      "sha": "ca1369e2c793d9a732fc03becd942bbcb2286002",
+      "size": 6709
+    },
+    {
+      "path": "source/overlay/server/plugins/miniapp-audio-export.ts",
+      "sha": "c77c1c7a64ad5f6e203911630ef4c3a6a95e1fb8",
+      "size": 3453
+    },
+    {
+      "path": "source/overlay/server/plugins/miniapp.ts",
+      "sha": "efb65ff42c46954bffd2f2d3eccd968229fc248d",
+      "size": 2159
+    },
+    {
+      "path": "source/overlay/setup.html",
+      "sha": "6454623a2058a48d2465d0607b044aece12da10f",
+      "size": 263
+    },
+    {
+      "path": "source/overlay/src/agent/miniapp-client.ts",
+      "sha": "4e240ac637892ed1f6ebc678ddb122be851b7537",
+      "size": 281
+    },
+    {
+      "path": "source/overlay/src/agent/miniapp-vision.ts",
+      "sha": "c784d295b087922754b6b8b3ce2f72e9941df9ce",
+      "size": 410
+    },
+    {
+      "path": "source/overlay/src/agent/project-change-summary.ts",
+      "sha": "6a84755376d49ee001496774ef47e9e63be4cbf5",
+      "size": 1528
+    },
+    {
+      "path": "source/overlay/src/agent/tools/miniapp-stills.ts",
+      "sha": "1f2e4943ebf02211cc64de2d8efa01d8149e40f0",
+      "size": 2913
+    },
+    {
+      "path": "source/overlay/src/app/appShell.ts",
+      "sha": "6e596d336050dbd8ef7fc091c253097362504a3f",
+      "size": 7908
+    },
+    {
+      "path": "source/overlay/src/app/miniAppSample.ts",
+      "sha": "76fdb919a2501e3e3db0f64dfcaedf769cb8b2a9",
+      "size": 5173
+    },
+    {
+      "path": "source/overlay/src/components/ThumbnailImage.tsx",
+      "sha": "9632e4f7a540986a6fbd64081ab3e3de4a4f5d38",
+      "size": 847
+    },
+    {
+      "path": "source/overlay/src/components/chat/MiniAppChatPanel.css",
+      "sha": "aa3ea654c1f11169a28fc57698bc190d7f817963",
+      "size": 7693
+    },
+    {
+      "path": "source/overlay/src/components/chat/MiniAppChatPanel.tsx",
+      "sha": "7db72f37a0c559c94838ff83f5951bae392991f8",
+      "size": 21291
+    },
+    {
+      "path": "source/overlay/src/components/chat/miniAppAssistantCopy.ts",
+      "sha": "70721f6192f88a420aa1d5f29b7d722cb9f0b661",
+      "size": 6177
+    },
+    {
+      "path": "source/overlay/src/components/dashboard/DashboardViews.tsx",
+      "sha": "42c32cc90e27e1a01055da407aaa52c069a1a452",
+      "size": 11659
+    },
+    {
+      "path": "source/overlay/src/components/dashboard/MiniAppWelcome.tsx",
+      "sha": "da2ed2ad01073537dc39a091bf16718d7a64443d",
+      "size": 2468
+    },
+    {
+      "path": "source/overlay/src/components/dashboard/ProjectCover.tsx",
+      "sha": "d284c7b91a68a7f469baca7f85ed4d66010c33b5",
+      "size": 861
+    },
+    {
+      "path": "source/overlay/src/components/dashboard/projectCover.css",
+      "sha": "98f9f91a5ba7c9b43780d39985a9e14711df0c7e",
+      "size": 1089
+    },
+    {
+      "path": "source/overlay/src/components/icons.tsx",
+      "sha": "e6a438d4044586234f1cac72c6e2203fdc620ebc",
+      "size": 11866
+    },
+    {
+      "path": "source/overlay/src/components/settings/MiniAppSettingsDialog.tsx",
+      "sha": "0ecb2d4a4e7e6d84b3bc4e334da0ccc787dfeba0",
+      "size": 3641
+    },
+    {
+      "path": "source/overlay/src/components/ui/button.tsx",
+      "sha": "d53b9fe0d45f37a250b37a8268dd8e24e0bb5ec9",
+      "size": 1971
+    },
+    {
+      "path": "source/overlay/src/components/ui/card.tsx",
+      "sha": "2200f1c89749cdf1a11ab4666c8beeb935faaccb",
+      "size": 1897
+    },
+    {
+      "path": "source/overlay/src/components/ui/dialog.tsx",
+      "sha": "f8088dd3f45b30dae37d5defe66d5f9ba4757005",
+      "size": 3919
+    },
+    {
+      "path": "source/overlay/src/components/ui/textarea.tsx",
+      "sha": "765ee55d16e5b30150e60384c2afc61398be10bb",
+      "size": 718
+    },
+    {
+      "path": "source/overlay/src/components/ui/theme.css",
+      "sha": "ca22adbc8f41a8af356773c7bc42a44996ba343d",
+      "size": 1938
+    },
+    {
+      "path": "source/overlay/src/export/miniappAudioExport.ts",
+      "sha": "9c24b0b9e015ecfddaf525019d9fee10642ca185",
+      "size": 2948
+    },
+    {
+      "path": "source/overlay/src/i18n/dict/en/index.ts",
+      "sha": "2fdbbeb211eed9db8d9ef68ab844f9ea30bb0572",
+      "size": 1099
+    },
+    {
+      "path": "source/overlay/src/i18n/dict/en/miniapp.ts",
+      "sha": "392d068010422eaa9a0c969b3f6cc93c9770aad1",
+      "size": 16901
+    },
+    {
+      "path": "source/overlay/src/index.css",
+      "sha": "6b8e619eb538bdd7be40be2953fdd45fe9fef899",
+      "size": 142617
+    },
+    {
+      "path": "source/overlay/src/lib/utils.ts",
+      "sha": "607e30cfe631f626de32fcdbae74f8f46b23ebee",
+      "size": 166
+    },
+    {
+      "path": "source/overlay/src/miniappTypography.css",
+      "sha": "457f223b550f45c0eff28835d170fc928b2b8e81",
+      "size": 4333
+    },
+    {
+      "path": "source/overlay/src/setup.css",
+      "sha": "4e6365a0807112cd1cca70d734fac167b7c05751",
+      "size": 775
+    },
+    {
+      "path": "source/overlay/src/setup.tsx",
+      "sha": "a916253027338ee4bf0a8bc5c3d2cd23590f8726",
+      "size": 3120
+    },
+    {
+      "path": "source/package-region.mjs",
+      "sha": "1bc69c8f9b1df72e1c022a9a9c9e233b041196b8",
+      "size": 3335
+    },
+    {
+      "path": "source/prepare-source.mjs",
+      "sha": "2cedf3bcf06f98aec6c3a3762d7c621e081f46be",
+      "size": 1508
+    },
+    {
+      "path": "source/upstream.patch",
+      "sha": "c8adc6301c33c793393327d9ae52594d3e3c1193",
+      "size": 161611
+    }
+  ]
+}

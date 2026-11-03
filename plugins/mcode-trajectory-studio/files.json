@@ -1,0 +1,805 @@
+{
+  "version": "0.1.3",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "43f93b83ea543b934359c3d3354e21a6c8abfd1e",
+      "size": 1277
+    },
+    {
+      "path": "DESIGN.md",
+      "sha": "d6b95e477ef5b0460a3b1c0a5ebff0d4cd4f6ffb",
+      "size": 224211
+    },
+    {
+      "path": "LICENSE",
+      "sha": "125be1b8e1012ef2d9839626f9c045a352bcfa9d",
+      "size": 10860
+    },
+    {
+      "path": "README.md",
+      "sha": "84888ee2d934f588850f6f9fcb4f7910054f92b9",
+      "size": 42330
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "e33576028d8158f47ed8878991d30703c47593fd",
+      "size": 35113
+    },
+    {
+      "path": "icon.png",
+      "sha": "501f4148b97bdc7681d2de0b7414ddbd0c86c10d",
+      "size": 7912
+    },
+    {
+      "path": "server/changes.mjs",
+      "sha": "35072ac390af9f7b27873b47a123f4d64a0eb759",
+      "size": 20519
+    },
+    {
+      "path": "server/config.mjs",
+      "sha": "02d8df22d46df00c99b4734d4eed43de4b9a24e8",
+      "size": 20328
+    },
+    {
+      "path": "server/events.mjs",
+      "sha": "1f97601162084a5fce8f9aad123dae0708339121",
+      "size": 49030
+    },
+    {
+      "path": "server/fsutil.mjs",
+      "sha": "872857a4f15aca45a03c0c00c01b0b7b9291ab82",
+      "size": 8523
+    },
+    {
+      "path": "server/git.mjs",
+      "sha": "ed9cc43583cd8a51dd860272e98c7c93a65bf40e",
+      "size": 5439
+    },
+    {
+      "path": "server/http.mjs",
+      "sha": "e274331a4e2dfd306bc40360424fbb8e68ef1fa3",
+      "size": 33041
+    },
+    {
+      "path": "server/ingress.mjs",
+      "sha": "1455258173dced6f97ddf74f9f914ea61c48aab5",
+      "size": 12579
+    },
+    {
+      "path": "server/json.mjs",
+      "sha": "ab7ca94a715330990107620b34e91fb83d73a0fe",
+      "size": 655
+    },
+    {
+      "path": "server/jsonl.mjs",
+      "sha": "f0905097b125e9d8722117fb5c16f532ae4acedc",
+      "size": 30082
+    },
+    {
+      "path": "server/main.mjs",
+      "sha": "43a2addf2354a900168c4564a8ea5d28d4b65895",
+      "size": 10609
+    },
+    {
+      "path": "server/mcp.mjs",
+      "sha": "d6f99e711a6e18efd668ab06cd382e0ac9ce5eda",
+      "size": 94716
+    },
+    {
+      "path": "server/node-version.mjs",
+      "sha": "0560c568c725ad0d8a61d5f81498da49a06e1086",
+      "size": 4415
+    },
+    {
+      "path": "server/redact.mjs",
+      "sha": "ce3eab852bb57448c6a86132d3a59d40b441e8aa",
+      "size": 33136
+    },
+    {
+      "path": "server/search.mjs",
+      "sha": "210bddeebc89acd6f42ad068a56bb034479d2c70",
+      "size": 20282
+    },
+    {
+      "path": "server/sessions.mjs",
+      "sha": "94cc1b2be940b9b52bce6c016c2843129318d21b",
+      "size": 17020
+    },
+    {
+      "path": "server/sqlite.mjs",
+      "sha": "5819c3f860607f2ec9428fdb2882911e03ed9f0c",
+      "size": 4340
+    },
+    {
+      "path": "server/stats.mjs",
+      "sha": "1c31c6a55d59bf452cc8672b0b435f678987121a",
+      "size": 32197
+    },
+    {
+      "path": "server/store.mjs",
+      "sha": "fc619a507a577d26ecc784846819fa6e6043c4a6",
+      "size": 15937
+    },
+    {
+      "path": "server/tasks.mjs",
+      "sha": "4bef27a21031cc441c0366f2aef7e61f9b4203d1",
+      "size": 10236
+    },
+    {
+      "path": "servers.mcp.json",
+      "sha": "48a6b9f772429454a8e562ea8f6e4b3a7a516bad",
+      "size": 187
+    },
+    {
+      "path": "skills/mcode-trajectory-studio/SKILL.md",
+      "sha": "e22ecec1d3ebbf0bee901c6c95abd7736c176f8a",
+      "size": 49610
+    },
+    {
+      "path": "test/agent-tool.test.mjs",
+      "sha": "53b28fc88785e58173859476228df6c372eb6d13",
+      "size": 9680
+    },
+    {
+      "path": "test/assets-tool.test.mjs",
+      "sha": "f8932f24416aed8b395185f2a544895a6230ccfe",
+      "size": 11340
+    },
+    {
+      "path": "test/boolean-args.test.mjs",
+      "sha": "40a69ace85079475d5c87bab9887df6a07daeac7",
+      "size": 11458
+    },
+    {
+      "path": "test/changes-tool.test.mjs",
+      "sha": "53408fd39be6b69479bee77e9d84715baac794ac",
+      "size": 45171
+    },
+    {
+      "path": "test/chrome-paths.test.mjs",
+      "sha": "c133e6c6ed674bcabe1fe270d6157c25e32c6a41",
+      "size": 4895
+    },
+    {
+      "path": "test/cli-args.test.mjs",
+      "sha": "b33e2c21f12738512682a4c9a6ec419ca8979f45",
+      "size": 7683
+    },
+    {
+      "path": "test/compat-contract.test.mjs",
+      "sha": "cca3d16c2959042adcbeab55670ec2a15372cf55",
+      "size": 10027
+    },
+    {
+      "path": "test/containment-attacks.test.mjs",
+      "sha": "9262785d29ea4a4e741e6f96459d973666e52d83",
+      "size": 9019
+    },
+    {
+      "path": "test/containment.test.mjs",
+      "sha": "1042e49d8d996105eea905aec75b2159262353ca",
+      "size": 17421
+    },
+    {
+      "path": "test/dead-exports.test.mjs",
+      "sha": "0e214277d8a8f1cdda29f743392c1503270a535a",
+      "size": 5523
+    },
+    {
+      "path": "test/detail-level.test.mjs",
+      "sha": "14d0a8d97f23787501261b4ae578b1a624e6c44b",
+      "size": 8129
+    },
+    {
+      "path": "test/egress-contract.test.mjs",
+      "sha": "8e3c910e1c91897ad453727fd8752e2a7c3192b0",
+      "size": 16290
+    },
+    {
+      "path": "test/egress-sweep.test.mjs",
+      "sha": "0dd5f01c17dc62eaa3ac3f13b2684604d2bb2341",
+      "size": 4709
+    },
+    {
+      "path": "test/failed-session.test.mjs",
+      "sha": "8518e74f6f91b1dd49da0cb58d24965e909f88c1",
+      "size": 6357
+    },
+    {
+      "path": "test/find-tool.test.mjs",
+      "sha": "e5ab9a5b1c152e12a8a67e94e75c4cc3a3e57407",
+      "size": 41691
+    },
+    {
+      "path": "test/format.test.mjs",
+      "sha": "acee3724aa35f3702c9e22e738d6a6d19241408c",
+      "size": 1006
+    },
+    {
+      "path": "test/goal-tool.test.mjs",
+      "sha": "ea309e646adaf534039ee3a5d3e96b34a054006e",
+      "size": 17427
+    },
+    {
+      "path": "test/http.test.mjs",
+      "sha": "2dcdae61a43e56941677aec8b6c73f41fa781e60",
+      "size": 27951
+    },
+    {
+      "path": "test/ingress-tool.test.mjs",
+      "sha": "35a52c2e1e9210d497f2ce42e5cbe56360df8880",
+      "size": 18166
+    },
+    {
+      "path": "test/json-values.test.mjs",
+      "sha": "bce5bdb2eef61be2894fb194492a20634dd1b70b",
+      "size": 4165
+    },
+    {
+      "path": "test/list-agents.test.mjs",
+      "sha": "e6e26560522b999dc0d419ff8412501a489a383e",
+      "size": 18393
+    },
+    {
+      "path": "test/list-paging.test.mjs",
+      "sha": "d501621e70d09e7b9d620ae8b3f3e7d665aef703",
+      "size": 24759
+    },
+    {
+      "path": "test/modules.test.mjs",
+      "sha": "a5e6fca3883335370c8fcdbc3e382e927b9eacf3",
+      "size": 5540
+    },
+    {
+      "path": "test/mutation-sweep.test.mjs",
+      "sha": "9465d6fbb45f8e943cb73389a26ae3557c7f1ec3",
+      "size": 17098
+    },
+    {
+      "path": "test/node-version.test.mjs",
+      "sha": "7b561bb7794806d3f2fecbc608f30533f8a1b995",
+      "size": 5588
+    },
+    {
+      "path": "test/overview-disclosure.test.mjs",
+      "sha": "17d4e178015752e705568f8a05d86052c5cee564",
+      "size": 7849
+    },
+    {
+      "path": "test/paging-args.test.mjs",
+      "sha": "dd9f2efe8d50fe2e844e12afc7e4ba67efa8aff8",
+      "size": 9033
+    },
+    {
+      "path": "test/panel-authorization.test.mjs",
+      "sha": "c15202d69d91de53c6fb5d1038b41ebf79e62b9d",
+      "size": 15913
+    },
+    {
+      "path": "test/panel-dom-contract.test.mjs",
+      "sha": "04db70d916f7c2ad239406c34b2c1a71a7959b84",
+      "size": 4099
+    },
+    {
+      "path": "test/panel-dom.mjs",
+      "sha": "fc79331d56bfd669db4834496c2d062443aa1c51",
+      "size": 16558
+    },
+    {
+      "path": "test/panel-flow.test.mjs",
+      "sha": "1bff3076048e84d737dbf5068aa2687182f635ff",
+      "size": 37494
+    },
+    {
+      "path": "test/panel-search-fields.test.mjs",
+      "sha": "444f40b71fd70aa41e5bc35afa76570ba190a5fa",
+      "size": 12387
+    },
+    {
+      "path": "test/panel-security.test.mjs",
+      "sha": "51b3bdbb5c40672f678b35ec01a3156aac4f1b78",
+      "size": 16370
+    },
+    {
+      "path": "test/panel-storage.test.mjs",
+      "sha": "b71f65b6c56fd276ea57f05d6f2cc2ba45d1373a",
+      "size": 4071
+    },
+    {
+      "path": "test/path-folding.test.mjs",
+      "sha": "82527c219d1a4c21cc204e2abd4da451e78923aa",
+      "size": 8848
+    },
+    {
+      "path": "test/portable-paths.test.mjs",
+      "sha": "2c99a2c71d192169aa8035e12ed3ce75155b249e",
+      "size": 8692
+    },
+    {
+      "path": "test/protocol.test.mjs",
+      "sha": "facb43e37234d6791da72d707e1170a5c6cdbf1c",
+      "size": 20313
+    },
+    {
+      "path": "test/read-consistency.test.mjs",
+      "sha": "58769b51210e9e16834138014959d703cccc5168",
+      "size": 37678
+    },
+    {
+      "path": "test/redact.test.mjs",
+      "sha": "d38c51a16d8f08f8fe59e4c52c840a9e9cde853f",
+      "size": 33079
+    },
+    {
+      "path": "test/release-gates.test.mjs",
+      "sha": "0f81d654319078d458b1478ade1e3d08db33e480",
+      "size": 21861
+    },
+    {
+      "path": "test/review-round4.test.mjs",
+      "sha": "422b9530422292e23f79fcb08bb20a829b692b67",
+      "size": 21915
+    },
+    {
+      "path": "test/role-filter.test.mjs",
+      "sha": "1740ca6dcde4fb9c589b99960d680446bfdd19ff",
+      "size": 10711
+    },
+    {
+      "path": "test/route-liveness.test.mjs",
+      "sha": "4bc6ed80b7be4dad55984316ef7e39dc8c62fded",
+      "size": 4829
+    },
+    {
+      "path": "test/search-encoding.test.mjs",
+      "sha": "3c5649cf7689f7b66b59d9e479baa96f06b36f22",
+      "size": 17082
+    },
+    {
+      "path": "test/search-failure.test.mjs",
+      "sha": "97a6ca3bf782232ccb901b7691ca225843cabca9",
+      "size": 13694
+    },
+    {
+      "path": "test/search-paging.test.mjs",
+      "sha": "3af78eb48b18b8d9161b0f2358ed723184983774",
+      "size": 16784
+    },
+    {
+      "path": "test/search-purpose-behaviour.test.mjs",
+      "sha": "b61ac54d74d56654c675a3f720b8762b1eb3f22c",
+      "size": 5666
+    },
+    {
+      "path": "test/session-identity.test.mjs",
+      "sha": "70c307f5936f9235657e633eeac8b86b11fdfa97",
+      "size": 8514
+    },
+    {
+      "path": "test/session-total-source.test.mjs",
+      "sha": "3a74984775fe7dd02e0331b9ff847aab6d66a24c",
+      "size": 9168
+    },
+    {
+      "path": "test/silent-degradation.test.mjs",
+      "sha": "2330cf4ef4db2acf1e2e36a9c2c50ec4f5e683de",
+      "size": 18587
+    },
+    {
+      "path": "test/skill-contract.test.mjs",
+      "sha": "97800e58eef3413b245ccd821f065e1d7a3d34e1",
+      "size": 23594
+    },
+    {
+      "path": "test/snippet-offset.test.mjs",
+      "sha": "42f76a9e9d94a6042afc56fcc361e73969d67d46",
+      "size": 20438
+    },
+    {
+      "path": "test/stats-degradation.test.mjs",
+      "sha": "1815ec5aa63e02a9052b86aaca415fd4ced894ad",
+      "size": 7157
+    },
+    {
+      "path": "test/store.test.mjs",
+      "sha": "dbdb6550b70e9f8d5cbfad126a03df31ae6a79ec",
+      "size": 62474
+    },
+    {
+      "path": "test/stream-first-batch.test.mjs",
+      "sha": "a8e4590cf4addeff487f335d5856768886f73ff0",
+      "size": 12470
+    },
+    {
+      "path": "test/studio-port.test.mjs",
+      "sha": "d8af15830cf91f7ee66e7afb01b5dcc7b9d96775",
+      "size": 6886
+    },
+    {
+      "path": "test/tail-direction.test.mjs",
+      "sha": "d8d564a00e40621e5f52a3b7765623f59ed540b3",
+      "size": 8930
+    },
+    {
+      "path": "test/tail-jump.test.mjs",
+      "sha": "111e88e0e6ce80ac072fdb6df49abe2e69853323",
+      "size": 5487
+    },
+    {
+      "path": "test/task-filter.test.mjs",
+      "sha": "ef88db3bdcc5b7a947768e2fdee68c8b372f76bc",
+      "size": 6096
+    },
+    {
+      "path": "test/task-output-notice.test.mjs",
+      "sha": "643289fe8546167709dcc815dc68f5e22016676e",
+      "size": 2515
+    },
+    {
+      "path": "test/timeline-fallback.test.mjs",
+      "sha": "df9dc7d5775b5491067d9036e04bcd8b47cfa24f",
+      "size": 7182
+    },
+    {
+      "path": "test/tool-limits.test.mjs",
+      "sha": "5f5bd2a5fe93c814e1ef5e6f0854f32dcfd4a94b",
+      "size": 8341
+    },
+    {
+      "path": "test/turn-time.test.mjs",
+      "sha": "3eab6a8b3e28ab0732d0f1c484186873cd5aa0a3",
+      "size": 9462
+    },
+    {
+      "path": "test/turns-tool.test.mjs",
+      "sha": "64c7e44f6632996c10a5a6bf3e88bd48a7741eb8",
+      "size": 19401
+    },
+    {
+      "path": "test/unavailable-records.test.mjs",
+      "sha": "f8ada5da8055cabf11b281ba3f74a5a11c1d7107",
+      "size": 15892
+    },
+    {
+      "path": "test/warning-scope.test.mjs",
+      "sha": "6329198a0324246d62ba81f1567e638b41cae638",
+      "size": 14168
+    },
+    {
+      "path": "tools/browser-check.mjs",
+      "sha": "d96ef54c319a250a47660b60b3f3b509664ab866",
+      "size": 30790
+    },
+    {
+      "path": "tools/chrome-paths.mjs",
+      "sha": "18ce0d194b694dd790503741ced286a6b6050397",
+      "size": 2859
+    },
+    {
+      "path": "tools/compat-matrix.mjs",
+      "sha": "816c2c65bc9eb545a0a3667654c1ee0c7f40ee55",
+      "size": 8628
+    },
+    {
+      "path": "tools/fixture.mjs",
+      "sha": "712bdeb553fde6b3867e5da99a397d52bf1001b3",
+      "size": 18065
+    },
+    {
+      "path": "tools/mutate-agent-assets-tool.sh",
+      "sha": "c43537b40222dca0def60f4706584fd9a03ad353",
+      "size": 10633
+    },
+    {
+      "path": "tools/mutate-agents-list.sh",
+      "sha": "f7c4919e0b50179d885f811e73d5e6588d1b2ee1",
+      "size": 7763
+    },
+    {
+      "path": "tools/mutate-changes-tool.sh",
+      "sha": "55ec0b0c694bee13a08499b531e18a5c1eb5378d",
+      "size": 18231
+    },
+    {
+      "path": "tools/mutate-compat-contract.sh",
+      "sha": "5e88417725a15316ab51046cace8df159ae88861",
+      "size": 6484
+    },
+    {
+      "path": "tools/mutate-detail-level.sh",
+      "sha": "5734bd83bd3cb2f2b42f4fe38cbcf20da6c02338",
+      "size": 5130
+    },
+    {
+      "path": "tools/mutate-event-case.sh",
+      "sha": "a00915803cfa30c8a2884f9a4776f43443a21c8d",
+      "size": 7824
+    },
+    {
+      "path": "tools/mutate-failed-session.sh",
+      "sha": "56cf9059376fb5c3421f901eeaedf6eb451c9a94",
+      "size": 6746
+    },
+    {
+      "path": "tools/mutate-goal-objective.sh",
+      "sha": "77405bac60874e350e7bc91c0d7ac4ccb033d013",
+      "size": 9728
+    },
+    {
+      "path": "tools/mutate-home-folding.sh",
+      "sha": "7b30be8d1524b85045197b243b3f13c4384c08f5",
+      "size": 6571
+    },
+    {
+      "path": "tools/mutate-ingress-tool.sh",
+      "sha": "da524cc8f03d5f31b8d614e78398bdb642c51de9",
+      "size": 13046
+    },
+    {
+      "path": "tools/mutate-overview-disclosure.sh",
+      "sha": "c293047d3d5d0b61aa5f45d7205288fc91284ebf",
+      "size": 7390
+    },
+    {
+      "path": "tools/mutate-paging-args.sh",
+      "sha": "a6fb4cbd7d345127dd1f6edfdd8be3aecb4cf40d",
+      "size": 5807
+    },
+    {
+      "path": "tools/mutate-panel-search.sh",
+      "sha": "6efe1a03581f04ba32d2aa3d137764432a043f61",
+      "size": 6211
+    },
+    {
+      "path": "tools/mutate-panel-storage.sh",
+      "sha": "68f34857a1b6f849cd1dae68578539751b927c4a",
+      "size": 4142
+    },
+    {
+      "path": "tools/mutate-panel-task-output.sh",
+      "sha": "14b4490c28e2a7cb6d01de6cccdd8c6b1bbf6bba",
+      "size": 4857
+    },
+    {
+      "path": "tools/mutate-review-round4.sh",
+      "sha": "20bb4f6851e35a6338765e2737283269f124f913",
+      "size": 8748
+    },
+    {
+      "path": "tools/mutate-role-filter.sh",
+      "sha": "d27eff9f2f676d66030c4763bed0b9b01a05ac0a",
+      "size": 5788
+    },
+    {
+      "path": "tools/mutate-search-encoding.sh",
+      "sha": "4de373f1ad5d13b365977451ddbf26625d556edc",
+      "size": 6481
+    },
+    {
+      "path": "tools/mutate-search-purpose-behaviour.sh",
+      "sha": "65aa02470bbf3bb53cb2f0822e884fa282ff90ef",
+      "size": 6142
+    },
+    {
+      "path": "tools/mutate-search-purpose.sh",
+      "sha": "bf54498e9b2f6a6f91cf490ae8d03f86e9df4f25",
+      "size": 5033
+    },
+    {
+      "path": "tools/mutate-search-unsearchable.sh",
+      "sha": "beeecd783a969786fd1c0ba51807553b10226591",
+      "size": 6266
+    },
+    {
+      "path": "tools/mutate-source-swap.sh",
+      "sha": "9b9f2e663df17f61d3a1107a57347318db104cc4",
+      "size": 5711
+    },
+    {
+      "path": "tools/mutate-static-404.sh",
+      "sha": "76361dd39fea2a3a72b3358d27c9b6dbde4fd0c4",
+      "size": 5087
+    },
+    {
+      "path": "tools/mutate-stream-rows.sh",
+      "sha": "52747c22cb6761a1cd10ec5e6d28e388219ffb21",
+      "size": 8737
+    },
+    {
+      "path": "tools/mutate-studio-port.sh",
+      "sha": "ebcc79d6ab13977a67451d851be41c1d468e5a0a",
+      "size": 6717
+    },
+    {
+      "path": "tools/mutate-tail-direction.sh",
+      "sha": "df491c3fa800c8de102895803e3ba8c083f58d3d",
+      "size": 6451
+    },
+    {
+      "path": "tools/mutate-task-capability.sh",
+      "sha": "35fc911f6c9644460e87ecbebcb5a5709faf1bb1",
+      "size": 6892
+    },
+    {
+      "path": "tools/mutate-task-output-notice.sh",
+      "sha": "70d94a98e63b7e84a8c79e8791596743bb9fcc8c",
+      "size": 4770
+    },
+    {
+      "path": "tools/mutate-timeline-fallback.sh",
+      "sha": "1627fbf41e91c676b4f5a590de1e5cd8fd96ff97",
+      "size": 8097
+    },
+    {
+      "path": "tools/mutate-tool-limits.sh",
+      "sha": "ead4d0fb392da9b9ee7e1d85ae485b4a5cf310a4",
+      "size": 5433
+    },
+    {
+      "path": "tools/mutate-toolcall-snippet.sh",
+      "sha": "8e0f06fa099d192b9fe569bfa1400fba829a6e55",
+      "size": 8137
+    },
+    {
+      "path": "tools/mutate-turn-failures.sh",
+      "sha": "98904cf38b9e813f618f7f4cfca7d95934b63747",
+      "size": 5482
+    },
+    {
+      "path": "tools/mutate-turn-time.sh",
+      "sha": "f1f2b7e68a28206deb285210607edc05c6062417",
+      "size": 7620
+    },
+    {
+      "path": "tools/mutate-unavailable-records.sh",
+      "sha": "3a2c2139268a41a00a649bb8453cb44e9f9ca91a",
+      "size": 12587
+    },
+    {
+      "path": "tools/mutate-walk-cursor.sh",
+      "sha": "62d5a0787be1148252b03c88ae5415f3ba145612",
+      "size": 10265
+    },
+    {
+      "path": "tools/mutate-warning-scope.sh",
+      "sha": "860868deacc396895dd9411aa88cae8b7c876e05",
+      "size": 6525
+    },
+    {
+      "path": "tools/mutation-lib.sh",
+      "sha": "ee67a318421e77afee86f842849e1d7aaa25712b",
+      "size": 5637
+    },
+    {
+      "path": "tools/mutation-sweep.mjs",
+      "sha": "9d60d4de896992a984ef161e7ebe09a9629eef90",
+      "size": 14115
+    },
+    {
+      "path": "tools/panel-e2e.mjs",
+      "sha": "4e0c55173a54977347bb08bfcb5abba262023ece",
+      "size": 12090
+    },
+    {
+      "path": "tools/release-gates.mjs",
+      "sha": "121c0a6968423782e6e740b9840ec20c20da3fbb",
+      "size": 35728
+    },
+    {
+      "path": "web/app.js",
+      "sha": "3a1fb9c8e120f5e3162cbeb810add6a15e16aab4",
+      "size": 3606
+    },
+    {
+      "path": "web/index.html",
+      "sha": "6856292dd1ddb72c5c85aae7e9b370cff2c2350f",
+      "size": 4596
+    },
+    {
+      "path": "web/js/api.js",
+      "sha": "6db7596465892ba06cecc11118cbbdb04a65e597",
+      "size": 1451
+    },
+    {
+      "path": "web/js/banner.js",
+      "sha": "18c020865956b1b78d9306e227259ad6d1409306",
+      "size": 498
+    },
+    {
+      "path": "web/js/bus.js",
+      "sha": "aa06d6933a04b070f8ec80346fea31cb63321dfc",
+      "size": 1028
+    },
+    {
+      "path": "web/js/capability.js",
+      "sha": "07a645ba2994d3a66c443d58e59df82ab13e5e93",
+      "size": 2869
+    },
+    {
+      "path": "web/js/controller.js",
+      "sha": "c2291e34794e9f1651a98023d71b97dc9f91f24c",
+      "size": 1494
+    },
+    {
+      "path": "web/js/flow.js",
+      "sha": "4e1b9d057d9ec9b6a93154714f3ed2bdb1fa030a",
+      "size": 26914
+    },
+    {
+      "path": "web/js/format.js",
+      "sha": "ed841627454b7e21e122c104077aedefceb9c979",
+      "size": 3525
+    },
+    {
+      "path": "web/js/icons.js",
+      "sha": "a942dfbb87f2c1e680baf48c0fa14970f247f6c1",
+      "size": 1267
+    },
+    {
+      "path": "web/js/inspector.js",
+      "sha": "848cd69d95c5a4c7f83d26de46b758ab3a2fb7c5",
+      "size": 17703
+    },
+    {
+      "path": "web/js/intents.js",
+      "sha": "c1e117a28778561224806ade9c0ae784b482b2e4",
+      "size": 926
+    },
+    {
+      "path": "web/js/results.js",
+      "sha": "2308c2802b1025bb96170473c8e016e3b648a08d",
+      "size": 2961
+    },
+    {
+      "path": "web/js/rows.js",
+      "sha": "b5732f80885c7685662325f7d958b3cece0caf65",
+      "size": 3297
+    },
+    {
+      "path": "web/js/sidebar.js",
+      "sha": "0d4a952bf7abae451038d35986223899a650de0f",
+      "size": 8866
+    },
+    {
+      "path": "web/js/state.js",
+      "sha": "aa0b2bc19405f231c62c23a2041cbd3210192fb8",
+      "size": 5961
+    },
+    {
+      "path": "web/js/stats.js",
+      "sha": "9758bbfa3b98529c420bb8f94b7c43977b5fe68c",
+      "size": 4227
+    },
+    {
+      "path": "web/js/storage.js",
+      "sha": "b8f9ab0abd80c6d884687d2509fcffcdf2a3bf4b",
+      "size": 2095
+    },
+    {
+      "path": "web/js/stream.js",
+      "sha": "fb05477a49a3dc478bf1d4295941a7a910fcadeb",
+      "size": 11916
+    },
+    {
+      "path": "web/js/theme.js",
+      "sha": "6e7406a7e95f81bb6e4672cd1391f93b0ea4c256",
+      "size": 1652
+    },
+    {
+      "path": "web/js/timeline.js",
+      "sha": "c02dc8fc6b7aa9e08037b214bf1b919392affe8e",
+      "size": 10423
+    },
+    {
+      "path": "web/js/wire.js",
+      "sha": "14a3ee29e651a165ec0faa14e841a5f37698a9b7",
+      "size": 8808
+    },
+    {
+      "path": "web/style.css",
+      "sha": "7ec01fe8ba2e51cbdb1d2df79d60a8e4f9343490",
+      "size": 24362
+    }
+  ]
+}

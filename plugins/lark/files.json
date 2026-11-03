@@ -1,0 +1,2775 @@
+{
+  "version": "0.1.4",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "c2d980a2471e8eb2e0b6d94c4ef7f1eb28aac311",
+      "size": 1606
+    },
+    {
+      "path": "LICENSE",
+      "sha": "2b8bbb5e9c46b1abc3a5ac68ee190baf046ba968",
+      "size": 1084
+    },
+    {
+      "path": "README.md",
+      "sha": "a332ce4805b28594d2a36b791bf175bd8f71db5b",
+      "size": 3404
+    },
+    {
+      "path": "hooks/hooks.json",
+      "sha": "e280cef77b8c7c79444bf485032f42c6f2f9d902",
+      "size": 407
+    },
+    {
+      "path": "icon.png",
+      "sha": "c0b0446c8396fbb6cb63bbfd2eab46efac8626cc",
+      "size": 13812
+    },
+    {
+      "path": "scripts/check-lark-cli.ps1",
+      "sha": "e89a93c33c14582541ed64e015785a870f07bd92",
+      "size": 2852
+    },
+    {
+      "path": "scripts/check-lark-cli.sh",
+      "sha": "6290d6315469702ce543393aa505c00aa30dae0f",
+      "size": 2593
+    },
+    {
+      "path": "skills/lark-approval/SKILL.md",
+      "sha": "3ebd27929be731ebe9153c2d431424039e1f5ab9",
+      "size": 6969
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-approvals-get.md",
+      "sha": "cdd607e750738d66d79ba78fef8d4116201b004c",
+      "size": 5067
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-approvals-search.md",
+      "sha": "3ef6ed76d2d5b7bc6d806648fd3ca940a1befbea",
+      "size": 4123
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-initiate.md",
+      "sha": "59aa83c0ac309b6929bed6d871fc31c5700342b6",
+      "size": 12675
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-instance-form-control-parameters.md",
+      "sha": "553a03369284dbbfe18efc4ad126df01539539fc",
+      "size": 26003
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-instance-value-sourcing.md",
+      "sha": "0bb0842eb9cbc4a2a8d6a445d9becae675727670",
+      "size": 4648
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-instances-cancel.md",
+      "sha": "1d211eb706cfce9eceb495630dc56fa8f9d54e92",
+      "size": 3180
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-instances-cc.md",
+      "sha": "6f0c295b4b1a1c8400f42a85b7a7eb1ab6f4e864",
+      "size": 4947
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-instances-get.md",
+      "sha": "06f7ea18fdc85098e9e460697f4b7a46a06046a2",
+      "size": 5950
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-instances-initiated.md",
+      "sha": "7c7a3bdc6f24f0e520632e2a851054c08f3b8a41",
+      "size": 5919
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-add-sign.md",
+      "sha": "696d6b4ca7cf800220adf408d5d63244c766e7de",
+      "size": 10434
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-approve.md",
+      "sha": "5c0eb33beb7f8b089f2f82edc4b6e569d9594efd",
+      "size": 3720
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-query.md",
+      "sha": "3159c1cbc05eeaa51f71d5e551b7fb87200cd9e4",
+      "size": 4556
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-reject.md",
+      "sha": "b6d8a46e0735d8c6e1f61125aa73cd37b5d4f702",
+      "size": 3157
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-remind.md",
+      "sha": "c46708c89dce47d5c879f914a2ccc40a65ea0b49",
+      "size": 3673
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-rollback.md",
+      "sha": "4982a186e0657fde502843d73cfd61037ecae38a",
+      "size": 4487
+    },
+    {
+      "path": "skills/lark-approval/references/lark-approval-tasks-transfer.md",
+      "sha": "edc09fdba23b8b80b8963b632d564acaeeb2f876",
+      "size": 4564
+    },
+    {
+      "path": "skills/lark-apps/SKILL.md",
+      "sha": "58a4b1776b9c621ab314580862db2a41e95cbe5d",
+      "size": 25040
+    },
+    {
+      "path": "skills/lark-apps/creative-design/agents/assets/vision-probe.png",
+      "sha": "aabbb7397411287dbabce6376a2995c5143ad593",
+      "size": 263
+    },
+    {
+      "path": "skills/lark-apps/creative-design/agents/fork-verifier-agent.md",
+      "sha": "2ed155f5a8abc268ddc9221ed678ab8038e353a6",
+      "size": 3971
+    },
+    {
+      "path": "skills/lark-apps/creative-design/agents/vision-probe-agent.md",
+      "sha": "b171c65d5b7fdb97ccc8c429896cc234c2d046e7",
+      "size": 1310
+    },
+    {
+      "path": "skills/lark-apps/creative-design/assets/index.html",
+      "sha": "b845ff6c3f72d79dae25166d6a2aee36167bfae1",
+      "size": 829
+    },
+    {
+      "path": "skills/lark-apps/creative-design/creative-design.md",
+      "sha": "fc9cc83d362d3fd84dd562646ab907147311c8eb",
+      "size": 32910
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/aily.md",
+      "sha": "90c71d0324d359813a4585c7b36451853ef7622c",
+      "size": 4313
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/animated-video.md",
+      "sha": "e264ea8f7012fda8e83843531cf4474338b534c0",
+      "size": 5480
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/charts.md",
+      "sha": "02fcec50393f121e174e895dc2c4a6aee8db6173",
+      "size": 9636
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/claude.md",
+      "sha": "24258c0f3ea02b577b1e281e697755fd38cde40e",
+      "size": 3239
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/codex.md",
+      "sha": "40cd74351e04f6788cdc66a72c8e8a5742334b01",
+      "size": 2895
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/data-report.md",
+      "sha": "7632246e8f5b3079f405ed591d3ce2c7487feb89",
+      "size": 8736
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/frontend-design.md",
+      "sha": "0eb641138b778d6f56280e5638b170d3c2ad9caa",
+      "size": 9222
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/hi-fi-design.md",
+      "sha": "302e60cf32e538f70e76b49fd906a82b39e96190",
+      "size": 2833
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/interactive-prototype.md",
+      "sha": "b498e30c3591d7fd630d659ee27befd50048c1a5",
+      "size": 2206
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/make-a-deck.md",
+      "sha": "8acd5532b2f55010648739383d75acc5e7ac6ed5",
+      "size": 16375
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/visual-exposure.md",
+      "sha": "2053f76dc3d2e1a9a4452f84064dcf8d098c482d",
+      "size": 8475
+    },
+    {
+      "path": "skills/lark-apps/creative-design/references/wireframe.md",
+      "sha": "31d97c890437dc26fee40520d84ee6826bea1428",
+      "size": 1301
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/android-frame.jsx",
+      "sha": "09b8f0db7746c0d0a6ad09879631486fc0789095",
+      "size": 8299
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/animations.jsx",
+      "sha": "8c1e861dc5658dc17ccdf0d350a00c52803312f0",
+      "size": 25781
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/browser-window.jsx",
+      "sha": "89a6db6e03189ae56d102456c6b665cb80650ca1",
+      "size": 4269
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/deck-stage.js",
+      "sha": "1c50cff8cf01ce32bbf5b1b6f1e03fd8701a1cf5",
+      "size": 115909
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/design-canvas.jsx",
+      "sha": "88c5d6e2e30f69b5f8f8322404e9e601915918b7",
+      "size": 78682
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/ios-frame.jsx",
+      "sha": "c50eda2888a1406e8b461634043e0f4de02e2d40",
+      "size": 12513
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/macos-window.jsx",
+      "sha": "2f545dd7bee3c335c63651ba9fb8c1e5c7d0ed6e",
+      "size": 8347
+    },
+    {
+      "path": "skills/lark-apps/creative-design/starter-components/tweaks-panel.jsx",
+      "sha": "e7cc636cc655d9809715dc2abd69086827c9a770",
+      "size": 35593
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-access-scope-get.md",
+      "sha": "41653d0920a0f34169d8e0a5ae91cab88c4f8d59",
+      "size": 1087
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-access-scope-set.md",
+      "sha": "3a662233a0a4552d14fee80bcf026c075151afcf",
+      "size": 2069
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-automation.md",
+      "sha": "9d023ba9a7d94071b0ef03d36586c3df2c471f94",
+      "size": 25708
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-cache.md",
+      "sha": "fe05d1e88ce5cf74677b5c2eea70968b284a5847",
+      "size": 7759
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-cloud-dev.md",
+      "sha": "2c3d54058b3265d6550cbef3088902b0f95c01d4",
+      "size": 9204
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-create.md",
+      "sha": "0baa627a5b6297aaa6d96d1e2e2c8c5b727de8a0",
+      "size": 1981
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-db-execute.md",
+      "sha": "35f0c441614f026411fcba48ecfeae72a6f0a570",
+      "size": 14708
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-db.md",
+      "sha": "ebc551f50ae1ced93ad0cc5a8aeb34e340fbc66b",
+      "size": 28419
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-env-pull.md",
+      "sha": "77ae332185f389f0b8cd9aaf39b52d52c9a2012a",
+      "size": 1843
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-env.md",
+      "sha": "b6c3aa1fa432ad4a51b3a61b8de9a9a22b173f03",
+      "size": 2839
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-file.md",
+      "sha": "50a623fec1797d86036d848bdf7aee82e8f91957",
+      "size": 5833
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-get.md",
+      "sha": "b5d0fb80b6a08269b146217433d8554efec0950a",
+      "size": 1625
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-git-credential.md",
+      "sha": "628a70f343d5545267c5bc3b7db8c66bcf7566e1",
+      "size": 2031
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-html-publish.md",
+      "sha": "1cc9e7e6b6a868bcf69ec4d8eff933185cdbf945",
+      "size": 3654
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-init.md",
+      "sha": "f82c1d2d1db6bff69f871cdb76dd4309edb16ed4",
+      "size": 2264
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-list.md",
+      "sha": "6ec2bdc7cb28ae9c5e994ac7c68332383a1feb72",
+      "size": 2108
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-local-dev.md",
+      "sha": "cea4dabe8fc2420dc14a2a6383b1c6da912fc9cf",
+      "size": 11776
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-observability.md",
+      "sha": "e40a9a865f951d50a04fca1689567048eefd782b",
+      "size": 3821
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-openapi-key.md",
+      "sha": "3005e4586542e7b2d39d5549801118a13e36235e",
+      "size": 4609
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-plugin-install.md",
+      "sha": "f4dabd579ead045ca28b63c5aaf6b996fd1e2504",
+      "size": 1445
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-plugin-list.md",
+      "sha": "7f73376586f6a9e1c7eefe026905d676b48906b2",
+      "size": 733
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-plugin-uninstall.md",
+      "sha": "a29bcc6fcfcafe295887a403f74500aa2d553385",
+      "size": 719
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-release-create.md",
+      "sha": "43c4c5b18754f78aa42947e58cc98e7d60139eb0",
+      "size": 2199
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-release-get.md",
+      "sha": "7e0d03da1648b9739b5db3dbad902a6b85a06e0d",
+      "size": 2095
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-release-list.md",
+      "sha": "b15137a5c40cd51ac7c1daf06ec99539127cf8e7",
+      "size": 1145
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-role.md",
+      "sha": "9365193d430bd55f9ba753c12471e15733ad34ea",
+      "size": 8335
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-session-messages-list.md",
+      "sha": "220b80bbd3373112754c340fc944b28d54d85cb0",
+      "size": 3176
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-update.md",
+      "sha": "31ba4470ad1673cbc989cf79cbd7c5d7ea08adfd",
+      "size": 1074
+    },
+    {
+      "path": "skills/lark-apps/references/lark-apps-user-id-convert.md",
+      "sha": "160e72428b048626d06aaad27c469b25c9213e6d",
+      "size": 3910
+    },
+    {
+      "path": "skills/lark-attendance/SKILL.md",
+      "sha": "cc73c338c984f5faa3a5a7fc2556cadab23fe6aa",
+      "size": 1619
+    },
+    {
+      "path": "skills/lark-base/SKILL.md",
+      "sha": "b85c72ea6d564e7d62ee711fb24639756011f076",
+      "size": 23775
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-advanced-permission-and-role.md",
+      "sha": "f77012fabbfb9f1001b8835df88bc36bdcda123f",
+      "size": 3908
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-app-block-data-config.md",
+      "sha": "65e3eb392eaefd01037dffeb2c897c239d1e0cba",
+      "size": 7936
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-app.md",
+      "sha": "69f30c17a4874753c680a4ef2dd4f74539644fe6",
+      "size": 15738
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-dashboard-block-config.md",
+      "sha": "c3b221c499bf1fc0144b57acb6e97ce1c3fe8c4a",
+      "size": 19346
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-dashboard-block-get-data.md",
+      "sha": "c7058c004054667db4251c258778cbc598a79d71",
+      "size": 24997
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-dashboard.md",
+      "sha": "462650f53272eda661cd84e314db9670f7ab176e",
+      "size": 16728
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-data-query.md",
+      "sha": "7e1204a7b33b4eebc814a7073bf0bcd1a3b32a90",
+      "size": 19641
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-field-create.md",
+      "sha": "3c40cd4b4e4c7e267e0f6a4cece5485fedd6b241",
+      "size": 3355
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-field-extension.md",
+      "sha": "e5706d51504320ae93e2c81526510d894972dfef",
+      "size": 6960
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-field-formula.md",
+      "sha": "5d41b8c64b610a9b4fc50971bccce2fcad7b8e8e",
+      "size": 55697
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-field-lookup.md",
+      "sha": "249361afcd1e6a2121335452a43f397d49884eac",
+      "size": 18815
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-field-schema.md",
+      "sha": "b9712be666f1e0ea03228990b799edc3a49e369d",
+      "size": 14838
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-field-update.md",
+      "sha": "fe0a3b619d70f80ae526acdf7560c9efc1d90fed",
+      "size": 6795
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-filter-condition.md",
+      "sha": "b22666c023d42acc549b43095ed6472b65129721",
+      "size": 6186
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-form-detail.md",
+      "sha": "7dfa0e21f5ac4cee8397322c9660e14cfc4e5d73",
+      "size": 2927
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-form-questions-create.md",
+      "sha": "51ac3c8d560b08d38ac014a1233f02f4571a9825",
+      "size": 9925
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-form-questions-update.md",
+      "sha": "459faf4499d3f3613a837bc352c6973d0f760e8c",
+      "size": 7330
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-form-submit.md",
+      "sha": "6f6c4c20bcd65ed57ca65cfbbd212eede108a92a",
+      "size": 7177
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-record-history-list.md",
+      "sha": "e7ea4ab2a428804150ca27f3ee4b1ce5865383ef",
+      "size": 2747
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-record-query-and-analysis-sop.md",
+      "sha": "7b385f62d388bcaf718730e5181af81e24d8cd32",
+      "size": 11731
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-role-config.md",
+      "sha": "5ae60f42352add54290201d5e8a2538bd4418bea",
+      "size": 21836
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-template-center.md",
+      "sha": "946ad5650a8fcff45ac512d19e1aa17e7db413c2",
+      "size": 10288
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-view-set-filter.md",
+      "sha": "f3a91959b213fdf3cbb0daf3a95ffeb090c49d3f",
+      "size": 2696
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-workflow-schema.md",
+      "sha": "6171a11d22fa5626cc6ac1919bbe0663b60c6886",
+      "size": 39273
+    },
+    {
+      "path": "skills/lark-base/references/lark-base-workflow.md",
+      "sha": "24d40f47078e85b86d2391cf56223654afe1911f",
+      "size": 27991
+    },
+    {
+      "path": "skills/lark-calendar/SKILL.md",
+      "sha": "b19f538baaad411e61e5a510e0d3273d46ac2d86",
+      "size": 17136
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-create.md",
+      "sha": "3c0deac46325660f0f8274b0f351ed613262abd3",
+      "size": 6168
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-join-event.md",
+      "sha": "e737c141f8c09d583d2cd0bf10ea30178e0a6730",
+      "size": 1998
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-list-attendees.md",
+      "sha": "13dca181f511497454e815c723bd69310b16e531",
+      "size": 1379
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-meeting.md",
+      "sha": "9dfac260f524548d88582f009123d45aec487948",
+      "size": 1677
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-recurring.md",
+      "sha": "e7151a36dbad009eeed5dc41336665aa15b39a56",
+      "size": 6799
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-room-find.md",
+      "sha": "6cc4767333c65fdd5ff1456e22cf5e51fab98ff6",
+      "size": 8396
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-rsvp.md",
+      "sha": "796183f2e448dc5586533ba542d99d87dfca0177",
+      "size": 1106
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-schedule-clear-time.md",
+      "sha": "93a53997fb4404b0297d76e28fe7344988acce93",
+      "size": 2827
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-schedule-fuzzy-time.md",
+      "sha": "2c75b65a217f713a521a21f5daddd1d02382757f",
+      "size": 3365
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-schedule-meeting.md",
+      "sha": "3430ef248ec7b5bc484d4d64f5c00d2e09cfdeab",
+      "size": 6290
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-suggestion.md",
+      "sha": "7d72a58cbdab07b9f0a9136d1ef26bf2cbfd5b51",
+      "size": 7112
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-transfer.md",
+      "sha": "0b4e66831d4221fad70c75b551dc5666af9f9a71",
+      "size": 4603
+    },
+    {
+      "path": "skills/lark-calendar/references/lark-calendar-update.md",
+      "sha": "ce855b8ffd87da0bc37d8275cb40cdd90df969e3",
+      "size": 8029
+    },
+    {
+      "path": "skills/lark-contact/SKILL.md",
+      "sha": "2ea45d3e7c95b39d78d27db640bf667e9a5cd0e9",
+      "size": 3760
+    },
+    {
+      "path": "skills/lark-contact/references/lark-contact-get-user.md",
+      "sha": "68cc16e1c2557d5c0c4e35d25fd69fe81d053c57",
+      "size": 625
+    },
+    {
+      "path": "skills/lark-contact/references/lark-contact-search-bot.md",
+      "sha": "132d2d6f3a0002fb95b11d7c70d8c5a85f715e5e",
+      "size": 2522
+    },
+    {
+      "path": "skills/lark-contact/references/lark-contact-search-user.md",
+      "sha": "6ef3d78d1d5c25179d708b820ddbcbb2deedbf2e",
+      "size": 5288
+    },
+    {
+      "path": "skills/lark-doc/SKILL.md",
+      "sha": "5d086f3611850f72b664288f46e24c7123e2ba58",
+      "size": 4009
+    },
+    {
+      "path": "skills/lark-doc/references/genres/business-analysis.md",
+      "sha": "ca92a9b9f1cabd6ccbe9a748b17b06123a042c4d",
+      "size": 3128
+    },
+    {
+      "path": "skills/lark-doc/references/genres/data-report.md",
+      "sha": "f0d7a86fa1b0a0e8024df207b98c2c1a63172d5d",
+      "size": 2943
+    },
+    {
+      "path": "skills/lark-doc/references/genres/email.md",
+      "sha": "1fb8b0c99dac15df082ac639c0192436990c5baa",
+      "size": 4130
+    },
+    {
+      "path": "skills/lark-doc/references/genres/execution-plan.md",
+      "sha": "e84872fd396b1cb32abd5ab06da058afb70a5b26",
+      "size": 2986
+    },
+    {
+      "path": "skills/lark-doc/references/genres/formal-doc.md",
+      "sha": "2de096db132f50685c251d84ee44929767e6969d",
+      "size": 4477
+    },
+    {
+      "path": "skills/lark-doc/references/genres/meeting-minutes.md",
+      "sha": "f74bef3047f27781d6fdb7fc9d821ca321d20b4c",
+      "size": 2325
+    },
+    {
+      "path": "skills/lark-doc/references/genres/memo-brief.md",
+      "sha": "53b1b5fa4ef6c4d7e61c7744b12f489147c59b9c",
+      "size": 2063
+    },
+    {
+      "path": "skills/lark-doc/references/genres/official-redhead.md",
+      "sha": "589ad684fa9fafa5108a280289388bb55e93c8b4",
+      "size": 6249
+    },
+    {
+      "path": "skills/lark-doc/references/genres/prd.md",
+      "sha": "b1e3c5bf7e4728b120ff0f3f7a3fdbfab8506a72",
+      "size": 2531
+    },
+    {
+      "path": "skills/lark-doc/references/genres/proposal.md",
+      "sha": "64e454a67f179ba4615b6083c4ff9a29bbb4b6dd",
+      "size": 2183
+    },
+    {
+      "path": "skills/lark-doc/references/genres/research-report.md",
+      "sha": "02e98f216dbf14436d0fc12c1fc3d99f593dc603",
+      "size": 3324
+    },
+    {
+      "path": "skills/lark-doc/references/genres/retrospective.md",
+      "sha": "25926de72b783ff1c2f6d0ca2075460f5e8b61a1",
+      "size": 2410
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-consumer.md",
+      "sha": "48c334340d518abd362ad4e752ae4491371cc344",
+      "size": 3910
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-creative.md",
+      "sha": "d1ecaf17bad2aec85053b6a887fa5f37f38276f2",
+      "size": 3663
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-knowledge.md",
+      "sha": "57cee81d5b34f0b31c3976345a48121ab51d0a97",
+      "size": 4791
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-marketing.md",
+      "sha": "b991317fff865e90293a14977f3cf60f7d0140f8",
+      "size": 4347
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-media.md",
+      "sha": "6ff646499decbb5a9cee003a42c72ae7bb9d42aa",
+      "size": 3771
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-opinion.md",
+      "sha": "4e87f0571da921b6aa5bbb5c7358fa1aa913a145",
+      "size": 3683
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-personal-brand.md",
+      "sha": "de735b2962b0bc68fcaa78d224f2b5aab33b050f",
+      "size": 3437
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-platform.md",
+      "sha": "8c28bdd0739c32c233a211a1bf319b4843a4622a",
+      "size": 639
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-report.md",
+      "sha": "3e88d40b046c47912cab27f04db6127e993bd45d",
+      "size": 1272
+    },
+    {
+      "path": "skills/lark-doc/references/genres/route-workplace.md",
+      "sha": "ae17c76e8b189252efd716931cec62c7601ac645",
+      "size": 2899
+    },
+    {
+      "path": "skills/lark-doc/references/genres/sop-tutorial.md",
+      "sha": "65b3a5fa3f5a7fec73e4c912ec068bc8a9113da9",
+      "size": 4064
+    },
+    {
+      "path": "skills/lark-doc/references/genres/technical-doc.md",
+      "sha": "82246cb4a1c0b6b459af9ee42074cfae14f80ba3",
+      "size": 3603
+    },
+    {
+      "path": "skills/lark-doc/references/genres/wechat.md",
+      "sha": "618b16f124f0daa8cb3bdaf7ba4b6d217f5a86be",
+      "size": 3982
+    },
+    {
+      "path": "skills/lark-doc/references/genres/weekly-report.md",
+      "sha": "6b453baff98afdf9f2c00762e4b53b796131124e",
+      "size": 2051
+    },
+    {
+      "path": "skills/lark-doc/references/genres/white-paper.md",
+      "sha": "85336336b6ca3dffb9494ef3a3b64f86d51ecde1",
+      "size": 3209
+    },
+    {
+      "path": "skills/lark-doc/references/genres/xiaohongshu.md",
+      "sha": "584ec6298bd7b1b778aa25be76333f50331eff99",
+      "size": 3303
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-create-workflow.md",
+      "sha": "6d2136008e4fcb74f5adc9488699e4eea1faee23",
+      "size": 9373
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-create.md",
+      "sha": "974020bea2ba21edda2aa0b0c04df25a94c9eefe",
+      "size": 3313
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-fetch.md",
+      "sha": "ab6d5cc0cbe9472e5bd53c3a64a7ac528171bbcb",
+      "size": 7947
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-history.md",
+      "sha": "ff4b3d6cb5e64c2009575a47cb87c94e81d6f348",
+      "size": 5497
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-md.md",
+      "sha": "c115144122ef32d988f17772508791d6255747b6",
+      "size": 5934
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-media-download.md",
+      "sha": "7602a415953454ed95af6c36eaea30f9abbba775",
+      "size": 2228
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-media-insert.md",
+      "sha": "ca54130041fa52cf68e1da5b742b747b8c0881e1",
+      "size": 6927
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-media-preview.md",
+      "sha": "ed4e8d795229332b3fec0d501085dccc6458358d",
+      "size": 1643
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-mindnote.md",
+      "sha": "3e3f26bbb79404b36f85f556db32787e32b8034e",
+      "size": 5546
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-resource-cover.md",
+      "sha": "4cedb98f0852087c89b7d5dc2954c2a536d57200",
+      "size": 4181
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-script.md",
+      "sha": "7e4ef2b04d868030b3afd3ce5fdee1613eb0b854",
+      "size": 5398
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-update.md",
+      "sha": "18234c8d323d25d04bc3b1b91ff7153cf8573a7b",
+      "size": 7468
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-whiteboard.md",
+      "sha": "c383a40fb2093e8b82f175d58bf78b1892998049",
+      "size": 8926
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-xml-extended-blocks.md",
+      "sha": "5bf539235b1a5164fdd5174a0a3ddfd191e8420a",
+      "size": 4444
+    },
+    {
+      "path": "skills/lark-doc/references/lark-doc-xml.md",
+      "sha": "fb562013f9eb68a1c4b8eb8202c3f0a6f39aa2a3",
+      "size": 5467
+    },
+    {
+      "path": "skills/lark-drive/SKILL.md",
+      "sha": "5b35ce87531c3b191d02b11d0038b33ae4e297c6",
+      "size": 25247
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-add-comment.md",
+      "sha": "33fe437799e605689d0ec2db6eb9aeddcc772e2b",
+      "size": 12187
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-add-reply.md",
+      "sha": "d9be7c3d249177bb398882a583ed6a3ccf029586",
+      "size": 2554
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-apply-permission.md",
+      "sha": "cb6659a2a69afc98f0a4249a827655808549ae26",
+      "size": 3703
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-batch-query-comments.md",
+      "sha": "d49a2e9550b658df4f3f09b48055256b5d318e63",
+      "size": 2503
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-comment-content.md",
+      "sha": "790ebd3ec57132e17097cbe2fd0a33233658dc5c",
+      "size": 2654
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-comment-location.md",
+      "sha": "ab6a037ee6eddec4a95dd09d9074c068617fee64",
+      "size": 10982
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-copy.md",
+      "sha": "09532b6aacf7c081ef2f97729228d3f393d8ed49",
+      "size": 4032
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-cover.md",
+      "sha": "6fee00fcf2a3a58ee2ca68137ce7232b81c08aef",
+      "size": 2441
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-create-folder.md",
+      "sha": "3f598dcddb2d51f35c24e4b81bc5459d52bc364d",
+      "size": 3701
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-create-shortcut.md",
+      "sha": "71b380c1781a76d5f3cdb9b0718a0d47c8e2ab16",
+      "size": 4376
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-delete-reply.md",
+      "sha": "f1f7b02dc2bbf95131acae706cdcc177eef5f2f0",
+      "size": 2464
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-delete.md",
+      "sha": "cb011b1e1b89fd483152d14438551989bdb56745",
+      "size": 4652
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-download.md",
+      "sha": "50ef39885334898c732f422269f4130ddb85b139",
+      "size": 2870
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-export-download.md",
+      "sha": "9271511d2d63bf25223a620df2d4e5c71d2504dd",
+      "size": 1537
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-export.md",
+      "sha": "78865da455e7a676f5079b094b423f57ddecb7a0",
+      "size": 8328
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-files-list.md",
+      "sha": "0b3d19a26e1cb7c8e5d1a6b6cfee37aba7b34f4f",
+      "size": 10472
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-import.md",
+      "sha": "544f164ade716b3d0b66b072f97c9fb684d9279e",
+      "size": 11101
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-inspect.md",
+      "sha": "62428e78b834a8b4b659a3969956504680f16af2",
+      "size": 2128
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-list-comments.md",
+      "sha": "2a4f4bcb5f03b59cf1355af5ec7e78f6430c2986",
+      "size": 6053
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-list-replies.md",
+      "sha": "aee37aecd44993e81acf0f1556a6f86662d0b643",
+      "size": 2644
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-member-add.md",
+      "sha": "912c810cebaba366051c9b2856a2a5948b9e2599",
+      "size": 5260
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-member-list.md",
+      "sha": "47cdad397c1c775bbae95975b0b252962823b282",
+      "size": 3122
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-member-remove.md",
+      "sha": "204d113a63d81ff8625fb3d4f904805b226c131c",
+      "size": 2996
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-move.md",
+      "sha": "0270e5b1ff13d18b9d8c2f49250f4c87b4720c51",
+      "size": 5085
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-permission-get-setting.md",
+      "sha": "331045dc81b8857ae852309caf261e8b3cd03b23",
+      "size": 1881
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-permission-guide.md",
+      "sha": "d4e31331e3cb792c1c8d72ffbfe457d6d6a5bbdf",
+      "size": 3829
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-preview.md",
+      "sha": "c4578975568ca5dcca6ec6b658980804a3ea1c98",
+      "size": 4665
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-pull.md",
+      "sha": "703660df1a6792b76b06229e519ed4b07abceaaf",
+      "size": 9911
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-push.md",
+      "sha": "12852bc6ff5e0628399bbf805604133bc4cc0b40",
+      "size": 18178
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-react-reply.md",
+      "sha": "5cad18621ec72cc5df09c5e9376a857694688589",
+      "size": 2970
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-reactions.md",
+      "sha": "c07cf3e727b2b7d1cdca6d02b24b3a972bccf108",
+      "size": 7290
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-resolve-comment.md",
+      "sha": "b9f663eaba5a5c210eb6926c005d44ea00242153",
+      "size": 1776
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-restore-comment.md",
+      "sha": "41e3e9d48b2b6ce96f4c503271e7962eb865e9a1",
+      "size": 2122
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-search.md",
+      "sha": "16ccacd36d9a0f6e3ff6049d87c1eb5179d15d3f",
+      "size": 22952
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-secure-label.md",
+      "sha": "b713e5c521e93589f09e5fab85c5f5ace57c6e35",
+      "size": 2002
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-status.md",
+      "sha": "0a44e4a1e9b402261adc59f80992ac7a60624141",
+      "size": 7507
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-task-result.md",
+      "sha": "63c0d1a79afb7e813ba6d7aedfe9217441df1837",
+      "size": 13631
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-update-reply.md",
+      "sha": "7ec6c3de7a2dfec3555a98f97c4f7fb5e7e36b1a",
+      "size": 2444
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-update-title.md",
+      "sha": "e2b81330b5f8fd899a43f02d375b015b6fd74a16",
+      "size": 3404
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-upload.md",
+      "sha": "5155a150ee524605df8d14195ba0c876f85d9e45",
+      "size": 5239
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-version-delete.md",
+      "sha": "e0db561a3bb25bc10e8d6bf43266247cfc9b0872",
+      "size": 1044
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-version-get.md",
+      "sha": "36e3d1e540368f847e2eb033a874697600c787e1",
+      "size": 2064
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-version-history.md",
+      "sha": "4f2ba8281bde510b13a4af9ed205982fc3fd8ebc",
+      "size": 1912
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-version-revert.md",
+      "sha": "85e33bce395b2734b7826b4bcbca1bcd8441542e",
+      "size": 979
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-analysis.md",
+      "sha": "01263fcb3c60ba7a1685051eec8427559ca3c090",
+      "size": 12951
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-discovery.md",
+      "sha": "358c72c004df4293b0e76e1ca6908a258056603b",
+      "size": 19364
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-execution.md",
+      "sha": "9469f79e8b74163f08f11c03260323ecc74fc91c",
+      "size": 9576
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-planning.md",
+      "sha": "5e50c81ff1782cfcf9e354fb4ddffc3c729bcf26",
+      "size": 14529
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-rollback.md",
+      "sha": "173cdac10524b72ed85fbfa110c27ceaa5888f3a",
+      "size": 11075
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize.md",
+      "sha": "b24e76190e96eb14ce089ae3185cfeec00468672",
+      "size": 20230
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-permission-governance-commands.md",
+      "sha": "1693ed9a7f0091e923f86fed436c020ee2d305ed",
+      "size": 6512
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-permission-governance-outputs.md",
+      "sha": "119075d76121735756502763e06c73a4c4730e2b",
+      "size": 28399
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-permission-governance.md",
+      "sha": "49832e8ba91368a6778cff758a26f49e3da69f9b",
+      "size": 26254
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-execute.md",
+      "sha": "6f0e6aabea126116ab09ee759b6e7104e34d789f",
+      "size": 13745
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-recall.md",
+      "sha": "ec35964b44bcaa8c6f19c2cad6cf70d3efa8bc98",
+      "size": 9519
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-resolve-verify.md",
+      "sha": "b4b26249809cb5d101bf6ff8cd2805234388ad61",
+      "size": 13937
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-review-plan.md",
+      "sha": "cbae8e690329919856219b9c7d2cbc242b373132",
+      "size": 12808
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-setup.md",
+      "sha": "19571fc7f87d0798c26e99b974d9f52529c9bb83",
+      "size": 8471
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector.md",
+      "sha": "e358a0e7da5758c0026ca94697016ab4cd1a4a68",
+      "size": 16146
+    },
+    {
+      "path": "skills/lark-drive/references/lark-drive-workflow.md",
+      "sha": "30707769a9a83701c5b2d2a561bacc8b57ebefd9",
+      "size": 8540
+    },
+    {
+      "path": "skills/lark-event/SKILL.md",
+      "sha": "2aa9313898ea77bd86db0feb130195ea1e8db5fd",
+      "size": 11475
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-application.md",
+      "sha": "a42c284a5d9152d14ad919b9fb5e2096a36f68e7",
+      "size": 1288
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-approval.md",
+      "sha": "c1972d80c4ae3ce7f24ca3ef6b1627c6f54b6a04",
+      "size": 9000
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-im.md",
+      "sha": "4272c001bac6243cae8b8d4c846f564b192466f9",
+      "size": 4600
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-minutes.md",
+      "sha": "537a25a836e6003029854aed67b5db2bd4b565f9",
+      "size": 2368
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-task.md",
+      "sha": "57fd6bb7683c457c76b8b41671109548b7fdc7f3",
+      "size": 2677
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-vc.md",
+      "sha": "225f09eec968a0117da6ba8c8a6e163f49c54d4b",
+      "size": 5128
+    },
+    {
+      "path": "skills/lark-event/references/lark-event-whiteboard.md",
+      "sha": "f9e5b6f5373b240586f9ba5be6dfa6d7b20235af",
+      "size": 3637
+    },
+    {
+      "path": "skills/lark-im/SKILL.md",
+      "sha": "295852c51a3c551888b5d23c3751c657c5684693",
+      "size": 24540
+    },
+    {
+      "path": "skills/lark-im/references/card/card-2.0-schema.md",
+      "sha": "cfcd1169e3bf2ac80e32d7aeebb93bf5f682b2cf",
+      "size": 6154
+    },
+    {
+      "path": "skills/lark-im/references/card/components/button.md",
+      "sha": "3b240cf376ec29c40368a71e06725c754b05b55f",
+      "size": 2827
+    },
+    {
+      "path": "skills/lark-im/references/card/components/chart.md",
+      "sha": "eb0717d0748149eb087ae4915a3a4c894b717d3a",
+      "size": 2264
+    },
+    {
+      "path": "skills/lark-im/references/card/components/checker.md",
+      "sha": "e0cf80baf40c394b5f2ef56c3b0bd3da04cf9834",
+      "size": 1899
+    },
+    {
+      "path": "skills/lark-im/references/card/components/collapsible_panel.md",
+      "sha": "0abf1d2ae95c76a7b064d872461eec0354fc399b",
+      "size": 1797
+    },
+    {
+      "path": "skills/lark-im/references/card/components/column_set.md",
+      "sha": "259bb9e9cd5602090150f71226aa61f7e1be1930",
+      "size": 2595
+    },
+    {
+      "path": "skills/lark-im/references/card/components/date_picker.md",
+      "sha": "44ddcfd7f8ca41effa9ffde2dd1dd8e083dc3f9d",
+      "size": 1636
+    },
+    {
+      "path": "skills/lark-im/references/card/components/div.md",
+      "sha": "9b1eb77e80d13d4e0bc87951d051d86ae14dd321",
+      "size": 1757
+    },
+    {
+      "path": "skills/lark-im/references/card/components/form.md",
+      "sha": "b3bd6c6d8bfc6e33c03e3a6e2e76b7ec16123541",
+      "size": 2269
+    },
+    {
+      "path": "skills/lark-im/references/card/components/header.md",
+      "sha": "c6e7ebd2bdc77bbf747a466edd43df04c406b452",
+      "size": 1644
+    },
+    {
+      "path": "skills/lark-im/references/card/components/hr.md",
+      "sha": "0dd83fc4606c692ae9aaab8f61d61dd63eeed283",
+      "size": 425
+    },
+    {
+      "path": "skills/lark-im/references/card/components/img.md",
+      "sha": "afad6a23a5759bb3b5b7a6f820490b84de4a2967",
+      "size": 1384
+    },
+    {
+      "path": "skills/lark-im/references/card/components/img_combination.md",
+      "sha": "43a8664cb01e9aee610892cf7bc4d15186666f8c",
+      "size": 1046
+    },
+    {
+      "path": "skills/lark-im/references/card/components/input.md",
+      "sha": "2a996fd4b553080afc783b6bd53022520d0b6a25",
+      "size": 2063
+    },
+    {
+      "path": "skills/lark-im/references/card/components/interactive_container.md",
+      "sha": "6920e879cf8d45523e960174a432597e81d2637d",
+      "size": 2257
+    },
+    {
+      "path": "skills/lark-im/references/card/components/markdown.md",
+      "sha": "d6b7e27089e032e7e4b1395374c5595fcd8b91ea",
+      "size": 3283
+    },
+    {
+      "path": "skills/lark-im/references/card/components/multi_select_person.md",
+      "sha": "95430351bdfc4e667cae2caca284255d48b6bf1f",
+      "size": 1595
+    },
+    {
+      "path": "skills/lark-im/references/card/components/multi_select_static.md",
+      "sha": "ffc5f2ffb6c32861943ccbb6e1af2d49eb6572b4",
+      "size": 1681
+    },
+    {
+      "path": "skills/lark-im/references/card/components/overflow.md",
+      "sha": "0ce373b53c25c59ca96ba3748d4aec8bc4f601f8",
+      "size": 1530
+    },
+    {
+      "path": "skills/lark-im/references/card/components/person.md",
+      "sha": "afcf30a8b989631f3cc5f5ec1db448b4a0f5c1d7",
+      "size": 907
+    },
+    {
+      "path": "skills/lark-im/references/card/components/person_list.md",
+      "sha": "bf8c9ac7f513913813bbbf9ba6977f644339020b",
+      "size": 1179
+    },
+    {
+      "path": "skills/lark-im/references/card/components/picker_datetime.md",
+      "sha": "8ee77d8243ed19dcb1819a488d5555dd39a36d75",
+      "size": 1583
+    },
+    {
+      "path": "skills/lark-im/references/card/components/picker_time.md",
+      "sha": "a56a9580b798bca5d8520face4add9628c9c4eaf",
+      "size": 1527
+    },
+    {
+      "path": "skills/lark-im/references/card/components/recycling_container.md",
+      "sha": "40754f474ff90f84a813f4e005a12f9d0800db57",
+      "size": 1570
+    },
+    {
+      "path": "skills/lark-im/references/card/components/select_img.md",
+      "sha": "50c09632dddb9f202b9fda4c63f0a780bd3c3947",
+      "size": 1973
+    },
+    {
+      "path": "skills/lark-im/references/card/components/select_person.md",
+      "sha": "9ba5e261ccecaa9aba92899f946539a83c710935",
+      "size": 1518
+    },
+    {
+      "path": "skills/lark-im/references/card/components/select_static.md",
+      "sha": "d1aeb557ad6b0bc3bfb38fba143685118957a81d",
+      "size": 1890
+    },
+    {
+      "path": "skills/lark-im/references/card/components/table.md",
+      "sha": "97734e045fb459a4dcc9119ceeb7fa2765602b61",
+      "size": 2138
+    },
+    {
+      "path": "skills/lark-im/references/card/lark-im-card-create.md",
+      "sha": "8dbefadcf91e7a8d2dfaa0a0dc536661289fb249",
+      "size": 11047
+    },
+    {
+      "path": "skills/lark-im/references/card/lark-im-card-style.md",
+      "sha": "95f5ad8b527cd7cc3803cb5c84c83cf044c3ca17",
+      "size": 18707
+    },
+    {
+      "path": "skills/lark-im/references/card/resource/colors.md",
+      "sha": "0fec0f67c64f3513009fc067dc64c8b99799a5fc",
+      "size": 1452
+    },
+    {
+      "path": "skills/lark-im/references/card/resource/icons.md",
+      "sha": "d0e62ce43845aed40e0512b70bfa67fc05a68e7d",
+      "size": 2327
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-card-action-reply.md",
+      "sha": "7995cdf0bd7cb9376983f637e0b5a19d91cd6015",
+      "size": 9556
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-create.md",
+      "sha": "76716f769e6d1d4287af6af3b76dbc3d4b2bd5c7",
+      "size": 7996
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-identity.md",
+      "sha": "53a9f631a62223e2993ebd493b7904a38527742a",
+      "size": 3210
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-list.md",
+      "sha": "ba83ada49a6e9caa3703b0bf4d4a6dd7a7bd10bf",
+      "size": 9141
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-members-list.md",
+      "sha": "ec34b2d6bcd16b3bb809987f9c36c501e5d40692",
+      "size": 5255
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-messages-list.md",
+      "sha": "ba2319b8baa5eb71ced0962afe790359dbb59a95",
+      "size": 10655
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-search.md",
+      "sha": "abd2a18f530222a7b4ff2bf61b909860b7725b82",
+      "size": 8359
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-chat-update.md",
+      "sha": "a3bdf6b8ad8d687f07daec3b3727fa12cbdf0355",
+      "size": 3281
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-group-list-item.md",
+      "sha": "95b790f4ff12ba23e7a5247e9fd5e0526da8f5d7",
+      "size": 3214
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-group-list.md",
+      "sha": "7641b4d5b4f65c2548e5d41aef663594285f14fb",
+      "size": 2772
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-group-query-item.md",
+      "sha": "61c21d761e101642db4a4d9db2fe64cbac522b90",
+      "size": 2391
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-groups.md",
+      "sha": "60cf9eca26c3105c5232fa78548681a7b05f4547",
+      "size": 18664
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-shortcut-create.md",
+      "sha": "3eed0f6bade90d6c69403e5b51ce91c2e96c61e4",
+      "size": 4269
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-shortcut-list.md",
+      "sha": "bf7984c8c99b8ce3a9032cde8f1bf5eb2afc6312",
+      "size": 5103
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-feed-shortcut-remove.md",
+      "sha": "8e35adf4ca6b590e3ba58c5477716d64224782f0",
+      "size": 2100
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-flag-cancel.md",
+      "sha": "6a54d603fe6343e9050b13fa82c7e37f05b6f47e",
+      "size": 2961
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-flag-create.md",
+      "sha": "deb19e733f07ba07d776b72f61fcdcfe4b40db07",
+      "size": 2707
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-flag-list.md",
+      "sha": "a429414100e3739c4e58cd272619d4a6466ce888",
+      "size": 4750
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-message-enrichment.md",
+      "sha": "41a38d2136bab34eb455926852e7c7a3fccd822d",
+      "size": 7072
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-message-read-status.md",
+      "sha": "57164317a18baf7093ff3b2cd715d395bd8ca9c2",
+      "size": 4376
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-messages-edit.md",
+      "sha": "c9316af0231e3fe05f2ef51e3ca34a6550fca9e5",
+      "size": 6406
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-messages-mget.md",
+      "sha": "c1d2eee2bde76edb9206bb640011538de729ee5d",
+      "size": 5266
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-messages-reply.md",
+      "sha": "a659ee5bd9ee0a469c3a262e04c03310cdc81a8d",
+      "size": 17361
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-messages-resources-download.md",
+      "sha": "ae3c1f4f501f9d823a52ce33ea0f46108e63ee55",
+      "size": 4026
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-messages-search.md",
+      "sha": "b0e3a27ba10e6b044466e5e4ea59e3d21f4ae908",
+      "size": 13612
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-messages-send.md",
+      "sha": "b031015bd6547e0e80df8c8752abd9b4a07821a8",
+      "size": 19693
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-reactions.md",
+      "sha": "4920a17c953a9585ca4be182f8827d908c3fc49d",
+      "size": 10556
+    },
+    {
+      "path": "skills/lark-im/references/lark-im-threads-messages-list.md",
+      "sha": "8c9549508e7ed7a0e189ca283cb85fe99a2a86ff",
+      "size": 6313
+    },
+    {
+      "path": "skills/lark-mail/SKILL.md",
+      "sha": "d5166ae0d07e70fea54877c6a8481c068faaf6cf",
+      "size": 24684
+    },
+    {
+      "path": "skills/lark-mail/assets/templates/job-application--resume.html",
+      "sha": "ce00d6ddd1d877b9c330bae28ee52d23c6230bfd",
+      "size": 22625
+    },
+    {
+      "path": "skills/lark-mail/assets/templates/newsletter--weekly-brief.html",
+      "sha": "4110919d5c8bea256d607888f400adf992e81fe3",
+      "size": 12873
+    },
+    {
+      "path": "skills/lark-mail/assets/templates/research--market-report.html",
+      "sha": "43ee91f681aa6c6a10fe09e2e4bff400774f4158",
+      "size": 17784
+    },
+    {
+      "path": "skills/lark-mail/assets/templates/weekly--personal-report.html",
+      "sha": "2e1bd7567e25faf1860f0c571eb480292c96565d",
+      "size": 17198
+    },
+    {
+      "path": "skills/lark-mail/assets/templates/weekly--team-report.html",
+      "sha": "6d26a90c0a2e67195a73a12523c8fec971ef83f6",
+      "size": 15629
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-calendar-invite.md",
+      "sha": "277bb6565178df0cedfeb4245e0aabfd1cc33401",
+      "size": 1777
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-decline-receipt.md",
+      "sha": "befc651a06d37af96b22350ebad8edfb2e1861c2",
+      "size": 4096
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-draft-create.md",
+      "sha": "a54c9614149621ce0180398129a90c263e0c4050",
+      "size": 8691
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-draft-edit.md",
+      "sha": "8591a47e3edb7fe6c46a3174f779b5add27f8fc2",
+      "size": 18245
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-forward.md",
+      "sha": "bd2df30a0f7d1cb728ea2cc4803092e3e2bfe9b9",
+      "size": 13162
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-html.md",
+      "sha": "e0d91eee0a1fff56ceae45aee6cf3b87a79555de",
+      "size": 16617
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-lint-html.md",
+      "sha": "2293c014c78687784ccfb6c04420c550ecc96654",
+      "size": 7430
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-message-modify.md",
+      "sha": "ba02a27c5165f8023778db831eb043c4e448b0a3",
+      "size": 2345
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-message-trash.md",
+      "sha": "225ad22882e35a0aaccb91d092d21a20cbc5e50b",
+      "size": 1636
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-message.md",
+      "sha": "34632e675a65dd2d8ae2d3263f679da6d49a8476",
+      "size": 10210
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-messages.md",
+      "sha": "a5bf9b03924038bdb38db7938bd2029b230aa653",
+      "size": 4489
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-recall.md",
+      "sha": "4fc34434d8f5fcc3a30f22939e4248e4c04f8333",
+      "size": 2473
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-recipient-search.md",
+      "sha": "f085e78acfbac06443efc78b822bbacc26fe4821",
+      "size": 2312
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-reply-all.md",
+      "sha": "d7e6b8df6bc865b2e2fe063a21e360b11d27160b",
+      "size": 12205
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-reply.md",
+      "sha": "a40edbafcbf098b978422238dc49610fe88f5e9a",
+      "size": 13823
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-rules.md",
+      "sha": "3c7bef5df53a4fcc6f65f44409fd16e4bf285e87",
+      "size": 1156
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-send-as.md",
+      "sha": "327c47ebb446e4e0ebaa94c42987da5c7afb5284",
+      "size": 1665
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-send-receipt.md",
+      "sha": "c7e596f8418c70d70bbfefc773caaf758e4eb45e",
+      "size": 6188
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-send-status.md",
+      "sha": "e902673fd44e26ed76e1ac55325a5856ad4e44cf",
+      "size": 1663
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-send.md",
+      "sha": "e468ba0aa57429fffafcc6e4fc0a5f7133db41b8",
+      "size": 13400
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-share-to-chat.md",
+      "sha": "61159a24fc9889daedae62d90e5257ae7e8883c5",
+      "size": 3064
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-signature.md",
+      "sha": "03ad0c6684d4aa2f2da24230313424400cb7d3de",
+      "size": 2737
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-template-create.md",
+      "sha": "c947753de24612e4b4b54c4e7ea678918e62dd44",
+      "size": 6481
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-template-update.md",
+      "sha": "80b6a4a1cdc848d77ac86ef5ffaf5c3bd6fd04ec",
+      "size": 6766
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-template.md",
+      "sha": "5981160f195fb93863a272cac23ca88c90afef26",
+      "size": 3973
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-thread.md",
+      "sha": "63ad335e13441ee76e1b0d87e65ae1516fde23f8",
+      "size": 4348
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-triage.md",
+      "sha": "65329f18050bc6b828b3b493dcb99ba3d09b07eb",
+      "size": 6912
+    },
+    {
+      "path": "skills/lark-mail/references/lark-mail-watch.md",
+      "sha": "c5dc03fe3981dc7311025e5ce761bc3aa03bcf12",
+      "size": 4948
+    },
+    {
+      "path": "skills/lark-markdown/SKILL.md",
+      "sha": "ce527b96f61ebce3454d61c436c5e3daa318666f",
+      "size": 4973
+    },
+    {
+      "path": "skills/lark-markdown/references/lark-markdown-create.md",
+      "sha": "3b76da3bdd0bdcf3e49a5018023e64f0a76772a2",
+      "size": 4707
+    },
+    {
+      "path": "skills/lark-markdown/references/lark-markdown-diff.md",
+      "sha": "5f18b79aeb94cc018df94b8849db24d0727450cf",
+      "size": 6400
+    },
+    {
+      "path": "skills/lark-markdown/references/lark-markdown-fetch.md",
+      "sha": "ffc179679eefdfee87294eb2cc6005416dc107ce",
+      "size": 1767
+    },
+    {
+      "path": "skills/lark-markdown/references/lark-markdown-overwrite.md",
+      "sha": "2326659f7324123df4ce2cacd895fbfeb8edeebb",
+      "size": 2280
+    },
+    {
+      "path": "skills/lark-markdown/references/lark-markdown-patch.md",
+      "sha": "7c6c28e7df61c2527354f7ec676ce99e5b981e6e",
+      "size": 4866
+    },
+    {
+      "path": "skills/lark-meeting/SKILL.md",
+      "sha": "55d7a4f1996ce111b05c9b44a2b7871fc075df7c",
+      "size": 12028
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-apply-permission.md",
+      "sha": "f95cc6ac270a4307d7672b94efcc113df75b9773",
+      "size": 4611
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-detail.md",
+      "sha": "255821903adaadf6ef72594ae7de2137583bbcd6",
+      "size": 2654
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-download.md",
+      "sha": "1ef367d4fa59609bb1b00ba52ddf9f168711d27e",
+      "size": 5973
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-search.md",
+      "sha": "eec4e6272fdb6d31ea24dfdca8a6b8e9c978d090",
+      "size": 10108
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-speaker-replace.md",
+      "sha": "8faadf06e906bc33ed2d9bda9923dbd6fe2213f2",
+      "size": 4758
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-summary.md",
+      "sha": "611687ceed6ed78f2fe9279d38092dbc05d29a22",
+      "size": 4428
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-todo.md",
+      "sha": "4b877471bbba9fe1679639bd551cb2915bdcc46c",
+      "size": 8176
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-update.md",
+      "sha": "b1be369246ee5a75507978fc8587bb93cc9f6060",
+      "size": 980
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-minutes-upload.md",
+      "sha": "6c402e2184f74bb674b172c6b87db8856034ce88",
+      "size": 2828
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-note-detail.md",
+      "sha": "ed11768e9009950b833c6f276a7fd6ec50f76ac5",
+      "size": 739
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-note-transcript.md",
+      "sha": "e070718299368fc960b75feedbd2dbdfe4f73c02",
+      "size": 1061
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-agent-meeting-end.md",
+      "sha": "96443db363e1d076dd5052775c9155148aef83bd",
+      "size": 959
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-agent-meeting-invite.md",
+      "sha": "99ab2c60c2a721163bc4a21dcf1a94abb2591bd8",
+      "size": 2290
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-agent-meeting-join.md",
+      "sha": "6a644089a3423ac0e0596f98c6b789fb2a4fd8b7",
+      "size": 6318
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-agent-meeting-leave.md",
+      "sha": "d0e5f889cf8f34f90e96f0348c98d22ce0b31533",
+      "size": 3404
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-detail.md",
+      "sha": "a946321b55e964d3b407e6edeb0c11622ccbfc77",
+      "size": 1112
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-meeting-countdown.md",
+      "sha": "aa57dfd007906bfcf34e30b220af8d0737c1ce7e",
+      "size": 3792
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-meeting-events.md",
+      "sha": "fbfc7d532e58816e2606f578f836f7e982058219",
+      "size": 26874
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-meeting-list-active.md",
+      "sha": "0ca3ae6907dde4ce266d859191d2314911bd77b4",
+      "size": 4054
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-meeting-message-send.md",
+      "sha": "77b90240020f9403008cbbc7577814176b7f4921",
+      "size": 6275
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-meeting-screenshot.md",
+      "sha": "7917d886c6d09fb77c24028563cae6988befa5b9",
+      "size": 1731
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-recording.md",
+      "sha": "c692e8994545cb18a2b28d7b616e3bc7608ed049",
+      "size": 4135
+    },
+    {
+      "path": "skills/lark-meeting/references/lark-vc-search.md",
+      "sha": "b795ec9cdf9636d3afd8210ae60da27e7095fa2a",
+      "size": 7621
+    },
+    {
+      "path": "skills/lark-meeting/scenes/create-and-edit-minutes.md",
+      "sha": "c7194e4d4a2541b911a6e97bb6452191bb93c4ad",
+      "size": 10243
+    },
+    {
+      "path": "skills/lark-meeting/scenes/live-meeting-attend.md",
+      "sha": "e7d615e1a0421d68b6b428b5ab491f47f5605dc5",
+      "size": 8730
+    },
+    {
+      "path": "skills/lark-meeting/scenes/live-meeting-interact.md",
+      "sha": "7efbbb4c03a005eabed775dd201a8ce0ab49839c",
+      "size": 6612
+    },
+    {
+      "path": "skills/lark-meeting/scenes/query-meeting-and-artifacts.md",
+      "sha": "e893b06cc09d0362d7f886472bb524a3c4e802ae",
+      "size": 7019
+    },
+    {
+      "path": "skills/lark-meeting/scenes/query-minutes-and-artifacts.md",
+      "sha": "ffd5e6a39e21351434ba08c4b37685e6ec840322",
+      "size": 4191
+    },
+    {
+      "path": "skills/lark-meeting/scenes/query-note-and-artifacts.md",
+      "sha": "b23a83037992a248f3320dc5a219b4589703a531",
+      "size": 6735
+    },
+    {
+      "path": "skills/lark-minutes/SKILL.md",
+      "sha": "c738f28e4efa15d1bc8ececf9e72d560a01c5c04",
+      "size": 464
+    },
+    {
+      "path": "skills/lark-note/SKILL.md",
+      "sha": "a4743c2cc4523f21488761a2f47446b481a0a86b",
+      "size": 458
+    },
+    {
+      "path": "skills/lark-okr/SKILL.md",
+      "sha": "22a533fa8ec663591433186b18272fc71bba8b41",
+      "size": 15173
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-alignments.md",
+      "sha": "bcdc3728ef6d3c3d089005eadbd368b0483fe1e3",
+      "size": 5470
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-batch-create.md",
+      "sha": "bb7e35cfb35964d22684834ac03e47e43802aa6b",
+      "size": 4393
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-create.md",
+      "sha": "f3068c21487fd33e2f998f89e78bfa026ced262c",
+      "size": 8218
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-delete.md",
+      "sha": "30a4b7e55d4f713f7a4f4fa85c596948acc2094f",
+      "size": 2848
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-detail.md",
+      "sha": "0c9a57542dffb11f11b6ee39ffc870b7cb00abe0",
+      "size": 4207
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-get.md",
+      "sha": "6f75493d6d34929f06e15729b972b34445140886",
+      "size": 3237
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-list.md",
+      "sha": "6fabb2d5f64b292c54f45c45329cac6b8c1fef57",
+      "size": 4564
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-patch.md",
+      "sha": "391c8264bdc59654232107caf1d6934522338c58",
+      "size": 4261
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-comment-solve-reopen.md",
+      "sha": "0f49d7bdfa0b94ce9d94639d7c7441f95f08dd32",
+      "size": 3804
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-contentblock.md",
+      "sha": "310a42eb14073cf235bbafbb10d196ba50184506",
+      "size": 13139
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-create.md",
+      "sha": "150203ce5f96287550e81b180bd304411f3b0e8c",
+      "size": 7619
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-cycle-detail.md",
+      "sha": "9992f0026f2407d24cc31f6a3ae8a5be7840178c",
+      "size": 3614
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-cycle-list.md",
+      "sha": "b12d4746b54731ba6177d362897c26ed149539ad",
+      "size": 5025
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-entities.md",
+      "sha": "1e1570324cbbf167e92eb0d4aef66972c5abdd33",
+      "size": 26215
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-image-upload.md",
+      "sha": "85fd8cc36874a06066a40d781c7e53ce57b07bf3",
+      "size": 3473
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-indicator-update.md",
+      "sha": "825b3d88a5fa34d29300043fd80812ef47af6bdf",
+      "size": 3593
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-indicators.md",
+      "sha": "2200bc1babd1bf1758a2a0e17f31f8e67088ec65",
+      "size": 11477
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-patch.md",
+      "sha": "867d527f69f5fbe02f118ba2550a836f216bab1f",
+      "size": 6230
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-progress-create.md",
+      "sha": "dd56a8e9cb7cc90031b971207440a95c3da406c3",
+      "size": 5785
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-progress-delete.md",
+      "sha": "7376434b7f247047de0edf23f1a56e1a3559b45c",
+      "size": 1459
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-progress-get.md",
+      "sha": "e65010bed32211fd9a4ccba12b3e4b04b22eece3",
+      "size": 3820
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-progress-list.md",
+      "sha": "b2fc5300270fc1cebfd05ce5cda66a6dda44b760",
+      "size": 4046
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-progress-update.md",
+      "sha": "7491ba7f2a5b1ff43f550064ae4900f719412e4f",
+      "size": 4797
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-reorder.md",
+      "sha": "15e104504925b24212f230db7a8503fb9ab64c89",
+      "size": 2674
+    },
+    {
+      "path": "skills/lark-okr/references/lark-okr-weight.md",
+      "sha": "6794d1855de326ea2ac3f4ab0c260e0679b9cd20",
+      "size": 4045
+    },
+    {
+      "path": "skills/lark-openapi-explorer/SKILL.md",
+      "sha": "508193a09250b545d77c4b63fd2344966f853a56",
+      "size": 4927
+    },
+    {
+      "path": "skills/lark-shared/SKILL.md",
+      "sha": "76b83d5083b51c8bb0d965ab354e96e1f0335414",
+      "size": 5594
+    },
+    {
+      "path": "skills/lark-shared/references/lark-cli-1.0.93-checksums.txt",
+      "sha": "4116183adb4e01703e976742d7051bcc3c7c404a",
+      "size": 709
+    },
+    {
+      "path": "skills/lark-shared/references/lark-shared-config-init.md",
+      "sha": "7c85969c04029e918f0ed60240ea447bbb56e685",
+      "size": 980
+    },
+    {
+      "path": "skills/lark-shared/references/lark-shared-high-risk-approval.md",
+      "sha": "1108ff8cce28894e83107285e6f6b260f4d3b786",
+      "size": 2070
+    },
+    {
+      "path": "skills/lark-shared/references/lark-shared-identity-and-permissions.md",
+      "sha": "16335fb1050a4e9f244a969e83988329c7d43f2e",
+      "size": 5805
+    },
+    {
+      "path": "skills/lark-shared/references/lark-shared-output-contract.md",
+      "sha": "95dbeadbd1adb4ef3c1fdc1f9d38bea40a4826b6",
+      "size": 933
+    },
+    {
+      "path": "skills/lark-shared/references/lark-shared-update-notice.md",
+      "sha": "8928311015cb1168c9d9b11a94c15bd5f791cc75",
+      "size": 1470
+    },
+    {
+      "path": "skills/lark-shared/references/lark-wiki-token-routing.md",
+      "sha": "d3ea4e519cb2979c9856cdb2ee9ad9f4d5e7919a",
+      "size": 2026
+    },
+    {
+      "path": "skills/lark-shared/references/minimax-code-cli-setup.md",
+      "sha": "586aaf37b519ba413f7e686094d7a02b619cd43e",
+      "size": 11061
+    },
+    {
+      "path": "skills/lark-sheets/SKILL.md",
+      "sha": "f67a54ffb3740292f061e2a34ebb5896e5d6259a",
+      "size": 46245
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-batch-update.md",
+      "sha": "0b68ff0443921c8af9fdcfd44e68b8e456446828",
+      "size": 19099
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-changeset.md",
+      "sha": "421fd9b51a6bb1863130e9e3a68809441a6cb185",
+      "size": 5205
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-chart.md",
+      "sha": "db7b9742157535dfd64483f5a5c00494a6af571c",
+      "size": 45441
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-conditional-format.md",
+      "sha": "ae4c0b12f45df05b6eba211eed74e2f06b4a75b5",
+      "size": 14716
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-filter-view.md",
+      "sha": "919cc804549f9aebde96c212e6fd768398d0793b",
+      "size": 8023
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-filter.md",
+      "sha": "5b61c10e9e4fabef4d838001e2e2341072e3210f",
+      "size": 7635
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-float-image.md",
+      "sha": "7c87162512777e503c19e5825a5faba3b2d7d697",
+      "size": 11409
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-formula-translation.md",
+      "sha": "0f385c5f482357d5fea71cadeca9695591401f3e",
+      "size": 19472
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-formula-verify.md",
+      "sha": "712fb0130a4be9da7925e9b270430391e31adbcb",
+      "size": 6718
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-history.md",
+      "sha": "598712a710e2231b803301a68604d1f80719a9e7",
+      "size": 5213
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-legacy-command-migration.md",
+      "sha": "208fdcd80173af2e1547b21e62a75a593d21e529",
+      "size": 6192
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-pivot-table.md",
+      "sha": "db57576bb75e0c80ccb1e62399f86d5e6151ae21",
+      "size": 14920
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-range-operations.md",
+      "sha": "c86e92f030b49d90505ab233d1b2e63bc7be06b1",
+      "size": 20725
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-read-data.md",
+      "sha": "650d34c0afd67c62aa75c95c08c1b6aa2d88152f",
+      "size": 37965
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-search-replace.md",
+      "sha": "bd1040f0c3cf2a2211143475106ddd2233b121a6",
+      "size": 5378
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-sheet-structure.md",
+      "sha": "b741bd527856d22065da9ce7330a6d6609b90602",
+      "size": 13825
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-sparkline.md",
+      "sha": "a6d1c078b3ff9dde9bc4a04fb3bc72eaf0b8f34d",
+      "size": 7633
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-styles-put.md",
+      "sha": "9f9f6ff8d86a92a3c869e030d0d76f04c036875b",
+      "size": 7992
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-visual-standards.md",
+      "sha": "3b06e023a4a2a69300a6cefa0d6d767efc45ad74",
+      "size": 18223
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-workbook.md",
+      "sha": "49f4de4553a29e7fa6768e601a29113a36f91d22",
+      "size": 26809
+    },
+    {
+      "path": "skills/lark-sheets/references/lark-sheets-write-cells.md",
+      "sha": "8549791dd7886d395ee971f7655ebb7449fbf797",
+      "size": 62544
+    },
+    {
+      "path": "skills/lark-sheets/scripts/lark_chart_layout_check.py",
+      "sha": "526c9407aabf95818d55ffc41223da3c0e3460d9",
+      "size": 17225
+    },
+    {
+      "path": "skills/lark-sheets/scripts/lark_detect_subtables.py",
+      "sha": "30cf045e604109160a20c3026c6be69ea0f55b0d",
+      "size": 22988
+    },
+    {
+      "path": "skills/lark-sheets/scripts/lark_inspect_workbook.py",
+      "sha": "26964555242351a2f403879c524cbe1ff2ec9a01",
+      "size": 7265
+    },
+    {
+      "path": "skills/lark-sheets/scripts/lark_profile_table.py",
+      "sha": "099c8818900a5fee26429213d49075fe4012e212",
+      "size": 22678
+    },
+    {
+      "path": "skills/lark-sheets/scripts/lark_sheet_range.py",
+      "sha": "8f8fff2d375fdd2c46a75ce303f9c481f70da845",
+      "size": 5444
+    },
+    {
+      "path": "skills/lark-sheets/scripts/lark_sheet_read_cli.py",
+      "sha": "bf6761bcfba6ad6df8f7b276526016e857699803",
+      "size": 5764
+    },
+    {
+      "path": "skills/lark-sheets/scripts/sheets_df.py",
+      "sha": "c382c46b979b6623308ef805ac04cebf60f2adcd",
+      "size": 2085
+    },
+    {
+      "path": "skills/lark-skill-maker/SKILL.md",
+      "sha": "cdb3f566a8c098d638d3d5031f34d4ac8aed02b7",
+      "size": 2460
+    },
+    {
+      "path": "skills/lark-slides/SKILL.md",
+      "sha": "f247194067b1e868620eb2d8bbf11c0e2b347b5f",
+      "size": 28487
+    },
+    {
+      "path": "skills/lark-slides/references/asset-planning.md",
+      "sha": "0effa9b3d3f9980b28a18acaef65392992c8d8bc",
+      "size": 7730
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-add-slide.md",
+      "sha": "3d94542823b9b48ae23b47aa561d496553b4f378",
+      "size": 4898
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-create.md",
+      "sha": "a2c51a1fe4b1204253f32b06c58c99311a5fe441",
+      "size": 9046
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-delete-slide.md",
+      "sha": "972a25d93468d2ef8692937bfcd12e0c0a2b1c2e",
+      "size": 2756
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-history.md",
+      "sha": "3947ab53928a61e3e6664a0a16b68e11ab33c5db",
+      "size": 7061
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-media-upload.md",
+      "sha": "2e0245e49febd9107f1eac7a1c6dcea0e06cc013",
+      "size": 4839
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-replace-slide.md",
+      "sha": "08dae903065360ee627e626e56b3ec1bc4f60c1b",
+      "size": 14072
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-screenshot.md",
+      "sha": "b1ab6902f77cfe913154d5faea4435916a9e9791",
+      "size": 5563
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-update-slide.md",
+      "sha": "4e9dc6ee0f1f2f88439c8e4cabd8b2a1a766fa1a",
+      "size": 9598
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-xml-presentation-slide-get.md",
+      "sha": "1c60fe3515c56de620b2ce225f7794f9e0aa1444",
+      "size": 3438
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-xml-presentation-slide-replace.md",
+      "sha": "7fed5ec87f5c7f4a5252d5294c93473cf9f49fb7",
+      "size": 7044
+    },
+    {
+      "path": "skills/lark-slides/references/cli/lark-slides-xml-presentations-get.md",
+      "sha": "85bc9f155b82dba440a349306d8f69b8e197723c",
+      "size": 4955
+    },
+    {
+      "path": "skills/lark-slides/references/iconpark-index.json",
+      "sha": "2cab868e00af6e4c94f34f8eb013c2f576bb95b4",
+      "size": 746862
+    },
+    {
+      "path": "skills/lark-slides/references/iconpark.md",
+      "sha": "552fa0dc0deb7ff208e6997bb6c80b644a5b3515",
+      "size": 173
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-add-slide.md",
+      "sha": "afab5c731be479b2c4fee252ff4405931f86aa29",
+      "size": 201
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-create.md",
+      "sha": "76ccc507397fb1f776bed11dd2d8cbb632359840",
+      "size": 219
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-delete-slide.md",
+      "sha": "52196123ce8d0a154ad6c62d1ee29e848c831be2",
+      "size": 210
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-edit-workflows.md",
+      "sha": "f61d436692e2fb9c128dd441d3f59f53be834ec6",
+      "size": 216
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-history.md",
+      "sha": "93c07db1662e6d5a30c37ef4a654944ec2698dbf",
+      "size": 221
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-media-upload.md",
+      "sha": "06f192394eefc20a1a6ee67a11a63d180a7db793",
+      "size": 210
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-pptx-template-workflows.md",
+      "sha": "80b35b5a9797335498067d5b8fe61c1c1a218e02",
+      "size": 215
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-replace-slide.md",
+      "sha": "4b0a85158e72ba1f04248202847b23e8e21b65d1",
+      "size": 213
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-screenshot.md",
+      "sha": "ea4efe95dcda852d661d22327d90226a142cd3e5",
+      "size": 204
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-xml-presentation-slide-get.md",
+      "sha": "d42ef244d3382fc1a3429dccbf1eec342b91643c",
+      "size": 256
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-xml-presentation-slide-replace.md",
+      "sha": "6cf146134d59948a0c29d18694008c77a8569e3e",
+      "size": 268
+    },
+    {
+      "path": "skills/lark-slides/references/lark-slides-xml-presentations-get.md",
+      "sha": "d8b0b989cba5dd005c103992d55286095473c215",
+      "size": 241
+    },
+    {
+      "path": "skills/lark-slides/references/planning-layer.md",
+      "sha": "892b440c25f08a3d2f82983cf5848f5bf84c9290",
+      "size": 14694
+    },
+    {
+      "path": "skills/lark-slides/references/slides_chart_demo.xml",
+      "sha": "dbd25cec15625308efe054e9f1c705d8eb368b47",
+      "size": 201
+    },
+    {
+      "path": "skills/lark-slides/references/slides_xml_schema_definition.xml",
+      "sha": "bb4226fc0c7fdde62c699a2ae95749f1cc39b31e",
+      "size": 224
+    },
+    {
+      "path": "skills/lark-slides/references/troubleshooting.md",
+      "sha": "58f812f5f979148c0feb4ab92329969c0ac5b9bd",
+      "size": 195
+    },
+    {
+      "path": "skills/lark-slides/references/validation-checklist.md",
+      "sha": "628709d1b3f43a0f8c1ea29d39c4a66d0797a4b3",
+      "size": 200
+    },
+    {
+      "path": "skills/lark-slides/references/visual-planning.md",
+      "sha": "5cc22acc4a1dbd1d18d52ffaf9e36e1071632cc0",
+      "size": 14426
+    },
+    {
+      "path": "skills/lark-slides/references/workflow/error-handling.md",
+      "sha": "f89385d88c049f026c0404450224707f2c47dec6",
+      "size": 5268
+    },
+    {
+      "path": "skills/lark-slides/references/workflow/slides-editing.md",
+      "sha": "70753d4920beaa77c11961da365837e46e445869",
+      "size": 8299
+    },
+    {
+      "path": "skills/lark-slides/references/workflow/template-editing.md",
+      "sha": "da452a5ca7f7021ae37bf8ec407bc801149797be",
+      "size": 3945
+    },
+    {
+      "path": "skills/lark-slides/references/workflow/validation-xml.md",
+      "sha": "e44c74e5471936d1899d8e571caed4f9e202be19",
+      "size": 9846
+    },
+    {
+      "path": "skills/lark-slides/references/xml-schema-quick-ref.md",
+      "sha": "45f8690aff2a8a3dc283af5d4c3bd9dac28c41ba",
+      "size": 205
+    },
+    {
+      "path": "skills/lark-slides/references/xml/iconpark-index.json",
+      "sha": "2cab868e00af6e4c94f34f8eb013c2f576bb95b4",
+      "size": 746862
+    },
+    {
+      "path": "skills/lark-slides/references/xml/iconpark.md",
+      "sha": "a3f0939426d530b7f261fafcae11862f8bb20618",
+      "size": 2206
+    },
+    {
+      "path": "skills/lark-slides/references/xml/slides_chart_demo.xml",
+      "sha": "7c6b9c16c7add6913399a5633e34401b897d1728",
+      "size": 60623
+    },
+    {
+      "path": "skills/lark-slides/references/xml/slides_xml_schema_definition.xml",
+      "sha": "5151298f98201c5ce573078a00c335ed1f0a3b76",
+      "size": 213186
+    },
+    {
+      "path": "skills/lark-slides/references/xml/xml-schema-quick-ref.md",
+      "sha": "18da6ea7487859fc13cf8996c1300964e51552ce",
+      "size": 18112
+    },
+    {
+      "path": "skills/lark-slides/scripts/iconpark_tool.py",
+      "sha": "b9317e32917a4f402fdbef52aa7d9b86b30cd6b0",
+      "size": 12364
+    },
+    {
+      "path": "skills/lark-slides/scripts/iconpark_tool_test.py",
+      "sha": "859a81499b380be92ee05ab16ba947912786c54a",
+      "size": 7923
+    },
+    {
+      "path": "skills/lark-slides/scripts/sxsd_validator.py",
+      "sha": "da962d4be5bb74cd3fd0264111e7572fbae432e2",
+      "size": 39643
+    },
+    {
+      "path": "skills/lark-slides/scripts/xml_lint.py",
+      "sha": "10c38b0be7b04f645ba7c4fb120be4142b4b5b02",
+      "size": 120066
+    },
+    {
+      "path": "skills/lark-slides/scripts/xml_lint_test.py",
+      "sha": "75a5fa1c274b935bc60cb0b847052620e242c6ed",
+      "size": 207417
+    },
+    {
+      "path": "skills/lark-slides/scripts/xml_text_overlap_lint.py",
+      "sha": "497ad9ad34e0fcf104eaa81ad279a0d36aff621a",
+      "size": 479
+    },
+    {
+      "path": "skills/lark-slides/scripts/xml_text_overlap_lint_test.py",
+      "sha": "4a1aff06cdcb78057ed0f71c3a31915571d8db57",
+      "size": 382
+    },
+    {
+      "path": "skills/lark-task/SKILL.md",
+      "sha": "b4ed3161db5fdce00c70b19d64179bc418b139d8",
+      "size": 13569
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-assign.md",
+      "sha": "9f07495e323090096c08b91b7ceffcbfc1f396cc",
+      "size": 1399
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-comment.md",
+      "sha": "506076f1429a0e8fd0fcced7237682efdede0256",
+      "size": 902
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-complete.md",
+      "sha": "bc9a9da8bd344cfad33a80388b2eeeb50779816b",
+      "size": 1309
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-create.md",
+      "sha": "7f3d697fcb49a0ffc5d5fb61aa3368fd49c834cc",
+      "size": 4205
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-followers.md",
+      "sha": "36aab9de08dc9bbb091a392e137617c8f605e4af",
+      "size": 1267
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-get-my-tasks.md",
+      "sha": "b8193c6cccd7d4f86924344f945ae5e23d99ec24",
+      "size": 3412
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-get-related-tasks.md",
+      "sha": "5f55d0b915c6f37bb5db040870b28a53a008e8c4",
+      "size": 2953
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-reminder.md",
+      "sha": "c11d28d16bab52d33da709e763b387aec069b4a6",
+      "size": 1501
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-reopen.md",
+      "sha": "5b07ef56fa58f8fa7daef1a101b20c78618f515e",
+      "size": 740
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-search.md",
+      "sha": "020260e6f8e1a2f0d401c105e10e469b9841fff8",
+      "size": 1570
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-set-ancestor.md",
+      "sha": "ff113b78a145e1a36f77aaafb4a7fda834b3fc61",
+      "size": 965
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-tasklist-create.md",
+      "sha": "6c6ede0e518298b29561ae3cae5f31308e640cbe",
+      "size": 1334
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-tasklist-members.md",
+      "sha": "ffa68508383e3a7dda26124804bcae9277ff8d7e",
+      "size": 1202
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-tasklist-search.md",
+      "sha": "5ee9f3c191a6ae6e38b6aff5b6f20bfab8b84738",
+      "size": 1418
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-tasklist-task-add.md",
+      "sha": "ce5ad8daa1b5a998077bfab014704d2a86e95521",
+      "size": 1514
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-update.md",
+      "sha": "b177ca5e948c6859fee19062a22a8c9067164f80",
+      "size": 1891
+    },
+    {
+      "path": "skills/lark-task/references/lark-task-upload-attachment.md",
+      "sha": "0f7e834ecd4ed438d9de0430410f2f034139519d",
+      "size": 3188
+    },
+    {
+      "path": "skills/lark-vc-agent/SKILL.md",
+      "sha": "29eb7c09a6e083ab0c90d27f7109aeede8447715",
+      "size": 466
+    },
+    {
+      "path": "skills/lark-vc/SKILL.md",
+      "sha": "98b59056f6dca657f72ac1d9a13af84a647bea5b",
+      "size": 454
+    },
+    {
+      "path": "skills/lark-whiteboard/SKILL.md",
+      "sha": "9152c32aa9ae766468cb298266a6aec76a4a453f",
+      "size": 3114
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/connectors.md",
+      "sha": "ed9a684bed2df46cff989f89488649efd704c0bc",
+      "size": 5589
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/content.md",
+      "sha": "a8c7c4f5a29b8fa6442e457343d2645f76bf4ce7",
+      "size": 1512
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/image.md",
+      "sha": "dd9ba9f6e0d641931c70224b12bb5f4dbb07ab75",
+      "size": 4429
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/layout.md",
+      "sha": "64b3292c9d32725b3bad21f028b9401c399293c7",
+      "size": 19128
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/schema.md",
+      "sha": "5ad601e0adc01c3ca551c111859c478cb9863d78",
+      "size": 15308
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/style.md",
+      "sha": "0324c522e074a965c617f4a1d785c2f80efb87cd",
+      "size": 11095
+    },
+    {
+      "path": "skills/lark-whiteboard/elements/typography.md",
+      "sha": "b4adf061500fe331fe1a9f1a269e6be26de5b7ee",
+      "size": 2151
+    },
+    {
+      "path": "skills/lark-whiteboard/references/lark-whiteboard-export.md",
+      "sha": "59229a7687ef8826b51069c3285b8345833372ae",
+      "size": 3058
+    },
+    {
+      "path": "skills/lark-whiteboard/references/lark-whiteboard-update.md",
+      "sha": "b2d6f9f94015135ba1c64ad47c3f25cd646cb7c8",
+      "size": 4684
+    },
+    {
+      "path": "skills/lark-whiteboard/references/lark-whiteboard-workflow.md",
+      "sha": "7d4f3a6d41dafdf6a8b2050485902fa2bbf9a2f5",
+      "size": 6222
+    },
+    {
+      "path": "skills/lark-whiteboard/routes/dsl.md",
+      "sha": "d817b3fed21ff7156cf5f96cbef5d01c8e13cec7",
+      "size": 6811
+    },
+    {
+      "path": "skills/lark-whiteboard/routes/mermaid.md",
+      "sha": "3e2434a0230c91d34afbf6cd12da2f5ee9538ed9",
+      "size": 1172
+    },
+    {
+      "path": "skills/lark-whiteboard/routes/svg-edit.md",
+      "sha": "4c7a785c093d8d3f71c5bfac221d79502d597955",
+      "size": 3926
+    },
+    {
+      "path": "skills/lark-whiteboard/routes/svg.md",
+      "sha": "19b611b9c14e20a18e00ab2e1670bd09a13393a9",
+      "size": 4460
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/architecture.md",
+      "sha": "5765f69116e2eead401588d441c69e48685a95c3",
+      "size": 22418
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/bar-chart.md",
+      "sha": "0a5b1846bee0bc7a5ae996db87f0c007ef9a6e2f",
+      "size": 8029
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/comparison.md",
+      "sha": "3af8cdaf769f266eac0682ecf1f81b9500066413",
+      "size": 7595
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/fishbone.md",
+      "sha": "821b9c447e716f97a16996b318ed26864ace79d7",
+      "size": 9815
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/flowchart.md",
+      "sha": "c5c3a5fd97ed79d5735b054a49d4ec6f73f93bb2",
+      "size": 10830
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/flywheel.md",
+      "sha": "b07479155ce29e3dc8e86b6280d06b24c4a5fc04",
+      "size": 8809
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/funnel.md",
+      "sha": "6e030e2969522fc356667429bf22fda91b3f1ac7",
+      "size": 4314
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/line-chart.md",
+      "sha": "d67253728e44c5e5aa905b69a3cdc439cb7e7578",
+      "size": 9599
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/mention.md",
+      "sha": "5371acd9f139bbd56348a5aeb69995b3a5ff49e3",
+      "size": 3056
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/mermaid.md",
+      "sha": "9d6795a17b023300870d2172a31863c52d703d56",
+      "size": 3528
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/milestone.md",
+      "sha": "1921571d0c64f8f60c6af2dbcf70155544f50fc5",
+      "size": 4098
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/organization.md",
+      "sha": "5e1d0ceca269da8c0441c405b1ab8fd01249b4ef",
+      "size": 8439
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/photo-showcase.md",
+      "sha": "84d7a42420c81da53e57556023118a75d7c2beca",
+      "size": 6098
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/pyramid.md",
+      "sha": "62719362c6dc50c5910c5a9b48e814f9d3e227a7",
+      "size": 4011
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/swimlane.md",
+      "sha": "302e48c9495fc25db3cccbd7061e7916842ce626",
+      "size": 20046
+    },
+    {
+      "path": "skills/lark-whiteboard/scenes/treemap.md",
+      "sha": "fab92b6c940dc5266a5a4b91d270656f12a1c4f9",
+      "size": 6437
+    },
+    {
+      "path": "skills/lark-wiki/SKILL.md",
+      "sha": "1d1133ec593430b3e15c95aeb55c4ee39dd6fe04",
+      "size": 12776
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-delete-space.md",
+      "sha": "2f860be1673e1b8fa459b305d44a4565ad33c464",
+      "size": 8712
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-member-add.md",
+      "sha": "3af2d88853ed000765c8045952c5d4e1e194e782",
+      "size": 3536
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-member-list.md",
+      "sha": "ac41b6a18890e9f0de6c0d27dbadadce1ad8ca71",
+      "size": 2876
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-member-remove.md",
+      "sha": "f191c8634999fde153a4366213c0ae687a3197d8",
+      "size": 2899
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-move-to-drive.md",
+      "sha": "1cdf3f98c331688314bb88134ab9d8961995e629",
+      "size": 4570
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-move.md",
+      "sha": "969ce5637f9b82a8b26fdeeb7bf9f96c20b7283f",
+      "size": 10105
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-node-copy.md",
+      "sha": "3e0557b72b7ef56061d7e3e17c187dd294693266",
+      "size": 2359
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-node-create.md",
+      "sha": "1c39cc9156d60cdef24e6d7f97c7ba88b6470b09",
+      "size": 7905
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-node-delete.md",
+      "sha": "e28fecb6471298831082d323df85ec92e8c66b23",
+      "size": 3003
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-node-get.md",
+      "sha": "09d734af55996d15b052618e053d601a5cb008c8",
+      "size": 3750
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-node-list.md",
+      "sha": "7e01c7d740cc33bc70b5dc3263b6f5691d16834a",
+      "size": 4395
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-space-create.md",
+      "sha": "f560b5efafa29b27d71c81ec8e0c2b01aa93f4a6",
+      "size": 1573
+    },
+    {
+      "path": "skills/lark-wiki/references/lark-wiki-space-list.md",
+      "sha": "ab3d657a1402d20d1fced59138f593267e1dbd48",
+      "size": 2236
+    },
+    {
+      "path": "skills/lark-workflow-meeting-summary/SKILL.md",
+      "sha": "269a35698837a64c4559ade50f628042bae0bc97",
+      "size": 7149
+    },
+    {
+      "path": "skills/lark-workflow-standup-report/SKILL.md",
+      "sha": "4903553ca8ffd48b1669ea88fbda2bf0578827b3",
+      "size": 4626
+    },
+    {
+      "path": "upstream.json",
+      "sha": "cee267ba49e3b987656ed2c7812cf6070193ce74",
+      "size": 3638
+    }
+  ]
+}

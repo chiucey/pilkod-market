@@ -1,0 +1,685 @@
+{
+  "version": "1.0.3",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "d6c00ad968627c4f533d66745feac25bc42636cd",
+      "size": 1177
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha": "dd2142efe6ab4b27a95e7dfa6c1756a586bf9ca9",
+      "size": 3676
+    },
+    {
+      "path": "licenses/MIT-ADDY-2025.txt",
+      "sha": "d67778ada6b9cda6227e9130da182c13e73c8b2e",
+      "size": 1068
+    },
+    {
+      "path": "licenses/MIT-ADDY-2026.txt",
+      "sha": "90715bb429f374dcc4e05c35535b049d3c077313",
+      "size": 1068
+    },
+    {
+      "path": "licenses/MIT-PAUL-HUDSON.txt",
+      "sha": "e9f6fd1f59090753544df5af4edbd524f1aa0f32",
+      "size": 1068
+    },
+    {
+      "path": "licenses/MIT-SETH-HOBSON.txt",
+      "sha": "654f914791a49eb8f3089429f99873ba01af1cb0",
+      "size": 1067
+    },
+    {
+      "path": "performance-experts.webp",
+      "sha": "d5515b797bb4ea6b28c2cdef7167a6d1c5f18e0a",
+      "size": 22370
+    },
+    {
+      "path": "skills/core-web-vitals/SKILL.md",
+      "sha": "1108233736de76fc99fa3bdeb10a5721570abce5",
+      "size": 14548
+    },
+    {
+      "path": "skills/performance-optimization/SKILL.md",
+      "sha": "d4c1b9fc5925d8f0d6e9f1dc70796ba6ff624687",
+      "size": 15139
+    },
+    {
+      "path": "skills/performance-optimization/references/performance-checklist.md",
+      "sha": "86a41496bf9c4c58b60be30fdf137b8bc813fad8",
+      "size": 7408
+    },
+    {
+      "path": "skills/performance/SKILL.md",
+      "sha": "0c8271f18f031827ead998ac30a4058b65b56f73",
+      "size": 11685
+    },
+    {
+      "path": "skills/python-performance-optimization/SKILL.md",
+      "sha": "32d8363f3d69f19f77368724690269e79b604f88",
+      "size": 3253
+    },
+    {
+      "path": "skills/python-performance-optimization/references/advanced-patterns.md",
+      "sha": "10f45b1ac3b5b7003bc522bb77c6d1e239b73e6c",
+      "size": 10527
+    },
+    {
+      "path": "skills/python-performance-optimization/references/details.md",
+      "sha": "a378b4866de422cbd1587d95a11d0b0fd1c4cfce",
+      "size": 7430
+    },
+    {
+      "path": "skills/swiftui-pro/SKILL.md",
+      "sha": "f6015f2bfbd7c11ed4457a32ceba05e23ef340ee",
+      "size": 4145
+    },
+    {
+      "path": "skills/swiftui-pro/references/accessibility.md",
+      "sha": "2589e27375c050cccb686168aa0e6f9e934af4d8",
+      "size": 2377
+    },
+    {
+      "path": "skills/swiftui-pro/references/api.md",
+      "sha": "bfd5199bdadce3abdc0b363eeede6a3ac5b1e723",
+      "size": 3090
+    },
+    {
+      "path": "skills/swiftui-pro/references/data.md",
+      "sha": "952571f8d07f0b4af662a39f7161a185be87ba5b",
+      "size": 2987
+    },
+    {
+      "path": "skills/swiftui-pro/references/design.md",
+      "sha": "4a8ba0c4f693512d5fd55783c08737751ebeea9d",
+      "size": 2683
+    },
+    {
+      "path": "skills/swiftui-pro/references/hygiene.md",
+      "sha": "80bc9c5f5fcda3529a9b8962d470a944ac463f07",
+      "size": 1082
+    },
+    {
+      "path": "skills/swiftui-pro/references/navigation.md",
+      "sha": "44b402565600a787def2237f9fbe15c3614df397",
+      "size": 1300
+    },
+    {
+      "path": "skills/swiftui-pro/references/performance.md",
+      "sha": "72c5a037df7f903880d61520632682f51719ddaf",
+      "size": 2781
+    },
+    {
+      "path": "skills/swiftui-pro/references/swift.md",
+      "sha": "92f32b1b5829e3c2dfa319def786e4234f97864f",
+      "size": 4138
+    },
+    {
+      "path": "skills/swiftui-pro/references/views.md",
+      "sha": "880a6051f32afa0ae988be646ba0848099992368",
+      "size": 3240
+    },
+    {
+      "path": "skills/vercel-react-best-practices/SKILL.md",
+      "sha": "a4732272113a53ebd3fe633990487668a751c5c8",
+      "size": 7343
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/_sections.md",
+      "sha": "12732a5ff82e2e1a8cdb9636974a888a3f18f743",
+      "size": 1538
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/_template.md",
+      "sha": "1e9e70703485021e0b969f5731f38c8b9f8694db",
+      "size": 631
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md",
+      "sha": "24d901b62be66f6088eb1de5b262e67f5c337d57",
+      "size": 1802
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md",
+      "sha": "97e7ade243aa6dae50d6faa5111dea0d04778ead",
+      "size": 1483
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/advanced-init-once.md",
+      "sha": "73ee38e5e74c0afa28cb730afe3275479432092a",
+      "size": 958
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/advanced-use-latest.md",
+      "sha": "9c7cb501693d4a9521697f13dbd5906dd99f0257",
+      "size": 1072
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/async-api-routes.md",
+      "sha": "6feda1ef0ac06b57b33c7b5bd6a19ca88d6c8a34",
+      "size": 1125
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md",
+      "sha": "5799d7f6ee6e9d70422048ab0cae06ca021d22b2",
+      "size": 1220
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/async-defer-await.md",
+      "sha": "8eada33f1ad145571056be93b8085c6fd5f10459",
+      "size": 2188
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/async-dependencies.md",
+      "sha": "0484ebab993f3db78277e8731872473d02475e6d",
+      "size": 1293
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/async-parallel.md",
+      "sha": "64133f6c31fec81eaaabd712586337d20122e09f",
+      "size": 654
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/async-suspense-boundaries.md",
+      "sha": "b12794c54124855659dcdd7538194c0252143608",
+      "size": 2506
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md",
+      "sha": "8276f156cf1aa8a611bd5bc3cadcb362e16ccd13",
+      "size": 2382
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/bundle-barrel-imports.md",
+      "sha": "22d1050196671b7bc9f9aaf88cc665ba6fa8deb0",
+      "size": 2795
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/bundle-conditional.md",
+      "sha": "99d6fc90e31d683d2b6b71353b92d620b484b644",
+      "size": 949
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/bundle-defer-third-party.md",
+      "sha": "db041d1510e51defeade05926ba4e6bbad1068b5",
+      "size": 920
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md",
+      "sha": "60b62695e7a080e2020ff2242d8d841c5e3ecbc4",
+      "size": 791
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/bundle-preload.md",
+      "sha": "7000504065472628ae614786a3faadd23b0435a7",
+      "size": 1149
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/client-event-listeners.md",
+      "sha": "f4d612da27d5597d3e0c06c32112eabc8fbeef36",
+      "size": 1968
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/client-localstorage-schema.md",
+      "sha": "d30a1a7d4f85b0d50a0808eaa1b382c6deb595f4",
+      "size": 1950
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/client-passive-event-listeners.md",
+      "sha": "29c7eec493f0e5ebdccdea4a2ba5a3c0bf126122",
+      "size": 1636
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/client-swr-dedup.md",
+      "sha": "2a430f27fd6abdc1b1b2f809b7a60114ff506790",
+      "size": 1159
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-batch-dom-css.md",
+      "sha": "78cb923d775fe1558789f4ec68c57412065e6169",
+      "size": 3256
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-cache-function-results.md",
+      "sha": "7b986cf4cc530ab2ac4c112f27e4cf9f4b00a34f",
+      "size": 1931
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-cache-property-access.md",
+      "sha": "39eec9061b4ca820150cc8183fb73f9e0c91ce85",
+      "size": 532
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-cache-storage.md",
+      "sha": "aa4a30c08176aabd27b41fa44d5c1981457b675f",
+      "size": 1651
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-combine-iterations.md",
+      "sha": "044d017ec3b24b53e46d638acd1d936a22ac6323",
+      "size": 753
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-early-exit.md",
+      "sha": "44a8c58c6b392e7d7391b52e09cec916cff2f157",
+      "size": 1129
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-flatmap-filter.md",
+      "sha": "ee0edf0da256eb8b62c5a998c768c51eb520e8cd",
+      "size": 1411
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-hoist-regexp.md",
+      "sha": "dae3fefdc0a1db66badcd4875489715edcdb038b",
+      "size": 1028
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-index-maps.md",
+      "sha": "9d357a00b15ac67cdd638886f5197a13173a637d",
+      "size": 837
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-length-check-first.md",
+      "sha": "8b89573630fdc3aa10564273f390ecc7e2b1cd3e",
+      "size": 1747
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-min-max-loop.md",
+      "sha": "60029866bfd2f56abeb9fdce7a7e8d2cf1ba1ba4",
+      "size": 2278
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-request-idle-callback.md",
+      "sha": "d81927e5f0ddb9fa4eece79197728bfc4382cbfe",
+      "size": 2647
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-set-map-lookups.md",
+      "sha": "680a4892ee291c432bf8e769a44d0f1eb102b74b",
+      "size": 532
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/js-tosorted-immutable.md",
+      "sha": "eae8b3f8aed2c7a893ceaae4cab55fa1c444b309",
+      "size": 1782
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-activity.md",
+      "sha": "c957a490b7c2688542766150741e85e066539251",
+      "size": 564
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md",
+      "sha": "1fcba409ceccfd1949a8efe8a632e9659eadab4d",
+      "size": 1179
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-conditional-render.md",
+      "sha": "7e866f5852dac80e0822e7f7c33476f5c9fc22f1",
+      "size": 980
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-content-visibility.md",
+      "sha": "aa6656362b2c0dad9ffea788b5850843d6c0629e",
+      "size": 815
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md",
+      "sha": "32d2f3fcea53dadcf847231ee20c60fa2c5c3049",
+      "size": 1039
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md",
+      "sha": "7a62b2513304739f9aa68d8266b58298e813c83c",
+      "size": 2302
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md",
+      "sha": "24ba2513a29f5259b3184695d2d4da25e03e42ac",
+      "size": 872
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-resource-hints.md",
+      "sha": "1290bef06baf459f85dc5856ffc4486951224a48",
+      "size": 2549
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-script-defer-async.md",
+      "sha": "ee275ed1c06da8f1ae70e744e47965799eaebf02",
+      "size": 1868
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-svg-precision.md",
+      "sha": "6d7712860365294936a1b736d29d3eb970b91da7",
+      "size": 588
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md",
+      "sha": "3688fd48626fa1875bbfdbd22698192ccacd3607",
+      "size": 2070
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-defer-reads.md",
+      "sha": "e867c95f02fe6ed6ac2f91fdf1c0922304e0423a",
+      "size": 973
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-dependencies.md",
+      "sha": "47a4d92685702e3a3b07073c62a61800fa0a6d7d",
+      "size": 824
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md",
+      "sha": "3d9fe4050794ea6655add6bee50cfbc104e5dc31",
+      "size": 1201
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-derived-state.md",
+      "sha": "e5c899f6c073338bbd1b73c0275bc3e5e7d9ae7b",
+      "size": 728
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-functional-setstate.md",
+      "sha": "69d224edf52cf3d2292c6fd3095fd8e1ef2998b3",
+      "size": 2956
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md",
+      "sha": "d86d827daf9a27b2999057c83d4f61aeba1523c3",
+      "size": 2008
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md",
+      "sha": "63570491848cb42c2bc7073bceb754893a6a4cfa",
+      "size": 1173
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-memo.md",
+      "sha": "f8982ab612105a3b7faee1292b797338e7fb5271",
+      "size": 1148
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md",
+      "sha": "dd58a1af091b3cf5cb271d25904af4feb836d1aa",
+      "size": 1268
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-no-inline-components.md",
+      "sha": "d97592acefced05bc4a8538c77d226fa24c08534",
+      "size": 2135
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md",
+      "sha": "59dfab0f3b048097627e0ca6e4c8da36629a5268",
+      "size": 1018
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md",
+      "sha": "89d805644dbffe3877bc1356bdf8ad416a5c715b",
+      "size": 1844
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-transitions.md",
+      "sha": "d99f43f764232e994a49a1df89ec9d624552f439",
+      "size": 1055
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md",
+      "sha": "619c04b0142bf5a5b7d0f69532a56b797a78f664",
+      "size": 1846
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md",
+      "sha": "cf04b81f8a531eacd07a32e8917fb3ed3c1bbecb",
+      "size": 1742
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-after-nonblocking.md",
+      "sha": "dbd93c0c6f132d217e272280223e8dc9cf0a4904",
+      "size": 2000
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-auth-actions.md",
+      "sha": "f5368fca823c65bbe013e06797ec46913c422a78",
+      "size": 2635
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-cache-lru.md",
+      "sha": "ef6938aa53c55dc3c0035bd6c66838810d870260",
+      "size": 1353
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-cache-react.md",
+      "sha": "87c9ca33168a321a59fbaaa84843e2f48c99751a",
+      "size": 2228
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-dedup-props.md",
+      "sha": "fb24a2562c73fadbb9a11a79897c2cf93ea3c69a",
+      "size": 2060
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-hoist-static-io.md",
+      "sha": "25205c2fc42d0dd684d6423acde642774329a8cc",
+      "size": 4423
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-no-shared-module-state.md",
+      "sha": "ff7d9f29c6e0e42ec1471acec8a3c7f394c8358d",
+      "size": 1766
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
+      "sha": "1affc835a601a894fd02de08e6c9cdfd76d34b64",
+      "size": 1554
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md",
+      "sha": "be1dc25075e40e6bda46cb24dc5a6f42b916b0e8",
+      "size": 992
+    },
+    {
+      "path": "skills/vercel-react-best-practices/rules/server-serialization.md",
+      "sha": "39c5c4164c31be7f171ea2f4b3b32fe47709a651",
+      "size": 996
+    },
+    {
+      "path": "skills/vercel-react-native-skills/SKILL.md",
+      "sha": "a43a03bfde7c0d81903319ed4e9fabfd8444e705",
+      "size": 4531
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/_sections.md",
+      "sha": "819f75e33317c5590a4115c2a82061ae1950a31d",
+      "size": 2200
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/_template.md",
+      "sha": "1e9e70703485021e0b969f5731f38c8b9f8694db",
+      "size": 631
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/animation-derived-value.md",
+      "sha": "310928a957b841fc5af335e984a4df6c1a6b3f3a",
+      "size": 1373
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md",
+      "sha": "87c67827054bbb0a41d7e4ad78adf3612accb6bf",
+      "size": 2559
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/animation-gpu-properties.md",
+      "sha": "5fda09558e89b2d6021bbbe5a2731fd26d16b1f3",
+      "size": 2059
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/design-system-compound-components.md",
+      "sha": "d8239ee1fbb95d52b5b57a1d699199b1f4758e8c",
+      "size": 1625
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/fonts-config-plugin.md",
+      "sha": "39aa01477af69b372e7e6251831430da1c3203f9",
+      "size": 1393
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/imports-design-system-folder.md",
+      "sha": "8466dcb2544dad65639d29e5921a6be00ea1ac2c",
+      "size": 1418
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/js-hoist-intl.md",
+      "sha": "9af1c354c3e5e8836883c1a79a533fa5e72d4958",
+      "size": 1645
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-callbacks.md",
+      "sha": "a0b3913ff3b88e92bd0a91b555f8c96732b2b953",
+      "size": 1059
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-function-references.md",
+      "sha": "9721929b28b8115e8fa24ff8a6f82a6b1ec94d6e",
+      "size": 4133
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-images.md",
+      "sha": "75a3bafc83f65e0e14af3b7cc5786ea40b0d34b4",
+      "size": 1417
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-inline-objects.md",
+      "sha": "d5b6514a6658917468399803b16cb61b17459af7",
+      "size": 2308
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-item-expensive.md",
+      "sha": "f617a76d4e525cde99b937a8e0e163dfe0ef52b0",
+      "size": 2466
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-item-memo.md",
+      "sha": "634935e8ed0e6bd10014450c91b8a97187cbeda1",
+      "size": 2250
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-item-types.md",
+      "sha": "1027e4e6cd982476271d12507c329653ec793484",
+      "size": 2749
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/list-performance-virtualize.md",
+      "sha": "8a393ba1eef972f72a00a67c6b0a23c09c688639",
+      "size": 1742
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md",
+      "sha": "ff85d76735d89e4cdfa89afd75759020780c5d5f",
+      "size": 1091
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md",
+      "sha": "1087dfa511e9837f14b71f49d1c3d2018d6cfdc1",
+      "size": 1351
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/navigation-native-navigators.md",
+      "sha": "035c5fd37ce16afc0613405bd1f0b8ad0cc8b1ce",
+      "size": 4941
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md",
+      "sha": "f76c25ac6f8c48c8436f0ccee1359a649a33b48f",
+      "size": 1274
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md",
+      "sha": "0dcbaf47a6abeb72da8673f99b45d2e8b609412b",
+      "size": 1268
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/react-state-dispatcher.md",
+      "sha": "93e8b6db6112936ad57e6506f56eeef0725336c1",
+      "size": 2255
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/react-state-fallback.md",
+      "sha": "204f34665f206a734cb2d0de17a7179f3793dc89",
+      "size": 1735
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/react-state-minimize.md",
+      "sha": "64605b6c382e407f244d2db8b72bb3105ebae87b",
+      "size": 1740
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md",
+      "sha": "30f05d3f8bea95379273799a21f0a1990a6e6511",
+      "size": 1812
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md",
+      "sha": "fd1b9f407014c783f3e59a5f3e5bf72979d62547",
+      "size": 697
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/scroll-position-no-state.md",
+      "sha": "a5760cd2892a9985aeeed93abf719be5dc4efa88",
+      "size": 1936
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/state-ground-truth.md",
+      "sha": "c3c4bd9e497bcec63c303ec1cf2d0ff34e5a39cb",
+      "size": 2172
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-expo-image.md",
+      "sha": "72d768f1bf89d998e93611724e3608f48eb6b3a1",
+      "size": 1648
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-image-gallery.md",
+      "sha": "ef26d962f376c8c3fe052d578e143932fdd96a58",
+      "size": 2546
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-measure-views.md",
+      "sha": "8b783fee314ec7a4152cf49e0febcbdd78411e2c",
+      "size": 2232
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-menus.md",
+      "sha": "5168bc2037ca1fd1e1312abd4a2b77fec8eb5264",
+      "size": 4598
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-native-modals.md",
+      "sha": "f560e11e12e703a46517ff87d371a43e56230a81",
+      "size": 1859
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-pressable.md",
+      "sha": "31c3d204274292e244466bae9f425064263ae80a",
+      "size": 1534
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md",
+      "sha": "79812bc9ce35eaad4c965103d0d87b7230084ca8",
+      "size": 1579
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md",
+      "sha": "bbebc3b81c22ded13447efe5876c8c3408b4eb02",
+      "size": 1317
+    },
+    {
+      "path": "skills/vercel-react-native-skills/rules/ui-styling.md",
+      "sha": "3908de3c4bbd03ce2f024917a2d82f9c03517100",
+      "size": 2212
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "6fc16f54e4d9ec9351e852c8aa66bb673d270d1c",
+      "size": 618
+    },
+    {
+      "path": "LICENSE",
+      "sha": "5130a67cfaa75a0e7e96046948cd677774570793",
+      "size": 1062
+    },
+    {
+      "path": "skills/wecom-unified/SKILL.md",
+      "sha": "5d81a3d1ec1d072c0db2cbdc3854be42e0316931",
+      "size": 13643
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-agenda.md",
+      "sha": "552b383aa60d9fbc10a10970065997977030376c",
+      "size": 15117
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-cancel.md",
+      "sha": "e6aba202e93f33512129d011b43865cb68b153f3",
+      "size": 7001
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-create.md",
+      "sha": "bbf71b2c550fde51edabb76decb52ebfdf0ef935",
+      "size": 26196
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-freebusy.md",
+      "sha": "a406810324462f4cd0d380916a0b62b61dc8a0ea",
+      "size": 13245
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-meeting-room.md",
+      "sha": "a9208efd5bfd3eac2de54a412c827b06b1f45af1",
+      "size": 11434
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-search.md",
+      "sha": "7799002ec9a4dd5b6e0cbce5a12df6fc40223c45",
+      "size": 11533
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar-update.md",
+      "sha": "02126e9abc00ae0597274fbbe8646639452542cb",
+      "size": 21342
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-calendar.md",
+      "sha": "824858ee02f49c4ee0eacc3fe6ab437c32af0a7c",
+      "size": 28604
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-contact.md",
+      "sha": "f1f6669b6275a2d9096b595931c829fec92fe07a",
+      "size": 2911
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-disk.md",
+      "sha": "3265e0bfd511c6762d462834b299d410fbd89b0a",
+      "size": 26429
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-contents-append.md",
+      "sha": "9cde22f6840bedc26b6e3e51d7c55dc37cb13478",
+      "size": 561
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-contents-overwrite.md",
+      "sha": "a1a8947b6ae7719b175c763d0c91e662b4e85728",
+      "size": 1020
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-create.md",
+      "sha": "6fe8ab0611e073d5fb518fbf9b5b772b9e11fbc9",
+      "size": 7662
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-manage-doc-members-update.md",
+      "sha": "86c9cdb2ca13b9f4ad3173a2e5e41ac95da15573",
+      "size": 849
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-manage-doc-names-update.md",
+      "sha": "a04c8c3db8eed49cf053c42fd0b8f80724b37c1d",
+      "size": 428
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-manage-doc-rules-update.md",
+      "sha": "85a6a0172ddbea3f6efe60058445cf5818b19bee",
+      "size": 938
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc-manage.md",
+      "sha": "62de0941a9f4dc9a996db64599bab471dcda814e",
+      "size": 10517
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-doc.md",
+      "sha": "1a85066a3e70575f7f8e6bb812a0fce213ad2166",
+      "size": 6044
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-forward-mail.md",
+      "sha": "5640a2c5f4a84886129276ff45470af9154d0197",
+      "size": 7288
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-get-mail.md",
+      "sha": "851fa49dad3405a202b76274b4bff26adbe42889",
+      "size": 11770
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-reply-mail.md",
+      "sha": "8369cc178ba2e32c1ae1668b7378c9fd646f03ed",
+      "size": 10865
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-search-mail.md",
+      "sha": "5b46fb68b776bb89b5827fb2aa5e1a7ee13a72d3",
+      "size": 14041
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-security.md",
+      "sha": "3949e37bdce4a1fce0381ceb5b22ad720cabfbc5",
+      "size": 2689
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-send-mail.md",
+      "sha": "39bed6953c1127cb4211af6343256ef31cd79d46",
+      "size": 13277
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email-send-schedule.md",
+      "sha": "785fdf4e97f1f9e1ae6d89589d10bf1ac67c8c9d",
+      "size": 5817
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-email.md",
+      "sha": "47b1eefe71fdf2f289e233d0335723a5baf302f4",
+      "size": 12692
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-media.md",
+      "sha": "3fdd5022598b3c949b58ee6928eb783424a19e56",
+      "size": 4638
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting-cancel.md",
+      "sha": "1dbaacc3c4dc415fd664cbb1ab70c56a4a907a4e",
+      "size": 6793
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting-create.md",
+      "sha": "3d82f2c57e45d042c827b4938eddbce4aa5a4223",
+      "size": 21032
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting-list.md",
+      "sha": "38c34ee6e3a37bbffdaaeec58edd35b7224fbb97",
+      "size": 21329
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting-original-get.md",
+      "sha": "602c64598b196bc0210b281fd3c98ed8134f2a02",
+      "size": 6379
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting-search.md",
+      "sha": "b106fcbfc3589f9bd9df171aebd7219a1a8188be",
+      "size": 10106
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting-update.md",
+      "sha": "73d773112faa6d2c4b7bb413154af0f68fd99816",
+      "size": 14620
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-meeting.md",
+      "sha": "7396ed8af1eff397f139c9c2d5a51909c90ec5da",
+      "size": 35564
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-message.md",
+      "sha": "9d7c9f3473eb9b335535b0287e462cbb43df5df4",
+      "size": 7502
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-sheet-contents-update.md",
+      "sha": "f17d800440db2c6738c6d8d24562465aea99932c",
+      "size": 2008
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-sheet-ranges-get.md",
+      "sha": "d619bd50d41b641499e555c13fd5518badf64ef3",
+      "size": 2183
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-sheet-rows-append.md",
+      "sha": "3449457e01da18ecc55f9f38467d312d7bc8483e",
+      "size": 1930
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-sheet-subsheets-add.md",
+      "sha": "dfa3a7e582a4df605cb6a7262ea4609b8b1cbcf1",
+      "size": 868
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-sheet-subsheets-delete.md",
+      "sha": "f805bbc35fd1098f2df8a4fd04ac6ed5d6206730",
+      "size": 487
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-sheet.md",
+      "sha": "d2d9d9e840bdf08a369d0bd360f6572ae2d28cb5",
+      "size": 6866
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-data-driven-pages.md",
+      "sha": "2a96ab571506f3b2497006a06a8d5d708f655629",
+      "size": 4332
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-edit.md",
+      "sha": "9a00af737e76aa12de5aa46ba246af077c2cef46",
+      "size": 27948
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-arraylist.md",
+      "sha": "e334990c0b12c0bc7d4fdf9f34cc5bd1aafbb765",
+      "size": 11006
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-datetime.md",
+      "sha": "74f5a54845ef8dd895356dc9dc8e2fb24dde4e3c",
+      "size": 7681
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-logic.md",
+      "sha": "d22974324992c385db374816d44f9f2dd4bc6ff2",
+      "size": 7461
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-math.md",
+      "sha": "af596e51401942ff54afc3fb9690c75ef994adde",
+      "size": 8708
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-operators.md",
+      "sha": "b1e45208a45ed11b5dc61623c08e2e1695f4c85c",
+      "size": 4931
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-pageblock.md",
+      "sha": "6f53cfad166e94f033f5fc41033538717ca0df53",
+      "size": 3466
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-reference.md",
+      "sha": "309bc9824e23fa9c6496d2120be7ba0fd8f74a4f",
+      "size": 7216
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-templates.md",
+      "sha": "9fffc6270d17bee169aca24fdddab697badbf6b7",
+      "size": 12175
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-text.md",
+      "sha": "1f2cc755a7b446f04fd452c2e33b429ff0409882",
+      "size": 9557
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-formula-user.md",
+      "sha": "e532f471dce7125c8b5535d1706341fe4ade5221",
+      "size": 607
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage-mdx-syntax.md",
+      "sha": "d0b815a8c93e67e63bee346dbed5f485970b9d0f",
+      "size": 27995
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartpage.md",
+      "sha": "7c493d015ed1b078b410b0e3c65a4316955c4c12",
+      "size": 12163
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-chart-types.md",
+      "sha": "d32d2a695f1f4e48540fa0ad9e2169787c219d60",
+      "size": 5541
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-common.md",
+      "sha": "0acd73e901a5e4f17538f9709d09c7a999290e76",
+      "size": 7775
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-edit.md",
+      "sha": "ffbe221241f82e1acb1b6159618c7c69c6a9a1fb",
+      "size": 29876
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-field-types.md",
+      "sha": "52f257bf03e9e6a193cf86ebdcd10bd1f8061e47",
+      "size": 14983
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-formula.md",
+      "sha": "d1d40bb83a81d3dc9afa51b5a1c5328687c4618e",
+      "size": 36038
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-read.md",
+      "sha": "cbeed10acabdc737a2dfb23102f42b0d4b64cda3",
+      "size": 26046
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-record-values.md",
+      "sha": "8689a90ced8f5e3489ad7c282ce11c656d50af3f",
+      "size": 7872
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-ai_efficiency.md",
+      "sha": "01e7a874c2f4e447eb13dadcaeaa43e15f1d7157",
+      "size": 24277
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-connect_to_app.md",
+      "sha": "bad807ea1ca8001bdaa8fff7569715fd0e271104",
+      "size": 15041
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-financial_accounting.md",
+      "sha": "627024a985afa23a84ea49d23b65f0e96ee6f4f0",
+      "size": 12451
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-hr_and_administration.md",
+      "sha": "15e7fcbbbef5d6a69907412c580a810bfa2add85",
+      "size": 18742
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-ledger_records.md",
+      "sha": "407035b5167cc3f1b1c7a433573dc3bbf082dae5",
+      "size": 5347
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-manufacturing.md",
+      "sha": "54e20b96aaee97f3c758e87281b32117b9d45a00",
+      "size": 14226
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-marketing.md",
+      "sha": "6bfefe657cd3f92578a396c18e153a5b0b231a4e",
+      "size": 6757
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-office_essentials.md",
+      "sha": "71524f8edbc3543c0a478bf970418194e5376828",
+      "size": 10103
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-personal_efficiency.md",
+      "sha": "1e2b0e818e2f4ed228bbf3f71da90ea018b6a3f6",
+      "size": 2462
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-procurement_logistics.md",
+      "sha": "ed1f71e71c312a4ac3cd8424bbd5ec01814f2895",
+      "size": 11323
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-project_management.md",
+      "sha": "6a23a29e016de68801ffc1e7b5fa1a946bbc614b",
+      "size": 18903
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-rd_process_customer.md",
+      "sha": "436a1803173fbdc034a74fbe32ee4d3d94565815",
+      "size": 8909
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-rd_process_ops.md",
+      "sha": "aa3db5a26ea8fa9141a37482bed7590cc2628138",
+      "size": 4026
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-rd_process_project.md",
+      "sha": "a7681b36b078eb45910c593ff6b669cea47fc25e",
+      "size": 3867
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-rd_process_research.md",
+      "sha": "fd26c19c0fd31c91e3698229071b077e2a5421cb",
+      "size": 3173
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-sales_and_operations.md",
+      "sha": "4d2d755fea2349821f28f5205634c6327a4aeed7",
+      "size": 15666
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-store_management.md",
+      "sha": "216b4591e2d339fea8d44d90c9f0e15be8ea8268",
+      "size": 15105
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-team_tasks.md",
+      "sha": "d0975e1b953cfddaa914e7d71f012546944b1e58",
+      "size": 9658
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-wechat_customer.md",
+      "sha": "2bce450970013376b98113b3e695944f8d9a10b7",
+      "size": 12878
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-template-work_report.md",
+      "sha": "2fe268a5c5607a7d86ad2f00ce94553e869eff39",
+      "size": 3233
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-templates.md",
+      "sha": "12d9221b77e63598777825b216b0f6d2b8683e78",
+      "size": 5288
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-view-types.md",
+      "sha": "54f64a77d0e1f4600a395a565d19fb6ff0794bbd",
+      "size": 13154
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-webhook-examples.md",
+      "sha": "6081ef47579b2dfa8c6dc2d0bdad0d71e0b13a75",
+      "size": 4442
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet-webhook.md",
+      "sha": "7d71903e6d23eeab21db0948e75def66a3056626",
+      "size": 7334
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-smartsheet.md",
+      "sha": "bfe02e9a4055c777aca732d78229c32551d07e7a",
+      "size": 14097
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo-create.md",
+      "sha": "66ef00f445a398c4203379470deba0724fa95218",
+      "size": 8826
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo-delete.md",
+      "sha": "2c22dee7ef7b01f2b0cc137419e57461a2662769",
+      "size": 2526
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo-finish.md",
+      "sha": "e1dd7471c05638866fe04ffa384458a892978da3",
+      "size": 3972
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo-get.md",
+      "sha": "723a02b28c1a8403b30d031a05c2376d01f6e803",
+      "size": 2501
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo-list.md",
+      "sha": "02718d90fe547f1627c1de4bd9da600b05eb1b26",
+      "size": 8808
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo-update.md",
+      "sha": "f4f8b53d7d5b75968494fde95bf63278103a0337",
+      "size": 6982
+    },
+    {
+      "path": "skills/wecom-unified/references/wecomcli-todo.md",
+      "sha": "7e78356bc1840352a4511b499c926722ee6f64a4",
+      "size": 4835
+    },
+    {
+      "path": "skills/wecom-unified/scripts/build_docx.py",
+      "sha": "7be10b597f50bf6bac1160dfa6d9c134d0d7dd76",
+      "size": 50969
+    }
+  ]
+}

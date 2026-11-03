@@ -1,0 +1,45 @@
+{
+  "version": "1.0.22",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "ef2b43d6d7960ffd34224455e2d7d9639b19d864",
+      "size": 792
+    },
+    {
+      "path": "skills/blender-h3-dcc/SKILL.md",
+      "sha": "05a707b88ad14bd99c971cb7702454751da34d9e",
+      "size": 23570
+    },
+    {
+      "path": "skills/blender-h3-dcc/extension/minimax_h3-1.0.7.zip",
+      "sha": "854dabf86b82aadf247bc3411d6a7b270ff95790",
+      "size": 43297
+    },
+    {
+      "path": "skills/blender-h3-dcc/references/blender-operations.md",
+      "sha": "416fe6121367ef5e47514c50295139f7adca0be1",
+      "size": 2418
+    },
+    {
+      "path": "skills/blender-h3-dcc/references/segmented-continuation.md",
+      "sha": "bf7580bd61ba40b039fbe758547884e65be496c7",
+      "size": 1034
+    },
+    {
+      "path": "skills/blender-h3-dcc/scripts/h3_timeline_contract.py",
+      "sha": "3f4a24cf218de1bd3c6e1627d145adcbbfc446de",
+      "size": 12006
+    },
+    {
+      "path": "skills/blender-h3-dcc/scripts/install_extension.py",
+      "sha": "32141b95c8c4722db5872f6fbefd7d7c3684098a",
+      "size": 7516
+    },
+    {
+      "path": "skills/blender-h3-dcc/scripts/m3_render_workflow.py",
+      "sha": "04f2a058ced408ec8747d70a38884b27baf1fdc4",
+      "size": 82303
+    }
+  ]
+}

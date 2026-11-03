@@ -1,0 +1,200 @@
+{
+  "version": "2.11.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "47789f63f21b2a4671a027805d968476ea33d700",
+      "size": 951
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha": "848d8b07802bc9d33e27c80e56b13d18908d6821",
+      "size": 400
+    },
+    {
+      "path": "LICENSE",
+      "sha": "7c48dd638a9ebed49a8ef0c0c4eea90105381cdf",
+      "size": 1069
+    },
+    {
+      "path": "skills/analytics/SKILL.md",
+      "sha": "8f4640998608b9ceb2fd2fc6e0307dcd97b114d1",
+      "size": 8645
+    },
+    {
+      "path": "skills/analytics/references/event-library.md",
+      "sha": "c381b56c44b5b987e66de708d6061af873f68e55",
+      "size": 8654
+    },
+    {
+      "path": "skills/analytics/references/ga4-implementation.md",
+      "sha": "f2656dcbf0f4336eb756d9796e2d2cdab87452c7",
+      "size": 6343
+    },
+    {
+      "path": "skills/analytics/references/gtm-implementation.md",
+      "sha": "956e63840d545b7ad5bbef8373e1f19e0bc258f7",
+      "size": 7570
+    },
+    {
+      "path": "skills/competitor-profiling/SKILL.md",
+      "sha": "292835272745737549b3de8940808892a34894e0",
+      "size": 15025
+    },
+    {
+      "path": "skills/competitor-profiling/references/templates.md",
+      "sha": "0a5ad331fa8393bd97de4e8f3144bf59cd76ecbb",
+      "size": 4668
+    },
+    {
+      "path": "skills/competitor-profiling/references/tool-reference.md",
+      "sha": "ef3dd3656d79de7c3526aac53ac0ea47bcc82cbf",
+      "size": 7082
+    },
+    {
+      "path": "skills/copywriting/SKILL.md",
+      "sha": "a9b31a905e2176af2545d8736c45c84f569fc747",
+      "size": 8466
+    },
+    {
+      "path": "skills/copywriting/references/copy-frameworks.md",
+      "sha": "53a3ddac6fee07d4e65a5b2b23836d8ebb8de149",
+      "size": 14327
+    },
+    {
+      "path": "skills/copywriting/references/natural-transitions.md",
+      "sha": "ee72faa54b24714ceb9b75269834a5c80888c90f",
+      "size": 5684
+    },
+    {
+      "path": "skills/customer-research/SKILL.md",
+      "sha": "e8571f8b67f3d096718a3607aa67e852a49b74e5",
+      "size": 14878
+    },
+    {
+      "path": "skills/customer-research/references/interviews-and-surveys.md",
+      "sha": "aade5bc6ed6c3f97c50bc03c1b00de8057021f9e",
+      "size": 8640
+    },
+    {
+      "path": "skills/customer-research/references/source-guides.md",
+      "sha": "98843774c84924d3eecd3af44519121de3c82bf2",
+      "size": 16277
+    },
+    {
+      "path": "skills/launch/SKILL.md",
+      "sha": "83f446fadcf9f2824c65670937548b06d922d522",
+      "size": 15218
+    },
+    {
+      "path": "skills/marketing-plan/SKILL.md",
+      "sha": "cf98a903e2837282fb404829c92046afa3d44a41",
+      "size": 24862
+    },
+    {
+      "path": "skills/marketing-plan/references/aarrr-framework.md",
+      "sha": "4f9f5e94d6cbdf1f039f7540a60a3b0dcf11a8b4",
+      "size": 10766
+    },
+    {
+      "path": "skills/marketing-plan/references/budget-planning.md",
+      "sha": "7d5393d9baeebfd443cda11c6b317b0d8d848a16",
+      "size": 8571
+    },
+    {
+      "path": "skills/marketing-plan/references/client-types.md",
+      "sha": "e00d631614aeb675f1f7693aaa143acd14038215",
+      "size": 11386
+    },
+    {
+      "path": "skills/marketing-plan/references/current-state-rubric.md",
+      "sha": "a8dc4aa5b20c17e60f54ce9f130282b9e1d243e7",
+      "size": 11656
+    },
+    {
+      "path": "skills/marketing-plan/references/example-quietude.md",
+      "sha": "15d6929bd7965c3dfd5131cf9dd5cc53365c5d56",
+      "size": 69134
+    },
+    {
+      "path": "skills/marketing-plan/references/funding-stage-unlocks.md",
+      "sha": "18a591e24629cff2faf23483dc38cde63d4a4713",
+      "size": 9797
+    },
+    {
+      "path": "skills/marketing-plan/references/growth-patterns.md",
+      "sha": "b4fd0288be857b6cba93c844816bd34630ac2d06",
+      "size": 13419
+    },
+    {
+      "path": "skills/marketing-plan/references/idea-cross-reference.md",
+      "sha": "397b497027f100d9296da83a268f7c5038bf6285",
+      "size": 13537
+    },
+    {
+      "path": "skills/marketing-plan/references/measurement-framework.md",
+      "sha": "a0fe2c947a0467da537960faca694dc1a45c7270",
+      "size": 10845
+    },
+    {
+      "path": "skills/marketing-plan/references/methodology.md",
+      "sha": "ac156dea652863bd24d72a98dc2ce8560eeb68b6",
+      "size": 16608
+    },
+    {
+      "path": "skills/marketing-plan/references/ops-stack-mapping.md",
+      "sha": "4ff392ac6eab504415b09b24035d7747790639b9",
+      "size": 12348
+    },
+    {
+      "path": "skills/marketing-plan/references/plan-template.md",
+      "sha": "e55b82f0d92163b59ba31ef068e0c3573fc87509",
+      "size": 18743
+    },
+    {
+      "path": "skills/marketing-plan/references/team-and-agency-model.md",
+      "sha": "9db127d6c54fedeb4433cbc719549e5310784195",
+      "size": 14537
+    },
+    {
+      "path": "skills/pricing/SKILL.md",
+      "sha": "0ea73d15170f969c68f47adaeca9692467d0ec66",
+      "size": 13253
+    },
+    {
+      "path": "skills/pricing/references/pricing-models.md",
+      "sha": "807165db008f2ad3bcb1528a27c1e8b748d379f3",
+      "size": 4681
+    },
+    {
+      "path": "skills/pricing/references/pricing-page-teardown.md",
+      "sha": "2b0520139563aeb29311d6270e8c7d0187ca08d5",
+      "size": 7129
+    },
+    {
+      "path": "skills/pricing/references/research-methods.md",
+      "sha": "bda4e041ba2fee86d5b4de0ead585aa3d9772c8d",
+      "size": 4780
+    },
+    {
+      "path": "skills/pricing/references/tier-structure.md",
+      "sha": "35a6d5375b408b8bfe46586380a88dda1c6fdfbf",
+      "size": 7199
+    },
+    {
+      "path": "skills/seo-audit/SKILL.md",
+      "sha": "cb65e8030638ba069dd8dea08876a99f37ed6612",
+      "size": 16701
+    },
+    {
+      "path": "skills/seo-audit/references/ai-writing-detection.md",
+      "sha": "cb67ece4135f4153575bbbdfbf722364babff61d",
+      "size": 6528
+    },
+    {
+      "path": "skills/seo-audit/references/international-seo.md",
+      "sha": "d2a2d1e6959214142ad5cc13b8f82852960c79d3",
+      "size": 14258
+    }
+  ]
+}

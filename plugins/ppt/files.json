@@ -1,0 +1,145 @@
+{
+  "version": "1.0.4",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "bc2090afc6448df09fc38a0e985ce483f96f5ff5",
+      "size": 1401
+    },
+    {
+      "path": "ppt.webp",
+      "sha": "cda4c5f2afffc4f2dd28844ae188abb1e4f40b4b",
+      "size": 21060
+    },
+    {
+      "path": "skills/pptx/SKILL.md",
+      "sha": "70a53d42685d31308e6f3a63704ed90f8b6edd83",
+      "size": 32805
+    },
+    {
+      "path": "skills/pptx/references/design-system.md",
+      "sha": "47c6cc33ceec68419b69a6f21cc0c1c48c4c8cbc",
+      "size": 17671
+    },
+    {
+      "path": "skills/pptx/references/editing.md",
+      "sha": "ba0da40899fb7388842b5759049fe0df998259f9",
+      "size": 10499
+    },
+    {
+      "path": "skills/pptx/references/element-map.md",
+      "sha": "c525c9fc59b5a78dcc70a511dc353a583e713c66",
+      "size": 7984
+    },
+    {
+      "path": "skills/pptx/references/pitfalls.md",
+      "sha": "21a15191c188365c9c55d83fed29072ac1e54b69",
+      "size": 9076
+    },
+    {
+      "path": "skills/pptx/references/pptxgenjs.md",
+      "sha": "87c0cb7e3235fc87d12ef1ffe4d95914b56881c9",
+      "size": 12881
+    },
+    {
+      "path": "skills/pptx/references/python-pptx-recipes.md",
+      "sha": "4de61b68e75dc92b39071d38085ac5836ad2fdc0",
+      "size": 1401
+    },
+    {
+      "path": "skills/pptx/references/slide-types.md",
+      "sha": "fa0fa3c0ee83634c4e3add680be3725dcbf996ee",
+      "size": 15790
+    },
+    {
+      "path": "skills/pptx/references/speaker-notes.md",
+      "sha": "0558de4fca70f3909c21096a1d46153cc926a896",
+      "size": 1440
+    },
+    {
+      "path": "skills/pptx/references/windows-tool-bootstrap.md",
+      "sha": "42cc2565d644a6d545ed043c6c160bff19ac5697",
+      "size": 1769
+    },
+    {
+      "path": "skills/pptx/scripts/audit_pptx.py",
+      "sha": "774ed70595f71519faa241a04390e5a4559a5f73",
+      "size": 26722
+    },
+    {
+      "path": "skills/pptx/scripts/chrome_crop_diff.py",
+      "sha": "bcbc37a09df21a4c85e3aac87c273343ead3d746",
+      "size": 4418
+    },
+    {
+      "path": "skills/pptx/scripts/chrome_layout_balance_lint.py",
+      "sha": "c697efb376c131be6745b4a9fac561895e3908a1",
+      "size": 5514
+    },
+    {
+      "path": "skills/pptx/scripts/chrome_reserved_lint.py",
+      "sha": "aeac28faac1041bf31bd8c0d232883cc7f20af5f",
+      "size": 6095
+    },
+    {
+      "path": "skills/pptx/scripts/extract_comments.py",
+      "sha": "1047332b02dfc4215702154ec63b525d3b52c798",
+      "size": 15382
+    },
+    {
+      "path": "skills/pptx/scripts/extract_images.py",
+      "sha": "3672438d21e0d2cfb6bf141df4b49aee34e32838",
+      "size": 6653
+    },
+    {
+      "path": "skills/pptx/scripts/extract_pptx.py",
+      "sha": "53b6d437a1520337902bc263a515504472e28d64",
+      "size": 8535
+    },
+    {
+      "path": "skills/pptx/scripts/mavis-ppt-map.cjs",
+      "sha": "ff57c1f3ccae1896533124b6ec1a086429f79f66",
+      "size": 9392
+    },
+    {
+      "path": "skills/pptx/scripts/merge_decks.py",
+      "sha": "cbb14cb104759a9c635ac39d1f707c7c509272bd",
+      "size": 34801
+    },
+    {
+      "path": "skills/pptx/scripts/pdf2png.swift",
+      "sha": "58656b71c609a12d647a8d2e4e8994bb9a68101f",
+      "size": 6055
+    },
+    {
+      "path": "skills/pptx/scripts/pptx-screenshot.sh",
+      "sha": "04d55ac4417e84af9ecfe6a1155b83c96f350bcd",
+      "size": 2359
+    },
+    {
+      "path": "skills/pptx/scripts/pptx_notes_apply.py",
+      "sha": "b3d7d38cec70b0f699ffeccf1062b8aee074b2fc",
+      "size": 6649
+    },
+    {
+      "path": "skills/pptx/scripts/sanitize_pptx.py",
+      "sha": "9c83cea66bc0fb331a210587c44fcf91c7dbe7b0",
+      "size": 21376
+    },
+    {
+      "path": "skills/pptx/scripts/structural_fill.py",
+      "sha": "20dea9b83cfb9c97038096863a60cb4798c7d2bb",
+      "size": 21026
+    },
+    {
+      "path": "skills/pptx/scripts/template_chrome.cjs",
+      "sha": "88b20cff14db8f0ac4a2e633cd0fb06f0aa342eb",
+      "size": 8194
+    },
+    {
+      "path": "skills/pptx/scripts/template_chrome_profile.py",
+      "sha": "6a241568611aae061bc9a8712bbfeb2d19cb1901",
+      "size": 15663
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "plugin/plugin.json",
+      "sha": "03e8fd99741e6e6a8f6931ee4447dfc1d99be5c5",
+      "size": 526
+    },
+    {
+      "path": "LICENSE",
+      "sha": "a58a784cc8234f62a2b91d2ef7793ac5ff7ce08a",
+      "size": 1066
+    },
+    {
+      "path": "README.md",
+      "sha": "132f341925485429b1ae180537a80e106e6b9671",
+      "size": 10220
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha": "681fbe0153e5df76ccd664e75793196d420a27d1",
+      "size": 8874
+    },
+    {
+      "path": "docs/preview-settings.png",
+      "sha": "6c1344cee6d86b8fe20b1bfe2ee1591800b566ea",
+      "size": 53184
+    },
+    {
+      "path": "docs/preview-settings.zh-CN.png",
+      "sha": "f7aa849dd80848e31449fec940d35dbc4a00fff6",
+      "size": 57858
+    },
+    {
+      "path": "docs/preview.png",
+      "sha": "c8ce3d16bd9cf05f87d31b4344d93d5fd8f71620",
+      "size": 58845
+    },
+    {
+      "path": "docs/preview.zh-CN.png",
+      "sha": "64a8ebc147ff7df3d39d3007f7c2f09c091aeb2c",
+      "size": 63110
+    },
+    {
+      "path": "icon.png",
+      "sha": "299a26cbf5c1427dffa9cd575cf721307d570765",
+      "size": 1574
+    },
+    {
+      "path": "miniapp/client/index.html",
+      "sha": "7c400bd9f956dafaf757295ca91bc3f3d92595e7",
+      "size": 115024
+    },
+    {
+      "path": "miniapp/miniapp.json",
+      "sha": "498d880a496acb22885dd8a7feee29db54102754",
+      "size": 319
+    },
+    {
+      "path": "miniapp/node/miniapp-api.ts",
+      "sha": "7a0e0fd3a66dc99c350df90486f179eefe67810a",
+      "size": 3568
+    },
+    {
+      "path": "miniapp/node/server.mjs",
+      "sha": "85707ea8695bca0960557aaa40f432609faa2aa7",
+      "size": 46542
+    },
+    {
+      "path": "miniapp/node/sounds/chime-bright.wav",
+      "sha": "901d0182769fa8a9ece2a1598d08b7d31ffb71d6",
+      "size": 141164
+    },
+    {
+      "path": "miniapp/node/sounds/chime-deep.wav",
+      "sha": "60a87a5c16ca8d3ca7f7051dfd7441befd035e16",
+      "size": 141164
+    },
+    {
+      "path": "miniapp/node/sounds/chime-soft.wav",
+      "sha": "a66d97270b1b765075db7088420610d9758a40ab",
+      "size": 141164
+    },
+    {
+      "path": "package.json",
+      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
+      "size": 85
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "0f61df4f7b0faf6e52731026fd31446b924320a0",
+      "size": 333
+    }
+  ]
+}
