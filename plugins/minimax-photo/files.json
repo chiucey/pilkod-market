@@ -3,48 +3,48 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "557622fe0dce0991c68cfdb9457aca32366d740a",
-      "size": 646
+      "sha": "ada98536cd519e0dac7f8d7f0fd4f77ed021deeb",
+      "size": 668
     },
     {
       "path": ".gitattributes",
-      "sha": "1ac2886f62c04e58fd0360ae3ac4ce11eb1dec09",
-      "size": 126
+      "sha": "ec16dc5e9b59e45f6330eebbaa43bedeb6649aeb",
+      "size": 128
     },
     {
       "path": ".gitignore",
-      "sha": "6cb98d9625703922ccf85def6b314c6a4e46eff7",
-      "size": 53
+      "sha": "c9fe21398bc83a345dc4815872296e95a1d764f2",
+      "size": 58
     },
     {
       "path": "LICENSE",
-      "sha": "cf0a2a0e5acc96ddbb254598700c73d12f0f8318",
-      "size": 1096
+      "sha": "39d3ae79318a7c80eab565f31d15cecc4ea9e21c",
+      "size": 1117
     },
     {
       "path": "README.en.md",
-      "sha": "76d01a8395ff244f716e421bc57fa87607095057",
-      "size": 11223
+      "sha": "e42896360d9b156cec8a63b251a9e525ff3be956",
+      "size": 11313
     },
     {
       "path": "README.md",
-      "sha": "1e859ba9a457b8633a2661e836d71d4fa5e04f0e",
-      "size": 7240
+      "sha": "f24eaac6a12449bdb98aebe5c3162db85e5157a7",
+      "size": 7310
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "1e859ba9a457b8633a2661e836d71d4fa5e04f0e",
-      "size": 7240
+      "sha": "f24eaac6a12449bdb98aebe5c3162db85e5157a7",
+      "size": 7310
     },
     {
       "path": "docs/agent-tools.zh-CN.md",
-      "sha": "8d4878082a305c663f6b106947cf49005d0517fa",
-      "size": 7136
+      "sha": "48c89112f9e68ea5dcc165b13435197f1cc0fcdb",
+      "size": 7213
     },
     {
       "path": "docs/build.md",
-      "sha": "ec856ec74d041aa30c84712c95864e013db84e2a",
-      "size": 5373
+      "sha": "f97686e8dcdd1a77c95be5eb778bb50a85b49e1b",
+      "size": 5458
     },
     {
       "path": "docs/editor.png",
@@ -53,8 +53,8 @@
     },
     {
       "path": "docs/photocraft/miniapp.patch",
-      "sha": "826e9cfa672e75bddc124fd3dd63375d4f0dcb26",
-      "size": 18531
+      "sha": "0c4e4c77cb0e88d1f7a8fc729dbf89de16a60af0",
+      "size": 18859
     },
     {
       "path": "docs/preview.png",
@@ -63,28 +63,28 @@
     },
     {
       "path": "docs/regional-release.md",
-      "sha": "134252db4bf1b565cc4b65a58c915652fda3a694",
-      "size": 1022
+      "sha": "71d3b791033cf917628134bcff75aaed496cee95",
+      "size": 1031
     },
     {
       "path": "docs/user-guide.zh-CN.md",
-      "sha": "58ebc97a8675ab243223ab230c08a502ed418670",
-      "size": 4504
+      "sha": "7704830db9812fd1669cd28f4569c50d3c33a27f",
+      "size": 4555
     },
     {
       "path": "docs/validation.md",
-      "sha": "d3691ed42d08b1f0f9dfa5368690c1039064e7b5",
-      "size": 24922
+      "sha": "a4c08ca7d27e084d9f616e3ebc5e75e66895ca9f",
+      "size": 25071
     },
     {
       "path": "examples/compose-edit.mjs",
-      "sha": "30ef281ad5bbe4cef44fd263646d461034c1ae07",
-      "size": 1467
+      "sha": "e1ca0b42d34127236e9fa44568607e57ed1a73d5",
+      "size": 1505
     },
     {
       "path": "examples/ptc-script.js",
-      "sha": "837653ab63d02406353cf3a0382ab21f7a14a524",
-      "size": 1648
+      "sha": "0b046f14096761a64b8e149aa7be76afae1a3cb2",
+      "size": 1706
     },
     {
       "path": "icon.png",
@@ -93,263 +93,263 @@
     },
     {
       "path": "licenses/FONT-LICENSE.txt",
-      "sha": "d952d62c065f3f35fb83a173496e90b21525aef3",
-      "size": 4301
+      "sha": "e26f2abf0c1209be6c0e555235caa177c2f61cd9",
+      "size": 4393
     },
     {
       "path": "licenses/LICENSE-APACHE",
-      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
-      "size": 10174
+      "sha": "ade750b16ba50a06c955c07a75f5f82bdd3c5331",
+      "size": 10351
     },
     {
       "path": "licenses/LICENSE-MIT",
-      "sha": "68facca4cf24f653b6656bccd8a31609deea88c8",
-      "size": 1102
+      "sha": "24f27caacb0ab2370b71bda2112e80f146a2cd7d",
+      "size": 1123
     },
     {
       "path": "licenses/LICENSE-SCOWL.txt",
-      "sha": "44efb0fbb7f3f5ffeb8415dbade6e6d87f3a078f",
-      "size": 12561
+      "sha": "7cc0976d5d60be8d43beeaefc0f83a54299818e6",
+      "size": 12819
     },
     {
       "path": "licenses/LICENSE-libfacedetection.txt",
-      "sha": "33abd64f061d58b8a25d60c7567b0769d47afb17",
-      "size": 1803
+      "sha": "16ff65f52a169c570783b3f1e1d922eef2838788",
+      "size": 1837
     },
     {
       "path": "licenses/LICENSE-lucide.txt",
-      "sha": "718bb3f0e44153809972abed31839375804bf652",
-      "size": 3208
+      "sha": "6bb96aaec1bb6012fd663db12d733a430b6e6b35",
+      "size": 3251
     },
     {
       "path": "licenses/LICENSE-photocraft-icon.txt",
-      "sha": "b28ccee01c4214cddf002f371b854bf309405aed",
-      "size": 586
+      "sha": "c2de9c3a8c1d1fe363cdb8bef1ced9c3449d06ed",
+      "size": 599
     },
     {
       "path": "licenses/LICENSE-translations.txt",
-      "sha": "93a609f9463c9c718814fc942c3ec56ead5ec2e3",
-      "size": 2097
+      "sha": "575c8488a5af1455d2c545e6dbd17c6036efd661",
+      "size": 2136
     },
     {
       "path": "licenses/OFL-Inter.txt",
-      "sha": "9b2ca37b3ffc77391d8b2ebef4a974ef32bf46ea",
-      "size": 4380
+      "sha": "a3049bc891e8a6ed8e34240dd907861e7bbff1af",
+      "size": 4472
     },
     {
       "path": "licenses/OFL-JetBrainsMono.txt",
-      "sha": "675d198b74b6f10b5ca149e6a21cf06dcc46b676",
-      "size": 4398
+      "sha": "0c103197e7c57eba76269b82a1b43644b892c8b2",
+      "size": 4491
     },
     {
       "path": "licenses/markdown-dependencies.txt",
-      "sha": "66597ab9ffd084542a7cbac55e6861dfb84657c5",
-      "size": 117444
+      "sha": "95bb995b7087cad1691c3398a164bccadb71cb9f",
+      "size": 119951
     },
     {
       "path": "licenses/photocraft-ATTRIBUTION.md",
-      "sha": "1ae19efa6621ced81f8db17e8b0834ddcb5d6b66",
-      "size": 23379
+      "sha": "34888230f7478ba5b2eeb98d5c6ce8f288c037a9",
+      "size": 23499
     },
     {
       "path": "licenses/photocraft-NOTICE",
-      "sha": "a7302a940c97bf5954ca9412e39e2e0879143784",
-      "size": 1646
+      "sha": "5f9504f7c5122de6f1543672f03195e3b89d32c1",
+      "size": 1670
     },
     {
       "path": "licenses/third-party-licenses.txt",
-      "sha": "ffca94b56ed405a0cdf8b570048fd86be87b4f48",
-      "size": 167663
+      "sha": "5a85fce2ab3f945386232b87b23313afe31688d2",
+      "size": 171336
     },
     {
       "path": "miniapp/client/adjustment-layers.js",
-      "sha": "544034eb250a0b9108a8744f4e04f838b3b3b885",
-      "size": 2984
+      "sha": "57211afb8855c42f56acc6a3aa83bbb47caaaa93",
+      "size": 3069
     },
     {
       "path": "miniapp/client/agent-dialog.js",
-      "sha": "a0911a28e8a27bbcc88f0e615641644769288924",
-      "size": 2937
+      "sha": "9f9b4b77f3561bdcd4cc4a61d0820eab4fa0988e",
+      "size": 2986
     },
     {
       "path": "miniapp/client/agent-results.js",
-      "sha": "c2b7c92a3a89294507c367800f36a76cfe427f8d",
-      "size": 1622
+      "sha": "f816614881f56066c9e081504c1fd2ca3a51e4e4",
+      "size": 1661
     },
     {
       "path": "miniapp/client/app.js",
-      "sha": "8639a7885310e1505c183dc23aac6cd3e5ed0528",
-      "size": 39126
+      "sha": "17bca498843b77da16c16d98eaf1a29c1a89d51f",
+      "size": 40333
     },
     {
       "path": "miniapp/client/artistic-filters.js",
-      "sha": "a951c0fbd853719a326b8d03fbe0551c248254ed",
-      "size": 3560
+      "sha": "2c018891b607e5d86805aee27992cb14ac72e11b",
+      "size": 3647
     },
     {
       "path": "miniapp/client/background-eraser.js",
-      "sha": "c610cd5911c767690b4750e2f07c01e60a917bb1",
-      "size": 1062
+      "sha": "2147a09f5ec39c8cfd881c0ae1a32de50d0fab4f",
+      "size": 1101
     },
     {
       "path": "miniapp/client/blending.js",
-      "sha": "b9f86311fedb800cf2fd28011f7603550cdb211a",
-      "size": 5187
+      "sha": "f19be7d298fe32c4afe6ac2b809a7fa1edacf75f",
+      "size": 5318
     },
     {
       "path": "miniapp/client/canvas-tools.js",
-      "sha": "f27b72f3cd209d1583d3190255598451cac9dbc7",
-      "size": 18404
+      "sha": "2ddd03f87d1d4f3e9c0c03b129d43345f3e116e8",
+      "size": 18903
     },
     {
       "path": "miniapp/client/catalog.js",
-      "sha": "02170090e52641856669e716bd8d0cee7bbded72",
-      "size": 4068
+      "sha": "8f04a6391ba02e14a0de8ef36c61b66c8648db71",
+      "size": 4165
     },
     {
       "path": "miniapp/client/client-api.ts",
-      "sha": "e261a6bedee78a00467ba36837a1f88d223aed66",
-      "size": 11955
+      "sha": "e19a161a06feef84d1d7567bbd2b0a8c0be5102b",
+      "size": 12256
     },
     {
       "path": "miniapp/client/codecs.js",
-      "sha": "b2fd1fd7b26e53d805029a3b513b0b0ce73bb40e",
-      "size": 11450
+      "sha": "a8642c5dca15db3ba00105a7ac260fcb65b62fdd",
+      "size": 11812
     },
     {
       "path": "miniapp/client/color-replace.js",
-      "sha": "a43c9d0e3acc008313f4dad63768ab45c21a6a40",
-      "size": 594
+      "sha": "59976478ea788c4149a8d3d71e19c3e4305ddbe8",
+      "size": 610
     },
     {
       "path": "miniapp/client/components.css",
-      "sha": "798cfd4c5d45a5230b25df35a114254d4118e670",
-      "size": 11496
+      "sha": "8f68704ac1254846af6612c873c0e80ae432443b",
+      "size": 11497
     },
     {
       "path": "miniapp/client/curves-dialog.js",
-      "sha": "99ff7e91846f658b6b0c14e503f983e58365495b",
-      "size": 4302
+      "sha": "82ba3b6e0cf618a24793b01c336628fb81e17f43",
+      "size": 4429
     },
     {
       "path": "miniapp/client/dialogs.js",
-      "sha": "73523760e425a2a7c99b7a6030f709e1dd984429",
-      "size": 2326
+      "sha": "1dad34cca8bee362d3dba2e79e19b146153d39d6",
+      "size": 2392
     },
     {
       "path": "miniapp/client/editor-bridge.js",
-      "sha": "142a5ec48f92c4abebbd1806475012218ee17c43",
-      "size": 5035
+      "sha": "422bfd6564c48709eef3d6f4bd22f3ff7c4cf10a",
+      "size": 5185
     },
     {
       "path": "miniapp/client/editor-commands.js",
-      "sha": "8403a5ce91dfd1f00d4810972b7cc69134e64f2b",
-      "size": 20729
+      "sha": "0aa772d9b948c288cd678ad143566f8ced8ae98f",
+      "size": 21298
     },
     {
       "path": "miniapp/client/editor-read.js",
-      "sha": "99c587e5be756c5fe40d9342e5d5f826db981978",
-      "size": 2231
+      "sha": "0bb66a43cf713f676690518912b13f0df6e6a504",
+      "size": 2297
     },
     {
       "path": "miniapp/client/files.js",
-      "sha": "4117b889f03a1270039d1e206513f53aa450e1e6",
-      "size": 6214
+      "sha": "4a7ccd692c1169eb7e71530b7775f80ae8b67181",
+      "size": 6388
     },
     {
       "path": "miniapp/client/filter-dialog.js",
-      "sha": "53743457e99400ec565b819eb1a02421e5896f42",
-      "size": 2946
+      "sha": "3b27818a9be5a215eb354615bfe295a630fa4ca5",
+      "size": 3032
     },
     {
       "path": "miniapp/client/filter-worker.js",
-      "sha": "4740548c514b1a1e917a0cb5467f7010fc373065",
-      "size": 354
+      "sha": "8f267613155b8912c962692065f4e44374357944",
+      "size": 363
     },
     {
       "path": "miniapp/client/filters.js",
-      "sha": "1b7979a50182330a784c73a60cd753602ad9a0e7",
-      "size": 9269
+      "sha": "681916d6452b40b66927cb535a2f33099ace5b5f",
+      "size": 9552
     },
     {
       "path": "miniapp/client/flood-region.js",
-      "sha": "9f987e32f234285151f8e96ac61696b15b9e7e10",
-      "size": 1525
+      "sha": "0b5045814a92fbad7c82316670521abf7236d4c4",
+      "size": 1575
     },
     {
       "path": "miniapp/client/gaussian.js",
-      "sha": "d11b8747fa84d47f69bf0b9bcd485f77ac709187",
-      "size": 1788
+      "sha": "87a531cf3f304ad4980c5c131bc106077e5a9428",
+      "size": 1828
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "6b16d9ef47477cd905399040ba83605987319ba5",
-      "size": 4598
+      "sha": "a9e7af11c5776be3913ddd633a8cfce7a49c204e",
+      "size": 4700
     },
     {
       "path": "miniapp/client/layer-styles.js",
-      "sha": "7a2e5b872e580bb2fa68ebafa9f8fb0a6a575652",
-      "size": 8442
+      "sha": "b223d1694c9087b0aa1ee874b6ef8ce7d9bd7502",
+      "size": 8664
     },
     {
       "path": "miniapp/client/model.js",
-      "sha": "17805e656b39f2764b64bff07e6bb2b7cfc81047",
-      "size": 11216
+      "sha": "4770c0e772258bb69182441c1a8a0f3c1abc8aaa",
+      "size": 11585
     },
     {
       "path": "miniapp/client/oil-paint.js",
-      "sha": "052a1517e3aa7e25d63bdbb1bdb8960d267b35ef",
-      "size": 1666
+      "sha": "87f722906463fb278009a4a7c860386c0622d7f6",
+      "size": 1711
     },
     {
       "path": "miniapp/client/photo-activity.js",
-      "sha": "dda7ff651b7a1d06c10caaf5f06ce4f9c2e714be",
-      "size": 8084
+      "sha": "5c1cc9c6d5cee9363b245844e549dac32ef5c3da",
+      "size": 8318
     },
     {
       "path": "miniapp/client/photo-help.css",
-      "sha": "e66ef0e864f837204fdf096f5ba0702ec8da0679",
-      "size": 331
+      "sha": "4465d184071b70acc459e8b2359af57ecc548a3b",
+      "size": 332
     },
     {
       "path": "miniapp/client/photo-help.html",
-      "sha": "c0e2404f0852b4b2eda372b945c58722858feeef",
-      "size": 484
+      "sha": "98ad82da88ce043720297ea57405e922f1a20b97",
+      "size": 485
     },
     {
       "path": "miniapp/client/photo-help.js",
-      "sha": "5cdf5786f41b0b9d07939d38706e9cc5e04919b5",
-      "size": 12851
+      "sha": "2cafff6f36a43e71001d10efb2791251856943db",
+      "size": 13026
     },
     {
       "path": "miniapp/client/photo-i18n.js",
-      "sha": "54b09073af6d40c9269d07e8578a5cb4ba003edf",
-      "size": 37836
+      "sha": "b2ee14d68f4bf2380d25b0d5d12bae9f1848959b",
+      "size": 38407
     },
     {
       "path": "miniapp/client/photo-recording.js",
-      "sha": "969b27c7155eb54fabe5d6ddb98591319d00c2b8",
-      "size": 2675
+      "sha": "f5466aede40a75953802786e81707a3c8d1fc5eb",
+      "size": 2744
     },
     {
       "path": "miniapp/client/photo-recovery.js",
-      "sha": "7b396b6a2703eae41b228915d484a7860de9ad88",
-      "size": 3031
+      "sha": "e1f9e2846f5041881ddbe09527864700581b9518",
+      "size": 3083
     },
     {
       "path": "miniapp/client/photo.css",
-      "sha": "3bc7910d8127ad50abd1e2a0ec8bc54b12832c41",
-      "size": 13395
+      "sha": "1c9aab35c852f5795667f67cacf92fd51c3fd7d5",
+      "size": 14102
     },
     {
       "path": "miniapp/client/photo.html",
-      "sha": "cb54d856feb3797c0a701e48c818846e45e1d21f",
-      "size": 2348
+      "sha": "ad899d624a8e026fb736be9998b7c5797ce7266f",
+      "size": 2397
     },
     {
       "path": "miniapp/client/photo.js",
-      "sha": "6f8ea351f7b67e7cb9701dc95274e3b1be92418a",
-      "size": 20660
+      "sha": "8603f246d6ae4413dcf48d34563714b0e2683474",
+      "size": 21128
     },
     {
       "path": "miniapp/client/photocraft/cjk-ui.otf",
@@ -358,43 +358,43 @@
     },
     {
       "path": "miniapp/client/photocraft/draw-path.js",
-      "sha": "6cae7b023ce7adfac02e1a9d623d277233cda5ff",
-      "size": 2957
+      "sha": "8723a9e36db4c6e1ac534c5413fb9d15c8d1114f",
+      "size": 3024
     },
     {
       "path": "miniapp/client/photocraft/draw.js",
-      "sha": "900f395726f29d3c34e0566399c4a07e6ce693bd",
-      "size": 1399
+      "sha": "3d26ca5549283643e0778c0f5f0753612014135b",
+      "size": 1425
     },
     {
       "path": "miniapp/client/photocraft/frame.css",
-      "sha": "98b7d0f54cb76e2c68e0e7c3576cfc7d63b02f18",
-      "size": 140
+      "sha": "afc33930cb0ae6b4afdf20a78e788c669ef13988",
+      "size": 141
     },
     {
       "path": "miniapp/client/photocraft/frame.js",
-      "sha": "7308c65c373eff56e6f172b371f8947106a8b6c8",
-      "size": 2076
+      "sha": "4c2f202416c2630397d56c84c3106e35882da89b",
+      "size": 2135
     },
     {
       "path": "miniapp/client/photocraft/index.html",
-      "sha": "0ba24e6916602a7a2214f19f788d2d73bd876008",
-      "size": 298
+      "sha": "bdff55958d8a1c613e52a397c5a4e13bc448ba93",
+      "size": 299
     },
     {
       "path": "miniapp/client/photocraft/photocraft.d.ts",
-      "sha": "4812be11cacf576cf3e9bf54c0d5f15ab9ed7a06",
-      "size": 5040
+      "sha": "9942a397271abfa20a2d32147cf96d227a0e84de",
+      "size": 5096
     },
     {
       "path": "miniapp/client/photocraft/photocraft.js",
-      "sha": "5944401c97ada87410b12df4562b623ef3eac9dd",
-      "size": 172387
+      "sha": "b0772dd197f9545d630428761172e51a027571f5",
+      "size": 176062
     },
     {
       "path": "miniapp/client/photocraft/photocraft_bg.wasm.d.ts",
-      "sha": "7cbac8c50b2c8decc7a70bc5238e8af1bb5ebb5f",
-      "size": 3995
+      "sha": "1ba8cdc95dff1c69c39b4c54b9f6fddc1bb9e43d",
+      "size": 4022
     },
     {
       "path": "miniapp/client/photocraft/photocraft_bg.wasm.gz",
@@ -403,23 +403,23 @@
     },
     {
       "path": "miniapp/client/psd-blends.js",
-      "sha": "1de2982c747d71bff25ae5b1cc11d6a8212874de",
-      "size": 1201
+      "sha": "80e37b94c6727587d8bd77b67550d88ae6d5a04f",
+      "size": 1243
     },
     {
       "path": "miniapp/client/recording.js",
-      "sha": "e4fdf616d8d2a6e932844e032f36566feed34ed8",
-      "size": 2649
+      "sha": "bd1cb7d391b7800c6d73f5bad8294e4d926691a6",
+      "size": 2727
     },
     {
       "path": "miniapp/client/render-cache.js",
-      "sha": "6eb6601c3f2b462ed71accd5149b5e76e89eed2a",
-      "size": 1415
+      "sha": "a140727a8234928106773d7b544c626268dcc7fe",
+      "size": 1461
     },
     {
       "path": "miniapp/client/selection-outline.js",
-      "sha": "f05ae51beb98e8d99f17333ad352faf683739f53",
-      "size": 1505
+      "sha": "34b4ae9d28a4e56da6c0266f5b086017a1635496",
+      "size": 1552
     },
     {
       "path": "miniapp/client/showcase/portrait.webp",
@@ -438,98 +438,98 @@
     },
     {
       "path": "miniapp/client/style-pixels.js",
-      "sha": "ca3791c2842272014050d7fa743b9a296c4689b7",
-      "size": 3740
+      "sha": "13046143744151365556ff87d57968b0a3c64280",
+      "size": 3841
     },
     {
       "path": "miniapp/client/style.css",
-      "sha": "a1aab57a429daf5dcd361a2bf14915140f91336f",
-      "size": 16571
+      "sha": "7128fa6025933e91c7b40206dccccd0a17793803",
+      "size": 17495
     },
     {
       "path": "miniapp/client/styles-dialog.js",
-      "sha": "932b7dc8f31770aa6fa0f4813982b22fae60a571",
-      "size": 5280
+      "sha": "7d09e91d1cee7d3b3a822d7fc53cba655522ae5e",
+      "size": 5429
     },
     {
       "path": "miniapp/client/tiff-lzw.js",
-      "sha": "862bfa1d70a298be28fa93efae3995181d04942f",
-      "size": 1764
+      "sha": "03c6f20950b237a2ec689024a0b67ecd491156ba",
+      "size": 1823
     },
     {
       "path": "miniapp/client/tiff-reader.js",
-      "sha": "0896d82945540d941620956a5ac40d918a190738",
-      "size": 6758
+      "sha": "8477c11b8ee85725be25dc0ddea736f96089a1a7",
+      "size": 6934
     },
     {
       "path": "miniapp/client/tiff.js",
-      "sha": "6299be3469c12c5c87cca8d728c5131bc3aa2b9c",
-      "size": 2003
+      "sha": "d0ccbe443e417b953f50c171ea27d90c52c8396a",
+      "size": 2058
     },
     {
       "path": "miniapp/client/tone.js",
-      "sha": "df4763803feebcfa108a771a4021d00b5cd30ce2",
-      "size": 2114
+      "sha": "20db55c65a5bb18a21c4335f82059072e650438a",
+      "size": 2169
     },
     {
       "path": "miniapp/client/workbench-ui.js",
-      "sha": "1dc1aeeb84083af08cc1f8b9efb9f6df15226b36",
-      "size": 463317
+      "sha": "b32c831e21fba5e4b739c103d5edf36d1293557a",
+      "size": 463355
     },
     {
       "path": "miniapp/client/workbench-ui.js.LEGAL.txt",
-      "sha": "a046cadce791a0365a2ea39d66228b87f362b5ca",
-      "size": 3893
+      "sha": "0844faf86b4eede7d84344919c6dbd406a991d06",
+      "size": 4010
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "76cfb9d5fc417a8b9c93646c0c5513d469d9c573",
-      "size": 437
+      "sha": "2fda97fee80a45fd1f9078956179a680109c3854",
+      "size": 465
     },
     {
       "path": "miniapp/node/agent-mcp.mjs",
-      "sha": "bf4c77195303b8f7364f787f8545d9e9817a66ee",
-      "size": 4625
+      "sha": "c8256e12ad38194fc3ba5e8ebaf306057acfe3ff",
+      "size": 4739
     },
     {
       "path": "miniapp/node/agent-service.mjs",
-      "sha": "8a3430b648854d5441341ec2a6393b9098a38474",
-      "size": 5315
+      "sha": "d7818ab075cfa1a6c19befcff793b335b5421763",
+      "size": 5464
     },
     {
       "path": "miniapp/node/editor-code.mjs",
-      "sha": "378c687504554ac0e1b15fe749dfbfada046300d",
-      "size": 9501
+      "sha": "517818bdc5d94444c517a0afcb52bd8d26660858",
+      "size": 9742
     },
     {
       "path": "miniapp/node/editor-file.mjs",
-      "sha": "ff57cef84d6d7a7d6cba0c77c5b5c42baad832f8",
-      "size": 2044
+      "sha": "8e3858b7dec32aa3e964cacb604d5b283a610244",
+      "size": 2080
     },
     {
       "path": "miniapp/node/editor-mcp.mjs",
-      "sha": "ff0d335b931bbe1887cd3f60e21d730f06f1431d",
-      "size": 11194
+      "sha": "473f47e9e555231803c881b00a5b91fd6f15309c",
+      "size": 11409
     },
     {
       "path": "miniapp/node/editor-service.mjs",
-      "sha": "558e2f8d422955b95656766206f82c301bee6144",
-      "size": 14440
+      "sha": "6422adf0c22af5ef3c39c0ea3d1d82e270e70a7e",
+      "size": 14790
     },
     {
       "path": "miniapp/node/miniapp-api.ts",
-      "sha": "7a0e0fd3a66dc99c350df90486f179eefe67810a",
-      "size": 3568
+      "sha": "e86dcb2156a136271526b5139a704b6183a38c07",
+      "size": 3677
     },
     {
       "path": "miniapp/node/png-validation.mjs",
-      "sha": "023c6d27ffd0fbe626dd288d742683df6e3bf6d2",
-      "size": 3209
+      "sha": "3a55292c91dacf53a275e1ee98bab55f67ec0e58",
+      "size": 3288
     },
     {
       "path": "miniapp/node/ptc-worker.mjs",
-      "sha": "d8666ab521394030578c543cae2c8b8008617109",
-      "size": 57161
+      "sha": "8f165aeccf43860f713fa82a90293cbacabde5aa",
+      "size": 57185
     },
     {
       "path": "miniapp/node/quickjs.wasm",
@@ -538,193 +538,193 @@
     },
     {
       "path": "miniapp/node/recovery-store.mjs",
-      "sha": "75246251fafe550ce9265af9f2c1d9031b480520",
-      "size": 2500
+      "sha": "31e88b30ebe1b9f493f39ae51711e977a2c2f1ed",
+      "size": 2552
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "eba3dfe55e20ec39ce534d0e962cf01f857a2bf0",
-      "size": 13539
+      "sha": "3956c25c416fe588f5817909a5ae54def1bdcbfe",
+      "size": 13858
     },
     {
       "path": "package.json",
-      "sha": "e38aba656b09c7b3f8bc23fd5486b0d7d376291e",
-      "size": 394
+      "sha": "06035864298a2ff8e0d6e2d4f104e3e41fb75af2",
+      "size": 409
     },
     {
       "path": "ptc-src/.gitignore",
-      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
-      "size": 14
+      "sha": "bca51b352e768f4c537189c215af810d65135580",
+      "size": 15
     },
     {
       "path": "ptc-src/build.mjs",
-      "sha": "e86cd00fa7e2dacc730c95bcab1a2afebeebf552",
-      "size": 535
+      "sha": "104f764f0bf5017c0474f75f05bf1df1e6fe2ac1",
+      "size": 553
     },
     {
       "path": "ptc-src/package-lock.json",
-      "sha": "841d685a54776387fd25f757276a9e5eb6b1f059",
-      "size": 15221
+      "sha": "ec702c81453d38fe76722056ddebde2c2d6f393c",
+      "size": 15716
     },
     {
       "path": "ptc-src/package.json",
-      "sha": "a90304a9d94f91a070f29283e72a700478155fae",
-      "size": 147
+      "sha": "595c0865e2fbd6b81dc8b12ce66cedb50be85789",
+      "size": 154
     },
     {
       "path": "ptc-src/worker.mjs",
-      "sha": "57bab359eecffe597cd82c242687e296263d1f64",
-      "size": 3961
+      "sha": "f48bf19048b230eb1e6c1a8a0d9f87935724d343",
+      "size": 4064
     },
     {
       "path": "scripts/browser-checks/blend-check.html",
-      "sha": "fe6da3b202e402aba52860a3a874f841e6c88876",
-      "size": 584
+      "sha": "6f7378856bf045ca5f97bd95f713daec072d63b4",
+      "size": 607
     },
     {
       "path": "scripts/browser-checks/blend-check.js",
-      "sha": "912ac35fda880978823739b477ebf6463be2aeb0",
-      "size": 1640
+      "sha": "07df4719a73539706673f7f904b4f868e3e4c6ba",
+      "size": 1691
     },
     {
       "path": "scripts/browser-checks/cache-check.html",
-      "sha": "94459e614db0167a120f2d82b592d3d9e51ce69f",
-      "size": 623
+      "sha": "fc75405a09939e99362877d65b57829df0a2501d",
+      "size": 649
     },
     {
       "path": "scripts/browser-checks/cache-check.js",
-      "sha": "90dabf72e3f05a891174d752b29ab0f3456a6f84",
-      "size": 2862
+      "sha": "4ddf05dd5aa418866e8e83e99b3fcf29137479b8",
+      "size": 2951
     },
     {
       "path": "scripts/browser-checks/psd-check.html",
-      "sha": "98b1736262d32ebcae9905493c5d68440001cca3",
-      "size": 383
+      "sha": "baac3413533bbc5a55189b19ac6345b38a5080fa",
+      "size": 391
     },
     {
       "path": "scripts/browser-checks/psd-check.js",
-      "sha": "3400fc7dbb06d38b11691ae3ca2d5350e281099f",
-      "size": 1671
+      "sha": "f1935b044aa2fa48ff6e8141b4eabca0160d39da",
+      "size": 1717
     },
     {
       "path": "scripts/check-activity.mjs",
-      "sha": "275c1089380ad67bbcac400d18a089e69361c309",
-      "size": 1311
+      "sha": "bf5ade43c264ea89b21977028a7bee12a484b280",
+      "size": 1344
     },
     {
       "path": "scripts/check-draw.mjs",
-      "sha": "9acd6dfdd37850e1541f192736d422a81688b1d2",
-      "size": 2696
+      "sha": "87ab08c52a611a51ccac4ea1c393d0054d72c5b8",
+      "size": 2741
     },
     {
       "path": "scripts/check-ptc.mjs",
-      "sha": "8677b141896def065b7ed0ca9d1f83d467a8e76e",
-      "size": 2080
+      "sha": "81d83d25b9748f7c9f40a79157dc1f9f2fae19ac",
+      "size": 2135
     },
     {
       "path": "scripts/check-recovery.mjs",
-      "sha": "d6db07a449f444eacc72c5d16f8eccda2946deee",
-      "size": 1278
+      "sha": "ad04d3962703edacf2087713941176c405723bb6",
+      "size": 1299
     },
     {
       "path": "scripts/check.mjs",
-      "sha": "0c14570469cc397e34fd7d5f4cfc7b7eeecc7ced",
-      "size": 31720
+      "sha": "05475ba6b9d4ce8ce1b412c5aef9906f02ea5d57",
+      "size": 32468
     },
     {
       "path": "scripts/package-preview.py",
-      "sha": "c762b7e17c15f26758bbdf1e39132f80be3806af",
-      "size": 5609
+      "sha": "e1c5c575fe2b7b00e49d10251d8761735590347b",
+      "size": 5722
     },
     {
       "path": "scripts/preview-render-check.mjs",
-      "sha": "81e7716f77c36820bee037849b566fb65185bbd2",
-      "size": 1549
+      "sha": "3fcc197feda22ce6ae0228e7f26b64630f696946",
+      "size": 1595
     },
     {
       "path": "scripts/preview.mjs",
-      "sha": "f4188c201fdb3d18eb21da18018a14ed05b259e9",
-      "size": 831
+      "sha": "9ab6cf850eafffbeb171c22fcb68224f27ffad40",
+      "size": 852
     },
     {
       "path": "sdk/editor.mjs",
-      "sha": "03636f823b188c9205c0ee1e648767413cb26199",
-      "size": 2508
+      "sha": "e64cca7af88e1793ba18a7220e564c81d9434d25",
+      "size": 2567
     },
     {
       "path": "servers.mcp.json",
-      "sha": "4dc2a3434ca12ff7bbfa0cf4b4cc765dbaddd7c5",
-      "size": 303
+      "sha": "2753fac339c9bad86f0632d62dbf58265cbb2b6e",
+      "size": 314
     },
     {
       "path": "skills/minimax-photo/SKILL.md",
-      "sha": "7c660aec65bf9fc5b5910eb8762b622f11547112",
-      "size": 16588
+      "sha": "0e0e72fb37fe319b42f922b2b6c9637eba5e5de9",
+      "size": 16710
     },
     {
       "path": "skills/minimax-photo/references/reference-tracing.md",
-      "sha": "af67aacbf32a4b6b80a9d0a63856b652494a3b3e",
-      "size": 4048
+      "sha": "91869389fdd4ffb0fbd59cc22cfd2f2ae26a1b88",
+      "size": 4079
     },
     {
       "path": "skills/minimax-photo/scripts/trace_reference.py",
-      "sha": "658595bd6ab32fc56766910f7992934ec69007a5",
-      "size": 8027
+      "sha": "db8aa4e7eccd205aa4b0ff0c57e969998a8f536d",
+      "size": 8198
     },
     {
       "path": "ui-src/.gitignore",
-      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
-      "size": 14
+      "sha": "bca51b352e768f4c537189c215af810d65135580",
+      "size": 15
     },
     {
       "path": "ui-src/assistant-reply.tsx",
-      "sha": "3a3d6ccf1a00052bd28b7af8c8b4bd7e00b709df",
-      "size": 858
+      "sha": "1799b442feecc61051cf30234a4406cd0f0ea37e",
+      "size": 879
     },
     {
       "path": "ui-src/build.mjs",
-      "sha": "ee3f080742464ab09d73c3b486c2f27513ba3ba5",
-      "size": 729
+      "sha": "0bf12cfc861fa3231cf0b702ae9f9f9c73b31e1a",
+      "size": 756
     },
     {
       "path": "ui-src/components/button.tsx",
-      "sha": "ee4ecb6e2ed0e8f62b901cc89db1eb34fe75b915",
-      "size": 2388
+      "sha": "d180f4587f1820b8992078bf6716473a139cb4c3",
+      "size": 2451
     },
     {
       "path": "ui-src/components/tooltip.tsx",
-      "sha": "804e4f66c1305658214a68f037cd39f0f85177ba",
-      "size": 1826
+      "sha": "d1b36090f16c8dc0a0fe99b159f18c5c6ec44d50",
+      "size": 1882
     },
     {
       "path": "ui-src/package-lock.json",
-      "sha": "203c25f199c3622760ae7d8a5f80b1f0a0e0295f",
-      "size": 179219
+      "sha": "5d32d9c0a8465af990b5afaad01565edbdf2d335",
+      "size": 184171
     },
     {
       "path": "ui-src/package.json",
-      "sha": "099c0d36b4cfdbe37b9ab878ebad611373892b13",
-      "size": 520
+      "sha": "c34cb7ad2b8dc44a57239bb5c9f17f17749ed41c",
+      "size": 544
     },
     {
       "path": "ui-src/photo-assistant.tsx",
-      "sha": "e055e102c9b8a2c419745adc4556e1fcd9d5040a",
-      "size": 16562
+      "sha": "6c5a84faadd3c4bd473b0f24b53e5cb5fef2ab39",
+      "size": 16970
     },
     {
       "path": "ui-src/theme.css",
-      "sha": "1d0db776f96bc3eeb47ab326e15d3146f192310c",
-      "size": 628
+      "sha": "a15919c9657906740c59dc50e3be974629f3e2d5",
+      "size": 645
     },
     {
       "path": "ui-src/utils.ts",
-      "sha": "de2ee10ff94dcf1580a75ca06f5e2369fdc81d84",
-      "size": 155
+      "sha": "f63ebca1c09530fac851c2b24e700ae012c18336",
+      "size": 158
     },
     {
       "path": "ui-src/workbench.tsx",
-      "sha": "7a4e8859c81e5de86a363d19797f53ad42325756",
-      "size": 21399
+      "sha": "1a3983142c0ad9e546078cc1f3bb6117753d3f01",
+      "size": 22055
     }
   ]
 }

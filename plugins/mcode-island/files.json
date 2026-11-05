@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "1c8c022084b7b0fea25c2924d6dbe87bc05bc599",
-      "size": 1313
+      "sha": "9f1dd7a09f99dd45bab734c538efccf3f3ecaca1",
+      "size": 1333
     },
     {
       "path": "LICENSE",
@@ -13,13 +13,13 @@
     },
     {
       "path": "README.md",
-      "sha": "eb1dce0a11dabb3b9dd63d010adb1bc0e0a9ee4a",
-      "size": 10249
+      "sha": "320f30b26d0f1a2a6449ce71e7f580727e1a7856",
+      "size": 10462
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "7ad0bbe2388f467a06d71d7c961f2c3ebd3a4619",
-      "size": 8097
+      "sha": "7aa535400eeef11550f7c8d10de31e5831b86e18",
+      "size": 8258
     },
     {
       "path": "assets/state-done.png",
@@ -58,8 +58,8 @@
     },
     {
       "path": "autostart.ps1",
-      "sha": "6786ca4de640b9132577b9fb859a0d953416b138",
-      "size": 3246
+      "sha": "4877be66d6a5255b8a817778a0c3440868804244",
+      "size": 3344
     },
     {
       "path": "icon.png",
@@ -68,93 +68,93 @@
     },
     {
       "path": "mcode-island.cmd",
-      "sha": "ee31942edf8c055abd7d00e435d7083e16436665",
-      "size": 1999
+      "sha": "0baad940931af79f6a6dc328bad0ee983924ef1c",
+      "size": 2076
     },
     {
       "path": "mcode-island.ps1",
-      "sha": "c91633474d577131890ba552e1adf91ab858c9e2",
-      "size": 77395
+      "sha": "78358e45b1fbe5c9db5db28a26de4fcd0360027e",
+      "size": 79374
     },
     {
       "path": "mcode-status-detect.ps1",
-      "sha": "847eedefaa7f85d8c49de2f3ef931a12c6196ca7",
-      "size": 39851
+      "sha": "70e616de6920a9a88560f7cfeb8271e9239dc681",
+      "size": 40844
     },
     {
       "path": "notify-island.ps1",
-      "sha": "ef2b441cbfa4462539654b8e48c15d47e52ac798",
-      "size": 5892
+      "sha": "31a13e920fdf10ff3800f574a86e21e007a210f9",
+      "size": 6065
     },
     {
       "path": "pin-island.ps1",
-      "sha": "c9efc018baa473ab3a140172b533e82ebb1071b7",
-      "size": 2449
+      "sha": "0a4d322da82166b068f87c7080704a9b964c2f18",
+      "size": 2516
     },
     {
       "path": "scripts/lib/Plan-Usage.ps1",
-      "sha": "08c30ec7c51217aed96165cded2c6e0195ef3d2b",
-      "size": 4565
+      "sha": "3975374a6d5ecd63c643ab1115cbdfd447c9d666",
+      "size": 4670
     },
     {
       "path": "scripts/lib/Protect-Text.ps1",
-      "sha": "fad1ed0513b704fd98780ef749af6bce6dff340a",
-      "size": 4992
+      "sha": "ab98404ae538e616b495ce097db0682b0e880d13",
+      "size": 5088
     },
     {
       "path": "scripts/lib/Session-Tracker.ps1",
-      "sha": "a876101895392fd984c55cd8816cfcddeaeb1a5c",
-      "size": 18092
+      "sha": "c17bc3ef5706780efcda0fe53c2cbf202cb8fd81",
+      "size": 18689
     },
     {
       "path": "scripts/lib/Status-Store.ps1",
-      "sha": "99de6102f3673c03ef944d08288adf470b2f38c4",
-      "size": 6561
+      "sha": "624d92b73a9a349f6d80ccc987b83b65676b51e0",
+      "size": 6728
     },
     {
       "path": "show-island.ps1",
-      "sha": "a3153756d308cb341e184355800415fdc1570839",
-      "size": 1444
+      "sha": "1785398b89a5d716d9a011230fb1197beafc56e6",
+      "size": 1483
     },
     {
       "path": "skills/mcode-island/SKILL.md",
-      "sha": "94b680cb669c5c3f6681b106962a29b37effeacb",
-      "size": 9399
+      "sha": "38abe52ed01bd5f7cdc8ed065ea21570426b55cd",
+      "size": 9575
     },
     {
       "path": "start-detect-island.ps1",
-      "sha": "3e01ef880eef0de7d26e6f9304c4f1de88bfa94e",
-      "size": 1955
+      "sha": "bd5ca38e45110920758c2524015506e00e986c50",
+      "size": 2001
     },
     {
       "path": "start-island.ps1",
-      "sha": "cffacfb43252e7cfb5e83f5ec9b8d2fb2bba58c1",
-      "size": 4010
+      "sha": "f05fb6cc7c917428dce376e472a8347758f7a148",
+      "size": 4124
     },
     {
       "path": "status-detect-island.ps1",
-      "sha": "bf62ae990cd6f600b561ba51ceba968fcd8f4b7d",
-      "size": 1071
+      "sha": "7660681c5b748c66ecdd930780832116b7616923",
+      "size": 1097
     },
     {
       "path": "status-island.ps1",
-      "sha": "569a96c1fb2610b9811149dc54240f0312fd3704",
-      "size": 1252
+      "sha": "3746ebb88f720c8f5d37a29f3b00b7c008c5d74c",
+      "size": 1287
     },
     {
       "path": "stop-detect-island.ps1",
-      "sha": "f44b8e4ecc8359ad933ab03b43945b191b0e9975",
-      "size": 1452
+      "sha": "ff848447c6042dc854e3e93084f950a8863906e7",
+      "size": 1484
     },
     {
       "path": "stop-island.ps1",
-      "sha": "8c7ad33962eb256cc1ca0f37f645cc9fb20c9dfc",
-      "size": 1552
+      "sha": "bc33d13f34e7d35a892fd9b538476f2593dd5301",
+      "size": 1593
     },
     {
       "path": "wrap-tool.ps1",
-      "sha": "7a4e17d45e09019a75538bf82a2a51e1c6527c76",
-      "size": 2927
+      "sha": "d226941b133d3481f1d244534844005ae2158a1c",
+      "size": 3010
     }
   ]
 }

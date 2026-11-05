@@ -2,1448 +2,1448 @@
   "files": [
     {
       "path": "LICENSE.txt",
-      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
-      "size": 11358
+      "sha": "75b52484ea471f882c29e02693b4f02dba175b5e",
+      "size": 11560
     },
     {
       "path": "README.en.md",
-      "sha": "a228d9b817e3548c90806490a5f09a432844528c",
-      "size": 18839
+      "sha": "93388137849b3747190dd4c03c7697b5985ce836",
+      "size": 19108
     },
     {
       "path": "README.md",
-      "sha": "e9f7e9c7addad8bbdd8f68710bf6de3b9cd3b574",
-      "size": 31893
+      "sha": "eac5e90a735159a05fe65a85291d2e33f0c8b9f1",
+      "size": 32257
     },
     {
       "path": "SKILL.md",
-      "sha": "4ece49831cff35210855bdaf41ea00624a7317db",
-      "size": 6481
+      "sha": "5b237d42f839588a5c24329d213e7003297ee836",
+      "size": 6543
     },
     {
       "path": "VERSION.txt",
-      "sha": "ac14c3dfaa865ea332c62348d1bca867bdbbd1cf",
-      "size": 6
+      "sha": "d7445e2db958606420a0e4b2267da63054668fc4",
+      "size": 7
     },
     {
       "path": "_meta.json",
-      "sha": "a4669d0fc397160d3d8a7b3e593df7663d05f6a9",
-      "size": 138
+      "sha": "dbd3ed3a9b00a9db9b9d2fe4eaaeaa7446deb8ab",
+      "size": 144
     },
     {
       "path": "assets/samples/v5.0-latin-america-ai-zh-evidence.json",
-      "sha": "036f20dbeb1116ccc72085ecd6e31dbf6d7d12e2",
-      "size": 9548
+      "sha": "992d21d30c04d920a2700ac775b5d322ce8d5b0d",
+      "size": 9917
     },
     {
       "path": "assets/samples/v5.1-no-image-policy-evidence.json",
-      "sha": "7321ce0c88d0b65c8d3e7e757e8678290a42c254",
-      "size": 6662
+      "sha": "8d9a33c7db56558e4b758d74bdd915930edc65c9",
+      "size": 6870
     },
     {
       "path": "builders/__init__.py",
-      "sha": "583677f0ac0aadffa72c48e165f29c6048a90bc4",
-      "size": 379
+      "sha": "f47b42480048df37c276f5e9d01cf48d18fac744",
+      "size": 400
     },
     {
       "path": "builders/base.py",
-      "sha": "fb7380a74dd1f17c5fe388bee9d4b858a5e17288",
-      "size": 2761
+      "sha": "8a9df029872f51b362ec4a75eaa8a2c03432c653",
+      "size": 2852
     },
     {
       "path": "builders/custom_adapter.py",
-      "sha": "0f488f7d37dd2d435c9e9bbeed0695b2c618b230",
-      "size": 1506
+      "sha": "bffd94b3c4160661cb66a5920bdaa282f5bb3ac2",
+      "size": 1546
     },
     {
       "path": "builders/html_svg_adapter.py",
-      "sha": "bd06b4889a0f434eeb1107fb0c9061c2668c1449",
-      "size": 1692
+      "sha": "2a9fc689c148f38c64ad54b4e5cb1353ad943002",
+      "size": 1736
     },
     {
       "path": "builders/officecli_adapter.py",
-      "sha": "2ff72729a61ff3391861da03b3c12054f3a49e30",
-      "size": 1681
+      "sha": "8a766b3c6373cc2d549eb091ebce81619cdaa2d1",
+      "size": 1725
     },
     {
       "path": "builders/pptxgenjs_adapter.py",
-      "sha": "1cf083859bf8026604d4e37c917c22cdea47d8e1",
-      "size": 10146
+      "sha": "ee6c63d0b69755e13cff069cec35d109ec320339",
+      "size": 10365
     },
     {
       "path": "builders/python_pptx_adapter.py",
-      "sha": "ad6457fbbb4a79a6fb2cb10b9de3c1c35238fb6b",
-      "size": 58307
+      "sha": "aaec5fbcc8c81f7ce3ea8d0416c7570a704bd3cf",
+      "size": 59679
     },
     {
       "path": "builders/registry.py",
-      "sha": "14513ad21bb3bfcf877b5de97b1b34bc2c089935",
-      "size": 904
+      "sha": "77e56271f714c2d8d6330afbf3e29ba5bd9e8384",
+      "size": 940
     },
     {
       "path": "builders/selector.py",
-      "sha": "483937dcce855c1c89a109864d7637d949bb0d87",
-      "size": 12226
+      "sha": "f3fd8608a489ba01e9082c64f1d92c7502992810",
+      "size": 12509
     },
     {
       "path": "engine/__init__.py",
-      "sha": "64c7c9afa280652e56d5e350516ddf883d92deb6",
-      "size": 413
+      "sha": "dd4c64d579baa60e9112bccf9bf06e041116ca7a",
+      "size": 424
     },
     {
       "path": "engine/__main__.py",
-      "sha": "43bcf9db1956ae4f352816b4093ff40822617610",
-      "size": 23144
+      "sha": "636193d20cb6acf35e35d2d6c4fcf38421edbb63",
+      "size": 23650
     },
     {
       "path": "engine/authored_page.py",
-      "sha": "c60e64bf6c30cc31ff0da65b30ac02271c088c83",
-      "size": 17313
+      "sha": "80f4d1c5961070c813541a2ad87a707fde0ddc2e",
+      "size": 17693
     },
     {
       "path": "engine/autonomy.py",
-      "sha": "172cd145a603bcba6d746cc39f805894e712de8e",
-      "size": 8287
+      "sha": "481946e83826a671f3459e68071b75de40b40ee5",
+      "size": 8494
     },
     {
       "path": "engine/bespoke.py",
-      "sha": "47a46a1a74364c2fd37b06042d0f4703376ee96e",
-      "size": 5549
+      "sha": "e2f7049055b229721f273cda469e0fbc0773ba8e",
+      "size": 5686
     },
     {
       "path": "engine/bespoke_quality.py",
-      "sha": "b3743fe45588b974080650a33cb304d3a8df3963",
-      "size": 8419
+      "sha": "6beebfcab2219668445e6bf2f62daefebaa70242",
+      "size": 8616
     },
     {
       "path": "engine/bespoke_runtime.py",
-      "sha": "e98fec0ac539c246c60dfb50c08449734a9eff4b",
-      "size": 12966
+      "sha": "45c8fd7139900528dd3f08af37653b8449c60eba",
+      "size": 13280
     },
     {
       "path": "engine/chart_inference.py",
-      "sha": "e6c9b1aeaa1ef93adee9e74245e713f5160f0ae4",
-      "size": 7550
-    },
-    {
-      "path": "engine/compile.py",
-      "sha": "92a389d048c62b5385047e17189eba6c47f01f79",
-      "size": 13064
-    },
-    {
-      "path": "engine/component_atlas.py",
-      "sha": "ae2ac9fbe60c87115cee91bddc9bca4991ba8b04",
-      "size": 52527
-    },
-    {
-      "path": "engine/component_atlas_report.py",
-      "sha": "ff66783f22eb3f20f6c1618948ab8624405e30fe",
-      "size": 5290
-    },
-    {
-      "path": "engine/component_composer.py",
-      "sha": "9ab4fe4f549280f1c3b0bb51bd7e5f2c559d540d",
-      "size": 19441
-    },
-    {
-      "path": "engine/component_intent.py",
-      "sha": "403c979f41e33581a5b8fb89ac1d6cdf8faa3bf5",
-      "size": 6695
-    },
-    {
-      "path": "engine/component_inventory.py",
-      "sha": "53c39afb59113281172027df8f6e86a74bf05218",
-      "size": 6115
-    },
-    {
-      "path": "engine/content_contract.py",
-      "sha": "36cae500b8f364f7c4372e5e9cb7648d7d7286ec",
-      "size": 4548
-    },
-    {
-      "path": "engine/content_integrity_gate.py",
-      "sha": "4541c4875f3a1e2e2084bdb5057c1705ee9db983",
-      "size": 2905
-    },
-    {
-      "path": "engine/coverage.py",
-      "sha": "a846b3c97d88d83b24543ce6469311fff7a76e09",
-      "size": 6642
-    },
-    {
-      "path": "engine/deck_diversity.py",
-      "sha": "bfcb3f2318a1d2595970f9bc559ca2ed5e86176d",
-      "size": 2180
-    },
-    {
-      "path": "engine/design_contract.py",
-      "sha": "f735b45b900493fc71b4268268630655a4ed684f",
-      "size": 6007
-    },
-    {
-      "path": "engine/design_scene/__init__.py",
-      "sha": "a2a94f80ca29fba34526f37a8b9eebb4a265464a",
-      "size": 99
-    },
-    {
-      "path": "engine/design_scene/authoring.py",
-      "sha": "22098cbc6aa4f9e2ba7649fba70994a9911c47b5",
-      "size": 10291
-    },
-    {
-      "path": "engine/design_scene/backend.py",
-      "sha": "25f6e857c8f64cdd242a20e58a968da88b5b7ecf",
-      "size": 17837
-    },
-    {
-      "path": "engine/design_scene/cli.py",
-      "sha": "ad556e5c4f575b53f9821aee64c26b8aaa127a87",
-      "size": 23712
-    },
-    {
-      "path": "engine/design_scene/contract.py",
-      "sha": "ffc6555b6a736afe98f410952a568b2cf7952bea",
-      "size": 18296
-    },
-    {
-      "path": "engine/design_scene/incremental.py",
-      "sha": "d9f6f7cfab7e9a0e9e67dab7dfdd1e256ca5d2b0",
-      "size": 6131
-    },
-    {
-      "path": "engine/design_scene/isolation_probe.py",
-      "sha": "84822ae93efbd94a5d2f2a1d6d86630ea50924f1",
-      "size": 3088
-    },
-    {
-      "path": "engine/design_scene/pipeline.py",
-      "sha": "72fe7f264cbf2a4bb29b84ae72af864615986118",
-      "size": 22413
-    },
-    {
-      "path": "engine/design_scene/preflight.py",
-      "sha": "013ab53cdbfcf67a8da5c6712babf87996312c92",
-      "size": 7924
-    },
-    {
-      "path": "engine/design_scene/runtime.py",
-      "sha": "9b266ce67b0fd99e06cd9479c73fe34a3beee7fc",
-      "size": 11783
-    },
-    {
-      "path": "engine/design_scene/store.py",
-      "sha": "2480064afcaa0325761d201f085004adff0798f9",
+      "sha": "6bc822d3a85a5f2d700e8f81881d1d0bbcc62d96",
       "size": 7748
     },
     {
+      "path": "engine/compile.py",
+      "sha": "1286294a0a5e5e4db36848f4b3efce7e5d04d193",
+      "size": 13362
+    },
+    {
+      "path": "engine/component_atlas.py",
+      "sha": "0625ae34a15bc8ffa3ad0b58b7f54cb90f23ac16",
+      "size": 53642
+    },
+    {
+      "path": "engine/component_atlas_report.py",
+      "sha": "4ac19b4dac06b0925df88840ca6f900744abea1d",
+      "size": 5385
+    },
+    {
+      "path": "engine/component_composer.py",
+      "sha": "c34635a6d467b05fc35992c3b2a613a07687ad09",
+      "size": 19808
+    },
+    {
+      "path": "engine/component_intent.py",
+      "sha": "0a602378fa5d4baa5012a894392d08905405c8dd",
+      "size": 6845
+    },
+    {
+      "path": "engine/component_inventory.py",
+      "sha": "1ca16918f9a101a45214aacac93fc8e3845c9d98",
+      "size": 6273
+    },
+    {
+      "path": "engine/content_contract.py",
+      "sha": "c5cd5046baaae8018d88afc9e1c9f3ea59d32caf",
+      "size": 4656
+    },
+    {
+      "path": "engine/content_integrity_gate.py",
+      "sha": "e8913613b73106bc7db93e695bc31b9717c3fdcd",
+      "size": 3000
+    },
+    {
+      "path": "engine/coverage.py",
+      "sha": "ca6159f4b1adc4c39874694d7572695cda315cbe",
+      "size": 6804
+    },
+    {
+      "path": "engine/deck_diversity.py",
+      "sha": "55ad04f0fe636e3f5cc6d477117d9e04b5698169",
+      "size": 2238
+    },
+    {
+      "path": "engine/design_contract.py",
+      "sha": "bc65bd39628e041ea220748531c43a92cbfc4d90",
+      "size": 6132
+    },
+    {
+      "path": "engine/design_scene/__init__.py",
+      "sha": "13dfa25dd551795b3af496ce5b211f78a01d189f",
+      "size": 102
+    },
+    {
+      "path": "engine/design_scene/authoring.py",
+      "sha": "e7e5b7a33cfd7a6af17c234dc7ccbcb6d688dcc3",
+      "size": 10501
+    },
+    {
+      "path": "engine/design_scene/backend.py",
+      "sha": "3c5806b93eae481c095f0667e05c4361d8f050f9",
+      "size": 18187
+    },
+    {
+      "path": "engine/design_scene/cli.py",
+      "sha": "a72c6969ad7ff72fb194840aa8c080fbac400038",
+      "size": 24069
+    },
+    {
+      "path": "engine/design_scene/contract.py",
+      "sha": "57c05de6c8dd2e957104aef73ac78ec8e73867e4",
+      "size": 18586
+    },
+    {
+      "path": "engine/design_scene/incremental.py",
+      "sha": "682f296d7ab0dbbcc1b791c29d95ebc2c569581b",
+      "size": 6247
+    },
+    {
+      "path": "engine/design_scene/isolation_probe.py",
+      "sha": "7dcfb52fa319c574fc01e92470d6aa4134524a5a",
+      "size": 3168
+    },
+    {
+      "path": "engine/design_scene/pipeline.py",
+      "sha": "1e1021817c3c02f661293b3eea69d3d3fbe46877",
+      "size": 22783
+    },
+    {
+      "path": "engine/design_scene/preflight.py",
+      "sha": "066b2a69bbdeb98ea8d97457fc8a0171fc2cba42",
+      "size": 8053
+    },
+    {
+      "path": "engine/design_scene/runtime.py",
+      "sha": "9d2921c2dda4fddde5a6406d792c896585d148df",
+      "size": 12004
+    },
+    {
+      "path": "engine/design_scene/store.py",
+      "sha": "b1d7f1577505317eaf5d5a246e2ba4b9daf060e3",
+      "size": 7960
+    },
+    {
       "path": "engine/design_scene/targets.py",
-      "sha": "37e1c027d1561fbb455fef4d0f5d2fb47d1e084d",
-      "size": 2590
+      "sha": "ce0231df196774cde1940681ba478eb4c1513cc7",
+      "size": 2636
     },
     {
       "path": "engine/design_scene/windows_io.py",
-      "sha": "b006163b010f30759b09b8c1b76c4a6db7b81680",
-      "size": 6523
+      "sha": "82fdcfcbba62bcb580d1c098c7add1fce49ef03a",
+      "size": 6677
     },
     {
       "path": "engine/design_scene/worker.py",
-      "sha": "00e7dd6b1903f9f6d2d9261ab1ceda439c115353",
-      "size": 1504
+      "sha": "5552fce70f6260f8cca4b226a0238075c58e4c7e",
+      "size": 1544
     },
     {
       "path": "engine/diagram.py",
-      "sha": "d0311cd9abeb07f1fb621ea4c096db9744771752",
-      "size": 16777
+      "sha": "210be311180ed4edbebd44292b281c13a1a7dd80",
+      "size": 17166
     },
     {
       "path": "engine/evidence_ledger.py",
-      "sha": "0e0f8f68f2d5511e67bba568dbcd28422c685f8f",
-      "size": 5234
+      "sha": "fcd248132526316caf8c9fba301759f6215c5016",
+      "size": 5380
     },
     {
       "path": "engine/evidence_outline.py",
-      "sha": "03e172d86ec6d752f4fa7d3f3403390867f42b71",
-      "size": 1997
+      "sha": "cf6bcb7a42fd521c0583666cf358d869f85b820e",
+      "size": 2051
     },
     {
       "path": "engine/extractive_ir.py",
-      "sha": "d148181c4b13673423e33ad4155a4928543394b2",
-      "size": 6437
+      "sha": "01a49c16fdcfef9e9bb173dbac423ae210d076d1",
+      "size": 6596
     },
     {
       "path": "engine/font_metrics.py",
-      "sha": "fbc567685147d8c20d9e99967fa94352f172f388",
-      "size": 2676
+      "sha": "683076304f40e080594c2c7c8002998258c59d44",
+      "size": 2755
     },
     {
       "path": "engine/high_fidelity_guard.py",
-      "sha": "0bf7b2a448ce04347be15e102dfc4630cbc9cf7e",
-      "size": 1680
+      "sha": "7b7d0da01f6266b57e5990d1e57606d8add890a7",
+      "size": 1726
     },
     {
       "path": "engine/layout.py",
-      "sha": "5fc54144103756bedffec2589e43efd04993f900",
-      "size": 35407
+      "sha": "441252837722d9469b3593e5d07d996c58770b19",
+      "size": 36108
     },
     {
       "path": "engine/manuscript_component_planner.py",
-      "sha": "d0e8c930fc5e549be9893f15d78aa2392a5a2eb8",
-      "size": 24298
+      "sha": "f15c3362818a697b6ce92291e57693eac97887ef",
+      "size": 24856
     },
     {
       "path": "engine/manuscript_strict_preview.py",
-      "sha": "d919052f6b5e862b1213c9b336125b650737016f",
-      "size": 18526
+      "sha": "00f0e5f15818a3286650d022baf1854b69b463c4",
+      "size": 18943
     },
     {
       "path": "engine/metrics/arial-unicode-ms.json",
-      "sha": "7d5cface9610d8169b41a837c8611549fb90cd15",
-      "size": 1004
+      "sha": "46241c7a1f59296caae7719b398662222683e42c",
+      "size": 1108
     },
     {
       "path": "engine/metrics/helvetica.json",
-      "sha": "97706a9791a305cb68ee53a1b1972ba987ebdfd3",
-      "size": 1006
+      "sha": "2ca7f2a3533c347032a2b31ba037860e1714dbe7",
+      "size": 1110
     },
     {
       "path": "engine/metrics/songti-sc.json",
-      "sha": "0ecb49e3d71ae2c486391840183327b6d58d2d0b",
-      "size": 1013
+      "sha": "3574c5bd9235784150444bc3367491c7c43ae4a5",
+      "size": 1117
     },
     {
       "path": "engine/metrics/system-font.json",
-      "sha": "7e61f476bad10d7638f3c8cc3b678b745ed65bb2",
-      "size": 1004
+      "sha": "91a8291d23d74cef65b21ccdfa73f6d9c146e311",
+      "size": 1108
     },
     {
       "path": "engine/model_authored_quality.py",
-      "sha": "02d0355eb1dc2f54b28d6b69834beaaf6c6b6322",
-      "size": 7016
+      "sha": "ddf16e401a581dc3ca9d1825975fcb9a7d0c5cb0",
+      "size": 7178
     },
     {
       "path": "engine/model_template_component_runtime.py",
-      "sha": "892bb6b49561c653061a08011b7c06c5b112e1ef",
-      "size": 15891
+      "sha": "2a93818d1f75451d08792e34761fd064cc0b230d",
+      "size": 16286
     },
     {
       "path": "engine/model_template_composer.py",
-      "sha": "cfb24d8c8f5c12662f2cfc2eb4e45d0fd8e6cecd",
-      "size": 11248
+      "sha": "d299bbe7ce7cfeb949c71c475241ebf02276a828",
+      "size": 11482
     },
     {
       "path": "engine/narrative_contract.py",
-      "sha": "e08d98a8b74c9bf1b830c261c01bd5e5b4e1304d",
-      "size": 7354
+      "sha": "c9ec9fe3d2c0dbbfdddcde63260f9d2ebb1ae4e3",
+      "size": 7553
     },
     {
       "path": "engine/policy.py",
-      "sha": "0b398fc8aa5570722df475a4e6d136fbad345ed1",
-      "size": 9161
+      "sha": "6721fa83e890fd28ab79780fb405bbf1716a9d04",
+      "size": 9377
     },
     {
       "path": "engine/pptx_builder.py",
-      "sha": "aa685cffd01dff3adee2c9df3c004fce01fdb36c",
-      "size": 10249
+      "sha": "95639fe1b9e96c08fbb228d54dc184055e1aa66c",
+      "size": 10494
     },
     {
       "path": "engine/pptxgenjs_builder.py",
-      "sha": "c5c839a0281b5fc25a8068250c5d27cc493ada12",
-      "size": 3271
+      "sha": "0f78f7ac513e76ca90768833818c11ab21c6682f",
+      "size": 3359
     },
     {
       "path": "engine/presentation_subset.py",
-      "sha": "30c7c46f3ce4798a640f9e21ed717a36ed265183",
-      "size": 1543
+      "sha": "ff94d2a8325da83a7572339c610c426d21102332",
+      "size": 1588
     },
     {
       "path": "engine/production_request.py",
-      "sha": "97fded8900c5a7688ea5338b305b3bb37c067612",
-      "size": 8964
+      "sha": "4cfbbfa2300847dc906a45bcf43385ce2497a112",
+      "size": 9197
     },
     {
       "path": "engine/proposal_apply.py",
-      "sha": "d381946adb8b955cef978c79523b94b85fdc062d",
-      "size": 5333
+      "sha": "1b5b15a12bdaebbc8f8ff346e4a0dac2f8fa62f1",
+      "size": 5457
     },
     {
       "path": "engine/provenance.py",
-      "sha": "5962dba7ea85b877855b888fbbc5367788a90801",
-      "size": 6984
+      "sha": "20594a6eca3bb582d3ea72176c4d507796bb6e6b",
+      "size": 7137
     },
     {
       "path": "engine/qa_plan.py",
-      "sha": "ce091625c8c1f213654e3a4da1d370cd48c6245c",
-      "size": 4370
+      "sha": "7b4d380b684af797cf6be9a0055b4cedc2385ade",
+      "size": 4471
     },
     {
       "path": "engine/refine_renderers.py",
-      "sha": "2cc9f17045fee4f759fe16ca6eeeaf6ecf5e2b86",
-      "size": 10713
+      "sha": "135bd01274918d31f5b231d85a5c48a56517b367",
+      "size": 10977
     },
     {
       "path": "engine/refine_spec.py",
-      "sha": "463a3238dc567056babb07022d59f1ebfb519e99",
-      "size": 3930
+      "sha": "2782b0278b46d9a423fea6cacf2518c2e6c1da3e",
+      "size": 4041
     },
     {
       "path": "engine/route_policy.py",
-      "sha": "55b3e7d34ec0b8eab4c1330cebd49186fb02ce44",
-      "size": 801
+      "sha": "75381d6825d2c2cf8509a59785b1c3da72ec9954",
+      "size": 823
     },
     {
       "path": "engine/source_doc.py",
-      "sha": "12fddf2467d6c292078e26a3f14f87369b2ecaae",
-      "size": 4625
+      "sha": "47e65109b4e629de2f1e883b98902ed2f4df0b80",
+      "size": 4758
     },
     {
       "path": "engine/speaker_notes.py",
-      "sha": "aee483073423a406a90ee823fed040856b2358ad",
-      "size": 5675
+      "sha": "adc95b66ff9869de2e14d1b2bae03bea0b76dfa2",
+      "size": 5817
     },
     {
       "path": "engine/strict_template.py",
-      "sha": "8ceb810772ef100847e09a95fdd33965e949b0d8",
-      "size": 68046
+      "sha": "0b29c9fda8377c2d632953b83eda05161524dbe0",
+      "size": 69415
     },
     {
       "path": "engine/structural_parser.py",
-      "sha": "1f0a20c3b81e03960c9f52623cb52289120b45f9",
-      "size": 9664
+      "sha": "2ba967fecb4caef0397c00dd236ca890edfe24e8",
+      "size": 9948
     },
     {
       "path": "engine/style_pack.py",
-      "sha": "0e2046b0fe3d8f6a289d1fc7b09fac733d4a55cb",
-      "size": 7547
+      "sha": "47795257eee597d3e2828a0c5b0b9d2ccf06572e",
+      "size": 7745
     },
     {
       "path": "engine/style_validator.py",
-      "sha": "d579b8c7afe5d5aad0f1e5087ce0f92216b74642",
-      "size": 5626
+      "sha": "96ced1480081207d4d5fa67499edc0b0cf7dcdd6",
+      "size": 5753
     },
     {
       "path": "engine/template_component_adaptation.py",
-      "sha": "26851a6e6d0b0a65202f06b81454ec92bfcbf39e",
-      "size": 11989
+      "sha": "d8f23c2be5576d70d808d87d707f9c87cdd85cf1",
+      "size": 12270
     },
     {
       "path": "engine/template_delivery_quality.py",
-      "sha": "75b1cdf241c8cb74962c6a7f7fb0077dd242f06e",
-      "size": 5038
+      "sha": "330ea7e623f1bb937aea500eb6789c4a063a0fcb",
+      "size": 5189
     },
     {
       "path": "engine/template_evidence.py",
-      "sha": "25ece4f4212e8c8de77e2e8ed7ce913531b4c492",
-      "size": 8490
+      "sha": "dd5b17e7d069b870385ad9628ba43d902b172ee2",
+      "size": 8730
     },
     {
       "path": "engine/template_native.py",
-      "sha": "9f9f966f3b5d726d98cb2abcc7bfb5e74a74cae5",
-      "size": 80080
+      "sha": "4c66143c1ae35862a4ce50b4c98f870e6dbe32ef",
+      "size": 81860
     },
     {
       "path": "engine/template_page_composition.py",
-      "sha": "1b73e9fdb377629f01ae633b64cb02ee813a9a86",
-      "size": 16433
+      "sha": "b77681da65152bb432b85dfa0096af635f89976e",
+      "size": 16805
     },
     {
       "path": "engine/template_page_recipes.py",
-      "sha": "962ae217484b6528a5da9ced468e1ad906068c3b",
-      "size": 5014
+      "sha": "91db5cfc06275a1b95af58b2850e69d627ed5016",
+      "size": 5159
     },
     {
       "path": "engine/template_readability.py",
-      "sha": "8d3c7a29991687bdcdb7fa4f5a95f852362c9c31",
-      "size": 1968
+      "sha": "863bfbe792aaaa53992352f5f4c39cd8220ff0b1",
+      "size": 2013
     },
     {
       "path": "engine/template_series_planner.py",
-      "sha": "cd4116a4ac017b9deca2abf7bcf43bc2a542edb5",
-      "size": 4034
+      "sha": "539a01d450ba24f627dfae470836e5fca096569c",
+      "size": 4123
     },
     {
       "path": "engine/template_visual_fingerprint.py",
-      "sha": "0b60fe5dcb77ad4837852a029029dfc16fdc91c5",
-      "size": 8156
+      "sha": "2a1e4afb736697db2f5c07abfc27e791bf6ca63c",
+      "size": 8353
     },
     {
       "path": "engine/template_visual_quality.py",
-      "sha": "8c68cdf8afbafa3dcb9a6b6f5cce8cb7194a68e7",
-      "size": 8386
+      "sha": "317ddf66e6f3d3fd34a3dc5031acb90a426034ce",
+      "size": 8587
     },
     {
       "path": "engine/textfit.py",
-      "sha": "79ebfa9603f2d83b5767d29de073335e76b7e24f",
-      "size": 3632
+      "sha": "59e47ae5985524775495035ed748a18aebd63f5a",
+      "size": 3728
     },
     {
       "path": "engine/topology.py",
-      "sha": "5d8ec215a6913c5738553dce57cfd15eeefa1ba1",
-      "size": 2499
+      "sha": "59dd4196376a8580ac5bb1b71f5f0bd776f08ace",
+      "size": 2558
     },
     {
       "path": "engine/visual_review.py",
-      "sha": "b8be6c5bd47548c342fc84cf919a98c8479d3b1b",
-      "size": 7540
+      "sha": "aa3b76ee8eeab9f48dc11633b7bde016b03d06dc",
+      "size": 7689
     },
     {
       "path": "examples/contracts/v1/slide-manifest-v1.json",
-      "sha": "683b4770ef336c324536be0ebcefa2985795d10e",
-      "size": 462
+      "sha": "b8e4dd13e225b52c6e903c50f7e838e860ef91d6",
+      "size": 480
     },
     {
       "path": "examples/contracts/valid/asset-manifest.json",
-      "sha": "2a7cb33de7f0e9e4d13d416a3148b5515c8de23c",
-      "size": 409
+      "sha": "85d398c419b89c1815b674bdabf9a8e9969a21e9",
+      "size": 426
     },
     {
       "path": "examples/contracts/valid/build-manifest.json",
-      "sha": "7c966c35cfedaeba9ee34eeb0672e65b46dc011e",
-      "size": 700
+      "sha": "965f6cd96dad9a101a4f76edb934e39da6502f91",
+      "size": 731
     },
     {
       "path": "examples/contracts/valid/diagram-ir.json",
-      "sha": "c85cbfa5cf9f521c7ca575b902841947711cf9b1",
-      "size": 2648
+      "sha": "db71414870ac6c6fe3e578e09e8910cbf2e58bd4",
+      "size": 2677
     },
     {
       "path": "examples/contracts/valid/ppt-ir.json",
-      "sha": "1d232b9e20529548ce61e2291388baf5f7dbc78e",
-      "size": 2543
+      "sha": "9d637e93ceb15457fb958054cf2ef8a1c2926dd0",
+      "size": 2621
     },
     {
       "path": "examples/contracts/valid/qa-report.json",
-      "sha": "520ed3838fd3697245fb58bfcb10d046b1c61813",
-      "size": 608
+      "sha": "5a808e355f52455da9d94fc5be9f30ad586def8a",
+      "size": 630
     },
     {
       "path": "examples/contracts/valid/style-contract.json",
-      "sha": "51bcd6a22dc3a4cd587c2f8b372afd1ad7ea397b",
-      "size": 6799
+      "sha": "dbcf01a661b0e8a48b34a6b59e07cbd13087393e",
+      "size": 6854
     },
     {
       "path": "packaging/audit-allowlist.json",
-      "sha": "f14ea136851c9f4c216e9bda1042bc28ec006487",
-      "size": 1823
+      "sha": "5dbedefdeca82ad5a23722edc0f84ebaf7fce5d6",
+      "size": 1885
     },
     {
       "path": "packaging/bundle-exclude.txt",
-      "sha": "c363887d753106029255b73c9cd13d2866f08b7e",
-      "size": 904
+      "sha": "6c0f42cd92848de0d709e15906da902dff37fadc",
+      "size": 947
     },
     {
       "path": "packaging/identity.json",
-      "sha": "b47dc4ae81519d75fb697186288e719aecd3a98f",
-      "size": 810
+      "sha": "3cac06140a13dcb81781fb99a76120840b998757",
+      "size": 840
     },
     {
       "path": "ppt_qa/__init__.py",
-      "sha": "d6cdf11cfc4f306fc22643544a411d295efafb4e",
-      "size": 481
+      "sha": "c9c4018eb4dfc51ace0b6a39131967c375b9f8e9",
+      "size": 498
     },
     {
       "path": "ppt_qa/auto_repair.py",
-      "sha": "b28541f63e3c443b7276db035a88146f9f499b27",
-      "size": 4590
+      "sha": "cb1458efb43a71b93155563cb2abda60de2c902d",
+      "size": 4711
     },
     {
       "path": "ppt_qa/models.py",
-      "sha": "907e70a0398597c3ded867d449460e402d1cc9f3",
-      "size": 3382
+      "sha": "aa938254ec2feb6255b444392315433348c47447",
+      "size": 3501
     },
     {
       "path": "ppt_qa/package_inspector.py",
-      "sha": "102ad289ef7af0c1f7a586c659bc6723a9752024",
-      "size": 9346
+      "sha": "be176ea4c9fd923fae9876a281833bb01df3e389",
+      "size": 9562
     },
     {
       "path": "ppt_qa/render_report.py",
-      "sha": "0a890f82cd34bc1c0e889f3b29c3f36ae8382d3d",
-      "size": 5708
+      "sha": "65772d57f0ade496a2aa4490f605cd101b6188ac",
+      "size": 5835
     },
     {
       "path": "ppt_qa/renderers/__init__.py",
-      "sha": "0ac508e46f0c6016376a6961d8a39c1b78c529bb",
-      "size": 205
+      "sha": "da63273ac5309c21383c8361d0cfd068c8b22af0",
+      "size": 210
     },
     {
       "path": "ppt_qa/renderers/analysis.py",
-      "sha": "45e55870ff27e00f0f7db6e7abda41f55230b8ca",
-      "size": 1646
+      "sha": "8d9cfc6b12673190937596592efecaf03f1a69ec",
+      "size": 1695
     },
     {
       "path": "ppt_qa/renderers/base.py",
-      "sha": "bbbc2b431c20c6996714828505803e8ebf70605b",
-      "size": 2380
+      "sha": "aaa2f37eba73efeae8c06d3b417350de5ad1c717",
+      "size": 2468
     },
     {
       "path": "ppt_qa/renderers/libreoffice.py",
-      "sha": "5081f263d5b005558730cdd3f0b41419e523b439",
-      "size": 3576
+      "sha": "784a81e28e9670783d2dcc9a704c7b0ca2007ba3",
+      "size": 3663
     },
     {
       "path": "ppt_qa/renderers/pdf_tools.py",
-      "sha": "98599189ac09c3ebec54aa35ec4df48cc0d2244f",
-      "size": 1841
+      "sha": "1a466b53568db384555744d3f590d0642cb06952",
+      "size": 1899
     },
     {
       "path": "ppt_qa/renderers/powerpoint_macos.py",
-      "sha": "a40be7ad0c27bb033198cf0903dd6b1ee303a0a6",
-      "size": 3551
+      "sha": "09ba1c333fc96ec2687efcca5e918d33e448083b",
+      "size": 3641
     },
     {
       "path": "ppt_qa/renderers/powerpoint_windows.py",
-      "sha": "e9a646014c1275d294c5a592398ad29ae5465689",
-      "size": 2777
+      "sha": "6d743afa547c3d032017ad81aecf6c57755bf4db",
+      "size": 2856
     },
     {
       "path": "ppt_qa/report.py",
-      "sha": "3cb9196f087a1cf6116ed91805be652c4ed9a521",
-      "size": 2387
+      "sha": "76f89e228d4d536c451528e27f6bdb5cadcfba02",
+      "size": 2457
     },
     {
       "path": "ppt_qa/slide_inspector.py",
-      "sha": "6669396820d55b70e3886f69dcdb7c8241369b22",
-      "size": 40930
+      "sha": "0f5b2220cb4b228700c18c66254f9712aae599d2",
+      "size": 41838
     },
     {
       "path": "ppt_qa/verifier.py",
-      "sha": "a03f41d7d533e1010efbc66760449d0f98c9f6ac",
-      "size": 15928
+      "sha": "e5e8ea58d8ba61df505f021418a967da4d513421",
+      "size": 16347
     },
     {
       "path": "references/BUNDLE-MANIFEST.md",
-      "sha": "ce6b8ad828ff2b2738643e130b5a3e5f44ff1839",
-      "size": 2228
+      "sha": "56aef400b375a27ef89e76a634a8520f5c824cfe",
+      "size": 2282
     },
     {
       "path": "references/anti-regression-examples.md",
-      "sha": "66f383435acf7702ff3c0eaa64b7435597fb85bd",
-      "size": 3444
+      "sha": "0b779e627fa27a6e1a446a6509f0fb5b5b4f95ba",
+      "size": 3544
     },
     {
       "path": "references/builder-adapters.md",
-      "sha": "d1500fd0a2d3d4a5ce14f5bf1f7a37d5438895cf",
-      "size": 3846
+      "sha": "50354304077249bd9b3398a1a442d8e7f9a2209e",
+      "size": 3948
     },
     {
       "path": "references/component-craft-checklist.md",
-      "sha": "9ce8fd860fb7e4d3384952a99ac661129ca5688e",
-      "size": 2892
+      "sha": "97a2cbce9682d4ad3c65e7a83e2ec6058b8762b7",
+      "size": 2954
     },
     {
       "path": "references/component-raster-fallback.md",
-      "sha": "0f2c7a15d32870a2faba684a633e509c694c79b2",
-      "size": 4408
+      "sha": "d080404deb35f18704891da95f0b46b52fa36570",
+      "size": 4482
     },
     {
       "path": "references/component-registry.json",
-      "sha": "dbbf38188eaa0c77adb518fc48310e6b3a1bae0a",
-      "size": 50250
+      "sha": "ab0dc5b00077d5cc9cf2593af40f8d8f1b6761c8",
+      "size": 50303
     },
     {
       "path": "references/component-registry.md",
-      "sha": "635f834192837996651a08997659246aea9ad0da",
-      "size": 2685
+      "sha": "bfafad14b76cc73acc3131e7bbc7d7c79aef378e",
+      "size": 2751
     },
     {
       "path": "references/connector-routing-and-topology-gate.md",
-      "sha": "174a1d693886dcb311134ae93766e560c2c2d8c7",
-      "size": 1806
+      "sha": "aa347a2d9e47cd13aeb1e1b4a73b2127a8c8844f",
+      "size": 1846
     },
     {
       "path": "references/content-density-playbook.md",
-      "sha": "ed8d49c06496b42f17128b0964041b2bfd1b88c5",
-      "size": 5021
+      "sha": "1ca94f4e7bb83009d9ad2fb1dfe0e935124c565d",
+      "size": 5127
     },
     {
       "path": "references/declarative-authoring.md",
-      "sha": "07d9e110e26178377f05574ec93fce53394ea1e3",
-      "size": 4717
+      "sha": "0d51aa3f504321e1797abbaaa4d94ae9f4ae02ed",
+      "size": 4822
     },
     {
       "path": "references/declarative-design.md",
-      "sha": "488120e05c4464e11543ba899cd51aecf36c2b33",
-      "size": 15128
+      "sha": "bff045dccd19a3c6fa25aa9264f50370a7f8ede3",
+      "size": 15359
     },
     {
       "path": "references/design-token-contract.md",
-      "sha": "b4b1fb5d612a1923ee84f08c47d24cc502bd52e4",
-      "size": 3720
+      "sha": "e584b6815e0d53e28614a16ba8f855273196def4",
+      "size": 3834
     },
     {
       "path": "references/diagram-auto-repair.md",
-      "sha": "ca29275eea68b843a038e43e9e015e9f6ebfd6a9",
-      "size": 1602
+      "sha": "3a6dd989a5e460298030789c59b97dd412ef7400",
+      "size": 1659
     },
     {
       "path": "references/diagram-ir-and-layout.md",
-      "sha": "f809f0abda9136b7c83291fe5806b11fe5d9b527",
-      "size": 3755
+      "sha": "adb5b4a300eedd9feb6ed42d95161270f5c8ccb5",
+      "size": 3825
     },
     {
       "path": "references/export-pipelines.md",
-      "sha": "ab874b3f3416aff375569e560b0516d27870cc9e",
-      "size": 2306
+      "sha": "8daf360cac7927a75ec6e72be5fa504f6875b7d2",
+      "size": 2373
     },
     {
       "path": "references/expression-mode-gate.md",
-      "sha": "19317a5c6105fe825e88368d51f00f02eddc1f45",
-      "size": 8269
+      "sha": "e433522934f35d7620117a68082262ce1820e80b",
+      "size": 8517
     },
     {
       "path": "references/five-style-master-systems.md",
-      "sha": "014d081a89474116752ab0b1de6daed578edd5ce",
-      "size": 7631
+      "sha": "5def29c41ed1766d6e2baf2fd3f424522e51888e",
+      "size": 7780
     },
     {
       "path": "references/master-ppt-design-rubric.md",
-      "sha": "6740d02a18687689461572d0cc478ced354e5583",
-      "size": 4833
+      "sha": "b9b3714bb026b2dccc93eecc05bd1f69fd5a9a61",
+      "size": 4951
     },
     {
       "path": "references/master-presentation-design-language.md",
-      "sha": "e00dea06862bd86999d4a1a1e542fdef588b8984",
-      "size": 1926
+      "sha": "56875df10bc957cebedde995a22ace5757c17067",
+      "size": 1976
     },
     {
       "path": "references/migration-v1.1-to-v1.2.md",
-      "sha": "039ce1583eceef566fa30b9a4393fd811bd4ea89",
-      "size": 5150
+      "sha": "507a3ce8d96b145b1fc9fc3ecdc67fc97f103722",
+      "size": 5262
     },
     {
       "path": "references/native-connector-and-visual-quality-gate.md",
-      "sha": "2d395fb1cfd87de83ccf340bc5e03201be19d2e3",
-      "size": 1556
+      "sha": "11931918d3a966d6f36cd8160f96cab29cc27958",
+      "size": 1604
     },
     {
       "path": "references/premium-page-archetypes.md",
-      "sha": "a1aeffd533d1584403db6902fdf0715979802277",
-      "size": 1566
+      "sha": "509c04c91e6b4f9310ab02ba34f495e6a9977902",
+      "size": 1595
     },
     {
       "path": "references/production-profiles.md",
-      "sha": "0ac4de992cf2f375ff215b31ade683d582da21df",
-      "size": 5496
+      "sha": "bf05b13ef8c0c6b97a8acf85e1ad5fda5445faf1",
+      "size": 5680
     },
     {
       "path": "references/production-readiness-gates.md",
-      "sha": "8d3a1e05e17dec3269d59a3c651599992db375db",
-      "size": 10400
+      "sha": "1e66a1253bdee2d3304dfb72e2cf7bc26648cddd",
+      "size": 10679
     },
     {
       "path": "references/redskill-distribution.md",
-      "sha": "e60a736db440e1d1ee4b794d608661a3e9995a3c",
-      "size": 721
+      "sha": "7ac209356bb043f812af681249618ebd2e49c819",
+      "size": 729
     },
     {
       "path": "references/renderer-capabilities.json",
-      "sha": "871c7d2eb966217b0c8b0536bfab82bfaf095d55",
-      "size": 4693
+      "sha": "e0e1d8c29b451a953c8fbdee48fdcd100f443446",
+      "size": 4870
     },
     {
       "path": "references/routes/legacy-standard-style-pack.md",
-      "sha": "76760b468709896f3b7af72a0d03f174c3b85f0e",
-      "size": 4391
+      "sha": "ecd63095de82f1bd46996d69384ecbfa92911cca",
+      "size": 4490
     },
     {
       "path": "references/routes/v4-authoring-contract.md",
-      "sha": "e31af0e350b3bb77a734ec0696349cbd087f71c1",
-      "size": 6741
+      "sha": "54aac2163f599200af232469042848f1c90d3647",
+      "size": 6899
     },
     {
       "path": "references/routes/v4-bespoke-route.md",
-      "sha": "70267041178e7095dd8b8b440824af5cd2995665",
-      "size": 2275
+      "sha": "6c73bc30cdee5a527d1ef5d5b53a6f39ee830a86",
+      "size": 2328
     },
     {
       "path": "references/routes/v4-template-generalization.md",
-      "sha": "8ef91afc3589a1dd4c5fad5bb1a5eaa4b5d58a9c",
-      "size": 3602
+      "sha": "cf7965bc1a83f0bb4a77a4e2baf0eb6c14a79799",
+      "size": 3685
     },
     {
       "path": "references/routes/v4-template-route.md",
-      "sha": "d2c0c4a45cc2e33db44471dad20ac0088b32f9d1",
-      "size": 9149
+      "sha": "006e3d9e8a8ec9021345bb2debe8ff4a17ee5961",
+      "size": 9306
     },
     {
       "path": "references/routes/v4-three-route-architecture.md",
-      "sha": "52a664ef057a79902a16d9e2fef349aa6e7b52bf",
-      "size": 2622
+      "sha": "dd32f39a6a6786f88ddc41dbe0e69b932caa4393",
+      "size": 2676
     },
     {
       "path": "references/spec-to-deck-visual-priority-gate.md",
-      "sha": "fb1c53adc936a2daca3f26a0e8eb7320d060878a",
-      "size": 1521
+      "sha": "c8a2e12f34f642ca8ce9d487e8933e5b010376b5",
+      "size": 1568
     },
     {
       "path": "references/style-palette-options.md",
-      "sha": "95c7b3371b8e0e188ea3edf2a6dc83d5705dfa4a",
-      "size": 2575
+      "sha": "f68c529416ea776edf48c51e1f5cc322f0ba4810",
+      "size": 2671
     },
     {
       "path": "references/template-packs/azure-insight-architecture.json",
-      "sha": "4e9f898c7118ea7e4d349824a4f3df41764e9b41",
-      "size": 2142
+      "sha": "eaf89d1e0dee90cb2fcd00f39d28f186c4bfdb75",
+      "size": 2208
     },
     {
       "path": "references/template-packs/editorial-knowledge.json",
-      "sha": "7473425946da7280f744e130cdc75ad1d40e0100",
-      "size": 7102
+      "sha": "e3fcd028ab7450418f64785717fd8f5136db85fe",
+      "size": 7351
     },
     {
       "path": "references/template-packs/technical-blueprint.json",
-      "sha": "6ae46cf3930e25785d074a5685e2c919f863b36c",
-      "size": 7445
+      "sha": "accb46703a7174196664c063320fc13c7b664a8f",
+      "size": 7703
     },
     {
       "path": "references/template-visual-design.md",
-      "sha": "b4b7f3e59a2049fbfca0b2fd42452ab156e81f79",
-      "size": 5001
+      "sha": "a2b4c0e7a64e2d39bd43325cee0bba3ca1a58030",
+      "size": 5076
     },
     {
       "path": "references/verification-harness.md",
-      "sha": "aa659f3d99082f83b9b22047a8d70b712a2190d3",
-      "size": 3621
+      "sha": "ca6a68b3f1e5d29de156453ce474cf9d268399d0",
+      "size": 3759
     },
     {
       "path": "references/visual-design-archetypes.md",
-      "sha": "0e04d594ef1005cf86e7e7132630dbe589c611de",
-      "size": 3275
+      "sha": "02ddb29a8ca5a771ae87c9608d687e8a92a9f13e",
+      "size": 3428
     },
     {
       "path": "references/visual-systems.md",
-      "sha": "ac3d80dc46f373f43ab3d934ad9c39be6cf07792",
-      "size": 2745
+      "sha": "67e3e137dd0b1d04fbf0d821b57ea4cd8f31964d",
+      "size": 2824
     },
     {
       "path": "requirements.txt",
-      "sha": "cc414695226065777e2cebb0e7aad66784ea28f6",
-      "size": 65
+      "sha": "c46357b27df749417f3d16b999f316b4204b3f63",
+      "size": 69
     },
     {
       "path": "runtime/pptxgenjs/build-deck-v4.js",
-      "sha": "a19ecc6da2ab68d3a546733551b7ce932f978f33",
-      "size": 10600
+      "sha": "3dd7910de9a25e474eaf02fa4f485b44ab5baf60",
+      "size": 10899
     },
     {
       "path": "runtime/pptxgenjs/build-deck.js",
-      "sha": "9bcfc46d0b01fecdd640d36bbfb4c1ee22badeed",
-      "size": 23217
+      "sha": "4ad401df1d8b625706126bfc87f5715c3e121794",
+      "size": 23756
     },
     {
       "path": "runtime/pptxgenjs/package-lock.json",
-      "sha": "b53d3920dfd0edd837f90014fd43d477246877cd",
-      "size": 6832
+      "sha": "747ec997f5639b35f7b4d045005af32caf6b08b6",
+      "size": 7004
     },
     {
       "path": "runtime/pptxgenjs/package.json",
-      "sha": "9bda4727fde2bfb5290548a973f812bee80295c6",
-      "size": 246
+      "sha": "61d03692ca87237108d258f1c308973fd58336b8",
+      "size": 257
     },
     {
       "path": "schemas/asset-manifest.schema.json",
-      "sha": "96b829026364d18d4a987b7c8ab6280992bffbf5",
-      "size": 1412
+      "sha": "64f688b3738f3bde38866eafac35a3573a925cf4",
+      "size": 1442
     },
     {
       "path": "schemas/audience-route.schema.json",
-      "sha": "68d00ce189c8b56d9536391c445b01b8a1d2d414",
-      "size": 3391
+      "sha": "721a2ce974bd83f5b549af8869d7053429cb2f0f",
+      "size": 3497
     },
     {
       "path": "schemas/build-manifest.schema.json",
-      "sha": "442b130ef796eca6a4693928f1d641750a4d0418",
-      "size": 4077
+      "sha": "1ec870e20ce731a5dfac65d1b78072c952c73fdd",
+      "size": 4176
     },
     {
       "path": "schemas/builder-adapter.schema.json",
-      "sha": "3d4bedc4364cfe9f5d1ea5d6dad108632280c62d",
-      "size": 1678
+      "sha": "cccbd2a6587b629b3aff56e64f31d3826a57df1b",
+      "size": 1718
     },
     {
       "path": "schemas/capability-report.schema.json",
-      "sha": "d797920ed1507b28f37e7e378119bc639093d165",
-      "size": 3414
+      "sha": "acf9a64154a4839c39c96908ca088b7111c03721",
+      "size": 3499
     },
     {
       "path": "schemas/component-registry.schema.json",
-      "sha": "c20e39f5d40257b87b890244988f8b6b996ca826",
-      "size": 3996
+      "sha": "7da57c889443a66788d9becbd8151ba49db9b44d",
+      "size": 4089
     },
     {
       "path": "schemas/delivery-manifest.schema.json",
-      "sha": "2b672abecbb174c51ac8bcc4171e80003e28a942",
-      "size": 4533
+      "sha": "832dc4dba0a0497388c12114a6dd276d4a958bc1",
+      "size": 4681
     },
     {
       "path": "schemas/delivery-plan.schema.json",
-      "sha": "0b763b6600ea99784880d36979faab0a76482a01",
-      "size": 4956
+      "sha": "f5f4f669741c5028ac905f3488e678edf181aeb3",
+      "size": 5077
     },
     {
       "path": "schemas/design-review.schema.json",
-      "sha": "7aa6c8c4cb9eab2956cde918fe6503cce9776d37",
-      "size": 3802
+      "sha": "d345a399747e5b14b3144449d4b8fc04c10254ee",
+      "size": 3979
     },
     {
       "path": "schemas/design-task.schema.json",
-      "sha": "98b2987859167470bcfa2fcaa7c4278a4dbc0bdb",
-      "size": 51938
+      "sha": "f21250194710aac80e4f44715f4a296eb6dd7f2c",
+      "size": 53774
     },
     {
       "path": "schemas/diagram-ir.schema.json",
-      "sha": "062a1d024ad50cfd0d3ef8d9895f0338dfa8b939",
-      "size": 10693
+      "sha": "797a95b222c1f960b2ba9c35c6e47e0ab607896d",
+      "size": 10897
     },
     {
       "path": "schemas/page-design-intent.schema.json",
-      "sha": "33cfbb1e1d7389b263fd4be0890b1d9f3d3ceac1",
-      "size": 2968
+      "sha": "828a45a44e47cb80fdfa3a5f5e885a4b085f74a3",
+      "size": 3115
     },
     {
       "path": "schemas/ppt-ir.schema.json",
-      "sha": "ae1b92f87b5315259a5ac2637563cf456bd83493",
-      "size": 7444
+      "sha": "76491306702b446adae8edfa94440c3a7a9d43ce",
+      "size": 7614
     },
     {
       "path": "schemas/pptx-inspection.schema.json",
-      "sha": "965f2d0daa32caa2c6bfd99041bfb510232d58e9",
-      "size": 4135
+      "sha": "6efb83230807bbaf3883c135d6b9a82e546beed8",
+      "size": 4261
     },
     {
       "path": "schemas/qa-report.schema.json",
-      "sha": "29aea6c534c11a8f3b9c88120d6c8d1a8103b4b1",
-      "size": 2414
+      "sha": "d3ae1c16f096f50b808268f3c0cfe87fef39a4e1",
+      "size": 2465
     },
     {
       "path": "schemas/render-report.schema.json",
-      "sha": "370d84090021673cdd6711f12b9e640f44cfa11a",
-      "size": 2224
+      "sha": "734dcf9eb496cf4e494088434d96a1da991f3327",
+      "size": 2296
     },
     {
       "path": "schemas/rubric-score.schema.json",
-      "sha": "486425037fba65881328bce6ec72351d27bf0273",
-      "size": 2528
+      "sha": "8ab9c00b3c9d36082380c7fe419b2afbcda272b1",
+      "size": 2600
     },
     {
       "path": "schemas/source-context-brief.schema.json",
-      "sha": "3ca0b2c54777f6b5641e3ec6083287824d3f2de0",
-      "size": 1214
+      "sha": "57c4ae18fb1107a102c11576a57709a5e1b71d52",
+      "size": 1255
     },
     {
       "path": "schemas/style-contract.schema.json",
-      "sha": "6c99c25c3bb854e20461879ff47ff71a9763171a",
-      "size": 7012
+      "sha": "5ba6e57352895f6986879c2f15e042fcf4845603",
+      "size": 7188
     },
     {
       "path": "schemas/task-route.schema.json",
-      "sha": "b890c8a2b1b48c55c4724a634d4c5954fb199263",
-      "size": 2524
+      "sha": "399e713ace55aabb46afe2ffe84c78b6e7ce13b4",
+      "size": 2635
     },
     {
       "path": "schemas/template-pack.schema.json",
-      "sha": "f5002476f5253ca723109d960aa8ceff0e20cb0f",
-      "size": 6002
+      "sha": "c12733dd9cdabd5cba23466585e37ee63306ea0e",
+      "size": 6130
     },
     {
       "path": "schemas/v4/README.md",
-      "sha": "52f48766d4a1feaf38f57b2c10013e6a405f8217",
-      "size": 3787
+      "sha": "d0ea6520ec75474f689dc13c7a5d2f91900923f5",
+      "size": 3852
     },
     {
       "path": "schemas/v4/decision-trace.schema.json",
-      "sha": "b8803cd0ef5d75c1cf85252f33d55def4565318a",
-      "size": 7474
+      "sha": "f8051e018bdb14e09ee74acbfc6eb1a626100095",
+      "size": 7644
     },
     {
       "path": "schemas/v4/design-contract.schema.json",
-      "sha": "569608e1915e2ac66c870e784e2974e2b3105f54",
-      "size": 3228
+      "sha": "06371527da8c6fd49d6c644a0874a53991aa0769",
+      "size": 3299
     },
     {
       "path": "schemas/v4/examples/decision-trace-example.json",
-      "sha": "cd75ad0e115b3d2dfa2b78142472104fb9077da0",
-      "size": 2351
+      "sha": "a576b918ef3550c4b2591f521237f6e7ec916705",
+      "size": 2428
     },
     {
       "path": "schemas/v4/examples/presentation-ir-enriched.json",
-      "sha": "84197d6372fe5e5e37bc31c3dbb4c8aa669d4f12",
-      "size": 2748
+      "sha": "04d64ea1a0eb8facd1437c6ae286290574068b34",
+      "size": 2830
     },
     {
       "path": "schemas/v4/examples/presentation-ir-minimal.json",
-      "sha": "a1c380707d3ee0c7a7f0378294c98426ce2f2d30",
-      "size": 1013
+      "sha": "35d1f14287e3ba8c76b80db97f5df90450dd5fe1",
+      "size": 1044
     },
     {
       "path": "schemas/v4/examples/presentation-ir-model-directed.json",
-      "sha": "32fa31b933d262be715d6c935684529e2e1d495a",
-      "size": 3510
+      "sha": "bd77b662fa2f1a4733a1f520f318369f40b759ce",
+      "size": 3616
     },
     {
       "path": "schemas/v4/examples/presentation-ir-v41-chart-diagram.json",
-      "sha": "75c5844728fc0b8f72422650def1d7d07e9884d5",
-      "size": 1844
+      "sha": "84d1b270133b57544542c6bcc161857c70f24f83",
+      "size": 1889
     },
     {
       "path": "schemas/v4/examples/render-plan-example.json",
-      "sha": "ab324b36e741f1e37cf0f9e96a2c9784ee2eb4ef",
-      "size": 3632
+      "sha": "c615ed50b7c8e15a54ed2643fb1cac6bbe9dea9f",
+      "size": 3741
     },
     {
       "path": "schemas/v4/examples/style-editorial-v4.json",
-      "sha": "b81034d47d6c968e0098dfa3f1cf9cb1d83c3cc0",
-      "size": 2953
+      "sha": "4d2ddb97bd7311f942181dd96bd07a7b7f797b77",
+      "size": 3043
     },
     {
       "path": "schemas/v4/narrative-contract.schema.json",
-      "sha": "3d3eb6d42ed691d03f9df870bb8f072e42e03713",
-      "size": 4685
+      "sha": "2ebe8977e9a963b667ef72c97c5bff30f268a55a",
+      "size": 4837
     },
     {
       "path": "schemas/v4/presentation-ir.schema.json",
-      "sha": "1366007f4f018e1b8353261b4e889f0a09770218",
-      "size": 27860
+      "sha": "4458378c7cad94117ffd10378afb7ab778d9f964",
+      "size": 28549
     },
     {
       "path": "schemas/v4/production-request.schema.json",
-      "sha": "ffc8fd16cf8d2130a991e0b7643c59d23a230d1c",
-      "size": 3571
+      "sha": "d91dc0ed6d55fb05d36f0a943c4571a5f9a03f6f",
+      "size": 3662
     },
     {
       "path": "schemas/v4/render-plan.schema.json",
-      "sha": "83e858ac923ac339335076b5984c861bca8278e2",
-      "size": 13590
+      "sha": "13e25d3de184d69ba40c38a320346621a82cc5c1",
+      "size": 13903
     },
     {
       "path": "schemas/v4/style-contract-v3.schema.json",
-      "sha": "6c99c25c3bb854e20461879ff47ff71a9763171a",
-      "size": 7012
+      "sha": "5ba6e57352895f6986879c2f15e042fcf4845603",
+      "size": 7188
     },
     {
       "path": "schemas/v4/style-contract-v4.schema.json",
-      "sha": "766d1f8c48e63751c3cbc0874c82b51abf424c36",
-      "size": 13909
+      "sha": "19a0228d4f4886f7f3688e7d77a4bc2fe2d86c7c",
+      "size": 14213
     },
     {
       "path": "schemas/v4/template-evidence.schema.json",
-      "sha": "be2b6dbd4fed56f3572316b713c560a4229de626",
-      "size": 5039
+      "sha": "c98a1666b346e2ef7f0bd24b8825774be1eab08d",
+      "size": 5164
     },
     {
       "path": "schemas/visual-plan.schema.json",
-      "sha": "2fc374cf0e4df31ffda0b922599d34b61a35ce98",
-      "size": 4713
+      "sha": "a43c049e988b1a20003b0de390b8025883a69b1c",
+      "size": 4871
     },
     {
       "path": "schemas/visual-revision-request.schema.json",
-      "sha": "69080163ee920b8b2472c4c9f8097ad2ff71314e",
-      "size": 2930
+      "sha": "8bea20117396eb682e01de579e8d7caf809df8f8",
+      "size": 3047
     },
     {
       "path": "scripts/analyze_diagram_complexity.py",
-      "sha": "f8059b204033d27c296c8dedf18d574e1746ee52",
-      "size": 1047
+      "sha": "85f28fc5a0c8d50e3d23d8ebff882dcaf46bbb4d",
+      "size": 1081
     },
     {
       "path": "scripts/audit_bundle.py",
-      "sha": "e5759ce2654bba0259cb806fe8a6e9f767241dc9",
-      "size": 20874
+      "sha": "ce938b1041475327fa49cd6e27bf4d4a1207adaf",
+      "size": 21346
     },
     {
       "path": "scripts/bind_golden_anchor.py",
-      "sha": "50dbb113056faf3d1bd2f8dc032220f6c408c345",
-      "size": 7132
+      "sha": "7091a0e1e325b6b33ff53f999eaf2b41c4913175",
+      "size": 7316
     },
     {
       "path": "scripts/bootstrap_pptxgenjs_runtime.py",
-      "sha": "ec9aa3cf133fcc25b858208964d36c02080df2db",
-      "size": 4792
+      "sha": "0d55c21f7a22d6f9836e54d62ea4215e4b9eaa60",
+      "size": 4910
     },
     {
       "path": "scripts/build_deck.py",
-      "sha": "2f57412e02ca89a05d180882171faaefcb5b46d6",
-      "size": 6459
+      "sha": "ab814662f41db20326c4450b6f598ddffaea0f5a",
+      "size": 6614
     },
     {
       "path": "scripts/build_public_bundle.py",
-      "sha": "6e263fe77937a61a80088c1f197ec08bb6a22ffd",
-      "size": 4575
+      "sha": "83b8ae2f88bf5fd9d2c2e786cfebd6679aba1d7d",
+      "size": 4707
     },
     {
       "path": "scripts/capability_probe.py",
-      "sha": "3fc57e4a50a458ce475395c1c66ae470e09d4b85",
-      "size": 21149
+      "sha": "9102010e54d3cc4cc4a5c8654bf87594a5952a0d",
+      "size": 21705
     },
     {
       "path": "scripts/check_identity.py",
-      "sha": "915b39729234ee15eff06a64a4e3b34fad6a810c",
-      "size": 5089
+      "sha": "b5d297e9523c44638856e8b623efaec7de5831d5",
+      "size": 5212
     },
     {
       "path": "scripts/compile_visual_plan.py",
-      "sha": "32da2d1f0b2cca6a0a2fc24e6f84453da38d4529",
-      "size": 14539
+      "sha": "4ae2ca7aeb649a4be9f51c6df8df48cc98a253a2",
+      "size": 14860
     },
     {
       "path": "scripts/diagram_ir_tools.py",
-      "sha": "d63ff727bf31ce851d12204b643daa6d5518196f",
-      "size": 22629
+      "sha": "654ac9318ae612e475edbd925ed41c191a60c51e",
+      "size": 23032
     },
     {
       "path": "scripts/extract_design_evidence.py",
-      "sha": "57416d6c54a67cf8fd1d84fbbd92e3c3ac6e8a88",
-      "size": 1293
+      "sha": "95140eaaad0562a78604914a79fe876efd077b96",
+      "size": 1334
     },
     {
       "path": "scripts/generate_font_metrics.py",
-      "sha": "bda8b70258f7aedfb8b5dda3e4d8e12b6bd03392",
-      "size": 3283
+      "sha": "7179752a5160ee86109b07277ad68e33d3ad4496",
+      "size": 3382
     },
     {
       "path": "scripts/inspect_pptx.py",
-      "sha": "87c953580b34ac8caf319046b269b5110ecf9cd9",
-      "size": 7595
+      "sha": "05b8b696b8c54c07009bccbeed00107cf35cc9ad",
+      "size": 7749
     },
     {
       "path": "scripts/ir_enrichment.py",
-      "sha": "1ce0004c5c8e2d8aecb6290f34d7a6d126fe595c",
-      "size": 9982
+      "sha": "719a1e8572bef9a7f18f5cfc2ea70e9a374ce04c",
+      "size": 10202
     },
     {
       "path": "scripts/ir_quality_floor.py",
-      "sha": "1040639b738c0f98e9adeb63ee2121ccdd7f019f",
-      "size": 10598
+      "sha": "d55a798d7b694a68d123f69dd85ad5717590ca56",
+      "size": 10811
     },
     {
       "path": "scripts/migrate_manifest_v1_to_v2.py",
-      "sha": "f01d80e1d34f654b1fc7975d28a05c4d7bec7ea8",
-      "size": 7451
+      "sha": "3c71bdcefed6fd0a6d58dd4b171553a5a144c280",
+      "size": 7624
     },
     {
       "path": "scripts/migrate_style_contract_v1_to_v2.py",
-      "sha": "bca6cce7cdc0472308e36930ef336fa988804903",
-      "size": 10522
+      "sha": "497f8d0dca48ad649073ec9936b804b5ca3d4139",
+      "size": 10689
     },
     {
       "path": "scripts/migrate_style_v3_to_v4.py",
-      "sha": "af3a62e39cb6a6a432ec171147d760bd411f0841",
-      "size": 8208
+      "sha": "c30e20f8f54288383ec71e3500b60d412b989516",
+      "size": 8406
     },
     {
       "path": "scripts/normalize_bundle_paths.py",
-      "sha": "b6f10b5aee14e5f676cf1bf05f8a3f525065764f",
-      "size": 5666
+      "sha": "4fb0912f7e5c51dd139d3a6668c83690e8849348",
+      "size": 5802
     },
     {
       "path": "scripts/normalize_diagram_ir.py",
-      "sha": "e166ed2f27d0ac18499101981dc34b1781e0455c",
-      "size": 937
+      "sha": "07da364cb68b9823de6f4d30dbeecc10ced9529b",
+      "size": 966
     },
     {
       "path": "scripts/package_delivery.py",
-      "sha": "def4dd051b78ad4d7c3bad9420c5444ec28d61c3",
-      "size": 23838
+      "sha": "afc7ddcaa94141c1996e81635456aceffea1d766",
+      "size": 24423
     },
     {
       "path": "scripts/plan_visual_narrative.py",
-      "sha": "8048ee4cbb3b34270f9c6fbb364f598036e05d37",
-      "size": 2000
+      "sha": "8e88f41d5fb81a7316d63cb39606dc7a72d35180",
+      "size": 2054
     },
     {
       "path": "scripts/quick_validate_skill.py",
-      "sha": "e2f6a3e32f64c1325f401c5442c99113cf11639a",
-      "size": 1458
+      "sha": "51a5c5c4cb7179faf052c6c95388d663f95126dc",
+      "size": 1503
     },
     {
       "path": "scripts/recommend_diagram_layout.py",
-      "sha": "68d25194d8e8bdacf3cacb7570076f31a7ccaee0",
-      "size": 971
+      "sha": "088058fac8a9d248215b527967e9002a491143cb",
+      "size": 1003
     },
     {
       "path": "scripts/refine_code.py",
-      "sha": "e1e5aeed5eedeb4f812c40074639eb327efb1b3c",
-      "size": 6799
+      "sha": "92270530f42e3edd3ef0d25e2dbe5e33e6574280",
+      "size": 6958
     },
     {
       "path": "scripts/render_pptx.py",
-      "sha": "e9fcf5353e64d73e223a1f13c096c5a30b41b67d",
-      "size": 5785
+      "sha": "792c250fd9259fb2b7e36b5401c2ba5f81e29ae9",
+      "size": 5918
     },
     {
       "path": "scripts/repair_deck.py",
-      "sha": "07397ed6d9eea1cad84cf251916386664377613f",
-      "size": 4716
+      "sha": "ffd10dff07e73ade7f89110cfe7c9c2803771948",
+      "size": 4830
     },
     {
       "path": "scripts/resolve_component_delivery.py",
-      "sha": "6de70e6da464387a423cb4ee9afc974515a02115",
-      "size": 18028
+      "sha": "8cfa49a0363c44876140534ca2ed1668060caf55",
+      "size": 18449
     },
     {
       "path": "scripts/resolve_production_profile.py",
-      "sha": "1aa6f4d1882bbd454e805ed25aa95d528fdf8eb4",
-      "size": 10122
+      "sha": "45997a043f1a0d3709b846494539b8b5bdc1fbe8",
+      "size": 10398
     },
     {
       "path": "scripts/route_audience.py",
-      "sha": "b2310a4dc2bba632939ab75818d55b9f40ec6757",
-      "size": 1603
+      "sha": "0628c63c992c0e43ce7272315d71a490d3a98910",
+      "size": 1650
     },
     {
       "path": "scripts/route_task.py",
-      "sha": "12ce3cf7844ec0c2957566b822228cab18c9aa1e",
-      "size": 1719
+      "sha": "5c41f7bcd23cac1bda7b117db2c6382b79b76ff8",
+      "size": 1773
     },
     {
       "path": "scripts/run_pipeline.py",
-      "sha": "5e7247ea7a433019c093ee0adceb03d3ca8e1e2f",
-      "size": 40301
+      "sha": "10fb6babd5c36582b886b01e19b5ff2028c54da4",
+      "size": 41195
     },
     {
       "path": "scripts/score_deck.py",
-      "sha": "63e7ddf3b8e6d2a5fb082c983b77155b3ccd3e44",
-      "size": 25184
+      "sha": "f93499989bdbaa559833c4a5f69d8d0404b5e988",
+      "size": 25785
     },
     {
       "path": "scripts/score_v4.py",
-      "sha": "cccaf62142fc45f38097bcaddba1c0dc4f031cc2",
-      "size": 9617
+      "sha": "73850db6a7e02a4315e01fa6cf2d8d0848b2bc6a",
+      "size": 9857
     },
     {
       "path": "scripts/template_from_pptx.py",
-      "sha": "fa9ad0c067c205d9f5cbc26bd90f4c80145f50ae",
-      "size": 12355
+      "sha": "69cf1331d18ac4f4d6d94a230236d88ea3d8f77b",
+      "size": 12665
     },
     {
       "path": "scripts/validate_contracts.py",
-      "sha": "152c3dc028de8fcce7c26ddf8dd46c42b75095c5",
-      "size": 44335
+      "sha": "370e1756ca6eecdc05ca25a3acc5ee0d94a809ee",
+      "size": 45185
     },
     {
       "path": "scripts/validate_diagram_ir.py",
-      "sha": "5524f71a32c31cec8e9ba93b174c1ed865973e06",
-      "size": 1699
+      "sha": "a62b5154ab0b74f4302c7ddd765c8f892e5eb0a7",
+      "size": 1748
     },
     {
       "path": "scripts/verify_deck.py",
-      "sha": "375e255f8e505ecdc98fa2f5289d7127a58e2331",
-      "size": 10383
+      "sha": "24283a1c550b582278cdaeb0334500acad71f0a4",
+      "size": 10609
     },
     {
       "path": "scripts/visual_narrative/__init__.py",
-      "sha": "b80f4fc737983b557103627286241ac80933382b",
-      "size": 65
+      "sha": "525c40f9d8889f6525c4638fd24f30df95e54181",
+      "size": 66
     },
     {
       "path": "scripts/visual_narrative/audience_router.py",
-      "sha": "797f57d4ff23c8a3c4187831b4d9003594dd159f",
-      "size": 7357
+      "sha": "902487bf71c35a97a480fe59b410cd2fc574f2b6",
+      "size": 7530
     },
     {
       "path": "scripts/visual_narrative/design_evidence.py",
-      "sha": "2fa6a7e03f94a54eb637162db93c8f70ef8f1393",
-      "size": 11853
+      "sha": "bd7a7d178d8c65737c878be2615bd916fa1675ac",
+      "size": 12110
     },
     {
       "path": "scripts/visual_narrative/intent.py",
-      "sha": "de5ee6c6dc42f8b11445b2a5ae53981af5003ad1",
-      "size": 1151
+      "sha": "c3cf36a79be3131b270398582ced751b9c761878",
+      "size": 1193
     },
     {
       "path": "scripts/visual_narrative/planner.py",
-      "sha": "3c50fdd64ebc7def30d0d84e082a00b9f48e9c94",
-      "size": 12008
+      "sha": "141cc54e7747a7861e914694c4739faf2d8960c8",
+      "size": 12321
     },
     {
       "path": "scripts/visual_narrative/renderer_registry.py",
-      "sha": "0fede38337ed4eefc50bf99310aa0764de40e01a",
-      "size": 11068
+      "sha": "2171580f0d6f4937d3e3c8bf39ede270d94116ea",
+      "size": 11376
     },
     {
       "path": "scripts/visual_narrative/renderers/__init__.py",
-      "sha": "2a888bb24ea84de8b034ba58634ec960a3633269",
-      "size": 847
+      "sha": "843d93cbd3a75ba414a5c3e4b7dc3ab2aaced3e1",
+      "size": 878
     },
     {
       "path": "scripts/visual_narrative/renderers/causal_chain.py",
-      "sha": "3411cc3c66cd6c61c7fdbd5ca2f879eeb0d837b1",
-      "size": 1969
+      "sha": "fbdca3138d324e887eb4a24b3b516c435d1c551a",
+      "size": 2011
     },
     {
       "path": "scripts/visual_narrative/renderers/common.py",
-      "sha": "24dcbc8f05c61a450de1f3d17cd3b42896b09251",
-      "size": 7359
+      "sha": "1bc61c2c8aef2467a07e997ba31663eedefd2979",
+      "size": 7618
     },
     {
       "path": "scripts/visual_narrative/renderers/drill_down_stair.py",
-      "sha": "771d6b4c62a34253386b7c7abefa3ddac0eaed16",
-      "size": 2175
+      "sha": "cdcff44e98b335cfed403f6be074a9c8c1f7d400",
+      "size": 2239
     },
     {
       "path": "scripts/visual_narrative/renderers/heat_matrix.py",
-      "sha": "8602583a365cd8894ef23df755c3fc3073300d3b",
-      "size": 4456
+      "sha": "8fb02b589a49752607c6f72d6087c8d594f7fa3b",
+      "size": 4583
     },
     {
       "path": "scripts/visual_narrative/renderers/interaction_storyboard.py",
-      "sha": "da8ab2bba87d47669d1399245be8cde27e0b77ac",
-      "size": 7808
+      "sha": "cff655bd0ed9b3d08dcbf9302eb0f82785992d5c",
+      "size": 7991
     },
     {
       "path": "scripts/visual_narrative/renderers/layered_architecture.py",
-      "sha": "a582c897e4fa55420e7c59804f8448f8ccf06f6c",
-      "size": 3061
+      "sha": "ae0b00bb9560ab6d98a20a83a2e5443c15ce7765",
+      "size": 3162
     },
     {
       "path": "scripts/visual_narrative/renderers/phase_roadmap.py",
-      "sha": "5e216d810bb0d4215edbd1d4c3dff56c146d43e6",
-      "size": 3390
+      "sha": "0edefee2ef42a6200a2d7bec49c3db20a67889eb",
+      "size": 3490
     },
     {
       "path": "scripts/visual_narrative/renderers/product_ui_overview.py",
-      "sha": "3b18ab168cd7ccbbaf5551f55f74a274507de1f2",
-      "size": 7645
+      "sha": "69769a5d02426744cb0e6d699300e50deaa2f590",
+      "size": 7827
     },
     {
       "path": "scripts/visual_narrative/revision.py",
-      "sha": "c87aae5b41cc827a880299753038003967bd2aee",
-      "size": 8241
+      "sha": "9c9cd2d7a86f5cae7c4a39091a9aca0475093bc5",
+      "size": 8480
     },
     {
       "path": "scripts/visual_narrative/rhythm.py",
-      "sha": "3eae572daa897f677523dc887b5e7a707acdfa10",
-      "size": 3570
+      "sha": "b5fc415ad69b2d0891791dbfe3b2b3c2a29729d2",
+      "size": 3692
     },
     {
       "path": "scripts/visual_narrative/task_router.py",
-      "sha": "76d8da791f27610cbf4aba8d04ef815c1f96d134",
-      "size": 2512
+      "sha": "261317aae2150a9c05868f9449d1d81a5e7cb5c4",
+      "size": 2594
     },
     {
       "path": "skill-card.md",
-      "sha": "19e84d192cc58a4cf6c492402f93fdb936c94d70",
-      "size": 6280
+      "sha": "e497e6cf559205e0041c987575a348b8dd1eeb40",
+      "size": 6363
     },
     {
       "path": "styles/consulting-blueprint-hybrid.json",
-      "sha": "51bcd6a22dc3a4cd587c2f8b372afd1ad7ea397b",
-      "size": 6799
+      "sha": "dbcf01a661b0e8a48b34a6b59e07cbd13087393e",
+      "size": 6854
     },
     {
       "path": "styles/consulting-light.json",
-      "sha": "836493b26f510f54e3270ca0d5e160be12db06a2",
-      "size": 6738
+      "sha": "670767b3408a8d2eec750eb639a64517929772e1",
+      "size": 6793
     },
     {
       "path": "styles/editorial-knowledge.json",
-      "sha": "bfd841eae2bbae10ab505563510f3e743dfe35f2",
-      "size": 6753
+      "sha": "e955a2e4ec50211af6e68cfefe6cb14d6bd52ce8",
+      "size": 6808
     },
     {
       "path": "styles/product-report.json",
-      "sha": "4a4ed5a9cae3ffc57e8d5bee935ceadb53adab3a",
-      "size": 6742
+      "sha": "24705051c94bad669b2c718cc7afd431d6e0a17b",
+      "size": 6797
     },
     {
       "path": "styles/technical-blueprint.json",
-      "sha": "2163b2d35c4e1e8d0774a677b4dda5b3d7dfddf1",
-      "size": 6761
+      "sha": "de47b2b962478fc271ef09b15cd64c7e78a2e54d",
+      "size": 6816
     },
     {
       "path": "templates/README.md",
-      "sha": "0d6b53b515de41842767a82f3c9dee8b14f03d1b",
-      "size": 3081
+      "sha": "2816320f3d1ed2b3c8a462281fe29ac285721b38",
+      "size": 3131
     },
     {
       "path": "templates/build-manifest-example.json",
-      "sha": "3964d569f1e29d7b36a986adf77616ba08784791",
-      "size": 1733
+      "sha": "b383b6467145e4712f345eb18f9b5c806fc20416",
+      "size": 1789
     },
     {
       "path": "templates/capability-report-example.json",
-      "sha": "61393ef6bd11818e1027f5c00be2b1d978a0aeca",
-      "size": 2920
+      "sha": "1dc7506452b3d4a2e965dc0bc49ab4c4124e39cc",
+      "size": 3016
     },
     {
       "path": "templates/component-registry-example.json",
-      "sha": "c3ce7405e108b4a7a249f0784822c03adaf16fa3",
-      "size": 1219
+      "sha": "0e922c065686d20f07a4b3ed3a52aca9318ce35f",
+      "size": 1244
     },
     {
       "path": "templates/content-lock-template.md",
-      "sha": "8eca9fe201cd5f1ab49c27bc38633cc74f0e231d",
-      "size": 3201
+      "sha": "2391df5cbe35b3c2585ddac6a6a3dd9a4a615aaa",
+      "size": 3300
     },
     {
       "path": "templates/delivery-manifest-example.json",
-      "sha": "11bbf52b10ff0efcd065dad1d2e6b1f188d5a0d2",
-      "size": 1627
+      "sha": "a0a112a82ff60912990442f66690363db82216cb",
+      "size": 1691
     },
     {
       "path": "templates/delivery-plan-example.json",
-      "sha": "99f210b30d216b62af313566700f582da10f37d3",
-      "size": 1694
+      "sha": "8d08dba3762b5a8632ba53a923329cdfe56bcf5d",
+      "size": 1736
     },
     {
       "path": "templates/design-language-schema.json",
-      "sha": "c39976ac5fd267a36a00efc98daf50b09d513f02",
-      "size": 324
+      "sha": "0e85a1ce79608f9594ef5d6aebb288e71c178f9a",
+      "size": 331
     },
     {
       "path": "templates/diagram-ir-example.json",
-      "sha": "d495442cb2b0892cb903f66333dc0952c5c23cb5",
-      "size": 2681
+      "sha": "ff4242263b36bfe67d3a0475c4cfef8b86552a5b",
+      "size": 2713
     },
     {
       "path": "templates/ppt-ir-example.json",
-      "sha": "6018f1ff43142863a14fc36da78ba7fe529438dc",
-      "size": 3135
+      "sha": "68b1ada1961dce4bba4218635969c94d7b69b079",
+      "size": 3229
     },
     {
       "path": "templates/ppt-ir-source-bound-evidence-template.json",
-      "sha": "4e4464a0e3025382eb6bed12b7171dc939f1b8fc",
-      "size": 3673
+      "sha": "4282482f421e33dd307906340a60b8d94cc9b70f",
+      "size": 3730
     },
     {
       "path": "templates/ppt-production-artifact-checklist.md",
-      "sha": "d660ce24125c4a54162a20dfb308308c8f3fe527",
-      "size": 2609
+      "sha": "b6a75e2b9d6bfbf5d3efd47ef96f0351c08c6253",
+      "size": 2653
     },
     {
       "path": "templates/qa-report-example.json",
-      "sha": "3ace2a3b5c04134f54464f93c8b088371de02b24",
-      "size": 1782
+      "sha": "eb07279c2cb638050eafe47ecc304be5b357762b",
+      "size": 1831
     },
     {
       "path": "templates/rubric-score-example.json",
-      "sha": "5f71deb8d062a43d740a17e050863c0df364fb93",
-      "size": 2175
+      "sha": "dabe2a926cdfb7235e19cee0b5a4de66e218646e",
+      "size": 2249
     },
     {
       "path": "templates/slide-manifest-template.json",
-      "sha": "93b512c63d94d85ee8d128767fd5bd5eedb549e2",
-      "size": 3268
+      "sha": "b93213cf0d6b982fabc94e1bb3ddbf798032ab8c",
+      "size": 3339
     },
     {
       "path": "templates/spec-implementation-priority-schema.json",
-      "sha": "dd542c7484efb18539f8e8ce771bbbbb6f2ad750",
-      "size": 1185
+      "sha": "7c49a09a648f817bb3b66c1f2b0ca5125a74b30e",
+      "size": 1225
     },
     {
       "path": "templates/storyboard-template.md",
-      "sha": "514f5ebf38a6fbe191954433d8c545c01ba0d87b",
-      "size": 3939
+      "sha": "ba22938226481bc44d691c40b16fd21eddbc25d5",
+      "size": 4091
     },
     {
       "path": "templates/style-contract-example.json",
-      "sha": "d7ba2cd3d6488466c6493bb70393eb866949b5f4",
-      "size": 7087
+      "sha": "0fcdf35fe6411b6c0356e2f1bd514cb9c3f006b9",
+      "size": 7171
     },
     {
       "path": "templates/visual-qa-gate-template.json",
-      "sha": "21a90343bfe2c9f3ef18f20800cae8cc3487d6d0",
-      "size": 696
+      "sha": "08eccd0ce126cf3f652d764f47f098b6da403618",
+      "size": 722
     }
   ]
 }

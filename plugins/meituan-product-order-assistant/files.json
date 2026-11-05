@@ -3,93 +3,93 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "3e790d9923abf768ac10a49bb086507229278bfd",
-      "size": 561
+      "sha": "1319e850cdc37d1efe8f2cfda07a1b9f1a642559",
+      "size": 582
     },
     {
       "path": "skills/meituan-product-order-assistant/SKILL.md",
-      "sha": "c59ef62cdc1b1713a3a959e738be69b40e7cceba",
-      "size": 33475
+      "sha": "a4dcc0fb2fca159e7569c9086b9f661cff658246",
+      "size": 34167
     },
     {
       "path": "skills/meituan-product-order-assistant/references/DOCTOR.md",
-      "sha": "a2a6e752664c14458ad8ef0bdd9c53bc5f4a22f3",
-      "size": 4364
+      "sha": "7d37d4b33b2f87d18e4f231f165202c3e1607785",
+      "size": 4495
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/auth.py",
-      "sha": "c4ffd9dce8104bf26360d9bdca17b6bd42775e0b",
-      "size": 5198
+      "sha": "95873b8f67bc2e65e4adc3ce2b4d788aecc87a7c",
+      "size": 5349
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/config.json",
-      "sha": "eadcbee0a434aa746646fe241209ab8194391b19",
-      "size": 52
+      "sha": "ca8e211fd4df466aeedaf5582913635f737de0ad",
+      "size": 55
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/diag_issue_log.py",
-      "sha": "ed537ce6a4b553ea64ca6153c7d0f4042cdbea30",
-      "size": 2525
+      "sha": "a9f7b40b85c41045910375dfbd773b4f0d89485f",
+      "size": 2607
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/run.js",
-      "sha": "dad13206d42727138ba915b549b7047425dd9659",
-      "size": 37460
+      "sha": "d1716b479dd6771cd8daee586f317778df4957a3",
+      "size": 38468
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/__init__.py",
-      "sha": "e816461816e38b9006df042b335cf7eafe3af190",
-      "size": 17236
+      "sha": "f84b4dc8c3806478fd4b09fa0aed252985c95275",
+      "size": 17733
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/js/cliguard-wrapper.js",
-      "sha": "516080aedb687c9d2ee1e27ff2055cb126ab8e63",
-      "size": 31916
+      "sha": "4eab368de64158b76433126dd006394d846edf18",
+      "size": 31918
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/js/cliguard.js",
-      "sha": "08104d8b6d32e2d0f7b61c4b86c118416b9734d8",
-      "size": 55899
+      "sha": "8309db093381a31f86245b6574c2c21dd2d0afc2",
+      "size": 55900
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/cliguard/js/package.json",
-      "sha": "2ccd0733ffda9d474a61bd9b1988120b0b826c36",
-      "size": 43
+      "sha": "5f15366e99ba8f14fd7b8aea4f388d1dd6b3accd",
+      "size": 44
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/README.md",
-      "sha": "cb26e20fe9943c8299439601e2683bca22d84a9b",
-      "size": 322
+      "sha": "79f6682378b470a06e8f5b962067a5aef6db132c",
+      "size": 342
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/core/cliguard-wrapper.js",
-      "sha": "7b56e9eae98bf4f735d4e0292fce866b26a35ee4",
-      "size": 31979
+      "sha": "5a8b035922d0c6cefa5355e1d061b964cff2e0a4",
+      "size": 31981
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/core/cliguard.js",
-      "sha": "ab8c3ebef50db87e2f3416babe8ea7fa1d2ea1ad",
-      "size": 55895
+      "sha": "febcc60bcdca5dc963ed20364760a8100b6de28e",
+      "size": 55896
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/index.js",
-      "sha": "c87e0680506ec8c6dd5200f9acef7623b4f44b8f",
-      "size": 22500
+      "sha": "2771a99d8007a8f1025fcbe3cc408da8d98da14f",
+      "size": 22501
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/cliguard/package.json",
-      "sha": "b988a1b5d12a3db0aa4b0f74bfbae17a8dcceff4",
-      "size": 592
+      "sha": "2ead31b1e82b17a6a94593ec15cacae6071c6684",
+      "size": 622
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/loader.js",
-      "sha": "2563998cc17e606f42ad308b0a5ef50c4515d9d3",
-      "size": 427
+      "sha": "661b1e4b8aa52f523a3028a86177dba9526ea364",
+      "size": 447
     },
     {
       "path": "skills/meituan-product-order-assistant/scripts/vendor/pt-passport/runtime/index.js",
-      "sha": "a83000986afdb7f6b88ec9151a40f2b1a33c5b8b",
-      "size": 101510
+      "sha": "de9ca02e9a5be6c69f7f98e45e634728328364a7",
+      "size": 101512
     }
   ]
 }

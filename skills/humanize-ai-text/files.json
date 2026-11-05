@@ -2,153 +2,153 @@
   "files": [
     {
       "path": "README.md",
-      "sha": "0440453a3140ad002215c5115ed4f21ca5c36e54",
-      "size": 1862
+      "sha": "7ce7de61f8d81b5db9f0005d9c30681d796873e3",
+      "size": 1902
     },
     {
       "path": "SKILL.md",
-      "sha": "4e09e326b11f064e13d7a4a70b84012d1158bd92",
-      "size": 23789
+      "sha": "034690731094998d761efad0018742e6661b272d",
+      "size": 24113
     },
     {
       "path": "_meta.json",
-      "sha": "ac069c2e07b30688e8dd502370e04e603a88d589",
-      "size": 220
+      "sha": "7c097e09e4bbf5672ec0a6b2cfc96b9125b40c89",
+      "size": 229
     },
     {
       "path": "references/api.md",
-      "sha": "43695a9a92a7c7eb18c55e675d0b63cfa842ab70",
-      "size": 7284
+      "sha": "130a50ec15df7fcb30c8d8ee421919c83e7e1faa",
+      "size": 7388
     },
     {
       "path": "references/best_practices.md",
-      "sha": "b8de59061039aceebbcf2b563ec690f6569e646b",
-      "size": 6561
+      "sha": "1ed58e14de181e40db0ea8435ff4d36ca0cbd91f",
+      "size": 6696
     },
     {
       "path": "references/compliance.md",
-      "sha": "a71f600a8e72248bc8fe3a4a049eb760985f0727",
-      "size": 4157
+      "sha": "7dab3e3b2e533e0f95cf1c0ca49895df119933dd",
+      "size": 4223
     },
     {
       "path": "references/deep_rewrite_guide.md",
-      "sha": "d5e780adf12aa75f30c90bf3ea2ca0e7509b2e8c",
-      "size": 3020
+      "sha": "7ddcdbe1bf773e2b7bad4d29fdd48517378b6482",
+      "size": 3074
     },
     {
       "path": "references/errors.md",
-      "sha": "4a34c946969cde0ba96875fe6cdb872417aae340",
-      "size": 6154
+      "sha": "9bbc400d6bfb24f574a09868ec208eab7a01f221",
+      "size": 6237
     },
     {
       "path": "references/examples.md",
-      "sha": "bcd92dd3a598190211bd734bd922c3faeae067fb",
-      "size": 13765
+      "sha": "536beefba783d9fa87b9f37abb991aa617e526fb",
+      "size": 14100
     },
     {
       "path": "references/faq.md",
-      "sha": "375e15cd6216469f2894b001d5d0980705dbf115",
-      "size": 9728
+      "sha": "98b55e0d70488f0abeec8ce05db4024b7ef2e45d",
+      "size": 9830
     },
     {
       "path": "references/pdf_confidence.md",
-      "sha": "c3678b1b725cc73984a7109b64cabeee6ab43c8c",
-      "size": 4289
+      "sha": "54a4ecf7057478d653643b1b301e0d02da18971a",
+      "size": 4359
     },
     {
       "path": "references/pitfalls.md",
-      "sha": "9d59d74b408ebb009a5c643c8bae39097cd5c1b6",
-      "size": 4376
+      "sha": "905c138401a7feeffa108b4b299dad4cc0170f01",
+      "size": 4424
     },
     {
       "path": "references/style_guide_en.md",
-      "sha": "caf58a863ec253b28266eb58bb0302a4c2c465b9",
-      "size": 5937
+      "sha": "de586f1bff69a35db092998c8c09486a7e9093d1",
+      "size": 6045
     },
     {
       "path": "references/style_guide_zh.md",
-      "sha": "321a4d6260d3d843cd8be989485d66a72c06516f",
-      "size": 6381
+      "sha": "9c360b68ff568e0ea99784245448acd0de5164e0",
+      "size": 6474
     },
     {
       "path": "scripts/_sections_block.py",
-      "sha": "0b765a978daa3d62e3e5608c4d29c8fdc2e73213",
-      "size": 2163
+      "sha": "da07609ee8ab1c7d4883eeb1e190d85206a40dd6",
+      "size": 2211
     },
     {
       "path": "scripts/check_stats.py",
-      "sha": "5acfb6220e29e35a4005022d72fcd30ebe25bc1f",
-      "size": 16641
+      "sha": "8b621e00069b2b6e8f94297479fc0e2ba91dd0ee",
+      "size": 17014
     },
     {
       "path": "scripts/check_terms.py",
-      "sha": "e0d51839d23dba7ab7425d28251fd0c275c88226",
-      "size": 9413
+      "sha": "9c68706e7af0611c1036f92f0193423f0d793757",
+      "size": 9630
     },
     {
       "path": "scripts/compare.py",
-      "sha": "be453d987a3d2e089380eecb48e5d22415e4c7cb",
-      "size": 6881
+      "sha": "ecdcce2421b4b950f00b32c7af75fcf6d5123503",
+      "size": 7041
     },
     {
       "path": "scripts/detect.py",
-      "sha": "273b5b3677917c4e6f56d0c9f48cbe64d8dc5960",
-      "size": 19548
+      "sha": "d4889d6e2e7086c298900a868dfe8c77b4f0e3b5",
+      "size": 19922
     },
     {
       "path": "scripts/extract_terms.py",
-      "sha": "613e1479e4ec259c5715bbf88b2767141b2360df",
-      "size": 6291
+      "sha": "3b76ac7a24e0de0010c05b1f6043cf747d82bc8d",
+      "size": 6430
     },
     {
       "path": "scripts/hxt_core.py",
-      "sha": "35cca7e60574099949896244173dbc96c27b09ad",
-      "size": 67784
+      "sha": "cfc6031b0b2cbca419f8b905b8e08f57d7f638ba",
+      "size": 69194
     },
     {
       "path": "scripts/learn_guards.py",
-      "sha": "d94c36368c9bfcc37395c4cb124cee6fa20c99e0",
-      "size": 9281
+      "sha": "acac453cccb2345ab3ced4ff4631d3472d9d78eb",
+      "size": 9482
     },
     {
       "path": "scripts/patterns_en.json",
-      "sha": "351deb8fcc38ae89a60c747015cfbe2da99c1aef",
-      "size": 20203
+      "sha": "6a84f4d378801f94c63d5ffef1983606a06bd77b",
+      "size": 21055
     },
     {
       "path": "scripts/patterns_zh.json",
-      "sha": "86a5c6bfaf461d4806fc101722214965b079b9de",
-      "size": 15667
+      "sha": "a8499ad646bc500f8390e8525772c8a885ac18f9",
+      "size": 16327
     },
     {
       "path": "scripts/pipeline.py",
-      "sha": "473599723268d9e56678c35f99ded3164e3bdb54",
-      "size": 22489
+      "sha": "4226e0dd69e6ed9814c9f8ee3bf419e37da8bd16",
+      "size": 22918
     },
     {
       "path": "scripts/plan.py",
-      "sha": "61b4b085f1749b39a2bb368d659dbd22f355f2ac",
-      "size": 14715
+      "sha": "8f649ec13fd48586ecb90efab6c20f7c2ae79388",
+      "size": 15032
     },
     {
       "path": "scripts/reporter.py",
-      "sha": "bbf1c0e76d82af0fb933df9221d0ca5a14afafb5",
-      "size": 20247
+      "sha": "de972ce0dc919419e865c613b87588561401e518",
+      "size": 20639
     },
     {
       "path": "scripts/stylecheck.py",
-      "sha": "4fca8d410f9b0422208e2815deaa4774921afb2e",
-      "size": 8019
+      "sha": "5d5a66246833fbfc852915c186e36b0732b6a6b8",
+      "size": 8196
     },
     {
       "path": "scripts/transform.py",
-      "sha": "5d929e701bd064a707823490a75e8a0f52cb6528",
-      "size": 14253
+      "sha": "af17834b7574de38fb629cc9bd71bf3651a0f340",
+      "size": 14556
     },
     {
       "path": "scripts/verify.py",
-      "sha": "23fa3fc8450bad665e796f0b3de4d10a65c3dd58",
-      "size": 13768
+      "sha": "7a50b13d421b52e53daa676ac96abf30e8417dc0",
+      "size": 14052
     }
   ]
 }

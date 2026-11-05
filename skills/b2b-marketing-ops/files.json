@@ -2,48 +2,33 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "2f62a6469b4ca8ce72bfc1331c6017745ff256b9",
-      "size": 7918
+      "sha": "73bc9a3b35637e5ae606935fe6548bac4f2ddff9",
+      "size": 8169
     },
     {
       "path": "_meta.json",
-      "sha": "f7fb75922442a2c8ee37884ac6c621d765755f38",
-      "size": 548
-    },
-    {
-      "path": "dist/b2b-marketing-ops.skill",
-      "sha": "7c4861db7f53584ab20ef374ce8ad1a74c8f287c",
-      "size": 11522
-    },
-    {
-      "path": "dist/b2b-marketing-ops.skill.json",
-      "sha": "b745e8e33231bed52221bc716235f9bb00b16f1d",
-      "size": 1077
-    },
-    {
-      "path": "dist/b2b-marketing-ops.skill.sha256",
-      "sha": "e5d0348543d921533f1a99b0b5709ad783717962",
-      "size": 64
+      "sha": "b5da4925c5ecba9469386e26aaccd1a2e1d38f05",
+      "size": 567
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "5b7c4600bde1639550c216df5dbc34bea1839400",
-      "size": 6517
+      "sha": "81cc388b41cb73b2e17eb274250a9bb24315c42f",
+      "size": 6715
     },
     {
       "path": "scripts/quick_validate.py",
-      "sha": "ff37d496938062def50697298e63ad5fd0d69f02",
-      "size": 7917
+      "sha": "1cd11a99513a7470c526a8821cd8c372c2c37bd1",
+      "size": 8146
     },
     {
       "path": "scripts/test_package.py",
-      "sha": "69e5a4444484b003d8a09a11294905511d4f863f",
-      "size": 2281
+      "sha": "0f48faece2aa95a4f35c8017f544afa31cf3e458",
+      "size": 2363
     },
     {
       "path": "scripts/test_validate.py",
-      "sha": "83e883e7eadd69b142f29e4ec3d960a1fd4a159e",
-      "size": 1901
+      "sha": "4cd72f6a8ac119018f76dee60c1cf99e338e821c",
+      "size": 1977
     }
   ]
 }

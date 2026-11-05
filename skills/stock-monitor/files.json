@@ -2,28 +2,28 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "630263975291ef93ec335613033fdc7b54d6637b",
-      "size": 4449
+      "sha": "4759045874c931760595db7e8d92071033acf78a",
+      "size": 4562
     },
     {
       "path": "_meta.json",
-      "sha": "96e5d358a5ee63bf73d4ad539bf5704212d1f494",
-      "size": 433
+      "sha": "8ceea46ccd269dfe277d59be2ec63694da330b49",
+      "size": 451
     },
     {
       "path": "build_pool.py",
-      "sha": "fa1aa8565fe025bbbc48267b6c1a34a01a86abaa",
-      "size": 8835
+      "sha": "22e44cfd8c747b84ae64345a7ecf38129c366a28",
+      "size": 9075
     },
     {
       "path": "config.env",
-      "sha": "250c31faa35781eeb214c4f73add19b019c6c4d8",
-      "size": 1699
+      "sha": "092bc0c63d84adeb7606385e99b6030e66042637",
+      "size": 1661
     },
     {
       "path": "config.py",
-      "sha": "5ce8c85e8d02823a9fe86fe77fc80b003ab5b82f",
-      "size": 1623
+      "sha": "776444a0dd065571533ccd3198620487a35e7d5f",
+      "size": 1647
     },
     {
       "path": "data/scout.db",
@@ -32,88 +32,78 @@
     },
     {
       "path": "data/stock_pool.json",
-      "sha": "030b66680c4fc932a47f2845e1da9ebb2952ea87",
-      "size": 100378
+      "sha": "85d9e1dbd1a6ad6a19629bc0bf5df65f7bb57703",
+      "size": 105507
     },
     {
       "path": "data/stock_pool_full.json",
-      "sha": "2cadae3844339cee6787173a1481398746d2569f",
-      "size": 309268
-    },
-    {
-      "path": "dist/stock-monitor-1.0.0.skill",
-      "sha": "67480fa2e90b31fe5b6e5e4963b61465957d22a1",
-      "size": 100883
-    },
-    {
-      "path": "dist/stock-scout-1.0.0.skill",
-      "sha": "b9f5083961018d3970011e3a13fd6d90ab9491fe",
-      "size": 100870
+      "sha": "8ae5393c394de12b22644a71ba23e12a17014113",
+      "size": 325373
     },
     {
       "path": "fetch.py",
-      "sha": "c9607c62428598485b01c6f1925aad9453f5b054",
-      "size": 10665
+      "sha": "c7eb0fe3aadd9a7029a00e5bed883b52f2429a2a",
+      "size": 10952
     },
     {
       "path": "fetch_api.py",
-      "sha": "7735e746898081d4ca80ef9a6c7fd92a28ff11f6",
-      "size": 21021
+      "sha": "e026a0e423debe234540ac58fbde7e4292c60d73",
+      "size": 21515
     },
     {
       "path": "providers/intelligence/tencent.py",
-      "sha": "3d5933f3d81c1e234cfe538cce9da6cdf0fd5473",
-      "size": 19785
+      "sha": "f0a4ec74b602e762f3057b9f6654b7b25d2e341d",
+      "size": 20286
     },
     {
       "path": "providers/intelligence/tushare.py",
-      "sha": "fdd786ce5145964d04c0a0e18b756dd7ff588c2f",
-      "size": 15940
+      "sha": "19e1f118af1bcdda1392269729c2ff9198f23ad9",
+      "size": 16353
     },
     {
       "path": "providers/intelligence_api.py",
-      "sha": "601691f3ebc95f35559b5eda83e655a24e689203",
-      "size": 5037
+      "sha": "9d1f6fe7ba47e42e14b9c542ab8e47186009c008",
+      "size": 5182
     },
     {
       "path": "quick_test.py",
-      "sha": "4f1907ae0fe128352ed0d8182b2897d65d342768",
-      "size": 3650
+      "sha": "f8cbd460298fe8c61898e0eaa6f3900c218feae3",
+      "size": 3752
     },
     {
       "path": "rate_limiter.py",
-      "sha": "0a35d30d5b9b98c8d41ca74e1d58f985537d2617",
-      "size": 4438
+      "sha": "1ebf7e6fe89d8debc4197ea190618e93ededa31e",
+      "size": 4572
     },
     {
       "path": "references/scoring_system.md",
-      "sha": "27eb5ad6ee46a1a175e32cf8cb8e400319468c51",
-      "size": 2954
+      "sha": "fec1139faad2529b29826f0d45bcd79318a60382",
+      "size": 3090
     },
     {
       "path": "run_tencent.py",
-      "sha": "37d45e4304c517069e4da61c695ea9a37a9aee74",
-      "size": 7676
+      "sha": "e0408a80d8ccd9d85aea5177db6c92c1fef22899",
+      "size": 7857
     },
     {
       "path": "run_tencent_fast.py",
-      "sha": "b29bfe899a8cd88c4d7140cb7ddf6ec0d32deb8c",
-      "size": 8796
+      "sha": "9ddb15f8378bdc603fdc47b671f2c15084577fb1",
+      "size": 9005
     },
     {
       "path": "score.py",
-      "sha": "9faef5a5398a4cd5b38baee77ac2a7880ef3135b",
-      "size": 15697
+      "sha": "5eb8b3bbc5232ee246623b88abee0de23cb1383b",
+      "size": 16165
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "88b5c4d9fc7db88331a4ab8237ccf2d42dbb318d",
-      "size": 6175
+      "sha": "8d2926cb69517a9973ab725ac7a9fe27cf264289",
+      "size": 6402
     },
     {
       "path": "stock_pool.py",
-      "sha": "d39fd379709a4c0ee228312497ddfed1a7d3cf3d",
-      "size": 9208
+      "sha": "89f6034d65c52772485da5639bf4f155bceb9af7",
+      "size": 9463
     }
   ]
 }

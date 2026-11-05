@@ -2,8 +2,8 @@
   "files": [
     {
       "path": "OPTIMIZATION_COMPLETE.md",
-      "sha": "70e8512cf80088fb18c4f22ce1b6611e29a297e8",
-      "size": 613
+      "sha": "3cd9f55be0df5a0c14e72fe165ac2aafb126ebad",
+      "size": 639
     },
     {
       "path": "README.md",
@@ -22,23 +22,23 @@
     },
     {
       "path": "_meta.json",
-      "sha": "2942f78f327b3d86c50c8909153a87be418c517b",
-      "size": 149
+      "sha": "6bc62394e1eac3c08841aae5e5d284f01822bfec",
+      "size": 155
     },
     {
       "path": "cases/negative/case-001-essentialism.md",
-      "sha": "5a889d1d956bd4524f6c7f343baddef609f782df",
-      "size": 1149
+      "sha": "ccc8b9dd7081a27a32f9d882579e6abcc5c0a1e0",
+      "size": 1190
     },
     {
       "path": "cases/negative/case-002-single-capital.md",
-      "sha": "62361151692499c7b20cb3f0f0631ecc26a4bf74",
-      "size": 1058
+      "sha": "80abfe3b9fdf2b29bb798cccf15679a2d2c2388a",
+      "size": 1105
     },
     {
       "path": "cases/positive/case-001-academic-field.md",
-      "sha": "a6bf05a4bf0a5b94ad08a19116f8890c39377146",
-      "size": 1238
+      "sha": "ee485ba4950bb996cb2d4aed6d3a8a3058469d73",
+      "size": 1282
     },
     {
       "path": "cases/positive/case-001-bourdieu-field-analysis-expert.md",
@@ -47,8 +47,8 @@
     },
     {
       "path": "cases/positive/case-001-field-analysis.md",
-      "sha": "d176fd0030730388b7dd5bb88879d7126fb776b9",
-      "size": 13800
+      "sha": "d3afc842418d9dc65432f70942c128921628e4c0",
+      "size": 14448
     },
     {
       "path": "cases/positive/case-002-bourdieu-field-analysis-expert.md",
@@ -57,13 +57,13 @@
     },
     {
       "path": "examples/with-subagents.md",
-      "sha": "88f932759b3edfc5cffc4a31ff714c1b476e7b40",
-      "size": 2811
+      "sha": "07dd44cc7b6d18b1f2312461f0166b4dfa59a245",
+      "size": 2945
     },
     {
       "path": "experience/patterns.md",
-      "sha": "de78464b35c62bc2c113aedf425f0bd3e3bf4472",
-      "size": 15107
+      "sha": "c8e3c655a1190fafc79aa111b1d20dd863c529a9",
+      "size": 15875
     },
     {
       "path": "index.html",
@@ -77,13 +77,13 @@
     },
     {
       "path": "prompts/system-prompt.md",
-      "sha": "c294d66009f0316ed4ed53c3cf3d668b3614ad9d",
-      "size": 11870
+      "sha": "1447beec004755c205a2e9f3cfe44296b7046574",
+      "size": 12321
     },
     {
       "path": "references/classic-literature.md",
-      "sha": "2a1e4fd70fe897d987bc809497bc152c11a8fbc8",
-      "size": 23699
+      "sha": "bdfacabfeb249dd53d143b7f33a632cb06e5058e",
+      "size": 24436
     },
     {
       "path": "references/detailed-guide.md",
@@ -92,18 +92,18 @@
     },
     {
       "path": "references/field-concepts.md",
-      "sha": "a4bd553fecfad13cfeffd99ded2401fdc7f71137",
-      "size": 8418
+      "sha": "f415979adb2c902d9ec8fb065935977ed13b213a",
+      "size": 8753
     },
     {
       "path": "references/long-term-tasks.md",
-      "sha": "03a415285bd4e7d102209767ee3350b9ce031c96",
-      "size": 1315
+      "sha": "f85f0e6870b9299891fe7c9a5c19cb3ad609660f",
+      "size": 1373
     },
     {
       "path": "references/quality-standards.md",
-      "sha": "343387df92c28032e6b0cd4d26c27485363eaa47",
-      "size": 2296
+      "sha": "a62ead0ec59ef84e91f76cfcb416fa19ddac0c40",
+      "size": 2405
     },
     {
       "path": "requirements.txt",
@@ -122,8 +122,8 @@
     },
     {
       "path": "subagents.yaml",
-      "sha": "60bfeb2d4d0f9d548b5da94ac20721b2c48d31e8",
-      "size": 9617
+      "sha": "39293ad22ae3aabca60501219f40822909e7ad4f",
+      "size": 9944
     },
     {
       "path": "templates/task_plan.md.template",
@@ -132,18 +132,13 @@
     },
     {
       "path": "test-prompts.json",
-      "sha": "58c8949c5d5be10a93dc3232b5b91218cb1006d7",
-      "size": 872
+      "sha": "613acf5268dd68af20321ed549fded3c5b7428b2",
+      "size": 889
     },
     {
       "path": "tools/.evolution/evolution_state.yaml",
       "sha": "fe5cbe0a2cf5e4adca08c87f029de172e44764b6",
       "size": 1385
-    },
-    {
-      "path": "tools/.evolution/evolution_state.yaml.bak",
-      "sha": "13314d1569105d4e4ccb37e009bb77264ad1f71c",
-      "size": 1510
     },
     {
       "path": "tools/analyze.py",
@@ -152,8 +147,8 @@
     },
     {
       "path": "tools/autonomy_calculator.py",
-      "sha": "b3a8223b9aa4f69e7169f1778f2e5568c4c69bcb",
-      "size": 8946
+      "sha": "844af0f21452291601989c7f12e3ee5d24f421f2",
+      "size": 9158
     },
     {
       "path": "tools/capital_analyzer.py",
@@ -167,8 +162,8 @@
     },
     {
       "path": "tools/field_dynamics_tracker.py",
-      "sha": "32cb935d7ded9adf6d4bc4ac3888720295e35d71",
-      "size": 12561
+      "sha": "d1036ff69eaba2b3cfad0967168274d979d16378",
+      "size": 12910
     },
     {
       "path": "tools/field_identifier.py",
@@ -182,8 +177,8 @@
     },
     {
       "path": "tools/planning-integration.py",
-      "sha": "e574766eb17e2d374a9e973dc42fcf95bcd64335",
-      "size": 3226
+      "sha": "258ed9ce1eaba9a434c26b65629a4fb2f1d1eef2",
+      "size": 3338
     },
     {
       "path": "tools/position_mapper.py",

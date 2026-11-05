@@ -2,108 +2,108 @@
   "files": [
     {
       "path": "EXAMPLES.md",
-      "sha": "eaa880d0b01dc2c4a2e12eca9e233c01427c6dfc",
-      "size": 6872
+      "sha": "0bb26b0681371edc5265d70ce704372a8235d2ae",
+      "size": 7085
     },
     {
       "path": "INSTALL.md",
-      "sha": "2eb3b34259b89d86eea31bb7e29bdf608a5a7943",
-      "size": 7255
+      "sha": "3f150f9493c569c8db9718c4c825a4c3858a403a",
+      "size": 7509
     },
     {
       "path": "SKILL.md",
-      "sha": "f6a581c36ad62c30d44de4a37322c25f261bc34c",
-      "size": 13685
+      "sha": "7791e97ff4bc962fdfda6b6d1791379cbd8f00a2",
+      "size": 14004
     },
     {
       "path": "_meta.json",
-      "sha": "3f4c33ac5b359be4f69a8eca8ec49767b34a01b4",
-      "size": 193
+      "sha": "c6dd434e3561d3bcaed47b55dc97bdb3a2085973",
+      "size": 201
     },
     {
       "path": "lib/cliskill/.gitignore",
-      "sha": "e31a8f559a188120e6b84c57a31959babaaecc0d",
-      "size": 80
+      "sha": "5126b2df4c1e6d39dfd36d1461182395f3510396",
+      "size": 90
     },
     {
       "path": "lib/cliskill/README.md",
-      "sha": "376369ed337fa685b0902456fbff716b5dadfca9",
-      "size": 8331
+      "sha": "98d64a89a716498b5fe83c3f545925f0f2e165f6",
+      "size": 8569
     },
     {
       "path": "lib/cliskill/pyproject.toml",
-      "sha": "2af300d95ebcb6ad995224a06b7b6611bb067b47",
-      "size": 1132
+      "sha": "0922fd29a6817a79edab35770f65c12b4f3117d6",
+      "size": 1166
     },
     {
       "path": "lib/cliskill/src/videosummarize/__init__.py",
-      "sha": "3dc1f76bc69e3f559bee6253b24fc93acee9e1f9",
-      "size": 22
+      "sha": "3f5c4a7d6e309ba9807642ee936d82cbc458017e",
+      "size": 23
     },
     {
       "path": "lib/cliskill/src/videosummarize/__main__.py",
-      "sha": "6b010419a850fc6d3b4f5f5fcfaa49ae8fd396e1",
-      "size": 44
+      "sha": "fa443bdba4e064ca5dfb8129579326da31578c64",
+      "size": 47
     },
     {
       "path": "lib/cliskill/src/videosummarize/checkpoint.py",
-      "sha": "023400447e645e55519f351bbdab43371cbc4f9b",
-      "size": 3159
+      "sha": "6bfb78de8fd7240f82ab1601fd577c2957c8ab43",
+      "size": 3274
     },
     {
       "path": "lib/cliskill/src/videosummarize/cli.py",
-      "sha": "0184572f95e1c50269eaa6f3070255882e006604",
-      "size": 6412
+      "sha": "4336558d9541555ca1dd84d1f6f50e3b91149345",
+      "size": 6598
     },
     {
       "path": "lib/cliskill/src/videosummarize/doctor.py",
-      "sha": "336e7b18c0f6b69be59d5857ff3c9b82a36a7b6c",
-      "size": 7903
+      "sha": "798b8a222afe827076e880cb372ed39f6eaf43c5",
+      "size": 8128
     },
     {
       "path": "lib/cliskill/src/videosummarize/douyin.py",
-      "sha": "d071bafc48a35316f517a8f27abe54106d3f07a8",
-      "size": 5011
+      "sha": "2b7999eb5f47b373543cf3000f2f4cea04f6bd88",
+      "size": 5178
     },
     {
       "path": "lib/cliskill/src/videosummarize/downloader.py",
-      "sha": "56f5ce62878c3bd7d82391c7c23935c7d21bc4b4",
-      "size": 4822
+      "sha": "22c9a0cf1b89f5438771d577ac474a2d22065daa",
+      "size": 4966
     },
     {
       "path": "lib/cliskill/src/videosummarize/extractor.py",
-      "sha": "f3af467e800b6899f8d66d5fde727b7949f21ad8",
-      "size": 3478
+      "sha": "be745b9396e81630ee0ca33ac2c0834f1439c364",
+      "size": 3601
     },
     {
       "path": "lib/cliskill/src/videosummarize/formats.py",
-      "sha": "bfeaca3b21cf6d011e68a0d3c7b54f17250a7504",
-      "size": 4268
+      "sha": "10ef00cefc1dad44f9ae9585dc142f2204c2756f",
+      "size": 4430
     },
     {
       "path": "lib/cliskill/src/videosummarize/hardware.py",
-      "sha": "d9625729cbce8b2bc9d128b138ee33bcf8d63858",
-      "size": 2612
+      "sha": "a979fab88aacf2b34be8a4c505d1685bfa8b112e",
+      "size": 2701
     },
     {
       "path": "lib/cliskill/src/videosummarize/pipeline.py",
-      "sha": "25761ed5edaa649c43fb96006f15fc4c9e577c77",
-      "size": 11974
+      "sha": "a9a9a1d02e1dfc318be4b6f1b29799c263fcf35d",
+      "size": 12342
     },
     {
       "path": "lib/cliskill/src/videosummarize/transcriber.py",
-      "sha": "9f590db206ba112b26bfc999d8dc44986d8e8d37",
-      "size": 13330
+      "sha": "e395f2eb0a66f668f80dfae432f7d3cf8f714e80",
+      "size": 13765
     },
     {
       "path": "lib/cliskill/src/videosummarize/verify.py",
-      "sha": "288b3ea09c76c16f09527219b31bc732f016e2db",
-      "size": 3549
+      "sha": "7ce89110d7758fc2d11508848bc451f367a76c07",
+      "size": 3651
     },
     {
       "path": "lib/cliskill/src/videosummarize/workspace.py",
-      "sha": "5e0812d68b3c5107348d00d891caa5257cb9a769",
-      "size": 4943
+      "sha": "95ea720de0e5e6a2d33277735292ea47609d2659",
+      "size": 5119
     }
   ]
 }

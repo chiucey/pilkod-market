@@ -3,13 +3,13 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "3e2c6d2cc4aa0b5aef6460256afac99e08492aa1",
-      "size": 931
+      "sha": "146425b863aac672236a33ea40c0405aa45486d8",
+      "size": 955
     },
     {
       "path": "README.md",
-      "sha": "9ce092292e1a866bcf2068bceb475036a6cca617",
-      "size": 1644
+      "sha": "302b74e11e6bed8a6a2e572c49e0e5b011735169",
+      "size": 1672
     },
     {
       "path": "icon.png",
@@ -18,8 +18,8 @@
     },
     {
       "path": "icon.svg",
-      "sha": "a0f1cd09cf5b217d3cc958b15dd46a88f4d3b3fb",
-      "size": 1571
+      "sha": "24d26b5ecf607cf9782dc10b5b64c90d576ba09f",
+      "size": 1600
     },
     {
       "path": "skills/xiaohongshu-cover/README.en.md",
@@ -33,18 +33,18 @@
     },
     {
       "path": "skills/xiaohongshu-cover/SKILL.md",
-      "sha": "c317504d6026a4df4050092173765fb74f4eba1d",
-      "size": 11581
+      "sha": "fe9ece74c986df8bdf205685ada850d400a9678d",
+      "size": 11880
     },
     {
       "path": "skills/xiaohongshu-cover/references/core_workflow.md",
-      "sha": "ac8215ea338939ae6b3c84486b670c5b65bc0c61",
-      "size": 12038
+      "sha": "e0dc577ca9da31e232fa821cb90814e3e2a9965c",
+      "size": 12321
     },
     {
       "path": "skills/xiaohongshu-cover/references/xhs_trend_data_format.md",
-      "sha": "99a0159cef1c74e399c6355d29b94efb1cf084e5",
-      "size": 8500
+      "sha": "ebf11b87acadca648fcdbe9be69f3eaadc766f95",
+      "size": 8745
     },
     {
       "path": "skills/xiaohongshu-cover/scripts/fetch_explosive_covers.py",
@@ -63,13 +63,13 @@
     },
     {
       "path": "skills/xiaohongshu-prohibited-word/SKILL.md",
-      "sha": "d1c942ffe95a24f3aca502691b3b7d5e365c9728",
-      "size": 10893
+      "sha": "87c821768408712f70b715e262a85e43d4a11761",
+      "size": 11159
     },
     {
       "path": "skills/xiaohongshu-prohibited-word/references/core_workflow.md",
-      "sha": "bdec4a9406cbe56868814e0423f62d0406f5f8c9",
-      "size": 16739
+      "sha": "86285d829bdbce0e7623521ad6b1d02396d7b9fb",
+      "size": 16908
     },
     {
       "path": "skills/xiaohongshu-prohibited-word/scripts/check_sensitive_words.py",
@@ -78,18 +78,18 @@
     },
     {
       "path": "skills/xiaohongshu-prohibited-word/skill-card.md",
-      "sha": "1161f33a4385daef643e473886ef11587d9bfc8f",
-      "size": 2411
+      "sha": "3b93e0572d0885554c16ca7cd065634f57aec7b0",
+      "size": 2452
     },
     {
       "path": "skills/xiaohongshu-rewrite/README.en.md",
-      "sha": "4eb09ccd9f215e808eaeb0f071d08546d14fb604",
-      "size": 3442
+      "sha": "b1fc146e77a94f34e9bcc1f445685519e4080508",
+      "size": 3515
     },
     {
       "path": "skills/xiaohongshu-rewrite/README.md",
-      "sha": "a571d6e72f4ff56c6924f87595e31dbc257bee17",
-      "size": 3478
+      "sha": "5530396d01da7f132d2c1be38c0df03cc4517f09",
+      "size": 3551
     },
     {
       "path": "skills/xiaohongshu-rewrite/SKILL.md",
@@ -98,8 +98,8 @@
     },
     {
       "path": "skills/xiaohongshu-rewrite/assets/platform-rules.md",
-      "sha": "d21935130f1d8bfb894e91f4c0431efdf5f6de89",
-      "size": 2886
+      "sha": "5dd18741eca2ae1840b92049f456f770ffff264d",
+      "size": 2935
     },
     {
       "path": "skills/xiaohongshu-rewrite/scripts/rewrite.py",
@@ -118,8 +118,8 @@
     },
     {
       "path": "skills/xiaohongshu-title-score/SKILL.md",
-      "sha": "1ce2c227415132af041df6910ff0827cfe24b396",
-      "size": 9724
+      "sha": "b04168e1b12e2ba76995e86120743453f4099f22",
+      "size": 9900
     },
     {
       "path": "skills/xiaohongshu-title-score/ai_tools_hot_data.md",
@@ -128,8 +128,8 @@
     },
     {
       "path": "skills/xiaohongshu-title-score/references/guide.md",
-      "sha": "f473d10c5cf53d7a437f101bf4002dffed51aed0",
-      "size": 8890
+      "sha": "9cb2eba26f1c6a8bb4c0f9e22fd7b50b009ddc48",
+      "size": 9093
     },
     {
       "path": "skills/xiaohongshu-title-score/scripts/fetch_xhs_trends.py",
@@ -158,8 +158,8 @@
     },
     {
       "path": "skills/xiaohongshu-write/references/xhs_hot_article_format.md",
-      "sha": "eec543f051b77806230d9a06bb36b4b48a1a5dc4",
-      "size": 4573
+      "sha": "c00364ff86c57f3aae15d70406e046bfa12d8357",
+      "size": 4745
     },
     {
       "path": "skills/xiaohongshu-write/scripts/fetch_xhs_hot_articles.py",

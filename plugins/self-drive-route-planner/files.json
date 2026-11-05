@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "1cd47340c7d02cebb6a189f1cebcefbff0506147",
-      "size": 731
+      "sha": "c233e5ba2287437c1c3ba52ef60d1bef1f253c27",
+      "size": 755
     },
     {
       "path": "branding/icon-128.png",
@@ -18,8 +18,8 @@
     },
     {
       "path": "branding/icon.svg",
-      "sha": "ef23eaf3a1faca3b24250dafbe020008ac09c7f5",
-      "size": 2137
+      "sha": "6176b190cd421a502ee75d7a93ba4f204276a50d",
+      "size": 2184
     },
     {
       "path": "branding/logo-white-bg.png",
@@ -33,8 +33,8 @@
     },
     {
       "path": "branding/logo.svg",
-      "sha": "130a804459f30b91e14b4c5d86882202f76af17b",
-      "size": 2654
+      "sha": "f16766c28b262c55470799d3becef89c420f2d8b",
+      "size": 2701
     },
     {
       "path": "icon.png",
@@ -43,113 +43,113 @@
     },
     {
       "path": "miniapp/client/app.js",
-      "sha": "5ea3c72489defce42ca0d65133a7973b66444a75",
-      "size": 50245
+      "sha": "a4e1e8619a46cc56b3aa9ce7db090f4a1186ecdd",
+      "size": 51622
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "39bf15c0a650c84938a0dc7ff3015442e9ea5fa6",
-      "size": 12954
+      "sha": "dc4cd743e55ea15c0a5a840d89114bd02a158117",
+      "size": 13232
     },
     {
       "path": "miniapp/client/pdf-export.js",
-      "sha": "887de166de103714e0281f470d5db315fd133bab",
-      "size": 35431
+      "sha": "4d75695226627d3e69eb822ab9ce0411553c2dc1",
+      "size": 36443
     },
     {
       "path": "miniapp/client/styles.css",
-      "sha": "d4f6ac26e30b461ba26546eee83ce4c654ebd1de",
-      "size": 31386
+      "sha": "2a6afe7d05e2eead93fd256e183c2a6abf9de1ef",
+      "size": 33162
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "b9d220bc40af893766b0f2da66b8f6a7bc27e41b",
-      "size": 393
+      "sha": "8bd951a175377aee60f921aa5b22d4839b09fe78",
+      "size": 418
     },
     {
       "path": "miniapp/node/adapters/amap-map-provider.js",
-      "sha": "c1e30f68a9aa0c78cdd9cda8d2b604ec3749ed46",
-      "size": 10069
+      "sha": "e1c8a5f0754d9f401831f9822df75dd966db0b9e",
+      "size": 10378
     },
     {
       "path": "miniapp/node/adapters/demo-map-provider.js",
-      "sha": "c7686b913b61adf6c298c1b59b55ebc1c3bf7436",
-      "size": 5489
+      "sha": "8d5aab4a1c87869026c10fea7f217a27e95cf1af",
+      "size": 5629
     },
     {
       "path": "miniapp/node/adapters/sqlite-store.js",
-      "sha": "96e2fcb16787b2be21ed1131c9c22c14f26fb46e",
-      "size": 2990
+      "sha": "5ee1a63216061696afbf73d6ea3678472f3c2c96",
+      "size": 3106
     },
     {
       "path": "miniapp/node/adapters/switchable-map-provider.js",
-      "sha": "16cc9130de6f739fc48237706354dbcbd15429fa",
-      "size": 1108
+      "sha": "9d0b7cc8366d4f60ce8e1dc38ad77cf11390cbdd",
+      "size": 1147
     },
     {
       "path": "miniapp/node/adapters/unconfigured-map-provider.js",
-      "sha": "5127be7161853911a94a3ef87c8dff4bfcde1679",
-      "size": 648
+      "sha": "e8db5bf8becab8826a726c5dd7f50f6d7360f82c",
+      "size": 668
     },
     {
       "path": "miniapp/node/app.js",
-      "sha": "4a1e707e736363dacf1e313bb6fd23e2551f1885",
-      "size": 13854
+      "sha": "2df8c7c3181f5e03e59044b7173f86350a470e12",
+      "size": 14275
     },
     {
       "path": "miniapp/node/config-store.js",
-      "sha": "076cd062cf94d7b7d0a1c5d62ea0389561abb77a",
-      "size": 2135
+      "sha": "65cf21dbb966d26d2a5923864d10493ffc336e57",
+      "size": 2209
     },
     {
       "path": "miniapp/node/domain/trip-application.js",
-      "sha": "1454c8139d7215a8599dc47feade85eb3a7b7432",
-      "size": 18049
+      "sha": "e9cdb4997cc0365b1f6cb65860464573b861e6a8",
+      "size": 18618
     },
     {
       "path": "miniapp/node/http/event-hub.js",
-      "sha": "c6c536ee6b759aa93f6dce061a18f77ddda09e97",
-      "size": 1106
+      "sha": "e580eadf6ea0d1a084f0a74f20aa83ef2c648875",
+      "size": 1148
     },
     {
       "path": "miniapp/node/mcp/route-planner-http.js",
-      "sha": "556eb82cb6d77cd1ba78b1647decd5fc11db0fd0",
-      "size": 27604
+      "sha": "fc8933c864cb8ceeb387e600d080ab450c7e6d0b",
+      "size": 28462
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "0105667775597f43271d35cb652656d3a42557e0",
-      "size": 1730
+      "sha": "27b58e7b80546aba27aed07d937f36110f941ecb",
+      "size": 1784
     },
     {
       "path": "package.json",
-      "sha": "af88b684a71d0fadfc6764999f6ca728d403471a",
-      "size": 184
+      "sha": "0c8a29ae4f6786f749cf67969778dbee01ef6131",
+      "size": 194
     },
     {
       "path": "servers.mcp.json",
-      "sha": "24902b4d23c9e660b4a69fb019a045a37a565710",
-      "size": 333
+      "sha": "b1c9678f38857e38ca2ddbd5cdb2ee10ba4bd7a9",
+      "size": 345
     },
     {
       "path": "skills/amap-apikey/SKILL.md",
-      "sha": "0acec0950d80c77ab862c073b3bdd3f1ef6c0180",
-      "size": 12857
+      "sha": "e83d04452eb75a3150b5a7aff8aacef4950b8238",
+      "size": 13088
     },
     {
       "path": "skills/route-planning/SKILL.md",
-      "sha": "bf6c44caf5f7e9ca99f61fdffef43bfe6a70c684",
-      "size": 11892
+      "sha": "dd5c5e9ca6851726b92292e52809f409e574f095",
+      "size": 12049
     },
     {
       "path": "skills/route-planning/scripts/start-xhs-mcp.sh",
-      "sha": "6cd0b688e40ce1be173841dc09d702435dd63e3c",
-      "size": 2307
+      "sha": "a77468203d6f864e17b03e087864074226c7d4e8",
+      "size": 2370
     },
     {
       "path": "skills/xhs-route-cards/SKILL.md",
-      "sha": "5418840d76d49a9fd0d840a0a802b1a543c19676",
-      "size": 9865
+      "sha": "0e9f63f7e10c94cb8e96c1ea744e50a4c7f60291",
+      "size": 10042
     },
     {
       "path": "skills/xhs-route-cards/assets/minimax-logo.png",
@@ -158,8 +158,8 @@
     },
     {
       "path": "skills/xhs-route-cards/scripts/add_ai_badge.py",
-      "sha": "2bcac7a2502f7e0bc793b9d7a858defeba87c320",
-      "size": 3643
+      "sha": "acc790b011259b8b1e1ee55d2ef7387d52a46f69",
+      "size": 3743
     }
   ]
 }

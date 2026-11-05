@@ -1,8 +1,9 @@
 # Stock Scout A股版 - 配置文件
 # 所有参数在此管理，换数据源或调权重只需改这里
+import os
 
 # ============ Tushare API ============
-TUSHARE_TOKEN = "a78cbdbee9fe610ed43aeefb9d5355445f7cbf3da72f20323f443b5e"
+TUSHARE_TOKEN = os.environ.get("TUSHARE_TOKEN", "")
 
 # ============ 飞书（待配置）============
 FEISHU_APP_ID = ""       # TODO: 飞书应用 App ID

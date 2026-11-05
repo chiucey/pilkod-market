@@ -2,153 +2,153 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "a5e939b5163ead89d098447aa02fd7bcabe54294",
-      "size": 13124
+      "sha": "1b636076da7aa87ec8c6c5c8b37a504f46eac7b9",
+      "size": 13537
     },
     {
       "path": "_meta.json",
-      "sha": "b20d6e1574c576c397797c9a07367170001eaad5",
-      "size": 203
+      "sha": "130e7a130edb6917c3c038e015870e4e33841dfd",
+      "size": 211
     },
     {
       "path": "agents/openai.yaml",
-      "sha": "bafb214d1b6b6d404144b87fcbdd789d5021e88e",
-      "size": 300
+      "sha": "f6870d249fc23dc6457e03d2069ceeb916bb7b28",
+      "size": 304
     },
     {
       "path": "examples/01_basic_app.py",
-      "sha": "c0b540a05421c4e6276dc26132da5ea9a142d389",
-      "size": 1301
+      "sha": "422558deb976f9e26d1c635951e51237463554f3",
+      "size": 1346
     },
     {
       "path": "examples/02_async_clock.py",
-      "sha": "88b966a94ca352596a0b0587a98cd1b9eb7f96e6",
-      "size": 2216
+      "sha": "f906bcde309b7d5f00cabca8f0a8901de83584a5",
+      "size": 2300
     },
     {
       "path": "examples/03_form_validation.py",
-      "sha": "a2f9dc70bdff5ed1cb70de26d2650457915eaaba",
-      "size": 5005
+      "sha": "5977e1f2a57d3f46f82e96b940958ad1b3207d2b",
+      "size": 5188
     },
     {
       "path": "examples/04_file_picker_service.py",
-      "sha": "40760e3cc4b3830f8d0c04ab3f1fe9e6e66e5a0d",
-      "size": 6556
+      "sha": "90274c75ba7eae245c31ea9b88e4a3ee3ed6fbc5",
+      "size": 6747
     },
     {
       "path": "examples/05_shared_preferences.py",
-      "sha": "69e4729f152b6208edee14c8450063f1d2e67675",
-      "size": 10777
+      "sha": "682e3c24aacc33c343d3e0a86cfc3e07361fb626",
+      "size": 11081
     },
     {
       "path": "examples/06_animation_effects.py",
-      "sha": "4c9fa86b92bb4687889ee7a405bfcc29c1a242c9",
-      "size": 10384
+      "sha": "5e53312837a3b0f54442c2064959104e9d0bb05a",
+      "size": 10685
     },
     {
       "path": "examples/07_dialog_example.py",
-      "sha": "37e7f22b5b5e64ef6319e5ff50ae746e1d0993d9",
-      "size": 11316
+      "sha": "34a9a7989f027f379e7bd522a122fbd82cac27a0",
+      "size": 11655
     },
     {
       "path": "examples/08_layout_responsive.py",
-      "sha": "db9d643ff6961cb09ea5df35c3e1e4bc48d303a4",
-      "size": 18254
+      "sha": "2905202ba9ae5c69da68e586f989c26ce9e8e260",
+      "size": 18722
     },
     {
       "path": "examples/09_theme_styling.py",
-      "sha": "0572f8f5ac33719b0965b8fc3705a156ae266b22",
-      "size": 14037
+      "sha": "1cfdd0eb9a83595f3ff9bbabfaeb937589c23e61",
+      "size": 14413
     },
     {
       "path": "examples/10_navigation_menu.py",
-      "sha": "72ecfc9afec770833fa78926dffe482d5c42405b",
-      "size": 13998
+      "sha": "5b771f1ce2eb433b5a3e1d4b21924ad468f2c117",
+      "size": 14365
     },
     {
       "path": "examples/11_data_table.py",
-      "sha": "2a06c8d6bdafbf18d8e5c29d87ffecfa1079417f",
-      "size": 13054
+      "sha": "b0314baf996061cd5158f9d5fe78c9677caf08a2",
+      "size": 13398
     },
     {
       "path": "examples/12_window_controls.py",
-      "sha": "9a94a4b1753fab4603af55df326f931e3a965e6a",
-      "size": 11883
+      "sha": "56e7786a06890536ddf537c78eb02cf26aa2dc97",
+      "size": 12230
     },
     {
       "path": "examples/13_drag_drop.py",
-      "sha": "27040075a6c4e3a77addc3bbf54e4e23afd77358",
-      "size": 4989
+      "sha": "e92c0a99c4aa3d6d0c9d2dce41a19436106eb433",
+      "size": 5141
     },
     {
       "path": "examples/14_keyboard_events.py",
-      "sha": "2f7ed2b064c85dc6653ee24d0bf7a4f979db1db6",
-      "size": 4289
+      "sha": "6517406f3c23852b0006c0ff698108b3d54838cd",
+      "size": 4427
     },
     {
       "path": "examples/15_gestures.py",
-      "sha": "0d27fa2be6d08878c023e7c1ad58de5857aa0bcc",
-      "size": 6574
+      "sha": "7b63a6655d5fbf97d4ceab68c68c72c03b42dc2f",
+      "size": 6770
     },
     {
       "path": "examples/16_clipboard.py",
-      "sha": "181baab416fbb652c6b4358040e57d2425ddd69b",
-      "size": 5637
+      "sha": "ad7c63b8dd858403a51ffc3ff25e82a6e1c69107",
+      "size": 5809
     },
     {
       "path": "examples/17_media_player.py",
-      "sha": "4d285a45c2170721ff72d78afaac5e3cbab52284",
-      "size": 2876
+      "sha": "278b209202fec5dc3083cfdcef9d6fc0da2f5e26",
+      "size": 2961
     },
     {
       "path": "examples/18_canvas_custom_paint.py",
-      "sha": "658d757fbcaa7935c4a151f3eb04f83978f48889",
-      "size": 10449
+      "sha": "3d12dca4f4d0683411898a11fdba673109772224",
+      "size": 10764
     },
     {
       "path": "examples/19_file_operations.py",
-      "sha": "6d7664634f5a7984b5003c497c30fb83d8112723",
-      "size": 6691
+      "sha": "3b2a3595675ae64e705fb0823c4b46ec86067339",
+      "size": 6893
     },
     {
       "path": "examples/20_charts_canvas_visualization.py",
-      "sha": "fde75fa0f9d5bd609f0e981dd26dbafc8baddba8",
-      "size": 9828
+      "sha": "ff3ea40043c8b97fb90b51c8f296db8991462c84",
+      "size": 10105
     },
     {
       "path": "examples/README.md",
-      "sha": "e8f6355a625c75755f706ac5a4a7207c172143db",
-      "size": 4167
+      "sha": "65cfce255d53802e3ea10c3c0469e1053c2b1cc0",
+      "size": 4315
     },
     {
       "path": "references/api-quick-reference.md",
-      "sha": "59c91b1d0ce20c6f0aeb200ab32cf5f3aab320a8",
-      "size": 14802
+      "sha": "de95b53eb06d1f7de4bc9dae3271552ea775e3f0",
+      "size": 15468
     },
     {
       "path": "references/breaking-changes.md",
-      "sha": "9243b1f7b98ac737f95460f41cb2d4d3f3f02937",
-      "size": 63626
+      "sha": "e93f3e054411f66f688e9041ba7ed95ee6293dd7",
+      "size": 66202
     },
     {
       "path": "references/discovery-log.md",
-      "sha": "ee5d873f56bb35b8f499c7e8412d1e189e34c358",
-      "size": 14285
+      "sha": "1104aa473538c343faf5459f24754f32c7321fc8",
+      "size": 14786
     },
     {
       "path": "references/error-guide.md",
-      "sha": "b6b49af425fbeb333b548d49fda640637fa8dddc",
-      "size": 27470
+      "sha": "f84204d0d19e5aa56b331b37c7d7b8411f3c80d5",
+      "size": 28253
     },
     {
       "path": "references/error-quick-reference.md",
-      "sha": "66d736b16d2f42b54445a2599241eed1b810c652",
-      "size": 7623
+      "sha": "289d9f983b577c2a316d01da9869bc03a4c2e5eb",
+      "size": 7841
     },
     {
       "path": "references/new-controls.md",
-      "sha": "16d95a8a7e6694b35e09b5de3e1feef5a85332cf",
-      "size": 21996
+      "sha": "d4c13de695ae5c5905f16f5da825f5a2cb3053b9",
+      "size": 22872
     }
   ]
 }

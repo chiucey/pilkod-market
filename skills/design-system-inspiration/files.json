@@ -2,1178 +2,1178 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "2628719fb00ef20d53e6ace39ed0f0074b8cd286",
-      "size": 3364
+      "sha": "ec2e9fadd97a9a94f2e99b0cfb825928e6a5e068",
+      "size": 3463
     },
     {
       "path": "_meta.json",
-      "sha": "f426c3d89ea06c4c46c6896879d74f72026497df",
-      "size": 144
+      "sha": "d80c2b78f87dcb347e69da3a014b431c40a6e9c5",
+      "size": 150
     },
     {
       "path": "references/design-md/airbnb/DESIGN.md",
-      "sha": "fdce24a31b4655b13eb29dd471ce77c4a0c294ee",
-      "size": 14051
+      "sha": "d141d802e1230535dd102c0464d12d7e0f027bb3",
+      "size": 14297
     },
     {
       "path": "references/design-md/airbnb/README.md",
-      "sha": "f486390d6cac689a6ed59152eb1a031323fe3b1c",
-      "size": 1275
+      "sha": "26c876ef25ab61eb1d82defc7be6e8d3308351f3",
+      "size": 1298
     },
     {
       "path": "references/design-md/airbnb/preview-dark.html",
-      "sha": "0c77230a6432c271a1bdb37e45c1755a8d07d9a1",
-      "size": 18805
+      "sha": "8bca44b269a6084bb913bcd70d017b9d0c3deac1",
+      "size": 19039
     },
     {
       "path": "references/design-md/airbnb/preview.html",
-      "sha": "c957683e74e95dff4344303feae9bf860c987a92",
-      "size": 18629
+      "sha": "939b1068bb15ec32b44d1fcd36a4b295ff8bc29a",
+      "size": 18862
     },
     {
       "path": "references/design-md/airtable/DESIGN.md",
-      "sha": "a6ebb8ab9952dc7a660031c245deec3310283bc1",
-      "size": 3559
+      "sha": "fbe82083064d03096e1fbe1f915d0891f6a3fa33",
+      "size": 3648
     },
     {
       "path": "references/design-md/airtable/README.md",
-      "sha": "aaedde5088e578fe0998434a001acf311164b10f",
-      "size": 1295
+      "sha": "4db0908e860959f6130fe7262b357c5d0f9cd884",
+      "size": 1318
     },
     {
       "path": "references/design-md/airtable/preview-dark.html",
-      "sha": "dfcbb7658d186c67fda63ea91ef7d0d249457ccd",
-      "size": 15209
+      "sha": "277f5d1c1b35298ed3e00f31f38ca0a6490dc16c",
+      "size": 15374
     },
     {
       "path": "references/design-md/airtable/preview.html",
-      "sha": "4ab55c02a5bc68e74a7faeb62aeb4065f49c7a5d",
-      "size": 15028
-    },
-    {
-      "path": "references/design-md/apple/DESIGN.md",
-      "sha": "8d9449867d2d65e893e70053f33bbd9354b07c22",
-      "size": 20418
-    },
-    {
-      "path": "references/design-md/apple/README.md",
-      "sha": "44cb32f32c99d3c744b7cbcdc3e608ac6965e1b6",
-      "size": 1266
-    },
-    {
-      "path": "references/design-md/apple/preview-dark.html",
-      "sha": "d49504824fd18dc03e909623356cb38e1e07d68c",
-      "size": 27567
-    },
-    {
-      "path": "references/design-md/apple/preview.html",
-      "sha": "a2396fc5515e759d1a9ff7b62c7e5ba390a02e39",
-      "size": 27673
-    },
-    {
-      "path": "references/design-md/bmw/DESIGN.md",
-      "sha": "dfaf526455e1372c66149feb759ba40f807ba965",
-      "size": 9812
-    },
-    {
-      "path": "references/design-md/bmw/README.md",
-      "sha": "6f5cf2b518a81aa99625c4f337cd4912ef9a48a0",
-      "size": 1245
-    },
-    {
-      "path": "references/design-md/bmw/preview-dark.html",
-      "sha": "a416d42d10d2199956b1005b14acc94f243f27c3",
-      "size": 15498
-    },
-    {
-      "path": "references/design-md/bmw/preview.html",
-      "sha": "ed60e92efef011d9df9d2de358640ca61a77e05e",
-      "size": 15341
-    },
-    {
-      "path": "references/design-md/cal/DESIGN.md",
-      "sha": "d8f9743d73be02313217233b73936c1de2d23a28",
-      "size": 17801
-    },
-    {
-      "path": "references/design-md/cal/README.md",
-      "sha": "2cb73f8d81366a75fa3749f8477c4871b1db9642",
-      "size": 1245
-    },
-    {
-      "path": "references/design-md/cal/preview-dark.html",
-      "sha": "a0d931ed2b72912c3373d113521e1bc1bf942f3a",
-      "size": 23757
-    },
-    {
-      "path": "references/design-md/cal/preview.html",
-      "sha": "01d23a3968e1f824e21b53159ab63039f79df96a",
-      "size": 25562
-    },
-    {
-      "path": "references/design-md/claude/DESIGN.md",
-      "sha": "346aac56e8ffc72b51544639c25b38e381c20cf2",
-      "size": 20296
-    },
-    {
-      "path": "references/design-md/claude/README.md",
-      "sha": "49fdd7aba7f6facf88ddb5bde917acbe13ab9ce3",
-      "size": 1275
-    },
-    {
-      "path": "references/design-md/claude/preview-dark.html",
-      "sha": "13d7c7eb2cfcb87f06073eed6b05ae778979d0ed",
-      "size": 31906
-    },
-    {
-      "path": "references/design-md/claude/preview.html",
-      "sha": "f8323cf3958f45c8da5003bfbb05787ecf542480",
-      "size": 32544
-    },
-    {
-      "path": "references/design-md/clay/DESIGN.md",
-      "sha": "d7de7a1424d0e314dacfdf95ffffe82a8a52d060",
-      "size": 17332
-    },
-    {
-      "path": "references/design-md/clay/README.md",
-      "sha": "9bb10cc7bb9666edac6e99089c5d674ea979a3dd",
-      "size": 1255
-    },
-    {
-      "path": "references/design-md/clay/preview-dark.html",
-      "sha": "d197b91601d79fe67df108ed0a067538e2548c1e",
-      "size": 23855
-    },
-    {
-      "path": "references/design-md/clay/preview.html",
-      "sha": "10cb0dac7554f3e3de838e17552c483b78da0d85",
-      "size": 23681
-    },
-    {
-      "path": "references/design-md/clickhouse/DESIGN.md",
-      "sha": "1a9fbff023a579c456d74ec86e168f5dc9e91508",
-      "size": 15394
-    },
-    {
-      "path": "references/design-md/clickhouse/README.md",
-      "sha": "c392c979698eb2413db2fd088bfe13590f43772b",
-      "size": 1316
-    },
-    {
-      "path": "references/design-md/clickhouse/preview-dark.html",
-      "sha": "a208341faaec78549a720a89b08e89ca46971838",
-      "size": 32290
-    },
-    {
-      "path": "references/design-md/clickhouse/preview.html",
-      "sha": "fb278e9a6784711fe87dc56543ea0905cac1de84",
-      "size": 30433
-    },
-    {
-      "path": "references/design-md/cohere/DESIGN.md",
-      "sha": "788af66aa516f8b2f5e290e4f965d6fed16f99e2",
-      "size": 14757
-    },
-    {
-      "path": "references/design-md/cohere/README.md",
-      "sha": "eb8995cbe51c8e45d8e64f47ca92fb0ec11ca7e6",
-      "size": 1276
-    },
-    {
-      "path": "references/design-md/cohere/preview-dark.html",
-      "sha": "f38b326a5445de9c31f22058b6867ad72738b9e5",
-      "size": 30807
-    },
-    {
-      "path": "references/design-md/cohere/preview.html",
-      "sha": "e8849b7eba25159040a7555e078ad40031a72080",
-      "size": 30904
-    },
-    {
-      "path": "references/design-md/coinbase/DESIGN.md",
-      "sha": "d6c92b38f5023036579c0af292359d22bbf5aa48",
-      "size": 5008
-    },
-    {
-      "path": "references/design-md/coinbase/README.md",
-      "sha": "b3d30a5a84d4c60f9f9c86607075b42ead635239",
-      "size": 1295
-    },
-    {
-      "path": "references/design-md/coinbase/preview-dark.html",
-      "sha": "313295bba149023397188d647b32914979b87174",
-      "size": 15276
-    },
-    {
-      "path": "references/design-md/coinbase/preview.html",
-      "sha": "6c76754d29f910f9fbed89bc03180ddd6ae59730",
-      "size": 15121
-    },
-    {
-      "path": "references/design-md/composio/DESIGN.md",
-      "sha": "6d2a48a861938b51b6411ebe5e439cc38259fe58",
-      "size": 20914
-    },
-    {
-      "path": "references/design-md/composio/README.md",
-      "sha": "370a103e280f99b0a1ab800fbe1b405b38d85458",
-      "size": 1296
-    },
-    {
-      "path": "references/design-md/composio/preview-dark.html",
-      "sha": "95bc781240e4f384b2c65afd252a46b29d5fa8ab",
-      "size": 34743
-    },
-    {
-      "path": "references/design-md/composio/preview.html",
-      "sha": "d3c147604449467d323090447d64e9fcba7e3a7b",
-      "size": 34204
-    },
-    {
-      "path": "references/design-md/cursor/DESIGN.md",
-      "sha": "c89dd036f18b5474d5c725ae5a3dad31d187e8ff",
-      "size": 19081
-    },
-    {
-      "path": "references/design-md/cursor/README.md",
-      "sha": "0cf974ff3ef5db66f47ce8bdeb54b08a915d9817",
-      "size": 1276
-    },
-    {
-      "path": "references/design-md/cursor/preview-dark.html",
-      "sha": "4af6960ab65b24a6a933666e1092e1885a1743af",
-      "size": 27839
-    },
-    {
-      "path": "references/design-md/cursor/preview.html",
-      "sha": "668e40f0382957aa49003c9c0e0a0aaae97d79ef",
-      "size": 27728
-    },
-    {
-      "path": "references/design-md/elevenlabs/DESIGN.md",
-      "sha": "94505887f8b1a08862a8fe2e4bb13d58a3a9c7a8",
+      "sha": "6a2e5b46c752e96ca32b1ab39e5b2dda340ef51e",
       "size": 15192
     },
     {
+      "path": "references/design-md/apple/DESIGN.md",
+      "sha": "1c7e321abea3d97e27be051707bcf9b1d2f4e068",
+      "size": 20731
+    },
+    {
+      "path": "references/design-md/apple/README.md",
+      "sha": "86776c22ad3bef230b42d4936e74def38fd4e069",
+      "size": 1290
+    },
+    {
+      "path": "references/design-md/apple/preview-dark.html",
+      "sha": "fa1d8b7d0db211f262e5e53594c88c69bc5b73d9",
+      "size": 27989
+    },
+    {
+      "path": "references/design-md/apple/preview.html",
+      "sha": "3ee6cdd0c62c684d732c47b696866ba8b7c0c11d",
+      "size": 28089
+    },
+    {
+      "path": "references/design-md/bmw/DESIGN.md",
+      "sha": "2c1128316487ceb62608ce2d01a6f8ef17069704",
+      "size": 9992
+    },
+    {
+      "path": "references/design-md/bmw/README.md",
+      "sha": "c533b0330b393d18e80239aca8cb37c5cc506601",
+      "size": 1268
+    },
+    {
+      "path": "references/design-md/bmw/preview-dark.html",
+      "sha": "a2b470438364fc2d802d9504007603b81376ee9f",
+      "size": 15709
+    },
+    {
+      "path": "references/design-md/bmw/preview.html",
+      "sha": "e5f2eaf125cc44c42fb18c5e9d3998ea73cf910c",
+      "size": 15551
+    },
+    {
+      "path": "references/design-md/cal/DESIGN.md",
+      "sha": "7839805da6fe083dc2bcbc93b7c3d2fa2e631dab",
+      "size": 18060
+    },
+    {
+      "path": "references/design-md/cal/README.md",
+      "sha": "87b6636d2f11cacbe0943b32300f0dbad56642d7",
+      "size": 1268
+    },
+    {
+      "path": "references/design-md/cal/preview-dark.html",
+      "sha": "c53178a4a2890cfaaad633810df7f9c5c7e79f9e",
+      "size": 24206
+    },
+    {
+      "path": "references/design-md/cal/preview.html",
+      "sha": "8e887cf83f452b085ec11f2c71ef22912da1ef06",
+      "size": 26137
+    },
+    {
+      "path": "references/design-md/claude/DESIGN.md",
+      "sha": "eba754225691b539d928578d107c54959fd46d5c",
+      "size": 20608
+    },
+    {
+      "path": "references/design-md/claude/README.md",
+      "sha": "ab65aab736051bc4941a720f8dabb9df91eadf8a",
+      "size": 1299
+    },
+    {
+      "path": "references/design-md/claude/preview-dark.html",
+      "sha": "1fd26e7786c3fac12ed66cb63c0ae8cd7ebabddc",
+      "size": 32708
+    },
+    {
+      "path": "references/design-md/claude/preview.html",
+      "sha": "b4f6b4d17ce0a5a4e78de4a65e9e00df2c695546",
+      "size": 33369
+    },
+    {
+      "path": "references/design-md/clay/DESIGN.md",
+      "sha": "e13ce7780c0984e3c01e8f83d66c906f3b19b6d7",
+      "size": 17636
+    },
+    {
+      "path": "references/design-md/clay/README.md",
+      "sha": "f13e6ee508094359ec5287fa64aa645cb304412f",
+      "size": 1278
+    },
+    {
+      "path": "references/design-md/clay/preview-dark.html",
+      "sha": "0c062021ed57b3bcca9d0c05a24d5039fd909845",
+      "size": 24173
+    },
+    {
+      "path": "references/design-md/clay/preview.html",
+      "sha": "48c8eee15dbdd6d23f806a8e26e5d3f63b7b93cb",
+      "size": 23998
+    },
+    {
+      "path": "references/design-md/clickhouse/DESIGN.md",
+      "sha": "249d45f69015f3c537f8f9b4e6160ebbcd28e982",
+      "size": 15675
+    },
+    {
+      "path": "references/design-md/clickhouse/README.md",
+      "sha": "e5261c4e2210695104377005b6d044cf88ac09fa",
+      "size": 1340
+    },
+    {
+      "path": "references/design-md/clickhouse/preview-dark.html",
+      "sha": "f5e7e753b01346ba2945b72b6346830d14e2eb15",
+      "size": 33124
+    },
+    {
+      "path": "references/design-md/clickhouse/preview.html",
+      "sha": "9fff1099721607263b46aa194520ea43e6b86d46",
+      "size": 31219
+    },
+    {
+      "path": "references/design-md/cohere/DESIGN.md",
+      "sha": "e2c6b2fef50b2d118a5672a873b837cb35082e46",
+      "size": 15023
+    },
+    {
+      "path": "references/design-md/cohere/README.md",
+      "sha": "f5bd61bc83d6189a170d932fe4b9191e1ea534ee",
+      "size": 1300
+    },
+    {
+      "path": "references/design-md/cohere/preview-dark.html",
+      "sha": "8fce6813694db62a998e96e4a7022c0596df6b1b",
+      "size": 31617
+    },
+    {
+      "path": "references/design-md/cohere/preview.html",
+      "sha": "bca8c8d73c435303246b817287240f9c4c37ea26",
+      "size": 31718
+    },
+    {
+      "path": "references/design-md/coinbase/DESIGN.md",
+      "sha": "dbe38093d9a8058821e0d5a4f2aa85061040ebe9",
+      "size": 5137
+    },
+    {
+      "path": "references/design-md/coinbase/README.md",
+      "sha": "de2869738b2b1f2b47f0cb2ed4bcf488280fb0a4",
+      "size": 1318
+    },
+    {
+      "path": "references/design-md/coinbase/preview-dark.html",
+      "sha": "223eaeeaf9437ca52a94ec1eb2d2a3c8e4065d4e",
+      "size": 15440
+    },
+    {
+      "path": "references/design-md/coinbase/preview.html",
+      "sha": "77efb942b4709ec3f4499da07c52f40196076746",
+      "size": 15284
+    },
+    {
+      "path": "references/design-md/composio/DESIGN.md",
+      "sha": "096f627e3a08cc4b58cc7b36269c30ed4d06ab23",
+      "size": 21221
+    },
+    {
+      "path": "references/design-md/composio/README.md",
+      "sha": "b7518bf03585ae9e477bed048ac442116d5f04ad",
+      "size": 1320
+    },
+    {
+      "path": "references/design-md/composio/preview-dark.html",
+      "sha": "a8b269fd2352a945bda0b220b1363e99b5883e7c",
+      "size": 35701
+    },
+    {
+      "path": "references/design-md/composio/preview.html",
+      "sha": "ba5eb0abd1504828c9793a19edb9aa0f21f17abc",
+      "size": 35137
+    },
+    {
+      "path": "references/design-md/cursor/DESIGN.md",
+      "sha": "0f999000f4f80211e9b7230ce8713a3feca3b083",
+      "size": 19390
+    },
+    {
+      "path": "references/design-md/cursor/README.md",
+      "sha": "26b1971eb3147602a5d5fe67afbc0553f0e6cc50",
+      "size": 1300
+    },
+    {
+      "path": "references/design-md/cursor/preview-dark.html",
+      "sha": "078e1e4d1fde7a5e296f9ed90bb7be44c8be29c8",
+      "size": 28234
+    },
+    {
+      "path": "references/design-md/cursor/preview.html",
+      "sha": "9880b22748bad7c27ae395d078210d0192c07a84",
+      "size": 28113
+    },
+    {
+      "path": "references/design-md/elevenlabs/DESIGN.md",
+      "sha": "52fd349dcd9b1bb367424e9294f9337ea7014a9f",
+      "size": 15457
+    },
+    {
       "path": "references/design-md/elevenlabs/README.md",
-      "sha": "3c7a5da71985cb9d1945156ee491696471c5d8bb",
-      "size": 1314
+      "sha": "5cb108070e23e81da9814f1c57e13c5737129ae9",
+      "size": 1337
     },
     {
       "path": "references/design-md/elevenlabs/preview-dark.html",
-      "sha": "646c697137babcf60de7f44c45bafc1ae2d82a50",
-      "size": 20041
+      "sha": "4a2c2b80a0fbc3c31d3e2ded5087c1cd63493433",
+      "size": 20295
     },
     {
       "path": "references/design-md/elevenlabs/preview.html",
-      "sha": "4fb1c1af703d53c8dc697d3ace910aa42e49a38d",
-      "size": 19859
+      "sha": "44206fb0f398c6e199786bcb32fc42d85d7c7b94",
+      "size": 20112
     },
     {
       "path": "references/design-md/expo/DESIGN.md",
-      "sha": "9883361b4a710c3a7d5006ef2beb8dad7283e9e0",
-      "size": 18680
+      "sha": "b3448a7b5a39e78638e4b82a8183a8685ed7e16e",
+      "size": 18961
     },
     {
       "path": "references/design-md/expo/README.md",
-      "sha": "e7f25ff849639f785cbdaa908cd6f7038ce91326",
-      "size": 1256
+      "sha": "554ee5c44557e74cbcc3bbdaf557a146a9381339",
+      "size": 1280
     },
     {
       "path": "references/design-md/expo/preview-dark.html",
-      "sha": "fab9605a9958ee334f8b5a89b8d873f2148b0112",
-      "size": 29616
+      "sha": "b1ba84ef5b87ef1ecf76d9ff23e8212b20e14ce7",
+      "size": 30152
     },
     {
       "path": "references/design-md/expo/preview.html",
-      "sha": "7414b9207cdccd26f091438832b398327294ca53",
-      "size": 29731
+      "sha": "17284a9cc38313eba11c5f978473dd09deb07e82",
+      "size": 30267
     },
     {
       "path": "references/design-md/ferrari/DESIGN.md",
-      "sha": "7e9e0649be12e854690fdfbeac602bfbe0dabec1",
-      "size": 25490
+      "sha": "cf74ec857fcfd146ed9ed36de42cb3028664c6d3",
+      "size": 25804
     },
     {
       "path": "references/design-md/ferrari/README.md",
-      "sha": "edb4d2d5a34eba8db7f7b739f28636bb95a8c729",
-      "size": 1285
+      "sha": "543207b0a7cd42816dc72a2a77e2964116b749dc",
+      "size": 1308
     },
     {
       "path": "references/design-md/ferrari/preview-dark.html",
-      "sha": "9a5b415f27961b62fca7182ba081a12bf73b4f8f",
-      "size": 38599
+      "sha": "3440359f3b4f85b82d4fceb46d6ccd2533a4885e",
+      "size": 39763
     },
     {
       "path": "references/design-md/ferrari/preview.html",
-      "sha": "69201e94d93d8cbed5cffe1cfe03c2f25ef6656a",
-      "size": 37213
+      "sha": "23716bb2938576ab44473275054bcf4871de6ab7",
+      "size": 38337
     },
     {
       "path": "references/design-md/figma/DESIGN.md",
-      "sha": "9a022e2eba8abe196a5fd67a2d0c34707f76c188",
-      "size": 11617
+      "sha": "28179db4a4497dbedc2559fe4160e0071af49e49",
+      "size": 11837
     },
     {
       "path": "references/design-md/figma/README.md",
-      "sha": "3fdfbe370338dc60710940b0e691f9e1e5aa3b2b",
-      "size": 1266
+      "sha": "45999111098bf1860512d99ff6c089583d949230",
+      "size": 1290
     },
     {
       "path": "references/design-md/figma/preview-dark.html",
-      "sha": "18d93dfd1f371e0d4a8d8c426cc36d9ab88e3e3c",
-      "size": 31728
+      "sha": "050b9f9686832d5d0528c4bb3295ef9eb1f38c8d",
+      "size": 32559
     },
     {
       "path": "references/design-md/figma/preview.html",
-      "sha": "097cdbc74230394d5777a85123f8a34d8fc6fd1a",
-      "size": 31938
+      "sha": "801ffc5adbac68e211726cf5f1263800bc552319",
+      "size": 32779
     },
     {
       "path": "references/design-md/framer/DESIGN.md",
-      "sha": "9e133638282f8c4f7c34e4818e2e810e1c1533f6",
-      "size": 17570
+      "sha": "12b0525afa83044f0d92ae5468c5a02a806b93f4",
+      "size": 17816
     },
     {
       "path": "references/design-md/framer/README.md",
-      "sha": "ad295b46495cff1c1b015d0687839c8cbec36caf",
-      "size": 1275
+      "sha": "9dd176616041ebbcdfe9addd4aab1b3fbcc908bc",
+      "size": 1298
     },
     {
       "path": "references/design-md/framer/preview-dark.html",
-      "sha": "d20da6225edcaee481921eca605ac3830dd37c61",
-      "size": 30452
+      "sha": "c91ec2a3ac30ed40856dc989449e1c05083c9198",
+      "size": 31356
     },
     {
       "path": "references/design-md/framer/preview.html",
-      "sha": "945df78c6dd11fa98f6ce312b475a266244afbd8",
-      "size": 30024
+      "sha": "a4714313fddad57ef7e909eb31988d16b9cb9d94",
+      "size": 30909
     },
     {
       "path": "references/design-md/hashicorp/DESIGN.md",
-      "sha": "785f4fdf7b377243e6b33ec46b7465a2e64b013c",
-      "size": 15639
+      "sha": "8160d40a182ef52bd8d46c532df6b630cf138cda",
+      "size": 15917
     },
     {
       "path": "references/design-md/hashicorp/README.md",
-      "sha": "10a12940fd59adcce7ba5379bfc2f5d20cc673a7",
-      "size": 1306
+      "sha": "908f8ee7f6d3bb90304171ab49a86148a5bd0b96",
+      "size": 1330
     },
     {
       "path": "references/design-md/hashicorp/preview-dark.html",
-      "sha": "788636a6d97fe13a24d26352ff5f94eb8f8b54d6",
-      "size": 41940
+      "sha": "bfd8a3cdf530e4121e6e4c36f6499c61936498f8",
+      "size": 43145
     },
     {
       "path": "references/design-md/hashicorp/preview.html",
-      "sha": "ae2023f8fce52059c4c87cb143519004a85f0903",
-      "size": 42158
+      "sha": "4cfdbcff26e6b6e691a126592b96f4bcfdc06a98",
+      "size": 43352
     },
     {
       "path": "references/design-md/ibm/DESIGN.md",
-      "sha": "5befe45d16b5d54b8106738cf2958cb2d9919016",
-      "size": 19555
+      "sha": "7601da5508f81a3b7f877c6a83daa5564e22bb99",
+      "size": 19887
     },
     {
       "path": "references/design-md/ibm/README.md",
-      "sha": "45e0069d857b018596d89dae87cd145c5018e7f2",
-      "size": 1246
+      "sha": "5adb211809fdc7982e2c6e381ace3c388acdf7e7",
+      "size": 1270
     },
     {
       "path": "references/design-md/ibm/preview-dark.html",
-      "sha": "8578f6ec299f2ba7f372f7f71aede8884525766b",
-      "size": 27709
+      "sha": "d9566fe7956428e4feb93912c2c2b90176008b54",
+      "size": 28154
     },
     {
       "path": "references/design-md/ibm/preview.html",
-      "sha": "2c1f31e4323ef5e01d9a737534d537a61609d998",
-      "size": 27420
+      "sha": "629b1b7e9b2d7ea73e157e375083125b1ef5363f",
+      "size": 27850
     },
     {
       "path": "references/design-md/intercom/DESIGN.md",
-      "sha": "f5d548c4f795b9d40c89f502eb713d76b8ec5a66",
-      "size": 6421
+      "sha": "83e6e5ab0e89f865801fb5f198bfd6dc275f8b73",
+      "size": 6567
     },
     {
       "path": "references/design-md/intercom/README.md",
-      "sha": "1f51119a7b6d2cc1bf8baa4cd3ac905429a7dee5",
-      "size": 1295
+      "sha": "d9cc7f3483b88e2ae90188ddd70b1e260e861ae9",
+      "size": 1318
     },
     {
       "path": "references/design-md/intercom/preview-dark.html",
-      "sha": "6f685da1243968c5d477be00f25519df5b9884ed",
-      "size": 17473
+      "sha": "30965b6c531afdac6d2f28138579b1c812cc6f09",
+      "size": 17658
     },
     {
       "path": "references/design-md/intercom/preview.html",
-      "sha": "0972987d2bdb717538ec2fe289f2dc0c55eeb9a1",
-      "size": 17298
+      "sha": "907669662cb95e1591c14c249545565cad53e0f6",
+      "size": 17482
     },
     {
       "path": "references/design-md/kraken/DESIGN.md",
-      "sha": "a9c69e13da605d9fc8bccd42a752c29f05a153ba",
-      "size": 4353
+      "sha": "58974e1e195c1536d693d01309bc1881e3d0d05e",
+      "size": 4478
     },
     {
       "path": "references/design-md/kraken/README.md",
-      "sha": "eba4833f42348c0307b40024d67a427b0e626bdc",
-      "size": 1275
+      "sha": "84e0972d26fb873ef86e15b4cd1fb22cbc010711",
+      "size": 1298
     },
     {
       "path": "references/design-md/kraken/preview-dark.html",
-      "sha": "3a0165b7154bfe2fe1600afb57b46a32367f4bae",
-      "size": 15695
+      "sha": "9f74e4729d274cc8f0516eab218bc7d0c73f39e6",
+      "size": 15864
     },
     {
       "path": "references/design-md/kraken/preview.html",
-      "sha": "410e68268ebc49d7944b96200488c551dab96125",
-      "size": 15516
+      "sha": "1d8d7b88a3936ba1a751abfdc78e3e90d2fb581c",
+      "size": 15684
     },
     {
       "path": "references/design-md/lamborghini/DESIGN.md",
-      "sha": "16f16ac73f648eada176f5baae94d0c1d57867be",
-      "size": 21122
+      "sha": "28200dfa1ae8502743bfe30697462fa04d35ae35",
+      "size": 21410
     },
     {
       "path": "references/design-md/lamborghini/README.md",
-      "sha": "a66ec95a0743caffa4fc816dc5b6c44bfafc5423",
-      "size": 1325
+      "sha": "030d172a538e52c4dfe02b02b610d6fac8666d00",
+      "size": 1348
     },
     {
       "path": "references/design-md/lamborghini/preview-dark.html",
-      "sha": "95b1c0149a79054fac84a376b5dee3175b5dd901",
-      "size": 22544
+      "sha": "42b0d9a91edfeec73917a1568d4ad76c09e05633",
+      "size": 22847
     },
     {
       "path": "references/design-md/lamborghini/preview.html",
-      "sha": "0528ec3f2a38768536d7efe2d30d43cdb9ede8b0",
-      "size": 24152
+      "sha": "0acd9645d4bf4e95e3c0ee990e87cc184ca9caab",
+      "size": 24533
     },
     {
       "path": "references/design-md/linear.app/DESIGN.md",
-      "sha": "3a70171a21702c9a0fc8737510d7217de0e48b4e",
-      "size": 22449
+      "sha": "d04c328afe16bc4a79ab214a0847b2735d919fc0",
+      "size": 22816
     },
     {
       "path": "references/design-md/linear.app/README.md",
-      "sha": "8a0c49d6dd08a5099dd14c5273f8b81a45f3eef6",
-      "size": 1292
+      "sha": "ba146992d514255248bc2ccf3ed165f1b7749ded",
+      "size": 1316
     },
     {
       "path": "references/design-md/linear.app/preview-dark.html",
-      "sha": "f55e75a8c4884a7abfa7d7bbd78776a9d76796a4",
-      "size": 28555
+      "sha": "1cd29d4649b22ae51ce32a65ae47e0fdb9a92a63",
+      "size": 28940
     },
     {
       "path": "references/design-md/linear.app/preview.html",
-      "sha": "eb718468811a29103a9fd4239a7320bd519e8c0e",
-      "size": 28173
+      "sha": "db2954cf891849583b868f614cdc60b9b3297948",
+      "size": 28548
     },
     {
       "path": "references/design-md/lovable/DESIGN.md",
-      "sha": "7a41ce825a47f4939cd9ca8800bc77d18f8f1a72",
-      "size": 17387
+      "sha": "6878d77edff3eeea730a43be6897ba406152d220",
+      "size": 17685
     },
     {
       "path": "references/design-md/lovable/README.md",
-      "sha": "febca10cb2fa69f7abf6a6151ae2c1ae8cef820e",
-      "size": 1286
+      "sha": "632e30634a14ae42764a8f4e24d01014312bf6f1",
+      "size": 1310
     },
     {
       "path": "references/design-md/lovable/preview-dark.html",
-      "sha": "794ef3b4a4223492320c25e3bb9cc597495f353f",
-      "size": 22663
+      "sha": "5883d26b391a7c8bbae2916efcaf9752c2fbe4ec",
+      "size": 23014
     },
     {
       "path": "references/design-md/lovable/preview.html",
-      "sha": "a99a30768428ec5714b929c00693d589b6043b5c",
-      "size": 22474
+      "sha": "af2fd07a8e8bbc80584607ccbbf104a7d1a4c704",
+      "size": 22824
     },
     {
       "path": "references/design-md/minimax/DESIGN.md",
-      "sha": "f9ad88e774adad039282f98ce84eb1273dda2716",
-      "size": 14285
+      "sha": "f9b6dabd6da7b07ccc431530f447de140b94a36c",
+      "size": 14542
     },
     {
       "path": "references/design-md/minimax/README.md",
-      "sha": "f89f7acb1dd6f33cf490b9b1717a7fb8466cefb2",
-      "size": 1285
-    },
-    {
-      "path": "references/design-md/minimax/preview-dark.html",
-      "sha": "f397a2ff6d11d7e782f0bf334aadc2f22a2b85af",
-      "size": 39498
-    },
-    {
-      "path": "references/design-md/minimax/preview.html",
-      "sha": "7a3993b049b019d8a153d6a025d236d88525bdd6",
-      "size": 39064
-    },
-    {
-      "path": "references/design-md/mintlify/DESIGN.md",
-      "sha": "0eb4b1041425f29036cda7ed0f8f4d5a62bcb0f2",
-      "size": 17429
-    },
-    {
-      "path": "references/design-md/mintlify/README.md",
-      "sha": "9535ce5a726e4495d3bf6df5231cea4673b0c7a8",
-      "size": 1296
-    },
-    {
-      "path": "references/design-md/mintlify/preview-dark.html",
-      "sha": "5daa1d54a4159a28a52bb0d4dd7f23d5a6bbb1cb",
-      "size": 26396
-    },
-    {
-      "path": "references/design-md/mintlify/preview.html",
-      "sha": "3eba850c1c4a665d785cc8bcabb6f355f03fbb42",
-      "size": 26144
-    },
-    {
-      "path": "references/design-md/miro/DESIGN.md",
-      "sha": "6e2571d44ed0dc123a50afcee32bd58e78e21797",
-      "size": 4797
-    },
-    {
-      "path": "references/design-md/miro/README.md",
-      "sha": "8385f96757fefc41b5e489e1bddc2dd09f5a1de5",
-      "size": 1255
-    },
-    {
-      "path": "references/design-md/miro/preview-dark.html",
-      "sha": "93b0adb0785c970e9c22bd7b6d99a01a4c90a8bb",
-      "size": 16265
-    },
-    {
-      "path": "references/design-md/miro/preview.html",
-      "sha": "c8827068f788d7b26bcaaaf4dea9d6b1e33186d8",
-      "size": 16094
-    },
-    {
-      "path": "references/design-md/mistral.ai/DESIGN.md",
-      "sha": "76b9b2c7762e0df5ea2a0619c43af1cc75a51153",
-      "size": 15635
-    },
-    {
-      "path": "references/design-md/mistral.ai/README.md",
-      "sha": "bf656c7db2c19f0b7b2ff11bec2e7b7960a30113",
+      "sha": "6895ad26ebe9b9d2cbda3d48142f8ff67b862818",
       "size": 1309
     },
     {
+      "path": "references/design-md/minimax/preview-dark.html",
+      "sha": "264558b02b21378310c186135b45f73c268076d6",
+      "size": 40764
+    },
+    {
+      "path": "references/design-md/minimax/preview.html",
+      "sha": "6183d3542648b32c78e9e9239b408d4eb6f0a0f1",
+      "size": 40316
+    },
+    {
+      "path": "references/design-md/mintlify/DESIGN.md",
+      "sha": "7ee46e6f4ee36c61332d74fcd5e86179ec60157d",
+      "size": 17755
+    },
+    {
+      "path": "references/design-md/mintlify/README.md",
+      "sha": "17a97aa03b980d725d872db0dd129a6d7143007c",
+      "size": 1320
+    },
+    {
+      "path": "references/design-md/mintlify/preview-dark.html",
+      "sha": "6ecc9c5a09dc4dc28713e78841ed77fe01bf4bf1",
+      "size": 26807
+    },
+    {
+      "path": "references/design-md/mintlify/preview.html",
+      "sha": "8b10c3ed037921eed6649959605cc4f9965d4bb4",
+      "size": 26544
+    },
+    {
+      "path": "references/design-md/miro/DESIGN.md",
+      "sha": "fff5c472385ad29f34275189ccccf78c28ae6b70",
+      "size": 4905
+    },
+    {
+      "path": "references/design-md/miro/README.md",
+      "sha": "f094c17c26b6bee1447ab93dbbf39de960cade46",
+      "size": 1278
+    },
+    {
+      "path": "references/design-md/miro/preview-dark.html",
+      "sha": "6666c9ec61ce38990b0231d2c99d0b1284c2df2a",
+      "size": 16439
+    },
+    {
+      "path": "references/design-md/miro/preview.html",
+      "sha": "6d2b16b825c30006952f3f0c8cb4a8df91af7faa",
+      "size": 16267
+    },
+    {
+      "path": "references/design-md/mistral.ai/DESIGN.md",
+      "sha": "eed195b0d2d8a43d729d5a735f5e4cb570f491ad",
+      "size": 15896
+    },
+    {
+      "path": "references/design-md/mistral.ai/README.md",
+      "sha": "59669bc755b57f873f91858e0354d652f626c228",
+      "size": 1333
+    },
+    {
       "path": "references/design-md/mistral.ai/preview-dark.html",
-      "sha": "49d78d3cd9645781e3f4c497dc121a180428f7c4",
-      "size": 29009
+      "sha": "027dc8a1ddd9112df0ec5ef753166f73a7ced877",
+      "size": 29822
     },
     {
       "path": "references/design-md/mistral.ai/preview.html",
-      "sha": "a6d6f8e578a7ef78780d453cc66c270bfe89a206",
-      "size": 29020
+      "sha": "80a2ab25e44046ae6421c0d26c18d23a807c1c0a",
+      "size": 29832
     },
     {
       "path": "references/design-md/mongodb/DESIGN.md",
-      "sha": "7c481fa118a8dbd686c2abf08eca7378a2a05b79",
-      "size": 15015
+      "sha": "7407c2bbb491d8cd73da1f07e2a82585f27e68b1",
+      "size": 15281
     },
     {
       "path": "references/design-md/mongodb/README.md",
-      "sha": "919a2ea6fff33df889cf824d6ad3d9470446e14e",
-      "size": 1285
+      "sha": "5796c25a241197b47dfdd5c0374f552a774b0141",
+      "size": 1308
     },
     {
       "path": "references/design-md/mongodb/preview-dark.html",
-      "sha": "8ae27e7f81aa2ee8cc6f0cb202c1ea70b558b303",
-      "size": 19976
+      "sha": "60c072dfba1cee882359e890a54beccc766a236b",
+      "size": 20238
     },
     {
       "path": "references/design-md/mongodb/preview.html",
-      "sha": "bdad998413fe7f83ba37532e33acc24f36a77e0c",
-      "size": 19799
+      "sha": "948e3b60e08f2dc5f8aa54780a0299260c6d1aea",
+      "size": 20060
     },
     {
       "path": "references/design-md/notion/DESIGN.md",
-      "sha": "5e6b718b1fdecd5da5cdedb1ad9b4f55e67dbd6e",
-      "size": 18349
+      "sha": "e20346aa201d5a81c74411882b0395feb2081a14",
+      "size": 18658
     },
     {
       "path": "references/design-md/notion/README.md",
-      "sha": "e7924d9033d79c8ee2ed14ddd3d6f16d8e92ede3",
-      "size": 1275
+      "sha": "7cfb9949b5c34765da376c9669f50646c23ef094",
+      "size": 1299
     },
     {
       "path": "references/design-md/notion/preview-dark.html",
-      "sha": "d8a5851e83cb11649b29820c24be39d10dd1ad72",
-      "size": 26130
+      "sha": "a6c948ead15a6a4d1bba0ea1e288759f169a37c8",
+      "size": 26504
     },
     {
       "path": "references/design-md/notion/preview.html",
-      "sha": "23b784a906d098769a9684f4d927b40ffd63220f",
-      "size": 25916
+      "sha": "ad3b41d4345e805f264e8632dd4cc4e1316b3dbd",
+      "size": 26282
     },
     {
       "path": "references/design-md/nvidia/DESIGN.md",
-      "sha": "3a467c2358a6ba86a67958a6485e3626d55a0d39",
-      "size": 17093
+      "sha": "8f73dc29d19991ad60b308dcca2cd90545516518",
+      "size": 17386
     },
     {
       "path": "references/design-md/nvidia/README.md",
-      "sha": "6d5615e3a8304821e0eddd7d11f6bc83d53f31c9",
-      "size": 1276
+      "sha": "1fb64cd9f2ed8f159bd3b0d9e7deb6eaf3343a0a",
+      "size": 1300
     },
     {
       "path": "references/design-md/nvidia/preview-dark.html",
-      "sha": "44a8d0e940703334367bf763164a3e0411dee001",
-      "size": 26885
+      "sha": "b537ce0d2c7b8075bec9a41376d4dd5e68b564d6",
+      "size": 27261
     },
     {
       "path": "references/design-md/nvidia/preview.html",
-      "sha": "21416fc917f71c35499d069143bc8ac66267afa4",
-      "size": 27062
+      "sha": "a65879f558cfa94379b3fc2a10ba7bd538b4e582",
+      "size": 27430
     },
     {
       "path": "references/design-md/ollama/DESIGN.md",
-      "sha": "d1efd4f780baf7d3ecf360fbf74d570b5f6bcc1c",
-      "size": 15521
+      "sha": "91c91a89c734b98f8414ed407b367bb9c6a62ec4",
+      "size": 15788
     },
     {
       "path": "references/design-md/ollama/README.md",
-      "sha": "e47fcc341e05327c7e539c4a96d21aec613e49b3",
-      "size": 1276
+      "sha": "80aee98cdce93465929be75ce66b410350af2aa8",
+      "size": 1300
     },
     {
       "path": "references/design-md/ollama/preview-dark.html",
-      "sha": "d476484c8f52bf4421033ec073ed7f8f6de272fe",
-      "size": 23515
+      "sha": "ae23ca5e316a7d16d1c32f87e787030b8c9eee3a",
+      "size": 24193
     },
     {
       "path": "references/design-md/ollama/preview.html",
-      "sha": "cdd3e3e689598e47f099a62a25d69daff1ed8da3",
-      "size": 23466
+      "sha": "6c07d42a647f62ac164818c48a7d00c9df2646d2",
+      "size": 24144
     },
     {
       "path": "references/design-md/opencode.ai/DESIGN.md",
-      "sha": "3340971f49597493b80f259de22dde29fdd47ccb",
-      "size": 15529
+      "sha": "d6d035002b4e72b6c9687f08d3f46cf8450b2e88",
+      "size": 15810
     },
     {
       "path": "references/design-md/opencode.ai/README.md",
-      "sha": "ec1df1e75082e56faf613daa5433b7b9d352521c",
-      "size": 1319
+      "sha": "e01c68a928c887c780545d159eeea9c749180e07",
+      "size": 1343
     },
     {
       "path": "references/design-md/opencode.ai/preview-dark.html",
-      "sha": "c123364b46038a164f70540d6c612d3abc141d3e",
-      "size": 23242
+      "sha": "f41dd9a10a0d16faf128fadc353a139a31283fcf",
+      "size": 23610
     },
     {
       "path": "references/design-md/opencode.ai/preview.html",
-      "sha": "ceeaf0111994667d65cff6b168924969cb3caf0f",
-      "size": 22911
+      "sha": "b6c0b7274f6c6c9c02de5f1be3ad0277dde502c4",
+      "size": 23270
     },
     {
       "path": "references/design-md/pinterest/DESIGN.md",
-      "sha": "047e48550a44ef7fde44403f99fe098d1ce60456",
-      "size": 11921
+      "sha": "520381fce1bc671c26d6dd2211928cb8001f7b7c",
+      "size": 12151
     },
     {
       "path": "references/design-md/pinterest/README.md",
-      "sha": "75b209422ffa8a6a03c0bbf0824ce7a242f625d5",
-      "size": 1305
+      "sha": "725d23c8844c2f5eacd7bd693241155d1c0998b2",
+      "size": 1328
     },
     {
       "path": "references/design-md/pinterest/preview-dark.html",
-      "sha": "c37b01ff3edfa7715a5add47b270daaa64464510",
-      "size": 18252
+      "sha": "22afb69bd788a33af157739fd788214fec404a9b",
+      "size": 18485
     },
     {
       "path": "references/design-md/pinterest/preview.html",
-      "sha": "5a6da6d51dab40c453071b3a6948625dbf8e876d",
-      "size": 18080
+      "sha": "c932baacd9ca18e8e9102c980f15480d32567e32",
+      "size": 18312
     },
     {
       "path": "references/design-md/posthog/DESIGN.md",
-      "sha": "e785bccec9ac7f5fb079e9d7ca8c258894b34fd9",
-      "size": 18561
+      "sha": "37fcad7c54e592dc216b3aac5cd216b33fb74dc5",
+      "size": 18817
     },
     {
       "path": "references/design-md/posthog/README.md",
-      "sha": "010e47674d2c891494e245a678e6e063c532a858",
-      "size": 1285
+      "sha": "a08a3958b0d9e714fb2a1e14a87e4be94527cb27",
+      "size": 1308
     },
     {
       "path": "references/design-md/posthog/preview-dark.html",
-      "sha": "935c167f22ceb6dc2f3249f821acbe7cdf9093da",
-      "size": 29189
+      "sha": "0df98e563c98c961120c62d421dbfde980505d83",
+      "size": 29890
     },
     {
       "path": "references/design-md/posthog/preview.html",
-      "sha": "c165d8c9742aa9cc7e6844b3ed7d14b9053c4677",
-      "size": 28341
+      "sha": "941c0a2c19a33d3a55ac53f1846e638432f29218",
+      "size": 29092
     },
     {
       "path": "references/design-md/raycast/DESIGN.md",
-      "sha": "e179b0fefde9299e4eb3f8f6ce1f4b8b578cb9eb",
-      "size": 18487
+      "sha": "10ed626df847fdadb857ecb4cfe8cdfe3ba4e36b",
+      "size": 18755
     },
     {
       "path": "references/design-md/raycast/README.md",
-      "sha": "ab0f9757b621edee72cf9602ca130d0d4ed192be",
-      "size": 1285
+      "sha": "89c7929f1f9e19c29c82eea290777917ea58a1ff",
+      "size": 1308
     },
     {
       "path": "references/design-md/raycast/preview-dark.html",
-      "sha": "94a05679f2266a87b9ae613e77392b5951ab41c4",
-      "size": 28277
+      "sha": "7e99fe5b875b1b7b7b3b1ba5a149feda6b06705f",
+      "size": 28885
     },
     {
       "path": "references/design-md/raycast/preview.html",
-      "sha": "f921fea1e13864b457969d681940f0c860bc0c4c",
-      "size": 30031
+      "sha": "fc49438c9c4577d52fd5ddd64f7abe57aabb1c08",
+      "size": 30721
     },
     {
       "path": "references/design-md/renault/DESIGN.md",
-      "sha": "b21b47ac4c5366ddf94e4cf701c8731bc4de6af0",
-      "size": 24297
+      "sha": "9b5e5695d20aeb1add2125483a391b79144f00ab",
+      "size": 24608
     },
     {
       "path": "references/design-md/renault/README.md",
-      "sha": "38393ac362adb36accc7b796aa56019d73440207",
-      "size": 1285
+      "sha": "3a5b827113118c7e9c8b5ba783584ffe525597b2",
+      "size": 1308
     },
     {
       "path": "references/design-md/renault/preview-dark.html",
-      "sha": "f7621c459ed823f8117eef74aabce06b5b9c997d",
-      "size": 29313
+      "sha": "4d3796929a550b919efdda4ff44aa6a7a3d44045",
+      "size": 29721
     },
     {
       "path": "references/design-md/renault/preview.html",
-      "sha": "9a914fe1c7d45edf18d64c6c01a4e50d01a7a5eb",
-      "size": 31762
+      "sha": "07d3a28e600c72e91194e4e739a083d98df97a73",
+      "size": 32370
     },
     {
       "path": "references/design-md/replicate/DESIGN.md",
-      "sha": "5693dfaf3db61de9641fa4bc53e088396c0559ed",
-      "size": 14161
+      "sha": "639e0ca9c9e98a28084195bd34c78d3f7bffa702",
+      "size": 14422
     },
     {
       "path": "references/design-md/replicate/README.md",
-      "sha": "e2d3b344611ba33ea787bfe2df3b53bbfcf6e007",
-      "size": 1306
+      "sha": "89902de9b79b425cfd735afecaf957b3bd524540",
+      "size": 1330
     },
     {
       "path": "references/design-md/replicate/preview-dark.html",
-      "sha": "46a1b043282447cbcd72c85f6660ff19a1d6f8b1",
-      "size": 30612
+      "sha": "7f412509bea03e8c09f0680a83b248f85bafbc08",
+      "size": 31440
     },
     {
       "path": "references/design-md/replicate/preview.html",
-      "sha": "6ece5247aa67fb29f5e0dda4052fea048c0cd8b5",
-      "size": 30900
+      "sha": "fa2cccf5d5e0e2718d0d64eb075bfb37e4e87fdd",
+      "size": 31731
     },
     {
       "path": "references/design-md/resend/DESIGN.md",
-      "sha": "c5cca8a0d49fead5252a8d87cffecc528da450b6",
-      "size": 18431
+      "sha": "c9394f8b65aa521cd2a66907a35bfd4a473b4f84",
+      "size": 18734
     },
     {
       "path": "references/design-md/resend/README.md",
-      "sha": "12969317d055aba677b13b3207832b8bfe0e9468",
-      "size": 1275
+      "sha": "403a950cbe51feaf79fbbe816fc8094c3fd78bbe",
+      "size": 1298
     },
     {
       "path": "references/design-md/resend/preview-dark.html",
-      "sha": "192d86e8e36da653f5eef00406277fa2b39f7124",
-      "size": 25073
+      "sha": "9ef0cdee714b7ffef6a48205ea6be8c71c688cdc",
+      "size": 25430
     },
     {
       "path": "references/design-md/resend/preview.html",
-      "sha": "9c00289abf3e93d219c590aec8d9b87086536674",
-      "size": 24896
+      "sha": "598ef20f41f7eb22ecc62a0abae224e3d4ea2a98",
+      "size": 25252
     },
     {
       "path": "references/design-md/revolut/DESIGN.md",
-      "sha": "fd40b4682ee2a32f29682209a33111fd0954c5d5",
-      "size": 8622
+      "sha": "9366f31199f4429d7440efa3a129f845ce0cd5e1",
+      "size": 8807
     },
     {
       "path": "references/design-md/revolut/README.md",
-      "sha": "1dff0d2ff8fd33989d56dfdaa6070f1412040e3b",
-      "size": 1285
+      "sha": "44d2b30e7677e092e04cc63a0c1dee027000f097",
+      "size": 1308
     },
     {
       "path": "references/design-md/revolut/preview-dark.html",
-      "sha": "3ea9bea75241dc9f71d66579ffb3db108511ebfe",
-      "size": 18703
+      "sha": "00115e170e1323b9909229fff0804dd9a8ce5ebd",
+      "size": 18937
     },
     {
       "path": "references/design-md/revolut/preview.html",
-      "sha": "d0f62b7abf68bceb436ffdba3ddf14d5d7bc868a",
-      "size": 18525
+      "sha": "d92894a85b208b8f15c88a07581ecbbef1631ad2",
+      "size": 18758
     },
     {
       "path": "references/design-md/runwayml/DESIGN.md",
-      "sha": "0e4f8e209d6a39e2dd30069aa3ca6251df57bcaa",
-      "size": 14356
+      "sha": "fedd78107a6c8edfbdbb635422ac63d91663e04e",
+      "size": 14600
     },
     {
       "path": "references/design-md/runwayml/README.md",
-      "sha": "783af9ff2c7bee6a47689c4292a904e0413cb6d6",
-      "size": 1294
+      "sha": "996ce5b7bc2c2d5df3be53c0aad8ee406781c522",
+      "size": 1318
     },
     {
       "path": "references/design-md/runwayml/preview-dark.html",
-      "sha": "003b0384347a6918a6c71f2c72789ec3e4c7bdbf",
-      "size": 25335
+      "sha": "cbb32cd5034d89f84a41c9a5697a2c282637ae7a",
+      "size": 25999
     },
     {
       "path": "references/design-md/runwayml/preview.html",
-      "sha": "002aaa1c3d1ed657ff2da22dab47d36e35cf3f0a",
-      "size": 25301
+      "sha": "45b808e584324f911152251f2a4d80c046e494e7",
+      "size": 25966
     },
     {
       "path": "references/design-md/sanity/DESIGN.md",
-      "sha": "2682df062b8c1186e9629115e5e1e6bd1a929f48",
-      "size": 21234
+      "sha": "bf167fa941848a5fa01534a8d4b9e81b1ba098d7",
+      "size": 21591
     },
     {
       "path": "references/design-md/sanity/README.md",
-      "sha": "a6326be1484f6f79779e3c7183b79a275d348a1d",
-      "size": 1275
+      "sha": "727b2afcbf94f12b1555907260dcc342f6296c01",
+      "size": 1299
     },
     {
       "path": "references/design-md/sanity/preview-dark.html",
-      "sha": "64c5977d3b399f26df0bd06ddb44e1637b3c5f56",
-      "size": 32182
+      "sha": "12313248b33b9577cbf94738199228b9be265947",
+      "size": 33177
     },
     {
       "path": "references/design-md/sanity/preview.html",
-      "sha": "80cd48adb7720ead13ed76aebc43997145c6aae6",
-      "size": 38324
+      "sha": "a48920e823de67818db519f16bab7087eb3b977d",
+      "size": 39464
     },
     {
       "path": "references/design-md/sentry/DESIGN.md",
-      "sha": "b64456b53044e5ffe42693e65ff7eb377461f3e1",
-      "size": 14753
+      "sha": "36bada0f4a0db9a626e369facfc8403fa4cf9cfb",
+      "size": 15015
     },
     {
       "path": "references/design-md/sentry/README.md",
-      "sha": "e9c6dfcef2a2ffeda159ab694c52f62dd4faf5eb",
-      "size": 1275
+      "sha": "3340c5a9267272bf7dea7a9ce116f500f51b77cc",
+      "size": 1299
     },
     {
       "path": "references/design-md/sentry/preview-dark.html",
-      "sha": "6767526d17f7708ea560ca5d4fcd4048f5a5b07a",
-      "size": 26854
+      "sha": "cc2530691218cc18d4360d019992af84c04a2fc2",
+      "size": 27482
     },
     {
       "path": "references/design-md/sentry/preview.html",
-      "sha": "baac639573812618d2f41724915889f8e809b64d",
-      "size": 30732
+      "sha": "d4df78f7bdcf87bce500de4a982aa9b8cef0453d",
+      "size": 31685
     },
     {
       "path": "references/design-md/spacex/DESIGN.md",
-      "sha": "02a13d74422650c6615ff794cc2c5e5c587cf7d2",
-      "size": 11323
+      "sha": "59f98fef60073356f53c2a12c3f2d3d18cad442b",
+      "size": 11517
     },
     {
       "path": "references/design-md/spacex/README.md",
-      "sha": "ff5a896f83a05d4b89a4452e2f2ce367a044d0d4",
-      "size": 1275
+      "sha": "59a652449b9cceac72cf5d73aeff7758ad3dce5a",
+      "size": 1298
     },
     {
       "path": "references/design-md/spacex/preview-dark.html",
-      "sha": "438fa3bc20e31f5ad8016dc531943a924360a166",
-      "size": 15943
+      "sha": "8345de9271662320b1fccfc4e2172ef9d30bfb6b",
+      "size": 16166
     },
     {
       "path": "references/design-md/spacex/preview.html",
-      "sha": "531451c8feca979f660de9e4e9653a3fda099289",
-      "size": 15723
+      "sha": "088db184c97d8e6710a7582c9cd7f0b3c5fa8099",
+      "size": 15945
     },
     {
       "path": "references/design-md/spotify/DESIGN.md",
-      "sha": "360c1b67229d40b6c9f5dc8c954212d695e57459",
-      "size": 12958
+      "sha": "b0306b1dd3078c6bc4b65926fbd755f9f6cb88ae",
+      "size": 13204
     },
     {
       "path": "references/design-md/spotify/README.md",
-      "sha": "87c934abf4cc1d921e09b08fcdda602b6591625a",
-      "size": 1285
+      "sha": "8b020b64a392a6808ee1c79cb65465d1aae15352",
+      "size": 1308
     },
     {
       "path": "references/design-md/spotify/preview-dark.html",
-      "sha": "9226ae3aaf9f7301445dd70dec49c680633f73c6",
-      "size": 17499
+      "sha": "a2ae471d5cc0a3413093451dbf5a0c7019effd08",
+      "size": 17730
     },
     {
       "path": "references/design-md/spotify/preview.html",
-      "sha": "c0560937fc6e2051cc8899d1be98d7170701b92e",
-      "size": 17281
+      "sha": "2a5b5fc781adf0c7d9b08ff852cf08ef70ec198e",
+      "size": 17511
     },
     {
       "path": "references/design-md/stripe/DESIGN.md",
-      "sha": "ba4f1bf16b49da05bd271081acb891fb2683f8dc",
-      "size": 20450
+      "sha": "33d0919fb7c62a695041fe8f7e5f07db04996a04",
+      "size": 20772
     },
     {
       "path": "references/design-md/stripe/README.md",
-      "sha": "c7364a4e7ac5b0c69b6607d6a61d438bfda6eecb",
-      "size": 1276
+      "sha": "de51413be1ce4873c29f8707a6ca2a64e6dbf8ff",
+      "size": 1300
     },
     {
       "path": "references/design-md/stripe/preview-dark.html",
-      "sha": "6662d9b70834afaa4775aafeeb7264c943a135dd",
-      "size": 28571
+      "sha": "ed5852810be0ca93f1e66dd1097e3124669a9ca8",
+      "size": 29001
     },
     {
       "path": "references/design-md/stripe/preview.html",
-      "sha": "14694dc1408bdcdf99006abf914e1cb37d88cf7a",
-      "size": 28173
+      "sha": "cc0bf229e5f54f1a6ab8158c5dd278b167562fe2",
+      "size": 28594
     },
     {
       "path": "references/design-md/supabase/DESIGN.md",
-      "sha": "176d8fb9f2134debb3a1196bc241701135265522",
-      "size": 14803
+      "sha": "ab0fa489adcfed7101db79f553334fe58ec0b6a7",
+      "size": 15058
     },
     {
       "path": "references/design-md/supabase/README.md",
-      "sha": "2200176ffd4fb67bef14dc2b560dcac53d3b5af2",
-      "size": 1296
+      "sha": "0c3971a08c79c1b8d9dd97b5ae7629a331438221",
+      "size": 1320
     },
     {
       "path": "references/design-md/supabase/preview-dark.html",
-      "sha": "9469f942c8bf0d14bccb77a846db713a6316ef9e",
-      "size": 36173
+      "sha": "9b1f6fed9c8a7899e4a4ea75612aaa95be9f8850",
+      "size": 37150
     },
     {
       "path": "references/design-md/supabase/preview.html",
-      "sha": "dedfbdf15532124c85f47696c0c434f91002e7cc",
-      "size": 35593
+      "sha": "1329f5bf08d84bcfd781a66e4214c49ed674c87e",
+      "size": 36548
     },
     {
       "path": "references/design-md/superhuman/DESIGN.md",
-      "sha": "c28286dc32d5df17a7e2413bb06726f4e6e54b83",
-      "size": 18928
+      "sha": "2e8d7a86b453269789a5e5b079adf7897de4bd3b",
+      "size": 19180
     },
     {
       "path": "references/design-md/superhuman/README.md",
-      "sha": "79162e211c85d27ff80dac7c8eef2d50abfac4ad",
-      "size": 1315
+      "sha": "3b29b6a47e99c1dd3a421e7d9df5f5a5f410f806",
+      "size": 1338
     },
     {
       "path": "references/design-md/superhuman/preview-dark.html",
-      "sha": "c8bad89d3c226a17201fe8c1a38da41bd2c80d8c",
-      "size": 30566
+      "sha": "fdf730211a35579f4da2bc46c1db96d67ee5c164",
+      "size": 31541
     },
     {
       "path": "references/design-md/superhuman/preview.html",
-      "sha": "c08173a9f631866d8f2895623ca816f0cd73e89d",
-      "size": 29922
+      "sha": "356a9e3e9d4e838a1baca10c85c15326ed3713eb",
+      "size": 30875
     },
     {
       "path": "references/design-md/tesla/DESIGN.md",
-      "sha": "34cc820469e463404840bdb548a7fbc0526bd71f",
-      "size": 22215
+      "sha": "de82fb2abc897c64e10890f7c69e3bfcc388490e",
+      "size": 22501
     },
     {
       "path": "references/design-md/tesla/README.md",
-      "sha": "543a73f2701ed84f5ace35262a993111463520c2",
-      "size": 1265
+      "sha": "36a82027f8a356ce3839f341c5c345d9f8c347b7",
+      "size": 1288
     },
     {
       "path": "references/design-md/tesla/preview-dark.html",
-      "sha": "c9a08f4dc8a242887bbf2a896b9d0da38f0bd484",
-      "size": 29324
+      "sha": "f60b35b508c30323dd814bf1b1c97356c5a6f1b2",
+      "size": 30273
     },
     {
       "path": "references/design-md/tesla/preview.html",
-      "sha": "57a17c0726ce6e8cb220bc4d79c73f750d277955",
-      "size": 28959
+      "sha": "4a5a180b09a374bd075c4c1ffc2652487f9bf1d1",
+      "size": 29886
     },
     {
       "path": "references/design-md/together.ai/DESIGN.md",
-      "sha": "f406b80fbf3aff6c2986b2771d135a090cb4febc",
-      "size": 14287
+      "sha": "e9d7a1b37c9a497f44a1b0d40eb056bbab87a020",
+      "size": 14550
     },
     {
       "path": "references/design-md/together.ai/README.md",
-      "sha": "b24c70f51a771ed19d22d144be17daab56b52764",
-      "size": 1319
+      "sha": "c843473fb2a161061212dd6401a3ba20b969ae51",
+      "size": 1343
     },
     {
       "path": "references/design-md/together.ai/preview-dark.html",
-      "sha": "43d7da6711fcc3865096d9d682cd75f8e5fba628",
-      "size": 31777
+      "sha": "3f966ef002f089b986b670d92e43dae7283a3b75",
+      "size": 32668
     },
     {
       "path": "references/design-md/together.ai/preview.html",
-      "sha": "cb97b0444dd831b2393c8083a9a10b30936ff7d6",
-      "size": 32067
+      "sha": "1997ea80e4bcf13bfecd103dec45b5cfe5d0a54d",
+      "size": 32963
     },
     {
       "path": "references/design-md/uber/DESIGN.md",
-      "sha": "9d126c5becd59a8ccb8375e66146e8548428361e",
-      "size": 18657
+      "sha": "c3b065d907706dcb9644681decf907e3e6f133eb",
+      "size": 18952
     },
     {
       "path": "references/design-md/uber/README.md",
-      "sha": "66d0ba7b504a9ae0c05b323220525481cf5428b9",
-      "size": 1256
+      "sha": "b8adc063cad22c6820457595fb2505252dd69073",
+      "size": 1280
     },
     {
       "path": "references/design-md/uber/preview-dark.html",
-      "sha": "e648599182ab0a0e3421a131c6cc5a170e47e057",
-      "size": 33546
+      "sha": "e6b8af4f0f3c2677ead3909c8b42857df5e95cb3",
+      "size": 34710
     },
     {
       "path": "references/design-md/uber/preview.html",
-      "sha": "907d1e03b71242acc8b6a6b52e0d6c88ffaaecf1",
-      "size": 33375
+      "sha": "063e01d6c1ca083ea0650e9ab6f68411a3ecf7e1",
+      "size": 34538
     },
     {
       "path": "references/design-md/vercel/DESIGN.md",
-      "sha": "b942a5f22ea2005accd39d29bf8fb96a253399c3",
-      "size": 19457
+      "sha": "47bed2a768aea458d3431cbf33352ea4886d5791",
+      "size": 19767
     },
     {
       "path": "references/design-md/vercel/README.md",
-      "sha": "fd09b96a05290382fd86c815efef1f963791d0cb",
-      "size": 1276
+      "sha": "7dec0801dbb91a86e9773dc1f5f42098cc6089d2",
+      "size": 1300
     },
     {
       "path": "references/design-md/vercel/preview-dark.html",
-      "sha": "ff5812e8400136216f74295a2d20f26fd4204c90",
-      "size": 26373
+      "sha": "95150148f710859ed0707f54db370edacc30006f",
+      "size": 26743
     },
     {
       "path": "references/design-md/vercel/preview.html",
-      "sha": "0ad0ff05e2011445dc9ff4f46d6421a5f3626056",
-      "size": 26186
+      "sha": "90ad5373ed7c097f342ba738fae6b1b813859d0f",
+      "size": 26555
     },
     {
       "path": "references/design-md/voltagent/DESIGN.md",
-      "sha": "2c77c5b09ae2457f4cad295b59601c1425181f38",
-      "size": 26323
+      "sha": "696ec622a6fc294a29cc932481f972d006426e03",
+      "size": 26646
     },
     {
       "path": "references/design-md/voltagent/README.md",
-      "sha": "fa3fa2e7ab96cde9f9b3d9c2a5d5a8849882807a",
-      "size": 1306
+      "sha": "bfe7992f51421d5dfaf5d8fd1c62f6aa9ef29b3d",
+      "size": 1330
     },
     {
       "path": "references/design-md/voltagent/preview-dark.html",
-      "sha": "bc03db72894013f129f79000d0f09b6b67c0820e",
-      "size": 27284
+      "sha": "dcf6dfea8c908331d92a77bc571558783cde5168",
+      "size": 27771
     },
     {
       "path": "references/design-md/voltagent/preview.html",
-      "sha": "430dd8003fffd228c33cab65542dd7965a9e6ed7",
-      "size": 29396
+      "sha": "9049a00e117ebf8f6d3a2a35168f48bac95a21e1",
+      "size": 30162
     },
     {
       "path": "references/design-md/warp/DESIGN.md",
-      "sha": "0f5a44c1bf6a84fe6627088fd08dd0415ffb9dfb",
-      "size": 16671
+      "sha": "c547810e5df18e63514ca174b4215bcba8a5d9be",
+      "size": 16924
     },
     {
       "path": "references/design-md/warp/README.md",
-      "sha": "22c67db96d6142f4afc1e392a766275db93d8f10",
-      "size": 1255
+      "sha": "c057ad17705edf966896ba7cf3529d2de9919315",
+      "size": 1278
     },
     {
       "path": "references/design-md/warp/preview-dark.html",
-      "sha": "66d6cb83614e73d2941b4ea290b765619ef65601",
-      "size": 23533
+      "sha": "56dae47ad11733eb0861a2538e1580b3b2528217",
+      "size": 24035
     },
     {
       "path": "references/design-md/warp/preview.html",
-      "sha": "0d248259f31ca784edcb71b4cd72132083f30b31",
-      "size": 24934
+      "sha": "ca9f350340e9797bd07982cccff82c7467fd2c4f",
+      "size": 25469
     },
     {
       "path": "references/design-md/webflow/DESIGN.md",
-      "sha": "40cbc993f137590cc485891d49d26fe634742844",
-      "size": 4122
+      "sha": "fdc73c31d09da79150dbddf63f86519d20d94ffe",
+      "size": 4214
     },
     {
       "path": "references/design-md/webflow/README.md",
-      "sha": "648a4bf8f565e79a3f6193139b8048f2178ed5fe",
-      "size": 1285
+      "sha": "2cb505ead82ad94708e9f83331e780230cea77c8",
+      "size": 1308
     },
     {
       "path": "references/design-md/webflow/preview-dark.html",
-      "sha": "40a31a24546086fec993b446406a950d56647c19",
-      "size": 16724
+      "sha": "eb2828ada4d45da846dbd64c41f94a282d0fae60",
+      "size": 16871
     },
     {
       "path": "references/design-md/webflow/preview.html",
-      "sha": "357e1df7c26601c5a91d9732361616d60ef2aced",
-      "size": 16551
+      "sha": "1b8e36bbe47fc63363ade1d6b06813dd562ba099",
+      "size": 16697
     },
     {
       "path": "references/design-md/wise/DESIGN.md",
-      "sha": "6be31d9225a859426ae19d277c647a233afd9c30",
-      "size": 8467
+      "sha": "da0510bfb137b4220b531e4f29feaa1ed878e04f",
+      "size": 8640
     },
     {
       "path": "references/design-md/wise/README.md",
-      "sha": "9a3af2587ac5a30c6f769b4ae887e40e902debcb",
-      "size": 1255
+      "sha": "98c5e7ee914c0a97799d29cfd3224a4a04c70e67",
+      "size": 1278
     },
     {
       "path": "references/design-md/wise/preview-dark.html",
-      "sha": "3a0338d170b0c1db7966b7e4ec878eb1151be542",
-      "size": 17515
+      "sha": "ce6e28079212f7a64d1bef49484b633d24e04eaf",
+      "size": 17745
     },
     {
       "path": "references/design-md/wise/preview.html",
-      "sha": "94214f0ab9e2a679b6380a184dc55097e14a4527",
-      "size": 17335
+      "sha": "a97d92994c3d405815766473fb0f6140b7a2c529",
+      "size": 17564
     },
     {
       "path": "references/design-md/x.ai/DESIGN.md",
-      "sha": "31e1f31e98fa4ee49140f4d2cd39f62a9219d405",
-      "size": 16285
+      "sha": "235e4776edfff678c311e188be59adf3cfe71525",
+      "size": 16542
     },
     {
       "path": "references/design-md/x.ai/README.md",
-      "sha": "7834169eca4e7a97673c46fceeb33d99ad03d96d",
-      "size": 1247
+      "sha": "c4eafa1326b096a115d1aef555a980551ca04f18",
+      "size": 1271
     },
     {
       "path": "references/design-md/x.ai/preview-dark.html",
-      "sha": "682cf622b7a3abd276cd314d7aa70b064fe55095",
-      "size": 22591
+      "sha": "5bcb6398ff92cfb822f65bcbba81ff5528241fef",
+      "size": 22949
     },
     {
       "path": "references/design-md/x.ai/preview.html",
-      "sha": "d9631ca9925ab6b286271704dec8385e525e3120",
-      "size": 25121
+      "sha": "34156bc21c544ba3a789d861752f918104728d68",
+      "size": 25530
     },
     {
       "path": "references/design-md/zapier/DESIGN.md",
-      "sha": "12c15296597f868df30038217cf28e03a0704959",
-      "size": 18743
+      "sha": "6975e00272aa145f5d3c833ca94e398e94dba49c",
+      "size": 19071
     },
     {
       "path": "references/design-md/zapier/README.md",
-      "sha": "1cf8476165e1ffd413895de96b5f4bd51b1fa188",
-      "size": 1276
+      "sha": "1c49c8115d20b7eab156728127fbfffc435736fb",
+      "size": 1300
     },
     {
       "path": "references/design-md/zapier/preview-dark.html",
-      "sha": "8808b032de9c1ffc3efc683563bea71e470a646d",
-      "size": 23925
+      "sha": "2828886bd5a93963686e6e50c52cce620ad4031f",
+      "size": 24307
     },
     {
       "path": "references/design-md/zapier/preview.html",
-      "sha": "bbb95e3dbe8470392c82b94b337d75693e4b945d",
-      "size": 23745
+      "sha": "a3629324c5772b882a066e063966807f4fe30ab8",
+      "size": 24119
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "57ba50d3c9f2b7c43237562b1bf562dc4c49bfc0",
-      "size": 2471
+      "sha": "be5f197b77fef92e96852dd0f468d747fbf97c37",
+      "size": 2544
     }
   ]
 }

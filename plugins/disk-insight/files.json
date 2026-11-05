@@ -3,23 +3,23 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "9ca13b492bf4a1929af3ddf5f45e7862c6151b29",
-      "size": 531
+      "sha": "1ded1be6b696c464815f3d84ac2e5b152c6c0383",
+      "size": 548
     },
     {
       "path": "LICENSE",
-      "sha": "beba0c8098027ab2e0c68c9f4edbed6ab2bb9bb2",
-      "size": 1064
+      "sha": "76a5953695d20efdbea6e5eda914046114366a43",
+      "size": 1085
     },
     {
       "path": "README.md",
-      "sha": "e30cc0bf80ce97adcced76e362ae483c2a75833c",
-      "size": 19276
+      "sha": "f6e75eef26a224f224afda95e5e84680c803c93e",
+      "size": 19527
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "6f23a2d0c2bdbbfef103858879b620b23d87c411",
-      "size": 18251
+      "sha": "1629e8bb8b198c73f2180648701365c624c5a8d6",
+      "size": 18384
     },
     {
       "path": "docs/preview-junk.png",
@@ -38,268 +38,268 @@
     },
     {
       "path": "miniapp/client/assets/app.css",
-      "sha": "9b26ce103150ed0b6e43668bbacdb2a3b4aeb756",
-      "size": 48929
+      "sha": "5055e2a870b08a2a3b08d9707e47bf2bf8008c79",
+      "size": 51877
     },
     {
       "path": "miniapp/client/assets/app.js",
-      "sha": "cf30abcae63b6d8c69e461977c469a83dd2db10f",
-      "size": 177251
+      "sha": "2db286d155d9401b101e8f31a8c6327d40528780",
+      "size": 181585
     },
     {
       "path": "miniapp/client/client-api.ts",
-      "sha": "c0904f63965101c3a09211cee91caf6fcd42d54f",
-      "size": 16357
+      "sha": "aa9896bd7fb4f5994558e6131c277b3f176fa906",
+      "size": 16744
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "9324f5a1908a174df346d27c4108f3cdf6f9d4c9",
-      "size": 6917
+      "sha": "50be2022634b71297a4f70f6e600d7654b1cf5b6",
+      "size": 7055
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "266620efc00d37c3cf4e3c0da6ebcd9ab6462e97",
-      "size": 497
+      "sha": "a1fd95c75bccb872564a0cd415231e25c8922b31",
+      "size": 527
     },
     {
       "path": "miniapp/node/app-actions.mjs",
-      "sha": "54df820ec6ac6f1410a1295c0c4abb05d2555d9c",
-      "size": 2310
+      "sha": "02bb9f74b515937a1d86c396ff359151e6ad7180",
+      "size": 2366
     },
     {
       "path": "miniapp/node/app-clean.mjs",
-      "sha": "75b70bdcb9fe8aea9e6c19ce8286a5bf6b0d6a17",
-      "size": 5910
+      "sha": "28bce7392fa1c9f31bb520e3aa15fd18b3be41c1",
+      "size": 6044
     },
     {
       "path": "miniapp/node/app-extras.mjs",
-      "sha": "de9038682d988e7debb7f892d4b8a93f47949197",
-      "size": 8300
+      "sha": "da6c63da0b6eb20060ae3aa5fa5d2d0bd531bcf2",
+      "size": 8515
     },
     {
       "path": "miniapp/node/app-repos.mjs",
-      "sha": "843a759922754a19ddee3b7d5a7ecd7c9e3bcd24",
-      "size": 16798
+      "sha": "de0c472eb66a3a4b0acf1343ccc3d48d5e1ec7fc",
+      "size": 17199
     },
     {
       "path": "miniapp/node/app-scan.mjs",
-      "sha": "fd983725cbed011f72c10c157a0d7433dd69aa6e",
-      "size": 10127
+      "sha": "d4fc69f6ad9aecd9c2d28a22265a501d21a504ce",
+      "size": 10377
     },
     {
       "path": "miniapp/node/app-selection.mjs",
-      "sha": "5c1126aab056beb0f3b4e2149d3d9f1bedee7785",
-      "size": 6354
+      "sha": "ae50ac2a3e700a45ae617cf2c08423764a32dc44",
+      "size": 6509
     },
     {
       "path": "miniapp/node/app.mjs",
-      "sha": "db32f5008de72f0b4dfe531c1d6053228181b873",
-      "size": 17122
+      "sha": "13300295fd9c0e6892603cd3943287b1ee22e931",
+      "size": 17606
     },
     {
       "path": "miniapp/node/cleaner.mjs",
-      "sha": "9664f13eac95d55e3ec8015e449eb918b6534837",
-      "size": 7261
+      "sha": "2fa73fb9e7be4ebfa480a90c4fb68a0f86a937e0",
+      "size": 7409
     },
     {
       "path": "miniapp/node/clones.mjs",
-      "sha": "da6e477eb93aa4274ec3fb2441f6bd37170db142",
-      "size": 2981
+      "sha": "4a64c45d5df5ace18a8cf93a63e3a2fa328a76bd",
+      "size": 3088
     },
     {
       "path": "miniapp/node/duplicates.mjs",
-      "sha": "730be7fc0e4ccb77f055bef364c34282558dd2d7",
-      "size": 3915
+      "sha": "ea5ca521e2fc12b02b96115c6593ae7ab46a058d",
+      "size": 4040
     },
     {
       "path": "miniapp/node/exec.mjs",
-      "sha": "bdd5f7e8b907bc8e8e73bc476dbfe7d14716a7f4",
-      "size": 6952
+      "sha": "c5640e3b4426acb076206088c4b32cdc4abadd62",
+      "size": 7140
     },
     {
       "path": "miniapp/node/hooks.mjs",
-      "sha": "cc172696c1433b3e79bb799e6fc3c2e09c4abfd5",
-      "size": 11241
+      "sha": "0ca6e9e497fbc4ed6922f024913af911da382955",
+      "size": 11481
     },
     {
       "path": "miniapp/node/http.mjs",
-      "sha": "6d823304ff40a2cb430dd163fa0d97c913a20cca",
-      "size": 4878
+      "sha": "b33bbb19056083762abbd2f4e673bee8ca403ee5",
+      "size": 5029
     },
     {
       "path": "miniapp/node/miniapp-api.ts",
-      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
-      "size": 15554
+      "sha": "4a6effead9ed7fe16699f5b4436a93539a85fcd1",
+      "size": 15951
     },
     {
       "path": "miniapp/node/model.mjs",
-      "sha": "f57b8e620c8b3702d3b640b1959ba40b87a18c10",
-      "size": 17104
+      "sha": "b09b4fcd9bc318df87df440eec67f73c4f8e8e7a",
+      "size": 17560
     },
     {
       "path": "miniapp/node/platform.mjs",
-      "sha": "017d52a57818bfc2091c9543c993683c1d6b06a8",
-      "size": 13853
+      "sha": "1db7efc84f50c662df3dce1e9e8d0bb9f3167adf",
+      "size": 14185
     },
     {
       "path": "miniapp/node/prompt.mjs",
-      "sha": "82697ef42e587cbb4be4e596c5055d307ed1598e",
-      "size": 3403
+      "sha": "e0278a45fc592892113b4bf9cc5c860390aef8c0",
+      "size": 3463
     },
     {
       "path": "miniapp/node/protect.mjs",
-      "sha": "f925f4c6595e50a2ee6109693769f58b07e88df1",
-      "size": 6584
+      "sha": "21466bf282bd5bf2a8ce8b1593f743bb6c064d14",
+      "size": 6729
     },
     {
       "path": "miniapp/node/repos.mjs",
-      "sha": "a4ca670190ee3bedccd01a1e59efe7d38098b8cf",
-      "size": 23651
+      "sha": "815eafb96a3f8ad05d4100bf5266b46cd2bb88a2",
+      "size": 24163
     },
     {
       "path": "miniapp/node/routes.mjs",
-      "sha": "b7d0294f9237e0829f522aae91753e6957e5d9d7",
-      "size": 5940
+      "sha": "2b0e23860e1fd12848f7d64f852a5a4983fc86e1",
+      "size": 6080
     },
     {
       "path": "miniapp/node/rules-win.mjs",
-      "sha": "4dfb001092a0d1bfea05389c4eae86943f2969ad",
-      "size": 8201
+      "sha": "c30b93dff80ea5c5829c5adde860cbda7096cbeb",
+      "size": 8306
     },
     {
       "path": "miniapp/node/rules.mjs",
-      "sha": "475412f0d42707ace16ef013f0c6a11b875cd150",
-      "size": 26946
+      "sha": "7fdf90b01bf32f82b1945015299e1865beb0f832",
+      "size": 27487
     },
     {
       "path": "miniapp/node/scan-engine.mjs",
-      "sha": "53af65aaaa0cb746864a409e479f2a37809b3e4c",
-      "size": 19315
+      "sha": "d593deda6259e6f8bab56059b964feb1403d7633",
+      "size": 19812
     },
     {
       "path": "miniapp/node/scanner.mjs",
-      "sha": "9237f3138fe1ee0a6c48a35729fbca9ce52dd63c",
-      "size": 12674
+      "sha": "5378a6987d0927a27245ac66e29427b223a469d7",
+      "size": 12995
     },
     {
       "path": "miniapp/node/scope.mjs",
-      "sha": "4e23331961b7488c6452478c83a66e09049c5c4e",
-      "size": 6326
+      "sha": "6523cbae0c8b92d81f75bb3a4e5970253928d8ed",
+      "size": 6462
     },
     {
       "path": "miniapp/node/selection.mjs",
-      "sha": "3ea3a2e96a9b6fea48a42b1c403c4f16a3f1b9ed",
-      "size": 1376
+      "sha": "c37bb4c5581dc199f3253021db1dc7acc0094fe2",
+      "size": 1422
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "aca320e957daaf331ede271f0072a9199b07dcb0",
-      "size": 2714
+      "sha": "17b1eb840e04b2167c501439e826bc807dd24b5a",
+      "size": 2798
     },
     {
       "path": "miniapp/node/store.mjs",
-      "sha": "6744e1ac409df03521efb979230d7efd70692640",
-      "size": 3978
+      "sha": "d19e7ef973060d01c6f484820818af4ff84e268c",
+      "size": 4090
     },
     {
       "path": "miniapp/node/tree.mjs",
-      "sha": "9d11607d36ed0e3fccfd755e8c03a46d37886ec7",
-      "size": 5576
+      "sha": "3427835970da5f35b2a2a591b8a79503f071c4f8",
+      "size": 5761
     },
     {
       "path": "miniapp/node/util.mjs",
-      "sha": "de893bdf45c46e1055ac1570696f001b3a4106ab",
-      "size": 4362
+      "sha": "0d5760152f305507a58a7ab3c36c653fc2a10ddc",
+      "size": 4502
     },
     {
       "path": "miniapp/node/views.mjs",
-      "sha": "cd709b2cf11de7303b97b9913d33f1c10de9027a",
-      "size": 19303
+      "sha": "d2db61795517c41bf4c803472d863372ec758747",
+      "size": 19814
     },
     {
       "path": "package.json",
-      "sha": "1553f86ec70fe6946822d85143548df446a72520",
-      "size": 152
+      "sha": "f55617c81a05aa232c39095ad2cd3566d8ba4591",
+      "size": 161
     },
     {
       "path": "tests/app.test.mjs",
-      "sha": "a1dad1d5900ed9bbf1bd1d4b29e7636e50bc8085",
-      "size": 14222
+      "sha": "0b49a5863b24cba7c82bf0378545b6fdf4066df3",
+      "size": 14484
     },
     {
       "path": "tests/artifacts-scope.test.mjs",
-      "sha": "0e11d6aa4c436ab3bee3c4662038fa7de3b05010",
-      "size": 9061
+      "sha": "345b3ad94c90eaee6d292c2dde2db1b48438e7ed",
+      "size": 9208
     },
     {
       "path": "tests/clean.test.mjs",
-      "sha": "ddf4d897c7a10376b8b61f159b620117fa268264",
-      "size": 7779
+      "sha": "5f55a860a14213f6d7de2fe070392a50c25e0e9d",
+      "size": 7933
     },
     {
       "path": "tests/contract-v2.test.mjs",
-      "sha": "d34751d48a3c66fe5305d1d58ca4570b2c74920a",
-      "size": 10637
+      "sha": "777a6ecdc326f9f03b18d22f2be2baa4d0ee06da",
+      "size": 10842
     },
     {
       "path": "tests/helpers.mjs",
-      "sha": "37e6eaf7884ff25add383ac303b853d3d89330c2",
-      "size": 4385
+      "sha": "a6adbd20ff03c1aba002fd13acf051bbaf45bfb3",
+      "size": 4489
     },
     {
       "path": "tests/protect.test.mjs",
-      "sha": "93c539e20b2c46c1c2a6127718c6ec38aa084e4a",
-      "size": 4661
+      "sha": "4d0b0e7d4d31aa66321ddf04b1db4debc6a70477",
+      "size": 4733
     },
     {
       "path": "tests/rules.test.mjs",
-      "sha": "7f5c52399504c1c3936cef508fc6eff91b33130f",
-      "size": 11347
+      "sha": "aef371c0193ab53a4f8e25debafe641b3f047e13",
+      "size": 11551
     },
     {
       "path": "tests/scanner.test.mjs",
-      "sha": "740e9f497e69590c2da8f90fca68ad0565cb355c",
-      "size": 13797
+      "sha": "933e22cbd53cdbb1a304371c388c303132a2e139",
+      "size": 14100
     },
     {
       "path": "tests/selection-prompt.test.mjs",
-      "sha": "04894d75ec84294d998b40da7025603037f3b380",
-      "size": 7572
+      "sha": "6599eb82029ec5387e359b05ea849a51f854ff8c",
+      "size": 7696
     },
     {
       "path": "tests/v3.test.mjs",
-      "sha": "f3d85044f387fabb7f3e7292113ed43733f88659",
-      "size": 23490
+      "sha": "7ddee375d7afdfea8e01ad8aa39f1aea9b8158d0",
+      "size": 23909
     },
     {
       "path": "tests/v4-dups.test.mjs",
-      "sha": "b43072a96ee1a041eaf73042a8c6869416bce53a",
-      "size": 3391
+      "sha": "a3123c659944970d3f5e56011e752fa4d39c8dd8",
+      "size": 3462
     },
     {
       "path": "tests/v4-quick.test.mjs",
-      "sha": "9f401dcf70338fd8f2deb09c6947e59af0f9f1c0",
-      "size": 8381
+      "sha": "a85abd6d1d9fb0b0910918b37055e5ed52c1948c",
+      "size": 8584
     },
     {
       "path": "tests/v4-repos.test.mjs",
-      "sha": "1e42576c180eb93e70afc3f57b9309c4316b0fd9",
-      "size": 32508
+      "sha": "7f16abae99232a7832ba1fc166217c61b1adb2c7",
+      "size": 33056
     },
     {
       "path": "tests/v5-delete.test.mjs",
-      "sha": "aadb02ecbb191c08847692ec950ffcbdabd44134",
-      "size": 10426
+      "sha": "6e7dc9d5e19ae2049dd9d2d6c0df36d44343569c",
+      "size": 10621
     },
     {
       "path": "tests/v5-repo-occupancy.test.mjs",
-      "sha": "0f78c1b5ab082619bb36857bb767802eac3a030c",
-      "size": 5933
+      "sha": "e85386316eb746cad0f8a1ef1f4386f229fdfc6c",
+      "size": 6043
     },
     {
       "path": "tests/v5-worktree-backref.test.mjs",
-      "sha": "a46265af254aa6ad221254992af4f0f2a9401456",
-      "size": 12614
+      "sha": "062508c0e22881c3e886d87bdb1a12b4e46b9bb0",
+      "size": 12841
     }
   ]
 }

@@ -3,23 +3,23 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "2a8545ae1a32bcddf5c075a8d33014e8165e8754",
-      "size": 1140
+      "sha": "1e972b01dd20c29484b31ece4165e024d846bc02",
+      "size": 1162
     },
     {
       "path": "LICENSE",
-      "sha": "1058c3f5b89e852a5e69be44268b5cf6bfccf64d",
-      "size": 1493
+      "sha": "e24c47faaefd92060ae1a66bcf315a9d2456bccc",
+      "size": 1521
     },
     {
       "path": "README.md",
-      "sha": "aaed70740ff4eea0da20ba4cd32b7deb3cd181d1",
-      "size": 30918
+      "sha": "37b256ecab41e42ba903ca53fe69050129ab17b2",
+      "size": 31103
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "8a248f9934381b64a4ae9faf884b4993044fe153",
-      "size": 30401
+      "sha": "402c37da568324b94c5bf5ae5409512aa4d5fab3",
+      "size": 30586
     },
     {
       "path": "docs/brand/cqviewer-lockup-dark.png",
@@ -28,8 +28,8 @@
     },
     {
       "path": "docs/brand/cqviewer-lockup-dark.svg",
-      "sha": "c41f1a2cf81a1e02de63702e80983966254a053e",
-      "size": 5365
+      "sha": "07ff4c13eb4bcda044a07dd419f2f564b9d9f0e2",
+      "size": 5462
     },
     {
       "path": "docs/brand/cqviewer-lockup-light.png",
@@ -38,8 +38,8 @@
     },
     {
       "path": "docs/brand/cqviewer-lockup-light.svg",
-      "sha": "27a127f10304c6bf1683316d8acf4389226d1514",
-      "size": 5309
+      "sha": "f62708c42735cb1ec8d8a329c7669e070b38b880",
+      "size": 5406
     },
     {
       "path": "docs/brand/cqviewer-mark-512.png",
@@ -48,8 +48,8 @@
     },
     {
       "path": "docs/brand/cqviewer-mark.svg",
-      "sha": "8b0931f0bf6c8ce2bbdcb172cdf11b76beb06775",
-      "size": 4928
+      "sha": "881da0ec7d1d49d5611d9fecbdfa11e14a29d06f",
+      "size": 5018
     },
     {
       "path": "docs/case-study.gif",
@@ -68,13 +68,13 @@
     },
     {
       "path": "miniapp/client/assets/app.js",
-      "sha": "a52cce56884090083b678166a4d292e62e560dd1",
-      "size": 100313
+      "sha": "16c5271e8532b5008d6fe32ddfcf2c06cb8fb190",
+      "size": 103002
     },
     {
       "path": "miniapp/client/assets/host-bridge.js",
-      "sha": "51737bfdc4e064f0fb87df39b322b6bb6421b016",
-      "size": 7481
+      "sha": "f3519793e4d248f4f7c1cc348f00ed30b2a01f62",
+      "size": 7677
     },
     {
       "path": "miniapp/client/assets/logo.png",
@@ -83,173 +83,173 @@
     },
     {
       "path": "miniapp/client/assets/render-panel.js",
-      "sha": "5b29585f3e9e9d2b1d5b63a15411459891fa1dc1",
-      "size": 25546
+      "sha": "136210f425362fc63f94e99d8aab0aadb59f26ee",
+      "size": 26177
     },
     {
       "path": "miniapp/client/assets/style.css",
-      "sha": "6bd58f23e5a7e9e9f7bf580780b8394b5de3e3bb",
-      "size": 32583
+      "sha": "8db340dcc272fa57673290fdd4b32661290d1709",
+      "size": 34456
     },
     {
       "path": "miniapp/client/assets/vendor/LICENSE-three.txt",
-      "sha": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
-      "size": 1081
+      "sha": "6cbab1ba8f2542ea09fb5a7e5eca3257658b5696",
+      "size": 1102
     },
     {
       "path": "miniapp/client/assets/vendor/OrbitControls.js",
-      "sha": "12128dbe16fa194a2492dbf43e4d64020091b643",
-      "size": 32150
+      "sha": "1609d808132ebe960993d29ab0c1200ed18b13a0",
+      "size": 33673
     },
     {
       "path": "miniapp/client/assets/vendor/STLLoader.js",
-      "sha": "d235dbb76382c4ce79d63eecc8d4c0bb570d3f52",
-      "size": 10059
+      "sha": "93c176d705fc85f7b72ed307bb2379bb680e76be",
+      "size": 10470
     },
     {
       "path": "miniapp/client/assets/vendor/three.module.min.js",
-      "sha": "282d1087068fab752a7e59b65aaa61c8b0a4be8c",
-      "size": 691648
+      "sha": "3af9ac42bbb49c4707524328089e2a1ce7d0ee06",
+      "size": 691654
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "f0b1278722e61b5417cfb9f2349837159a39a612",
-      "size": 20547
+      "sha": "32d2e0cf7e43e9452e8c01995d6432b3074ee8e0",
+      "size": 20869
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "eecdee2dbd0c44fad92a6b5396220fd0d1cd232c",
-      "size": 478
+      "sha": "195763f9cc988e86f381f9d14f79fe8c467f525c",
+      "size": 508
     },
     {
       "path": "miniapp/node/mcp.mjs",
-      "sha": "f63a71fb667b03ef5a6720b2c418fcc735cf2311",
-      "size": 12635
+      "sha": "1f53b0d9e44b36441726d0d0f5e2bb3344534cdd",
+      "size": 12895
     },
     {
       "path": "miniapp/node/miniapp-api.d.ts",
-      "sha": "f5d8b7a4423215e1edd2585967b93e35862c79ed",
-      "size": 15554
+      "sha": "4a6effead9ed7fe16699f5b4436a93539a85fcd1",
+      "size": 15951
     },
     {
       "path": "miniapp/node/render.mjs",
-      "sha": "3bfd5c3619a5a505dda88ef5fec98fd44ad464c4",
-      "size": 28014
+      "sha": "59cebebfb56f22447cc137a475157f6148d3333b",
+      "size": 28621
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "e0b8225fa4c5b12180b40ecc69388134a5cf4130",
-      "size": 66761
+      "sha": "fedd9348ccc5a59efbba88e1ddb156ba8b462476",
+      "size": 68391
     },
     {
       "path": "miniapp/node/step_mesh.py",
-      "sha": "cb69a344ffff47c6726ea819223016e4889b55f7",
-      "size": 11223
+      "sha": "88614e28e6709b5b99f9c99d6158f87d93cc71e9",
+      "size": 11520
     },
     {
       "path": "package.json",
-      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
-      "size": 85
+      "sha": "d523407a160a78f45163896e97bf6e9ba055b80f",
+      "size": 91
     },
     {
       "path": "python/cqview.py",
-      "sha": "770995acc09252183b0a92bd6e00893cb3272f5e",
-      "size": 8402
+      "sha": "ce9de5bf0ee9c4274b9b1333d45bc55893c48b3b",
+      "size": 8637
     },
     {
       "path": "python/demo_viewer.py",
-      "sha": "7703dbcdd3340763432ef580904872e519c188ad",
-      "size": 1115
+      "sha": "dade6b0fb7d6cf343443b25b865430851f29d99d",
+      "size": 1150
     },
     {
       "path": "servers.mcp.json",
-      "sha": "fd96ee655ab92cabb6e5ed7f65e1a3f18e790365",
-      "size": 348
+      "sha": "ee9415fc1f74f90ec70fcf9be3da9c4a4a1e939b",
+      "size": 360
     },
     {
       "path": "skills/parametric-3d-printing/LICENSE",
-      "sha": "c220730410580d03091f30d81eb934b14b07c5c6",
-      "size": 4577
+      "sha": "3a74e84a6e9714eb2b653b6f39a51bb9b628cc6e",
+      "size": 4708
     },
     {
       "path": "skills/parametric-3d-printing/SKILL.md",
-      "sha": "37e15d90c277572c839f7b9e82881f5d29cad6b7",
-      "size": 23205
+      "sha": "6b68483b746d275f5daa869ef541d5b17ce5782e",
+      "size": 23631
     },
     {
       "path": "skills/parametric-3d-printing/UPSTREAM.md",
-      "sha": "ac65ac4383e1a0b1ab4def75351b51c2d892bc31",
-      "size": 963
+      "sha": "fead68d55e31992f484280035f8bebfd5a29e71a",
+      "size": 980
     },
     {
       "path": "skills/parametric-3d-printing/design-review.md",
-      "sha": "120ae3f25f00feb04f77486de67e85d15d4c1628",
-      "size": 7195
+      "sha": "416212a71f017a2af107938426a5a3ccf4e80bf6",
+      "size": 7430
     },
     {
       "path": "skills/parametric-3d-printing/examples/gridfinity_d110_bin.py",
-      "sha": "38a7f78d5e66f780c6dc2d29e3868f2380f7f2bf",
-      "size": 1961
+      "sha": "be696dc43bcac0b7a192d28d4be26f9dcdd17bbd",
+      "size": 2012
     },
     {
       "path": "skills/parametric-3d-printing/examples/mx_master3_bin_3x3.py",
-      "sha": "93f575b4bc5e66dffb1d10c8670758a3034c0e1b",
-      "size": 4979
+      "sha": "c6199c8e2a51d400078a8c9643f156bef17ddfe7",
+      "size": 5092
     },
     {
       "path": "skills/parametric-3d-printing/gridfinity.py",
-      "sha": "0692a9f806b81fc03b1f82329dfc9e2914b5f242",
-      "size": 27086
+      "sha": "c3f0191fc165b10e8ba49ad884a4d2930ab529b2",
+      "size": 27754
     },
     {
       "path": "skills/parametric-3d-printing/mesh_io.py",
-      "sha": "2336c54318e9c11de33d599fe730eee62ec3df6c",
-      "size": 1534
+      "sha": "67a4ed582fc0e49aaf267b6725a7aa0d77d7e6c7",
+      "size": 1569
     },
     {
       "path": "skills/parametric-3d-printing/outline_from_scan.py",
-      "sha": "3da19a75a17f6eac86da207fa0a01f187638b918",
-      "size": 4878
+      "sha": "3aa1598d5bb677ff822e935f1e1914e806344cab",
+      "size": 5001
     },
     {
       "path": "skills/parametric-3d-printing/preview.py",
-      "sha": "2baefeb7bf1a9a0a126dfe856647088f59be2fd7",
-      "size": 16988
+      "sha": "50fe95181cb8d4d519227d3ebc0de8e5ae87cf59",
+      "size": 17476
     },
     {
       "path": "skills/parametric-3d-printing/requirements.txt",
-      "sha": "2bcfd59ccc0b731b8125af419a95fa52c4b2d381",
-      "size": 311
+      "sha": "f0537e475c091b41d0ea1eaa606c0a0df80197ae",
+      "size": 320
     },
     {
       "path": "skills/parametric-3d-printing/run_cadquery_model.py",
-      "sha": "2c1eb2c0d5d59a72ac0d465db8510b832842a429",
-      "size": 9199
+      "sha": "93574e025ce9427ef829f6a0cfbfaaa899f07784",
+      "size": 9435
     },
     {
       "path": "skills/parametric-3d-printing/stl_to_3mf.py",
-      "sha": "85240d80aa96a0b14e021390ec6138270622893c",
-      "size": 2604
+      "sha": "88acbaff5e9980d755445276bd723e2e4718145c",
+      "size": 2675
     },
     {
       "path": "tests/mcp.test.mjs",
-      "sha": "030392a5497bc26a02226b994fabebd9413614a9",
-      "size": 11889
+      "sha": "82cf366e318c70e8356a2f365fa91179c6b86f22",
+      "size": 12154
     },
     {
       "path": "tests/render.test.mjs",
-      "sha": "27b64770acc33e260dbded58f755e5f191024035",
-      "size": 16604
+      "sha": "876fdd8fcbc237c2876eee01b23fadc55bafeb13",
+      "size": 16952
     },
     {
       "path": "tests/server.test.mjs",
-      "sha": "cff059b67c6ff72d8e36f5dfbcfa5f532f79a2de",
-      "size": 11435
+      "sha": "ad53db337de196b9a58c7eb1136299b37d65a972",
+      "size": 11707
     },
     {
       "path": "tests/workspace.test.mjs",
-      "sha": "29ea0a8b05b5bdda3caa1c91f9e2b684e1d40e53",
-      "size": 11899
+      "sha": "d197ca3603f4f6a5b8da04bb8d30c8b726908122",
+      "size": 12124
     }
   ]
 }

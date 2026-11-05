@@ -2,113 +2,113 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "b4cf547e56ac312faf4f588594a7e1a5758fe51d",
-      "size": 3699
+      "sha": "8cbf7bfaa9b01bb2a8e7ea3e39836ee5fffa661f",
+      "size": 3794
     },
     {
       "path": "_meta.json",
-      "sha": "49ba95e4e1661003a94fbc34aa58ec604cdb5185",
-      "size": 534
+      "sha": "9e72e8db302a7fdd2596e41e60836d533220f154",
+      "size": 559
     },
     {
       "path": "config/settings.yaml",
-      "sha": "fa5f52cb616a00f33b0c0c5d662cb2af6cff0da6",
-      "size": 1170
+      "sha": "c45695c74a26d010b4013ca98c853358d7d03cf9",
+      "size": 1240
     },
     {
       "path": "core/__init__.py",
-      "sha": "94b47d3438bd2021b390fbf4395ee8b6cf258fa7",
-      "size": 208
+      "sha": "a5a8079eef52105da93ce51f5d48b6e38301f4c8",
+      "size": 214
     },
     {
       "path": "core/deduplicator.py",
-      "sha": "06895d50660e41c4d81b34e2a9efdf676dde6ddb",
-      "size": 6385
+      "sha": "1897767d6cebcbbd11864702beac23e7dd5b61e0",
+      "size": 6581
     },
     {
       "path": "core/extractor.py",
-      "sha": "dee1d0940e1a959dd04303f59f42baff9e0b3436",
-      "size": 9919
+      "sha": "a005a3c161bd27afa8f138884e5e3ac571288269",
+      "size": 10242
     },
     {
       "path": "core/scanner.py",
-      "sha": "66e4e0648c8e8075d8eabbde2aa924bcc28f2455",
-      "size": 3140
+      "sha": "42f1f8c07baf7a5c063c2de038d21f05888e5ee8",
+      "size": 3256
     },
     {
       "path": "main.py",
-      "sha": "b47a0ca69b483c2c1e783e089da717070d11d668",
-      "size": 12427
+      "sha": "ecdfa0672084e3d3404dd54d45fc10a651caeed8",
+      "size": 12783
     },
     {
       "path": "parsers/__init__.py",
-      "sha": "4167bcd5cb5d1dff99f239bd497a939875d285fb",
-      "size": 191
+      "sha": "5d0f1489193e529b3d67781d690aae4388ef0c77",
+      "size": 197
     },
     {
       "path": "parsers/image_parser.py",
-      "sha": "10ab85c9e1be9a1f031858d2c52e13a8eeb8006c",
-      "size": 8344
+      "sha": "52710501a08ca0648d926ff565660fbaff26fefc",
+      "size": 8632
     },
     {
       "path": "parsers/pdf_parser.py",
-      "sha": "43c6e4828af8ecb0f3fa155ef24560787f785f91",
-      "size": 11831
+      "sha": "7cd1b8e86fdbe67fb36076ad59bf15c69a607c9f",
+      "size": 12215
     },
     {
       "path": "parsers/xml_parser.py",
-      "sha": "937de07ff7d59e0c10545ed1708aa782c8ee79b4",
-      "size": 8594
+      "sha": "9b5d8b71749de7604b1fcd8e49081b53f5f00aab",
+      "size": 8861
     },
     {
       "path": "processors/__init__.py",
-      "sha": "bf55004801318c781d4cdef9e9ab3db168ea1e2a",
-      "size": 229
+      "sha": "8487e471e186ae6025e3cddfa132823b9ff77115",
+      "size": 235
     },
     {
       "path": "processors/rename_processor.py",
-      "sha": "ae91e8192637cd62e86bee53d45221350d75a6f1",
-      "size": 6697
+      "sha": "a768a31f61e1e94194c3ff07188e535e89c9e40b",
+      "size": 6932
     },
     {
       "path": "processors/report_generator.py",
-      "sha": "4ed37e19c6e87e7886e3c24aa9d2f68da05e76ba",
-      "size": 11901
+      "sha": "ed4fd295f54607686682b688417758ec0b9a23ae",
+      "size": 12248
     },
     {
       "path": "processors/travel_processor.py",
-      "sha": "1357b919a95785448ee7cf1c2a7acf7902a91071",
-      "size": 8326
+      "sha": "82847db6e64528e634f2b16d0a02deb5cd9eaa38",
+      "size": 8576
     },
     {
       "path": "prompts/invoice_extraction.txt",
-      "sha": "31dd8f1b4bc3585d317af4e17f0f9d95dabf7946",
-      "size": 1999
+      "sha": "fa8e1fa471707438e4eb3a8d31664be312f28c90",
+      "size": 2056
     },
     {
       "path": "prompts/travel_analysis.txt",
-      "sha": "5205e806b790049cbbf187a5236eda9d4aef9335",
-      "size": 1337
+      "sha": "f58e7412c55169d193f845a7d1d6213d6590d9b4",
+      "size": 1390
     },
     {
       "path": "requirements.txt",
-      "sha": "6b614d255464faff9e521803212a8b951fcd8451",
-      "size": 207
+      "sha": "5287fee0aa89ba1f5bf97bac36ab78408f22d874",
+      "size": 216
     },
     {
       "path": "scripts/__init__.py",
-      "sha": "cd854dffea774b340683c47d3191682e9f5a0650",
-      "size": 28
+      "sha": "06cc9c66f1dd3602a121124f49ac6bbea1fcba2f",
+      "size": 29
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "97139f1388e26bf4cb573b2cc691ae0a42f64ceb",
-      "size": 1822
+      "sha": "46dc078a1cbb6551276060537eed1928516e6cc8",
+      "size": 1891
     },
     {
       "path": "scripts/validate_skill.py",
-      "sha": "0975116b7251a44dba99e869cc442f00ff7294c3",
-      "size": 2926
+      "sha": "fc512062c9d50f00aa3b34220acfa2421e5d6455",
+      "size": 3034
     }
   ]
 }

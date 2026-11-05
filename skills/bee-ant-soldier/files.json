@@ -2,173 +2,113 @@
   "files": [
     {
       "path": "AGENT_PROMPTS.md",
-      "sha": "29885093dcf74701f9ac8830726c320373c5b66c",
-      "size": 15317
+      "sha": "68bf15af8e177db77eae023c26ca8e2fedfabb99",
+      "size": 15957
     },
     {
       "path": "README.md",
-      "sha": "f7f4bff9a5cae4cf55ea82a4a8f4105070fa32ec",
-      "size": 2624
+      "sha": "7349a7a9e816ba080f3d665630ede8df87d18e50",
+      "size": 2735
     },
     {
       "path": "SKILL.md",
-      "sha": "37985bb8c3fbdabfc58c1cb7df2a33b61aa69bc2",
-      "size": 7299
+      "sha": "052ccab72ef99dc70a92b56860f31cd8b9de8b74",
+      "size": 7510
     },
     {
       "path": "UPGRADE_REPORT.md",
-      "sha": "0e45be311512ccf0c923c1ef18617c67329b265c",
-      "size": 13217
+      "sha": "f2027c63df00fda67422aa2a6711b30fe2e5abf1",
+      "size": 13632
     },
     {
       "path": "_meta.json",
-      "sha": "cabf9959076e9e09447b52c20268c0a4c82fd743",
-      "size": 265
+      "sha": "2a0a1a30524e0317ed2967da259a8e330361fb29",
+      "size": 275
     },
     {
       "path": "agent-collaboration-demo.js",
-      "sha": "b3521418f92fec69dc68a33506ce9a4c123be3ad",
-      "size": 19987
+      "sha": "0a38146474cde7ea1f69c02b394bc721b8f30b1b",
+      "size": 20480
     },
     {
       "path": "demo.js",
-      "sha": "b5b1e0af8eca7d8f9175bc37546b8fc26ab2dc35",
-      "size": 23388
-    },
-    {
-      "path": "dist/core/memory.d.ts",
-      "sha": "e115a3d90f57d545ca268712b25a07e2b582275a",
-      "size": 3152
-    },
-    {
-      "path": "dist/core/memory.js",
-      "sha": "b1d6e16cdc0e3c7b5ed7878a119e16d765e67bd5",
-      "size": 16567
-    },
-    {
-      "path": "dist/example.d.ts",
-      "sha": "196f713ad53821685f7ccd6c2b1024ed5f05e8aa",
-      "size": 95
-    },
-    {
-      "path": "dist/example.js",
-      "sha": "57ac0f2799c509c25d13f522cd8a7620daa110ef",
-      "size": 4074
-    },
-    {
-      "path": "dist/index.d.ts",
-      "sha": "cc8593c04af35439456419c2ab4c224c71382e5f",
-      "size": 1659
-    },
-    {
-      "path": "dist/index.js",
-      "sha": "2e8306ea3fa4315284814185e2a74beca9f14d6b",
-      "size": 3578
-    },
-    {
-      "path": "dist/systems/goal.d.ts",
-      "sha": "8b1268b20f2ed7c51188a3e6bcc7a20a996ed7df",
-      "size": 3151
-    },
-    {
-      "path": "dist/systems/goal.js",
-      "sha": "f33d86bd0b29ec5dd6eea8a4d16b4ee01542477f",
-      "size": 8050
-    },
-    {
-      "path": "dist/systems/signal.d.ts",
-      "sha": "e56a34a4c7f9919d86d30b12cb84aee1c79372f9",
-      "size": 1317
-    },
-    {
-      "path": "dist/systems/signal.js",
-      "sha": "70df5f6a4ca3a30aa9157c0894c2239dcaf3034f",
-      "size": 4203
-    },
-    {
-      "path": "dist/systems/workflow.d.ts",
-      "sha": "e69d25e9c0d6a9983b1923416bb7fe8b14a60dde",
-      "size": 1631
-    },
-    {
-      "path": "dist/systems/workflow.js",
-      "sha": "de3bacaefa4736f17b52716a65339c5d5cb81b08",
-      "size": 4676
+      "sha": "fa3a680b9db4d6363eaeceff2da8c564435ac56d",
+      "size": 23888
     },
     {
       "path": "docs/doc_1.md",
-      "sha": "bc3f3c544317aebe3bc00c52a0d73e30ccaf45ae",
-      "size": 65276
+      "sha": "83d5f14d9dd04ccbddfa65f77a4e1ee40c54f330",
+      "size": 67355
     },
     {
       "path": "docs/doc_2.md",
-      "sha": "e355646f7fa227006f5529f20418545e6b40b35e",
-      "size": 2232
+      "sha": "6dd63893c48bb9323462ac338ac984ba2fcd2f16",
+      "size": 2321
     },
     {
       "path": "docs/doc_3.md",
-      "sha": "9b42eb9c290cf1a4b40b26338cea937234957cc2",
-      "size": 272
+      "sha": "73a1104190c19964f6d1b90c61d2159deaec024c",
+      "size": 296
     },
     {
       "path": "duty-demo.js",
-      "sha": "86c649498d6044880eac05d4d9125ea41da004ef",
-      "size": 22138
+      "sha": "9633b0e8f0d1f9bdd6b49ce4166d3cb03414ba6f",
+      "size": 22625
     },
     {
       "path": "examples/holiday-duty.js",
-      "sha": "e858a369be6ea698103d521d7bbb6773a2da1909",
-      "size": 14292
+      "sha": "efa4b450fa7d04c884d18ccabd06ed5af8c45974",
+      "size": 14646
     },
     {
       "path": "install.sh",
-      "sha": "04938f06d2f739fad6bdbea50713f8aaebaff355",
-      "size": 3058
+      "sha": "d6af99799c7eeb8bba6641d8b2804fbdaf605877",
+      "size": 3130
     },
     {
       "path": "memory-v2-demo.js",
-      "sha": "178360a5653f633c4b24d45c606b87e1d4057469",
-      "size": 17831
+      "sha": "c67f1c97e7e8a25611e0e455a5b43615ea29da9e",
+      "size": 18167
     },
     {
       "path": "memory/today_hotspot/L1_working/WORKING_MEMORY.md",
-      "sha": "7cc2f05207369911e026e2d0cef7ad38d3ca6592",
-      "size": 181
+      "sha": "a4a8ef9b97a29b576bfc154ac85044120f3c301b",
+      "size": 189
     },
     {
       "path": "memory/today_hotspot/L2_experience/EXPERIENCE_MEMORY.json",
-      "sha": "3d8db08925dab457fdb4d92be7e22a2022f7e00e",
-      "size": 2016
+      "sha": "59fb6f63606f253e5b625e54aa327dc71ac1342c",
+      "size": 2088
     },
     {
       "path": "package-lock.json",
-      "sha": "6738d46ff93913c7984ad9f1665dd9efbc614464",
-      "size": 1483
+      "sha": "3634931efe49b09eccdb9524117e6207c77cb71a",
+      "size": 1531
     },
     {
       "path": "package.json",
-      "sha": "ceed08d4b97f3b359c9552c073860593aee7fbf3",
-      "size": 661
+      "sha": "24363835d0df4871e3843d58228ee208e70e28ed",
+      "size": 686
     },
     {
       "path": "references/data-flow.md",
-      "sha": "c6cef355ab03d90013246614eb567890db2f8cb8",
-      "size": 7834
+      "sha": "7676dcabacf39f3468974355f5043914a69c854d",
+      "size": 8121
     },
     {
       "path": "references/workflow-design.md",
-      "sha": "bf9aff3a67751025e5d2f9ff238fc8ee698324e1",
-      "size": 8224
+      "sha": "f285db96be20d156097e1efb958381214a5f0b48",
+      "size": 8504
     },
     {
       "path": "time-decay-demo.js",
-      "sha": "a811b793c61963b0d49a7c85df7aee1a65915cd5",
-      "size": 18442
+      "sha": "02ff2fbd08622a68356ef03cf03f0f3598282335",
+      "size": 18832
     },
     {
       "path": "today-hotspot-demo.js",
-      "sha": "217dd458616fe0785bb65c442770b7c4c97515e5",
-      "size": 19283
+      "sha": "f118456c7eb565d12b148e253dc834a1a6f7cd37",
+      "size": 19721
     }
   ]
 }

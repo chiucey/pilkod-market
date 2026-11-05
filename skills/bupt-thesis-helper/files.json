@@ -2,13 +2,13 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "6ad921cdbfd59808745ca2e05fd41510c097ae15",
-      "size": 6987
+      "sha": "c06a21fdc5b193fc31db47712ff05a836b314c2e",
+      "size": 7143
     },
     {
       "path": "_meta.json",
-      "sha": "3e45b64c62d18233e7f3f0988cca62e98bd848aa",
-      "size": 137
+      "sha": "0cdd87b5775e92a2ca7c04e3c6f903ebbf0558d3",
+      "size": 143
     },
     {
       "path": "assets/thesis.cover.example.json",
@@ -17,18 +17,18 @@
     },
     {
       "path": "references/add-references.md",
-      "sha": "56f959b25afdcd75b09f2adc64bcce3bc762a02d",
-      "size": 3731
+      "sha": "43e3aab131e3533a8649f5798488dbd271bb6081",
+      "size": 3825
     },
     {
       "path": "references/markdown-writing-spec.md",
-      "sha": "c2a3f8418fee49cb85a2b7e3b0e3742f194e3d74",
-      "size": 6495
+      "sha": "f47fc9ca3c6d6693b9bc34beb9c8bc09305358de",
+      "size": 6695
     },
     {
       "path": "scripts/check_markdown.js",
-      "sha": "cb78c009b187088f4adaaefb087b76338042887b",
-      "size": 26029
+      "sha": "df10f25b912d4dd38c0ec2cd96e07f20a0a15726",
+      "size": 26779
     },
     {
       "path": "scripts/compose_docx.js",
@@ -37,23 +37,23 @@
     },
     {
       "path": "scripts/enable_update_fields.js",
-      "sha": "b307694221b93bcc41a52bd72966f3c36c0a3bdb",
-      "size": 1696
+      "sha": "c5957e56ea4bf0709144582d2011d09534ea125b",
+      "size": 1745
     },
     {
       "path": "scripts/extract_docx_images.js",
-      "sha": "d2e92f68b95c36993efce9c951ee58e2be7d47bd",
-      "size": 3903
+      "sha": "3a3eb0e21fb1cceeda194f51936382bfafb9cac0",
+      "size": 4035
     },
     {
       "path": "scripts/generate_thesis.js",
-      "sha": "91ef699f297998aaa1315eae7d82c4fe9ae2b892",
-      "size": 62363
+      "sha": "cb4beb61dc642f264ccab4d7a5e38ce3abdf5e45",
+      "size": 64589
     },
     {
       "path": "scripts/md2doc.js",
-      "sha": "22c3a1fcfc528cc092d23d1f55c6c9e1b29f2916",
-      "size": 5483
+      "sha": "2990ae6a717c1ba9664f01164cf8389b7ad3fe19",
+      "size": 5625
     }
   ]
 }

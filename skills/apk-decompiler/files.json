@@ -2,58 +2,58 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "f304fa140dd77e810f07773fd67522d9dc988996",
-      "size": 8096
+      "sha": "71669e090c70f154ee08d3fe491bdfa0acf80ab2",
+      "size": 8282
     },
     {
       "path": "_meta.json",
-      "sha": "108cb40a9d6ef82966e5b9e3c4551bf746931ea5",
-      "size": 133
+      "sha": "fee8928ad220480816f242be3d305eb02c746598",
+      "size": 139
     },
     {
       "path": "references/troubleshooting.md",
-      "sha": "888c210fd634556859d35e68e325b47eb77997c0",
-      "size": 4312
+      "sha": "63c4a4f5fea5aa7190cbf7ea2e3b0935526416e9",
+      "size": 4438
     },
     {
       "path": "scripts/batch.sh",
-      "sha": "1f5289a5feec7c42bf30de35aacc2a9b9926932c",
-      "size": 4927
+      "sha": "3a0acd882aeb5720f77b4a95b48d4af7e4d54fe4",
+      "size": 5054
     },
     {
       "path": "scripts/decompile.sh",
-      "sha": "4008066edd77d801de0c4c234949bc3759aac38d",
-      "size": 9286
+      "sha": "46d1af2d210a5257d523ffef42a6d5fbba864a93",
+      "size": 9539
     },
     {
       "path": "scripts/env-setup.sh",
-      "sha": "dd1be64ee35b13545a296d86a05cf27a5c75b337",
-      "size": 7399
+      "sha": "c76f4d2847a04a80f0d242c285638fc0049b44cd",
+      "size": 7597
     },
     {
       "path": "scripts/package.sh",
-      "sha": "eefbd60e86724572a30a894cf418664d4bd6dce9",
-      "size": 2224
+      "sha": "38f57af95606b58a649dc2e456c4fa96206c3c97",
+      "size": 2295
     },
     {
       "path": "scripts/scan.sh",
-      "sha": "d2dc64c56a8990f12736181ff9170103de05e6c7",
-      "size": 13750
+      "sha": "71a78f730b47f4706f33b306ddd05a4c1dbd5b86",
+      "size": 14130
     },
     {
       "path": "unpack-helper/README.md",
-      "sha": "5fff27da721a0361cfde1cc5382be1ec927dd403",
-      "size": 2697
+      "sha": "2376b3e3ba5de527ce41b89804e199746000161e",
+      "size": 2757
     },
     {
       "path": "unpack-helper/dump-dex.js",
-      "sha": "73a1693dd9d98679f9128b3a73e637694251432d",
-      "size": 2721
+      "sha": "4f02af9fe69250d6c9de3f0f8085378520fdf486",
+      "size": 2793
     },
     {
       "path": "unpack-helper/frida-server-setup.sh",
-      "sha": "ba25d5e4415db6d813bb1aa1ab84b530b37b98a1",
-      "size": 1869
+      "sha": "7b242ed8bb0919c39c1bb6af83aef96cbe520d8e",
+      "size": 1930
     }
   ]
 }

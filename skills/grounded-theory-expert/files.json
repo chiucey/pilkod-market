@@ -2,8 +2,8 @@
   "files": [
     {
       "path": "ITERATION-IMPLEMENTATION-SUMMARY.md",
-      "sha": "3c068a9aa4e9c5d9834c7a18a4446dd4ede6d37b",
-      "size": 7503
+      "sha": "54694365a6ed11098df0d8e2a260c257dda91049",
+      "size": 7748
     },
     {
       "path": "README.md",
@@ -17,18 +17,18 @@
     },
     {
       "path": "_meta.json",
-      "sha": "39896d0c63f727c4a2e5183db94860d878d02c92",
-      "size": 141
+      "sha": "dd735d59204639ae79849142b98b147f0663fdae",
+      "size": 147
     },
     {
       "path": "cases/negative/case-001-presumption.md",
-      "sha": "ae6b678f0130119fad3579486e3e854320a01a12",
-      "size": 7992
+      "sha": "d375a85ab6264c6b1048338c44b64aa0933529be",
+      "size": 8412
     },
     {
       "path": "cases/positive/case-001-gt-complete.md",
-      "sha": "7a454bb30af02f6846dacb353bd717c57eaaf7d7",
-      "size": 6345
+      "sha": "799ba04e5de4c01fd20f37108db26f09adcf6d7b",
+      "size": 6661
     },
     {
       "path": "data/segments_marriage_20260409.json",
@@ -37,18 +37,18 @@
     },
     {
       "path": "examples/batch-coding-with-subagents.md",
-      "sha": "4bbb813acb9c8acfad69aedfef000cc61dcd7be6",
-      "size": 6046
+      "sha": "43434e41d891c53db7612ecce5eb0212d920c6f7",
+      "size": 6341
     },
     {
       "path": "examples/input-example.json",
-      "sha": "57bd6b47f7750b13d2e7cdccdf0067b24a6a83cf",
-      "size": 1164
+      "sha": "fea91a869aa90be0f404187ec2a50a6764d0ab59",
+      "size": 1176
     },
     {
       "path": "experience/patterns.md",
-      "sha": "7f2f0bb22170ce7533782416b903985736264424",
-      "size": 8179
+      "sha": "035c3358673a849932154f6c32c878a0b17607a6",
+      "size": 8665
     },
     {
       "path": "index.html",
@@ -57,48 +57,48 @@
     },
     {
       "path": "lesson-memory.md",
-      "sha": "9e7ebffd7e230c3984724e1a16923fcb8548d411",
-      "size": 2870
+      "sha": "1f3f8bba234739e164b922077f1dcede8f0f3cf5",
+      "size": 2990
     },
     {
       "path": "prompts/axial-coding-prompt.md",
-      "sha": "72e2cd8d2810a7d86d0ceca8c9ee103c40b7dd60",
-      "size": 3673
+      "sha": "deba61975f52c6a966bb017355b6aa39f84a044e",
+      "size": 3817
     },
     {
       "path": "prompts/open-coding-prompt.md",
-      "sha": "b17092181403b3bcf13b6fa53fbdc2d6687f8872",
-      "size": 2798
+      "sha": "23c48926aaeef4a0c372355df57efbb2267dbdf3",
+      "size": 2915
     },
     {
       "path": "prompts/saturation-check-prompt.md",
-      "sha": "3b026b222986e435dbc4a8be4a443b580820585d",
-      "size": 4233
+      "sha": "fa0b254847ec91cb3eb95eb4c9fa2892aa422c04",
+      "size": 4395
     },
     {
       "path": "prompts/selective-coding-prompt.md",
-      "sha": "ba620dc8e6dd505a947b0e88415ef7c55123f7d5",
-      "size": 3939
+      "sha": "40575cc6a3ce869c9c459a77db3b2467a22ebeb9",
+      "size": 4070
     },
     {
       "path": "prompts/system-prompt.md",
-      "sha": "a5ec69a5f9410c8b3a49964d3dd500a9dbd94c22",
-      "size": 7144
+      "sha": "ac0cbff2cdc116f90dd36ff7f598e7d83603178a",
+      "size": 7414
     },
     {
       "path": "prompts/validation-prompt.md",
-      "sha": "496276916b1430c76d6c54c3540c3db250a1a333",
-      "size": 5628
+      "sha": "8e6ca696d40183876ad97067d89f43f72a25deae",
+      "size": 5857
     },
     {
       "path": "qwen-skill.yaml",
-      "sha": "280964f1adfb5a7285aac1cf7a8fdb97fa06b280",
-      "size": 2497
+      "sha": "ed8081a0a710d39b46a3ae8d692fddd9a0e2347c",
+      "size": 2627
     },
     {
       "path": "references/classic-literature.md",
-      "sha": "a6f409cb7b6f8df743c0e09a8eee3c90a4b5230f",
-      "size": 10737
+      "sha": "707febda3b17ea06c3849dfacd6e3c928c21919b",
+      "size": 11117
     },
     {
       "path": "references/detailed-guide.md",
@@ -112,18 +112,18 @@
     },
     {
       "path": "scripts/iteration-controller.sh",
-      "sha": "104840439600a7505fac83ecbae20d758378bf78",
-      "size": 6758
+      "sha": "59abd1ac179304a7d495e1ec3a418c504542b48d",
+      "size": 7007
     },
     {
       "path": "scripts/quality-review.sh",
-      "sha": "fcdeabc5557c2d7f9880275264c921a682906479",
-      "size": 8705
+      "sha": "8059404045bb100f2ed05eeea01f1e1587248b33",
+      "size": 8941
     },
     {
       "path": "scripts/self-correction.sh",
-      "sha": "dbcb2dd8d8ccf4b772a22ef9f833641a6b1cd279",
-      "size": 7702
+      "sha": "e3097297249868612ce932150bab1f091a0727d7",
+      "size": 7937
     },
     {
       "path": "sessions/s012-reality-check/axial_result.json",
@@ -132,13 +132,13 @@
     },
     {
       "path": "sessions/s012-reality-check/interviews.json",
-      "sha": "a7f7dcc5a6e9aa81f38b869b2a8eeae6f701a3a0",
-      "size": 7021
+      "sha": "c38c2bcdf5e6c8b88c0cc8c82565a5c52798a253",
+      "size": 7115
     },
     {
       "path": "sessions/s012-reality-check/open_coding_result.json",
-      "sha": "ab955ed664590cbcd6c0b85f3ce4df3d7186f496",
-      "size": 7704
+      "sha": "8f8d60e79c2a15141bb2149aaf0fe7de7671292f",
+      "size": 7852
     },
     {
       "path": "sessions/s012-reality-check/segments.json",
@@ -147,13 +147,13 @@
     },
     {
       "path": "skill-hooks.yaml",
-      "sha": "0d3180c151173dab37882f721af8fb4170faa0b0",
-      "size": 11350
+      "sha": "4c32ca9c86cba74058c26a9d44ff3cff953987ff",
+      "size": 11766
     },
     {
       "path": "skill.yaml",
-      "sha": "e7f270f4135fe6b611244ff09a7a4c542c3fe704",
-      "size": 4196
+      "sha": "c2153ffec588c19f509a6d379087c0ed2d838fca",
+      "size": 4340
     },
     {
       "path": "soul.md",
@@ -162,18 +162,18 @@
     },
     {
       "path": "subagents.yaml",
-      "sha": "e228f6be189c29486a1a28c1f75ea6bfc2180a3a",
-      "size": 7397
+      "sha": "a867329e6f6e6fe2312c343c76e86f64475374b0",
+      "size": 7660
     },
     {
       "path": "templates/findings.md.template",
-      "sha": "6018f629785358755dd4ba563b41f2e6d05d68eb",
-      "size": 3897
+      "sha": "586d7e8afe0975cd4c407e89ff3002825f765d23",
+      "size": 4075
     },
     {
       "path": "templates/progress.md.template",
-      "sha": "9d4ee0ae1508149d05cdad704b28806726db984d",
-      "size": 3591
+      "sha": "af995b479b3df739755b4c73f454e42ecd14d669",
+      "size": 3754
     },
     {
       "path": "templates/task_plan.md.template",
@@ -182,8 +182,8 @@
     },
     {
       "path": "test-prompts.json",
-      "sha": "a8898b6a294724e4768df0870669b558c4fce943",
-      "size": 925
+      "sha": "a0b41a97afe981a435bbe59fce747d2a814abc2f",
+      "size": 942
     },
     {
       "path": "tools/.evolution/evolution_state.yaml",
@@ -191,19 +191,14 @@
       "size": 1798
     },
     {
-      "path": "tools/.evolution/evolution_state.yaml.bak",
-      "sha": "9700097ce5dd0ad572734a2331bb0ceb8d93768c",
-      "size": 2245
-    },
-    {
       "path": "tools/IMPLEMENTATION_GUIDE.md",
-      "sha": "ab36c5982af8f8d540c7f0acb3a4741d944d23e9",
-      "size": 15969
+      "sha": "b918895b4eab98ec4f4fb984cc842b60513fa0ae",
+      "size": 16687
     },
     {
       "path": "tools/analyze.py",
-      "sha": "c3716d4e8ff35444a887ec54be3c445db545140d",
-      "size": 6571
+      "sha": "ae77b50c2487044ae4bbfc693576aa1578ddf9fa",
+      "size": 6730
     },
     {
       "path": "tools/anonymize-data.py",
@@ -217,8 +212,8 @@
     },
     {
       "path": "tools/axial_coding.py",
-      "sha": "03e88964054313e1a8f1a0972045cb8cbaf980e9",
-      "size": 8552
+      "sha": "8705b45fe6a71849d23e7c6940ba06eff77fcdd2",
+      "size": 8738
     },
     {
       "path": "tools/batch_analyzer.py",
@@ -227,13 +222,13 @@
     },
     {
       "path": "tools/calculate-reliability.py",
-      "sha": "000423b3d5f51bc8ab10f97f21fe30ebb9b987b1",
-      "size": 5677
+      "sha": "d900190c9e6fb4cd05ce82cccdb5db9c6df6d184",
+      "size": 5864
     },
     {
       "path": "tools/correct.py",
-      "sha": "6219701555300a3e17775daf96191833c84d17c6",
-      "size": 41459
+      "sha": "3612ac674e6781725d32321b0b08d4d33fa6ff4e",
+      "size": 42805
     },
     {
       "path": "tools/evolution.py",
@@ -247,8 +242,8 @@
     },
     {
       "path": "tools/memo_manager.py",
-      "sha": "1010a822d5726d39aa0692095142be681d376297",
-      "size": 13638
+      "sha": "8f4da082885f66ad3fc13b71278bcec1fd87172a",
+      "size": 14074
     },
     {
       "path": "tools/planning-integration.py",
@@ -257,13 +252,13 @@
     },
     {
       "path": "tools/segment-data.py",
-      "sha": "30dfc41d5add65ef1512872d50700ebf215a8110",
-      "size": 3735
+      "sha": "f229e10a700c29c1df62d0fa55a00519fa1e15da",
+      "size": 3876
     },
     {
       "path": "tools/selective_coding.py",
-      "sha": "8ae0c5743fa1ce5c313ac918d0e2400990063bd9",
-      "size": 16521
+      "sha": "5c7c76ac01827557c05a26a930e65d9dabdb78c4",
+      "size": 16986
     }
   ]
 }

@@ -2,108 +2,108 @@
   "files": [
     {
       "path": "INSTALL.md",
-      "sha": "915d68638dc521bd2c2595eee727d1d3831e5bb1",
-      "size": 4435
+      "sha": "27e91c6376de7562f34dc1c4e3f3537ef707613d",
+      "size": 4582
     },
     {
       "path": "README.md",
-      "sha": "4940a687d5f6643a99d4402c7c8cc652cf577924",
-      "size": 7551
+      "sha": "2ab635c70213834e1fb17419c2afccf31f37cc28",
+      "size": 7786
     },
     {
       "path": "SKILL.md",
-      "sha": "254006fb24aed81db3eba745c9cacd9c036c375d",
-      "size": 7361
+      "sha": "81702733e2fe3b0e42320a2680f5a347806a72ec",
+      "size": 7546
     },
     {
       "path": "VERIFICATION.md",
-      "sha": "c9b2f57591bd729fa9850ec7950e04966b1138e5",
-      "size": 7511
+      "sha": "7a0ad47ed2f8e7c73e420ea0fa71a9d472c8b035",
+      "size": 7722
     },
     {
       "path": "_meta.json",
-      "sha": "566b0eeac127caf3dad9df77dcca73b7bc1b92eb",
-      "size": 143
+      "sha": "f293d7bec1bdff82ff30728fa9f339d9d2fcaecf",
+      "size": 149
     },
     {
       "path": "connectors/sink/doris.md",
-      "sha": "b3f3ed332a968c34ed0b94db81eb992a23f0b29b",
-      "size": 2832
+      "sha": "331c1c60e1373e9ba9880b20b53f69ae9e2d6633",
+      "size": 2890
     },
     {
       "path": "connectors/sink/elasticsearch.md",
-      "sha": "aedabe639a2a367af8e22a2543d1cbaa7393d3d8",
-      "size": 2141
+      "sha": "6bf63bf6a8f09e545185346b35ad2ac8bf202608",
+      "size": 2193
     },
     {
       "path": "connectors/sink/fluss.md",
-      "sha": "f8e4e1ff542ec0615bf3cc095ff2a828e163ddde",
-      "size": 1577
+      "sha": "35dd8c43ed4eaf45f2b14fe7002bee6d9da500dc",
+      "size": 1620
     },
     {
       "path": "connectors/sink/hudi.md",
-      "sha": "43af0ddb92dca4a4c9651d9db62124702e6b8c96",
-      "size": 2639
+      "sha": "d02b21712618f7474782e8e47e4dd2cad27a2e5e",
+      "size": 2692
     },
     {
       "path": "connectors/sink/iceberg.md",
-      "sha": "37a63e9ffed23e62e1806b3a5612a8b2a5ab74d6",
-      "size": 2711
+      "sha": "ca37b4dce97c7c9e0c8d6a35b0553f19b29d3bb8",
+      "size": 2771
     },
     {
       "path": "connectors/sink/kafka.md",
-      "sha": "b53fb982c5a9402ed91adac21d592ec2ad6e022b",
-      "size": 2774
+      "sha": "98ec9afe8954a7f352c91096e586396fe7585e48",
+      "size": 2836
     },
     {
       "path": "connectors/sink/maxcompute.md",
-      "sha": "a22f4bf72ae0cc16e57912398d6a66ef5f0b5484",
-      "size": 2184
+      "sha": "29f075d97c380a0a9aba79881bf8c578d6d3a44d",
+      "size": 2242
     },
     {
       "path": "connectors/sink/oceanbase.md",
-      "sha": "6dbf1a2a672e20a254543ced0fe289b697e55f25",
-      "size": 2508
+      "sha": "e1fc4c43f2276e4a5a00aaad1f6af4c82c77fc86",
+      "size": 2563
     },
     {
       "path": "connectors/sink/paimon.md",
-      "sha": "318638d49d9bcd527ee85da3b0a0f6bf4c06f324",
-      "size": 2316
+      "sha": "1f846b3b9b28ba54c3fb861fcf72f661b2fffd54",
+      "size": 2367
     },
     {
       "path": "connectors/sink/starrocks.md",
-      "sha": "bcfa3587bead779e012db70f3592146d70450ffb",
-      "size": 2792
+      "sha": "9d4644096dc7c2d370cbb2fce789032e73d42a43",
+      "size": 2850
     },
     {
       "path": "connectors/source/mysql.md",
-      "sha": "a31ff446b45e9441c534cd5e014dc75796918316",
-      "size": 4445
+      "sha": "601a22a6d117a61e005f09e9699fd43c4c81070e",
+      "size": 4530
     },
     {
       "path": "connectors/source/oracle.md",
-      "sha": "aa367117dfef5a95374d1d289b9214c7cff91d93",
-      "size": 3096
+      "sha": "99603657b8aa7a73eba0f423b4b0c0371208c30c",
+      "size": 3175
     },
     {
       "path": "connectors/source/postgres.md",
-      "sha": "23f99d0427cad964db75d2d158f179c0c100a87e",
-      "size": 3721
+      "sha": "15045f3dcc45798397522f3a13bc40ecc1fef68e",
+      "size": 3808
     },
     {
       "path": "manifest.json",
-      "sha": "caac8d13df947c6b3174dffa21fd645635212f7c",
-      "size": 1044
+      "sha": "af336a789d4ff28c8d8be551a86c49c5179be675",
+      "size": 1081
     },
     {
       "path": "modules/route.md",
-      "sha": "76d5717d90f70df2d2d8cdf5c95fa27c16dac0ae",
-      "size": 3818
+      "sha": "6a645fec33ee1b2226b7e8d4d84244c50873c9cd",
+      "size": 3931
     },
     {
       "path": "modules/transform.md",
-      "sha": "56936c87c791241df0f1e7a4c44ceaa40854abad",
-      "size": 10882
+      "sha": "3a121829b23a71490a1d845f1fbc8975ff5fa79f",
+      "size": 11187
     }
   ]
 }

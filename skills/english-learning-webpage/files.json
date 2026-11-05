@@ -2,93 +2,93 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "bbd0b67f00091dd607abcd6fcc470adb6e9ab996",
-      "size": 8300
+      "sha": "c10240fd1e0ebf6c68a08e7c532214176a184209",
+      "size": 8414
     },
     {
       "path": "_meta.json",
-      "sha": "54a6c0a0b29053097a9564453e9e645a40b5366b",
-      "size": 616
+      "sha": "1a21febc6c7de0bb27b819d39e2fbfec68ff19ec",
+      "size": 624
     },
     {
       "path": "agents/openai.yaml",
-      "sha": "f7aa9b539c3e45387c996be296772242944433c2",
-      "size": 847
+      "sha": "62df277ffc72bfe35dd03405b1dafada9d75d01e",
+      "size": 861
     },
     {
       "path": "assets/icon.svg",
-      "sha": "4c3163aa85e15ed80114f93a9a2b140a53012c44",
-      "size": 1210
+      "sha": "c29a6233f187a5d8af4a9b2913e02f8ab293ea07",
+      "size": 1218
     },
     {
       "path": "references/01-inputs-and-workspace.md",
-      "sha": "cb8d0ae1809d4dde1500a10bbfb0ef1f7c7cb10a",
-      "size": 4251
+      "sha": "e975e3a4559dea614f8bc4195a3d1d043a7b8046",
+      "size": 4363
     },
     {
       "path": "references/02-subtitle-alignment.md",
-      "sha": "8532e951443dbbe59077a75dc41a0c548d8e2490",
-      "size": 7099
+      "sha": "edcb14e4759c9d8f6884f614ad67f246dee7db94",
+      "size": 7230
     },
     {
       "path": "references/03-learning-data.md",
-      "sha": "b0e2ae8bab23bf486dbcc91551b89757836c671c",
-      "size": 4121
+      "sha": "a76a30dff3de5e34576a4fd8c9cb9c2308a4d997",
+      "size": 4221
     },
     {
       "path": "references/04-audio-slicing.md",
-      "sha": "97843ae851e16a2a5cf8ba2b1aadb1ce9b65c5a1",
-      "size": 2130
+      "sha": "8866ce32c4ed0c9ae3adaabcadae58eb8d9bd162",
+      "size": 2190
     },
     {
       "path": "references/05-template-and-ui.md",
-      "sha": "b105e15449743bcd020346ce855bb6f0e5fa52e3",
-      "size": 3346
+      "sha": "ab69b4f364c08c29b740def6fd679889425189ff",
+      "size": 3435
     },
     {
       "path": "references/06-validation.md",
-      "sha": "9d9a47d3b444a2da9e6ad499ad1379c48026f086",
-      "size": 2017
+      "sha": "79cfc7e991c57ab978671e5519bb13b3a4c37c1b",
+      "size": 2074
     },
     {
       "path": "references/07-stt-benchmark.md",
-      "sha": "82e45d0eff94474a8f91b9ba1270c1d0fe89d891",
-      "size": 1543
+      "sha": "cd9a253b044dacf226bfd6d0b36a3d5b86e7f299",
+      "size": 1589
     },
     {
       "path": "references/rh-subagent-prompt.md",
-      "sha": "511f3056e81341526c85ae798f66816ef424b7c9",
-      "size": 3920
+      "sha": "de803a5faf3ede9ba9f723bf8d7232ed60573cab",
+      "size": 3997
     },
     {
       "path": "scripts/01_align_with_official.py",
-      "sha": "17f9042e3fd0acd256647ac5d9e115611e3b02fb",
-      "size": 18367
+      "sha": "181a7323297f537c2652da82e7295cffa3d35eb2",
+      "size": 18860
     },
     {
       "path": "scripts/02_build_from_wordlevel.py",
-      "sha": "e86b9642e23aa8d56e971e6bf240d37b85a38866",
-      "size": 4821
+      "sha": "2106d06e2f2e2aa18becc20fd783cc76e7afddac",
+      "size": 4971
     },
     {
       "path": "scripts/03_embed_sentence_audio.py",
-      "sha": "6e83eb413eaf36fd29f44005571b227fc2b8aaf1",
-      "size": 3268
+      "sha": "33525e47c718928d0da61465b33e940b5a329427",
+      "size": 3355
     },
     {
       "path": "scripts/04_inject_html_template.py",
-      "sha": "7683d133df129a535e4e5cbe4bf31ca7d43cd540",
-      "size": 2420
+      "sha": "4d9195f36a1d21e55b2d08e103863941f49319e1",
+      "size": 2494
     },
     {
       "path": "scripts/generate.ps1",
-      "sha": "d488cf689fa0465b398572b48221d5c2520d2d31",
-      "size": 1127
+      "sha": "9cbad81d851e1e6b3a6f04cbc0716009c7bcf8bd",
+      "size": 1156
     },
     {
       "path": "scripts/generate_test_html.py",
-      "sha": "70887de85690a532e4b685039b56c564f62d0fcf",
-      "size": 1306
+      "sha": "0834a2e0b03559a813c9369c6504c94c8c0656e1",
+      "size": 1350
     },
     {
       "path": "templates/alignment_anomalies_template.xlsx",
@@ -102,13 +102,13 @@
     },
     {
       "path": "templates/listening_page_template.html",
-      "sha": "66298cf285ecf3534d685f813300f01197b07ea2",
-      "size": 24087
+      "sha": "686ed493d216e685c2a7fd125743033edaae61da",
+      "size": 24338
     },
     {
       "path": "templates/minified_data.md",
-      "sha": "531442bc7341fa89d5e187cd82253ba0ccc298f2",
-      "size": 806
+      "sha": "90493f704e14fce51806d6d2f45d1d4fb8823b26",
+      "size": 840
     },
     {
       "path": "templates/pronunciation_hint_test.html",
@@ -117,8 +117,8 @@
     },
     {
       "path": "templates/task_progress_template.yaml",
-      "sha": "77aab4e570f6bee38527fede91482a5072e6c0d9",
-      "size": 557
+      "sha": "79be01d50caae1954a56e8b0eb7c180bef450449",
+      "size": 585
     }
   ]
 }

@@ -2,118 +2,118 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "0c20583d1219b637c72d481abd6aa24da4ade6aa",
-      "size": 9241
+      "sha": "48c92027f87007aba95c069054209732fb4ab314",
+      "size": 9330
     },
     {
       "path": "_meta.json",
-      "sha": "fb24e05d3b0ccb4ca76bb24d87a71844ae35938e",
-      "size": 133
+      "sha": "d9a98e5576da299f3a0918e22ca8437bcdd81409",
+      "size": 139
     },
     {
       "path": "references/01-directory-structure.md",
-      "sha": "a769d6e27d291452359c85482f24bbea66531356",
-      "size": 2727
+      "sha": "8f61ba5f6620b35e52a922375f5427c9b01cca2b",
+      "size": 2803
     },
     {
       "path": "references/02-documentation.md",
-      "sha": "50718aa2d0ffcfdb2e6b8db5bfcc13e7cf0e25d1",
-      "size": 1983
+      "sha": "f5716df1ff8881a1f19122d9a2f3c8f3292cb39e",
+      "size": 2065
     },
     {
       "path": "references/03-architecture.md",
-      "sha": "dd936246387b0af9039dd34be5e96a48176a6636",
-      "size": 990
+      "sha": "7b898ec77d43b6d9fb5e322abb515366e60eb551",
+      "size": 1016
     },
     {
       "path": "references/04-performance.md",
-      "sha": "7c4a13268e5c1a1c1b5aa1b608c0ca2a22d3dbf7",
-      "size": 943
+      "sha": "a2f42149006d6c7d76b943275e80e1e69a647657",
+      "size": 961
     },
     {
       "path": "references/05-type-annotation.md",
-      "sha": "3921de2694bf9f1162ef6760e0e5d7d826be6c2b",
-      "size": 2269
+      "sha": "3d4cd66958e20497c6f1ee98c541328df759b637",
+      "size": 2330
     },
     {
       "path": "references/06-module-imports.md",
-      "sha": "85e5a791ce53e76fe00a2c60af641f37d92e2ba8",
-      "size": 1525
+      "sha": "7b095f82dfd3b8af873840c37ac1ac8a0359bbde",
+      "size": 1560
     },
     {
       "path": "references/07-naming.md",
-      "sha": "4ebc889213d4196208604754409302e8321e2504",
-      "size": 561
+      "sha": "c8d84e0d623088d13888dde7c1456905cc835f96",
+      "size": 578
     },
     {
       "path": "references/08-no-temp-files.md",
-      "sha": "db6f6f017266bdae8566c2a128a1d9cb321cb9d8",
-      "size": 183
+      "sha": "88bf0c3f9014fa367434af34b60ac2f737f1b4b0",
+      "size": 187
     },
     {
       "path": "references/09-follow-existing.md",
-      "sha": "1631a359bf0d57fedcfe88fac0bc7ebb4544af27",
-      "size": 1207
+      "sha": "d7d07347813a8efb40959f13eeac75936d4f8721",
+      "size": 1251
     },
     {
       "path": "references/10-no-unrelated-output.md",
-      "sha": "c1a39076c3b064f6fdd6e343af7206d2326bf653",
-      "size": 174
+      "sha": "f2da3c3b682e68117836feb948b7d5c96b41f84b",
+      "size": 179
     },
     {
       "path": "references/11-error-handling.md",
-      "sha": "b3f848ba0af024ebc28921dddfc92760392a12e1",
-      "size": 666
+      "sha": "51140edfeba0dd0db936c53a1c0ec2be13fd9eea",
+      "size": 685
     },
     {
       "path": "references/12-public-api-docs.md",
-      "sha": "d3c3f61ee8874b99f41ed50aa82834aac54ceb97",
-      "size": 386
+      "sha": "54b1489b99bc5df828eef93f1e62740364e6dc67",
+      "size": 394
     },
     {
       "path": "references/13-dependency.md",
-      "sha": "bd9aeae97e7e71442e29ce97fb3fc0c1c2f55076",
-      "size": 1019
+      "sha": "3d2e24743e900caddf26ddaf2cdaca210613d714",
+      "size": 1060
     },
     {
       "path": "references/14-testing.md",
-      "sha": "5cbec9966167714171d2ccee720698758d8a7190",
-      "size": 1339
+      "sha": "146b5fbffb818d4e3551e71a71d02e0eeeb827ff",
+      "size": 1356
     },
     {
       "path": "references/15-security.md",
-      "sha": "be33cb34c9040af6cd8b5f057d15203015d51428",
-      "size": 239
+      "sha": "4f2992175bf9ebf05ba08b1eb6296326c1f95be1",
+      "size": 245
     },
     {
       "path": "references/16-proc-macro.md",
-      "sha": "cfd621c3c9c514d67275e7c97c90f918f706b438",
-      "size": 1261
+      "sha": "10ae638ff631670103d192b65481ee437219eb88",
+      "size": 1285
     },
     {
       "path": "references/17-lombok-derives.md",
-      "sha": "85ff77a50cebaf48d7a8bc2d88adca0fb29a3126",
-      "size": 4077
+      "sha": "6ab2e7d3bdd988921ee1453029b8072f8b1d3c4a",
+      "size": 4147
     },
     {
       "path": "templates/cargo-toml.md",
-      "sha": "69beb81fe2c0e42306ec125e0e26a39c7c8fb41f",
-      "size": 1579
+      "sha": "2101d189460c2552d785129b00b90b9376733dd8",
+      "size": 1687
     },
     {
       "path": "templates/lib-rs.md",
-      "sha": "463a581da66aed05a30d37c6acba26ff629bd1ed",
-      "size": 878
+      "sha": "9cb2e3706e840e84989e25d79dee3a34e2ff96d7",
+      "size": 930
     },
     {
       "path": "templates/mod-rs.md",
-      "sha": "d39cfb80f31970d61afea01f94e84e8c222300b3",
-      "size": 742
+      "sha": "d07400a05d2eeb2117a3e9884dce7a66d653e8a7",
+      "size": 794
     },
     {
       "path": "templates/sub-file.md",
-      "sha": "6b2c070ce9b231ec9370866a87f7680f1d8ea452",
-      "size": 2018
+      "sha": "404b0574eb29a2b76f17d0fa5ab2c60239581059",
+      "size": 2128
     }
   ]
 }

@@ -3,18 +3,18 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "f026e2dae8de49ce97175b3d77e6bc3ab1dec8ab",
-      "size": 1249
+      "sha": "928a325f9f153b3ac6616529bb6478f204f6129f",
+      "size": 1275
     },
     {
       "path": "README.md",
-      "sha": "dc9b5da30ec4170ccc84bb3530720e1ae87b436e",
-      "size": 29548
+      "sha": "ab2c1cbed91b51b4b46faf526312e9ef2162db6d",
+      "size": 29717
     },
     {
       "path": "hengsheng-market.app.json",
-      "sha": "44c7cd558d42746546c16d0b372ae7417f29a8c1",
-      "size": 59
+      "sha": "3a3eae1c7270361c2961362dd71d21b42dc8a3f4",
+      "size": 63
     },
     {
       "path": "icon.png",
@@ -23,198 +23,198 @@
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "0ebf47ab7803841ce44c7d61185eea46dcefed18",
-      "size": 70807
+      "sha": "ed21b09885bb299b38f96dbfb57fc40b81995c4b",
+      "size": 71723
     },
     {
       "path": "miniapp/client/sources.js",
-      "sha": "8d1522a1e7f162bf04ae0e657e624691fa12b3bc",
-      "size": 12031
+      "sha": "01ef468095ffc4adb105330e0f12ca1b7bb0a446",
+      "size": 12244
     },
     {
       "path": "miniapp/client/wiki.css",
-      "sha": "59b5f74444a7ee7282a744ff6494567910b8e99d",
-      "size": 44042
+      "sha": "f0ff1cfdc2f66d0e84862c72a5d7dd53c0abf05d",
+      "size": 44528
     },
     {
       "path": "miniapp/client/wiki.js",
-      "sha": "761d608255a5b87755ab19a7bb25d7856c5d7775",
-      "size": 131297
+      "sha": "598fc9e6f87dfd2eefd4d20b545c3a46160de58c",
+      "size": 133296
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "65e09875445aa32af480be8454bf641e9adfa0c2",
-      "size": 610
+      "sha": "9ff9f2ccc1b989de548fc7c85ac9a7d550156ff7",
+      "size": 647
     },
     {
       "path": "miniapp/node/alphapai-client.mjs",
-      "sha": "5a6e71484870ab95bd4b5cf2793bf15f430f77e6",
-      "size": 26384
+      "sha": "6e8634e65a193fccd75a64794e513430299e900b",
+      "size": 26858
     },
     {
       "path": "miniapp/node/asset-folders.mjs",
-      "sha": "ca300b3a0510c43cafd46385f60eae1c04e74e3f",
-      "size": 7090
+      "sha": "54586b495a094669808afd0e98f60f094b3706b8",
+      "size": 7240
     },
     {
       "path": "miniapp/node/bars-store.mjs",
-      "sha": "25f99fc952b85165d86c588f9468948f40a56813",
-      "size": 7123
+      "sha": "72def318b951c63a8eafef49652d6705f801f6b4",
+      "size": 7309
     },
     {
       "path": "miniapp/node/folder-picker.mjs",
-      "sha": "6d57503ae98413233246f5994b63090586522f7c",
-      "size": 5305
+      "sha": "8c9e258dae1a9e4af6ebeff6eb38a59567a5a5b5",
+      "size": 5411
     },
     {
       "path": "miniapp/node/history-policy.mjs",
-      "sha": "c7fb6641b9ef8b108ae563d245e302e9f4a19a0f",
-      "size": 1980
+      "sha": "5a3265f15da14fe186c2f9183848310829b81fbc",
+      "size": 2027
     },
     {
       "path": "miniapp/node/host-connector-value.mjs",
-      "sha": "6e1c9efba9d80b10372996958921354281394242",
-      "size": 1740
+      "sha": "b521956efbd217cc29c5bdbc4cfd288d2f077301",
+      "size": 1793
     },
     {
       "path": "miniapp/node/market-connector.mjs",
-      "sha": "98c18de21f3e8b26e1f962b79b5e8cd11a9aeeb5",
-      "size": 15833
+      "sha": "41b9797701f8b491f8fc85bcd3dec1a0581f6b1c",
+      "size": 16173
     },
     {
       "path": "miniapp/node/market-schedule.mjs",
-      "sha": "80461dbeedb3559141d11733b75df22db492206c",
-      "size": 6693
+      "sha": "22c7d0d17c03016fdb52b875cd11561edc8acb7c",
+      "size": 6841
     },
     {
       "path": "miniapp/node/material-search.mjs",
-      "sha": "b829a5836dfff6d52488c3d5c00e96579da207a4",
-      "size": 5533
+      "sha": "7a2650d51b3a0414f24f0e90ad3b9a151b5246b1",
+      "size": 5652
     },
     {
       "path": "miniapp/node/mcp-server.mjs",
-      "sha": "6f8aca8281f0467dec24e0c50ed40f08299def07",
-      "size": 3234
+      "sha": "814c121a508ef68defe34f3ec7b41881e724bafd",
+      "size": 3313
     },
     {
       "path": "miniapp/node/miniapp-api.d.ts",
-      "sha": "9fc5ca043761baa58fcb71f8c10060388635e4d0",
-      "size": 505
+      "sha": "e1957b936573f519eb78997b6564b1d078491c69",
+      "size": 516
     },
     {
       "path": "miniapp/node/office-text.mjs",
-      "sha": "8da413e6e3e81b119d16a5c3adc2c65f0aca133b",
-      "size": 3074
+      "sha": "bf1a9b4536e34288b8b518fa4c90b025c7194b6f",
+      "size": 3156
     },
     {
       "path": "miniapp/node/open-external.mjs",
-      "sha": "4d6833a27b26181ae3477742bf8da5847a443bcc",
-      "size": 1839
+      "sha": "61c753611c278fe62091833ed42b674bb5659170",
+      "size": 1872
     },
     {
       "path": "miniapp/node/research-search.mjs",
-      "sha": "9171a073a15c9fc97657870b71ab8c655731bdab",
-      "size": 24217
+      "sha": "873ef75d127475a3a13de211eddc09d84b122f84",
+      "size": 24668
     },
     {
       "path": "miniapp/node/search-terms.mjs",
-      "sha": "fc5f2537f92aaea0d6807b59fb3701ec033b9108",
-      "size": 4906
+      "sha": "77b154339db026c3c92df01163f7da87fb79c6c0",
+      "size": 4984
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "abc6ac7585af523be27235eb8494feba3e04299f",
-      "size": 108320
+      "sha": "7acdf4191ef01e1eaa460ae0a5728435fadc7654",
+      "size": 110337
     },
     {
       "path": "miniapp/node/wiki-format.mjs",
-      "sha": "ef474838e3c63bf1a3a914f35ea1d419155d7d6c",
-      "size": 26303
+      "sha": "e1446d65e3237e4ad5eb6d4032e40b456f9ecbd1",
+      "size": 26903
     },
     {
       "path": "miniapp/node/wiki-lenses.mjs",
-      "sha": "2a6b2f5e3bcafde7d2a83b458d3ef63ab1dd1387",
-      "size": 7799
+      "sha": "4e4a0b631afd93b56b1e5cd0f64e35bb7eda5018",
+      "size": 7926
     },
     {
       "path": "miniapp/node/wiki-records.mjs",
-      "sha": "1d3a75f56a3555c280bf708df866737b8d58e659",
-      "size": 13321
+      "sha": "fc6c9a413b0ebeba358a310cdd8ab7a255cbfca8",
+      "size": 13582
     },
     {
       "path": "miniapp/node/wiki-service.mjs",
-      "sha": "df43e7b06ffc849770b552ee021f60ceea0afdb9",
-      "size": 164954
+      "sha": "866825ff70f8a6246541a37b50c38a32edff1349",
+      "size": 167672
     },
     {
       "path": "miniapp/node/zsxq-cli.mjs",
-      "sha": "84c17677223e25d6b8feb0be70c113d8d5fb4b8d",
-      "size": 4654
+      "sha": "73f7fbae24d730266d584a4ffdd9b7637317905e",
+      "size": 4764
     },
     {
       "path": "package.json",
-      "sha": "97719263855485be1a0ee35c3ae11510681ebe96",
-      "size": 154
+      "sha": "ccc5e11502b3dfd7f4335858283dafb8845e332f",
+      "size": 163
     },
     {
       "path": "servers.mcp.json",
-      "sha": "b80e86450da6aa3767e18a78b0cc16a0bd7bff16",
-      "size": 552
+      "sha": "ea94b91fcecde17316a65a367984f96f73c35074",
+      "size": 564
     },
     {
       "path": "skills/llm-wiki/SKILL.md",
-      "sha": "ec9fe8cfcf1fe8e4509d3abe4a23525483a4e68f",
-      "size": 15641
+      "sha": "319f7d59d39948c61587d8aec74db57280e7892e",
+      "size": 15783
     },
     {
       "path": "skills/sentiment-search/SKILL.md",
-      "sha": "1eee1ddb3c63987ab9b9ae96b82fe130db64a0d2",
-      "size": 11488
+      "sha": "98e106537c55609fed00ef92eb22757581d3c1e2",
+      "size": 11596
     },
     {
       "path": "skills/stock-dossier/SKILL.md",
-      "sha": "7cbb4c1281227549021576264f148d5793db3329",
-      "size": 5765
+      "sha": "9603c975c50fdebc638c134346950121aaf7e113",
+      "size": 5832
     },
     {
       "path": "test/alphapai-client.test.mjs",
-      "sha": "02dc298533d511d8d65141c6df9ac17764995929",
-      "size": 15757
+      "sha": "a557bea08a333be103ae64a0cb8299c977302542",
+      "size": 15970
     },
     {
       "path": "test/history-policy.test.mjs",
-      "sha": "c4482323119d0ebe40ff1bcd9df0ea1a405fb973",
-      "size": 2310
+      "sha": "ab7dc18532058ae1a3b940ba95e13f2d51c97330",
+      "size": 2377
     },
     {
       "path": "test/market-schedule.test.mjs",
-      "sha": "4a149efb75f11dba643a4869eb235897c75f41d3",
-      "size": 4281
+      "sha": "bbb6e403f1b69e7cc8a96aec837b3cd8667adef8",
+      "size": 4330
     },
     {
       "path": "test/research-search.test.mjs",
-      "sha": "f95e4640fa2187c68cc672bb2acfa829515d4ede",
-      "size": 14713
+      "sha": "d070069e2d508d30517dc53ff6d389e58a4e3c72",
+      "size": 14900
     },
     {
       "path": "test/server-smoke.test.mjs",
-      "sha": "8cf8e10e11861e4330a573d019a63641052178ca",
-      "size": 10118
+      "sha": "24b8f2da7c7c87c202f4d84c2caad46b8080081b",
+      "size": 10257
     },
     {
       "path": "test/wiki-v2.test.mjs",
-      "sha": "0781a71bc6e90170c5c470f89ce88ba61b3a8ea8",
-      "size": 16725
+      "sha": "b310738f78c07caf28ecc07a2446a0d8e928a5d7",
+      "size": 16966
     },
     {
       "path": "test/wiki-v3.test.mjs",
-      "sha": "af4ef9a4f6dc70eff5b8d8f4d596372ac7332f42",
-      "size": 42703
+      "sha": "0a30557b854a1cb1224212291f96cec5bf6456fe",
+      "size": 43301
     },
     {
       "path": "test/wiki.test.mjs",
-      "sha": "8088f203c550ac2f189e37df5e20c42da92ed0e9",
-      "size": 20354
+      "sha": "e8bd581dffc1b0dcff1dc982ef53aa471193c00e",
+      "size": 20668
     }
   ]
 }

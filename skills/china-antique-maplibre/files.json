@@ -2,88 +2,88 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "c324a6a8291dffcbe8c2f9ff89d81e2edd049c0d",
-      "size": 4240
+      "sha": "3212307dfd1c7d8f82064b28a7d296cc4feccec5",
+      "size": 4301
     },
     {
       "path": "_meta.json",
-      "sha": "d6c3ca50d2d6c7de83c18cb8afa5056a66aec4b4",
-      "size": 200
+      "sha": "11f4b3099ff9e82d49979ecc11034b5d07ce16ed",
+      "size": 208
     },
     {
       "path": "agents/openai.yaml",
-      "sha": "d17a61e7b5904ed7cf18ecd740c9a73882ba2406",
-      "size": 721
+      "sha": "2b7bfb41c2936d39be06ecb66d53f5236d199772",
+      "size": 732
     },
     {
       "path": "references/city-tier-schema.md",
-      "sha": "66e84004e60870cd1b0f690f0433d597ccecb563",
-      "size": 2291
+      "sha": "779efebad78b560c7c525624b4323edbf6446bc1",
+      "size": 2377
     },
     {
       "path": "references/parameter-reference.md",
-      "sha": "1796cc5874a0a20c7a37e3534d106ca1257af186",
-      "size": 3916
+      "sha": "a462d35999421915a8a971622e8b2c70e8f9860a",
+      "size": 4021
     },
     {
       "path": "references/tested-config.md",
-      "sha": "4a4facf71049cb9475dd0d5ebe19c949ec45c08a",
-      "size": 2794
+      "sha": "96a393e582a4664b4f0e657a16c6b4d554c7ce39",
+      "size": 2859
     },
     {
       "path": "references/tuner-workflow.md",
-      "sha": "5413eed575e794897bc09a3edb10e5cb318aa1aa",
-      "size": 2573
+      "sha": "d7a763e576f2ab94a3d33fe18a84a4c323b2ce43",
+      "size": 2643
     },
     {
       "path": "references/water-overlay.md",
-      "sha": "2b739c61f67cb5bd45accd0034da1c5dcde34e04",
-      "size": 3324
+      "sha": "fac5dcb89f854c7077196828f421d6ed58793508",
+      "size": 3403
     },
     {
       "path": "schemas/map-preset.schema.json",
-      "sha": "b3e46e03ae1339bccfead30ec1ddc9f0cf918314",
-      "size": 4181
+      "sha": "0e4db6fce14a56e94b77e9b6ad6bb75f64ff9976",
+      "size": 4306
     },
     {
       "path": "schemas/sample-sites.schema.json",
-      "sha": "b0440d7d269d32db50eb452d81adcb21f9b11b2f",
-      "size": 1561
+      "sha": "dcb1a1151bdb113860b8108b2c6895cd3707ba89",
+      "size": 1619
     },
     {
       "path": "tuner/README.md",
-      "sha": "a8ab91b8ed42b0c38ae613a2555b07297ce91c13",
-      "size": 1349
+      "sha": "7877eec4e4843f49ff7219d4d32f3e0b3a96fbe3",
+      "size": 1391
     },
     {
       "path": "tuner/assets/han-city-3d.js",
-      "sha": "4f150dc8d4bd154654278d355c59c1deeb61e901",
-      "size": 36860
+      "sha": "270fd2be5dfe752d339bf2c86d33a50a2d74ed09",
+      "size": 38060
     },
     {
       "path": "tuner/assets/sample-sites.json",
-      "sha": "6e2e352c6dab6b7dff14b76dfbc71fd150981edc",
-      "size": 752
+      "sha": "22729dadf697a1e531df213a03ec6ae0dfbbe6b4",
+      "size": 794
     },
     {
       "path": "tuner/assets/water-pack.json",
-      "sha": "67a8670e841d3a6a7e1651002817c383bc662cf2",
-      "size": 292
+      "sha": "d556e9cc83eda7579a88c49f148815bddb2aae15",
+      "size": 298
     },
     {
       "path": "tuner/index.html",
-      "sha": "48c91932b54d0174db9f92af92a115bf1752c54f",
-      "size": 105097
+      "sha": "dc25765af1bb70911c49f771a29a1935976ae032",
+      "size": 108130
     },
     {
       "path": "tuner/map-tiles.config.example.js",
-      "sha": "7867a171927af5993d568e8b72fb17e37ba8f448",
-      "size": 1971
+      "sha": "5c05df3e644fda701024b0334332b288620bc9e5",
+      "size": 2025
     },
     {
       "path": "tuner/map-tiles.config.js",
-      "sha": "23c75542fc9d5bb6bf2ef136f20fc134fd92e1ba",
-      "size": 1100
+      "sha": "9442a439ce7364e34c1b1e91e4c4e6502fe9c873",
+      "size": 1133
     },
     {
       "path": "tuner/media/hexi-ep07-demo-480p.mp4",
@@ -92,18 +92,18 @@
     },
     {
       "path": "tuner/preset-antique-default.json",
-      "sha": "ef62db2e54de745389ca4f649bcf4bebf3b2efbd",
-      "size": 1510
+      "sha": "a991e1069850867abe7483b80808753eb8141276",
+      "size": 1574
     },
     {
       "path": "tuner/presets/antique-default.json",
-      "sha": "ef62db2e54de745389ca4f649bcf4bebf3b2efbd",
-      "size": 1510
+      "sha": "a991e1069850867abe7483b80808753eb8141276",
+      "size": 1574
     },
     {
       "path": "tuner/verify.mjs",
-      "sha": "c42f81c307024b88f3bfbf7990bf58dd5d39a3bd",
-      "size": 4722
+      "sha": "83067812b1589e4419c5b3e92e538a0ea409ec24",
+      "size": 4866
     }
   ]
 }

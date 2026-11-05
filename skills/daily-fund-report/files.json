@@ -2,58 +2,58 @@
   "files": [
     {
       "path": "README.md",
-      "sha": "0a9b99e0c6b55e0cdde4d0f349a4b7523d1aa874",
-      "size": 4477
+      "sha": "d973880d257e88f66cea4bdc472038e53c35d575",
+      "size": 4654
     },
     {
       "path": "SKILL.md",
-      "sha": "0382a44125762c1ef79a3c60a71ce55429bc0062",
-      "size": 3443
+      "sha": "8c3bbac6c1b65d8c455e2d253c3a5fe211ab7cec",
+      "size": 3575
     },
     {
       "path": "_meta.json",
-      "sha": "86cb1ab508577c4a171cd17771750ec5ecafc047",
-      "size": 494
+      "sha": "dea7e14f627eb5a48e2634cb303affacb0bf56f9",
+      "size": 515
     },
     {
       "path": "assets/feishu_card_template.json",
-      "sha": "914fc94c1d9a30780b7f81b6b0d7ec6552ea895b",
-      "size": 1938
+      "sha": "b9d58c275a3311433677e2b5898879995356c942",
+      "size": 2027
     },
     {
       "path": "assets/portfolio_template.json",
-      "sha": "33987c8463d7c4b65b4caf416ecf1989ac12ac87",
-      "size": 1010
+      "sha": "72dea5b6cc7f0b19225475dc03ab744f0f1dfb9e",
+      "size": 1057
     },
     {
       "path": "config.example.json",
-      "sha": "027d1b7fdb68d9d3fcb9540f390b65f7234a8485",
-      "size": 426
+      "sha": "c7d00ce6d628928c115260a268db32723d541987",
+      "size": 447
     },
     {
       "path": "references/fund_data_source.md",
-      "sha": "f2c6bc62fbb53f16be33fa6d2b80f60533e25401",
-      "size": 2142
+      "sha": "2bbe4bd4e4f4b7687e8bf750ec0eb2e149283f90",
+      "size": 2239
     },
     {
       "path": "scripts/analyze_returns.py",
-      "sha": "3b766743358fbac2f177d4638126db2e08fa10e3",
-      "size": 7688
+      "sha": "7a2eba616e8f647d88a8865021c9ada3c44ea7f1",
+      "size": 7921
     },
     {
       "path": "scripts/fetch_fund_data.py",
-      "sha": "c36b52561e01704c173471c7013089f1a40fa765",
-      "size": 5435
+      "sha": "b69d4560a35a5cfbab42852b7eb76f8330e4c443",
+      "size": 5607
     },
     {
       "path": "scripts/generate_report.py",
-      "sha": "369ecfb4fa39b2c19acc9e8b75a6e5cf3efdfdc0",
-      "size": 5400
+      "sha": "50c06e921378b0b1b50cc1eaba951fd795bb44bc",
+      "size": 5587
     },
     {
       "path": "scripts/send_feishu.py",
-      "sha": "674cbdd7e245b6f8d6782c8b9e4189045184c6ca",
-      "size": 8717
+      "sha": "49b76bbe3a1abf109dc73e7c5dbdc35b2109be2b",
+      "size": 9023
     }
   ]
 }

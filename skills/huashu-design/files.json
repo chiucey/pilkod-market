@@ -2,43 +2,43 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha": "1db711bda3f0425b738e393cddbc4d31d29f82b8",
-      "size": 404
+      "sha": "8778773600be164719edd030e6e9ae6a7a3bd4b9",
+      "size": 426
     },
     {
       "path": "LICENSE",
-      "sha": "29d61d13c39a81c31016f6556a4867fc5ed8f1ce",
-      "size": 2005
+      "sha": "96e1273473b2b8583213fcbf50785472d4370013",
+      "size": 2049
     },
     {
       "path": "README.en.md",
-      "sha": "eded5fd4fe39398043b8635a955293c45e1f4a55",
-      "size": 16312
+      "sha": "7f87042a80ebf1b3580a48e7a512dde9af94d229",
+      "size": 16623
     },
     {
       "path": "README.md",
-      "sha": "de9b1515af0545e251c25a3d326298b4869a699c",
-      "size": 15208
+      "sha": "e479801addee386ed5af7cfae002cdf013d8dc13",
+      "size": 15532
     },
     {
       "path": "SKILL.md",
-      "sha": "f81452a808550ac2db168f88c95dccac00941ded",
-      "size": 57458
+      "sha": "e7d51e8b88433b778d63baecab288742e7deb231",
+      "size": 58259
     },
     {
       "path": "assets/android_frame.jsx",
-      "sha": "86071b3ccc8f19bf0d2e8683cd2fedea6b186955",
-      "size": 4506
+      "sha": "84df81d3d2119bb270fb1e984b16dc133123c78d",
+      "size": 4681
     },
     {
       "path": "assets/animations.jsx",
-      "sha": "8558918757cff8c12d58fd85f26a233df1a178c4",
-      "size": 10079
+      "sha": "798e76ba443d4aca48c348eedd84d3bc8127d307",
+      "size": 10419
     },
     {
       "path": "assets/banner.svg",
-      "sha": "65f68dee7f5326ab71ae3099352f063f97e9b4ad",
-      "size": 9502
+      "sha": "03a5ef5d9ff58f43b76fb55d18511c2de607c429",
+      "size": 9700
     },
     {
       "path": "assets/bgm-ad.mp3",
@@ -72,38 +72,38 @@
     },
     {
       "path": "assets/browser_window.jsx",
-      "sha": "19c1034666ef2a33e732ec1146b0e063a692d16b",
-      "size": 3975
+      "sha": "3171d20b0ff01b3ba35c1a1dbd385ebcdc5d9db1",
+      "size": 4141
     },
     {
       "path": "assets/deck_index.html",
-      "sha": "fdbc4a4afb2fb6eae1d69c52c88e3a50c3f6fe35",
-      "size": 8145
+      "sha": "147de276b1c343b4f96c88995eda56224672cd08",
+      "size": 8382
     },
     {
       "path": "assets/deck_stage.js",
-      "sha": "916790dc566eafb473791ac4f9facb42c2c00a20",
-      "size": 11678
+      "sha": "1e75046813eba3fc69ea1f157e78040e60aff1b7",
+      "size": 12098
     },
     {
       "path": "assets/design_canvas.jsx",
-      "sha": "9b9140e304367eb52939b6ac420114698ffdc5d2",
-      "size": 5195
+      "sha": "96ff15d0948df8b6c190db693d6c300a670fccc9",
+      "size": 5400
     },
     {
       "path": "assets/ios_frame.jsx",
-      "sha": "eb0160e489e2a5112a35b716af710c11f9200485",
-      "size": 4753
+      "sha": "ab81c3fa48b33159bfa283e608e5efa6c7a46ab7",
+      "size": 4945
     },
     {
       "path": "assets/macos_window.jsx",
-      "sha": "7155b98254780b2336cb90ab0db9dd3fc6e10882",
-      "size": 2536
+      "sha": "9b262f11e238aa0d480508ba2737fa323c796e6a",
+      "size": 2632
     },
     {
       "path": "assets/personal-asset-index.example.json",
-      "sha": "dd4b0d6e64e1fdea2213e1f75804637e3885d4fc",
-      "size": 1826
+      "sha": "b9ba2c9e12b241f6f5528ad9f81686878c980e20",
+      "size": 1897
     },
     {
       "path": "assets/sfx/container/card-flip.mp3",
@@ -292,13 +292,13 @@
     },
     {
       "path": "assets/showcases/INDEX.md",
-      "sha": "5a89e42ccf9379b1a98db40a0439eeadc8e6f192",
-      "size": 5538
+      "sha": "9b411965f3e7bb5918485321d92b75b9b29a6a85",
+      "size": 5653
     },
     {
       "path": "assets/showcases/cover/cover-build.html",
-      "sha": "25380833bdcabc776aa1efc278f1bb606c7fdb13",
-      "size": 5664
+      "sha": "1e694c385021f39c226bf2222e1563cc0050ae80",
+      "size": 5898
     },
     {
       "path": "assets/showcases/cover/cover-build.png",
@@ -307,8 +307,8 @@
     },
     {
       "path": "assets/showcases/cover/cover-pentagram.html",
-      "sha": "fb54bda2e777205c50a78beb875c597e99e70aed",
-      "size": 4914
+      "sha": "f5a1fdae1ecd474971b942e54a98ce84e9fe7c9d",
+      "size": 5143
     },
     {
       "path": "assets/showcases/cover/cover-pentagram.png",
@@ -317,8 +317,8 @@
     },
     {
       "path": "assets/showcases/cover/cover-takram.html",
-      "sha": "20b7a18992078b92baffc71b58dcdd1c140e392a",
-      "size": 11823
+      "sha": "2e1dfdc53a05baeb00b09e6cd88f1c21f026a117",
+      "size": 12110
     },
     {
       "path": "assets/showcases/cover/cover-takram.png",
@@ -327,8 +327,8 @@
     },
     {
       "path": "assets/showcases/infographic/infographic-build.html",
-      "sha": "325c2fa5edcfb841c2796980d28ef8904986ce90",
-      "size": 11696
+      "sha": "8dd0085c664d39803c248dc44030024dabe2d7ba",
+      "size": 12198
     },
     {
       "path": "assets/showcases/infographic/infographic-build.png",
@@ -337,8 +337,8 @@
     },
     {
       "path": "assets/showcases/infographic/infographic-pentagram.html",
-      "sha": "8e9fdb889b48ffc92ad28a7bbaa4d4568924fc3d",
-      "size": 13911
+      "sha": "f8f2d9ff475192f0ac18130ef0e2c4435539448a",
+      "size": 14511
     },
     {
       "path": "assets/showcases/infographic/infographic-pentagram.png",
@@ -347,8 +347,8 @@
     },
     {
       "path": "assets/showcases/infographic/infographic-takram.html",
-      "sha": "e55520204bdc95f48a2680f4696c4227beb161dd",
-      "size": 22396
+      "sha": "075411373a0a02ac35a9cb96a03df051c82d2ca4",
+      "size": 23065
     },
     {
       "path": "assets/showcases/infographic/infographic-takram.png",
@@ -357,8 +357,8 @@
     },
     {
       "path": "assets/showcases/ppt/ppt-build.html",
-      "sha": "be2cbb711f897e767d344a557476c89909782a69",
-      "size": 9083
+      "sha": "4d7ef9446ab4fdde1c32116b2d7ed98de83dad63",
+      "size": 9464
     },
     {
       "path": "assets/showcases/ppt/ppt-build.png",
@@ -367,8 +367,8 @@
     },
     {
       "path": "assets/showcases/ppt/ppt-pentagram.html",
-      "sha": "cd10597135acdea9795e3e2e5efce439555a19fa",
-      "size": 11955
+      "sha": "8c3a02800e711323859be463b7760d893871cc99",
+      "size": 12491
     },
     {
       "path": "assets/showcases/ppt/ppt-pentagram.png",
@@ -377,8 +377,8 @@
     },
     {
       "path": "assets/showcases/ppt/ppt-takram.html",
-      "sha": "d859cbd5a9c3344ccabdc1cbf179b2f17366356a",
-      "size": 15656
+      "sha": "a5b2e4decb08f233d7f9c140138f03a2bdd977f6",
+      "size": 16152
     },
     {
       "path": "assets/showcases/ppt/ppt-takram.png",
@@ -387,8 +387,8 @@
     },
     {
       "path": "assets/showcases/website-ai-nav/ainav-build.html",
-      "sha": "2d9060e6954ba4a0f081be39bb75b26c1f6d2555",
-      "size": 9621
+      "sha": "757a573a5b35698bbff67d64eca32f060c8ab629",
+      "size": 10006
     },
     {
       "path": "assets/showcases/website-ai-nav/ainav-build.png",
@@ -397,8 +397,8 @@
     },
     {
       "path": "assets/showcases/website-ai-nav/ainav-pentagram.html",
-      "sha": "1bec4d244d7ac71e4c96aa5a5cab408645197208",
-      "size": 10553
+      "sha": "9a85f1669253a3bf9f81b805dd924d73fd34f5c3",
+      "size": 10975
     },
     {
       "path": "assets/showcases/website-ai-nav/ainav-pentagram.png",
@@ -407,8 +407,8 @@
     },
     {
       "path": "assets/showcases/website-ai-nav/ainav-takram.html",
-      "sha": "1f7581d4734b8f4ce84d068d41cb6f579d26267b",
-      "size": 12747
+      "sha": "9e5056572fdb849f05ca5615c9ef3d21d9338221",
+      "size": 13246
     },
     {
       "path": "assets/showcases/website-ai-nav/ainav-takram.png",
@@ -417,8 +417,8 @@
     },
     {
       "path": "assets/showcases/website-ai-writing/aiwriting-build.html",
-      "sha": "908967bdc56d60104058647bb58a0a36528c1a88",
-      "size": 14066
+      "sha": "0b232e92338f5fe201b59286f1aff6a8317b0430",
+      "size": 14627
     },
     {
       "path": "assets/showcases/website-ai-writing/aiwriting-build.png",
@@ -427,8 +427,8 @@
     },
     {
       "path": "assets/showcases/website-ai-writing/aiwriting-pentagram.html",
-      "sha": "38f702df3b70c9babfa652d7c3b68eaacb435f38",
-      "size": 14226
+      "sha": "5cdd86348a092a1cd97cc8c89d929ee877dd9690",
+      "size": 14773
     },
     {
       "path": "assets/showcases/website-ai-writing/aiwriting-pentagram.png",
@@ -437,8 +437,8 @@
     },
     {
       "path": "assets/showcases/website-ai-writing/aiwriting-takram.html",
-      "sha": "c3fc6b3a687118ded5f918be8fd3aab4080f310f",
-      "size": 18003
+      "sha": "2de885cca214c2a236bdd574c0201f14cb19635b",
+      "size": 18698
     },
     {
       "path": "assets/showcases/website-ai-writing/aiwriting-takram.png",
@@ -447,8 +447,8 @@
     },
     {
       "path": "assets/showcases/website-devdocs/devdocs-build.html",
-      "sha": "2c37afda67b91a269ed8bcec3eb914ff342bc2d1",
-      "size": 9928
+      "sha": "33b26fbc3835fd046829d3de0fbaa00a2eff4684",
+      "size": 10299
     },
     {
       "path": "assets/showcases/website-devdocs/devdocs-build.png",
@@ -457,8 +457,8 @@
     },
     {
       "path": "assets/showcases/website-devdocs/devdocs-pentagram.html",
-      "sha": "f05ec3a7890fa64fe5d71e5ab8ff83c702d9268b",
-      "size": 12801
+      "sha": "417aa47bd9bc65663c06ce49f236988036ebbc74",
+      "size": 13260
     },
     {
       "path": "assets/showcases/website-devdocs/devdocs-pentagram.png",
@@ -467,8 +467,8 @@
     },
     {
       "path": "assets/showcases/website-devdocs/devdocs-takram.html",
-      "sha": "206f3b754820ab0332248d8c411b0c8fcf0ef486",
-      "size": 13106
+      "sha": "10680354ea2d9319d9ffa329407524061fa31461",
+      "size": 13599
     },
     {
       "path": "assets/showcases/website-devdocs/devdocs-takram.png",
@@ -477,8 +477,8 @@
     },
     {
       "path": "assets/showcases/website-homepage/homepage-build.html",
-      "sha": "2bfef3a43f33521201732ba71fc1f7ee1dc950fd",
-      "size": 8314
+      "sha": "26695e1e997a2c2b056f9978c62e065484f4db65",
+      "size": 8681
     },
     {
       "path": "assets/showcases/website-homepage/homepage-build.png",
@@ -487,8 +487,8 @@
     },
     {
       "path": "assets/showcases/website-homepage/homepage-pentagram.html",
-      "sha": "2f7580f12258b87101a463cd7006fae7650f5a3f",
-      "size": 8491
+      "sha": "410ac6334c2dd98054082244890926bf24a65cf2",
+      "size": 8859
     },
     {
       "path": "assets/showcases/website-homepage/homepage-pentagram.png",
@@ -497,8 +497,8 @@
     },
     {
       "path": "assets/showcases/website-homepage/homepage-takram.html",
-      "sha": "7ae174a50a1d7134c3aa4c03b7759e27d5e96c4c",
-      "size": 10543
+      "sha": "9680b8f61a96d1ac91a4bba463e04b70035e6e90",
+      "size": 11002
     },
     {
       "path": "assets/showcases/website-homepage/homepage-takram.png",
@@ -507,8 +507,8 @@
     },
     {
       "path": "assets/showcases/website-saas/saas-build.html",
-      "sha": "f5d56036587933b6d797a8781687d6012b14fad6",
-      "size": 12901
+      "sha": "521e7a0a43f8f7ec17b712a944c044e49a7afe95",
+      "size": 13394
     },
     {
       "path": "assets/showcases/website-saas/saas-build.png",
@@ -517,8 +517,8 @@
     },
     {
       "path": "assets/showcases/website-saas/saas-pentagram.html",
-      "sha": "ccf397b9b4e0a1557ef4565c1b6d43e77370a543",
-      "size": 15050
+      "sha": "2ae816afb0fe15fcbf4a661841925bce30a5f1cb",
+      "size": 15606
     },
     {
       "path": "assets/showcases/website-saas/saas-pentagram.png",
@@ -527,8 +527,8 @@
     },
     {
       "path": "assets/showcases/website-saas/saas-takram.html",
-      "sha": "d35c6a622f7ac7fa6c740b528aeb856e961ca1a8",
-      "size": 18209
+      "sha": "93a7acc49d72e038a986b8b30821044421eb05cb",
+      "size": 18813
     },
     {
       "path": "assets/showcases/website-saas/saas-takram.png",
@@ -537,243 +537,243 @@
     },
     {
       "path": "demos/c1-ios-prototype-en.html",
-      "sha": "df3a605ac96cf881f016e821e0f67b4fd07486f2",
-      "size": 35163
+      "sha": "50f4f789dfc822e1aea871cf946fbe04b9a1db20",
+      "size": 36308
     },
     {
       "path": "demos/c1-ios-prototype.html",
-      "sha": "fecc506f0039785b668dcf006534a722d99d1e89",
-      "size": 35149
+      "sha": "fc45b7f86eca79bca6f521dc8d53b4f0f8f7d53b",
+      "size": 36291
     },
     {
       "path": "demos/c2-slides-pptx-en.html",
-      "sha": "b4035749422fc01a7fe72969dc7239f29f45df8c",
-      "size": 32906
+      "sha": "6eccb11d90005f7d76108131db7b84c7a75f723f",
+      "size": 33961
     },
     {
       "path": "demos/c2-slides-pptx.html",
-      "sha": "05e7b4ffd416d2df2a9786eacaa8dff417290104",
-      "size": 32975
+      "sha": "07c3fe37ec93474d798911fddb20f55ff8a37b9f",
+      "size": 34030
     },
     {
       "path": "demos/c3-motion-design-en.html",
-      "sha": "ef44882fd45d0f737ec1afdf0c2f38b70424bca1",
-      "size": 37031
+      "sha": "6e389cb1220c93ad524acdb2eaf6ee5010f1dbc0",
+      "size": 38165
     },
     {
       "path": "demos/c3-motion-design.html",
-      "sha": "79f106e448de4d358746d397932c05e735c9c03c",
-      "size": 37048
+      "sha": "1e758bcb474af8d20703a6d2a52281b905ebd40d",
+      "size": 38182
     },
     {
       "path": "demos/c4-tweaks-en.html",
-      "sha": "284e47d3b86d53998326b93236b076438c873a4d",
-      "size": 31102
+      "sha": "83179010129a2b2e3a23c37e6dfced7650a96c6a",
+      "size": 32091
     },
     {
       "path": "demos/c4-tweaks.html",
-      "sha": "640c41a623217cc35c6465fb89ea21dd050b1021",
-      "size": 31150
+      "sha": "ae18c3534fcba6c8e0c1173536b243dd78bef6e3",
+      "size": 32139
     },
     {
       "path": "demos/c5-infographic-en.html",
-      "sha": "c01667909f031ae829e5df8d97617fded7a4da27",
-      "size": 24941
+      "sha": "e8596d109f839531bef6b156f6526adf9c894109",
+      "size": 25757
     },
     {
       "path": "demos/c5-infographic.html",
-      "sha": "619e4198552aaa263515152b9d860409cd99f74e",
-      "size": 24823
+      "sha": "bbfc918ffeb05423dda77074faf5096a7c33528c",
+      "size": 25636
     },
     {
       "path": "demos/c6-expert-review-en.html",
-      "sha": "6471b2f5b6409c1813485ebb0475665eb951339e",
-      "size": 26382
+      "sha": "893a8b8015714ff2830c4b6f7e422e9b0ab9502b",
+      "size": 27267
     },
     {
       "path": "demos/c6-expert-review.html",
-      "sha": "ab3489dc84266b2394ea2c7ea858ddeb005fdd51",
-      "size": 26822
+      "sha": "94d24ec3b66dd7e7b43d4395311c4a224f93cd82",
+      "size": 27716
     },
     {
       "path": "demos/hero-animation-v10-en.html",
-      "sha": "be8b9254db51c8000448c5c38241a970fa14f2b2",
-      "size": 48712
+      "sha": "53b5c3d03a560689d962c7650df86ee2f3dee4aa",
+      "size": 50210
     },
     {
       "path": "demos/w1-brand-protocol-en.html",
-      "sha": "2eb967bbcddcf6be322a5cf4ecb9bc01a3da3873",
-      "size": 20572
+      "sha": "012078fe04dcd4a327817e43f28a31dfccbfd445",
+      "size": 21256
     },
     {
       "path": "demos/w1-brand-protocol.html",
-      "sha": "dc38e4d540a716cf0c73e870699de51d55c445f6",
-      "size": 20905
+      "sha": "943b74e1948c2cafacc5066c2b03544554ee4d57",
+      "size": 21601
     },
     {
       "path": "demos/w2-junior-designer-en.html",
-      "sha": "88438f8d50742b640696b216d5ba96c898f163ab",
-      "size": 31305
+      "sha": "c364905acfd668c9493c21b734b6df01fcf9d68e",
+      "size": 32288
     },
     {
       "path": "demos/w2-junior-designer.html",
-      "sha": "097bbb75cf68d40443adc684605f7316bf84af07",
-      "size": 31764
+      "sha": "f37b2c1b174fe3332939e9f5e72636efe6428969",
+      "size": 32758
     },
     {
       "path": "demos/w3-fallback-advisor-en.html",
-      "sha": "56fe0855b90c82e7291efe223af98de2be45bc1b",
-      "size": 23802
+      "sha": "e9068f12223cc54cda962ad4476bfcd091fff4b3",
+      "size": 24449
     },
     {
       "path": "demos/w3-fallback-advisor.html",
-      "sha": "d73f84f2026ac274e74e445042fe12ffc0e386de",
-      "size": 26314
+      "sha": "5d0f9e17e666aa05035d6ffd066724c77d926416",
+      "size": 27018
     },
     {
       "path": "references/animation-best-practices.md",
-      "sha": "1aa0d3717cf5a927640c2aa7d424d62388c99a0f",
-      "size": 21012
+      "sha": "ed042d3e815cccd6c462e083d3b3e2b01b4b3d4c",
+      "size": 21518
     },
     {
       "path": "references/animation-pitfalls.md",
-      "sha": "0ccbd258a7cc4b59a4f304f8070dc7b3a7ae85d8",
-      "size": 22314
+      "sha": "c9f7273fe24de15af33c37e6f653c72e0c69bbb6",
+      "size": 22694
     },
     {
       "path": "references/animations.md",
-      "sha": "fd323c7fb19747fc0433005a4ce82bb3bd1fc637",
-      "size": 7427
+      "sha": "6a88e060349bee92c706ebde3fef787bb296ed19",
+      "size": 7676
     },
     {
       "path": "references/apple-gallery-showcase.md",
-      "sha": "f9e92fa56f9f6ca6815ed870445db97914ed92ae",
-      "size": 11233
+      "sha": "6af3ebed645cb1661c5985610d75a3fa419753af",
+      "size": 11571
     },
     {
       "path": "references/audio-design-rules.md",
-      "sha": "42f31e8dcc9ba1401fc2f1301919ff2f585ad8ed",
-      "size": 9719
+      "sha": "7c29a924772f0689af2ab2b0c79918870841a866",
+      "size": 9979
     },
     {
       "path": "references/cinematic-patterns.md",
-      "sha": "b8b1dc9e6a43a53545895385edf8876887eacf7b",
-      "size": 11086
+      "sha": "76b2f44f564aa9b1b3ceddc35a815a6ba4498d76",
+      "size": 11350
     },
     {
       "path": "references/content-guidelines.md",
-      "sha": "140cf818c8232492e530cd01b883d46980b8f43a",
-      "size": 8389
+      "sha": "a6b10aa5e849849972aa2977ba9d208cfe365dcc",
+      "size": 8649
     },
     {
       "path": "references/critique-guide.md",
-      "sha": "34209b87d4e77bd0ee8b50945c53b9ada3c0c91b",
-      "size": 7463
+      "sha": "a8f3d92eb0ec04b9397fef525c27ca5802307b31",
+      "size": 7662
     },
     {
       "path": "references/design-context.md",
-      "sha": "12adeb06d8834e0c9ba934a62b95330c39d33cd2",
-      "size": 6704
+      "sha": "e8cd9041834e1acd82f201cd0e59c4f04c0a6edf",
+      "size": 6917
     },
     {
       "path": "references/design-styles.md",
-      "sha": "702d53282a5a8e7c81f0a821d50b01dad7843d1b",
-      "size": 18484
+      "sha": "60b34b7c8401512857934f7add99d9082b25607d",
+      "size": 19075
     },
     {
       "path": "references/editable-pptx.md",
-      "sha": "669c8bc47e6379cdf3cf6515abede59b8667d751",
-      "size": 13668
+      "sha": "04e28853746f073ffbe09ddd092baf7f7114fe97",
+      "size": 13969
     },
     {
       "path": "references/hero-animation-case-study.md",
-      "sha": "7fc9626f6773dee5f9d3bb7c1fc1daed394f3dc2",
-      "size": 11348
+      "sha": "d892108f21934df0cdca39b39ca2b7eb61f08647",
+      "size": 11598
     },
     {
       "path": "references/react-setup.md",
-      "sha": "00c1c7db88602882d932ae697e0b8bdf25a89be2",
-      "size": 9318
+      "sha": "7f86d945e70a7d6400af6bedf760c93261d2725a",
+      "size": 9594
     },
     {
       "path": "references/scene-templates.md",
-      "sha": "d6fe18d60989a839a9d1b9953a870017bc2e27a5",
-      "size": 7144
+      "sha": "e0e156cc87cd03e99d854a40e9329db59e7e75b4",
+      "size": 7406
     },
     {
       "path": "references/sfx-library.md",
-      "sha": "50b23696160b98bf051d5986e83a0cbb7a3e8a28",
-      "size": 9762
+      "sha": "545fe3a2715d982206369c46540028b17a7114bc",
+      "size": 9988
     },
     {
       "path": "references/slide-decks.md",
-      "sha": "2849e013845101b5dd08720956eb71a5e34ccd91",
-      "size": 34169
+      "sha": "80ff68423db6e9267c9209bf864a214eee35d50b",
+      "size": 34895
     },
     {
       "path": "references/tweaks-system.md",
-      "sha": "a1890b67c9b4098fd9a0de35805642d2bedd19c9",
-      "size": 9015
+      "sha": "5dd6f26eaa2e2d9cfc098b94f3556ec8fb0c903f",
+      "size": 9328
     },
     {
       "path": "references/verification.md",
-      "sha": "949c97bd56869ed1d301a3e81d53b722f76131a2",
-      "size": 4291
+      "sha": "b7a45f78c786c3cb80d2cb914879ac4dfecea150",
+      "size": 4480
     },
     {
       "path": "references/video-export.md",
-      "sha": "0ca987c560e198cf61933b7569fdc5fbd2a91a59",
-      "size": 8356
+      "sha": "a3d6951163e61f5d40940be4b67b643a7e458726",
+      "size": 8565
     },
     {
       "path": "references/workflow.md",
-      "sha": "be2fd32ef0879d05b5ed0314687b3b5cd4505e14",
-      "size": 7090
+      "sha": "32a3df91f539a0a2ce4c7eb75bf31a329712f3bf",
+      "size": 7306
     },
     {
       "path": "scripts/add-music.sh",
-      "sha": "1a267f125c0fdd210c2edcd5fef5f46e1fab6563",
-      "size": 4150
+      "sha": "2f8b37fd5bf7a6f06903ea1be0c6d5f03e13d668",
+      "size": 4258
     },
     {
       "path": "scripts/convert-formats.sh",
-      "sha": "7a8ed71a4741fab34518c5a7b17659a4d3b322c0",
-      "size": 3000
+      "sha": "e0d0caadbdd75bd791fed4b141f6cbbc2b525d35",
+      "size": 3083
     },
     {
       "path": "scripts/export_deck_pdf.mjs",
-      "sha": "af4fbb2e94b6727172f805e59ee09ad331ef65dc",
-      "size": 3209
+      "sha": "348348d855651dc7ac214163c6c5525bc0ef6da0",
+      "size": 3307
     },
     {
       "path": "scripts/export_deck_pptx.mjs",
-      "sha": "2754768d34187af590b2935156afde96b9f83a6b",
-      "size": 3800
+      "sha": "228f8bc7ba149f28f39aa057a3336f8afd429675",
+      "size": 3907
     },
     {
       "path": "scripts/export_deck_stage_pdf.mjs",
-      "sha": "a5526b8080e5634540bc5a9b99a171a0706dece6",
-      "size": 4781
+      "sha": "d9cd55661f714a1401855b5f0db74f3223ac1464",
+      "size": 4911
     },
     {
       "path": "scripts/html2pptx.js",
-      "sha": "437bf7c533ac155cba23c2ad8f60ebf2bdd3d76c",
-      "size": 37795
+      "sha": "b88b42ef6238201e59a1e63dae53c9283f9154f1",
+      "size": 38773
     },
     {
       "path": "scripts/render-video.js",
-      "sha": "36ea3819a0bb882345dfb49811d440511450e72c",
-      "size": 12293
+      "sha": "b7098a5455d37abbc804f76077b1a30b536bfb0a",
+      "size": 12582
     },
     {
       "path": "scripts/verify.py",
-      "sha": "6becf2b8e1e121f4b14e1784aa6d9b8b8c8ff25a",
-      "size": 5451
+      "sha": "d32d25741c470e2f541b0d81dd0bd170d760b15f",
+      "size": 5605
     },
     {
       "path": "test-prompts.json",
-      "sha": "b2daacd4454212745d09ccff21bc66ba36e0c446",
-      "size": 2760
+      "sha": "8fff322766cb3f4bd9746025fedeffdca3d05b82",
+      "size": 2798
     }
   ]
 }

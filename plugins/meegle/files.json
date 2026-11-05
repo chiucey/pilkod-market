@@ -3,23 +3,23 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "5bef923dfce43c82c7fbac7ffaf5fca052e53b8c",
-      "size": 633
+      "sha": "bc2477c810aea53ef4888ce0f959ac51f2d3385e",
+      "size": 652
     },
     {
       "path": "LICENSE",
-      "sha": "2b8bbb5e9c46b1abc3a5ac68ee190baf046ba968",
-      "size": 1084
+      "sha": "41976649643532b2f50dc09c46e9c8ed69e069b1",
+      "size": 1105
     },
     {
       "path": "README.md",
-      "sha": "032984ae245da1165a53c5b7d2c6858d57f84aff",
-      "size": 2899
+      "sha": "d3ed0f08a9049dc14a831dd7da991915c2bd175a",
+      "size": 2929
     },
     {
       "path": "hooks/hooks.json",
-      "sha": "8d87d8c7bdd4eeb624cccd026f26626e369069f7",
-      "size": 411
+      "sha": "26963bea14e53f5643994d5007567711d617647e",
+      "size": 427
     },
     {
       "path": "icon.png",
@@ -28,163 +28,163 @@
     },
     {
       "path": "plugin/showcases.json",
-      "sha": "04288cb059cc4a3fe1b766664315c3784a33b09e",
-      "size": 437
+      "sha": "666dec4d87d0843993afe010d6ea78cac3474a48",
+      "size": 447
     },
     {
       "path": "scripts/check-meegle-cli.ps1",
-      "sha": "8f54f658aaf9451216e6a70175816ba25c6a8a77",
-      "size": 2866
+      "sha": "5b958aa9548704f333782000e24a4cc2a388b956",
+      "size": 2900
     },
     {
       "path": "scripts/check-meegle-cli.sh",
-      "sha": "a8fc0a7dc46d58acc63af4c258010b7643f20af2",
-      "size": 2619
+      "sha": "4f61fd803e842245da08fa4e9346fee9150810ed",
+      "size": 2661
     },
     {
       "path": "skills/meegle/SKILL.md",
-      "sha": "a976ecf7ca6bc7b339a7040d07f7d21b49146e53",
-      "size": 31201
+      "sha": "55708139b149c59785d77286fb0cda56040ebdac",
+      "size": 31673
     },
     {
       "path": "skills/meegle/references/ai-handoff.md",
-      "sha": "2e7803d47d3920e794b4ae6e0407a3dab05ffb6f",
-      "size": 6308
+      "sha": "915e182e3e4c68f396d843ca4e738795c2897b2d",
+      "size": 6383
     },
     {
       "path": "skills/meegle/references/api-examples.md",
-      "sha": "796ed71af92a6e5669ab7759f7bf22e90166106a",
-      "size": 10143
+      "sha": "0db3d1be9c9e3ede2aa922c4ef903b7e736dc508",
+      "size": 10438
     },
     {
       "path": "skills/meegle/references/attachment.md",
-      "sha": "95d6f6aeb2559aa8834d9e62689fc29d51a752e1",
-      "size": 9447
+      "sha": "dba25947fe883ed2157940e23740159c135f94be",
+      "size": 9568
     },
     {
       "path": "skills/meegle/references/auth-guard.md",
-      "sha": "1285df6f8f294a0481f1aabbde5f03bab838b66b",
-      "size": 4592
+      "sha": "0ff784f579bd4449202db8d4e2bc494e5f45e0de",
+      "size": 4653
     },
     {
       "path": "skills/meegle/references/cli-guide.md",
-      "sha": "fdb96bef34fa039a88f46f1a7803f0e2a31a4ca3",
-      "size": 2858
+      "sha": "1544b6db56d377267f6760d43b50d729ff86fbdf",
+      "size": 2916
     },
     {
       "path": "skills/meegle/references/error-handling.md",
-      "sha": "1be3ca6af04967d45503280791c54bff5ade8d13",
-      "size": 10707
+      "sha": "6ab52792b97061f73a080cc7b2056d74729511c7",
+      "size": 10825
     },
     {
       "path": "skills/meegle/references/field-value-extras.md",
-      "sha": "999d8b16ac23fd7f95aa976dc714e1e569921ff4",
-      "size": 1526
+      "sha": "0149762b46543a18f514841ed5c88612f75261d2",
+      "size": 1545
     },
     {
       "path": "skills/meegle/references/minimax-code-cli-setup.md",
-      "sha": "21549bbd9b784725792e47676e034568cfb86e7f",
-      "size": 7350
+      "sha": "eb5169e2482aca63f036df5b3641d63850d29538",
+      "size": 7463
     },
     {
       "path": "skills/meegle/references/misc.md",
-      "sha": "08a77aad6a5202beb1e08e712bcf31dd9c3c67cf",
-      "size": 6662
+      "sha": "e0b5f9084dea1c53f1afb7999fa31396e6678913",
+      "size": 6848
     },
     {
       "path": "skills/meegle/references/mql-basics.md",
-      "sha": "991f07e797f993f0503ca20da9c9b452e941ac75",
-      "size": 5403
+      "sha": "0b4d28034d94745fc9c8fab2e376cd9bca0a0b7d",
+      "size": 5495
     },
     {
       "path": "skills/meegle/references/mql-examples.md",
-      "sha": "ae37f839a464a1803826b5357332089c24df985e",
-      "size": 4823
+      "sha": "9b932bb0743fdb16d600fa11d29a5fcf54bc5401",
+      "size": 4921
     },
     {
       "path": "skills/meegle/references/mql-nodes-relations.md",
-      "sha": "8832522c044eadef3a494a4e6ffaeda639689513",
-      "size": 5629
+      "sha": "0af40715f1d3b5029a14f37c2256f1e4de5b89d1",
+      "size": 5707
     },
     {
       "path": "skills/meegle/references/mql-operators.md",
-      "sha": "c4e17d2fcb8c60f2249fe1703e3dc1b13787092e",
-      "size": 7040
+      "sha": "f1eb6bd095dd1e0ab1daa80a7cd777a0340221e1",
+      "size": 7126
     },
     {
       "path": "skills/meegle/references/mql-people-roles.md",
-      "sha": "41f6e86c84c5baca731584d952bf3487c8ca10d8",
-      "size": 3802
+      "sha": "d8a110aefd084c444ef4279e539e640bd62e99ea",
+      "size": 3874
     },
     {
       "path": "skills/meegle/references/mql-time-status.md",
-      "sha": "2c601544caa6d11f98526675322c4c78017f7bbb",
-      "size": 3635
+      "sha": "04dab345dba0efc5c8c7d08e21d260a1f6d7aaf8",
+      "size": 3697
     },
     {
       "path": "skills/meegle/references/performance.md",
-      "sha": "05a04e8e52fd83b2284d72226bddb481392be933",
-      "size": 1076
+      "sha": "a6a2eddc5a5959f068f8d23e0e7761b0ac4887d7",
+      "size": 1099
     },
     {
       "path": "skills/meegle/references/rich-text-editor-markdown-syntax.md",
-      "sha": "69a1e3e7e517f63d260b898d3831b3cb518015e0",
-      "size": 11525
+      "sha": "b43bcb79268828a49ae806461601db82d9f819a6",
+      "size": 11879
     },
     {
       "path": "skills/meegle/references/sop-create-workitem.md",
-      "sha": "e84c477db735537e4050d319447d72b0f5d28729",
-      "size": 10222
+      "sha": "d9d02a71f2d20eb74f331f7e9643c5d11eb698f5",
+      "size": 10392
     },
     {
       "path": "skills/meegle/references/sop-transition-node.md",
-      "sha": "357bbd8ed3a506607d13be1c5b8af2d4fcf891e7",
-      "size": 14033
+      "sha": "306520a5b3fa8db067a9118091a3c5d58127d338",
+      "size": 14276
     },
     {
       "path": "skills/meegle/references/sop-transition-state.md",
-      "sha": "bf121e4c5653a5a6bb30e534eae5b206949e9972",
-      "size": 8562
+      "sha": "214d4d1cbf5faf8420111c882d1b74c22738e7d9",
+      "size": 8709
     },
     {
       "path": "skills/meegle/references/sop-update-workitem.md",
-      "sha": "8cf4ac43261d60b81ea20247dab0106682c94d03",
-      "size": 12263
+      "sha": "de7b5b2512cacab2d71ff20ba6149d05736cd651",
+      "size": 12452
     },
     {
       "path": "skills/meegle/references/url-kinds.md",
-      "sha": "b079644c36697b1c05407b8acfd6fd0ced4e4daa",
-      "size": 6478
+      "sha": "64f4c20b91e3d11ef386acc8a4f98645eb329350",
+      "size": 6604
     },
     {
       "path": "skills/meegle/references/url-links.md",
-      "sha": "79bb9afe4ac19a1f61fb5d0778adee3576fe8cf8",
-      "size": 8532
+      "sha": "ce1e5972659c0ff1a2b02ad634aa6f5b99de53c0",
+      "size": 8683
     },
     {
       "path": "skills/meegle/references/view.md",
-      "sha": "32103d55f64a2c7a0b7976566403a6f8659e397e",
-      "size": 1450
+      "sha": "4245a5b56a84afa2c4e06e04c074eda12fe273fe",
+      "size": 1490
     },
     {
       "path": "skills/meegle/references/wbs.md",
-      "sha": "82a536d167d99cabcf7b80ffc952d6a6db6c21d2",
-      "size": 11990
+      "sha": "ba9f81f8b39b46e2401a5aa552bb67718b77224f",
+      "size": 12314
     },
     {
       "path": "skills/meegle/references/workflow.md",
-      "sha": "142dc2e9c10262b30f223bddf60736f6121712f8",
-      "size": 1863
+      "sha": "f317730f348a813073531c7746fc4eb99628dc83",
+      "size": 1897
     },
     {
       "path": "skills/meegle/references/workitem.md",
-      "sha": "23a59bcb62d0a858f3a301db9552b537dc1b7b3e",
-      "size": 1793
+      "sha": "4112c51fc5238314f4a6bd03b364c55490bab565",
+      "size": 1834
     },
     {
       "path": "upstream.json",
-      "sha": "04fca4871c6f76af5b76687bb43590405057ff62",
-      "size": 2865
+      "sha": "768b83a8f775e226dd5f646d860621aaa1ddd493",
+      "size": 2897
     }
   ]
 }

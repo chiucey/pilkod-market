@@ -2,18 +2,18 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "5e1aea98cb4f98550c4d1e479a2505c3cf45fec5",
-      "size": 6311
+      "sha": "922d07a45b0c22912ef0eff804258b5874fefb82",
+      "size": 6388
     },
     {
       "path": "_meta.json",
-      "sha": "5ead586fd1edf3e30d48aafd9771fb69473b1600",
-      "size": 814
+      "sha": "376f10032050c340bb9eaaab96fc6c57887f4122",
+      "size": 839
     },
     {
       "path": "references/docx-template/generate_professional_docx.py",
-      "sha": "3e236ba26d3c18cd7eb5abff35e79881b307cff4",
-      "size": 55413
+      "sha": "cfc62bf8aab8d3d6d8b4c91b19e8bce9e5d7d244",
+      "size": 56963
     },
     {
       "path": "references/expertise/engineering_classes_writing_ideas.docx",
@@ -42,8 +42,8 @@
     },
     {
       "path": "references/industry-classification.md",
-      "sha": "03a376b57a3c7c2ea1e4f6f7a804e101f6de006f",
-      "size": 486
+      "sha": "1be389b0cbadf5744e21cc385639052a03bcf926",
+      "size": 501
     },
     {
       "path": "references/json-templates/content.template.json",
@@ -52,73 +52,73 @@
     },
     {
       "path": "references/json-templates/error-response.template.json",
-      "sha": "5904c409fe711df636a359b0bc5d9ac35dc68c07",
-      "size": 165
+      "sha": "17a0b3246e48b36046779dc7cb405ac1aeeec672",
+      "size": 170
     },
     {
       "path": "references/json-templates/industry.template.json",
-      "sha": "634e5793a0f4cf02da336c3967589ff9c6fa5518",
-      "size": 84
+      "sha": "c84581df4d454d3df530919906dbab855f2ca7ea",
+      "size": 86
     },
     {
       "path": "references/json-templates/outline.template.json",
-      "sha": "afb0f1769f31b67241fe396a59450487350239f5",
-      "size": 505
+      "sha": "3f6416d1389efe40b2efdcdd842e8d0975dc7e7f",
+      "size": 526
     },
     {
       "path": "references/json-templates/requirements-extraction.template.json",
-      "sha": "de9b299b4724e179bb22c043f60eee12bd50a1e3",
-      "size": 238
+      "sha": "74cc4c7d690e4cf4ed1cdfc027b240fd9edc5b69",
+      "size": 250
     },
     {
       "path": "references/json-templates/word-count-allocation.template.json",
-      "sha": "e6b0f31327edc3d7b53baeaf132c335520c9aeb2",
-      "size": 519
+      "sha": "1df89428d87fd56e6a6469696fd25f5866ab3763",
+      "size": 542
     },
     {
       "path": "references/process_pipeline/process_1_parse.md",
-      "sha": "4b7a5220a8685d116201904b9ad3e74bbef545fe",
-      "size": 7493
+      "sha": "f30951320e97e0b658a4db2ed41e25f8313ef23e",
+      "size": 7606
     },
     {
       "path": "references/process_pipeline/process_2_outline.md",
-      "sha": "65b0cfdbea866bfc8c92ad853c981edbb6302ffe",
-      "size": 7874
+      "sha": "2b84a7f549420970ada1add01427752f5fee21f1",
+      "size": 8001
     },
     {
       "path": "references/process_pipeline/process_3_content_docx.md",
-      "sha": "773300ae98766bedb5b97bb755072f5b4e74f786",
-      "size": 10599
+      "sha": "5fdf32d351b7317efc0f5b9c3530acf3d40264e1",
+      "size": 10747
     },
     {
       "path": "references/prompt/content_generater.py",
-      "sha": "fd50aec6e5dd07390dce1da1842a98b363e18767",
-      "size": 2791
+      "sha": "819d11f501ad8c964687bee74f956a4c666ad44f",
+      "size": 2834
     },
     {
       "path": "references/prompt/extraction.py",
-      "sha": "a22a714398fb960681b09913d40febfb07e3b46c",
-      "size": 2652
+      "sha": "c12ece57f664f1b18f03384b8d7fd7f1f392dadd",
+      "size": 2706
     },
     {
       "path": "references/prompt/industry.py",
-      "sha": "a2ddca69b75ba334eb6de3a24fe355388c06293c",
-      "size": 1261
+      "sha": "1531643843f462404a1aa5c0f9424170011fcef3",
+      "size": 1299
     },
     {
       "path": "references/prompt/outline_level_1.py",
-      "sha": "8ec629a741611757e69ee73916c1e0d8b1d253c2",
-      "size": 2533
+      "sha": "ede5ed6d27c2557b6067c7aa25fd423590e2ce3a",
+      "size": 2564
     },
     {
       "path": "references/prompt/outline_score.py",
-      "sha": "0fbafafdc76899391f552ec08a73206daa540463",
-      "size": 2044
+      "sha": "196aff3de24ac3f891091e9261a83ff9596646b8",
+      "size": 2079
     },
     {
       "path": "references/prompt/outline_score_procurement.py",
-      "sha": "7ced077acdd2399257f4a6798503e8340916f5de",
-      "size": 1735
+      "sha": "e735e3ac9b8c15b6b4fa4efaee399c3fbb86ca66",
+      "size": 1767
     },
     {
       "path": "references/static/QR_code.png",
@@ -127,8 +127,8 @@
     },
     {
       "path": "references/unified-extraction-resource.md",
-      "sha": "bbcfc72ffdf634cf4d756dd6be336e0997cdb27a",
-      "size": 8510
+      "sha": "8f71f0c183e2b939440eab662ef737995c811933",
+      "size": 8637
     }
   ]
 }

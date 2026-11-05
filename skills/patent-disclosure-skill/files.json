@@ -2,33 +2,33 @@
   "files": [
     {
       "path": "INSTALL.md",
-      "sha": "08b36b2f193762e8ea857bc78d535083c55ff073",
-      "size": 4027
+      "sha": "f09f38ecd9652afec5683e765ea3477309cf371f",
+      "size": 4107
     },
     {
       "path": "LICENSE",
-      "sha": "acf80faba115012ec308f8524e59a50019477214",
-      "size": 1070
+      "sha": "297ebf78232704ba1628cd1bb8256c24b39d7d7d",
+      "size": 1091
     },
     {
       "path": "README.md",
-      "sha": "b3c64c1d45e66c4789c3611a35214817217cf4f1",
-      "size": 7137
+      "sha": "aab6978af8231a4276e833da713d99c189908e71",
+      "size": 7297
     },
     {
       "path": "SKILL.md",
-      "sha": "88a3fb576dfaa32dbb6d145f2e6994b327e3e45a",
-      "size": 9711
+      "sha": "e879a8c334e625507b3bcf97924c9e7886d103e7",
+      "size": 9816
     },
     {
       "path": "_meta.json",
-      "sha": "93362d40de0788b2e38a97efacc460010fac88cf",
-      "size": 241
+      "sha": "1df1cfe40869e0c44b9aa2e9160a76c9100bf016",
+      "size": 250
     },
     {
       "path": "docs/PRD.md",
-      "sha": "ed9ee61ea94c0cb25383544c5dacad732d5e19de",
-      "size": 3131
+      "sha": "d3e8875143c6593bb473be123e7fa53308c79c7b",
+      "size": 3185
     },
     {
       "path": "docs/example-initial-generation.jpg",
@@ -42,28 +42,28 @@
     },
     {
       "path": "docs/skill-structure.md",
-      "sha": "c345e467358b4d3aed4a0f2e0ef91d1c9c21fe66",
-      "size": 2597
+      "sha": "a63331d1dcb656f792c65724194b4eaa16891bbe",
+      "size": 2632
     },
     {
       "path": "examples/README.md",
-      "sha": "49589cad232813d4564875c6a8695b589003a8db",
-      "size": 3026
+      "sha": "a0296dd990128a2eb13c8e1a65a85bde1b2e7d53",
+      "size": 3080
     },
     {
       "path": "examples/example_batch_job_scheduler/README.md",
-      "sha": "e0d562a2a80d972afaed174b7a6e60219a4d7ea7",
-      "size": 577
+      "sha": "a10f8e6f61c6010b0798c47caaa9a8dac5d4b184",
+      "size": 586
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/docs/README.md",
-      "sha": "8d0b37529785deb9b7b58500a7e2e2b541013388",
-      "size": 1087
+      "sha": "f9f6fc51f85750652108694c7a39adda78c5b8eb",
+      "size": 1107
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/docs/architecture.md",
-      "sha": "deee9f6dcd005377bdf1f1f500d7c3a916553e24",
-      "size": 2159
+      "sha": "94d4fc830224891b4b0ae0ef82530380046917b2",
+      "size": 2200
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/docs/sample_architecture_review.docx",
@@ -87,153 +87,153 @@
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/meeting_notes_intake_example.md",
-      "sha": "b819afe2c80cca4f3e4de150241e12cfdee60e21",
-      "size": 731
+      "sha": "40e12783a0639d16767b8bb2ee299fe2c5cc01c6",
+      "size": 751
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/heartbeat.go",
-      "sha": "a68a8870494c10ef84337b8120eae77fc5ff1060",
-      "size": 553
+      "sha": "ae7fa4d00523f81883f76ae4343a4f8f8739773f",
+      "size": 573
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/reorder.go",
-      "sha": "93342ecd46e709a31b541bfd3818b506378c4bcd",
-      "size": 1404
+      "sha": "695ecc65d623247fd79ecc457803ac7677d56d5d",
+      "size": 1450
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/scorer.go",
-      "sha": "09cebfcf050079d8382717b5ba200e90dcaf1c51",
-      "size": 497
+      "sha": "43c7ef3c7e323630ca72cc22a17aed4a1f47a59e",
+      "size": 512
     },
     {
       "path": "examples/example_batch_job_scheduler/knowledge/pkg/scheduler/types.go",
-      "sha": "7780fcfc58c9a00d4f0fe8e32c37c14c7f4ffe59",
-      "size": 866
+      "sha": "78e21ad84baf16490bf70324dd294a7f66feb249",
+      "size": 897
     },
     {
       "path": "prompts/correction_handler.md",
-      "sha": "427bb562eacbd91b297efb56cfff74ffd7ece6e0",
-      "size": 2174
+      "sha": "309c22fb44c8b3864bd2946f9043532a02cb25cf",
+      "size": 2203
     },
     {
       "path": "prompts/disclosure_builder.md",
-      "sha": "cf1164129e9b7bf51ef6958e1f46920b98f36ed9",
-      "size": 7259
+      "sha": "8a60bece9ee69712844136cd4c934c03a43993c3",
+      "size": 7362
     },
     {
       "path": "prompts/disclosure_preview.md",
-      "sha": "abed60aad54a7409f22ac0e16589fc7303f2381a",
-      "size": 917
+      "sha": "eaaf4a2dbe298ddb3784c346942c6466aa6e7daf",
+      "size": 941
     },
     {
       "path": "prompts/disclosure_self_check.md",
-      "sha": "0c42fb04426d94e409b5071499d8673752546a60",
-      "size": 2820
+      "sha": "0623c102d69c7a42a1936e2e994e160cd319626d",
+      "size": 2853
     },
     {
       "path": "prompts/intake.md",
-      "sha": "f0b5ddab747ee437504186000b56f13cda69ec03",
-      "size": 943
+      "sha": "3d86f1db37ba419356843e57bf949bfe84932e0b",
+      "size": 978
     },
     {
       "path": "prompts/iteration_context.md",
-      "sha": "aa91187d9b96f2ab4f92bcadf56d7a7873afaca8",
-      "size": 4040
+      "sha": "13f35c06e29789c8ec572adb68aad4575b8a6e94",
+      "size": 4115
     },
     {
       "path": "prompts/merger.md",
-      "sha": "d841b68e7f1306da500243ebc4d842bd7078eb48",
-      "size": 2725
+      "sha": "02a1bb42fd12868a75160f8e9a71c4c43eb2b6e1",
+      "size": 2761
     },
     {
       "path": "prompts/patent_points_analyzer.md",
-      "sha": "ea012514bc97343da8ef9b92713ecb451c7fd861",
-      "size": 951
+      "sha": "76c14bb060570dd29cfbf65a609025dece3dab9a",
+      "size": 981
     },
     {
       "path": "prompts/prior_art_search.md",
-      "sha": "a42a625e4bc28575fed97ffc3b7a8032dd5bb0d5",
-      "size": 9180
+      "sha": "54d31824146afc6054913c31ce986783cff48ea3",
+      "size": 9270
     },
     {
       "path": "prompts/project_scan.md",
-      "sha": "99e4b59ecfca8403c1ee24a000d8d5c299dfc62f",
-      "size": 4264
+      "sha": "b5e02ca4fbca8c10aaab27510b1f20da645cab9e",
+      "size": 4332
     },
     {
       "path": "prompts/template_reference.md",
-      "sha": "958dc176bf5bef3dda2f85dc5907bb56d4372c46",
-      "size": 6135
+      "sha": "c12463e6363f159fc38b8c190282653fcbf5be14",
+      "size": 6313
     },
     {
       "path": "requirements.txt",
-      "sha": "ca2824299b5d959636c201c76de8d7e09f7b87b7",
-      "size": 450
+      "sha": "8759551191edee3d2c67a4fb2a571db4d302937a",
+      "size": 458
     },
     {
       "path": "tests/test_cnipa_epub_chain.py",
-      "sha": "71b5031b90e5c50059a733cb165028261bd5f2b6",
-      "size": 1463
+      "sha": "2f9eee1abe3b1969cbd335eb52b53cd8f1d23ff8",
+      "size": 1510
     },
     {
       "path": "tools/README.md",
-      "sha": "83d2ee7ed13c2bb5652840a2b2d8fcc2bd563dee",
-      "size": 12960
+      "sha": "9e7bcaad494e106b6b33ac3fc8268ba1c32232fa",
+      "size": 13211
     },
     {
       "path": "tools/cnipa_epub_crawler.py",
-      "sha": "d5988e1c372765e15f4e8e5216b6ba9bc430db24",
-      "size": 10763
+      "sha": "72d014eb6130c9b31c0f61bfc38b9893b5daa9c7",
+      "size": 11017
     },
     {
       "path": "tools/cnipa_epub_parse.py",
-      "sha": "44b9ceb6a3fa3067a160a90dda57edbc775250d4",
-      "size": 8826
+      "sha": "81556382377909bd010a5cdcf8e115b9024c595e",
+      "size": 9086
     },
     {
       "path": "tools/cnipa_epub_search.py",
-      "sha": "37924d727a8e63156ec37db14fc9116f8252dca2",
-      "size": 5784
+      "sha": "fb1d07d426213f69ed4867c0607ea6e934e66a9a",
+      "size": 5954
     },
     {
       "path": "tools/docx_to_md.py",
-      "sha": "ab49e8bb5b0d6afcb690daadd131a095dca56c5f",
-      "size": 3835
+      "sha": "b363b3eac915ddd0e05427e79879440e9d515027",
+      "size": 3956
     },
     {
       "path": "tools/iteration_dialog_log.py",
-      "sha": "480767f66b741c15662dd2bff3b3b6111fa8cad4",
-      "size": 3231
+      "sha": "d2a75773fca00957a96973f8092c7f24864adb0e",
+      "size": 3341
     },
     {
       "path": "tools/md_to_docx.py",
-      "sha": "3ef5f7f2837865ec53ec6baa2216240982b7d329",
-      "size": 14910
+      "sha": "dc8e1191b9ee8b4c70791ff31927744100938cb9",
+      "size": 15358
     },
     {
       "path": "tools/mermaid_render.py",
-      "sha": "a99b683cf82f8caa2ea8df2052927a98e09b15fe",
-      "size": 13179
+      "sha": "3dec342833c8e0a1d7ec6932efb613f21da93783",
+      "size": 13583
     },
     {
       "path": "tools/package-lock.json",
-      "sha": "f758cdf8ad65b808c396f40aeda1b5dc30556649",
-      "size": 86410
+      "sha": "e544e78015efbc6fda8d73fd05c970441a5b912d",
+      "size": 90165
     },
     {
       "path": "tools/package.json",
-      "sha": "3da82a30a76ebdf91885511ecae39f5a9acb921c",
-      "size": 269
+      "sha": "7b49de16b3e2ea549e7e9e7023976fc5f86085b6",
+      "size": 278
     },
     {
       "path": "tools/pptx_to_md.py",
-      "sha": "068385192cb2a43335668af45bf019f01a1a7ca5",
-      "size": 5040
+      "sha": "bd00b94ae5147c49df46656c432ec5e22d1d958a",
+      "size": 5193
     },
     {
       "path": "tools/requirements-cnipa.txt",
-      "sha": "7f685d892a3d2e7fb7ceaa3240a71ffb0c47b4b7",
-      "size": 159
+      "sha": "6dc7ddc48b640342e0fa6b059eafb02bc8e48703",
+      "size": 161
     }
   ]
 }

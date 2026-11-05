@@ -3,798 +3,798 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "9149de47b7cff9b2a6bfd0bfb97b82916a3e3b08",
-      "size": 1776
+      "sha": "59636b01e7ef70a01d63f36d6f2e02a20d0e3817",
+      "size": 1814
     },
     {
       "path": "ATTRIBUTION.md",
-      "sha": "b61dca691e8db8a02ded30751d0e7abc9cfb84a8",
-      "size": 3674
+      "sha": "3235e7355d0c3c1040eadbdf390c0deb555412c2",
+      "size": 3737
     },
     {
       "path": "ROUTING.md",
-      "sha": "9349f2b701213f4e796a15076bb3ef8d16da10ad",
-      "size": 3578
+      "sha": "9ba9f224ac11ff6c57ccf9b9a297a8122cd02611",
+      "size": 3607
     },
     {
       "path": "licenses/AIPOCH-MIT.txt",
-      "sha": "dbcbbd640d3637095334d70d04c9e4b191a4671a",
-      "size": 1063
+      "sha": "b0087449a8782aec61ad62188b6c88af10a3094e",
+      "size": 1084
     },
     {
       "path": "skills/biomedical-search-strategy-builder/SKILL.md",
-      "sha": "c70e6d74416dfa45702a4c9f4800cfbb9f161fa4",
-      "size": 9331
+      "sha": "cc72f988e21cf511570760b9235d98cdfcc625d5",
+      "size": 9497
     },
     {
       "path": "skills/biomedical-search-strategy-builder/references/boolean-examples.md",
-      "sha": "df45188b6b7da3cd66789125b79be1bc2ccdc930",
-      "size": 5700
+      "sha": "0cd297d3432c8f23b646f45159619587567955a0",
+      "size": 5882
     },
     {
       "path": "skills/biomedical-search-strategy-builder/references/mesh-structure.md",
-      "sha": "3b0413df47b69e54f88e651cb544ee3753518cea",
-      "size": 3792
+      "sha": "80be155c33dba77de6cd5716b85cd7967b0600ed",
+      "size": 3924
     },
     {
       "path": "skills/clinical-question-clarifier/SKILL.md",
-      "sha": "a855c06e1e05bcd1d57b188fb92a0e7f9b4b67fb",
-      "size": 17633
+      "sha": "e317c5684055e7b329c2eed8d625997507dd25e3",
+      "size": 17976
     },
     {
       "path": "skills/clinical-question-clarifier/references/ambiguity-and-boundary-rules.md",
-      "sha": "49f284ec4996ec8efed9b3e01f8cec55c61536d0",
-      "size": 916
+      "sha": "579fbf1d67fbf3c588a3ab76bd48dcbf0f91e9e0",
+      "size": 947
     },
     {
       "path": "skills/clinical-question-clarifier/references/downstream-routing-rules.md",
-      "sha": "a33fe0be042a140ae1a58d13af2297c1f3c43a8f",
-      "size": 1181
+      "sha": "1b3d918363d6a2fff7c10ab88e0e0b59d8e7815d",
+      "size": 1205
     },
     {
       "path": "skills/clinical-question-clarifier/references/framing-framework-library.md",
-      "sha": "bf18606405ec37ce6d2fef68ea6e7d8d3f9a8b76",
-      "size": 2167
+      "sha": "9a72ef0e640092b92a133444f9ba759f646ecb1c",
+      "size": 2281
     },
     {
       "path": "skills/clinical-question-clarifier/references/iterative-focusing-question-rules.md",
-      "sha": "ff65d080f7bc760b0e3529e70221d469064eda57",
-      "size": 1652
+      "sha": "43566cca8470a1adf31b67b486ebfd28eb5499a5",
+      "size": 1691
     },
     {
       "path": "skills/clinical-question-clarifier/references/output-section-guidance.md",
-      "sha": "b3f0e81ae93ce7603b0fae8f21a1c572c48f108a",
-      "size": 822
+      "sha": "aeb6ca28068b62d8482fe732138fc3cb2469f5e8",
+      "size": 853
     },
     {
       "path": "skills/clinical-question-clarifier/references/question-rewrite-rules.md",
-      "sha": "e11761ca5a66df2a5347e8434b3ba9a154c018da",
-      "size": 856
+      "sha": "15a34dbd12fe72d97fc7fab9b631406925bf44d9",
+      "size": 882
     },
     {
       "path": "skills/clinical-question-clarifier/references/question-type-taxonomy.md",
-      "sha": "a558a9e7e6d91d74f554a0b5d68bbe4c1dbfe46f",
-      "size": 1499
+      "sha": "fae5bdbe14a9fccaad9ec18526c52f12895c1134",
+      "size": 1538
     },
     {
       "path": "skills/clinical-question-clarifier/references/researchability-assessment-rules.md",
-      "sha": "9075de5274ae3db4096f357d129ebbee160f5d82",
-      "size": 803
+      "sha": "ac5b6b69ca5194526adc525964d3aa9c395e3245",
+      "size": 826
     },
     {
       "path": "skills/clinical-question-clarifier/references/searchable-formulation-rules.md",
-      "sha": "5bc4da8972399a1496023c2aa05aa2aed77dbc25",
-      "size": 833
+      "sha": "4782340245d5b0d83f4374fbbac4dd842be5ae58",
+      "size": 856
     },
     {
       "path": "skills/clinical-question-clarifier/references/workflow-step-template.md",
-      "sha": "4e4d4d930f71b05fe22f31bfe9e218ae59a03a03",
-      "size": 524
+      "sha": "427ddd9ea4be973889405fa8d665c56a04c5ad0e",
+      "size": 544
     },
     {
       "path": "skills/confounder-and-bias-control-planner/SKILL.md",
-      "sha": "169f91feffe4adf2f067177ee646c23008bfe70a",
-      "size": 17044
+      "sha": "fb404d42d728e6280e1936128a7f1bba4efa3b96",
+      "size": 17363
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/adjustment-selection-rules.md",
-      "sha": "9e086d6a634ca685c077dfd3963a3e986593211e",
-      "size": 592
+      "sha": "78c83175980c71925429ed32239bf29e7e1810fc",
+      "size": 610
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/bias-taxonomy-and-sensing-rules.md",
-      "sha": "e4a8e65fc2062835169680844c2705bc8659baf3",
-      "size": 711
+      "sha": "6482dbc12e8ad7a5da63f4f1d4b42fce4949e7b7",
+      "size": 734
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/confounder-identification-rules.md",
-      "sha": "2fb89904f3725858888a8197584ae09ca0b04143",
-      "size": 768
+      "sha": "e91a271fd61111906982005114434f73b50770f0",
+      "size": 785
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/missingness-and-measurement-rules.md",
-      "sha": "245312a4a90007c6c67e3d8c14214ad790523a5f",
-      "size": 592
+      "sha": "3117f95a50d237a2a8d4089fe60cfff4fd1d5d3f",
+      "size": 610
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/output-section-guidance.md",
-      "sha": "5cb1ac5c87d7c98a07e671962796e1b21fc0a9b2",
-      "size": 935
+      "sha": "a6bb0c1c6c17f3bce1a43336d0fdd005579bf610",
+      "size": 955
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/overadjustment-and-collider-rules.md",
-      "sha": "bd759fff964d6f9804182b74019334441c9c8021",
-      "size": 663
+      "sha": "06900242dcf6d011c90152612e18fe2af643f772",
+      "size": 679
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/strategy-selection-rules.md",
-      "sha": "51e1ea06b68409d73e6beab4878d0853b55e6db5",
-      "size": 565
+      "sha": "04734c55d1e899224e0bd2cefc5935228c3241c6",
+      "size": 585
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/variable-role-classification-rules.md",
-      "sha": "6b5281d9411ebafd28a35a7676b8845f07ef91e7",
-      "size": 727
+      "sha": "1a8239622487ea61c2f48f58c3d1bc244d2376e2",
+      "size": 752
     },
     {
       "path": "skills/confounder-and-bias-control-planner/references/workflow-step-template.md",
-      "sha": "04836eb32f0fcdc87df6b2705784073eac859183",
-      "size": 379
+      "sha": "689871e989a0cd29fc8c65fb408f63336570468e",
+      "size": 390
     },
     {
       "path": "skills/contradictory-findings-resolver/SKILL.md",
-      "sha": "36b60181822ecf00bd738095a8f03c2efe232973",
-      "size": 15484
+      "sha": "d1d1aa4c566723b6579a80f6e4f99368a0791bba",
+      "size": 15797
     },
     {
       "path": "skills/contradictory-findings-resolver/references/conflict-resolution-logic.md",
-      "sha": "5ad341deb5e294c031f663e85ae005e3317ae13b",
-      "size": 331
+      "sha": "ea89016f333dc6ab425e539b646b0f05fd949be2",
+      "size": 342
     },
     {
       "path": "skills/contradictory-findings-resolver/references/conflict-type-taxonomy.md",
-      "sha": "1c2893840873bebfd00ef84d57923321a4735345",
-      "size": 488
+      "sha": "00e01ead7d9deecd3f93da76cbe4f0a95ecff1cb",
+      "size": 504
     },
     {
       "path": "skills/contradictory-findings-resolver/references/literature-integrity-rules.md",
-      "sha": "16b597d9f560d8b855afddf70d8cef109f865f75",
-      "size": 388
+      "sha": "61dd6c1642874577faafe9ef0676e7dcbc4dbec8",
+      "size": 405
     },
     {
       "path": "skills/contradictory-findings-resolver/references/output-section-guidance.md",
-      "sha": "a738352f9209544ef56e54b630d4fc72d9d58877",
-      "size": 388
+      "sha": "45b76deae640bbd8c312ed512a9a42bc2a5d62b2",
+      "size": 399
     },
     {
       "path": "skills/contradictory-findings-resolver/references/platform-model-and-bias-rules.md",
-      "sha": "ee924dc746ee8cbbc2cbcf1697e499c67e913368",
-      "size": 416
+      "sha": "37dd5101bf9cc04b38099ee853d9c5bb39a1c58e",
+      "size": 429
     },
     {
       "path": "skills/contradictory-findings-resolver/references/population-endpoint-sample-source-rules.md",
-      "sha": "17be52f26f9553ef2aaac883d3f1d55841c48311",
-      "size": 427
+      "sha": "d4eb69d6a53030403954993829d8118541bedb9c",
+      "size": 441
     },
     {
       "path": "skills/contradictory-findings-resolver/references/validation-and-evidence-depth-rules.md",
-      "sha": "41164a6b5538e48b6cdf05c3385cfaf6d8f5972f",
-      "size": 335
+      "sha": "9e2a575c55da64674dca1efc908e6aebb7afa278",
+      "size": 346
     },
     {
       "path": "skills/endpoint-definition-designer/SKILL.md",
-      "sha": "70fc5df93f2f2fda98a94cb4c1af98f44ed0dd3d",
-      "size": 18588
+      "sha": "5452f19ad2ce8bb7d510ec934fbf34de3347b45a",
+      "size": 18880
     },
     {
       "path": "skills/endpoint-definition-designer/references/ambiguity-and-interpretability-rules.md",
-      "sha": "6277bf7aebb8b1774aa8a6bc7a829e78fc25cf88",
-      "size": 388
+      "sha": "a02a665684d27818ad66b0b7e7d184b60a28e4ef",
+      "size": 400
     },
     {
       "path": "skills/endpoint-definition-designer/references/clarification-gating-rules.md",
-      "sha": "45729fb633a90f49fa80770fc711c529be29cf4b",
-      "size": 496
+      "sha": "b41047bfd01a95b5a7e57c42519744a0bccb21b3",
+      "size": 509
     },
     {
       "path": "skills/endpoint-definition-designer/references/composite-endpoint-rules.md",
-      "sha": "b38deb569e3e7afd3b4578ae749c011dbb101bfb",
-      "size": 374
+      "sha": "850558ff624c954f2b84f71e16f1f8f523845dcd",
+      "size": 383
     },
     {
       "path": "skills/endpoint-definition-designer/references/event-definition-and-timing-rules.md",
-      "sha": "2841848614260809664437118bcefd6c9ba1f48b",
-      "size": 327
+      "sha": "94089b62d6aba2a4155783392e27d8afa515a50d",
+      "size": 338
     },
     {
       "path": "skills/endpoint-definition-designer/references/objective-to-endpoint-framing-rules.md",
-      "sha": "cdd97d974892c02c5e5af8e988482a2c92a42295",
-      "size": 576
+      "sha": "d22be5d336ad628570cd22606616f0dd84abb332",
+      "size": 586
     },
     {
       "path": "skills/endpoint-definition-designer/references/operationalization-and-data-capture-rules.md",
-      "sha": "ce9b6c6ac7a9d1686de21c0e83a6dbeb35ff440b",
-      "size": 412
+      "sha": "00b31636d117baa15ed0fe125024c8d4f8f4f44d",
+      "size": 425
     },
     {
       "path": "skills/endpoint-definition-designer/references/output-section-guidance.md",
-      "sha": "7bdd3962807c8a9968dd91ea1199756035b19ded",
-      "size": 508
+      "sha": "52f4a2bd119a10fea8b194600d76809b4d466507",
+      "size": 523
     },
     {
       "path": "skills/endpoint-definition-designer/references/primary-endpoint-rules.md",
-      "sha": "d1e4e9aa860e9e7d3d7ddaf0d4da85fe19413c62",
-      "size": 427
+      "sha": "7090a641206248b0b5b5c257947bd582b11b582d",
+      "size": 437
     },
     {
       "path": "skills/endpoint-definition-designer/references/secondary-and-exploratory-endpoint-rules.md",
-      "sha": "01721b91a45348e20642da54d4708060215c6364",
-      "size": 434
+      "sha": "b017dd0df16fadab5cd16967d517177b50f92b92",
+      "size": 444
     },
     {
       "path": "skills/endpoint-definition-designer/references/workflow-step-template.md",
-      "sha": "9831a6a01451c27ad25dd7a2866b10238f7c1244",
-      "size": 408
+      "sha": "4bf4be372a0a2eb5f47cae35d1e7df531c4e7932",
+      "size": 418
     },
     {
       "path": "skills/feasibility-aware-study-planner/SKILL.md",
-      "sha": "cf34f1f77c69bd872b402fbeafcc7c0b19546674",
-      "size": 15555
+      "sha": "202188584811b6e136abeb834be622a7b0ba4710",
+      "size": 15889
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/constraint-taxonomy.md",
-      "sha": "c52819b7ebdaee7152548b45b0f14f8091b602f9",
-      "size": 665
+      "sha": "9b47f318f8567fd435684becda2fdac0412311cd",
+      "size": 686
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/constraint-to-design-adjustment-rules.md",
-      "sha": "539731b1db794d34c285facc76d1b08943fcceb6",
-      "size": 621
+      "sha": "92b0a0e99171527aa2a3704d3c8afc1bcded010d",
+      "size": 641
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/deferral-and-scope-cut-rules.md",
-      "sha": "b798889a336d0670ebe918a27763c3d0e2774017",
-      "size": 591
+      "sha": "b38c3ac1d270c63bb086166efeb4d6c5da250038",
+      "size": 608
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/dependency-and-failure-point-rules.md",
-      "sha": "d9a718792709ad45a044670cdd0ac254969c5eca",
-      "size": 578
+      "sha": "494e62b6ef88e66725d31b7546fe90e0b3602cf2",
+      "size": 597
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/feasibility-priority-rules.md",
-      "sha": "c68fbe64c2ad1b196ce947c2a30d722dca282d3e",
-      "size": 573
+      "sha": "7da5ba10806a94a7f2e24ea8a9aaba02d3b54551",
+      "size": 590
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/literature-integrity-rules.md",
-      "sha": "2e23bea46efa71994c82eadf0117b035ef73cc18",
-      "size": 704
+      "sha": "fd52365d9963de7e8466397918196433ffbb785b",
+      "size": 719
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/minimum-viable-study-rules.md",
-      "sha": "8d3205ef16abf5b8c923a91dc0b5581a49601827",
-      "size": 573
+      "sha": "fc4047f3a36867384eb32cd0daf7eeb15abddbaf",
+      "size": 591
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/output-section-guidance.md",
-      "sha": "eeae004e2de15137ddb433b53405f7de03368e77",
-      "size": 751
+      "sha": "51673e49c0d80d7c3ca0bcb077214bd248a53fb9",
+      "size": 782
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/resource-clarification-rules.md",
-      "sha": "69c402124cd4d50d76d60fd288ac87a99776d974",
-      "size": 883
+      "sha": "bebd141ed98a67b902d1dc9a91303d7c8fe2a2d0",
+      "size": 913
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/study-route-family-library.md",
-      "sha": "a4df028f6345415cac1fdae4199b6f1a05de5c33",
-      "size": 580
+      "sha": "8d011189b4c2783ee79e187fd7779f0ae3067feb",
+      "size": 597
     },
     {
       "path": "skills/feasibility-aware-study-planner/references/workflow-step-template.md",
-      "sha": "079bf941f6f806a90558888fec9f6ed8b3b2e078",
-      "size": 559
+      "sha": "8cffb5897e8c95647773e3aed4b12f7ead59c1ce",
+      "size": 579
     },
     {
       "path": "skills/high-value-paper-screener/SKILL.md",
-      "sha": "485b2de8843d438df428005b7dd7734b2b404825",
-      "size": 10734
+      "sha": "ab3c678b26df1a61a78ff4fbd8781169b70b7ba7",
+      "size": 10994
     },
     {
       "path": "skills/high-value-paper-screener/references/clarification-first-rule.md",
-      "sha": "64802958d2509c2cbae50940969f468938bb0d8c",
-      "size": 570
+      "sha": "f5aa0d8cd78a2632b6b4be0603929b32f2287851",
+      "size": 584
     },
     {
       "path": "skills/high-value-paper-screener/references/hard-rules.md",
-      "sha": "e4b715ca10f22c9589775a511f905fea7a39a954",
-      "size": 754
+      "sha": "919fd4ad87751a1fe34b014e92cebae0c3f4349c",
+      "size": 766
     },
     {
       "path": "skills/high-value-paper-screener/references/logic-reporting-rule.md",
-      "sha": "d18ebe5facbce31ca04811a86f4165e1f4cb06b9",
-      "size": 374
+      "sha": "45d44c2bb9cf74399a893dfb331ddd2bfd73bc8e",
+      "size": 390
     },
     {
       "path": "skills/high-value-paper-screener/references/question-fit-rules.md",
-      "sha": "34b0ee5c44ba9cee9bd56af5a0de42020b98c705",
-      "size": 377
+      "sha": "fd0a56aa80bf34b77502be307ba586e06f7ea8be",
+      "size": 394
     },
     {
       "path": "skills/high-value-paper-screener/references/read-skim-skip-rules.md",
-      "sha": "b9c4f13a075c0419ee89dc9322b991976371b228",
-      "size": 647
-    },
-    {
-      "path": "skills/high-value-paper-screener/references/scope-and-confidence-rules.md",
-      "sha": "31e90b40b3f620479764db855b6a00fde9b7bc81",
-      "size": 471
-    },
-    {
-      "path": "skills/high-value-paper-screener/references/screening-value-rules.md",
-      "sha": "a96315a41e202e25b694de71151056091bf0356b",
-      "size": 512
-    },
-    {
-      "path": "skills/medical-research-gap-finder/SKILL.md",
-      "sha": "1ddec93e96c562da9bee1404cac77d9790945015",
-      "size": 11338
-    },
-    {
-      "path": "skills/medical-research-gap-finder/references/gap-taxonomy-and-audit-standard.md",
-      "sha": "da8b156e9569f93d24dc51b7e8d8d0b288b8ec7a",
-      "size": 4430
-    },
-    {
-      "path": "skills/medical-research-gap-finder/references/gap-to-study-conversion.md",
-      "sha": "ba7ae46d66eb13c421c5792543fd0a1a97a209e3",
-      "size": 1627
-    },
-    {
-      "path": "skills/medical-research-gap-finder/references/literature-retrieval-and-citation.md",
-      "sha": "8dba0244c513520222c01384d0681c4762f3daa8",
-      "size": 5371
-    },
-    {
-      "path": "skills/medical-research-gap-finder/references/pseudo-gap-rejection-rules.md",
-      "sha": "09309b33a5c29157173d807966389a97d88f6519",
-      "size": 2126
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/SKILL.md",
-      "sha": "af15d07327892bb2a3904517060d2f9fc1ba5a6f",
-      "size": 15312
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/references/expert_review_extensions.md",
-      "sha": "47e0095f7f7300c2959d86102fd67f5d6d14cf7b",
-      "size": 3869
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/references/followup_module.md",
-      "sha": "c9cf524cff9c03a97e8af031f63519a1f4936cb9",
-      "size": 3383
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/references/literature_module.md",
-      "sha": "1158e7b6e07a7a82c99280291a0c33a9c404a295",
-      "size": 2465
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/references/optional-deliverables.md",
-      "sha": "6c35cb3af837213ae3ad49193f9a0fa97e4d97ac",
-      "size": 6959
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/references/reporting_style.md",
-      "sha": "808c720e2b671502ceba5fe459ac60aea78673cc",
-      "size": 3403
-    },
-    {
-      "path": "skills/medical-research-literature-reader-pro/references/tracks.md",
-      "sha": "384b9897494a0d731f3ac3b23c10054a7b342555",
-      "size": 10222
-    },
-    {
-      "path": "skills/methods-reverse-engineer/SKILL.md",
-      "sha": "370769dacbb7ce04231f62b8396388cf2ea6eb8e",
-      "size": 17428
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/analysis-pipeline-reconstruction-rules.md",
-      "sha": "7a7261c57cacd37b434f4281ff0ac06aac09842b",
-      "size": 567
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/data-and-sample-extraction-rules.md",
-      "sha": "c3e44c60bce5d24940b9a8233ba856a3f971d050",
-      "size": 566
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/input-coverage-and-boundary-rules.md",
-      "sha": "1df28d5140e0a5a00966e860452c70ae5595c6b1",
-      "size": 695
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/literature-integrity-rules.md",
-      "sha": "13180cc788ee1ee8b5f14f16ee66787bb411d89b",
-      "size": 557
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/methods-decomposition-framework.md",
-      "sha": "4aa4b251fd31d91a4b4cb16ce0b0c422cf9fba2d",
-      "size": 701
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/output-section-guidance.md",
-      "sha": "6340fcff6840e4ddf79db6b6d22395b4797b7e5a",
-      "size": 449
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/reproducibility-gap-rules.md",
-      "sha": "15213948231fa95aaefea09c02a76555a60eba44",
-      "size": 595
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/software-parameter-and-environment-rules.md",
-      "sha": "bc9f508023a470161269ee2b62ceff341acc7f51",
-      "size": 561
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/study-design-routing-rules.md",
-      "sha": "7d58b076b3598c6facf7acf8b2f78e6e0893628f",
-      "size": 812
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/validation-and-quality-control-rules.md",
-      "sha": "05862e912830a87546ad67846fca7f785245351e",
-      "size": 492
-    },
-    {
-      "path": "skills/methods-reverse-engineer/references/workflow-step-template.md",
-      "sha": "41a47c394e1e808cc5bd6f7090e159217da7bd24",
-      "size": 412
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/SKILL.md",
-      "sha": "eea0b95049de71deaba3c7eb573ce0d893136445",
-      "size": 16488
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/causality-boundary-rules.md",
-      "sha": "a5951f8a62df790cc49b4a749b53d7c608358a39",
-      "size": 234
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/citation-drift-taxonomy.md",
-      "sha": "5fa48bb3ce4b135cb0dbb8b536eb7be7947aeca3",
-      "size": 285
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/claim-decomposition-rules.md",
-      "sha": "22e9e6e2ce4723bd73327291d08b9375b5126b36",
-      "size": 353
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/context-transfer-rules.md",
-      "sha": "543a8007558a1d20d59f32b18235760ced22709a",
-      "size": 263
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/evidence-support-judgment-rules.md",
-      "sha": "2d5fb19dfab4d9fb3f07db5f26fe20900f3c5485",
-      "size": 306
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/literature-integrity-rules.md",
-      "sha": "1655bd9f0a153e905babe172ede28d3fe0b11e41",
-      "size": 323
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/output-section-guidance.md",
-      "sha": "4959616e662a8042ccab59846890288301a4e7e5",
-      "size": 184
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/source-tracing-rules.md",
-      "sha": "344550cf641737880fc3824e7796cd40e19e42ea",
-      "size": 273
-    },
-    {
-      "path": "skills/paper-to-claim-verifier/references/workflow-step-template.md",
-      "sha": "8e07b2d6b92651bd30956c949d0d2821dece7d33",
-      "size": 208
-    },
-    {
-      "path": "skills/primary-plan-recommender/SKILL.md",
-      "sha": "2166eb980cfbe67928a15a6d67d4added613cf5c",
-      "size": 15949
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/dependency-and-pivot-rules.md",
-      "sha": "5bf310aeb257d19ed190f820c89779ae9049f4d3",
-      "size": 477
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/literature-integrity-rules.md",
-      "sha": "02722406b2aef8a32f84f35bc8b5b018be6370b1",
+      "sha": "4d84809bd622898d831dad356579de692234040d",
       "size": 666
     },
     {
-      "path": "skills/primary-plan-recommender/references/output-section-guidance.md",
-      "sha": "e36c5af5acaef4def5d3ec5620fcf5045db23da5",
-      "size": 710
+      "path": "skills/high-value-paper-screener/references/scope-and-confidence-rules.md",
+      "sha": "cb93c92846e58e86e57d8106c3248e5d2adeebed",
+      "size": 486
     },
     {
-      "path": "skills/primary-plan-recommender/references/plan-route-taxonomy.md",
-      "sha": "76b23a9ec6e5b199c19c752c7938d717a4fb3b1b",
-      "size": 1813
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/primary-vs-secondary-plan-rules.md",
-      "sha": "b5cadfd9e7b8cf92b4c20e46bfb0cb7ecf29f7a7",
-      "size": 893
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/question-to-route-matching-rules.md",
-      "sha": "009eb0d33867f3969be0b10c918d5750e6e95e11",
-      "size": 1208
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/rejection-reason-framework.md",
-      "sha": "097987c0507680e0236025df990a4bf6c8702ddb",
-      "size": 567
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/route-comparison-dimensions.md",
-      "sha": "d627c4bd2faa3d55261156d98683a9cf4011dafe",
-      "size": 605
-    },
-    {
-      "path": "skills/primary-plan-recommender/references/workflow-step-template.md",
-      "sha": "1948a2c833f37d831ab0605e37e79ce1d154f0f8",
-      "size": 350
-    },
-    {
-      "path": "skills/result-reliability-checker/SKILL.md",
-      "sha": "dd4293681a67ee8e7a51a8f305906a3dc9a165d2",
-      "size": 13612
-    },
-    {
-      "path": "skills/result-reliability-checker/references/claim-discipline-rules.md",
-      "sha": "25d5cefe63434681ad0b55fce81593950cbdc3a6",
-      "size": 1077
-    },
-    {
-      "path": "skills/result-reliability-checker/references/design-and-bias-rules.md",
-      "sha": "2a8f83411b5a8a8080d6b549be0c339e37726d36",
-      "size": 1732
-    },
-    {
-      "path": "skills/result-reliability-checker/references/literature-integrity-rules.md",
-      "sha": "08aa6e639bb018bf3a3b3f6603e5e81ad4f97bbd",
-      "size": 845
-    },
-    {
-      "path": "skills/result-reliability-checker/references/output-section-guidance.md",
-      "sha": "f43c11de86f77b1a74a6757a106f1932502da61b",
-      "size": 533
-    },
-    {
-      "path": "skills/result-reliability-checker/references/reliability-audit-framework.md",
-      "sha": "96678ea69d0189b855b5f1512fa23ae43829f933",
-      "size": 1700
-    },
-    {
-      "path": "skills/result-reliability-checker/references/statistics-and-model-risk-rules.md",
-      "sha": "ec00334d3073d19afa640393e8a72b73cba3fca8",
-      "size": 1667
-    },
-    {
-      "path": "skills/result-reliability-checker/references/validation-chain-framework.md",
-      "sha": "d047acd1a0a3d0c05379bf81c7460d75f33dd4e4",
-      "size": 1613
-    },
-    {
-      "path": "skills/sample-size-and-power-planning-assistant/SKILL.md",
-      "sha": "f4567b06e9aef0d73d1bfa511486d41a63deeaf0",
-      "size": 13766
-    },
-    {
-      "path": "skills/sample-size-and-power-planning-assistant/references/assumption-quality-audit.md",
-      "sha": "83d20dc2e716876c03d5ec833afb7ad98c4301eb",
-      "size": 885
-    },
-    {
-      "path": "skills/sample-size-and-power-planning-assistant/references/design-family-selection-rules.md",
-      "sha": "8a5c8e573607480857e39639c22f8b6ee39388e5",
-      "size": 1003
-    },
-    {
-      "path": "skills/sample-size-and-power-planning-assistant/references/fallback-scenario-planning.md",
-      "sha": "9fef12804eedc747f589132662803d5dcf8a9091",
-      "size": 758
-    },
-    {
-      "path": "skills/sample-size-and-power-planning-assistant/references/hard-rules.md",
-      "sha": "5438e9dd654863ccbb84f32b08b0ce493d147e05",
-      "size": 776
-    },
-    {
-      "path": "skills/sample-size-and-power-planning-assistant/references/input-clarification-thresholds.md",
-      "sha": "c9f7ffd6085eb09863262d17f28b66c949c682da",
-      "size": 1030
-    },
-    {
-      "path": "skills/study-design-identifier/SKILL.md",
-      "sha": "fddf9034690c701f7fd8d80128baa4cf19bbcb22",
-      "size": 13605
-    },
-    {
-      "path": "skills/study-design-identifier/references/design-decision-rules.md",
-      "sha": "252e7c0790c31f59d46ff3b9e35cb171111a61b7",
-      "size": 824
-    },
-    {
-      "path": "skills/study-design-identifier/references/edge-case-handling.md",
-      "sha": "76751dcc4f355af79c77dc2056d0b5da01d7d974",
-      "size": 643
-    },
-    {
-      "path": "skills/study-design-identifier/references/evidence-grading-bridge.md",
-      "sha": "4d22f8dbdd265270bd9f70cfbee0387d49c1a0f8",
-      "size": 516
-    },
-    {
-      "path": "skills/study-design-identifier/references/output-section-guidance.md",
-      "sha": "467a74d246217362598f181d98153fc7944aea90",
-      "size": 318
-    },
-    {
-      "path": "skills/study-design-identifier/references/study-design-taxonomy.md",
-      "sha": "f676c30716f7d77a4e5c9aaca8635185b1298373",
-      "size": 1128
-    },
-    {
-      "path": "skills/study-design-identifier/references/workflow-step-template.md",
-      "sha": "8bc1219c349a5c6525ab2f051e5e31c7e812627e",
-      "size": 284
-    },
-    {
-      "path": "skills/study-objective-refiner/SKILL.md",
-      "sha": "0279770664146d952f5bcc977dddd0bf3a24d549",
-      "size": 14867
-    },
-    {
-      "path": "skills/study-objective-refiner/references/ambiguity-and-scope-rules.md",
-      "sha": "d9c031f6fb19e7f5c25300ba49e8dbc515887254",
-      "size": 685
-    },
-    {
-      "path": "skills/study-objective-refiner/references/confirmatory-vs-exploratory-rules.md",
-      "sha": "4c60256523460affd030f3077b943887f8dcf0c8",
-      "size": 778
-    },
-    {
-      "path": "skills/study-objective-refiner/references/downstream-routing-rules.md",
-      "sha": "79c4eba2e4756fffbe487fa3702f018e420c38d3",
-      "size": 1060
-    },
-    {
-      "path": "skills/study-objective-refiner/references/literature-integrity-rules.md",
-      "sha": "5d00dd53f34ff431aa9b71574518121dd6c26b2e",
+      "path": "skills/high-value-paper-screener/references/screening-value-rules.md",
+      "sha": "3691892f5a5a9200e6044b75e47fdc5aeec39f6f",
       "size": 530
     },
     {
-      "path": "skills/study-objective-refiner/references/measurability-and-executability-rules.md",
-      "sha": "1fe3821d1c89a474357ef2ef899770c026c458af",
-      "size": 725
+      "path": "skills/medical-research-gap-finder/SKILL.md",
+      "sha": "535331f922f1e6ad0552f2ef92fdf76be78ef23b",
+      "size": 11587
     },
     {
-      "path": "skills/study-objective-refiner/references/objective-operationalization-framework.md",
-      "sha": "520cf1a53f543f5e97660830536616629ead3d66",
-      "size": 898
+      "path": "skills/medical-research-gap-finder/references/gap-taxonomy-and-audit-standard.md",
+      "sha": "84a6c376e3323b0e239a47cedb7edb267ee08fd3",
+      "size": 4561
     },
     {
-      "path": "skills/study-objective-refiner/references/objective-rewrite-rules.md",
-      "sha": "543819a88189c7f72c7a6982fa4e4a26022007af",
-      "size": 938
+      "path": "skills/medical-research-gap-finder/references/gap-to-study-conversion.md",
+      "sha": "79b483293c1545820819f2fdc1b7962520312f03",
+      "size": 1691
     },
     {
-      "path": "skills/study-objective-refiner/references/objective-type-taxonomy.md",
-      "sha": "82122cdcc006693916a118543ca23e279497034f",
-      "size": 1459
+      "path": "skills/medical-research-gap-finder/references/literature-retrieval-and-citation.md",
+      "sha": "a058f42a5e0267799ee65b894cfdeb22b6855ed0",
+      "size": 5513
     },
     {
-      "path": "skills/study-objective-refiner/references/output-section-guidance.md",
-      "sha": "48e12bcf3c2505942e5d9134ec7281bc47425d40",
-      "size": 838
+      "path": "skills/medical-research-gap-finder/references/pseudo-gap-rejection-rules.md",
+      "sha": "b9c58a6d845384b3d36ef65a104f97af7e7de138",
+      "size": 2190
     },
     {
-      "path": "skills/study-objective-refiner/references/workflow-step-template.md",
-      "sha": "d881fd9bf7f942e633b5dd64c64a7d47437682b4",
-      "size": 592
+      "path": "skills/medical-research-literature-reader-pro/SKILL.md",
+      "sha": "acd1f83bdc092dd88918c044659392bbea57b071",
+      "size": 15559
     },
     {
-      "path": "skills/topic-evidence-mapper/SKILL.md",
-      "sha": "7120be6f19620cd1dfaa0893127c651c815b625d",
-      "size": 13246
+      "path": "skills/medical-research-literature-reader-pro/references/expert_review_extensions.md",
+      "sha": "4a2f7a934d9e293f5802aa7d5fb303d0a12da59f",
+      "size": 3953
     },
     {
-      "path": "skills/topic-evidence-mapper/references/downstream-routing-rules.md",
-      "sha": "cc6d7ed72b4851c24c55a7da99ae750c75f4f2cd",
-      "size": 531
+      "path": "skills/medical-research-literature-reader-pro/references/followup_module.md",
+      "sha": "4a5546bd3130564ad2bd20ddad05d9d758c6b385",
+      "size": 3440
     },
     {
-      "path": "skills/topic-evidence-mapper/references/entry-point-suggestion-rules.md",
-      "sha": "250fbef557b67322466e3122323ea03abff7a8f8",
-      "size": 516
+      "path": "skills/medical-research-literature-reader-pro/references/literature_module.md",
+      "sha": "1549eeb77ee13700513d12a67d809e7c322150fa",
+      "size": 2535
     },
     {
-      "path": "skills/topic-evidence-mapper/references/evidence-density-and-thin-area-rules.md",
-      "sha": "825b49f7d80dde7c3a83b26844284609e4208822",
-      "size": 496
+      "path": "skills/medical-research-literature-reader-pro/references/optional-deliverables.md",
+      "sha": "1915b15b137bae4db95e81144edb7cd4f24c7d3f",
+      "size": 7109
     },
     {
-      "path": "skills/topic-evidence-mapper/references/evidence-mapping-dimensions.md",
-      "sha": "f59b73951dac2dbe62d5e58da356485d801fc4e4",
-      "size": 431
+      "path": "skills/medical-research-literature-reader-pro/references/reporting_style.md",
+      "sha": "60c21e3f34e8094b655b3e1261e5eb1718464bc0",
+      "size": 3483
     },
     {
-      "path": "skills/topic-evidence-mapper/references/output-section-guidance.md",
-      "sha": "594025ac42cac0b338a4b6a7a734133d9baad6bf",
-      "size": 549
+      "path": "skills/medical-research-literature-reader-pro/references/tracks.md",
+      "sha": "e0eb827866368e6c8b367906b929a8c54a7f08d2",
+      "size": 10343
     },
     {
-      "path": "skills/topic-evidence-mapper/references/population-endpoint-method-map-rules.md",
-      "sha": "8b7a31fcb756855e837db9673f1201e99708d581",
-      "size": 640
+      "path": "skills/methods-reverse-engineer/SKILL.md",
+      "sha": "178da0b1c1096b34269f878b0aefae0dc5eadad4",
+      "size": 17769
     },
     {
-      "path": "skills/topic-evidence-mapper/references/research-stream-clustering-rules.md",
-      "sha": "8ad83c9156e2058b795896c853c44555ea4019ce",
-      "size": 551
+      "path": "skills/methods-reverse-engineer/references/analysis-pipeline-reconstruction-rules.md",
+      "sha": "f8d6684acd3b65eaab8c2dd5b9cdfc13b7f3339e",
+      "size": 585
     },
     {
-      "path": "skills/topic-evidence-mapper/references/topic-scope-rules.md",
-      "sha": "b008a29d977c4c7eb53513a8407f64f3c07a025a",
-      "size": 505
+      "path": "skills/methods-reverse-engineer/references/data-and-sample-extraction-rules.md",
+      "sha": "38b193edfec9f7a023af03f8b063a7b32eeeb0e6",
+      "size": 585
     },
     {
-      "path": "skills/topic-evidence-mapper/references/workflow-step-template.md",
-      "sha": "eaaaaf4f05cffc9bcf0160a355353a261ad08630",
-      "size": 120
+      "path": "skills/methods-reverse-engineer/references/input-coverage-and-boundary-rules.md",
+      "sha": "22e0f270e788a98ed7c72d1322f9c802ad5e4331",
+      "size": 710
     },
     {
-      "path": "skills/validation-strategy-designer/SKILL.md",
-      "sha": "858dbe912d9b0184827cb04a46e47f527a43563e",
-      "size": 12134
+      "path": "skills/methods-reverse-engineer/references/literature-integrity-rules.md",
+      "sha": "eb4ba043f4834c04d314f0daff58052a3d385c1e",
+      "size": 566
     },
     {
-      "path": "skills/validation-strategy-designer/references/clarification-first-rule.md",
-      "sha": "1cbbd86b556fd650415a647804f975e4a13a1f12",
-      "size": 717
+      "path": "skills/methods-reverse-engineer/references/methods-decomposition-framework.md",
+      "sha": "58e0a07ef460b27556b4dbfd3b7755a7a8c473e8",
+      "size": 721
     },
     {
-      "path": "skills/validation-strategy-designer/references/evidence-boundary-rules.md",
-      "sha": "82a425801775c86a214b35a0a7d88447af3e587f",
-      "size": 633
+      "path": "skills/methods-reverse-engineer/references/output-section-guidance.md",
+      "sha": "c02736cbeb99485a60bab2b6474ad3355bbdb9d9",
+      "size": 460
     },
     {
-      "path": "skills/validation-strategy-designer/references/functional-validation-guardrails.md",
-      "sha": "94a764ac270d8f4d8bf3b1624760401bce0634cd",
+      "path": "skills/methods-reverse-engineer/references/reproducibility-gap-rules.md",
+      "sha": "fd766ba658925b49f5370a9f84643a24dd29f0a3",
+      "size": 614
+    },
+    {
+      "path": "skills/methods-reverse-engineer/references/software-parameter-and-environment-rules.md",
+      "sha": "4f8437868a29c5bad5ba74ac5fc0e484dc125196",
+      "size": 578
+    },
+    {
+      "path": "skills/methods-reverse-engineer/references/study-design-routing-rules.md",
+      "sha": "d3a585b01dda8685a988a9ad3312257f2de79992",
+      "size": 833
+    },
+    {
+      "path": "skills/methods-reverse-engineer/references/validation-and-quality-control-rules.md",
+      "sha": "14bb9df6a483bda5ed2092b825d62d80caf22d5d",
+      "size": 510
+    },
+    {
+      "path": "skills/methods-reverse-engineer/references/workflow-step-template.md",
+      "sha": "5b10be1d1f7677780b8b25867f48f233f90870f5",
+      "size": 425
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/SKILL.md",
+      "sha": "607f55ce0caef6615d89f45039d36ddd90d295d3",
+      "size": 16824
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/causality-boundary-rules.md",
+      "sha": "85740a742bd00d2b5ffb672d5d652af4f9e585d0",
+      "size": 241
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/citation-drift-taxonomy.md",
+      "sha": "d6d705877b2a894b446a1448366a6c0dad0ba27b",
+      "size": 296
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/claim-decomposition-rules.md",
+      "sha": "7dafba1c4e47d8825e54e0527a65b43115d699e1",
+      "size": 362
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/context-transfer-rules.md",
+      "sha": "9a60e6592c4587073261c958961ba10372cbe863",
+      "size": 274
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/evidence-support-judgment-rules.md",
+      "sha": "eb66ace26b4a28d64ff7f993ee31d8302c56df0c",
+      "size": 316
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/literature-integrity-rules.md",
+      "sha": "e6a432bfafc44ba1384c5061925726e33403e0b8",
+      "size": 328
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/output-section-guidance.md",
+      "sha": "b4559d57337acae62fddc00701d55a2402a4b7b3",
+      "size": 191
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/source-tracing-rules.md",
+      "sha": "c73b18ae5c98a4a7c313bd32cd13af974f39fe74",
+      "size": 281
+    },
+    {
+      "path": "skills/paper-to-claim-verifier/references/workflow-step-template.md",
+      "sha": "e30be35ac87bc5b240dec2e7f32a8b901a6b42a9",
+      "size": 217
+    },
+    {
+      "path": "skills/primary-plan-recommender/SKILL.md",
+      "sha": "14f140ebf477425cf98c751f8c846ecd4c57a39f",
+      "size": 16260
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/dependency-and-pivot-rules.md",
+      "sha": "ac0f2ab7b929422942364107f2e9088665f4eab3",
+      "size": 491
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/literature-integrity-rules.md",
+      "sha": "f4dd85dbf3e032676f4cdd44a9fddd1fe7b14668",
+      "size": 678
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/output-section-guidance.md",
+      "sha": "17b00bbb2c5b14df21724b41e9a46aefbda630f0",
       "size": 741
     },
     {
+      "path": "skills/primary-plan-recommender/references/plan-route-taxonomy.md",
+      "sha": "809915a3423e43512fa774c912e2c0703216976b",
+      "size": 1852
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/primary-vs-secondary-plan-rules.md",
+      "sha": "128af66875c8233071e8b8fd5872981b5b182bc7",
+      "size": 915
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/question-to-route-matching-rules.md",
+      "sha": "54a64ee20cfbdc18c37368fdf3f101b2b97eef0b",
+      "size": 1239
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/rejection-reason-framework.md",
+      "sha": "857a8979455cff38c1ec720d98c71ed1ea456cbb",
+      "size": 582
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/route-comparison-dimensions.md",
+      "sha": "e1b5738d4271ed94885e8758cc2ce8e324c246a2",
+      "size": 625
+    },
+    {
+      "path": "skills/primary-plan-recommender/references/workflow-step-template.md",
+      "sha": "487afc3ea0104d73f540bdc07b9a7a8645669e3f",
+      "size": 363
+    },
+    {
+      "path": "skills/result-reliability-checker/SKILL.md",
+      "sha": "373e2b47d86cf03f4d4f8add0791f6a2cf34b419",
+      "size": 13906
+    },
+    {
+      "path": "skills/result-reliability-checker/references/claim-discipline-rules.md",
+      "sha": "09339ba591f6bdc330c18ef5d6bd1a48594c6fcf",
+      "size": 1113
+    },
+    {
+      "path": "skills/result-reliability-checker/references/design-and-bias-rules.md",
+      "sha": "0ee2d8c3b27b3daa48759d1269b5f00214835021",
+      "size": 1777
+    },
+    {
+      "path": "skills/result-reliability-checker/references/literature-integrity-rules.md",
+      "sha": "d0fd149dae2e8d45fab589ab5e52e7f8afac91d8",
+      "size": 864
+    },
+    {
+      "path": "skills/result-reliability-checker/references/output-section-guidance.md",
+      "sha": "1d90fcd46fed318edf5d031cb6adeccb54821fc6",
+      "size": 552
+    },
+    {
+      "path": "skills/result-reliability-checker/references/reliability-audit-framework.md",
+      "sha": "18f42275e86d99b4a986970711dbfc4ff24ca7b1",
+      "size": 1758
+    },
+    {
+      "path": "skills/result-reliability-checker/references/statistics-and-model-risk-rules.md",
+      "sha": "6c179a03594c5b3f1ea556e5e2f10e1e2c1f31dd",
+      "size": 1714
+    },
+    {
+      "path": "skills/result-reliability-checker/references/validation-chain-framework.md",
+      "sha": "7cc3741db51854fcdb7baefca0955422cd5d11bb",
+      "size": 1661
+    },
+    {
+      "path": "skills/sample-size-and-power-planning-assistant/SKILL.md",
+      "sha": "b6e740c8dbae751756a7aa85f2fca69a23f68c17",
+      "size": 14089
+    },
+    {
+      "path": "skills/sample-size-and-power-planning-assistant/references/assumption-quality-audit.md",
+      "sha": "afa5b0125e910b306f02b40eb68956a4d01bb17d",
+      "size": 916
+    },
+    {
+      "path": "skills/sample-size-and-power-planning-assistant/references/design-family-selection-rules.md",
+      "sha": "66e2352a8cdf125829593d63149c968f4d33a60e",
+      "size": 1029
+    },
+    {
+      "path": "skills/sample-size-and-power-planning-assistant/references/fallback-scenario-planning.md",
+      "sha": "f03440bbfdb111bd913dfd47ad1f3990f679b4a7",
+      "size": 779
+    },
+    {
+      "path": "skills/sample-size-and-power-planning-assistant/references/hard-rules.md",
+      "sha": "16c755a13cc6b054ca4de1c734e60340fb65cfe6",
+      "size": 788
+    },
+    {
+      "path": "skills/sample-size-and-power-planning-assistant/references/input-clarification-thresholds.md",
+      "sha": "ea110d8caeaeba2575a9acac3b93d67083bae4fe",
+      "size": 1056
+    },
+    {
+      "path": "skills/study-design-identifier/SKILL.md",
+      "sha": "000ea4df2e551ebba45be4344bfd666ed1267561",
+      "size": 13889
+    },
+    {
+      "path": "skills/study-design-identifier/references/design-decision-rules.md",
+      "sha": "2cdc2a673f4a69a216104e07a6bdefb5ca4630f7",
+      "size": 841
+    },
+    {
+      "path": "skills/study-design-identifier/references/edge-case-handling.md",
+      "sha": "795efb90409f2e2b9565642613220869cfba5067",
+      "size": 660
+    },
+    {
+      "path": "skills/study-design-identifier/references/evidence-grading-bridge.md",
+      "sha": "72fddfd1fdb17619a71a939570cca33d9258e476",
+      "size": 531
+    },
+    {
+      "path": "skills/study-design-identifier/references/output-section-guidance.md",
+      "sha": "69707e40b5709f68ee42fb80ac6c630638eb098f",
+      "size": 328
+    },
+    {
+      "path": "skills/study-design-identifier/references/study-design-taxonomy.md",
+      "sha": "ca2c144d55c3df086db62189d273352143e3ef0e",
+      "size": 1163
+    },
+    {
+      "path": "skills/study-design-identifier/references/workflow-step-template.md",
+      "sha": "95d964865fc5a96083f99a25ecf0bd8d784e5b41",
+      "size": 295
+    },
+    {
+      "path": "skills/study-objective-refiner/SKILL.md",
+      "sha": "2eb0a427b027cdd7ad5af2f06fa3304cf4ecb89e",
+      "size": 15190
+    },
+    {
+      "path": "skills/study-objective-refiner/references/ambiguity-and-scope-rules.md",
+      "sha": "e012f2ca49bff7b18ec0ac906ed3fef5ca4e54b5",
+      "size": 705
+    },
+    {
+      "path": "skills/study-objective-refiner/references/confirmatory-vs-exploratory-rules.md",
+      "sha": "5453b5790829638b40213af5234feb2a581fad70",
+      "size": 798
+    },
+    {
+      "path": "skills/study-objective-refiner/references/downstream-routing-rules.md",
+      "sha": "08c2e80b34a2d8a446ffdbd93b042ca77e20a99c",
+      "size": 1083
+    },
+    {
+      "path": "skills/study-objective-refiner/references/literature-integrity-rules.md",
+      "sha": "ec156233cfca4ac0ca2ca6934269a8db1a2db46d",
+      "size": 549
+    },
+    {
+      "path": "skills/study-objective-refiner/references/measurability-and-executability-rules.md",
+      "sha": "d60485a9b62daab7d22e354621779c59dcf912a8",
+      "size": 745
+    },
+    {
+      "path": "skills/study-objective-refiner/references/objective-operationalization-framework.md",
+      "sha": "5d84c7ff80f3a753b5fbe1bccbbf2127f8e098ef",
+      "size": 920
+    },
+    {
+      "path": "skills/study-objective-refiner/references/objective-rewrite-rules.md",
+      "sha": "d803db6791cc584cc700a2b1f2a2324c57315d42",
+      "size": 964
+    },
+    {
+      "path": "skills/study-objective-refiner/references/objective-type-taxonomy.md",
+      "sha": "5babce98e4c2e5bb363b7c264c3d48a291b1e0ef",
+      "size": 1492
+    },
+    {
+      "path": "skills/study-objective-refiner/references/output-section-guidance.md",
+      "sha": "ffd785ad82ed0e3f583a1bf9528c8830c750620e",
+      "size": 869
+    },
+    {
+      "path": "skills/study-objective-refiner/references/workflow-step-template.md",
+      "sha": "b76245bf0c41371e8c4bb5809b9c248baf742052",
+      "size": 613
+    },
+    {
+      "path": "skills/topic-evidence-mapper/SKILL.md",
+      "sha": "c73779a330f922b8b93482f4bb7ed0fb8389ca87",
+      "size": 13496
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/downstream-routing-rules.md",
+      "sha": "6435ea393526da762a23258c8b714657980be386",
+      "size": 544
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/entry-point-suggestion-rules.md",
+      "sha": "c94c14a933515924c8984cd663612f63255e8f24",
+      "size": 531
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/evidence-density-and-thin-area-rules.md",
+      "sha": "a6449a9035262ac20b31ee80a745af1532a46dac",
+      "size": 510
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/evidence-mapping-dimensions.md",
+      "sha": "eef9231b8a3ddd66cefe1ee1c9e9d3232faed0ca",
+      "size": 453
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/output-section-guidance.md",
+      "sha": "a01e3e327c7c84723bbeb409186374041cce895c",
+      "size": 569
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/population-endpoint-method-map-rules.md",
+      "sha": "ff9769270ebe0d065b211360349364e3a449723b",
+      "size": 668
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/research-stream-clustering-rules.md",
+      "sha": "810c731f429a940c2958ec2f3ac3b50354b318e4",
+      "size": 571
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/topic-scope-rules.md",
+      "sha": "e5e329ed48a57476fdd4dc877e2d1f4f15151f96",
+      "size": 524
+    },
+    {
+      "path": "skills/topic-evidence-mapper/references/workflow-step-template.md",
+      "sha": "7fbbad448e771f1153c6a1dc0823a445c2ee32c7",
+      "size": 127
+    },
+    {
+      "path": "skills/validation-strategy-designer/SKILL.md",
+      "sha": "7b73c1de7bf6f0d6e1e0554c816e8cfb54032dce",
+      "size": 12421
+    },
+    {
+      "path": "skills/validation-strategy-designer/references/clarification-first-rule.md",
+      "sha": "95f48d55f3bb49d81ee9060b70810d824cbe380a",
+      "size": 734
+    },
+    {
+      "path": "skills/validation-strategy-designer/references/evidence-boundary-rules.md",
+      "sha": "19660f214ec2aa9d9e10df1571b2593ab28bf136",
+      "size": 648
+    },
+    {
+      "path": "skills/validation-strategy-designer/references/functional-validation-guardrails.md",
+      "sha": "448d75914c7c65cf452bb3e9651454cd48bdee60",
+      "size": 767
+    },
+    {
       "path": "skills/validation-strategy-designer/references/hard-rules.md",
-      "sha": "36b3d7982ad0d68c1af59d2de89bfcf0e8f50225",
-      "size": 708
+      "sha": "8b92881d04b2c263949418d2322471aba62ee752",
+      "size": 719
     },
     {
       "path": "skills/validation-strategy-designer/references/validation-tier-framework.md",
-      "sha": "e36ea9f790e9be0e9b223fd6022a0ecc9ef50cd0",
-      "size": 576
+      "sha": "0386baf8496d1c5c8ae788425fa1f7964f6fc6c6",
+      "size": 601
     }
   ]
 }

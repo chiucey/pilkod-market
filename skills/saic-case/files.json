@@ -2,138 +2,83 @@
   "files": [
     {
       "path": "LICENSE",
-      "sha": "75bbf99c8c1faf232456f246898a920bcde6108b",
-      "size": 1085
+      "sha": "cf53dc48c06755651c32be27b12dcd8efab3fa43",
+      "size": 1106
     },
     {
       "path": "README.md",
-      "sha": "c051be056299341b0bd42bcf48c13458dff11a75",
-      "size": 6095
+      "sha": "045719fd3c88053bc2e4719c28b09cc78e73fe2a",
+      "size": 6265
     },
     {
       "path": "SKILL.md",
-      "sha": "65572ccb9e9de58a63a8c41951733067a73be420",
-      "size": 11816
-    },
-    {
-      "path": "backup_20260417_061938/LICENSE",
-      "sha": "75bbf99c8c1faf232456f246898a920bcde6108b",
-      "size": 1085
-    },
-    {
-      "path": "backup_20260417_061938/README.md",
-      "sha": "c051be056299341b0bd42bcf48c13458dff11a75",
-      "size": 6095
-    },
-    {
-      "path": "backup_20260417_061938/SKILL.md",
-      "sha": "457b0c60ce94d649d5a0d008316e33a53a55e6ac",
-      "size": 7972
-    },
-    {
-      "path": "backup_20260417_061938/metadata.json",
-      "sha": "14227b3dac8f5915e21cf9d19b56ca633975a021",
-      "size": 2231
-    },
-    {
-      "path": "backup_20260417_061938/references/bad_claims_rules.md",
-      "sha": "6bf1584b9c076fc359abc81cbeac53667cdb2f67",
-      "size": 13221
-    },
-    {
-      "path": "backup_20260417_061938/references/jurisdiction_rules.md",
-      "sha": "af2ae95766b394d0e460c928b231cf946784279f",
-      "size": 4630
-    },
-    {
-      "path": "backup_20260417_061938/references/key_deadlines.md",
-      "sha": "5d2a8d62aa36376f0d3420fee89d75996ea8a1f4",
-      "size": 7556
-    },
-    {
-      "path": "backup_20260417_061938/references/legal_provisions.md",
-      "sha": "f5d83564c5d5986143b18370d7dc7e88e6dde821",
-      "size": 7080
-    },
-    {
-      "path": "backup_20260417_061938/scripts/complaint_analyzer.py",
-      "sha": "b5fa7cf3521b92a06ddd21fffa69e63a94b8c726",
-      "size": 17459
-    },
-    {
-      "path": "backup_20260417_061938/templates/complaint_template.md",
-      "sha": "924773077199e2a5f36fd5fd2a2f1534f0dda6d3",
-      "size": 2904
-    },
-    {
-      "path": "backup_20260417_061938/templates/report_template.md",
-      "sha": "a28bb57abe49cb1ad0fa408438afb2b03f313e70",
-      "size": 3736
+      "sha": "1a8e9b27a7c0993f7d74982b4bfa3fb8b021448f",
+      "size": 12082
     },
     {
       "path": "metadata.json",
-      "sha": "bb3757c326e1c0797a79aca8ac2c4e29f622bceb",
-      "size": 3603
+      "sha": "e5fdc7137deafb5ce31ce2e7766046bfe4cd81cd",
+      "size": 3710
     },
     {
       "path": "references/bad_claims_rules.md",
-      "sha": "6bf1584b9c076fc359abc81cbeac53667cdb2f67",
-      "size": 13221
+      "sha": "1e29dbff8488950f7cd3bf869e62d7875bb9150c",
+      "size": 13466
     },
     {
       "path": "references/complaint_to_penalty_flow.md",
-      "sha": "a345ae9118e652302c7068209c2523ff8e308654",
-      "size": 7384
+      "sha": "44b6adc76eabe98c6e3194d31dce07a9560deb9f",
+      "size": 7529
     },
     {
       "path": "references/jurisdiction_rules.md",
-      "sha": "af2ae95766b394d0e460c928b231cf946784279f",
-      "size": 4630
+      "sha": "67662dd35287909b33584714cc6b88a8168b98fd",
+      "size": 4742
     },
     {
       "path": "references/jurisdiction_rules_penalty.md",
-      "sha": "dbf6cd4cc1b27980028fe6376b16dd4e6a81b560",
-      "size": 6648
+      "sha": "b75641194fedf100b24265961f1b98e7b28cefee",
+      "size": 6793
     },
     {
       "path": "references/key_deadlines.md",
-      "sha": "5d2a8d62aa36376f0d3420fee89d75996ea8a1f4",
-      "size": 7556
+      "sha": "24f0fff4dac936c52f9e2cbd3aec58e06cec3b65",
+      "size": 7714
     },
     {
       "path": "references/key_deadlines_penalty.md",
-      "sha": "6cb429c8dd3bf91f30b01d1dafbefb3bf2decf4b",
-      "size": 5591
+      "sha": "d2b1a5e1c8906c1d8db37163bb337b707c1b6e9f",
+      "size": 5701
     },
     {
       "path": "references/legal_provisions.md",
-      "sha": "f5d83564c5d5986143b18370d7dc7e88e6dde821",
-      "size": 7080
+      "sha": "5aeff3ba0db5252d1543ab52add83a2eafed22e4",
+      "size": 7250
     },
     {
       "path": "references/legal_provisions_penalty.md",
-      "sha": "daff7b56ac67a425cc7af872925bc19270055cac",
-      "size": 11248
+      "sha": "936302e1a97d18b6d921ab140347519a88bea7cd",
+      "size": 11537
     },
     {
       "path": "scripts/complaint_analyzer.py",
-      "sha": "b5fa7cf3521b92a06ddd21fffa69e63a94b8c726",
-      "size": 17459
+      "sha": "f95bea75cdfd87d0152dc3e190dea736952e4416",
+      "size": 17841
     },
     {
       "path": "templates/complaint_template.md",
-      "sha": "924773077199e2a5f36fd5fd2a2f1534f0dda6d3",
-      "size": 2904
+      "sha": "e792b1d73b7a06b9159aa5816f8852ff80eb95ad",
+      "size": 3008
     },
     {
       "path": "templates/penalty_case_template.md",
-      "sha": "145173918250fa5aac1844ea1a95af12f0aff2e0",
-      "size": 6458
+      "sha": "029d1b54484a99fc19391133578cef582ae71d33",
+      "size": 6591
     },
     {
       "path": "templates/report_template.md",
-      "sha": "a28bb57abe49cb1ad0fa408438afb2b03f313e70",
-      "size": 3736
+      "sha": "540d191b3ab755d1f620a95d71ef719453785328",
+      "size": 3859
     }
   ]
 }

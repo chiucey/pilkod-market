@@ -1,49 +1,34 @@
 {
   "files": [
     {
-      "path": ".pytest_cache/.gitignore",
-      "sha": "bc1a1f6167d09c909aad37280b760bb715d0f1da",
-      "size": 37
-    },
-    {
-      "path": ".pytest_cache/CACHEDIR.TAG",
-      "sha": "fce15ad7eaa74e5682b644c84efb75334c112f95",
-      "size": 191
-    },
-    {
-      "path": ".pytest_cache/README.md",
-      "sha": "cf8d5ad90a4615af64dfdebf263df48a3e5bf92b",
-      "size": 837
-    },
-    {
       "path": "SKILL.md",
-      "sha": "861bdff29a0e70d2d4505943caa4042dcb99a7b2",
-      "size": 3609
+      "sha": "dbf6c63fba6b11f2835906df96118a8f7e2f6fd8",
+      "size": 3751
     },
     {
       "path": "hygiene.py",
-      "sha": "ea4c33938fa03614be0990fe7f3e37f44345fb23",
-      "size": 19574
+      "sha": "add1e54bb9ee8c3c5d68ca95d480868e72624989",
+      "size": 19997
     },
     {
       "path": "tests/conftest.py",
-      "sha": "f27ea7d46bc20bcbcff0b0495fc6f5e137a001ef",
-      "size": 2894
+      "sha": "6cd3784fb92022ab74c1fe42d9877f8b30df7e71",
+      "size": 2961
     },
     {
       "path": "tests/test_hygiene.py",
-      "sha": "aca1ce71158e0d91fd43d9ed73ac40096596da2f",
-      "size": 12079
+      "sha": "6c57d4ede71f404303887eeff1c62a39ed593388",
+      "size": 12389
     },
     {
       "path": "tests/test_hygiene_core.py",
-      "sha": "27376c19baea02076704884b95b6f9ecff2d0ba3",
-      "size": 6363
+      "sha": "74ebbca65601b068ea2817b6758dacfbdb89fea2",
+      "size": 6513
     },
     {
       "path": "tests/test_hygiene_v2.py",
-      "sha": "35be1cb3e31a59970cdc82fdaa8faf6c94129d8a",
-      "size": 6705
+      "sha": "810f9754320392c36147958a1f6d4ec3fa05c697",
+      "size": 6848
     }
   ]
 }

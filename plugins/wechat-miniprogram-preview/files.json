@@ -3,48 +3,48 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "c0a3a3cc4d2d7bcbe7dfcdde31d76e77f21d3d07",
-      "size": 742
+      "sha": "58575adf120c0e767aeb8b5bb00aa3349626175d",
+      "size": 764
     },
     {
       "path": ".gitignore",
-      "sha": "3531bfa2d391a1e0a55b461bbb0ffc77bf9100e2",
-      "size": 46
+      "sha": "a54d25622e04518bdb9958b61267d0790167566f",
+      "size": 50
     },
     {
       "path": "LICENSE",
-      "sha": "077f492de30f9e61b976980a17d1f37f1d361862",
-      "size": 1250
+      "sha": "f3f9cbea7f7f612da01749fb5f69663cb328996a",
+      "size": 1274
     },
     {
       "path": "README.md",
-      "sha": "af297595cba4840d4a4e2d2214acd5cdc5038dfa",
-      "size": 10267
+      "sha": "7341d2c6ed9f278bbd54545255ce022c3b37425d",
+      "size": 10422
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "c2c65ead01a7317d5e76db2d8f0b81bc8f35feae",
-      "size": 7045
+      "sha": "9b13d2e078e7c34a30caf14ee848b01bc9f4c111",
+      "size": 7148
     },
     {
       "path": "docs/architecture.md",
-      "sha": "ad9c8cb7dfbe000fdc1c403facf140a96e1b56ea",
-      "size": 4889
+      "sha": "13218cf2873756d06ad1ac35f7e77c9eeb18bd4a",
+      "size": 4972
     },
     {
       "path": "docs/assets.md",
-      "sha": "e03bfecda14cec6739c63803d459e7b0239d2ebf",
-      "size": 1526
+      "sha": "da132c30ea68de6410de54ea1aec04b3a47ba903",
+      "size": 1547
     },
     {
       "path": "docs/demo-game-2d.md",
-      "sha": "bf1ab37ad417363288992c06b7c6fe537b6fddb2",
-      "size": 838
+      "sha": "051062187c8084b4988668091345f5df4bf908ff",
+      "size": 849
     },
     {
       "path": "docs/demo-game-webgl.md",
-      "sha": "58630e36d1e66c301d7334a6fd65a16d28bd629a",
-      "size": 902
+      "sha": "2cd20230783249909836a48161947299b0f90872",
+      "size": 913
     },
     {
       "path": "icon-wechat-devtools-6dae8e16.png",
@@ -53,88 +53,88 @@
     },
     {
       "path": "miniapp/client/css-urls.mjs",
-      "sha": "18b92eef1bf28ed2dcb4fd2d37668351f902e845",
-      "size": 2776
+      "sha": "16392572434746adf3677dc5bedb42aafd428ed5",
+      "size": 2840
     },
     {
       "path": "miniapp/client/device-config.js",
-      "sha": "63a2db6cb971821aa4237441949571f9e4a05eb0",
-      "size": 4616
+      "sha": "c5d605c1455ed312b2765771bc931492155aa586",
+      "size": 4695
     },
     {
       "path": "miniapp/client/game-runtime.css",
-      "sha": "3a7fcfd160235f3ff1ae03ae0e830fa0e4343dbd",
-      "size": 1089
+      "sha": "169ce55e7c7e08621bf89923c2d3c49114af29ad",
+      "size": 1100
     },
     {
       "path": "miniapp/client/game-runtime.js",
-      "sha": "8847ca38c9096d8ee2740c82420d8dbf2088055d",
-      "size": 39266
+      "sha": "970304b6012f546d0096f34a023d4816e873ae66",
+      "size": 39912
     },
     {
       "path": "miniapp/client/icons.js",
-      "sha": "bd2dcef8045103749caa5c7ba058ac93d72dfc90",
-      "size": 5045
+      "sha": "55f46789f84288396fef9ca098c1de69cffcee7b",
+      "size": 5058
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "9038d80f7f4097708079a85e7d06cbd8515be19f",
-      "size": 2165
+      "sha": "bb7203daeca846aa3b91ad652e7d41717b8fb79f",
+      "size": 2215
     },
     {
       "path": "miniapp/client/preview-chrome.css",
-      "sha": "2d19d32663e2123080f867bada56484c5a771df2",
-      "size": 2155
+      "sha": "5ecad0be413db5753c705a4fe799795f3c7bd808",
+      "size": 2228
     },
     {
       "path": "miniapp/client/shell.css",
-      "sha": "fe3cd2c61e5ee3608cf4c1971947341dceed6eb2",
-      "size": 7715
+      "sha": "16e26ea5bed8ac50cc61ffbbff0848f6df997c1b",
+      "size": 7834
     },
     {
       "path": "miniapp/client/shell.js",
-      "sha": "f9ecf4bf4a92580b5d3bc590603b21d78b8ce74b",
-      "size": 55343
+      "sha": "bd43abea605df9063ada2f6427268bb2caf11de8",
+      "size": 56190
     },
     {
       "path": "miniapp/client/sim-base.css",
-      "sha": "c4d3331f9dff433c99e70e261215feb271f480c0",
-      "size": 12449
+      "sha": "d5db654720c1c922c9f4265be4ce5519faab310e",
+      "size": 12496
     },
     {
       "path": "miniapp/client/sim-runtime.js",
-      "sha": "d4baf77f03422717d3efec0afc6f44de9f8a864e",
-      "size": 128042
+      "sha": "601b30d4be4001b609d219028ac0f35d75cfb9f0",
+      "size": 130741
     },
     {
       "path": "miniapp/client/style-values.mjs",
-      "sha": "6e6824f13e6bc4b9f7a81dad3344bbf06a932358",
-      "size": 2631
+      "sha": "884a3993f7564cb8bf7a295f70aef2fb41d8c591",
+      "size": 2708
     },
     {
       "path": "miniapp/client/vendor/THIRD-PARTY-NOTICES.txt",
-      "sha": "a8db214015e5b6c42fd5a8c64a51b2f9c6423bd1",
-      "size": 2179
+      "sha": "285877635eae45f93ab0f07d62b9b00071856bfe",
+      "size": 2199
     },
     {
       "path": "miniapp/client/vendor/component-runtime.js",
-      "sha": "18abb1f3196c36ea1dfcb192ecf07f80b92bb750",
-      "size": 306306
+      "sha": "0fe75cc17468aad3f4fc30dceab77eb0d31e6a40",
+      "size": 313255
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "162749c24abc5f761e1cfff85e4f2440a917b671",
-      "size": 371
+      "sha": "215f0d52d4b3e5d9b96964acc61e14cc38223ce0",
+      "size": 391
     },
     {
       "path": "miniapp/node/build-cache.mjs",
-      "sha": "b920cac753dcdd31029a6d976bbb67e20d18a207",
-      "size": 12764
+      "sha": "6549d5fba267bb59a9d27a9e0e1bb07b14e12734",
+      "size": 13031
     },
     {
       "path": "miniapp/node/compiler.mjs",
-      "sha": "3d9e266e5b80f3ed272899672266feb6a85b12b9",
-      "size": 30902
+      "sha": "ae8c010e0663c73c02dd1371e1afd300973bea06",
+      "size": 31512
     },
     {
       "path": "miniapp/node/demo-game-2d/assets/quad.png",
@@ -143,23 +143,23 @@
     },
     {
       "path": "miniapp/node/demo-game-2d/game.js",
-      "sha": "12d6e69a2d5d2e486f93b0a8960cf8eecb4d0268",
-      "size": 4028
+      "sha": "f1d38448b69844ed119c09ef14915be4520ebc97",
+      "size": 4134
     },
     {
       "path": "miniapp/node/demo-game-2d/game.json",
-      "sha": "f776b696bb959c14d0bcae51c3381b7c87eead6c",
-      "size": 38
+      "sha": "33823473b866d048ecb087e100483d1fb29365e8",
+      "size": 41
     },
     {
       "path": "miniapp/node/demo-game-2d/palette.js",
-      "sha": "c486dcdbdf0e9eeb9cbd65727e19cfad2ad4e974",
-      "size": 140
+      "sha": "b1d2bed6818eb49959183bed9735025315b1e4c0",
+      "size": 148
     },
     {
       "path": "miniapp/node/demo-game-2d/project.config.json",
-      "sha": "3a9054f9507afaec2c2235a8845adfe7a6dd947d",
-      "size": 223
+      "sha": "5dd35ac732fb2c7579a9f7f1f6afdd46badd5b30",
+      "size": 231
     },
     {
       "path": "miniapp/node/demo-game-webgl/assets/atlas.png",
@@ -168,388 +168,388 @@
     },
     {
       "path": "miniapp/node/demo-game-webgl/game.js",
-      "sha": "fcf3b9d9642758769c5194fb752f2602778ec234",
-      "size": 4206
+      "sha": "833b5265eaf810cc1167901640594ef8ad9551bc",
+      "size": 4284
     },
     {
       "path": "miniapp/node/demo-game-webgl/game.json",
-      "sha": "58bcd4d2c3fe91db578ba89ab24b3618f7a41bcd",
-      "size": 39
+      "sha": "97577c4617348bd1a82836a3548e9f313d1131b4",
+      "size": 42
     },
     {
       "path": "miniapp/node/demo-game-webgl/project.config.json",
-      "sha": "2bd6fa25091ec33702ea3f2bda1e834b4a747b7a",
-      "size": 227
+      "sha": "c96b470a0d9cee45b69b0078a6aa388648e65367",
+      "size": 235
     },
     {
       "path": "miniapp/node/demo-game-webgl/shaders.js",
-      "sha": "c7bcaf5dc27802712363ee9c69d460189439d902",
-      "size": 618
+      "sha": "3d2e116639d116ecfd46f18d81f61783705697e3",
+      "size": 620
     },
     {
       "path": "miniapp/node/demo/miniprogram/app.js",
-      "sha": "696946b5855912e63ffd91494d0418ded20142ff",
-      "size": 146
+      "sha": "3a7e809fe94809820ea028fdd79d5d84e901c4e3",
+      "size": 150
     },
     {
       "path": "miniapp/node/demo/miniprogram/app.json",
-      "sha": "52db040b87d7768d40cb33a059722a2ef53c7cd3",
-      "size": 467
+      "sha": "d3d9e3081eee9e90256de91573a68d09712e835f",
+      "size": 474
     },
     {
       "path": "miniapp/node/demo/miniprogram/app.wxss",
-      "sha": "002ceaaa2a5f3efdda119709d18d9604ae93b4e8",
-      "size": 839
+      "sha": "883eb9701081a374ff3f92a6750c2eb033fc407e",
+      "size": 840
     },
     {
       "path": "miniapp/node/demo/miniprogram/components/counter/counter.js",
-      "sha": "e4411103edd6f4f5144dc2032682ebbd8d716966",
-      "size": 232
+      "sha": "09a8a8f425c4be5047d6c4e5c81b77ae1d0c1961",
+      "size": 237
     },
     {
       "path": "miniapp/node/demo/miniprogram/components/counter/counter.json",
-      "sha": "d80dd20a6bff3a1e4094d2712d37b3f370dfc189",
-      "size": 19
+      "sha": "a24bd08fe01c32f531f621664d23c8225f9abded",
+      "size": 20
     },
     {
       "path": "miniapp/node/demo/miniprogram/components/counter/counter.wxml",
-      "sha": "5b43bff68658bf90715d1a7321a4721213b01b6c",
-      "size": 167
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/components/counter/counter.wxss",
-      "sha": "1b5922219d3cc1d5c6fe526a13aacbd500eea04b",
-      "size": 295
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/detail/detail.js",
-      "sha": "a80f178106c60a36675b7e00675263dd43c2fe62",
-      "size": 174
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/detail/detail.wxml",
-      "sha": "0378d268709b9c8c20edf85ebb2e0d33697220ea",
-      "size": 273
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/index/index.js",
-      "sha": "b58c61429314b823a9237fe4c21f1a80e4d00800",
-      "size": 842
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/index/index.json",
-      "sha": "d0081cd18a3554ee11ae31096c190bceaa17ae9d",
-      "size": 67
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/index/index.wxml",
-      "sha": "d23e22325941eebd7c184a62e00fb53103323a56",
-      "size": 1033
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/settings/settings.js",
-      "sha": "3c7bf786980709a01ac31183be8beeec5fec95be",
-      "size": 491
-    },
-    {
-      "path": "miniapp/node/demo/miniprogram/pages/settings/settings.wxml",
-      "sha": "b04b83df702eb347ac03cb55918c6b6af8ef4e5c",
-      "size": 657
-    },
-    {
-      "path": "miniapp/node/demo/project.config.json",
-      "sha": "9934ff9e59edd6e8c687bce16876c07ac2d05742",
-      "size": 121
-    },
-    {
-      "path": "miniapp/node/esm.mjs",
-      "sha": "d7194957f093e5ca13098584cef0115f5a21ce0f",
+      "sha": "974296d5bd1d7f5940b24fffbc2c606770788b76",
       "size": 168
     },
     {
+      "path": "miniapp/node/demo/miniprogram/components/counter/counter.wxss",
+      "sha": "7e1b7c62c845b38f3d6faa23a6e544c9f64d7e05",
+      "size": 296
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/detail/detail.js",
+      "sha": "e76b12e7dfd344dba4a75451e61c49d113c404a4",
+      "size": 175
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/detail/detail.wxml",
+      "sha": "366a29184c0091346ad18b102b6c4e23ce3eabe1",
+      "size": 274
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/index/index.js",
+      "sha": "1cc2af3863dbf986ff1f729c4eff65691290d5f9",
+      "size": 856
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/index/index.json",
+      "sha": "48dd24468afaf93fe8f1e42cae4d6edadc988694",
+      "size": 68
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/index/index.wxml",
+      "sha": "ed50b7ca0206cb03d4a1f0557c2ff41f24844d85",
+      "size": 1048
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/settings/settings.js",
+      "sha": "79b69598018750db76c2050022d35dedea23657e",
+      "size": 492
+    },
+    {
+      "path": "miniapp/node/demo/miniprogram/pages/settings/settings.wxml",
+      "sha": "84a12ac36b0d76fa30d6bbd7513a2676d9c5f26a",
+      "size": 658
+    },
+    {
+      "path": "miniapp/node/demo/project.config.json",
+      "sha": "2ef83fe20ae06e1dd4b3dcb384344aac1f0097e7",
+      "size": 122
+    },
+    {
+      "path": "miniapp/node/esm.mjs",
+      "sha": "1983c00e3d840d00b72c548a03bb8121b7e0568f",
+      "size": 173
+    },
+    {
       "path": "miniapp/node/game-compiler.mjs",
-      "sha": "fd5a7d19d8c45779e157a29211a29c07b6e7609e",
-      "size": 4914
+      "sha": "676e6880bf10f49ccf705e0569d2b8cd57369ee3",
+      "size": 4976
     },
     {
       "path": "miniapp/node/mcp.mjs",
-      "sha": "beb9db8bdc2bdf8cb942a4314b2ef8820753d20d",
-      "size": 8181
+      "sha": "6d8b5544a8044225a198d6930eed490cc128ec0e",
+      "size": 8326
     },
     {
       "path": "miniapp/node/module-graph.mjs",
-      "sha": "76364706a7571920ac5722708ad9b927fd2c8373",
-      "size": 4767
+      "sha": "326a540f21be1ccd5aaaf0f217ebf925c26f5bfe",
+      "size": 4860
     },
     {
       "path": "miniapp/node/preview-assets.mjs",
-      "sha": "a3c9c8bc111ea4a920cae0cbb47d07c670aa98d3",
-      "size": 797
+      "sha": "56864ae32aafe8f1e8d46e1adde2767a9719e9c1",
+      "size": 815
     },
     {
       "path": "miniapp/node/preview-chrome.mjs",
-      "sha": "aeb937f1be3312be97bf6f93c9ef914f7a485903",
-      "size": 346
+      "sha": "934ddecd2637d50a027a5fead8377854e7c147bb",
+      "size": 348
     },
     {
       "path": "miniapp/node/preview-contexts.mjs",
-      "sha": "2f48f5e42d49d67bae0f9dcdaaa58dcf7516d7df",
-      "size": 20875
+      "sha": "c1b4be657839e04416671e075023bc5a92b60a04",
+      "size": 21215
     },
     {
       "path": "miniapp/node/preview-service.mjs",
-      "sha": "21f4b73166d136166ba9b1898962d2fa1892d12d",
-      "size": 44962
+      "sha": "d22e49eee8e729e60513ab4f2167ce1531dcbea8",
+      "size": 45635
     },
     {
       "path": "miniapp/node/preview-shells.mjs",
-      "sha": "b6f43a8ae14caf07096ec854acb4306928d5b083",
-      "size": 12422
+      "sha": "ad27aa9b53e0448370f305ff9cbfb6d14bdb84b5",
+      "size": 12596
     },
     {
       "path": "miniapp/node/project-access.mjs",
-      "sha": "bf785b03f14426a38a60e8f4823abaa1eda87c31",
-      "size": 7748
+      "sha": "a206cd07644a5f95485c05f12f383e67b9fe7959",
+      "size": 7908
     },
     {
       "path": "miniapp/node/project-builds.mjs",
-      "sha": "60f67ca9cf4eb5da5b0a7cef53a6ceb7ea7cd6cc",
-      "size": 22303
+      "sha": "c8a561ad5b2224f01b4d8668f978edda0403e366",
+      "size": 22672
     },
     {
       "path": "miniapp/node/project-json.mjs",
-      "sha": "a82324e7516baf75a627a654e2e91b96fa1b2f78",
-      "size": 4348
+      "sha": "b884706962f5defde0a5811e930ded3db2e07885",
+      "size": 4466
     },
     {
       "path": "miniapp/node/project-roots.json",
-      "sha": "fd9bbc66ba64ea9997b313f8e222dd3631c2d073",
-      "size": 32
+      "sha": "87e20af5c90116fee81393eb42e647581614eeaa",
+      "size": 35
     },
     {
       "path": "miniapp/node/project-storage.mjs",
-      "sha": "b17db516589214bfafa24e7a545dd2c7417330b9",
-      "size": 24894
+      "sha": "d1d30d31dece3545b78c1066ad7218efa3b4eed3",
+      "size": 25378
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "8fd31ac82a8e35391b7ea29fa1ca3ec7b479abf3",
-      "size": 39214
+      "sha": "7a039d77f82f03d30be135c77e83792fe8507e6e",
+      "size": 39698
     },
     {
       "path": "miniapp/node/vendor/THIRD-PARTY-NOTICES.txt",
-      "sha": "b4e2a4ff119d66ef838f06555266f290e6a3efe1",
-      "size": 18099
+      "sha": "97a7bd7cd094bfb6d75a4e7a90da1ba3b5187c6e",
+      "size": 18448
     },
     {
       "path": "miniapp/node/vendor/js-transform.mjs",
-      "sha": "db9f60c52d0109a14421bbbc324dd0b6b617ad71",
-      "size": 688697
+      "sha": "d7496db655b3cb202d2387579a2da4765d2b2c4d",
+      "size": 712447
     },
     {
       "path": "miniapp/node/wxml.mjs",
-      "sha": "bc9c619b4de0e3e15156ba80d090527b4e352ff9",
-      "size": 6610
+      "sha": "91317d273f32e52b373a7e142d747bd126ca988a",
+      "size": 6799
     },
     {
       "path": "miniapp/node/wxss.mjs",
-      "sha": "eb693f949a40ec04dfc91fdf4b81ec8d227333b1",
-      "size": 16383
+      "sha": "e5bc1ba37f5f63f8daad48a58e78d38beb6c85da",
+      "size": 16818
     },
     {
       "path": "package.json",
-      "sha": "f81afe79628e6ef9b83319c445adb6d1fa18e7d3",
-      "size": 482
+      "sha": "025c56d427f17816e504a561f89510c733e598ad",
+      "size": 504
     },
     {
       "path": "pnpm-lock.yaml",
-      "sha": "e254d6975b930ec357a9ed0e1a0f4bb531e4dfd1",
-      "size": 30968
+      "sha": "5024a0eb5de28b15b638fd9f8477531f938264fa",
+      "size": 31938
     },
     {
       "path": "scripts/build.mjs",
-      "sha": "6f4d5b9c3e177f90e6f30f19061f79cb37b7cfc2",
-      "size": 2886
+      "sha": "b817a19b2bb15b4b6ffbd815ea9cc66fb237b9d0",
+      "size": 2939
     },
     {
       "path": "scripts/package.mjs",
-      "sha": "86d13a396c617f293f7038c5863423541d00b8b3",
-      "size": 6409
+      "sha": "0fb6546d31e831c315e9cced4744b5a276d0de7b",
+      "size": 6504
     },
     {
       "path": "servers.mcp.json",
-      "sha": "b450b1d94f8aaab4445180447198ec33b9771150",
-      "size": 362
+      "sha": "505d215218b088844ca3450618c2902784189e34",
+      "size": 374
     },
     {
       "path": "skills/wechat-project-preview/SKILL.md",
-      "sha": "1989eb70878202272132c2cb49a4523473e81265",
-      "size": 5565
+      "sha": "5dfc412ec7f2084fdf2c2aad0e8aecebb3924b5a",
+      "size": 5620
     },
     {
       "path": "src/component-runtime.mjs",
-      "sha": "62c5d3756ebe0530599088f3d03bc135cd3140b1",
-      "size": 20212
+      "sha": "90283503e252b4bd7b0e666fdbba16a60e37bac7",
+      "size": 20659
     },
     {
       "path": "src/js-transform.mjs",
-      "sha": "1dde3165c0e66ee6a6af2667ccc6adeb16a3f584",
-      "size": 5119
+      "sha": "cca38e979d3fd449f6f4f1cf39b0464824874a40",
+      "size": 5216
     },
     {
       "path": "tests/build-cache.test.mjs",
-      "sha": "b05f202644b562b0c00cfa13b1654625a8a89e16",
-      "size": 17429
+      "sha": "3d688299814487fda19ba81120ce24d8a1528f1d",
+      "size": 17750
     },
     {
       "path": "tests/client.test.mjs",
-      "sha": "2c13e37c8670e0036aa3048bfe37db5c77980f0b",
-      "size": 14161
+      "sha": "d4aaeadcee8b28520f637456ab0915e60d857cec",
+      "size": 14420
     },
     {
       "path": "tests/compiler-modules.test.mjs",
-      "sha": "790166169ec2c5b3b5acb9c086b9f9196781502c",
-      "size": 12711
+      "sha": "15cbab6ca9c1d5f7896c7dd5baeafa05f8457917",
+      "size": 12977
     },
     {
       "path": "tests/component-bridge.test.mjs",
-      "sha": "2d505dd80f85d1daca32cd0d71d869f823c3502a",
-      "size": 25336
+      "sha": "741851206ee82a514048f9c2df678b4c6638d520",
+      "size": 25795
     },
     {
       "path": "tests/component-parity.test.mjs",
-      "sha": "c04f772e9b3fa93dce0a74240568fffdd429fbd8",
-      "size": 21167
+      "sha": "1d93c95febcdc548a703f89d52cd305898fad783",
+      "size": 21594
     },
     {
       "path": "tests/dependency-graph.test.mjs",
-      "sha": "335fbf657828d75e1eeb0033b6c64710ce08075c",
-      "size": 12290
+      "sha": "d8de82297cda12035b4a84b500ac0adb37eb7a5d",
+      "size": 12489
     },
     {
       "path": "tests/game-compiler.test.mjs",
-      "sha": "88de16cb2bff123ddaefe381756cffa3f8e6d54f",
-      "size": 13833
+      "sha": "c8fa0e665fff667c685b556fcc137637d84d38b7",
+      "size": 14017
     },
     {
       "path": "tests/game-http.test.mjs",
-      "sha": "c3b54c280b7386c0f15387498441feb6d73ee4ef",
-      "size": 12149
+      "sha": "fe8b4e9a6960e00e8636eac53358080b2316a2d0",
+      "size": 12289
     },
     {
       "path": "tests/game-runtime.test.mjs",
-      "sha": "5a8d25756f3bc9b19c0d092accf45c7538b71cee",
-      "size": 24371
+      "sha": "b41f91dc3d0799fa005b658aba36af389481d15e",
+      "size": 24776
     },
     {
       "path": "tests/game-service.test.mjs",
-      "sha": "6880b02143e7ced48b9a5584f4ee1c9ca3f5356e",
-      "size": 13084
+      "sha": "b19d5e8d9e5224cfd7e9d21507a37373a8dbfc87",
+      "size": 13249
     },
     {
       "path": "tests/helpers/game-dom.mjs",
-      "sha": "afa1ed2050ca967c3b93721b22b752b1f0e4ddfa",
-      "size": 3546
+      "sha": "d5f436d378e3ef78942088a0c6cdae17e913aa84",
+      "size": 3596
     },
     {
       "path": "tests/helpers/runtime-dom.mjs",
-      "sha": "8b7bf49e2990708309fe3c166e9e9dd40083af5f",
-      "size": 3508
+      "sha": "6f681bfebb5598892b2430571d3800ca671fce41",
+      "size": 3579
     },
     {
       "path": "tests/mcp-protocol.test.mjs",
-      "sha": "7c598328485c4daf9c911b7a30ce3d189fa1addf",
-      "size": 5084
+      "sha": "71b825b065d1853165cdcabf579c1d3364f2c810",
+      "size": 5146
     },
     {
       "path": "tests/page-stack.test.mjs",
-      "sha": "054a2bb5865a10fa2a1e84d685afbb30104cbff8",
-      "size": 9179
+      "sha": "ecfec997ac614ca5bd1bea1aa2213a755ac505d1",
+      "size": 9338
     },
     {
       "path": "tests/preview-contexts.test.mjs",
-      "sha": "e40ec7b216942f01390cda712d031a8c9e6a19e9",
-      "size": 9261
+      "sha": "967b15fc45786688faf0d2795f6ffb5fce7b1615",
+      "size": 9421
     },
     {
       "path": "tests/preview-http.test.mjs",
-      "sha": "23d2c8bc9dfd6223c7b2c3b2d8a012ae577f3d35",
-      "size": 21308
+      "sha": "170427a00d3b4aff09188921c5c8bf4a393cd2e6",
+      "size": 21566
     },
     {
       "path": "tests/preview-service.test.mjs",
-      "sha": "15d8e3e80cfe7d63766c37c992273180a7f71408",
-      "size": 50296
+      "sha": "e6be4e5cb5d08c40bf58cc4df63c40e544716596",
+      "size": 50937
     },
     {
       "path": "tests/preview-shells.test.mjs",
-      "sha": "f398cf821d74b837c8960eaa274f8887be67e085",
-      "size": 11178
+      "sha": "46602f671f70a82dc078f4de0ba94e4fdb101ae5",
+      "size": 11326
     },
     {
       "path": "tests/preview.test.mjs",
-      "sha": "1c021c2c4a4cec5ae4cb108c4e1875a3e282e815",
-      "size": 5270
+      "sha": "bbbe3773358580de874c9f1ccc4cdee8dfa51026",
+      "size": 5352
     },
     {
       "path": "tests/project-access.test.mjs",
-      "sha": "d6a50d5722fd28c5dda26551b2379e54108c7070",
-      "size": 8106
+      "sha": "a6c72e07b377975404180acd1ebd8dd95e5d8ab6",
+      "size": 8234
     },
     {
       "path": "tests/project-builds.test.mjs",
-      "sha": "eeff1cb7754621e407db7887ce29a4b208aea5fa",
-      "size": 15961
+      "sha": "f6317d7255f84382bbaca1206b1386ff398739b3",
+      "size": 16236
     },
     {
       "path": "tests/project-discovery.test.mjs",
-      "sha": "adbe896798de53193071dfb34570f94131802ca5",
-      "size": 8688
+      "sha": "df3e9c9b6d73528934abafc19a0caa5297197c9b",
+      "size": 8831
     },
     {
       "path": "tests/project-storage.test.mjs",
-      "sha": "0fd490e81bf60d021fa94801d0792b4942abab93",
-      "size": 27953
+      "sha": "342471c33e7fa37e13c609a549447b2cd144ef62",
+      "size": 28433
     },
     {
       "path": "tests/recovery-http.test.mjs",
-      "sha": "4f587cfe2626e06235afb30a6c19f06528962880",
-      "size": 6010
+      "sha": "31c6039df30691a9a52280bd205acbc6a03fb90e",
+      "size": 6080
     },
     {
       "path": "tests/runtime-behavior.test.mjs",
-      "sha": "6a07adef469a4a8742a9914067e126a5d47fc506",
-      "size": 17388
+      "sha": "b7f1623b68e9f741babbdbe449e314a5605a25ea",
+      "size": 17676
     },
     {
       "path": "tests/shell-protocol.test.mjs",
-      "sha": "00caec6f3d68995a9c9843a20cfd4177a2f70cf4",
-      "size": 59330
+      "sha": "9e3e2a6020ee453751fd6a878f9e32fb23c21c06",
+      "size": 60124
     },
     {
       "path": "tests/shell-ui.test.mjs",
-      "sha": "6714a48bfdb2a9e2b875df574219c7104f9440ca",
-      "size": 2858
+      "sha": "bde9154d77b4c0d051ea966780c40a648895d819",
+      "size": 2899
     },
     {
       "path": "tests/state-migration.test.mjs",
-      "sha": "cd881fd42361b8b5697d49b661938f4a45446cc8",
-      "size": 9041
+      "sha": "9b355630a5afa053297ed3fcd9045d6a01208d18",
+      "size": 9200
     },
     {
       "path": "tests/viewport-controls.test.mjs",
-      "sha": "4fc0cb1989020212f12c4379185017a1fc0c4809",
-      "size": 5545
+      "sha": "b05c81f0adbf63cc8c6c8ff2b3d2a070dc4fdd64",
+      "size": 5624
     },
     {
       "path": "tests/viewport-styles.test.mjs",
-      "sha": "a0d2990c8487b23686edf1473625900314914be5",
-      "size": 10586
+      "sha": "ad40403a369ff8b86346095d1de2b4c0b99a7ded",
+      "size": 10751
     },
     {
       "path": "tests/wxss-diagnostics.test.mjs",
-      "sha": "e080b935fb900db5df318847aa84b4aa7ca79b88",
-      "size": 7585
+      "sha": "c4cb7abc404342ba446c0f4580f872c36db607ae",
+      "size": 7700
     }
   ]
 }

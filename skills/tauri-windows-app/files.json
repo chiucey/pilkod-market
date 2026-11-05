@@ -2,163 +2,163 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "d39f658be90e758d06ab22c23a537d155e958d8c",
-      "size": 25058
+      "sha": "556866c67b2d7f055a67e598b0760afed47be9ba",
+      "size": 25493
     },
     {
       "path": "_meta.json",
-      "sha": "c2e2e6de85b09d2672818a8e400de4208e43de8a",
-      "size": 136
+      "sha": "05a1b9763ba4395dc95cee1c6a9a152e1e0304ff",
+      "size": 142
     },
     {
       "path": "assets/tauri-template/index.html",
-      "sha": "e28b544b476e7eed10ceac354b29796aed9ea7be",
-      "size": 356
+      "sha": "fa2eb23461754c2b443980c1b1e30df0cb9bdaeb",
+      "size": 369
     },
     {
       "path": "assets/tauri-template/package.json",
-      "sha": "1ba223350943a3a3c075325f0e9baa31662df137",
-      "size": 868
+      "sha": "d9b8a998da9d7e023076617ea7b6e13b4ae25a1b",
+      "size": 903
     },
     {
       "path": "assets/tauri-template/src-tauri/Cargo.toml",
-      "sha": "88d9787aa8ca0d30a60098fd16f887bff0d51dcc",
-      "size": 1370
+      "sha": "94ea85155d23ffad82ef54d1719becbfbb0db8e2",
+      "size": 1413
     },
     {
       "path": "assets/tauri-template/src-tauri/build.rs",
-      "sha": "689bf3fffa9ca9973bedb956c2a7c5ca47dc3ada",
-      "size": 794
+      "sha": "c3686add33f49acc0d2fc5caf6a7d3de8ddb72b4",
+      "size": 809
     },
     {
       "path": "assets/tauri-template/src-tauri/capabilities/default.json",
-      "sha": "94f2d40738018ecd0ef509c0f3b37088e520b516",
-      "size": 383
+      "sha": "3bafbf4a59db44bcda687c8ef237086a38d69f02",
+      "size": 398
     },
     {
       "path": "assets/tauri-template/src-tauri/src/commands.rs",
-      "sha": "bb196bb0895b8c74be401d4cba62df24ffc962d9",
-      "size": 2264
+      "sha": "18a2b6815407b70c0a3110675fd202494bd757d4",
+      "size": 2344
     },
     {
       "path": "assets/tauri-template/src-tauri/src/core/log.rs",
-      "sha": "f30940e6ee561477b264e9eb90322df831443799",
-      "size": 2769
+      "sha": "afe3831dec968c5f42cf5610903ab1b147f9b549",
+      "size": 2862
     },
     {
       "path": "assets/tauri-template/src-tauri/src/core/mod.rs",
-      "sha": "f3cb4cf5d77af2722067b054cb18c2754ef698f3",
-      "size": 87
+      "sha": "40d2d61db90c06614624698593661d45fcc2ddc4",
+      "size": 93
     },
     {
       "path": "assets/tauri-template/src-tauri/src/core/settings.rs",
-      "sha": "b03b194d97192357a2ba49e49006b49a4ef2a721",
-      "size": 4441
+      "sha": "444b102581b74821d2175761a9b1728ed9f8c7dd",
+      "size": 4591
     },
     {
       "path": "assets/tauri-template/src-tauri/src/core/timer.rs",
-      "sha": "49bca723fc9fc90911c4e0d57587e1d1fb0c4eb7",
-      "size": 7822
+      "sha": "557fbad40cf5441ee8abfa46a10910ceaa08b1b4",
+      "size": 8088
     },
     {
       "path": "assets/tauri-template/src-tauri/src/core/tray.rs",
-      "sha": "be8cbe040ff18e97699fb685176a82f1da73a350",
-      "size": 5110
+      "sha": "50ffae06fef4611272c9263efe652bfeb9dff1d6",
+      "size": 5276
     },
     {
       "path": "assets/tauri-template/src-tauri/src/lib.rs",
-      "sha": "b4784def2e161053960ea574d53f72007dc0ab5a",
-      "size": 4519
+      "sha": "2403d32164a348a99f83bd95199656ec8c306130",
+      "size": 4631
     },
     {
       "path": "assets/tauri-template/src-tauri/src/main.rs",
-      "sha": "ea9a4f566837b6b5427d3aa53add7bc8dbd17094",
-      "size": 348
+      "sha": "5a3eb7437d11b4a4fbec4c58668d5880f33fee47",
+      "size": 357
     },
     {
       "path": "assets/tauri-template/src-tauri/tauri.conf.json",
-      "sha": "489cd228da9a886a73ce774c4f47bd664f53f626",
-      "size": 828
+      "sha": "3258eca372dcc4b03c95ea8c755e41f8d860f412",
+      "size": 868
     },
     {
       "path": "assets/tauri-template/src/App.tsx",
-      "sha": "26cc31292abe9408ebdc610ccccb035ec80f62ea",
-      "size": 2431
+      "sha": "499722084037efa356cd52cf0c8088a1981b9343",
+      "size": 2512
     },
     {
       "path": "assets/tauri-template/src/hooks/useSettings.ts",
-      "sha": "58e7b21affa49484f937b727c89f74f6e8080cfb",
-      "size": 2214
+      "sha": "76d90d052adaf0a9c942e4aa13168ea35cd641f4",
+      "size": 2301
     },
     {
       "path": "assets/tauri-template/src/index.css",
-      "sha": "8a4d3e13b648828d6473354beafbc67dec1df910",
-      "size": 8643
+      "sha": "f2dd51cb30e9599c95d7692c724a8e964055568b",
+      "size": 9059
     },
     {
       "path": "assets/tauri-template/src/lib/api.ts",
-      "sha": "3a8722b0a6ab05c11cf372ab28f995018f2dd3d9",
-      "size": 1743
+      "sha": "8d8b731016a51d2370c98f0550cbc8f4c4e3b05c",
+      "size": 1798
     },
     {
       "path": "assets/tauri-template/src/main.tsx",
-      "sha": "f91fa8bf6597f11ec6db50789a1984d6fdd3df8a",
-      "size": 332
-    },
-    {
-      "path": "assets/tauri-template/src/types.ts",
-      "sha": "d7a7d6c63fb90cacbe96a77e06ced9d9facc2356",
-      "size": 814
-    },
-    {
-      "path": "assets/tauri-template/tsconfig.json",
-      "sha": "1a54b594f2c7b411957d4ee20812cf5c0632fc58",
-      "size": 673
-    },
-    {
-      "path": "assets/tauri-template/tsconfig.node.json",
-      "sha": "ee1b5574258290bfdb25dc0f2a75ab7d202858c4",
+      "sha": "f1fbc6deb07961fc9da9f345996b81566b98143d",
       "size": 349
     },
     {
+      "path": "assets/tauri-template/src/types.ts",
+      "sha": "6310dfd2cc671f06e12a114e4db17202ebfd5756",
+      "size": 848
+    },
+    {
+      "path": "assets/tauri-template/tsconfig.json",
+      "sha": "3c2e22e2d61549ea925de0bca5fbba730be68e49",
+      "size": 702
+    },
+    {
+      "path": "assets/tauri-template/tsconfig.node.json",
+      "sha": "b91f4face277ca1dd86fbae772f6e0a38f09ea4f",
+      "size": 364
+    },
+    {
       "path": "assets/tauri-template/vite.config.ts",
-      "sha": "9744701fc1001868398b12a78fdb3e6d06472533",
-      "size": 905
+      "sha": "2bbab5acefd7c4e66753606f61bb1de0ada2a2f1",
+      "size": 946
     },
     {
       "path": "assets/tauri-template/vitest.config.ts",
-      "sha": "8512b92a8ce4f4d37f75db880c6a6edbd7505d9b",
-      "size": 307
+      "sha": "588456214e2ebb76183bbe759ecbcd287aca8802",
+      "size": 321
     },
     {
       "path": "references/env-setup.md",
-      "sha": "5951a96ff7dcdfc1ca132890fb2bd8cffe885b69",
-      "size": 9521
+      "sha": "ecf0635210bc3b0d01ee4c8e8ce70aa2bbefbddd",
+      "size": 9693
     },
     {
       "path": "references/tauri-v2-patterns.md",
-      "sha": "48f1729d239c2783e5c8842e0f157df25b57768d",
-      "size": 11038
+      "sha": "ab6da853cba529c6ee878798e0e5b91ca9b1b524",
+      "size": 11404
     },
     {
       "path": "references/tauri-v2-setup.md",
-      "sha": "f4ff8ba221232ec7e39f81ef6ec87bfbd5b978e1",
-      "size": 8691
+      "sha": "769ca2e77a18d4dc36b5533345df8b1d5061fb23",
+      "size": 9015
     },
     {
       "path": "references/windows-notes.md",
-      "sha": "646aa80c90a33a910c61ff446a9ed3fe128787e5",
-      "size": 6380
+      "sha": "14602c60a38c28441c9c02c98fd3c1e6c6669882",
+      "size": 6565
     },
     {
       "path": "scripts/generate-icons.mjs",
-      "sha": "725b266766562fc9d0effd9cbbc5dfc5bc461a89",
-      "size": 9611
+      "sha": "8c6b0feb551e8aee696293e4c5ad09c137f82a6a",
+      "size": 9917
     },
     {
       "path": "scripts/verify-bundle.mjs",
-      "sha": "9b939ce84022f839225c44d7c194201a8431db1a",
-      "size": 6672
+      "sha": "68a1518cf790164b4487b62b679cbe6611082328",
+      "size": 6834
     }
   ]
 }

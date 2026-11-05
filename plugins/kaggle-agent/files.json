@@ -3,33 +3,33 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "daab9d2ebdb49434dd37e45dd3477c0f45392396",
-      "size": 1805
+      "sha": "7ee74173af85e89f146b8a0d9fc9caa6d01cc8b9",
+      "size": 1844
     },
     {
       "path": ".gitattributes",
-      "sha": "b4b9374fb8d60c101fdcd281fc6a900fdecf0fe2",
-      "size": 478
+      "sha": "ec4109c8dc7786127b8c49926fe4f435fd2bdbde",
+      "size": 484
     },
     {
       "path": ".gitignore",
-      "sha": "a678e13bb5a1d2781d0c6105d8ba95814a203c5c",
-      "size": 1922
+      "sha": "f6e81280d2f8624f785f3058346d3b1ee07285bb",
+      "size": 1968
     },
     {
       "path": "README.md",
-      "sha": "45353167f06b4fe2a933b16eecc228395f689c3d",
-      "size": 11461
+      "sha": "de95d7b1d4a3d48eb3c0eefabf26322028da5237",
+      "size": 11683
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "734522e7e08310e3b72701a873d456e18ca4073a",
-      "size": 10730
+      "sha": "53371ee73cf3caa8c74d510e5bef2cf3792affa3",
+      "size": 10938
     },
     {
       "path": "bin/kaggle-cli.cmd",
-      "sha": "0c8e86dae5948261ed3c290b703a01adda1cbc33",
-      "size": 2434
+      "sha": "56e9cc2c73c94deb8e19cc159031855ada105cb2",
+      "size": 2483
     },
     {
       "path": "bin/kaggle-cli.sh",
@@ -38,8 +38,8 @@
     },
     {
       "path": "bin/run-mcp.cmd",
-      "sha": "27c038ffff184b0b2495b2298db2b16fcde211e5",
-      "size": 2426
+      "sha": "3c778f29c34233e558c1cdfa9b044cc5ea1e48e3",
+      "size": 2474
     },
     {
       "path": "bin/run-mcp.sh",
@@ -48,18 +48,18 @@
     },
     {
       "path": "docs/architecture-launch-path.svg",
-      "sha": "88e67897b88daecda1ddb4328c1e28fb821f638c",
-      "size": 12066
+      "sha": "3e36cd1e85ff1719484f585d00fbc16991261175",
+      "size": 12120
     },
     {
       "path": "docs/architecture-rsi-tree.svg",
-      "sha": "32c2f9c535b3e365cfd500d552dd0baeb1146b97",
-      "size": 15601
+      "sha": "054a99836d097552f2f4a93b0e6c2af3e166eb65",
+      "size": 15675
     },
     {
       "path": "docs/architecture-skill-layers.svg",
-      "sha": "5fd9d1d321895ed692fb9f24f83900ac5530f74a",
-      "size": 14606
+      "sha": "fd9800e516eff0bb046150e1a727f33b476e2d5d",
+      "size": 14683
     },
     {
       "path": "icon.png",
@@ -68,483 +68,483 @@
     },
     {
       "path": "mcp/agent_server.py",
-      "sha": "7bd2edb89ca801c71059f55a680d9b912a2eb508",
-      "size": 6141
+      "sha": "b0b96ea211241678186d2135903f496bbaf017be",
+      "size": 6277
     },
     {
       "path": "mcp/credentials.py",
-      "sha": "ac76e41144f18e8308fdd201a03db3395f95eba4",
-      "size": 18805
+      "sha": "1f1c93fac993dfc5306b035c5edfec0600d27b2d",
+      "size": 19252
     },
     {
       "path": "mcp/deps.py",
-      "sha": "50e41adfdc761013a316e771a8938ae0bc1956cb",
-      "size": 13768
+      "sha": "39f5b7d572f5351ef73f74c2741b33349a890e26",
+      "size": 14081
     },
     {
       "path": "mcp/experiment_tree.py",
-      "sha": "4953b3e1a25db3c1162dc35d2179d7c4fc3e274f",
-      "size": 238425
+      "sha": "f9d0e1248891aac6068e35140c8ac829dd1014af",
+      "size": 243300
     },
     {
       "path": "mcp/github_sync.py",
-      "sha": "8f36fb4904947cfef1da1cb4c7f4ccda299c49c5",
-      "size": 20957
+      "sha": "547fae51d86fba883abf896b559599c5f37e0138",
+      "size": 21488
     },
     {
       "path": "mcp/graphstate.py",
-      "sha": "aed16df6e99447bc5b30e7cd9300d580ee8da49a",
-      "size": 9802
+      "sha": "b8d2e0ed10c280c4bd5b2a413ccfe1096789adf5",
+      "size": 10057
     },
     {
       "path": "mcp/handoff.py",
-      "sha": "dfe61070882dd3938861a2a3bdf0888424e43be4",
-      "size": 14701
+      "sha": "a9f3aebdc8fe2f08881c152b28ec81e83abb331a",
+      "size": 15081
     },
     {
       "path": "mcp/kaggle_cli.py",
-      "sha": "6a8f8aa7b09340e476c22cb17f66cd711730cf05",
-      "size": 6797
+      "sha": "60adda7408dde90fe9b47280497e2640657e902f",
+      "size": 6976
     },
     {
       "path": "mcp/kaggle_server.py",
-      "sha": "a8ee0b69aedd7753a7e6fd051bca1fdf9f47c322",
-      "size": 215134
+      "sha": "ec585e7a59f79df7a26b665be6145d44e83888d3",
+      "size": 219191
     },
     {
       "path": "mcp/logmonitor.py",
-      "sha": "1fe653c2ea06280dbe43368ac6b7eb7c82e2a8ad",
-      "size": 25081
+      "sha": "68ae88705f4afcdb820d69c813404fa61a32563f",
+      "size": 25671
     },
     {
       "path": "mcp/plots.py",
-      "sha": "dbb7c11fb18620a08051dbedeae52b0af821dcbc",
-      "size": 22712
+      "sha": "8aaf4c6ee95b60effb302720755a421bcd593bdc",
+      "size": 23176
     },
     {
       "path": "mcp/presence.py",
-      "sha": "0067438e0b8c362ecd63521938b2001575ae7328",
-      "size": 11882
+      "sha": "440b083436eefcfb0be7eeea44d98170529f0281",
+      "size": 12188
     },
     {
       "path": "mcp/searchengine.py",
-      "sha": "2ebe9934ae5e8c479406f2a88cdc6eed47abf969",
-      "size": 8914
+      "sha": "ce5eda935ddc2400afe3c361316cd93e33e0cc6c",
+      "size": 9138
     },
     {
       "path": "mcp/sources.py",
-      "sha": "78d7fdc89ff33ee73fc571a1d0ed3443cf87d8f9",
-      "size": 15996
+      "sha": "16421f2ad8fb32b67cd2956fef65bb2c0974f154",
+      "size": 16382
     },
     {
       "path": "mcp/structured.py",
-      "sha": "8e33419e7fc0be198f1a35f0eef18d125c08be4d",
-      "size": 8880
+      "sha": "3907ffbcfc57825f629a910af4742f8a73fc5d90",
+      "size": 9071
     },
     {
       "path": "servers.mcp.json",
-      "sha": "532986be5cb4b92ac739fa9143987903fd839b5d",
-      "size": 1315
+      "sha": "360d6370c381d724a6d0f9e2cd746cabec79fce3",
+      "size": 1332
     },
     {
       "path": "skills/README.md",
-      "sha": "bdd89d76513633846de7207b2aecd4b3fd7641a2",
-      "size": 11451
+      "sha": "52b8c70de7bb3cab0312b1411a186ccb5bb2082d",
+      "size": 11595
     },
     {
       "path": "skills/_shared/README.md",
-      "sha": "a4410779efc33940dda47ee763a9288e77e16f56",
-      "size": 2487
+      "sha": "c0524b1237cb21550531379601c3f8f47de29862",
+      "size": 2537
     },
     {
       "path": "skills/_shared/genui-widget/COMPONENTS.md",
-      "sha": "457c968538c74c4624813b4438d280aeea968dac",
-      "size": 6394
+      "sha": "679f7c9d8008085da24f58f1a41b93695fc42a31",
+      "size": 6531
     },
     {
       "path": "skills/_shared/genui-widget/FOUNDATION.md",
-      "sha": "cde963826a0bff3c1feb7844002547b22ebb2e98",
-      "size": 22319
+      "sha": "ef8bac1513f00d9501b49c1bd71a7d6a179c4d71",
+      "size": 22754
     },
     {
       "path": "skills/_shared/genui-widget/references/color-system.md",
-      "sha": "af460c46aa75b45871a650e329180331a54b8172",
-      "size": 8023
+      "sha": "32b77817686150f4ac0c6a6f459f1851952654aa",
+      "size": 8254
     },
     {
       "path": "skills/_shared/genui-widget/references/visual-rules.md",
-      "sha": "bdb1a7fa936988e7b4d982108ab45652f0d21ce0",
-      "size": 4989
+      "sha": "215f401ab8817fe77da33acd056be2f75e93f0ec",
+      "size": 5082
     },
     {
       "path": "skills/_shared/genui-widget/references/widget-patterns.md",
-      "sha": "335279f5154ac0e8b9dcd48156268930a704a355",
-      "size": 7498
+      "sha": "f97a13a72800c6b29793e94fc0cf77cb9db0a0e5",
+      "size": 7689
     },
     {
       "path": "skills/_shared/genui-widget/references/widget-recipes.md",
-      "sha": "b1a0f7ced95a076b5fdae309669075036a57841f",
-      "size": 9456
+      "sha": "9fe600bc44cc47c0db63bca1bf05e42e0b5b473c",
+      "size": 9704
     },
     {
       "path": "skills/ablation-design/SKILL.md",
-      "sha": "021d9079d18a50480e1c73c1a18eed58016f301e",
-      "size": 10183
+      "sha": "fd9c50ff3b7bb8babcc3508560162d53fa234bd3",
+      "size": 10358
     },
     {
       "path": "skills/account-rename-visualizer/SKILL.md",
-      "sha": "88aa8ab53a8e7652f1021838b3f895aec457a3b4",
-      "size": 6552
+      "sha": "2e632404acaa7e22f9e55d07af38b5bfc75421e2",
+      "size": 6679
     },
     {
       "path": "skills/account-rename-visualizer/genui.json",
-      "sha": "bc1dd0e0a11dff446af31ff1069e802f34241352",
-      "size": 274
+      "sha": "262f77c3b08af3887c4a32c80fbf5045ea4741d9",
+      "size": 282
     },
     {
       "path": "skills/account-rename-visualizer/references/components.md",
-      "sha": "965bd315b2a9f64ecb87ec7963b6351eaba2ed70",
-      "size": 6388
+      "sha": "182d9afcaf4c3822bd7be53cf7fec25cf8a140f6",
+      "size": 6513
     },
     {
       "path": "skills/account-rename-visualizer/references/data-schema.json",
-      "sha": "da59fad1872a70f9191a477986bb95366ef8b65a",
-      "size": 3113
+      "sha": "a52c6a65048dc71e6707b29674e02ff646aaab3f",
+      "size": 3177
     },
     {
       "path": "skills/account-rename-visualizer/references/examples.md",
-      "sha": "c476f7ed862cda8d3d930cd47cbc59088bdae92f",
-      "size": 10378
+      "sha": "ca3a48d7ddb38c987e314f8a41e9e0a899d5eea4",
+      "size": 10627
     },
     {
       "path": "skills/approach-decision/SKILL.md",
-      "sha": "be8b51ba339a3b5c556dba68f3113c11016b261e",
-      "size": 9030
+      "sha": "1ddbd0cf5e4b0a875008006dfeebef1370c57149",
+      "size": 9185
     },
     {
       "path": "skills/categories/collab.md",
-      "sha": "86a7284048744a7c6cb761a4d1a0a68cfc924f18",
-      "size": 9416
+      "sha": "6bda87c42d0b8722e272f3d976785ec17d4f6a05",
+      "size": 9507
     },
     {
       "path": "skills/categories/experiment.md",
-      "sha": "3baf7df3ec142b01e91182a67fe5a7e7f368e903",
-      "size": 18087
+      "sha": "644d17d2d920d3079d73ecb0f1b8c5f4a0aaa91d",
+      "size": 18244
     },
     {
       "path": "skills/categories/identity.md",
-      "sha": "62bb913eef94096f77f8de6ab479bc6c4ebde558",
-      "size": 4609
+      "sha": "692291f506600ea166a938c156563dc7023f5404",
+      "size": 4668
     },
     {
       "path": "skills/categories/research.md",
-      "sha": "32615a2d96656b9411959d2f2d2158128b238ea8",
-      "size": 8615
+      "sha": "8cc881fd64508049e0e02e8b0e3781f9a20f28e5",
+      "size": 8715
     },
     {
       "path": "skills/evidence-sources/SKILL.md",
-      "sha": "8e87da8c4201a0a14c52496566bfc7658ff31517",
-      "size": 6601
+      "sha": "cd970d9d431c47258dbda78e406fcf6cc32731d3",
+      "size": 6742
     },
     {
       "path": "skills/experiment-launch/SKILL.md",
-      "sha": "34cbaef1d4f2a21fc58e48fb0b9b91c444adb1e1",
-      "size": 12465
+      "sha": "e649001615febf5cbec69fb1d6ab329c90b1139b",
+      "size": 12718
     },
     {
       "path": "skills/genui-scenarios/SKILL.md",
-      "sha": "7338a70e42b37f11ae5f760e302fe6975684bf6e",
-      "size": 11754
+      "sha": "2265a4b33dbd61831206a0ffeeb82653a5ec6da2",
+      "size": 11931
     },
     {
       "path": "skills/github-auth/SKILL.md",
-      "sha": "2f52ec7b549b928b05f7cf07a0357f10d31f6bd1",
-      "size": 7306
+      "sha": "b5e7fce860ff7454fd64ab8b5d2656c6e7866f6c",
+      "size": 7451
     },
     {
       "path": "skills/handoff/SKILL.md",
-      "sha": "8d34b8b41093e8cd06f6fe2ea77995c5a8fe5fa4",
-      "size": 8009
+      "sha": "835ca841315b169091e577859352a1c1fce70b64",
+      "size": 8166
     },
     {
       "path": "skills/kaggle-account-switch/SKILL.md",
-      "sha": "900c7f79802808905a62370028b6dcd4e2cf2e68",
-      "size": 8951
+      "sha": "019de8b9f86bc26f19dff9a6cfe990d589e6789a",
+      "size": 9136
     },
     {
       "path": "skills/kaggle-cli/SKILL.md",
-      "sha": "48633a7b1eef8dc821d0c7e743be9c13aeabe8fc",
-      "size": 8611
+      "sha": "304f9b233c63d73092e77e148dbee45c0a9ca625",
+      "size": 8775
     },
     {
       "path": "skills/kaggle-competition-research/SKILL.md",
-      "sha": "f167602ff28f2d4dc7a29dc21ba4d66a03486992",
-      "size": 69414
+      "sha": "1f1a8d8a567ac5b60b6e397522bd064d3c6462f0",
+      "size": 70521
     },
     {
       "path": "skills/log-monitor-visualizer/SKILL.md",
-      "sha": "68347d91345f66a53489831c5d7e08f12a519665",
-      "size": 5720
+      "sha": "b103164aa57eeaa8ecbbd6dcc4ab077ea658f9b3",
+      "size": 5836
     },
     {
       "path": "skills/log-monitor-visualizer/genui.json",
-      "sha": "ce9cb6cef6e25c696b2b48de36b9caa7a5ae90bb",
-      "size": 264
+      "sha": "f8ac0fadece93b7efc11487b251cc99cc3ecb70d",
+      "size": 272
     },
     {
       "path": "skills/log-monitor-visualizer/references/components.md",
-      "sha": "8693f6f636df64e2dac187e967118670f6ffca32",
-      "size": 6745
+      "sha": "0b49b07d5516663196e041c723b2ca2da69424f6",
+      "size": 6886
     },
     {
       "path": "skills/log-monitor-visualizer/references/data-schema.json",
-      "sha": "04a2d509cc1e7295a9ed6005182f98864c6e0a47",
-      "size": 2690
+      "sha": "bbe1f8706dc37610ba30fb4759d934d51b7130d6",
+      "size": 2751
     },
     {
       "path": "skills/log-monitor-visualizer/references/examples.md",
-      "sha": "491a923bc8484601c6715548b68548664982fee2",
-      "size": 11049
+      "sha": "ef99bc7618cfb13485ff41fc7feef5726218b1e2",
+      "size": 11294
     },
     {
       "path": "skills/log-monitor/SKILL.md",
-      "sha": "d926fd0c4d5dd985a8f87d582263d48f0c652646",
-      "size": 19384
+      "sha": "b3c584cad6eef25aa17cc507b94854e7a354ecb3",
+      "size": 19723
     },
     {
       "path": "skills/presence-mode/SKILL.md",
-      "sha": "9c397bb9565f750310ff18ae696854579d81d891",
-      "size": 9199
+      "sha": "c5558f006f8808c64ca2cfc3ff0c542147181a85",
+      "size": 9374
     },
     {
       "path": "skills/relationships.json",
-      "sha": "8d4557a115fbcaf5ff0e3a2e515ef53583e5dd1a",
-      "size": 37179
+      "sha": "4c0ebc9e9187f407186c2a1b133584fda4d58792",
+      "size": 37978
     },
     {
       "path": "skills/rsi-experiment-tree/SKILL.md",
-      "sha": "21eaf999f62f8f796ad56abf501cd9be2f5daec3",
-      "size": 35289
+      "sha": "c22d6d5e3727ae888e957f8afde65c798f373a73",
+      "size": 35950
     },
     {
       "path": "skills/ruler-audit/NOTICE.md",
-      "sha": "1be194fa55ffdb78b89b764ad58cd9e66ff480b4",
-      "size": 6413
+      "sha": "c8afe7ae6a354aa109a43a66ef13c267ec98fe61",
+      "size": 6506
     },
     {
       "path": "skills/ruler-audit/SKILL.md",
-      "sha": "145e1ced6839725a9e1e6469148ab0d6c6e19f41",
-      "size": 15415
+      "sha": "81cfe4ed0683132011352f778b230996745b3f65",
+      "size": 15649
     },
     {
       "path": "skills/ruler-audit/references/adoption.md",
-      "sha": "44c149f9980224d8c0cef079e1506c92e0021f22",
-      "size": 7417
+      "sha": "0fe2217499642da7f477ba2b0d4b992f6ac5fffc",
+      "size": 7548
     },
     {
       "path": "skills/ruler-audit/references/checklist.md",
-      "sha": "1c749bd4e74f9dd360e9f1fe752684032b87a934",
-      "size": 20534
+      "sha": "06fa0eda661c3edf1d3a8dd6e6bc292c4e2932cd",
+      "size": 20864
     },
     {
       "path": "skills/ruler-audit/references/resolution.md",
-      "sha": "ef6847ab2a07ce55b93aec3005f6f72da168ecc8",
-      "size": 9010
+      "sha": "dfdafd6d7ed974f49a508c2619cae5f7851386e0",
+      "size": 9167
     },
     {
       "path": "skills/ruler-audit/references/triage.md",
-      "sha": "59c69805d22a23626d20e61e8776e756b24e7dbe",
-      "size": 11703
+      "sha": "fee1844ab2fc92c875c260e6d47ab1b9cd1ef534",
+      "size": 11874
     },
     {
       "path": "skills/ruler-audit/references/upstream/README.md",
-      "sha": "6388cd869f00af96ffaac670abd42eef7415f69d",
-      "size": 4151
+      "sha": "2edbda4d51dff090c38c2bcd41f62a24fb2ac743",
+      "size": 4227
     },
     {
       "path": "skills/ruler-audit/references/upstream/blog-automating-eval-design-and-hillclimbing.md",
-      "sha": "d4ffd3b14c6cb34557325c6b7c81a40dd3cbb18a",
-      "size": 10866
+      "sha": "63a4d0d57aa8f9ee6a391c6b1e1f1e959c9f3e4b",
+      "size": 11034
     },
     {
       "path": "skills/ruler-audit/references/upstream/build-eval.md",
-      "sha": "3704145ecaac7788f61cc6987431a3fff5bb40d0",
-      "size": 54819
+      "sha": "b5fd990402f537b515e041e6df3d627fd5bda932",
+      "size": 55052
     },
     {
       "path": "skills/ruler-audit/references/upstream/cost-hillclimb.md",
-      "sha": "9cbcd8475285e32bddf959aa27d27e00f2505fed",
-      "size": 31574
+      "sha": "57f5167e03cd57d40cd4db3d01299fb88d4eee4f",
+      "size": 32015
     },
     {
       "path": "skills/ruler-audit/references/upstream/eval-audit.md",
-      "sha": "bc277162f32f11c98639621d94c4a3b90ce6d33d",
-      "size": 27892
+      "sha": "a74a18479ded5ab064ffd0d8a12cd2de49579c1a",
+      "size": 28096
     },
     {
       "path": "skills/ruler-audit/references/upstream/eval-hillclimb.md",
-      "sha": "7ff41e01bd409597eed2d6fe2b9eb16f6385c387",
-      "size": 68773
+      "sha": "e662e8565dd438ce9a9b1a07343ad064d13ada0b",
+      "size": 69111
     },
     {
       "path": "skills/ruler-audit/references/where-hard.md",
-      "sha": "c3997005badbeb4fec0f49e3767917150bac1cc8",
-      "size": 9708
-    },
-    {
-      "path": "skills/scientific-plotting/SKILL.md",
-      "sha": "1fc9637c16a178fc413a577d9babe6d4a7e72d96",
-      "size": 10472
-    },
-    {
-      "path": "skills/scientific-plotting/assets/color_palettes.py",
-      "sha": "137ef9d7aae053fb7a6dc421da6e8c5039f5a94e",
-      "size": 6756
-    },
-    {
-      "path": "skills/scientific-plotting/assets/nature.mplstyle",
-      "sha": "b10d1249a9e6701ac0fb3e9270a40c8bf828b48e",
-      "size": 1619
-    },
-    {
-      "path": "skills/scientific-plotting/assets/presentation.mplstyle",
-      "sha": "e4930f52548afed348d35f71c751dd04781ed4bd",
-      "size": 1460
-    },
-    {
-      "path": "skills/scientific-plotting/assets/publication.mplstyle",
-      "sha": "106936e07ed94b9bb68d0743aee542f91877e14f",
-      "size": 1817
-    },
-    {
-      "path": "skills/scientific-plotting/assets/publisher_profiles.json",
-      "sha": "7d99e7ebb860d31bc85f6cecdbfc1497e1b9edfd",
+      "sha": "e62401d3c2ce18d9614983b5d27e78f40339a336",
       "size": 9863
     },
     {
+      "path": "skills/scientific-plotting/SKILL.md",
+      "sha": "dda23e063c4652dfdf480d609e881e3582701db0",
+      "size": 10664
+    },
+    {
+      "path": "skills/scientific-plotting/assets/color_palettes.py",
+      "sha": "5bfd70353bb2d6549f041e2902b00d71b4fae4be",
+      "size": 7019
+    },
+    {
+      "path": "skills/scientific-plotting/assets/nature.mplstyle",
+      "sha": "9f50fbcbd7e63f2d3bcef741a7b4db62393b09fa",
+      "size": 1687
+    },
+    {
+      "path": "skills/scientific-plotting/assets/presentation.mplstyle",
+      "sha": "87593962363e7148ae788671a73077908a407c3d",
+      "size": 1528
+    },
+    {
+      "path": "skills/scientific-plotting/assets/publication.mplstyle",
+      "sha": "bb5a746aee750e7a7c6217340fb3082dbc6bca68",
+      "size": 1894
+    },
+    {
+      "path": "skills/scientific-plotting/assets/publisher_profiles.json",
+      "sha": "a882621bb75b4f02fd7f61fbc26132c074a00f28",
+      "size": 10132
+    },
+    {
       "path": "skills/scientific-plotting/references/color_palettes.md",
-      "sha": "6b1a6c6e0a177e20d3c30e8c11acb80b90e684b5",
-      "size": 9094
+      "sha": "628c88bcd1cfa9db9e8348355843b1932c0183bc",
+      "size": 9321
     },
     {
       "path": "skills/scientific-plotting/references/journal_requirements.md",
-      "sha": "cf7438c59195f5897248fcabcf9e2a1b8e9f9d61",
-      "size": 10412
+      "sha": "e571af58cb32d37a6f4b9c195c67ebb32a7a2091",
+      "size": 10581
     },
     {
       "path": "skills/scientific-plotting/references/matplotlib_examples.md",
-      "sha": "a752a880079d558c200bdf49d5e0e9313a493bbf",
-      "size": 11054
+      "sha": "2927edd30beb830522d956cbc17ac13cf1e1740a",
+      "size": 11390
     },
     {
       "path": "skills/scientific-plotting/references/publication_guidelines.md",
-      "sha": "dea3863b9d851a42c7f7fa06779d6edc15b6a495",
-      "size": 12709
+      "sha": "f32c5cb50f6e838f7feb21f8d8d33de3671cf312",
+      "size": 12905
     },
     {
       "path": "skills/scientific-plotting/references/sources.md",
-      "sha": "2025cc8e70ee66551510b6a19fe2141907f50e65",
-      "size": 8837
+      "sha": "8b0fca8144dceda29b5a4c8d68b084c9685a8716",
+      "size": 8913
     },
     {
       "path": "skills/scientific-plotting/scripts/_common.py",
-      "sha": "6c8355a4ad1e6de09e045e277fd8360fa6b181ac",
-      "size": 4351
+      "sha": "3550d2416a1a1ce7678adbd31cf8805e16d43dba",
+      "size": 4487
     },
     {
       "path": "skills/scientific-plotting/scripts/export_plan.py",
-      "sha": "24a6f18c795dbe7171a121365392e6a0aa3be5a5",
-      "size": 16700
+      "sha": "89f4f86cc821d6925e009953407532624ef69fea",
+      "size": 17193
     },
     {
       "path": "skills/scientific-plotting/scripts/figure_export.py",
-      "sha": "8035a2c2964faa53448a4aef1ffb330cedca4626",
-      "size": 22256
+      "sha": "d5459e0d74d3d64d48fb0980d837912dd7d5c7f6",
+      "size": 22898
     },
     {
       "path": "skills/scientific-plotting/scripts/image_metadata.py",
-      "sha": "5541e51891af8e0072fb5ce53281ebdb424307a7",
-      "size": 25029
+      "sha": "e2c0fc916c512fbd3b96b7b8a4f8f91df11ee24a",
+      "size": 25760
     },
     {
       "path": "skills/scientific-plotting/scripts/palette_audit.py",
-      "sha": "e12e158db2098b3e3c7c976bf6889de81069bf52",
-      "size": 11654
+      "sha": "8f78a3ba621a5ea3f2eb0393ce3c04a4088d7836",
+      "size": 11981
     },
     {
       "path": "skills/scientific-plotting/scripts/style_presets.py",
-      "sha": "d5b50fa37e92f20bc2ada900ed82e8795ad5ab86",
-      "size": 16123
+      "sha": "6e371a9f26294384511f9efc5b967c574e9868f6",
+      "size": 16624
     },
     {
       "path": "skills/scientific-plotting/scripts/style_preview.py",
-      "sha": "7b68a529de02a4c7bda9a295a60872ad86a5789b",
-      "size": 7762
+      "sha": "79d14935cb949c666bbc7f53519f1c37c097f0db",
+      "size": 7994
     },
     {
       "path": "skills/technical-report/SKILL.md",
-      "sha": "506762ff51b828e8461200521159901e9ec6ac31",
-      "size": 8013
+      "sha": "b3c913c4a1c4b9f79831fe4a8d4d0982b6436768",
+      "size": 8157
     },
     {
       "path": "tools/check_plugin.py",
-      "sha": "6c35af491853c9335cc6765d9b08fa8b93384119",
-      "size": 301382
+      "sha": "834cf5ee9821ab664604cab1b8c5e8406db887ab",
+      "size": 306959
     },
     {
       "path": "tools/check_tree_seeding.py",
-      "sha": "6fdd0705b789e611e44a3c079742212c87827d92",
-      "size": 6785
+      "sha": "f0ae7ccac4f673824250cf4ae9ca3a12a2b59341",
+      "size": 6935
     },
     {
       "path": "tools/draw_architecture.py",
-      "sha": "01848ccf87cb4a2b1a667918418f8d0623fbbbba",
-      "size": 19625
+      "sha": "294c4745e682dd33400312eed36507838f524043",
+      "size": 20021
     },
     {
       "path": "tools/probe_ablation_cycle.py",
-      "sha": "5838afb6ad0f4a55fbc4cc6fbb6ddfd02458ef6a",
-      "size": 10169
+      "sha": "ee9978a082da68b1894278cc86ace1bc9b13085e",
+      "size": 10409
     },
     {
       "path": "tools/probe_account_scope.py",
-      "sha": "0033c6b22cbe863a613e0dbe88b1329b2f58fc9c",
-      "size": 8521
+      "sha": "573a7f0c3e20328b4b7323bbf13f9517dde81f19",
+      "size": 8705
     },
     {
       "path": "tools/probe_claim_audit.py",
-      "sha": "0cfdcbc5df372449bf49c32ed2d1ce65724f6436",
-      "size": 8671
+      "sha": "a521c4a95743c074c9e093571d041acbb7262045",
+      "size": 8867
     },
     {
       "path": "tools/probe_marketplace_layout.py",
-      "sha": "f863e674bfb6c1fcd5bcf3c77d845a32515af044",
-      "size": 18757
+      "sha": "ac4fe88118513acdaebf5b7c2281c19e5d00d0c9",
+      "size": 19183
     },
     {
       "path": "tools/probe_monitor_cycle.py",
-      "sha": "dc65c6dfdb1d994a2c49856e0b9b2614a61b00c0",
-      "size": 6142
+      "sha": "4e0c310799016d20d00548bb8788edff3a124187",
+      "size": 6290
     },
     {
       "path": "tools/probe_plot_cycle.py",
-      "sha": "6a2559a42e215753feffe60a6d1e4b8676ecbf48",
-      "size": 10332
+      "sha": "8a748826f4b6b73608dc4620c49d3a524ddf66b0",
+      "size": 10565
     },
     {
       "path": "tools/probe_transport.py",
-      "sha": "ab0d44e6de10999519b3b57d340852cbff04c706",
-      "size": 6853
+      "sha": "4582f31dcec59d910fd3aedfbb425651fdba3102",
+      "size": 7023
     },
     {
       "path": "tools/prove_counter_examples.py",
-      "sha": "7d56658266aa28f952e27b3dd20143592579e9b4",
-      "size": 89129
+      "sha": "3e2cbce264bed6e043ecb13ea7e83bfb973cfd17",
+      "size": 91003
     },
     {
       "path": "tools/verify_upstream_quotes.py",
-      "sha": "47d9a30a424750175e8812b0602bdeaefac515cf",
-      "size": 7310
+      "sha": "4390b6689ae9a19d672ef8e34aa441d9132e40de",
+      "size": 7491
     }
   ]
 }

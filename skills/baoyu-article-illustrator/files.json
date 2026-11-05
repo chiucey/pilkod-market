@@ -2,158 +2,158 @@
   "files": [
     {
       "path": ".skill-metadata.yaml",
-      "sha": "6df10ce300a322e2b5aca3c429ed7e3a29504749",
-      "size": 3296
+      "sha": "c66132b24b59738e547cf078d562d3224f446c6d",
+      "size": 3393
     },
     {
       "path": "SKILL.md",
-      "sha": "71a65c20b7fa9b45a3d114e0ea5aef8f055f6385",
-      "size": 6536
+      "sha": "ad16686a9215bcb9aeaa52752532199c0d39c51b",
+      "size": 6693
     },
     {
       "path": "_meta.json",
-      "sha": "83481d28c5ea6fe339cb4bdfecc69c70ba0f023d",
-      "size": 144
+      "sha": "34e5d828d1e41efabac2e6d59af063082a3712fe",
+      "size": 150
     },
     {
       "path": "prompts/system.md",
-      "sha": "9eaf2a7f512cf9eea4058b1aa9da3e03761e7177",
-      "size": 1080
+      "sha": "4f98c4db20399ef6691d19773a832055e4d42af7",
+      "size": 1112
     },
     {
       "path": "references/config/first-time-setup.md",
-      "sha": "e8ece88a868eb5e0dfd9ebdbd29e01120cef24bd",
-      "size": 3035
+      "sha": "b7242f0a0f44038bc8088deb2c5b14bb3cf9b512",
+      "size": 3156
     },
     {
       "path": "references/config/preferences-schema.md",
-      "sha": "862abbccfdd4a4f7d3165e55d5c475ea62da08a7",
-      "size": 3332
+      "sha": "8a0bc70d6ab175daf9da2b5d060d71fba5ae3065",
+      "size": 3456
     },
     {
       "path": "references/prompt-construction.md",
-      "sha": "7ede2b58683ff90d3ae4602544552810239f1e4a",
-      "size": 6552
+      "sha": "f7ff1459062bd9204f59ee876d1915dc360aa75d",
+      "size": 6804
     },
     {
       "path": "references/styles.md",
-      "sha": "9cacc9e103d0a031365c281c50a80ab989ad78a3",
-      "size": 6898
+      "sha": "9114527e81cb38cb0dee5fb36436bc53f20e8e88",
+      "size": 7072
     },
     {
       "path": "references/styles/blueprint.md",
-      "sha": "8e44b5852d08fad300d6d94aaf2bb0a53495e9e6",
-      "size": 1844
+      "sha": "08901cc7c4f20229ed66c7123defcc6d19394a7d",
+      "size": 1901
     },
     {
       "path": "references/styles/chalkboard.md",
-      "sha": "31cc36140e4c9160a1bac6f234b0e2f3e4271943",
-      "size": 2249
+      "sha": "351d5062acd227995739998eb98a25c16e9ab65d",
+      "size": 2311
     },
     {
       "path": "references/styles/editorial.md",
-      "sha": "6d12e55c31f5a875ba11e089627d945707965563",
-      "size": 1722
+      "sha": "f7bbb8e9ba0743d290ca9a0afcefbdd6b7f377e1",
+      "size": 1781
     },
     {
       "path": "references/styles/elegant.md",
-      "sha": "e7ad444723e512865b281921b8c64b1f15be7919",
-      "size": 1733
+      "sha": "216e3649211650867029cf30ecea14dd0dd3ac8f",
+      "size": 1789
     },
     {
       "path": "references/styles/fantasy-animation.md",
-      "sha": "d2463c4d763c735bceef64a0fcf3e1e1b4f29a51",
-      "size": 1969
+      "sha": "f8c6d969018a2bfbd41606d75a3f4c69838f9764",
+      "size": 2027
     },
     {
       "path": "references/styles/flat-doodle.md",
-      "sha": "36abe92775589e2264e483bb9894c343dca018a8",
-      "size": 1869
+      "sha": "e37d44be8dfa8d64d69ee01034089e70fa20a8cc",
+      "size": 1930
     },
     {
       "path": "references/styles/flat.md",
-      "sha": "f24c5ced655060b108856d12e66660e12d63e561",
-      "size": 1688
+      "sha": "cc630624bcb544b4b7f97a14ddc6744b678a43ff",
+      "size": 1747
     },
     {
       "path": "references/styles/intuition-machine.md",
-      "sha": "aed3d9aaa3f72e7c37fbbd262c2e87b206fc4246",
-      "size": 1850
-    },
-    {
-      "path": "references/styles/minimal.md",
-      "sha": "98ee096d5fbd2a2b80c3f493cdaea3d4729a4cde",
-      "size": 1607
-    },
-    {
-      "path": "references/styles/nature.md",
-      "sha": "39ca82e0d515d3331814d3ad77d35ab7cb633fff",
-      "size": 1703
-    },
-    {
-      "path": "references/styles/notion.md",
-      "sha": "5083f4cd7423708c95cf926cfdee3f786e256870",
-      "size": 1636
-    },
-    {
-      "path": "references/styles/pixel-art.md",
-      "sha": "dadeb29e8312b1f24685782d7db1af52727b9a57",
+      "sha": "7c923d2fc94d2cb52acb9a4fefb368a076e0fb0c",
       "size": 1907
     },
     {
+      "path": "references/styles/minimal.md",
+      "sha": "4105c10ee4a16195ea2ea54a6ea2fb8710a1aaf5",
+      "size": 1665
+    },
+    {
+      "path": "references/styles/nature.md",
+      "sha": "030d8e431f4e42646e204ead1114f52b6ed37945",
+      "size": 1761
+    },
+    {
+      "path": "references/styles/notion.md",
+      "sha": "2869da2c08edc6640d94fc43428f1b861882b907",
+      "size": 1694
+    },
+    {
+      "path": "references/styles/pixel-art.md",
+      "sha": "2b13c9a49f3dac9822ce5ec2c76975eb97bdcc5e",
+      "size": 1964
+    },
+    {
       "path": "references/styles/playful.md",
-      "sha": "2df2dbbd7be2994c4d84004ab25293fe15721d40",
-      "size": 1707
+      "sha": "3befa2d021423f95378d8277a363ff7e8c116f5f",
+      "size": 1766
     },
     {
       "path": "references/styles/retro.md",
-      "sha": "ca254e5d569dc00643c62f5759fbeb3bd7fa3c03",
-      "size": 1682
-    },
-    {
-      "path": "references/styles/scientific.md",
-      "sha": "f0be5a28c94a402a8819dd42c8089da27f94a03a",
+      "sha": "8cddecc7e31ec8cafab42c5f34988dbf9c4925cd",
       "size": 1741
     },
     {
+      "path": "references/styles/scientific.md",
+      "sha": "2238e74e217a3bfc34b35a0201e8e976e1a76cca",
+      "size": 1800
+    },
+    {
       "path": "references/styles/sketch-notes.md",
-      "sha": "84de9a4fc3b67b740463a0a9a559f07647604ada",
-      "size": 1824
+      "sha": "5f345f8e1b4345c859ec5835ca71fb665d675466",
+      "size": 1880
     },
     {
       "path": "references/styles/sketch.md",
-      "sha": "b894b96bd57b09af162367790e2272b408fc0e9a",
-      "size": 1691
+      "sha": "8c86e55c6734acd4da7b142b2eff221d0a333584",
+      "size": 1748
     },
     {
       "path": "references/styles/vector-illustration.md",
-      "sha": "fe83e7f41bb9093b31e959c18b9e97c1136cee9e",
-      "size": 1940
+      "sha": "479ee0f016790ce0692264c527271749336a36ce",
+      "size": 1997
     },
     {
       "path": "references/styles/vintage.md",
-      "sha": "405d28372efa46ec364b16a0c2cb52f8fae7a9d5",
-      "size": 1819
+      "sha": "47f2b79ac2f6f85b6addc255524065d44190c54a",
+      "size": 1878
     },
     {
       "path": "references/styles/warm.md",
-      "sha": "f482e962330b7b14956a73a283b44ad7638dc48a",
-      "size": 1760
+      "sha": "48fd6a543c33af1c09e06f7db3433de4d563b20a",
+      "size": 1818
     },
     {
       "path": "references/styles/watercolor.md",
-      "sha": "6c47755f321d21616194cf126ce18069f5fba11c",
-      "size": 1815
+      "sha": "c12f39265d268736ec2225d5fc9e38b0c486caa3",
+      "size": 1873
     },
     {
       "path": "references/usage.md",
-      "sha": "2217338a364467f7e181186e1aa4b2c143c79718",
-      "size": 1700
+      "sha": "20a16ad8b83cd2d194d81ec8c1797504f6a4b4cc",
+      "size": 1766
     },
     {
       "path": "references/workflow.md",
-      "sha": "ae7b1d2f2d0d4ec179df2409a0f1bd969d4e89d3",
-      "size": 12860
+      "sha": "48b8c0440c1681ad7b57285a17cf5da9061c2f65",
+      "size": 13246
     }
   ]
 }

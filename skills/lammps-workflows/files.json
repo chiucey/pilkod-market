@@ -2,158 +2,158 @@
   "files": [
     {
       "path": ".github/CODEOWNERS",
-      "sha": "ac26a79c1db65e5f3a74ccd045d37354f78a33a1",
-      "size": 15
+      "sha": "be0a2775eeac5d134f0bbd936b2c41003df20f31",
+      "size": 16
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
-      "sha": "b9e06d357b4811bf4fce6fad172fc9f8d04b9a0d",
-      "size": 440
+      "sha": "eeb2e32d191033ee75073169c4f57694056ed07f",
+      "size": 472
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
-      "sha": "64eb98dc30a6f8b8eec79b05f6fc93c8cee3b75a",
-      "size": 45
+      "sha": "57e86432cfab7103c43ac9188f3ce9ec273649ea",
+      "size": 47
     },
     {
       "path": ".github/ISSUE_TEMPLATE/feature_request.md",
-      "sha": "d77b44a9c7aea3b025300d115785ef7f6a75041e",
-      "size": 459
+      "sha": "69a2a022d661cde12a645d01df93d4ffe8240ed3",
+      "size": 482
     },
     {
       "path": ".github/dependabot.yml",
-      "sha": "5ace4600a1f26e6892982f3e2f069ebfab108d87",
-      "size": 118
+      "sha": "0065b5763de223a94dbcf897769dbff9a65ac8a7",
+      "size": 124
     },
     {
       "path": ".github/pull_request_template.md",
-      "sha": "4b3d8d599adca7bcc08b97795f6f69abfd6efd27",
-      "size": 230
+      "sha": "f3484b5191224a799b7484fcf06ff2af1736b823",
+      "size": 243
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha": "eacb0ab9bac744dac72809f5369e8708c6e40089",
-      "size": 647
+      "sha": "74d69c2897ae59e1b80ddea9593173ec33993fea",
+      "size": 680
     },
     {
       "path": ".gitignore",
-      "sha": "66b43dab76788df48a801db8a3e95465cd8ca3e0",
-      "size": 34
+      "sha": "7a44ac4636f39553c405d007b6722c9df5ece92e",
+      "size": 38
     },
     {
       "path": "LICENSE",
-      "sha": "ab1197838d970efe1c198b106c40c9a9d364445e",
-      "size": 1080
+      "sha": "81e5e4766f2237df669899307c85ea6a40c7fd46",
+      "size": 1101
     },
     {
       "path": "README.md",
-      "sha": "d1b17bee887f20f61796c24c92b7db943cb5f6a8",
-      "size": 2011
+      "sha": "fe4de522193d0b3cf1f227a22c3e6e2812a25a3b",
+      "size": 2066
     },
     {
       "path": "SKILL.md",
-      "sha": "436dc5c462cdde4c87d0aff69c49c07c220c3c30",
-      "size": 3842
+      "sha": "ef946498d7468a898afa1d32d75b09fb21823938",
+      "size": 3936
     },
     {
       "path": "_meta.json",
-      "sha": "4cd74e6ee647b7cae12b4cd6052286d288acd575",
-      "size": 135
+      "sha": "17aa55589b787ea7337297a7572e271ab9532aa5",
+      "size": 141
     },
     {
       "path": "agents/openai.yaml",
-      "sha": "947a4dd66d68fea6788dd82a02ea7e95a09c963b",
-      "size": 230
+      "sha": "b1d6b8a558773bac25cad89ec38fb6c22013e9e3",
+      "size": 235
     },
     {
       "path": "fixtures/completed/in.lammps",
-      "sha": "99f8ae1af6ab99e5e286431b3ee86cce6a19906e",
-      "size": 180
+      "sha": "24f743af5e8cc1912b5a05ec094e37457fdbfa08",
+      "size": 190
     },
     {
       "path": "fixtures/completed/log.lammps",
-      "sha": "a68b575ed4e9a0650bdc3c0a60bc99dbd0a67948",
-      "size": 122
+      "sha": "470ffa4bc2894cb7bff8aa8e60b429ce66d73834",
+      "size": 126
     },
     {
       "path": "fixtures/completed/system.data",
-      "sha": "db52d1e2357731a5e645b2b71872188490e8a932",
-      "size": 29
+      "sha": "9f2d6b8b720e36d3c3a5095423b34cf52ebab677",
+      "size": 30
     },
     {
       "path": "fixtures/nan-thermo/in.lammps",
-      "sha": "f5edb2a4473ad96072e7fed07b54193389515a96",
-      "size": 164
+      "sha": "8fb67cc8cf60afb0deaa6e28413ed20760bf0507",
+      "size": 172
     },
     {
       "path": "fixtures/nan-thermo/log.lammps",
-      "sha": "65531759207c6c819e2442fe6f9db8a757eeaaf7",
-      "size": 99
+      "sha": "a00b9d21ea8bd638a1f58f7b4df517c93eacfc2b",
+      "size": 103
     },
     {
       "path": "fixtures/nan-thermo/system.data",
-      "sha": "db52d1e2357731a5e645b2b71872188490e8a932",
-      "size": 29
+      "sha": "9f2d6b8b720e36d3c3a5095423b34cf52ebab677",
+      "size": 30
     },
     {
       "path": "references/failure-modes.md",
-      "sha": "d991c0ec3582502b311a2f0f85ceb44eb08d16f8",
-      "size": 649
+      "sha": "79a0bfd240a710d84c67072753a38224c62905b6",
+      "size": 670
     },
     {
       "path": "references/force-fields.md",
-      "sha": "6328276a4718e4dc1fdccaaf2dd1c8a43253bd70",
-      "size": 617
+      "sha": "7f72aaaa92feaca1f7c5b34be9a3c33e4c886378",
+      "size": 632
     },
     {
       "path": "references/lammps.md",
-      "sha": "a473b9303c28b13553ea2f8aa9f834ad4239cfd9",
-      "size": 994
+      "sha": "b914099506c7d90755a9f46d0337a7870e99dd0d",
+      "size": 1027
     },
     {
       "path": "references/schedulers.md",
-      "sha": "c3159b3c998edc34cb7d5884d76595a3a89a50a4",
-      "size": 369
+      "sha": "616ce78e46b33acc9b7ea4bd20243ace74bf6a36",
+      "size": 378
     },
     {
       "path": "scripts/check_lammps_job.py",
-      "sha": "073cec6eefd1db445dab88dbd20b54a2eafeae63",
-      "size": 2336
+      "sha": "e3545048ea1b21ce54fd096699075b18701f9692",
+      "size": 2402
     },
     {
       "path": "scripts/export_input_suggestions.py",
-      "sha": "13c2c9556a7b7f49876f6b1e6c0436aa2de3b122",
-      "size": 2694
+      "sha": "47bfb27b8c4530decdb6bf423334b319d93cebf0",
+      "size": 2787
     },
     {
       "path": "scripts/export_recovery_plan.py",
-      "sha": "0a32219569ae08c6e65c677264981c50a3c2dffa",
-      "size": 1490
+      "sha": "a830ae2f4e1dc983d82f46cb1485a48a785e6d03",
+      "size": 1537
     },
     {
       "path": "scripts/export_status_report.py",
-      "sha": "8466bc5a54c5d10c28060dc0194b02e80b11fa0e",
-      "size": 2286
+      "sha": "52372be213b9aa152538b66eb0743476738ef246",
+      "size": 2346
     },
     {
       "path": "scripts/make_lammps_inputs.py",
-      "sha": "630fe38f8d28601483ac8cb0f0748b49a98f8d63",
-      "size": 7828
+      "sha": "36e06c89713ca8a466a3e9a9d450de2f0cb14090",
+      "size": 8007
     },
     {
       "path": "scripts/recommend_lammps_recovery.py",
-      "sha": "13232f626da03469faf2e0bd4c1a02bb501f6515",
-      "size": 4172
+      "sha": "ce2ee1fdbec79ee3de84982368440f7ea0b28cbb",
+      "size": 4264
     },
     {
       "path": "scripts/run_regression.py",
-      "sha": "82551afc1aa6fb49f5128585ef1b83140ed6e663",
-      "size": 5370
+      "sha": "0d152929fbaf5d71498900ccac3f20f21248190e",
+      "size": 5458
     },
     {
       "path": "scripts/summarize_lammps_log.py",
-      "sha": "5236b8344d1b46cdf459f590c3118275a836f9a1",
-      "size": 2460
+      "sha": "57b494aa00f7fca00b47bd70467a0833ffce689e",
+      "size": 2540
     }
   ]
 }

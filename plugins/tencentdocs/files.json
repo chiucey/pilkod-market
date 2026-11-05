@@ -3,453 +3,453 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "998947d4aa26f8e2aa2bc2d4af5d66f72cf4825b",
-      "size": 686
+      "sha": "9796cfa9439b60e6f295fbc073372a8679ac4326",
+      "size": 708
     },
     {
       "path": "ATTRIBUTION.md",
-      "sha": "f597096dfd9dda51dc17d8d1be0a985afbde29e8",
-      "size": 504
+      "sha": "1cefbe254004e4db6351de5fdf0e49170b9e97cc",
+      "size": 513
     },
     {
       "path": "skills/tencent-docs/SKILL.md",
-      "sha": "b1c694fafd40943c6a579507ce48f9fbdc47d378",
-      "size": 20939
+      "sha": "347bfa8389e2e3c9cdab1a90ba7fb5f5e795a719",
+      "size": 21151
     },
     {
       "path": "skills/tencent-docs/_meta.json",
-      "sha": "5327f6d2c9226cad2eca5f5fbd070b45f429c1fc",
-      "size": 107
+      "sha": "76f57a14d566bd17f0dd0a1b65d77bcc7817fbb0",
+      "size": 113
     },
     {
       "path": "skills/tencent-docs/aipage_pack.js",
-      "sha": "f703bea3891d5a450dbcace00b2a11ab49c8037d",
-      "size": 19471
+      "sha": "84c13798aa91599c9109876548dbe175ccc06a66",
+      "size": 19962
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/README.md",
-      "sha": "7ebcf23eb1ecb961ff7c2dc8050bed59914f6ec1",
-      "size": 2905
+      "sha": "c2c08e8820b025c8e4af12f066cc9b7a0a50b805",
+      "size": 3020
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/prompt/pure_text_system_prompt.txt",
-      "sha": "c0670d4e8ed26aa5dddc71baa65ab8176eba189a",
-      "size": 2373
+      "sha": "1dfc3401c80666c64c224727f7b618e7789dbe6c",
+      "size": 2460
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/prompt/scenario_recognition_prompt.txt",
-      "sha": "1d5198f19ac0bf24b2b48f10ef8acd2c1665cd89",
-      "size": 1705
+      "sha": "d4f87918a4b9117010973de68eb616cca31f4c9b",
+      "size": 1738
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/prompt/style_customization_prompt.txt",
-      "sha": "40ab4dd8f1f078f823492a73a4ce202bc96e1bd4",
-      "size": 2577
+      "sha": "14e786d8394c0984b445ef554ac5895858055734",
+      "size": 2626
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/templates/contract.json",
-      "sha": "372b7f430eccb5983c3fd1959f50c911b5205cec",
-      "size": 1055
+      "sha": "b459613bc41b1827232336ea85479e5dd837939c",
+      "size": 1096
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/templates/essay.json",
-      "sha": "3a8be40608e3e5bdac9d43fe8d35e1d6fa9d83f2",
-      "size": 490
+      "sha": "2adabe695fd5ce9329d29d2bfdc2008088d6695c",
+      "size": 513
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/templates/general.json",
-      "sha": "53f6cf7a6734d3bc1c0f903ac6126421ad627411",
-      "size": 2720
+      "sha": "f634b9affcf3c6ba3772ea606887467031860d5d",
+      "size": 2799
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/templates/government.json",
-      "sha": "391f8678a55ef33fb402bba043f0ce4945aa9b0a",
-      "size": 1020
+      "sha": "3d5b88f232f65a5f93baf89c80ce1bf7e580e3b6",
+      "size": 1064
     },
     {
       "path": "skills/tencent-docs/doc/doc_format/templates/paper.json",
-      "sha": "5623538ba097266b9cb9f93cf42b756a941234b8",
-      "size": 4708
+      "sha": "4060ae1289344edbdf688df9189bacd8f71df6a3",
+      "size": 4890
     },
     {
       "path": "skills/tencent-docs/doc/entry.md",
-      "sha": "fa646f6fdbea95560c18750a71511f15ccb66ee6",
-      "size": 809
+      "sha": "01f3f52783cc90d47e307f4eeb831ba891f224ba",
+      "size": 839
     },
     {
       "path": "skills/tencent-docs/import_file.js",
-      "sha": "ec6968bc250d9f4489cbf9b83c64f04a818da53d",
-      "size": 1894
+      "sha": "38e2a1e033a81061f403dd2d03b1ccdfe5b6732a",
+      "size": 1923
     },
     {
       "path": "skills/tencent-docs/ocr.js",
-      "sha": "c58bb60ce37248b3da2a65a1b4005616bf0130e2",
-      "size": 3691
+      "sha": "845b2da7ac88b9eceb89094cdb660ebb70bcf308",
+      "size": 3768
     },
     {
       "path": "skills/tencent-docs/references/aipage_references.md",
-      "sha": "13c46489e054652b10cd133a3de7092ece4d2459",
-      "size": 4833
+      "sha": "e38bd5d806ab5c929d1a4509e65d8eaad138894b",
+      "size": 4945
     },
     {
       "path": "skills/tencent-docs/references/auth.md",
-      "sha": "bab079417fbb174ed64b3309eb3be1c8b79f4f55",
-      "size": 723
+      "sha": "8c43dfc67ee64effae4c4f3b6cd6e91bddaabc52",
+      "size": 734
     },
     {
       "path": "skills/tencent-docs/references/connector.md",
-      "sha": "add3b5b33c6d136e63c09b921dafd6aae87ea345",
-      "size": 2760
+      "sha": "364a044500f018496a770adfedd9cde48cfe579d",
+      "size": 2799
     },
     {
       "path": "skills/tencent-docs/references/diagram_references.md",
-      "sha": "65c5c99add14b6d9d2bbf18f45b999fbe2fb94e4",
-      "size": 2285
+      "sha": "be6388efdc6003d027ff0802fed0241b852b95be",
+      "size": 2367
     },
     {
       "path": "skills/tencent-docs/references/docengine_references.md",
-      "sha": "53ef76707328917de8671e4c6ca29155513aab32",
-      "size": 87034
+      "sha": "ddefa65d6801104c75927800743701df1d24d9af",
+      "size": 89386
     },
     {
       "path": "skills/tencent-docs/references/manage_references.md",
-      "sha": "8ac8eecc1f8429d63d8f9408df656a8e7ebfbdb3",
-      "size": 32731
+      "sha": "a688640472aaafedfc6f9c5f02e5cf26a009d31c",
+      "size": 33909
     },
     {
       "path": "skills/tencent-docs/references/ocr_references.md",
-      "sha": "526cd8d86a2390a591f45328a17f8256966500e9",
-      "size": 3599
+      "sha": "34387ddba7e5e958d1cff995fc50dee21a746c22",
+      "size": 3688
     },
     {
       "path": "skills/tencent-docs/references/slideengine_references.md",
-      "sha": "69c0d31ae0a1477419fef103f0084e686b60224d",
-      "size": 76115
+      "sha": "37eafc4f86bb5dff10582682b1ef4bb6d88aeccd",
+      "size": 77961
     },
     {
       "path": "skills/tencent-docs/references/smartsheet_references.md",
-      "sha": "f37225122e8ccd8d099011f374f51ee799b995a0",
-      "size": 32263
+      "sha": "cecc54311b9936b3b9e44e6fb12032fda4ba3d44",
+      "size": 33360
     },
     {
       "path": "skills/tencent-docs/references/space_references.md",
-      "sha": "4cd1343f9a4a0d24c7a479135798d2db43fc5a79",
-      "size": 7220
+      "sha": "f6e5f5b72346f5b43736a07e21c6cb93d0345aca",
+      "size": 7502
     },
     {
       "path": "skills/tencent-docs/references/unsupported_feature_reporting.md",
-      "sha": "058f7eb8501269371aa02f3dad455a26b716c65a",
-      "size": 1326
+      "sha": "46cd9e613a2842b8b21e67084746493e56968ebb",
+      "size": 1354
     },
     {
       "path": "skills/tencent-docs/references/workflows.md",
-      "sha": "261f083a4e44e4a7939359d508b47dda5efa7a76",
-      "size": 8148
+      "sha": "5fd72611421e6aec5bb5a08f0093a0066f82333b",
+      "size": 8383
     },
     {
       "path": "skills/tencent-docs/scripts/call_with_file.js",
-      "sha": "a5141292d622f371ef431a0229c717c639ebc156",
-      "size": 1203
+      "sha": "bba5d73dfda27518cf4e0b1646b23b0eec4f8819",
+      "size": 1224
     },
     {
       "path": "skills/tencent-docs/scripts/connector_call.js",
-      "sha": "c317a066d2afbafd7e9e48ea39574006b4176c60",
-      "size": 3511
+      "sha": "4ab21eb00ab9fa7cde195108ce4e9838aead2bbf",
+      "size": 3579
     },
     {
       "path": "skills/tencent-docs/sheet/api/connector-api.md",
-      "sha": "0e9c7385c8ae7ad48bb432c1aaabd59875e26228",
-      "size": 56002
+      "sha": "009271ff233f351dbbcbafdad4357659e640af79",
+      "size": 57929
     },
     {
       "path": "skills/tencent-docs/sheet/entry.md",
-      "sha": "d35ae0c7bb506dd3064ad5f58ffa937063da5784",
-      "size": 15770
+      "sha": "6d3b39213558e5459289ec2b1bb6a9ac46604fb2",
+      "size": 16042
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-box.md",
-      "sha": "090e4db76a6a036793060b4ab70029ca9008acd4",
-      "size": 4102
+      "sha": "3fafb9f2dda327fbef7db536f0ce88a40a4faaf1",
+      "size": 4212
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-chart.md",
-      "sha": "650e1c484574015ee07acaabf0c7f6871120fed5",
-      "size": 10722
+      "sha": "6266c5396d09f2ad9b31c56cab402c789ef545f5",
+      "size": 10988
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-codeblock.md",
-      "sha": "982b7f9953765140b645806323154cca8fb5b6bb",
-      "size": 1613
+      "sha": "fc820624a405b52415cbbe65db76a5a4d7cd002d",
+      "size": 1688
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-diagram.md",
-      "sha": "47dd97e3366fa66f90142be7c956e838fc04acaf",
-      "size": 2810
+      "sha": "e65ebf0631e70e406bfc01e8e555254fe24f37a9",
+      "size": 2868
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-faicon.md",
-      "sha": "c60442c9c475241993ae46b54952c1ba58855ff5",
-      "size": 2951
+      "sha": "f889237f93415d4173d170a8a78e8ec1331c6d8f",
+      "size": 3027
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-image.md",
-      "sha": "80ed8a287486bfa206b56c91386d67a0c4d82d38",
-      "size": 5598
+      "sha": "2701d5ea60a8dc83b4fbb760c034f8783a7f1547",
+      "size": 5689
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-math.md",
-      "sha": "3d9a121bbd25e236edc081ce9e3f8e1f3934e9a6",
-      "size": 2146
+      "sha": "1e7cd8a2a6676450fc052ed9796ca31ed7b9ae95",
+      "size": 2216
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-qrcode.md",
-      "sha": "e7a1e6fb8d317759b9d90411f9055cf3a6fa6729",
-      "size": 1153
+      "sha": "e1d09dfb4ed69cf37451797b1c73d46f8f370665",
+      "size": 1180
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-slide.md",
-      "sha": "0194d8d11cff4fd4a56d8ab51a55ba1d2be659e1",
-      "size": 3954
+      "sha": "08c476aec685986ec7b8f7242fc9bea19ae325ec",
+      "size": 4016
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-svg.md",
-      "sha": "d8fb1be40a26151dcac241ce617a1ff1deb9b247",
-      "size": 1287
+      "sha": "56c28aa06fc4b2e810fe0ce39ede37610b1cc179",
+      "size": 1331
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-table.md",
-      "sha": "5ae77eda94c3fdd72d0d7aeafb80809c6733a33b",
-      "size": 3288
+      "sha": "4a4bdb8daa9a2c25690ed5a685ef0ef6b19817b4",
+      "size": 3365
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/component-text.md",
-      "sha": "b9af773574d0d3ac7fab5fe29d8c9ebfc0fc353f",
-      "size": 3069
+      "sha": "5b7985dfbb92904ed28d40b32f686c699fb0e52c",
+      "size": 3167
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/references/design-principle.md",
-      "sha": "868ecc7f9044fe35aeef227d1a19a8d4a706020b",
-      "size": 4576
+      "sha": "cae9038f0ac0e3931cdfefe6c69c2a5dd586d124",
+      "size": 4725
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/scripts/doc_image_extractor.py",
-      "sha": "34558283e341832b7ccbab62fc76929d79e32873",
-      "size": 12348
+      "sha": "c9c6c4d500b72d474f93129cdccb805f2b10f2e6",
+      "size": 12725
     },
     {
       "path": "skills/tencent-docs/sidebar-pptx-generator/scripts/get_slide_info.js",
-      "sha": "15a2f131c0672f0ce1bcef8e859a491fdaa00351",
-      "size": 3780
+      "sha": "6b84311197a851437b845f1f5c5a13898df7e859",
+      "size": 3832
     },
     {
       "path": "skills/tencent-docs/slide/entry.md",
-      "sha": "f3e2070fb37970e2c9c233982ab225f1a7adfa25",
-      "size": 21293
+      "sha": "5ddf499812d021d3732e941d3efcbaf8c43a42ec",
+      "size": 21614
     },
     {
       "path": "skills/tencent-docs/smartcanvas/entry.md",
-      "sha": "52ad584cec29445d7e2e790843b5391bf5b384eb",
-      "size": 46626
+      "sha": "9485650bdd1fff6d3bd7b903bd428893fa5f2125",
+      "size": 47367
     },
     {
       "path": "skills/tencent-docs/smartcanvas/mdx_references.md",
-      "sha": "3eed72c51632004bd4d86e8a157ac6a12a513857",
-      "size": 23266
+      "sha": "8ac77fbea8f6e30aff47c4143382a3234b68cdbd",
+      "size": 24165
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/12_week_muscle_building_workout_plan.mdx",
-      "sha": "368082385a9bf4841bf84f39f7f6d3539f10a3af",
-      "size": 17156
+      "sha": "3820854d3be86cee074168b1c65f695875ea8e2b",
+      "size": 17937
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/2025_ai_industry_trend_analysis_report.mdx",
-      "sha": "4e7527ff0b71ff897106f09cb8ccfaaaa06e9bc4",
-      "size": 16504
+      "sha": "fbd53b7777091e10f21ae873b5a63afc44e11a8b",
+      "size": 16988
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/2026_family_annual_budget_plan.mdx",
-      "sha": "294352393f1984665566409e6c8150dd5ef0f7af",
-      "size": 12471
+      "sha": "5197f804c6b2df9000fcafe625d3bc39805ca0fd",
+      "size": 12988
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/2026_personal_annual_goal_plan.mdx",
-      "sha": "9e555cdbeaf8999493c649a65717daa9437e75b2",
-      "size": 14576
+      "sha": "8bf6a09c80595c175ca996407bacddcdbe058513",
+      "size": 15100
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/annual_holiday_greeting_messages.mdx",
-      "sha": "a987ac596bb9e8b502ad140234ccb16f4eb67996",
-      "size": 16842
+      "sha": "890e59940b672d6f53f7ad618c197b54122d6f5a",
+      "size": 17313
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/app_2_project_retrospective.mdx",
-      "sha": "e98d1ff2574b18c3d077ceaf34375d97833de122",
-      "size": 6325
+      "sha": "bbac9ea21008801f0c35a882fce8d27803284705",
+      "size": 6523
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/british_shorthair_cat_care_guide.mdx",
-      "sha": "d7875d2bed3109e602578f12a6ff54284e7aeeff",
-      "size": 17445
+      "sha": "454df5cbdf96118338612a456e570cf49d7e2076",
+      "size": 17988
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/career_growth_books_and_movies_recommendations.mdx",
-      "sha": "ec119ce1a12524af571cf65389ec36242a85845e",
-      "size": 17365
+      "sha": "940e56cbb7987d1ab59c0182e4c98107dc8263d0",
+      "size": 18003
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/chinese_modern_wedding_planning_guide.mdx",
-      "sha": "6435f82753c5f1fd0400ebc5ba5001830ffa6669",
-      "size": 12862
+      "sha": "15f9c2593a466071c6e3c5c8d94071e59695fd9d",
+      "size": 13311
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/coffee_shop_location_analysis_report.mdx",
-      "sha": "ead64334897fd67e27ad5bf6a42c1a7a9a84a406",
-      "size": 22072
+      "sha": "71ba0a3d71a5fa31698ada6e669a8022e5c0293d",
+      "size": 22765
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/community_fresh_delivery_feasibility_report.mdx",
-      "sha": "c81d18d61a3876ab250489a2fce2afcefb92ff13",
-      "size": 21576
+      "sha": "cf88759bb51316cfd3d7fe27da007f93a5573df9",
+      "size": 22281
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/community_group_buying_annual_operation_plan.mdx",
-      "sha": "361be89b09b3161986ec308d99de5c64dd57aa52",
-      "size": 10584
+      "sha": "4ff6f70c7f37f5827c99ff969c955f252ea02e65",
+      "size": 10951
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/company_5th_anniversary_event_plan.mdx",
-      "sha": "199f1950b1cd7dcf50f94626469838fc82fbdaeb",
-      "size": 9054
+      "sha": "53f2bfdf221e1a003b0680902f533584e655c08e",
+      "size": 9408
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/ecommerce_membership_points_prd.mdx",
-      "sha": "7aa378759f751ca63fe5e42f9e59ff9426f09992",
-      "size": 12533
+      "sha": "cf45de69e1475816a406881c9803709390875f81",
+      "size": 13023
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/english_self_introduction_for_interview.mdx",
-      "sha": "194657460eaf620955fb647597db8ad28df3ebef",
-      "size": 7213
+      "sha": "73b13ec2c4791cb2e664a81f64e5244e7e1a714e",
+      "size": 7395
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/family_weekly_healthy_meal_plan.mdx",
-      "sha": "97de9cb9a61bac457dac885fcb250aeac7bb65f8",
-      "size": 11166
+      "sha": "cdcf23713b1153f2c7e26c6781261545451dff42",
+      "size": 11541
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/finance_graduate_career_plan.mdx",
-      "sha": "d43b44862484d74c3f9a259a90468504137b1bd3",
-      "size": 13038
+      "sha": "2553a01edcf41222edf6393ce4a78f2d0d0dfadb",
+      "size": 13384
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/food_review_self_media_operation_plan.mdx",
-      "sha": "12473abc08ff30f2fb74b49803e930bdef160a8a",
-      "size": 11174
+      "sha": "eea1fb2ebde6581bfb848562206e83500e56d9cd",
+      "size": 11514
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/graduate_admission_recommendation_letter.mdx",
-      "sha": "19a9ff931a59317cdc759aa7827b65186472d052",
-      "size": 3890
+      "sha": "99451f9fdcc085f199225644ae8fd741e1a591b4",
+      "size": 3955
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/internet_product_manager_cover_letter.mdx",
-      "sha": "2603de04aabeb326d0f6223b5bf25246af43332e",
-      "size": 4083
+      "sha": "4585535f4317822047231445b6c547e0a30203d8",
+      "size": 4172
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/internet_product_manager_interview_checklist.mdx",
-      "sha": "510442d24fd3eef2ebc96a2e6e010cb969a41335",
-      "size": 7406
+      "sha": "2c1f5a8018788591039b5813bc4965667fe725a4",
+      "size": 7625
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/maternity_ecommerce_user_persona_report.mdx",
-      "sha": "e9b209c70a68ec2c3a5fab042e537ad4f98172e8",
-      "size": 21326
+      "sha": "65a1d369a8422ebf8aedb86b0cc03356e622692f",
+      "size": 22009
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/new_tea_brand_annual_promotion_plan.mdx",
-      "sha": "ef238190dd0d20e61e6a4c653edbce22c3ae6c86",
-      "size": 21406
+      "sha": "b67acf8b467567570ff19a40249d459daf2f9e66",
+      "size": 22098
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/office_worker_knowledge_side_business_plan.mdx",
-      "sha": "fb875b6b7316503b19a6da3104fbf2b462ef0959",
-      "size": 16402
+      "sha": "ec451c7380474c5b295c0569eeee37d54f7e52af",
+      "size": 16890
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/online_education_summer_marketing_plan.mdx",
-      "sha": "01c58764284636909e6667800fad6538f3fc3360",
-      "size": 16574
+      "sha": "c2b2f827f1d0e3bf6cf9305da5efb6d8dfe41f07",
+      "size": 17051
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/online_office_tool_user_research_report.mdx",
-      "sha": "86e62c0b278c66a96d76475b11d54ba7614e03fb",
-      "size": 16818
+      "sha": "b31f71d67822c86979f03790877a24e65949edd1",
+      "size": 17366
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/p6_to_p7_promotion_report.mdx",
-      "sha": "da84e30c5250b9c1fd57e9222da05e6c04ad13bf",
-      "size": 9175
+      "sha": "18513d853179e941750bda7ca752c0d34030d8b9",
+      "size": 9401
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/principles_ray_dalio_book_notes.mdx",
-      "sha": "f6fc39cc6a7e112de256c28c51272d3c9e5ebf56",
-      "size": 16274
+      "sha": "fdcd56b8f40737ce19d8ffabe72bd9a589be6043",
+      "size": 16593
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/q1_quarterly_marketing_operations_summary.mdx",
-      "sha": "9f3390a01f28ae835011d92525b4e17410fe2631",
-      "size": 6914
+      "sha": "7bc18e329400c7c95fc508f40233596ec2ae1928",
+      "size": 7138
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/quanzhou_3_day_travel_guide.mdx",
-      "sha": "cd0f10a1d58a7c5127b7d2232e7c879bd948844a",
-      "size": 8061
+      "sha": "74636b5b180cee30e38a2fcabbe32e6fb6de1fd5",
+      "size": 8306
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/shared_apartment_moving_checklist.mdx",
-      "sha": "3cb3d77f44ae83507744d7407d48e46a7457e674",
-      "size": 7233
+      "sha": "d975f590bd46ac716fce1c03871540ec87c2556f",
+      "size": 7501
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/shared_powerbank_business_model_report.mdx",
-      "sha": "4da6465858947e8288311b0cfb5c8adc5986a7f3",
-      "size": 17177
+      "sha": "18debabe8e6170bed71d67a00fd2b35194840612",
+      "size": 17565
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/short_video_platform_competitive_analysis_2026.mdx",
-      "sha": "aed93731b53c1af6183ef410ec409a9d410aafcc",
-      "size": 31910
+      "sha": "89e46bec04054a7fe6f503e50ff4cb88a0a325a4",
+      "size": 32902
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/smart_home_iot_business_plan.mdx",
-      "sha": "6e634dfcf29f1146790c9ac89aa9abe4576834ec",
-      "size": 20750
+      "sha": "fa154a681611df3726760a50cc22acf3ceafe4fc",
+      "size": 21334
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/smartwatch_comparison_apple_watch_vs_huawei_gt.mdx",
-      "sha": "12690db578c01e339edbab64d12635525d8b6b75",
-      "size": 13030
+      "sha": "b6fbeb69f97d57e61f152f731e7e713141639b92",
+      "size": 13444
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/space_theme_6th_birthday_party_plan.mdx",
-      "sha": "64009dd2b1b381cfefeea610d78b3bd64f68d0c0",
-      "size": 9416
+      "sha": "4e23edff33269eda6c81604fbd1c320eafd88985",
+      "size": 9723
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/summer_internship_report_data_analyst.mdx",
-      "sha": "1f769ee1b729e5707a39242f1551420774c6c9d5",
-      "size": 6808
+      "sha": "6b4b221d33d931f753224025192d87f3c905eea7",
+      "size": 6972
     },
     {
       "path": "skills/tencent-docs/smartcanvas/template/ui_designer_probation_summary.mdx",
-      "sha": "388519dbe6bbcdf471fec4cc67a6fbbb3afea1fb",
-      "size": 5257
+      "sha": "75852e333cafbd4f492e0135a354a1c28df7e294",
+      "size": 5371
     },
     {
       "path": "tencentdocs.app.json",
-      "sha": "8298f6571e46defdb29dd08e8ca355c391971224",
-      "size": 54
+      "sha": "0e900fada40d9657a8e27ad8b52dcb78412e6f99",
+      "size": 58
     },
     {
       "path": "tencentdocs.png",

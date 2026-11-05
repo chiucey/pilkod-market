@@ -2,73 +2,73 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "e2403f9371eca02efd309e72f59b79390feb4b79",
-      "size": 3566
+      "sha": "078652692ccf6258ac0d77c36691de0e7ae2fdde",
+      "size": 3704
     },
     {
       "path": "_meta.json",
-      "sha": "b6e1f16c522166021d973d472609c1643e97c74a",
-      "size": 232
+      "sha": "fe3b5e59147131a1c14714af3da75eb3943809ca",
+      "size": 239
     },
     {
       "path": "references/build-commands.md",
-      "sha": "a522919bdd5d6c11ceb53a83c79ca7305f7e02a3",
-      "size": 3222
+      "sha": "e418cbad0a8f4e33dafb2ef87b35f01e940817f7",
+      "size": 3440
     },
     {
       "path": "references/control-file-spec.md",
-      "sha": "33e5ad167689b0a23953e061b8f19aed090b3aa3",
-      "size": 2521
+      "sha": "5797ee7d7decbc1d42046cf49b4df5edf65e40f4",
+      "size": 2627
     },
     {
       "path": "references/scripts-guide.md",
-      "sha": "1fe5b01b9507808fdd06c7562b32b9f694ac4d95",
-      "size": 3820
+      "sha": "0f61dcdc4aa2a371539dfdbc15cec11acb556ce5",
+      "size": 4024
     },
     {
       "path": "scripts/create_deb_project.py",
-      "sha": "beb424d29b64af31f61f915c112d512e1ed88714",
-      "size": 12849
+      "sha": "6cb9decfea05e6ff43021aa30c00f385bc949cdc",
+      "size": 13333
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "97483d6f642da222b29afcb9cffc40b2a6ea35fa",
-      "size": 1949
+      "sha": "c59f44d45424ddda4cb678af7e0b6caa232acd02",
+      "size": 2023
     },
     {
       "path": "scripts/quick_validate.py",
-      "sha": "1fe4670c20927e71b2bc5b12a39ca2eb893d64b3",
-      "size": 2721
+      "sha": "9dcd870b105de6d7deb8a147188f604320096c4b",
+      "size": 2824
     },
     {
       "path": "scripts/validate_deb_structure.py",
-      "sha": "26abaf146fe7b814a5157bd841f3fa186a7d7541",
-      "size": 4141
+      "sha": "458c42e47244f3af211670924495bee4c34c4d16",
+      "size": 4266
     },
     {
       "path": "templates/control.template",
-      "sha": "d637e50bfed00171b9818ebfea7b90c85b09a54c",
-      "size": 199
+      "sha": "ba588950942c3b4560a0cf777f3ed8eed9901438",
+      "size": 207
     },
     {
       "path": "templates/postinst.template",
-      "sha": "e6d2d5b00a825631a17ebf36dba3c33c31c5e64d",
-      "size": 667
+      "sha": "ba878611d2200e77749a53c99d1790479e5f1ec1",
+      "size": 695
     },
     {
       "path": "templates/postrm.template",
-      "sha": "6f1d72f9eaed939962e4601ed093e28b0de9e66e",
-      "size": 702
+      "sha": "96af2f8daebe403fb7868d76bb58ce956c7be04b",
+      "size": 732
     },
     {
       "path": "templates/preinst.template",
-      "sha": "3bc2dfbd68563f41baef20679395cb42c479972e",
-      "size": 366
+      "sha": "2a0d25aac0721b27c57e2149eda782276d211e1f",
+      "size": 386
     },
     {
       "path": "templates/prerm.template",
-      "sha": "4a93ae161f894eff531d0b443082a6c2095b6c7c",
-      "size": 478
+      "sha": "b6dcaf751ed5f88f8ff116bfd0fce67407ef86f2",
+      "size": 501
     }
   ]
 }

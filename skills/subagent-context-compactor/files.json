@@ -2,88 +2,88 @@
   "files": [
     {
       "path": "DEPLOYMENT.md",
-      "sha": "8a6109d18267fde37d4002dc2b41f7a31e70e99d",
-      "size": 7446
+      "sha": "f32fd845fee4ffbcd196fc7a2cdf6eb60cee7d11",
+      "size": 7773
     },
     {
       "path": "INSTALL.md",
-      "sha": "b72b66e428274b90203453d4ecf0015a829d7095",
-      "size": 4583
+      "sha": "4c69e976e46df2b30756c1a942248cc7e6d09b0f",
+      "size": 4831
     },
     {
       "path": "LICENSE.txt",
-      "sha": "6004128c08bfcd30cfe15f00844d637fd64c5858",
-      "size": 1064
+      "sha": "fca27effe54ca1f5bc5da60d38be1d6d526b08b2",
+      "size": 1085
     },
     {
       "path": "OPENCLAW_INTEGRATION.md",
-      "sha": "b7c686d5af1b841fd4132da3cbb5c1f9144dbb4e",
-      "size": 8415
+      "sha": "eb86d27520a42f42289e46d1b36aace5f62525db",
+      "size": 8781
     },
     {
       "path": "README.md",
-      "sha": "6bb643b01b20b2bde210d64d3f364df1ae2316b1",
-      "size": 6085
+      "sha": "072dba100be1a960b019732f70b0ceb6458faef1",
+      "size": 6346
     },
     {
       "path": "SKILL.md",
-      "sha": "7a88e2a75304ea613ab8389569331a074d0c0239",
-      "size": 7157
+      "sha": "b85cb8008e8599cd94cc7d4246b076e068054904",
+      "size": 7441
     },
     {
       "path": "SUMMARY.md",
-      "sha": "694a825457ebcb33fad88a8569a1a7c8f504d62c",
-      "size": 6077
+      "sha": "3c0faadd4befcc155f55f3027061f90983cbd4f4",
+      "size": 6283
     },
     {
       "path": "TEST_REPORT.md",
-      "sha": "8091bcf90ae30888c74ff09440e87b3a1def6041",
-      "size": 6940
+      "sha": "cc2825734d344de6b4019dbdc7990f3715258fc1",
+      "size": 7154
     },
     {
       "path": "_meta.json",
-      "sha": "5653fed000a0be088020d6e503bffcefdac83969",
-      "size": 266
+      "sha": "fb7c66cc2264aa14777e51f8bbc03cce7bc8ef39",
+      "size": 275
     },
     {
       "path": "api_server.py",
-      "sha": "bdd0917211b839c819f321fc96f9eba4eae518be",
-      "size": 1248
+      "sha": "78277e8a14d92a1fceac953bd57f44c7deba9ced",
+      "size": 1298
     },
     {
       "path": "check_status.sh",
-      "sha": "7841ec5c4a6795a0d6ed1e01bf8030369e7db701",
-      "size": 3756
+      "sha": "b568d34207a99d22ff3b24bee25fba7b0563f2d1",
+      "size": 3890
     },
     {
       "path": "compactor.py",
-      "sha": "b42b10a3fbde6208ddc63b27bbad9c0ca6c1422d",
-      "size": 14139
+      "sha": "fd955474d4dc547a84b09577ee92e86ad2cd8b32",
+      "size": 14501
     },
     {
       "path": "config.json",
-      "sha": "8a7f94372bb718d2fdce38440bf584e2994daff1",
-      "size": 2503
+      "sha": "aba38436e31a0179991f08e9cd50bacef664bfbf",
+      "size": 2598
     },
     {
       "path": "hierarchical_compactor.py",
-      "sha": "cc71af7d02b823b7f3e4e68fcbe841b14d1c0df3",
-      "size": 19073
+      "sha": "2acd98aa0f41f8f081fda954645c8549d7552b54",
+      "size": 19628
     },
     {
       "path": "integration.py",
-      "sha": "ba1991adcd623ec190fece7649fdbc6b42edc978",
-      "size": 20290
+      "sha": "047eea397af18e037ee84ec8ef82f57e4db01c7a",
+      "size": 20813
     },
     {
       "path": "monitor.py",
-      "sha": "e539d522d5ce1f42412ac34725f3302657e64fc2",
-      "size": 12274
+      "sha": "2f7684e3c6b5a469569a2a66fa56b832585fb2d8",
+      "size": 12595
     },
     {
       "path": "monitor.sh",
-      "sha": "a8af430bae165a0a314b3ac90dfe55a67d1518c9",
-      "size": 561
+      "sha": "d12b5934bc971037f1e5c0166c19154a5e267536",
+      "size": 587
     },
     {
       "path": "requirements.txt",
@@ -92,43 +92,43 @@
     },
     {
       "path": "skill.json",
-      "sha": "7cee8f32807f991ddf3a0dffc052c7f84617245c",
-      "size": 2323
+      "sha": "d86224ff3b426e88e167efcd63f55b8d01887bdc",
+      "size": 2421
     },
     {
       "path": "start.sh",
-      "sha": "110e1f7f711683fb0e5c5b77149a11bea7f1c7be",
-      "size": 2812
+      "sha": "b60cd52c1e99e7d2d2a9753a4976440b81470b52",
+      "size": 2934
     },
     {
       "path": "start_monitor.sh",
-      "sha": "848adfb9848a39815cb822b54dc0d2ef59bbe7ed",
-      "size": 1269
+      "sha": "bcf127437ff39b0d3893dcf477ca55d6731ec2c9",
+      "size": 1317
     },
     {
       "path": "start_system.sh",
-      "sha": "b559d540cb7f138a4b355a91f41a1520d89f40af",
-      "size": 4928
+      "sha": "78e1106ac71e0009ac38fd1a0c7c5a5a036ac829",
+      "size": 5112
     },
     {
       "path": "stop_monitor.sh",
-      "sha": "5dce86d353af572e3c13ceb0b5c30cb15a627765",
-      "size": 1018
+      "sha": "79d57c9912dacd73d1f521e6d715e618222a7ae4",
+      "size": 1063
     },
     {
       "path": "stop_system.sh",
-      "sha": "2446aae8f4b5335b26d23f6b205ac5e803a73a2f",
-      "size": 5769
+      "sha": "d4b932f4757875037b816e5ea867a7e6a25745bb",
+      "size": 5985
     },
     {
       "path": "test_compaction.py",
-      "sha": "a565152b2de95ff96090bf3d5815450551aebad4",
-      "size": 9510
+      "sha": "85ad21dd59171244910906a1f3e77757a96dad79",
+      "size": 9793
     },
     {
       "path": "test_skill.sh",
-      "sha": "9f3b83fc7428ea370772a8a3c9e0133d34aab205",
-      "size": 4584
+      "sha": "5bfb3ae5f8f73e056a3e3528bdd7a30af703e073",
+      "size": 4738
     }
   ]
 }

@@ -3,68 +3,68 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "8bad1f56adb1d2b69cc9f4793e186eedaee7f942",
-      "size": 1004
+      "sha": "72e649c0b8014d0314b70642d471f9734a1ce641",
+      "size": 1032
     },
     {
       "path": ".gitignore",
-      "sha": "a0090b46d76d38eb81ad66d6fd2af66977a287ce",
-      "size": 18
+      "sha": "29fdffaee99bf640f2997dd14c228ff8bbf99f1e",
+      "size": 20
     },
     {
       "path": "AGENTS.md",
-      "sha": "95042d9f5f12cc85463080f6a015bba2c60e3c74",
-      "size": 3395
+      "sha": "45c3e4cb43beddac24e9d1999a5773ad407f6cf6",
+      "size": 3434
     },
     {
       "path": "LICENSE",
-      "sha": "715d483338cea4365f0d91a27799cf61226d6bcf",
-      "size": 1071
+      "sha": "26f2aa25bb0d4b9040f9de30c169558c10f020f1",
+      "size": 1092
     },
     {
       "path": "NOTICE",
-      "sha": "3f063ecccfb4de80f59c48492b43d185d01ec717",
-      "size": 2875
+      "sha": "fed0d6d8e43fc595a4c025a0f4ff6fc9ebbce6bf",
+      "size": 2928
     },
     {
       "path": "README.md",
-      "sha": "b10f62b69f81bd67a5a21628cbb47f5817f7661f",
-      "size": 8455
+      "sha": "bb621f6bca9209f76540ea1ebb86ec5034d9b96a",
+      "size": 8586
     },
     {
       "path": "hooks/hooks.json",
-      "sha": "b0e83674bbdfea33928b9991068cb0eabd67264b",
-      "size": 987
+      "sha": "1f98726ff6de2409f8602f5bec312b770d0dd85f",
+      "size": 1027
     },
     {
       "path": "hooks/ponytail-activate.js",
-      "sha": "e102b2d792588b3193423181ee63ad1c85444988",
-      "size": 3063
+      "sha": "60df51172e2b98583b5f801d723912fe61d3630f",
+      "size": 3145
     },
     {
       "path": "hooks/ponytail-config.js",
-      "sha": "2e581c9bf9baa822d8581c933dc54f188a441909",
-      "size": 4685
+      "sha": "e8e76a90503a6416c67b5f2d372b6056a4ad9ccf",
+      "size": 4814
     },
     {
       "path": "hooks/ponytail-instructions.js",
-      "sha": "2f18d8b94cda1219949204f1258d84f152d6ca12",
-      "size": 6169
+      "sha": "9908a4f6283746cc3a70d3bca36bdb75fac70adc",
+      "size": 6284
     },
     {
       "path": "hooks/ponytail-mode-tracker.js",
-      "sha": "bd960ca60a60a268e8bc7108024165b282c9fc88",
-      "size": 10452
+      "sha": "8c8d6cc607cf32c845aa4874d0a079ced0c76fe0",
+      "size": 10668
     },
     {
       "path": "hooks/ponytail-runtime.js",
-      "sha": "eb5c3772cd9e6a1c456205f9986a2b0ff04cf2ea",
-      "size": 3149
+      "sha": "b536776f674c6aa9bfe629bd8cfb377b5bccb042",
+      "size": 3227
     },
     {
       "path": "hooks/ponytail-subagent.js",
-      "sha": "1d30c460a5816749577b847009c66132928c15be",
-      "size": 1050
+      "sha": "f11d5251647cccea6116394c19e46fe316645445",
+      "size": 1077
     },
     {
       "path": "icon.png",
@@ -73,33 +73,33 @@
     },
     {
       "path": "skills/ponytail-audit/SKILL.md",
-      "sha": "697418f42f0ce4b585b6b90d116afdd14ad62016",
-      "size": 5604
+      "sha": "f17f0114972ee12e9c8db366d607f3543a661d99",
+      "size": 5681
     },
     {
       "path": "skills/ponytail-debt/SKILL.md",
-      "sha": "cd768a9865edcbf0133b09b77b77b6d675aede44",
-      "size": 2281
+      "sha": "8cc2d282a59a942c959e5cf0db184fc74e9390f7",
+      "size": 2320
     },
     {
       "path": "skills/ponytail-gain/SKILL.md",
-      "sha": "46c7d01914788334a711c4b719978a789aff56f6",
-      "size": 2599
+      "sha": "bc40468e3ce32cd4b0f1b08601c690ad09a138e8",
+      "size": 2643
     },
     {
       "path": "skills/ponytail-help/SKILL.md",
-      "sha": "fcb6624bda859bedff1af421a9df89c40f5e51d8",
-      "size": 3867
+      "sha": "48df7cff55e311b62db80f3b11cbe68ecc4d6248",
+      "size": 3924
     },
     {
       "path": "skills/ponytail-review/SKILL.md",
-      "sha": "4a44a7eb75c1d804eaefb8ddbf86a01a95c2fa2b",
-      "size": 5535
+      "sha": "a49c362bca9989f0bb3cc671eaa48e6bb625749a",
+      "size": 5610
     },
     {
       "path": "skills/ponytail/SKILL.md",
-      "sha": "a5ebaf97ebd9b24c6029add4459cc17995d4289c",
-      "size": 4990
+      "sha": "a2b8f64883ae437baf6e829737db6d7499e280a5",
+      "size": 5046
     }
   ]
 }

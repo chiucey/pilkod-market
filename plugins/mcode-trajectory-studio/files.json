@@ -3,28 +3,28 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "43f93b83ea543b934359c3d3354e21a6c8abfd1e",
-      "size": 1277
+      "sha": "430abd273a54adb88310aa64239a6b7acf3d02b4",
+      "size": 1298
     },
     {
       "path": "DESIGN.md",
-      "sha": "d6b95e477ef5b0460a3b1c0a5ebff0d4cd4f6ffb",
-      "size": 224211
+      "sha": "4227269c0030cf7afa27d02807c7238bd7bc8690",
+      "size": 227149
     },
     {
       "path": "LICENSE",
-      "sha": "125be1b8e1012ef2d9839626f9c045a352bcfa9d",
-      "size": 10860
+      "sha": "ec5fe20cc580023b211fb0f2ef7374f01dd8cefa",
+      "size": 11052
     },
     {
       "path": "README.md",
-      "sha": "84888ee2d934f588850f6f9fcb4f7910054f92b9",
-      "size": 42330
+      "sha": "2b4c538f109808a86a086d75c47dc77abf1b5b6b",
+      "size": 42904
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "e33576028d8158f47ed8878991d30703c47593fd",
-      "size": 35113
+      "sha": "d4c09bf3a8a4868063900f6115014a78792b82a2",
+      "size": 35540
     },
     {
       "path": "icon.png",
@@ -33,773 +33,773 @@
     },
     {
       "path": "server/changes.mjs",
-      "sha": "35072ac390af9f7b27873b47a123f4d64a0eb759",
-      "size": 20519
+      "sha": "19305a39559340212102b1c63abdb8e48b1e8fc0",
+      "size": 20900
     },
     {
       "path": "server/config.mjs",
-      "sha": "02d8df22d46df00c99b4734d4eed43de4b9a24e8",
-      "size": 20328
+      "sha": "a5824195cb3379692b6f9f74a7499907a1c974bb",
+      "size": 20751
     },
     {
       "path": "server/events.mjs",
-      "sha": "1f97601162084a5fce8f9aad123dae0708339121",
-      "size": 49030
+      "sha": "b082f0eeed1de0f1152438964df54ba600b69dbf",
+      "size": 50015
     },
     {
       "path": "server/fsutil.mjs",
-      "sha": "872857a4f15aca45a03c0c00c01b0b7b9291ab82",
-      "size": 8523
+      "sha": "1b77548a336339f207449d704431f491ee376c2e",
+      "size": 8724
     },
     {
       "path": "server/git.mjs",
-      "sha": "ed9cc43583cd8a51dd860272e98c7c93a65bf40e",
-      "size": 5439
+      "sha": "be3be87669810dd125aad8e8b626e87338a4465c",
+      "size": 5578
     },
     {
       "path": "server/http.mjs",
-      "sha": "e274331a4e2dfd306bc40360424fbb8e68ef1fa3",
-      "size": 33041
+      "sha": "0dfede4303eed09a3ddc93e90e244cacc79d41dc",
+      "size": 33728
     },
     {
       "path": "server/ingress.mjs",
-      "sha": "1455258173dced6f97ddf74f9f914ea61c48aab5",
-      "size": 12579
+      "sha": "9cf8366f1b9e4637e75f84c939a52d4e9b3e1b27",
+      "size": 12854
     },
     {
       "path": "server/json.mjs",
-      "sha": "ab7ca94a715330990107620b34e91fb83d73a0fe",
-      "size": 655
+      "sha": "4f618fc969b371e9f7941110e8efc161b3e96c17",
+      "size": 676
     },
     {
       "path": "server/jsonl.mjs",
-      "sha": "f0905097b125e9d8722117fb5c16f532ae4acedc",
-      "size": 30082
+      "sha": "995befddc2811823f56623b156a2af4d106e0e35",
+      "size": 30675
     },
     {
       "path": "server/main.mjs",
-      "sha": "43a2addf2354a900168c4564a8ea5d28d4b65895",
-      "size": 10609
+      "sha": "4c86f71d4b02ebd38e98383c96a626a3bef0cd3f",
+      "size": 10858
     },
     {
       "path": "server/mcp.mjs",
-      "sha": "d6f99e711a6e18efd668ab06cd382e0ac9ce5eda",
-      "size": 94716
+      "sha": "7d769a464566ab629ff1fded1998473ee90818a9",
+      "size": 96203
     },
     {
       "path": "server/node-version.mjs",
-      "sha": "0560c568c725ad0d8a61d5f81498da49a06e1086",
-      "size": 4415
+      "sha": "56d2fa8d1e1e9e003dd72cd5cfb8055e4c8f91f3",
+      "size": 4510
     },
     {
       "path": "server/redact.mjs",
-      "sha": "ce3eab852bb57448c6a86132d3a59d40b441e8aa",
-      "size": 33136
+      "sha": "3ecba9534cdeb7a8a65249b55cd47e6c51950344",
+      "size": 33815
     },
     {
       "path": "server/search.mjs",
-      "sha": "210bddeebc89acd6f42ad068a56bb034479d2c70",
-      "size": 20282
+      "sha": "bbcda5b89d821e289b9362e982f3c91e0780f279",
+      "size": 20693
     },
     {
       "path": "server/sessions.mjs",
-      "sha": "94cc1b2be940b9b52bce6c016c2843129318d21b",
-      "size": 17020
+      "sha": "2a861e3d8d624e7b257e55db7959b8c6449e5908",
+      "size": 17369
     },
     {
       "path": "server/sqlite.mjs",
-      "sha": "5819c3f860607f2ec9428fdb2882911e03ed9f0c",
-      "size": 4340
+      "sha": "7c6ad1102e9dc133efcba07f095aab32a639548d",
+      "size": 4465
     },
     {
       "path": "server/stats.mjs",
-      "sha": "1c31c6a55d59bf452cc8672b0b435f678987121a",
-      "size": 32197
+      "sha": "1c4dbe72ea5ad8c93bab8682b78efe1cb2ca15a5",
+      "size": 32831
     },
     {
       "path": "server/store.mjs",
-      "sha": "fc619a507a577d26ecc784846819fa6e6043c4a6",
-      "size": 15937
+      "sha": "33f87e7c2a1bde5d9f7e3698f9a6c4871779e393",
+      "size": 16283
     },
     {
       "path": "server/tasks.mjs",
-      "sha": "4bef27a21031cc441c0366f2aef7e61f9b4203d1",
-      "size": 10236
+      "sha": "3eac84b8070a232cd07e72f375fd0ed41e828d32",
+      "size": 10454
     },
     {
       "path": "servers.mcp.json",
-      "sha": "48a6b9f772429454a8e562ea8f6e4b3a7a516bad",
-      "size": 187
+      "sha": "d56244a39620d9e43a3069e87e507184c45daffb",
+      "size": 199
     },
     {
       "path": "skills/mcode-trajectory-studio/SKILL.md",
-      "sha": "e22ecec1d3ebbf0bee901c6c95abd7736c176f8a",
-      "size": 49610
+      "sha": "59cc0387b66ca5b7883084f7e102ccbf1abd05ee",
+      "size": 50163
     },
     {
       "path": "test/agent-tool.test.mjs",
-      "sha": "53b28fc88785e58173859476228df6c372eb6d13",
-      "size": 9680
+      "sha": "c4be6dd97fc6d1a92b0a0c7c5853aea713f775c5",
+      "size": 9858
     },
     {
       "path": "test/assets-tool.test.mjs",
-      "sha": "f8932f24416aed8b395185f2a544895a6230ccfe",
-      "size": 11340
+      "sha": "70c9c309a3c4de46b7b5ef7867aeb95b541ba4f0",
+      "size": 11573
     },
     {
       "path": "test/boolean-args.test.mjs",
-      "sha": "40a69ace85079475d5c87bab9887df6a07daeac7",
-      "size": 11458
+      "sha": "a30df83f56a78bf68374b2b4471c93cf2847b4ec",
+      "size": 11685
     },
     {
       "path": "test/changes-tool.test.mjs",
-      "sha": "53408fd39be6b69479bee77e9d84715baac794ac",
-      "size": 45171
+      "sha": "da04d03cd0a2e2993658e0789682f8c557130c65",
+      "size": 45997
     },
     {
       "path": "test/chrome-paths.test.mjs",
-      "sha": "c133e6c6ed674bcabe1fe270d6157c25e32c6a41",
-      "size": 4895
+      "sha": "2e89f48b11aedaf65de36935b780ac1c14f8e3c4",
+      "size": 4984
     },
     {
       "path": "test/cli-args.test.mjs",
-      "sha": "b33e2c21f12738512682a4c9a6ec419ca8979f45",
-      "size": 7683
+      "sha": "e49078de28a49b6ad495c377ef517c9a02bcb037",
+      "size": 7850
     },
     {
       "path": "test/compat-contract.test.mjs",
-      "sha": "cca3d16c2959042adcbeab55670ec2a15372cf55",
-      "size": 10027
+      "sha": "b2330348ea70f16ec2046855e6c9d45056551de8",
+      "size": 10228
     },
     {
       "path": "test/containment-attacks.test.mjs",
-      "sha": "9262785d29ea4a4e741e6f96459d973666e52d83",
-      "size": 9019
+      "sha": "b47681145f346256dc9a67713a330ce125938522",
+      "size": 9194
     },
     {
       "path": "test/containment.test.mjs",
-      "sha": "1042e49d8d996105eea905aec75b2159262353ca",
-      "size": 17421
+      "sha": "2af3528956b859a803bcccd51dc005609743e59c",
+      "size": 17762
     },
     {
       "path": "test/dead-exports.test.mjs",
-      "sha": "0e214277d8a8f1cdda29f743392c1503270a535a",
-      "size": 5523
+      "sha": "3cf9a3913b72f2d005543b93c6f301b667be1593",
+      "size": 5639
     },
     {
       "path": "test/detail-level.test.mjs",
-      "sha": "14d0a8d97f23787501261b4ae578b1a624e6c44b",
-      "size": 8129
+      "sha": "560861b21d276e864d411325e42023741f2c9fd9",
+      "size": 8279
     },
     {
       "path": "test/egress-contract.test.mjs",
-      "sha": "8e3c910e1c91897ad453727fd8752e2a7c3192b0",
-      "size": 16290
+      "sha": "26c2d9aea75646b21f2c2adf6e941a09ce63ff43",
+      "size": 16637
     },
     {
       "path": "test/egress-sweep.test.mjs",
-      "sha": "0dd5f01c17dc62eaa3ac3f13b2684604d2bb2341",
-      "size": 4709
+      "sha": "0e15281aef7ee0adb7a64f3595ad91962ecea76b",
+      "size": 4802
     },
     {
       "path": "test/failed-session.test.mjs",
-      "sha": "8518e74f6f91b1dd49da0cb58d24965e909f88c1",
-      "size": 6357
-    },
-    {
-      "path": "test/find-tool.test.mjs",
-      "sha": "e5ab9a5b1c152e12a8a67e94e75c4cc3a3e57407",
-      "size": 41691
-    },
-    {
-      "path": "test/format.test.mjs",
-      "sha": "acee3724aa35f3702c9e22e738d6a6d19241408c",
-      "size": 1006
-    },
-    {
-      "path": "test/goal-tool.test.mjs",
-      "sha": "ea309e646adaf534039ee3a5d3e96b34a054006e",
-      "size": 17427
-    },
-    {
-      "path": "test/http.test.mjs",
-      "sha": "2dcdae61a43e56941677aec8b6c73f41fa781e60",
-      "size": 27951
-    },
-    {
-      "path": "test/ingress-tool.test.mjs",
-      "sha": "35a52c2e1e9210d497f2ce42e5cbe56360df8880",
-      "size": 18166
-    },
-    {
-      "path": "test/json-values.test.mjs",
-      "sha": "bce5bdb2eef61be2894fb194492a20634dd1b70b",
-      "size": 4165
-    },
-    {
-      "path": "test/list-agents.test.mjs",
-      "sha": "e6e26560522b999dc0d419ff8412501a489a383e",
-      "size": 18393
-    },
-    {
-      "path": "test/list-paging.test.mjs",
-      "sha": "d501621e70d09e7b9d620ae8b3f3e7d665aef703",
-      "size": 24759
-    },
-    {
-      "path": "test/modules.test.mjs",
-      "sha": "a5e6fca3883335370c8fcdbc3e382e927b9eacf3",
-      "size": 5540
-    },
-    {
-      "path": "test/mutation-sweep.test.mjs",
-      "sha": "9465d6fbb45f8e943cb73389a26ae3557c7f1ec3",
-      "size": 17098
-    },
-    {
-      "path": "test/node-version.test.mjs",
-      "sha": "7b561bb7794806d3f2fecbc608f30533f8a1b995",
-      "size": 5588
-    },
-    {
-      "path": "test/overview-disclosure.test.mjs",
-      "sha": "17d4e178015752e705568f8a05d86052c5cee564",
-      "size": 7849
-    },
-    {
-      "path": "test/paging-args.test.mjs",
-      "sha": "dd9f2efe8d50fe2e844e12afc7e4ba67efa8aff8",
-      "size": 9033
-    },
-    {
-      "path": "test/panel-authorization.test.mjs",
-      "sha": "c15202d69d91de53c6fb5d1038b41ebf79e62b9d",
-      "size": 15913
-    },
-    {
-      "path": "test/panel-dom-contract.test.mjs",
-      "sha": "04db70d916f7c2ad239406c34b2c1a71a7959b84",
-      "size": 4099
-    },
-    {
-      "path": "test/panel-dom.mjs",
-      "sha": "fc79331d56bfd669db4834496c2d062443aa1c51",
-      "size": 16558
-    },
-    {
-      "path": "test/panel-flow.test.mjs",
-      "sha": "1bff3076048e84d737dbf5068aa2687182f635ff",
-      "size": 37494
-    },
-    {
-      "path": "test/panel-search-fields.test.mjs",
-      "sha": "444f40b71fd70aa41e5bc35afa76570ba190a5fa",
-      "size": 12387
-    },
-    {
-      "path": "test/panel-security.test.mjs",
-      "sha": "51b3bdbb5c40672f678b35ec01a3156aac4f1b78",
-      "size": 16370
-    },
-    {
-      "path": "test/panel-storage.test.mjs",
-      "sha": "b71f65b6c56fd276ea57f05d6f2cc2ba45d1373a",
-      "size": 4071
-    },
-    {
-      "path": "test/path-folding.test.mjs",
-      "sha": "82527c219d1a4c21cc204e2abd4da451e78923aa",
-      "size": 8848
-    },
-    {
-      "path": "test/portable-paths.test.mjs",
-      "sha": "2c99a2c71d192169aa8035e12ed3ce75155b249e",
-      "size": 8692
-    },
-    {
-      "path": "test/protocol.test.mjs",
-      "sha": "facb43e37234d6791da72d707e1170a5c6cdbf1c",
-      "size": 20313
-    },
-    {
-      "path": "test/read-consistency.test.mjs",
-      "sha": "58769b51210e9e16834138014959d703cccc5168",
-      "size": 37678
-    },
-    {
-      "path": "test/redact.test.mjs",
-      "sha": "d38c51a16d8f08f8fe59e4c52c840a9e9cde853f",
-      "size": 33079
-    },
-    {
-      "path": "test/release-gates.test.mjs",
-      "sha": "0f81d654319078d458b1478ade1e3d08db33e480",
-      "size": 21861
-    },
-    {
-      "path": "test/review-round4.test.mjs",
-      "sha": "422b9530422292e23f79fcb08bb20a829b692b67",
-      "size": 21915
-    },
-    {
-      "path": "test/role-filter.test.mjs",
-      "sha": "1740ca6dcde4fb9c589b99960d680446bfdd19ff",
-      "size": 10711
-    },
-    {
-      "path": "test/route-liveness.test.mjs",
-      "sha": "4bc6ed80b7be4dad55984316ef7e39dc8c62fded",
-      "size": 4829
-    },
-    {
-      "path": "test/search-encoding.test.mjs",
-      "sha": "3c5649cf7689f7b66b59d9e479baa96f06b36f22",
-      "size": 17082
-    },
-    {
-      "path": "test/search-failure.test.mjs",
-      "sha": "97a6ca3bf782232ccb901b7691ca225843cabca9",
-      "size": 13694
-    },
-    {
-      "path": "test/search-paging.test.mjs",
-      "sha": "3af78eb48b18b8d9161b0f2358ed723184983774",
-      "size": 16784
-    },
-    {
-      "path": "test/search-purpose-behaviour.test.mjs",
-      "sha": "b61ac54d74d56654c675a3f720b8762b1eb3f22c",
-      "size": 5666
-    },
-    {
-      "path": "test/session-identity.test.mjs",
-      "sha": "70c307f5936f9235657e633eeac8b86b11fdfa97",
-      "size": 8514
-    },
-    {
-      "path": "test/session-total-source.test.mjs",
-      "sha": "3a74984775fe7dd02e0331b9ff847aab6d66a24c",
-      "size": 9168
-    },
-    {
-      "path": "test/silent-degradation.test.mjs",
-      "sha": "2330cf4ef4db2acf1e2e36a9c2c50ec4f5e683de",
-      "size": 18587
-    },
-    {
-      "path": "test/skill-contract.test.mjs",
-      "sha": "97800e58eef3413b245ccd821f065e1d7a3d34e1",
-      "size": 23594
-    },
-    {
-      "path": "test/snippet-offset.test.mjs",
-      "sha": "42f76a9e9d94a6042afc56fcc361e73969d67d46",
-      "size": 20438
-    },
-    {
-      "path": "test/stats-degradation.test.mjs",
-      "sha": "1815ec5aa63e02a9052b86aaca415fd4ced894ad",
-      "size": 7157
-    },
-    {
-      "path": "test/store.test.mjs",
-      "sha": "dbdb6550b70e9f8d5cbfad126a03df31ae6a79ec",
-      "size": 62474
-    },
-    {
-      "path": "test/stream-first-batch.test.mjs",
-      "sha": "a8e4590cf4addeff487f335d5856768886f73ff0",
-      "size": 12470
-    },
-    {
-      "path": "test/studio-port.test.mjs",
-      "sha": "d8af15830cf91f7ee66e7afb01b5dcc7b9d96775",
-      "size": 6886
-    },
-    {
-      "path": "test/tail-direction.test.mjs",
-      "sha": "d8d564a00e40621e5f52a3b7765623f59ed540b3",
-      "size": 8930
-    },
-    {
-      "path": "test/tail-jump.test.mjs",
-      "sha": "111e88e0e6ce80ac072fdb6df49abe2e69853323",
-      "size": 5487
-    },
-    {
-      "path": "test/task-filter.test.mjs",
-      "sha": "ef88db3bdcc5b7a947768e2fdee68c8b372f76bc",
-      "size": 6096
-    },
-    {
-      "path": "test/task-output-notice.test.mjs",
-      "sha": "643289fe8546167709dcc815dc68f5e22016676e",
-      "size": 2515
-    },
-    {
-      "path": "test/timeline-fallback.test.mjs",
-      "sha": "df9dc7d5775b5491067d9036e04bcd8b47cfa24f",
-      "size": 7182
-    },
-    {
-      "path": "test/tool-limits.test.mjs",
-      "sha": "5f5bd2a5fe93c814e1ef5e6f0854f32dcfd4a94b",
-      "size": 8341
-    },
-    {
-      "path": "test/turn-time.test.mjs",
-      "sha": "3eab6a8b3e28ab0732d0f1c484186873cd5aa0a3",
-      "size": 9462
-    },
-    {
-      "path": "test/turns-tool.test.mjs",
-      "sha": "64c7e44f6632996c10a5a6bf3e88bd48a7741eb8",
-      "size": 19401
-    },
-    {
-      "path": "test/unavailable-records.test.mjs",
-      "sha": "f8ada5da8055cabf11b281ba3f74a5a11c1d7107",
-      "size": 15892
-    },
-    {
-      "path": "test/warning-scope.test.mjs",
-      "sha": "6329198a0324246d62ba81f1567e638b41cae638",
-      "size": 14168
-    },
-    {
-      "path": "tools/browser-check.mjs",
-      "sha": "d96ef54c319a250a47660b60b3f3b509664ab866",
-      "size": 30790
-    },
-    {
-      "path": "tools/chrome-paths.mjs",
-      "sha": "18ce0d194b694dd790503741ced286a6b6050397",
-      "size": 2859
-    },
-    {
-      "path": "tools/compat-matrix.mjs",
-      "sha": "816c2c65bc9eb545a0a3667654c1ee0c7f40ee55",
-      "size": 8628
-    },
-    {
-      "path": "tools/fixture.mjs",
-      "sha": "712bdeb553fde6b3867e5da99a397d52bf1001b3",
-      "size": 18065
-    },
-    {
-      "path": "tools/mutate-agent-assets-tool.sh",
-      "sha": "c43537b40222dca0def60f4706584fd9a03ad353",
-      "size": 10633
-    },
-    {
-      "path": "tools/mutate-agents-list.sh",
-      "sha": "f7c4919e0b50179d885f811e73d5e6588d1b2ee1",
-      "size": 7763
-    },
-    {
-      "path": "tools/mutate-changes-tool.sh",
-      "sha": "55ec0b0c694bee13a08499b531e18a5c1eb5378d",
-      "size": 18231
-    },
-    {
-      "path": "tools/mutate-compat-contract.sh",
-      "sha": "5e88417725a15316ab51046cace8df159ae88861",
+      "sha": "d4ea6df3dfae519edd973580c4a4a088f76e7091",
       "size": 6484
     },
     {
+      "path": "test/find-tool.test.mjs",
+      "sha": "56fda8cb7cf129b7e63d15341c0784b3551f5e27",
+      "size": 42559
+    },
+    {
+      "path": "test/format.test.mjs",
+      "sha": "d544eccbce3ed0fd1067c904f85d928fa2a20bc2",
+      "size": 1033
+    },
+    {
+      "path": "test/goal-tool.test.mjs",
+      "sha": "f8a46344cf4c0dc3193beb5a2b3f6eaf25ba9ae0",
+      "size": 17728
+    },
+    {
+      "path": "test/http.test.mjs",
+      "sha": "1b3e572fbf0ee667ec236d07f64f915694c0cbc3",
+      "size": 28531
+    },
+    {
+      "path": "test/ingress-tool.test.mjs",
+      "sha": "025a69e3a284836d08881d520bd465fba80c121b",
+      "size": 18518
+    },
+    {
+      "path": "test/json-values.test.mjs",
+      "sha": "25e8e3b2d8e5452467eff142b0791244df734374",
+      "size": 4252
+    },
+    {
+      "path": "test/list-agents.test.mjs",
+      "sha": "3bae4db6e9684901c7ef98c7ad3290b28d87e74f",
+      "size": 18772
+    },
+    {
+      "path": "test/list-paging.test.mjs",
+      "sha": "23b084a94464686b53c8fa6cda80bcf592bfc7f1",
+      "size": 25236
+    },
+    {
+      "path": "test/modules.test.mjs",
+      "sha": "865002d4fb055303d0a6012d4532894605281ad7",
+      "size": 5691
+    },
+    {
+      "path": "test/mutation-sweep.test.mjs",
+      "sha": "8452ec1103d160596e5fa71a9c6032f9d5a7ee0b",
+      "size": 17437
+    },
+    {
+      "path": "test/node-version.test.mjs",
+      "sha": "f01a51f20a1575587bab736d9eb8dd2c890c68a2",
+      "size": 5710
+    },
+    {
+      "path": "test/overview-disclosure.test.mjs",
+      "sha": "8fa450d9b0e02c1d0fb73fc9762222389820dd7c",
+      "size": 8004
+    },
+    {
+      "path": "test/paging-args.test.mjs",
+      "sha": "55ea2bb3b1ff8a6f4fd4b474b0b6b9309151dc32",
+      "size": 9202
+    },
+    {
+      "path": "test/panel-authorization.test.mjs",
+      "sha": "1f13fcc08410a73198c144bf4546875b0b53cd20",
+      "size": 16234
+    },
+    {
+      "path": "test/panel-dom-contract.test.mjs",
+      "sha": "f9484514324f3f35e7d9065a1299f9443186344b",
+      "size": 4190
+    },
+    {
+      "path": "test/panel-dom.mjs",
+      "sha": "c2094b8a2e9251161852642ee94e75cc62ebfeed",
+      "size": 17068
+    },
+    {
+      "path": "test/panel-flow.test.mjs",
+      "sha": "5cb1a1ceadad8f5afb7c8026c8a28abbb650061e",
+      "size": 38365
+    },
+    {
+      "path": "test/panel-search-fields.test.mjs",
+      "sha": "3e03251e0e955f18e6c9d1c36565c5913a95d02f",
+      "size": 12686
+    },
+    {
+      "path": "test/panel-security.test.mjs",
+      "sha": "43b966bfae6279508b048babc13aa35df04b3062",
+      "size": 16738
+    },
+    {
+      "path": "test/panel-storage.test.mjs",
+      "sha": "31b2260b297a3ab8a58efeeaf280f590bbdaa836",
+      "size": 4160
+    },
+    {
+      "path": "test/path-folding.test.mjs",
+      "sha": "2481996c047235c680caa84fa02cb31791c695d9",
+      "size": 9010
+    },
+    {
+      "path": "test/portable-paths.test.mjs",
+      "sha": "8b1b1228ddbbf6c6b188713859b4744a195a12f6",
+      "size": 8884
+    },
+    {
+      "path": "test/protocol.test.mjs",
+      "sha": "2f2164b8bc756672d31ced19bc033bf52081e723",
+      "size": 20753
+    },
+    {
+      "path": "test/read-consistency.test.mjs",
+      "sha": "3f4f2e3fbb836a0342602c773eb5ea484b44904c",
+      "size": 38359
+    },
+    {
+      "path": "test/redact.test.mjs",
+      "sha": "f1bfc74419e0b6b4dd6b9d7eb77489578d7f9b1a",
+      "size": 33752
+    },
+    {
+      "path": "test/release-gates.test.mjs",
+      "sha": "0c1786ee4e9fb51d35a7638b425f493f9c67a185",
+      "size": 22300
+    },
+    {
+      "path": "test/review-round4.test.mjs",
+      "sha": "c5ca45f62e1349ceb1615466dd82c1fdf823f7db",
+      "size": 22367
+    },
+    {
+      "path": "test/role-filter.test.mjs",
+      "sha": "7a834f5802cf7bcf9ae7719acbf774ac2fc3de02",
+      "size": 10934
+    },
+    {
+      "path": "test/route-liveness.test.mjs",
+      "sha": "098ea8122a2e0873e93b62de74865e7df59616f9",
+      "size": 4928
+    },
+    {
+      "path": "test/search-encoding.test.mjs",
+      "sha": "30565a464a44389c38f2e74e79ae1ce17a82ab68",
+      "size": 17397
+    },
+    {
+      "path": "test/search-failure.test.mjs",
+      "sha": "bd8f9eff795308d0cb16bac5756247af09cb6080",
+      "size": 13939
+    },
+    {
+      "path": "test/search-paging.test.mjs",
+      "sha": "5093f8ce31b723c69c836f1dae4933a151e0cd84",
+      "size": 17096
+    },
+    {
+      "path": "test/search-purpose-behaviour.test.mjs",
+      "sha": "2698e6bc6dbe7ada5ba08352aac4df898cfd2193",
+      "size": 5784
+    },
+    {
+      "path": "test/session-identity.test.mjs",
+      "sha": "366aa4c5ae1e8e1e17ea5afa2af6e0fea5089cbe",
+      "size": 8687
+    },
+    {
+      "path": "test/session-total-source.test.mjs",
+      "sha": "03f0906935675ab8dfe91813b8350ca1b5924fb9",
+      "size": 9378
+    },
+    {
+      "path": "test/silent-degradation.test.mjs",
+      "sha": "fd7f6042e758ebf0536d7e4ae8e32ad06ef578fc",
+      "size": 18943
+    },
+    {
+      "path": "test/skill-contract.test.mjs",
+      "sha": "b5f11f6c9590280d85085548ed5c81081da87b02",
+      "size": 24007
+    },
+    {
+      "path": "test/snippet-offset.test.mjs",
+      "sha": "d6c28c60992290ac98ef00c5ff1509fb1ca6345d",
+      "size": 20845
+    },
+    {
+      "path": "test/stats-degradation.test.mjs",
+      "sha": "fc04450ca6bd75457fd6cb8091031035fba9e140",
+      "size": 7302
+    },
+    {
+      "path": "test/store.test.mjs",
+      "sha": "f15029511de3ff33bbfc2ad88d1d1f225fe91ddc",
+      "size": 63720
+    },
+    {
+      "path": "test/stream-first-batch.test.mjs",
+      "sha": "74192fad7f0bd74de2fcb337d2b8bb1f96257463",
+      "size": 12735
+    },
+    {
+      "path": "test/studio-port.test.mjs",
+      "sha": "8f9df6bef6d730e0a69544f2081d5178297349cb",
+      "size": 7029
+    },
+    {
+      "path": "test/tail-direction.test.mjs",
+      "sha": "ed2ef8fb32167945ae4f3365c44849bc9eac9a5e",
+      "size": 9098
+    },
+    {
+      "path": "test/tail-jump.test.mjs",
+      "sha": "a7ca80dacb2caff6585e7a003959b4550a680663",
+      "size": 5602
+    },
+    {
+      "path": "test/task-filter.test.mjs",
+      "sha": "3b86be402dda75baf346e9527a2f033131c908e9",
+      "size": 6227
+    },
+    {
+      "path": "test/task-output-notice.test.mjs",
+      "sha": "3e850cf03dca402b92c95e4230e41bec1b3d875b",
+      "size": 2559
+    },
+    {
+      "path": "test/timeline-fallback.test.mjs",
+      "sha": "8ecf93988687f667b27214a9b0124b2664430239",
+      "size": 7346
+    },
+    {
+      "path": "test/tool-limits.test.mjs",
+      "sha": "77ef3a2580191987f7ddac2665d6c0b3ebd57d25",
+      "size": 8520
+    },
+    {
+      "path": "test/turn-time.test.mjs",
+      "sha": "ff74fd0053acce021819894ea1800d00b0179a7e",
+      "size": 9665
+    },
+    {
+      "path": "test/turns-tool.test.mjs",
+      "sha": "b386c255be6f453f74d515a9ba3f459c63375575",
+      "size": 19771
+    },
+    {
+      "path": "test/unavailable-records.test.mjs",
+      "sha": "e4e193f4ee5d0ba21d6af396f414d696b078e71b",
+      "size": 16211
+    },
+    {
+      "path": "test/warning-scope.test.mjs",
+      "sha": "6365fd370c147dc7e017eaebc2e14ac58cc6b399",
+      "size": 14449
+    },
+    {
+      "path": "tools/browser-check.mjs",
+      "sha": "8de639a3a357809271785cca7c0c35a021648f41",
+      "size": 31325
+    },
+    {
+      "path": "tools/chrome-paths.mjs",
+      "sha": "6e387b932f816e8c40cb704e44b7b8966fd74e19",
+      "size": 2923
+    },
+    {
+      "path": "tools/compat-matrix.mjs",
+      "sha": "60e067af35b9ab5649f5cbc39f3ab49f52984ce8",
+      "size": 8815
+    },
+    {
+      "path": "tools/fixture.mjs",
+      "sha": "2a23f4d5d71415551f286fd754974e84eb3bf63e",
+      "size": 18425
+    },
+    {
+      "path": "tools/mutate-agent-assets-tool.sh",
+      "sha": "03711dab6f3ef0db7f06fc406cc6b5f0898003db",
+      "size": 10855
+    },
+    {
+      "path": "tools/mutate-agents-list.sh",
+      "sha": "40468db49a1d94bd35bf6add07f5794904fc3e4c",
+      "size": 7939
+    },
+    {
+      "path": "tools/mutate-changes-tool.sh",
+      "sha": "6d6a27a6571956f80b631cb26187ef22f46c3ccf",
+      "size": 18617
+    },
+    {
+      "path": "tools/mutate-compat-contract.sh",
+      "sha": "3ab0517ffe1908830393bcb906386b90e0e3550f",
+      "size": 6632
+    },
+    {
       "path": "tools/mutate-detail-level.sh",
-      "sha": "5734bd83bd3cb2f2b42f4fe38cbcf20da6c02338",
-      "size": 5130
+      "sha": "da3a1be659e015eaf23ffcdf653d929702561e0f",
+      "size": 5254
     },
     {
       "path": "tools/mutate-event-case.sh",
-      "sha": "a00915803cfa30c8a2884f9a4776f43443a21c8d",
-      "size": 7824
+      "sha": "042483a2f29b43130f8dd184c91606a754afea52",
+      "size": 8008
     },
     {
       "path": "tools/mutate-failed-session.sh",
-      "sha": "56cf9059376fb5c3421f901eeaedf6eb451c9a94",
-      "size": 6746
+      "sha": "294b430482e7c443d0ab1796dfecc1e34186ca67",
+      "size": 6912
     },
     {
       "path": "tools/mutate-goal-objective.sh",
-      "sha": "77405bac60874e350e7bc91c0d7ac4ccb033d013",
-      "size": 9728
+      "sha": "ff1a3c345fb92989f4eeaa28a4e1a510a7630195",
+      "size": 9964
     },
     {
       "path": "tools/mutate-home-folding.sh",
-      "sha": "7b30be8d1524b85045197b243b3f13c4384c08f5",
-      "size": 6571
+      "sha": "f238092d13c341e17396391e3a0e0c6e6c8c12ed",
+      "size": 6700
     },
     {
       "path": "tools/mutate-ingress-tool.sh",
-      "sha": "da524cc8f03d5f31b8d614e78398bdb642c51de9",
-      "size": 13046
+      "sha": "d73edaf61e28466ee7bc47cf1044c7a8259b746b",
+      "size": 13332
     },
     {
       "path": "tools/mutate-overview-disclosure.sh",
-      "sha": "c293047d3d5d0b61aa5f45d7205288fc91284ebf",
-      "size": 7390
+      "sha": "4bc6eec31a038b5eef1712ce3193c8abb56e7e8e",
+      "size": 7568
     },
     {
       "path": "tools/mutate-paging-args.sh",
-      "sha": "a6fb4cbd7d345127dd1f6edfdd8be3aecb4cf40d",
-      "size": 5807
+      "sha": "4d78a8c92dd3ef4d3286e5da71c38cc726075a0e",
+      "size": 5946
     },
     {
       "path": "tools/mutate-panel-search.sh",
-      "sha": "6efe1a03581f04ba32d2aa3d137764432a043f61",
-      "size": 6211
+      "sha": "10d6d7c3f296184907269ba878e88d597fa00c9c",
+      "size": 6362
     },
     {
       "path": "tools/mutate-panel-storage.sh",
-      "sha": "68f34857a1b6f849cd1dae68578539751b927c4a",
-      "size": 4142
+      "sha": "4b65259e12887297c6e3ee3b88982b00f89f52fa",
+      "size": 4256
     },
     {
       "path": "tools/mutate-panel-task-output.sh",
-      "sha": "14b4490c28e2a7cb6d01de6cccdd8c6b1bbf6bba",
-      "size": 4857
+      "sha": "155535bdf066e62a033ea0a3cdce06f95848a951",
+      "size": 4980
     },
     {
       "path": "tools/mutate-review-round4.sh",
-      "sha": "20bb4f6851e35a6338765e2737283269f124f913",
-      "size": 8748
+      "sha": "52d09e49715f9c7d2e33fa75a29f3e1795f9ce7a",
+      "size": 8931
     },
     {
       "path": "tools/mutate-role-filter.sh",
-      "sha": "d27eff9f2f676d66030c4763bed0b9b01a05ac0a",
-      "size": 5788
+      "sha": "49a10f621e14d7207ead67e7062cae5fb45bc2c4",
+      "size": 5933
     },
     {
       "path": "tools/mutate-search-encoding.sh",
-      "sha": "4de373f1ad5d13b365977451ddbf26625d556edc",
-      "size": 6481
+      "sha": "f32422d75f5aa72510305a600c6051046d2dbfe7",
+      "size": 6626
     },
     {
       "path": "tools/mutate-search-purpose-behaviour.sh",
-      "sha": "65aa02470bbf3bb53cb2f0822e884fa282ff90ef",
-      "size": 6142
+      "sha": "9a568ffea5217d9190f82b75f615df89bb4a6322",
+      "size": 6295
     },
     {
       "path": "tools/mutate-search-purpose.sh",
-      "sha": "bf54498e9b2f6a6f91cf490ae8d03f86e9df4f25",
-      "size": 5033
+      "sha": "c51af8009d999c9738fc077faffadc1a1591c1ce",
+      "size": 5168
     },
     {
       "path": "tools/mutate-search-unsearchable.sh",
-      "sha": "beeecd783a969786fd1c0ba51807553b10226591",
-      "size": 6266
+      "sha": "a4f2748a26064e50f1b1c067f99e9f60cf59bc81",
+      "size": 6418
     },
     {
       "path": "tools/mutate-source-swap.sh",
-      "sha": "9b9f2e663df17f61d3a1107a57347318db104cc4",
-      "size": 5711
+      "sha": "f10a9252dfc613183451036448502c18be93023a",
+      "size": 5852
     },
     {
       "path": "tools/mutate-static-404.sh",
-      "sha": "76361dd39fea2a3a72b3358d27c9b6dbde4fd0c4",
-      "size": 5087
+      "sha": "92ae7419c38c251bb3ebaebcfc3955af9b52c657",
+      "size": 5215
     },
     {
       "path": "tools/mutate-stream-rows.sh",
-      "sha": "52747c22cb6761a1cd10ec5e6d28e388219ffb21",
-      "size": 8737
+      "sha": "f7910e5834d4d138e8324f8ffce85f2afd4d8671",
+      "size": 8953
     },
     {
       "path": "tools/mutate-studio-port.sh",
-      "sha": "ebcc79d6ab13977a67451d851be41c1d468e5a0a",
-      "size": 6717
+      "sha": "3e9d19b5d953e95e4caa44aed825a289a1fa20fc",
+      "size": 6888
     },
     {
       "path": "tools/mutate-tail-direction.sh",
-      "sha": "df491c3fa800c8de102895803e3ba8c083f58d3d",
-      "size": 6451
+      "sha": "6b11cd5ec1f65b63f8c71e9709b2c74fa8b91e9f",
+      "size": 6606
     },
     {
       "path": "tools/mutate-task-capability.sh",
-      "sha": "35fc911f6c9644460e87ecbebcb5a5709faf1bb1",
-      "size": 6892
+      "sha": "568aa790f893ecb74d4ab4984559f6600d1c4998",
+      "size": 7052
     },
     {
       "path": "tools/mutate-task-output-notice.sh",
-      "sha": "70d94a98e63b7e84a8c79e8791596743bb9fcc8c",
-      "size": 4770
+      "sha": "e670555ce7ee40b9441ece7b253e17de705590e8",
+      "size": 4892
     },
     {
       "path": "tools/mutate-timeline-fallback.sh",
-      "sha": "1627fbf41e91c676b4f5a590de1e5cd8fd96ff97",
-      "size": 8097
+      "sha": "8dbe8670f07397c53813f0fcb8d0ec1d9f077c23",
+      "size": 8309
     },
     {
       "path": "tools/mutate-tool-limits.sh",
-      "sha": "ead4d0fb392da9b9ee7e1d85ae485b4a5cf310a4",
-      "size": 5433
+      "sha": "c21eee6816ef85befaba6d5598ed4eb3e6052c45",
+      "size": 5568
     },
     {
       "path": "tools/mutate-toolcall-snippet.sh",
-      "sha": "8e0f06fa099d192b9fe569bfa1400fba829a6e55",
-      "size": 8137
+      "sha": "74630f2be92bc25cf40a4a99f4a2a937930fba34",
+      "size": 8316
     },
     {
       "path": "tools/mutate-turn-failures.sh",
-      "sha": "98904cf38b9e813f618f7f4cfca7d95934b63747",
-      "size": 5482
+      "sha": "c22a32ba10a8547ba7bbaaa5e042d3a67f444a01",
+      "size": 5612
     },
     {
       "path": "tools/mutate-turn-time.sh",
-      "sha": "f1f2b7e68a28206deb285210607edc05c6062417",
-      "size": 7620
+      "sha": "eb4ed7fad161668235ae1000330efbdcd55c12e6",
+      "size": 7812
     },
     {
       "path": "tools/mutate-unavailable-records.sh",
-      "sha": "3a2c2139268a41a00a649bb8453cb44e9f9ca91a",
-      "size": 12587
+      "sha": "a7d30a4213e4fb801c5d2b157b3859a08362c9d6",
+      "size": 12906
     },
     {
       "path": "tools/mutate-walk-cursor.sh",
-      "sha": "62d5a0787be1148252b03c88ae5415f3ba145612",
-      "size": 10265
+      "sha": "36f4e6924f4af65b940a289c41453a81687c5a46",
+      "size": 10476
     },
     {
       "path": "tools/mutate-warning-scope.sh",
-      "sha": "860868deacc396895dd9411aa88cae8b7c876e05",
-      "size": 6525
+      "sha": "4e79db7ea3e2782d80c6c67b7d1b40a58a8291c1",
+      "size": 6690
     },
     {
       "path": "tools/mutation-lib.sh",
-      "sha": "ee67a318421e77afee86f842849e1d7aaa25712b",
-      "size": 5637
+      "sha": "ab78232a58e96135e4d2589e2a88a96bf364b37a",
+      "size": 5765
     },
     {
       "path": "tools/mutation-sweep.mjs",
-      "sha": "9d60d4de896992a984ef161e7ebe09a9629eef90",
-      "size": 14115
+      "sha": "21f9282b32761b0a1b9fea3536b9e90f15d40ca8",
+      "size": 14401
     },
     {
       "path": "tools/panel-e2e.mjs",
-      "sha": "4e0c55173a54977347bb08bfcb5abba262023ece",
-      "size": 12090
+      "sha": "b855198bc04e41a25bf71ceea628336107018ba8",
+      "size": 12351
     },
     {
       "path": "tools/release-gates.mjs",
-      "sha": "121c0a6968423782e6e740b9840ec20c20da3fbb",
-      "size": 35728
+      "sha": "ec692b73c344cc532ee76051dcb185ddf5eda08b",
+      "size": 36496
     },
     {
       "path": "web/app.js",
-      "sha": "3a1fb9c8e120f5e3162cbeb810add6a15e16aab4",
-      "size": 3606
+      "sha": "2451636e5076930ab1dcb7736c0b72c75283520d",
+      "size": 3687
     },
     {
       "path": "web/index.html",
-      "sha": "6856292dd1ddb72c5c85aae7e9b370cff2c2350f",
-      "size": 4596
+      "sha": "273e05859facbc1e302de72a2743f1d999080ee6",
+      "size": 4708
     },
     {
       "path": "web/js/api.js",
-      "sha": "6db7596465892ba06cecc11118cbbdb04a65e597",
-      "size": 1451
+      "sha": "d7d3e20d4cb79175aff8066c2f4e93fc5c3d93f0",
+      "size": 1488
     },
     {
       "path": "web/js/banner.js",
-      "sha": "18c020865956b1b78d9306e227259ad6d1409306",
-      "size": 498
+      "sha": "ba399c1ebffbad36d32482a5d6528186067da94e",
+      "size": 516
     },
     {
       "path": "web/js/bus.js",
-      "sha": "aa06d6933a04b070f8ec80346fea31cb63321dfc",
-      "size": 1028
+      "sha": "41cbcab83c7eea8b73377848d6a46c46369389f2",
+      "size": 1055
     },
     {
       "path": "web/js/capability.js",
-      "sha": "07a645ba2994d3a66c443d58e59df82ab13e5e93",
-      "size": 2869
+      "sha": "4af30b31809c95d57cd95aed4802646803fd7089",
+      "size": 2943
     },
     {
       "path": "web/js/controller.js",
-      "sha": "c2291e34794e9f1651a98023d71b97dc9f91f24c",
-      "size": 1494
+      "sha": "73beb81889c2a97e8148eece5fecc95582842ac3",
+      "size": 1523
     },
     {
       "path": "web/js/flow.js",
-      "sha": "4e1b9d057d9ec9b6a93154714f3ed2bdb1fa030a",
-      "size": 26914
+      "sha": "27288675eb304ac21cba05b96b67dbb42ac6a4cf",
+      "size": 27502
     },
     {
       "path": "web/js/format.js",
-      "sha": "ed841627454b7e21e122c104077aedefceb9c979",
-      "size": 3525
+      "sha": "31ac10525fb75abf301ad24a8d5e505885c892b6",
+      "size": 3628
     },
     {
       "path": "web/js/icons.js",
-      "sha": "a942dfbb87f2c1e680baf48c0fa14970f247f6c1",
-      "size": 1267
+      "sha": "af0dac4a038fb129edcd9ea4174827e77cf9b2a1",
+      "size": 1304
     },
     {
       "path": "web/js/inspector.js",
-      "sha": "848cd69d95c5a4c7f83d26de46b758ab3a2fb7c5",
-      "size": 17703
+      "sha": "1f013154b4c9e4ac0ca967a5748c8c334e6d316a",
+      "size": 18107
     },
     {
       "path": "web/js/intents.js",
-      "sha": "c1e117a28778561224806ade9c0ae784b482b2e4",
-      "size": 926
+      "sha": "e36297bd2caf13370fd37ca68e667c57ebe8a226",
+      "size": 946
     },
     {
       "path": "web/js/results.js",
-      "sha": "2308c2802b1025bb96170473c8e016e3b648a08d",
-      "size": 2961
+      "sha": "6704556401f97be985c82274681490c737ac3ba0",
+      "size": 3040
     },
     {
       "path": "web/js/rows.js",
-      "sha": "b5732f80885c7685662325f7d958b3cece0caf65",
-      "size": 3297
+      "sha": "8c17924b1df876c3f67f1c1d54f6f8203d1e5c6c",
+      "size": 3376
     },
     {
       "path": "web/js/sidebar.js",
-      "sha": "0d4a952bf7abae451038d35986223899a650de0f",
-      "size": 8866
+      "sha": "0a9a45bc44552c21fdc4244f5853105f97ac3d55",
+      "size": 9073
     },
     {
       "path": "web/js/state.js",
-      "sha": "aa0b2bc19405f231c62c23a2041cbd3210192fb8",
-      "size": 5961
+      "sha": "fb79983f4eb6bc7014ead800561a6cef5f9a79d0",
+      "size": 6090
     },
     {
       "path": "web/js/stats.js",
-      "sha": "9758bbfa3b98529c420bb8f94b7c43977b5fe68c",
-      "size": 4227
+      "sha": "a8e373cd77bd4af8817188caccaa4dcafa605cf7",
+      "size": 4311
     },
     {
       "path": "web/js/storage.js",
-      "sha": "b8f9ab0abd80c6d884687d2509fcffcdf2a3bf4b",
-      "size": 2095
+      "sha": "4271da9a96c480916d2da0234fa2e790708a2658",
+      "size": 2158
     },
     {
       "path": "web/js/stream.js",
-      "sha": "fb05477a49a3dc478bf1d4295941a7a910fcadeb",
-      "size": 11916
+      "sha": "dca42f4d56de2a585027d5f6917fa047359e9652",
+      "size": 12198
     },
     {
       "path": "web/js/theme.js",
-      "sha": "6e7406a7e95f81bb6e4672cd1391f93b0ea4c256",
-      "size": 1652
+      "sha": "6b15b69d1d5a7bc3facc9e9a8c902b12dea0012d",
+      "size": 1701
     },
     {
       "path": "web/js/timeline.js",
-      "sha": "c02dc8fc6b7aa9e08037b214bf1b919392affe8e",
-      "size": 10423
+      "sha": "f4187d811e384545ffb1e072a87cab24acc0040c",
+      "size": 10679
     },
     {
       "path": "web/js/wire.js",
-      "sha": "14a3ee29e651a165ec0faa14e841a5f37698a9b7",
-      "size": 8808
+      "sha": "f7e57ae7d69bfb7208ec1528c37005d1cf750987",
+      "size": 9014
     },
     {
       "path": "web/style.css",
-      "sha": "7ec01fe8ba2e51cbdb1d2df79d60a8e4f9343490",
-      "size": 24362
+      "sha": "bdc67e5c9c7382e60087328cf1762b292d451ed1",
+      "size": 25040
     }
   ]
 }

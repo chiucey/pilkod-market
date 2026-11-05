@@ -2,123 +2,123 @@
   "files": [
     {
       "path": ".clawhub/origin.json",
-      "sha": "2a9e54e0d5e0ee9f2e8c8e0880466a5a53c4dc41",
-      "size": 139
+      "sha": "2a51743977c987a746aa12e0226b4dc850afaa1c",
+      "size": 146
     },
     {
       "path": "CLAUDE.md",
-      "sha": "d221e55edabfce23e98a7bc3d5f9bd66be9d827a",
-      "size": 2423
+      "sha": "5948b834d86e2903ae464821db639209b3800fe4",
+      "size": 2468
     },
     {
       "path": "README.md",
-      "sha": "fc15144314d164ee623d34f51c0cecd449976a88",
-      "size": 28412
+      "sha": "cb45163247b95abc16cec0ba6b934408b92a5d71",
+      "size": 29046
     },
     {
       "path": "SKILL.md",
-      "sha": "6c88af0b8be57df4df161d539432512eea17a15c",
-      "size": 39295
+      "sha": "563ae76ecaf59bc17e92e2dfdfd9e14449079246",
+      "size": 40325
     },
     {
       "path": "_meta.json",
-      "sha": "358f8071dc793546f3017d4a68ce58e86563c083",
-      "size": 126
+      "sha": "3148b8935d2f55f1f69ccd33649fc44f879e0d0f",
+      "size": 131
     },
     {
       "path": "docs/research-task-1789.md",
-      "sha": "0ecf9356e60601f3d8aa253e8ab359cc41846edc",
-      "size": 12027
+      "sha": "598059da86eac232773c232f4a9540316a850446",
+      "size": 12320
     },
     {
       "path": "package-lock.json",
-      "sha": "5233d4f29b6b053a05123138dfd0bd9740bd4b30",
-      "size": 37516
+      "sha": "c560233165916d538f52db5e36b177798f651559",
+      "size": 38609
     },
     {
       "path": "package.json",
-      "sha": "9a77bc939d2e7521c56a67a2ee322ebe376bd46c",
-      "size": 1644
+      "sha": "9292e1080b805f8e4f7ca8796b954967f5304ca5",
+      "size": 1719
     },
     {
       "path": "scripts/postinstall.js",
-      "sha": "e8f75617c53944db5ac7781f3f29ef0f441b13f1",
-      "size": 4634
+      "sha": "cc60a10a0a3cb52c9a4ad8942eb4c5736a28edd2",
+      "size": 4782
     },
     {
       "path": "scripts/preuninstall.js",
-      "sha": "b5f7ef16fa5f365ba0c6d8723fcd7107c5d6bd0a",
-      "size": 1448
+      "sha": "f9c802dda191c01417fd8fbb1f5502b25d845a3f",
+      "size": 1497
     },
     {
       "path": "social-preview.html",
-      "sha": "247af910239e9f3d4f7899a75115c34d79fe8afa",
-      "size": 5184
+      "sha": "309cb365163cc9f1348a318f47f5bdf21d5b0efb",
+      "size": 5341
     },
     {
       "path": "src/cli.ts",
-      "sha": "4e8594e576dd915e3a0de25b7aedc1d393cbabe4",
-      "size": 50966
+      "sha": "4ac1255a58f9dd4b5820dccda90ab456ce89e882",
+      "size": 52346
     },
     {
       "path": "src/lib/analyze.ts",
-      "sha": "ba543748d32c47feae863d3460e7df2f6cf388e8",
-      "size": 20458
+      "sha": "d9ba86c1c27f8e613bb280935bbb0df828258287",
+      "size": 21093
     },
     {
       "path": "src/lib/cdp-cookies.ts",
-      "sha": "13731e771301cc3284fe52839505c491184e09a4",
-      "size": 13405
+      "sha": "ac53baba74622eef8944ad51fe823efd8632aa79",
+      "size": 13826
     },
     {
       "path": "src/lib/client.ts",
-      "sha": "54f72392855270cb41acce22f4ccc9fe01f4acd6",
-      "size": 21236
+      "sha": "2699e3cb8ea85ca444ac90c73d2b2ed530b90d0f",
+      "size": 21929
     },
     {
       "path": "src/lib/cookies.ts",
-      "sha": "48bf8a11fae9b4b39cf9c4163f0beeecfc6edcac",
-      "size": 12860
+      "sha": "988ff4ef3fa8cdb4811e49fa8f1cba0d1d6e0d7d",
+      "size": 13245
     },
     {
       "path": "src/lib/creator-signing.ts",
-      "sha": "c8ca871171ea2be28ab7213a0d648b74023ec502",
-      "size": 1805
+      "sha": "86576914b4570a55a3baecd644ccf5da326fee05",
+      "size": 1874
     },
     {
       "path": "src/lib/fingerprint-data.ts",
-      "sha": "2b39dd9cda41b3ef9d90aa07d088a73ac96bd175",
-      "size": 2376
+      "sha": "4cfb5e08638ef8bda44984be703d18f15a4c2c7f",
+      "size": 2415
     },
     {
       "path": "src/lib/health.ts",
-      "sha": "6e48a909d3d7f2288cfc93ba00336526f81db89f",
-      "size": 5631
+      "sha": "27d5a38d43b2f4bf7b1f37432cbe6bfa67f6f374",
+      "size": 5761
     },
     {
       "path": "src/lib/render.ts",
-      "sha": "7e1dd499923f07d14fd24fac20f8a7628c64fe9e",
-      "size": 19962
+      "sha": "dc5dc2d64c52cdd6cd46ed6aae84ed31cd976d30",
+      "size": 20609
     },
     {
       "path": "src/lib/reply-strategy.ts",
-      "sha": "fbc2d17a4f0bf7432f4f19948e33005336814188",
-      "size": 6099
+      "sha": "aa59b50a53ec798287df92818a5bc5cf54201d40",
+      "size": 6282
     },
     {
       "path": "src/lib/signing.ts",
-      "sha": "4bf71096d4f357080d919f54ee68ec31dd299cfa",
-      "size": 21536
+      "sha": "bcdae2c4bbf398885bc02413ba650155919be1f2",
+      "size": 22222
     },
     {
       "path": "src/lib/template.ts",
-      "sha": "b509c940941de5ce6714a57a359012b6cdeddead",
-      "size": 8176
+      "sha": "ed73923d94f4a3a1d5941b21eacb63b85da528fe",
+      "size": 8387
     },
     {
       "path": "tsconfig.json",
-      "sha": "f44baa9ff8dd8193482337d164d63dc324f5706c",
-      "size": 458
+      "sha": "b7227b25dd7e7d0fae882b5bb93365ddc00f4f4a",
+      "size": 477
     }
   ]
 }

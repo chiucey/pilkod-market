@@ -3,48 +3,48 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "a98a55d885cc6f6bd5a5fb831d39ca5e7a46d4e5",
-      "size": 862
+      "sha": "3950be43d68aae418b7e45b84a7dd4ae160e6d23",
+      "size": 884
     },
     {
       "path": "ASSET-RIGHTS.md",
-      "sha": "4a3d7f6ded4558a9b3614df17cfd8ec32f46d397",
-      "size": 607
+      "sha": "811a9f4e51f5c1717448d9883109361a68962ac2",
+      "size": 612
     },
     {
       "path": "LICENSE",
-      "sha": "1edcc99d425985a8726ef52ecb85d7c37461d441",
-      "size": 1082
+      "sha": "cae43afdaf627ce3deb9844514fa5925aed45e31",
+      "size": 1103
     },
     {
       "path": "README.md",
-      "sha": "efb1e32d70b81b1af36ef4ff8cf9b21e991eb3cc",
-      "size": 6061
+      "sha": "760547a2aad871495edd660d01c33c6fc1505aba",
+      "size": 6148
     },
     {
       "path": "asr/qwen_worker.py",
-      "sha": "bf4c60b0d19156caaab75d04762ef1305fcda6be",
-      "size": 3336
+      "sha": "e6016d2238942391e4378df75df534d6c2825dd1",
+      "size": 3406
     },
     {
       "path": "asr/requirements.lock",
-      "sha": "0bdcc23bf92f7cae7fd8ffcbb0ff49d5006aa317",
-      "size": 610
+      "sha": "9efa97c3f24ea48d5eae2205176e09ac7af403f6",
+      "size": 647
     },
     {
       "path": "docs/agent-setup.md",
-      "sha": "601f03c6516e67bca83787e24d4f3be1b099c402",
-      "size": 5310
+      "sha": "57269d3b17f6742e54eaae4eee14e6ce3148955f",
+      "size": 5353
     },
     {
       "path": "docs/data-and-permissions.md",
-      "sha": "f56aed6afee3db21118922217533c7211eaa72ed",
-      "size": 1453
+      "sha": "411d6a0879d5d8a19c0d3e8b2592f4b96e1e5d75",
+      "size": 1468
     },
     {
       "path": "docs/installation.md",
-      "sha": "58534155fc4fa213d808ddca26f3227a2de82930",
-      "size": 2470
+      "sha": "5c92af7cb28efd3fb65d55d1174ba40ab6b19aab",
+      "size": 2501
     },
     {
       "path": "icon.png",
@@ -53,118 +53,118 @@
     },
     {
       "path": "lib/beta-client.mjs",
-      "sha": "0f805b4d8ca8a8d30d6044c56895a8ba5a28436b",
-      "size": 2746
+      "sha": "5d926c430f416e8b6c9ae7beed9bf465beadf8ac",
+      "size": 2789
     },
     {
       "path": "lib/client.mjs",
-      "sha": "9e317604b2a35a8efc0662bfeea5ce795ffd2019",
-      "size": 697
+      "sha": "90bc074dd160d89660c2c184ac2e4d7f01caa09c",
+      "size": 711
     },
     {
       "path": "lib/config.mjs",
-      "sha": "0dc10b9198facb2546e851a7de4917e33905728a",
-      "size": 3618
+      "sha": "61e426a994b057f1ea51696725baa63f08b8c182",
+      "size": 3672
     },
     {
       "path": "lib/direct-capture.mjs",
-      "sha": "82767a8e3456951a3a03ffa4b8d4668d18b2fca3",
-      "size": 3136
+      "sha": "d79721cecac78e1f184556115d814023301e5983",
+      "size": 3191
     },
     {
       "path": "lib/mcp.mjs",
-      "sha": "c31dbf2841766a630afee8808b34b5fa0be01045",
-      "size": 6243
+      "sha": "4402f0d15a111bb8a68e94d7d7820c6adac99b09",
+      "size": 6309
     },
     {
       "path": "lib/prepare.mjs",
-      "sha": "de16aba0b391a3d1240ad2d678be7a5b7cdd85de",
-      "size": 5378
+      "sha": "1d61da02ca65448bc59327240645a60aeefb2aec",
+      "size": 5458
     },
     {
       "path": "lib/process.mjs",
-      "sha": "4d2351f04d6d9d44d059deba802fab827f2d7385",
-      "size": 1732
+      "sha": "3b3056ea3df6fd95f8fe19d21b7ccfb5f64573c2",
+      "size": 1765
     },
     {
       "path": "lib/provider-key.mjs",
-      "sha": "e3386da075db7754c9e3c4ad2eef0eaf860f9de7",
-      "size": 892
+      "sha": "b8b67690dc118aade53256175a9a2c881167df98",
+      "size": 910
     },
     {
       "path": "lib/qwen-worker.mjs",
-      "sha": "374d0913453f428dc9377bae872e11827b1b2eea",
-      "size": 4481
+      "sha": "492e770a2900a248fa65fa340b1e4be5af457695",
+      "size": 4567
     },
     {
       "path": "lib/service.mjs",
-      "sha": "7efbdfffa75f18e81abb5d24e151c5f32cbdbc02",
-      "size": 11647
+      "sha": "541a52ae75238566f5a54facf86f7e46287b69fa",
+      "size": 11799
     },
     {
       "path": "lib/setup-status.mjs",
-      "sha": "c5ef01c7803e7daac8e62678cc2cd41ed5031784",
-      "size": 3845
+      "sha": "af332feb002d81dc6c02643cb8b430e65ba9c870",
+      "size": 3898
     },
     {
       "path": "lib/speech.mjs",
-      "sha": "6f3cbe364d21323569b2aa4cdda80734524779c8",
-      "size": 6797
+      "sha": "0fdcfffb0e119220bfa77a6c14efa615c7093af8",
+      "size": 6909
     },
     {
       "path": "lib/voice-policy.mjs",
-      "sha": "3ff599197d272d133ea87ecc5f8df32d34a52849",
-      "size": 3436
+      "sha": "47e10c067f7c7b7032f9564c4685e013b26c5465",
+      "size": 3462
     },
     {
       "path": "lib/worker-voice.mjs",
-      "sha": "312aaeabcb726f08ca7fdbb61a084cf1793828c8",
-      "size": 2458
+      "sha": "fb75ebbd93b73b461d8c3e42763157c4bcea5937",
+      "size": 2493
     },
     {
       "path": "mcp-launch.sh",
-      "sha": "4b7d381984ce95f85005a77256eb573e8b3e28a0",
-      "size": 815
+      "sha": "5c9593b38c233dc73aa4fa882d49691e50ee37be",
+      "size": 831
     },
     {
       "path": "package.json",
-      "sha": "e9e4148517656cfcbfe405933eb3e1660e92f5db",
-      "size": 215
+      "sha": "23d280f333af0a7dc974dfb8dd38e9eed59e4032",
+      "size": 225
     },
     {
       "path": "server.mjs",
-      "sha": "c4abc0f989e6a6b7a6b52bb14f7b8df7ee16fa5c",
-      "size": 1904
+      "sha": "6680065e98c69dd31584eb3d53ff25a0adc4774d",
+      "size": 1932
     },
     {
       "path": "skills/voice-prompt/SKILL.md",
-      "sha": "b36db2b4b94b8baf87dbb357a7e17846647f0ed4",
-      "size": 13166
+      "sha": "fec183afc5a91c7f154f1b4e3855e3f1166074b4",
+      "size": 13251
     },
     {
       "path": "skills/voice-prompt/references/setup.md",
-      "sha": "73761d9d4809add1f66c3fcc1dc8f27c24dc40f3",
-      "size": 7854
+      "sha": "9ad16fb79ee8b1c5e8d4b098e5bbbfc6a5ada1e1",
+      "size": 7906
     },
     {
       "path": "voice-prompt.mcp.json",
-      "sha": "e7b84fe854211af2df756cdef088ea528cb0fa17",
-      "size": 335
+      "sha": "40c8ab46c5459786f60d0ee9429237b91dc4b8a1",
+      "size": 347
     },
     {
       "path": "web/app.js",
-      "sha": "59944cc00c3bcc47ccce1b40369d5e3ceffd5e8b",
-      "size": 4380
+      "sha": "b313291664e587cefad10ccca2de00db427c7d21",
+      "size": 4424
     },
     {
       "path": "web/index.html",
-      "sha": "8e7132a6ee969133c1012c12d6bf5c50c5915cc2",
-      "size": 3403
+      "sha": "821a35f1bd9b624e1ad38c8af81c2ef0f80268f5",
+      "size": 3417
     },
     {
       "path": "web/style.css",
-      "sha": "9bb9d59164478f46a25dda2d0328ccb469ecf294",
-      "size": 2815
+      "sha": "e7e62835d62b49bf8ce7fe61881ef5269812942b",
+      "size": 2818
     }
   ]
 }

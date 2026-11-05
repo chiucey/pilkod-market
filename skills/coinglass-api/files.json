@@ -2,413 +2,413 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha": "01cf25cb80cebe7a217cd39f957e89b2eb20aeb7",
-      "size": 81
+      "sha": "99f7c9583151bdb4b1ce3227ada4e4b7cbaa8e0c",
+      "size": 88
     },
     {
       "path": "README.md",
-      "sha": "16e49c0a426a6c94b50663046144a4fc1ff13558",
-      "size": 4014
+      "sha": "7f85f18addd5d8e74f0d5aac36ee5f8bc4c36be6",
+      "size": 4097
     },
     {
       "path": "SKILL.md",
-      "sha": "5961aedfb93ff5d4dbebf1f724e13c2a73f755ed",
-      "size": 4117
+      "sha": "06de3e68ad5cd8691af24ce2c4cc9d7f14ce5ee7",
+      "size": 4226
     },
     {
       "path": "_meta.json",
-      "sha": "b417b8134fb1d251eba215b6d90b770e2a9ff097",
-      "size": 132
+      "sha": "2e7c14c9933cfd98530745cb27e166bfa3327abc",
+      "size": 138
     },
     {
       "path": "account/API.md",
-      "sha": "59d049c38a2d2325c86d9ebcb2c0370f79b9712e",
-      "size": 2312
+      "sha": "b07fdeea5dddda18f4f84ee55ee7ac5d187e8a0c",
+      "size": 2398
     },
     {
       "path": "account/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "account/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "etf/bitcoin-etf/API.md",
-      "sha": "74d341b46880b87043a065251d493e0d0efa6feb",
-      "size": 26371
+      "sha": "8642359a5812f1a54146d83e657f89dbeb751a49",
+      "size": 27124
     },
     {
       "path": "etf/bitcoin-etf/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "etf/bitcoin-etf/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "etf/ethereum-etf/API.md",
-      "sha": "35db102d443b8f4efdbb07a12f7498446ba3ac08",
-      "size": 7696
+      "sha": "26a0a2589eba3f104e34d090153081fdc537b97e",
+      "size": 7959
     },
     {
       "path": "etf/ethereum-etf/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "etf/ethereum-etf/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "etf/grayscale/API.md",
-      "sha": "ae142e8b1aa22614b14210d5272c5411621dd72c",
-      "size": 6390
+      "sha": "df657e681ef88dad93e29419f486a42ecf012af2",
+      "size": 6589
     },
     {
       "path": "etf/grayscale/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "etf/grayscale/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "etf/solana-etf/API.md",
-      "sha": "7d24f27799eaf879c28272f89b2d467bd072cc20",
-      "size": 2853
+      "sha": "46007631a4d5d007e634a0e0c6bd430afa072220",
+      "size": 2973
     },
     {
       "path": "etf/solana-etf/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "etf/solana-etf/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "etf/xrp-etf/API.md",
-      "sha": "36ebdcd263226f7d2bc83bae54b6e199cdc6bf49",
-      "size": 2742
+      "sha": "0b7eff0b8bd21751a4c02d68de7f8c7af19597ae",
+      "size": 2858
     },
     {
       "path": "etf/xrp-etf/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "etf/xrp-etf/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/funding-rate/API.md",
-      "sha": "064ecf13a1ca56f3c271bea7e2a877084556a2c9",
-      "size": 16988
+      "sha": "27bafc038a26cedd51f130f8274f51eb8e5bf3bc",
+      "size": 17483
     },
     {
       "path": "futures/funding-rate/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/funding-rate/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/hyperliquid-positions/API.md",
-      "sha": "66fd74dbdc2669a344ccfb0a977af336a6a51806",
-      "size": 19584
+      "sha": "fc018916ab1bcea77e313860b46564d6a6f54890",
+      "size": 20180
     },
     {
       "path": "futures/hyperliquid-positions/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/hyperliquid-positions/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/liquidation/API.md",
-      "sha": "ada9554496b1ff7155427b28425daf3a5a55fe52",
-      "size": 36014
+      "sha": "b376354f37e2b9cea8fe5ddcb3cf0bb8dbbaabb4",
+      "size": 37099
     },
     {
       "path": "futures/liquidation/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/liquidation/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/long-short-ratio/API.md",
-      "sha": "832d940a8375cf8d2e63ce0a6388bab4bfc0bff8",
-      "size": 19707
+      "sha": "3a1368dda291a223c9c90e0538243db6809296d3",
+      "size": 20206
     },
     {
       "path": "futures/long-short-ratio/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/long-short-ratio/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/open-interest/API.md",
-      "sha": "1fbf481356abe14930a53c01270dc49638cf37f6",
-      "size": 21452
+      "sha": "ef1ef598fb28e442cac87a7581cf0469e3b34307",
+      "size": 21968
     },
     {
       "path": "futures/open-interest/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/open-interest/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/order-book-l2/API.md",
-      "sha": "dd10eac31ecc4287abd82d2aeb5ebd5cd8564a10",
-      "size": 17854
+      "sha": "1c0bbef717d92914dded5e1b2c0fcd101bbeca8e",
+      "size": 18299
     },
     {
       "path": "futures/order-book-l2/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/order-book-l2/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/taker-buy-sell/API.md",
-      "sha": "8a207134752f6a467c1ac1134b70d6c3803cf6d7",
-      "size": 28703
+      "sha": "800f865fe2ab82f10e5dc917ab101095243cc1c2",
+      "size": 29316
     },
     {
       "path": "futures/taker-buy-sell/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/taker-buy-sell/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "futures/trading-market/API.md",
-      "sha": "555b789adf89efd03ea479344de32a821b975a32",
-      "size": 26594
+      "sha": "de9dd7a3459c8e44e97fb1c0c2fff4febc9befe4",
+      "size": 27381
     },
     {
       "path": "futures/trading-market/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "futures/trading-market/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "indic/futures/API.md",
-      "sha": "601ce09e76dfc79b5acebeacf2a894bba101f89f",
-      "size": 39769
+      "sha": "7f59f89359d23d31262fafaf7dc03a336c508163",
+      "size": 40887
     },
     {
       "path": "indic/futures/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "indic/futures/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "indic/other/API.md",
-      "sha": "14fd64fe2bbb5c9d152b1b9c10ec603e2103be42",
-      "size": 54238
+      "sha": "1596bdf564ad6afa1aa02ecd1d5bfc4c9df94f4a",
+      "size": 56427
     },
     {
       "path": "indic/other/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "indic/other/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "indic/spots/API.md",
-      "sha": "10bbe5ba8971e253ae668bb13464f6434a0bf604",
-      "size": 9023
+      "sha": "481b204dacc6d59b761d7a4a9b0fb6c0f840df84",
+      "size": 9271
     },
     {
       "path": "indic/spots/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "indic/spots/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "on-chain/exchange-data/API.md",
-      "sha": "7b6c9b8c7a8767ca0d3cc7879d746c17841c58b7",
-      "size": 7808
+      "sha": "e44ea26877d1bce7d5a2eaedebdbfc6a96cf1286",
+      "size": 8052
     },
     {
       "path": "on-chain/exchange-data/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "on-chain/exchange-data/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "on-chain/token/API.md",
-      "sha": "b108f504666bcb14bf258c5ddbab9ba100749162",
-      "size": 9024
+      "sha": "13bc0f007c1700f4cfa276b00745173960baad79",
+      "size": 9300
     },
     {
       "path": "on-chain/token/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "on-chain/token/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "on-chain/transactions/API.md",
-      "sha": "f7065d04030d87c1aacebe9353cc0d1e82675049",
-      "size": 7894
+      "sha": "9f69d04555ea3d9397dd480928ff710bbc46fb8d",
+      "size": 8090
     },
     {
       "path": "on-chain/transactions/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "on-chain/transactions/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "options/API.md",
-      "sha": "e970910241065b022d29618c9515fc28571ec01b",
-      "size": 11799
+      "sha": "fa179e5531f05f3b6190f5ff80559bb2a61ad61a",
+      "size": 12122
     },
     {
       "path": "options/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "options/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "other/financial-calendar/API.md",
-      "sha": "443ba8e7293affb5609f9151a7fb0d61ef995347",
-      "size": 3582
+      "sha": "010b19a281c638b08d7d0e1a74f70414f9aacb0f",
+      "size": 3701
     },
     {
       "path": "other/financial-calendar/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "other/financial-calendar/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "other/news/API.md",
-      "sha": "0ddb12462dc7dc91728553733303e41f28722c66",
-      "size": 4228
+      "sha": "a90a6a0efb4f04ceb7f003bff731b2708e806e3a",
+      "size": 4343
     },
     {
       "path": "other/news/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "other/news/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "spots/order-book/API.md",
-      "sha": "d2da110b11389340356ed2948021d70de22b303f",
-      "size": 17917
+      "sha": "de4a9a89993d2a0b0f8c4e9f0df68041d40914b7",
+      "size": 18360
     },
     {
       "path": "spots/order-book/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "spots/order-book/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "spots/taker-buy-sell/API.md",
-      "sha": "8116f5fbf16bc0519872ec3a8b6cc47af5ab0b5c",
-      "size": 28198
+      "sha": "2cae431f0a1c566ccce2cd7a33ccbdee8b7270b0",
+      "size": 28806
     },
     {
       "path": "spots/taker-buy-sell/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "spots/taker-buy-sell/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     },
     {
       "path": "spots/trading-market/API.md",
-      "sha": "193b3427f2f6a89ba74ee467369a497f602c9ebd",
-      "size": 17240
+      "sha": "c10762a170fa3849fcac2c7a8b22fefd8547b297",
+      "size": 17737
     },
     {
       "path": "spots/trading-market/references/errors-codes.md",
-      "sha": "b339b5913adf9bf60ba4aa7f5bafd7cd460f8581",
-      "size": 900
+      "sha": "459678a8c98c58fb08e557a4c5808cc4b8b634c8",
+      "size": 919
     },
     {
       "path": "spots/trading-market/references/plans-interval-history-length.md",
-      "sha": "a28728a2f46ecfa09b1e4a402833977e6587749d",
-      "size": 2924
+      "sha": "3c4c1feec46fc7b351254f8f88ea14266d0baf4f",
+      "size": 2981
     }
   ]
 }

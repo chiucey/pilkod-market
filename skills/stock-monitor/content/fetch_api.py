@@ -28,7 +28,7 @@ import os, json, logging, sqlite3, time, threading
 from datetime import datetime, timedelta
 from urllib import request, error
 
-TOKEN = "a78cbdbee9fe610ed43aeefb9d5355445f7cbf3da72f20323f443b5e"
+TOKEN = os.environ.get("TUSHARE_TOKEN", "")
 TUSHARE_API = "https://api.tushare.pro"
 DB_PATH = "/workspace/stock-scout/data/scout.db"
 

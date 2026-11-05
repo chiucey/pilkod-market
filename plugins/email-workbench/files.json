@@ -3,18 +3,18 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "ff1d9fe7347830e86ea3874a184c3253f0ddb155",
-      "size": 593
+      "sha": "47ecbd8d00290de7906d4f477daab5b4220fe9ab",
+      "size": 615
     },
     {
       "path": "PROVENANCE.md",
-      "sha": "e586f9f806c62b6b07807440fea9d713ca41ebb0",
-      "size": 5493
+      "sha": "16fc71c5c1cd87eea4157cca206413869b369307",
+      "size": 5585
     },
     {
       "path": "README.md",
-      "sha": "9fc3e345866844dd193131ebc9bc5f94712aad51",
-      "size": 25108
+      "sha": "95d186e4811d1c3ffb357f59f56ddbd0f7539e7a",
+      "size": 25266
     },
     {
       "path": "icon.png",
@@ -23,343 +23,343 @@
     },
     {
       "path": "miniapp/client/account-authorization.js",
-      "sha": "8ee8f2024d6eeb874c1ca9049ce94fc252e7245d",
-      "size": 2290
+      "sha": "64ece3c0c71842758c4bca15ed7aa39ce72498b2",
+      "size": 2320
     },
     {
       "path": "miniapp/client/account-connection.js",
-      "sha": "4bac2ab10f60b74777b424bf5ef84925a8c4534e",
-      "size": 27685
+      "sha": "04f4cb105a3f082d4a6cd5c454081302e752b208",
+      "size": 28177
     },
     {
       "path": "miniapp/client/accounts.js",
-      "sha": "d43ceea5a89a7b3e84cda06a2dc9a2485d487d20",
-      "size": 12531
+      "sha": "1d402cc27e014f771c2a208a4c98807f75f50922",
+      "size": 12793
     },
     {
       "path": "miniapp/client/app.js",
-      "sha": "a7a44866163b5794cd0368448b869976ed1f76c1",
-      "size": 146682
+      "sha": "207dde047d97616ed544fe09feae68d3824f569c",
+      "size": 149878
     },
     {
       "path": "miniapp/client/attachments.js",
-      "sha": "68d5f15f27d55f7b75b2c2605c4c3d4419ba0825",
-      "size": 7258
+      "sha": "044cfa884ef1492f2bdc5c7a849b19f52930fd7a",
+      "size": 7456
     },
     {
       "path": "miniapp/client/batches.js",
-      "sha": "ebc9e8815f5ecb0ec6c7cd0b45411d0b773f8722",
-      "size": 18754
+      "sha": "e453e4ea369e55cf9a387d35eb7428944de01dcf",
+      "size": 19216
     },
     {
       "path": "miniapp/client/editor-controls.js",
-      "sha": "d764c893a6ba2f3adf5dd63ff2383b44baf52934",
-      "size": 3321
+      "sha": "9a0f52153c849c3205634e8bad3f60d26aa31c3c",
+      "size": 3371
     },
     {
       "path": "miniapp/client/error-contract.js",
-      "sha": "9fe24b14d077ecb4047dc1af5053f65a521a236f",
-      "size": 10680
+      "sha": "eb280c2b1dfbc01fb992bbeb56c5c8a842fc6be2",
+      "size": 10779
     },
     {
       "path": "miniapp/client/i18n.js",
-      "sha": "950c03d41dfc23960d38e2dd2816e03a4badd9be",
-      "size": 2405
+      "sha": "d1973710db560f10a31800cc8b870d2f58125fe3",
+      "size": 2452
     },
     {
       "path": "miniapp/client/icon.js",
-      "sha": "7830561c4891c7446a73b4b13fb7d1be3391e1ad",
-      "size": 651
+      "sha": "b3658aafc4932a6f89321be97b8caeb00dbd0ba1",
+      "size": 666
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "a58ab7ab2a53f7d9f88df71d2c3882e33dc8db5c",
-      "size": 8923
+      "sha": "ff8e9c647ed36740cfbd0ae5691fdcd4505849fa",
+      "size": 9084
     },
     {
       "path": "miniapp/client/licenses/dependencies.json",
-      "sha": "664b14bbbb778b95bc1af269f950f855b5362e05",
-      "size": 7774
+      "sha": "198a4d69908a7687a9484a930c556da99ef77f76",
+      "size": 8106
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f636f7265__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d626c6f636b71756f7465__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d626f6c64__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d636f64652d626c6f636b__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d636f6465__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d646f63756d656e74__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d686172642d627265616b__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d68656164696e67__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d686f72697a6f6e74616c2d72756c65__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d6974616c6963__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d6c696e6b__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d6c697374__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d706172616772617068__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d737472696b65__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d74657874__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e2d756e6465726c696e65__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f657874656e73696f6e73__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f706d__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f7265616374__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-407469707461702f737461727465722d6b6974__LICENSE.md",
-      "sha": "4b28a553b563cc04587a3768c11755512ad42638",
-      "size": 1069
+      "sha": "43f69ffa0ebd1bd07e04f822784da548d76b13ef",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-666173742d657175616c73__LICENSE",
-      "sha": "a90404fced8f1a248c910f15ca9a44f424dadc75",
-      "size": 1069
+      "sha": "ce651331784e510f8cf958b0cea0193d43cfdf64",
+      "size": 1090
     },
     {
       "path": "miniapp/client/licenses/pkg-6c696e6b6966796a73__LICENSE",
-      "sha": "da1dff9f00f3f98772985d2dc6181f5465d11b2b",
-      "size": 1056
+      "sha": "75d4dd01f18e0eb8a2e3453aa1d7fcd958741c8b",
+      "size": 1075
     },
     {
       "path": "miniapp/client/licenses/pkg-6f7264657265646d6170__LICENSE",
-      "sha": "17da88ae48508e163d0b31cf4780abe6cb8b7fed",
-      "size": 1100
+      "sha": "61605845bc8023267e4b53200445e7b2ab082a2a",
+      "size": 1119
     },
     {
       "path": "miniapp/client/licenses/pkg-7064666a732d64697374__LICENSE",
-      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
-      "size": 10174
+      "sha": "ade750b16ba50a06c955c07a75f5f82bdd3c5331",
+      "size": 10351
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d636f6d6d616e6473__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d64726f70637572736f72__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d676170637572736f72__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d686973746f7279__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d6b65796d6170__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d6d6f64656c__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d736368656d612d6c697374__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d7374617465__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d7461626c6573__LICENSE",
-      "sha": "c34a4f121f66f8b1837845d0b86f3f71a4f3e318",
-      "size": 1099
+      "sha": "9a4227cc4b577fee0f004137f13c7d7cfd72209d",
+      "size": 1118
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d7472616e73666f726d__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-70726f73656d6972726f722d76696577__LICENSE",
-      "sha": "7e2295b307446b171b993b705239928d8e0347b8",
-      "size": 1105
+      "sha": "18b717a1f73856ac3321dc7b4a9f6235a83446bd",
+      "size": 1124
     },
     {
       "path": "miniapp/client/licenses/pkg-72656163742d646f6d__LICENSE",
-      "sha": "b96dcb0480a0b0be0727976e5202a1e7b23edc3f",
-      "size": 1086
+      "sha": "a5d83a84b7140fd65fe29238b11c559d317ed460",
+      "size": 1107
     },
     {
       "path": "miniapp/client/licenses/pkg-7265616374__LICENSE",
-      "sha": "b96dcb0480a0b0be0727976e5202a1e7b23edc3f",
-      "size": 1086
+      "sha": "a5d83a84b7140fd65fe29238b11c559d317ed460",
+      "size": 1107
     },
     {
       "path": "miniapp/client/licenses/pkg-726f70652d73657175656e6365__LICENSE",
-      "sha": "602adc305b08d5403019c06b8301ca20ee89a047",
-      "size": 1089
+      "sha": "72cee9b448bc34e139a02bc3d5e9da5558ba0831",
+      "size": 1108
     },
     {
       "path": "miniapp/client/licenses/pkg-7363686564756c6572__LICENSE",
-      "sha": "b96dcb0480a0b0be0727976e5202a1e7b23edc3f",
-      "size": 1086
+      "sha": "a5d83a84b7140fd65fe29238b11c559d317ed460",
+      "size": 1107
     },
     {
       "path": "miniapp/client/licenses/pkg-7573652d73796e632d65787465726e616c2d73746f7265__LICENSE",
-      "sha": "b93be90515ccd0b9daedaa589e42bf5929693f1f",
-      "size": 1088
+      "sha": "72285c5d92776c308f5fe7e97960f58ff15ca1b7",
+      "size": 1109
     },
     {
       "path": "miniapp/client/licenses/pkg-7733632d6b65796e616d65__LICENSE",
-      "sha": "17da88ae48508e163d0b31cf4780abe6cb8b7fed",
-      "size": 1100
+      "sha": "61605845bc8023267e4b53200445e7b2ab082a2a",
+      "size": 1119
     },
     {
       "path": "miniapp/client/local-data-clear.js",
-      "sha": "51def0017f69fe1807ff22bf61f89c8261c939bd",
-      "size": 5286
+      "sha": "74bfcf4735c24454c50df57a8480b215d6cf9291",
+      "size": 5384
     },
     {
       "path": "miniapp/client/mail-content.js",
-      "sha": "761a365a506231a395fe9f23925f2ff7ec8c44cf",
-      "size": 6551
+      "sha": "36ce1c72e5a1703e7ef44fa5aa750b25c1ed81b0",
+      "size": 6744
     },
     {
       "path": "miniapp/client/mail-image.css",
-      "sha": "637fc9cede6e52179901e0d9e740b228da0fcb85",
-      "size": 1935
+      "sha": "7b4effa0e6a6b0724450f24426224646092cc0aa",
+      "size": 1962
     },
     {
       "path": "miniapp/client/mail-merge.js",
-      "sha": "af13a37a30b87ca0ce5fbf6cb9df080bc5ebd59f",
-      "size": 37499
+      "sha": "cada523402c951025036aef1b64f496b52592643",
+      "size": 38261
     },
     {
       "path": "miniapp/client/mail-style.js",
-      "sha": "3ccc2524c36030ebb1eb4dc6031eb80ba55fbb67",
-      "size": 2407
+      "sha": "12c411ab84ac61f39e65ff998e94fe54595802a7",
+      "size": 2449
     },
     {
       "path": "miniapp/client/mail-view.js",
-      "sha": "32333fd31eb2ac9d39c673db7e5b44894e8b1676",
-      "size": 6470
+      "sha": "d9da22df89326e0d707bcdb59da2806015109023",
+      "size": 6612
     },
     {
       "path": "miniapp/client/mailing-rules.js",
-      "sha": "3c9b4cd141b0b9a4d6703f72d586ca6d222b1f02",
-      "size": 6759
+      "sha": "143c7e74fecf496d3f446aae27e9203c9af73535",
+      "size": 6901
     },
     {
       "path": "miniapp/client/mcode-icons.js",
-      "sha": "f6f42f23b3e44dea40898e39ccc29fa77317df0c",
-      "size": 31557
+      "sha": "04a924a71dec1fd26e94bb74e1863a2bd2420608",
+      "size": 31561
     },
     {
       "path": "miniapp/client/message-format.js",
-      "sha": "b3cf0ad0b502a91ad0494a036c4fd0077af09f24",
-      "size": 7991
+      "sha": "b63a668fe1446f12798562e7d4c0afd327d30aeb",
+      "size": 8189
     },
     {
       "path": "miniapp/client/message-reader.js",
-      "sha": "899000f062d35602bdca23fed60ef23635d7f118",
-      "size": 4417
+      "sha": "21f593ee03f9335ccfa89ae036d5c4a4561cfe9a",
+      "size": 4517
     },
     {
       "path": "miniapp/client/messages.en.js",
-      "sha": "27d3b06fd51e334e89a92755e07d81685d7467a2",
-      "size": 82211
+      "sha": "b156614027573bc8f91592d172f1e0d4e090d052",
+      "size": 83155
     },
     {
       "path": "miniapp/client/organize.js",
-      "sha": "45696b4c6507b793f92656e5f8a0129094e1f04b",
-      "size": 8357
+      "sha": "5b0a1f1fb8f43ac5125ec43dfafaf149d97c274a",
+      "size": 8555
     },
     {
       "path": "miniapp/client/page-client.js",
-      "sha": "e867575a03f2cc8d99d65e3249ffe29bfdc4cba6",
-      "size": 1726
+      "sha": "01650f506acff75de89dd0e9dc4c69ca7209593f",
+      "size": 1766
     },
     {
       "path": "miniapp/client/page-state.js",
-      "sha": "bb6d903d7a31aebf04132f05fec7ad577e1d7723",
-      "size": 3417
+      "sha": "4824288c01c6666159f0eb95fa034cbea5399e7d",
+      "size": 3507
     },
     {
       "path": "miniapp/client/pdf-assets/LICENSE",
-      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
-      "size": 10174
+      "sha": "ade750b16ba50a06c955c07a75f5f82bdd3c5331",
+      "size": 10351
     },
     {
       "path": "miniapp/client/pdf-assets/cmaps/78-EUC-H.bcmap",
@@ -933,8 +933,8 @@
     },
     {
       "path": "miniapp/client/pdf-assets/cmaps/LICENSE",
-      "sha": "b1ad168ad0dd09b578cafec31d2666049b4d8718",
-      "size": 2080
+      "sha": "efb8b5b5819807ef4271792fc3911d39f7a4f34c",
+      "size": 2116
     },
     {
       "path": "miniapp/client/pdf-assets/cmaps/NWP-H.bcmap",
@@ -1213,8 +1213,8 @@
     },
     {
       "path": "miniapp/client/pdf-assets/iccs/LICENSE",
-      "sha": "4ee29e090cbd37377041c696bed983e66641d7cc",
-      "size": 6553
+      "sha": "ac0643a0cae857bdc03d9c16ec153ae158c2c82b",
+      "size": 6669
     },
     {
       "path": "miniapp/client/pdf-assets/standard_fonts/FoxitDingbats.pfb",
@@ -1268,13 +1268,13 @@
     },
     {
       "path": "miniapp/client/pdf-assets/standard_fonts/LICENSE_FOXIT",
-      "sha": "8b4ed6dddf22b2fcc9f7f520cd23613b49307fa0",
-      "size": 1553
+      "sha": "4ea7438d216e22a458dc84a653a39902d7409cd5",
+      "size": 1580
     },
     {
       "path": "miniapp/client/pdf-assets/standard_fonts/LICENSE_LIBERATION",
-      "sha": "213c182658826562cdcc02472a4e0869e225f64d",
-      "size": 22154
+      "sha": "c68fd24c989d46f08e6240fd753d90eb155d896e",
+      "size": 22517
     },
     {
       "path": "miniapp/client/pdf-assets/standard_fonts/LiberationSans-Bold.ttf",
@@ -1298,33 +1298,33 @@
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/LICENSE_JBIG2",
-      "sha": "37a329c636c65ab5fde4e471dc0bdf9b61d313cd",
-      "size": 12862
+      "sha": "a86f1ea0c7b27b5b38cf64449370b8fdbc6e33f2",
+      "size": 13058
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/LICENSE_OPENJPEG",
-      "sha": "e8fa41040dfbe8be524cac5b1bb19d60c6eb0320",
-      "size": 2112
+      "sha": "776ffec4af8967e27518de60d5bf1e51b072a63c",
+      "size": 2151
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/LICENSE_PDFJS_JBIG2",
-      "sha": "f1845baf6613d744626e975ec933de7cdde1f915",
-      "size": 555
+      "sha": "b32df895f3217f09c8b9a406cf807b307a1141db",
+      "size": 568
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/LICENSE_PDFJS_OPENJPEG",
-      "sha": "623929b849547b81e8d1f025f66ac0e347e27b88",
-      "size": 1285
+      "sha": "a5a48f3cdb5bfcc47c17737366bc53fb592d5740",
+      "size": 1307
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/LICENSE_PDFJS_QCMS",
-      "sha": "9cf106272ac3b56b0c4c80218e8fc10a664ca5f4",
-      "size": 1036
+      "sha": "9dccfa49cba7f2b995f7c5e6181211616c035ccf",
+      "size": 1055
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/LICENSE_QCMS",
-      "sha": "eec8246dfa81e83f19dae23f6c1fbf51720908c0",
-      "size": 1121
+      "sha": "deba8567e36cf83f683d7010098bd2b722791d61",
+      "size": 1142
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/jbig2.wasm",
@@ -1333,8 +1333,8 @@
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/jbig2_nowasm_fallback.js",
-      "sha": "c86528f05912cef7320491b555d487715ecf394e",
-      "size": 145703
+      "sha": "3f4c0822beb585ef7261dae925ed97719cc02416",
+      "size": 145718
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/openjpeg.wasm",
@@ -1343,8 +1343,8 @@
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/openjpeg_nowasm_fallback.js",
-      "sha": "0df96aed34f98a6c88a2a11656673b547f41e4c1",
-      "size": 451590
+      "sha": "ffe5479fac1ffbe4c36c24fe460c48387e809af3",
+      "size": 451607
     },
     {
       "path": "miniapp/client/pdf-assets/wasm/qcms_bg.wasm",
@@ -1353,98 +1353,98 @@
     },
     {
       "path": "miniapp/client/pdf-preview.js",
-      "sha": "33763e1017a2b7fb8d04c88ed8114435c5b681de",
-      "size": 434236
+      "sha": "dcc0b5516aec539b4ec76bc3e4b3dbe2037b6816",
+      "size": 434292
     },
     {
       "path": "miniapp/client/pdf.worker.min.mjs",
-      "sha": "8a69d7e502f6b5602299f27f0371d5ccaee2c10e",
-      "size": 1265413
+      "sha": "06c9385db83fbdb4eb0559b582de8fe4f6f99e32",
+      "size": 1265441
     },
     {
       "path": "miniapp/client/popups.js",
-      "sha": "3e4633d69e6d800a7bc713c21aa2702b1faccced",
-      "size": 4967
+      "sha": "56073c0073712928aa2c1518a970541e60efc192",
+      "size": 5057
     },
     {
       "path": "miniapp/client/product-time.js",
-      "sha": "2c044168bd7fc98a2f383a62d75e34ccc243d858",
-      "size": 5718
+      "sha": "1b97113c7b4cacf9ed9e5973dc0ccbf325ef4fa7",
+      "size": 5872
     },
     {
       "path": "miniapp/client/quoted-message.js",
-      "sha": "6a6b22afb78f9cd95e4c7e17475d681684df6448",
-      "size": 3939
+      "sha": "6f174d312391420e6cb814542a625c56c7bf9b85",
+      "size": 4033
     },
     {
       "path": "miniapp/client/rich-editor.js",
-      "sha": "0f5aaef330e303cada804692aa91f35d3da01f5b",
-      "size": 390172
+      "sha": "99ab5bfd19ac0ba60747fa2d717f2de25b66f871",
+      "size": 390320
     },
     {
       "path": "miniapp/client/send-review.js",
-      "sha": "f0dad63717bad22c06b391241b8dd40e30193ac6",
-      "size": 1587
+      "sha": "3fede0aa31b38cb1bcfe18cf7e16590a9f09e9a5",
+      "size": 1629
     },
     {
       "path": "miniapp/client/signatures.js",
-      "sha": "d8e851d5beabb2365ea44fe384c2931dc391ccc5",
-      "size": 6380
+      "sha": "05cd73cdafac4bdb0c5692e4b19f6303150c0318",
+      "size": 6560
     },
     {
       "path": "miniapp/client/storage.js",
-      "sha": "3bfc47866e5f0083cdb0c2248bc3a8f64615686b",
-      "size": 4269
+      "sha": "d6e2cd4f4f2c4196642ac2473d8277ed590bdae1",
+      "size": 4374
     },
     {
       "path": "miniapp/client/style.css",
-      "sha": "ef7607c1862e860ada2dbd8018bc93a9799b8810",
-      "size": 113283
+      "sha": "6172391ef66b8770c874cbd6c17b2796d6821008",
+      "size": 116244
     },
     {
       "path": "miniapp/client/theme.css",
-      "sha": "0d0c2b0540a01775951a47d08538f312f7b9cf8d",
-      "size": 4159
+      "sha": "5ea5901a81be4d182a86f574671e0a6baefcfde7",
+      "size": 4240
     },
     {
       "path": "miniapp/client/ui-context.js",
-      "sha": "73e9e1108dec6e3521c212e122a8ba2616d2d1e2",
-      "size": 2150
+      "sha": "45ab18eb0963ec92eefb4b89bbe0324d1319c66c",
+      "size": 2203
     },
     {
       "path": "miniapp/client/uploads.js",
-      "sha": "9ce53455ce4121eee7e709a7f17a5dc630dc4caf",
-      "size": 5156
+      "sha": "9fa10b9ea16a91921ad43e51559d0d1472331951",
+      "size": 5298
     },
     {
       "path": "miniapp/client/workbench-target.js",
-      "sha": "c41c9d791c10c674b5579a0d8e47f92ee8f5540e",
-      "size": 385
+      "sha": "9df8b3ab0d39e2b62072d2f74fa19040b9bfcab4",
+      "size": 392
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "169495f1e7987de258c9cff46f52a3dcfa01e99a",
-      "size": 485
+      "sha": "fdb1b4dc6abe9057ba5b943ae1e6bafc78a1167c",
+      "size": 515
     },
     {
       "path": "miniapp/node/licenses/dependencies.json",
-      "sha": "60242e3b1e223a883fec82d0d9320ab1b18fbe4a",
-      "size": 7426
+      "sha": "c81b468f10d1d2b8b41bb33ba251ba82dfd12caf",
+      "size": 7859
     },
     {
       "path": "miniapp/node/licenses/pkg-40686f6e6f2f6e6f64652d736572766572__LICENSE",
-      "sha": "5f84afaffca9d97354629d65996ae21c316782c0",
-      "size": 1101
+      "sha": "d00f7a1965f42140222448d5878c71f30c894417",
+      "size": 1122
     },
     {
       "path": "miniapp/node/licenses/pkg-406d6f64656c636f6e7465787470726f746f636f6c2f73646b__LICENSE",
-      "sha": "3d48435454b105021b4f777c11b6b07d8d2ffea3",
-      "size": 1071
+      "sha": "2f352f6199cc7df5e7a54b8c1222da64cf5c3b76",
+      "size": 1092
     },
     {
       "path": "miniapp/node/licenses/pkg-4070696e6f6a732f726564616374__LICENSE",
-      "sha": "135f89bcfd4823897b233353c9eb2a6f13027cea",
-      "size": 1076
+      "sha": "7f48ca256975da925af02e8f26c0049f8c685c7a",
+      "size": 1097
     },
     {
       "path": "miniapp/node/licenses/pkg-4073656c64657265652f706c7567696e2d68746d6c70617273657232__LICENSE",
@@ -1453,113 +1453,113 @@
     },
     {
       "path": "miniapp/node/licenses/pkg-407a6f6e652d65752f6d61696c73706c6974__LICENSE.EUPL-1.2",
-      "sha": "0837b878f189ba49225dbd342c6deb3468768fd9",
-      "size": 14038
+      "sha": "53a2a3c4a3c01f07af138cde1e3ef3adc80f56ca",
+      "size": 14190
     },
     {
       "path": "miniapp/node/licenses/pkg-407a6f6e652d65752f6d61696c73706c6974__LICENSE.MIT",
-      "sha": "cdf4800c4a4204ad1f0b12e6feb15727b37430a9",
-      "size": 1100
+      "sha": "b5cdf6bc59b418f361abfbbf2625744141791171",
+      "size": 1120
     },
     {
       "path": "miniapp/node/licenses/pkg-616a762d666f726d617473__LICENSE",
-      "sha": "a3f8ba0278836d0d02b845aec548a21db114e984",
-      "size": 1074
+      "sha": "198262a0decff4410a390d94332a5b93aa65012e",
+      "size": 1095
     },
     {
       "path": "miniapp/node/licenses/pkg-616a76__LICENSE",
-      "sha": "139162ad2c389a18d3d66e159a2821b2e40087fc",
-      "size": 1090
+      "sha": "a14a3e549357233332c00bb84d6fa62dc716986f",
+      "size": 1112
     },
     {
       "path": "miniapp/node/licenses/pkg-61746f6d69632d736c656570__LICENSE",
-      "sha": "d1d884978695fb1b9023ad7fa54659ea2c678205",
-      "size": 1087
+      "sha": "b2cde7663332c2751f1b7cfeb547f23abb267a36",
+      "size": 1109
     },
     {
       "path": "miniapp/node/licenses/pkg-636f6e74656e742d74797065__LICENSE",
-      "sha": "34b1a2de37216b60b749c23b6f894e51d701ecf0",
-      "size": 1089
+      "sha": "d09070c417369de7a3da7e0b4068108dea616f65",
+      "size": 1111
     },
     {
       "path": "miniapp/node/licenses/pkg-646565706d657267652d7473__LICENSE",
-      "sha": "13b6199e95ae8a5183d6858154628850b26c5950",
-      "size": 1523
+      "sha": "36a295fbac70ba2696be80dfa107133582197652",
+      "size": 1552
     },
     {
       "path": "miniapp/node/licenses/pkg-646f6d2d73657269616c697a6572__LICENSE",
-      "sha": "3d241a8d091f77c40b752cbdd40290084d6107af",
-      "size": 1098
+      "sha": "60f579c5c4d2140951ef33c662ad172148d6aa29",
+      "size": 1109
     },
     {
       "path": "miniapp/node/licenses/pkg-646f6d656c656d656e7474797065__LICENSE",
-      "sha": "c464f863ea2b18a15ca3883bc5d98065ed5d039a",
-      "size": 1260
+      "sha": "ba84d21984580748a82a25594b0be734e44d267c",
+      "size": 1271
     },
     {
       "path": "miniapp/node/licenses/pkg-646f6d68616e646c6572__LICENSE",
-      "sha": "c464f863ea2b18a15ca3883bc5d98065ed5d039a",
-      "size": 1260
+      "sha": "ba84d21984580748a82a25594b0be734e44d267c",
+      "size": 1271
     },
     {
       "path": "miniapp/node/licenses/pkg-646f6d7574696c73__LICENSE",
-      "sha": "c464f863ea2b18a15ca3883bc5d98065ed5d039a",
-      "size": 1260
+      "sha": "ba84d21984580748a82a25594b0be734e44d267c",
+      "size": 1271
     },
     {
       "path": "miniapp/node/licenses/pkg-656e636f64696e672d6a6170616e657365__LICENSE",
-      "sha": "3244f30e94055283a4c45d60998e4f3743b4bb4f",
-      "size": 1070
+      "sha": "21c17d9bed8f3347e6d2b0962fcccf925035fcf6",
+      "size": 1091
     },
     {
       "path": "miniapp/node/licenses/pkg-656e746974696573__LICENSE",
-      "sha": "c464f863ea2b18a15ca3883bc5d98065ed5d039a",
-      "size": 1260
+      "sha": "ba84d21984580748a82a25594b0be734e44d267c",
+      "size": 1271
     },
     {
       "path": "miniapp/node/licenses/pkg-666173742d646565702d657175616c__LICENSE",
-      "sha": "7f1543566f6abbbf75914db32651cf89919cabed",
-      "size": 1074
+      "sha": "3557338e50e04709bafbb693ec49ca76101d372a",
+      "size": 1095
     },
     {
       "path": "miniapp/node/licenses/pkg-666173742d757269__LICENSE",
-      "sha": "9c93c1c0e5c1861b77da95d4cfb96504768285bc",
-      "size": 1813
+      "sha": "0a686b3a0302419c24704d38af0523419ffa42a7",
+      "size": 1842
     },
     {
       "path": "miniapp/node/licenses/pkg-677261636566756c2d6673__LICENSE",
-      "sha": "e906a25acfb5ee2f955bd39101a207e3458463bd",
-      "size": 791
+      "sha": "030f03bd33aebe1df66ab4c40533634bd997f9f3",
+      "size": 806
     },
     {
       "path": "miniapp/node/licenses/pkg-686f6e6f__LICENSE",
-      "sha": "bd174facca69a827a3a5410fa09361da5493e024",
-      "size": 1101
+      "sha": "c0537a8f9c71d4dfea7ff3ab430e45ad59ba9b2a",
+      "size": 1122
     },
     {
       "path": "miniapp/node/licenses/pkg-68746d6c2d746f2d74657874__LICENSE",
-      "sha": "3901d5d0f2e6dd446f9064f9bad75f145f98c251",
-      "size": 1157
+      "sha": "160059cdfd1f139e3b763afaddcf9b99e5aa5143",
+      "size": 1182
     },
     {
       "path": "miniapp/node/licenses/pkg-68746d6c70617273657232__LICENSE",
-      "sha": "0a35e029afdc4b3a7f3141143399525f70ce499d",
-      "size": 1104
+      "sha": "d6c17863a9c0e510a704259af254b4e6c42a73ac",
+      "size": 1121
     },
     {
       "path": "miniapp/node/licenses/pkg-696d6170666c6f77__LICENSE.txt",
-      "sha": "4dcf4ed9290de042514f577c59a353dcacecca72",
-      "size": 939
+      "sha": "8353e5397346144fbda081e0785aa16a47c4267e",
+      "size": 955
     },
     {
       "path": "miniapp/node/licenses/pkg-69702d61646472657373__LICENSE",
-      "sha": "ec79adb0c4020387142e3e82b9bdbb212af6a557",
-      "size": 1061
+      "sha": "1719966f8807eee22e638ab77227cccdcbdee4c3",
+      "size": 1080
     },
     {
       "path": "miniapp/node/licenses/pkg-6a736f6e2d736368656d612d7472617665727365__LICENSE",
-      "sha": "7f1543566f6abbbf75914db32651cf89919cabed",
-      "size": 1074
+      "sha": "3557338e50e04709bafbb693ec49ca76101d372a",
+      "size": 1095
     },
     {
       "path": "miniapp/node/licenses/pkg-6c656163__LICENSE",
@@ -1568,38 +1568,38 @@
     },
     {
       "path": "miniapp/node/licenses/pkg-6c6962626173653634__LICENSE",
-      "sha": "4323df1e67f51d2a68b37f1b76899de69625bd4c",
-      "size": 1063
+      "sha": "287b91e8bfaf0a15f0779ec546ce0e28cafdf126",
+      "size": 1082
     },
     {
       "path": "miniapp/node/licenses/pkg-6c69626d696d65__LICENSE",
-      "sha": "02fccdb1225cbf8f517a8ee74a63c757e12c919b",
-      "size": 1063
+      "sha": "ea3ba26fb2817d147fa48a7553da7def9a24f0e7",
+      "size": 1082
     },
     {
       "path": "miniapp/node/licenses/pkg-6c69627170__LICENSE",
-      "sha": "bc5dc03d19f7a1df622f2febee926f64fde10ce5",
-      "size": 1063
+      "sha": "e222e9447ad336796b5962fba19312d10cd57e67",
+      "size": 1082
     },
     {
       "path": "miniapp/node/licenses/pkg-6c696e6b6966792d6974__LICENSE",
-      "sha": "67596f5f24007c3e42773400a7bfd57effe20160",
-      "size": 1058
+      "sha": "2442cace768bcdbeb925ae7fc87a079998e524e8",
+      "size": 1080
     },
     {
       "path": "miniapp/node/licenses/pkg-6d61696c706172736572__LICENSE",
-      "sha": "2bc627991258beaed00a43a4223f369c1fd5bfd9",
-      "size": 936
+      "sha": "66abb0bd2f6f94cf3762971a696a3f42cf506353",
+      "size": 951
     },
     {
       "path": "miniapp/node/licenses/pkg-6e6f64656d61696c6572__LICENSE",
-      "sha": "fdfc9676bf9f4363b1292847d61f94a17a47618e",
-      "size": 935
+      "sha": "f54acbf65ece47e64a6aa9893f6d49889cf0d5ac",
+      "size": 951
     },
     {
       "path": "miniapp/node/licenses/pkg-6f6e2d657869742d6c65616b2d66726565__LICENSE",
-      "sha": "2c1a038fd1e9b4fe7f936bdf9509406236d6a767",
-      "size": 1071
+      "sha": "b9219cb6e149ce2c2d8640d8833c7d1fbb6f850d",
+      "size": 1092
     },
     {
       "path": "miniapp/node/licenses/pkg-70617273656c6579__LICENSE",
@@ -1613,38 +1613,38 @@
     },
     {
       "path": "miniapp/node/licenses/pkg-70696e6f2d7374642d73657269616c697a657273__LICENSE",
-      "sha": "69957c5533d17d880c2bdacff2f3384bb97801af",
-      "size": 1084
-    },
-    {
-      "path": "miniapp/node/licenses/pkg-70696e6f__LICENSE",
-      "sha": "91d47c920c96a02f655bca3259d7bfe2441d5a0a",
-      "size": 1209
-    },
-    {
-      "path": "miniapp/node/licenses/pkg-70726f7065722d6c6f636b66696c65__LICENSE",
-      "sha": "8407b9a30f51b0da9eaac366bdde18d900e951ba",
-      "size": 1105
-    },
-    {
-      "path": "miniapp/node/licenses/pkg-717569636b2d666f726d61742d756e65736361706564__LICENSE",
-      "sha": "fc6d3139d806665eb3eaa372c0a4e05e41c32a3b",
+      "sha": "e9bf242ebd7d713cf0d019bdcbce4710a168cf81",
       "size": 1091
     },
     {
+      "path": "miniapp/node/licenses/pkg-70696e6f__LICENSE",
+      "sha": "cb4c4ac709a6f95c20539d22c221363bd25bae69",
+      "size": 1230
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-70726f7065722d6c6f636b66696c65__LICENSE",
+      "sha": "9cba8de36bc50962de244290c475d5e264213a94",
+      "size": 1126
+    },
+    {
+      "path": "miniapp/node/licenses/pkg-717569636b2d666f726d61742d756e65736361706564__LICENSE",
+      "sha": "27ba78fe4ef70f6d1cc4d33ee9f635c06af3a9c8",
+      "size": 1112
+    },
+    {
       "path": "miniapp/node/licenses/pkg-7265747279__License",
-      "sha": "0b58de379fb308e471aa7db8dbad306712d39e18",
-      "size": 1139
+      "sha": "e6c9ce40e3d6a9faf0a3d11d7928b9ef98043ef3",
+      "size": 1160
     },
     {
       "path": "miniapp/node/licenses/pkg-736166652d737461626c652d737472696e67696679__LICENSE",
-      "sha": "99c65e2c7d52714c3d43be93e684f1bbc9d13ac2",
-      "size": 1079
+      "sha": "23c3c025b5e850760c2402230c3bf359c73f5dea",
+      "size": 1100
     },
     {
       "path": "miniapp/node/licenses/pkg-73616665722d627566666572__LICENSE",
-      "sha": "4fe9e6f10036e619c2407f08ead54802bbfbcbd1",
-      "size": 1094
+      "sha": "6360ade698694e5dd05ee8da7f606b1fbe6f09ea",
+      "size": 1115
     },
     {
       "path": "miniapp/node/licenses/pkg-73656c6465726565__LICENSE",
@@ -1653,93 +1653,93 @@
     },
     {
       "path": "miniapp/node/licenses/pkg-7369676e616c2d65786974__LICENSE.txt",
-      "sha": "eead04a12162dc336a2d5029bc5101c9e430aa21",
-      "size": 748
+      "sha": "f59ddd4889e0c8cc1a7e5b1faf8e768b15bf39ea",
+      "size": 764
     },
     {
       "path": "miniapp/node/licenses/pkg-736d6172742d627566666572__LICENSE",
-      "sha": "aab5771a97c788ec0b95b12f1126023324343482",
-      "size": 1087
+      "sha": "59d0863316f3bf0f2375e6419c53401b019fd5fb",
+      "size": 1107
     },
     {
       "path": "miniapp/node/licenses/pkg-736f636b73__LICENSE",
-      "sha": "b2442a9e7132627a6299d6cf35ff406d4181b30e",
-      "size": 1082
+      "sha": "c770283d879bfa492a861bb77c81bfb8b65d391d",
+      "size": 1102
     },
     {
       "path": "miniapp/node/licenses/pkg-736f6e69632d626f6f6d__LICENSE",
-      "sha": "eea791db612e14d78228c2a30a00556a121fec4b",
-      "size": 1071
+      "sha": "4b0545cdd8a42318eb45747e7aaa4db763e0c0a3",
+      "size": 1092
     },
     {
       "path": "miniapp/node/licenses/pkg-7468726561642d73747265616d__LICENSE",
-      "sha": "2c1a038fd1e9b4fe7f936bdf9509406236d6a767",
-      "size": 1071
+      "sha": "b9219cb6e149ce2c2d8640d8833c7d1fbb6f850d",
+      "size": 1092
     },
     {
       "path": "miniapp/node/licenses/pkg-746c6473__LICENSE",
-      "sha": "ca4854258546db12f35e1444c06e4582da9e449d",
-      "size": 1098
+      "sha": "6741a0ee234fe6b347cbe349cf94f3d14eee4cb8",
+      "size": 1119
     },
     {
       "path": "miniapp/node/licenses/pkg-75632e6d6963726f__LICENSE.txt",
-      "sha": "a41e0a7ef970ecdd83d82cd99bda97b22077bc62",
-      "size": 1077
+      "sha": "b216658d4a21f121ad3ccfee383beae1dde5b976",
+      "size": 1097
     },
     {
       "path": "miniapp/node/licenses/pkg-7a6f642d746f2d6a736f6e2d736368656d61__LICENSE",
-      "sha": "406daaf2d775f8a620662ea0dc5ed70e0f5668bf",
-      "size": 745
+      "sha": "3623a02907352243b76337dd65f5d7f18e7b1c20",
+      "size": 759
     },
     {
       "path": "miniapp/node/licenses/pkg-7a6f64__LICENSE",
-      "sha": "c06579627b432d09779094cd0166b7f37fe51db8",
-      "size": 1072
+      "sha": "0cc171c55398030bd89f39f8dd835eac8bb2b8bf",
+      "size": 1093
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "6b70e112385f1b66e90155e3330d3b87939b19cd",
-      "size": 5369630
+      "sha": "ec5fcb5e3dfdcf82617b0e4c611cddbcc17dfe23",
+      "size": 5478707
     },
     {
       "path": "package.json",
-      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
-      "size": 85
+      "sha": "d523407a160a78f45163896e97bf6e9ba055b80f",
+      "size": 91
     },
     {
       "path": "servers.mcp.json",
-      "sha": "fe266a80216553fd47fbb107e103d755918d8c59",
-      "size": 350
+      "sha": "7951bed40097307d289a248781e7b89087bc8819",
+      "size": 362
     },
     {
       "path": "skills/email-account-setup/SKILL.md",
-      "sha": "f1f408a33a1f1e17226f5c543202446f15047e87",
-      "size": 9412
+      "sha": "3ca4f58afc8dea2d064c8320a200ea8feb8e1687",
+      "size": 9481
     },
     {
       "path": "skills/email-account-setup/agents/openai.yaml",
-      "sha": "476f716ff67822160b2e5b15e215a1abf7cd53d5",
-      "size": 301
+      "sha": "d8f3fa955cd36af033f94801054a4b8dd2d2c903",
+      "size": 305
     },
     {
       "path": "skills/email-account-setup/references/browser-assistance.md",
-      "sha": "b7b369713ab8f20618443bd96fd99953bf28361f",
-      "size": 5990
+      "sha": "cb24c7675fe9702ac09f43664f09e66a328078b3",
+      "size": 6042
     },
     {
       "path": "skills/email-account-setup/references/providers.json",
-      "sha": "e1186275a80a613817f9d8dc353a30636a4bd685",
-      "size": 41572
+      "sha": "b65f7731754f96d3e1753a00df3283664d19708d",
+      "size": 42459
     },
     {
       "path": "skills/email-account-setup/scripts/lookup_provider.py",
-      "sha": "1d7c057781a9fa0489eb3120f08749d07a8dec21",
-      "size": 4005
+      "sha": "3141226956d35153bb6f5d221d4b9986e6e92c37",
+      "size": 4099
     },
     {
       "path": "skills/email-assistant/SKILL.md",
-      "sha": "7ebf19711fe28b512dca75814d746dd5227efecb",
-      "size": 8851
+      "sha": "6a2c969c3db877a3ef1423fc5f7fd15d6723f959",
+      "size": 8921
     }
   ]
 }

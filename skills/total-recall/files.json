@@ -2,143 +2,143 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha": "606816d105247142bb043c34bf8f8d2a988b13b3",
-      "size": 6601
+      "sha": "38c5630c13d524a0dc56e77352097fce3bc54c1e",
+      "size": 6723
     },
     {
       "path": "CODE_OF_CONDUCT.md",
-      "sha": "6c074995fcac1d2804729f634775fc7bc87c3255",
-      "size": 719
+      "sha": "aa99d4a11cb5048157b47e537a96910c471e4819",
+      "size": 741
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha": "5fab6f869c73e1aca7be9bca889bac204ced09f1",
-      "size": 875
+      "sha": "e66839bd97de0f331537f7b53724d6380dad20a3",
+      "size": 898
     },
     {
       "path": "INSTALL-AGENT.md",
-      "sha": "7684aafe3f0ef7d7bdb8365a3da050359d625ad5",
-      "size": 1309
+      "sha": "5879b2517d1815541095d196a0b3081156768a57",
+      "size": 1351
     },
     {
       "path": "README.md",
-      "sha": "9bc4d61a87935c236ecf42998feef0922eb51c2f",
-      "size": 9775
+      "sha": "878feae82bac8be92931ee4c3da57e8cd40f06dd",
+      "size": 9995
     },
     {
       "path": "SKILL.md",
-      "sha": "728a29e40a67ce8eab08a24062412caf6af3c537",
-      "size": 13287
+      "sha": "0d164e67f5a4828a690f195a5da6101db33888bc",
+      "size": 13613
     },
     {
       "path": "_meta.json",
-      "sha": "c1b77cc5a4c8ace5a5c4cc0a4df570450b4ff0f7",
-      "size": 238
+      "sha": "e748a273869be62bdc23000c473a6210ae68fb70",
+      "size": 247
     },
     {
       "path": "config/cron-job.json",
-      "sha": "6d2d82e3bf4a56e35b059dc8e863ca002c971299",
-      "size": 505
+      "sha": "0112224586b4c7c59276c2f4311031a68cc4eb59",
+      "size": 521
     },
     {
       "path": "config/memory-flush.json",
-      "sha": "e1c88f9f66dfd13bcd2ca8793d88c6429a59a51c",
-      "size": 751
+      "sha": "87cb95ba0d807bfe31224b33abb181b8163cf2ab",
+      "size": 758
     },
     {
       "path": "docs/architecture.md",
-      "sha": "5e528a8f98d6dcd91737eeb0564a507e4a490ddf",
-      "size": 5031
+      "sha": "331a0bdf18b6bf7f406a537ecf6bbd9ddb04fc0b",
+      "size": 5148
     },
     {
       "path": "docs/edge-cases.md",
-      "sha": "f339948685d62aa941dc71df078ccc07067057cd",
-      "size": 793
+      "sha": "acbb24318a8eea0974036e590ca9574eba75111f",
+      "size": 804
     },
     {
       "path": "docs/faq.md",
-      "sha": "1a622fd1e0660e1d850c4dc216e605e5863bcf7c",
-      "size": 3372
+      "sha": "1defbaaaa5d228340c7a4f53944958bee6c40251",
+      "size": 3426
     },
     {
       "path": "dream-cycle/README.md",
-      "sha": "8ee875e18eb0ce3c6c399f95cb01d6efea568ec9",
-      "size": 2911
+      "sha": "1a6328186bd2ece4de0fad8c6e73c20f3fbfd604",
+      "size": 2996
     },
     {
       "path": "prompts/dream-cycle-prompt.md",
-      "sha": "1bc1742446214f82f20dccb0534dc14766bd914e",
-      "size": 21652
+      "sha": "22574e6110b31b301b54f38cefa3591788ace5c6",
+      "size": 22120
     },
     {
       "path": "prompts/observer-system.txt",
-      "sha": "5c5fdb2bb215d13fd392e3d7cb3b988e489967e7",
-      "size": 4597
+      "sha": "edb38ea154db3c31a11a66a70f675cd51ac68155",
+      "size": 4666
     },
     {
       "path": "prompts/reflector-system.txt",
-      "sha": "bc90f517f977aaa1847483fe0c7ba25ea509e6dc",
-      "size": 1529
+      "sha": "b6dc1a70519d5eb42fe6adc30df01a5aa208724f",
+      "size": 1558
     },
     {
       "path": "schemas/observation-format.md",
-      "sha": "47be129046fe2a89cf4878baf8e459921d553786",
-      "size": 8557
+      "sha": "f4561bdf9dc8be827e42a505dbb961169c6d785d",
+      "size": 8754
     },
     {
       "path": "scripts/_compat.sh",
-      "sha": "53ccaf7fa1a3845928781b10b0b29fea6e0f2602",
-      "size": 1122
+      "sha": "d381acc8368ed324f9a447adcbea0c4762186899",
+      "size": 1171
     },
     {
       "path": "scripts/backfill-importance.sh",
-      "sha": "8d8d52801d7902db27204fff5003d530092516c1",
-      "size": 5562
+      "sha": "1790f46ded9945f4b589d64c3e96de6efbdb1d87",
+      "size": 5710
     },
     {
       "path": "scripts/dream-cycle.sh",
-      "sha": "376c48803be5deace6bf4de24a2af357094e6eef",
-      "size": 25293
+      "sha": "b5f58bbb4e415791cfcdb781b17b49d1dd9dfc8b",
+      "size": 26129
     },
     {
       "path": "scripts/observer-agent.sh",
-      "sha": "4af5b1f77adacbfa743d33cc6b3b1a09dea0f81b",
-      "size": 12107
+      "sha": "be6f00613cf943ccb5f68535f1f7cc81e427730a",
+      "size": 12455
     },
     {
       "path": "scripts/observer-watcher.sh",
-      "sha": "a901826a7068a3e40048f36ce5e38d36f6873167",
-      "size": 4178
+      "sha": "bc911bb871ae6744afe99d67594e271e5d6b1049",
+      "size": 4312
     },
     {
       "path": "scripts/reflector-agent.sh",
-      "sha": "86017da59c45900b5b61312975f208e4cedd58c1",
-      "size": 4780
+      "sha": "0ac65b169c6671f00dbed77ab8e85c03fedc4183",
+      "size": 4940
     },
     {
       "path": "scripts/session-recovery.sh",
-      "sha": "34814f24cdc83f45233d8d41dc05f2f4d219b9b9",
-      "size": 2880
+      "sha": "a5d3dea8c784ce89309032d4ce7c9c78e19c5cea",
+      "size": 2971
     },
     {
       "path": "scripts/setup.sh",
-      "sha": "8e6d8659dcc4cf03cb85fce98793b2987171fa15",
-      "size": 5238
+      "sha": "49da34f58569d3b3de89ac93ae18f3b08fb13e2a",
+      "size": 5399
     },
     {
       "path": "scripts/staging-review.sh",
-      "sha": "8613838e432eb07de5dcf3d164a14d148f276c40",
-      "size": 7106
+      "sha": "0cd60b039d200aa6c39de0e819cec69fe9f6eaea",
+      "size": 7361
     },
     {
       "path": "templates/AGENTS-snippet.md",
-      "sha": "560fff0d76436f136c5774e14f3760a3b3c891df",
-      "size": 1341
+      "sha": "2f2e6ada40dfc9885ab53314a8276a9b5b4cf17e",
+      "size": 1357
     },
     {
       "path": "templates/HEARTBEAT-snippet.md",
-      "sha": "d4f9f710e9b23ced3a6864625d58e02ee68fa0b0",
-      "size": 411
+      "sha": "7137625d768e8b870352e773887215fcbff09086",
+      "size": 419
     }
   ]
 }

@@ -2,198 +2,198 @@
   "files": [
     {
       "path": "AGENTS.md",
-      "sha": "a7baf44507943d14a20052b4aaeca423fb67df5c",
-      "size": 2200
+      "sha": "841bb36642c5cdd9f585ad5888340d05b4347c4c",
+      "size": 2268
     },
     {
       "path": "CLAUDE.md",
-      "sha": "a7baf44507943d14a20052b4aaeca423fb67df5c",
-      "size": 2200
+      "sha": "841bb36642c5cdd9f585ad5888340d05b4347c4c",
+      "size": 2268
     },
     {
       "path": "README.md",
-      "sha": "f1a374e11e329c5d7f32218341a1b1c13c5949c3",
-      "size": 3175
+      "sha": "58608f0c4c3ae4676e71ca7ce918a7a375f8e5c0",
+      "size": 3291
     },
     {
       "path": "SKILL.md",
-      "sha": "f80be15621dac2b817368817128f505ceb55162d",
-      "size": 2577
+      "sha": "2fd1bc29cf65936a3286393b205277446720cd69",
+      "size": 2641
     },
     {
       "path": "_meta.json",
-      "sha": "7712c762ced833627f0b2c4ad4d2bcfc14cbfc40",
-      "size": 239
+      "sha": "4049e1a9369e9c5ecf6791eb822ce1ed8c24a43f",
+      "size": 248
     },
     {
       "path": "references/_contributing.md",
-      "sha": "10de8ecb9ab51ef95e7fcd0fe4731b3309e58dbe",
-      "size": 4167
+      "sha": "f5b2166a4140a3718734dcf4d79148353dae64b2",
+      "size": 4338
     },
     {
       "path": "references/_sections.md",
-      "sha": "8ba57c23e8119e411fcc8a230cda08e695792cac",
-      "size": 1682
+      "sha": "0ceabf05b1e07316ae0b622b777404793242f623",
+      "size": 1721
     },
     {
       "path": "references/_template.md",
-      "sha": "91ace90e10a4d8ef354a82bb1994842e6979ebed",
-      "size": 1040
+      "sha": "5c7205895a50cc3efd110ac464c2dbb97f357f57",
+      "size": 1074
     },
     {
       "path": "references/advanced-full-text-search.md",
-      "sha": "582cbeaada9378a280ad61f57e06c10d258e3c43",
-      "size": 1468
+      "sha": "eb4654dc04186a22d2f2108885585c36ce2b69fc",
+      "size": 1523
     },
     {
       "path": "references/advanced-jsonb-indexing.md",
-      "sha": "e3d261ea117fd7b1ad9c4f0d45308407b898ed5a",
-      "size": 1444
+      "sha": "b84fa793207fc1e2f3461ae27253ca5ec7711efb",
+      "size": 1493
     },
     {
       "path": "references/conn-idle-timeout.md",
-      "sha": "40b9cc50dd12cf347ed189fac965673b533f3f99",
-      "size": 1282
+      "sha": "19a05e57bb7ba678ebd9c11d4d418fb7633ee9d1",
+      "size": 1328
     },
     {
       "path": "references/conn-limits.md",
-      "sha": "cb3e400c0234e7e9196c1650423faad66375b70b",
-      "size": 1325
+      "sha": "f618a852a4212ff890f6f7fd4ac42077908a3199",
+      "size": 1369
     },
     {
       "path": "references/conn-pooling.md",
-      "sha": "e2ebd581d3c85bff0a077e8d9a2cb562d2513d03",
-      "size": 1382
+      "sha": "c51aac8db8997153be1f45da7df65063da0a98dd",
+      "size": 1423
     },
     {
       "path": "references/conn-prepared-statements.md",
-      "sha": "555547d834e35b5059152dfb2288eca5e9838ea0",
-      "size": 1529
+      "sha": "c2abd218172a8c0a77d688e50fdf8b5d64c48b84",
+      "size": 1575
     },
     {
       "path": "references/data-batch-inserts.md",
-      "sha": "997947cb17bfed67f29eaa8da2a58de2306cc2c1",
-      "size": 1287
+      "sha": "d3254e7a055e83c5b7b43d333f166980a70b2869",
+      "size": 1341
     },
     {
       "path": "references/data-n-plus-one.md",
-      "sha": "2109186ff88b3ba1cc32789f81e2a00d345c6e3f",
-      "size": 1361
+      "sha": "799b2b39f352a05f1a297d8aa3f19fd0705e1a65",
+      "size": 1414
     },
     {
       "path": "references/data-pagination.md",
-      "sha": "633d839323612e212a833dd96828cb31fdfb39f8",
-      "size": 1358
+      "sha": "499afb659f0888e8baa128bb1838c92aeb4db52a",
+      "size": 1408
     },
     {
       "path": "references/data-upsert.md",
-      "sha": "bc95e2305d955679446c70854cb2b56b183aa56d",
-      "size": 1390
+      "sha": "ab2d6d4685073a934a7b353beec144a1caa397e3",
+      "size": 1440
     },
     {
       "path": "references/lock-advisory.md",
-      "sha": "572eaf0dcf518ac925c4cde41beb60b62852b79c",
-      "size": 1531
+      "sha": "ea1e25fd26baa457dee3828ea3d9967b51a808fa",
+      "size": 1587
     },
     {
       "path": "references/lock-deadlock-prevention.md",
-      "sha": "974da5edec32f79de0fcdc771d4ef759dc3e049d",
-      "size": 1855
+      "sha": "4957f44f9ea5f76c24ef997cce016e9baf995077",
+      "size": 1923
     },
     {
       "path": "references/lock-short-transactions.md",
-      "sha": "e6b8ef2633248a4aa4394628e48d8cb693e7e6ab",
-      "size": 1350
+      "sha": "873b670ccc4986af4f6177f8cca195d2f6b5f520",
+      "size": 1400
     },
     {
       "path": "references/lock-skip-locked.md",
-      "sha": "77bdbb97045010ce2fdbd90733e8f764be82881a",
-      "size": 1353
+      "sha": "455317fe71015deca510ca606a292c2eeebaea47",
+      "size": 1407
     },
     {
       "path": "references/monitor-explain-analyze.md",
-      "sha": "542978c3bafc510fa8d7a8864cff994ad40be4d7",
-      "size": 1441
+      "sha": "fbf70aaa847eb02115bdefc40ee42c2aa698a562",
+      "size": 1486
     },
     {
       "path": "references/monitor-pg-stat-statements.md",
-      "sha": "d7e82f1aacd105d53789eb6188d11e8ea39e7310",
-      "size": 1418
+      "sha": "20d7d67c58342ea4b6bad177ae01b68c33af5289",
+      "size": 1473
     },
     {
       "path": "references/monitor-vacuum-analyze.md",
-      "sha": "e0e8ea0b7db8c1513a0d1605be477192bc21d91d",
-      "size": 1506
+      "sha": "30c9c5631f66c584f58bfccf7a26aa76c6ec31b9",
+      "size": 1561
     },
     {
       "path": "references/query-composite-indexes.md",
-      "sha": "fea64523fd5bb3696f943d486ccaf2aea75d27b8",
-      "size": 1454
+      "sha": "087032091dd027f9d3d436c39166d092160917e4",
+      "size": 1498
     },
     {
       "path": "references/query-covering-indexes.md",
-      "sha": "9d2a4947b94516dd975e1044d132bb007280f478",
-      "size": 1287
+      "sha": "420af228abe26c1c57840066d4defe74961ba095",
+      "size": 1327
     },
     {
       "path": "references/query-index-types.md",
-      "sha": "93b32590f4bfe377869274f45414ae6e43d168fa",
-      "size": 1521
+      "sha": "a327fee686e9fd8afe315c125baaf74fadc6c7f7",
+      "size": 1569
     },
     {
       "path": "references/query-missing-indexes.md",
-      "sha": "e6daace7dd368c75cdf87dc61be4afd6ff66cbbe",
-      "size": 1218
+      "sha": "379b16304669a02c317a951d152bda25791fab72",
+      "size": 1261
     },
     {
       "path": "references/query-partial-indexes.md",
-      "sha": "3e61a3417b9cce3c8cee99b39b78b7ebf495dd1f",
-      "size": 1347
+      "sha": "04cdc18f0d25e4858a1bbde966258c45d2f4f590",
+      "size": 1392
     },
     {
       "path": "references/schema-constraints.md",
-      "sha": "1d2ef8f9a968cd6fa882c7299134c30ace06373c",
-      "size": 1880
+      "sha": "8685620b92d8110428ea74d1f6477c5c7ab9f3ac",
+      "size": 1960
     },
     {
       "path": "references/schema-data-types.md",
-      "sha": "f253a5819d05531371e04485ab84f552fbb32fbe",
-      "size": 1453
+      "sha": "13578f5d5ab3c4c035bb051a99426d02c58cbb11",
+      "size": 1499
     },
     {
       "path": "references/schema-foreign-key-indexes.md",
-      "sha": "6c3d6ff622b8a9df358f6673f323292e682ce87c",
-      "size": 1679
+      "sha": "18a5bcfe586c5d3ea1846803ec69113ac017439b",
+      "size": 1738
     },
     {
       "path": "references/schema-lowercase-identifiers.md",
-      "sha": "f0072940b159ff64e0c2d4fbb499133cb8f49a66",
-      "size": 1728
+      "sha": "04d62668bfd55ea95df621284bf011d5d92b4c02",
+      "size": 1783
     },
     {
       "path": "references/schema-partitioning.md",
-      "sha": "13137a03275fa45001c870a40b0069204d44e005",
-      "size": 1548
+      "sha": "0b58f014c6d2b0d4641b10ae7c16af4f1155d4ea",
+      "size": 1603
     },
     {
       "path": "references/schema-primary-keys.md",
-      "sha": "fb0fbb166fac9ea38c127d807a263282acc2dc93",
-      "size": 1821
+      "sha": "87c2bc015372db7f52b57ddd24b9ae9db6bfbc09",
+      "size": 1882
     },
     {
       "path": "references/security-privileges.md",
-      "sha": "448ec345fab6c5a0116c584d65638b86d758c558",
-      "size": 1566
+      "sha": "4df68b0e143f63f5f569c430bae4163274333c53",
+      "size": 1620
     },
     {
       "path": "references/security-rls-basics.md",
-      "sha": "c61e1a8503de113be0981759b82f5e37090f344c",
-      "size": 1372
+      "sha": "677775a4ad65b6c3ed9b85736e3b3051235cb1e4",
+      "size": 1422
     },
     {
       "path": "references/security-rls-performance.md",
-      "sha": "b32d92f7ef9dba17e90d88884ca373587b3f39e6",
-      "size": 1493
+      "sha": "734a76814e8385ae9ebb4e50981f3fdbde4fd0ef",
+      "size": 1550
     }
   ]
 }

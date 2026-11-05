@@ -3,28 +3,28 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "1e2a766bf56afed0a3b733b56fc1b165341da4f4",
-      "size": 1149
+      "sha": "5828e2f2be9a271145d21423c8f660788a685bb1",
+      "size": 1179
     },
     {
       "path": "ATTRIBUTION.md",
-      "sha": "5eb32d294bacbedc19dd8d12e4614dd1570242d2",
-      "size": 2657
+      "sha": "f64b3d5c907f79104f3cdf5580fe9b5b1d1f96d7",
+      "size": 2688
     },
     {
       "path": "LICENSE",
-      "sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
-      "size": 34523
+      "sha": "1468d07c88d6a48dae9360ed0094955b54370224",
+      "size": 35184
     },
     {
       "path": "PRIVACY.md",
-      "sha": "13ff9d94c066557fa3feacd5574851e93d7e184c",
-      "size": 2126
+      "sha": "324ca70c14ff8177ca913aae8f89aa4d0b585018",
+      "size": 2154
     },
     {
       "path": "README.md",
-      "sha": "2baa502de90cc1245543f78dff331e0ff4aa0e82",
-      "size": 4174
+      "sha": "c8c13adaa32489d06b5a5dcba6d747851ee2c208",
+      "size": 4256
     },
     {
       "path": "icon.png",
@@ -33,143 +33,143 @@
     },
     {
       "path": "mcp/local-bio-tools.mjs",
-      "sha": "b132b6fc1ebf11c96abaae5109e78dca7a4432ce",
-      "size": 11552
+      "sha": "ad9bf227a2f4358216839d0c74e546eea96e5f68",
+      "size": 11744
     },
     {
       "path": "mcp/public-bio-api.mjs",
-      "sha": "73c0dff946d0a7a003b50be59e4ac2f149afbd45",
-      "size": 19820
+      "sha": "9ee89160f58662b84a4d97102db0ef98faebdc89",
+      "size": 20322
     },
     {
       "path": "mcp/rna-figure.mjs",
-      "sha": "cc08099cfdd38716dfda318092b10f5a503fd7f9",
-      "size": 10472
+      "sha": "24ad5f8dbeaf01d471e13edc7cfcdb5bfc321e01",
+      "size": 10669
     },
     {
       "path": "scripts/rna-figure.R",
-      "sha": "050384c9f488e8f0f41f2146f20988c9d5bdefff",
-      "size": 9414
+      "sha": "2537e0a3f2bd093cb233ba9977ebe4b1f80cffc0",
+      "size": 9533
     },
     {
       "path": "servers.mcp.json",
-      "sha": "4ea8328cd4924fe7076b56d515a5ad249f768f82",
-      "size": 455
+      "sha": "2e4a3f89be63e4e9e896d9299eae8f604ff034f4",
+      "size": 481
     },
     {
       "path": "skills/bio-research-orchestrator/SKILL.md",
-      "sha": "f03ec3e0b3bfa35accab8cfb27b6b923471788a2",
-      "size": 2201
+      "sha": "7d6ad1660101bcac390b523707e4f536e4a17a1d",
+      "size": 2242
     },
     {
       "path": "skills/bio-research-orchestrator/references/routing.md",
-      "sha": "0aa2e3eaee9800fb97e4e05b95a2e1acfa679b40",
-      "size": 1585
+      "sha": "0367427e6d825052ddc194ff3c3c209d111b0a63",
+      "size": 1604
     },
     {
       "path": "skills/evidence-review/SKILL.md",
-      "sha": "8209ef93d4daf092abe9ab9c88955c45e9c3b5f1",
-      "size": 1531
+      "sha": "f1bf8d108591ff56a988fe92686de88cecd21d48",
+      "size": 1556
     },
     {
       "path": "skills/evidence-review/references/review-contract.md",
-      "sha": "80e855fb9ba1b170f191d5872521bb96c72ef35a",
-      "size": 1277
+      "sha": "4e65e484552d085d14a82899dc9afd803a9eb6ef",
+      "size": 1310
     },
     {
       "path": "skills/experimental-design-gate/SKILL.md",
-      "sha": "6ef7393bae9a821f89d398fa776615ccd321d34b",
-      "size": 1483
+      "sha": "bb972b5daab664e26e6df166b1fb91d09e9b293e",
+      "size": 1518
     },
     {
       "path": "skills/local-bio-toolkit/SKILL.md",
-      "sha": "b4f60b662286d495e418645275541f5d066a87ec",
-      "size": 2045
+      "sha": "942bf79d3a56e03d14e919fca40ff35d47a609f6",
+      "size": 2076
     },
     {
       "path": "skills/manuscript-argument/SKILL.md",
-      "sha": "528a21885d7d84b83616a8fcb5c613a116fac816",
-      "size": 1410
+      "sha": "c90c917a124dbdd13921b318dc2fe4956f24b15f",
+      "size": 1440
     },
     {
       "path": "skills/manuscript-argument/references/introduction-discussion.md",
-      "sha": "9066579056178474cbabbbded09b873777f5b821",
-      "size": 2707
+      "sha": "1c506a7903f34e684c7a533b47d83cb43a4e379b",
+      "size": 2743
     },
     {
       "path": "skills/omics-workflow/SKILL.md",
-      "sha": "1ff45304a971d4780ee541acd4a419d3b506c7b2",
-      "size": 1741
+      "sha": "3da6c0ab19f6a0580cce9e181231d627f2954442",
+      "size": 1768
     },
     {
       "path": "skills/public-bio-databases/SKILL.md",
-      "sha": "906e45c2536696c841e4e212db39b4ebfa6f0f61",
-      "size": 1774
+      "sha": "289be55a3e4e2cf5edf96c28f936e5930bf0437d",
+      "size": 1805
     },
     {
       "path": "skills/public-bio-databases/references/api-catalog.md",
-      "sha": "789bf7c9577a36ac87c7089419b8d2bc6e37021f",
-      "size": 1713
+      "sha": "56c5b3c0fb4ac925adcab1f364783252367758a8",
+      "size": 1729
     },
     {
       "path": "skills/quantitative-research/SKILL.md",
-      "sha": "e89a27e5a68ac8c0e8388fc2c2662c682e6a9acd",
-      "size": 1550
+      "sha": "9f3e241b2eebe02cde3caee92c8a3de2273f0849",
+      "size": 1574
     },
     {
       "path": "skills/reproducible-analysis/SKILL.md",
-      "sha": "e8899c6314d35dadc3ae53a3ae821e192e5d9ace",
-      "size": 1468
+      "sha": "888a26d6593b83173cad6d8b43a8bd3905017ef9",
+      "size": 1495
     },
     {
       "path": "skills/rna-figure-workflow/SKILL.md",
-      "sha": "9993b8a3f7d173480ac1e0b61499e0d2b9d67472",
-      "size": 2010
+      "sha": "76242aab7b0d145ff98783ddc150759ce53c2b84",
+      "size": 2044
     },
     {
       "path": "skills/rna-figure-workflow/references/input-contracts.md",
-      "sha": "e389b43ac1add5774acd9bed630bf7ea4cac8e06",
-      "size": 1129
+      "sha": "1116fed13aa8129a15482c9bf2825f6a936d5dd8",
+      "size": 1142
     },
     {
       "path": "skills/scientific-figure-delivery/SKILL.md",
-      "sha": "714d29642378ebe921d4e8db486ab214f2ddf2f5",
-      "size": 1683
+      "sha": "812e75220f3e3bce47f15d62fd0b5711f1966bdb",
+      "size": 1718
     },
     {
       "path": "skills/scientific-figure-delivery/references/delivery-contract.md",
-      "sha": "6ca130f58ea9e4f33c600430f06eb7b86d3c1602",
-      "size": 814
+      "sha": "c00fe95aba714704a1f9a24d2e533d3cc6965e74",
+      "size": 828
     },
     {
       "path": "skills/secure-compute-routing/SKILL.md",
-      "sha": "f8d693a228269dc59e921126cb04006f02aed601",
-      "size": 1861
+      "sha": "8c1213be58262f9ca299ab560595b113c706eeef",
+      "size": 1898
     },
     {
       "path": "tests/local-tools-protocol-smoke.mjs",
-      "sha": "19c69f1e25fb287f520dd6c1058ae7200a63aab8",
-      "size": 891
+      "sha": "8f7db68b0cf75065e50a3e9cd0c7d9f6a493a53e",
+      "size": 906
     },
     {
       "path": "tests/mcp-client.mjs",
-      "sha": "0f99a0fff1079f32e16e2a8d4f7aa2b200f38532",
-      "size": 1693
+      "sha": "6abfd14f833a3bb445404b171a9654c1d94a894c",
+      "size": 1745
     },
     {
       "path": "tests/privacy-boundary.mjs",
-      "sha": "b25bbe4b6d470665b611fbb51d72c837dff28c0c",
-      "size": 1617
+      "sha": "55b29cd6d8892eaaec134890bde3c3e8eeb0290b",
+      "size": 1663
     },
     {
       "path": "tests/protocol-smoke.mjs",
-      "sha": "cbd9684c383b5566374eafeea98e1052bdaf467c",
-      "size": 1180
+      "sha": "4bca4862a06dfd207072f87dd5477399071e948d",
+      "size": 1205
     },
     {
       "path": "tests/rna-figure-protocol-smoke.mjs",
-      "sha": "8f4ed4362bee722633fe8bdcce037d6f47819948",
-      "size": 803
+      "sha": "0e1f1d2a9668555176b71dd79284bdbfcaaed6dc",
+      "size": 818
     }
   ]
 }

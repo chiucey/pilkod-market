@@ -2,163 +2,163 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "d3e60e84e7552f049cbd2d724b432c3a6416ce9c",
-      "size": 11564
+      "sha": "5e4a5ad7b26c9942c74840ce5fb6f2fa18991bb9",
+      "size": 11833
     },
     {
       "path": "_meta.json",
-      "sha": "416a87467e95188107968a80c9a900ec5626ea7b",
-      "size": 190
+      "sha": "13efd326fe66b7e1a9a945a38db693e4b6f735d9",
+      "size": 198
     },
     {
       "path": "scripts/bun.lock",
-      "sha": "f27ea0ee21150cfa1079494454a454d8320b8d4c",
-      "size": 23426
+      "sha": "ed15708fe8bec72a78ab0941a93e84dcb2afe2ea",
+      "size": 23632
     },
     {
       "path": "scripts/main.ts",
-      "sha": "9b25c56a6aa308c7c74956b439b5c023fe0a01a6",
-      "size": 5696
+      "sha": "fed7803c3f46d31196e3d54456b0ceeb7f09588f",
+      "size": 5890
     },
     {
       "path": "scripts/md/LICENSE",
-      "sha": "245b7fe03485d98bf2861f6366358a8997d1a78a",
-      "size": 650
+      "sha": "9363f78dcc5ba53fe83ac51fe1a3928808b58cb2",
+      "size": 668
     },
     {
       "path": "scripts/md/extensions/alert.ts",
-      "sha": "39785c459d6e2604d77f36f559d40f0d92788094",
-      "size": 19759
+      "sha": "b07be238c43542aaad9eb6f4841257f91153348a",
+      "size": 20043
     },
     {
       "path": "scripts/md/extensions/footnotes.ts",
-      "sha": "5660b64bb15b025dbfe782b93751db4baffc6476",
-      "size": 2427
+      "sha": "f5f0a1b032c32bf41ea49f190a8f58ccc52fb42b",
+      "size": 2516
     },
     {
       "path": "scripts/md/extensions/index.ts",
-      "sha": "dcf6c216d3600f55e368afd90ad9b3d5fe767b2d",
-      "size": 280
+      "sha": "7036b78fd544b6cda062a9b84d69396247e2536e",
+      "size": 290
     },
     {
       "path": "scripts/md/extensions/infographic.ts",
-      "sha": "47feedf8370857073a77070c9a6fa7a0b4222d50",
-      "size": 3698
+      "sha": "df242308f96012e1f44de709a06c4f92c2d3406e",
+      "size": 3817
     },
     {
       "path": "scripts/md/extensions/katex.ts",
-      "sha": "be62590632450cbe21bbe7e7d39b97db699db58f",
-      "size": 4742
+      "sha": "ef4090019b62e011ca967b97440cb3976463b0f2",
+      "size": 4904
     },
     {
       "path": "scripts/md/extensions/markup.ts",
-      "sha": "0aeac9b7049c236e444389dfa676d9c8b42f9a3b",
-      "size": 2372
+      "sha": "83717ee05890baf09604eb79623fc91a139922a0",
+      "size": 2459
     },
     {
       "path": "scripts/md/extensions/plantuml.ts",
-      "sha": "6b402f3738e77c205e6795c730bb23b5b796c44f",
-      "size": 8306
+      "sha": "e3509c5b745eb75f4c51335ad0646093986f2ad7",
+      "size": 8595
     },
     {
       "path": "scripts/md/extensions/ruby.ts",
-      "sha": "a064b0a78aa0c0ea75c60371675cb542e1ce0dff",
-      "size": 4044
+      "sha": "e060289bf8a38c497f933f2eef23f5df9e9ff9a9",
+      "size": 4169
     },
     {
       "path": "scripts/md/extensions/slider.ts",
-      "sha": "f1f1a107d902b93dc250a14a0da5d68e1ea77dce",
-      "size": 3019
+      "sha": "668e301948d431267ed0eb423aed5b8ee8803e28",
+      "size": 3092
     },
     {
       "path": "scripts/md/extensions/toc.ts",
-      "sha": "85e44ffc985d88b4c43ac746518d937a9b2ef59f",
-      "size": 2115
+      "sha": "43ca45c90a7d0cb6e3d6479e817d8b4df5569d0f",
+      "size": 2189
     },
     {
       "path": "scripts/md/package-lock.json",
-      "sha": "202469de1bc9b5e15d3a50a3d89ea340a706df03",
-      "size": 51455
+      "sha": "be90a035371c250437bfb3b481bf9b410f62777e",
+      "size": 52850
     },
     {
       "path": "scripts/md/package.json",
-      "sha": "260394d8e2097d4dffdea2df4c5a818094adfa7f",
-      "size": 321
+      "sha": "3e4b7f83a8ed589bf367d91f2dda23f982740cad",
+      "size": 335
     },
     {
       "path": "scripts/md/render.ts",
-      "sha": "b703ca77dbc059646ba2d9b920fbf98e8d8b8e31",
-      "size": 25333
+      "sha": "6f7ce489710b24af1cb3a31a33e0c39090776b21",
+      "size": 26212
     },
     {
       "path": "scripts/md/themes/base.css",
-      "sha": "51ea92b1682585716130cd2c80908a45dd6518cd",
-      "size": 718
+      "sha": "211d770569ae7caab4ab0547e4824f4cb2382a28",
+      "size": 752
     },
     {
       "path": "scripts/md/themes/default.css",
-      "sha": "e30fcbfb0f8e58305a01443ffad95c856daa5255",
-      "size": 7857
+      "sha": "4683c0d5fb4a65d2e11bc793b1f0080f0713db59",
+      "size": 8290
     },
     {
       "path": "scripts/md/themes/grace.css",
-      "sha": "161e5f48e1fdc61203c42674f6535c1669f030e2",
-      "size": 2538
+      "sha": "8536246db37b6428d0fc5924a22a950c63094aba",
+      "size": 2674
     },
     {
       "path": "scripts/md/themes/simple.css",
-      "sha": "a1db867a1ba12f71caff2a87ed0e9b6652c7a7e1",
-      "size": 2715
+      "sha": "e2696607192a297c54baca72d14396c2479ae0e4",
+      "size": 2844
     },
     {
       "path": "scripts/md/utils/languages.ts",
-      "sha": "40905afec6e2259479fc6b3cfa1877e90c294f50",
-      "size": 8295
+      "sha": "c347cdf54df7d7f0735bd106e65594b378dc0f06",
+      "size": 8533
     },
     {
       "path": "scripts/package.json",
-      "sha": "cabd95b42517a0d1fca3bc990459cf1bd2be6444",
-      "size": 152
+      "sha": "b5210a52d99fd022ac528ead004de4c7e1dd389d",
+      "size": 160
     },
     {
       "path": "scripts/vendor/baoyu-md/package.json",
-      "sha": "a6f7086d8cd348d294a51af4423fe4425efcae3f",
-      "size": 450
+      "sha": "e42d1b8c2c731a00bd340f617853957226914356",
+      "size": 471
     },
     {
       "path": "scripts/vendor/baoyu-md/src/LICENSE",
-      "sha": "245b7fe03485d98bf2861f6366358a8997d1a78a",
-      "size": 650
+      "sha": "9363f78dcc5ba53fe83ac51fe1a3928808b58cb2",
+      "size": 668
     },
     {
       "path": "scripts/vendor/baoyu-md/src/cli.ts",
-      "sha": "5a7861b9ec9bd48f0d65bb33315f4aea488d0949",
-      "size": 5831
+      "sha": "82a8d429693c496547bbec6bdccdf6e0d8159719",
+      "size": 5994
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/1c-light.min.css",
-      "sha": "a9d9bf919c0cdfc013bdf5bf04cbea90f4fbb9f5",
-      "size": 1123
+      "sha": "678fded6f27fb1342e23a4e302c90c96ea267feb",
+      "size": 1131
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/a11y-dark.min.css",
-      "sha": "7820d7db13f9eb91e3881457e55a564eaa8cf2d4",
-      "size": 1158
+      "sha": "cbd9b75b18ab06817c3e2b39b165976323072e0e",
+      "size": 1164
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/a11y-light.min.css",
-      "sha": "8b5ab90937144a1ae6249a071ade8143d0246f61",
-      "size": 1146
+      "sha": "f05540f556173a09d156a9e9ff7889585f88392e",
+      "size": 1152
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/agate.min.css",
-      "sha": "bdbeed4e5098d934cbaac645e6e7dc4a082e24d0",
-      "size": 1357
+      "sha": "39ddf377f2659ac8c95e286519a1c28c92817d6c",
+      "size": 1376
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/an-old-hope.min.css",
-      "sha": "ffc7f8c722ffeaaa6e1f59a493c1a4941a86b8b2",
-      "size": 961
+      "sha": "4db24d499884842a474278c3e8048429e36530f8",
+      "size": 969
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/androidstudio.min.css",
@@ -217,13 +217,13 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/default.min.css",
-      "sha": "a75ea911626816107a2a126d4a990e187bc9d7ee",
-      "size": 1144
+      "sha": "1ae41b1ce73ef0512c663e1ffd4e3d0ca9142387",
+      "size": 1152
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/devibeans.min.css",
-      "sha": "d8c4c0f5444f74cf6330511bfe3c4e151dad1cce",
-      "size": 1080
+      "sha": "e0b8fe162e1a7fe4e920158c5ea548a145457c28",
+      "size": 1086
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/docco.min.css",
@@ -237,8 +237,8 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/felipec.min.css",
-      "sha": "7f76cd0d707b49f33a9445ef7af6b40fafcd39ab",
-      "size": 1181
+      "sha": "04f2a6f24279c518d7efe0af44630a94ed0c270f",
+      "size": 1187
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/foundation.min.css",
@@ -247,18 +247,18 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/github-dark-dimmed.min.css",
-      "sha": "e266dfc1cf7bd571057c1e59c09a3ea531d33ba1",
-      "size": 1251
+      "sha": "05bbcfafe9d88720a64c52295ca3df9a2d8981e8",
+      "size": 1259
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/github-dark.min.css",
-      "sha": "03b6da8bf4301dbc9853f46f9fe3362236f61a82",
-      "size": 1315
+      "sha": "10acee2936758144a70dfc6c13d398677710ff63",
+      "size": 1324
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/github.min.css",
-      "sha": "275239a7aa96a8cfea155167b8ce57db3ab5f469",
-      "size": 1309
+      "sha": "cd9369ce3db191b588c2ce54224633fa8738fc4b",
+      "size": 1318
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/gml.min.css",
@@ -362,13 +362,13 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/nnfx-dark.min.css",
-      "sha": "4e6403d6e365918c1a9a0d3dd92f8115805af59a",
-      "size": 1411
+      "sha": "6a5b2414e8faf41f4cb693b3fd602eefec611241",
+      "size": 1420
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/nnfx-light.min.css",
-      "sha": "469223a984c1683e45c0c2990138d1a0bffd983a",
-      "size": 1412
+      "sha": "9c584dde06a5ae556b46f605537f94db8cdd5d89",
+      "size": 1421
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/nord.min.css",
@@ -447,13 +447,13 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/stackoverflow-dark.min.css",
-      "sha": "33cea55a2de1a0faaa05b71182dc939c1e715128",
-      "size": 1271
+      "sha": "a06b0a73b97b72e9b4382900c26ada038b2d19af",
+      "size": 1283
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/stackoverflow-light.min.css",
-      "sha": "c36d63d88c1ee14f5d073e041b99edacd357ea21",
-      "size": 1285
+      "sha": "fa90b6979f362dda94d10c19d56d1e3192210e5a",
+      "size": 1297
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/sunburst.min.css",
@@ -462,13 +462,13 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/tokyo-night-dark.min.css",
-      "sha": "dc63ad9e764f406df179ca3b5d7ed36ea2be7587",
-      "size": 1234
+      "sha": "b2f5664c423a3ad68816775505ea80ecae2c5c2a",
+      "size": 1241
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/tokyo-night-light.min.css",
-      "sha": "0096d4d1ec07d71066f4db308afaca7011e5198a",
-      "size": 1235
+      "sha": "5852adf0dd27feb4c84581fa6a5d5a1ef02cf314",
+      "size": 1242
     },
     {
       "path": "scripts/vendor/baoyu-md/src/code-themes/tomorrow-night-blue.min.css",
@@ -502,158 +502,158 @@
     },
     {
       "path": "scripts/vendor/baoyu-md/src/constants.ts",
-      "sha": "2edd803b21a08b3e4a588158b98c24aba8022bad",
-      "size": 3338
+      "sha": "4fd6bcf30cd083b7155260e53777186fae4b76a2",
+      "size": 3422
     },
     {
       "path": "scripts/vendor/baoyu-md/src/content.test.ts",
-      "sha": "91dbd72705d786fa99901a8e5b77c1c27ff64214",
-      "size": 2331
+      "sha": "749f147877b3dcbe982c48a7f596d5bede8fe852",
+      "size": 2424
     },
     {
       "path": "scripts/vendor/baoyu-md/src/content.ts",
-      "sha": "6be2b5168f25c47250ee69a9e0c724fac856fef2",
-      "size": 3224
+      "sha": "91326ce1f4b945b6f79ecca7bc56481f0b95bfb5",
+      "size": 3329
     },
     {
       "path": "scripts/vendor/baoyu-md/src/document.test.ts",
-      "sha": "c188acc38e3fd6a4604e793d4702fa8940beaac9",
-      "size": 4352
+      "sha": "5220b0cd3a52620cedb3a92e2085ac2090600b68",
+      "size": 4492
     },
     {
       "path": "scripts/vendor/baoyu-md/src/document.ts",
-      "sha": "e37074066770343c49b9b0f331a127a2caaa207f",
-      "size": 6881
+      "sha": "ba2385fb7c91522b003985e466bc83284bea6362",
+      "size": 7087
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extend-config.ts",
-      "sha": "b4a0018e0f3dbc3de3c968761d76a88239d35e60",
-      "size": 2309
+      "sha": "99145497d57f7359c8fc9c0e24049665c39d6abd",
+      "size": 2366
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/alert.ts",
-      "sha": "39785c459d6e2604d77f36f559d40f0d92788094",
-      "size": 19759
+      "sha": "b07be238c43542aaad9eb6f4841257f91153348a",
+      "size": 20043
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/footnotes.ts",
-      "sha": "5660b64bb15b025dbfe782b93751db4baffc6476",
-      "size": 2427
+      "sha": "f5f0a1b032c32bf41ea49f190a8f58ccc52fb42b",
+      "size": 2516
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/index.ts",
-      "sha": "dcf6c216d3600f55e368afd90ad9b3d5fe767b2d",
-      "size": 280
+      "sha": "7036b78fd544b6cda062a9b84d69396247e2536e",
+      "size": 290
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/infographic.ts",
-      "sha": "47feedf8370857073a77070c9a6fa7a0b4222d50",
-      "size": 3698
+      "sha": "df242308f96012e1f44de709a06c4f92c2d3406e",
+      "size": 3817
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/katex.ts",
-      "sha": "be62590632450cbe21bbe7e7d39b97db699db58f",
-      "size": 4742
+      "sha": "ef4090019b62e011ca967b97440cb3976463b0f2",
+      "size": 4904
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/markup.ts",
-      "sha": "0aeac9b7049c236e444389dfa676d9c8b42f9a3b",
-      "size": 2372
+      "sha": "83717ee05890baf09604eb79623fc91a139922a0",
+      "size": 2459
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/plantuml.ts",
-      "sha": "6b402f3738e77c205e6795c730bb23b5b796c44f",
-      "size": 8306
+      "sha": "e3509c5b745eb75f4c51335ad0646093986f2ad7",
+      "size": 8595
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/ruby.ts",
-      "sha": "a064b0a78aa0c0ea75c60371675cb542e1ce0dff",
-      "size": 4044
+      "sha": "e060289bf8a38c497f933f2eef23f5df9e9ff9a9",
+      "size": 4169
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/slider.ts",
-      "sha": "f1f1a107d902b93dc250a14a0da5d68e1ea77dce",
-      "size": 3019
+      "sha": "668e301948d431267ed0eb423aed5b8ee8803e28",
+      "size": 3092
     },
     {
       "path": "scripts/vendor/baoyu-md/src/extensions/toc.ts",
-      "sha": "85e44ffc985d88b4c43ac746518d937a9b2ef59f",
-      "size": 2115
+      "sha": "43ca45c90a7d0cb6e3d6479e817d8b4df5569d0f",
+      "size": 2189
     },
     {
       "path": "scripts/vendor/baoyu-md/src/html-builder.test.ts",
-      "sha": "2cab3435185ee9edbd3b7b7a0a2cade79d78d61d",
-      "size": 2518
+      "sha": "db12fbff7443d4952ab6fa97cb6efe171ccd38bf",
+      "size": 2589
     },
     {
       "path": "scripts/vendor/baoyu-md/src/html-builder.ts",
-      "sha": "3ca61a008c50d7437a70f3331fafc7a0abd02327",
-      "size": 4529
+      "sha": "4edf2e8ba32d8a325c34db7ef34c0e436cb9f518",
+      "size": 4671
     },
     {
       "path": "scripts/vendor/baoyu-md/src/images.test.ts",
-      "sha": "cc187c2aa0034d21358c789a895910e9db948ff2",
-      "size": 2554
+      "sha": "c2827a64b91b672e355d3bae593694db45c9a254",
+      "size": 2633
     },
     {
       "path": "scripts/vendor/baoyu-md/src/images.ts",
-      "sha": "b28f041b15106c75eaea811d1c31661e06594994",
-      "size": 4218
+      "sha": "7bb39db42d9b2fa69a0e79927ec488c47e1f4532",
+      "size": 4374
     },
     {
       "path": "scripts/vendor/baoyu-md/src/index.ts",
-      "sha": "eeec3952497103636652ee137bd4158c1a7ea890",
-      "size": 307
+      "sha": "d83ca24de71a6e1b2b37ce7a6830a1a9c51b7110",
+      "size": 317
     },
     {
       "path": "scripts/vendor/baoyu-md/src/render.ts",
-      "sha": "85415d651af8b6a4c135b0ed249daa5a7aeff006",
-      "size": 1192
+      "sha": "24ee4670949eeca3ba0e2c5b4c159062005d5a77",
+      "size": 1235
     },
     {
       "path": "scripts/vendor/baoyu-md/src/renderer.ts",
-      "sha": "7a1234c4f692022d0ce4877a5f0433dcf8e25b44",
-      "size": 13280
+      "sha": "e8375e8662b9fb302e504507af696c20b5d73176",
+      "size": 13714
     },
     {
       "path": "scripts/vendor/baoyu-md/src/themes.ts",
-      "sha": "9c3dbeb88a4a8161162d6a6a13ed3f1240dd55d0",
-      "size": 1802
+      "sha": "3a4d8c5097c5d7d5a300757517fcd93c17bd5de2",
+      "size": 1864
     },
     {
       "path": "scripts/vendor/baoyu-md/src/themes/base.css",
-      "sha": "3ec1fe4db9cb8e6790c4b47ec3bcf4a3e8bebaf1",
-      "size": 816
+      "sha": "5b00c51302ac706251830ed2ca2e2ca65a7664ce",
+      "size": 855
     },
     {
       "path": "scripts/vendor/baoyu-md/src/themes/default.css",
-      "sha": "b9982f635eba6e635036018b79a01b861465de87",
-      "size": 7904
+      "sha": "6fc0160e5c1f75d09acc5db7cfff20b6c4db27e8",
+      "size": 8338
     },
     {
       "path": "scripts/vendor/baoyu-md/src/themes/grace.css",
-      "sha": "161e5f48e1fdc61203c42674f6535c1669f030e2",
-      "size": 2538
+      "sha": "8536246db37b6428d0fc5924a22a950c63094aba",
+      "size": 2674
     },
     {
       "path": "scripts/vendor/baoyu-md/src/themes/modern.css",
-      "sha": "ccd2cc097bc9d59acfab654cb62208ab73efbd46",
-      "size": 8443
+      "sha": "5888667bceeb23b789b325931950a565e53f2fe1",
+      "size": 8908
     },
     {
       "path": "scripts/vendor/baoyu-md/src/themes/simple.css",
-      "sha": "a1db867a1ba12f71caff2a87ed0e9b6652c7a7e1",
-      "size": 2715
+      "sha": "e2696607192a297c54baca72d14396c2479ae0e4",
+      "size": 2844
     },
     {
       "path": "scripts/vendor/baoyu-md/src/types.ts",
-      "sha": "669f8cb4e7533763d1f7c20edcb00d35f699e132",
-      "size": 1862
+      "sha": "ce17432a800905a4d51af98209392ff6130e1299",
+      "size": 1940
     },
     {
       "path": "scripts/vendor/baoyu-md/src/utils/languages.ts",
-      "sha": "40905afec6e2259479fc6b3cfa1877e90c294f50",
-      "size": 8295
+      "sha": "c347cdf54df7d7f0735bd106e65594b378dc0f06",
+      "size": 8533
     }
   ]
 }

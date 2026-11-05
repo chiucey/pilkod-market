@@ -2,38 +2,38 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha": "d466bcf470906d62db5610545a03fffa28d272ad",
-      "size": 305
+      "sha": "d389b0bbc38b7a7554380e8129f322ac3ed746ea",
+      "size": 321
     },
     {
       "path": ".npmignore",
-      "sha": "1871b66d029140a48956f868fc523ff25a2e2741",
-      "size": 126
+      "sha": "76f309f9bd7f34a62da7442f421bbbbcc47f3802",
+      "size": 137
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha": "c6803fd166572cbe062799001409fe718ad4c3f5",
-      "size": 327
+      "sha": "55c25cc620bbc6932d6d96229a4098e64bd273ba",
+      "size": 338
     },
     {
       "path": "LICENSE",
-      "sha": "b1956cd104a12dddefaaa0e7c8b184ae2eb0ad2e",
-      "size": 1066
+      "sha": "b57a8f74fb112f0c7ae1fb24301b53732f37ec55",
+      "size": 1088
     },
     {
       "path": "README.md",
-      "sha": "66d396c61ddc78beebb52f924a475239ba80b4d1",
-      "size": 13086
+      "sha": "bcf2d8fc69253168df729dbbc68afe51f0e2c577",
+      "size": 13376
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "30bac172f7ab6aeeeba44a8282df4496b8e2d644",
-      "size": 11544
+      "sha": "38ae7b36b15894933289370c3350f02259ac0809",
+      "size": 11780
     },
     {
       "path": "SKILL.md",
-      "sha": "95841046de65715ea9ac4f9fd2a4ef5f51902624",
-      "size": 12050
+      "sha": "75763e18b9811e921e0560c8e268b9c31146ab27",
+      "size": 12340
     },
     {
       "path": "assets/cover.png",
@@ -42,403 +42,403 @@
     },
     {
       "path": "assets/gep/capsules.json",
-      "sha": "40f9ee5845008f9d605f47a5ea421dae23ca6e00",
-      "size": 2851
+      "sha": "432b076c84c9791ea2e7d5efb19c5827d6d18004",
+      "size": 2930
     },
     {
       "path": "assets/gep/events.jsonl",
-      "sha": "ec31e3e81696c67075bb1cedddc82a7b1786cbbd",
-      "size": 12678
+      "sha": "259ac03f414e16cebb1c319e4d14ea12dce76c24",
+      "size": 12685
     },
     {
       "path": "assets/gep/genes.json",
-      "sha": "4a0d07af3035feb4c8f39eb95ac2c0c830790c92",
-      "size": 3568
+      "sha": "be5521be4d9a80d63248eed8e542c07b835812c5",
+      "size": 3676
     },
     {
       "path": "index.js",
-      "sha": "aa771f786f744d62dcf65f158d79028658e35406",
-      "size": 27152
+      "sha": "562401c831dcf2692ade9ee5619337c4e2c894b5",
+      "size": 27811
     },
     {
       "path": "package.json",
-      "sha": "c03b8ab9c8554f6d9a27a9e7e3daa4455df32208",
-      "size": 986
+      "sha": "c6c3d26e4c3d7a599172ade17371691dcc5bda46",
+      "size": 1024
     },
     {
       "path": "scripts/a2a_export.js",
-      "sha": "a89dead836d4b10d03c997b9140e6a4cd0d7d947",
-      "size": 2367
+      "sha": "35949c97ed88c64852c6cb5973db3551e10974e6",
+      "size": 2430
     },
     {
       "path": "scripts/a2a_ingest.js",
-      "sha": "c74409c56e51ce32e4ca36226df29c3947c05fd9",
-      "size": 2671
+      "sha": "c3325e19b45cb786095fb7a9452dd8cc83dc1923",
+      "size": 2750
     },
     {
       "path": "scripts/a2a_promote.js",
-      "sha": "d1d376d607f91e2387c6e3e7b7c588b007ecd464",
-      "size": 4785
+      "sha": "6b719120a4603dad8542e4fa2d41195121fa937f",
+      "size": 4903
     },
     {
       "path": "scripts/analyze_by_skill.js",
-      "sha": "14ae3c44d5c9e783954e2e0f052505c583d9bca0",
-      "size": 4848
+      "sha": "bf56ab2c455e9980e42c122bd8cf01d5c7aabd10",
+      "size": 4969
     },
     {
       "path": "scripts/build_public.js",
-      "sha": "b3acef4ccfbb2cab78afac6876ed556b7259c7d0",
-      "size": 10821
+      "sha": "eba63c77c8f0252f138589098b4cfbe5da3a9ead",
+      "size": 11176
     },
     {
       "path": "scripts/extract_log.js",
-      "sha": "bff71902503b47c70967a5d3304ffd01ae8b3a4b",
-      "size": 2600
+      "sha": "584f98518cae4c99cadef94508e01ad2457b6491",
+      "size": 2685
     },
     {
       "path": "scripts/generate_history.js",
-      "sha": "f36d19573133ad0a99e1778e5bfd10be31813aab",
-      "size": 2593
+      "sha": "999b32be369103fb134a2a359c4be4de409ab51f",
+      "size": 2668
     },
     {
       "path": "scripts/gep_append_event.js",
-      "sha": "e863c416ffce921f43a40e943cfc32c89b73a48d",
-      "size": 3049
+      "sha": "57e9b27f0e78afc0b4b3c950e17a22eaba3a079c",
+      "size": 3145
     },
     {
       "path": "scripts/gep_personality_report.js",
-      "sha": "080f2d7eed31c3be9fae5c11f93f5df00484624e",
-      "size": 7918
+      "sha": "282b81e8c5a16a57b831d0c812905918e370d889",
+      "size": 8152
     },
     {
       "path": "scripts/human_report.js",
-      "sha": "64c5e79b73901b1738cd720869bdde0e34365e56",
-      "size": 5796
+      "sha": "39f3448abc66cc86d8b6395c3ec0143451f4cabf",
+      "size": 5943
     },
     {
       "path": "scripts/publish_public.js",
-      "sha": "4ebc10905266c32d47fda895216b3db176aeecd5",
-      "size": 20340
+      "sha": "9e0e30d58d3bc9c5bfc322bf91637e5c6153a5d1",
+      "size": 20954
     },
     {
       "path": "scripts/recover_loop.js",
-      "sha": "5e494f3ee030eae1e70f58eab2fde0797e56ad67",
-      "size": 1691
+      "sha": "e0149d695c9a9eecd35ae8599bedbc3cb22d71b6",
+      "size": 1752
     },
     {
       "path": "scripts/suggest_version.js",
-      "sha": "49c4177b5065083cc93b64dbfc85cdf54dd30167",
-      "size": 3037
+      "sha": "6a01d5e7eb1cde71ad2eb37e2b05225ea6007676",
+      "size": 3126
     },
     {
       "path": "scripts/validate-modules.js",
-      "sha": "752a5caefd9d49d5401b7786497d9610ae124af7",
-      "size": 437
+      "sha": "4b23865e5ae0ebed4f89adb800e6fbd26f7180a3",
+      "size": 445
     },
     {
       "path": "src/canary.js",
-      "sha": "389a0e5ab24f2660e951cd2a1d6aeec39239242a",
-      "size": 486
+      "sha": "f2e311a29ede5d41f57fb9bd98f028b1b6997701",
+      "size": 499
     },
     {
       "path": "src/evolve.js",
-      "sha": "377e9b95c9fd97147a9ce88d7b324e4c271b0d09",
-      "size": 77923
+      "sha": "61d0c3f642bc91fdb1eafb67e954c43825af1431",
+      "size": 79897
     },
     {
       "path": "src/gep/a2a.js",
-      "sha": "f47a7cf67287f7dae23492947e1cbc237ff705a4",
-      "size": 6480
+      "sha": "302263e223166f6e5598fa0a0baa2653d9ee7dc1",
+      "size": 6653
     },
     {
       "path": "src/gep/a2aProtocol.js",
-      "sha": "ab508908a2c786e598820fe07bac577bba2b20a8",
-      "size": 25670
+      "sha": "8982187ad92d163bac2488e8a2bb174a20617c41",
+      "size": 26471
     },
     {
       "path": "src/gep/analyzer.js",
-      "sha": "7fd3f7a77c8d15b57a54fe6166f5cd38c29fbd1b",
-      "size": 988
+      "sha": "5e6bf1ed185949f9d29a43c378dfdd54bc44155b",
+      "size": 1023
     },
     {
       "path": "src/gep/assetCallLog.js",
-      "sha": "b28c97ab84c7549a86229be1840b3208ec868ea0",
-      "size": 3478
+      "sha": "f1dc83b0a0c8c9dbcb136d2b6f2a0dbc7f36f235",
+      "size": 3608
     },
     {
       "path": "src/gep/assetStore.js",
-      "sha": "e4571f510c1fa56f60641ae916b39bc98322a3bd",
-      "size": 13519
+      "sha": "fbb0d7482939e0418dc147a36cb45ac2d0e1935f",
+      "size": 13868
     },
     {
       "path": "src/gep/assets.js",
-      "sha": "333ce4cbc23963b777cbcaca9ad797f21937643e",
-      "size": 1110
+      "sha": "a8145ff3e36445bd9bcb638b3c7f544b702e7dc8",
+      "size": 1146
     },
     {
       "path": "src/gep/bridge.js",
-      "sha": "92a4db9e807ab39c8df143b6d92903ae677ad82b",
-      "size": 2096
+      "sha": "509f7c729e61352162c6edfa06a18db1745f7c3d",
+      "size": 2167
     },
     {
       "path": "src/gep/candidates.js",
-      "sha": "eb73c4b85defc03c0d68fd7e4e1053846cf9ac62",
-      "size": 8252
+      "sha": "e97528dab7d9a7e7e21114acebb52b85bd60205b",
+      "size": 8460
     },
     {
       "path": "src/gep/contentHash.js",
-      "sha": "58c3f60a36ed311af92add48c3f28476f635a66f",
-      "size": 2196
+      "sha": "503f0670c12c8e8a27089781ccf43a05f0bf28fa",
+      "size": 2261
     },
     {
       "path": "src/gep/deviceId.js",
-      "sha": "3f67038810ab01a7ad3211abcd831bce35e23e40",
-      "size": 6728
+      "sha": "af8c9905343f02a5d1800ccb20eb2321a6f61cf2",
+      "size": 6937
     },
     {
       "path": "src/gep/envFingerprint.js",
-      "sha": "8872208e713d6c94ccbf0210f92bdd71e7421c3a",
-      "size": 2989
+      "sha": "06b257ceaba485f401a429ec68776a3def520a89",
+      "size": 3073
     },
     {
       "path": "src/gep/executionTrace.js",
-      "sha": "170f178fb482ee4ab79a4c13583c83a28a749814",
-      "size": 6922
+      "sha": "f70fe9ad968ff9529421655e7bbfdb37e7512636",
+      "size": 7123
     },
     {
       "path": "src/gep/hubReview.js",
-      "sha": "1f4d1eaa703d135111898c734a36a729dbda0a85",
-      "size": 6561
+      "sha": "2f64d24d71d421c887f0cdd319e60e311e8931aa",
+      "size": 6767
     },
     {
       "path": "src/gep/hubSearch.js",
-      "sha": "a7c8ecc23759d3c132204962ff068677eaf462ce",
-      "size": 10354
+      "sha": "ce338af13ffad203fabd165a16a740b271e3810b",
+      "size": 10671
     },
     {
       "path": "src/gep/issueReporter.js",
-      "sha": "77bec8c6ba8d8e16651de35022bb0cf42a2a5862",
-      "size": 9062
+      "sha": "eaea6c98f8b5373f329a374d416e15a157685139",
+      "size": 9324
     },
     {
       "path": "src/gep/learningSignals.js",
-      "sha": "0eff45a6f6174067d6882047f2eb42284ba68d2e",
-      "size": 3001
+      "sha": "4fe514f324746b785b3090b626c252391b0d51a3",
+      "size": 3090
     },
     {
       "path": "src/gep/llmReview.js",
-      "sha": "7f33f9bd5490bce43a9e19cd78e9974e60568659",
-      "size": 3137
+      "sha": "d72437829a0bdb48d0ac177509caa156b38e17e6",
+      "size": 3229
     },
     {
       "path": "src/gep/memoryGraph.js",
-      "sha": "e22d9d9645288dede3439b70cf701a3422ae59db",
-      "size": 27559
+      "sha": "00447f76c9da40f2ee8af7954d2dd5ac165dd888",
+      "size": 28330
     },
     {
       "path": "src/gep/memoryGraphAdapter.js",
-      "sha": "15b79d3b014a4f53ef8cf9935632413f3d2a9e8c",
-      "size": 7134
+      "sha": "a28ef3ec07dec20360d24550850de76e50c89e78",
+      "size": 7337
     },
     {
       "path": "src/gep/mutation.js",
-      "sha": "a7c6bed5a4e4358d6e9c5c9a9c62d84ceeccb327",
-      "size": 6902
+      "sha": "cbbce63d67f4e039bc6670cba5ecf92f582989ca",
+      "size": 7088
     },
     {
       "path": "src/gep/narrativeMemory.js",
-      "sha": "fae88549a5eb3385494e064fa6ab6500f855958d",
-      "size": 3782
+      "sha": "2cc1d5916b972b7335d8558e8a3e4d23ed0a9381",
+      "size": 3890
     },
     {
       "path": "src/gep/paths.js",
-      "sha": "d55e9bcd8ac9f1e15e0743495661c02b453aae76",
-      "size": 3790
+      "sha": "a9deee6d200ae0f4d787287be047dd8009f0e399",
+      "size": 3920
     },
     {
       "path": "src/gep/personality.js",
-      "sha": "7923dac7a9006b3850d1cad7e0d27b428b3f8221",
-      "size": 13482
+      "sha": "b36bedd897c2971fe2693271039defd3d114d717",
+      "size": 13837
     },
     {
       "path": "src/gep/prompt.js",
-      "sha": "bdfec3a954735f3d275dcfe3c6fa13be0c290cfc",
-      "size": 24723
+      "sha": "a06018885317745faf205d3cb8bd21cdf2ecc765",
+      "size": 25313
     },
     {
       "path": "src/gep/questionGenerator.js",
-      "sha": "fa4dcbd08f6666283ca3ac07a9786fb9cdfb649a",
-      "size": 8698
+      "sha": "9eb7ac4305f31c0afa53a3ac493ceb4b3cb4ef69",
+      "size": 8910
     },
     {
       "path": "src/gep/reflection.js",
-      "sha": "fac1aff0f96aff4b6730f977e75bfd038ffd21db",
-      "size": 4298
+      "sha": "1370a17a79a1587d2c0d732e0a58cae9dc8ac511",
+      "size": 4425
     },
     {
       "path": "src/gep/sanitize.js",
-      "sha": "595aa8dd2b5237f28d5162500fe6d26b7e130548",
-      "size": 2211
+      "sha": "bd5cd1822ca0af70efc256f9e50aaeab662ceb48",
+      "size": 2278
     },
     {
       "path": "src/gep/selector.js",
-      "sha": "e5c24658044eaa8c21a077f86af90779a56e2db9",
-      "size": 13939
+      "sha": "60886cef467ee8e9a497fae84660f409e52480e9",
+      "size": 14283
     },
     {
       "path": "src/gep/signals.js",
-      "sha": "d570c7504249e86e5800affa6db661db23d5a0d3",
-      "size": 20116
+      "sha": "f9e6627add163a938e2f8398f1482de9e432953c",
+      "size": 20535
     },
     {
       "path": "src/gep/skillDistiller.js",
-      "sha": "5b29814a6bbfca7e64c5f8cc673464e8021d79e5",
-      "size": 36323
+      "sha": "78cedbb5eeb9f39d29d08031a3da123ea1077a04",
+      "size": 37185
     },
     {
       "path": "src/gep/skillPublisher.js",
-      "sha": "e1efcca4e2dfbdcf58034b434c722f9fb994cc4f",
-      "size": 10512
+      "sha": "3a8ed0cec7a614b0b6704bdf1d5ab821b169ec6e",
+      "size": 10819
     },
     {
       "path": "src/gep/solidify.js",
-      "sha": "a56e2b0c7f5cd7463e5ea2088a6700701e1b985b",
-      "size": 79208
+      "sha": "34ae5ebc4476cd1bb75c5b873d03202b95e414f9",
+      "size": 81061
     },
     {
       "path": "src/gep/strategy.js",
-      "sha": "c35a12abadcbf86fd9cf7439c999212fbda8d16d",
-      "size": 4456
+      "sha": "3dbc90bd8069d8e27df1ccb2ed8ee8dc2cef68e8",
+      "size": 4582
     },
     {
       "path": "src/gep/taskReceiver.js",
-      "sha": "20231405cc5bdb7d7e39acee71714269fae64c48",
-      "size": 17736
+      "sha": "1e409d21e052e38747aaff074fb4d716ec71691c",
+      "size": 18264
     },
     {
       "path": "src/gep/validationReport.js",
-      "sha": "cafb0d23463db46a41d663d320f184e0f9eea926",
-      "size": 2194
+      "sha": "52eeac87f0368a1dce1f2b4370018530c97336bb",
+      "size": 2249
     },
     {
       "path": "src/ops/cleanup.js",
-      "sha": "71cd4fad14849807e5c123b822fd3184c4c5fe0f",
-      "size": 2611
+      "sha": "25bd0598024b6ea9e663f5ca8373c311d55a2107",
+      "size": 2691
     },
     {
       "path": "src/ops/commentary.js",
-      "sha": "8f3aeed0ad43ee0e4d608fdb700a19efa43046a0",
-      "size": 1762
+      "sha": "733ed0a35fc9a1c644c5779847f981813e294921",
+      "size": 1822
     },
     {
       "path": "src/ops/health_check.js",
-      "sha": "9b3ac760f5a297e4653c1bfafcd6a17d72081bc3",
-      "size": 4049
+      "sha": "7eac95f4e7aba1719af72e5b02984047d7fdbc95",
+      "size": 4155
     },
     {
       "path": "src/ops/index.js",
-      "sha": "65157e2a4589c77085929e757d13eb51337c431f",
-      "size": 376
+      "sha": "c2911feba3ebadbbcb71082c845adee42a5da4e0",
+      "size": 387
     },
     {
       "path": "src/ops/innovation.js",
-      "sha": "e1bb64174e1efb8cf23536f85521744d367436b4",
-      "size": 3156
+      "sha": "ea7d617cde4468097f9dcb6af29a9d205ea027ed",
+      "size": 3223
     },
     {
       "path": "src/ops/lifecycle.js",
-      "sha": "82b6ecb2cf91292db0b9e8e030e4881ac4e72d36",
-      "size": 6314
+      "sha": "ef7da73502f8d481dfa9491c018d67276a8d36f6",
+      "size": 6482
     },
     {
       "path": "src/ops/self_repair.js",
-      "sha": "69eb52791151f505bd771bc988e00eea938aa0e8",
-      "size": 2582
+      "sha": "ba709a847ceebf66477c8ccf7218e1d716657c97",
+      "size": 2654
     },
     {
       "path": "src/ops/skills_monitor.js",
-      "sha": "aea4e0e8a05ea27c8ee370305566aecccbf6e604",
-      "size": 5457
+      "sha": "d02613b5a3bab0cee730d50e67beb6ecb79dad83",
+      "size": 5600
     },
     {
       "path": "src/ops/trigger.js",
-      "sha": "954940c16b32429f2d35883a992bfd2a46afd500",
-      "size": 837
+      "sha": "2b05f5d13e265e6d82f5a5369fd2f108a32fccbc",
+      "size": 870
     },
     {
       "path": "test/a2aProtocol.test.js",
-      "sha": "fc145f78817eecf48330571646ca8732f80b2afb",
-      "size": 6611
+      "sha": "b5ecc04876084ab8bd1fcf72d0173f2d568ced58",
+      "size": 6810
     },
     {
       "path": "test/candidates.test.js",
-      "sha": "83490e2ef7690ee60f426d6b76b39a59c776e511",
-      "size": 1318
+      "sha": "63087e6b4b767e3438be8cc5df50a10d51c9c8fb",
+      "size": 1346
     },
     {
       "path": "test/contentHash.test.js",
-      "sha": "b735ff6095dad21ca3872d5628f894a15a9191a4",
-      "size": 3601
+      "sha": "bd3841edc5ec9cda116c16126075aad7550bac77",
+      "size": 3707
     },
     {
       "path": "test/envFingerprint.test.js",
-      "sha": "56d8b8535b89b66f37839c857cf6976d29761ae9",
-      "size": 3076
+      "sha": "0e620ff8fd53bd4d467f915e155aadbc11a80d80",
+      "size": 3165
     },
     {
       "path": "test/evolvePolicy.test.js",
-      "sha": "c318d07d5c33ddec909b9d5316e6b5df2907efac",
-      "size": 1380
+      "sha": "7f93ac852b1e84a8beba657e8f40cd5626e06fdb",
+      "size": 1416
     },
     {
       "path": "test/idleGating.test.js",
-      "sha": "04daf0d665166eb404d555b9439fb3952afe81df",
-      "size": 4356
+      "sha": "29cabf39e6c1307e66b77a9436d57686e0467c98",
+      "size": 4486
     },
     {
       "path": "test/loopMode.test.js",
-      "sha": "293b38dfbb8602f788f39f70fc60c8f31accf369",
-      "size": 3292
+      "sha": "faf549d8c613b87cc8183471cb1205cf91284344",
+      "size": 3362
     },
     {
       "path": "test/mutation.test.js",
-      "sha": "f8dc46f9941a62d24c407e2fe57aebb532bce019",
-      "size": 4718
+      "sha": "e518e7b182dc08542f59a302a701614dcc33639f",
+      "size": 4860
     },
     {
       "path": "test/sanitize.test.js",
-      "sha": "7df23ed0a20c8605c3b774f6b86224132a807f5b",
-      "size": 3976
+      "sha": "7decf7f7f897cc2813106d7b5463c90da35f661d",
+      "size": 4066
     },
     {
       "path": "test/selector.test.js",
-      "sha": "c2f7be4a5df0dbc20ccda9009e71f4f79dccf6c6",
-      "size": 5762
+      "sha": "41908e444205aa937c232e1f53138e2da1048042",
+      "size": 5936
     },
     {
       "path": "test/signals.test.js",
-      "sha": "4d77b7733dfa2fd73f90d00f814c6215d0ba8d8a",
-      "size": 10105
+      "sha": "e54594ad6f9b2f5e8635537612b8361454c9e427",
+      "size": 10322
     },
     {
       "path": "test/skillDistiller.test.js",
-      "sha": "d04e7fa0a69ce9f7622209b8b75142463d50eb15",
-      "size": 20770
+      "sha": "5fffb732b0ac03cdc964d835900e66c298872f2d",
+      "size": 21327
     },
     {
       "path": "test/solidifyLearning.test.js",
-      "sha": "29b86b2d4b117246279a238c5a77f4f9fdb3c95c",
-      "size": 3056
+      "sha": "2321944ca538f537b2cb55fdb68020c5acf6be48",
+      "size": 3142
     },
     {
       "path": "test/strategy.test.js",
-      "sha": "ccb172e747ae54a1302d69faac84b6f6f3dcb18b",
-      "size": 4923
+      "sha": "6bdbb3b71e2f3cbb66275ae8ce0acc7083e263aa",
+      "size": 5056
     },
     {
       "path": "test/validationReport.test.js",
-      "sha": "4ad15b1ff38db57909822d863bb6cd4d19ef98d3",
-      "size": 4913
+      "sha": "e2a12df62b4d704688bb326f18c465acd5708e39",
+      "size": 5061
     }
   ]
 }

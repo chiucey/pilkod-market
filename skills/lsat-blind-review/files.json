@@ -2,128 +2,128 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "378353b6d7fe6d6b7cad32016c2272c5dae97482",
-      "size": 28862
+      "sha": "9ade3723b411ba67e03c891bc26c4caab1700f43",
+      "size": 29293
     },
     {
       "path": "_meta.json",
-      "sha": "ae8aeeffc7ff94a04745eed406c0e88280f82202",
-      "size": 136
+      "sha": "c9436ca756fe049923caab400b16a351ccb5004a",
+      "size": 142
     },
     {
       "path": "examples/README.md",
-      "sha": "e5d24a0cfe272ec5f46824acd4cae220c39bf725",
-      "size": 3687
+      "sha": "d763f1ab2605585f0bbeca84ff3ca5c542437fd2",
+      "size": 3747
     },
     {
       "path": "examples/meta.json",
-      "sha": "e0927f9a51bf08c40075b553219370991ed7d5c6",
-      "size": 727
+      "sha": "85a35d6632350a1fae7f3b8ff8d6aae4c229fad6",
+      "size": 761
     },
     {
       "path": "examples/strip_output.txt",
-      "sha": "86b2406321578c8ee56e31ced52b27b233917818",
-      "size": 284
+      "sha": "46356c710bc20219eb3cb9b1cd405d7915cb9dd1",
+      "size": 287
     },
     {
       "path": "examples/truth.json",
-      "sha": "e966d0f948dc137604aae127aa5f4c191189d63f",
-      "size": 1366
+      "sha": "40c1534803f5c57a174a201f2c12d5b9e6996572",
+      "size": 1416
     },
     {
       "path": "examples/verify_output.txt",
-      "sha": "01e231afc7ea2b64c0912653d81820faabbff0f7",
-      "size": 906
+      "sha": "aaa15b87cdf2992c747a085dc9746047ac30953d",
+      "size": 927
     },
     {
       "path": "references/back-cover-template.md",
-      "sha": "07d61549af87ba316b3efb2a690fd55e64f60f04",
-      "size": 9183
+      "sha": "213468024c0af486c511726b96374ba4f03f287d",
+      "size": 9368
     },
     {
       "path": "references/cover-template.md",
-      "sha": "c6df4658f0edd444851a59945b887f5d855984f3",
-      "size": 7420
+      "sha": "895f85425f4a5a15cca514defbfd637ed353f44b",
+      "size": 7583
     },
     {
       "path": "references/examples-day1-day3.md",
-      "sha": "f613d9be43327d05fab333a3379325b86ce3fd3f",
-      "size": 20731
+      "sha": "72775cef033ef239ae4793e445c15fb7f9465986",
+      "size": 21068
     },
     {
       "path": "references/four-part-template.md",
-      "sha": "f23a13167ed54ff1f3d4938a86ff528b88bb7b84",
-      "size": 26090
+      "sha": "9b520672102fcf5facbec561f2567038d2732775",
+      "size": 26439
     },
     {
       "path": "references/mistakes-history.md",
-      "sha": "a994fd335295a172f767af02cdc2f10bbc5657ab",
-      "size": 18604
+      "sha": "fa91c82eeca7b5a9af97b2c1f5dd500cfa4d458a",
+      "size": 18868
     },
     {
       "path": "references/output-format.md",
-      "sha": "afaad9786fb7e4a506eedbd4048a70f38e7cb5f3",
-      "size": 22957
+      "sha": "db04677cf018f7eca70c612a9d57c3606be1e7c7",
+      "size": 23242
     },
     {
       "path": "references/preflight-protocol.md",
-      "sha": "d9f855ed7f6449bec79aeb7977bf3e9acc48b643",
-      "size": 11923
+      "sha": "acaf33449a1c2e592663cd52079b6428637423a1",
+      "size": 12155
     },
     {
       "path": "references/verification-checklist.md",
-      "sha": "52fd2e65e7c8a6eca8d4385f21861ac1dc712e84",
-      "size": 21415
+      "sha": "5a6c6a368b7baf041f566ad04a46d79af41bf250",
+      "size": 21867
     },
     {
       "path": "references/weakness-mapping.md",
-      "sha": "26e05ac71331286f16a3bde170a5dfa91d7d5a2c",
-      "size": 15096
+      "sha": "b1269cba77cdef400290f56ba5f57471192a3a73",
+      "size": 15346
     },
     {
       "path": "scripts/extract_qids.py",
-      "sha": "a327a8eaa9c9e7e6a5413e0a5112199b48214a75",
-      "size": 19145
+      "sha": "fe72801438bf91fcf874c4a8323c6deb43e3a6a3",
+      "size": 19660
     },
     {
       "path": "scripts/grade_verification.py",
-      "sha": "ae3c1fd6e0188d764b98d4ef4d4be87380884208",
-      "size": 13632
+      "sha": "76163584aaefb25ec970d94ccb2a2cdb2154de6d",
+      "size": 13980
     },
     {
       "path": "scripts/insert_back_cover.py",
-      "sha": "7c6f49e3557537ab2838447e0358c9f50ea354ff",
-      "size": 5374
+      "sha": "b94a75d691864505c9d93ca9c1ea33004a368799",
+      "size": 5530
     },
     {
       "path": "scripts/insert_cover.py",
-      "sha": "a62138bc79ecf8ea6b33033588927cd810e1b4db",
-      "size": 897
+      "sha": "0e91cfa16940630814c6503f7e116688b8c28d68",
+      "size": 927
     },
     {
       "path": "scripts/preflight_br.py",
-      "sha": "1eaa8434fc0cb4c41e6e9550822b06b2be222253",
-      "size": 13970
+      "sha": "a9466f0204175085ccd83f3455ce54f03ede1d10",
+      "size": 14347
     },
     {
       "path": "scripts/render_back_cover.py",
-      "sha": "cbf6ade1156edc6dcffdb2b7d28ab936becd9a15",
-      "size": 7230
+      "sha": "b39744d7bf2557972090227b8060f39c1b573edc",
+      "size": 7432
     },
     {
       "path": "scripts/render_cover.py",
-      "sha": "45f935cb5615948a1dcaa47f1e0bd6d442db2c75",
-      "size": 5655
+      "sha": "524958f949a51a9bd1cd58c939fc6246c8e3c40a",
+      "size": 5809
     },
     {
       "path": "scripts/strip_self_answer_table.py",
-      "sha": "95d2d1f38b4e691af8b374fed6ec70bb379cc2eb",
-      "size": 5669
+      "sha": "27790782411781c92e1ab9e43ddce4f5c89e21eb",
+      "size": 5820
     },
     {
       "path": "scripts/verify_workbook.py",
-      "sha": "f5d2d8271ab14c7e5f517e40fae0b9cad155264f",
-      "size": 12096
+      "sha": "5eb7190bd0648dab8bdfbe1d37a24c6b804ac30d",
+      "size": 12403
     }
   ]
 }

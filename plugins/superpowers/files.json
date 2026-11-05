@@ -3,13 +3,13 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "db1ef2551037f8280d34931112c5d83a392ca92a",
-      "size": 1394
+      "sha": "fb5d217f9930294a2288034e92eaf496d94bfb73",
+      "size": 1431
     },
     {
       "path": "LICENSE",
-      "sha": "abf0390320aa14406af7a520b9b0739fdda9bf08",
-      "size": 1070
+      "sha": "5389576ae59896f16bba7391ceebdfb6f29a8584",
+      "size": 1091
     },
     {
       "path": "app-icon.webp",
@@ -18,268 +18,268 @@
     },
     {
       "path": "hooks/hooks.json",
-      "sha": "067f8d0a587b74772045588dab2b423113d14795",
-      "size": 449
+      "sha": "31aa87646c3f206d1eb17fd49a698c295c7eaf0a",
+      "size": 466
     },
     {
       "path": "scripts/session-start.ps1",
-      "sha": "cd206cf4383288ade29785a7ed677d62cb493079",
-      "size": 1336
+      "sha": "1aac8cbba3ea8c52fb99ca5679994db811baec6a",
+      "size": 1359
     },
     {
       "path": "scripts/session-start.sh",
-      "sha": "c70f4902a4906ca1c380157dc7a761744af884f9",
-      "size": 1711
+      "sha": "75b953dd8a48e3aa02da91b9ae1768a1a06a1287",
+      "size": 1761
     },
     {
       "path": "skills/brainstorming/SKILL.md",
-      "sha": "789c3a1990b9ab3896c4d8b0b708525ac83fe5ce",
-      "size": 10047
+      "sha": "637b421b6eeaa3a48fa77d8c8a74d0e6fb222b49",
+      "size": 10198
     },
     {
       "path": "skills/brainstorming/scripts/frame-template.html",
-      "sha": "f540bb8a4f88107e2b37b2871a4c1a55a3b6f720",
-      "size": 8094
+      "sha": "f3bdbe8b7136a2a52555f1a37d8fcfb7b0e34442",
+      "size": 8307
     },
     {
       "path": "skills/brainstorming/scripts/helper.js",
-      "sha": "e11d26489ce248f37af3e4dd01ddec6a4e88287f",
-      "size": 5615
+      "sha": "4c5d762d83854111c9b8f2c6a411f425a84d991a",
+      "size": 5782
     },
     {
       "path": "skills/brainstorming/scripts/server.cjs",
-      "sha": "a828b35af64d5c64ca68b9ec78473999ce698874",
-      "size": 25693
+      "sha": "210cb3e2ea76e26c020cb78117c49792e41ed1e8",
+      "size": 26416
     },
     {
       "path": "skills/brainstorming/scripts/start-server.sh",
-      "sha": "016a8e4870142ce2adbe81a021d8b6b9073e7618",
-      "size": 6908
+      "sha": "de307662d1fed75710b9a3e9c3444518e7928d94",
+      "size": 7117
     },
     {
       "path": "skills/brainstorming/scripts/stop-server.sh",
-      "sha": "7cacfe9440043f7a46eac555cd835fad0769c425",
-      "size": 3263
+      "sha": "3ad782fabd496bac7d334f4c9d7eda3d09d1d8b3",
+      "size": 3383
     },
     {
       "path": "skills/brainstorming/spec-document-reviewer-prompt.md",
-      "sha": "60993129de3c445efeff53987b5297dc1acf3eb1",
-      "size": 1747
+      "sha": "ee179875b4545fc174608401d38b0112ff9775ca",
+      "size": 1796
     },
     {
       "path": "skills/brainstorming/visual-companion.md",
-      "sha": "f1ef244ac0023466b5c1b6216897fdd7c82d2b6a",
-      "size": 13333
+      "sha": "c566c06fcaee1e4f94ae0a8f6f22759c975e860b",
+      "size": 13631
     },
     {
       "path": "skills/dispatching-parallel-agents/SKILL.md",
-      "sha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
-      "size": 6078
+      "sha": "967b60884eb1bd3533a5495b5d89308a885620d5",
+      "size": 6245
     },
     {
       "path": "skills/executing-plans/SKILL.md",
-      "sha": "b51d97d2cc4c2ecc5eabecf27e499aa8c933efac",
-      "size": 2305
+      "sha": "04b7bfa6de2196dee7d3bfa39ef6ff53a7c5b03f",
+      "size": 2369
     },
     {
       "path": "skills/finishing-a-development-branch/SKILL.md",
-      "sha": "21a439ac3fd4eb696f3af2ce149312d33b002dc1",
-      "size": 7022
+      "sha": "8bc44f44ae2fa0228d17e25e7d2a239ea07dcfbf",
+      "size": 7223
     },
     {
       "path": "skills/receiving-code-review/SKILL.md",
-      "sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
-      "size": 6203
+      "sha": "8909f27fc3c1a05dcba620da00007e31aab3b571",
+      "size": 6408
     },
     {
       "path": "skills/requesting-code-review/SKILL.md",
-      "sha": "fa4f2f9965591d6d8a7ef4ad47e6ba4d5ac344d0",
-      "size": 2956
+      "sha": "f4e0cbad3cd5ab437ab0faf16f909f3a1d9bfbc7",
+      "size": 3051
     },
     {
       "path": "skills/requesting-code-review/code-reviewer.md",
-      "sha": "db84ae2a0f91834f93de9cf9f9cf8602bbd78a11",
-      "size": 5213
+      "sha": "ff12901beed700e1ca28609be55277103bb27830",
+      "size": 5385
     },
     {
       "path": "skills/subagent-driven-development/SKILL.md",
-      "sha": "00d6edd44aabab8521c6c85e62e80378c116204e",
-      "size": 28117
+      "sha": "7e3a7d2741141cf9d6d1f6c4d33b1832e193135c",
+      "size": 28620
     },
     {
       "path": "skills/subagent-driven-development/implementer-prompt.md",
-      "sha": "fbe441e209d73997714366e90a919cd3caea0d09",
-      "size": 5717
+      "sha": "d8d53b53eef7f1f16490f5f12c17f1eefa831413",
+      "size": 5859
     },
     {
       "path": "skills/subagent-driven-development/re-review-prompt.md",
-      "sha": "396932694d2697a0d5272ec64cccb8e9d382edd0",
-      "size": 4305
+      "sha": "237fc7cbe35e70f791ab799fba290e83a62a7303",
+      "size": 4411
     },
     {
       "path": "skills/subagent-driven-development/scripts/review-package",
-      "sha": "31852e2abbeb9a41084f67a9f2ef3cfc3378bce9",
-      "size": 1469
+      "sha": "c76a38a8355ef7f642979b283b1d449bb02a47e1",
+      "size": 1515
     },
     {
       "path": "skills/subagent-driven-development/scripts/sdd-workspace",
-      "sha": "4e2d16802ecaa23eb9a682663e4c356c4aa5a656",
-      "size": 1586
+      "sha": "415bda6ed6aa0fe08c6a7a36a1e8321375561cb7",
+      "size": 1626
     },
     {
       "path": "skills/subagent-driven-development/scripts/task-brief",
-      "sha": "612e14a1ee7ca9c0078d896325935759a1827c24",
-      "size": 1158
+      "sha": "b58f392f696d50a162e2780df8d89fbac6b6736c",
+      "size": 1199
     },
     {
       "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
-      "sha": "436328697a778156d8828c9e964da02efac2616e",
-      "size": 7826
+      "sha": "b74a96bfae5aaa4c2b159753d9c568f27e0becb7",
+      "size": 8011
     },
     {
       "path": "skills/systematic-debugging/CREATION-LOG.md",
-      "sha": "9aa03092809feaf93c9bfa985252f6f1c9624692",
-      "size": 4257
+      "sha": "849c0aa2bc099878a18e1bad89d170fad5f8e32d",
+      "size": 4376
     },
     {
       "path": "skills/systematic-debugging/SKILL.md",
-      "sha": "095d194ac041502905f15b01d22d294fb94db8b2",
-      "size": 9465
+      "sha": "408bd181d2550daaf163cff01017415a6066c725",
+      "size": 9748
     },
     {
       "path": "skills/systematic-debugging/condition-based-waiting-example.ts",
-      "sha": "703a06b653160d060bbf46ab5c6e0cd7446bd592",
-      "size": 5054
+      "sha": "39fc96e379427bc2b5713a775b69f2a4c827329c",
+      "size": 5212
     },
     {
       "path": "skills/systematic-debugging/condition-based-waiting.md",
-      "sha": "70994f777c586f7d4c43033aac34c7cf0da6688b",
-      "size": 3516
+      "sha": "bac7b44475b62a258bd7b4ca5c0e2e624cb613e1",
+      "size": 3631
     },
     {
       "path": "skills/systematic-debugging/defense-in-depth.md",
-      "sha": "e2483354dc2b62478a2624e34ca18bc0efe887b2",
-      "size": 3650
+      "sha": "49a9d5bffb287008ba81f100a881a4e9242d5a50",
+      "size": 3772
     },
     {
       "path": "skills/systematic-debugging/find-polluter.sh",
-      "sha": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb",
-      "size": 1986
+      "sha": "ab18933ff621bb8818ba2553703bdb724f537925",
+      "size": 2058
     },
     {
       "path": "skills/systematic-debugging/root-cause-tracing.md",
-      "sha": "0e72e8f9566b7ef85e814633d1feacad9d0c5868",
-      "size": 5321
+      "sha": "e9fe78310683424f84adc7d6c9becba3e6445141",
+      "size": 5490
     },
     {
       "path": "skills/systematic-debugging/test-academic.md",
-      "sha": "23a6ed7a2044e0c44d74c3101406140f4851aa41",
-      "size": 653
+      "sha": "be86c4b82226da0df24f39506c397c8f27cbeef7",
+      "size": 667
     },
     {
       "path": "skills/systematic-debugging/test-pressure-1.md",
-      "sha": "8d13b467e4a98abfffd12161cbc3c418021d6023",
-      "size": 1900
+      "sha": "cc1d1b1c0add41a52f28db79a45cab20200b8e24",
+      "size": 1958
     },
     {
       "path": "skills/systematic-debugging/test-pressure-2.md",
-      "sha": "2d2315ec8a24ca872bc80d2f4056468ba051462a",
-      "size": 2283
+      "sha": "f85c1cb3619667d0bb2bafc9172de0983144775e",
+      "size": 2351
     },
     {
       "path": "skills/systematic-debugging/test-pressure-3.md",
-      "sha": "89734b86fdc756488df315d53e5c3ac2d3752cd8",
-      "size": 2692
+      "sha": "289a196a553125d9451d457b620c8ad7a412c46d",
+      "size": 2761
     },
     {
       "path": "skills/test-driven-development/SKILL.md",
-      "sha": "4320d8879a639d0536c2239bb80c9d7257ad8947",
-      "size": 9015
+      "sha": "b0185bb1918eb1e6fd93facb73fcd9d085a8f39a",
+      "size": 9335
     },
     {
       "path": "skills/test-driven-development/writing-good-tests.md",
-      "sha": "d3c4482fd30b4f9084bb61545fe73939a7502c28",
-      "size": 8268
+      "sha": "724cce5dd629dfe5c33919de7f5137e073f65058",
+      "size": 8466
     },
     {
       "path": "skills/using-git-worktrees/SKILL.md",
-      "sha": "1381dacb3516b94382dd6ec736ede21ee8ede2b3",
-      "size": 6813
+      "sha": "3809b8c15b28366260832dcca7067ccdbd38b757",
+      "size": 6980
     },
     {
       "path": "skills/using-superpowers/SKILL.md",
-      "sha": "8a08873ba07c1437f4f3cfd0d06c333eaf2e2715",
-      "size": 3063
+      "sha": "cdf5250195b91361796f6abf4ba8ca1d52ff2222",
+      "size": 3125
     },
     {
       "path": "skills/using-superpowers/references/antigravity-tools.md",
-      "sha": "2e1eac90534af6e1f27df4e18410be8a7b442448",
-      "size": 1495
+      "sha": "e7839e211a88587f824827850dc031c09f3f0021",
+      "size": 1518
     },
     {
       "path": "skills/using-superpowers/references/codex-tools.md",
-      "sha": "b14b58582155ec9e0335a786636adeaca25a77d5",
-      "size": 1774
+      "sha": "93a406d5fddad6f883b6ff9ef5843fa0b5239949",
+      "size": 1813
     },
     {
       "path": "skills/using-superpowers/references/gemini-tools.md",
-      "sha": "b01b65238a50981aeed22ae52ee20f8b55d16b42",
-      "size": 4598
+      "sha": "4d2eeaa6f62f04d1b46e33670db67a39bd996051",
+      "size": 4661
     },
     {
       "path": "skills/using-superpowers/references/pi-tools.md",
-      "sha": "0c1f21713a45255ece4144fd2fee353e4ed4f90e",
-      "size": 1242
+      "sha": "327eaebb9b61e74c7e709c3dbbc425c0cf6f1094",
+      "size": 1258
     },
     {
       "path": "skills/verification-before-completion/SKILL.md",
-      "sha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
-      "size": 3646
+      "sha": "e26f4c2febd38c2165458ad207977da7f0f28113",
+      "size": 3766
     },
     {
       "path": "skills/writing-plans/SKILL.md",
-      "sha": "dd2702b8bab0dbe6b6824d8d00669be44fbb8be7",
-      "size": 6907
+      "sha": "b3242b2f161d6ae008d9701285a0e7b9db2dfe50",
+      "size": 7075
     },
     {
       "path": "skills/writing-plans/plan-document-reviewer-prompt.md",
-      "sha": "1c12c1d6180395262d7150bdb12a9a90efc9cfa0",
-      "size": 1713
+      "sha": "a1bbe4b7e9dc3e898573ea980c030183c738c3d8",
+      "size": 1762
     },
     {
       "path": "skills/writing-skills/SKILL.md",
-      "sha": "dc3de1e039daa2d61b5472bd96dcb7ec0032f1fa",
-      "size": 26370
+      "sha": "910d689d453efc4565bdd1550de2fec18082f0dc",
+      "size": 27049
     },
     {
       "path": "skills/writing-skills/anthropic-best-practices.md",
-      "sha": "15ea9eae223d9081b602618849791c07a7758f3d",
-      "size": 46197
+      "sha": "ac3089035b7c68e20534dd974a8b403ba51e65e6",
+      "size": 47347
     },
     {
       "path": "skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
-      "sha": "47881fc85bd6c01b32b84d52ed9a0c73c8d6a089",
-      "size": 5423
+      "sha": "ca5ed46e17869e407990e5199a0d7c68bc8962b6",
+      "size": 5612
     },
     {
       "path": "skills/writing-skills/graphviz-conventions.dot",
-      "sha": "3509e2f028cacaa8118cbc8c80025efb089ec28e",
-      "size": 5970
+      "sha": "dbd932383b806f77f555cf7123977f072087091a",
+      "size": 6141
     },
     {
       "path": "skills/writing-skills/persuasion-principles.md",
-      "sha": "9756416a59600b70ecca4044e0919ee7d4a37b21",
-      "size": 5901
+      "sha": "37e7b51043dc577eec135b5c38f33ccb8202a7e0",
+      "size": 6088
     },
     {
       "path": "skills/writing-skills/render-graphs.js",
-      "sha": "1d670fbb356553f898b9f8273f8b314f35ef1a59",
-      "size": 4857
+      "sha": "12aa5b478c8464e2f65e13ef28a41d0995923115",
+      "size": 5025
     },
     {
       "path": "skills/writing-skills/testing-skills-with-subagents.md",
-      "sha": "a5acfeac86f34c7bc625d064e10c8a2f8180b696",
-      "size": 12558
+      "sha": "803ae35375b28825805a648e37b6e2bfc4f98362",
+      "size": 12942
     }
   ]
 }

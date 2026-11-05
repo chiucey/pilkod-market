@@ -1,6 +1,6 @@
-import urllib.request, json, ssl, sys, datetime
+import urllib.request, json, ssl, sys, datetime, os
 
-KEY = "zlbx_vN-En5EwVhrEwdnSzgG-LonzeeMSfWaM"
+KEY = os.environ.get("ZLBX_API_KEY", "")
 BASE = "https://mcp-server.zhiliaobiaoxun.com/api_v2"
 ctx = ssl.create_default_context()
 H = {"X-API-Key": KEY, "Content-Type": "application/json"}

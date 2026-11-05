@@ -2,148 +2,148 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha": "affc54f5e46d95550cd5737aca68077b87ce2a5d",
-      "size": 41
+      "sha": "75c135848213540f6b20462c72eb615ed865b2f3",
+      "size": 46
     },
     {
       "path": "CHANGELOG.md",
-      "sha": "6c08cccdf523f91f23a6813ebe21edeb02201fc2",
-      "size": 549
+      "sha": "a1186f322d3dd95789ffcbd9647bfee34ecd36bd",
+      "size": 560
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha": "9810eac90fa766a66e0d70f577cbce32ffedae64",
-      "size": 1291
+      "sha": "107fdc06e18b922f67ec97aa418565e317246ed8",
+      "size": 1319
     },
     {
       "path": "LICENSE",
-      "sha": "dda6d726c243715bb8b699db221c31bf926b5394",
-      "size": 1061
+      "sha": "a2baa297d0cc5a9aea7a74c08a560542291a2a38",
+      "size": 1082
     },
     {
       "path": "README.en.md",
-      "sha": "205f7f3f427af98a06039f577737e95456ad5cef",
-      "size": 6220
+      "sha": "0d74c04cd4ce43fd416905b3ffeb2f5c5f2a4431",
+      "size": 6407
     },
     {
       "path": "README.md",
-      "sha": "f84a8a272060f88910ebcf1d92dfe1fa41733513",
-      "size": 9322
+      "sha": "3ab6b3cf95958e80eaa4c535eb367bfe3e0c02bc",
+      "size": 9531
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "eccaa63d402d82d18fcf30692e4d5ca01259c99c",
-      "size": 4432
+      "sha": "83efc50a0912d98c96a03df096bd712b73e07429",
+      "size": 4570
     },
     {
       "path": "SECURITY.md",
-      "sha": "259ef633bcf4bacac172e9f0af9ce254a6ba6f09",
-      "size": 886
+      "sha": "2357ddefb14d0ad0feb7b9152cfd87f4cd451450",
+      "size": 910
     },
     {
       "path": "SHA256.txt",
-      "sha": "72a703a541714453199fc2e2fc7e12313be208e9",
-      "size": 2460
+      "sha": "78916b3f6784d8f7ec3d7350f61cbfd919745ee9",
+      "size": 2486
     },
     {
       "path": "SKILL.md",
-      "sha": "a139f330ed3297ef8ab0750ed4aba7fd7e1217e8",
-      "size": 14248
+      "sha": "d565749dd71fcda34a4980cfb5f8ef430300b447",
+      "size": 14484
     },
     {
       "path": "_meta.json",
-      "sha": "537f8aa3f3bbff075e6b984644ffe0f28161309f",
-      "size": 133
+      "sha": "53bf964d24b77bae41a0077aa56bf4f538040d03",
+      "size": 139
     },
     {
       "path": "agents/openai.yaml",
-      "sha": "a3f8e41061cc0428cc57e2e89d26194ae6edf968",
-      "size": 425
+      "sha": "0dd502be948ffa47fb73d97439140de8581c2b22",
+      "size": 434
     },
     {
       "path": "assets/bottleneck-scorecard.json",
-      "sha": "1a4f3fe5de5ddd95449d3656773cec26cd6fe87f",
-      "size": 845
+      "sha": "44f65eb66521d7d2273874012c01ecaef176ca31",
+      "size": 883
     },
     {
       "path": "assets/research-prompt-pack.md",
-      "sha": "ec3143dcd3f779c0b8c0ddaff268756463f2c295",
-      "size": 2152
+      "sha": "9e5b4812da9e6cab4f51d337639dd409b51d9cdd",
+      "size": 2218
     },
     {
       "path": "assets/thesis-template.md",
-      "sha": "e1b31c2997add282b79cea4d9592fe7153fa00cf",
-      "size": 1192
+      "sha": "fabb9f3827e7af55c3ceedb16bad25efa69b0081",
+      "size": 1273
     },
     {
       "path": "evals/test-cases.md",
-      "sha": "5b9a9451af818941a8e58e29a0689db32ae4ee7f",
-      "size": 2929
+      "sha": "b05f5512dd15cb45a6a82c8bb9b853447865f076",
+      "size": 3026
     },
     {
       "path": "examples/a-share-ai-semiconductor-demo.md",
-      "sha": "8f6d5029f6da1fe176db9ac74df451116682120b",
-      "size": 2599
+      "sha": "3d8fcf680d766694004cf353a23c31ce614485c7",
+      "size": 2632
     },
     {
       "path": "examples/ai-infrastructure-chokepoint-demo.md",
-      "sha": "745a854d008fc9650a1c0e1cc7a8f137d9959942",
-      "size": 3821
+      "sha": "230b77ec5bd6e78956a5983d44d2575c6293fc9b",
+      "size": 3859
     },
     {
       "path": "examples/demo-conversation.md",
-      "sha": "e2e5735e42b91f25157c012ed425d97157124dd9",
-      "size": 2475
+      "sha": "41d74973f3f36308435b5ba6a13c9c2c092453e7",
+      "size": 2528
     },
     {
       "path": "references/deep-research-workflow.md",
-      "sha": "e2cc3f25bed870295359dd1c1e4c07cd111bdd38",
-      "size": 8387
+      "sha": "fd8c5d898be7d4e84b47181a1e079b72b23d7850",
+      "size": 8603
     },
     {
       "path": "references/evidence-ladder.md",
-      "sha": "693495da40d73105f7c70bf7351ebcb90a942fbe",
-      "size": 2791
+      "sha": "bdddad9958461d61283aa4110cfaf63f48cd9d37",
+      "size": 2868
     },
     {
       "path": "references/market-source-playbook.md",
-      "sha": "615a6d068270fca5230065dc5b10cddd16323796",
-      "size": 3027
+      "sha": "63a2e786b80ad868db6d169ee7f12949fea16550",
+      "size": 3161
     },
     {
       "path": "references/output-style-and-language.md",
-      "sha": "1c814b684095f8baf6b41462f1eae9b2098a5914",
-      "size": 2387
+      "sha": "96cf60082a31d5b8cec4acadaa115f43f7d4158f",
+      "size": 2476
     },
     {
       "path": "references/public-profile-and-evaluation.md",
-      "sha": "1a9783dab47c84e87f8d4505e890f3c64f8f18a4",
-      "size": 3832
+      "sha": "bc507d4e5f3cf3890a2f8b5b648af5fe3ea5e4cd",
+      "size": 3898
     },
     {
       "path": "references/research-sources.md",
-      "sha": "78a009b14f5647cad3f2c7f6379c6529fceef952",
-      "size": 3209
+      "sha": "a8ae6936d75a4d8b7cc4f08aa60bdb2c9bac73d5",
+      "size": 3256
     },
     {
       "path": "references/risk-and-compliance.md",
-      "sha": "550f88a29125437da3df4ee333a7fefc1a982dd5",
-      "size": 2413
+      "sha": "6c50a4ca7d204c8eb1d0c4eefa7ec928a2e6331b",
+      "size": 2488
     },
     {
       "path": "references/serenity-dialogue-protocol.md",
-      "sha": "a8ab72130c84624d7ca4c1bea0eff51eef4cf486",
-      "size": 2201
+      "sha": "718e228a4c6dc33d3c6c03de9c61b9a8de0c5c80",
+      "size": 2268
     },
     {
       "path": "scripts/serenity_scorecard.py",
-      "sha": "1b6db36513a1ce49b5fd9c0eefb776afa9c05c79",
-      "size": 6555
+      "sha": "1a7fd3cdd1472965d3b18ad7f25ec59869598a2f",
+      "size": 6756
     },
     {
       "path": "scripts/validate_skill.py",
-      "sha": "b58d99d0bb1526d20a6befee47db52805d563a7e",
-      "size": 1963
+      "sha": "a68326c1b664892033f8d854b3d28923485819e0",
+      "size": 2022
     }
   ]
 }

@@ -2,218 +2,218 @@
   "files": [
     {
       "path": ".clawhub/origin.json",
-      "sha": "350be5c8ca38206a94dad64d625d624095c61ce4",
-      "size": 155
+      "sha": "d631c3cc741228fe8237a90cfb650e44d1848532",
+      "size": 162
     },
     {
       "path": ".eslintrc.json",
-      "sha": "1c41550699b80777a4d8664fe5fa7a90d2ce73b0",
-      "size": 596
+      "sha": "432ae7c06cdfaa11548a602031b60eb436a0c7dd",
+      "size": 625
     },
     {
       "path": "CHANGELOG.md",
-      "sha": "da45a9ea788c77cc42f8b618c145bd6eaf82b76c",
-      "size": 2370
+      "sha": "e30b1d1eece682812c0bd01e9739e4b30d99c6f3",
+      "size": 2445
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha": "21dfbc392db2a4171479b4f8d9f45d56b5714d96",
-      "size": 1629
+      "sha": "f57723dd9c12337c539895e0aab45b979c1febf7",
+      "size": 1693
     },
     {
       "path": "README.md",
-      "sha": "4acb9dc19579519946333713a9d54a423d74a0ec",
-      "size": 3866
+      "sha": "1e72d9f281259dfae09db51afde9dcce3c1a35ea",
+      "size": 3977
     },
     {
       "path": "SETUP-GUIDE.md",
-      "sha": "54e24f965b0df1089182832850008d6065f1ed10",
-      "size": 9653
+      "sha": "e327921db3c6287d3949ffb58f855e1b3c9665d9",
+      "size": 10048
     },
     {
       "path": "SKILL.md",
-      "sha": "8a2d948f66e4d42b5009e65048ad2ed10c9cc16a",
-      "size": 10531
+      "sha": "44283d0f1a687965ee9aa3b70bff8343377fc106",
+      "size": 10833
     },
     {
       "path": "_meta.json",
-      "sha": "e9f19b8b00af6a89ea70bd68770959ca4ae2e6f1",
-      "size": 142
+      "sha": "047a1d6bf1bf2330f58eac4fa68a0d83d52fda69",
+      "size": 147
     },
     {
       "path": "bin/cinematic-script.ts",
-      "sha": "2e64966800119e32373d9be870b2079b4b06a2a5",
-      "size": 10053
+      "sha": "67e00ca4212b75551270d7d4e3788bec20f112f8",
+      "size": 10334
     },
     {
       "path": "examples/file-manager-skill/index.ts",
-      "sha": "3bc5d86c36119ecbb689f9cb81aed04ac1954d2e",
-      "size": 3842
+      "sha": "b753afb0bcb593ae2d6ab207ef548f936888e377",
+      "size": 3991
     },
     {
       "path": "examples/file-manager-skill/skill.json",
-      "sha": "43f940cccf457e0edd0317572abaa87dcf01608d",
-      "size": 665
+      "sha": "7a821d0bddef307087c7382f1d5df687b0e0f941",
+      "size": 686
     },
     {
       "path": "examples/todo-skill/index.ts",
-      "sha": "d3665fbd913a7926742fd60e8964325a377b0ffe",
-      "size": 3231
+      "sha": "fd9dd44284e7856c90a5f7db5307442fb30cf0ef",
+      "size": 3380
     },
     {
       "path": "examples/todo-skill/skill.json",
-      "sha": "c7eaff3df7697810336d688b2536044686a24d2a",
-      "size": 668
+      "sha": "3f39de822b22c9870a65bb41e43570fd503f86bb",
+      "size": 689
     },
     {
       "path": "examples/weather-skill/README.md",
-      "sha": "6783b8350e2db5b466caa32d0424879e421c311d",
-      "size": 678
+      "sha": "886e0a029a2453e55fac0126ba2695eef16fe3da",
+      "size": 709
     },
     {
       "path": "examples/weather-skill/index.ts",
-      "sha": "36789596769f02df5a7f01cd64ec8200aebf6d2d",
-      "size": 3767
+      "sha": "8e4fa79bc6278f470964b0cb9d61b1402e1ff552",
+      "size": 3903
     },
     {
       "path": "examples/weather-skill/schema.json",
-      "sha": "bf810332aff4c1028bebff72bb4c34fb6f7405de",
-      "size": 483
+      "sha": "333ff8f4655171b4c6bf67c2713a9460638eb6c6",
+      "size": 504
     },
     {
       "path": "examples/weather-skill/skill.json",
-      "sha": "5914d5c78e50b193856fc465647ff8420f011f27",
-      "size": 628
+      "sha": "eee47a9e14c9be46949f2061d20d11dd498d366a",
+      "size": 654
     },
     {
       "path": "package-lock.json",
-      "sha": "3cafec34d941a7231ea30a322260d8ecd2d715ca",
-      "size": 186615
+      "sha": "9a3c3f3772cad99b00074644dc190e1c565eb6f4",
+      "size": 191813
     },
     {
       "path": "package.json",
-      "sha": "ef63028159720ab73f24a6763ed05102f1766805",
-      "size": 1548
+      "sha": "560eba1988f019fa8d11b2293b577c13e6236ca4",
+      "size": 1611
     },
     {
       "path": "report.md",
-      "sha": "d28c015d12debb87cbdd2af6212a329c85d5e4aa",
-      "size": 7415
+      "sha": "a99ab02b9b8258a3c8cd0f0227f94caecb34e1f1",
+      "size": 7625
     },
     {
       "path": "skill-template/README.md",
-      "sha": "14611f40c27ed898aa2f53823f90945c831c81dd",
-      "size": 914
+      "sha": "e504026ce3fac171082f08e3a72a7989d21c4b70",
+      "size": 958
     },
     {
       "path": "skill-template/index.ts",
-      "sha": "9fe1db8b1d8cdb4abc07a37d9be72d86b91f90ae",
-      "size": 2592
+      "sha": "4b34baa8cebd397032f69d5d7a3dc08ce939e5d5",
+      "size": 2695
     },
     {
       "path": "skill-template/schema.json",
-      "sha": "11f2fd45bc9837cde14f01736129fc72ccf032a2",
-      "size": 375
+      "sha": "2fd6446dc5715583ff91247f2f4e9bbd16d1fd74",
+      "size": 392
     },
     {
       "path": "skill-template/skill.json",
-      "sha": "9b799df46d4a930b1bff8d92f68f28a434be8b9f",
-      "size": 640
+      "sha": "77fc7aa40d7b1345319c5e3dab788e6a88543e4b",
+      "size": 670
     },
     {
       "path": "skill-template/tests/index.test.ts",
-      "sha": "7eecb010b10ca9554bbd44dd93b599f81f194fe2",
-      "size": 1439
+      "sha": "4c4ea309fd0d2d836c0cc599b0d5431c194d9ef3",
+      "size": 1494
     },
     {
       "path": "skills/cinematic-script-writer/EXAMPLE-CONSISTENCY.md",
-      "sha": "46c04cfccc41ef1f6ee3689a108f1dde952fcc79",
-      "size": 13934
+      "sha": "105eb6ddb402ffe092f9fe54fd1b59663ff4ff74",
+      "size": 14357
     },
     {
       "path": "skills/cinematic-script-writer/EXAMPLE-KUTIL.md",
-      "sha": "c4f29a53143db40442b580e930ea18d17ce0a9ef",
-      "size": 14112
+      "sha": "79965aa63794bb08436f9f738b34d6a03bcffca2",
+      "size": 14513
     },
     {
       "path": "skills/cinematic-script-writer/EXAMPLE-STORAGE.md",
-      "sha": "1e1f7c35c849c08403fc1b6163724925754b4263",
-      "size": 15644
+      "sha": "85a014cd4ac13e7337a820c22d3d50a8d77f7cd1",
+      "size": 16195
     },
     {
       "path": "skills/cinematic-script-writer/README.md",
-      "sha": "b2158e198da12767492dfefb271bb50788913277",
-      "size": 20319
+      "sha": "7a1b47a45bfb7fcd42b36c6c9fbada08346e500c",
+      "size": 20944
     },
     {
       "path": "skills/cinematic-script-writer/SKILL.md",
-      "sha": "50920a7167ba82d6ca2d15207e7cc3c7257dddd6",
-      "size": 5733
+      "sha": "91a479921c5b1d509c2c851e77a8070f281f86ce",
+      "size": 5939
     },
     {
       "path": "skills/cinematic-script-writer/cinematography-api.ts",
-      "sha": "84416430296789a7aedc032d7cafaa2c4e1bf829",
-      "size": 17580
+      "sha": "b0fd074de82067184bf6175d59523d2f15beca45",
+      "size": 18168
     },
     {
       "path": "skills/cinematic-script-writer/cinematography-db.ts",
-      "sha": "2ec7fab951407237d696c8134f9dbab56f3133e8",
-      "size": 24376
+      "sha": "9b5540e20a3fe5f16b8f128e4618b5086f6fa945",
+      "size": 24984
     },
     {
       "path": "skills/cinematic-script-writer/consistency-system.ts",
-      "sha": "750a7ae9ccc5ef5ddfe0ed889db3405fc17e8975",
-      "size": 31514
+      "sha": "bb47ba828ba3cb7ed0f6ea66c263b1758068ebb2",
+      "size": 32505
     },
     {
       "path": "skills/cinematic-script-writer/index.ts",
-      "sha": "fe5355d03da89bc538250b7bea2005767b4fd246",
-      "size": 58933
+      "sha": "c1108ea421ec7ce9ec4433ce2bdc0e5c42e312cb",
+      "size": 60685
     },
     {
       "path": "skills/cinematic-script-writer/lighting-db.ts",
-      "sha": "f83dce9108eb4960e286187728095a11babdec63",
-      "size": 22324
+      "sha": "cada216235abdfefddc8d43fdc9f19ed74c44af9",
+      "size": 22890
     },
     {
       "path": "skills/cinematic-script-writer/package.json",
-      "sha": "d8cf4fbe75607bd6613f7d90344e95b07f1e420c",
-      "size": 486
+      "sha": "7bf7b52750a5d4da8341dfd5628d7c11f55d7fe7",
+      "size": 510
     },
     {
       "path": "skills/cinematic-script-writer/prompt-builder.ts",
-      "sha": "94216b56c6bc93b67efaba7ee0455e5009856eb8",
-      "size": 13718
+      "sha": "2a1cdc5405f166bc8e77f661ad9441b9762afe0c",
+      "size": 14183
     },
     {
       "path": "skills/cinematic-script-writer/schema.json",
-      "sha": "d5a8171beacd4aa16f6a588bc3c63f3b5c0dda9b",
-      "size": 908
+      "sha": "60a113f3dbb0989cd1da285adedefa9ed715bfca",
+      "size": 941
     },
     {
       "path": "skills/cinematic-script-writer/skill.json",
-      "sha": "d8774c069c233ec0a6b5262f73474d8dbde7b816",
-      "size": 7508
+      "sha": "b75c2df896082952685cabb8e60c3134476708c7",
+      "size": 7768
     },
     {
       "path": "skills/cinematic-script-writer/storage-adapter.ts",
-      "sha": "b74c6d7dbd2ab39af0da594cc43e8407ca18bfe9",
-      "size": 11587
+      "sha": "2d695d6730430b95b99990a025cc8ca928ae2fc2",
+      "size": 12008
     },
     {
       "path": "skills/cinematic-script-writer/storage-manager.ts",
-      "sha": "570881b21258732fac0e2aa67951867f3a09201b",
-      "size": 28081
+      "sha": "dd85c7ef734bd0891ed27b3511d3e168eefd5347",
+      "size": 29052
     },
     {
       "path": "skills/cinematic-script-writer/visual-styles-db.ts",
-      "sha": "85575c8bc69db1b050adee274fcaf8ab210e8f3d",
-      "size": 26006
+      "sha": "a5951326f51b09145caa07239e97d42aa850b70c",
+      "size": 26618
     },
     {
       "path": "tsconfig.json",
-      "sha": "a724bba85092e047a769b307b13d4fc2a72330e2",
-      "size": 533
+      "sha": "0b6d4ba697cc4cef74fe4fc1ae765db8a60a316b",
+      "size": 560
     }
   ]
 }

@@ -3,53 +3,38 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "ab6937b1b381dbb30a092dd7ff9cda4c98bc86dd",
-      "size": 1054
+      "sha": "70fb6315d39791da7abdb02566bbd4d142e08f9f",
+      "size": 1076
     },
     {
       "path": "LICENSE",
-      "sha": "125be1b8e1012ef2d9839626f9c045a352bcfa9d",
-      "size": 10860
+      "sha": "ec5fe20cc580023b211fb0f2ef7374f01dd8cefa",
+      "size": 11052
     },
     {
       "path": "README.md",
-      "sha": "c42e9ee235a9ede17839fdd8762b52a5ffebe449",
-      "size": 13286
+      "sha": "0426b078d29de6d030967c54e7740258a95dd031",
+      "size": 13414
     },
     {
       "path": "THIRD_PARTY_NOTICES.txt",
-      "sha": "f5596281fcbca4557152058e06e65a8f17d1c0a7",
-      "size": 23974
-    },
-    {
-      "path": "dist/main.mjs",
-      "sha": "4c6f561dd5dc6b02a2ea914683f9a77fa494b4b6",
-      "size": 1080601
-    },
-    {
-      "path": "dist/quickjs.wasm",
-      "sha": "1815757b9a01a3e9a2eac80fc6e6ef3a6db566b9",
-      "size": 503134
-    },
-    {
-      "path": "dist/sandbox.mjs",
-      "sha": "c8dc9a99fd63657d215703d44fa13cc3612794c0",
-      "size": 93030
+      "sha": "597a9d3d31267dca2833812b62c0c5589e3d1cc5",
+      "size": 24435
     },
     {
       "path": "examples/audit-en.js",
-      "sha": "071ea5162a14213bb31d51636108a1b95995aeaa",
-      "size": 2729
+      "sha": "5faf442acf257203e0c50d66c691f38010a94599",
+      "size": 2762
     },
     {
       "path": "examples/audit.js",
-      "sha": "928a48032e797fe382f9c6793c84537dacc4b87b",
-      "size": 2695
+      "sha": "fa903a99dc66d68e02854a5e9ce7c439272bfcd4",
+      "size": 2728
     },
     {
       "path": "examples/smoke.js",
-      "sha": "424b53708bceba136c1a0b5c52f4455ddcdb1d1c",
-      "size": 1200
+      "sha": "67c364f5e3561d83c2f570608c8204fd59adaab1",
+      "size": 1214
     },
     {
       "path": "icon.png",
@@ -58,58 +43,58 @@
     },
     {
       "path": "servers.mcp.json",
-      "sha": "a67db22ad8ee1e04c83db9c3908fe9cf8d067587",
-      "size": 295
+      "sha": "734ba23242fd9bf73e6df0a1f69acdc739e1166e",
+      "size": 310
     },
     {
       "path": "skills/dynamic-workflow/SKILL.md",
-      "sha": "65361287493455028285906633ccc90e5c5c297a",
-      "size": 28631
+      "sha": "dd7c6f5bc9fdccc37e358c2a6e48f622ffa56a8e",
+      "size": 28821
     },
     {
       "path": "skills/dynamic-workflow/scripts/setup-mcode.mjs",
-      "sha": "ab8b3b43510470bc0e688c77a491dffa4ddb5025",
-      "size": 217686
+      "sha": "2579f1f99917ad64242cc5227d847ee626470a64",
+      "size": 223647
     },
     {
       "path": "web/app.js",
-      "sha": "b4cbbfb3c19a009f1bdfca143dcd4a96d4631aeb",
-      "size": 151890
+      "sha": "4e5e0670f82d2040103d4eb0c4058ad5c06cca41",
+      "size": 154715
     },
     {
       "path": "web/app.source.mjs",
-      "sha": "3abf2af0f25d4c5265d2fc1e7b44916b812e26f9",
-      "size": 38593
+      "sha": "9d8d80877b82ff0dc20cc6d70032a61884c88490",
+      "size": 38770
     },
     {
       "path": "web/graph-model.mjs",
-      "sha": "c8f152d399cf652995740f6f2cd1433df77968d6",
-      "size": 2029
+      "sha": "c5890114099ed514d0ed198fc6c5b387a0a4339a",
+      "size": 2052
     },
     {
       "path": "web/i18n.mjs",
-      "sha": "8d56ed9a47ac8f9b7d70d471fc16ce12da9920c8",
-      "size": 31330
+      "sha": "1b136a1ac6676594df801d24080d9c8d5c13eed1",
+      "size": 31795
     },
     {
       "path": "web/index.html",
-      "sha": "165723a3af9258ff19f770a1e93efee808c6cdd0",
-      "size": 16488
+      "sha": "47f194288e245056cade21025d6fab1adee810d5",
+      "size": 16513
     },
     {
       "path": "web/readable.css",
-      "sha": "853cd399443cc7467c1d65307abc67719d08d5bd",
-      "size": 2062
+      "sha": "f60ab8d1383d21fe25a3049dab67c6033535c6ea",
+      "size": 2065
     },
     {
       "path": "web/readable.mjs",
-      "sha": "868cb3d4f0646ea226f2905bde9857a2fa5c889e",
-      "size": 8293
+      "sha": "940af275f2d3499fb484bf55ea9f4d55f47a3d1a",
+      "size": 8352
     },
     {
       "path": "web/style.css",
-      "sha": "450af5398fba6179dbdd25c7e5788e23237a262f",
-      "size": 34581
+      "sha": "586b40cf9332de6ad020e62b1339d9f573f8342d",
+      "size": 34620
     }
   ]
 }

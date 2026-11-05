@@ -2,8 +2,8 @@
   "files": [
     {
       "path": "OPTIMIZATION_COMPLETE.md",
-      "sha": "d4b6ed7065fe8673451e682f51806258cf79ac66",
-      "size": 11488
+      "sha": "488a2147d183dcd2103b3b0b341c2e85ffa01edf",
+      "size": 11840
     },
     {
       "path": "README.md",
@@ -17,58 +17,58 @@
     },
     {
       "path": "_meta.json",
-      "sha": "a884011ce6dc3610c11dfffa1ee55b519876f1e8",
-      "size": 149
+      "sha": "2dd444c83b105c5acb016825cf26d8d7132c9d81",
+      "size": 155
     },
     {
       "path": "cases/negative/case-001-node-overload.md",
-      "sha": "f23beb762fd3d46f92191eefcd08a565eec6c56a",
-      "size": 4273
+      "sha": "8aeb385aa3fad60d0e14ed87b96bb71b64eaa827",
+      "size": 4421
     },
     {
       "path": "cases/negative/case-002-ignoring-weights.md",
-      "sha": "a649c3e1bb1373cce98578a26ef7e8ac7a5c998f",
-      "size": 4709
+      "sha": "5c1f02f090a2b8807e2d72e3b395b9084f9e0379",
+      "size": 4859
     },
     {
       "path": "cases/negative/case-003-visualization-misinterpretation.md",
-      "sha": "5a17c6d2f7c37768664f56e16c16942fa4806e12",
-      "size": 5238
+      "sha": "55e4ac321ef590164442ab752d30565ce7093e30",
+      "size": 5406
     },
     {
       "path": "cases/negative/case-004-overgeneralization.md",
-      "sha": "536c627a6c9dec1a3d4031255a9321aaba6743b5",
-      "size": 6032
+      "sha": "f489650f367daee5d45a86673a8e90ea391b684d",
+      "size": 6225
     },
     {
       "path": "cases/positive/case-001-centrality-analysis.md",
-      "sha": "9a2cc00c9a897a9cfc8772717888a07f61b75815",
-      "size": 3492
+      "sha": "97409961912cc1af5b3534875a056c861d485e36",
+      "size": 3598
     },
     {
       "path": "cases/positive/case-001-sna-collaboration.md",
-      "sha": "2b7587cda168dbfc9a5910213caf138a06037027",
-      "size": 7916
+      "sha": "bb482a40788f92bcb27daba45a6e36cd0bc04af3",
+      "size": 8257
     },
     {
       "path": "cases/positive/case-002-community-detection.md",
-      "sha": "4b63ca7f8108a426a50b07890904d8080786fe2e",
-      "size": 3931
+      "sha": "536c2fc311fd6146e3d69c6624cee2007029d334",
+      "size": 4042
     },
     {
       "path": "cases/positive/case-003-structural-holes.md",
-      "sha": "484909f6b46a3ef543603938882be53aaeba5144",
-      "size": 3867
+      "sha": "1413919a32386ae8f79f7b6e2604d0a67678b0d7",
+      "size": 3991
     },
     {
       "path": "examples/temporal-sna-with-subagents.md",
-      "sha": "4f2e2e537e1946acaa7046a55046b893f4d8513a",
-      "size": 5204
+      "sha": "793a7264fa127f81d762be4b79f3a5ce6446ca68",
+      "size": 5459
     },
     {
       "path": "experience/patterns.md",
-      "sha": "837810987f397c581b7d5bbb3b0696760aad2212",
-      "size": 7854
+      "sha": "0928e3699b72ce839c647b51f405637951fddc30",
+      "size": 8301
     },
     {
       "path": "index.html",
@@ -77,48 +77,48 @@
     },
     {
       "path": "lesson-memory.md",
-      "sha": "eccbc0ffe18a52865ace45dd23f7dd0041dd4afa",
-      "size": 2687
+      "sha": "ee4b9c7d48a1d9e4a3e950648d4ec94293552a39",
+      "size": 2805
     },
     {
       "path": "prompts/centrality-analysis-prompt.md",
-      "sha": "fc23e0b67d1b7472e40e2b4659ca9d43df2fad5f",
-      "size": 1496
+      "sha": "32cadb557e26ef1e269595df2b9e795387eb3dab",
+      "size": 1567
     },
     {
       "path": "prompts/community-detection-prompt.md",
-      "sha": "490dd31d2b375fd67da3a5794a4c709e2c37384e",
-      "size": 1342
+      "sha": "c123674df85b5354401e97bd8390482d38dfdd83",
+      "size": 1414
     },
     {
       "path": "prompts/network-building-prompt.md",
-      "sha": "d709620d9e95186ae59e7f2161f9c907d261c2dd",
-      "size": 1267
+      "sha": "c160e0f5f5fb1a71e8b29a33476ea54760a52c25",
+      "size": 1334
     },
     {
       "path": "prompts/structural-holes-prompt.md",
-      "sha": "84dafb33c85bad8b85a129949b8022c291f7b85e",
-      "size": 1998
+      "sha": "98fe86f1263609850200f5022a31bf2c8e4312f8",
+      "size": 2077
     },
     {
       "path": "prompts/system-prompt.md",
-      "sha": "744bfdf9411642f7a62f1442a931da3e9b692ed2",
-      "size": 7527
+      "sha": "ac9c998a7fc895c8b53939a481645e3875c66ddd",
+      "size": 7823
     },
     {
       "path": "qwen-skill.yaml",
-      "sha": "2360f8cd96e70a5011907bcf7a437adf76eeeda4",
-      "size": 1736
+      "sha": "c04ece1df755109cdbb0b4117003489669980776",
+      "size": 1824
     },
     {
       "path": "references/analysis-types.md",
-      "sha": "3b17fd53b7e2ba355cbacb22d0ad4e390374958e",
-      "size": 5788
+      "sha": "e2beb6c0a884e7dfa1908a00b2cc19dc2f711394",
+      "size": 6036
     },
     {
       "path": "references/classic-literature.md",
-      "sha": "44069b7887ea454ef0eb863bc12bb6d2b82cb9a3",
-      "size": 7299
+      "sha": "4ed5730162b1f82eea98d3c7d1d50aa21fa9a21c",
+      "size": 7535
     },
     {
       "path": "references/detailed-guide.md",
@@ -127,13 +127,13 @@
     },
     {
       "path": "references/long-term-tasks.md",
-      "sha": "e513f0be5ad22b646f5c8357a4bb1796ea033808",
-      "size": 5653
+      "sha": "24916bc72b98302e997245d7f9c2a8127697ced9",
+      "size": 5894
     },
     {
       "path": "references/quality-standards.md",
-      "sha": "9d79cc7cf7f49494d0ff0108a44a8f2a3735ee6b",
-      "size": 4607
+      "sha": "967ad00c390ba4126f363edcabe7a6a4d1fcc818",
+      "size": 4820
     },
     {
       "path": "requirements.txt",
@@ -142,13 +142,13 @@
     },
     {
       "path": "skill-hooks.yaml",
-      "sha": "dd87cac62476ede5d26b035fafa9beec51afead3",
-      "size": 1898
+      "sha": "cedb71600bd2d49b6a3ca8b5f00f846803feded4",
+      "size": 1984
     },
     {
       "path": "skill.yaml",
-      "sha": "9e167fbd96705122238aa3cd8c30861287d9bcdc",
-      "size": 4543
+      "sha": "440bdbb8c016034070ca24b5059db99b64912d8e",
+      "size": 4713
     },
     {
       "path": "soul.md",
@@ -157,18 +157,18 @@
     },
     {
       "path": "subagents.yaml",
-      "sha": "357f5fc250ab4032889690694010588e261315c6",
-      "size": 2191
+      "sha": "f90a17f19c2f8ad4f0efaa7955cf207a65054daa",
+      "size": 2267
     },
     {
       "path": "templates/findings.md.template",
-      "sha": "787d5d3e821b0d27d259c538764d8bd527c7d912",
-      "size": 2660
+      "sha": "239dd6ef0c9f458bfcdfe4452e860c78ab315abe",
+      "size": 2767
     },
     {
       "path": "templates/progress.md.template",
-      "sha": "49ecbd43918579e1250cbf91214b08ce078ec160",
-      "size": 3476
+      "sha": "c429ebd19a33dc748adab747c6f40caedcffd0c6",
+      "size": 3634
     },
     {
       "path": "templates/task_plan.md.template",
@@ -179,11 +179,6 @@
       "path": "tools/.evolution/evolution_state.yaml",
       "sha": "9174c6ecb31aca1a4c81bebca2f74c29444ccb44",
       "size": 1346
-    },
-    {
-      "path": "tools/.evolution/evolution_state.yaml.bak",
-      "sha": "0a183de52bfb6eb780e088eb97235a75032c78f6",
-      "size": 1953
     },
     {
       "path": "tools/analyze-structural-holes.py",
@@ -217,8 +212,8 @@
     },
     {
       "path": "tools/network_visualizer.py",
-      "sha": "8118b1a380bf0a944652049cd595bd451af1c173",
-      "size": 8840
+      "sha": "f3e7633188a0e09dcbf73ac775b63b7ca7062733",
+      "size": 9108
     },
     {
       "path": "tools/planning-integration.py",
@@ -227,8 +222,8 @@
     },
     {
       "path": "tools/temporal_analyzer.py",
-      "sha": "a811b8e2925c15c521655df090db70fb4e10a7b4",
-      "size": 10425
+      "sha": "7ebd303ee05e67f7ff777f5d37685eaeacc09966",
+      "size": 10745
     }
   ]
 }

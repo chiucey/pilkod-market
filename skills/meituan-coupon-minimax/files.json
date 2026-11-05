@@ -2,78 +2,78 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "89a4dafe3e88a374bbe20213d7374ea855c15ad4",
-      "size": 23541
+      "sha": "525de1b1b0e815738f8ae8cc392d3f8f48527b7d",
+      "size": 24043
     },
     {
       "path": "_meta.json",
-      "sha": "d273121db0b30b5e73f1b01905c383f9db2149b2",
-      "size": 141
+      "sha": "11338a1f06c7eac3442edd3496b3da48041ee3ee",
+      "size": 147
     },
     {
       "path": "references/auth-flow.md",
-      "sha": "ab017b97664dc5dfd2a22ac60812bac7d7d7ac3b",
-      "size": 7601
+      "sha": "e4ff592fef420f253fbf8928c0ad381ba50545db",
+      "size": 7748
     },
     {
       "path": "references/cron-rules.md",
-      "sha": "d32210c2db234fb66da6946f90e3f622afced016",
-      "size": 7965
+      "sha": "6b626fc914d783063c5597bf742caf748f865329",
+      "size": 8095
     },
     {
       "path": "references/response-copy.md",
-      "sha": "035bd5594ceab96b497ffde04b192cc6cac64f66",
-      "size": 4811
+      "sha": "69797d05e30a833a0f1fc968ff06d07cd81a0060",
+      "size": 4940
     },
     {
       "path": "scripts/auth.py",
-      "sha": "25731bd03c6b61bd6f503c84341d6d4d88c60496",
-      "size": 50259
+      "sha": "5ec7cdb8868e164606242ef68fa8f85142f2f0f0",
+      "size": 51594
     },
     {
       "path": "scripts/common.py",
-      "sha": "138d82f7c1b246b85a446ee2aaa8d7fc696935cb",
-      "size": 8809
+      "sha": "9b860ad3dc160066453f3f27df2a31430aeb4913",
+      "size": 9060
     },
     {
       "path": "scripts/config.json",
-      "sha": "b0c8201a2c3836cc20a9a0743b84143127a02356",
-      "size": 71
+      "sha": "af3aeb92b50fdfebf624b15274407c80d7a1c79a",
+      "size": 74
     },
     {
       "path": "scripts/issue.py",
-      "sha": "974c050dd06d1c766c5527d7f3792a2a035bd6db",
-      "size": 10599
+      "sha": "5c2dd326c7772cf54c887eceebce8e4ec16f94d3",
+      "size": 10872
     },
     {
       "path": "scripts/query.py",
-      "sha": "4c74f5dd6a792f40758f73ada8d428111b23aa57",
-      "size": 9551
+      "sha": "9ec79cd3288c6f5c740122618fd61e243906c5bd",
+      "size": 9815
     },
     {
       "path": "scripts/skill_cache_cli.py",
-      "sha": "a76ab77f948a68299c471eea3ed8c256f01d6cdb",
-      "size": 44880
+      "sha": "c6688ac3e5c6ae6a7cf3b9b38b5113ad58315184",
+      "size": 46117
     },
     {
       "path": "vendor/cliguard/__init__.py",
-      "sha": "4a86edcff9a9859b814cb351577ead56c6dc4a67",
-      "size": 16759
+      "sha": "7cd3f4f1e560654355fd25f92480553aa407ac0d",
+      "size": 17239
     },
     {
       "path": "vendor/cliguard/js/cliguard-wrapper.js",
-      "sha": "516080aedb687c9d2ee1e27ff2055cb126ab8e63",
-      "size": 31916
+      "sha": "4eab368de64158b76433126dd006394d846edf18",
+      "size": 31918
     },
     {
       "path": "vendor/cliguard/js/cliguard.js",
-      "sha": "08104d8b6d32e2d0f7b61c4b86c118416b9734d8",
-      "size": 55899
+      "sha": "8309db093381a31f86245b6574c2c21dd2d0afc2",
+      "size": 55900
     },
     {
       "path": "vendor/cliguard/js/package.json",
-      "sha": "2ccd0733ffda9d474a61bd9b1988120b0b826c36",
-      "size": 43
+      "sha": "5f15366e99ba8f14fd7b8aea4f388d1dd6b3accd",
+      "size": 44
     }
   ]
 }

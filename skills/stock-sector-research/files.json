@@ -2,148 +2,123 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "d119bccc398ecaaea5b5d9856bc67d944788b4d4",
-      "size": 22495
+      "sha": "79aeb78fd7f9ad20afd04128578a1f805b2efe67",
+      "size": 23089
     },
     {
       "path": "_meta.json",
-      "sha": "4d74555e52b5ee915137d0b60ec21f112e848316",
-      "size": 140
+      "sha": "faa76970887052fac12c9b98fe0d34a7fc1c0421",
+      "size": 146
     },
     {
       "path": "assets/templates/industry-chain-template.md",
-      "sha": "13f022c50d96e7499ff40b1cd3f2916f8e061c48",
-      "size": 9390
+      "sha": "c5b253ade51e6d401d83e9e0a43af5cbe167e05d",
+      "size": 9557
     },
     {
       "path": "assets/templates/sector-research-template.md",
-      "sha": "a072f42ea3dcaa3dc8dfb7765761ef99753ffa9a",
-      "size": 9929
-    },
-    {
-      "path": "dist/stock-sector-research_v2.0.0_20260405_175754.skill",
-      "sha": "009f902d53e80d032078823946c9ef589886c16e",
-      "size": 33817
-    },
-    {
-      "path": "dist/stock-sector-research_v2.0.0_20260405_181426.skill",
-      "sha": "30e30ed0e7b75f0e475cd3ceb22c6ddf6eec7d5e",
-      "size": 49517
-    },
-    {
-      "path": "dist/stock-sector-research_v2.0.0_20260405_182543.skill",
-      "sha": "89b5c40933bfc97ff054d5234225bd5628aac4b9",
-      "size": 52846
-    },
-    {
-      "path": "dist/stock-sector-research_v2.0.0_20260405_183127.skill",
-      "sha": "0e0f46fab8f879fd84a0cee3a701f3c51c7ae643",
-      "size": 56249
-    },
-    {
-      "path": "dist/stock-sector-research_v2.0.0_20260405_185055.skill",
-      "sha": "d49ddb88b1d18957217f3814956e0dd74ba9972c",
-      "size": 51862
+      "sha": "b858d3d1f3301d1d559894a3dd24faf5d963021c",
+      "size": 10228
     },
     {
       "path": "prompts/a-share-template.md",
-      "sha": "bf4ff0243038b93c87d014728c40c9096fc01e4e",
-      "size": 4010
+      "sha": "ef775d2c764fb0b7c6a6d1ba7596f743d46fd318",
+      "size": 4182
     },
     {
       "path": "prompts/consumer-sector-template.md",
-      "sha": "a0851597cd7b0d1025203a31f28dc912399b3d1b",
-      "size": 3923
+      "sha": "6f80f21347878bc333ca1faca8250b1cbd4996f9",
+      "size": 4078
     },
     {
       "path": "prompts/hk-stock-template.md",
-      "sha": "b4fe869fdec5ee9a27a632b5c0767f3c5cc1788b",
-      "size": 3934
+      "sha": "1dd97d28f6c50b197484a90d5deb07a5f61ade22",
+      "size": 4101
     },
     {
       "path": "prompts/master-template.md",
-      "sha": "64f6ec82f27d8f753c53785fb858668fb7775479",
-      "size": 4737
+      "sha": "5a6200a4e004c024369f717f6bdc3886e2240567",
+      "size": 4943
     },
     {
       "path": "prompts/new-energy-template.md",
-      "sha": "18f21f9768a2cf8da95de7454c89919bc16be64d",
-      "size": 4462
+      "sha": "afe020a348db58160932c652a6384cdbea193906",
+      "size": 4640
     },
     {
       "path": "prompts/quick-start-guide.md",
-      "sha": "fe89998e0e15447cf69e8c9b922199cfec65351f",
-      "size": 4752
+      "sha": "841d199fe0610d5c28a2aeb53fa42bfbd1a03c5e",
+      "size": 4914
     },
     {
       "path": "prompts/sector-rotation-template.md",
-      "sha": "0c8a2a074b762e9564c2949dbbd28836c274f131",
-      "size": 7756
+      "sha": "f600380d5f6f275781bb93323475ebf6ca26ec65",
+      "size": 7986
     },
     {
       "path": "prompts/tech-sector-template.md",
-      "sha": "a336625ccdb2589860e6010ebd6f8c36b3ae35cc",
-      "size": 4275
+      "sha": "eadd454392e9509a87fb9120ec739338538c5308",
+      "size": 4453
     },
     {
       "path": "prompts/us-stock-template.md",
-      "sha": "c889743e340ce082b4ae71280c9432440f368eee",
-      "size": 4016
+      "sha": "300a489360ba0767a5bb57a836fcdd5e96cf6dcf",
+      "size": 4182
     },
     {
       "path": "references/analysis-frameworks.md",
-      "sha": "710e694fd80c2e0f6e5cb0d684a88776d568b11b",
-      "size": 6733
+      "sha": "c96c47a63235fdb8be08c293145fb3e5cccef004",
+      "size": 7037
     },
     {
       "path": "references/data-sources-api.md",
-      "sha": "91b800f688ffdf4fc178b893e1ca2f070d2516fa",
-      "size": 8424
+      "sha": "7144008d5afef4a635cfcd91576c12b38f793c07",
+      "size": 8823
     },
     {
       "path": "references/industry-cases.md",
-      "sha": "bf9a2aff5a1dc3d9564377b3fc0deac114505fe0",
-      "size": 7861
+      "sha": "5140fe9b13607ed6021b6fa0bcef7c50965cb745",
+      "size": 8171
     },
     {
       "path": "references/market-codes.md",
-      "sha": "1946c690f82003dc0a630081c29dbee695ae274b",
-      "size": 3452
+      "sha": "a26a861fa8a2f25aa5e5e60b6e894771eda8e1e0",
+      "size": 3603
     },
     {
       "path": "references/trading-signals.md",
-      "sha": "2afbd4b1f70978556fce090837ecb0c0e21560dd",
-      "size": 7776
+      "sha": "7673edd8d92cffcf453aec062af4b78bb1614e62",
+      "size": 8157
     },
     {
       "path": "scripts/analyze_sector.py",
-      "sha": "cce8269fd5d5334e7296ec141c50197aa49667e7",
-      "size": 8466
+      "sha": "69ac4020aae2d13b427441adcc91fc3503ec4d15",
+      "size": 8713
     },
     {
       "path": "scripts/compare_markets.py",
-      "sha": "4734e39df082a024f6b35e18bb153dee06372c02",
-      "size": 7147
+      "sha": "a6ab3b673318e8f51db8fbe95b655c08acd86754",
+      "size": 7365
     },
     {
       "path": "scripts/fetch_market_data.py",
-      "sha": "120561e1592509c995b6cf2e66fd53f58fce1ee6",
-      "size": 6487
+      "sha": "ccea6deb55f564f88120ca99c7ef178b011a4314",
+      "size": 6621
     },
     {
       "path": "scripts/generate_chart.py",
-      "sha": "089d5a556e6c2172e16ee75292e06073c725d19e",
-      "size": 16003
+      "sha": "bec23518247ad202eaed9066ca45da102dd5e3e5",
+      "size": 16498
     },
     {
       "path": "scripts/generate_report.py",
-      "sha": "722dfacb478b3d42b44f7d3006d15fb491fcacf4",
-      "size": 16737
+      "sha": "30fd654db4597a3436ede049b85375c3c4fa62a3",
+      "size": 17214
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "b8b1c78e768cc0de553a5e2d12c9a92edb9d7c7e",
-      "size": 4726
+      "sha": "d1d51ff095784f798b67cf63cdd08691338f8cfe",
+      "size": 4888
     }
   ]
 }

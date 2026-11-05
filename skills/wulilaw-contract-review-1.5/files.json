@@ -2,78 +2,78 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha": "b277d13c0b8289eed9a46222e67ddeb1d435723e",
-      "size": 8569
+      "sha": "864e9241b309b2f3c185702ef1bd19d5777934f3",
+      "size": 8900
     },
     {
       "path": "README.md",
-      "sha": "2c5f13a2630125768bb33fb0043a378f78319dfb",
-      "size": 6426
+      "sha": "dc8454b50b095c9cc7539211ebb5310f0b5a6dfb",
+      "size": 6670
     },
     {
       "path": "SKILL.md",
-      "sha": "0e4ddc365f5f8cdd126a02f6257fef2008d84f8d",
-      "size": 18546
+      "sha": "5a7d0e5c160ef7725dfe60ee06ad6daec5e42665",
+      "size": 18982
     },
     {
       "path": "_meta.json",
-      "sha": "545328d72ef18f054646015609a0f8b9cfc34635",
-      "size": 210
+      "sha": "1626ce6c7dc258c2d0ef16a0206db79540239cdb",
+      "size": 218
     },
     {
       "path": "agents/openai.yaml",
-      "sha": "cc2e4a3670fb088733558b55cf5bdd1f960f9a24",
-      "size": 3098
+      "sha": "cdbf032c66320af95d0e6b2cb0f7976ad6eb6efe",
+      "size": 3102
     },
     {
       "path": "references/output-spec.md",
-      "sha": "de1bc846fb6fdc74e046a795b813f1afd58a5951",
-      "size": 9583
+      "sha": "b4933c741b16fd9213fbb1456269dd8d1c34d85f",
+      "size": 9863
     },
     {
       "path": "references/review-instructions.example.json",
-      "sha": "cd0a00adf6b30d16d430b0c4dec7ca2108fdad02",
-      "size": 1688
+      "sha": "6b12f792ec1322b626fea76105d7bc48ddea7053",
+      "size": 1720
     },
     {
       "path": "references/review-playbook.md",
-      "sha": "36f335d981dcf03185097599d7c4cd93d01bcba5",
-      "size": 3792
+      "sha": "e0018dc9c2cb2a15adf91983039c328e509f881e",
+      "size": 3964
     },
     {
       "path": "references/xml-revision-spec.md",
-      "sha": "fcccc17e023b07637f51785a5a3928ddfc0b8610",
-      "size": 17290
+      "sha": "51ac53c2d22ee01f101f6103d569c63bb4160bc2",
+      "size": 17850
     },
     {
       "path": "scripts/example_usage.py",
-      "sha": "e6642c4148f44e7cf643f8237e7a6dbca89dade6",
-      "size": 11049
+      "sha": "a0e440a342e3b1e50b265aa1c1f550d24df9bc34",
+      "size": 11364
     },
     {
       "path": "scripts/generate_review_docx.ps1",
-      "sha": "f974bd6ff4f54bc30242433166a529ae3f07e604",
-      "size": 40657
+      "sha": "a43d0e1a443c736056703d0a2b7d9c26a832ce7e",
+      "size": 41502
     },
     {
       "path": "scripts/prepare_output_paths.py",
-      "sha": "62004e8c2f489143407c6f49ab2bb266aecd878a",
-      "size": 827
+      "sha": "94ab648ff0002e00c234f9a21923b361efb9d80d",
+      "size": 856
     },
     {
       "path": "scripts/stage_review_inputs.ps1",
-      "sha": "e002f8f2360cc61af47cb5d527fdb80727ff9b33",
-      "size": 4482
+      "sha": "93d2ecb7fca56007ff2086fae5cb6fd54907dfa9",
+      "size": 4581
     },
     {
       "path": "scripts/test_xml_revision.py",
-      "sha": "34b271ffc6d9fba746fa40f94e994d979726ae4c",
-      "size": 12491
+      "sha": "b604aa6d49cb5645bd1d163ec019d92cf1a7c549",
+      "size": 12858
     },
     {
       "path": "scripts/write_revisions_xml.py",
-      "sha": "618904cdaedffb851408b1fa4a48e8f2f537fea2",
-      "size": 19234
+      "sha": "8774b66df7ac7291416736f36ac27e72b0506be0",
+      "size": 19773
     }
   ]
 }

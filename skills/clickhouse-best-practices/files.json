@@ -2,158 +2,158 @@
   "files": [
     {
       "path": "LICENSE",
-      "sha": "014a40a27fefbc7081e58dc8ed27b54287193936",
-      "size": 1030
+      "sha": "3baceba104638194e09bcdff8e1e6891474d62d4",
+      "size": 1062
     },
     {
       "path": "SKILL.md",
-      "sha": "ce198e493c569bd130f296209dda5c1f71cce4fb",
-      "size": 7785
+      "sha": "9aa2483138de7934f504e7429765d9154710a7c3",
+      "size": 7974
     },
     {
       "path": "_meta.json",
-      "sha": "fa1df32496feaf824dee2596299d2748a84a0506",
-      "size": 145
+      "sha": "ed06fbc9cba2690510bec26c7b49c21b6b099ec7",
+      "size": 152
     },
     {
       "path": "rules/insert-async-small-batches.md",
-      "sha": "526f39d2d4ed87dea996d16698091661a0aeb619",
-      "size": 2059
+      "sha": "95234d47a597b8264b6bc0a1fd9e212d194baad7",
+      "size": 2121
     },
     {
       "path": "rules/insert-batch-size.md",
-      "sha": "75aba9d75f8bed31396f3740d07b144556f5e8fa",
-      "size": 1523
+      "sha": "9418fd9f49982ea6128121ae2bbfe0bb446cafe4",
+      "size": 1574
     },
     {
       "path": "rules/insert-format-native.md",
-      "sha": "1f83e751669d31df5f7166d9dc983b36a4a08b61",
-      "size": 1760
+      "sha": "8eaa0fcece3171cd5ebf93295ed229d5297f2635",
+      "size": 1818
     },
     {
       "path": "rules/insert-mutation-avoid-delete.md",
-      "sha": "5a28ff2875eb349104dad60683cd2bfac4886daf",
-      "size": 1805
+      "sha": "8e373aa03e2015c39bc5bf5439fefbca267b5a9d",
+      "size": 1869
     },
     {
       "path": "rules/insert-mutation-avoid-update.md",
-      "sha": "7c8c7b8d7a69e5ba67dff5795ecdc8681b9f0e69",
-      "size": 1770
+      "sha": "d60bb2414d8955a2bcabe39decb0fb5322a23d8d",
+      "size": 1826
     },
     {
       "path": "rules/insert-optimize-avoid-final.md",
-      "sha": "ed6de1dd62431cb20c346050492e21a14e3b9118",
-      "size": 1733
+      "sha": "07bf880a1ad9a99fea9f852732a809bcf3e676df",
+      "size": 1798
     },
     {
       "path": "rules/query-index-skipping-indices.md",
-      "sha": "67dfa654efb6bb407142552228365dc7387a3a7a",
-      "size": 2448
+      "sha": "680ef9319c058f9554b18757451b3d64b501ecc6",
+      "size": 2522
     },
     {
       "path": "rules/query-join-choose-algorithm.md",
-      "sha": "74af0da4fda5a2ad6666e6e696dd6df78733a394",
-      "size": 1842
+      "sha": "865843cec8f3ad13355b151ab14782e37a80edef",
+      "size": 1884
     },
     {
       "path": "rules/query-join-consider-alternatives.md",
-      "sha": "cc4a9bd00cacf2d0c0314c1a007501085f68a992",
-      "size": 1653
+      "sha": "7ede3750b6cc8d9a1abe43223c35198646ed0993",
+      "size": 1716
     },
     {
       "path": "rules/query-join-filter-before.md",
-      "sha": "0b996faee77be1d66ade18f425c09f1bc6e15cff",
-      "size": 1467
+      "sha": "ccacf1a370d59e8ddfae7ab0799b68687812945b",
+      "size": 1523
     },
     {
       "path": "rules/query-join-null-handling.md",
-      "sha": "bb2765013fbd737422a5f68400f9f1b3863c387c",
-      "size": 1622
+      "sha": "b68e6c1904b55b4ab593972fbe45905ba13279f0",
+      "size": 1685
     },
     {
       "path": "rules/query-join-use-any.md",
-      "sha": "bb092975f627a3e50dd1ff459d0859b007d91030",
-      "size": 1593
+      "sha": "4d7b1b9e8fc0d37f9ec878fe1f192a2f0cae8fbb",
+      "size": 1643
     },
     {
       "path": "rules/query-mv-incremental.md",
-      "sha": "f406635ea32c4685ddad3567e47630ad7389e592",
-      "size": 1821
+      "sha": "127b022d64ae9d6517cb811805866f0aa1d0e639",
+      "size": 1887
     },
     {
       "path": "rules/query-mv-refreshable.md",
-      "sha": "47827a33802142122df95f4280e5639f1fb6e026",
-      "size": 1817
+      "sha": "d571e06ab16b418f42d5e54c4b3862be79211ed3",
+      "size": 1887
     },
     {
       "path": "rules/schema-json-when-to-use.md",
-      "sha": "82fe794a10948530e6684bd4e82825101e7d44ea",
-      "size": 2206
+      "sha": "e4da2c9fd9191768373a951ed979640bd718b466",
+      "size": 2282
     },
     {
       "path": "rules/schema-partition-lifecycle.md",
-      "sha": "fc0d0267e915370fe7d30c67e9591244230b82d3",
-      "size": 1769
+      "sha": "ae59b6f3501aed32f58bb9169689267fa608a043",
+      "size": 1829
     },
     {
       "path": "rules/schema-partition-low-cardinality.md",
-      "sha": "6e983bb8a9f8654574c025f213779e5d03c1154c",
-      "size": 1635
+      "sha": "77086292c749a775581c779911c125959cd1e362",
+      "size": 1693
     },
     {
       "path": "rules/schema-partition-query-tradeoffs.md",
-      "sha": "64e5d0d871fd7afc5f0be6ab0e4cf1aec867374a",
-      "size": 2003
+      "sha": "54881a90712935efc164ac26167224e7ad1658a9",
+      "size": 2071
     },
     {
       "path": "rules/schema-partition-start-without.md",
-      "sha": "1a10ae7734b2afe3bcc5c6fa84d59dc07962bdc5",
-      "size": 1967
+      "sha": "67e2198b3356e4406eba3091f985181de5d39fd9",
+      "size": 2037
     },
     {
       "path": "rules/schema-pk-cardinality-order.md",
-      "sha": "769b58208582d56b73d3c66bfde9f7d52d74c49d",
-      "size": 1633
+      "sha": "2b71c742881690fe55ba1b2e423c2e597b8a083a",
+      "size": 1676
     },
     {
       "path": "rules/schema-pk-filter-on-orderby.md",
-      "sha": "45f2c61cb5d5cc6cbfc47802f0b0a1c9d6fed082",
-      "size": 1586
+      "sha": "b2847cbf73085c2113028e6aa4e3678af533c097",
+      "size": 1636
     },
     {
       "path": "rules/schema-pk-plan-before-creation.md",
-      "sha": "04607d63b2ecda3a7f6071b7c1176726ba081b35",
-      "size": 1911
+      "sha": "1572c86af37f8f270439ae3fccc369c43615abc6",
+      "size": 1972
     },
     {
       "path": "rules/schema-pk-prioritize-filters.md",
-      "sha": "b1e0909da335a0c66deeea7712a579a1ced6efec",
-      "size": 1612
+      "sha": "8da4481609982f2ba3107175d6f7e110070540f4",
+      "size": 1666
     },
     {
       "path": "rules/schema-types-avoid-nullable.md",
-      "sha": "f4974653e68ade780ae9a177a428dfda3350bef3",
-      "size": 1772
+      "sha": "f8d62f51152cc88729a4a5fbcb7e8d0a3b81e8be",
+      "size": 1825
     },
     {
       "path": "rules/schema-types-enum.md",
-      "sha": "3ccad71bfdb4bfeb0f61a17b8d41997867f3e052",
-      "size": 1512
+      "sha": "3739391a6b8bd018d1d93fae66d1e68113829e7d",
+      "size": 1564
     },
     {
       "path": "rules/schema-types-lowcardinality.md",
-      "sha": "827fe7255cdea2b3e430d851aa2878e3d4073bce",
-      "size": 1772
+      "sha": "63daf9ebb983c1e88863fe7bc54c3d2af8ba21a7",
+      "size": 1828
     },
     {
       "path": "rules/schema-types-minimize-bitwidth.md",
-      "sha": "42ca7691d7588aa156fd36ace9beb236abd1611d",
-      "size": 1652
+      "sha": "a12d32ae8736ab226d18dc876d0a9bbf0f109331",
+      "size": 1706
     },
     {
       "path": "rules/schema-types-native-types.md",
-      "sha": "d14f067e92eb6c4f7c58f6361e3fa09332371caf",
-      "size": 1709
+      "sha": "043f08bfc4ae1f0bae5c298ee93e1f8e827fe504",
+      "size": 1761
     }
   ]
 }

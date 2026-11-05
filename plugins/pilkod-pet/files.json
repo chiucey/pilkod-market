@@ -3,33 +3,33 @@
   "files": [
     {
       "path": "plugin/plugin.json",
-      "sha": "21ce33409c4a67325c09fbbc580631dd6f0c3327",
-      "size": 544
+      "sha": "52ff51bbe166c5bc892ac5afec186ce492a9d850",
+      "size": 563
     },
     {
       "path": "ARTWORK.md",
-      "sha": "258cc8901a4866c92230872ee0d90f44d681eca5",
-      "size": 2214
+      "sha": "d5e5d45f4d7ad3244270a840dccde2ed8cfe31d2",
+      "size": 2235
     },
     {
       "path": "LICENSE",
-      "sha": "132dd20ee3294d09a1c613a6bd4c8094c496fbf9",
-      "size": 1064
+      "sha": "f56d37419fbd964165d7677c22ef146e15813877",
+      "size": 1085
     },
     {
       "path": "PROVENANCE.md",
-      "sha": "7a5767b5763af26098b91e5e6d241493d6c2c0a2",
-      "size": 2397
+      "sha": "71b1983a3f5e4cbac5e88135396fd79ff2ce3d4d",
+      "size": 2433
     },
     {
       "path": "README.md",
-      "sha": "25be968191b3a8eafe81b07c55b4378018485f5d",
-      "size": 8199
+      "sha": "259bea776d0cad9d9ed25980c95732b10b1cd284",
+      "size": 8260
     },
     {
       "path": "README.zh-CN.md",
-      "sha": "427cb2007f295a9f521f7dabc337e0d99c313a72",
-      "size": 5406
+      "sha": "03e77bcf4f26dc29ce074a6e3d42766e8369ee54",
+      "size": 5445
     },
     {
       "path": "icon.png",
@@ -38,68 +38,68 @@
     },
     {
       "path": "miniapp/client/activity-reminders.mjs",
-      "sha": "cfdb71983b6a7b23a357db744266cb12353614be",
-      "size": 5114
+      "sha": "2b0766a9d3a19fd6b506e61b4ddd08f6bd797e5f",
+      "size": 5225
     },
     {
       "path": "miniapp/client/activity.mjs",
-      "sha": "53c91ef6c8089e8e5ced771f7b390e071fbf8def",
-      "size": 16688
+      "sha": "e353e3b4552ea6ea6753fb25a4e1949a8af20dcd",
+      "size": 16990
     },
     {
       "path": "miniapp/client/ask-observer.mjs",
-      "sha": "a4e774704c5e6a299df17a39be6d8829231b901d",
-      "size": 7162
+      "sha": "6e929f096483e794372a670b8c72b8c1e00e534a",
+      "size": 7330
     },
     {
       "path": "miniapp/client/chat-draft.mjs",
-      "sha": "29c93edae661a5be944b6715f305ee6d55c83507",
-      "size": 3304
+      "sha": "a1201aab41941a3fdb463c566c007f6663922123",
+      "size": 3354
     },
     {
       "path": "miniapp/client/compact-pet-view.mjs",
-      "sha": "b0eeceeb3296470e4511aaa64d9335f5a03699cf",
-      "size": 9105
+      "sha": "b8e0177593ba2b16e3de34624373647cc9e93ad5",
+      "size": 9272
     },
     {
       "path": "miniapp/client/index.html",
-      "sha": "d11981f26f4f04359897f43c68954186802e6485",
-      "size": 13672
+      "sha": "95d0323a3be784d80dccc30df31ca8d9ddf7cb0f",
+      "size": 13912
     },
     {
       "path": "miniapp/client/notification-previews.mjs",
-      "sha": "adf4424c73af054b321ddb8ab71a3339c11fff9b",
-      "size": 3037
+      "sha": "56235485b82c4a303651b857354cad22c9d8c2e4",
+      "size": 3101
     },
     {
       "path": "miniapp/client/panel-navigation.mjs",
-      "sha": "14b87257dc3ad5515d8433513d6cd70df48094c3",
-      "size": 6265
+      "sha": "986e934022de5e3bea199d1f8af4c1cdd3e60bb1",
+      "size": 6392
     },
     {
       "path": "miniapp/client/pet-app.js",
-      "sha": "d296de6315d39deca6c618e1f72f1ac4997b8a21",
-      "size": 89436
+      "sha": "0a9b608a2ba0255eece2a127f6173f1f1beee1d7",
+      "size": 91763
     },
     {
       "path": "miniapp/client/pet-player.js",
-      "sha": "cfaa102b3079d2b390b2d4498ab7fa3b88b515cb",
-      "size": 12898
+      "sha": "e67c43ce412e59579d61a85cf0f69b9ac2727ce9",
+      "size": 13281
     },
     {
       "path": "miniapp/client/pet-presentation.mjs",
-      "sha": "015d63cfe4d513f09c41c9a630f56e5e678f7a34",
-      "size": 1276
+      "sha": "c83ae9fbef10d4f7b7bedae4a0d03c0b1da18bc6",
+      "size": 1305
     },
     {
       "path": "miniapp/client/pet.css",
-      "sha": "b98ad68329060a2472ade35bc25b91f8fc4fba01",
-      "size": 33845
+      "sha": "44d045736f1415e55b2e5ab6d0f7230ef51c7f56",
+      "size": 35525
     },
     {
       "path": "miniapp/client/pets/minimax-original/pet.json",
-      "sha": "561dafa08dc10560be603e250478a2adfdf12282",
-      "size": 286
+      "sha": "6ed77719af22db400d0014844f64e99af21caea6",
+      "size": 295
     },
     {
       "path": "miniapp/client/pets/minimax-original/spritesheet.png",
@@ -108,68 +108,68 @@
     },
     {
       "path": "miniapp/client/preferences.mjs",
-      "sha": "7c64eda442873e830b474c91aa0cff3fb8daf4b3",
-      "size": 3842
+      "sha": "52d8cc1650c448eff632068717766e9b4c571a83",
+      "size": 3899
     },
     {
       "path": "miniapp/client/speech-input.mjs",
-      "sha": "dbf5cc0a618320555fa1439a4a370f22525f97dc",
-      "size": 11535
+      "sha": "c80cea8681e35dae6b7ec126f01e8d0ad3da5ce9",
+      "size": 11815
     },
     {
       "path": "miniapp/client/window-position.mjs",
-      "sha": "c259e09cf63b111d77928052c22bdd880fbeb41b",
-      "size": 2620
+      "sha": "d1c55e3c1b20c92c94b4ddbf14f32f781dea9c69",
+      "size": 2667
     },
     {
       "path": "miniapp/client/workbench-window.mjs",
-      "sha": "1f7f72806183b7286ad65a68206cec8336d5497f",
-      "size": 5101
+      "sha": "d75bc24a7e1f53449725864749186199e03593db",
+      "size": 5205
     },
     {
       "path": "miniapp/miniapp.json",
-      "sha": "f823575548f22f90934874c346d2e5ae710bf9c9",
-      "size": 664
+      "sha": "a56a6930586f0b9e00809a9993e58b1a6c1b253d",
+      "size": 702
     },
     {
       "path": "miniapp/node/image-header.mjs",
-      "sha": "1f936dcae97e91301c23ef84d40cd8f6551f97ac",
-      "size": 3165
+      "sha": "88f709638a1ea2b25887f325df76a477c4275760",
+      "size": 3258
     },
     {
       "path": "miniapp/node/pet-store.mjs",
-      "sha": "0a3e927abc8d0d5e95ae92d1c593354f706b9ce9",
-      "size": 18017
+      "sha": "dda31cb816186828a98f2567ec285d1011094646",
+      "size": 18522
     },
     {
       "path": "miniapp/node/preferences-store.mjs",
-      "sha": "64918179bef796b87567b6a62e83975e6c15b8ad",
-      "size": 2400
+      "sha": "5b5152e60b021c238466085430df6e48b1e2fdda",
+      "size": 2450
     },
     {
       "path": "miniapp/node/server.mjs",
-      "sha": "0331e994b0af6de91e508ee16da841cbfa98f028",
-      "size": 13371
+      "sha": "fc0fe91b82db1bfe3a7feff17006defc57d6377e",
+      "size": 13758
     },
     {
       "path": "package.json",
-      "sha": "aab6b8dc73e4be4ce9a932d4061aa741e19a38bf",
-      "size": 85
+      "sha": "d523407a160a78f45163896e97bf6e9ba055b80f",
+      "size": 91
     },
     {
       "path": "skills/minimax-pet/SKILL.md",
-      "sha": "f66f4f4ac926f66dee71d16cb21a21fba94b686a",
-      "size": 4183
+      "sha": "81b1e70e8d255941d6141bb3c1dd2521c1254576",
+      "size": 4221
     },
     {
       "path": "skills/minimax-pet/references/spritesheet-format.md",
-      "sha": "e3feda703d83edea86e371bc081b535ff6ea30da",
-      "size": 7000
+      "sha": "7ca3aaa848b415878b26a6b0e30f3e35f0daa35a",
+      "size": 7087
     },
     {
       "path": "skills/minimax-pet/scripts/validate-art.mjs",
-      "sha": "e0d09380af7a18fd5416b40e9e2a512a39191f3c",
-      "size": 12784
+      "sha": "e233e56cbd687c869428ce1f2941bc575471a82f",
+      "size": 13035
     }
   ]
 }

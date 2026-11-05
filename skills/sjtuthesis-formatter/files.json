@@ -2,38 +2,38 @@
   "files": [
     {
       "path": "README.md",
-      "sha": "2410310a1a133028c3637ec4102a8a5c03033b73",
-      "size": 4328
+      "sha": "58e553a8e21b66a099e279d75e65330d11a3cd35",
+      "size": 4435
     },
     {
       "path": "SKILL.md",
-      "sha": "a0408fb5c6f3443a1550853528ac9ae09f3276a2",
-      "size": 21305
+      "sha": "bc068285caf195c6f723f9241fbdd2535531cc27",
+      "size": 21842
     },
     {
       "path": "_meta.json",
-      "sha": "e0c2c00677a2bd9590599fd4fc47d7a182cbcfad",
-      "size": 316
+      "sha": "ab6b194518696c1b80b0ab0f9904453e54764c76",
+      "size": 326
     },
     {
       "path": "examples/feedback.md",
-      "sha": "7020980dc1af5755b2efa658779585987a2805d2",
-      "size": 2406
+      "sha": "54101cdd037130ba2bb0648adc795ba6cc677345",
+      "size": 2528
     },
     {
       "path": "examples/sample.md",
-      "sha": "f1921aee4b181d5f9d43151154dc1db203bc3f9f",
-      "size": 7903
+      "sha": "f91fcfd42e51a73c8bc3506ad6594e710706da0f",
+      "size": 8134
     },
     {
       "path": "modules/__init__.py",
-      "sha": "16fb421341bbcd6e202bba6e6a2e87342f35f471",
-      "size": 163
+      "sha": "e5549744cb3d293a1f506e455679573f78bdb79d",
+      "size": 166
     },
     {
       "path": "modules/change_log.py",
-      "sha": "8b8d4396ee2d148cf7a76c652c27d32d4f0b043b",
-      "size": 9888
+      "sha": "3a2c3084f6625cd0317781b956d06bbe437e60d3",
+      "size": 10122
     },
     {
       "path": "modules/citation_handler.py",
@@ -42,98 +42,98 @@
     },
     {
       "path": "modules/cleaning_engine.py",
-      "sha": "dfc6b0e5a703be965efb55c8835fc03600cec427",
-      "size": 13612
+      "sha": "6b9e27c657e0b14b2ff75beff4ca43a6dcd320cc",
+      "size": 14010
     },
     {
       "path": "modules/document_merger.py",
-      "sha": "4e9ba586bb6c785a520274f3a5e71440b5811594",
-      "size": 5894
+      "sha": "8d422e09a9a059082f33c2e3a7ad3e12ec744747",
+      "size": 6061
     },
     {
       "path": "modules/figure_handler.py",
-      "sha": "9decc0a9d8dfbaa85f32b57be5f9a6e66559bb29",
-      "size": 9453
+      "sha": "4dd3cb5135326081816c8f214967d5dedeed9c15",
+      "size": 9735
     },
     {
       "path": "modules/format_detector.py",
-      "sha": "9eeef340d154f8902b87754657abd1b252fab76e",
-      "size": 8848
+      "sha": "0a430baed39bf1c53e39c527f1a09bfc7e964f6e",
+      "size": 9115
     },
     {
       "path": "modules/helpers.py",
-      "sha": "3c3a5e8e4535fc9827e2444ad241bb6d1e46b756",
-      "size": 6742
+      "sha": "afe5dccaed89939965ed4998dc3a69706d7171de",
+      "size": 6945
     },
     {
       "path": "modules/latex_renderer.py",
-      "sha": "23ca74ae9a74fbb28f3a9a4e41f35a0c9cec7abb",
-      "size": 13597
+      "sha": "03485e5bd4a6966cb2e7340aee052cdd8d0173be",
+      "size": 13984
     },
     {
       "path": "modules/math_typesetting.py",
-      "sha": "2e2d23c5f2b9cc7a472e97952f971a7506bbe9c5",
-      "size": 12803
+      "sha": "05d94212052931cf70165088496e16a9b4ac6ce1",
+      "size": 13176
     },
     {
       "path": "modules/pdf_bookmarks.py",
-      "sha": "b93066b8d419e5d3e4b04077f6a49b08bd8812eb",
-      "size": 10527
+      "sha": "389529b91a0ef7fb2c53ab6668320c8a9798332d",
+      "size": 10830
     },
     {
       "path": "modules/semantic_parser.py",
-      "sha": "0a0855b34d443d33f93c924684b858b12ec280c5",
-      "size": 14134
+      "sha": "48118fb58de8bcc65454d6ede82d9fb1d1fc971c",
+      "size": 14513
     },
     {
       "path": "modules/space_auditor.py",
-      "sha": "76119e51868aac598346f5addb77b2f16ddd9070",
-      "size": 10103
+      "sha": "5e14dd80966295f482d6a4382b9f786fcdd7fa35",
+      "size": 10387
     },
     {
       "path": "modules/style_mapper.py",
-      "sha": "c5b0187c1476bc0a787f2f9a88543c7e666ae47b",
-      "size": 15589
+      "sha": "1c283587dfa887b30cc994c6d5fb0ff2d2a8c699",
+      "size": 15988
     },
     {
       "path": "modules/thesis_info.py",
-      "sha": "5ba7f13181644a9e0eaaa93d45c6c5164f4a9dd8",
-      "size": 12679
+      "sha": "c2b9d4331798ac1446444c6227217ea7cc3201b0",
+      "size": 12979
     },
     {
       "path": "modules/user_preferences.py",
-      "sha": "5a93d0e58e931c03e8e0b6cd1bcdca85a3cd70b4",
-      "size": 11114
+      "sha": "c8fc6f9cf7273ba0eb07cbda1d26f60a5acb07b9",
+      "size": 11406
     },
     {
       "path": "modules/validator.py",
-      "sha": "1df09c44011e1a662a8b1433f09db1887ad67c07",
-      "size": 10306
+      "sha": "bfbd31d7ed580995d8a1a862691a7f7ccbc404df",
+      "size": 10565
     },
     {
       "path": "modules/word_renderer.py",
-      "sha": "b9bada4844bae175cbc8f19b718a06a35bee3e1f",
-      "size": 25572
+      "sha": "91814fa7127fb90ba141b9c3e92d93b2a7fb8fec",
+      "size": 26200
     },
     {
       "path": "requirements.txt",
-      "sha": "7f8248c6476999e00b8a24152a15b4ac0c357a65",
-      "size": 32
+      "sha": "331e1ff3465fb589d978a94f23672c7284358dca",
+      "size": 34
     },
     {
       "path": "scripts/validate.sh",
-      "sha": "e8da3dc100e9ffeafb4abaddb76a4ecc44f21a9c",
-      "size": 5388
+      "sha": "cc1e763c15b2373f468ea9b05767059a1b55bcd2",
+      "size": 5570
     },
     {
       "path": "sjtuthesis_engine.py",
-      "sha": "1c7dd33a0503429fbb1623e2b10de68a0bc1557a",
-      "size": 41864
+      "sha": "a697c41c64e228f07f7e5a38482824c863dcd899",
+      "size": 42952
     },
     {
       "path": "template.md",
-      "sha": "684e49fd3d2369ca8c398841d208b00509539c47",
-      "size": 22434
+      "sha": "72a002633f31816784f527930e9b2a8ca2f8368e",
+      "size": 22874
     }
   ]
 }

@@ -2,13 +2,13 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha": "b06481db19fee7a5bf2d57d91dda58b611a56d45",
-      "size": 2270
+      "sha": "86c14b22712aae6956fca29abad64928c1c53c35",
+      "size": 2324
     },
     {
       "path": "_meta.json",
-      "sha": "a06ce782cff61c32fb816d94e81f912d39221b59",
-      "size": 144
+      "sha": "bbaa2891e4468409458ed7fcc0a9ee43d730e250",
+      "size": 150
     },
     {
       "path": "assets/README.txt",
@@ -17,13 +17,8 @@
     },
     {
       "path": "assets/template.tex",
-      "sha": "6ede7e5601e0c3a04526d084348eafa0588253fc",
-      "size": 356
-    },
-    {
-      "path": "dist/circuit-diagram-generator-1.0.0-20260325115701.skill",
-      "sha": "af5db4f268015b2318def82a64f6009dc1cd3387",
-      "size": 6741
+      "sha": "3f5148377934848b12d6ebb97a4008084ce392a8",
+      "size": 367
     },
     {
       "path": "references/reference.md",
@@ -32,8 +27,8 @@
     },
     {
       "path": "scripts/compile_circuit.py",
-      "sha": "4be0deb9be9f16e2adb5988fd326e05ddd44347e",
-      "size": 1926
+      "sha": "da5acc5e0dc9809011f0bbf6b8a9d9c73a2f77fb",
+      "size": 1985
     },
     {
       "path": "scripts/example.py",
@@ -42,13 +37,13 @@
     },
     {
       "path": "scripts/package_skill.py",
-      "sha": "9467b2f79f1c9a76b024b83f53c32497de826dd7",
-      "size": 3757
+      "sha": "9310618860b6bb4119685b87b24797acf654a1e5",
+      "size": 3886
     },
     {
       "path": "scripts/quick_validate.py",
-      "sha": "95951f69c2eb6bbc35e7c13f34c3fbb50da38532",
-      "size": 4137
+      "sha": "01dddb5e4d87cc39e3285f6579ab6ee0b5cfd6c7",
+      "size": 4275
     }
   ]
 }
